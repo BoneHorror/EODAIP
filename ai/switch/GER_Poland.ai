@@ -1,0 +1,31 @@
+# German the Poland Invasion AI File by Lothos
+
+max_front_ratios = {
+   FRA = 0.4  
+   SCH = 0.01
+}
+ 
+target = { 
+	232 = 50 # Warsaw 
+}
+
+leader_ratio = {
+	land_field_marshal 	= 0.03 # 0.02
+	land_general 		= 0.10 # 0.11
+	sea_grand_admiral 	=0.05
+	air_marshal 		=0.06 # 0.02
+	air_general 		=0.11
+	air_lt_General 		=0.15
+}
+
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+	province_priorities = {
+		#Maginot Line
+		127  = 0.15
+		132  = 0.05
+		130  = 0.05
+	}
+}

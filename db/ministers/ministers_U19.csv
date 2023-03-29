@@ -1,0 +1,62 @@
+U19;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+910001;Head of State;Haakon VII;1933;1964;1999;LWR;Weary Stiffneck;High;M14001;X
+910002;Head of Government;Johan Nygaardsvold;1933;1964;1999;LWR;Ambitious Union Boss;High;M14002;X
+910003;Foreign Minister;Halvdan Koht;1933;1964;1999;LWR;Biased Intellectual;Medium;M14003;X
+910004;Minister of Armament;Adolf Indrebø;1933;1964;1999;LWR;Resource Industrialist;Medium;M14004;X
+910005;Minister of Security;Trygve H. Lie;1933;1964;1999;LWR;Man of the People;Medium;M14005;X
+910006;Head of Military Intelligence;Alfred Roscher-Lund;1933;1964;1999;LWR;Logistics Specialist;Low;M14006;X
+910007;Chief of Staff;Otto Ruge;1933;1964;1999;LWR;School of Defence;Medium;M14075;X
+910008;Chief of Army;Kristian K. Laake;1933;1964;1999;LWR;Guns and Butter Doctrine;Medium;M14008;X
+910009;Chief of Navy;Jacob von der Lippe;1933;1964;1999;LWR;Indirect Approach Doctrine;Medium;M14009;X
+910010;Chief of Air Force;Jacob von der Lippe;1933;1964;1999;LWR;Army Aviation Doctrine;Medium;M14009;X
+910011;Head of State;Adam Egede Nissen;1933;1964;1999;ST;Insignificant Layman;High;M14021;X
+910012;Head of Government;Emil Lövlien;1933;1964;1999;ST;Smiling Oilman;High;M14022;X
+910013;Foreign Minister;Peder Furubotn;1933;1964;1999;ST;Ideological Crusader;Medium;M14023;X
+910014;Minister of Armament;Henry Wilhelm Kristiansen;1933;1964;1999;ST;Military Entrepreneur;High;M14024;X
+910015;Minister of Security;Samuel Titlestad;1933;1964;1999;ST;Prince of Terror;High;M14025;X
+910016;Head of Military Intelligence;Asbjørn Sunde;1933;1964;1999;ST;Political Specialist;Very High;M14026;X
+910017;Chief of Staff;Arne Gauslå;1933;1964;1999;ST;School of Defence;High;M14027;X
+910018;Chief of Army;Arne Gauslå;1933;1964;1999;ST;Elastic Defence Doctrine;Medium;M14027;X
+910019;Chief of Navy;Skule Storheil;1933;1964;1999;LE;Decisive Naval Battle Doctrine;Medium;M14029;X
+910020;Chief of Air Force;Henrik Norby;1933;1964;1999;LE;Carpet Bombing Doctrine;Medium;M14030;X
+910021;Head of Government;Einar Gerhardsen;1941;1964;1999;LWR;Political Protege;High;M14037;X
+910022;Head of Government;Adolf Worm-Müller;1941;1964;1999;LWR;Happy Amateur;High;M14038;X
+910023;Foreign Minister;Trygve H. Lie;1941;1964;1999;LWR;Iron Fisted Brute;High;M14005;X
+910024;Foreign Minister;Halvard Manthey Lange;1945;1964;1999;LWR;General Staffer;High;M14042;X
+910025;Foreign Minister;J. L. Mowinckel;1933;1964;1999;LWR;Ideological Crusader;Very High;M14043;X
+910026;Foreign Minister;Paal Berg;1937;1964;1999;LWR;Great Compromiser;High;M14039;X
+910027;Foreign Minister;Rolf Andvord;1945;1964;1999;LWR;Apologetic Clerk;High;M14047;X
+910028;Foreign Minister;Adam Egede Nissen;1941;1964;1999;ST;Iron Fisted Brute;Low;M14021;X
+910029;Minister of Armament;Finn Hagerup;1937;1964;1999;LWR;Submarine Proponent;Medium;M14050;X
+910030;Minister of Armament;Oscar F. Torp;1939;1964;1999;LWR;Mixed economy;Medium;M14051;X
+910031;Minister of Armament;Fredrik Monsen;1940;1964;1999;LWR;Tank Proponent;Medium;M14052;X
+910032;Minister of Armament;Jens Christian Hauge;1940;1964;1999;LWR;Military Entrepreneur;High;M14053;X
+910033;Minister of Armament;Erik Brofoss;1945;1964;1999;LWR;Air Superiority Proponent;High;M14054;X
+910034;Minister of Armament;Frederic Beichmann;1933;1964;1999;LWR;Infantry Proponent;Medium;M14055;X
+910035;Minister of Armament;Michael Hansson;1941;1964;1999;LWR;Strategic Air Proponent;Medium;M14058;X
+910036;Minister of Armament;Erling Sandberg;1943;1964;1999;LWR;Infantry Proponent;Very low;M14014;X
+910037;Minister of Armament;Gunnar Jahn;1945;1964;1999;LWR;Keynesian economy;Medium;M14060;X
+910038;Minister of Armament;Emil Lövlien;1945;1964;1999;ST;Military Entrepreneur;Low;M14022;X
+910039;Minister of Security;Terje Wold;1939;1964;1999;LWR;Silent Lawyer;Medium;M14065;X
+910040;Minister of Security;Asbjørn Bryhn;1943;1964;1999;LWR;Crime Fighter;Low;M14066;X
+910041;Minister of Security;Haakon Lie;1945;1964;1999;LWR;Prince of Terror;High;M14067;X
+910042;Minister of Security;Arne Sunde;1937;1964;1999;LWR;Silent Lawyer;High;M14068;X
+910043;Minister of Security;Erling Sandberg;1943;1964;1999;LWR;Compassionate Gentleman;Very low;M14014;X
+910044;Head of Military Intelligence;Vilhelm Evang;1943;1964;1999;LWR;Political Specialist;Medium;M14072;X
+910045;Head of Military Intelligence;Gunnar Jahn;1945;1964;1999;LWR;Industrial Specialist;Medium;M14060;X
+910046;Chief of Staff;Birger Ljungberg;1933;1964;1999;LWR;School of Defence;High;M14007;X
+910047;Chief of Staff;Birger Frederik Motzfeldt;1944;1964;1999;LWR;School of Manoeuvre;Medium;M14076;X
+910048;Chief of Army;Otto Ruge;1940;1964;1999;LWR;Guns and Butter Doctrine;Medium;M14075;X
+910049;Chief of Army;Olav av Norge;1943;1964;1999;LWR;Elastic Defence Doctrine;Very High;M14081;X
+910050;Chief of Navy;Henry Diesen;1937;1964;1999;LWR;Open Seas Doctrine;Medium;M14083;X
+910051;Chief of Navy;Gunner Hovdenak;1941;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M14084;X
+910052;Chief of Air Force;Hjalmar Riiser-Larsen;1937;1964;1999;LWR;Army Aviation Doctrine;Medium;M14089;X
+910053;Chief of Air Force;Bjarne Øen;1945;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M14090;X
+910054;Chief of Air Force;Harald Bruusgaard;1933;1964;1999;LWR;Naval Aviation Doctrine;Medium;M14091;X
+910055;Chief of Air Force;Carl Gulliksen;1937;1964;1999;LWR;Air Superiority Doctrine;Medium;M14092;X
+910056;Chief of Air Force;Trygve Klingenberg;1937;1964;1999;LWR;Army Aviation Doctrine;Medium;M14093;X
+910057;Chief of Air Force;Ole Reistad;1939;1964;1999;LWR;Carpet Bombing Doctrine;Medium;M14094;X
+910058;Head of Government;Oscar F. Torp;1951;1964;1999;LWR;Smiling Oilman;High;M14051;X
+910059;Minister of Armament;Nils Langhelle;1951;1964;1999;LWR;Resource Industrialist;High;M14097;X
+910060;Minister of Security;Oscar C. Gundersen;1946;1964;1999;LWR;Silent Lawyer;High;M14098;X

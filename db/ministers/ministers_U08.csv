@@ -1,0 +1,246 @@
+U08;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+855001;Head of State;Wilhelm II;1888;1933;1999;PA;Weary Stiffneck;High;3451;X
+855002;Head of State;Wilhelm III;1908;1933;1999;PA;Weary Stiffneck;High;3450;X
+855003;Head of Government;Bernhard von Bülow;1900;1930;1999;SC;Flamboyant Tough Guy;High;3430;X
+855004;Head of Government;Theobald von Bethmann Hollweg;1909;1922;1999;SC;Naive Optimist;High;3438;X
+855005;Head of Government;Georg Michaelis;1917;1933;1999;PA;Happy Amateur;High;3439;X
+855006;Head of Government;Georg von Hertling;1917;1920;1999;SC;Backroom Backstabber;High;3437;X
+855007;Head of Government;Maximilian von Baden;1918;1930;1999;PA;Naive Optimist;High;3442;X
+855008;Foreign Minister;Wilhelm Eduard von Schoen;1904;1914;1999;PA;Iron Fisted Brute;High;3417;X
+855009;Foreign Minister;Alfred von Kiderlen-Waechter;1907;1917;1999;PA;General Staffer;High;3431;X
+855010;Foreign Minister;Gottlieb von Jagow;1910;1920;1999;SC;Ideological Crusader;High;3418;X
+855011;Foreign Minister;Arthur Zimmermann;1913;1923;1999;PA;Great Compromiser;High;3432;X
+855012;Foreign Minister;Richard von Kühlmann;1914;1924;1999;PA;Apologetic Clerk;High;3426;X
+855013;Foreign Minister;Paul von Hintze;1915;1925;1999;SC;Biased Intellectual;High;3415;X
+855014;Foreign Minister;Wilhelm Heinrich Solf;1915;1925;1999;SC;The Cloak N Dagger Schemer;High;3421;X
+855015;Foreign Minister;Adolf Marschall von Bieberstein;1902;1912;1999;PA;Iron Fisted Brute;High;3412;X
+855016;Foreign Minister;Hans von Wangenheim;1905;1915;1999;PA;General Staffer;High;8393;X
+855017;Foreign Minister;Paul Metternich;1906;1916;1999;SC;Ideological Crusader;High;8415;X
+855018;Foreign Minister;Johann Heinrich von Bernstorff;1921;1931;1999;PA;Great Compromiser;High;8401;X
+855019;Foreign Minister;Adolf Georg von Maltzan;1917;1927;1999;PA;Apologetic Clerk;High;8376;X
+855020;Foreign Minister;Otto Wiedfeldt;1922;1925;1999;SC;Biased Intellectual;High;8413;X
+855021;Foreign Minister;Julius von Waldthausen;1922;1932;1999;SC;The Cloak N Dagger Schemer;High;8404;X
+855022;Foreign Minister;Karl von Luxburg;1913;1917;1999;PA;Iron Fisted Brute;High;unknownminister;X
+855023;Foreign Minister;Nikolaus von Wallwitz;1899;1909;1999;PA;General Staffer;High;unknownminister;X
+855024;Foreign Minister;Franz Olshausen;1917;1927;1999;SC;Ideological Crusader;High;8383;X
+855025;Foreign Minister;Adolf Pauli;1914;1924;1999;PA;Great Compromiser;High;unknownminister;X
+855026;Foreign Minister;Friedrich von Keller;1919;1928;1999;PA;Apologetic Clerk;High;8386;X
+855027;Foreign Minister;Franz von Reichenau;1905;1915;1999;SC;Biased Intellectual;High;unknownminister;X
+855028;Foreign Minister;Eugen Rümelin;1923;1933;1999;SC;The Cloak N Dagger Schemer;High;unknownminister;X
+855029;Foreign Minister;Ulrich von Brockdorff-Rantzau;1918;1928;1999;SC;Biased Intellectual;High;3420;X
+855030;Foreign Minister;Konstantin von Neurath;1922;1932;1999;PA;respectable compromiser;High;8405;X
+855031;Foreign Minister;Hugo von Radolin;1907;1917;1999;SC;Ideological Crusader;High;8398;X
+855032;Foreign Minister;Leopold von Hoesch;1923;1933;1999;PA;Great Compromiser;High;8407;X
+855033;Foreign Minister;Hellmuth Lucius von Stoedten;1917;1927;1999;PA;Apologetic Clerk;High;unknownminister;X
+855034;Foreign Minister;Heinrich von Tschirschky;1906;1916;1999;SC;Biased Intellectual;High;3424;X
+855035;Foreign Minister;Ernst Langwerth von Simmern;1920;1930;1999;SC;The Cloak N Dagger Schemer;High;8381;X
+855036;Foreign Minister;Friedrich Sthamer;1920;1930;1999;PA;Iron Fisted Brute;High;8385;X
+855037;Minister of Armament;Karl von Einem;1900;1914;1999;PA;Military Entrepreneur;High;1265;X
+855038;Minister of Armament;Josias von Heeringen;1906;1918;1999;PA;Infantry Proponent;High;1463;X
+855039;Minister of Armament;Erich von Falkenhayn;1910;1920;1999;SC;Military Entrepreneur;High;1262;X
+855040;Minister of Armament;Adolf Wild von Hohenborn;1912;1921;1999;SC;Infantry Proponent;High;8156;X
+855041;Minister of Armament;Hermann von Stein;1913;1923;1999;SC;Infantry Proponent;High;1348;X
+855042;Minister of Armament;Heinrich Scheuch;1915;1924;1999;SC;Tank Proponent;High;8395;X
+855043;Minister of Armament;Alfred von Tirpitz;1867;1921;1999;FA;Battle Fleet Proponent;High;1454;X
+855044;Minister of Armament;Eduard von Capelle;1913;1923;1999;SC;Submarine Proponent;High;1301;X
+855045;Minister of Armament;Paul Behncke;1915;1923;1999;SC;Battle Fleet Proponent;High;8414;X
+855046;Minister of Armament;Ernst Karl August Klemens von Mann;1915;1924;1999;SC;Submarine Proponent;High;7732;X
+855047;Minister of Armament;Hermann von Stengel;1900;1913;1999;PA;Theoretical Scientist;High;unknownminister;X
+855048;Minister of Armament;Reinhold von Sydow;1905;1914;1999;PA;Resource Industrialist;High;unknownminister;X
+855049;Minister of Armament;Adolf Wermuth;1906;1917;1999;PA;Corrupt Kleptocrat;High;3460;X
+855050;Minister of Armament;Hermann Kühn;1909;1920;1999;PA;Administrative Genius;High;8397;X
+855051;Minister of Armament;Karl Helfferich;1912;1921;1999;FA;laissez-faire capitalist;High;3458;X
+855052;Minister of Armament;Siegfried von Roedern;1913;1924;1999;FA;Theoretical Scientist;High;3459;X
+855053;Minister of Armament;Rudolf Schwander;1914;1922;1999;SC;Resource Industrialist;High;unknownminister;X
+855054;Minister of Armament;Hans Karl von Stein zu Nord- und Ostheim;1914;1924;1999;PA;laissez-faire capitalist;High;unknownminister;X
+855055;Minister of Security;Theobald von Bethmann Hollweg;1904;1915;1999;SC;Compassionate Gentleman;High;3438;X
+855056;Minister of Security;Clemens von Delbrück;1906;1922;1999;FA;Man of the People;High;3478;X
+855057;Minister of Security;Karl Helfferich;1913;1923;1999;FA;Efficient Sociopath;High;3458;X
+855058;Minister of Security;Max Wallraf;1914;1925;1999;FA;Crime Fighter;High;3472;X
+855059;Minister of Security;Friedrich von Moltke;1904;1915;1999;PA;Silent Lawyer;High;8387;X
+855060;Minister of Security;Johann von Dallwitz;1907;1919;1999;PA;Back Stabber;High;8402;X
+855061;Minister of Security;Friedrich Wilhelm von Loebell;1911;1922;1999;PA;Efficient Sociopath;High;8388;X
+855062;Minister of Security;Wilhelm Arnold Drews;1914;1923;1999;SC;Man of the People;High;8423;X
+855063;Minister of Security;Tilo von Wilmowsky;1904;1925;1999;FA;Prince of Terror;High;8418;X
+855064;Minister of Security;Karl Trimborn;1915;1921;1999;SC;Silent Lawyer;High;3475;X
+855065;Head of Military Intelligence;Karl Brose;1900;1915;1999;SC;Technical Specialist;High;unknownminister;X
+855066;Head of Military Intelligence;Wilhelm Heye;1907;1918;1999;SC;Logistics Specialist;High;8426;X
+855067;Head of Military Intelligence;Walter Nicolai;1910;1925;1999;PA;Political Specialist;High;3448;X
+855068;Head of Military Intelligence;Alfred Tapken;1898;1919;1999;SC;Naval Intelligence Specialist;High;unknownminister;X
+855069;Head of Military Intelligence;Walter Isendahl;1911;1923;1999;PA;Dismal Enigma;High;8421;X
+855070;Head of Military Intelligence;Paul Ebert;1915;1925;1999;SC;Naval Intelligence Specialist;High;unknownminister;X
+855071;Head of Military Intelligence;Friedrich Gempp;1915;1925;1999;PA;Technical Specialist;High;8384;X
+855072;Chief of Staff;Helmuth von Moltke;1903;1917;1999;SC;School of Manoeuvre;High;1263;X
+855073;Chief of Staff;Erich von Falkenhayn;1911;1923;1999;SC;School of Defence;High;1262;X
+855074;Chief of Staff;Paul von Hindenburg;1913;1925;1999;PA;School of Fire Support;High;1467;X
+855075;Chief of Staff;Hans von Seeckt;1917;1927;1999;SC;School of Fire Support;High;1346;X
+855076;Chief of Staff;August von Mackensen;1914;1925;1999;FA;School of Mass Combat;High;3483;X
+855077;Chief of Staff;Colmar von der Goltz;1907;1917;1999;PA;School of Defence;High;1443;X
+855078;Chief of Staff;Hermann von Eichhorn;1908;1919;1999;SC;School of Psychology;High;1257;X
+855079;Chief of Staff;Karl von Bülow;1911;1922;1999;PA;School of Manoeuvre;High;1480;X
+855080;Chief of Army;Hermman von Stein;1903;1917;1999;SC;Decisive Battle Doctrine;High;1348;X
+855081;Chief of Army;Adolf Wild von Hohenborn;1911;1923;1999;SC;Static Defence Doctrine;High;8156;X
+855083;Chief of Army;Hans von Seeckt;1917;1927;1999;SC;Armoured Spearhead Doctrine;High;1346;X
+855088;Chief of Army;Erich Ludendorff;1914;1925;1999;FA;Guns and Butter Doctrine;High;3401;X
+855089;Chief of Army;Wilhelm Groener;1916;1925;1999;SC;elastic defence doctrine;High;3403;X
+855090;Chief of Navy;Wilhelm Büchsel;1899;1914;1999;PA;Base Control Doctrine;High;unknownminister;X
+855091;Chief of Navy;Friedrich von Baudissin;1905;1915;1999;PA;Open Seas Doctrine;High;8153;X
+855092;Chief of Navy;Max von Fischel;1906;1917;1999;SC;Decisive Naval Battle Doctrine;High;7950;X
+855093;Chief of Navy;August von Heeringen;1908;1920;1999;PA;Power Projection Doctrine;High;8432;X
+855094;Chief of Navy;Hugo von Pohl;1910;1917;1999;PA;Indirect Approach Doctrine;High;3411;X
+855095;Chief of Navy;Gustav Bachmann;1912;1921;1999;SC;Base Control Doctrine;High;7931;X
+855096;Chief of Navy;Henning von Holtzendorff;1912;1920;1999;PA;Open Seas Doctrine;High;1466;X
+855097;Chief of Navy;Reinhard Scheer;1915;1925;1999;SC;Decisive Naval Battle Doctrine;High;1275;X
+855098;Chief of Navy;Adolf von Trotha;1916;1925;1999;SC;Power Projection Doctrine;High;1351;X
+855099;Chief of Navy;Andreas Michelsen;1914;1925;1999;SC;Indirect Approach Doctrine;High;8171;X
+855100;Chief of Air Force;Walter von Eberhardt;1913;1918;1999;PA;Naval Aviation Doctrine;High;8422;X
+855101;Chief of Air Force;Richard Roethe;1914;1919;1999;PA;Air Superiority Doctrine;High;unknownminister;X
+855102;Chief of Air Force;Wilhelm Siegert;1914;1919;1999;PA;Army Aviation Doctrine;High;3490;X
+855103;Chief of Air Force;Hermann von der Lieth-Thomsen;1915;1925;1999;PA;vertical envelopment doctrine;High;1474;X
+855104;Chief of Air Force;Ernst von Hoeppner;1916;1923;1999;SC;Naval Aviation Doctrine;High;1325;X
+855105;Chief of Air Force;Wilhelm Haehnelt;1917;1925;1999;PA;Air Superiority Doctrine;High;unknownminister;X
+855106;Chief of Air Force;Peter Strasser;1913;1919;1999;SC;Carpet Bombing Doctrine;High;1416;X
+855200;Head of State;Vollzugsrat;1914;1932;1999;SD;Popular Figurehead;High;8420;X
+855201;Head of State;Zentralrat;1914;1932;1999;SL;Die-hard Reformer;High;8420;X
+855202;Head of State;Friedrich Ebert;1914;1926;1999;SL;Benevolent Gentleman;High;3435;X
+855203;Head of Government;Friedrich Ebert;1914;1926;1999;SL;Political Protege;High;3435;X
+855204;Head of Government;Philipp Scheidemann;1914;1933;1999;SL;Ambitious Union Boss;High;3444;X
+855205;Head of Government;Gustav Bauer;1914;1933;1999;SL;Political Protege;High;3443;X
+855206;Head of Government;Hermann Müller;1914;1933;1999;SL;Naive Optimist;High;3422;X
+855207;Head of Government;Constantin Fehrenbach;1914;1927;1999;SC;Backroom Backstabber;High;3445;X
+855208;Head of Government;Joseph Wirth;1914;1933;1999;SC;Silent Workhorse;High;3423;X
+855209;Head of Government;Wilhelm Carl Josef Cuno;1914;1933;1999;SC;Happy Amateur;High;3446;X
+855210;Head of Government;Gustav Stresemann;1914;1930;1999;ML;Flamboyant Tough Guy;High;3433;X
+855211;Head of Government;Wilhelm Marx;1914;1933;1999;SC;Corporate Suit;High;3447;X
+855212;Foreign Minister;Hugo Haase;1914;1920;1999;SD;Ideological Crusader;High;3436;X
+855213;Foreign Minister;Ulrich von Brockdorff-Rantzau;1914;1929;1999;SC;Biased Intellectual;High;3420;X
+855214;Foreign Minister;Hermann Müller;1919;1923;1999;SL;Iron Fisted Brute;High;3422;X
+855215;Foreign Minister;Adolf Köster;1920;1923;1999;SL;General Staffer;High;3413;X
+855216;Foreign Minister;Walter Simons;1920;1924;1999;SC;Ideological Crusader;High;3428;X
+855217;Foreign Minister;Friedrich Rosen;1921;1924;1999;SC;Great Compromiser;High;3414;X
+855218;Foreign Minister;Joseph Wirth;1921;1925;1999;SC;Apologetic Clerk;High;3423;X
+855219;Foreign Minister;Walther Rathenau;1922;1925;1999;ML;Biased Intellectual;High;3429;X
+855220;Foreign Minister;Frederic von Rosenberg;1922;1926;1999;SC;The Cloak N Dagger Schemer;High;3991;X
+855221;Foreign Minister;Gustav Stresemann;1923;1930;1999;ML;Ideological Crusader;High;3433;X
+855222;Minister of Armament;Philipp Scheidemann;1914;1925;1999;SL;Administrative Genius;High;3444;X
+855223;Minister of Armament;Eugen Schiffer;1914;1925;1999;ML;Submarine Proponent;High;3454;X
+855224;Minister of Armament;Bernhard Dernburg;1919;1922;1999;ML;Military Entrepreneur;High;3453;X
+855225;Minister of Armament;Matthias Erzberger;1919;1922;1999;SC;laissez-faire capitalist;High;3465;X
+855226;Minister of Armament;Joseph Wirth;1920;1923;1999;SC;Air Superiority Proponent;High;3423;X
+855227;Minister of Armament;Andreas Hermes;1921;1924;1999;SC;Strategic Air Proponent;High;3457;X
+855228;Minister of Armament;Rudolf Hilferding;1923;1926;1999;SL;Administrative Genius;High;3466;X
+855229;Minister of Armament;Hans Luther;1923;1927;1999;ML;Infantry Proponent;High;3455;X
+855230;Minister of Armament;August Müller;1914;1925;1999;SL;laissez-faire capitalist;High;unknownminister;X
+855231;Minister of Armament;Rudolf Wissell;1914;1925;1999;SL;Air Superiority Proponent;High;8417;X
+855232;Minister of Armament;Robert Schmidt;1919;1922;1999;SL;Strategic Air Proponent;High;8416;X
+855233;Minister of Armament;Ernst Scholz;1920;1923;1999;ML;Administrative Genius;High;unknownminister;X
+855234;Minister of Armament;Johann Becker;1922;1925;1999;ML;Corrupt Kleptocrat;High;8400;X
+855235;Minister of Armament;Hans von Raumer;1923;1926;1999;ML;Resource Industrialist;High;unknownminister;X
+855236;Minister of Armament;Joseph Koeth;1923;1926;1999;SL;Battle Fleet Proponent;High;8403;X
+855237;Minister of Armament;Eduard Hamm;1923;1926;1999;ML;Theoretical Scientist;High;8380;X
+855238;Minister of Armament;Walther Reinhardt;1914;1925;1999;SC;Infantry Proponent;High;1478;X
+855239;Minister of Armament;Gustav Noske;1919;1922;1999;SL;Military Entrepreneur;High;8391;X
+855240;Minister of Armament;Otto Geßler;1920;1923;1999;ML;Tank Proponent;High;8411;X
+855241;Minister of Security;Friedrich Ebert;1914;1925;1999;SL;Compassionate Gentleman;High;3435;X
+855242;Minister of Security;Hugo Preuß;1914;1925;1999;ML;Man of the People;High;3470;X
+855243;Minister of Security;Eduard David;1919;1922;1999;SL;Prince of Terror;High;3467;X
+855244;Minister of Security;Erich Koch-Weser;1919;1924;1999;ML;Crime Fighter;High;3479;X
+855245;Minister of Security;Georg Gradnauer;1921;1924;1999;SL;Silent Lawyer;High;3468;X
+855246;Minister of Security;Adolf Köster;1921;1925;1999;SL;Back Stabber;High;3413;X
+855247;Minister of Security;Rudolf Oeser;1922;1926;1999;ML;Efficient Sociopath;High;3993;X
+855248;Minister of Security;Wilhelm Sollmann;1923;1926;1999;SL;Compassionate Gentleman;High;3469;X
+855249;Minister of Security;Karl Jarres;1923;1927;1999;ML;Man of the People;High;3992;X
+855250;Minister of Security;Martin Schiele;1924;1928;1999;FA;Prince of Terror;High;8409;X
+855251;Head of Military Intelligence;Martin Braune;1914;1925;1999;SC;Dismal Enigma;High;unknownminister;X
+855252;Head of Military Intelligence;Ferdinand Boehmer;1921;1925;1999;SC;Naval Intelligence Specialist;High;unknownminister;X
+855253;Head of Military Intelligence;Leo Riedel;1924;1925;1999;SC;Technical Specialist;High;unknownminister;X
+855254;Head of Military Intelligence;Friedrich Gempp;1921;1925;1999;SC;Logistics Specialist;High;8384;X
+855255;Chief of Staff;Paul von Hindenburg;1914;1925;1999;SC;School of Fire Support;High;1467;X
+855256;Chief of Staff;Hans von Seeckt;1914;1925;1999;SC;School of Fire Support;High;1346;X
+855257;Chief of Staff;Wilhelm Heye;1920;1925;1999;SC;School of Manoeuvre;High;8426;X
+855258;Chief of Staff;Otto Hasse;1923;1925;1999;SC;School of Mass Combat;High;8412;X
+855259;Chief of Army;Wilhelm Groener;1914;1925;1999;SC;Decisive Battle Doctrine;High;3403;X
+855260;Chief of Army;Walther Reinhardt;1914;1925;1999;SC;Guns and Butter Doctrine;High;1478;X
+855261;Chief of Army;Hans von Seeckt;1920;1927;1999;SC;Armoured Spearhead Doctrine;High;1346;X
+855262;Chief of Navy;Maximilian Rogge;1914;1925;1999;SC;Base Control Doctrine;High;unknownminister;X
+855263;Chief of Navy;Adolf von Trotha;1914;1925;1999;SC;Open Seas Doctrine;High;1351;X
+855264;Chief of Navy;William Michaelis;1920;1925;1999;SC;Decisive Naval Battle Doctrine;High;unknownminister;X
+855265;Chief of Navy;Paul Behncke;1920;1925;1999;SC;Power Projection Doctrine;High;8414;X
+855266;Chief of Navy;Hans Zenker;1924;1929;1999;SC;Indirect Approach Doctrine;High;8183;X
+855267;Chief of Air Force;Hermann von der Lieth-Thomsen;1915;1925;1999;SC;vertical envelopment doctrine;High;1474;X
+855268;Chief of Air Force;Ernst von Hoeppner;1914;1925;1999;SC;Naval Aviation Doctrine;High;1325;X
+855269;Chief of Air Force;Wilhelm Haehnelt;1918;1925;1999;SC;Air Superiority Doctrine;High;unknownminister;X
+855300;Head of State;Erich Ludendorff;1914;1933;1999;FA;Autocratic Charmer;High;3401;X
+855301;Head of State;Paul von Hindenburg;1914;1933;1999;PA;Popular Figurehead;High;1467;X
+855302;Head of State;Adolf Hitler;1914;1933;1999;NS;Powerhungry Demagogue;High;3485;X
+855303;Head of State;Wilhelm II;1914;1933;1999;PA;Weary Stiffneck;High;3451;X
+855304;Head of State;Wilhelm III;1914;1933;1999;PA;Weary Stiffneck;High;3450;X
+855305;Head of State;Walther von Lüttwitz;1914;1933;1999;FA;Barking Buffoon;High;1483;X
+855306;Head of Government;Wolfgang Kapp;1914;1923;1999;FA;Happy Amateur;High;3482;X
+855307;Head of Government;Gustav Noske;1914;1933;1999;SC;Silent Workhorse;High;8391;X
+855308;Head of Government;Adolf Hitler;1914;1933;1999;NS;Flamboyant Tough Guy;High;3485;X
+855309;Head of Government;Gregor Strasser;1914;1933;1999;FA;Ambitious Union Boss;High;8390;X
+855310;Head of Government;Walther von Lüttwitz;1914;1933;1999;FA;Old General;High;1483;X
+855311;Foreign Minister;Ulrich von Hassell;1918;1933;1999;PA;General Staffer;High;8419;X
+855312;Foreign Minister;Albrecht von Graefe;1914;1933;1999;FA;The Cloak N Dagger Schemer;High;8377;X
+855313;Foreign Minister;Franz von Reichenau;1914;1933;1999;PA;Biased Intellectual;High;unknownminister;X
+855314;Foreign Minister;Heinrich Claß;1914;1933;1999;FA;Ideological Crusader;High;8394;X
+855315;Minister of Armament;Johann Albrecht zu Mecklenburg;1914;1921;1999;PA;Military Entrepreneur;High;8399;X
+855316;Minister of Armament;Alfred Hugenberg;1914;1933;1999;PA;Corrupt Kleptocrat;High;8378;X
+855317;Minister of Armament;Gottfried Feder;1918;1933;1999;NS;Theoretical Scientist;High;8389;X
+855318;Minister of Armament;Oskar Hergt;1914;1933;1999;FA;Air Superiority Proponent;High;8410;X
+855319;Minister of Armament;Hermann Dietrich;1914;1933;1999;FA;Strategic Air Proponent;High;8396;X
+855320;Minister of Armament;Max Rötger;1914;1924;1999;PA;Administrative Genius;High;unknownminister;X
+855321;Minister of Armament;Hugo Stinnes;1914;1925;1999;PA;laissez-faire capitalist;High;3464;X
+855322;Minister of Armament;Ernst von Wrisberg;1914;1928;1999;FA;Resource Industrialist;High;8382;X
+855323;Minister of Armament;Otto von Lossow;1914;1933;1999;PA;Infantry Proponent;High;3484;X
+855324;Minister of Armament;Alfred von Tirpitz;1914;1931;1999;FA;Battle Fleet Proponent;High;1454;X
+855325;Minister of Security;Wilhelm Kube;1918;1933;1999;NS;Compassionate Gentleman;High;8427;X
+855326;Minister of Security;Wilhelm Frick;1918;1933;1999;FA;Ruthless Organizer;High;8425;X
+855327;Minister of Security;Christian Roth;1918;1933;1999;PA;Man of the People;High;8379;X
+855328;Minister of Security;Hans Heinrich Lammers;1918;1933;1999;NS;Silent Lawyer;High;8392;X
+855329;Minister of Security;Kuno von Westarp;1914;1933;1999;FA;Back Stabber;High;8406;X
+855330;Minister of Security;Traugott von Jagow;1914;1933;1999;PA;Crime Fighter;High;8154;X
+855331;Minister of Security;Hans von Seißer;1914;1933;1999;PA;Efficient Sociopath;High;3487;X
+855332;Head of Military Intelligence;Wilhelm Canaris;1918;1933;1999;FA;Brilliant Spymaster;High;8424;X
+855333;Head of Military Intelligence;Hermann Ehrhardt;1914;1933;1999;FA;Political Specialist;High;3481;X
+855334;Head of Military Intelligence;Walter Nicolai;1914;1933;1999;PA;Political Specialist;High;3448;X
+855335;Chief of Navy;Alfred von Tirpitz;1914;1931;1999;FA;Open Seas Doctrine;High;1454;X
+855336;Chief of Navy;Magnus Levetzow;1914;1933;1999;PA;Base Control Doctrine;High;1366;X
+855337;Chief of Navy;Adolf von Trotha;1914;1933;1999;FA;Decisive Naval Battle Doctrine;High;1351;X
+855338;Chief of Navy;Max von Grapow;1914;1925;1999;PA;Power Projection Doctrine;High;8428;X
+855339;Chief of Staff;Walther von Lüttwitz;1914;1933;1999;FA;School of Manoeuvre;High;1483;X
+855340;Chief of Staff;Rüdiger von der Goltz;1914;1933;1999;FA;School of Fire Support;High;1245;X
+855341;Chief of Staff;Erich Ludendorff;1914;1933;1999;FA;School of Mass Combat;High;3401;X
+855342;Chief of Staff;Paul von Hindenburg;1914;1933;1999;PA;School of Fire Support;High;1467;X
+855343;Chief of Staff;Oskar von Hutier;1914;1933;1999;PA;School of Psychology;High;1267;X
+855344;Chief of Army;August von Mackensen;1914;1933;1999;FA;Armoured Spearhead Doctrine;High;3483;X
+855345;Chief of Army;Paul von Lettow-Vorbeck;1914;1933;1999;FA;Guns and Butter Doctrine;High;1274;X
+855346;Chief of Army;Ludwig von Estorff;1914;1933;1999;FA;Decisive Battle Doctrine;High;8408;X
+855347;Chief of Army;Burghard von Oven;1914;1933;1999;FA;Static Defence Doctrine;High;1372;X
+855348;Chief of Army;Otto von Lossow;1914;1933;1999;PA;elastic defence doctrine;High;3484;X
+855349;Chief of Air Force;Hermann von der Lieth-Thomsen;1915;1933;1999;PA;vertical envelopment doctrine;High;1474;X
+855350;Chief of Air Force;Ernst von Hoeppner;1914;1933;1999;PA;Naval Aviation Doctrine;High;1325;X
+855351;Chief of Air Force;Wilhelm Haehnelt;1918;1933;1999;PA;Air Superiority Doctrine;High;unknownminister;X
+855352;Chief of Air Force;Hermann Göring;1920;1933;1999;NS;The Iron Knight;High;1291;X
+855353;Minister of Security;Karl Helfferich;1913;1925;1999;FA;Efficient Sociopath;High;3458;X
+855354;Minister of Security;Max Wallraf;1914;1933;1999;FA;Crime Fighter;High;3472;X
+855355;Minister of Armament;Karl Helfferich;1912;1925;1999;FA;laissez-faire capitalist;High;3458;X
+855356;Head of State;Eitel Friedrich von Preußen;1914;1933;1999;SC;weary stiffneck;High;8858;X
+855357;Foreign Minister;Harry Clemens Ulrich von Kessler;1917;1933;1999;SL;biased intellectual;High;8859;X
+855358;Minister of Armament;Hjalmar Schacht;1920;1933;1999;SC;Reformer;High;8860;X
+855359;Minister of Armament;Rudolf Havenstein;1900;1923;1999;SC;Mixed economy;High;8861;X
+855360;Head of State;Wilhelm Marx;1925;1933;1999;SC;Barking Buffoon;High;3447;X
+855361;Head of State;Ernst Thälmann;1925;1933;1999;ST;Autocratic Charmer;High;3578;X
+855362;Head of Government;Hans Luther;1925;1933;1999;ML;Naive Optimist;High;3455;X
+855363;Head of Government;Heinrich Brüning;1930;1933;1999;SC;Political Protege;High;unknownminister;X
+855364;Head of Government;Franz von Papen;1932;1964;1999;PA;Happy Amateur;High;unknownminister;X
+855365;Head of Government;Kurt von Schleicher;1932;1964;1999;PA;Backroom Backstabber;High;unknownminister;X
+855366;Minister of Armament;Julius Curtius;1925;1933;1999;SC;laissez-faire capitalist;High;unknownminister;X
+855367;Minister of Security;Wilhelm Külz;1925;1933;1999;ML;Compassionate Gentleman;High;unknownminister;X
+855368;Minister of Security;Carl Severing;1925;1933;1999;SD;Back Stabber;High;unknownminister;X
+855369;Foreign Minister;Julius Curtius;1930;1933;1999;SC;Great Compromiser;High;unknownminister;X
+855370;Minister of Security;Joseph Wirth;1930;1933;1999;SC;Silent Lawyer;High;3423;X
+855371;Minister of Security;Wilhelm von Gayl;1932;1964;1999;PA;Prince of Terror;High;M15;X
+855372;Minister of Armament;Johann Schwerin von Krosigk;1932;1964;1999;NS;Resource Industrialist;Very High;M49;X
+855373;Minister of Security;Franz Bracht;1932;1964;1999;SC;Crime Fighter;High;unknownminister;X

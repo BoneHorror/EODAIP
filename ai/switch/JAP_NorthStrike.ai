@@ -1,0 +1,316 @@
+# Japan vs Soviets AI File by Nekron
+
+target = { 
+	1164 = 30 #Ust-Kut Airfield
+	1142 = 30 #Novosibirsk
+	1138 = 30 #Omsk
+} 
+max_garrison_prop = 0.20
+min_garrison_prop = 0.15
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	SOV = 100
+	CHI = 0
+	CSX = 0
+	SIK = 0
+	CXB = 0
+	CYN = 0
+	CGX = 0
+	CHC = 5
+}
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	max_batch_peace 		= 510 
+	max_batch_war 			= 510 
+	max_batch_home_front 	= 225
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.5
+	overseas_multiplier = 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 1.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 40	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 20
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 5
+		CSX = 5
+		SIK = 5
+		CXB = 5
+		CYN = 5
+		CGX = 5
+		CHC = 10
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 20
+		POR = -1
+		ENG = 10
+		FRA = 10
+		U05 = 10
+		USA = 10
+		AST = 10
+		NZL = 10
+		U02 = 10
+	}
+	province_priorities = {
+	}
+	area_multiplier = {
+		1672  = 1.0  #Marcus Island
+		1684  = 1.0  #Rota
+		1562  = 1.0  #Anami
+		1234  = 1.0  #Jeju
+		1662  = 1.0  #Bonin Island
+		1225  = 1.8  #Cheongjin
+		1191  = 2.0  #Vladivostok
+		1212  = 1.4  #Yanji
+		1205  = 1.5  #Mudanjiang
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.10
+	min_attack_odds		= 1.01
+	max_attack_odds		= 4.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+   	enemy_handicap = { SOV = 10 } 
+    passivity = {
+		SOV = 50
+		MON = 30
+		U02 = 10
+		CHC = 10
+		CYN = 20
+		CXB = 20
+		CSX = 20
+		CHI = 20
+	}  
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion	= yes
+
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 20.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 150.0  #About the distance from Japan to Batavia
+	max_staging_distance = 60.0	# How far should the staging area be from the target invasion point
+	distance			= 1.0	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.0	#prioritise taking pure islands.
+	enemy				= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.7	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    naval_base 			= 0.1 
+    air_support 		= 3.0 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+	province_priorities = yes
+      
+	staging_province = {
+		1399  #Saigon
+		1361  #Kaohsung
+		1647  #Truk
+		1553  #Osaka
+		1231  #Busan
+		1726  #Rabaul
+		1432  #Singapore
+		1686  #Saipan
+		1670  #Palau
+		1676
+		1552
+		2174
+		2151
+		1659
+	}
+	target = {
+		# Japanese Heartland
+		1562  = 4000  #Amami
+		1564  = 4000  #Okinawa
+		1362  = 7000  #Taibei
+		1361  = 7000  #Gaoxiong
+		1662  = 7000  #Bonin Islands
+		1661  = 8000  #Iwo Jima
+		1543  = 7000  #Etorufu
+		1542  = 7000  #Toyohara
+		1541  = 6000  #Okha  (Soviet Controlled)
+		
+		# Soviet Coast
+		1191  = 8000  #Vladivostok
+		1185  = 7000  #Gavan
+		1189  = 6000  #Amur
+		1184  = 4000  #Petropavlowsk
+
+		#Philippines
+		1567  = 675  #Lingayen Gulf
+		1568  = 675  #Lamon Bay
+		1577  = 675  #Legaspi
+		1579  = 675  #Davao
+		1575  = 450  #Samar
+		1573  = 450  #Leyte
+		1574  = 450  #Negros
+		1576  = 450  #Panay
+		1571  = 450  #Mindoro
+		1572  = 450  #Palawan
+
+		#Outer Japanese Islands
+		1686  = 5250  #Saipan
+		1685  = 5250  #Tinian
+		1684  = 5250  #Rota
+		1683  = 5250  #Guam
+		1670  = 5250  #Palau
+		1672  = 5250  #Marcus Island
+
+		#Netherlands East Indies
+		1649  = 600  #Semarang
+		1656  = 600  #Madura
+		1636  = 375  #Palembang
+		1635  = 375  #Dumai
+
+		#Borneo
+		1625  = 45  #Mini
+		1624  = 45  #Kuching
+		1631  = 45  #Pontianak
+		1632  = 45  #Balikpapan
+		1627  = 45  #Tarakan
+
+		#Singapore
+		1436  = 25  #Kota Bahru
+		1435  = 25  #Alor Star
+		1432  = 65  #Singapore
+
+		#China
+		1241  = 550  #Tianjin
+		1328  = 550  #Qingdao
+		1338  = 550  #Shanghai
+		1333  = 550  #Nanton
+		1334  = 550  #Lianyuang
+		1358  = 540  #Fuzhou
+
+		#USA
+		1673  = 575  #Wake Island
+		1734  = 670  #Pearl Harbor
+		1736  = 555  #Hawai
+		1738  = 630  #Johnston
+		1739  = 680  #Midway
+		1678  = 650  #Majuro
+		1680  = 615  #Tarawa
+		1874  = 505  #Seattle
+
+		#Britain
+		1371  = 725  #Hong Kong
+
+		#Far Outer Rim Japanese Islands
+		1675  = 255  #Eniwetok
+		1674  = 255  #Bikini
+		1676  = 255  #Wotje
+		1681  = 255  #Kwajalein
+		1677  = 255  #Maloelap
+		1679  = 255  #Mili
+		1687  = 255  #Ponape
+		1728  = 255  #Kosrae
+		1669  = 255  #Ngulu
+		1668  = 255  #Yap
+		1667  = 255  #Ulithi
+		1665  = 255  #Wolelai
+		1666  = 255  #Woleai
+		1634  = 255  #Pulusok
+		1647  = 255  #Truk
+
+		#Indonesia
+		1659  = 250  #Menado
+		1657  = 250  #Makassar
+
+		#New Britain
+		1726  = 230  #Rabaul
+
+		#Indonesia
+		1620  = 195  #Helmahera
+		1621  = 195  #Buru
+		1622  = 195  #Ceram
+
+		#North New Guinea
+		1639  = 215  #Biak Island
+		1600  = 215  #Babo
+		1642  = 215  #Arare
+		1596  = 245  #Hollandia
+		1604  = 175  #Lae
+
+		#North Solomon Islands
+		1724  = 175  #Admirality Islands
+		1725  = 175  #New Ireland
+		1607  = 175  #Buka Island
+		1587  = 175  #Bougainville
+
+		# NEI Last Remaining Islands
+		1643  = 180  #Bali
+		1619  = 180  #Lombok
+		1644  = 180  #Sumbawa
+		1615  = 180  #Flores
+		1645  = 180  #Sumba
+		1616  = 180  #West Timor
+	} 
+} 
+admiral = { 
+	min_org		= 80	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 68    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 50 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	target = {
+		2516  = 200
+		2517  = 200
+		2518  = 200
+		2514  = 150
+		2515  = 100
+		2524  = 100
+		2523  = 100
+	} 
+	core = {
+		2489
+		2490
+		2491
+		2492
+		2494
+		2497
+		2498
+		2499
+		2501
+		2512
+	} 
+}

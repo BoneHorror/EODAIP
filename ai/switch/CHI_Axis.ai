@@ -1,0 +1,781 @@
+strat_redeploy_threshold = 20
+
+max_front_ratio		= 1.2
+max_garrison_prop	= 0.2
+min_garrison_prop	= 0.1
+
+war = 1 
+neutrality = 25
+#reinforcement = 0.3500 
+upgrading = 0.1500 
+
+exp_force_ratio			= 0.5
+exp_force_ratios = { JAP = 1.0 }  
+no_exp_forces_to = {
+	MAN MEN U03 SIA
+}
+
+leader_ratio = {
+	land_field_marshal 	=0.02
+	land_general 		=0.031
+	land_lt_general 	=0.41
+
+	sea_grand_admiral 	=0.02
+	sea_admiral 		=0.061
+	sea_vice_admiral 	=0.401
+
+	air_marshal 		=0.02
+	air_general 		=0.091
+	air_lt_General 		=0.11
+}
+
+####################################################################
+# Diplomacy
+####################################################################
+combat = {
+	CHC = 100
+	TIB = 100
+}
+protect = { 
+	JAP = 100
+	MAN = 50
+	MEN = 50
+	U03 = 25
+}
+befriend = {
+	JAP = 100
+	SIA = 50
+	MAN = 50
+	MEN = 50
+	U03 = 25
+	
+}
+target = { 
+	1259 = 300 # Yan'an
+	1247  = 25
+	1338  = 20
+	1289  = 300
+	1295  = 300
+	1538  = 100
+	1517  = 100
+	1506  = 120
+	1491  = 120
+	1459  = 150
+	651  = 150
+	1406  = 150
+	1276  = 180
+	1415  = 200
+	1409  = 200
+	1408  = 200
+	}
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.1
+	percentage_foreign_mission 	= 0.3
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
+	spyprefsdata = 
+	{
+		NumberOfSpies = 10
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country = CHI
+	}
+	spyprefsdata = {
+		country_priorities	= 10
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 3
+		coup 				= 0
+		sabotage_industry 	= 4
+		nuclear_sabotage 	= 0
+		found_partisans		= 3
+		massmedia 			= 1
+		disrupt_techteam 	= 5
+		country 			= ENG
+	}
+	spyprefsdata = {
+		country_priorities	= 10
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 3
+		coup 				= 0
+		sabotage_industry 	= 4
+		nuclear_sabotage 	= 0
+		found_partisans		= 3
+		massmedia 			= 1
+		disrupt_techteam 	= 5
+		country 			= USA
+	}
+	spyprefsdata = {
+		country_priorities	= 5
+		steal_blueprint 	= 7
+		minister_assassination 		= 1
+		smear_campaign 		= 3
+		coup 				= 2
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans 	= 2
+		massmedia 			= 1
+		disrupt_techteam	= 5
+		country 			= U02
+	}
+}
+####################################################################
+# Economy
+####################################################################
+construction = {
+	max_factor		= 0.2	# [0.0-1.0] Proportion of Production IC that should be used for province buildings.
+
+	AA_batteries	 	= no	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	max_AA_level		= 5	# Don't improve beyond this level.
+	AA_provs		= { }	# List of prioritized provinces
+
+	coastal_fort 		= no	# [yes/no/atwar/not_atwar]
+	max_coastal_level	= 2	# Don't improve beyond this level.
+	coastal_fort_provs	= { }	# List of prioritized provinces
+
+	radar_station 		= no	# [yes/no/atwar/not_atwar]
+	max_radar		= 1	# Don't improve beyond this level.
+	radar_provs		= { }	# List of prioritized provinces
+
+	air_base 		= yes	# [yes/no/atwar/not_atwar]
+	max_air_base		= 2	# Don't improve beyond this level.
+	air_base_provs   = { 1310 1311 1354 1296 1305 1390 1297 1264 }
+
+	naval_base 		= no	# [yes/no/atwar/not_atwar]
+	max_naval_base		= 3	# Don't improve beyond this level.
+	naval_base_provs	= { }	# List of prioritized provinces
+
+	land_fort		= no	# [yes/no/atwar/not_atwar]
+	max_land_level		= 1	# Don't improve land forts beyond this level.
+
+	fort_borders = { ENG FRA U02 SOV }
+
+	ic_at_war		= yes	# [yes/no] Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	force_ic_until		= 1937	# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	ic_end_year		= 1950	# Stop building IC at the end of year X.
+	IC_provs		= { }	# List of prioritized provinces
+}
+military = {
+	relative_build_scheme 	= no
+	max_batch_peace 	= 800 # Max production run length in DAYS while at peace
+	max_batch_war 		= 700 # Max production run length in DAYS while at war with no home front
+	max_batch_home_front 	= 600 # Max production run length in DAYS while at war with home fronts
+        extra_convoys_war = 0.0500 
+        extra_convoys_peace = 0.0500
+
+	infantry 	=	30
+	cavalry 	=	15
+	motorized 	= 	0
+	mechanized 	= 	0
+	light_armor 	= 	2
+	armor 		=	0
+	paratrooper 	= 	0
+	marine 		=	0
+	bergsjaeger 	= 	26
+	garrison 	=	0
+	hq 		=	4
+	militia 	=	0
+					# 85 %
+
+	multi_role 	= 	5
+	interceptor 	= 	0
+	strategic_bomber =	0
+	tactical_bomber =	10
+	naval_bomber 	=	0
+	cas 		=	0
+	transport_plane =	0
+	flying_bomb 	=	0
+	flying_rocket 	=	0
+					# 15 %
+	carrier 	=	0
+	battleship 	=	1
+	battlecruiser 	=	0
+	heavy_cruiser 	=	1
+	light_cruiser 	=	1
+	destroyer 	=	3
+	submarine 	=	0
+	transport 	=	2
+					# 0 %
+	# NOTE: The sum _must_ be exactly 100%!
+
+	# Brigade preferences:
+	# (% of eligible division types that should be built with a certain brigade type)
+	# Land types:
+	artillery		= 10
+	sp_artillery		= 0
+	cavalry_brigade	= 5
+	sp_anti_air	= 0
+	medium_armor		= 0
+	tank_destroyer		= 0
+	light_armor_brigade	= 5
+	heavy_armor		= 0
+	super_heavy_armor	= 0
+	armored_car		= 10
+	anti_air		= 5
+	police		= 20
+	engineer		= 10
+	# Sum of these should be <= 100
+		escort 		= 0
+	# Naval types:
+	cag			= 100
+	# Sum of these should be <= 100
+
+            naval_asw = 0.0000 
+            naval_anti_air_s = 0.0000 
+            naval_radar_s = 0.0000 
+            naval_fire_controll_s = 0.0000 
+            naval_improved_hull_s = 0.0000 
+            naval_torpedoes_s = 0.0000 
+            naval_anti_air_l = 0.0000 
+            naval_radar_l = 0.0000 
+            naval_fire_controll_l = 0.0000 
+            naval_improved_hull_l = 0.0000 
+            floatplane = 0.0000
+}
+technology = { 
+	endgoal = { } 
+	preference = {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Field Artillery
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+		
+		# Manpower Focus Human Wave Path (SOV)
+		6570 6300 6310 6320 6330 6340 6350 6360 6370 14060
+	} 
+	ignore = {
+		# Motorized Infantry
+		1396 1400 1410 1420 1430 1440 1450 1460
+		
+		# Airborne Infantry
+		1670 1680 1690 1700 1710 1720 1730 1740
+
+		# Marines
+		1560 1570 1580 1590 1600 1610 1620 1630 1640 1650 1660
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+		
+		#Light armor brigades only techs / advanced Light armor
+		2010 2630 2640 2646 2650 2060
+
+		#Light armor brigades & Divisions techs
+		2030 2040 2050 
+
+		#Medium armor brigades & Divisions techs
+		2070 2080 2090 2140 11000 2660 11010 2670
+
+		#Heavy armor brigades
+		2620 2100 2110 2120 2126 2127
+
+		#Super heavy armor brigade
+		2130
+
+		#Tank Destroyer
+		2170 2180 2850 2190 2200 2210 11020 11026
+
+		#Self-Propelled Artillery
+		2220 2230 2240 2250 11030 11040 2960 2966
+
+		#Static Anti-Air Artillery
+		2800 2450 21180 21190 21200 2460 2470 2480 2490 2500 11080
+
+		# Anti-Air Brigades
+		2810 2820 2510 2520 2530 2540 11090 
+
+		#Anti tank
+		2400 2410 2420 2430 
+
+		# Rocket
+		2970 2370 2380 2390 
+
+		# SP-Rocket
+		2980 2260 2270 2280 11050 11060 2990
+
+		# Self-Propelled Anti-Air
+		22910 22920 22930 22940 22950 22960 
+
+		# Custom Equipment
+		5920 5930 5940 5950 5960 5970 5980 5990
+		
+		# Applied Assembly lines
+		5150 5160 5170
+
+		# Agriculture
+		5010 5700 5710 5020 5030 5040 5720 53000 53010
+
+		# Rocketry
+		5560 7550 7560 7570 7580 7590
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Radar Warning
+		5410 5416 5417 5420 5426 5430 5440 5466 5450 5460 53030 5476 53070
+		
+		# Computers
+		5310 54010 54020 54030 5320 5330 5340
+
+		# CRYPTOGRAPHY
+		5316 5326 5327 5350 5360 5370 5380 5390 5400 53060 53116
+
+		# Escort/Multirole Fighters
+		4040 4050 4070 4080 4100 4110
+		
+		# Close Air Support
+		4400 4170 4280 4450 4180 15120 15130 
+
+		# Naval Bomber
+		4700 4710 4190 4200 4210 15140 15150
+
+		# Strategic Bomber
+		4800 4810 4820 4220 4230 4240 4246 15160 15170 16030
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+
+		#SEAPLANES
+		4740 4750 4760 4770 4780 4790 4850 4860
+
+		# Land Doctrines
+		6900
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
+	}
+ 
+	armor 			= 2
+	infantry 		= 7
+	industry 		= 2
+	aircraft 		= 1
+	naval 			= 0
+	land_doctrines 	= 4
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 0
+}
+####################################################################
+# Military
+####################################################################
+garrison = {
+	# OVERSEAS GARRISONING:
+	defend_overseas_beaches = yes
+
+	# Basic need is X divisions per area where X is: number of provinces - attrition provinces
+	home_multiplier 	= 0.25
+	overseas_multiplier 	= 0.25
+	home_peace_cap 		= 60
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+
+	area_multiplier = { # If an area contains a specific province, multiply the basic need by value (overrides overseas_multiplier, but if it is the home area it is ignored.)
+		638  = 1.5  #List province name here please
+	}
+
+	# PRIORITIES:
+
+	beach = 25					# Beach prio
+	capital = 100				# Our capital
+	human_border = 100			# Ignored for allied human players
+	war_target = 200			# The next country targeted for attack by this AI
+
+	opposing_alliance = 100		# For neutrals, all alliances are "opposing"
+	claim_threat = 100			# If we are neutral, countries with claims on us get this
+	unstable_border	= 50		# Bordering countries at war with someone else get this
+
+
+	country_priorities = {
+		JAP = -1
+		FRA = 50
+		MEN = -1
+		MAN = -1
+		ENG = 50
+		U02 = 70
+		CHC = 70
+	}
+	province_priorities = {
+
+	}
+}
+front = {
+	recklessness 		= 2	
+	distrib_vs_ai 		= offensive	
+	distrib_vs_human 		= offensive
+
+	# Countries we do not counter-attack for a certain number of days
+	enemy_handicap = { }
+
+	passivity = { }
+
+	reserve_prop		= 0.2
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human	= 1.4 
+	enemy_reinf_days 	= 3
+	base_attack_odds	= 1.5
+	min_attack_odds	= 1.1
+	max_attack_odds	= 5.0
+	reinforce_odds	= 1.25
+	withdraw_odds	= 0.6
+
+	occupied 	= 0.7
+	owned 		= 0.7
+
+}
+###################################
+# Air bombardment and defense
+###################################
+# Air AI File For Ground Bombings as priority
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+air_marshal = {
+	min_mission_strength_org	= 0.8
+	icxdayscostfactor 			= 10.0		# How to value true industrial cost when calculating expect causalties
+	manpowercostfactor			= 100.0		# How to value manpower cost when calculating expect causalties
+	destructionriskthreashold 	= 0.2		# when to fear a divisiopn might be destroyed
+
+	# desirability is a multiplier used when calcualting the mission desirability
+	airsuperioritydesirability 		= 30.0
+	groundattackdesirability 		= 40.0
+	inderdictiondesirability 		= 20.0
+	logisticalstrikedesirability 	= 2.0
+	runwaycrateringdesirability 	= 10.0
+	strategicstrikedesirability 	= 10.0
+	installationstrikedesirability 	= 5.0
+	navalstrikedesirability 		= 15.0
+	portstrikedesirability 			= 9.0
+	convoyraiddesirability			= 9.0
+
+	# tolerance is the required kill:loss ration expected to do 
+	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
+	airsuperioritylosstolerance 	= 1.0
+	groundattacklosstolerance 		= 1.0
+	interdictionlosstolerance 		= 2.0
+	logisticalstrikelosstolerance 	= 0.5
+	runwaycrateringlosstolerance 	= 1.5
+	strategicstriketolerance 		= 4.5
+	installationstriketolerance 	= 1.5
+	navalstriketolerance 			= 1.0
+	portstriketolerance 			= 1.0
+	convoyraidtolerance				= 1.0
+
+	# efficency is a tweakable param to adjust according to how 
+	#    much actual damage comes from doing this mission (not to be confused with desirability)
+	logisticalstrikeefficency 	= 0.01
+	runwaycrateringefficency 	= 0.01
+	strategicstrikeefficency 	= 0.01
+	installationstrikeefficency = 0.01
+
+	taskforcetype = { name = "Air Superiority" desiredratio = 0.400 rangeweight = 10.000 airkillpowerweight = 2000.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes air_superiority = yes } 
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.250 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.050 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+}
+
+#Factors regarding amphibious invasions by ai.
+invasion = {
+  	#for evaluating specific province target.
+	base 		= 1.0
+	random 		= 1.0
+	coastal 	= 1.0
+	beach 		= 1.0
+	distance 	= 1.0
+	pocket 		= 1.0
+	island 		= 1.0
+	enemy 		= 1.0
+	adjacentenemy 	= 1.0
+	air_base	= 0.1
+	naval_base	= 0.1
+	air_support	= 0.1
+	ignore 		= no
+	redirect	= nearest
+
+	#specific provinces can be targetted to get special bonuses..
+	target = {
+
+	}
+}
+admiral = {
+	min_org		= 95
+	min_dmg		= 95
+	return_org 	= 50
+	return_dmg 	= 70
+
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+		
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+		
+		#North Sea, East Coast of England
+		"Central Northsea"
+		"West Northsea"
+		"Southeast Northsea"
+		
+		#England/France border Sea Areas
+		"English Channel"
+		"Bay of Biscay"
+		"Cape Finisterre"
+		
+		#Spanish Coast (Atlantic Side)
+		"Portugese Coast"
+		"Cap St Vincent"
+		
+		#Iceland
+		"Faroes Gap"
+		"Denmark Strait"
+		
+		#Ireland/West Coast of England
+		"Irish Sea"
+		"The Hebreides"
+		"Irish West Coast"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#Canada East Coast
+		"Hudson Bay"
+		"Grand Banks"
+		"Canadian Maritimes"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+		
+		#North Atlantic
+		"North Atlantic"
+		"Western Approaches"
+		"The Seamounts"
+		"Azores"
+		
+		#Central Atlantic
+		"Central Atlantic"
+		"Central Mid-Atlantic Ridge"
+		"Bermuda Triangle"
+		"Guiana Basin"
+		"South-Central Mid-Atlantic Ridge"
+		"Cap Verde"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Caribbean Sea and Guilf of Mexico
+		"West Gulf of Mexico"
+		"East Gulf of Mexico" 
+		"Florida Strait"
+		"Yucatan Strait"
+		"Windward Islands"
+		"Central Carribean"
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+		
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+		
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+		
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"US Maritimes"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+		
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+		
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+	target = {
+		2511  = 200
+		2454  = 200
+	} 
+	core = {
+		2518
+		2516
+		2514
+		2524
+		2523
+	}
+}
+
+trade = {
+	favored = {
+		JAP = 100
+		GER = 75
+		ITA = 50
+	}
+	embargo = { }
+
+}
+
+# Factors to modify Tech Sharing
+tech_sharing = {
+	favored = {
+		JAP = 100
+		GER = 75
+		ITA = 50
+		}
+	embargo = { }
+	not = {
+
+	}
+	prioritized = {
+
+	}
+}
+
+

@@ -1,0 +1,380 @@
+#
+# HoI - Hungarian Events
+#
+#		written by Henrik Fåhraeus
+#
+### 2022006  HUN  The End of Czechoslovakia - Ruthenia ceded to Hungary
+### 2022007  HUN  The End of Czechoslovakia - Slovakia given to Hungary
+### 2022008  HUN  The End of Czechoslovakia - Czechoslovakia fight back!
+### 2022009  HUN  The ViennaVienna Dictate - Claim Transylvania with German blessing
+### 2022010  HUN  The Vienna Dictate - Germans rule in Romanian favour
+### 2022011  HUN  The Vienna Dictate - Romania folds under German duress
+### 2022012  HUN  The Vienna Dictate - Romania refuses the demands!
+### 2022013  HUN  The Molotov-Ribbentrop Pact - Eastern Poland to Soviets
+### 2022014  HUN  An interesting opportunity
+### 2022015  HUN  The Romanian Surrender
+### 2022016  HUN  The Hungarian Defeat
+
+#########################################################################
+#  The End of Czechoslovakia - Ruthenia ceded to Hungary
+#########################################################################
+event = { 
+	id = 2022006
+	random = no
+	country = HUN
+
+	# Triggered by SLO 2057001
+
+	name = "EVT_2500_NAME"
+	desc = "EVT_2500_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = relation which = SLO value = 5 }
+		command = { type = relation which = GER value = 5 }
+	}
+}
+#########################################################################
+#  The End of Czechoslovakia - Slovakia given to Hungary
+#########################################################################
+event = { 
+	id = 2022007
+	random = no
+	country = HUN
+
+	# Triggered by CZE 2025003
+
+	name = "EVT_2501_NAME"
+	desc = "EVT_2501_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -20 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = addcore which = 208 } # Bratislava - Czechoslovakia
+		command = { type = addcore which = 211 } # Banská Bystrica - Czechoslovakia
+		command = { type = addcore which = 212 } # Zilina - Czechoslovakia
+		command = { type = addcore which = 209 } # Kosice - Czechoslovakia
+		command = { type = addcore which = 213 } # Chust - Czechoslovakia
+		### added by ewphoenix123 ###
+		command = { type = addcore which = 210 } # Komárno - Czechoslovakia
+		command = { type = addcore which = 209 } # Kosice - Czechoslovakia
+		command = { type = addcore which = 215 } # Uzhorod - Czechoslovakia
+		command = { type = addcore which = 214 } # Presov - Czechoslovakia
+	}
+}
+#########################################################################
+#  The End of Czechoslovakia - Czecho-Slovakia fight back!
+#########################################################################
+event = { 
+	id = 2022008
+	random = no
+	country = HUN
+	
+	# Triggered by CZE 2025003
+	
+	name = "EVT_2502_NAME"
+	desc = "EVT_2502_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 10 }
+		command = { type = relation which = CZE value = -15 }
+	}
+}
+#########################################################################
+#  The Vienna Diktat - Claim Transylvania with German blessing
+#########################################################################
+event = { 
+	id = 2022009
+	random = no
+	country = HUN
+		
+	trigger = {
+		exists = GER
+		exists = ROM
+		control = { province = 296 data = ROM } #Oradea
+		control = { province = 288 data = ROM } #Cluj
+		control = { province = 293 data = ROM } #Miercurea Ciuc
+		control = { province = 292 data = ROM } #Bistrita
+		government = fascist
+		NOT = {
+			war = { country = HUN country = ROM  }
+			puppet = { country = HUN country = SOV  }
+			puppet = { country = ROM country = SOV  }
+			OR = {
+				control = { province = 285 data = -1 } #Timiosara
+				control = { province = 286 data = -1 } #Arad
+				control = { province = 296 data = -1 } #Oradea
+			}
+		}
+	}
+	
+	name = "EVT_2503_NAME"
+	desc = "EVT_2503_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 4 month = september year = 1940 }
+
+	action_a = {
+		name = "ACTIONNAME2503A" # Press the issue
+		ai_chance = 98
+		command = { type = relation which = ROM value = -10 }
+		command = { type = trigger which = 2003031 } # GER
+	}
+	action_b = {
+		name = "ACTIONNAME2503B" # Refrain
+		ai_chance = 2
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = relation which = ROM value = 10 }
+	}
+}
+#########################################################################
+#  The Vienna Diktat - Germans rule in Romanian favor
+#########################################################################
+event = { 
+	id = 2022010
+	random = no
+	country = HUN
+
+	# Triggered by GER 2003031
+
+	name = "EVT_2504_NAME"
+	desc = "EVT_2504_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 5 }
+	}
+}
+#########################################################################
+#  The Vienna Diktat - Romania folds under German duress
+#########################################################################
+event = { 
+	id = 2022011
+	random = no
+	country = HUN
+	
+	# Triggered by ROM 2023004
+	
+	name = "EVT_2505_NAME"
+	desc = "EVT_2505_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -10 }
+		command = { type = relation which = GER value = 5 }
+	}
+}
+#########################################################################
+#  The Vienna Diktat - Romania refuses the demands!
+#########################################################################
+event = { 
+	id = 2022012
+	random = no
+	country = HUN
+	
+	# Triggered by ROM 2023004
+	
+	name = "EVT_2506_NAME"
+	desc = "EVT_2506_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 5 }
+		command = { type = relation which = ROM value = -10 }
+		command = { type = trigger which = 2023006 }
+		#command = { type = alliance which = GER when = 1 } # Alliance with Germany if not already
+	}
+}
+
+#########################################################################################
+# M-R Pact effects copy to ensure HUN doesn't keep any conquests were promised to SOV
+
+event = {
+	id = 2022013
+	random = no
+	country = HUN
+
+	# Triggered by German event 2003029
+
+	name = "EVT_2018_NAME"
+	desc = "EVT_2018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "ACTIONNAME2018A" # Honor the Pact
+		command = { type = secedeprovince which = SOV value = 239 } # Przemysl - Poland#
+		command = { type = secedeprovince which = SOV value = 254 } # Bialystok - Poland#
+		command = { type = secedeprovince which = SOV value = 250 } # Lomza - Poland#	
+		command = { type = secedeprovince which = SOV value = 241 } # Stryj - Poland#
+		command = { type = secedeprovince which = SOV value = 242 } # Lwów - Poland#
+		command = { type = secedeprovince which = SOV value = 244 } # Równe - Poland#
+		command = { type = secedeprovince which = SOV value = 247 } # Brzesc Litewski - Poland#
+		command = { type = secedeprovince which = SOV value = 245 } # Luck - Poland#
+		command = { type = secedeprovince which = SOV value = 238 } # Stanislawów - Poland#
+		command = { type = secedeprovince which = SOV value = 248 } # Pinsk - Poland#
+		command = { type = secedeprovince which = SOV value = 240 } # Tarnopol - Poland#
+		command = { type = secedeprovince which = SOV value = 251 } # Nowogródek - Poland#
+		command = { type = secedeprovince which = SOV value = 255 } # Grodno - Poland#
+		command = { type = secedeprovince which = SOV value = 257 } # Glebokie - Poland#
+		command = { type = secedeprovince which = SOV value = 258 } # Wilno - Poland#
+        command = { type = secedeprovince which = SOV value = 249 } # Sarny - Poland#
+        command = { type = secedeprovince which = SOV value = 256 } # Molodeczno - Poland#
+        command = { type = secedeprovince which = SOV value = 253 } # Slonim - Poland#
+	}
+}
+
+#########################################################################
+#  Hungary exploits the situation
+#########################################################################
+event = {
+	id = 2022014
+	random = no
+	country = HUN
+
+	# Triggered by BUL 2020002
+
+	name = "EVT_2713_NAME"
+	desc = "EVT_2713_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2020002
+		war = { country = BUL country = ROM }
+		random = 40
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 7 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_2713_ACTA" # Hungary gang-bangs Romania
+		ai_chance = 75
+		command = { type = leave_alliance when = 1 }
+
+		command = { type = end_guarantee which = SOV where = HUN }
+		command = { type = end_guarantee which = GER where = HUN }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = ROM }
+		#command = { type = dissent value = -10 }
+		command = { type = sleepevent which = 2023011 }
+		command = { type = sleepevent which = 2020005 }
+		command = { type = sleepevent which = 2020007 }
+		command = { type = sleepevent which = 2023013 }
+		command = { type = trigger which = 2020004 }
+	}
+	action_b = {
+		name = "EVT_2713_ACTB" # Hungary doesn't get involved
+		ai_chance = 25
+		command = { type = non_aggression which = HUN where = ROM }
+		command = { type = sleepevent which = 2020004 }
+		command = { type = sleepevent which = 2023010 }
+		command = { type = sleepevent which = 2023012 }
+		command = { type = sleepevent which = 2020006 }
+		command = { type = sleepevent which = 2022015 }
+		command = { type = sleepevent which = 2020008 }
+		command = { type = sleepevent which = 2023014 }
+		command = { type = sleepevent which = 2022016 }
+		command = { type = sleepevent which = 2023016 }
+	}
+}
+
+#########################################################################
+#  Hungary Victorious - Hungary involved
+#########################################################################
+event = {
+	id = 2022015
+	random = no
+	country = HUN
+
+	# Triggered by ROM 2023012A
+
+	name = "EVT_2716_NAME"
+	desc = "EVT_2720_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "ACTION_NAME_HURRAH" # Bulgaria has won
+		command = { type = addcore which = 285 } # Timisoara - Romania
+		command = { type = addcore which = 286 } # Arad - Romania
+		command = { type = addcore which = 287 } # Turda - Romania 
+		command = { type = addcore which = 288 } # Cluj - Romania
+		command = { type = addcore which = 289 } # Alba Iulia - Romania
+		command = { type = addcore which = 291 } # Sibiu - Romania
+		command = { type = addcore which = 292 } # Bistrita - Romania
+		command = { type = addcore which = 293 } # Miercurea Ciuc - Romania
+		command = { type = addcore which = 295 } # Resita - Romania 
+		command = { type = addcore which = 296 } # Oradea - Romania
+		command = { type = addcore which = 336 } # Petrovgrad - Balkan
+		command = { type = dissent value = -20 }
+	}
+}
+
+#########################################################################
+#  Hungary Defeated - Hungary involved
+#########################################################################
+event = {
+	id = 2022016
+	random = no
+	country = HUN
+
+	name = "EVT_2725_NAME"
+	desc = "EVT_2725_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2022014
+		control = { province = 284 data = ROM } # Budapest
+		war = { country = HUN country = ROM }
+		NOT = {
+			alliance = { country = BUL country = GER }
+			alliance = { country = ROM country = GER }
+			alliance = { country = HUN country = GER }
+		}
+	}
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_2725_ACTA" # Magyars are unlucky
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = ROM value = 1 }
+		command = { type = secedeprovince which = ROM value = 292 } # Bistrita - Romania
+		command = { type = secedeprovince which = ROM value = 288 } # Cluj - Romania
+		command = { type = secedeprovince which = ROM value = 293 } # Miercurea Ciuc - Romania
+		command = { type = secedeprovince which = ROM value = 296 } # Oradea - Romania
+		#command = { type = secedeprovince which = ROM value = 281 } # Debrecen - Hungary
+		#command = { type = secedeprovince which = ROM value = 283 } # Békéscsaba - Hungary
+		command = { type = removecore which = 288 } # Cluj - Romania
+		command = { type = removecore which = 293 } # Miercurea Ciuc - Romania
+		command = { type = removecore which = 296 } # Oradea - Romania
+		command = { type = removecore which = 292 } # Bistrita - Romania
+		command = { type = dissent value = 20 }
+		command = { type = trigger which = 2023015 } #Romania victorious over Hungary
+	}
+}
+
+
+

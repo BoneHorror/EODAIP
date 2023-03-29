@@ -1,0 +1,51 @@
+RHO;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+745001;Head of State;Sir Herbert J. Stanley;1933;1964;1999;ML;Insignificant Layman;High;M553001;X
+745002;Head of Government;Godfrey Martin Huggins;1933;1964;1999;ML;Corporate Suit;High;M553002;X
+745003;Foreign Minister;Sir Evelyn Baring;1933;1964;1999;ML;Iron Fisted Brute;High;M553003;X
+745004;Minister of Armament;Sir Robert J. Hudson;1933;1964;1999;ML;Administrative Genius;Medium;M553004;X
+745005;Minister of Security;Anthony Sillery;1933;1964;1999;ML;Crime Fighter;Medium;M553005;X
+745006;Head of Military Intelligence;Sir Philip W. Richardson;1933;1964;1999;ML;Industrial Specialist;Medium;M553006;X
+745007;Chief of Staff;Eric de Burgh;1933;1964;1999;ML;School of Fire Support;Medium;L1094;X
+745008;Chief of Army;Philip Carrington;1933;1964;1999;ML;Static Defence Doctrine;Medium;M553008;X
+745009;Chief of Navy;Cecil Drummond;1933;1964;1999;ML;Power Projection Doctrine;Medium;M553009;X
+745010;Chief of Air Force;Sir Charles Arden-Clarke;1933;1964;1999;ML;Naval Aviation Doctrine;Medium;M551008;X
+745011;Head of State;H.H. Litunga Yeta III;1933;1964;1999;PA;Barking Buffoon;High;M553011;X
+745012;Head of State;Sir Hubert Winthrop-Young;1933;1964;1999;SL;Stern Imperialist;High;M553012;X
+745013;Head of State;Kenneth Kaunda;1933;1964;1999;SD;Powerhungry Demagogue;High;M553013;X
+745014;Head of Government;Donald McKenzie-Kennedy;1933;1964;1999;PA;old airmarshal;High;M553014;X
+745015;Head of Government;Sir Charles Arden-Clarke;1933;1964;1999;SL;Old General;High;M551012;X
+745016;Head of Government;Hastings Kamuzu Banda;1933;1964;1999;SD;Ambitious Union Boss;High;M553016;X
+745017;Foreign Minister;Kgoshi III Khama;1933;1964;1999;PA;Biased Intellectual;High;M553017;X
+745018;Foreign Minister;Sir Harold B. Kittermaster;1933;1964;1999;SL;Ideological Crusader;High;M553018;X
+745019;Foreign Minister;Sir Seretse Khama;1933;1964;1999;SD;Apologetic Clerk;High;M553019;X
+745020;Minister of Armament;Sir Roy Welensky;1933;1964;1999;PA;Air to Ground Proponent;Medium;M553020;X
+745021;Minister of Armament;Mulena Yomohulu;1933;1964;1999;SL;Corrupt Kleptocrat;Medium;M553021;X
+745022;Minister of Armament;Paed O'Reilly;1942;1964;1999;SL;Tank Proponent;Medium;M553022;X
+745023;Minister of Armament;Eubule James Waddington;1933;1964;1999;SD;Theoretical Scientist;Medium;M553023;X
+745024;Minister of Security;Enderby Khamatse;1933;1964;1999;PA;Prince of Terror;Medium;M553024;X
+745025;Minister of Security;Maxwell MacDiarmid;1941;1964;1999;PA;Man of the People;Medium;M553025;X
+745026;Minister of Security;Robert Smythe-Cramer;1933;1964;1999;SL;Crooked Kleptocrat;Medium;M553026;X
+745027;Minister of Security;Violet Grigg;1942;1964;1999;SL;Silent Lawyer;Medium;M553027;X
+745028;Minister of Security;Henry Nkumbula;1933;1964;1999;SD;Back Stabber;Medium;M553028;X
+745029;Minister of Security;Muzi Hlongwa;1943;1964;1999;SD;Compassionate Gentleman;Medium;M553029;X
+745030;Head of Military Intelligence;Peter Youens;1933;1964;1999;PA;Naval Intelligence Specialist;Medium;M553030;X
+745031;Head of Military Intelligence;John Alexander Maybin;1941;1964;1999;PA;Political Specialist;Medium;M553031;X
+745032;Head of Military Intelligence;Duncan McAllister;1933;1964;1999;SL;Dismal Enigma;Medium;M553032;X
+745033;Head of Military Intelligence;John Mwanakatwe;1933;1964;1999;SD;Technical Specialist;Medium;M553033;X
+745034;Head of Military Intelligence;Tshekedi Khama;1943;1964;1999;SD;Logistics Specialist;Medium;M553034;X
+745035;Chief of Staff;G.W.D. Nicholson;1933;1964;1999;PA;School of Mass Combat;Medium;M553035;X
+745036;Chief of Staff;Thomas Rees;1941;1964;1999;ML;School of Manoeuvre;Medium;L1260;X
+745037;Chief of Staff;Mulena Yomohulu;1933;1964;1999;SL;School of Defence;Medium;M553021;X
+745038;Chief of Staff;C.M. Grigg;1933;1964;1999;SD;School of Psychology;Medium;M553038;X
+745039;Chief of Army;Ferdinand Charles Stanley;1933;1964;1999;PA;Guns and Butter Doctrine;Medium;M553039;X
+745040;Chief of Army;Dennis C. Capell-Dunn;1941;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M553040;X
+745041;Chief of Army;Mbumu wa Ltunga;1933;1964;1999;SL;Elastic Defence Doctrine;Medium;M553041;X
+745042;Chief of Army;Yomohulu Mburnu;1933;1964;1999;SD;Decisive Battle Doctrine;Medium;M553042;X
+745043;Chief of Navy;H.H. Litunga Yeta III;1933;1964;1999;PA;Base Control Doctrine;Medium;M553011;X
+745044;Chief of Navy;Tommy Gould;1941;1964;1999;ML;Indirect Approach Doctrine;Medium;M74009;X
+745045;Chief of Navy;George Squance;1933;1964;1999;SL;Open Seas Doctrine;Medium;M553045;X
+745046;Chief of Navy;Mbumu wa Ltunga;1933;1964;1999;SD;Decisive Naval Battle Doctrine;Medium;M553041;X
+745047;Chief of Air Force;Donald McKenzie-Kennedy;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M553014;X
+745048;Chief of Air Force;Herbert Croucher;1933;1964;1999;SL;Carpet Bombing Doctrine;Medium;M553048;X
+745049;Chief of Air Force;John Mwanakatwe;1933;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M553033;X

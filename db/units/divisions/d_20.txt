@@ -1,0 +1,26 @@
+# 0 - Lightweight Fighter Miles M.20/Bell XP-77 Douglas XP-48 Tucker XP-57/Caudron C.714/
+model = { 
+	cost 						= 6
+	buildtime	 				= 70
+	defaultorganisation 		= 30
+	morale						= 35
+	manpower					= 0.75
+	maxspeed					= 600
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 3
+	surfacedefence				= 8
+	airdefence					= 10
+	airattack					= 3
+	strategicattack				= 0
+	softattack					= 1
+	hardattack					= 0
+	navalattack					= 0
+	range						= 300
+	supplyconsumption 			= 0.4
+	fuelconsumption				= 0.6
+	upgrade_time_factor 		= 0.2 
+	upgrade_cost_factor 		= 0.16
+	reinforce_time				= 0.2
+	reinforce_cost 				= 0.16
+	equipment = { fighter = 100 manpower = 100 }
+}

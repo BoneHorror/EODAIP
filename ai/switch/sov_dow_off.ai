@@ -1,0 +1,8 @@
+# Soviet wont DOW anyone
+
+war = 0
+ combat = {
+	GER = 100
+	JAP = 80
+	FIN = 80
+}

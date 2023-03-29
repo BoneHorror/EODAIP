@@ -1,0 +1,21 @@
+# Japan fortifies the Pacific Border AI File by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.020 
+
+	coastal_fort = atwar
+	max_coastal_level = 5
+	coastal_fort_provs = {
+		1661  #Iwo Jima
+		1667  #Truk
+		1670  #Peleliu
+		1685  #Saipan
+		1675  #Eniwetok
+		1676  #Kwajalein
+		1726  #Rabaul
+		1564  #Okinawa
+	} 
+}

@@ -1,0 +1,97 @@
+####################################
+# Belgium AI events 
+####################################
+# Behavior Flags
+#	BELDDay		= Load DDay AI
+
+################
+# Load D-Day AI
+#############################################
+event = {
+	id = 3015005
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		flag = DDay
+		NOT = { local_flag = BELDDay }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = BELDDay }
+		command = { type = ai which = "switch/Minor_DDay_ENG.ai" }
+	}
+}
+event = {
+	id = 3015006
+	random = no 
+	country = BEL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { flag = DDay }
+		local_flag = BELDDay
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = BELDDay }
+		command = { type = ai which = "switch/Minor_DDay_Retrack.ai" }
+	}
+}
+################
+# BEL moves their capital
+#############################################
+event = {
+	id = 3015007
+	random = no
+	country = BEL
+
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		control = { province = 899 data = -1 } # Léopoldville
+		NOT = { 
+			control = { province = 115 data = BEL } # Antwerpen
+			control = { province = 108 data = BEL } # Liege
+			control = { province = 114 data = BEL } # Brugge
+			control = { province = 116 data = BEL } # Burssel
+		}
+	}
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = capital which = 899 } # Leopoldville
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 70001 }
+		command = { type = headofgovernment which = 70017 }
+		command = { type = foreignminister which = 70023 }
+		command = { type = armamentminister which = 70034 }
+		command = { type = ministerofsecurity which = 70053 }
+		command = { type = ministerofintelligence which = 70064 }
+	}
+}

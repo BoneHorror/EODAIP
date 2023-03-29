@@ -1,0 +1,90 @@
+# England occupies Baltics to secure them from GER
+
+target = { 
+ 409 = 50 # Instanbul
+ 377 = 50 # Athens
+ 1075 = 50 # Ankara
+} 
+protect = { 
+	YUG = 200
+	BUL = 100
+}
+
+exp_force_ratio = 0.05
+exp_force_ratios = {
+	FRA = 1.0
+} 
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human	= 1.5
+	base_attack_odds	= 1.01
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+ 	invasion			= yes
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 25.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.01	#higher, avoid worst beaches.
+	max_distance   		= 140.0  #About the distance from Japan to Batavia
+	max_staging_distance = 40.0	# How far should the staging area be from the target invasion point
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.4	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
+	air_base			= 2.5
+    naval_base 			= 1.5 
+    air_support 		= 12.0 
+    redirect 			= home
+	ignore				= no
+	help_allies 		= no	#[yes/no]
+
+	staging_province = {
+		717 #Rabat
+        728 #Oran
+        727 #Algiers
+        748 #Bizerte
+        747 #Tunis
+        750 #Tripoli
+        761 #Benghazi
+        765 #Tobruk
+        789 #Alexandria
+        348 #Gibraltar
+        429 #Malta
+		}	
+
+	target = { 
+		# Greece
+        382 = 6000 #Crete
+        372 = 8000 #Patras
+        377 = 7500 #Athens
+        370 = 2000 #Alexandroupoli
+
+        # Yugoslavia/Albania
+        359 = 4500 #Tirana
+        343 = 4500 #Dubrovnik
+        
+        # Turkey
+        378 = 900 #Kalymnos
+        379 = 900 #Rhodes
+        388 = 900 #Nicosia
+		384 = 7000 #Gallipoli
+		1078 = 7000 #Bursa
+	}
+}

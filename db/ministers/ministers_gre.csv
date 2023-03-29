@@ -1,0 +1,284 @@
+GRE;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+90001;Head of State;Georgios II;1933;1964;1999;PA;Insignificant Layman;High;2646;X
+90002;Head of Government;Konstantinos Demertzis;1933;1964;1999;PA;Naive Optimist;High;M18002;X
+90003;Foreign Minister;Konstantinos Demertzis;1933;1964;1999;PA;Biased Intellectual;Very High;M18002;X
+90004;Minister of Armament;Georgios Mantzavinos;1933;1964;1999;PA;Military Entrepreneur;Medium;M18004;X
+90005;Minister of Security;Georgios Logothetis;1933;1964;1999;PA;Crime Fighter;Medium;M18005;X
+90006;Head of Military Intelligence;Georgios Logothetis;1933;1964;1999;PA;Dismal Enigma;Medium;M18005;X
+90007;Chief of Staff;Theodor Pangalos;1933;1964;1999;PA;School of Defence;Low;M18007;X
+90008;Chief of Army;Alexandros Papagos;1933;1964;1999;PA;Elastic Defence Doctrine;Low;M18008;X
+90009;Chief of Navy;Alexandros Sakellariou;1933;1964;1999;PA;Open Seas Doctrine;Medium;8145;X
+90010;Chief of Air Force;Eleftherios Venizelos;1933;1935;1999;PA;Army Aviation Doctrine;Medium;M18010;X
+90011;Head of State;Georgios II;1933;1964;1999;SL;Insignificant Layman;High;2646;X
+90012;Head of State;Archbishop Damaskinos;1941;1964;1999;SL;Barking Buffoon;High;M18032;X
+90013;Head of State;Pavlos I;1947;1964;1999;SL;Die-hard Reformer;High;M18033;X
+90014;Head of State;Georgios II;1933;1964;1999;SC;Insignificant Layman;High;2646;X
+90015;Head of State;Archbishop Damaskinos;1941;1964;1999;SC;Barking Buffoon;High;M18032;X
+90016;Head of State;Pavlos I;1947;1964;1999;SC;Die-hard Reformer;High;M18033;X
+90017;Head of State;Georgios II;1933;1964;1999;FA;Insignificant Layman;High;2646;X
+90018;Head of State;Archbishop Damaskinos;1941;1964;1999;PA;Barking Buffoon;High;M18032;X
+90019;Head of State;Grigoriev Murnov;1941;1964;1999;NS;Weary Stiffneck;High;M18040;X
+90020;Head of State;Mario Vercellino;1942;1964;1999;NS;Resigned Generalissimo;High;M18041;X
+90021;Head of State;Reinhard Altenburg;1943;1964;1999;NS;Autocratic Charmer;High;M18042;X
+90022;Head of State;Pavlos I;1947;1964;1999;PA;Die-hard Reformer;High;M18033;X
+90023;Head of State;Giorgis Siantos;1933;1964;1999;ST;Popular Figurehead;High;M18021;X
+90024;Head of State;Nikos Zahariadis;1944;1964;1999;ST;Autocratic Charmer;High;M18022;X
+90025;Head of Government;Themistocles Sophoulis;1933;1964;1999;SL;Flamboyant Tough Guy;High;M18014;X
+90026;Head of Government;Georgios Papandreou;1944;1964;1999;SL;Silent Workhorse;High;M18015;X
+90027;Head of Government;Panagiolis Poulitsas;1946;1964;1999;SL;Smiling Oilman;High;M18048;X
+90028;Head of Government;Ioannis Metaxas;1933;1964;1999;SC;Old General;High;M18049;X
+90029;Head of Government;Alexandros Korizis;1941;1964;1999;SC;Political Protege;High;M18050;X
+90030;Head of Government;Emmanouel Tsouderos;1941;1964;1999;SC;Happy Amateur;High;M18051;X
+90031;Head of Government;Sophocles Venizelos;1944;1964;1999;SC;Naive Optimist;High;M18012;X
+90032;Head of Government;Konstantinos Tsaldaris;1946;1964;1999;SC;Old General;High;M18053;X
+90033;Head of Government;Dimitrios Maximos;1947;1964;1999;SC;Political Protege;High;M18054;X
+90034;Head of Government;Panagis Tsaldaris;1933;1964;1999;FA;Flamboyant Tough Guy;High;M18055;X
+90035;Head of Government;Georgias Tsolakoglou;1941;1964;1999;NS;Old General;High;M18056;X
+90036;Head of Government;Konstantinos Logothetopoulos;1942;1964;1999;NS;Corporate Suit;High;M18057;X
+90037;Head of Government;Ioannis Rallis;1943;1964;1999;NS;Naive Optimist;High;M18058;X
+90038;Head of Government;Archbishop Damaskinos;1945;1964;1999;PA;Flamboyant Tough Guy;High;M18032;X
+90039;Head of Government;Nikolaos Plastiras;1945;1964;1999;PA;Old General;High;M18060;X
+90040;Head of Government;Petros Voulgaris;1945;1964;1999;PA;Naive Optimist;High;M18061;X
+90041;Head of Government;Panagiotis Kanellopoulos;1945;1964;1999;PA;Smiling Oilman;High;M18062;X
+90042;Head of Government;Militiades Porphyrogins;1933;1964;1999;ST;Ambitious Union Boss;High;M18029;X
+90043;Head of Government;Nikos Zahariadis;1941;1964;1999;ST;Smiling Oilman;High;M18022;X
+90044;Head of Government;Evripidis Bakirtris;1944;1964;1999;ST;Happy Amateur;High;M18065;X
+90045;Head of Government;Markos Vaphiadis;1946;1964;1999;ST;Backroom Backstabber;High;M18066;X
+90046;Foreign Minister;Georgios Papandreou;1944;1964;1999;SL;Biased Intellectual;Very High;M18015;X
+90047;Foreign Minister;Ioannis Safianopoulos;1945;1964;1999;SL;Great Compromiser;Medium;M18068;X
+90048;Foreign Minister;Constantinos Rentis;1946;1964;1999;SL;Apologetic Clerk;Medium;M18069;X
+90049;Foreign Minister;Ioannis Metaxas;1933;1964;1999;SC;General Staffer;Very High;M18049;X
+90050;Foreign Minister;Alexandros Korizis;1941;1964;1999;SC;Great Compromiser;Medium;M18050;X
+90051;Foreign Minister;Emmanouel Tsouderos;1941;1964;1999;SC;Apologetic Clerk;Medium;M18051;X
+90052;Foreign Minister;Sophocles Venizelos;1944;1964;1999;SC;Great Compromiser;Very High;M18012;X
+90053;Foreign Minister;Konstantinos Tsaldaris;1946;1964;1999;ML;The Cloak N Dagger Schemer;Very High;M18053;X
+90054;Foreign Minister;Demosthenes Nicoladis;1933;1964;1999;FA;Ideological Crusader;Very High;M18075;X
+90055;Foreign Minister;Georgias Tsolakoglou;1941;1964;1999;NS;General Staffer;Very High;M18056;X
+90056;Foreign Minister;Konstantinos Logothetopoulos;1942;1964;1999;NS;Biased Intellectual;High;M18057;X
+90057;Foreign Minister;Ioannis Rallis;1943;1964;1999;NS;The Cloak N Dagger Schemer;Very High;M18058;X
+90058;Foreign Minister;Georgios Papandreou;1945;1964;1999;PA;Biased Intellectual;Very High;M18015;X
+90059;Foreign Minister;Ioannes Socrates Politis;1945;1964;1999;PA;Apologetic Clerk;Very High;M18080;X
+90060;Foreign Minister;Panagiotis Kanellopoulos;1945;1964;1999;PA;Great Compromiser;Medium;M18062;X
+90061;Foreign Minister;Panagiotios Demestichas;1946;1964;1999;PA;General Staffer;Very High;M18082;X
+90062;Foreign Minister;Nikos Zahariadis;1933;1964;1999;ST;Ideological Crusader;Very High;M18022;X
+90063;Foreign Minister;Militiades Porphyrogins;1946;1964;1999;ST;General Staffer;Very High;M18029;X
+90064;Foreign Minister;Petros Rousos;1947;1964;1999;ST;Biased Intellectual;Very High;M18085;X
+90065;Minister of Armament;Markos Aganossos;1933;1964;1999;SL;Corrupt Kleptocrat;Medium;M18086;X
+90066;Minister of Armament;Theodoros Marsal;1937;1964;1999;SL;Resource Industrialist;Medium;M18087;X
+90067;Minister of Armament;Themistocles Sophoulis;1941;1964;1999;SL;Administrative Genius;High;M18014;X
+90068;Minister of Armament;Alexandros Svolos;1944;1964;1999;SL;Resource Industrialist;High;M18089;X
+90069;Minister of Armament;Demetrios Gousis;1945;1964;1999;SL;Battle Fleet Proponent;High;M18090;X
+90070;Minister of Armament;Alexiou Tsamotos;1933;1964;1999;SC;Submarine Proponent;High;M18091;X
+90071;Minister of Armament;Antoine Frangulis;1938;1964;1999;SC;Air Superiority Proponent;Medium;M18092;X
+90072;Minister of Armament;Thanassos Exaharis;1939;1964;1999;SC;laissez-faire capitalist;Medium;M18093;X
+90073;Minister of Armament;Takis Pipenelis;1940;1964;1999;SC;Theoretical Scientist;Medium;M18094;X
+90074;Minister of Armament;Eleftherios Venizelos;1941;1964;1999;SC;Air to Ground Proponent;Medium;M18010;X
+90075;Minister of Armament;Gaecia Geanados;1942;1964;1999;SC;Strategic Air Proponent;Medium;M18096;X
+90076;Minister of Armament;Anastassios Bardivilias;1943;1964;1999;SC;Air to Sea Proponent;Medium;M18097;X
+90077;Minister of Armament;Anatasios Kanellopoulos;1944;1964;1999;SC;Administrative Genius;Very High;M18098;X
+90078;Minister of Armament;Giorgios Lavdas;1945;1964;1999;SC;Tank Proponent;Very High;M18099;X
+90079;Minister of Armament;Alchibiades Stephanopoulos;1946;1964;1999;SC;laissez-faire capitalist;Medium;M18100;X
+90080;Minister of Armament;Panagis Tsaldaris;1938;1964;1999;FA;Air to Sea Proponent;High;M18055;X
+90081;Minister of Armament;Pavlos Milziadis;1941;1964;1999;NS;Resource Industrialist;Medium;M18103;X
+90082;Minister of Armament;Christos Tsigantes;1942;1964;1999;NS;Resource Industrialist;Medium;M18104;X
+90083;Minister of Armament;Nicholaos Voutsinaris;1943;1964;1999;NS;Theoretical Scientist;High;M18105;X
+90084;Minister of Armament;Ioannis Venizelos;1944;1964;1999;PA;Military Entrepreneur;Medium;M18106;X
+90085;Minister of Armament;Nikolaos Plastiras;1945;1964;1999;PA;Infantry Proponent;Very High;M18060;X
+90086;Minister of Armament;Giorgis Siantos;1933;1964;1999;ST;Resource Industrialist;High;M18021;X
+90087;Minister of Security;Georgios Papandreou;1933;1964;1999;SL;Efficient Sociopath;High;M18015;X
+90088;Minister of Security;Markos Aganossos;1941;1964;1999;SL;Silent Lawyer;Medium;M18086;X
+90089;Minister of Security;Elias Panakilis;1944;1964;1999;SL;Crime Fighter;Medium;M18111;X
+90090;Minister of Security;Evangelos Papanoutsos;1945;1964;1999;SL;Compassionate Gentleman;Medium;M18112;X
+90091;Minister of Security;Panagiolis Poulitsas;1946;1964;1999;SL;Prince of Terror;High;M18048;X
+90092;Minister of Security;Giorgios Nicolaidis;1933;1964;1999;SC;Back Stabber;Medium;M18114;X
+90093;Minister of Security;Raul Bibica Rosetti;1941;1964;1999;SC;Compassionate Gentleman;Medium;M18115;X
+90094;Minister of Security;Dimitrios Maximos;1944;1964;1999;SC;Crime Fighter;High;M18054;X
+90095;Minister of Security;Konstantinos Tsaldaris;1944;1964;1999;SC;Man of the People;Medium;M18117;X
+90096;Minister of Security;Thanassis Aghnides;1945;1964;1999;SC;Efficient Sociopath;Medium;M18118;X
+90097;Minister of Security;Panagiotis Kafantaris;1946;1964;1999;SC;Silent Lawyer;Medium;M18119;X
+90098;Minister of Security;Stephanos Lakiantos;1947;1964;1999;SC;Crooked Kleptocrat;Medium;M18120;X
+90099;Minister of Security;Christos Tsigantes;1938;1964;1999;FA;Prince of Terror;Medium;M18104;X
+90100;Minister of Security;Grigoriev Murnov;1941;1964;1999;NS;Crime Fighter;Low;M18040;X
+90101;Minister of Security;Mario Vercellino;1942;1964;1999;NS;Back Stabber;Low;M18041;X
+90102;Minister of Security;Reinhard Altenburg;1943;1964;1999;NS;Crooked Kleptocrat;High;M18042;X
+90103;Minister of Security;Archbishop Damaskinos;1944;1964;1999;PA;Efficient Sociopath;Very High;M18032;X
+90104;Minister of Security;Alchibiades Stephanopoulos;1944;1964;1999;PA;Compassionate Gentleman;Medium;M18100;X
+90105;Minister of Security;Christos Triantafyllidis;1946;1964;1999;PA;Man of the People;Medium;M18128;X
+90106;Minister of Security;Giannes Ioannides;1933;1964;1999;ST;Prince of Terror;High;M18025;X
+90107;Minister of Security;Markos Vaphiadis;1941;1964;1999;ST;Silent Lawyer;High;M18066;X
+90108;Minister of Security;Stratos Payioumtzis;1945;1964;1999;ST;Efficient Sociopath;Medium;M18131;X
+90109;Head of Military Intelligence;Georgios Papandreou;1933;1964;1999;SL;Political Specialist;High;M18015;X
+90110;Head of Military Intelligence;Costas Moulas;1944;1964;1999;SL;Naval Intelligence Specialist;Medium;M18133;X
+90111;Head of Military Intelligence;Anastassios Bardivilias;1933;1964;1999;SC;Naval Intelligence Specialist;Medium;M18097;X
+90112;Head of Military Intelligence;Georgios Drossopoulos;1941;1964;1999;SC;Technical Specialist;High;M18135;X
+90113;Head of Military Intelligence;Georgios Streit;1944;1964;1999;SC;Industrial Specialist;High;M18136;X
+90114;Head of Military Intelligence;Anatasios Kanellopoulos;1946;1964;1999;SC;Dismal Enigma;Very High;M18098;X
+90115;Head of Military Intelligence;Alexandros Propanis;1947;1964;1999;SC;Logistics Specialist;Medium;M18138;X
+90116;Head of Military Intelligence;Christos Triantafyllidis;1933;1964;1999;FA;Dismal Enigma;Medium;M18128;X
+90117;Head of Military Intelligence;Alchibiades Stephanopoulos;1937;1964;1999;FA;Industrial Specialist;Medium;M18100;X
+90118;Head of Military Intelligence;Christos Tsigantes;1941;1964;1999;NS;Industrial Specialist;Medium;M18104;X
+90119;Head of Military Intelligence;Sevastianos Foulidis;1942;1964;1999;NS;Logistics Specialist;High;M18142;X
+90120;Head of Military Intelligence;Napoleon Zervas;1944;1964;1999;PA;Logistics Specialist;Low;M18143;X
+90121;Head of Military Intelligence;Giannes Ioannides;1933;1964;1999;ST;Political Specialist;High;M18025;X
+90122;Head of Military Intelligence;Evripidis Bakirtris;1941;1964;1999;ST;Industrial Specialist;High;M18065;X
+90123;Chief of Staff;Alexandros Papagos;1933;1964;1999;SC;School of Defence;Medium;M18007;X
+90124;Chief of Staff;Giorgios Lavdas;1939;1964;1999;SC;School of Manoeuvre;Medium;M18099;X
+90125;Chief of Staff;Paraskos Melissinos;1940;1964;1999;SC;School of Mass Combat;Medium;M18152;X
+90126;Chief of Staff;Vassilios Tsounoukas;1944;1964;1999;SC;School of Fire Support;Medium;M18153;X
+90127;Chief of Staff;Anastassios Sakellariou;1946;1964;1999;SC;School of Psychology;Medium;M18009;X
+90128;Chief of Staff;Giorgios Kondylis;1933;1964;1999;FA;School of Manoeuvre;Medium;M18155;X
+90129;Chief of Staff;Georgias Tsolakoglou;1941;1964;1999;NS;School of Manoeuvre;Very High;M18056;X
+90130;Chief of Staff;Nikolaos Plastiras;1944;1964;1999;PA;School of Psychology;Very High;M18060;X
+90131;Chief of Staff;Leonidas Paraskevopoulos;1946;1964;1999;PA;School of Mass Combat;Medium;M18159;X
+90132;Chief of Staff;Stephanos Sarafis;1933;1964;1999;ST;School of Mass Combat;High;M18027;X
+90133;Chief of Army;Giorgios Roussoupoulos;1941;1964;1999;SL;Elastic Defence Doctrine;Low;M18162;X
+90134;Chief of Army;Vassilios Tsounoukas;1941;1964;1999;SC;Decisive Battle Doctrine;Low;M18153;X
+90135;Chief of Army;Georgios Streit;1944;1964;1999;SC;Guns and Butter Doctrine;Low;M18136;X
+90136;Chief of Army;Giorgios Lavdas;1945;1964;1999;SC;Armoured Spearhead Doctrine;Low;M18099;X
+90137;Chief of Army;Theodor Pangalos;1938;1964;1999;FA;Static Defence Doctrine;Low;M18007;X
+90138;Chief of Army;Georgias Tsolakoglou;1941;1964;1999;NS;Decisive Battle Doctrine;Very High;M18056;X
+90139;Chief of Army;Nikolaos Plastiras;1944;1964;1999;PA;Guns and Butter Doctrine;Very High;M18060;X
+90140;Chief of Army;Aris Velouchiotis;1933;1964;1999;ST;Decisive Battle Doctrine;High;M18028;X
+90141;Chief of Navy;Nikolaos Votsis;1933;1964;1999;SL;Base Control Doctrine;High;M18019;X
+90142;Chief of Navy;Demetrios Gousis;1941;1964;1999;SL;Decisive Naval Battle Doctrine;High;M18090;X
+90143;Chief of Navy;Alexiou Tsamotos;1941;1964;1999;SC;Decisive Naval Battle Doctrine;High;M18091;X
+90144;Chief of Navy;Petros Voulgaris;1944;1964;1999;SC;Indirect Approach Doctrine;Low;M18061;X
+90145;Chief of Navy;Alexandros Oikonomou;1941;1964;1999;NS;Open Seas Doctrine;Very Low;M18179;X
+90146;Chief of Navy;Militiades Porphyrogins;1933;1964;1999;ST;Decisive Naval Battle Doctrine;High;M18029;X
+90147;Chief of Air Force;Gaecia Geanados;1941;1964;1999;SL;Carpet Bombing Doctrine;Medium;M18096;X
+90148;Chief of Air Force;Euthanassos Perrikos;1944;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M18184;X
+90149;Chief of Air Force;Panagotis Papanikolaou;1933;1964;1999;SC;Carpet Bombing Doctrine;Medium;M18182;X
+90150;Chief of Air Force;Antoine Frangulis;1941;1964;1999;SC;Air Superiority Doctrine;Medium;M18092;X
+90151;Chief of Air Force;Anastassios Bardivilias;1944;1964;1999;SC;Naval Aviation Doctrine;Medium;M18097;X
+90152;Chief of Air Force;Nikos Beloyannis;1933;1964;1999;ST;Naval Aviation Doctrine;High;M18030;X
+90153;Foreign Minister;Themistocles Sophoulis;1933;1964;1999;SL;The Cloak N Dagger Schemer;high;M18014;X
+90154;Head of State;Archbishop Damaskinos;1946;1964;1999;SL;Barking Buffoon;High;M18032;X
+90155;Head of State;Archbishop Damaskinos;1946;1964;1999;SC;Barking Buffoon;High;M18032;X
+90156;Head of State;Georgios II;1946;1964;1999;SL;Insignificant Layman;High;2646;X
+90157;Head of State;Georgios II;1946;1964;1999;SC;Insignificant Layman;High;2646;X
+90158;Head of Government;Themistocles Sophoulis;1946;1964;1999;SL;Flamboyant Tough Guy;High;M18014;X
+90159;Head of Government;Konstantinos Tsaldaris;1947;1964;1999;SC;Corporate Suit;High;M18053;X
+90160;Foreign Minister;Ioannis Safianopoulos;1945;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M18068;X
+90161;Foreign Minister;Petros Voulgaris;1945;1964;1999;PA;Biased Intellectual;High;M18061;X
+90162;Head of Government;Alexandros Diomidis;1949;1964;1999;SL;Political Protege;High;8232;X
+90163;Head of Government;Ioannis Theotokis;1950;1964;1999;SL;Happy Amateur;High;M18203;X
+90164;Head of Government;Dimitrios Kiousopoulos;1952;1964;1999;SC;Smiling Oilman;High;M18204;X
+90165;Head of Government;Alexandros Papagos;1952;1964;1999;SC;Old General;High;M18007;X
+90166;Foreign Minister;Panaiotis Pipenelis;1950;1964;1999;SC;Apologetic Clerk;Very High;M18206;X
+90167;Foreign Minister;Stephanos Stephanopoulos;1952;1964;1999;SC;Biased Intellectual;Very High;M18207;X
+90168;Chief of Army;Panagiotis Danglis;1917;1933;1999;PA;Elastic Defence Doctrine;High;2647;X
+90169;Chief of Navy;Paulos Kountouriotis;1914;1933;1999;PA;Decisive Naval Battle Doctrine;Medium;3784;X
+90170;Chief of Navy;Paulos Kountouriotis;1914;1933;1999;ML;Decisive Naval Battle Doctrine;Medium;3784;X
+90171;Chief of Staff;Leonidas Paraskevopoulos;1914;1933;1999;PA;School of Defence;High;M18159;X
+90172;Chief of Staff;Constantin Moschopoulos;1914;1933;1999;PA;School of Psychology;Medium;unknownminister;X
+90173;Foreign Minister;Georgios Zographos;1915;1933;1999;SL;Apologetic Clerk;Very High;3785;X
+90174;Foreign Minister;Dimitrios Rallis;1918;1933;1999;SL;Apologetic Clerk;Very High;3786;X
+90175;Foreign Minister;Alexandros Karapanos;1916;1933;1999;PA;Biased Intellectual;Very High;unknownminister;X
+90176;Foreign Minister;Apostolos Alexandris;1922;1933;1999;PA;General Staffer;Very High;unknownminister;X
+90177;Foreign Minister;Alexandros Zaimis;1915;1933;1999;PA;Great Compromiser;Very High;3787;X
+90178;Foreign Minister;Dimitrios Gounaris;1915;1933;1999;SL;Great Compromiser;Very High;3788;X
+90179;Foreign Minister;Stephanos Skouloudis;1915;1933;1999;PA;Great Compromiser;Very High;3789;X
+90180;Foreign Minister;Nikolaos Politis;1916;1933;1999;SL;Great Compromiser;Very High;3790;X
+90181;Foreign Minister;Nikolaos Politis;1917;1933;1999;SL;Great Compromiser;Very High;3790;X
+90182;Foreign Minister;Konstantinos Rentis;1922;1933;1999;ML;Great Compromiser;Very High;M18069;X
+90183;Foreign Minister;Stylianos Gonatas;1923;1933;1999;PA;Great Compromiser;Very High;3791;X
+90184;Foreign Minister;Alexandros Papanastasiou;1924;1933;1999;SL;Great Compromiser;Very High;3792;X
+90185;Foreign Minister;Andreas Michalakopoulos;1924;1933;1999;ML;Great Compromiser;Very High;3793;X
+90186;Foreign Minister;Georgios Rousos;1924;1933;1999;SL;Great Compromiser;Very High;unknownminister;X
+90187;Foreign Minister;Eleftherios Venizelos;1914;1933;1999;SL;Ideological Crusader;Very High;2648;X
+90188;Foreign Minister;Georgios Streit;1914;1933;1999;SL;Ideological Crusader;Very High;M18153;X
+90189;Foreign Minister;Eugenios Zalokostas;1916;1933;1999;PA;Ideological Crusader;Very High;M18136;X
+90190;Foreign Minister;Alexandros Diomidis;1918;1933;1999;SL;Ideological Crusader;Very High;8232;X
+90191;Foreign Minister;Miltiades Negropontis;1918;1933;1999;SL;Ideological Crusader;Very High;unknownminister;X
+90192;Foreign Minister;Nikolaos Kalogeropoulos;1921;1933;1999;ML;Ideological Crusader;Very High;3794;X
+90193;Foreign Minister;Euthumios Kanellopoulos;1922;1933;1999;ML;Ideological Crusader;Very High;unknownminister;X
+90194;Foreign Minister;Georgios Kafantaris;1924;1933;1999;SL;Ideological Crusader;Very High;3795;X
+90195;Head of Government;Eleftherios Venizelos;1910;1933;1999;ML;Flamboyant Tough Guy;Medium;2648;X
+90196;Head of Government;Alexandros Zaimis;1915;1933;1999;PA;Corporate Suit;Medium;3787;X
+90197;Head of Government;Dimitrios Gounaris;1915;1933;1999;ML;Backroom Backstabber;Medium;3788;X
+90198;Head of Government;Nikolaos Kalogeropoulos;1916;1933;1999;PA;Silent Workhorse;Medium;3794;X
+90199;Head of Government;Spiridon Lambros;1916;1933;1999;PA;Political Protege;Medium;3796;X
+90200;Head of Government;Dimitrios Rallis;1920;1933;1999;PA;Happy Amateur;Medium;3786;X
+90201;Head of Government;Anastasios Charalambis;1922;1933;1999;PA;Silent Workhorse;Medium;3797;X
+90202;Head of Government;Nikolaos Stratos;1922;1933;1999;ML;Political Protege;Medium;3799;X
+90203;Head of Government;Nikolaos Triantaphillakos;1922;1933;1999;ML;Naive Optimist;Medium;3800;X
+90204;Head of Government;Petros Protopapadakis;1922;1933;1999;ML;Happy Amateur;Medium;3798;X
+90205;Head of Government;Sotirios Krokidas;1922;1933;1999;PA;Flamboyant Tough Guy;Medium;3801;X
+90206;Head of Government;Stylianos Gonatas;1922;1933;1999;PA;Corporate Suit;Medium;3791;X
+90207;Head of Government;Alexandros Papanastasiou;1924;1933;1999;ML;Backroom Backstabber;Medium;3792;X
+90208;Head of Government;Andreas Michalakopoulos;1924;1933;1999;ML;Ambitious Union Boss;Medium;3793;X
+90209;Head of Government;Georgios Kaphantaris;1924;1933;1999;SL;Smiling Oilman;Medium;3802;X
+90210;Head of Government;Themistocles Sophoulis;1924;1933;1999;SL;Happy Amateur;Medium;M18014;X
+90211;Head of State;Alexandros I;1917;1933;1999;ML;Barking Buffoon;Medium;3803;X
+90212;Head of State;Georgios II;1922;1933;1999;ML;Autocratic Charmer;Medium;2646;X
+90213;Head of State;Konstantinos I;1914;1933;1999;ML;Weary Stiffneck;High;2649;X
+90214;Minister of Armament;Alexandros Diomidis;1914;1933;1999;SL;Administrative Genius;Medium;8232;X
+90215;Minister of Armament;Stephanos N. Dragoumis;1915;1933;1999;PA;Administrative Genius;Medium;3804;X
+90216;Minister of Armament;M.Momferatos;1916;1933;1999;PA;Administrative Genius;Medium;unknownminister;X
+90217;Minister of Armament;Nikolaos Kalogeropoulos;1916;1933;1999;PA;Administrative Genius;Medium;3794;X
+90218;Minister of Armament;M.Drosopoulos;1917;1933;1999;ML;Administrative Genius;High;unknownminister;X
+90219;Minister of Armament;Miltiades Negropontis;1918;1933;1999;SL;Administrative Genius;Medium;unknownminister;X
+90220;Minister of Armament;Petros Protopapadakis;1922;1933;1999;ML;Administrative Genius;Medium;3798;X
+90221;Minister of Armament;M.Drosopoulos;1917;1933;1999;SL;Infantry Proponent;Medium;unknownminister;X
+90222;Minister of Armament;Dimitrios Rallis;1916;1933;1999;SL;Laissez-Faire Capitalist;Medium;3786;X
+90223;Minister of Armament;Emmanouil Repoulis;1915;1933;1999;SL;Military Entrepreneur;Medium;3805;X
+90224;Minister of Armament;M.Tsanetovleas;1916;1933;1999;PA;Military Entrepreneur;Medium;unknownminister;X
+90225;Minister of Armament;Petros Protopapadakis;1915;1933;1999;SL;Resource Industrialist;Medium;3798;X
+90226;Minister of Security;M.Charamlambos;1915;1933;1999;SL;Compassionate Gentleman;Medium;unknownminister;X
+90227;Minister of Security;Dimitrios Gounaris;1916;1933;1999;PA;Compassionate Gentleman;Medium;3788;X
+90228;Minister of Security;Emmanouil Repoulis;1915;1933;1999;SL;Crime Fighter;Medium;3805;X
+90229;Minister of Security;M.Roufos;1916;1933;1999;PA;Crime Fighter;Medium;unknownminister;X
+90230;Minister of Security;M.Raktivan;1918;1933;1999;SL;Crime Fighter;Medium;3806;X
+90231;Minister of Security;M.Tselos;1916;1933;1999;PA;Man of the People;Medium;unknownminister;X
+90232;Minister of Security;Emmanouil Repoulis;1915;1933;1999;ML;Silent Lawyer;High;3805;X
+90233;Minister of Security;M.Kalandaris;1915;1933;1999;SL;Silent Lawyer;Medium;unknownminister;X
+90234;Minister of Security;M.Triantaphilakos;1915;1933;1999;SL;Silent Lawyer;High;unknownminister;X
+90235;Head of Military Intelligence;Alexandros Papagos;1933;1964;1999;PA;Dismal Enigma;Medium;M18008;X
+90236;Chief of Air Force;Spyridon Paparigopoulos;1933;1964;1999;PA;Army Aviation Doctrine;High;unknownminister;X
+90237;Head of Military Intelligence;Eksadaktilos Athanasios;1914;1933;1999;ML;Logistics Specialist;High;unknownminister;X
+90238;Chief of Staff;Ioannis Metaxas;1914;1933;1999;ML;School of Fire Support;High;M18049;X
+90239;Chief of Army;Constantine I;1914;1933;1999;ML;Static Defence Doctrine;High;2649;X
+90240;Chief of Navy;Mark Kerr;1914;1917;1999;ML;Decisive Naval Battle Doctrine;High;8230;X
+90241;Head of Military Intelligence;Ioannis Metaxas;1933;1964;1999;SC;Logistics Specialist;High;M18049;X
+90242;Chief of Air Force;Panagiotis Gazis;1935;1941;1964;SC;Air Superiority Doctrine;High;8231;X
+90243;Head of State;Alexandros Zaimis;1933;1935;1999;SC;Pig-headed Isolationist;Medium;3787;X
+90244;Foreign Minister;Dimitrios Maximos;1933;1935;1999;SC;Apologetic Clerk;High;M18054;X
+90245;Chief of Staff;Aristeidis Chasapidis;1934;1937;1942;PA;School of Fire Support;High;9722;X
+90246;Chief of Air Force;Vasilios Tsarpalis;1940;1942;1942;PA;Army Aviation Doctrine;High;9723;X
+90247;Chief of Air Force;Konstantinos Oikonomou;1934;1935;1958;PA;air superiority doctrine;Medium;9778;X
+90248;Chief of Air Force;Georgios Alexandris;1945;1946;1988;SC;naval aviation doctrine;Medium;9779;X
+90249;Chief of Air Force;Miltiadis Georgiadis;1945;1945;1976;SC;army aviation doctrine;Medium;9780;X
+90250;Chief of Air Force;Haralampos Mitilinaios;1946;1948;1991;SC;army aviation doctrine;Medium;9781;X
+90251;Chief of Air Force;Haralampos Potamianos;1948;1950;2010;SC;carpet bombing doctrine;Medium;9782;X
+90252;Chief of Air Force;Emmanouil Kelaidis;1950;1955;1990;SC;air superiority doctrine;Medium;9783;X
+90253;Chief of Air Force;Konstantinos Margaritis;1955;1962;1980;SC;army aviation doctrine;Medium;9784;X
+90254;Chief of Air Force;Dimitrios Theodosiadis;1962;1963;1999;SC;air superiority doctrine;Medium;9785;X
+90255;Chief of Staff;Konstantinos Sapountzakis;1901;1912;1914;SC;school of fire support;High;7780;X
+90256;Chief of Staff;Konstantinos Nider;1912;1914;1924;SC;school of fire support;High;7775;X
+90257;Chief of Staff;Patroklos Kontogiannis;1913;1913;1914;SC;school of defence;High;unknownminister;X
+90258;Chief of Staff;Victor Dousmanis;1914;1922;1923;SC;school of defence;High;615;X
+90259;Chief of Staff;Konstantinos Moshopolos;1916;1917;1921;SC;school of manoeuvre;High;7770;X
+90260;Chief of Staff;Xenophon Stratigos;1916;1922;1922;SC;school of fire support;High;9786;X
+90261;Chief of Staff;Anastasios Charalambis;1917;1918;1923;SC;school of psychology;High;3797;X
+90262;Chief of Staff;Aristotelis Vlachopoulos;1920;1921;1924;SC;school of fire support;High;9787;X
+90263;Chief of Staff;Konstantinos Gouvelis;1921;1922;1923;SC;school of defence;High;unknownminister;X
+90264;Chief of Staff;Athanasios Exadaktilos;1921;1923;1924;SC;school of fire support;High;9788;X
+90265;Chief of Staff;Ioannis Makrikostas;1922;1923;1923;SC;school of defence;High;unknownminister;X
+90266;Chief of Staff;Nikolaos Vlachopoulos;1922;1928;1929;SC;school of fire support;High;9789;X
+90267;Chief of Staff;Petros Klados;1924;1925;1925;SC;school of defence;High;L31508;X
+90268;Chief of Staff;Alexandros Mazarakis-Ainian;1924;1931;1937;SC;school of manoeuvre;High;9790;X
+90269;Chief of Staff;Ptolemeos Sarigiannis;1925;1926;1927;SC;school of fire support;High;9791;X
+90270;Chief of Staff;Alexandros Merentitis;1928;1929;1935;SC;school of defence;High;unknownminister;X
+90271;Chief of Staff;Konstantinos Manetas;1931;1932;1936;SL;school of fire support;High;9792;X
+90272;Chief of Staff;Theodoros Manetas;1931;1933;1936;SL;school of defence;High;9793;X
+90273;Chief of Staff;Dimitrios Katheniotis;1933;1935;1936;SC;school of fire support;High;9794;X
+90274;Chief of Staff;Konstantinos Pallas;1940;1941;1942;SC;school of defence;High;9795;X
+90275;Chief of Staff;Napoleon Batas;1941;1942;1948;SC;school of fire support;High;9796;X
+90276;Chief of Staff;Vasilios Maraveas;1942;1943;1948;SC;school of defence;High;9797;X
+90277;Chief of Staff;Andreas Skoulas;1943;1944;1944;SC;school of fire support;High;9798;X
+90278;Chief of Staff;Alkiviadis Bourdaras;1943;1944;1944;SC;school of defence;High;unknownminister;X
+90279;Chief of Staff;Dimitrios Laios;1943;1944;1944;SC;school of fire support;High;9799;X
+90280;Chief of Staff;Efstathios Liosis;1943;1944;1949;SC;school of defence;High;9800;X
+90281;Chief of Staff;Konstantinos Ventiris;1944;1951;1952;SC;school of psychology;High;9801;X
+90282;Chief of Staff;Georgios Dromazos;1945;1946;1947;SC;school of fire support;High;9802;X

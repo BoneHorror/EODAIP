@@ -1,0 +1,241 @@
+POL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+60001;Head of State;Ignacy Moscicki;1926;1964;1999;PA;Stern Imperialist;High;M13001;X
+60002;Head of Government;Marian Zyndram-Koscialkowski;1933;1964;1999;PA;Flamboyant Tough Guy;High;M13002;X
+60003;Foreign Minister;Józef Beck;1933;1964;1999;PA;General Staffer;High;M13003;X
+60004;Minister of Armament;Tadeusz Kasprzycki;1933;1964;1999;PA;Military Entrepreneur;Medium;M13004;X
+60005;Minister of Security;Wladyslaw Raczkiewicz;1933;1964;1999;PA;Crime Fighter;Medium;M13005;X
+60006;Head of Military Intelligence;T. Pelczynski-Grzegorz;1933;1964;1999;PA;Logistics Specialist;High;M13006;X
+60007;Chief of Staff;Edward Rydz-Smigly;1933;1942;1942;PA;School of Defence;High;M13007;X
+60008;Chief of Army;Edward Rydz-Smigly;1933;1942;1942;PA;Decisive battle doctrine;High;M13007;X
+60009;Chief of Navy;Jerzy Swirski;1918;1964;1999;PA;Open Seas Doctrine;Medium;M13009;X
+60010;Chief of Air Force;Józef Zajac;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M13010;X
+60011;Head of State;Kazimierz Sosnkowski;1939;1964;1999;SC;Resigned Generalissimo;High;M13032;X
+60012;Head of State;Boleslaw Bierut;1945;1964;1999;LWR;Stern Imperialist;High;M13033;X
+60013;Head of State;Boleslaw Bierut;1947;1964;1999;ST;Barking Buffoon;High;M13033;X
+60014;Head of State;Boleslaw Wieniawa-Dlugoszowski;1939;1964;1999;SL;Benevolent Gentleman;High;M13035;X
+60015;Head of State;Ignacy Jan Paderewski;1933;1964;1999;SC;Weary Stiffneck;High;M13036;X
+60016;Head of State;Wladyslaw Raczkiewicz;1939;1964;1999;ML;Insignificant Layman;High;M13005;X
+60017;Head of State;Wanda Wasilewska;1937;1964;1999;LWR;Die-hard Reformer;High;M13038;X
+60018;Head of State;Wladyslaw Gomulka;1942;1964;1999;LWR;Popular Figurehead;High;M13039;X
+60019;Head of State;Walery Slawek;1933;1964;1999;PA;Insignificant Layman;High;M13040;X
+60020;Head of Government;Felicjan Slawoj-Skladkowski;1933;1964;1999;PA;Naive Optimist;High;M13041;X
+60021;Head of Government;Wojciech Korfanty;1933;1964;1999;SL;Happy Amateur;High;M13042;X
+60022;Head of Government;Wladyslaw Sikorski;1922;1944;1957;SC;Old General;High;M13043;X
+60023;Head of Government;Stanislas A. Neyman;1939;1964;1999;SD;Smiling Oilman;High;M13044;X
+60024;Head of Government;Mieczyslaw Michalowicz;1942;1964;1999;SD;Ambitious Union Boss;High;M13045;X
+60025;Head of Government;Stanislaw Mikolajczyk;1943;1964;1999;ML;Corporate Suit;High;M13046;X
+60026;Head of Government;Tomasz Arciszewski;1944;1964;1999;SL;Political Protege;High;M13047;X
+60027;Head of Government;Edward Osobka-Morawski;1945;1964;1999;LWR;Political Protege;High;M13022;X
+60028;Head of Government;Jozef Cyrenkiewicz;1947;1964;1999;ST;Silent Workhorse;High;M13049;X
+60029;Head of Government;Roman Dmowski;1933;1964;1999;FA;Backroom Backstabber;High;M13050;X
+60030;Head of Government;Tadeusz Bielecki;1933;1964;1999;NS;Happy Amateur;High;M13051;X
+60031;Head of Government;Eugeniusz Kwiatkowski;1937;1964;1999;SL;Naive Optimist;High;M13052;X
+60032;Head of Government;Marceli Nowotko;1941;1964;1999;ST;Political Protege;High;M13053;X
+60033;Head of Government;Jan Kwapinski;1944;1964;1999;SC;Corporate Suit;High;M13054;X
+60034;Head of Government;Stanislaw Osiecki;1933;1964;1999;SD;Happy Amateur;High;M13055;X
+60035;Head of Government;Boleslaw Drobner;1943;1964;1999;LWR;Naive Optimist;High;M13056;X
+60036;Foreign Minister;August Zaleski;1939;1964;1999;SC;Ideological Crusader;High;M13012;X
+60037;Foreign Minister;Edward Raczynski;1941;1964;1999;SC;Biased Intellectual;Medium;M13059;X
+60038;Foreign Minister;Tadeusz Romer;1943;1964;1999;ML;Apologetic Clerk;Medium;M13060;X
+60039;Foreign Minister;Adam Tarnowski;1944;1964;1999;SL;Iron Fisted Brute;High;M13061;X
+60040;Foreign Minister;Edward Osobka-Morawski;1945;1964;1999;LWR;The Cloak N Dagger Schemer;Medium;M13022;X
+60041;Foreign Minister;Wincenty Rzymowski;1945;1964;1999;SD;Great Compromiser;High;M13063;X
+60042;Foreign Minister;Zygmunt Modzelewski;1947;1964;1999;ST;Biased Intellectual;High;M13064;X
+60043;Foreign Minister;Jan Piekalkiewicz;1939;1964;1999;SD;Biased Intellectual;Medium;M13065;X
+60044;Foreign Minister;Henryk Leon Strasburger;1938;1964;1999;SL;Biased Intellectual;High;M13066;X
+60045;Foreign Minister;Jedrzej Giertych;1933;1964;1999;FA;Ideological Crusader;Medium;M13067;X
+60046;Foreign Minister;Ignacy Jan Paderewski;1933;1964;1999;SD;General Staffer;High;M13036;X
+60047;Foreign Minister;Boleslaw Drobner;1943;1964;1999;LWR;Ideological Crusader;Low;M13056;X
+60048;Foreign Minister;Adam Próchnik;1945;1964;1999;SD;Biased Intellectual;Low;M13070;X
+60049;Foreign Minister;Norbert Barlicki;1943;1964;1999;LWR;Ideological Crusader;Medium;M13021;X
+60050;Minister of Armament;Eugeniusz Kwiatkowski;1933;1964;1999;PA;Administrative Genius;Very High;M13052;X
+60051;Minister of Armament;Casimir Ehrenberg;1939;1964;1999;SC;laissez-faire capitalist;Medium;M13073;X
+60052;Minister of Armament;Bronislaw Regulski;1941;1964;1999;SC;Infantry Proponent;High;M13074;X
+60053;Minister of Armament;Ludwik W. Rajchmann;1943;1964;1999;ML;Resource Industrialist;High;M13075;X
+60054;Minister of Armament;Wojciech Korfanty;1943;1964;1999;ML;Military Entrepreneur;Medium;M13042;X
+60055;Minister of Armament;Stanislas A. Neyman;1944;1964;1999;SL;Administrative Genius;High;M13044;X
+60056;Minister of Armament;Herman Liebermann;1945;1964;1999;SD;Theoretical Scientist;Medium;M13027;X
+60057;Minister of Armament;Hilary Minc;1947;1964;1999;ST;Air to Sea Proponent;Medium;M13079;X
+60058;Minister of Armament;Leon Kozlowski;1937;1964;1999;NS;Infantry Proponent;Medium;M13080;X
+60059;Minister of Armament;Henryk Leon Strasburger;1937;1964;1999;SD;laissez-faire capitalist;Medium;M13066;X
+60060;Minister of Armament;Adam Koc;1933;1964;1999;SL;Resource Industrialist;Medium;M13082;X
+60061;Minister of Armament;Stanislaw Glabinski;1933;1964;1999;FA;laissez-faire capitalist;Medium;M13083;X
+60062;Minister of Armament;Jan Stefan Haneman;1944;1964;1999;ST;Air to Ground Proponent;Medium;M13084;X
+60063;Minister of Armament;Józef Niecko;1933;1964;1999;SD;Resource Industrialist;Medium;M13085;X
+60064;Minister of Armament;Michal Rola-Zymierski;1944;1964;1999;ST;Tank Proponent;Medium;M13086;X
+60065;Minister of Armament;Józef Haller;1933;1964;1999;SL;Military Entrepreneur;Medium;M13087;X
+60066;Minister of Armament;Tadeusz Lychowski;1939;1964;1999;SD;Administrative Genius;Medium;M13088;X
+60067;Minister of Security;Felicjan Slawoj-Skladkowski;1933;1964;1999;PA;Efficient Sociopath;High;M13041;X
+60068;Minister of Security;Adam Rose;1939;1964;1999;SC;Crime Fighter;Medium;M13090;X
+60069;Minister of Security;Eugeniusz Kwiatkowski;1940;1964;1999;SC;Prince of Terror;Very High;M13052;X
+60070;Minister of Security;Marjan Rudzinski;1943;1964;1999;ML;Back Stabber;Medium;M13092;X
+60071;Minister of Security;Antoni Roman;1943;1964;1999;ML;Silent Lawyer;Low;M13093;X
+60072;Minister of Security;Wincenty Witos;1944;1964;1999;SL;Man of the People;High;M13094;X
+60073;Minister of Security;Mieczyslaw Niedzialkowski;1945;1964;1999;SD;Crime Fighter;Medium;M13095;X
+60074;Minister of Security;Jakub Berman;1947;1964;1999;ST;Prince of Terror;Medium;M13096;X
+60075;Minister of Security;Stanislaw Mikolajczyk;1939;1964;1999;SD;Man of the People;Medium;M13046;X
+60076;Minister of Security;Karol Popiel;1933;1964;1999;SL;Silent Lawyer;High;M13098;X
+60077;Minister of Security;Aleksander Zawadzki;1943;1964;1999;ST;Compassionate Gentleman;Medium;M13099;X
+60078;Minister of Security;Waclaw Mohl;1940;1964;1999;PA;Compassionate Gentleman;Medium;M13100;X
+60079;Minister of Security;Mieczyslaw Trajdos;1938;1964;1999;FA;Silent Lawyer;Medium;M13101;X
+60080;Minister of Security;Kazimierz Switalski;1933;1964;1999;PA;Efficient Sociopath;Medium;M13102;X
+60081;Minister of Security;Witold Grabowski;1933;1964;1999;PA;Crime Fighter;Medium;M13103;X
+60082;Minister of Security;Janusz Radziwill;1933;1964;1999;PA;Man of the People;Medium;M13104;X
+60083;Minister of Security;Kazimierz Bartel;1933;1964;1999;PA;Back Stabber;Medium;M13105;X
+60084;Head of Military Intelligence;Adam Tarnowski;1939;1964;1999;SC;Dismal Enigma;High;M13061;X
+60085;Head of Military Intelligence;Feliks Koneczny;1943;1964;1999;ML;Technical Specialist;High;M13108;X
+60086;Head of Military Intelligence;Alfred Leon Konopka;1944;1964;1999;SL;Political Specialist;High;M13109;X
+60087;Head of Military Intelligence;Mieczyslaw Sokolowski;1945;1964;1999;SD;Industrial Specialist;High;M13110;X
+60088;Head of Military Intelligence;Stanislaw Dubois;1945;1964;1999;ST;Political Specialist;Medium;M13026;X
+60089;Head of Military Intelligence;Ignacy Matuszewski;1937;1964;1999;SC;Logistics Specialist;Medium;M13112;X
+60090;Head of Military Intelligence;Jan Kowalewski;1933;1966;1966;PA;Dismal Enigma;Medium;M13113;X
+60091;Head of Military Intelligence;Wieslaw Domaniewski;1938;1964;1999;SL;Technical Specialist;High;M13114;X
+60092;Chief of Staff;Waclaw Stachiewicz;1918;1964;1999;PA;School of Fire Support;Low;M13115;X
+60093;Chief of Staff;Wladyslaw Sikorski;1939;1944;1957;SC;School of Manoeuvre;Medium;M13043;X
+60094;Chief of Staff;Michal Karaszewicz-Tokarzewski;1943;1964;1999;ML;School of Defence;Medium;M13117;X
+60095;Chief of Staff;Stefan Rowecki;1943;1964;1999;ML;School of Psychology;Medium;M13118;X
+60096;Chief of Staff;Tadeusz Bor-Komorowski;1943;1964;1999;SL;School of Mass Combat;Medium;M13119;X
+60097;Chief of Staff;Stanislaw Kopanski;1944;1964;1999;SL;School of Manoeuvre;High;M13120;X
+60098;Chief of Staff;Leopold Okulicki;1945;1964;1999;SD;School of Fire Support;Low;M13121;X
+60099;Chief of Staff;Michal Rola-Zymierski;1944;1964;1999;ST;School of Mass Combat;Medium;M13122;X
+60100;Chief of Army;Wladyslaw Sikorski;1939;1944;1957;SC;Guns and Butter Doctrine;Medium;M13043;X
+60101;Chief of Army;Wladyslaw Anders;1943;1964;1999;ML;Elastic Defence Doctrine;Medium;M13125;X
+60102;Chief of Army;Tadeusz Bor-Komorowski;1944;1964;1999;SL;Guns and Butter Doctrine;Medium;M13119;X
+60103;Chief of Army;Michal Rola-Zymierski;1945;1964;1999;ST;Armoured Spearhead Doctrine;Medium;M13122;X
+60104;Chief of Army;Wladyslaw Grabsky;1945;1964;1999;SD;Guns and Butter Doctrine;Medium;M13128;X
+60105;Chief of Army;Jan Kowalewski;1937;1966;1966;FA;Elastic Defence Doctrine;Low;M13113;X
+60106;Chief of Navy;Jozef Unrug;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M13130;X
+60107;Chief of Navy;Francois Sokal;1939;1964;1999;SC;Open Seas Doctrine;Medium;M13131;X
+60108;Chief of Navy;Leon Chajn;1943;1964;1999;ML;Base Control Doctrine;Medium;M13132;X
+60109;Chief of Navy;Adam Rapacki;1945;1964;1999;LE;Power Projection Doctrine;High;M13029;X
+60110;Chief of Air Force;Ludomil Rayski;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M13134;X
+60111;Chief of Air Force;Stanislaw Pawluc;1939;1964;1999;SC;Air Superiority Doctrine;Medium;M13135;X
+60112;Chief of Air Force;Wladyslaw Kalkus;1943;1964;1999;SL;Carpet Bombing Doctrine;Medium;M13136;X
+60113;Chief of Air Force;Czeslaw Bieszczad;1945;1964;1999;ST;Army Aviation Doctrine;Very High;M13137;X
+60114;Head of State;Boleslaw Piasecki;1933;1964;1999;PA;Barking Buffoon;High;M13011;X
+60115;Head of Government;August Zaleski;1933;1964;1999;PA;Happy Amateur;High;M13012;X
+60116;Foreign Minister;Jan hr. Szembek;1933;1964;1999;PA;Apologetic Clerk;Low;M13013;X
+60117;Minister of Armament;Jerzy Zdziechowski;1933;1964;1999;NS;Corrupt Kleptocrat;Medium;M13014;X
+60118;Minister of Security;Leon Joseph Baranski;1933;1964;1999;PA;Back Stabber;Medium;M13015;X
+60119;Head of Military Intelligence;Janusz Zoltowski;1933;1964;1999;FA;Dismal Enigma;Medium;M13016;X
+60120;Chief of Staff;Wladyslaw Moczar;1933;1964;1999;FA;School of Psychology;Medium;M13017;X
+60121;Chief of Army;Tomislaw Lupaszko;1933;1964;1999;PA;Decisive Battle Doctrine;Low;M13018;X
+60122;Chief of Navy;Jan Kiwerski;1933;1964;1999;FA;Indirect Approach Doctrine;Low;M13019;X
+60123;Chief of Air Force;Alfred Chlapowski;1933;1964;1999;FA;Vertical Envelopment Doctrine;Low;M13020;X
+60124;Head of State;Norbert Barlicki;1933;1964;1999;ST;Ruthless Powermonger;High;M13021;X
+60125;Head of Government;Edward Osobka-Morawski;1933;1964;1999;ST;Political Protege;High;M13022;X
+60126;Foreign Minister;Pawel Finder;1933;1964;1999;LE;The Cloak N Dagger Schemer;Low;M13023;X
+60127;Minister of Armament;Zygmunt Berling;1933;1964;1999;ST;Infantry Proponent;Medium;M13024;X
+60128;Minister of Security;Stanislaw Radkiewicz;1933;1964;1999;ST;Efficient Sociopath;Medium;M13025;X
+60129;Chief of Staff;Herman Liebermann;1933;1964;1999;LWR;School of Psychology;Medium;M13027;X
+60130;Chief of Army;Karol Swierczewski;1933;1964;1999;ST;Decisive Battle doctrine;Low;M13028;X
+60131;Chief of Air Force;Ludwik Grosfeld;1933;1964;1999;LWR;Carpet Bombing Doctrine;Very High;M13030;X
+60132;Head of Government;Boleslaw Bierut;1952;1964;1999;ST;Flamboyant Tough Guy;High;M13033;X
+60133;Foreign Minister;Stanislaw Skrzeszewski;1951;1964;1999;ST;Apologetic Clerk;High;M13139;X
+60134;Minister of Armament;Konstanty Dabrowski;1945;1964;1999;ST;Resource Industrialist;Medium;M13140;X
+60135;Head of Military Intelligence;Henryk Swiatkowski;1947;1964;1999;ST;Dismal Enigma;Medium;M13141;X
+60136;Chief of Air Force;Hipolit Lossowski;1914;1933;1999;PA;Air Superiority Doctrine;Medium;2931;X
+60137;Chief of Army;Józef Pilsudski;1900;1919;1999;PA;Guns and Butter Doctrine;Medium;2932;X
+60138;Chief of Army;Józef Haller;1919;1933;1999;SC;Guns and Butter Doctrine;Medium;2933;X
+60139;Chief of Army;Józef Pilsudski;1919;1935;1999;PA;Decisive Battle Doctrine;Medium;2932;X
+60140;Chief of Navy;Kazimierz Porebski;1914;1933;1999;PA;Open Seas Doctrine;Medium;2934;X
+60141;Chief of Staff;Józef Lesniewski;1914;1920;1999;ML;School of Psychology;High;3929;X
+60142;Chief of Staff;Kazimierz Sosnkowski;1920;1933;1999;SC;School of Manoeuvre;Medium;2935;X
+60143;Chief of Staff;Jan Michalski;1919;1933;1999;SC;School of Psychology;Medium;3930;X
+60144;Chief of Staff;Jan Stoinski;1919;1933;1999;SC;School of Psychology;Medium;unknownminister;X
+60145;Chief of Staff;Wladyslaw Grzedzielski;1919;1933;1999;SD;School of Fire Support;Medium;unknownminister;X
+60146;Chief of Staff;Jan Wroczynski;1919;1946;1946;SC;School of Fire Support;Medium;unknownminister;X
+60147;Chief of Staff;Józef Pilsudski;1900;1935;1999;PA;School of Manoeuvre;Medium;2932;X
+60148;Chief of Staff;Tadeusz Rozwadowski;1918;1933;1999;PA;School of Psychology;Medium;2936;X
+60149;Chief of Staff;Józef Lesniewski;1920;1922;1999;SC;School of Manoeuvre;Medium;3929;X
+60150;Foreign Minister;Leon Wasilewski;1914;1919;1999;SC;Great Compromiser;Medium;2937;X
+60151;Foreign Minister;Jan Dabski;1920;1933;1999;SD;Great Compromiser;Medium;2938;X
+60152;Foreign Minister;Konstanty Skirmunt;1920;1933;1999;ML;Great Compromiser;Medium;3931;X
+60153;Foreign Minister;Leon Wasilewski;1919;1933;1999;SC;Great Compromiser;Medium;2937;X
+60154;Foreign Minister;Wladyslaw Wróblewski;1919;1932;1952;SC;Great Compromiser;Medium;2939;X
+60155;Foreign Minister;Ignacy Paderewski;1917;1933;1999;SD;Great Compromiser;High;2940;X
+60156;Foreign Minister;Stanislaw Patek;1919;1933;1999;SC;Apologetic Clerk;High;2941;X
+60157;Foreign Minister;Eustachy Sapieha;1919;1933;1999;SC;Apologetic Clerk;High;2942;X
+60158;Foreign Minister;Adam hr. Tarnowski;1919;1933;1999;SD;Iron Fisted Brute;High;3932;X
+60159;Foreign Minister;Jan Hr. Szembek;1919;1933;1999;SC;Apologetic Clerk;Low;2943;X
+60160;Head of Government;Jedrzej Moraczewski;1914;1933;1999;SC;Flamboyant Tough Guy;High;2944;X
+60161;Head of Government;Ignacy Paderewski;1917;1933;1999;SD;Happy Amateur;High;2940;X
+60162;Head of Government;Leopold Skulski;1919;1933;1999;SD;Silent Workhorse;High;3933;X
+60163;Head of Government;Wladyslaw Grabski;1919;1933;1999;ML;Corporate Suit;High;2945;X
+60164;Minister of Security;Wincenty Witos;1919;1933;1999;SC;Man of the People;High;2946;X
+60165;Head of Government;Wojciech Korfanty;1919;1933;1999;SC;Happy Amateur;High;2947;X
+60166;Head of Government;Roman Dmowski;1919;1933;1999;SD;Backroom Backstabber;High;M13050;X
+60167;Head of Military Intelligence;Shadow;1914;1933;1999;PA;Logistics Specialist;High;unknownminister;X
+60168;Head of Military Intelligence;Adam hr. Tarnowski;1919;1933;1999;SD;Dismal Enigma;High;3932;X
+60169;Head of State;Józef Pilsudski;1900;1935;1999;PA;Resigned Generalissimo;High;2932;X
+60170;Head of State;Gabriel Narutowicz;1917;1933;1999;ML;Benevolent Gentleman;High;2948;X
+60171;Head of State;Ignacy Jan Paderewski;1919;1933;1999;SD;Weary Stiffneck;High;2940;X
+60172;Head of State;Stanislaw Wojciechowski;1919;1933;1999;SC;Weary Stiffneck;High;2940;X
+60173;Head of State;Shadow;1914;1933;1999;PA;Benevolent Gentleman;High;unknownminister;X
+60174;Minister of Armament;Antoni Minkiewicz;1914;1919;1999;PA;Military Entrepreneur;Medium;unknownminister;X
+60175;Minister of Armament;Wladyslaw Grabski;1917;1933;1999;ML;Administrative Genius;Medium;2945;X
+60176;Minister of Armament;Leon Wyczolkowski;1920;1933;1999;SC;Military Entrepreneur;Medium;3934;X
+60177;Minister of Armament;Wladyslaw Byrka;1919;1933;1999;SC;Military Entrepreneur;Medium;3935;X
+60178;Minister of Armament;Ignacy Weinfeld;1919;1933;1999;SC;Military Entrepreneur;Medium;unknownminister;X
+60179;Minister of Armament;Stefan Przanowski;1920;1933;1999;ML;laissez-faire capitalist;Medium;3936;X
+60180;Minister of Armament;Jan Michalski;1920;1933;1999;ML;laissez-faire capitalist;Medium;3930;X
+60181;Minister of Armament;Henryk Leon Strasburger;1920;1933;1999;ML;Resource Industrialist;Medium;M13066;X
+60182;Minister of Armament;Jan Stoinski;1920;1933;1999;SC;Military Entrepreneur;Medium;unknownminister;X
+60183;Minister of Armament;Jan Kanty Steczkowski;1914;1930;1930;ML;laissez-faire capitalist;Medium;3937;X
+60184;Minister of Armament;Franciszek Woyda;1919;1933;1999;ML;Military Entrepreneur;Medium;3057;X
+60185;Minister of Armament;Blazej Stolarski;1919;1933;1999;ML;Military Entrepreneur;Medium;3938;X
+60186;Minister of Armament;Antoni Minkiewicz;1919;1933;1999;PA;Military Entrepreneur;Medium;unknownminister;X
+60187;Minister of Armament;Boleslaw Markowski;1921;1933;1999;SC;Military Entrepreneur;Medium;3939;X
+60188;Minister of Armament;Oskar Sobanski;1919;1933;1999;SD;Military Entrepreneur;Medium;3031;X
+60189;Minister of Armament;Stanislaw Karpinski;1919;1933;1999;SC;Military Entrepreneur;Medium;2949;X
+60190;Minister of Armament;Antoni Olszewski;1919;1933;1999;SC;Military Entrepreneur;Medium;3042;X
+60191;Minister of Armament;Wieslaw Chrzanowski;1919;1933;1999;PA;Military Entrepreneur;Medium;3940;X
+60192;Minister of Armament;Leon Bilinski;1919;1933;1999;SD;laissez-faire capitalist;Medium;3517;X
+60193;Minister of Armament;Kazimierz Hacia;1919;1933;1999;SD;laissez-faire capitalist;Medium;3941;X
+60194;Minister of Armament;Józef Englich;1919;1933;1999;ML;laissez-faire capitalist;Medium;3942;X
+60195;Minister of Armament;Stanislaw Sliwinski;1919;1933;1999;ML;Military Entrepreneur;Medium;3943;X
+60196;Minister of Armament;Gabriel Narutowicz;1919;1933;1999;ML;laissez-faire capitalist;Medium;2948;X
+60197;Minister of Armament;Wojciech Korfanty;1919;1933;1999;SD;Military Entrepreneur;Medium;2947;X
+60198;Minister of Armament;Józef Haller;1919;1933;1999;SC;Military Entrepreneur;Medium;2933;X
+60199;Minister of Security;Stanislaw Thugutt;1914;1933;1999;SC;Silent Lawyer;Medium;2950;X
+60200;Minister of Security;Leopold Skulski;1919;1933;1999;SC;Silent Lawyer;Medium;3933;X
+60201;Minister of Security;Wladyslaw Raczkiewicz;1919;1933;1999;SC;Silent Lawyer;Medium;M13005;X
+60202;Minister of Security;Stanislaw Thugutt;1919;1933;1999;SC;Silent Lawyer;Medium;2950;X
+60203;Minister of Security;Ignacy Jan Paderewski;1919;1933;1999;SD;Silent Lawyer;Medium;2940;X
+60204;Minister of Security;Stanislaw Wojciechowski;1917;1933;1999;SC;Compassionate Gentleman;Medium;2951;X
+60205;Minister of Security;Józef Kuczynski;1919;1933;1999;SC;Compassionate Gentleman;Medium;3944;X
+60206;Minister of Security;Stanislaw Downarowicz;1921;1933;1999;SC;Compassionate Gentleman;Medium;3052;X
+60207;Minister of Security;Marjan Rudzinski;1919;1943;1999;SC;Back Stabber;Medium;M13092;X
+60208;Head of Government;Wincenty Witos;1919;1964;1999;SC;flamboyant tough guy;High;M13094;X
+60209;Minister of Armament;Henryk Strasburger;1920;1933;1999;ML;Resource Industrialist;Medium;unknownminister;X
+60210;Head of State;Regency Council;1914;1999;1999;PA;Local tyrant2;Medium;9251;X
+60211;Head of Government;Jan Kanty Steczkowski;1914;1930;1930;PA;corporate suit;High;3937;X
+60212;Foreign Minister;Stanislaw Glabinski;1914;1932;1942;PA;ideological crusader;High;M13083;X
+60213;Foreign Minister;Wojciech Rostworowski;1914;1932;1953;PA;apologetic clerk;High;9252;X
+60214;Foreign Minister;Tytus Filipowicz;1914;1932;1954;SD;biased intellectual;High;9253;X
+60215;Foreign Minister;Janusz Radziwill;1914;1945;1968;PA;great compromiser;High;M13104;X
+60216;Minister of Armament;Stanislaw Dzierzbicki;1914;1920;1920;PA;laissez-faire capitalist;High;9254;X
+60217;Minister of Armament;Ludwik Górski;1914;1932;1932;PA;Industrial chemist;High;unknownminister;X
+60218;Minister of Armament;Jan Zagleniczny;1914;1932;1932;PA;Industrial chemist;High;9255;X
+60219;Minister of Armament;Edward Rydz-Smigly;1914;1942;1942;PA;infantry proponent;High;M13007;X
+60220;Minister of Armament;Jan Wroczynski;1914;1946;1946;PA;military entrepreneur;High;9256;X
+60221;Minister of Security;Jan Stecki;1914;1932;1955;PA;silent lawyer;High;9257;X
+60222;Minister of Security;Zygmunt Chrzanowski;1914;1937;1937;PA;compassionate gentleman;High;unknownminister;X
+60223;Minister of Security;Stanislaw Ustyanowski;1914;1932;1943;PA;crime fighter;High;unknownminister;X
+60224;Head of Military Intelligence;Mieczyslaw Mackiewicz;1914;1955;1955;PA;logistics specialist;High;9275;X
+60225;Head of Military Intelligence;Tadeusz Puszczynski;1914;1940;1940;PA;industrial specialist;High;9258;X
+60226;Head of Military Intelligence;Karol Boldeskul;1914;1945;1945;PA;political specialist;High;unknownminister;X
+60227;Chief of Staff;Marian Januszajtis-Zegota;1914;1940;1974;PA;school of defence;High;L8158;X
+60228;Chief of Staff;Marian Kukiel;1914;1946;1973;PA;commando doctrine staff;High;9259;X
+60229;Chief of Staff;Stanislaw Szeptycki;1914;1932;1951;PA;school of psychology;High;9260;X
+60230;Chief of Staff;Wlodzimierz Zagórski;1914;1928;1928;PA;school of manoeuvre;High;9261;X
+60231;Chief of Army;Zygmunt Zielinski;1914;1926;1926;PA;decisive battle doctrine;High;9262;X
+60232;Chief of Army;Stanislaw Szeptycki;1914;1932;1951;PA;static defence doctrine;High;9260;X
+60233;Chief of Army;Stanislaw Puchalski;1914;1932;1932;PA;guns and butter doctrine;High;6926;X
+60234;Chief of Navy;Bogumil Nowotny;1914;1932;1961;PA;decisive naval battle doctrine;High;9263;X
+60235;Chief of Air Force;Julian Sloniewski;1914;1921;1921;PA;air superiority doctrine;High;9264;X
+60236;Chief of Air Force;Sergiusz Abzóltowski;1914;1940;1940;PA;air superiority doctrine;High;9265;X
+60237;Chief of Air Force;Roman Florer;1914;1932;1974;PA;army aviation doctrine;High;9266;X
+60238;Chief of Air Force;Piotr Abakanowicz;1914;1932;1949;PA;army aviation doctrine;High;6912;X
+60239;Chief of Air Force;Wlodzimierz Zagórski;1914;1928;1928;PA;army aviation doctrine;High;9261;X

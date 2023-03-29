@@ -1,0 +1,50 @@
+max_garrison_prop		= 1.0 										# The war-time desired proportion of troops allocated to garrison duty
+min_garrison_prop		= 1.0										# The war-time minimum proportion of troops allocated to garrison duty
+
+garrison = {
+	
+	#defend_overseas_beaches = [yes/no] 							# Overseas garrisoning: "no" is default
+
+	# Basic need is X divisions per area where X is: number of provinces - attrition provinces
+	
+	home_multiplier = 1.0											# In home area, multiply basic need by X. Default: 0.5
+	#overseas_multiplier = 											# In other area, multiply basic need by X. Default: 0.3333
+	#home_peace_cap = 												# If at peace, we need at most X divisions in our capital area.
+	#war_zone_odds = 												# AI tries to strive for a certain ratio in odds value. Default: 2.0 [vs. max_front_ratio?]
+	
+	area_multiplier = {   } 										# If an area contains a specific province, multiply the basic need by value (overrides overseas_multiplier, but if it is the home area it is ignored.)
+		
+	# PRIORITIES:
+
+	beach = 90					# Beach prio
+	capital = 0					# Our capital
+	human_border = 0			# Ignored for allied human players
+	war_target = 0				# The next country targeted [set by combat-parameter?] for attack by this AI
+	reserves = 0				# bonus for provinces just behind a frontline.
+	opposing_alliance = 0		# For neutrals, all alliances are "opposing"
+	claim_threat = 0			# If we are neutral, countries with claims on us get this
+	unstable_border	= 0			# Bordering countries at war with someone else get this
+	#key_point_prio_mult	= 	# Value * key point value in a province = prio for that province
+	#revolt_risk_mult =
+
+	# Borders with specific countries
+	country_priorities = {		# '-1' Override "opposing_alliance", "claim_threat" and "unstable_border" values and set to 0.
+		ITA =  1
+		ROM =  5
+		GRE =  1
+		U08 = -1
+		SCH = -1
+		BUL = -1
+		ALB = -1
+		RUS = -1
+			}
+
+	# Specific provinces		# Negative value will override _all_ other priorities and set to 0.
+	province_priorities = {  
+		351 = 1	# Knin
+		359 = 1 # Tirana
+		}
+	
+	ignore = {  }
+
+}

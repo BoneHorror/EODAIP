@@ -1,0 +1,153 @@
+# England changes his production levels atwar
+# Temporary fixed for 0.30 beta needs rework when the map is finished, fixes limited to ignore provinces in greater europe regions (ewphoenix123)
+
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
+
+upgrading = 0.30
+#reinforcement = 0.30
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.10 
+
+	AA_batteries = no
+	max_AA_level = 10 
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		# England Coast
+		23 # Plymouth 
+		25 # Norwich 
+		26 # Dover 
+		27 # Portsmouth
+		
+		12 # Edinburg
+		22 # Cardif
+		
+		17 # Manchester 
+		11 # Glasgow
+		36 # Belfast
+		
+	} 
+
+	radar_station = yes
+	max_radar = 3 
+	radar_provs = {
+		26  #Dover
+		25  #Norwich
+		27  #Portsmouth
+		20  #Plymouth
+		18  #Shefield
+		5  # Scapa Flow
+		23  #Truro
+	} 
+
+	air_base = yes
+	max_air_base = 5 
+	air_base_provs = { } 
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = yes
+	max_land_level = 5
+	fort_provs	= { 
+		348 # Gibraltar
+		789  #Alexandria
+	}
+	fort_borders = { } 
+
+	ic_at_war = yes
+	force_ic_until = 1938
+	ic_end_year = 1945
+	IC_provs  = { 4 5 6 7 11 13 36 35 } 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.9 # 1.4
+	overseas_multiplier = 1.1
+	home_peace_cap 		= 15#40
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 80	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 30	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	unstable_border		= 0		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		GER = 100
+		SOV = 100
+		ITA = 10
+	}
+	province_priorities = {
+		#348 = 30 # Gibraltar
+		#429  = 30 # Malta 
+		#789 = 30 # Alexandria 
+		
+		# England Coast
+		#26 = 30 # Dover 
+		#25 = 30 # Norwich 
+		#27 = 30 # Portsmouth 
+		#23 = 30 # Plymouth 
+		#17 = 30 # Manchester
+		#24 = 30 # Liverpool 
+		#12 = 30 # Edimburg
+		#11 = 30 # Glasgow
+		#5 = 30 # Scap Flow
+		#36 = 30 # Belfast
+		20 = 10 # Exeter
+		
+  		#49 = 30 # Calais
+  		#51 = 30 # Dunkerque
+  		#52 = 30 # Lille
+
+  		#382 = 30 # Iraklion 
+	}
+	area_multiplier = {
+		#348 = 2.0 # Gibraltar
+		#429   = 2.0  #Malta
+		#789  = 1.5  #Alexandria
+
+		# England Coast
+		#26  = 2.0  #Dover
+		#25  = 2.0  #Norwich
+		#27  = 2.0  #Portsmouth
+		#20  = 2.0  #Plymouth
+		#17  = 2.0  #Blackpool
+		#18  = 2.0  #Sheifield
+		#24  = 2.0  #Liverpool
+		#19  = 2.0  #Bristol
+		#15  = 2.0  #Sunderland
+		#13  = 2.0  #Edinburgh
+		#10  = 2.0  #Dumfires
+		#5 = 2.0 # Scap Flow
+		#
+		#11  = 2.0  #Glasgow 
+		#23  = 2.0  #Truro
+		#16  = 2.0  #Lincoln
+		#12  = 2.0  #Edinborough
+		#21  = 2.0  #Swansea
+		#14  = 2.0  #Carlisle
+		#51 = 2.0 # Lille
+
+	}
+}

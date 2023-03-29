@@ -1,0 +1,83 @@
+#BRIG_MODEL_42_
+detachable = yes
+
+# 0 - Converted Gunship (1962) -UH-1H/Mi-2URP Salamandra/Aérospatiale SA341.1001 Gazelle
+model = {
+	cost 				= 4
+	buildtime	 		= 150
+	manpower 			= 0.9
+	maxspeed 			= 1
+	defensiveness 		= -1
+	toughness 			= 0
+	defaultorganisation = 2
+	softness			= -1
+	hardattack			= 4
+	softattack			= 7
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 2.7
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	#speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 54 }
+}
+
+# 1 - Basic Attack Helicopter (1967) -AH-1G HueyCobra/Mi-24 (Hind-A)
+model = {
+	cost 				= 4
+	buildtime	 		= 160
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 2
+	softness			= -1
+	hardattack			= 6
+	softattack			= 9
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 2.7
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	#speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 54 }
+}
+
+# 2 - Improved Attack Helicopter (1975) -Bell AH-1 SuperCobra/Mi-24D (Hind-D)
+model = {
+	cost 				= 5
+	buildtime	 		= 165
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 2
+	softness			= -1
+	hardattack			= 8
+	softattack			= 12
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 2.9
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	#speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 54 }
+}
+
+# 3 - Advanced Attack Helicopter (1980) -Boeing AH-64A Apache/Mi-24V/Kamov Ka-50/Eurocopter HCP Tiger
+model = {
+	cost 				= 6
+	buildtime	 		= 170
+	manpower 			= 0.9
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 1
+	defaultorganisation = 2
+	softness			= -1
+	hardattack			= 12
+	softattack			= 14
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 2.9
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	#speed_cap			= 7
+	equipment = { manpower = 900 helicopter = 54 }
+}
+

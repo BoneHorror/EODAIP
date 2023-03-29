@@ -1,0 +1,56 @@
+BUR;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+465001;Head of State;Sir Reginald Dorman-Smith;1933;1964;1999;ML;Stern Imperialist;High;M563001;X
+465002;Head of Government;Hubert Elvin Rance;1933;1964;1999;ML;Naive Optimist;High;M563002;X
+465003;Foreign Minister;Sir Archibald Cochrane;1933;1964;1999;ML;General Staffer;High;M563003;X
+465004;Minister of Armament;Robert Fitzhendricks;1933;1964;1999;ML;Military Entrepreneur;Medium;M563004;X
+465005;Minister of Security;John Collins;1933;1964;1999;ML;Crime Fighter;Medium;M563005;X
+465006;Head of Military Intelligence;Lord Ralph Bottomley;1933;1964;1999;ML;Dismal Enigma;Medium;M563006;X
+465007;Chief of Staff;Sir Archibald Cochrane;1933;1964;1999;ML;School of Defence;Medium;M563003;X
+465008;Chief of Army;Donald Clarkson;1933;1964;1999;ML;Static Defence Doctrine;Medium;M563008;X
+465009;Chief of Navy;Hubert Scott-Paine;1933;1964;1999;ML;Power Projection Doctrine;Medium;M563009;X
+465010;Chief of Air Force;P.C. Maltby;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M563010;X
+465011;Head of State;Thakin Bai Thei Tin;1933;1964;1999;ST;Ruthless Powermonger;High;M563011;X
+465012;Head of State;Sao Shwe Thaik;1933;1964;1999;SD;Die-hard Reformer;High;M563012;X
+465013;Head of State;H.M. Sao Yang Wen Pin;1933;1964;1999;PA;Pig-headed Isolationist;High;M563013;X
+465014;Head of State;Ba U;1933;1964;1999;FA;Insignificant Layman;High;M563014;X
+465015;Head of Government;Thakin Soe Buu;1933;1964;1999;ST;Old Admiral;High;M563015;X
+465016;Head of Government;Aung San;1933;1964;1999;SD;Old General;High;M563016;X
+465017;Head of Government;H.R.H. Sao Edward Yang Kyein Tsai;1933;1964;1999;PA;Political Protege;High;M563017;X
+465018;Head of Government;Ba Maw;1933;1964;1999;FA;Flamboyant Tough Guy;High;M563018;X
+465019;Foreign Minister;Thaik Tun;1933;1964;1999;ST;Ideological Crusader;High;M563019;X
+465020;Foreign Minister;U Thant;1933;1964;1999;SD;Great Compromiser;High;M563020;X
+465021;Foreign Minister;Thakin Nu;1933;1964;1999;PA;Apologetic Clerk;High;M563021;X
+465022;Foreign Minister;Galon Saw Oo;1933;1964;1999;FA;The Cloak N Dagger Schemer;High;M563022;X
+465023;Minister of Armament;Thakin Ba Thaung;1933;1964;1999;ST;Submarine Proponent;Medium;M563023;X
+465024;Minister of Armament;Aung Gyi;1933;1964;1999;SD;laissez-faire capitalist;Medium;M563024;X
+465025;Minister of Armament;James Franklyn;1933;1964;1999;PA;Administrative Genius;Medium;M563025;X
+465026;Minister of Armament;Ba Khin;1933;1964;1999;FA;Air to Ground Proponent;Medium;M563026;X
+465027;Minister of Security;A.N. Ghosal;1933;1964;1999;ST;Man of the People;Medium;M563027;X
+465028;Minister of Security;Wing Maung;1933;1964;1999;SD;Back Stabber;Medium;M563028;X
+465029;Minister of Security;Sein Lwin;1933;1964;1999;PA;Silent Lawyer;Medium;M563029;X
+465030;Minister of Security;Ne Win;1933;1964;1999;FA;Compassionate Gentleman;Medium;L101130;X
+465031;Head of Military Intelligence;Hem Chandra Mazumdar;1933;1964;1999;ST;Industrial Specialist;Medium;M563031;X
+465032;Head of Military Intelligence;Hla Myaing;1933;1964;1999;SD;Logistics Specialist;Medium;M563032;X
+465033;Head of Military Intelligence;Cecil Crouch Ford;1933;1964;1999;PA;Political Specialist;Medium;M563033;X
+465034;Head of Military Intelligence;Keneko Toyoji;1933;1964;1999;FA;Technical Specialist;Medium;M563034;X
+465035;Chief of Staff;Ne Win;1933;1964;1999;ST;School of Manoeuvre;Medium;L101130;X
+465036;Chief of Staff;Smith Dun;1933;1964;1999;SD;School of Psychology;Medium;M563036;X
+465037;Chief of Staff;Mason Fitzgerald;1941;1964;1999;ML;School of Fire Support;Medium;M563037;X
+465038;Chief of Staff;Bo Mya;1933;1964;1999;PA;School of Mass Combat;Medium;M563038;X
+465039;Chief of Staff;Khun Sa;1933;1964;1999;FA;School of Manoeuvre;Medium;M563039;X
+465040;Chief of Army;Maung Khin;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M563040;X
+465041;Chief of Army;Aung San;1933;1964;1999;SD;Guns and Butter Doctrine;Medium;M563016;X
+465042;Chief of Army;William Merrick;1943;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M563042;X
+465043;Chief of Army;Galon Saw Oo;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M563022;X
+465044;Chief of Army;Ne Win;1933;1964;1999;FA;Decisive Battle Doctrine;Medium;L101130;X
+465045;Chief of Navy;Thakin Soe Buu;1933;1964;1999;ST;Indirect Approach Doctrine;Medium;M563015;X
+465046;Chief of Navy;Khin Maung Swe;1933;1964;1999;SD;Base Control Doctrine;Medium;M563046;X
+465047;Chief of Navy;Claude Poigdestre;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M563047;X
+465048;Chief of Navy;Hsaya Maung Thaw Ka;1933;1964;1999;FA;Open Seas Doctrine;Medium;M563048;X
+465049;Chief of Air Force;Thaik Tun;1933;1964;1999;ST;Vertical Envelopment Doctrine;Medium;M563019;X
+465050;Chief of Air Force;Naw Seng;1933;1964;1999;SD;Naval Aviation Doctrine;Medium;M563050;X
+465051;Chief of Air Force;Aik Luk;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M563051;X
+465052;Chief of Air Force;Tin Tun;1933;1964;1999;FA;Carpet Bombing Doctrine;Medium;M563052;X
+465053;Head of State;Ba Oo;1952;1964;1999;LWR;Stern Imperialist;High;M563014;X
+465054;Head of Government;U Nu;1948;1964;1999;SD;Smiling Oilman;High;M563054;X

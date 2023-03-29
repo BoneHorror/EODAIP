@@ -1,0 +1,7 @@
+# Italy Changes Political Stance
+
+neutrality = 0.000 
+war = 30
+upgrading = 0.30
+combat = { ENG = 150 TUR = 40 GRE = 80 }
+#reinforcement = 0.30

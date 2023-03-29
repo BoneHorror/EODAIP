@@ -1,0 +1,4630 @@
+#######################################################################
+### 2022017  HUN  Switching sides
+### 2022018  ROM  Switching sides
+### 2030005  FIN  Switching sides
+### 2007060  SOV  New allies - Hungary
+### 2007061  SOV  New allies - Romania
+### 2007062  sOV  New allies - Finland
+### 2049055  USA  Cold War gets hot
+### 2007063  SOV  Cold War gets hot
+### 2007064  SOV  Warsaw Uprising
+### 2001066  ENG  Warsaw Uprising
+### 2007065  SOV  Warsaw Uprising
+### 2007065  SOV  Soviet Support to the Uprising
+### 2009008  SWE  The Engelbrecht Transit
+### 2016001  DEN  Germany demands surrender
+### 2003086  GER  Denmark Accepts Our Demands
+### 2038001  PRU  War with Ecuador
+### 2039001  ECU  War with Peru
+### 2036002  COL  Peru at war with Ecuador
+### 2053001  CHC  The Chinese Civil War
+### 2012025  CHI  The Chinese Civil War
+### 2031001  PER  A democratic coup d'état happened to us
+### 2001067  ENG  Install a Puppet
+### 2007067  SOV  The End of the Soviet Occupation of Persia
+### 2004004  HOL  The Fate of the Dutch East Indies
+### 2055001  INO  The Independence of Indonesia
+### 2030006  FRA  The Fate of Cambodia
+### 2119001  CMB  The Autonomy of Cambodia
+### 2001068  ENG  The Fate of Egypt
+### 2069011  EGY  An Autonomous Egypt
+### 2001069  ENG  The Fate of Burma
+### 2094001  BUR  The Independence of Burma
+### 2001070  ENG  The Middle East and the Zionists
+### 2136001  ISR  The Independence of Israel
+### 2001071  ENG  The Fate of Jordan
+### 2075001  JOR  The Independence of Jordan
+### 2002020  FRA  The Fate of Laos
+### 2138001  LAO  The Independence of Laos
+### 2006018  ITA  The Fate of Libya
+### 2100001  LBY  The Independence of Libya
+### 2001072  ENG  The Fate of Libya
+### 2049056  USA  The Fate of Libya
+### 2069012  EGY  The Independence of Israel
+### 2075002  JOR  The Independence of Israel
+### 2076001  LEB  The Independence of Israel
+### 2087002  SYR  The Independence of Israel
+### 2074003  IRQ  The Independence of Israel
+### 2087003  SYR  Iraqi aid to the Arab-Israeli War
+### 2002021  FRA  The Fate of Lebanon
+### 2076002  LEB  The Independence of Lebanon
+### 2002022  FRA  The Fate of Syria
+### 2087001  SYR  The Independence of Syria
+### 2004005  HOL  The Independence of Indonesia
+### 2002023  FRA  The Autonomy of Cambodia
+### 2001073  ENG  The Independence of Burma
+### 2001074  ENG  Ceding East Pakista
+### 2049057  USA  Capital nuked - Aftermath
+### 2049058  USA  Capital nuked - Aftermath
+### 2003087  GER  Capital nuked - Aftermath
+### 2003088  GER  Capital nuked - Aftermath
+### 2002024  FRA  Capital nuked - Aftermath
+### 2002025  FRA  Capital nuked - Aftermath
+### 2006019  ITA  Capital nuked - Aftermath
+### 2006020  ITA  Capital nuked - Aftermath
+### 2007068  SOV  Capital nuked - Aftermath
+### 2007069  SOV  Capital nuked - Aftermath
+### 2011035  JAP  Capital nuked - Aftermath
+### 2011036  JAP  Capital nuked - Aftermath
+### 2001075  ENG  Capital nuked - Aftermath
+### 2001076  ENG  Capital nuked - Aftermath
+### 2012026  CHI  Capital nuked - Aftermath
+### 2012027  CHI  Capital nuked - Aftermath
+### 2053002  CHC  Capital nuked - Aftermath
+### 2053003  CHC  Capital nuked - Aftermath
+### 2207001  U24  The Future of the defeated Germany
+### 2208001  U25  The Future of the defeated Germany
+### 2002026  U26  The Saar protectorate
+### 2184003  U01  The Saar protectorate
+### 2127001  DFR  The Saar protectorate
+### 2007070  SOV  The German Democratic Republic - GDR
+### 2049059  USA ENG FRA U01 CAN AST POL RAJ CZE AUS  Federal Republic of Germany - FRG
+### 2001377  USA  Federal Republic of Germany - FRG
+### 2001077  ENG  Federal Republic of Germany - FRG
+### 2002027  FRA  Federal Republic of Germany - FRG
+### 2184004  U01  Federal Republic of Germany - FRG
+### 2207003  U24  Federal Republic of Germany - FRG
+### 2208003  U25  The German Democratic Republic - GDR
+### 2208004  SOV  The German Democratic Republic - GDR
+### 2049060  USA ENG FRA U01 CAN AST POL RAJ CZE AUS  Austrian Independence
+### 2184205  USA  Austrian Independence
+### 2184005  U01  Austrian Independence
+### 2001078  ENG  Austrian Independence
+### 2002028  FRA  Austrian Independence
+### 2207002  U24  Austrian Independence
+### 2007071  SOV  Austrian Independence
+### 2208002  U25  Austrian Independence (AUS)
+### 2208005  U25  Austrian Independence (U16)
+### 2208006  SOV  Austrian Independence (U16)
+### 2185005  U02  The Fate of Burma
+### 3059012  SIA  Siam/Thailand name changed
+### 3059013  SIA  Siam/Thailand name changed
+### 3059014  SIA  Siam/Thailand name changed
+### 2059003  SIA  Siam or Thailand
+### 750034   U44  General unrest in Distrikt Krakau
+### 750035   U44  General unrest in Distrikt Radom
+### 750036   U44  General unrest in Distrikt Warschau
+### 750037   U44  General unrest in Distrikt Lublin
+### 750038   U44  General unrest in Distrikt Galizien
+### 2022018  GER  The partitioning of Yugoslavia
+### 2022019  ITA  The partitioning of Yugoslavia
+### 2022020  HUN  The partitioning of Yugoslavia
+### 2022021  BUL  The partitioning of Yugoslavia
+### 2022022  ROM  The partitioning of Yugoslavia
+### 2022023  GER  The partitioning of Greece
+### 2022024  ITA  The partitioning of Greece
+### 2022025  BUL  The partitioning of Greece
+### 2024002  DDR DFR AUS U16  AI_EVENT (Capital of DDR/DFR/AUS/U16)
+### 2024003  REB  AI_EVENT (New oil fields)
+### 2024004  GER DDR DFR AUS U16 U24 U25 ITA U14 HUN U13 CZE U31 SLO YUG U27 ENG FRA U01 USA SOV ROM BUL GRE SCH SPR SPA SWE NOR FIN U08 U09  New oil fields
+### 2024005  REB  AI_EVENT (New oil fields)
+### 2024006  GER DDR DFR AUS U16 U24 U25 ITA U14 HUN U13 CZE U31 SLO YUG U27 ENG FRA U01 USA SOV ROM BUL GRE SCH SPR SPA SWE NOR FIN U08 U09  New oil fields
+### 2003127  TRA  A new flag
+### 2003128  SER  A new flag
+###
+#########################################################################
+#  Axis minor states switch sides
+#########################################################################
+
+event = {
+	id = 2022017
+	random = no
+	country = HUN
+
+	name = EVT_59_NAME
+	desc = EVT_59_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = U13 }
+		war = { country = GER country = SOV }
+		war = { country = HUN country = SOV }
+		OR = {
+			control = { province = 284 data = SOV } #Budapest
+			control = { province = 282 data = SOV } #Miskloc
+			control = { province = 280 data = SOV } #Szeged
+			control = { province = 278 data = SOV } #Szekesfehervar
+		}
+	}
+
+    date = { day = 0 month = january year = 1938 }
+    offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_59_ACTA
+		command = { type = end_puppet }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = removeclaim which = 341 } # Novi Sad
+		command = { type = removeclaim which = 188 } # Eisenstadt
+		command = { type = removeclaim which = 208 } # Bratislava
+		command = { type = removeclaim which = 211 } # Banská Bystrica
+		command = { type = removeclaim which = 212 } # Zilina
+		command = { type = removeclaim which = 213 } # Chust
+		command = { type = removeclaim which = 214 } # Presov
+		command = { type = removeclaim which = 285 } # Timisoara
+		command = { type = removeclaim which = 286 } # Arad
+		command = { type = removeclaim which = 287 } # Turda
+		command = { type = removeclaim which = 288 } # Cluj
+		command = { type = removeclaim which = 289 } # Alba Iulia
+		command = { type = removeclaim which = 291 } # Sibiu
+		command = { type = removeclaim which = 292 } # Bistrita
+		command = { type = removeclaim which = 295 } # Resita
+		command = { type = trigger which = 2007060 }
+		command = { type = secedeprovince which = ROM value = 296 } # Oradea - Romania
+		command = { type = secedeprovince which = ROM value = 288 } # Cluj - Romania
+		command = { type = secedeprovince which = ROM value = 292 } # Bistrita - Romania
+		command = { type = secedeprovince which = ROM value = 293 } # Miercurea Ciuc - Romania
+		command = { type = secedeprovince which = SOV value = 296 } # Oradea - Romania
+		command = { type = secedeprovince which = SOV value = 288 } # Cluj - Romania
+		command = { type = secedeprovince which = SOV value = 292 } # Bistrita - Romania
+		command = { type = secedeprovince which = SOV value = 293 } # Miercurea Ciuc - Romania
+		command = { type = secedeprovince which = CZE value = 213 } # Chust - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 215 } # Uzhorod - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 214 } # Presov - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 209 } # Kosice - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 212 } # Zilina - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 211 } # Banská Bystrica - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 208 } # Bratislava - Czechoslovakia
+		command = { type = secedeprovince which = CZE value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 213 } # Chust - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 215 } # Uzhorod - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 214 } # Presov - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 209 } # Kosice - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 212 } # Zilina - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 211 } # Banská Bystrica - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 208 } # Bratislava - Czechoslovakia
+		command = { type = secedeprovince which = SOV value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 213 } # Chust - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 215 } # Uzhorod - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 214 } # Presov - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 209 } # Kosice - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 212 } # Zilina - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 211 } # Banská Bystrica - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 208 } # Bratislava - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = YUG value = 341 } # Novi Sad - Balkan
+		command = { type = secedeprovince which = GER value = 341 } # Novi Sad - Balkan
+		
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = set_relation which = GER value = -50 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = headofstate which = 105015 }
+		command = { type = headofgovernment which = 105031 }
+		command = { type = foreignminister which = 105046 }
+		command = { type = armamentminister which = 105059 }
+		command = { type = ministerofsecurity which = 105074 }
+		command = { type = ministerofintelligence which = 105090 }
+		command = { type = chiefofstaff which = 105099 }
+		command = { type = chiefofarmy which = 105110 }
+		command = { type = chiefofnavy which = 105116 }
+		command = { type = chiefofair which = 105125 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = EVT_59_ACTB
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+
+	}
+}
+
+event = {
+	id = 2023018
+	random = no
+	country = ROM
+
+	name = EVT_60_NAME
+	desc = EVT_60_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U30 }
+		war = { country = GER country = SOV }
+		war = { country = ROM country = SOV }
+		
+		OR = {
+			control = { province = 291 data = SOV } #Sibiu
+			control = { province = 309 data = SOV } #Braila
+			control = { province = 311 data = SOV } #Ploesti
+			control = { province = 316 data = SOV } #Bucharest
+		}
+	}
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 95
+		name = EVT_60_ACTA
+		command = { type = end_puppet }
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = set_relation which = GER value = -50 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = trigger which = 2007061 }
+		command = { type = headofstate which = 110077 }
+		command = { type = headofgovernment which = 110028 }
+		command = { type = foreignminister which = 110046 }
+		command = { type = armamentminister which = 110062 }
+		command = { type = ministerofsecurity which = 110076 }
+		command = { type = ministerofintelligence which = 110085 }
+		command = { type = chiefofstaff which = 110095 }
+		command = { type = chiefofarmy which = 110105 }
+		command = { type = chiefofnavy which = 110111 }
+		command = { type = chiefofair which = 110116 }
+	}
+	action_b = {
+		ai_chance = 5
+		name = EVT_60_ACTB
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 2030005
+	random = no
+	country = FIN
+
+	name = EVT_61_NAME
+	desc = EVT_61_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U20 }
+		war = { country = FIN country = SOV }
+		control = { province = 531 data = SOV } #Viipuri
+		OR = { #at least one of the provinces with VPs
+			control = { province = 525 data = SOV } #Helsinki
+			control = { province = 521 data = SOV } #Vaasa
+		}
+		OR = {
+			control = { province = 524 data = SOV } #Turku
+			control = { province = 527 data = SOV } #Tampere
+		}
+	}
+
+	date = { day = 0 month = january year = 1941 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_61_ACTA
+		command = { type = end_puppet }
+		command = { type = end_access which = GER }
+		command = { type = secedeprovince which = SOV value = 517 when = 1 } # Petsamo - Finland
+		command = { type = secedeprovince which = SOV value = 530 when = 1 } # Terijoki - Finland
+		command = { type = secedeprovince which = SOV value = 519 when = 1 } # Salla - Finland
+		command = { type = secedeprovince which = SOV value = 531 when = 1 } # Viipuri - Finland 
+		command = { type = secedeprovince which = SOV value = 532 when = 1 } # Sortavala - Finland 
+		command = { type = secederegion which = SOV value = "White Sea Tundra" when = 1 } #Karelia
+		command = { type = secederegion which = SOV value = "Russia" when = 1 }
+		command = { type = secederegion which = SOV value = "Northern Russia" when = 1 }
+		command = { type = secederegion which = SOV value = "Western Russia" when = 1 }		
+		command = { type = secederegion which = SOV value = "Baltic States" when = 1 }			
+		command = { type = trigger which = 2007062 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = EVT_61_ACTB
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 2007060
+	random = no
+	country = SOV
+
+	name = EVT_62_NAME
+	desc = EVT_62_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by Hungarian event 2022017
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_62_ACTA
+		command = { type = make_puppet which = HUN }
+		command = { type = coup_nation which = HUN }
+		command = { type = alliance which = HUN when = 1 }
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = EVT_62_ACTB
+		command = { type = dissent value = 1 }
+
+	}
+}
+
+event = {
+	id = 2007061
+	random = no
+	country = SOV
+
+	name = EVT_63_NAME
+	desc = EVT_63_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by Romanian event 2023018
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_63_ACTA
+		command = { type = addcore which = 303 } # Balti - Romania 
+		command = { type = addcore which = 304 } # Chisinau - Romania 
+		command = { type = addcore which = 306 } # Ismail - Romania 
+		command = { type = make_puppet which = ROM }
+		command = { type = coup_nation which = ROM }
+		command = { type = alliance which = ROM when = 1 }
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = EVT_63_ACTB
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 2007062
+	random = no
+	country = SOV
+
+	name = EVT_64_NAME
+	desc = EVT_64_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by Finnish event 2030005
+
+	action_a = {
+		ai_chance = 97
+		name = EVT_64_ACTA
+		command = { type = addcore which = 517 } # Petsamo - Finland
+		command = { type = addcore which = 530 } # Terijoki - Finland
+		command = { type = addcore which = 519 } # Salla - Finland
+		command = { type = addcore which = 531 } # Viipuri - Finland 
+		command = { type = addcore which = 532 } # Sortavala - Finland 
+		command = { type = secedeprovince which = FIN value = 526 } # Aaland - Finland 
+		command = { type = make_puppet which = FIN }
+		command = { type = coup_nation which = FIN } #becomes U20
+		command = { type = money value = 500 }
+	}
+	action_b = {
+		ai_chance = 3
+		name = EVT_64_ACTB
+		command = { type = dissent value = 3 }
+	}
+}
+#########################################################################
+#  Cold War gets hot
+#  With the Axis defeated, war between Allies and Comintern may
+#  begin if spheres of influence are violated
+#########################################################################
+
+event = {
+	id = 2049055
+	random = no
+	country = USA
+
+	name = EVT_69_NAME
+	desc = EVT_69_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { 
+			war = { country = GER country = ENG } 
+			war = { country = GER country = USA }
+			axis = 25
+			}
+		OR = {
+			control = { province = 1228 data = SOV } # Seoul, South Korea
+			control = { province = 1552 data = SOV } # Tokyo, Japan
+			control = { province = 2159 data = SOV } # Stockholm, Sweden
+			control = { province = 483 data = SOV } # Oslo, Norway
+			control = { province = 55 data = SOV } # Paris, France
+			control = { province = 122 data = SOV } # Amsterdam, Holland
+			control = { province = 116 data = SOV } # Brussels, Belgium
+			control = { province = 294 data = SOV } # Copenhagen, Denmark
+			control = { province = 109 data = SOV } # Luxembourg, Lux
+			control = { province = 419 data = SOV } # Rome, Italy
+			control = { province = 409 data = SOV } # Istanbul, Turkey
+			control = { province = 1085 data = SOV } # Iran
+			control = { province = 1035 data = SOV } # Baghdad, Iraq
+			control = { province = 1459 data = SOV } # Delhi, India
+			control = { province = 1247 data = SOV } # Beijing, China
+			control = { province = 1399 data = SOV } # Saigon, Vietnam
+		}
+		atwar = no
+		NOT = { atwar = SOV }
+		random = 50
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = EVT_69_ACTA
+		command = { type = war which = SOV }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 3 }
+	}
+	action_b = {
+		ai_chance = 0
+		name = EVT_69_ACTB
+		command = { type = relation which = SOV value = -25 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 2007063
+	random = no
+	country = SOV
+
+	name = EVT_69_NAME
+	desc = EVT_70_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		owned = { province = 572 data = SOV } # Moscow
+		OR = {
+			control = { province = 1221 data = USA } # Pyongyang, North Korea
+			control = { province = 525 data = USA } # Helsinki, Finland
+			control = { province = 2159 data = USA } # Stockholm, Sweden
+			control = { province = 2172 data = USA } # Kabul, Afghanistan
+			control = { province = 1085 data = USA } #, Iran
+			control = { province = 1035 data = USA } # Baghdad, Iraq
+			control = { province = 321 data = USA } # Sofia, Bulgaria
+			control = { province = 409 data = USA } # Istanbul, Turkey
+			control = { province = 316 data = USA } # Bucharest, Romania
+			control = { province = 207 data = USA } # Prague, Czechoslovakia
+			control = { province = 264 data = USA } # Riga, Latvia
+			control = { province = 262 data = USA } # Kaunas, Lithuania
+			control = { province = 270 data = USA } # Tallin, Estonia
+			control = { province = 232 data = USA } # Warzaw, Poland
+			control = { province = 1247 data = USA } # Beijing, China
+		}
+		NOT = { atwar = USA }
+		atwar = no
+		random = 60
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = EVT_70_ACTA
+		command = { type = war which = USA }
+		command = { type = relation which = USA value = -50 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	action_b = {
+		ai_chance = 0
+		name = EVT_70_ACTB
+		command = { type = relation which = USA value = -25 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 1 }
+	}
+}
+#########################################################################
+#  Warsaw Uprising
+#  Initial event is done as Soviet as Poland will NOT be in existence
+#  If support is given and the uprising succeeds then Poland is created
+#########################################################################
+
+event = {
+	id = 2007064
+	random = no
+	country = SOV
+
+	name = EVT_77_NAME
+	desc = EVT_77_DESC
+	style = 2
+  	picture = "news_paper"
+
+	trigger = {
+		war = { country = SOV country = GER }
+		control = { province = 242 data = SOV } # Lwow
+		control = { province = 247 data = SOV } # Brest-Letovsk
+		control = { province = 258 data = SOV } # Wilno
+		control = { province = 232 data = GER } # Warzaw
+		control = { province = 235 data = GER } # Krakow
+		control = { province = 224 data = GER } # Lodz
+		OR ={
+		control = { province = 246 data = SOV }
+		control = { province = 254 data = SOV }
+		control = { province = 182 data = SOV }
+		}
+		NOT = {
+			exists = POL
+		}
+		random = 20
+	}
+
+	date = { day = 0 month = january year = 1943 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_77_ACTA
+		command = { type = add_corps which = "Okreg Warszawki AK" value = land when = 60003 where = 232 } # Warszawa - Poland
+		command = { type = add_division which = "Kedyw AK" value = infantry when = 10 }
+		command = { type = add_division which = "1 Odzial mieszany" value = militia when = 5 }
+		command = { type = add_division which = "2 Odzial mieszany" value = militia when = 5 }
+		command = { type = supplies value = 500 where = 232 } # Warszawa - Poland
+		command = { type = oilpool value = 200 where = 232 } # Warszawa - Poland
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_77_ACTB
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = sleepevent which = 2001066 }
+		command = { type = sleepevent which = 2007065 }
+	}
+}
+
+event = {
+	id = 2001066
+	random = no
+	country = ENG
+
+	name = EVT_78_NAME
+	desc = EVT_78_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2007064
+	}
+
+	date = { day = 0 month = january year = 1943 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		ai_chance = 50
+		name = EVT_78_ACTA
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+	action_b = {
+		ai_chance = 50
+		name = EVT_78_ACTB
+		command = { type = add_corps which = "Paratrooper Brigade" value = land when = 60004 where = 232 } # Warszawa - Poland
+		command = { type = add_division which = "1st Paratrooper Brigade" value = paratrooper when = 1 }
+		command = { type = add_division which = "AK 3rd Mixed Units" value = infantry when = 11 }
+		command = { type = supplies value = 300 where = 232 } # Warszawa - Poland
+		command = { type = oilpool value = 100 where = 232 } # Warszawa - Poland
+		command = { type = domestic which = interventionism value = 1 }
+	}
+}
+
+event = {
+	id = 2007065
+	random = no
+	country = SOV
+
+	name = EVT_79_NAME
+	desc = EVT_79_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2007064
+		control = { province = 232 data = SOV }
+		region = { region = Poland country = SOV  value = 50 }
+		NOT = { area = { area = Silesia country = -2  } }
+		NOT = { area = { area = Brandenburg country = -2  } }
+		NOT = {
+			exists = POL
+		}
+	}
+
+	date = { day = 0 month = january year = 1943 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		ai_chance = 80
+		name = EVT_79_ACTA
+		command = { type = domestic which = freedom value = -1 }
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = EVT_79_ACTB
+		command = { type = independence which = POL value = 1 }
+		command = { type = trigger which = 2007066 }
+	}
+}
+
+event = {
+	id = 2007066
+	random = no
+	country = SOV
+
+	name = EVT_679_NAME
+	desc = EVT_79_DESC
+
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = supplies value = 500 where = 232 } # Warszawa - Poland
+		command = { type = oilpool value = 200 where = 232 } # Warszawa - Poland
+		command = { type = make_puppet which = POL }
+		command = { type = alliance which = POL when = 1 }
+	}
+}
+#########################################################################
+#  The Engelbrecht Transit
+#########################################################################
+
+event = {
+	id = 2009008
+	random = no
+	country = SWE
+
+	name = EVT_92_NAME
+	desc = EVT_92_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = SOV country = GER }
+		alliance = { country = GER country = FIN }
+		NOT = {
+			alliance = { country = GER country = SWE }
+		}
+		control = { province = 483 data = GER } # Oslo
+		#ispuppet = no
+		atwar = no
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_92_ACTA
+		command = { type = access which = GER }
+		command = { type = relation which = GER value = 10 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_92_ACTB
+		command = { type = relation which = GER value = -20 }
+	}
+}
+
+#########################################################################
+#  German occupation of Denmark
+#########################################################################
+
+event = {
+	id = 2016001
+	random = no
+	country = DEN
+
+	name = EVT_93_NAME
+	desc = EVT_93_DESC
+	style = 2
+	picture = "Fall_Weserubung"
+
+	trigger = {
+		war = { country = GER country = DEN }
+		NOT = { control = { province = 216 data = DEN } }
+		OR = { 
+		NOT = { exists = POL }
+		alliance = { country = GER country = POL }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 99
+		name = EVT_93_ACTA
+		 command = { type = leave_alliance when = 1 }
+		 command = { type = peace which = GER value = 1 }
+		 command = { type = access which = GER }
+		 command = { type = domestic which = political_left value = -2 }
+		 command = { type = domestic which = freedom value = -2 }
+		 command = { type = domestic which = democratic value = -2 }
+		 command = { type = relation which = GER value = 10 }
+		command = { type = secedeprovince which = ENG value = 1783 } # Greenland - Greenland 
+		command = { type = secedeprovince which = ENG value = 1 } # Reykjavík - Iceland 
+		command = { type = secedeprovince which = ENG value = 3 } # Akureyri - Iceland 
+		command = { type = secedeprovince which = ENG value = 2 } # Tórshavn - Iceland 
+		command = { type = trigger which = 2003086 }
+	}
+
+	action_b = {
+		ai_chance = 1
+		name = EVT_93_ACTB
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+
+event = {
+	id = 2003086
+	random = no
+	country = GER
+
+	name = EVT_6193_NAME
+	desc = EVT_93_DESC
+	style = 2
+	picture = "Fall_Weserubung"
+
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = inherit which = DEN }
+	}
+}
+#########################################################################
+#  War between Peru and Ecuador
+#########################################################################
+
+event = {
+	id = 2038001
+	random = no
+	country = PRU
+
+	name = EVT_96_NAME
+	desc = EVT_96_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		exists = ECU
+		control = { province = 2008 data = ECU } 
+		NOT = {
+			war = { country = ECU country = PRU }
+		}
+		random = 25
+	}
+
+	date = { day = 0 month = july year = 1941 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1943 }
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_96_ACTA
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = money value = 5 }
+		command = { type = trigger which = 2039001 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_96_ACTB
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -2 }
+		command = { type = war which = ECU }
+		command = { type = trigger which = 2036002 }
+	}
+}
+
+event = {
+	id = 2039001
+	random = no
+	country = ECU
+
+	name = EVT_97_NAME
+	desc = EVT_97_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by PRU event 2038001
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_97_ACTA
+		command = { type = money value = -15 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 2 }
+		command = { type = secedeprovince which = PRU value = 2008 } # Iquitos - Amazonas 
+		command = { type = secedeprovince which = PRU value = 2010 } # Nauta - Amazonas 
+		command = { type = secedeprovince which = PRU value = 2033 } # Jaén - Andes 
+		command = { type = sleepevent which = 2036002 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_97_ACTB
+		command = { type = war which = PRU }
+		command = { type = dissent value = -20 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = trigger which = 2036002 }
+	}
+}
+
+event = {
+	id = 2036002
+	random = no
+	country = COL
+
+	name = EVT_98_NAME
+	desc = EVT_98_DESC
+	style = 2
+	picture = "news_paper"
+
+	# Triggered by PRU event 2038001
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_98_ACTA
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = money value = -10 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = EVT_98_ACTB
+		command = { type = money value = 10 }
+		command = { type = alliance which = ECU when = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+
+#########################################################################
+#  Resumption of the Chinese Civil War
+#########################################################################
+
+event = {
+	id = 2053001
+	random = no
+	country = CHC
+
+	name = EVT_99_NAME
+	desc = EVT_99_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		exists = CHI
+		OR = { 
+			atwar = no
+			year = 1947
+		}
+		random = 50
+		NOT = {
+			war = { country = CHI country = JAP }
+			alliance = { country = USA country = CHI }
+		}
+	}
+
+	date = { day = 0 month = january year = 1941 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = EVT_99_ACTA
+		command = { type = money value = 10 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { trigger = { alliance = { country = CHI country = CHC } } type = leave_alliance when = 1 }
+		command = { type = war which = CHI }
+		command = { type = dissent value = -5 } # the time is ripe for the Revolution
+		command = { type = trigger which = 2012025 }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = garrison }
+		command = { type = add_division value = garrison }
+		command = { type = add_division value = garrison }
+	}
+
+	action_b = {
+		ai_chance = 0
+		name = EVT_99_ACTB
+		command = { type = money value = -10 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 2012025
+	random = no
+	country = CHI
+
+	name = EVT_100_NAME
+	desc = EVT_100_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by ChiCom event 2053001
+
+	action_a = {
+		name = EVT_100_ACTA
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 10 } # torn by civil war
+	}
+
+}
+
+
+### PERSIA
+
+
+event = {
+	id = 2031001
+	random = no
+	country = PER
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		random = 25
+		lost_national = { country = SOV value = 5 }
+        	war = { country = GER country = ENG }
+        	war = { country = GER country = SOV }
+        	NOT = {
+			war = { country = ENG country = SOV }
+			alliance = { country = ENG country = PER }
+			alliance = { country = SOV country = PER }
+                	war = { country = PER country = ENG }
+                	war = { country = PER country = SOV }
+                	}
+            	}
+
+	name = "EVT_112_NAME"
+	desc = "EVT_112_DESC"
+
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = ACTION_NAME_OK
+		ai_chance = 90
+		command = { type = leave_alliance when = 1 }
+		# command = { type = access which = ENG }
+		# command = { type = access which = SOV }
+		command = { type = headofstate which = 150011 } # Mohammed Reza Pahlavi
+		command = { type = headofgovernment which = 150015 } # Mohammed Ali Foroughi
+		command = { type = foreignminister which = 150028 } # Ali Zohayli
+		command = { type = armamentminister which = 150043 } # Sayyid al-Din Tabataba'i
+		command = { type = ministerofsecurity which = 150053 } # Mohammed Bahrami
+		command = { type = ministerofintelligence which = 150064 } # Sir Neville Grantleigh
+		command = { type = chiefofstaff which = 150071 } # Reza Mizani
+		command = { type = chiefofarmy which = 150077 } # Azram Mir Ghani
+		command = { type = chiefofnavy which = 150082 } # Mohammed Moini
+		command = { type = chiefofair which = 150087 } # Mohammed Moini
+		command = { type = waketeam which = 150002 } #Douglas Aircraft
+		command = { type = sleepteam which = 150006 } #State Aircraft Company
+		command = { type = sleepteam which = 150009 } #Reza Pahlavi
+		command = { type = sleepteam which = 150005 } #Siemens Iran
+		command = { type = set_relation which = GER value = -50 }
+		command = { type = set_relation which = SOV value = 25 }
+		command = { type = set_relation which = ENG value = 100 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = free_market value = 5 }
+		#command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = set_domestic which = defense_lobby value = 5 }
+		command = { type = set_domestic which = interventionism value = 6 }
+		command = { type = dissent value = -3 }
+		command = { type = end_trades which = PER where = GER }
+		command = { type = secedeprovince which = SOV value = 1080 } # Sari - Persia 
+		command = { type = secedeprovince which = SOV value = 1081 } # Rast - Persia 
+		command = { type = secedeprovince which = SOV value = 1083 } # Tabriz - Persia 
+		command = { type = trigger which = 2001067 }
+		}
+
+	action_b = {
+		name = "EVT_1_ACTA"
+		ai_chance = 10
+		command = { type = dissent value = 15 }
+		command = { type = relation which = GER value = 25 }
+		command = { type = relation which = ENG value = -75 }
+		command = { type = relation which = SOV value = -75 }
+		command = { type = war which = SOV }
+		command = { type = war which = ENG }
+		}
+	}
+
+event = {
+	id = 2001067
+	random = no
+	country = ENG
+
+	name = "ACTIONNAME2033A"
+	desc = "EVT_63_ACTA"
+	style = 2
+	picture = "news_paper"
+
+	#triggered by PER 2031001
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = PER }
+		}
+}
+
+event = {
+	id = 2007067
+	random = no
+	country = SOV
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		random = 8 # ~50% chance after 8 months
+		event = 2001067
+		exists = PER
+		NOT = {
+			war = { country = GER country = SOV }
+			war = { country = PER country = SOV }
+			war = { country = ENG country = SOV }
+			war = { country = USA country = SOV }
+			war = { country = JAP country = SOV }
+			}
+		OR = {
+			owned = { province = 1080 data = -1 } # Sari - Persia 
+			owned = { province = 1081 data = -1 } # Rast - Persia 
+			owned = { province = 1083 data = -1 } # Tabriz - Persia
+		}
+	}
+
+	name = "EVT_9362_NAME"
+	desc = "EVT_9362_DESC"
+
+	date = { day = 15 month = january year = 1938 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_9362_ACTA"
+		ai_chance = 90
+		command = { type = secedeprovince which = PER value = 1083 } # Tabriz - Persia 
+		command = { type = secedeprovince which = PER value = 1081 } # Rast - Persia 
+		command = { type = secedeprovince which = PER value = 1080 } # Sari - Persia 
+		}
+
+	action_b = {
+		name = "EVT_9362_ACTB"
+		ai_chance = 10
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = PER value = -50 }
+		command = { type = end_trades which = SOV where = PER }
+		}
+	}
+###########################################
+###########################################
+
+##### The Independance of INDONESIA
+
+event = {
+	id = 2004004
+	random = no
+	country = HOL
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1654 data = HOL } # Jakarta
+		atwar = no
+		NOT = {
+			exists = INO
+			exists = GER
+		}
+	}
+
+	name = "EVT_121_NAME"
+	desc = "EVT_121_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_121_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = INO value = 1 }
+
+		command = { type = trigger which = 2055001 }
+		command = { type = trigger which = 2004005 }
+	}
+	action_b = {
+		name = "EVT_121_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 2055001
+	random = no
+	country = INO
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		}
+
+	name = "EVT_122_NAME" ### needs event desc
+	desc = "EVT_121_DESC"
+
+
+	# triggered by HOL 2004004
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 270011 }
+		command = { type = headofgovernment which = 270014 }
+		command = { type = foreignminister which = 270017 }
+		command = { type = armamentminister which = 270024 }
+		command = { type = ministerofsecurity which = 270062 }
+		command = { type = ministerofintelligence which = 270035 }
+		command = { type = chiefofstaff which = 270038 }
+		command = { type = chiefofarmy which = 270043 }
+		command = { type = chiefofnavy which = 270049 }
+		command = { type = chiefofair which = 270052 }
+		}
+	}
+
+
+##### The Independance of CAMBODIA (puppet at first!)
+
+event = {
+	id = 2030006
+	random = no
+	country = FRA
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1401 data = FRA } # Phnom Phen
+		atwar = no
+		NOT = {
+			exists = CMB
+			exists = GER
+		}
+	}
+
+	name = "EVT_123_NAME"
+	desc = "EVT_123_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = july year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_123_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = CMB value = 1 }
+		command = { type = trigger which = 2119001 }
+		command = { type = trigger which = 2002023 }
+	}
+	action_b = {
+		name = "EVT_123_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2119001
+	random = no
+	country = CMB
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		}
+
+	name = "EVT_124_NAME"
+	desc = "EVT_123_DESC"
+
+	# triggered by FRA 2030006
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 590011 }
+		command = { type = headofgovernment which = 590017 }
+		command = { type = foreignminister which = 590067 }
+		command = { type = armamentminister which = 590029 }
+		command = { type = ministerofsecurity which = 590035 }
+		command = { type = ministerofintelligence which = 590040 }
+		command = { type = chiefofstaff which = 590044 }
+		command = { type = chiefofarmy which = 590048 }
+		command = { type = chiefofnavy which = 590052 }
+		command = { type = chiefofair which = 590056 }
+		}
+	}
+
+
+##### The Independance of EGYPT (at last! :p)
+
+event = {
+	id = 2001068
+	random = no
+	country = ENG
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 787 data = ENG } # Cairo
+		atwar = no
+		NOT = {
+			exists = EGY
+			exists = GER
+		}
+	}
+
+	name = "EVT_125_NAME"
+	desc = "EVT_125_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_125_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = EGY value = 1 }
+		command = { type = trigger which = 2069011 }
+	}
+	action_b = {
+		name = "EVT_125_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+event = {
+	id = 2069011
+	random = no
+	country = EGY
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		}
+
+	name = "EVT_126_NAME"
+	desc = "EVT_125_DESC"
+
+	# triggered by ENG 2001068
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 340011 }
+		command = { type = headofgovernment which = 340016 }
+		command = { type = foreignminister which = 340033 }
+		command = { type = armamentminister which = 340047 }
+		command = { type = ministerofsecurity which = 340061 }
+		command = { type = ministerofintelligence which = 340072 }
+		command = { type = chiefofstaff which = 340078 }
+		command = { type = chiefofarmy which = 340083 }
+		command = { type = chiefofnavy which = 340087 }
+		command = { type = chiefofair which = 340093 }
+		}
+	}
+
+
+##### The Independance of BURMA
+
+event = {
+	id = 2001069
+	random = no
+	country = ENG
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1415 data = ENG } #
+		atwar = no
+		NOT = {
+			exists = BUR
+			exists = GER
+		}
+	}
+
+	name = "EVT_127_NAME" 
+	desc = "EVT_127_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_127_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = BUR value = 1 }
+		command = { type = trigger which = 2094001 }
+		command = { type = trigger which = 2001073 }
+	}
+	action_b = {
+		name = "EVT_127_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2094001
+	random = no
+	country = BUR
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		}
+
+	name = "EVT_128_NAME"
+	desc = "EVT_127_DESC"
+
+
+	# triggered by ENG 2001069
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 465012 }
+		command = { type = headofgovernment which = 465054 }
+		command = { type = foreignminister which = 465020 }
+		command = { type = armamentminister which = 465024 }
+		command = { type = ministerofsecurity which = 465028 }
+		command = { type = ministerofintelligence which = 465032 }
+		command = { type = chiefofstaff which = 465036 }
+		command = { type = chiefofarmy which = 465041 }
+		command = { type = chiefofnavy which = 465046 }
+		command = { type = chiefofair which = 465050 }
+		}
+	}
+
+
+##### The Independance of ISRAEL
+
+event = {
+	id = 2001070
+	random = no
+	country = ENG
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1008 data = ENG } #
+		atwar = no
+		NOT = {
+			exists = ISR
+			exists = GER
+		}
+	}
+
+	name = "EVT_129_NAME"
+	desc = "EVT_129_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = may year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_129_ACTA" 
+		ai_chance = 80
+		command = { type = independence which = ISR value = 1 }
+		command = { type = trigger which = 2136001 }
+	}
+	action_b = {
+		name = "EVT_129_ACTB" 
+		ai_chance = 20
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2136001
+	random = no
+	country = ISR
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_129_DESC"
+
+
+	# triggered by ENG 2001070
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 675001 }
+		command = { type = headofgovernment which = 675002 }
+		command = { type = foreignminister which = 675003 }
+		command = { type = armamentminister which = 675024 }
+		command = { type = ministerofsecurity which = 675049 }
+		command = { type = ministerofintelligence which = 675050 }
+		command = { type = chiefofstaff which = 675007 }
+		command = { type = chiefofarmy which = 675051 }
+		command = { type = chiefofnavy which = 675009 }
+		command = { type = chiefofair which = 675010 }
+
+		command = { type = add_corps which = "Israeli Defence Forces" value = land where = 1008 } # Tal 'Abib - Middle East
+		command = { type = add_division which = "1st Israeli Infantry Division" value = infantry when = 11 where = armored_car }
+		command = { type = add_division which = "2nd Israeli Infantry Division" value = infantry when = 11 }
+		command = { type = add_division which = "3rd Israeli Infantry Division" value = infantry when = 11 }
+		command = { type = add_division which = "4th Israeli Infantry Division" value = infantry when = 11 }
+		}
+	}
+
+
+##### The Independance of JORDAN
+
+event = {
+	id = 2001071
+	random = no
+	country = ENG
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1022 data = ENG } #
+		atwar = no
+		NOT = {
+			exists = JOR
+			exists = GER
+		}
+	}
+
+	name = "EVT_131_NAME"
+	desc = "EVT_131_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = may year = 1946 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_131_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = JOR value = 1 }
+		command = { type = trigger which = 2075001 }
+	}
+	action_b = {
+		name = "EVT_131_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2075001
+	random = no
+	country = JOR
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_132_NAME"
+	desc = "EVT_131_DESC"
+
+
+	# triggered by ENG 2001071
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 370001 }
+		command = { type = headofgovernment which = 370038 }
+		command = { type = foreignminister which = 370003 }
+		command = { type = armamentminister which = 370004 }
+		command = { type = ministerofsecurity which = 370020 }
+		command = { type = ministerofintelligence which = 370024 }
+		command = { type = chiefofstaff which = 370027 }
+		command = { type = chiefofarmy which = 370030 }
+		command = { type = chiefofnavy which = 370009 }
+		command = { type = chiefofair which = 370010 }
+		}
+	}
+
+
+##### The Independance of LAOS
+
+event = {
+	id = 2002020
+	random = no
+	country = FRA
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1405 data = FRA } #
+		atwar = no
+		NOT = {
+			exists = LAO
+			exists = GER
+		}
+	}
+
+	name = "EVT_133_NAME"
+	desc = "EVT_133_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 22 month = october year = 1953 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_127_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = LAO value = 1 }
+		command = { type = trigger which = 2138001 }
+	}
+	action_b = {
+		name = "EVT_127_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2138001
+	random = no
+	country = LAO
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_134_NAME"
+	desc = "EVT_133_DESC"
+
+
+	# triggered by FRA 2002020
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 685001 }
+		command = { type = headofgovernment which = 685017 }
+		command = { type = foreignminister which = 685021 }
+		command = { type = armamentminister which = 685024 }
+		command = { type = ministerofsecurity which = 685027 }
+		command = { type = ministerofintelligence which = 685030 }
+		command = { type = chiefofstaff which = 685033 }
+		command = { type = chiefofarmy which = 685008 }
+		command = { type = chiefofnavy which = 685009 }
+		command = { type = chiefofair which = 685010 }
+		}
+	}
+
+
+##### The Independance of LIBYA 
+
+event = {
+	id = 2006018
+	random = no
+	TAG = { ITA USA ENG }
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 750 data = -1 } #
+		atwar = no
+		NOT = {
+			exists = LBY
+			exists = GER
+			government = fascist
+		}
+	}
+
+	name = "EVT_135_NAME"
+	desc = "EVT_135_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 24 month = december year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_135_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = LBY value = 1 }
+		command = { type = trigger which = 2100001 }
+	}
+	action_b = {
+		name = "EVT_135_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2100001
+	random = no
+	country = LBY
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_136_NAME"
+	desc = "EVT_135_DESC"
+
+
+	# triggered by ITA 2006018 (or ENG 2001072 or USA 2049056)
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 495011 }
+		command = { type = headofgovernment which = 495012 }
+		command = { type = foreignminister which = 495015 }
+		command = { type = armamentminister which = 495017 }
+		command = { type = ministerofsecurity which = 495020 }
+		command = { type = ministerofintelligence which = 495022 }
+		command = { type = chiefofstaff which = 495024 }
+		command = { type = chiefofarmy which = 495026 }
+		command = { type = chiefofnavy which = 495028 }
+		command = { type = chiefofair which = 495030 }
+		}
+	}
+
+##### The reaction of the Arab States to Israeli Independence
+
+event = {
+	id = 2069012
+	random = no
+	country = EGY
+	
+	trigger = {
+		NOT = {
+			ispuppet = EGY # Egypt is fully independent and not allied to anyone
+			alliance = { country = EGY country = ENG }
+			alliance = { country = EGY country = USA }
+			alliance = { country = EGY country = GER }
+			alliance = { country = EGY country = SOV }
+			}
+		OR = {
+			event = 2136001 # Israeli Independence happened OR...
+			AND = {	
+				country = ISR # ... Israeli was set free in some other way, but is not puppet/allied
+				NOT = {
+					ispuppet = ISR
+					alliance = { country = ISR country = ENG }	
+					alliance = { country = ISR country = USA }
+					alliance = { country = ISR country = GER }
+					alliance = { country = ISR country = SOV }
+					}
+				}
+			}
+		}
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_137_ACTA"
+		command = { type = belligerence which = EGY value = 10 }
+		command = { type = set_relation which = JOR value = 150 }
+ 		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = SYR value = 150 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = war which = ISR }
+		}
+
+	action_b = {
+		ai_chance = 20
+		name = "EVT_137_ACTB"
+		command = { type = set_relation which = JOR value = -50 }
+ 		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		}
+	}
+
+
+event = {
+	id = 2075002
+	random = no
+	country = JOR
+	
+	trigger = {
+		NOT = {
+			ispuppet = JOR # Jordan is fully independent and not allied to anyone
+			alliance = { country = JOR country = ENG }
+			alliance = { country = JOR country = USA }
+			alliance = { country = JOR country = GER }
+			alliance = { country = JOR country = SOV }
+			}
+		OR = {
+			event = 2136001 # Israeli Independence happened OR...
+			AND = {	
+				country = ISR # ... Israeli was set free in some other way, but is not puppet/allied
+				NOT = {
+					ispuppet = ISR
+					alliance = { country = ISR country = ENG }	
+					alliance = { country = ISR country = USA }
+					alliance = { country = ISR country = GER }
+					alliance = { country = ISR country = SOV }
+					}
+				}
+			}
+		}
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_137_ACTA"
+		command = { type = belligerence which = JOR value = 10 }
+		command = { type = set_relation which = EGY value = 150 }
+ 		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = SYR value = 150 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = war which = ISR }
+		}
+
+	action_b = {
+		ai_chance = 20
+		name = "EVT_137_ACTB"
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		}
+	}
+
+
+event = {
+	id = 2076001
+	random = no
+	country = LEB
+	
+	trigger = {
+		NOT = {
+			ispuppet = LEB # Lebanon is fully independent and not allied to anyone
+			alliance = { country = LEB country = ENG }
+			alliance = { country = LEB country = USA }
+			alliance = { country = LEB country = GER }
+			alliance = { country = LEB country = SOV }
+			}
+		OR = {
+			event = 2136001 # Israeli Independence happened OR...
+			AND = {	
+				country = ISR # ... Israeli was set free in some other way, but is not puppet/allied
+				NOT = {
+					ispuppet = ISR
+					alliance = { country = ISR country = ENG }	
+					alliance = { country = ISR country = USA }
+					alliance = { country = ISR country = GER }
+					alliance = { country = ISR country = SOV }
+					}
+				}
+			}
+		}
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_137_ACTA"
+		command = { type = belligerence which = LEB value = 10 }
+		command = { type = set_relation which = EGY value = 150 }
+ 		command = { type = set_relation which = JOR value = 150 }
+		command = { type = set_relation which = SYR value = 150 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = war which = ISR }
+		}
+
+	action_b = {
+		ai_chance = 20
+		name = "EVT_137_ACTB"
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = JOR value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		}
+	}
+
+
+event = {
+	id = 2087002
+	random = no
+	country = SYR
+	
+	trigger = {
+		NOT = {
+			ispuppet = SYR # Syria is fully independent and not allied to anyone
+			alliance = { country = SYR country = ENG }
+			alliance = { country = SYR country = USA }
+			alliance = { country = SYR country = GER }
+			alliance = { country = SYR country = SOV }
+			}
+		OR = {
+			event = 2136001 # Israeli Independence happened OR...
+			AND = {	
+				country = ISR # ... Israeli was set free in some other way, but is not puppet/allied
+				NOT = {
+					ispuppet = ISR
+					alliance = { country = ISR country = ENG }	
+					alliance = { country = ISR country = USA }
+					alliance = { country = ISR country = GER }
+					alliance = { country = ISR country = SOV }
+					}
+				}
+			}
+		}
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_137_ACTA"
+		command = { type = belligerence which = SYR value = 10 }
+		command = { type = set_relation which = EGY value = 150 }
+ 		command = { type = set_relation which = JOR value = 150 }
+		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = war which = ISR }
+		command = { type = trigger which = 2074003 } # Iraqi help
+		}
+
+	action_b = {
+		ai_chance = 20
+		name = "EVT_137_ACTB"
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = JOR value = -50 }
+		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		}
+	}
+
+
+event = {
+	id = 2074003
+	random = no
+	country = IRQ
+	
+	trigger = { }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	style = 2
+	picture = "news_paper"
+
+	### triggered by SYR 2087002
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_138_ACTA"
+		command = { type = belligerence which = IRQ value = 5 }
+		command = { type = set_relation which = EGY value = 150 }
+ 		command = { type = set_relation which = JOR value = 150 }
+		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = SYR value = 100 }
+
+		command = { type = supplies value = -1000 }
+		command = { type = manpowerpool value = 20 }
+
+		command = { type = trigger which = 2087003 }
+		}
+
+	action_b = {
+		ai_chance = 20 
+		name = "EVT_138_ACTB"
+		command = { type = set_relation which = EGY value = -25 }
+ 		command = { type = set_relation which = JOR value = -25 }
+		command = { type = set_relation which = LEB value = -25 }
+		command = { type = set_relation which = SYR value = -25 }
+		command = { type = set_relation which = ISR value = 50 }
+		command = { type = set_relation which = ENG value = 50 }
+		command = { type = set_relation which = USA value = 50 }
+		command = { type = set_relation which = FRA value = 50 }
+		}
+	}
+
+
+event = {
+	id = 2087003
+	random = no
+	country = SYR
+	
+	trigger = { }
+
+	name = "EVT_139_NAME"
+	desc = "EVT_139_DESC"
+	style = 2
+	picture = "news_paper"
+
+	### triggered by IRQ 2074003
+
+	action_a = {
+		ai_chance = 80
+		name = "EVT_900127_ACTA"
+		command = { type = add_division which = "Iraqi Expeditionary Force" value = infantry when = 8 }
+		command = { type = add_division which = "Iraqi Expeditionary Force" value = infantry when = 8 }
+		}
+	}
+
+
+##### The Independance of LEBANON (in case they're not independent yet/anymore)
+
+event = {
+	id = 2002021
+	random = no
+	country = FRA
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1019 data = FRA } #
+		atwar = no
+		NOT = {
+			exists = LEB
+			exists = GER
+		}
+	}
+
+	name = "EVT_140_NAME"
+	desc = "EVT_140_NAME"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = may year = 1946 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_140_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = LEB value = 1 }
+		command = { type = trigger which = 2076002 }
+	}
+	action_b = {
+		name = "EVT_131_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2076002
+	random = no
+	country = LEB
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_141_NAME"
+	desc = "EVT_141_NAME"
+
+
+	# triggered by FRA 2002021
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 375013 }
+		command = { type = headofgovernment which = 375027 }
+		command = { type = foreignminister which = 375033 }
+		command = { type = armamentminister which = 375039 }
+		command = { type = ministerofsecurity which = 375045 }
+		command = { type = ministerofintelligence which = 375050 }
+		command = { type = chiefofstaff which = 375053 }
+		command = { type = chiefofarmy which = 375056 }
+		command = { type = chiefofnavy which = 375059 }
+		command = { type = chiefofair which = 375061 }
+		}
+	}
+
+
+##### The Independance of SYRIA (in case they're not independent yet/anymore)
+
+event = {
+	id = 2002022
+	random = no
+	country = FRA
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1016 data = FRA } #
+		atwar = no
+		NOT = {
+			exists = SYR
+			exists = GER
+		}
+	}
+
+	name = "EVT_142_NAME"
+	desc = "EVT_142_NAME"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = may year = 1946 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_140_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = SYR value = 1 }
+		command = { type = trigger which = 2087001 }
+	}
+	action_b = {
+		name = "EVT_131_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2087001
+	random = no
+	country = SYR
+	style = 2
+	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_143_NAME"
+	desc = "EVT_143_NAME"
+
+
+	# triggered by FRA 2002021
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 430015 }
+		command = { type = headofgovernment which = 430021 }
+		command = { type = foreignminister which = 430026 }
+		command = { type = armamentminister which = 430072 }
+		command = { type = ministerofsecurity which = 430074 }
+		command = { type = ministerofintelligence which = 430076 }
+		command = { type = chiefofstaff which = 430047 }
+		command = { type = chiefofarmy which = 430051 }
+		command = { type = chiefofnavy which = 430054 }
+		command = { type = chiefofair which = 430057 }
+		}
+	}
+
+    ##### HOLLAND also cedes the rest of INDONESIA
+
+    event = {
+        id = 2004005
+        random = no
+        country = HOL
+        style = 2
+    	picture = "news_paper"
+
+        name = "EVT_122_NAME"
+        desc = "EVT_145_DESC"
+
+
+        # triggered by INO Independence
+
+        action_a = {
+            name = ACTION_NAME_OK
+            command = { type = secederegion which = INO value = "Indonesia" }
+            command = { type = secederegion which = INO value = "New Guinea" }
+            }
+        }
+
+##### FRANCE puppets its new CAMBODIAN friend
+
+event = {
+	id = 2002023
+	random = no
+	country = FRA
+	style = 2
+	picture = "news_paper"
+
+	name = "EVT_124_NAME"
+	desc = "EVT_146_DESC"
+
+
+	# triggered by CMB Independence
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = CMB }
+		}
+	}
+
+
+    ##### ENGLAND cedes the rest of BURMA to them
+
+    event = {
+        id = 2001073
+        random = no
+        country = ENG
+
+
+        name = "EVT_128_NAME"
+        desc = "EVT_147_DESC"
+        style = 2
+    	picture = "news_paper"
+
+        # triggered by BUR Independence
+
+        action_a = {
+            name = ACTION_NAME_OK
+            command = { type = secedearea which = BUR value = "North Burma" }
+            command = { type = secedearea which = BUR value = "Burma" }
+            }
+        }
+
+##### ENGLAND also cedes East Pakistan to PAK 
+event = {
+	id = 2001074
+	random = no
+	country = ENG
+
+
+	name = "EVT_144_NAME"
+	desc = "EVT_144_DESC"
+	style = 2
+	picture = "news_paper"
+	# triggered by PAK 2900130
+
+	action_a = {
+		name = ACTION_NAME_OK
+		#command = { type = secedeprovince which = PAK value = 1540 } # Srinagar - India #Srinegar new for arma 1.3, or else Srinegar will stay UK
+		}
+	}
+################################
+# Nuked capital events
+################################
+event = {
+	id = 2049057
+	country = USA
+	random = no
+
+	trigger = {
+		nuked = { country = USA data = -1 where = 1809 } # Washington
+		owned = { province = 1805 data = -1 } # Philadelphia
+		control = { province = 1805 data = -1 } # Philadelphia
+		NOT = { nuked = { country = USA data = -1 where = 1805 } } # Philadelphia
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 0 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1805 } # Philadelphia
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2049058
+	country = USA
+	random = no
+
+	trigger = {
+		nuked = { country = USA data = -1 where = 1809 } # Washington
+		OR = {
+			nuked = { country = USA data = -1 where = 1805 } # Philadelphia
+			NOT = { owned = { province = 1805 data = -1 } } # Philadelphia
+			NOT = { control = { province = 1805 data = -1 } } #Philadelphia
+		}
+		owned = { province = 1908 data = -1 } # Denver
+		control = { province = 1908 data = -1 } # Denver
+		NOT = { nuked = { country = USA data = -1 where = 1908 } } # Denver
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 0 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1908 } #Denver
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2049057 } } type = sleepevent which = 2049057 }
+	}   
+}
+
+
+event = {
+	id = 2003087
+	country = GER
+	random = no
+
+	trigger = {
+		nuked = { country = GER data = -1 where = 163 } # Berlin
+		owned = { province = 179 data = -1 } # München
+		control = { province = 179 data = -1 } # München
+		NOT = { nuked = { country = GER data = -1 where = 179 } } # München
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 2 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 179 } # München
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2003088
+	country = GER
+	random = no
+
+	trigger = {
+		nuked = { country = GER data = -1 where = 163 } # Berlin
+		OR = {
+			nuked = { country = GER data = -1 where = 179 } # München
+			NOT = { owned = { province = 179 data = -1 } } #München
+			NOT = { control = { province = 179 data = -1 } } #München
+		}
+		owned = { province = 195 data = -1 } # Vienna
+		control = { province = 195 data = -1 } # Vienna
+		NOT = { nuked = { country = GER data = -1 where = 195 } } # Vienna
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 2 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 195 } #Vienna
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2003087 } } type = sleepevent which = 2003087 }
+	}   
+}
+
+
+event = {
+	id = 2002024
+	country = FRA
+	random = no
+
+	trigger = {
+		nuked = { country = FRA data = -1 where = 55 } # Paris
+		owned = { province = 68 data = -1 } # Bordeaux
+		control = { province = 68 data = -1 } # Bordeaux
+		NOT = { nuked = { country = FRA data = -1 where = 68 } } # Bordeaux
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 3 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 68 } # Bordeaux
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2002025
+	country = FRA
+	random = no
+	
+	trigger = {
+		nuked = { country = FRA data = -1 where = 55 } # Paris
+		OR = {
+			nuked = { country = FRA data = -1 where = 68 } # Bordeaux
+			NOT = { owned = { province = 68 data = -1 } } #Bordeaux
+			NOT = { control = { province = 68 data = -1 } } #Bordeaux
+		}
+		owned = { province = 85 data = -1 } # Lyon
+		control = { province = 85 data = -1 } # Lyon
+		NOT = { nuked = { country = FRA data = -1 where = 85 } } # Lyon
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 3 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 85 } #Lyon
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2002024 } } type = sleepevent which = 2002024 }
+	}   
+}
+
+
+event = {
+	id = 2006019
+	country = ITA
+	random = no
+
+	trigger = {
+		nuked = { country = ITA data = -1 where = 419 } # Roma
+		owned = { province = 407 data = -1 } # Milano
+		control = { province = 407 data = -1 } # Milano
+		NOT = { nuked = { country = ITA data = -1 where = 407 } } #Milano 
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 4 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 407 } # Milano
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2006020
+	country = ITA
+	random = no
+
+	trigger = {
+		nuked = { country = ITA data = -1 where = 419 } # Roma
+		OR = {
+			nuked = { country = ITA data = -1 where = 407 } # Milano
+			NOT = { owned = { province = 407 data = -1 } } #Milano
+			NOT = { control = { province = 407 data = -1 } } #Milano
+		}
+		owned = { province = 410 data = -1 } # Florence
+		control = { province = 410 data = -1 } # Florence
+		NOT = { nuked = { country = ITA data = -1 where = 410 } } # Florence
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 4 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 410 } #Florence
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2006019 } } type = sleepevent which = 2006019 }
+	}
+}
+
+
+event = {
+	id = 2007068
+	country = SOV
+	random = no
+
+	trigger = {
+		nuked = { country = SOV data = -1 where = 572 } # Moskva
+		owned = { province = 663 data = -1 } # Stalingrad
+		control = { province = 663 data = -1 } # Stalingrad
+		NOT = { nuked = { country = SOV data = -1 where = 663 } } # Stalingrad
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 5 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 663 } # Stalingrad
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 2007069
+	country = SOV
+	random = no
+
+	trigger = {
+		nuked = { country = SOV data = -1 where = 572 } # Moskva
+		OR = {
+			nuked = { country = SOV data = -1 where = 663 } # Stalingrad
+			NOT = { owned = { province = 663 data = -1 } } #Stalingrad
+			NOT = { control = { province = 663 data = -1 } } #Stalingrad
+		}
+		owned = { province = 668 data = -1 } # Kuybyshev
+		control = { province = 668 data = -1 } # Kuybyshev
+		NOT = { nuked = { country = SOV data = -1 where = 668 } } # Kuybyshev
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 5 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 668 } #Kuybyshev
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2007068 } } type = sleepevent which = 2007068 }
+	}   
+}
+
+
+event = {
+	id = 2011035
+	country = JAP
+	random = no
+
+	trigger = {
+		nuked = { country = JAP data = -1 where = 1552 } # Tokyo
+		owned = { province = 1558 data = -1 } # Kyoto
+		control = { province = 1558 data = -1 } # Kyoto
+		NOT = { nuked = { country = JAP data = -1 where = 1558 } } # Kyoto
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 6 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1558 } # Kyoto
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2011036
+	country = JAP
+	random = no
+
+	trigger = {
+		nuked = { country = JAP data = -1 where = 1552 } # Tokyo
+		OR = {
+			nuked = { country = JAP data = -1 where = 1558 } # Kyoto
+			NOT = { owned = { province = 1558 data = -1 } } #Kyoto
+			NOT = { control = { province = 1558 data = -1 } } #Kyoto
+		}
+		owned = { province = 1557 data = -1 } # Nagoya
+		control = { province = 1557 data = -1 } # Nagoya
+		NOT = { nuked = { country = JAP data = -1 where = 1557 } } # Nagoya
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 6 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1557 } #Nagoya
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2011035 } } type = sleepevent which = 2011035 }
+	}   
+}
+
+event = {
+	id = 2001075
+	country = ENG
+	random = no
+
+	trigger = {
+		nuked = { country = ENG data = -1 where = 29 } # London
+		owned = { province = 17 data = -1 } # Manchester
+		control = { province = 17 data = -1 } # Manchester
+		NOT = { nuked = { country = ENG data = -1 where = 17 } } # Manchester
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 7 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 17 } # Manchester
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2001076
+	country = ENG
+	random = no
+
+	trigger = {
+		nuked = { country = ENG data = -1 where = 29 } # London
+		OR = {
+			nuked = { country = ENG data = -1 where = 17 } # Manchester
+			NOT = { owned = { province = 17 data = -1 } } #Manchester
+			NOT = { control = { province = 17 data = -1 } } #Manchester
+		}
+		owned = { province = 12 data = -1 } # Edinburgh
+		control = { province = 12 data = -1 } # Edinburgh
+		NOT = { nuked = { country = ENG data = -1 where = 12 } } # Edinburgh
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 7 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 12 } #Edinburgh
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2001075 } } type = sleepevent which = 2001075 }
+	}   
+}
+
+event = {
+	id = 2012026
+	country = CHI
+	random = no
+
+	trigger = {
+		nuked = { country = CHI data = -1 where = 1337 } # Nanjing
+		owned = { province = 1369 data = -1 } # Guanzhou
+		control = { province = 1369 data = -1 } # Guanzhou
+		NOT = { nuked = { country = CHI data = -1 where = 1369 } } # Guanzhou
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 8 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1369 } # Guanzhou
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2012027
+	country = CHI
+	random = no
+
+	trigger = {
+		nuked = { country = CHI data = -1 where = 1337 } # Nanjing
+		OR = {
+			nuked = { country = CHI data = -1 where = 1369 } # Guanzhou
+			NOT = { owned = { province = 1369 data = -1 } } #Guanzhou
+			NOT = { control = { province = 1369 data = -1 } } #Guanzhou
+		}
+		owned = { province = 1357 data = -1 } # Nanping
+		control = { province = 1357 data = -1 } # Nanping
+		NOT = { nuked = { country = CHI data = -1 where = 1357 } } # Nanping
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 8 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1357 } #Nanping
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2012026 } } type = sleepevent which = 2012026 }
+	}   
+}
+
+event = {
+	id = 2053002
+	country = CHC
+	random = no
+
+	trigger = {
+		nuked = { country = CHC data = -1 where = 1260 } # Yulin
+		owned = { province = 1337 data = -1 } # Nanjing
+		control = { province = 1337 data = -1 } # Nanjing
+		NOT = { nuked = { country = CHC data = -1 where = 1337 } } # Nanjing
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 9 month = march year = 1943 } # got the tech as us with a nuke research rush in may 43
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1337 } # Nanjing
+		command = { type = dissent value = -1 }
+	}   
+}
+
+event = {
+	id = 2053003
+	country = CHC
+	random = no
+
+	trigger = {
+		nuked = { country = CHC data = -1 where = 1260 } # Yulin
+		OR = {
+			nuked = { country = CHC data = -1 where = 1337 } # Nanjing
+			NOT = { owned = { province = 1337 data = -1 } } #Nanjing
+			NOT = { control = { province = 1337 data = -1 } } #Nanjing
+		}
+		owned = { province = 1369 data = -1 } # Guangzhou
+		control = { province = 1369 data = -1 } # Guangzhou
+		NOT = { nuked = { country = CHC data = -1 where = 1369 } } # Guangzhou
+	}
+
+	name = "cnuke_name"
+	desc = "cnuke_desc"
+	style = 2
+	picture = "nuke"
+
+	date = { day = 9 month = march year = 1943 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Cnuke_act"
+		command = { type = capital which = 1369 } #Guangzhou
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { event = 2053002 } } type = sleepevent which = 2053002 }
+	}   
+}
+
+event = {
+	id = 2207001  ### western occupied germany exists
+	random = no
+	country = U24
+
+	name = EVT_1306200_NAME
+	desc = EVT_1306200_DESC
+	style = 2
+	picture = "news_paper"
+	save_date = yes	
+
+	trigger = {
+		exists = U24
+	}
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { 				
+		name = "1306200a"
+		command = {} 
+	}
+} 
+	
+event = {
+	id = 2208001  ### eastern occupied germany exists
+	random = no
+	country = U25
+
+	name = EVT_1306200_NAME
+	desc = EVT_1306200_DESC
+	style = 2
+	picture = "news_paper"
+	save_date = yes	
+
+	trigger = {
+		exists = U25
+	}
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { 				
+		name = "1306201a"
+		command = {}
+	}
+} 	
+	
+
+event = {
+	id = 2002026  ### Saarprotektorat
+	random = no
+	country = FRA
+
+	name = EVT_1306212_NAME
+	desc = EVT_1306212_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2207001 days = 100 }
+		NOT = { atwar = SOV }  
+}
+
+	decision_trigger = {
+ 		event = { id = 2207001 days = 100 }
+		NOT = { atwar = SOV }               
+	}
+
+
+	
+	trigger = {
+		control = { province = 127 data = FRA } #
+		event = 2207001
+		  OR = {   
+          AND = { random = 2 event = { id = 2207001 days = 100 } }  
+          AND = { random = 10 event = { id = 2207001 days = 200 } }  
+          AND = { random = 50 event = { id = 2207001 days = 300 } } 
+          }  
+
+	}
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { 				
+		name = "1306212a" 		
+		ai_chance = 95		
+		command = { type = independence which = U23 value = 1 when = 1 }
+		command = { type = make_puppet which = U23 }			
+	}
+}
+	
+event = {
+	id = 2184003  ### Saarprotektorat
+	random = no
+	country = U01
+
+	name = EVT_1306212_NAME
+	desc = EVT_1306212_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2207001 days = 100 }
+		NOT = { atwar = SOV }  
+}
+
+	decision_trigger = {
+ 		event = { id = 2207001 days = 100 }
+		NOT = { atwar = SOV }               
+	}
+	
+	trigger = {
+		event = 2207001
+		control = { province = 74 data = U01 }
+		  OR = {   
+          AND = { random = 2 event = { id = 2207001 days = 100 } }  
+          AND = { random = 10 event = { id = 2207001 days = 200 } }  
+          AND = { random = 50 event = { id = 2207001 days = 300 } } 
+          }  
+	}
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { 				
+		name = "1306212a" 
+		ai_chance = 95
+		command = { type = independence which = U23 value = 1 when = 1 }
+		command = { type = make_puppet which = U23 }
+			
+	}
+}
+
+event = {
+	id = 2127001  ### Saarprotektorat
+	random = no
+	country = DFR
+
+	name = EVT_1306212_NAME
+	desc = EVT_1306214_DESC
+	style = 2
+	picture = "news_paper"
+	
+	trigger = {
+	exists = U23
+	event = 2207001  
+	OR = {   
+          AND = { random = 2  event = { id = 2207001 days = 1000 } }  
+          AND = { random = 10 event = { id = 2207001 days = 2100 } }  
+          AND = { random = 50 event = { id = 2207001 days = 4170 } } 
+          }  
+		
+}
+
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { 				
+		name = "1306214a" 		
+		ai_chance = 95
+		command = { type = inherit which = U23 value = 1 }
+	}
+}
+
+event = {
+	id = 2007070  ### DDR
+	random = no
+	country = SOV
+
+	name = EVT_1306215_NAME
+	desc = EVT_1306215_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2208001 days = 60 }
+	}
+
+	decision_trigger = {
+ 		event = { id = 2208001 days = 120 }
+		OR ={
+		NOT = { atwar = USA } 
+		NOT = { atwar = FRA } 
+		NOT = { atwar = ENG } 
+}             
+	}
+	
+	trigger = { 
+		event = 2208001  
+		OR = {   
+          AND = { random = 2 event = { id = 2208001 days = 200 } }  
+          AND = { random = 10 event = { id = 2208001 days = 800 } }  
+          AND = { random = 50 event = { id = 2208001 days = 1590 } } 
+          }  
+
+	}
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = { 				
+		name = "1306215a" 		
+		command = { trigger = { owned = { province = 182 data = -1 } } type = addclaim which = 182 } # Tilsit
+		command = { trigger = { owned = { province = 184 data = -1 } } type = addclaim which = 184 } # Koenigsberg
+		command = { trigger = { owned = { province = 261 data = -1 } } type = addclaim which = 261 } # Klaipeda		 
+		command = { type = independence which = DDR value = 1 when = 0 }
+		command = { type = secederegion which = DDR value = Germany }
+		command = { type = make_puppet which = DDR }
+		command = { trigger = { exists = U25 } type = trigger which = 2208003 } #U25 The German Democratic Republic - GDR
+		command = { trigger = { NOT = { exists = U25 } } type = trigger which = 2208004 } #SOV The German Democratic Republic - GDR
+	}
+}
+
+event = {
+	id = 2049059  ### DFR
+	random = no
+	TAG = { USA ENG FRA U01 CAN AST POL U02 CZE AUS }
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2207001 days = 60 }
+	}
+
+	decision_trigger = {
+ 		event = { id = 2207001 days = 120 }
+		NOT = { atwar = SOV }               
+	}
+	
+	trigger = { 
+		event = 2207001  	
+		OR = {   
+          AND = { random = 1 event = { id = 2207001 days = 360 }  }  
+          AND = { random = 10 event = { id = 2207001 days = 800 }  }  
+          AND = { random = 50 event = { id = 2207001 days = 1440 }  } 
+          }  
+		  
+		  }
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }
+		command = { trigger = { NOT = { country = ENG } } type = trigger which = 2001077 }
+		command = { trigger = { NOT = { country = FRA } } type = trigger which = 2002027 }
+		command = { trigger = { NOT = { country = U01 } } type = trigger which = 2184004 }
+		command = { type = trigger which = 2207003 }	
+		command = { trigger = { NOT = { country = USA } } type = trigger which = 2001377 }	
+		command = { type = event which = 2024002 where = DFR when = 1 }
+	}
+}
+
+event = {
+	id = 2001377  ### DFR
+	random = no
+	country = USA
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+		
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }			
+	}
+}
+	
+event = {
+	id = 2001077  ### DFR
+	random = no
+	country = ENG
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+		
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }			
+	}
+}
+	
+event = {
+	id = 2002027  ### DFR
+	random = no
+	country = FRA
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+		
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }			
+	}
+}
+	
+event = {
+	id = 2184004  ### DFR
+	random = no
+	country = U01
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }			
+	}
+}
+
+event = {
+	id = 2207003  ### DFR
+	random = no
+	country = U24
+
+	name = EVT_1306216_NAME
+	desc = EVT_1306216_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306216a" 		
+		command = { type = independence which = DFR value = 1 when = 1 }
+		command = { type = secederegion which = DFR value = Germany }
+		command = { type = alliance which = DFR when = 1 }
+	
+	}
+}
+
+event = {
+	id = 2208003  ### DDR
+	random = no
+	country = U25
+
+	name = EVT_1306215_NAME
+	desc = EVT_1306215_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306215a" 		
+		command = { type = independence which = DDR value = 1 when = 0 }
+		command = { type = secederegion which = DDR value = Germany }
+		command = { type = trigger which = 2208004 }
+		command = { type = event which = 2024002 where = DDR when = 1 }
+   }
+}
+event = {
+	id = 2208004  ### DDR
+	random = no
+	country = SOV
+
+	name = EVT_1306215_NAME
+	desc = EVT_1306215_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "ACTION_NAME_GOOD" 		
+		command = { type = make_puppet which = DDR }
+	}
+}
+
+event = {
+	id = 2049060  ### AUS
+	random = no
+	TAG = { USA ENG FRA U01 CAN AST POL U02 CZE AUS }
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2207001 days = 90 }
+		}
+
+	decision_trigger = {
+ 		event = { id = 2207001 days = 160 }
+		NOT = { atwar = SOV }               
+	}
+	
+	trigger = { 
+		event = 2207001  
+		OR = {   
+          AND = { random = 1 event = { id = 2207001 days = 900 }  }  
+          AND = { random = 10 event = { id = 2207001 days = 1800 }  }  
+          AND = { random = 50 event = { id = 2207001 days = 3650 }  } 
+			}  
+		 
+		 }
+	
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95		
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }
+		command = { trigger = { NOT = { country = U01 } } type = trigger which = 2184005 }
+		command = { trigger = { NOT = { country = ENG } } type = trigger which = 2001078 }
+		command = { trigger = { NOT = { country = FRA } } type = trigger which = 2002028 }
+		command = { trigger = { NOT = { country = USA } } type = trigger which = 2184205 }
+		command = { type = trigger which = 2207002 }	
+		command = { type = event which = 2024002 where = AUS when = 1 }		
+	}
+}
+
+event = {
+	id = 2184205  ### AUS
+	random = no
+	country = USA
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+	}
+}
+
+event = {
+	id = 2184005  ### AUS
+	random = no
+	country = U01
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+	}
+}
+
+event = {
+	id = 2001078  ### AUS
+	random = no
+	country = ENG
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+	}
+}
+
+event = {
+	id = 2002028  ### AUS
+	random = no
+	country = FRA
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+	}
+}
+
+event = {
+	id = 2207002  ### AUS
+	random = no
+	country = U24
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+	}
+}
+
+
+
+event = {
+	id = 2007071  ### Austria
+	random = no
+	country = SOV
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = {
+		event = { id = 2208001 days = 90 }
+	}
+
+	decision_trigger = {
+ 		event = { id = 2208001 days = 160 }
+		OR ={
+		NOT = { atwar = USA } 
+		NOT = { atwar = FRA } 
+		NOT = { atwar = ENG } 
+}             
+	}
+	
+	trigger = {
+		event = 2208001  
+		OR = {   
+          AND = { random = 1 event = { id = 2208001 days = 900 }  }  
+          AND = { random = 10 event = { id = 2208001 days = 1800 }  }  
+          AND = { random = 50 event = { id = 2208001 days = 3650 }  } 
+          } 
+	}
+	date = { day = 0 month = january year = 1939 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = { 				
+		name = "1306222a" 		
+		ai_chance = 95		
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }
+		command = { type = trigger which = 2208002 }
+		
+	}
+	
+	action = { 
+		trigger = { 
+			NOT = { area = { area = Austria country = -3 data = 1 value = 100 } }
+		}
+		name = "1306222b" 		
+		ai_chance = 5
+		command = { type = independence which = U16 value = 1 when = 0 }
+		command = { type = secederegion which = U16 value = Austria }
+		command = { type = make_puppet which = U16 }
+		command = { trigger = { exists = U25 } type = trigger which = 2208005 } #U25 Austrian independence
+		command = { trigger = { NOT = { exists = U25 } } type = trigger which = 2208006 } #SOV Austrian independence 
+	}	
+	action = { 
+		trigger = { 
+			area = { area = Austria country = -3 data = 1 value = 100 }			
+		}
+		name = "1306222b" 		
+		ai_chance = 1805 #95% against first option
+		command = { type = independence which = U16 value = 1 when = 0 }
+		command = { type = secederegion which = U16 value = Austria }
+		command = { type = make_puppet which = U16 }
+		command = { trigger = { exists = U25 } type = trigger which = 2208005 } #U25 Austrian independence
+		command = { trigger = { NOT = { exists = U25 } } type = trigger which = 2208006 } #SOV Austrian independence 
+	}
+}
+
+event = {
+	id = 2208002  ### AUS
+	random = no
+	country = U25
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		command = { type = independence which = AUS value = 1 when = 1 }
+		command = { type = secederegion which = AUS value = Austria }	
+		command = { type = event which = 2024002 where = AUS when = 1 }
+	}
+}
+
+event = {
+	id = 2208005  ### U16
+	random = no
+	country = U25
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "1306222a" 		
+		command = { type = independence which = U16 value = 1 when = 1 }
+		command = { type = secederegion which = U16 value = Austria }	
+		command = { type = event which = 2024002 where = U16 when = 1 }
+		command = { type = trigger which = 2208006 }
+	}
+}
+
+event = {
+	id = 2208006  ### U16
+	random = no
+	country = SOV
+
+	name = EVT_1306222_NAME
+	desc = EVT_1306222_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = { 				
+		name = "ACTION_NAME_GOOD" 		
+		command = { type = make_puppet which = U16 }
+	}
+}
+
+
+##British India gives lands to Burma
+event = {
+	id = 2185005
+	random = no
+	country = U02
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1415 data = U02 } #
+		atwar = no
+		NOT = {
+			exists = BUR
+			exists = GER
+		}
+	}
+
+	name = "EVT_127_NAME"
+	desc = "EVT_127_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_127_ACTA"
+		ai_chance = 95
+		command = { type = independence which = BUR value = 1 }
+		command = { type = trigger which = 2094001 }
+		command = { type = trigger which = 2001073 }
+	}
+	action_b = {
+		name = "EVT_127_ACTB"
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+### siam namechanges
+
+event = {
+	id = 3059012
+	random = no
+	country = SIA
+
+	trigger = {
+		ai = yes
+	 }
+
+	name = "EVT_3059012_NAME"
+	desc = "EVT_3059012_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 23 month = june year = 1939 }
+
+	action_a = {
+		command = { type = name where = SIA which = SIA }
+	}
+
+}
+
+event = {
+	id = 3059013
+	random = no
+	country = SIA
+
+	trigger = {
+		ai = yes
+	 
+	}
+
+	name = "EVT_3059012_NAME"
+	desc = "EVT_3059012_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = may year = 1945 }
+
+	action_a = {
+		command = { type = name where = SIA which = SIA36 }
+	}
+
+}
+
+event = {
+	id = 3059014
+	random = no
+	country = SIA
+
+	trigger = {
+		ai = yes
+	}
+
+	name = "EVT_3059012_NAME"
+	desc = "EVT_3059012_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 11 month = may  year = 1949 }
+
+	action_a = {
+		command = { type = name where = SIA which = SIA }
+	}
+
+}	
+	
+	
+event = {
+	id = 2059003  ### Siam
+	random = no
+	country = SIA
+
+	name = EVT_2059003_NAME
+	desc = EVT_2059003_DESC
+	style = 2
+	picture = "news_paper"
+
+	decision = { }
+
+	decision_trigger = { }
+
+	trigger = { ai = no }
+	
+	date = { day = 0 month = january year = 1936 }
+  	offset = 30
+	deathdate = { day = 29 month = december year = 1938 }
+	
+	action = { 				
+		command = { type = name where = SIA }
+	}
+}
+
+event = {
+	id = 750034
+	random = no
+	country = U44
+	style = 2
+
+	trigger = {
+		random = 50		
+		control = { province = 235 data = U44 } 
+		control = { province = 236 data = U44 } 
+		control = { province = 237 data = U44 } 
+	}
+
+	name = "750034_name"
+	desc = "750034_desc"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 200
+	deathdate = { day = 0 month = april year = 1960 }
+
+	action_a = {
+		name = "750034_act"
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 235 }
+		command = { type = removecore which = 236 }
+		command = { type = removecore which = 237 }
+		command = { type = province_revoltrisk which = 235 value = 80 }
+		command = { type = province_revoltrisk which = 236 value = 80 }
+		command = { type = province_revoltrisk which = 237 value = 40 }
+		command = { type = addclaim which = 235 }
+		command = { type = addclaim which = 236 }
+		command = { type = addclaim which = 237 }
+	}
+}
+
+event = {
+	id = 750035
+	random = no
+	country = U44
+	style = 2
+
+	trigger = { 	
+		random = 30		
+		control = { province = 233 data = U44 } 
+		control = { province = 234 data = U44 } 
+	}
+
+	name = "750035_name"
+	desc = "750034_desc"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 200
+	deathdate = { day = 9 month = april year = 1960 }
+
+	action_a = {
+		name = "750034_act"
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 233 }
+		command = { type = removecore which = 234 }
+		command = { type = 	province_revoltrisk which = 233 value = 50 }
+		command = { type = 	province_revoltrisk which = 234 value = 50 }
+		command = { type = addclaim which = 233 }
+		command = { type = addclaim which = 234 }
+	}
+}
+
+event = {
+	id = 750036
+	random = no
+	country = U44
+	style = 2
+
+	trigger = { 	
+		random = 20		
+		control = { province = 228 data = U44 } 
+		control = { province = 232 data = U44 } 
+	}
+
+	name = "750036_name"
+	desc = "750034_desc"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 250
+	deathdate = { day = 9 month = april year = 1960 }
+
+	action_a = {
+		name = "750034_act"
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 228 }
+		command = { type = removecore which = 232 }
+		command = { type = 	province_revoltrisk which = 228 value = 40 }
+		command = { type = 	province_revoltrisk which = 232 value = 40 }
+		command = { type = addclaim which = 228 }
+		command = { type = addclaim which = 232 }
+	}
+}
+
+
+event = {
+	id = 750037
+	random = no
+	country = U44
+	style = 2
+
+	trigger = { 	
+		random = 20		
+		control = { province = 243 data = U44 } 
+		control = { province = 246 data = U44 } 
+	}
+
+	name = "750037_name"
+	desc = "750034_desc"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 250
+	deathdate = { day = 9 month = april year = 1960 }
+
+	action_a = {
+		name = "750034_act"
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 243 }
+		command = { type = removecore which = 246 }
+		command = { type = 	province_revoltrisk which = 243 value = 40 }
+		command = { type = 	province_revoltrisk which = 246 value = 40 }
+		command = { type = addclaim which = 243 }
+		command = { type = addclaim which = 246 }
+	}
+}
+
+event = {
+	id = 750038
+	random = no
+	country = U44
+	style = 2
+
+	trigger = {
+		random = 20		
+		control = { province = 238 data = U44 } 
+		control = { province = 241 data = U44 } 
+		control = { province = 242 data = U44 }
+		control = { province = 239 data = U44 }
+		control = { province = 240 data = U44 }
+	}
+	
+	name = "750038_name"
+	desc = "750034_desc"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 250
+	deathdate = { day = 9 month = april year = 1960 }
+
+	action_a = {
+		name = "750034_act"
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 238 }
+		command = { type = removecore which = 241 }
+		command = { type = removecore which = 242 }
+		command = { type = removecore which = 239 }
+		command = { type = removecore which = 240 }
+		command = { type = 	province_revoltrisk which = 238 value = 80 }
+		command = { type = 	province_revoltrisk which = 241 value = 80 }
+		command = { type = 	province_revoltrisk which = 242 value = 50 }
+		command = { type = 	province_revoltrisk which = 239 value = 50 }
+		command = { type = 	province_revoltrisk which = 240 value = 50 }
+		command = { type = addclaim which = 238 }
+		command = { type = addclaim which = 241 }
+		command = { type = addclaim which = 242 }
+		command = { type = addclaim which = 239 }
+		command = { type = addclaim which = 240 }
+	}
+}
+###### Partitioning of Yugoslavia
+event = {
+	id = 2022018
+	random = no
+	country = GER
+	
+	name = "EVT_2022018_NAME" #Partitioning of Yugoslavia
+	desc = "EVT_2022018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = YUG }
+		control = { province = 338 data = -3 } #Belgrade is allied-controlled
+		participant = { country = GER value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = GER country = ITA }
+			alliance = { country = GER country = HUN }
+			alliance = { country = GER country = BUL }
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022018_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT= { claims = { province = 346 data = GER } } } type = addclaim which = 346 } #Maribor
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 329 when = 1 } #Pristina
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 332 when = 1 } #Cetinje
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 334 when = 1 } #Tetovo
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 335 when = 1 } #Prijepolje
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 343 when = 1 } #Dubrovnik
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 349 when = 1 } #Ljubljana
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 350 when = 1 } #Split
+		command = { trigger = { alliance = { country = GER country = HUN } } type = secedeprovince which = HUN value = 341 when = 1 } #Novi Sad
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 328 when = 1 } #Kumanovo
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 331 when = 1 } #Pirot
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 333 when = 1 } #Skopje
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022018_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = GER country = HUN } } type = relation which = HUN value = -25 }
+		command = { trigger = { alliance = { country = GER country = BUL } } type = relation which = BUL value = -25 }
+	}
+}
+event = {
+	id = 2022019
+	random = no
+	country = ITA
+	
+	name = "EVT_2022018_NAME" #Partitioning of Yugoslavia
+	desc = "EVT_2022018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = YUG }
+		control = { province = 338 data = -3 } #Belgrade is allied-controlled
+		participant = { country = ITA value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = ITA country = GER }
+			alliance = { country = ITA country = HUN }
+			alliance = { country = ITA country = BUL }
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022018_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT= { claims = { province = 329 data = ITA } } } type = addclaim which = 329 } #Pristina
+		command = { trigger = { NOT= { claims = { province = 334 data = ITA } } } type = addclaim which = 334 } #Tesovo
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 327 when = 1 } #Krusevac
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 330 when = 1 } #Nis
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 336 when = 1 } #Petrovgrad
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 337 when = 1 } #Ruma
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 338 when = 1 } #Belgrade
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 339 when = 1 } #Bor
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 340 when = 1 } #Sabac
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 342 when = 1 } #Uzice
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 344 when = 1 } #Osijek
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 345 when = 1 } #Bjelovar
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 346 when = 1 } #Maribor
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 347 when = 1 } #Karlovac
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 351 when = 1 } #Knin
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 352 when = 1 } #Zagreb
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 353 when = 1 } #Banja Luka
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 354 when = 1 } #Tuzla
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 355 when = 1 } #Sarajevo
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 356 when = 1 } #Mostar
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 357 when = 1 } #Bihac
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 358 when = 1 } #Travnik
+		command = { trigger = { alliance = { country = ITA country = HUN } } type = secedeprovince which = HUN value = 341 when = 1 } #Novi Sad
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 331 when = 1 } #Pirot
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 328 when = 1 } #Kumanovo
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 333 when = 1 } #Skopje
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022018_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = ITA country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = ITA country = HUN } } type = relation which = HUN value = -25 }
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = relation which = BUL value = -25 }
+	}
+}
+event = {
+	id = 2022020
+	random = no
+	country = HUN
+	
+	name = "EVT_2022018_NAME" #Partitioning of Yugoslavia
+	desc = "EVT_2022018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = YUG }
+		control = { province = 338 data = -3 } #Belgrade is allied-controlled
+		participant = { country = HUN value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = HUN country = GER }
+			alliance = { country = HUN country = ITA }
+			alliance = { country = HUN country = BUL }
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022018_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 329 when = 1 } #Pristina
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 332 when = 1 } #Cetinje
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 334 when = 1 } #Tetovo
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 335 when = 1 } #Prijepolje
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 343 when = 1 } #Dubrovni
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 349 when = 1 } #Ljubljana
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = secedeprovince which = ITA value = 350 when = 1 } #Split
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 327 when = 1 } #Krusevac
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 330 when = 1 } #Nis
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 336 when = 1 } #Petrovgrad
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 337 when = 1 } #Ruma
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 338 when = 1 } #Belgrade
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 339 when = 1 } #Bor
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 340 when = 1 } #Sabac
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 342 when = 1 } #Uzice
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 344 when = 1 } #Osijek
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 345 when = 1 } #Bjelovar
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 346 when = 1 } #Maribor
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 347 when = 1 } #Karlovac
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 351 when = 1 } #Knin
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 352 when = 1 } #Zagreb
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 353 when = 1 } #Banja Luka
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 354 when = 1 } #Tuzla
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 355 when = 1 } #Sarajevo
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 356 when = 1 } #Mostar
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 357 when = 1 } #Bihac
+		command = { trigger = { alliance = { country = HUN country = GER } } type = secedeprovince which = GER value = 358 when = 1 } #Travnik
+		command = { trigger = { alliance = { country = HUN country = BUL } } type = secedeprovince which = BUL value = 331 when = 1 } #Pirot
+		command = { trigger = { alliance = { country = HUN country = BUL } } type = secedeprovince which = BUL value = 328 when = 1 } #Kumanovo
+		command = { trigger = { alliance = { country = HUN country = BUL } } type = secedeprovince which = BUL value = 333 when = 1 } #Skopje	
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022018_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = HUN country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = HUN country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = HUN country = BUL } } type = relation which = BUL value = -25 }
+	}
+}
+event = {
+	id = 2022021
+	random = no
+	country = BUL
+	
+	name = "EVT_2022018_NAME" #Partitioning of Yugoslavia
+	desc = "EVT_2022018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = YUG }
+		control = { province = 338 data = -3 } #Belgrade is allied-controlled
+		participant = { country = BUL value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = BUL country = ITA }
+			alliance = { country = BUL country = HUN }
+			alliance = { country = BUL country = GER }
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022018_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 329 when = 1 } #Pristina
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 332 when = 1 } #Cetinje
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 334 when = 1 } #Tetovo
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 335 when = 1 } #Prijepolje
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 343 when = 1 } #Dubrovni
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 349 when = 1 } #Ljubljana
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 350 when = 1 } #Split
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 327 when = 1 } #Krusevac
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 330 when = 1 } #Nis
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 336 when = 1 } #Petrovgrad
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 337 when = 1 } #Ruma
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 338 when = 1 } #Belgrade
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 339 when = 1 } #Bor
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 340 when = 1 } #Sabac
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 342 when = 1 } #Uzice
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 344 when = 1 } #Osijek
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 345 when = 1 } #Bjelovar
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 346 when = 1 } #Maribor
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 347 when = 1 } #Karlovac
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 351 when = 1 } #Knin
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 352 when = 1 } #Zagreb
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 353 when = 1 } #Banja Luka
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 354 when = 1 } #Tuzla
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 355 when = 1 } #Sarajevo
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 356 when = 1 } #Mostar
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 357 when = 1 } #Bihac
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 358 when = 1 } #Travnik
+		command = { trigger = { alliance = { country = BUL country = HUN } } type = secedeprovince which = HUN value = 341 when = 1 } #Novi Sad
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022018_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = BUL country = HUN } } type = relation which = HUN value = -25 }
+		command = { trigger = { alliance = { country = BUL country = GER } } type = relation which = GER value = -25 }
+	}
+}
+event = {
+	id = 2022022
+	random = no
+	country = ROM
+	
+	name = "EVT_2022018_NAME" #Partitioning of Yugoslavia
+	desc = "EVT_2022018_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = YUG }
+		control = { province = 338 data = -3 } #Belgrade is allied-controlled
+		participant = { country = ROM value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = ROM country = GER }
+			alliance = { country = ROM country = ITA }
+			alliance = { country = ROM country = HUN }
+			alliance = { country = ROM country = BUL }
+		}
+		#Romania usually gets nothing, but it controls anything it must give it back (added check to avoid event fire for nothing)
+		OR = {
+			control = { province = 327 data = -1 } #Krusevac
+			control = { province = 328 data = -1 } #Kumanovo
+			control = { province = 329 data = -1 } #Pristina
+			control = { province = 330 data = -1 } #Nis
+			control = { province = 331 data = -1 } #Pirot
+			control = { province = 332 data = -1 } #Cetinje
+			control = { province = 333 data = -1 } #Skopje
+			control = { province = 334 data = -1 } #Tetovo
+			control = { province = 335 data = -1 } #Prijepolje
+			control = { province = 336 data = -1 } #Petrovgrad
+			control = { province = 337 data = -1 } #Ruma
+			control = { province = 338 data = -1 } #Belgrade
+			control = { province = 339 data = -1 } #Bor
+			control = { province = 340 data = -1 } #Sabac
+			control = { province = 341 data = -1 } #Novi Sad
+			control = { province = 342 data = -1 } #Uzice
+			control = { province = 343 data = -1 } #Dubrovni
+			control = { province = 344 data = -1 } #Osijek
+			control = { province = 345 data = -1 } #Bjelovar
+			control = { province = 346 data = -1 } #Maribor
+			control = { province = 347 data = -1 } #Karlovac
+			control = { province = 349 data = -1 } #Ljubljana
+			control = { province = 350 data = -1 } #Split
+			control = { province = 351 data = -1 } #Knin
+			control = { province = 352 data = -1 } #Zagreb
+			control = { province = 353 data = -1 } #Banja Luka
+			control = { province = 354 data = -1 } #Tuzla
+			control = { province = 355 data = -1 } #Sarajevo
+			control = { province = 356 data = -1 } #Mostar
+			control = { province = 357 data = -1 } #Bihac
+			control = { province = 358 data = -1 } #Travnik
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022018_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 329 when = 1 } #Pristina
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 332 when = 1 } #Cetinje
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 334 when = 1 } #Tetovo
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 335 when = 1 } #Prijepolje
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 343 when = 1 } #Dubrovni
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 349 when = 1 } #Ljubljana
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = secedeprovince which = ITA value = 350 when = 1 } #Split
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 327 when = 1 } #Krusevac
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 330 when = 1 } #Nis
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 336 when = 1 } #Petrovgrad
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 337 when = 1 } #Ruma
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 338 when = 1 } #Belgrade
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 339 when = 1 } #Bor
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 340 when = 1 } #Sabac
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 342 when = 1 } #Uzice
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 344 when = 1 } #Osijek
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 345 when = 1 } #Bjelovar
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 346 when = 1 } #Maribor
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 347 when = 1 } #Karlovac
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 351 when = 1 } #Knin
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 352 when = 1 } #Zagreb
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 353 when = 1 } #Banja Luka
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 354 when = 1 } #Tuzla
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 355 when = 1 } #Sarajevo
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 356 when = 1 } #Mostar
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 357 when = 1 } #Bihac
+		command = { trigger = { alliance = { country = ROM country = GER } } type = secedeprovince which = GER value = 358 when = 1 } #Travnik
+		command = { trigger = { alliance = { country = ROM country = HUN } } type = secedeprovince which = HUN value = 341 when = 1 } #Novi Sad
+		command = { trigger = { alliance = { country = ROM country = BUL } } type = secedeprovince which = BUL value = 331 when = 1 } #Pirot
+		command = { trigger = { alliance = { country = ROM country = BUL } } type = secedeprovince which = BUL value = 328 when = 1 } #Kumanovo
+		command = { trigger = { alliance = { country = ROM country = BUL } } type = secedeprovince which = BUL value = 333 when = 1 } #Skopje
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022018_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = ROM country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = ROM country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = ROM country = HUN } } type = relation which = HUN value = -25 }
+		command = { trigger = { alliance = { country = ROM country = BUL } } type = relation which = BUL value = -25 }
+	}
+}
+###### Partitioning of Greece
+event = {
+	id = 2022023
+	random = no
+	country = GER
+	
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = GRE }
+		control = { province = 377 data = -3 } #Athens is allied-controlled
+		participant = { country = GER value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = GER country = ITA }
+			alliance = { country = GER country = BUL }
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { claims = { province = 377 data = GER } } } type = addclaim which = 377 } #Athen
+		command = { trigger = { NOT = { claims = { province = 382 data = GER } } } type = addclaim which = 382 } #Irakleion
+		command = { trigger = { NOT = { claims = { province = 383 data = GER } } } type = addclaim which = 383 } #Mytilni
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 367 when = 1 } #Ioannina
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 368 when = 1 } #Larissa
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 369 when = 1 } #Metsovo
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 371 when = 1 } #Kerkyra
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 372 when = 1 } #Patra
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 373 when = 1 } #Corinth
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 374 when = 1 } #Halkyda
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 375 when = 1 } #Levadhia
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 376 when = 1 } #Agrinion
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 380 when = 1 } #Sitia
+		command = { trigger = { alliance = { country = GER country = ITA } } type = secedeprovince which = ITA value = 381 when = 1 } #Ermoupoli				
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 363 when = 1 } #Xanthi
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 364 when = 1 } #Kavala
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 365 when = 1 } #Thessaloniki
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 366 when = 1 } #Kozani
+		command = { trigger = { alliance = { country = GER country = BUL } } type = secedeprovince which = BUL value = 370 when = 1 } #Alexandroupoli
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = GER country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = GER country = BUL } } type = relation which = BUL value = -25 }		
+	}
+}
+event = {
+	id = 2022024
+	random = no
+	country = ITA
+	
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = GRE }
+		control = { province = 377 data = -3 } #Athens is allied-controlled
+		participant = { country = ITA value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = ITA country = GER }
+			alliance = { country = ITA country = BUL }
+		}
+	}
+
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { claims = { province = 367 data = ITA } } } type = addclaim which = 367 } #Ioannina
+		command = { trigger = { NOT = { claims = { province = 368 data = ITA } } } type = addclaim which = 368 } #Larissa
+		command = { trigger = { NOT = { claims = { province = 368 data = ITA } } } type = addclaim which = 369 } #Metsovo
+		command = { trigger = { NOT = { claims = { province = 372 data = ITA } } } type = addclaim which = 372 } #Patra
+		command = { trigger = { NOT = { claims = { province = 373 data = ITA } } } type = addclaim which = 373 } #Corinth
+		command = { trigger = { NOT = { claims = { province = 374 data = ITA } } } type = addclaim which = 374 } #Halkyda
+		command = { trigger = { NOT = { claims = { province = 375 data = ITA } } } type = addclaim which = 375 } #Levadhia
+		command = { trigger = { NOT = { claims = { province = 376 data = ITA } } } type = addclaim which = 376 } #Agrinion
+		command = { trigger = { NOT = { claims = { province = 380 data = ITA } } } type = addclaim which = 380 } #Sitia
+		command = { trigger = { NOT = { claims = { province = 381 data = ITA } } } type = addclaim which = 381 } #Ermoupoli		
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 377 when = 1 } #Athen
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 382 when = 1 } #Irakleion
+		command = { trigger = { alliance = { country = ITA country = GER } } type = secedeprovince which = GER value = 383 when = 1 } #Mytilni		
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 363 when = 1 } #Xanthi
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 364 when = 1 } #Kavala
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 365 when = 1 } #Thessaloniki
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 366 when = 1 } #Kozani
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = secedeprovince which = BUL value = 370 when = 1 } #Alexandroupoli
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = ITA country = GER } } type = relation which = GER value = -25 }
+		command = { trigger = { alliance = { country = ITA country = BUL } } type = relation which = BUL value = -25 }	
+	}
+}
+event = {
+	id = 2022025
+	random = no
+	country = BUL
+	
+	name = "EVT_2022023_NAME" #Partitioning of Greece
+	desc = "EVT_2022023_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {	
+		NOT = { exists = GRE }
+		control = { province = 377 data = -3 } #Athens is allied-controlled
+		participant = { country = BUL value = 2 } #is member of Axis
+		OR = {
+			alliance = { country = BUL country = ITA }
+			alliance = { country = BUL country = GER }
+		}
+	}
+
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_2022023_ACTIONA" #Divide the lands with our allies
+		command = { type = dissent value = -1 }
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 367 when = 1 } #Ioannina
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 368 when = 1 } #Larissa
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 369 when = 1 } #Metsovo
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 371 when = 1 } #Kerkyra
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 372 when = 1 } #Patra
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 373 when = 1 } #Corinth
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 374 when = 1 } #Halkyda
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 375 when = 1 } #Levadhia
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 376 when = 1 } #Agrinion
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 380 when = 1 } #Sitia
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = secedeprovince which = ITA value = 381 when = 1 } #Ermoupoli				
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 377 when = 1 } #Athen
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 382 when = 1 } #Irakleion
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 383 when = 1 } #Mytilni	
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 366 when = 1 } #Kozani	
+		command = { trigger = { alliance = { country = BUL country = GER } } type = secedeprovince which = GER value = 365 when = 1 } #Thessaloniki		
+	}
+	action_b = {
+		ai_chance = 0
+		name = "EVT_2022023_ACTIONB" #No, we deserve what we got 
+		command = { type = dissent value = 5 }
+		command = { trigger = { alliance = { country = BUL country = ITA } } type = relation which = ITA value = -25 }
+		command = { trigger = { alliance = { country = BUL country = GER } } type = relation which = GER value = -25 }
+	}
+}
+
+event = { 
+	id = 2024002
+	random = no 
+	persistent = yes
+	tag = { DDR DFR AUS U16 }
+
+	name = "AI_EVENT"
+	style = 2	
+	
+
+	action_a = {
+		command = { trigger = { country = DDR } type = capital which = 163 }
+		command = { trigger = { country = DFR } type = capital which = 131 }
+		command = { trigger = { country = DFR NOT = { participant = { country = DFR value = 1 } } } type = alliance where = 3 when = 1 } #join the Comintern
+		command = { trigger = { country = AUS } type = capital which = 195 }
+		command = { trigger = { country = U16 } type = capital which = 195 }
+	}
+}
+
+event = { 
+	id = 2024003
+	random = no
+	country = REB
+
+	trigger = {
+		OR ={ #5% chances in 1942, 100% afterwards
+			AND = {
+				random = 5
+				year = 1942
+				NOT = { year = 1943 }
+			}
+			year = 1943
+		}
+		NOT = { control = { province = 194 data = REB } } #Hollabrun not controlled by Rebels
+		OR = {
+			control = { province = 194 data = GER }
+			control = { province = 194 data = DDR }
+			control = { province = 194 data = DFR }
+			control = { province = 194 data = AUS }
+			control = { province = 194 data = U16 }
+			control = { province = 194 data = U24 }
+			control = { province = 194 data = U25 }
+			control = { province = 194 data = ITA }
+			control = { province = 194 data = U14 }
+			control = { province = 194 data = HUN }
+			control = { province = 194 data = U13 }
+			control = { province = 194 data = CZE }
+			control = { province = 194 data = U31 }
+			control = { province = 194 data = SLO }
+			control = { province = 194 data = YUG }
+			control = { province = 194 data = U27 }
+			control = { province = 194 data = ENG }
+			control = { province = 194 data = FRA }
+			control = { province = 194 data = U01 }
+			control = { province = 194 data = USA }
+			control = { province = 194 data = SOV }
+			control = { province = 194 data = ROM }
+			control = { province = 194 data = BUL }
+			control = { province = 194 data = GRE }
+			control = { province = 194 data = SCH }
+			control = { province = 194 data = SPR }
+			control = { province = 194 data = SPA }
+			control = { province = 194 data = SWE }
+			control = { province = 194 data = NOR }
+			control = { province = 194 data = FIN }
+			control = { province = 194 data = U08 }
+			control = { province = 194 data = U09 }
+		}
+	}	
+
+	name = "AI_EVENT"
+	style = 2
+
+	date = { day = 0 month = january year = 1942 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = trigger which = 2024004 } #New oil fields
+	}
+}
+
+event = {
+	id = 2024004
+	random = no
+	tag = { GER DDR DFR AUS U16 U24 U25 ITA U14 HUN U13 CZE U31 SLO YUG U27 ENG FRA U01 USA SOV ROM BUL GRE SCH SPR SPA SWE NOR FIN U08 U09 }
+	all = yes #execute for all tags in the list
+
+	name = "EVT_2024004_NAME"
+	desc = "EVT_2024004_DESC"
+	style = 2
+	picture = "ersatz_conversion"
+
+	action = {
+		name = ACTION_NAME_GOOD
+		trigger = {
+			control = { province = 194 data = -1 } #Hollabrun
+		}
+		command = { type = add_prov_resource which = 194 value = 5 where = oil } #Hollabrun
+	}
+}
+
+event = { 
+	id = 2024005
+	random = no 
+	country = REB
+
+	trigger = {
+		OR ={ #5% chances in 1942, 100% afterwards
+			AND = {
+				random = 5
+				year = 1942
+				NOT = { year = 1943 }
+			}
+			year = 1943
+		}
+		NOT = { control = { province = 276 data = REB } } #Zalaegerszed not controlled by Rebels
+		OR = {
+			control = { province = 276 data = GER }
+			control = { province = 276 data = DDR }
+			control = { province = 276 data = DFR }
+			control = { province = 276 data = AUS }
+			control = { province = 276 data = U16 }
+			control = { province = 276 data = U24 }
+			control = { province = 276 data = U25 }
+			control = { province = 276 data = ITA }
+			control = { province = 276 data = U14 }
+			control = { province = 276 data = HUN }
+			control = { province = 276 data = U13 }
+			control = { province = 276 data = CZE }
+			control = { province = 276 data = U31 }
+			control = { province = 276 data = SLO }
+			control = { province = 276 data = YUG }
+			control = { province = 276 data = U27 }
+			control = { province = 276 data = ENG }
+			control = { province = 276 data = FRA }
+			control = { province = 276 data = U01 }
+			control = { province = 276 data = USA }
+			control = { province = 276 data = SOV }
+			control = { province = 276 data = ROM }
+			control = { province = 276 data = BUL }
+			control = { province = 276 data = GRE }
+			control = { province = 276 data = SCH }
+			control = { province = 276 data = SPR }
+			control = { province = 276 data = SPA }
+			control = { province = 276 data = SWE }
+			control = { province = 276 data = NOR }
+			control = { province = 276 data = FIN }
+			control = { province = 276 data = U08 }
+			control = { province = 276 data = U09 }
+		}		
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 0 month = january year = 1942 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = trigger which = 2024006 } #New oil fields
+	}
+}
+
+event = {
+	id = 2024006
+	random = no
+	tag = { GER DDR DFR AUS U16 U24 U25 ITA U14 HUN U13 CZE U31 SLO YUG U27 ENG FRA U01 USA SOV ROM BUL GRE SCH SPR SPA SWE NOR FIN U08 U09 }
+	all = yes #execute for all tags in the list
+
+	name = "EVT_2024006_NAME"
+	desc = "EVT_2024006_DESC"
+	style = 2
+	picture = "ersatz_conversion"
+
+	action = {
+		name = ACTION_NAME_GOOD
+		trigger = {
+			control = { province = 276 data = -1 } #Zalaegerszed
+		}
+		command = { type = add_prov_resource which = 276 value = 3 where = oil } #Zalaegerszed
+	}
+}
+
+event = {
+	id = 2003127
+	random = no
+	country = TRA
+
+	trigger = { 	
+		puppet = { country = TRA country = GER } 
+	}
+	
+	name = "EVT_2003127_NAME"
+	desc = "EVT_2003127_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "ACTION_NAME_EXCELLENT" #Excellent
+		command = { type = flag_ext where = TRA which = _GERpuppet }
+	}
+}
+
+event = {
+	id = 2003128
+	random = no
+	country = SER
+
+	trigger = { 	
+		puppet = { country = SER country = GER } 
+	}
+	
+	name = "EVT_2003127_NAME"
+	desc = "EVT_2003127_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 16
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "ACTION_NAME_EXCELLENT" #Excellent
+		command = { type = flag_ext where = SER which = _fas }
+	}
+}

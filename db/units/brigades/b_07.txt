@@ -1,0 +1,47 @@
+detachable = yes
+
+# 0 - Landkreuzer P.1500
+model = {
+	cost 				= 20
+	buildtime	 		= 900
+	manpower 			= 5
+	defensiveness 		= -25
+	toughness 			= -5
+	maxspeed 			= 18
+	suppression			= 10
+	softness			= -10
+	defaultorganisation = 20
+	hardattack			= 30
+	softattack			= 32
+	airattack 			= 12
+	airdefence			= 50
+	supplyconsumption 	= 40
+	fuelconsumption		= 35
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 4
+	equipment = { manpower = 5000 heavy_armor = 4 }
+}
+
+# 1 - Nuclear Landkreuzer P.1500
+model = {
+	cost 				= 25
+	buildtime	 		= 900
+	manpower 			= 5
+	defensiveness 		= -30
+	toughness 			= -5
+	maxspeed 			= 18
+	suppression			= 10
+	softness			= -10
+	defaultorganisation = 30
+	hardattack			= 40
+	softattack			= 60
+	airattack 			= 30
+	airdefence			= 70
+	supplyconsumption 	= 100
+	fuelconsumption		= 0
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 6
+	equipment = { manpower = 5000 heavy_armor = 4 }
+}

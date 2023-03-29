@@ -1,0 +1,587 @@
+# Germany goes after US by Nekron
+
+liberate = { ARA CRO RSI SLO SPA POR BUL HUN ROM FIN SER MTN MEN MAN SIB SIK PRI TRA TAN IND PAK PER BUR NEP BHU MON SIA SCO SCA VIE IRQ EGY SYR TUR KOR CHI IRE U40 U41 U42 U43 U48 U73 } # SCA
+combat = {
+	USA = 200
+	MEX = 200
+	VEN = 200
+	YUG = 200
+	SPR = 200
+	COL = 200
+	PAN = 200
+	SPA = 200
+	TUR = 150
+	SOV = 150
+	SCH = 80
+}
+max_front_ratio = 2.0
+max_garrison_prop = 0.35
+min_garrison_prop = 0.05
+exp_force_ratio = 0.07 
+exp_force_ratios = { ITA = 0.2 U45 = 0.1 IRE = 0.2 U73 = 0.4 U43 = 0.1 } 
+max_front_ratios = { 
+	USA = 9.0
+	SPA = 6.0
+	SPR = 6.0
+	TUR = 5.0
+	CAN = 5.0
+	SOV = 4.0
+	}
+war = 25
+target = { 
+ 25 = 100 # Norwich
+ 23 = 60 # Plymouth
+ 29 = 40 # London
+ 1 = 50 # Reykjavik
+ 12 = 50 # Edinburgh
+ 2132 = 50 # Halifax
+ 1953 = 40 # Miami
+ 889 = 45 # Panama
+ 1793 = 40 # New York
+ 1778 = 50 # Guantanamo Bay
+ 2137 = 90 # St Johns
+ 1779 = 60 # The Bermudas
+ 902 = 40 # Suez
+ 348 = 60 # Gibraltar
+} 
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.10 
+
+	AA_batteries = atwar
+	
+	max_nuclear = 10
+	
+	coastal_fort = atwar
+	max_coastal_level = 5
+	coastal_fort_provs = {
+		152   #Kiel
+		147   #Wilhelmshaven
+		122   #Amsterdam
+		125   #Rotterdam
+		114   #Brugge
+		51   #Dunkerque
+		49   #Calais
+		53   #Dieppe
+		46   #Bayeux
+		44   #Caen
+		37   #Brest
+		39   #Lorient
+		69   #La Rochelle
+		68  #Bordeaux
+	} 
+
+	radar_station = atwar
+	max_radar = 8
+	radar_provs = {
+		145  #Essen
+		137  #Kassel
+		147  #Wilhemshafen
+		163  #Berlin
+		134  #Stutgart
+		116  #Brussels
+		122  #Amsterdam
+		52  #Lille
+		55  #Paris
+		2137 #StVin
+		1778 #Guantanamo
+		1 #Iceland
+	} 
+
+   	ic_at_war = yes 
+	force_ic_until = 1935
+	ic_end_year = 1955
+	IC_provs = {
+		127   #Saarburken
+		179  #Munchen
+		163  #Berlin
+		131   #Cologne
+		134  #Stuttgart
+		146   #Hannover
+		173  #Dresden
+	} 
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.35
+	overseas_multiplier 	= 1.0
+	revolt_risk_mult	= 0.05
+	home_peace_cap 			= 30
+	war_zone_odds 			= 2.0 #How much of an numeric advantage we want to maintain over enemies in war zones
+	key_point_prio_mult		= 1
+	# Borders with specific countries
+	country_priorities = {
+     	FRA = -1 
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = 5
+		AUS = -1
+		TUR = 5
+		SPR = -1
+		SPA = -1
+		SOV = 60
+		ENG = 70
+		USA = 90
+		U01 = 40
+		U02 = 50
+	}
+	province_priorities = {
+		#Important European provinces
+		55  = 20  #Paris
+		52  = 20  #Lille
+		116  = 20  #Brussels
+		145  = 20  #Prague
+		104  = 20  #Metz
+		43  = 20  #Cherborg
+		42  = 20  #Avranches
+		69  = 10  #La Rochele
+		147  = 20  #Wilhelmshafen
+		148  = 20  #Bremen
+		150  = 20  #Groningen
+		338  = 20  #Belgrade
+		
+		# England Coast
+		26 = 30 # Dover 
+		25 = 30 # Norwich 
+		27 = 30 # Portsmouth 
+		23 = 30 # Plymouth 
+		17 = 30 # Manchester
+		24 = 30 # Liverpool 
+		12 = 30 # Edimburg
+		11 = 30 # Glasgow
+		5 = 30 # Scap Flow
+		36 = 30 # Belfast
+		20 = 10 # Exeter
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = -1 #Mytilini
+		381 = -1 #Ermoupoli
+		370 = -1 #Alexandropoli
+	}
+	area_multiplier = {
+		26  = 1.2  # Dover
+		2132  = 2.0  #Halifax
+		1953  = 3.0  #Miami
+		1778  = 1.5  #Guantanamo
+		1966  = 2.0  #Merida
+		1988  = 1.2  #Maracaibo
+		2131  = 2.0  #Mocton, East Canada
+		1761  = 0.01  #Saba Island
+		370		= 0.1 #Alexandropoli - AI stacks a lot of divs here for no reason
+		383		= 0.1 #Mytilene - same as above
+		384		= 0.1 #Galiopoli - same as above
+	}
+		ignore = {
+		#Baltic States
+		268  #Mazirbe
+		269  #Jelgava
+		264  #Riga
+		271  #Parnu
+		270  #Tallinn
+		550  #Kingisepp
+
+		#Denmark
+		363  #Bornholm
+		219  #Odense
+
+		#Germany
+		151   #Lubeck
+		#296 # Rostock
+		162  #Stralsund
+		158  #Stettin
+		183  #Elbing
+
+		#Poland
+		181  #Danzig
+
+		#Sweden
+     	2152   #Malmo 
+     	2159  #Stockholm 
+		253  #Uppsala
+     	2158  #Gavle 
+		220  #Sundsuall
+		514  #Umea
+     	2166  #Lulea 
+
+		#Finland
+		531  #Viipuri
+		525  #Helsinki
+		524  #Turku
+		518  #Pori
+		521  #Vaasa
+		520  #Oulu
+		516  #Tornio
+
+		370  #alexandropol, ai stacks 40 divs there
+		#Russia Black Sea Coast
+		306 
+		626 
+		622 
+		624 
+		637 
+		623 
+		
+		#Bad provinces near Suez
+		1004
+		1006
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.15
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human = 2.0
+	base_attack_odds	= 1.25
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.55
+	mountain_attack = 0.9
+	river 		= 1.0
+	largefort	= 0.7
+	# This is mainly to make sure Gibraltar isnt immortal
+	province_priorities = {
+		#Important European provinces
+		55  = 1.20  #Paris
+		52  = 1.20  #Lille
+		116  = 1.20  #Brussels
+		145  = 1.20  #Prague
+		104  = 1.20  #Metz
+		43  = 1.20  #Cherborg
+		42  = 1.20  #Avranches
+		69  = 1.10  #La Rochele
+		147  = 1.20  #Wilhelmshafen
+		148  = 1.20  #Bremen
+		150  = 1.20  #Groningen
+		338  = 1.20  #Belgrade
+		
+		# England Coast
+		26 = 1.30 # Dover 
+		25 = 1.30 # Norwich 
+		27 = 1.30 # Portsmouth 
+		23 = 1.30 # Plymouth 
+		17 = 1.30 # Manchester
+		24 = 1.30 # Liverpool 
+		12 = 1.30 # Edimburg
+		11 = 1.30 # Glasgow
+		5 = 1.30 # Scap Flow
+		36 = 1.30 # Belfast
+		20 = 1.10 # Exeter
+		
+		#USA
+		2132  = 2.0  #Halifax
+		1953  = 2.0  #Miami
+		1778  = 1.5  #Guantanamo
+		1966  = 2.0  #Merida
+		1988  = 1.2  #Maracaibo
+		2131  = 2.0  #Mocton, East Canada
+		
+		#Gibraltar
+		473	  = 1.5 #Cadiz, Gibraltar Front
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = 0.1 #Mytilini
+		381 = 0.1 #Ermoupoli
+		370 = 0.1 #Alexandropoli
+	}
+	enemy_handicap = {
+	} 
+	passivity = {
+	}
+} 
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random			= 18.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.01	#higher, avoid worst beaches.
+	distance		= 0.2	#higher = avoid long distance.
+	max_distance    = 250 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 52.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.5	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 1.1	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.1	#higher = much more vary of troops nearby
+	air_base		= 3.5 
+    naval_base 		= 2.0
+    air_support 	= 12.0 
+    redirect 		= priority #Home is safer, but over this distance and at this point in the game priority is typically more effective
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		115 #Antwerpen
+		37	#Brest
+		377	#Athens
+		429 #Malta
+		1   #Iceland
+		1778	#Guantanamo
+		1771	#Bahamas
+		1773	#Bermudas
+		2137 #Saint Johns
+		964 #Freetown - Liberia
+	}
+	target = { 
+		#England
+		22	= 8000  #Cardif
+		26  = 7000  #Dover
+		25  = 8000  #Norwich
+		27  = 7000  #Portsmouth
+		23  = 6000  #Plymouth
+		36  = 6000  #Belfast
+		17  = 1200  #Manchester
+		12  = 7500  #Edinburgh
+		11  = 1200  #Glasgow
+		1   = 4000	#Iceland
+		
+		#US
+		2132	= 500 #Halifax
+		2131	= 500 #Monoton
+		2134	= 1000 #Glace Bay
+		1953	= 7000
+		1773	= 6500
+		1778	= 7000
+		476     = 6500
+		2086	= 6500
+		2087	= 6500
+		1995	= 6500
+		2137	= 6500
+		1795	= 8000 #New York
+		1968	= 7000
+		1988	= 800
+		964		= 5500 #Freetown
+		
+		#Brazil east coast
+		2070	= 6500 #Natal
+		2074	= 6500 #Vitoria
+		2075	= 6500 #Rio de Janeiro
+
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 1000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 1000	 #Antwerpen
+		49   = 1000  #Calais
+		51   = 1000  #Dunkerque
+		53   = 1000  #Dieppe
+		46   = 1000  #Bayeux
+		44   = 1000  #Caen
+		37   = 1000  #Brest
+		39   = 1000  #Lorient
+		69   = 1000  #Le Rochelle
+		68   = 1000  #Bordeaux
+
+		#Norway
+		491	= 4000	#Alesund
+		485	= 4000	#Kristiansand
+		483	= 6000	#Oslo
+		493	= 2000	#Trondheim
+		495	= 6000	#Narvik
+		
+		#Sweden
+     	2153 = 2000 # Goterborg 
+     	2152 = 2000 # Malmo 
+     	2159 = 8000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 2000 # Gavle 
+     	2166 = 2000 # Lulea 
+
+		#Finland
+		525 = 3000 # Helsinki
+		524 = 2000 # Turku
+		521 = 1000 # Vaasa
+		516 = 2000 # Tornio
+		531 = 4000 # Viipuri
+		530 = 2000 # Terijoki
+		
+		#Denmark
+		294 = 6000 # Copenhagen
+		219 = 2000 # Odense
+		
+		#Baltics
+		270 = 2000 # Tallin
+		275 = 2000 # Kuressaare
+		
+		264 = 2000 # Riga
+		269 = 2000 # Jelgava
+		
+		184 = 4000 # Koenigsberg
+		181 = 100 # Danzig
+		226 = 100 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+		553 = 4000
+
+		#Mediter.
+		382 = 500 #Irakleio
+		388 = 1500 #Nikosia
+		429 = 2850 #Malta
+		789 = 500 #Alexandria
+		434 = 2000 #Cagliari
+		
+		#Singapore
+		1436  = 25  #Kota Bahru
+		1435  = 25  #Alor Star
+		1432  = 65  #Singapore
+		#Philippines
+		1567  = 67 #Lingayen Gulf
+		1568  = 67 #Lamon Bay
+		1577  = 67 #Legaspi
+		1579  = 67 #Davao
+		1575  = 45 #Samar
+		1573  = 45 #Leyte
+		1574  = 45 #Negros
+		1576  = 45  #Panay
+		1571  = 40  #Mindoro
+		1572  = 40  #Palawan
+
+		#Outer Japanese Islands
+		1686  = 50  #Saipan
+		1685  = 50  #Tinian
+		1684  = 50  #Rota
+		1683  = 50  #Guam
+		1670  = 50  #Palau
+		1672  = 50  #Marcus Island
+
+		#Netherlands East Indies
+		1649  = 60  #Semarang
+		1656  = 60  #Madura
+		1636  = 30  #Palembang
+		1635  = 30  #Dumai
+
+		#Borneo
+		1625  = 45  #Mini
+		1624  = 45  #Kuching
+		1631  = 45  #Pontianak
+		1632  = 45  #Balikpapan
+		1627  = 45  #Tarakan
+		
+		#China
+		1362  = 15	#	Taipei
+
+		#Japan
+		1552  = 75	#	Tokyo
+		1554  = 75	#	Hiroshima
+		1561  = 75	#	Kagoshima
+	}
+}
+admiral = { 
+	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 12 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		"Kattegat"
+
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+		
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+	}
+	#Which provinces to use as bases..
+	base = {
+		23	#Plymouth
+		37 #Brest
+		476 #Lisbon
+		1 #Iceland
+		2137 # Canada invasion
+		1778 # General US
+	}
+	target = { 
+	2316 = 200 #Target florida
+	2326 = 300 #Target invasion routes from StJohn
+	2664 = 50 #Target iceland
+	2320 = 200 #Patrol Bahamas
+	2306 = 120 #Make sure we can invade South America
+	2300 = 90 #Make sure we can invade Rio
+	} 
+	core = { 
+		#2671 #Protect Narvik
+		2699 #Protect Channel invasions
+		2709 #Protect England
+		2708 #Protect Ireland
+		2278 #Protect Gibraltar
+		2279 #Same as above
+		2324 #Protect St John Invasions
+		2346 #Protect Guantanamo Bay
+		} 
+}

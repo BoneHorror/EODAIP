@@ -1,0 +1,110 @@
+# German operation Barbarosa Invasion AI File by Lothos
+
+strat_redeploy_threshold = 20
+max_redeploying = 0.25
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		SWE = -1
+		FIN = -1
+		ITA = 5
+		SCH = -1
+		AUS = -1
+		TUR = 5
+		SPR = -1
+		SPA = -1
+		SOV = 100
+		FRA = 100
+		CZE = 10
+		BEL = 30
+		HOL = 30
+		LUX = 20
+		LIT = 15
+		LAT = 15
+		EST = 10
+		ENG = 60
+		USA = 30
+		YUG = 20
+	}
+	province_priorities = {
+		#Soviet Border
+		261  = 75  #Klaipeda
+		182  = 100  #Insterbourg
+		185  = 75  #Allenstein
+		252  = 150  #Suwalki
+		230  = 75
+		229  = 75
+		228  = 75 
+		246  = 200
+		243  = 50  #Lubin
+		236  = 50
+		237  = 50
+		
+		55  = 20  #Paris
+		52  = 20  #Lille
+		116  = 20  #Brussels
+		145  = 20  #Prague
+		104  = 20  #Metz
+		43  = 20  #Cherborg
+		42  = 20  #Avranches
+		69  = 10  #La Rochele
+		147  = 20  #Wilhelmshafen
+		148  = 20  #Bremen
+		150  = 20  #Groningen
+		338  = 20  #Belgrade
+	}
+	area_multiplier = {
+	}
+}
+front = { 
+   	recklessness     = 1 # 0-3 
+  	distrib_vs_ai     = even
+   	distrib_vs_human   = reactive 
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.0
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human= 2.5
+	front_leader_overseas	= 5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 0.9
+	max_attack_odds		= 3.0
+	reinforce_odds		= 3.0
+	withdraw_odds		= 0.6
+
+    enemy_handicap = {
+		FRA = 100
+		BEL = 300
+		HOL = 300
+		LUX = 300
+	} 
+      	passivity = {
+		FRA = 100
+		BEL = 100
+		HOL = 100
+		LUX = 100
+	} 
+
+	province_priorities = {
+		#Maginot Line
+		127  = 0.15
+		132  = 0.03
+		130  = 0.03
+		
+		#Spearhead into ardennes
+		126	= 2.0
+		131	= 2.0
+		
+		#Get Lithuania
+		182 = 1.5
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= no
+} 

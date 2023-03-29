@@ -1,0 +1,170 @@
+# Canada 1939 AI File par Fernando Torres
+
+switch = no # [yes/no]
+max_front_ratio = 1.5
+max_front_ratios = { 
+	GER = 6.0
+	}
+max_garrison_prop = 0.13 # 0.10
+min_garrison_prop = 0.08 # 0.05
+neutrality = 110 
+war = 1
+upgrading = 0.5
+#reinforcement = 0.5
+strat_redeploy_threshold = 25
+exp_force_ratio = 0.65 
+exp_force_ratios = {
+	ENG = 1.0
+} 
+no_exp_forces_to = { FRA BEL HOL NOR DEN POL LUX SPA SPR GRE YUG }
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.020 # 1.00 
+
+	ic_at_war = yes 
+	force_ic_until = 1937
+	ic_end_year = 1940
+}
+military = { 
+	relative_build_scheme 	= yes
+	max_batch_peace 		= 720 
+	max_batch_war 			= 360 
+	max_batch_home_front 	= 360
+
+	#### Divisions etc...
+	infantry 		= 22
+	cavalry 		= 0
+	motorized 		= 22
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 15
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 0
+	garrison		= 0
+    hq 				= 2
+	militia 		= 0
+#				57 %
+	interceptor 	= 5
+	multi_role 		= 7
+	cas 			= 0
+	strategic_bomber = 5
+	tactical_bomber = 3
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				20 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 5
+	light_cruiser 	= 8
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 6
+#				23 %
+
+	#### Brigades
+	artillery 			= 10
+	sp_artillery 		= 14
+	cavalry_brigade	= 0 
+	sp_anti_air 	= 2
+	medium_armor 			= 8
+	tank_destroyer 		= 0
+	light_armor_brigade = 7
+	heavy_armor 		= 0
+	super_heavy_armor 	= 0
+	armored_car 		= 2
+	anti_air 			= 3
+	police 				= 5	
+	engineer 			= 5
+
+	cag = 100.000
+	escort = 100.0000
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.5 # 0.1
+	overseas_multiplier 	= 1.0 # 1.0
+	home_peace_cap 		= 5 # 20
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 1
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 40	# Beach level 2
+	capital			= 20 # 20	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		USA = -1
+		GER = 100
+		ITA = 100
+		JAP = 100
+	}
+	province_priorities = {	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 1
+	distrib_vs_ai 		= offensive # even
+	distrib_vs_human 	= offensive # even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0 # 3.0
+	reinforce_odds		= 1.3 # 1.2
+	withdraw_odds		= 0.6
+} 
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion 	= no
+
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 10.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1 # 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1 # 0.1	#higher, avoid worst beaches.
+	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance 	= 250.0	# How far should the staging area be from the target invasion point
+	distance	= 10.0 # 10.0	#higher = avoid long distance.
+	pocket		= 20.0 # 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1 # 0.1	#prioritise taking pure islands.
+	enemy		= 2.0 # 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0 # 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 # 1.5 
+      	naval_base 	= 0.1 # 0.1 
+      	air_support 	= 3.0 # 3.0 
+      	redirect 	= home
+	ignore		= no
+	help_allies 	= yes
+
+	staging_province = {
+		20 5
+	}
+      
+	target = { } 
+}

@@ -1,0 +1,44 @@
+# Italian Land Prio Build by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 25
+	cavalry 		= 0
+	motorized 		= 10
+	mechanized 		= 2
+	light_armor 	= 2
+	armor 			= 5
+	paratrooper 	= 0
+	marine 			= 4
+	bergsjaeger 	= 5
+	garrison		= 1
+    hq	 			= 4
+	militia 		= 0
+#				70 %
+	interceptor 	= 7
+	multi_role 		= 3
+	cas 			= 0
+	strategic_bomber = 2
+	tactical_bomber = 4
+	naval_bomber 	= 6
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				20 %
+	battleship 		= 3
+	carrier 		= 0
+	escort_carrier	= 1
+	destroyer 		= 4
+	light_cruiser 	= 2
+	heavy_cruiser 	= 1
+	battlecruiser 	= 1
+	submarine 		= 2
+	nuclear_submarine = 0
+	transports 		= 6
+#				10 %
+}

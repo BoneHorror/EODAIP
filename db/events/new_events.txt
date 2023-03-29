@@ -1,0 +1,2657 @@
+# Fate of Afghanistan - Decision (GER)
+# Fate of India - Decision (in case of Fate of Afghanistan happened already) (GER)
+# Fate of India - Decision (in case of Fate of Afghanistan did not happen yet) (GER)
+# Eiger North Face (GER)
+# German-Polish relations (GER)
+# German-Polish relations (POL)
+# Rise of von Ribbentrop (GER)
+# Fate of South Africa - Decision (GER)
+# Edge of Darkness - Hard/Very Hard Difficulty (GER)
+# GER General Mobilization (GER)
+# Fate of Africa - Decision (GER)
+# Fate of North Africa (GER)
+# Fate of West Africa (GER)
+# Fate of East Africa (GER)
+# Fate of South Africa (GER)
+# Double-Cross System (ENG)
+# Magenetic Mines (GER)
+# SAF National Cabinet (SAF)
+# IND National Cabinet (IND)
+# AFG National Cabinet (AFG)
+# Molotov Cocktail (FIN)
+# Fate of Egypt (GER)
+# AI event to increase transport ships for (GER)
+# Kammhuber Linie  (GER)
+# Soviet Winter Reserves arrive (AI Event) (SOV)
+# Fate of Saudi Arabia (GER)
+# Strenghten German-Japanese cooperation (GER)
+# Strenghten German-Japanese cooperation (JAP)
+# Saar Offensive (FRA)
+# Saar Offensive (FRA) Outcome
+# Mittelafrika National Cabinet
+# The war takes a turn for the worse (ITA)
+# Victory is near (ITA)
+# Gian Galeazzo Ciano appointed Foreign Minister (ITA)
+# Reinforcements to East Africa (ITA)
+# Reinforcements from Italy (U49)
+# More loyal officers (ITA)
+# The Under-Secretary of War (ITA)
+# Back in Rome (ITA RSI)
+# Four days of Naples (GER RSI)
+# 1938 Football World Cup (ITA)
+# The death of Victor Emmanuel III (ITA)
+# The death of Mussolini (ITA)
+# The Old School Admiral (ITA)
+# Italian Racial Laws (ITA)
+# The Italian Empire (ITA)
+# Gabriele D’Annunzio dies (ITA)
+# Costanzo Ciano dies (ITA)
+# Bruno Mussolini dies (ITA)
+# The Constituent Assembly (RSI)
+# The death of Benito Mussolini (RSI)
+# Esposizione Universale Roma (ITA)
+# RSI Independence Struggle (RSI)
+
+#TO DO:
+# EGY National Cabinet --> Ahmed Husayn new minister (HoS & HoG)
+# ARA National Cabinet
+
+#########################################################################
+# Fate of Afghanistan - Decision
+#########################################################################
+event = {
+	id = 1100041
+	random = no
+	country = GER
+
+	decision = {
+			event = 2007033 # The Bitter Peace
+			region = { region = Persia data = -3 } # Iran is controlled by Germany or allies
+			exists = AFG
+	}
+
+	decision_trigger = {
+			event = 2007033 # The Bitter Peace
+			exists = AFG
+			region = { region = Persia data = -3 } # Iran is controlled by Germany or allies
+			relation = { which = AFG value = 50 } # Germany has maintained good relations
+			control = { province = 1093 data = -3 } # Zehedan is controlled by Germany or allies
+			control = { province = 1538 data = -3 } # Gwadar is controlled by Germany or allies
+			control = { province = 1533 data = -3 } # Karachi
+			control = { province = 1532 data = -3 } # Nawabshah
+			control = { province = 1529 data = -3 } # Quetta
+			control = { province = 1537 data = -3 } # Pershawar
+			control = { province = 1534 data = -3 } # Islamabad
+			control = { province = 1539 data = -3 } # Muzaffarabad
+			control = { province = 1540 data = -3 } # Srigar
+			control = { province = 1536 data = -3 } # Bahawaltagar
+			control = { province = 1530 data = -3 } 
+			control = { province = 1535 data = -3 } 
+			control = { province = 1531 data = -3 } 
+			control = { province = 1453 data = -3 } 
+			control = { province = 1454 data = -3 } 
+
+	}
+
+	trigger = {
+			event = 2007033 # The Bitter Peace
+			exists = AFG
+			region = { region = Persia data = -3 } # Iran is controlled by Germany or allies
+			relation = { which = AFG value = 50 } # Germany has maintained good relations
+			control = { province = 1093 data = -3 } # Zehedan is controlled by Germany or allies
+			control = { province = 1538 data = -3 } # Gwadar is controlled by Germany or allies
+			control = { province = 1533 data = -3 } # Karachi
+			control = { province = 1532 data = -3 } # Nawabshah
+			control = { province = 1529 data = -3 } # Quetta
+			control = { province = 1537 data = -3 } # Pershawar
+			control = { province = 1534 data = -3 } # Islamabad
+			control = { province = 1539 data = -3 } # Muzaffarabad
+			control = { province = 1540 data = -3 } # Srigar
+			control = { province = 1536 data = -3 } # Bahawaltagar
+			control = { province = 1530 data = -3 } 
+			control = { province = 1535 data = -3 } 
+			control = { province = 1531 data = -3 } 
+			control = { province = 1453 data = -3 } 
+			control = { province = 1454 data = -3 } 
+	}
+   
+	name = EVT_1100041_NAME
+	desc = EVT_1100041_DESC
+	style = 2
+	picture = "fate_of_AFG"
+	decision_picture = "dec_fate_of_AFG"
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = 1100041a #Give limited territory to Afghanistan
+		ai_chance = 50
+		command = { type = secedeprovince which = AFG value = 1093 when = 2 } # Zehedan
+		command = { type = secedeprovince which = AFG value = 1538 when = 2 } # Gwadar
+		command = { type = make_puppet which = AFG }
+		command = { type = local_setflag which = limited_afg }
+		command = { type = trigger which = 1100066} # AFG National Cabinet
+	}
+
+	action = {
+		name = 1100041b #Create a Greater Afghanistan
+		ai_chance = 50
+		command = { type = secedeprovince which = AFG value = 1093 when = 2 } # Zehedan
+		command = { type = secedeprovince which = AFG value = 1538 when = 2 } # Gwadar
+		command = { type = secedeprovince which = AFG value = 1533 when = 2 } # Karachi
+		command = { type = secedeprovince which = AFG value = 1532 when = 2 } # Nawabshah
+		command = { type = secedeprovince which = AFG value = 1529 when = 2 } # Quetta
+		command = { type = secedeprovince which = AFG value = 1537 when = 2 } # Pershawar
+		command = { type = secedeprovince which = AFG value = 1534 when = 2 } # Islamabad
+		command = { type = secedeprovince which = AFG value = 1539 when = 2 } # Muzaffarabad
+		command = { type = secedeprovince which = AFG value = 1540 when = 2 } # Srigar
+		command = { type = secedeprovince which = AFG value = 1536 when = 2 } # Bahawaltagar
+		command = { type = secedeprovince which = AFG value = 1530 when = 2 } 
+		command = { type = secedeprovince which = AFG value = 1535 when = 2 } 
+		command = { type = secedeprovince which = AFG value = 1531 when = 2 }
+		command = { type = secedeprovince which = AFG value = 1453 when = 2 } 
+		command = { type = secedeprovince which = AFG value = 1454 when = 2 }
+		command = { type = make_puppet which = AFG }
+		command = { type = local_setflag which = greater_afg }
+		command = { type = trigger which = 1100066} # AFG National Cabinet
+	}
+	action = {
+		name = 1100041c #We prefer full annextion
+		ai_chance = 0
+		command = { type = war which = AFG }
+	}
+}
+
+##########################################
+# Fate of India - Decision (in case of Fate of Afghanistan happened already)
+##########################################
+
+event = {
+	id = 1100042
+	random = no
+	country = GER
+
+	decision = {
+			event = 1000536 # Fall of Delhi
+			war = { country = U02 }	
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			event = 1100041 # Fate of Afghanistan
+	}
+
+	decision_trigger = {
+			event = 1000536 # Fall of Delhi
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			event = 1100041 # Fate of Afghanistan
+	}
+
+	trigger = {
+			event = 1000536 # Fall of Delhi
+			war = { country = U02 }	
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			lost_national = { country = IND value = 15 }
+			event = 1100041 # Fate of Afghanistan	
+	}
+
+	name = EVT_1100042_NAME
+	desc = EVT_1100042_DESC
+	style = 2
+	picture = "fate_of_IND"
+	decision_picture = "dec_fate_of_IND"
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = 1100042a #Create India under Bose's lead
+		ai_chance = 100
+		command = { type = secederegion which = GER value = India when = 2 } #Ensures that Germany owns ALL of India before commands fire
+		command = { type = trigger which = 1100044 } # Create new IND country
+	}
+
+	action = {
+		name = 1100042b #We prefer full annexation
+		ai_chance = 0
+		command = { }
+	}
+}
+
+##########################################
+# Fate of India - Decision (in case of Fate of Afghanistan did not happen yet)
+##########################################
+
+event = {
+	id = 1100043
+	random = no
+	country = GER
+
+	decision = {
+			event = 1000536 # Fall of Delhi
+			war = { country = U02 }	
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			NOT = { event = 1100041 } # Fate of Afghanistan
+	}
+
+	decision_trigger = {
+			event = 1000536 # Fall of Delhi
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			NOT = { event = 1100041 } # Fate of Afghanistan
+	}
+
+	trigger = {
+			event = 1000536 # Fall of Delhi
+			war = { country = U02 }	
+			control = { province = 1459 data = -3 } # Delhi is under German or allied control
+			exists = U02 # British Raj
+			NOT = { event = 1000535 }
+			lost_national = { country = IND value = 15 }
+			NOT = { event = 1100041 } # Fate of Afghanistan	
+	}
+
+	name = EVT_1100042_NAME
+	desc = EVT_1100042_DESC
+	style = 2
+	picture = "fate_of_IND"
+	decision_picture = "dec_fate_of_IND"
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = 1100043a #Create independent nation of India under Bose's lead
+		ai_chance = 30
+		command = { type = secederegion which = GER value = India when = 2 } #Ensures that Germany owns ALL of India before commands fire
+		command = { type = trigger which = 1100044 } # Create new IND country
+	}
+
+	action = {
+		name = 1100043b #Create independent nation of India and start negotiations with Afghanistan
+		ai_chance = 70
+		command = { type = secederegion which = GER value = India when = 2 } #Ensures that Germany owns ALL of India before commands fire
+		command = { type = event which = 1100044 where = GER when = 5 } # Creation of India is triggered in 5 days
+		command = { type = event which = 1100063 where = GER when = 1 } # Fate of Afghanistan is triggered in 1 days
+	}
+
+	action = {
+		name = 1100043c #We prefer full annexation
+		ai_chance = 0
+		command = { }
+	}
+}
+#### Fate of India
+event = {
+    id = 1100044
+    random = no
+    country = GER
+	
+	#Triggered by 1100043 or 1100042
+	
+	name = EVT_1100044_NAME
+	desc = EVT_1100044_DESC
+	style = 2
+	picture = "india_bose_independence"
+
+	action = {
+		name = 1100044a #Create independent nation of India under Bose's lead
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { exists = IND } } type = independence which = IND value = 1 } #India
+		command = { trigger = { NOT = { ispuppet = IND } } type = make_puppet which = IND }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1529 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1537 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1534 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1539 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1530 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1536 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1532 when = 2 }
+		command = { trigger = { local_flag = limited_afg } type = secedeprovince which = IND value = 1533 when = 2 }
+		command = { type = secedeprovince which = IND value = 1456 when = 2 }
+		command = { type = secedeprovince which = IND value = 1457 when = 2 }
+		command = { type = trigger which = 1100065} # IND National Cabinet
+	}
+}
+
+##########################################
+# Eiger North Face
+##########################################
+event = {
+    id = 1100045
+    random = no
+    country = GER
+	
+	trigger = {
+		event = 2003010 # Anschluss proclaimed
+		NOT = { war = { country = GER country = SCH } } 
+		technology = 1250 # MTN 1935
+}
+	
+	name = EVT_1100045_NAME
+	desc = EVT_1100045_DESC
+	style = 2
+	picture = "Eiger_Nordwand"
+
+        date = { day = 24 month = july year = 1938 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1938 }
+
+	action = {
+		name = 1100045a #A great day for the Reich!
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+##########################################
+# German-Polish relations
+##########################################
+event = {
+    id = 1100046
+    random = no
+    country = GER
+	
+	trigger = {
+		NOT = { war = { country = GER country = POL } } 
+		headofstate = 1 #Hitler
+}
+	
+	name = EVT_1100046_NAME
+	desc = EVT_1100046_DESC
+	style = 2
+	picture = "poland_flag"
+
+        date = { day = 10 month = june year = 1933 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1935 }
+
+	action_a = {
+		name = 1100046a #Depart from the traditionally-Prussian anti-Polish orientation!
+		ai_chance = 100
+		command = { type = relation which = POL value = 15 }
+		command = { type = trigger which = 1100047 }
+	}
+	action_b = {
+		name = 1100046b #Follow traditionally-Prussian anti-Polish orientation!
+		ai_chance = 0
+		command = { type = sleepevent which = 9300132 } #Propose German-Polish Non-Aggression Pact
+	}
+}
+event = {
+    id = 1100047
+    random = no
+    country = POL
+	
+	# triggered by 1100046
+	
+	name = EVT_1100046_NAME
+	desc = EVT_1100046_DESC
+	style = 2
+	picture = "naziflag"
+
+	action_a = {
+		name = 1100047a #Great!
+		ai_chance = 100
+		command = { type = relation which = GER value = 15 }
+		}
+}
+##########################################
+# Rise of von Ribbentrop
+##########################################
+event = {
+    id = 1100048
+    random = no
+    country = GER
+	
+	trigger = {
+		atwar = no
+		ideology = nazi
+		NOT = { incabinet = 35 } #Ribbentrop
+}
+	
+	name = EVT_1100048_NAME
+	desc = EVT_1100048_DESC
+	style = 2
+	picture = "rise_of_ribbentrop"
+
+        date = { day = 4 month = february year = 1938 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1938 }
+
+	action_a = {
+		name = 1100048a #Prcolaim Ribbentrop as new minister of foreign affairs
+		ai_chance = 100
+		command = { type = foreignminister which = 35 } # Ribbentrop
+	}
+	action_b = {
+		name = 1100048b #Keep Neurath in office
+		ai_chance = 0
+		command = { } 
+	}
+}
+##########################################
+# Fate of South Africa - Decision
+##########################################
+
+event = {
+	id = 1100049
+	random = no
+	country = GER
+
+	decision = {
+			event = 1000901 # British High Command surrenders
+			war = { country = SAF }	
+			exists = SAF # South Africa
+	}
+
+	decision_trigger = {
+			event = 1000901 # British High Command surrenders
+			war = { country = SAF }	
+			exists = SAF # South Africa
+			event = 1000905 # Collapse of the British Empire
+			region = { region = England country = -3 data = 1 } #Control all of England
+	}
+
+	trigger = {
+			region = { region = England country = -3 data = 1 } #Control all of England
+	}
+
+	name = EVT_1100049_NAME
+	desc = EVT_1100049_DESC
+	style = 2
+	picture = "fate_of_SAF"
+	decision_picture = "dec_fate_of_SAF"
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = 1100049a #Create South Africa under Johannes Van Rensburg lead
+		ai_chance = 100
+		command = { type = make_puppet which = SAF }
+	}
+	action = {
+		name = 1100043c #We prefer full annexation
+		ai_chance = 0
+		command = { }
+	}
+}
+##########################################
+# U-boats Success
+##########################################
+
+event = {
+	id = 1100050
+	random = no
+	country = GER
+
+	trigger = { 
+		event = 9300085 #U-boats Success Part I
+		losses = { type = transports value = 1200 data = 1 } 
+		submarine = { value = 9 when = now }     
+		OR = {
+			war = { country = ENG country = GER }
+			war = { country = USA country = GER }
+		   }
+	}
+
+	name = EVT_1100050_NAME
+	desc = EVT_1100050_DESC
+	style = 2
+	picture = "uboat_sucess"
+
+	date = { day = 1 month = january year = 1941 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	   	command = { trigger = { NOT = { technology = 3680 } } type = gain_tech which = 3680 } # Diesel-electric Submarine 1943
+	   	command = { trigger = { NOT = { technology = 8640 } } type = gain_tech which = 8640 } # Advanced Submarine Operations
+		command = { trigger = { year = 1944 } type = add_leader_skill which = 997 value = 1 } # Lüth				
+		command = { trigger = { year = 1943 } type = add_leader_skill which = 998 value = 1 } # Topp
+		command = { type = add_leader_skill which = 846 value = 1 } # Fricke
+		command = { type = trigger which = 1100051 }
+	}
+}
+event = {
+    id = 1100051
+    random = no
+    country = ENG
+	
+	# triggered by 1100050
+	
+	name = EVT_1100051_NAME
+	desc = EVT_1100051_DESC
+	style = 2
+	picture = "uboat_sucess"
+
+	action_a = {
+		name = 1100051a #The situation becomes dire!
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+		}
+}
+event = {
+	id = 1100052
+	random = no
+	persistent = yes
+
+	name = EVT_1000432_NAME
+	desc = EVT_1000432_DESC
+	style = 2
+	picture = "airport_ger"
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 100
+		command = { trigger = { control = { province = 115 data = -3 } NOT = { building = { province = 115 type = air_base value = 10 } } } type = construct which = air_base where = 115 value = 2 } #Antwerpen
+		command = { trigger = { control = { province = 116 data = -3 } NOT = { building = { province = 116 type = air_base value = 10 } } } type = construct which = air_base where = 116 value = 2 } #Brussels
+		command = { trigger = { control = { province = 52 data = -3 } NOT = { building = { province = 52 type = air_base value = 10 } } } type = construct which = air_base where = 52 value = 2 } #Lille
+		command = { trigger = { control = { province = 49 data = -3 } NOT = { building = { province = 49 type = air_base value = 10 } } } type = construct which = air_base where = 49 value = 2 } #Calais
+		command = { type = free_ic value = 10 }
+		command = { type = local_clrflag which = infra_investment_airport }
+		}
+}
+event = {
+	id = 1100053
+	random = no
+	persistent = yes
+
+	name = EVT_1000432_NAME
+	desc = EVT_1000432_DESC
+	style = 2
+	picture = "radar_ger"
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 100
+		command = { trigger = { control = { province = 115 data = -3 } NOT = { building = { province = 115 type = radar_station value = 10 } } } type = construct which = radar_station where = 115 value = 2 } #Antwerpen
+		command = { trigger = { control = { province = 116 data = -3 } NOT = { building = { province = 116 type = radar_station value = 10 } } } type = construct which = radar_station where = 116 value = 2 } #Brussels
+		command = { trigger = { control = { province = 52 data = -3 } NOT = { building = { province = 52 type = radar_station value = 10 } } } type = construct which = radar_station where = 52 value = 2 } #Lille
+		command = { trigger = { control = { province = 49 data = -3 } NOT = { building = { province = 49 type = radar_station value = 10 } } } type = construct which = radar_station where = 49 value = 2 } #Calais
+		command = { trigger = { control = { province = 125 data = -3 } NOT = { building = { province = 125 type = radar_station value = 10 } } } type = construct which = radar_station where = 125 value = 2 } #Rotterdam
+		command = { trigger = { control = { province = 122 data = -3 } NOT = { building = { province = 122 type = radar_station value = 10 } } } type = construct which = radar_station where = 122 value = 2 } #Amsterdam
+		command = { type = free_ic value = 10 }
+		command = { type = local_clrflag which = infra_investment_radar }
+		}
+}
+########################################################################
+#  Edge of Darkness - Hard/Very Hard Difficulty
+########################################################################
+event = {
+	id = 1100054
+	random = no
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GER GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
+
+	trigger = { 
+		ai = no
+		difficulty = 3 # shall be only triggered on strong or very strong allies difficulty	    
+		 }
+
+	date = { day = 2 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "EVT_1100054_NAME"
+	desc = "EVT_1100054_DESC"
+	style = 2
+	picture = "edge_of_darkness"
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { trigger = { country = GER }  type = sleepevent which = 8300063 }
+	}
+}
+########################################################################
+#  GER General Mobilization
+########################################################################
+event = {  
+	id = 1100055
+	random = no
+	persistent = yes
+	
+	TAG = { GER }
+
+	decision = {
+		event = 1100054
+		event = 9300082 # Rise of Albert Speer
+		NOT = { local_flag = demob }
+		NOT = { policy = { type = professional_army value = 8 }}
+		OR = {
+			atwar = yes
+			policy = { type = professional_army value = 7 }
+		}
+	}
+
+	decision_trigger = { 
+		supplies = 700
+		atwar = yes
+	}
+
+	trigger = {
+		ai = no
+		NOT = { local_flag = demob }
+		NOT = { manpower = 70 }
+		supplies = 400
+		policy = { type = professional_army value = 7 } 
+		NOT = { policy = { type = professional_army value = 8 }	}
+		atwar = yes
+		}
+   
+	name = "EVT_1100055_NAME"
+	desc = "EVT_1100055_DESC"
+	decision_desc = "DEC_8300063_DESC"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { #Enact General Mobilisation	
+		name = "MOB8name"
+		ai_chance = 100
+		command = { type = trigger which = 8300108}
+	}
+	
+}
+########################################################################
+# Fate of Africa
+########################################################################
+event = {  
+	id = 1100056
+	random = no
+	country = GER
+
+	decision = {	event = 1000510
+			exists = ITA
+			alliance = { country = U55 country = GER }
+			alliance = { country = ITA country = GER }
+			region = { region = "Morocco" country = -3 data = 1 } 		#Control all of Morocco
+			region = { region = "Algeria" country = -3 data = 1 }		#Control all of Algeria
+			region = { region = "Tunisia" country = -3 data = 1 }		#Control all of Tunisia 
+			region = { region = "Libya" country = -3 data = 1 }		#Control all of Libya
+			region = { region = "Egypt" country = -3 data = 1 }		#Control all of Egypt
+			region = { region = "Horn of Africa" country = -3 data = 1 }	#Control all of Horn of Africa
+			region = { region = "South Africa" country = -3 data = 1 }	#Control all of South Africa
+		}
+
+	decision_trigger = { 	region = { region = "Morocco" country = -3 data = 1 }		#Control all of Morocco
+				region = { region = "Algeria" country = -3 data = 1 }		#Control all of Algeria
+				region = { region = "Tunisia" country = -3 data = 1 }		#Control all of Tunisia 
+				region = { region = "Libya" country = -3 data = 1 }		#Control all of Libya
+				region = { region = "Egypt" country = -3 data = 1 }		#Control all of Egypt
+				region = { region = "Sudan" country = -3 data = 1 }		#Control all of Sudan
+				region = { region = "Ethiopia" country = -3 data = 1 }		#Control all of Ethiopia
+				region = { region = "Horn of Africa" country = -3 data = 1 }	#Control all of Horn of Africa
+				region = { region = "East Africa" country = -3 data = 1 }	#Control all of East Africa
+				region = { region = "South Africa" country = -3 data = 1 }	#Control all of South Africa
+				region = { region = "Southwest Africa" country = -3 data = 1} 	#Control all of Southwest Africa
+				region = { region = "Central Africa" country = -3 data = 1 } 	#Control all of Central Africa
+				region = { region = "West Africa" country = -3 data = 1 }	#Control all of West Africa
+				region = { region = "Sahara" country = -3 data = 1 }		#Control all of Sahara
+				region = { region = "East Africa" country = -3 data = 1 }	#Control all of East Africa
+	}
+
+	trigger = {
+		ai = yes
+		region = { region = "Morocco" country = -3 data = 1 }			#Control all of Morocco
+		region = { region = "Algeria" country = -3 data = 1 }			#Control all of Algeria
+		region = { region = "Tunisia" country = -3 data = 1 }			#Control all of Tunisia 
+		region = { region = "Libya" country = -3 data = 1 }			#Control all of Libya
+		region = { region = "Egypt" country = -3 data = 1 }			#Control all of Egypt
+		region = { region = "Sudan" country = -3 data = 1 }			#Control all of Sudan
+		region = { region = "Ethiopia" country = -3 data = 1 }			#Control all of Ethiopia
+		region = { region = "Horn of Africa" country = -3 data = 1 }		#Control all of Horn of Africa
+		region = { region = "East Africa" country = -3 data = 1 }		#Control all of East Africa
+		region = { region = "South Africa" country = -3 data = 1 }		#Control all of South Africa
+		region = { region = "Southwest Africa" country = -3 data = 1 }		#Control all of Southwest Africa
+		region = { region = "Central Africa" country = -3 data = 1 }		#Control all of Central Africa
+		region = { region = "West Africa" country = -3 data = 1 }		#Control all of West Africa
+		region = { region = "Sahara" country = -3 data = 1 }			#Control all of Sahara
+		region = { region = "East Africa" country = -3 data = 1 }		#Control all of East Africa
+		}
+   
+	name = "EVT_1100056_NAME"
+	desc = "EVT_1100056_DESC"
+	style = 2
+	picture = "fate_of_africa"
+	decision_picture = "dec_fate_of_africa"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { #Go through the plans
+		name = "1100056a" 
+		ai_chance = 100
+		command = { type = secederegion which = GER value = "Morocco" when = 2 } # to ensure that initially all is occupied by GER
+		command = { type = secederegion which = GER value = "Algeria" when = 2 }
+		command = { type = secederegion which = GER value = "Tunisia" when = 2 }
+		command = { type = secederegion which = GER value = "Libya" when = 2 }
+		command = { type = secederegion which = GER value = "Egypt" when = 2 }
+		command = { type = secederegion which = GER value = "Sudan" when = 2 }
+		command = { type = secederegion which = GER value = "Ethiopia" when = 2 }
+		command = { type = secederegion which = GER value = "Horn of Africa" when = 2 }
+		command = { type = secederegion which = GER value = "East Africa" when = 2 }
+		command = { type = secederegion which = GER value = "South Africa" when = 2 }
+		command = { type = secederegion which = GER value = "Southwest Africa" when = 2 }
+		command = { type = secederegion which = GER value = "Central Africa" when = 2 }
+		command = { type = secederegion which = GER value = "West Africa" when = 2 }
+		command = { type = secederegion which = GER value = "Sahara" when = 2 }
+		command = { type = secederegion which = GER value = "East Africa" when = 2 }
+		command = { type = removeclaim which = 908 where = GER }
+		command = { type = removeclaim which = 919 where = GER }
+		command = { type = removeclaim which = 910 where = GER }
+		command = { type = removeclaim which = 909 where = GER }
+		command = { type = removeclaim which = 911 where = GER }
+		command = { type = removeclaim which = 846 where = GER }
+		command = { type = removeclaim which = 847 where = GER }
+		command = { type = removeclaim which = 848 where = GER }
+		command = { type = removeclaim which = 851 where = GER }
+		command = { type = removeclaim which = 850 where = GER }
+		command = { type = removeclaim which = 849 where = GER }
+		command = { type = removeclaim which = 885 where = GER }
+		command = { type = removeclaim which = 886 where = GER }
+		command = { type = removeclaim which = 882 where = GER }
+		command = { type = removeclaim which = 884 where = GER }
+		command = { type = removeclaim which = 883 where = GER }
+		command = { type = trigger which = 1100057} # Neuordnung North Africa
+	}
+	
+}
+event = {  
+	id = 1100057
+	random = no
+	country = GER
+
+	# triggered by 1100056
+
+	name = "EVT_1100057_NAME"
+	desc = "EVT_1100057_DESC"
+	style = 2
+	picture = "Fate_northafrica"
+
+	action = { #Force France to accept harsh conditions
+		name = "1100057a" 
+		ai_chance = 50
+		command = { trigger = { alliance = { country = SPA country = GER } } type = secederegion which = SPA value = "Morocco" when = 2 }
+		command = { trigger = { NOT = { alliance = { country = SPA country = GER } } } type = secederegion which = U55 value = "Morocco" when = 2 }
+		command = { type = secederegion which = ITA value = "Tunisia" when = 2 }
+		command = { type = secederegion which = U55 value = "Algeria" when = 2 }
+		command = { type = secederegion which = ITA value = "Libya" when = 2 }
+		command = { type = secederegion which = ITA value = "Egypt" when = 2 }
+		command = { type = secederegion which = ITA value = "Sudan" when = 2 }
+		command = { type = trigger which = 1100058} # Neuordnung West Africa
+		command = { type = relation which = U55 value = -30 }
+		}
+
+	action = { #Force France to accept harsh conditions but keep control over Egypt -> potential event chain that creates muslim state
+		name = "1100057b" 
+		ai_chance = 10
+		command = { trigger = { alliance = { country = SPA country = GER } } type = secederegion which = SPA value = "Morocco" when = 2 }
+		command = { trigger = { NOT = { alliance = { country = SPA country = GER } } } type = secederegion which = U55 value = "Morocco" when = 2 }
+		command = { type = secederegion which = ITA value = "Tunisia" when = 2 }
+		command = { type = secederegion which = U55 value = "Algeria" when = 2 }
+		command = { type = secederegion which = ITA value = "Libya" when = 2 }
+		command = { type = secederegion which = GER value = "Egypt" when = 2 }
+		command = { type = secederegion which = ITA value = "Sudan" when = 2 }
+		command = { type = trigger which = 1100058} # Neuordnung West Africa
+		command = { type = relation which = U55 value = -30 }
+		command = { type = local_setflag which = ger_egypt }
+		}
+
+	action = { #Keep France alive but keep control over Egypt -> potential event chain that creates muslim state
+		name = "1100057c" 
+		ai_chance = 20
+		command = { trigger = { alliance = { country = SPA country = GER } } type = secederegion which = SPA value = "Morocco" when = 2 }
+		command = { trigger = { NOT = { alliance = { country = SPA country = GER } } } type = secederegion which = U55 value = "Morocco" when = 2 }
+		command = { type = secederegion which = U55 value = "Tunisia" when = 2 }
+		command = { type = secederegion which = U55 value = "Algeria" when = 2 }
+		command = { type = secederegion which = ITA value = "Libya" when = 2 }
+		command = { type = secederegion which = GER value = "Egypt" when = 2 }
+		command = { type = secederegion which = ITA value = "Sudan" when = 2 }
+		command = { type = trigger which = 1100058} # Neuordnung West Africa
+		command = { type = local_setflag which = ger_egypt }
+		}
+
+	action = { #Keep France alive
+		name = "1100057d" 
+		ai_chance = 20
+		command = { trigger = { alliance = { country = SPA country = GER } } type = secederegion which = SPA value = "Morocco" when = 2 }
+		command = { trigger = { NOT = { alliance = { country = SPA country = GER } } } type = secederegion which = U55 value = "Morocco" when = 2 }
+		command = { type = secederegion which = U55 value = "Tunisia" when = 2 }
+		command = { type = secederegion which = U55 value = "Algeria" when = 2 }
+		command = { type = secederegion which = ITA value = "Libya" when = 2 }
+		command = { type = secederegion which = ITA value = "Egypt" when = 2 }
+		command = { type = secederegion which = ITA value = "Sudan" when = 2 }
+		command = { type = trigger which = 1100058} # Neuordnung West Africa
+	}
+	
+}
+event = {  
+	id = 1100058 # Fate of West Africa
+	random = no
+	country = GER
+
+	# triggered by 1100057
+
+	name = "EVT_1100058_NAME"
+	desc = "EVT_1100058_DESC"
+	style = 2
+	picture = "Hitler_Staff"
+
+	action = { #Harsh conditions
+		name = "1100058a" 
+		ai_chance = 30
+		command = { type = secederegion which = SPA value = "Sahara" when = 2 }			# rightfully belongs to SPA
+		command = { type = secedearea which = POR value = "Senegambia" when = 2 }		# rightfully belongs to POR
+		command = { type = secedearea which = U55 value = "Malian Desert" when = 2 }
+		command = { type = secedearea which = U55 value = "Mauretania" when = 2 }
+		command = { type = secedearea which = U55 value = "Malian Valleys" when = 2 }
+		command = { type = secedearea which = GER value = "Guinean Coast" when = 2 } 		# harsh conditions
+		command = { type = secedearea which = GER value = "Ivory Coast" when = 2 } 		# harsh conditions
+		command = { type = secedearea which = U55 value = "Volta" when = 2 }
+		command = { type = secedearea which = U55 value = "Niger" when = 2 }
+		command = { type = secedearea which = GER value = "Gold Coast" when = 2 } 		# harsh conditions
+		command = { type = secedearea which = GER value = "Slave Coast" when = 2 }
+		command = { type = secedearea which = U55 value = "Central Africa Desert" when = 2 }
+		command = { type = secedearea which = U55 value = "North Nigeria" when = 2 }
+		command = { type = secedearea which = U55 value = "South Nigeria" when = 2 }
+		command = { type = secedearea which = U55 value = "Central Africa Plains" when = 2 }
+		command = { type = trigger which = 1100059} # Neuordnung East Africa
+		command = { type = relation which = U55 value = -20 }
+		}
+
+	action = { #Moderate conditions
+		name = "1100058b" 
+		ai_chance = 70
+		command = { type = secederegion which = SPA value = "Sahara" when = 2 }			# rightfully belongs to SPA
+		command = { type = secedearea which = POR value = "Senegambia" when = 2 }		# rightfully belongs to POR
+		command = { type = secedearea which = U55 value = "Malian Desert" when = 2 }
+		command = { type = secedearea which = U55 value = "Mauretania" when = 2 }
+		command = { type = secedearea which = U55 value = "Malian Valleys" when = 2 }
+		command = { type = secedearea which = U55 value = "Guinean Coast" when = 2 } 		# moderate conditions
+		command = { type = secedearea which = U55 value = "Ivory Coast" when = 2 } 		# moderate conditions
+		command = { type = secedearea which = U55 value = "Volta" when = 2 }
+		command = { type = secedearea which = U55 value = "Niger" when = 2 }
+		command = { trigger = { alliance = { country = POR country = GER } } type = secedearea which = POR value = "Gold Coast" when = 2 }
+		command = { trigger = { NOT = { alliance = { country = POR country = GER } } } type = secedearea which = GER value = "Gold Coast" when = 2 }
+		command = { type = secedearea which = GER value = "Slave Coast" when = 2 }
+		command = { type = secedearea which = U55 value = "Central Africa Desert" when = 2 }
+		command = { type = secedearea which = U55 value = "North Nigeria" when = 2 }
+		command = { type = secedearea which = U55 value = "South Nigeria" when = 2 }
+		command = { type = secedearea which = U55 value = "Central Africa Plains" when = 2 }
+		command = { type = trigger which = 1100059} # Neuordnung East Africa
+		command = { type = relation which = U55 value = 30 }
+		}
+	
+}
+event = {  
+	id = 1100059 # Fate of East Africa
+	random = no
+	country = GER
+
+	# triggered by 1100058
+
+	name = "EVT_1100059_NAME"
+	desc = "EVT_1100059_DESC"
+	style = 2
+	picture = "Fate_eastafrica"
+
+	action = { #This belongs to Italy
+		name = "1100059a" 
+		ai_chance = 50
+		command = { type = secederegion which = ITA value = "Ethiopia" when = 2 }
+		command = { type = secederegion which = ITA value = "Horn of Africa" when = 2 }
+		command = { type = trigger which = 1100060} # Neuordnung South Africa
+		command = { type = relation which = ITA value = 50 }
+		}
+
+	action = { #We demand the port of Dschibuti
+		name = "1100059b" 
+		ai_chance = 50
+		command = { type = secederegion which = ITA value = "Ethiopia" when = 2 }
+		command = { type = secedearea which = ITA value = "Somalia" when = 2 }
+		command = { type = secedeprovince which = ITA value = 832 }
+		command = { type = secedeprovince which = ITA value = 834 } 
+		command = { type = secedeprovince which = ITA value = 835 }
+		command = { type = trigger which = 1100060} # Neuordnung South Africa
+		command = { type = relation which = ITA value = -20 }
+		}
+	
+}
+event = {  
+	id = 1100060 # Fate of South Africa
+	random = no
+	country = GER
+
+	# triggered by 1100059
+
+	name = "EVT_1100060_NAME"
+	desc = "EVT_1100060_DESC"
+	style = 2
+	picture = "Fate_southafrica"
+
+	action = { #A strong South Africa under Johannes Van Rensburg
+		name = "1100060a" 
+		ai_chance = 40
+		command = { trigger = { NOT = { exists = SAF } } type = independence which = SAF value = 1 }
+		command = { trigger = { NOT = { ispuppet = SAF } } type = make_puppet which = SAF }
+		command = { trigger = { NOT = { exists = U51 } } type = independence which = U51 value = 1 }
+		command = { trigger = { NOT = { ispuppet = U51 } } type = make_puppet which = U51 }
+		command = { type = local_setflag which = strong_SAF }
+		command = { type = trigger which = 1100064} # SAF National Cabinet
+		command = { type = trigger which = 1100077} # U51 National Cabinet
+		}
+
+	action = { #Namibia is part of Mittelafrika
+		name = "1100060b" 
+		ai_chance = 60
+		command = { trigger = { NOT = { exists = SAF } } type = independence which = SAF value = 1 }
+		command = { trigger = { NOT = { ispuppet = SAF } } type = make_puppet which = SAF }
+		command = { trigger = { NOT = { exists = U51 } } type = independence which = U51 value = 1 }
+		command = { trigger = { NOT = { ispuppet = U51 } } type = make_puppet which = U51 }
+		command = { type = local_setflag which = weak_SAF }
+		command = { type = trigger which = 1100064} # SAF National Cabinet
+		command = { type = trigger which = 1100077} # U51 National Cabinet
+		}
+	
+}
+
+##########################################
+# Double-Cross System
+##########################################
+event = {
+    id = 1100061
+    random = no
+    country = ENG
+	
+	trigger = {
+		atwar = yes
+		technology = 5370 # Improved encryption device 1940
+		random = 40
+}
+	
+	name = EVT_1100061_NAME
+	desc = EVT_1100061_DESC
+	style = 2
+	picture = "news_paper"
+
+        date = { day = 4 month = february year = 1940 }
+        offset = 30
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		ai_chance = 100
+		command = { type = intelligence which = them value = -5 }
+      		command = { type = surprise which = naval value = 5 }
+      		command = { type = surprise which = land value = 5 }
+      		command = { type = surprise which = air value = 5 }
+      		command = { type = army_detection which = them value = -5 }
+	}
+}
+####################################################################
+# Magnetic mines
+####################################################################
+
+event = {
+    	id = 1100062
+	random = no
+	country = GER
+	trigger = { war = { country = GER country = ENG } }
+	
+	date = { day = 12 month = october year = 1939 }
+	offset = 10
+	deathdate = { day = 21 month = december year = 1940 }
+	
+	name = "EVT_1100062_NAME"
+	desc = "EVT_1100062_DESC"
+	style = 2
+	picture = "magnetic_mines"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = surprise which = naval value = 1 }
+	}
+}
+#########################################################################
+# Fate of Afghanistan - Decision
+#########################################################################
+event = {
+	id = 1100063
+	random = no
+	country = GER
+
+	# triggered by event 1100043
+   
+	name = EVT_1100041_NAME
+	desc = EVT_1100041_DESC
+	style = 2
+	picture = "fate_of_AFG"
+	decision_picture = "dec_fate_of_AFG"
+
+	action = {
+		name = 1100041a #Give limited territory to Afghanistan
+		ai_chance = 50
+		command = { type = secedeprovince which = AFG value = 1093 } # Zehedan
+		command = { type = secedeprovince which = AFG value = 1538 } # Gwadar
+		command = { type = make_puppet which = AFG }
+		command = { type = local_setflag which = limited_afg }
+	}
+
+	action = {
+		name = 1100041b #Create a Greater Afghanistan
+		ai_chance = 50
+		command = { type = secedeprovince which = AFG value = 1093 } # Zehedan
+		command = { type = secedeprovince which = AFG value = 1538 } # Gwadar
+		command = { type = secedeprovince which = AFG value = 1533 } # Karachi
+		command = { type = secedeprovince which = AFG value = 1532 } # Nawabshah
+		command = { type = secedeprovince which = AFG value = 1529 } # Quetta
+		command = { type = secedeprovince which = AFG value = 1537 } # Pershawar
+		command = { type = secedeprovince which = AFG value = 1534 } # Islamabad
+		command = { type = secedeprovince which = AFG value = 1539 } # Muzaffarabad
+		command = { type = secedeprovince which = AFG value = 1540 } # Srigar
+		command = { type = secedeprovince which = AFG value = 1536 } # Bahawaltagar
+		command = { type = secedeprovince which = AFG value = 1530 } 
+		command = { type = secedeprovince which = AFG value = 1535 } 
+		command = { type = secedeprovince which = AFG value = 1531 } 
+		command = { type = secedeprovince which = AFG value = 1453 } 
+		command = { type = secedeprovince which = AFG value = 1454 } 
+		command = { type = local_setflag which = greater_afg }
+		command = { type = make_puppet which = AFG }
+	}
+	action = {
+		name = 1100041c #We prefer full annextion
+		ai_chance = 0
+		command = { type = war which = AFG }
+	}
+}
+#########################################################################
+# SAF National Cabinet
+#########################################################################
+event = {
+	id = 1100064
+	random = no
+	country = SAF
+	
+	trigger = { 
+		alliance = { country = GER country = SAF }
+	} 
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = EVT_1100064_NAME
+	desc = EVT_1100064_DESC
+	style = 2
+	picture = "Hitler_Staff"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 425075 } 		#J. F. van Rensburg
+		command = { type = headofgovernment which = 425076 }		#J. F. van Rensburg
+		command = { type = foreignminister which = 425020 }		#Gert Cronje
+		command = { type = armamentminister which = 425113 }		#Christiaan De Wet
+		command = { type = ministerofsecurity which = 425051 }		#C. de Weenburg du Toit
+		command = { type = ministerofintelligence which = 425054 }	#Seymour Jacklin
+		command = { type = chiefofstaff which = 425097 }		#Christiaan Beyers
+		command = { type = chiefofarmy which = 425065 }			#C. de Weenburg du Toit
+		command = { type = chiefofair which = 425010 }			#Pierre van Ryneveld
+		command = { type = chiefofnavy which = 425117 }			#Pierre van Ryneveld
+		command = { trigger = { local_flag = weak_SAF } type = remove_claim_region which = "Southwest Africa" } 
+		command = { trigger = { local_flag = weak_SAF } type = secederegion which = U51 value = "Southwest Africa" when = 2 }
+		command = { trigger = { local_flag = greater_SAF } type = secederegion which = SAF value = "Southwest Africa" when = 2 }
+		command = { trigger = { local_flag = greater_SAF } type = secedearea which = SAF value = "Bechuanaland" when = 2 }
+		command = { type = secedearea which = U51 value = "Cameroonian Jungle" when = 2 } 
+		command = { type = secedearea which = U51 value = "Tanganyika" when = 2 }
+		command = { type = secedearea which = U51 value = "Uganda" when = 2 }
+	}
+}
+#########################################################################
+# IND National Cabinet
+#########################################################################
+event = {
+	id = 1100065
+	random = no
+	country = IND
+	
+	trigger = { 
+		alliance = { country = GER country = IND }
+	} 
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = EVT_1100064_NAME
+	desc = EVT_1100064_DESC
+	style = 2
+	picture = "Hitler_Staff"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 250069 } 		#Subhas Chandra Bose
+		command = { type = headofgovernment which = 250070 }		#Subhas Chandra Bose
+		command = { type = foreignminister which = 250022 }		#Ajoy Kumar Ghosh
+		command = { type = armamentminister which = 250030 }		#Iskander Mirza
+		command = { type = ministerofsecurity which = 250068 }		#Madhav S. Golwalkar
+		command = { type = ministerofintelligence which = 250061 }	#H.H. Tashi of Sikkim
+		command = { type = chiefofstaff which = 250045 }		#Shah Nawaz Khan
+		command = { type = chiefofarmy which = 250049 }			#Kureishi of Bhawalapur
+		command = { type = chiefofair which = 250054 }			#Ravindra Darshan Singh
+		command = { type = chiefofnavy which = 250051 }			#Harinder Singh
+	}
+}
+#########################################################################
+# AFG National Cabinet
+#########################################################################
+event = {
+	id = 1100066
+	random = no
+	country = AFG
+	
+	trigger = { 
+		alliance = { country = GER country = AFG }
+	} 
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = EVT_1100064_NAME
+	desc = EVT_1100064_DESC
+	style = 2
+	picture = "Hitler_Staff"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 155001 } 		#Muhammed Zahir
+		command = { type = headofgovernment which = 155002 }		#Muhammed Hashim
+		command = { type = foreignminister which = 155003 }		#Haji Faiz Muhammed Zikeria
+		command = { type = armamentminister which = 155004 }		#Abdul Majid Zabuli
+		command = { type = ministerofsecurity which = 155005 }		#Muhammed Hashim
+		command = { type = ministerofintelligence which = 155006 }	#Shah Mahmud Ghazi
+		command = { type = chiefofstaff which = 155007 }		#Mohammed Daoud
+		command = { type = chiefofarmy which = 155008 }			#Mohammed Daoud
+		command = { type = chiefofair which = 155010 }			#Mohammed Daoud
+		command = { type = chiefofnavy which = 155009 }			#Muhammed Zahir
+	}
+}
+#########################################################################
+# Molotov Cocktail
+#########################################################################
+event = {
+	id = 1100067
+	random = no
+	country = FIN
+	
+	trigger = { event = 2007027 #The Finnish Winter War - Demands rejected
+		    random = 50
+	} 
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = EVT_1100067_NAME
+	desc = EVT_1100067_DESC
+	style = 2
+	picture = "molotov_cocktail"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = morale which = infantry value = 2 }
+		command = { type = hard_attack which = infantry value = 1 }
+		command = { type = morale which = bergsjaeger value = 2 }
+		command = { type = hard_attack which = bergsjaeger value = 1 }
+		command = { type = morale which = d_07 value = 2 } 		# Ski Infantry
+		command = { type = hard_attack which = d_07 value = 1 }
+
+	}
+}
+##########################################
+# Fate of Egypt
+##########################################
+
+event = {
+	id = 1100068
+	random = no
+	country = GER
+
+	decision = {
+			event = 1100056 # Fate of Africa has happened
+			local_flag = ger_egypt
+			region = { region = "Egypt" data = GER } # Delhi is under German control
+			NOT = { exists = EGY }
+	}
+
+	decision_trigger = {
+			event = 1100056 # Fate of Africa has happened
+			event = 1100057 # Fate of North Africa has happened
+			local_flag = ger_egypt
+			
+			region = { region = "Egypt" data = GER }		# Egypt is under German control
+			area = { area = "Suez Channel Area" data = GER } 	# Suez Channel Area is under German control
+			NOT = { exists = EGY }
+			
+	}
+
+	trigger = {
+			event = 1100056 # Fate of Africa has happened
+			event = 1100057 # Fate of North Africa has happened
+			local_flag = ger_egypt
+			region = { region = "Egypt" data = GER }		# Egypt is under German control
+			area = { area = "Suez Channel Area" data = GER } 	# Suez Channel Area is under German control
+			NOT = { exists = EGY }
+	}
+
+	name = EVT_1100068_NAME
+	desc = EVT_1100068_DESC
+	style = 2
+	picture = "fate_of_EGY"
+	decision_picture = "dec_fate_of_EGY"
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = 1100068a #Create an independent Egypt
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { exists = EGY } } type = independence which = EGY value = 1 } #Egypt
+		command = { trigger = { NOT = { ispuppet = EGY } } type = make_puppet which = EGY }
+		command = { trigger = { area = { area = "Suez Channel Area" data = -3 } } type = secedearea which = EGY value = "Suez Channel Area" when = 2 }
+	}
+
+	action = {
+		name = 1100068b #Create an Arabic State
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { trigger = { NOT = { exists = ARA } } type = independence which = ARA value = 1 } #Arabic State
+		command = { trigger = { NOT = { ispuppet = ARA } } type = make_puppet which = ARA }
+		command = { type = secederegion which = ARA value = "Middle East" when = 2 }
+		command = { trigger = { area = { area = "Suez Channel Area" data = -3 } } type = secedearea which = ARA value = "Suez Channel Area" when = 2 }
+		command = { trigger = { exists = ARA region = { region = "Egypt" data = -3 } } type = secederegion which = ARA value = "Egypt" when = 2 }
+	}
+}
+
+event = {
+	id = 1100069
+	random = no
+	country = GER
+
+	trigger = { ai = yes }
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = march year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -1 }
+	}
+}
+########################################################
+# Kammhuber Linie 
+########################################################
+ event = { 
+	id      = 1100070
+	random  = no
+	country = GER
+
+	decision = {
+        	atwar = yes
+		ai    = no
+	    	war = { country = GER country = ENG }
+		control = { province = 216 data = -3 } #Abenra
+		control = { province = 152 data = -3 } #Kiel
+		control = { province = 147 data = -3 } #Wilhelmshaven
+		control = { province = 141 data = -3 } #Münster
+		control = { province = 142 data = -3 } #Düsseldorf
+		control = { province = 131 data = -3 } #Köln
+		control = { province = 126 data = -3 } #Aachen
+		control = { province = 129 data = -3 } #Koblenz
+		control = { province = 128 data = -3 } #Trier
+		control = { province = 148 data = -3 } #Bremen
+		control = { province = 125 data = -3 } #Rotterdam
+		control = { province = 122 data = -3 } #Amsterdam
+		control = { province = 114 data = -3 } #Brügge/Middelkerk
+ 	}
+	
+	decision_trigger = {
+        	atwar    = yes
+		supplies       = 7500
+		energy         = 7500
+		metal          = 7500
+	    	war = { country = GER country = ENG }
+		event = 9300015 # Flak Towers
+		technology = 5410 # Basic Decimetric Radar Warning Sites
+		control = { province = 216 data = -3 } #Abenra
+		control = { province = 152 data = -3 } #Kiel
+		control = { province = 147 data = -3 } #Wilhelmshaven
+		control = { province = 141 data = -3 } #Münster
+		control = { province = 142 data = -3 } #Düsseldorf
+		control = { province = 131 data = -3 } #Köln
+		control = { province = 126 data = -3 } #Aachen
+		control = { province = 129 data = -3 } #Koblenz
+		control = { province = 128 data = -3 } #Trier
+		control = { province = 148 data = -3 } #Bremen
+		control = { province = 125 data = -3 } #Rotterdam
+		control = { province = 122 data = -3 } #Amsterdam
+		control = { province = 114 data = -3 } #Brügge/Middelkerk
+	}
+	
+	trigger = {
+		ai       = yes
+        	atwar    = yes
+	   	war = { country = GER country = ENG }
+		event = 9300015 # Flak Towers
+		technology = 5410 # Basic Decimetric Radar Warning Sites
+		control = { province = 216 data = -3 } #Abenra
+		control = { province = 152 data = -3 } #Kiel
+		control = { province = 147 data = -3 } #Wilhelmshaven
+		control = { province = 141 data = -3 } #Münster
+		control = { province = 142 data = -3 } #Düsseldorf
+		control = { province = 131 data = -3 } #Köln
+		control = { province = 126 data = -3 } #Aachen
+		control = { province = 129 data = -3 } #Koblenz
+		control = { province = 128 data = -3 } #Trier
+		control = { province = 148 data = -3 } #Bremen
+		control = { province = 125 data = -3 } #Rotterdam
+		control = { province = 122 data = -3 } #Amsterdam
+		control = { province = 114 data = -3 } #Brügge/Middelkerk		
+	}
+	
+	name = EVT_1100070_NAME
+	desc = EVT_1100070_DESC
+	style = 2
+	decision_picture = "ger_decision_flak_wall"
+	picture          = "ger_event_flak_wall"
+
+	date = { day = 18 month = july year = 1940 } 
+	offset = 1
+	deathdate = { day = 0 month = january year = 1970 }
+	
+    action_a = {
+		name = ACTION_NAME_OK
+		ai_chance = 100
+		command = { trigger = { ai = no } type = supplies value = -7500 }
+		command = { trigger = { ai = no } type = energypool value = -7500 }
+		command = { trigger = { ai = no } type = metalpool value = -7500 }
+        	command = { type = construct which = radar_station where = 216 value = 1 }
+		command = { type = construct which = radar_station where = 152 value = 1 }
+		command = { type = construct which = radar_station where = 147 value = 1 }
+		command = { type = construct which = radar_station where = 141 value = 1 }
+		command = { type = construct which = radar_station where = 131 value = 1 }
+		command = { type = construct which = radar_station where = 129 value = 1 }
+		command = { type = construct which = flak where = 216 value = 1 }
+		command = { type = construct which = flak where = 141 value = 1 }
+		command = { type = construct which = flak where = 126 value = 1 }
+		command = { type = construct which = flak where = 129 value = 1 }
+		command = { type = construct which = flak where = 128 value = 1 }
+		command = { type = construct which = flak where = 148 value = 1 }
+		command = { type = add_leader_skill which = 447 value = 1 } 		#Kammhuber
+	}
+
+    action_b = {
+		name = ACTION_NAME_NO
+		ai_chance = 0
+        	command   = { } 
+	}	
+}	
+# Soviet Winter Reserves arrive
+event = { 
+	id = 1100071
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		war = { country = SOV country = GER }
+		OR = { not = { ai = GER } AND = { ai = GER lost_national = { country = SOV value = 15 } } }
+		local_flag = Barbarossa_hard
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 10 month = december year = 1941 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+
+	action_a = {
+		name = "ACTION_NAME_GREAT"
+	  	command = { type = add_division value = infantry when = 8 } # 25 new infantry divisions
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = interceptor when = 9 }
+	  	command = { type = add_division value = interceptor when = 9 }
+	  	command = { type = add_division value = interceptor when = 9 }
+	  	command = { type = add_division value = interceptor when = 9 }
+	  	command = { type = add_division value = cas when = 2 }
+	  	command = { type = add_division value = cas when = 2 }
+	  	command = { type = add_division value = cas when = 2 }
+	  	command = { type = add_division value = cas when = 2 }
+	  	command = { type = add_division value = tactical_bomber when = 7 }
+	  	command = { type = add_division value = tactical_bomber when = 7 }
+	  	command = { type = add_division value = tactical_bomber when = 7 }
+	  	command = { type = add_division value = tactical_bomber when = 7 }
+
+	}
+}
+#####################################
+# The fate of Saudi Arabia
+#####################################
+
+event = { 
+	id = 1100072
+	random = no
+	country = GER
+
+	decision = {
+		area = { area = Palestine country = -3 data = 1 }
+		exists = SAU
+		NOT = { war = { country = SAU country = GER } }
+		NOT = { alliance = { country = SAU country = GER } }
+	}
+
+	decision_trigger = {
+		garrison = { country = -3 province = 1024 size = 2 }
+		garrison = { country = -3 province = 1025 size = 2 }
+		garrison = { country = -3 province = 1030 size = 2 }
+		garrison = { country = -3 province = 1031 size = 2 }
+		garrison = { country = -3 province = 1032 size = 2 }
+		garrison = { country = -3 province = 1041 size = 2 }
+	}
+
+
+	trigger = { ai = no }
+
+	name = EVT_1100072_NAME
+	desc = EVT_1100072_DESC
+	style = 2
+	picture = "fate_sau"
+	decision_picture = "decision_afrika_korps"
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 300
+	deathdate = { day = 12 month = march year = 1966 }
+
+	action = { 
+		name = ACTION_NAME_OK  
+		command = { type = make_puppet which = SAU value = 1 }
+	}
+}
+#####################################
+# Strenghten German-Japanese cooperation
+#####################################
+event = {
+	id = 1100073
+	random = no
+	country = GER
+
+	decision = {
+		exists = JAP
+		NOT = { war = { country = GER country = JAP } }
+		control = { province = 1552 data = JAP } # Tokyo
+		NOT = { alliance = { country = GER country = JAP } }
+		NOT = { alliance = { country = SOV country = JAP } }
+		NOT = { alliance = { country = ENG country = JAP } }
+		NOT = { event = 2011018 } #Event "Fading Sun" (defeat vs. China) has NOT fired
+		NOT = { event = 2011028 } #Japan has not lost vs. USSR or USA
+		event = 1000600 # The Treaty of Moscow
+	}
+	
+	decision_trigger = {
+		control = { province = 163 data = -3 } # Berlin
+		control = { province = 55 data = -3 }  # Paris
+		control = { province = 617 data = -3 } # Kiev
+		control = { province = 316 data = -3 } # Bucharest
+		control = { province = 321 data = -3 } # Sofia
+		control = { province = 377 data = -3 } # Athenes		
+		control = { province = 641 data = -3 } # Sevastopol
+		control = { province = 572 data = -3 } # Moscow
+		control = { province = 663 data = -3 } # Stalingrad
+		control = { province = 553 data = -3 } # Leningrad
+		}
+	
+
+	trigger = { 
+		exists = JAP
+		NOT = { war = { country = GER country = JAP } }
+		NOT = { war = { country = JAP country = CHI } }
+		control = { province = 1552 data = JAP } # Tokyo
+		NOT = { alliance = { country = GER country = JAP } }
+		NOT = { alliance = { country = SOV country = JAP } }
+		NOT = { alliance = { country = ENG country = JAP } }
+		NOT = { event = 2011018 } #Event "Fading Sun" (defeat vs. China) has NOT fired
+		NOT = { event = 2011028 } #Japan has not lost vs. USSR or USA
+		control = { province = 163 data = -3 } # Berlin
+		control = { province = 55 data = -3 }  # Paris
+		control = { province = 617 data = -3 } # Kiev
+		control = { province = 316 data = -3 } # Bucharest
+		control = { province = 321 data = -3 } # Sofia
+		control = { province = 377 data = -3 } # Athenes
+		control = { province = 572 data = -3 } # Moscow
+		control = { province = 663 data = -3 } # Stalingrad
+		control = { province = 553 data = -3 } # Leningrad
+	}
+
+	name = EVT_1100073_NAME
+	desc = EVT_1100073_DESC
+	style = 2
+  	picture = "Hitler_Japan"
+	decision_picture = "dec_Hitler_Japan"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = ACTION_NAME_OK
+		command = { type = trigger which = 1100074 }
+	}
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_NO
+		command = { type = relation which = JAP value = -20 }
+	}
+}
+event = {
+	id = 1100074
+	random = no
+	country = JAP
+
+	name = EVT_1100073_NAME
+	desc = EVT_1100073_DESC
+	style = 2
+  	picture = "Hitler_Japan"
+
+	action = {
+		ai_chance = 100
+		name = ACTION_NAME_OK
+		command = { type = alliance which = GER when = 1 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ITA value = 50 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2029 where = 1240 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2030 where = 1214 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2031 where = 1208 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2032 where = 1209 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2033 where = 1206 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2034 where = 1200 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2035 where = 1197 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2036 where = 1201 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2037 where = 1205 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2038 where = 1202 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2039 where = 1204 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2040 where = 1212 when = 0 }
+		command = { trigger = { AI = JAP NOT = { event = 2003188 } } type = activate_division which = 13016 value = 2041 where = 1225 when = 0 }
+	}
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_NO
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+		command = { type = dissent value = 3 } 
+	}
+}
+#####################################
+# Saar Offensive
+#####################################
+event = {
+	id = 1100075
+	country = FRA
+
+	trigger = { 	ai = no
+			war = { country = FRA country = GER }
+			not = {
+				control = { province = 127 data = FRA }
+				control = { province = 138 data = FRA }
+				control = { province = 145 data = FRA }
+ 				losses = 100000
+				} 
+				OR = { 
+			event = 2003036 # Danzig or War
+			alliance = { country = GER country = POL }
+		}
+		 } 
+
+	name = EVT_1100075_NAME
+	desc = EVT_1100075_DESC
+	style = 2
+	picture = "French_Staff"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9300002a # Let us gamble!
+		command = { type = event which = 1100076 where = -1 when = 30 }
+	}
+	action = {
+		name = 9300002b # I don't feel confident
+		command = { type = sleepevent which = 1100076 }
+	}
+}
+event = {
+	id = 1100076
+	country = FRA
+
+	name = EVT_1100075_NAME
+	desc = EVT_1100075_DESC
+	style = 2
+	picture = "French_Staff"
+	
+	action = {
+		trigger = { not = { losses = 150000 control = { province = 138 data = -3 } control = { province = 145 data = -3 }} control = { province = 127 data = -3 } }
+		name = 1100076a #Moderate Success
+		command = { type = dissent value = -2 }
+		command = { type = supplies value = 2000 }
+	   	command = { trigger = { NOT = { technology = 6030 } } type = gain_tech which = 6030 } # Grand Battle Plan Doctrine
+	   	command = { trigger = { NOT = { technology = 6120 } } type = gain_tech which = 6120 } # Trench Warfare Doctrine
+	   	command = { trigger = { NOT = { technology = 6110 } } type = gain_tech which = 6110 } # Mass Assault Doctrine
+	   	command = { trigger = { NOT = { technology = 6130 } } type = gain_tech which = 6130 } # Pre-planned Defense Doctrine
+	   	command = { trigger = { NOT = { technology = 2320 } } type = gain_tech which = 2320 } # ART 1938
+	   	command = { trigger = { NOT = { technology = 2330 } } type = gain_tech which = 2330 } # ART 1940
+	}
+	action = {
+		trigger = { not = { losses = 150000 } control = { province = 127 data = -3 } control = { province = 138 data = -3 } control = { province = 145 data = -3 } }
+		name = 1100076b #Great Success
+		command = { type = dissent value = -10 }
+		command = { type = supplies value = 5000 }
+	   	command = { trigger = { NOT = { technology = 6030 } } type = gain_tech which = 6030 } # Grand Battle Plan Doctrine
+	   	command = { trigger = { NOT = { technology = 6120 } } type = gain_tech which = 6120 } # Trench Warfare Doctrine
+	   	command = { trigger = { NOT = { technology = 6110 } } type = gain_tech which = 6110 } # Mass Assault Doctrine
+	   	command = { trigger = { NOT = { technology = 6130 } } type = gain_tech which = 6130 } # Pre-planned Defense Doctrine
+	   	command = { trigger = { NOT = { technology = 2320 } } type = gain_tech which = 2320 } # ART 1938
+	   	command = { trigger = { NOT = { technology = 2330 } } type = gain_tech which = 2330 } # ART 1940
+		command = { type = add_brigade value = artillery }
+		command = { type = add_brigade value = artillery }
+	}
+	action = {
+		trigger = { or = { losses = 150000 not = { control = { province = 127 data = -3 } } } }
+		name = 1100076c #Failure
+		command = { type = dissent value = 2 }
+	}
+}
+#########################################################################
+# Mittelafrika National Cabinet
+#########################################################################
+event = {
+	id = 1100077
+	random = no
+	country = U51
+
+	name = EVT_1100064_NAME
+	desc = EVT_1100064_DESC
+	style = 2
+	picture = "Hitler_Staff"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = headofstate which = 1070001 } 		#Himmler
+		command = { type = headofgovernment which = 1070002 }		#Himmler
+		command = { type = foreignminister which = 1070003 }		#Esser
+		command = { type = armamentminister which = 1070004 }		#Speer
+		command = { type = ministerofsecurity which = 1070005 }		#Himmler
+		command = { type = ministerofintelligence which = 1070006 }	#Heydrich
+		command = { type = chiefofstaff which = 1070010 }		#Krebs
+		command = { type = chiefofarmy which = 1070009 }		#Hausser
+		command = { type = chiefofair which = 1070008 }			#Greim
+		command = { type = chiefofnavy which = 1070007 }		#Marschall
+		command = { type = add_claim_region which = "Southwest Africa" } 
+	}
+}
+#########################################################################
+# The war takes a turn for the worse
+#########################################################################
+event = { 
+	id = 1100078
+	random = no 
+	country = ITA 
+	style = 2 
+	save_date = yes
+	picture = "italy_invasion"
+
+	trigger = {
+		alliance = { country = GER country = ITA }
+		war = { country = ITA country = ENG }
+		OR = {
+			war = { country = ITA country = GRE }
+			war = { country = ITA country = SOV }
+			war = { country = ITA country = USA }
+		}
+		NOT = {
+			control = { province = 900 data = -3 } # Suez
+			control = { province = 789 data = -3 } # Alexandria
+			control = { province = 765 data = -3 } # Tobruk
+		}
+		OR = {
+			NOT = { control = { province = 430 data = ITA } } # Palermo
+			NOT = { control = { province = 433 data = ITA } } # Syracuse
+			NOT = { control = { province = 427 data = ITA } } # Salerno
+			NOT = { control = { province = 422 data = ITA } } # Taranto
+			NOT = { control = { province = 416 data = ITA } } # Anzio
+			NOT = { control = { province = 419 data = ITA } } # Rome
+			NOT = { control = { province = 412 data = ITA } } # Ancona
+			NOT = { control = { province = 400 data = ITA } } # Venice
+			lost_national = { country = ITA value = 5 }
+		}
+	} 
+
+	name = EVT_1100078_NAME
+ 	desc = EVT_1100078_DESC
+
+	date = { day = 1 month = july year = 1942 } 
+	offset = 1 
+	deathdate = { day = 29 month = december year = 1950 } 
+
+	action_a = { 
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 20 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = surprise which = land value = -10 }
+		command = { type = counterattack value = -2 }
+		command = { type = ambush value = -2 }
+		command = { type = breakthrough value = -2 }
+		command = { type = assault value = -2 }
+		command = { type = max_organization which = land value = -3 }
+		command = { type = morale which = land value = -10 }
+		command = { type = ground_def_eff value = -0.1 when = 1}
+		command = { type = local_setflag which = ITA_army_disorg }
+	} 
+}
+#########################################################################
+# Victory is near
+#########################################################################
+event = {
+  	id = 1100079
+  	random = no
+  	tag = { ITA RSI U14 }
+	style = 2 
+	picture = "italian_newspaper"
+
+  trigger = {
+		# Military recovered from initial panic
+		event = { id = 1100078 days = 365 }
+		local_flag = ITA_army_disorg
+		OR = { 
+				event = 2003114 # GER Victory in the East 
+				event = 2001040 # ENG British surrender
+			}
+		OR = {	
+			# Regime toppled
+			AND = {
+				alliance = { country = ENG country = ITA }
+				government = democratic
+			}
+			# Axis Major Victory
+			AND = {
+				alliance = { country = GER country = ITA }
+				event = 2003114 # GER Victory in the East 
+				event = 2001040 # ENG British surrender
+			}
+			# Back in North Africa
+			AND = {
+				NOT = { alliance = { country = ENG country = ITA } }
+				control = { province = 900 data = -3 } # Suez
+				control = { province = 789 data = -3 } # Alexandria
+				control = { province = 377 data = -3 } # Athens
+				control = { province = 350 data = -3 } # Split
+			}
+		}
+  }
+   
+  	name = EVT_1100079_NAME
+  	desc = EVT_1100079_DESC
+
+	date = { day = 1 month = july year = 1942 } 
+	offset = 7 
+	deathdate = { day = 29 month = december year = 1960 } 
+
+  action_a = {
+  	name = "ACTION_NAME_GOOD"
+  		command = { type = industrial_modifier which = supplies value = 15 }
+		command = { type = surprise which = land value = 10 }
+		command = { type = counterattack value = 2 }
+		command = { type = ambush value = 2 }
+		command = { type = breakthrough value = 2 }
+		command = { type = assault value = 2 }
+		command = { type = max_organization which = land value = 3 }
+		command = { type = morale which = land value = 10 }
+		command = { type = ground_def_eff value = 0.1 when = 1 }
+		command = { type = local_clrflag which = ITA_army_org }
+  }
+}   
+###########################################################################
+# Prince Amedeo appointed Viceroy
+###########################################################################
+event = {
+	id = 1100080
+	random = no
+	country = U49
+
+	trigger = {
+		government = fascist
+		exists = ITA
+		ispuppet = yes
+		headofstate = 1060002 #Graziani
+		}
+
+	name = "EVT_1100080_NAME"
+	desc = "EVT_1100080_DESC" # from http://en.wikipedia.org/wiki/Prince_Amedeo,_Duke_of_Aosta
+	style = 2
+	picture = "italy_aoi"
+
+	date = { day = 20 month = december year = 1937 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1938 }
+
+	action_a = {
+		name = "ACTION_NAME_ACCEPT" # Accept
+		command = { type = headofstate which = 1060003 } #Amedeo
+		command = { type = foreignminister which = 1060013 } #Amedeo
+		command = { type = chiefofstaff which = 1060034 } #Valletti Borgnini
+		command = { type = chiefofair which = 1060047 } #Tedeschini Lalli
+	    command = { type = sleepminister which = 1060002 } #Graziani
+	    command = { type = sleepminister which = 1060012 } #Graziani
+	    command = { type = sleepminister which = 1060033 } #Gariboldi
+	    command = { type = sleepminister which = 1060046 } #Mazzucco
+        command = { type = sleepteam which = 1060004 } #Graziani
+	}
+}
+###########################################################################
+# Guglielmo Nasi appointed Vice-governor
+###########################################################################
+event = {
+	id = 1100081
+	random = no
+	country = U49
+
+	trigger = {
+		government = fascist
+		exists = ITA
+		ispuppet = yes
+		headofstate = 1060003 #Amedeo
+		atwar = no
+		}
+
+	name = "EVT_1100081_NAME"
+	desc = "EVT_1100081_DESC"
+	style = 2
+	picture = "italy_aoi"
+
+	date = { day = 4 month = may year = 1939 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		name = "ACTION_NAME_ACCEPT" # Accept
+		command = { type = headofgovernment which = 1060008 } #Nasi
+		command = { type = armamentminister which = 1060020 } #Nasi
+		command = { type = ministerofsecurity which = 1060028 } #Nasi
+		command = { type = chiefofstaff which = 1060035 } #Trezzani
+		command = { type = chiefofarmy which = 1060038 } #Gazzera
+		command = { type = chiefofnavy which = 1060042 } #Balsamo
+		command = { type = chiefofair which = 1060048 } #Pinna
+	        command = { type = sleepminister which = 1060007 } #Cerulli
+	        command = { type = sleepminister which = 1060014 } #Cerulli
+	        command = { type = sleepminister which = 1060026 } #Cerulli
+	        command = { type = sleepminister which = 1060037 } #Cavallero
+	        command = { type = sleepminister which = 1060041 } #Matteucci
+	        command = { type = sleepminister which = 1060046 } #Mazzucco
+	}
+}
+###########################################################################
+# Giuseppe Daodice appointed Vice-governor
+###########################################################################
+event = {
+	id = 1100082
+	random = no
+	country = U49
+
+	trigger = {
+		government = fascist
+		exists = ITA
+		ispuppet = yes
+		headofstate = 1060003 #Amedeo
+		war = { country = U49 country = ENG }
+		}
+
+	name = "EVT_1100082_NAME"
+	desc = "EVT_1100082_DESC"
+	style = 2
+	picture = "italy_aoi"
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = "ACTION_NAME_ACCEPT" # Accept
+		command = { type = headofgovernment which = 1060009 } #Daodice
+		command = { type = armamentminister which = 1060021 } #Daodice
+		command = { type = ministerofsecurity which = 1060029 } #Daodice
+	}
+}
+#########################################################################
+# More loyal officers
+#########################################################################
+#event = { 
+#	id = 1100083
+#	random = no 
+#	country = ITA 
+#	style = 2 
+#	picture = "generali"
+#
+#	trigger = {
+#		headofgovernment = 25002 # Mussolini
+#		atwar = no
+#		war = { country = GER country = ENG }
+#		NOT = {
+#			incabinet = 25153 # Graziani
+#			incabinet = 25182 # Pricolo
+#		}
+#	} 
+#
+#	name = EVT_1100083_NAME
+#	desc = EVT_1100083_DESC
+#
+#	date = { day = 1 month = august year = 1939 } 
+#	offset = 20 
+#	deathdate = { day = 29 month = april year = 1940 } 
+#
+#	action_a = { 
+#		name = ACTION_NAME_OK
+#		command = { type = chiefofarmy which = 25153 } # Graziani
+#		command = { type = chiefofair which = 25182 } # Pricolo
+#		command = { type = ministerofintelligence which = 25113 } # Carboni
+#	} 
+#	action_b = { 
+#		name = ACTION_NAME_DECLINE
+#		command = { type = dissent value = 1 }
+#	} 
+#}
+#########################################################################
+# The Under-Secretary of War
+#########################################################################
+#event = { 
+#	id = 1100084
+#	random = no 
+#	country = ITA 
+#	style = 2 
+#	picture = "parliament_fascist"
+#
+#	trigger = {
+#		headofgovernment = 25002 # Mussolini
+#		atwar = no
+#		control = { province = 825 data = -3 } # Addis Adeba
+#		NOT = { incabinet = 25008 } # Pariani
+#	} 
+#
+#	name = EVT_1100084_NAME
+# 	desc = EVT_1100084_DESC
+#	date = { day = 1 month = october year = 1936 } 
+#	offset = 10 
+#	deathdate = { day = 29 month = december year = 1938 } 
+#
+#	action_a = { 
+#		name = ACTION_NAME_OK
+#		command = { type = chiefofarmy which = 25008 } # Pariani
+#	} 
+#	action_b = { 
+#		name = ACTION_NAME_DECLINE
+#		command = {  }
+#	} 
+#}
+#########################################################################
+# Back in Rome
+#########################################################################
+event = { 
+	id = 1100085
+	random = no
+	style = 2
+	picture = "italy_invasion"
+
+	TAG = { ITA RSI }
+
+	trigger = {
+		NOT = {
+			nuked = { country = ITA data = -1 where = 419 }
+			nuked = { country = RSI data = -1 where = 419 }
+		
+			capital = { province = 419 }
+			region = { region = "Italy" value = 10 country = -2 } # less than 10% under enemy control
+		
+		}
+		owned = { province = 419 data = -1 }
+		control = { province = 419 data = -1 }
+		random = 25
+	}
+
+	name = EVT_1100085_NAME
+ 	desc = EVT_1100085_DESC
+	
+	date = { day = 0 month = january year = 1943 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT" #Excellent
+		command = { type = capital which = 419 } # Rome
+		command = { type = dissent value = -1 }
+	}
+}
+#########################################################################
+# Four days of Naples
+#########################################################################
+event = { 
+	id = 1100086
+	random = no
+	style = 2
+	picture = "italy_invasion"
+
+	TAG = { GER RSI }
+
+	trigger = {
+		OR = {
+			AND = {
+				war = { country = GER country = ENG }
+				NOT = { exists = RSI }
+			}
+			AND = {
+				war = { country = RSI country = ENG }
+				alliance = { country = GER country = RSI }
+			}
+		}
+		control = { province = 421 data = -1 } # Naples
+		random = 50
+	}
+
+	name = EVT_1100086_NAME
+ 	desc = EVT_1100086_DESC
+	
+	date = { day = 0 month = january year = 1943 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1946 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = revolt which = 421 } # Naples
+		#command = { type = secedeprovince which = REB value = 421 } # Naples
+	}
+}
+#########################################################################
+# 1938 Football World Cup
+#########################################################################
+event = { 
+	id = 1100087
+	random = no 
+	country = ITA 
+	style = 2 
+	picture = "fifa_38"
+
+	trigger = {
+		atwar = no
+		NOT = {
+			war = { country = GER country = ENG }
+			war = { country = GER country = FRA }
+			war = { country = GER country = SOV }
+		}
+	} 
+
+	name = EVT_1100087_NAME
+ 	desc = EVT_1100087_DESC
+
+	date = { day = 19 month = june year = 1938 } 
+
+	action_a = { 
+		name = ACTION_NAME_SUCCESS
+		command = { type = dissent value = -0.5 }
+	} 
+}
+#########################################################################
+# The death of Victor Emmanuel III
+#########################################################################
+event = {
+	id = 1100088
+	random = no
+	country = ITA
+	style = 2
+	picture = "morte_veIII"
+
+	trigger = {
+			OR = {
+				headofstate = 25001 # FA
+				headofstate = 25011 # PA
+				headofstate = 25012 # SC
+			}
+		}
+
+	name = "EVT_1100088_NAME"
+	desc = "EVT_1100088_DESC"
+
+	date = { day = 28 month = december year = 1947 }
+
+
+	action_a = {
+		name = "ACTION_NAME_UNFORTUNATE"
+		command = { trigger = { headofstate = 25001 } type = headofstate which = 25301 } # Umberto FA
+		command = { trigger = { headofstate = 25011 } type = headofstate which = 25013 } # Umberto PA
+		command = { trigger = { headofstate = 25012 } type = headofstate which = 25014 } # Umberto SC
+		command = { type = sleepminister which = 25001 }
+		command = { type = sleepminister which = 25011 }
+		command = { type = sleepminister which = 25012 }
+		}
+	}
+#########################################################################
+# The death of Mussolini
+#########################################################################
+	event = {
+	id = 1100089
+	random = no
+	country = ITA
+	style = 2
+	picture = "morte_mussolini"
+
+	trigger = {
+		random = 2
+			OR = {
+				headofstate = 25018
+				headofgovernment = 25002
+			}
+		NOT = { government = democratic }
+		}
+
+	name = "EVT_1100089_NAME"
+	desc = "EVT_1100089_DESC"
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		ai_chance = 35
+		name = "1100089a" # Gian Galeazzo Ciano
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 25302 } # Gian Galeazzo Ciano
+		command = { type = foreignminister which = 25304 } # Filippo Anfuso
+		command = { type = armamentminister which = 25063 } # Paolo I.M. Thaon di Revel
+		command = { type = ministerofsecurity which = 25102 } # Alfrdo De Marsico
+		command = { type = ministerofintelligence which = 25120 } # Emilio Faldella
+		command = { type = chiefofstaff which = 25134 } # Claudio Trezzani
+		command = { type = chiefofarmy which = 25157 } # Luigi Efisio Marras
+		command = { type = chiefofnavy which = 25176 } # Emilio Ferreri
+		command = { type = chiefofair which = 25186 } # Mario Ajmone Cat
+		command = { type = sleepminister which = 25002 } 
+		command = { type = sleepminister which = 25004 } 
+		command = { type = sleepminister which = 25005 } 
+		command = { type = sleepminister which = 25018 } 
+		}
+	action_b = {
+		ai_chance = 35
+		name = "1100089b" # Dino Grandi
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 25027 } # Dino Grandi
+		command = { type = foreignminister which = 25039 } # Giuseppe Bastianini
+		command = { type = armamentminister which = 25064 } # Giacomo Acerbo
+		command = { type = ministerofsecurity which = 25094 } # Umberto Albini
+		command = { type = ministerofintelligence which = 25306 } # Candeloro De Leo
+		command = { type = chiefofstaff which = 25134 } # Claudio Trezzani
+		command = { type = chiefofarmy which = 25157 } # Luigi Efisio Marras
+		command = { type = chiefofnavy which = 25176 } # Emilio Ferreri
+		command = { type = chiefofair which = 25186 } # Mario Ajmone Cat
+		command = { type = sleepminister which = 25002 } 
+		command = { type = sleepminister which = 25004 } 
+		command = { type = sleepminister which = 25005 } 
+		command = { type = sleepminister which = 25018 } 
+		}
+	action_c = {
+		ai_chance = 30
+		name = "1100089c" # Alessandro Pavolini
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofgovernment which = 25303 } # Alessandro Pavolini
+		command = { type = foreignminister which = 25042 } # Augusto De Marsanich
+		command = { type = armamentminister which = 25305 } # Domenico Pellegrini Giampietro
+		command = { type = ministerofsecurity which = 25093 } # Guido Buffarini Guidi 
+		command = { type = ministerofintelligence which = 25119 } # Giuseppe Pièche
+		command = { type = chiefofstaff which = 25140 } # Gastone Gambara
+		command = { type = chiefofarmy which = 25307 } # Renato Ricci
+		command = { type = chiefofnavy which = 25178 } # Junio Valerio Borghese
+		command = { type = chiefofair which = 25188 } # Arrigo Tessari
+		command = { type = sleepminister which = 25002 } 
+		command = { type = sleepminister which = 25004 } 
+		command = { type = sleepminister which = 25005 } 
+		command = { type = sleepminister which = 25018 } 
+		}
+	}
+###########################################################################
+# Manpower from Italy
+###########################################################################
+event = {
+	id = 1100090
+	random = no
+	country = U49
+
+	name = "EVT_1100090_NAME"
+	desc = "EVT_1100090_DESC"
+	style = 2
+	picture = "aoi"
+
+	action_a = {
+		name = "ACTION_NAME_EXCELLENT" # Excellent!
+		command = { type = manpowerpool value = 110 }
+		command = { type = add_division which = "65a Divisione 'Granatieri di Savoia'" value = infantry when = 8 }
+	}
+}	
+#########################################################################
+# Italian Racial Laws
+#########################################################################
+event = {
+	id = 1100091
+	random = no
+	country = ITA
+	style = 2
+	picture = "racial_laws"
+
+	name = EVT_1100091_NAME
+	desc = EVT_1100091_DESC
+	
+	trigger = {
+		headofgovernment = 25002 # Mussolini (FA)
+		NOT = { alliance = { country = GER country = ITA } }
+		NOT = { war = { country = GER country = ITA } }
+		control = { province = 195 data = GER } # Vienna
+		NOT = { exists = AUS }
+	}
+
+	date = { day = 0 month = october year = 1938 }
+  	offset = 1
+  	deathdate = { day = 29 month = december year = 1938 }
+	
+	action_a = {
+		name = ACTION_NAME_ACCEPT
+		command = { type = relation which = GER value = 20 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 1 }
+		command = { type = sleepteam which = 25008 } # Enrico Fermi
+		command = { type = sleepteam which = 25055 } # Guido Fubini
+		command = { type = sleepminister which = 25062 } # Guido Jung
+		command = { type = sleepleader which = 25302 } # Ascoli, Aldo
+		command = { type = sleepleader which = 25016 } # Ascoli, Ettore
+		command = { type = sleepleader which = 25285 } # Bachi
+		command = { type = sleepleader which = 25344 } # Maroni
+		command = { type = songs which = Mussolini1938.txt }
+	}
+	action_b = {
+		name = ACTION_NAME_DECLINE
+		command = { type = relation which = GER value = -50 }
+		command = { type = dissent value = 0.5 }
+	}
+}
+#########################################################################
+# The Italian Empire
+#########################################################################
+event = {
+	id = 1100092
+	random = no
+	country = ITA
+	style = 2
+	picture = "Mussolini1936"
+
+	name = EVT_1100092_NAME
+	desc = EVT_1100092_DESC
+	
+	trigger = {
+		government = fascist
+		OR = {
+		control = { province = 825 data = ITA } # Addis Abeba
+		control = { province = 825 data = U49 } # Addis Abeba
+		}
+		atwar = no
+		NOT = {
+			exists = ETH
+			}
+		}
+
+	date = { day = 0 month = january year = 1933 }
+  	offset = 1
+  	deathdate = { day = 29 month = december year = 1938 }
+	
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = dissent value = -10 }
+		#command = { trigger = { ai = yes } type = independence which = U49 value = 1 when = 0 } #This should be handled by the Create AOI Event instead...
+		#command = { trigger = { ai = yes } type = make_puppet which = U49 }
+		command = { type = songs which = Mussolini1936.txt }
+	}
+}
+#########################################################################
+# Gabriele D’Annunzio dies
+#########################################################################
+event = { 
+	id = 1100093
+	random = no 
+	country = ITA 
+	style = 2 
+	picture = "morte_dannunzio" 
+
+	name = EVT_1100093_NAME
+ 	desc = EVT_1100093_DESC
+
+	date = { day = 1 month = march year = 1938 } 
+
+	action_a = { 
+		name = ACTION_NAME_UNFORTUNATE
+		command = { }
+		#command = { type = sleepminister which = 25521 } # Gabriele d'Annunzio
+		#command = { type = sleepminister which = 25539 } # Gabriele d'Annunzio
+		#command = { type = sleepminister which = 25647 } # Gabriele d'Annunzio
+	} 
+}
+#########################################################################
+# Costanzo Ciano dies
+#########################################################################
+#event = { 
+#	id = 1100094
+#	random = no 
+#	country = ITA 
+#	style = 2 
+#	picture = "morte_ciano" 
+#
+#	name = EVT_1100094_NAME
+# 	desc = EVT_1100094_DESC
+#
+#	date = { day = 26 month = june year = 1939 } 
+#
+#	action_a = { 
+#		name = ACTION_NAME_UNFORTUNATE
+#		command = { type = sleepleader which = 25815 } # Ciano, Costanzo
+#	} 
+#}
+#########################################################################
+# Bruno Mussolini dies
+#########################################################################
+#event = { 
+#	id = 1100095
+#	random = no 
+#	country = ITA 
+#	style = 2 
+#	picture = "morte_bruno" 
+#
+#	name = EVT_1100095_NAME
+# 	desc = EVT_1100095_DESC
+#
+#	date = { day = 7 month = august year = 1941 } 
+#
+#	action_a = { 
+#		name = ACTION_NAME_UNFORTUNATE
+#		command = { type = dissent value = -0.5 }
+#	} 
+#}
+#########################################################################
+# The Constituent Assembly
+#########################################################################
+event = {
+	id = 1100096
+	random = no
+	country = RSI
+	style = 2
+	picture = "rsi_assemblea"
+	#one_action = yes
+
+	trigger = {
+		headofstate = 750001 # Benito Mussolini
+		atwar = no
+		exists = GER
+		#NOT = { ispuppet = RSI }
+		}
+
+	name = "EVT_1100096_NAME"
+	desc = "EVT_1100096_DESC"
+
+	date = { day = 0 month = january year = 1946 }
+  	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 40
+		name = "1100096a"
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 0 }
+		command = { type = set_domestic which = political_left value = 0 }
+		command = { type = relation which = GER value = 30 }
+		command = { type = steal_tech which = GER }
+		command = { type = steal_tech which = GER }
+		command = { type = steal_tech which = GER }
+		command = { type = industrial_modifier which = total value = 2 }
+        	command = { type = add_leader_skill which = 750017 value = 2 } # Mannelli
+        	command = { type = add_leader_skill which = -1 value = 1 }
+        	command = { type = add_leader_skill which = -1 value = 1 }
+        	command = { type = add_leader_skill which = -1 value = 1 }
+		command = { type = headofgovernment which = 750014 } # Pavolini
+		command = { type = foreignminister which = 750019 } # Farinacci
+		command = { type = armamentminister which = 750028 } # Mezzasoma
+		command = { type = ministerofsecurity which = 750005 } # Buffarini Guidi
+		command = { type = ministerofintelligence which = 750039 } # Barracu
+		command = { type = chiefofstaff which = 750045 } # Ricci
+		command = { type = chiefofarmy which = 750050 } # Mannelli
+		command = { type = chiefofnavy which = 750057 } # Grossi
+		command = { type = chiefofair which = 750060 } # Tessari
+		command = { type = local_setflag which = RSI_pro-german }
+		}
+	action_b = {
+		ai_chance = 40
+		name = "1100096b"
+		command = { type = dissent value = -5 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = relation which = GER value = -100 }
+		command = { type = end_puppet }
+		command = { type = morale which = land value = 5 }
+		command = { type = morale which = naval value = 5 }
+		command = { type = morale which = air value = 5 }
+		command = { type = headofgovernment which = 750015 } # Borghese
+		command = { type = foreignminister which = 750020 } # Romualdi
+		command = { type = armamentminister which = 750029 } # Michelini
+		command = { type = ministerofsecurity which = 750036 } # Almirante
+		command = { type = ministerofintelligence which = 750040 } # Parini
+		command = { type = chiefofstaff which = 750046 } # Galbiati
+		command = { type = chiefofarmy which = 750051 } # Tanucci Nannini
+		command = { type = chiefofnavy which = 750058 } # Arillo
+		command = { type = chiefofair which = 750061 } # Molfese
+		command = { type = local_setflag which = RSI_nationalist }
+		}
+	action_c = {
+		ai_chance = 20
+		name = "1100096c"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = domestic which = free_market value = -2 }
+		command = { type = domestic which = defense_lobby value = -2 }
+		command = { type = domestic which = interventionism value = -5 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = headofstate which = 750065 } # Mussolini LWR
+		command = { type = headofgovernment which = 750016 } # Cione
+		command = { type = foreignminister which = 750021 } # Silvestri
+		command = { type = armamentminister which = 750030 } # Massi
+		command = { type = ministerofsecurity which = 750037 } # Pini
+		command = { type = ministerofintelligence which = 750041 } # Gorrieri
+		command = { type = chiefofstaff which = 750047 } # Balisti
+		command = { type = chiefofarmy which = 750052 } # Invrea
+		command = { type = chiefofnavy which = 750059 } # Barbini
+		command = { type = chiefofair which = 750064 } # Baylon
+		command = { type = local_setflag which = RSI_socialist }
+		}
+	}
+#########################################################################
+# The death of Benito Mussolini
+#########################################################################
+event = {
+	id = 1100097
+	random = no
+	country = RSI
+	style = 2
+	picture = "morte_mussolini"
+
+	trigger = {
+		random = 2
+		headofstate = 750001 # Benito Mussolini
+			OR = {
+				local_flag = RSI_pro-german
+				local_flag = RSI_nationalist
+				local_flag = RSI_socialist
+			}
+		}
+
+	name = "EVT_1100097_NAME"
+	desc = "EVT_1100097_DESC"
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		trigger = { 
+			flag = RSI_pro-german
+		}
+		name = "1100097a"
+		command = { type = headofstate which = 750011 } # Vittorio Mussolini
+		command = { type = sleepminister which = 750001 } 
+		command = { type = sleepminister which = 750002 } 
+		command = { type = sleepminister which = 750017 } 
+		command = { type = sleepminister which = 750065 } 
+		}
+	action_b = {
+		trigger = { 
+			flag = RSI_nationalist
+		}
+		name = "1100097b"
+		command = { type = headofstate which = 750012 } # Augusto De Marsanich
+		command = { type = sleepminister which = 750001 } 
+		command = { type = sleepminister which = 750002 } 
+		command = { type = sleepminister which = 750017 } 
+		command = { type = sleepminister which = 750065 } 
+		}
+	action_c = {
+		trigger = { 
+			flag = RSI_socialist
+		}
+		name = "1100097c"
+		command = { type = headofstate which = 750013 } # Concetto Pettinato
+		command = { type = sleepminister which = 750001 } 
+		command = { type = sleepminister which = 750002 } 
+		command = { type = sleepminister which = 750017 } 
+		command = { type = sleepminister which = 750065 } 
+		}
+	}
+#########################################################################
+# Esposizione Universale Roma
+#########################################################################
+event = { 
+	id = 1100098
+	random = no 
+	country = ITA 
+	style = 2 
+	picture = "eur"
+
+	trigger = {
+		government = fascist
+		atwar = no
+		money = 100
+	} 
+
+	name = EVT_1100098_NAME
+ 	desc = EVT_1100098_DESC
+
+	date = { day = 0 month = february year = 1942 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = { 
+		name = ACTION_NAME_EXCELLENT
+		command = { type = money value = -100 }
+		command = { type = dissent value = -1 }
+		command = { type = construct which = infrastructure where = 419 value = 10 } #Rome
+	} 
+}
+#########################################################################
+# RSI Independence Struggle
+#########################################################################
+event = {
+	id = 1100099
+	country = RSI
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = headofstate which = 750001 } # Benito Mussolini
+		command = { type = headofgovernment which = 750002 } # Benito Mussolini
+		command = { type = foreignminister which = 750017 } # Benito Mussolini
+		command = { type = armamentminister which = 750004 } # Domenico Pellegrini Giampietro
+		command = { type = ministerofsecurity which = 750005 } # Guido Buffarini Guidi
+		command = { type = ministerofintelligence which = 750006 } # Vittorio Foschini
+		command = { type = chiefofstaff which = 750007 } # Rodolfo Graziani
+		command = { type = chiefofarmy which = 750008 } # Gastone Gambara
+		command = { type = chiefofnavy which = 750009 } # Antonio Legnani
+		command = { type = chiefofair which = 750010} # Ernesto Botto
+		command = { type = add_division which = "Divisione 'Decima'" value = marine when = 4 }
+		command = { type = add_division which = "12a Squadriglia Sommergibili" value = submarine when = 4 }
+		command = { type = add_division which = "39. Stormo Trasporti" value = transport_plane when = 2 } ##todo - add RSI paratroop support
+		command = { type = manpowerpool value = 7.5 when = 1 }
+		}
+}

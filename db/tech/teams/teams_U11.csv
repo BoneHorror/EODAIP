@@ -1,0 +1,26 @@
+U11;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+870001;Francois Peupler Navy;T1400;5;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870002;F. Joliot-Curie;T1405;5;1930;1958;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870003;Travailleuse Cooperative pour Agricole Chimie;T1407;3;1900;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870004;Peuple Cooperative pour Mecanique;T1404;5;1900;2000;mechanics;training;electronics;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870005;Peuple Cooperative pour Aeronautique;T1409;4;1900;2000;aeronautics;artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870006;Peupler Cooperative pour Roquette;T1426;7;1946;2000;rocketry;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870007;Manufacture d'Armes Travailleuse L'assosacion;T1408;5;1900;2000;mechanics;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870008;Travailleuse L'association Renault;T1410;5;1900;2000;mechanics;industrial_engineering;general_equipment;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870009;Peupler Gazer Cooperative;T1414;4;1970;2000;industrial_engineering;chemistry;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870010;Etienne Schlumberger;T1417;4;1942;2000;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870011;Francais Peuple Armee de l'Air;T1430;4;1950;2000;fighter_tactics;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870012;Peupler L'assosacion pour Pharmacie;T1412;2;1900;2000;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870013;Travailleuse Cooperative de Schneider;100118;4;1900;2000;artillery;mechanics;technical_efficiency;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870014;Peupler Naval Cour de Brest;100117;6;1900;2000;naval_engineering;naval_artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870015;Francois Darlan;T1418;3;1930;1951;large_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870016;Francois d'Astier de la Vigerie;T1419;3;1930;1956;fighter_tactics;piloting;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870017;Martial Valian;T1421;6;1940;2000;fighter_tactics;piloting;training;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870018;Charles de Gaulle;T1416;7;1939;2000;small_unit_tactics;decentralized_execution;individual_courage;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870019;Jean-Jacques Barrois;T1406;3;1930;2000;rocketry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870020;Emile Dewoitine;T1403;4;1930;2000;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870021;Felix Amiot;T1401;6;1930;2000;aeronautics;electronics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870022;Maurice Gamelin;T1422;1;1930;1958;centralized_execution;large_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870023;Louis de Broglie;T1425;7;1930;2000;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870024;Raoul Salan;T1428;4;1948;1960;centralized_execution;combined_arms_focus;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+870025;Alphonse Juin;T1429;5;1947;1962;centralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

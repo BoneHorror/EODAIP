@@ -1,0 +1,152 @@
+# Free Up Minor Warlord Troops
+#1330110073 CHI Minor Warlords
+event = {
+    id = 1330110073
+    random = no
+    country = CHI
+
+    name = EVT_1330110073_NAME
+    desc = EVT_1330110073_DESC
+
+    style = 2
+    picture = "ccip_gmd"
+
+    trigger = {
+        or = {
+			war = { country = CHI country = JAP }
+			war = { country = CHI country = SOV }
+			war = { country = CHI country = ENG }
+			war = { country = CHI country = RUS }
+			war = { country = CHI country = USA }
+			war = { country = CHI country = GER }
+			war = { country = CHI country = DDR }
+			war = { country = CHI country = U08 }
+			war = { country = CHI country = FRA }
+            and = {
+                not = {
+                    exists = CGX
+                    exists = CYN
+                    exists = CXB
+                    exists = CSX
+                    exists = U36
+                    exists = U67
+                    #exists = MEN #TODO: Guominjun
+                    exists = CHC
+                }
+            }
+			OR = { #19th Army Defects Route
+			
+			}
+        }
+		random = 50
+		or = {
+			and = {
+				not = { dissent = 20 }
+				random = 50
+			}
+			and = {
+				not = { dissent = 30 }
+				random = 20
+			}
+			random = 5
+		}
+    }
+
+    date = { day = 0 month = 0 year = 1927 }
+    offset = 90
+    deathdate = { day = 0 month = 0 year = 1990 }
+
+    action = {
+        name = ACTION_NAME_OK
+		command = { type = dissent value = -0.5 }
+		#6th Corps  -  Jinan
+		command = { type = unlock_division which = 22000 value = 2 } #22nd Division
+		command = { type = unlock_division which = 22000 value = 3 } #29th Division
+		command = { type = unlock_division which = 22000 value = 4 } #74th Division
+		#12th Corps  -  Jinan
+		command = { type = unlock_division which = 22000 value = 6 } #20th Division
+		command = { type = unlock_division which = 22000 value = 7 } #81st Division
+		#3rd Route Army  -  Jinan
+		command = { type = unlock_division which = 22000 value = 9 } #3rd Route Army HQ
+		command = { type = unlock_division which = 22000 value = 10 } #1st 2nd Independent Artillery Regiments
+		#Shandong Provincial Security Group  -  Jinan
+		command = { type = unlock_division which = 22000 value = 12 } #1st Route Militia
+		command = { type = unlock_division which = 22000 value = 13 } #2nd Route Militia
+		command = { type = unlock_division which = 22000 value = 14 } #3rd Route Militia
+		command = { type = unlock_division which = 22000 value = 15 } #4th Route Militia
+		command = { type = unlock_division which = 22000 value = 16 } #5th Route Militia
+		#29th Army  -  Beijing
+		command = { type = unlock_division which = 22000 value = 18 } #37th Division
+		command = { type = unlock_division which = 22000 value = 19 } #38th Division
+		command = { type = unlock_division which = 22000 value = 20 } #132nd Division
+		command = { type = unlock_division which = 22000 value = 21 } #143rd Division
+		command = { type = unlock_division which = 22000 value = 22 } #9th Cavalry Division
+		command = { type = unlock_division which = 22000 value = 23 } #39th Independent Brigade
+		command = { type = unlock_division which = 22000 value = 24 } #13th Independent Cavalry Brigade
+		command = { type = unlock_division which = 22000 value = 25 } #29th Army Special Brigade
+		command = { type = unlock_division which = 22000 value = 26 } #29th Army HQ
+		#Hebei Provincial Security Group  -  Beijing
+		command = { type = unlock_division which = 22000 value = 28 } #North Hebei Security Group
+		command = { type = unlock_division which = 22000 value = 29 } #South Hebei Security Group
+		#7th Corps  -  Xian
+		command = { type = unlock_division which = 22000 value = 31 } #42nd Division
+		command = { type = unlock_division which = 22000 value = 32 } #17th Division
+		#17th Route Army  -  Xian
+		command = { type = unlock_division which = 22000 value = 34 } #17th Route Army HQ
+		command = { type = unlock_division which = 22000 value = 35 } #Shaanxi Guard
+		command = { type = unlock_division which = 22000 value = 36 } #1st 2nd 3rd Special Regiments
+
+		#25th Corps  -  Guiyang
+		command = { type = unlock_division which = 22000 value = 56 } #103rd Division
+		command = { type = unlock_division which = 22000 value = 57 } #102nd Division
+		command = { type = unlock_division which = 22000 value = 58 } #New 8th Division
+		command = { type = unlock_division which = 22000 value = 59 } #121st Division
+		command = { type = unlock_division which = 22000 value = 60 } #New 25th Division
+		#Guizhou Provincial Security Group  -  Guiyang
+		command = { type = unlock_division which = 22000 value = 62 } #1st Provincial Militia
+		command = { type = unlock_division which = 22000 value = 63 } #2nd Provincial Militia
+		#21st Corps  -  Chengdu
+		command = { type = unlock_division which = 22000 value = 65 } #146th Division
+		command = { type = unlock_division which = 22000 value = 66 } #147th Division
+		command = { type = unlock_division which = 22000 value = 67 } #162nd Division
+		command = { type = unlock_division which = 22000 value = 68 } #12th Independent Brigades
+		command = { type = unlock_division which = 22000 value = 69 } #15th Independent Brigade
+		#23rd Corps  -  Chengdu
+		command = { type = unlock_division which = 22000 value = 71 } #144th Division
+		command = { type = unlock_division which = 22000 value = 72 } #148th Division
+		command = { type = unlock_division which = 22000 value = 73 } #17th Independent Brigade
+		#44th Corps  -  Chengdu
+		command = { type = unlock_division which = 22000 value = 75 } #149th Division
+		command = { type = unlock_division which = 22000 value = 76 } #150th Division
+		command = { type = unlock_division which = 22000 value = 77 } #163rd Division
+		#7th Route Army  -  Chengdu
+		command = { type = unlock_division which = 22000 value = 79 } #145th Division
+		command = { type = unlock_division which = 22000 value = 80 } #161st Division
+		command = { type = unlock_division which = 22000 value = 81 } #164th Division
+		command = { type = unlock_division which = 22000 value = 82 } #11th Independent Brigade
+		command = { type = unlock_division which = 22000 value = 83 } #13th Independent Brigade
+		command = { type = unlock_division which = 22000 value = 84 } #16th Independent Brigade
+		command = { type = unlock_division which = 22000 value = 85 } #7th Route Army HQ
+		#41st Corps  -  Chongqing
+		command = { type = unlock_division which = 22000 value = 87 } #122nd Division
+		command = { type = unlock_division which = 22000 value = 88 } #123rd Division
+		command = { type = unlock_division which = 22000 value = 89 } #124th Division
+		#45th Corps  -  Chongqing
+		command = { type = unlock_division which = 22000 value = 91 } #125th Division
+		command = { type = unlock_division which = 22000 value = 92 } #126th Division
+		command = { type = unlock_division which = 22000 value = 93 } #127th Division
+		command = { type = unlock_division which = 22000 value = 94 } #128th Division
+		command = { type = unlock_division which = 22000 value = 95 } #131st Division
+		#47th Corps  -  Chongqing
+		command = { type = unlock_division which = 22000 value = 97 } #104th Division
+		command = { type = unlock_division which = 22000 value = 98 } #Reinforcement Regiments
+		#14th Route Army  -  Chongqing
+		command = { type = unlock_division which = 22000 value = 100 } #14th Independent Brigade
+		command = { type = unlock_division which = 22000 value = 101 } #14th Route Army HQ
+		#Sichuan Provincial Security Group  -  Chongqing
+		command = { type = unlock_division which = 22000 value = 103 } #1st 2nd 3rd 4th 5th 6th Militia Regiments
+		command = { type = unlock_division which = 22000 value = 104 } #7th 8th 9th 10th 11th 12th Militia Regiments
+		command = { type = unlock_division which = 22000 value = 105 } #13th 14th 15th 16th 17th 18th Militia Regiments
+		command = { type = unlock_division which = 22000 value = 106 } #20th 21st 22nd 23rd 24th Militia Regiments
+    }
+}

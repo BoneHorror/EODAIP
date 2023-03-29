@@ -1,0 +1,164 @@
+# China 1936 AI File by Lothos
+
+neutrality = 149.000 
+war = 1
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	CHC = 150
+	CSX = 150
+	SIK = 150
+	CXB = 150
+	CYN = 150
+	CGX = 150
+	TIB = 150
+	JAP = 150
+	MAN = 150
+	U03 = -1
+}
+demand_claims = {
+	CHC
+	CSX
+	SIK
+	CXB
+	CYN
+	CGX
+	TIB
+	JAP
+	MAN
+	SOV
+	MON
+	POR
+	ENG
+}
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.050 
+
+	AA_batteries = no
+	max_AA_level = 3
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = yes
+	max_air_base = 4 
+	air_base_provs = {
+		1247  #Beiping
+	}
+
+	naval_base = no
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = yes 
+	force_ic_until = 1935
+	ic_end_year = 1935
+	IC_provs = { } 
+}
+
+military = { 
+	relative_build_scheme 	= yes 
+	max_batch_peace 	= 360 
+	max_batch_war 		= 270 
+	max_batch_home_front 	= 270
+
+	#### Divisions etc...
+	infantry 	= 45
+	cavalry 	= 2
+	motorized 	= 3
+	mechanized 	= 0
+	light_armor 	= 2
+	armor 		= 0
+	paratrooper 	= 0
+	marine 		= 0
+	bergsjaeger 	= 10
+	garrison	= 2
+      	hq 		= 3
+	militia 	= 20
+#				90 %
+	interceptor 	= 7
+	multi_role 	= 0
+	cas 		= 0
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				10 %
+	battleship 	= 0
+	carrier 	= 0
+	escort_carrier	= 0
+	destroyer 	= 1
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 	= 0
+	transports 	= 0
+#				0 %
+
+}
+
+technology = { 
+	endgoal 	= { } 
+		preference 	= {
+		
+		# Armored Divisions
+		6900
+ 
+		# Logistics
+		1310
+		
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Field Artillery
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+		
+		# Light tanks
+		2630 2640 2646 2650 2030 2040 2050
+		
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+		
+		# Intercepters
+		4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 15020 4560 4570 4580
+		
+		# Manufactoring
+		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+		
+	} 
+	ignore 	= {
+		# Airborne Infantry
+		1070 1080 1090 1100
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+	}
+ 
+	armor 		= 3 
+	infantry 	= 4
+	industry 	= 4
+	aircraft 	= 3
+	naval 		= 1
+	land_doctrines 	= 3
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 1
+}  

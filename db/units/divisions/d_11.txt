@@ -1,0 +1,112 @@
+#MODEL_41_
+allowed_brigades = b_02
+allowed_brigades = b_05
+allowed_brigades = b_06
+
+# 0 - Air assault Division (1956) - Piasecki H-21/Yakovlev Yak-24/Bristol Belvedere
+model = {
+	cost 					= 22
+	buildtime	 			= 390
+	manpower 				= 5
+	maxspeed 				= 50
+	defaultorganisation 	= 40
+	morale					= 40
+	defensiveness 			= 20
+	toughness				= 14
+	softness				= 95
+	suppression				= 5
+	airdefence				= 7
+	softattack				= 22
+	hardattack              = 16
+	airattack				= 12
+	transportweight			= 30
+	supplyconsumption 		= 2.8
+	no_fuel_combat_mod 		= -0.9
+	fuelconsumption			= 6
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { manpower = 5000 trucks = 600 artillery = 86 heavy_artillery = 24 anti_tank = 32 anti_air = 14 armored_car = 74 halftracks = 426 medium_armor = 66 helicopter = 100 }
+}
+
+# 1 - Air assault Division (1961) -Boeing CH-47/Mil Mi-8
+model = {
+	cost 					= 29
+	buildtime	 			= 430
+	manpower 				= 5
+	maxspeed 				= 50
+	defaultorganisation 	= 40
+	morale					= 40
+	defensiveness 			= 20
+	toughness				= 14
+	softness				= 95
+	suppression				= 6
+	airdefence				= 7
+	softattack				= 25
+	hardattack              = 18
+	airattack				= 13
+	transportweight			= 30
+	supplyconsumption 		= 2.9
+	no_fuel_combat_mod 		= -0.9
+	fuelconsumption			= 6.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { manpower = 5056 trucks = 600 artillery = 86 anti_tank = 54 anti_air = 18 helicopter = 200 }
+}
+
+# 2 - Air assault Division (1974) - CH-53E Super Stallion/Mil Mi-26/Boeing Chinook HC2 (Chinnok CH-47D)
+model = {
+	cost 					= 31
+	buildtime	 			= 430
+	manpower 				= 5
+	maxspeed 				= 60
+	defaultorganisation 	= 40
+	morale					= 40
+	defensiveness 			= 20
+	toughness				= 14
+	softness				= 95
+	suppression				= 7
+	airdefence				= 8
+	softattack				= 27
+	hardattack              = 20
+	airattack				= 14
+	transportweight			= 30
+	supplyconsumption 		= 2.9
+	no_fuel_combat_mod 		= -0.9
+	fuelconsumption			= 6.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { manpower = 5056 trucks = 600 artillery = 86 anti_tank = 54 anti_air = 18 helicopter = 200 }
+}
+
+# 3 - Air assault Division (1989) - Bell Boeing V-22 Osprey/Kamov Ka-60 Kasatka
+model = {
+	cost 					= 32
+	buildtime	 			= 460
+	manpower 				= 5
+	maxspeed 				= 60
+	defaultorganisation 	= 40
+	morale					= 40
+	defensiveness 			= 20
+	toughness				= 14
+	softness				= 95
+	suppression				= 7
+	airdefence				= 8
+	softattack				= 30
+	hardattack              = 21
+	airattack				= 16
+	transportweight			= 30
+	supplyconsumption 		= 2.9
+	no_fuel_combat_mod 		= -0.9
+	fuelconsumption			= 6.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { manpower = 5056 trucks = 600 artillery = 86 anti_tank = 54 anti_air = 18 helicopter = 200 }
+}

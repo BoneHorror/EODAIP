@@ -1,0 +1,125 @@
+# MODEL_20_
+
+allowed_brigades = b_16
+
+max_allowed_brigades = 1
+
+# 0 - Flying Rocket V2A4 (1943) V2/R-1/PGM-11 Redstone
+model = { 
+	cost 						= 4
+	buildtime					= 40
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 4800
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 126
+	softattack					= 0
+	hardattack					= 0
+	range						= 300
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 2
+	flying_rocket				= -2
+	equipment = { rocket = 5 }
+}
+
+# 1 - Ballistic Missile V2A9 (1944) Thor/V2A9/R-5 Pobeda/PGM-17 Thor
+model = { 
+	cost 						= 5
+	buildtime					= 60
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 3400
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 180
+	softattack					= 0
+	hardattack					= 0
+	range						= 1200
+	supplyconsumption 			= 1
+	fuelconsumption				= 2.5
+	flying_rocket				= -2
+	equipment = { rocket = 5 }	
+}
+
+# 2 - Inter Continental Ballistic Missile V2A10 (1956) Blue Streak/A-12 (invented)/R-7 Semyorka/SM-65 Atlas-D
+model = { 
+	cost 						= 6
+	buildtime					= 90
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 4000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 360
+	softattack					= 0
+	hardattack					= 0
+	range						= 8000
+	supplyconsumption 			= 2
+	fuelconsumption				= 5
+	flying_rocket				= -2
+	equipment = { rocket = 5 }	
+}
+
+# 3 - Improved Inter Continental Ballistic Missile (1962) LGM-30 Minuteman I/UR-100
+model = { 
+	cost 						= 8
+	buildtime					= 90
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 4600
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 400
+	softattack					= 0
+	hardattack					= 0
+	range						= 9000
+	supplyconsumption 			= 2.5
+	fuelconsumption				= 7.5
+	flying_rocket				= -2
+	equipment = { rocket = 5 }	
+}
+
+# 4 - Advanced ICBM (1970) LGM-30 Minuteman II/R-36
+model = { 
+	cost 						= 10
+	buildtime					= 90
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 5000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 500
+	softattack					= 0
+	hardattack					= 0
+	range						= 10000
+	supplyconsumption 			= 3.5
+	fuelconsumption				= 10
+	flying_rocket				= -2
+	equipment = { rocket = 5 }	
+}
+
+#5- Modern ICBM (1984)  LGM-18 Peacekeeper/RT-2PM Topol
+model = { 
+	cost 						= 12
+	buildtime					= 90
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 8000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 700
+	softattack					= 0
+	hardattack					= 0
+	range						= 12000
+	supplyconsumption 			= 5
+	fuelconsumption				= 15
+	flying_rocket				= -2
+	equipment = { rocket = 5 }	
+}

@@ -1,0 +1,39 @@
+MAD;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+690001;Head of State;Leon Cayla;1933;1964;1999;SC;Resigned Generalissimo;High;M538001;X
+690002;Head of Government;Leon Cayla;1933;1964;1999;SC;Old General;High;M538001;X
+690003;Foreign Minister;Pierre Jean Herbinger;1933;1964;1999;SC;Apologetic Clerk;High;M538003;X
+690004;Minister of Armament;Francois de Menthon;1933;1964;1999;SC;Resource Industrialist;Medium;M538004;X
+690005;Minister of Security;Henri Manigart;1933;1964;1999;SC;Crime Fighter;Medium;M538005;X
+690006;Head of Military Intelligence;Armand Annet;1933;1964;1999;SC;Industrial Specialist;Medium;M538006;X
+690007;Chief of Staff;Henri Amiel;1933;1964;1999;SC;School of Manoeuvre;Medium;M538007;X
+690008;Chief of Army;Henri Amiel;1933;1964;1999;SC;Armoured Spearhead Doctrine;Medium;M538007;X
+690009;Chief of Navy;Georges de Barbezière;1933;1964;1999;SC;Base Control Doctrine;Medium;M538009;X
+690010;Chief of Air Force;Max Guedj;1933;1964;1999;SC;Naval Aviation Doctrine;Medium;M538010;X
+690011;Head of State;Armand Annet;1939;1964;1999;SL;Barking Buffoon;High;M538006;X
+690012;Head of State;Paul Le Gentilhomme;1940;1964;1999;SC;Pig-headed Isolationist;High;L24108;X
+690013;Head of State;Pierre de Saint-Mart;1943;1964;1999;SL;Die-hard Reformer;High;M535007;X
+690014;Head of State;Marcel de Coppet;1946;1964;1999;SL;Popular Figurehead;High;M538014;X
+690015;Head of State;Philibert Tsiranana;1933;1964;1999;PA;Insignificant Layman;High;M538015;X
+690016;Head of Government;Armand Annet;1939;1964;1999;SL;Political Protege;High;M538006;X
+690017;Head of Government;Paul Le Gentilhomme;1940;1964;1999;SC;Flamboyant Tough Guy;High;L24108;X
+690018;Head of Government;Pierre de Saint-Mart;1943;1964;1999;SL;Smiling Oilman;High;M535007;X
+690019;Head of Government;Marcel de Coppet;1946;1964;1999;SL;Backroom Backstabber;High;M538014;X
+690020;Head of Government;Philibert Tsiranana;1933;1964;1999;PA;Naive Optimist;High;M538015;X
+690021;Foreign Minister;René Lemoine;1942;1964;1999;SL;Great Compromiser;High;M538021;X
+690022;Foreign Minister;Jean Jores Razafindrakoto;1933;1964;1999;PA;Biased Intellectual;High;M538022;X
+690023;Minister of Armament;Paul Vibert;1941;1964;1999;SL;Submarine Proponent;Medium;M538023;X
+690024;Minister of Armament;Ramilison Randriamampianina;1933;1964;1999;PA;Tank Proponent;Medium;M538024;X
+690025;Minister of Armament;Liva Raharison;1943;1964;1999;PA;laissez-faire capitalist;Medium;M538025;X
+690026;Minister of Security;Jeaqn Pierre Gabriel;1943;1964;1999;SL;Efficient Sociopath;Medium;M538026;X
+690027;Minister of Security;Eugene Rakotondramary;1933;1964;1999;PA;Silent Lawyer;Medium;M538027;X
+690028;Head of Military Intelligence;Marcel de Coppet;1943;1964;1999;SL;Logistics Specialist;Medium;M538014;X
+690029;Head of Military Intelligence;Ullmont L. James;1933;1964;1999;PA;Dismal Enigma;Medium;M538029;X
+690030;Chief of Staff;Paul Le Gentilhomme;1940;1964;1999;SC;School of Mass Combat;Medium;L24108;X
+690031;Chief of Staff;Joseph Rakotondrandria;1933;1964;1999;PA;School of Fire Support;Medium;M538031;X
+690032;Chief of Army;Pierre de Saint-Mart;1942;1964;1999;SL;Decisive Battle Doctrine;Medium;M535007;X
+690033;Chief of Army;Rafeno Fanjava;1933;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M538033;X
+690034;Chief of Navy;Jean-Marie Querville;1942;1964;1999;SL;Open Seas Doctrine;Medium;M538034;X
+690035;Chief of Navy;Olivier Randrianantenaina;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M538035;X
+690036;Chief of Air Force;Max Andlauer;1944;1964;1999;SL;Carpet Bombing Doctrine;Medium;M538036;X
+690037;Chief of Air Force;Solomon Rabemanoela;1933;1964;1999;PA;Vertical Envelopment Doctrine;Medium;M538037;X

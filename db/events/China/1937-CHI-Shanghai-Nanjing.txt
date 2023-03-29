@@ -1,0 +1,326 @@
+#-Shanghai Incident--------------------------
+# 1330110078 CHI Shanghai Incident
+# 1330110079 JAP Shanghai Incident
+# 1330110080 CHI AI EVENT to add historical troops
+# 1330110081 JAP Bloody Saturday
+# 1330110082 CHI CSX CHC CYN CGX JAP Nationalist Army Shatters
+# 1330110083 CHI Battle of Nanjing
+# 1330110084 CHI Army Recovers
+#####################
+# Shanghai Incident #
+#####################
+
+event = {
+	id = 1330110078
+	random = no
+	country = CHI
+	
+	# Triggered by 2011022 JAP Marco Polo Bridge Incident 
+
+	name = EVT_1330110078_NAME
+	desc = EVT_1330110078_DESC
+	
+	picture = "ccip_shanghai"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = trigger which = 1330110079 } # JAP Shanghai Incident
+	}
+}
+
+event = {
+	id = 1330110079
+	random = no
+	country = JAP
+	
+	# Triggered by 1330110078 CHI Shanghai Incident
+	
+	name = EVT_1330110078_NAME
+	desc = EVT_1330110079_DESC
+	
+	picture = "ccip_shanghai"
+	style = 2
+	
+	action = {
+		trigger = {
+			ai = yes
+			or = {
+				ai = CHI
+				NOT = { difficulty = 2 }
+				# against human CHI only at Very / Strong Axis difficulty, or always vs AI
+			}
+		}
+		ai_chance = 100
+		name = ACTION_NAME_FIGHT
+		command = { type = add_corps which = "IJN Shanghai Marine Brigade" value = land where = 1338 }
+		command = { type = add_division which = "1st Special Naval Landing Force" value = marine when = 2 }
+		command = { type = add_division which = "1st Infantry Reserve Regiment" value = infantry when = 6 }
+		command = { type = add_corps which = "IJA Shanghai Expeditionary Force" value = land where = 1338 }
+		command = { type = add_division which = "3rd SEF Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "11th SEF Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "101st SEF Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "9th SEF Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "13th SEF Division" value = infantry when = 7 where = artillery }
+		command = { type = supplies where = 1338 value = 300 }
+		command = { type = event which = 1330110081 where = JAP when = 1 } # JAP Bloody Saturday
+	}
+
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_FIGHT
+		command = { type = event which = 1330110081 where = JAP when = 1 } # JAP Bloody Saturday
+		command = { trigger = { ai = CHI difficulty = 4 not = { ai = JAP } } type = trigger which = 1330110080 } #CHI AI EVENT to add historical troops with Very Strong Allies difficulty
+	}
+}
+
+# See http://en.wikipedia.org/wiki/Order_of_battle_of_the_Battle_of_Shanghai
+event = {
+	id = 1330110080
+	random = no
+	country = CHI
+	
+	# Triggered by 1330110079 JAP Shanghai Incident
+	
+	name = AI_EVENT
+	
+	action = {
+		trigger = {
+			ai = yes
+			difficulty = 4 #very strong allies difficulty
+			not = { ai = JAP }
+		}
+		name = AI_EVENT
+		command = { type = add_corps which = "1st Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "36th Division" value = garrison when = 4 }
+		command = { type = add_corps which = "2nd Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "87th Division" value = garrison when = 4 }
+		command = { type = add_corps which = "3rd Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "88th Division" value = garrison when = 4 }
+		command = { type = add_corps which = "4th Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "55th Division" value = garrison when = 4 }	
+		command = { type = add_corps which = "5th Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "56th Division" value = garrison when = 4 }
+		command = { type = add_corps which = "6th Nanjing Military Garrison" value = land where = 1338 }
+		command = { type = add_division which = "57th Division" value = garrison when = 4 }
+		command = { type = add_division which = "20th Division" value = garrison when = 4 }
+		command = { type = add_corps which = "9th Army Group" value = land where = 1338 }
+		command = { type = add_division which = "2nd Division" value = infantry when = 8 }
+		command = { type = add_division which = "4th Division" value = infantry when = 8 }
+		command = { type = add_division which = "10th Division" value = infantry when = 8 }
+		command = { type = add_division which = "25th Division" value = infantry when = 8 }
+		command = { type = add_division which = "27th Division" value = infantry when = 8 }
+		command = { type = add_division which = "57th Division" value = infantry when = 8 }
+		command = { type = add_division which = "80th Division" value = infantry when = 8 }
+		command = { type = add_division which = "83th Division" value = infantry when = 8 }
+		command = { type = add_division which = "89th Division" value = infantry when = 8 }
+		command = { type = add_corps which = "8th Army Group" value = land where = 1338 }
+		command = { type = add_division which = "61st Division" value = infantry when = 7 }
+		command = { type = add_division which = "62nd Division" value = infantry when = 7 }
+		command = { type = add_division which = "45th Division" value = infantry when = 7 where = artillery }
+		command = { type = add_corps which = "10th Army Group" value = land where = 1338 }
+		command = { type = add_division which = "16th Division" value = infantry when = 6 }
+		command = { type = add_division which = "63nd Division" value = infantry when = 6 }
+		command = { type = add_division which = "19th Division" value = infantry when = 6 }
+		command = { type = add_division which = "52nd Division" value = infantry when = 6 }
+		command = { type = add_division which = "Xin 31st Division" value = infantry when = 6 }
+		command = { type = add_division which = "37/11/12/13th Temp Division" value = infantry when = 6 }
+		command = { type = add_corps which = "54th Corps" value = land where = 1338 }
+		command = { type = add_division which = "11th Division" value = infantry when = 8 }
+		command = { type = add_division which = "14th Division" value = infantry when = 8 }
+		command = { type = add_division which = "67th Division" value = infantry when = 8 where = artillery }
+	}
+
+}
+
+event = {
+	id = 1330110081
+	random = no
+	country = JAP
+	save_date = yes
+	
+	# Triggered by 1330110079 JAP Shanghai Incident
+
+	name = EVT_1330110081_NAME
+	desc = EVT_1330110081_DESC
+	
+	picture = "ccip_shm"
+	style = 2
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = belligerence which = JAP value = 10 }
+		command = { type = relation which = ENG value = -5 }
+		command = { type = relation which = USA value = -5 }
+		command = { type = relation which = FRA value = -5 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = relation which = CHI value = -25 }
+		command = { type = event which = 1330110082 when = 0 where = CHI } #Nationalist Army Shatters
+		command = { type = event which = 1330110082 when = 0 where = CHC } #Nationalist Army Shatters
+		command = { type = event which = 1330110082 when = 0 where = CGX } #Nationalist Army Shatters
+		command = { type = event which = 1330110082 when = 0 where = CYN } #Nationalist Army Shatters
+		command = { type = event which = 1330110082 when = 0 where = JAP } #Nationalist Army Shatters
+		command = { type = event which = 1330110082 when = 0 where = CSX } #Nationalist Army Shatters
+	}
+
+}
+
+event = {
+	id = 1330110082
+	random = no
+	tag = { CHI CSX CHC CYN CGX JAP }
+	persistent = yes
+
+	# Triggered by 1330110081 JAP Bloody Saturday
+
+	name = EVT_1330110082_NAME #Nationalist Army Shatters
+	desc = EVT_1330110082_DESC
+
+	picture = "ccip_cw"
+	style = 2
+
+	action = {
+		trigger = {
+			country = CHI
+		}
+		name = ACTION_NAME_DAMN
+		command = { trigger = { AND = { ai = no NOT = { dissent = 20 } } } type = dissent value = 10 }
+		command = { type = max_organization which = land value = -3 }
+		command = { type = morale which = land value = -10 }
+		command = { type = local_setflag which = 1330110082 }
+		command = { trigger = {
+						NOT = {
+							event = 2012001 #CHI The Nanjing Massacre
+						}
+					} type = trigger which = 1330110083 } #CHI Battle of Nanjing
+	}
+
+	action = {
+		trigger = {
+			not = {
+				country = CHI
+				country = JAP
+			}
+		}
+		name = ACTION_NAME_DAMN
+		command = { }
+	}
+
+	action = {
+		trigger = {
+			country = JAP
+		}
+		name = ACTION_NAME_EXCELLENT
+		command = { type = dissent value = -1 }
+	}
+}
+
+#####################
+# Battle of Nanjing #
+#####################
+event = {
+	id = 1330110083
+	random = no
+	country = CHI
+
+	#Triggered by 1330110082 CHI Nationalist Army Shatters
+
+	name = EVT_1330110083_NAME #Battle of Nanjing
+	desc = EVT_1330110083_DESC
+
+	picture = "ccip_nanjing_map"
+	style = 2
+
+	action = {
+		ai_chance = 99
+		name = EVT_1330110083_ACTION1 #Defend Nanjing at all costs!
+		command = { type = dissent value = -5 }
+		command = { type = morale which = land value = -5 }
+        command = { type = max_organization which = land value = -5 }
+		command = { type = local_setflag which = 1330110083 }
+	}
+
+	action = {
+		ai_chance = 1
+		name = EVT_1330110083_ACTION2 #Make an organized retreat
+		command = { trigger = { ai = no } type = dissent value = 15 }
+		command = { type = sleepevent which = 2012001 } # Nanjing Massacre, happened due to exhaustion by Japanese troops and stronger than expected defense.
+		command = { type = sleepevent which = 2011007 }
+        command = { type = relation which = ENG value = -15 }
+		command = { type = relation which = USA value = -15 }
+		command = { type = relation which = FRA value = -15 }
+		command = { type = relation which = SOV value = -15 }
+		command = { type = relation which = CHC value = -50 }
+		command = { type = relation which = CYN value = -50 }
+		command = { type = relation which = CXB value = -50 }
+		command = { type = relation which = CGX value = -50 }
+		command = { type = relation which = CSX value = -50 }
+		command = { type = capital which = 1299 }
+		command = { type = secedeprovince which = JAP value = 1337 when = 1 }
+		command = { type = event which = 1330110084 where = CHI when = 14 } #Army Recovers
+	}
+}
+
+#################
+# Army Recovers #
+#################
+event = {
+	id = 1330110084
+	random = no
+	country = CHI
+
+	trigger = {
+		or = {
+			random = 2
+			and = {
+				random = 3
+				event = 2012001 # Nanjing Massacre
+			}
+			and = {
+				random = 2
+				not = { lost_national = { value = 40 } }
+			}
+			and = {
+				random = 3
+				event = { id = 1330110081 days = 180 } #JAP Bloody Saturday
+			}
+			and = {
+				ai = yes
+				not = { ai = JAP }
+				random = 15
+			}
+			and = {
+				ai = yes
+				lost_national = { value = 40 }
+				random = 10
+			}
+			and = {
+				ai = yes
+				lost_national = { value = 20 }
+				not = { ai = JAP }
+				random = 30
+			}
+			event = { id = 1330110081 days = 360 } #JAP Bloody Saturday
+		}
+		event = { id = 1330110081 days = 30 }  #JAP Bloody Saturday
+	}
+	
+	picture = "ccip_gmd"
+	style = 2
+
+	name = EVT_1330110084_NAME #Army Recovers
+	desc = EVT_1330110084_DESC
+
+	date = { day = 2 month = january year = 1933 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -3 }
+		command = { trigger = { local_flag = 1330110082 } type = morale which = land value = 10 }
+		command = { trigger = { local_flag = 1330110083 } type = morale which = land value = 10 }
+		command = { trigger = { local_flag = 1330110082 } type = max_organization which = land value = 3 }
+		command = { trigger = { local_flag = 1330110083 } type = max_organization which = land value = 5 }
+	}
+}

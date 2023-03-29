@@ -1,0 +1,56 @@
+PAL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+510001;Head of State;Sir Harold MacMichael;1933;1964;1999;ML;Autocratic Charmer;High;M550005;X
+510002;Head of Government;Sir John R. Chancellor;1933;1964;1999;ML;Flamboyant Tough Guy;High;M557002;X
+510003;Foreign Minister;Nazif al-Khalidi;1933;1964;1999;ML;Ideological Crusader;High;M557003;X
+510004;Minister of Armament;George Humsi;1933;1964;1999;ML;Military Entrepreneur;Medium;M557004;X
+510005;Minister of Security;Musa Qassem al-Husseini;1933;1964;1999;ML;Prince of Terror;Medium;M557005;X
+510006;Head of Military Intelligence;Frederic G.Peake;1933;1964;1999;ML;Political Specialist;Medium;M91008;X
+510007;Chief of Staff;Sir Herbert Samuel;1933;1964;1999;ML;School of Mass Combat;Medium;M557007;X
+510008;Chief of Army;G.H.C. Spinls;1933;1964;1999;ML;Elastic Defence Doctrine;Medium;L320014;X
+510009;Chief of Navy;F.B. Tours;1933;1964;1999;ML;Indirect Approach Doctrine;Medium;L1396;X
+510010;Chief of Air Force;J.T. Fullhard;1933;1964;1999;ML;Vertical Envelopment Doctrine;Medium;L1441;X
+510011;Head of State;Haj Amin al Husseini;1933;1964;1999;NS;Pig-headed Isolationist;High;M557011;X
+510012;Head of State;Sir Herbert Samuel;1933;1964;1999;PA;Stern Imperialist;High;M557007;X
+510013;Head of State;Faid al-Alami;1933;1964;1999;SD;Benevolent Gentleman;High;M557013;X
+510014;Head of State;Ruhi al-Khalidi;1933;1964;1999;LWR;Barking Buffoon;High;M557014;X
+510015;Head of Government;Yussef Pasha al-Khalidi;1933;1964;1999;NS;Political Protege;High;M557015;X
+510016;Head of Government;Sir Herbert Plumer;1933;1964;1999;PA;Old General;High;M557016;X
+510017;Head of Government;Ahmad Shukairy;1933;1964;1999;SD;Happy Amateur;High;M557017;X
+510018;Head of Government;Haj Mustafa Abboushi;1933;1964;1999;LWR;Ambitious Union Boss;High;M557018;X
+510019;Foreign Minister;Ragheed Nashasbibi;1933;1964;1999;NS;Iron Fisted Brute;High;M557019;X
+510020;Foreign Minister;Sir Greenfell Wauchope;1933;1964;1999;PA;General Staffer;High;M557020;X
+510021;Foreign Minister;Harry C. Luke;1933;1964;1999;SD;Great Compromiser;High;M557021;X
+510022;Foreign Minister;Hafiz Pasha Abdul Hadi;1933;1964;1999;LWR;Apologetic Clerk;High;M557022;X
+510023;Minister of Armament;Alfred Roch;1933;1964;1999;NS;Air to Ground Proponent;Medium;M557023;X
+510024;Minister of Armament;Abdullah Jaffer Dalal;1933;1964;1999;PA;Air Superiority Proponent;Medium;M557024;X
+510025;Minister of Armament;Ruhi Abdul Hadi;1933;1964;1999;SD;laissez-faire capitalist;Medium;M557025;X
+510026;Minister of Armament;Sharif Nasir al-Qagli;1933;1964;1999;LWR;Infantry Proponent;Medium;M557026;X
+510027;Minister of Security;Awni Abdul Hadi;1933;1964;1999;NS;Crooked Kleptocrat;Medium;M557027;X
+510028;Minister of Security;George Antinous;1933;1964;1999;PA;Compassionate Gentleman;Medium;M557028;X
+510029;Minister of Security;Nicolas Abdo;1933;1964;1999;SD;Silent Lawyer;Medium;M557029;X
+510030;Minister of Security;Dekel Shukri;1933;1964;1999;LWR;Back Stabber;Medium;M557030;X
+510031;Head of Military Intelligence;Dr. Abu So'oud;1933;1964;1999;NS;Technical Specialist;Medium;M557031;X
+510032;Head of Military Intelligence;Massoud al-Jinnah;1933;1964;1999;PA;Industrial Specialist;Medium;M557032;X
+510033;Head of Military Intelligence;Faruk Haydar;1933;1964;1999;SD;Logistics Specialist;Medium;M557033;X
+510034;Head of Military Intelligence;Majid Abd-el-Haqq;1933;1964;1999;LWR;Dismal Enigma;Medium;M557034;X
+510035;Chief of Staff;Ali Djemal Pasha;1933;1964;1999;NS;School of Fire Support;Medium;M557035;X
+510036;Chief of Staff;Sir Herbert Plumer;1933;1964;1999;PA;School of Defence;Medium;M557016;X
+510037;Chief of Staff;Alan G. Cunningham;1941;1964;1999;ML;School of Manoeuvre;Medium;M557037;X
+510038;Chief of Staff;Faruk Haydar;1933;1964;1999;SD;School of Psychology;Medium;M557033;X
+510039;Chief of Staff;Jaafra Pasha;1933;1964;1999;LWR;School of Defence;Medium;M557039;X
+510040;Chief of Army;Aly al-Muttalib;1933;1964;1999;NS;Guns and Butter Doctrine;Medium;M557040;X
+510041;Chief of Army;Sir Greenfell Wauchope;1933;1964;1999;PA;Static Defence Doctrine;Medium;M557020;X
+510042;Chief of Army;Lord John Gort;1942;1964;1999;ML;Armoured Spearhead Doctrine;Medium;L1138;X
+510043;Chief of Army;Liwa al-Mawawiyi;1933;1964;1999;SD;Elastic Defence Doctrine;Medium;M557043;X
+510044;Chief of Army;Sharif Nasir al-Qagli;1933;1964;1999;LWR;Guns and Butter Doctrine;Medium;M557026;X
+510045;Chief of Navy;Ali Djemal Pasha;1933;1964;1999;NS;Base Control Doctrine;Medium;M557035;X
+510046;Chief of Navy;Rodney Tatton-Sykes;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;L300023;X
+510047;Chief of Navy;Alfred Howard;1933;1964;1999;SD;Open Seas Doctrine;Medium;M557047;X
+510048;Chief of Navy;Ahmad Wasi Pasha;1933;1964;1999;LWR;Power Projection Doctrine;Medium;M557048;X
+510049;Chief of Air Force;Mohammed Azmy Pasha;1933;1964;1999;NS;Army Aviation Doctrine;Medium;M512096;X
+510050;Chief of Air Force;Abdullah Jaffer Dalal;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M557024;X
+510051;Chief of Air Force;James Rogers;1933;1964;1999;SD;Carpet Bombing Doctrine;Medium;M557051;X
+510052;Chief of Air Force;Muhammed al-Taif;1933;1964;1999;LWR;Naval Aviation Doctrine;Medium;M557052;X
+510053;Chief of Staff;Hasan Salama;1947;1964;1999;ML;School of Defence;High;6095;x
+510054;Chief of Staff;Yasser Arafat;1961;1964;1999;LWR;School of Mass Combat;High;6096;x 

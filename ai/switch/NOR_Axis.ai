@@ -1,0 +1,40 @@
+####Norway attacked by Allies!
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	war_zone_odds 		= 1.75
+	key_point_prio_mult	= 1
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 30	# Our capital
+
+	# Borders with specific countries
+	country_priorities = {
+		FIN = -1
+		SWE = -1
+		SOV = 20
+		ENG = 50
+		USA = 40
+		GER = -1
+		ITA = -1
+	}
+	province_priorities = {
+		495 = 40 #Narvik
+		}
+	area_multiplier = { 
+		495 = 1.2 #Narvik
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+	
+	province_priorities = {
+		495 = 1.2 #Narvik
+		}
+   	enemy_handicap = { ENG = 50 } 
+	passivity = { ENG = 40 } # %
+} 

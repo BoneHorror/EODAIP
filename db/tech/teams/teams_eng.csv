@@ -1,0 +1,62 @@
+ENG;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+10001;Alan Turing;T300;9;1935;1953;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10002;Anglo-Persian Oil Company;T301;9;1908;2000;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10003;Avro;T302;7;1910;2000;bomber_design;aeronautics;avionics;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10004;Cammell Laird & Co.;T303;7;1828;2000;naval_engineering;submarine_design;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10005;De Havilland;T304;7;1920;2000;bomber_design;aeronautics;avionics;munitions;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10006;Enfield Arsenal;T305;7;1816;2000;mechanics;artillery;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10007;English Electric Company;T306;7;1918;2000;electronics;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10008;Harland & Wolff;T307;8;1861;2000;naval_engineering;naval_artillery;carrier_design;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10009;Hawker Aircraft;T308;7;1920;2000;fighter_design;aeronautics;mechanics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10010;James Chadwick;T309;7;1932;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10011;John Brown & Co.;T310;6;1851;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10012;Leyland Motors;T311;8;1896;2000;mechanics;technical_efficiency;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10013;Robert Watson-Watt;T312;7;1933;2000;electronics;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10014;Royal Small Arms Factory;T313;6;1816;2000;mechanics;general_equipment;training;artillery;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10015;Supermarine;T314;6;1913;1930;fighter_design;aeronautics;general_equipment;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10016;Vauxhall Motors;T315;7;1907;2000;mechanics;vehicle_engineering;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10017;Vickers-Armstrong;T316;8;1927;2000;mechanics;vehicle_engineering;technical_efficiency;artillery;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10018;Alan Brooke;T317;6;1930;1963;centralized_execution;large_unit_tactics;combined_arms_focus;management;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10019;Andrew Cunningham;T318;8;1932;1963;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10020;Arthur Harris;T319;8;1941;2000;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10021;Basil Liddell-Hart;T320;8;1937;1940;decentralized_execution;small_unit_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10022;Charles Portal;T321;6;1935;2000;bomber_tactics;bomber_design;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10023;Dudley Clarke;100830;7;1940;2000;decentralized_execution;small_unit_tactics;airborne_training;Marine_Training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10024;Dudley Pound;T323;6;1922;1943;large_taskforce_tactics;seamanship;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10025;Hugh Dowding;T324;8;1933;1942;fighter_tactics;training;piloting;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10026;Max Horton;T325;6;1937;1951;small_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10027;Percy Hobart;T326;6;1937;1957;combined_arms_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10028;Percy Noble;T327;5;1931;1955;small_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10029;Trafford Leigh-Mallory;T328;6;1938;2000;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10030;Gloster: Frank Whittle;T329;7;1937;2000;fighter_design;aeronautics;rocketry;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10031;George Paget Thomson;T330;5;1930;2000;nuclear_physics;nuclear_engineering;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10032;Earl Mountbatten;T331;5;1955;1965;small_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10033;Supermarine;T314;8;1931;2000;fighter_design;aeronautics;general_equipment;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10034;Sopwith Aviation Co.;100093;8;1912;1920;aeronautics;mechanics;electronics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10035;Short Brothers;100094;5;1908;2000;aeronautics;mechanics;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10036;Handley Page Ltd.;100095;7;1909;2000;aeronautics;mechanics;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10037;Major General C. H. Foulkes;100652;4;1914;2000;chemistry;training;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10038;WM Beardmore & Co.;100096;7;1890;2000;naval_engineering;aeronautics;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10039;Room 40;100653;9;1914;2000;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10040;Alexander Fleming;100097;8;1920;2000;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10041;Fosters of Lincoln;100098;8;1915;2000;mechanics;artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10042;Marconi;100376;8;1897;2000;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10043;British Westinghouse;100377;8;1899;1919;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10044;Rolls-Royce;100378;7;1906;2000;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10045;John French;100099;5;1912;1920;centralized_execution;large_unit_tactics;large_unit_focus;infantry_focus;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10046;William Nicholson;100379;5;1908;1912;centralized_execution;large_unit_tactics;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10047;Neville Lyttleton;100380;3;1904;1908;centralized_execution;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10048;Roberts;100381;5;1900;1904;centralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10049;Wolseley;100382;5;1895;1900;infantry_focus;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10050;Henry Rawlinson;100100;7;1916;1925;decentralized_execution;small_unit_tactics;combined_arms_focus;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10057;Douglas Haig;100786;7;1915;1920;infantry_focus;large_unit_focus;static_defense_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10051;Edward Mannock;100101;7;1915;1918;decentralized_execution;fighter_tactics;piloting;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10052;Lanoe Hawker;100102;5;1914;1917;fighter_tactics;piloting;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10053;Philip Fullard;100103;4;1917;1930;fighter_tactics;piloting;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10054;John Fisher;100104;8;1890;1920;centralized_execution;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10055;David Beatty;100105;6;1913;1960;centralized_execution;large_taskforce_tactics;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10056;Royal Marines;100784;7;1755;1999;small_unit_tactics;marine_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+100057;Westland Aircraft;T100057;8;1950;1961;rt_user_1;aircraft_testing;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+100058;Westland Helicopters;T100058;8;1961;1999;rt_user_1;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+100059;Bristol Helicopter Division;T100059;7;1944;1999;rt_user_1;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+100060;Secret Intelligence Service;T100060;8;1909;2000;rt_user_2;training;individual_courage;small_unit_tactics;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;x

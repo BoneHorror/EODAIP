@@ -1,0 +1,53 @@
+# Soviet Finland AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	province_priorities = {
+
+     		553  = 150  #Leningrad 
+		617  = 50  #Kiev
+		627  = 50  #Dnepropetrovsk
+		663  = 50  #Stalingrad
+		636  = 50  #Kharkov
+		587  = 50  #Bryansk
+		1191  = 50  #Vladivostock
+		535  = 50  #Murmansk
+     		531 = 20 # Viipuri 
+     		525 = 50 # Helsinki 
+
+		# In depth defense
+
+		270 = 30 # Tallinn
+		604 = 30 # Kursk
+		590 = 30 # Vitebsk
+		552 = 30 # Gdov
+		584 = 30 # Tula
+		644 = 30 # Rostov
+		599 = 30 # Minsk
+		628 = 30 # Kirovograd
+		597 = 30 # Luban
+		566 = 30 # Pskov
+		611 = 30 # Zitomir
+		
+		# German Soviet Border
+	
+		264  = 10  #riga
+		267  = 10
+		258  = 10
+		255  = 10
+		251  = 10
+		248  = 10
+		595  = 10
+		616  = 10
+		612  = 10
+		619  = 10
+		620  = 10
+		626  = 10
+	}
+	area_multiplier = {
+		535  = 1.2  #Murmansk
+     		553  = 3.0  #Leningrad 
+	}
+}

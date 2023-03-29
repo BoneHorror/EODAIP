@@ -1,0 +1,160 @@
+###################################
+# # German War Research AI 
+###################################
+technology = { 
+	endgoal 	= { } 
+		preference 	= {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+		
+		# Engineers
+		1830 1840 1850 1860 1870
+
+		# Motorized Infantry
+		1396 1400 1410 1420 1430 1440 1450 1460 
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+
+		# Light tanks
+		2630 2640 2646 2650 2030 2040 2050
+		
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+		
+		# Field Artillery Support
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+		
+		# Submarines
+		3610 3620 3630 3640 3650 3660 3670 3680 3690 3700 3710
+		
+		# Interceptors
+		4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 15020 4560 4570 4580
+
+		# Close Air Support
+		4170 4280 4450 4180 15120 15130
+
+		# Tactical bombers 
+		4150 4160
+		
+		# Manufacturing
+		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+		
+		# Applied Assembly lines 5180
+		5140 5150 5160 5170 5180
+		
+		# Computers
+		5320 5330 5340
+
+		# Cryptography
+		5316 5326 5327 5350 5360 5370 5380 5390 5400 53060 53116
+		
+		# Radar
+		5410 5416
+
+		# MEDICINE
+		5640 5650 5660 5670	
+		
+		# Electronic Computers
+		7140 7150 7160 16000 16040
+		
+		# Mobility Focus - Modern Blitzkrieg (Blitzkrieg Path - GER)
+		6210 6220 6230 6250 6260 6240 6270 6280 6290 14100
+		
+		# Hunter Groups - Unified Axis Doctrine
+		6720 6730 6740 6750 6810 6820 6760 6830
+		
+		# Raider Patrols
+		8550 8560 8570
+
+		# Trade Interdiction Submarine
+		8600 8610 8620 8630 8640 8650 8660 8700 8710 8720 8730 8740 8750
+
+		# Offensive Fighter Box - Fighter Ace Initiative
+		9310 9320 9330 9340
+		# Defensive Fighter Box - Air Reserve
+		9390 9400 9410 9420
+		# Operational Destruction - Key Point Bombardment
+		9090 9100 9110 9120 9130 9350 9360 9370 9380
+		# Battlefield Destruction - Bomber Ace Initiative
+		9040 9050 9060 9070 9080 9270 9280 9290 9300
+	} 
+	ignore 		= {
+		# Mountain
+		1270 1280
+
+		# Marines
+		1560 1570
+
+		# Airborne Infantry
+		1690 1700
+		
+		# Self-Propelled Anti-Air
+		22910 22920
+		
+		# Armoured Cars
+		2160 2890 11110
+		
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+		
+		# Strategic bombers
+		4800 4810 4820 4220 4230 4240 4246 15160 15170 16030
+
+		# Aircraft Carriers/Air groups
+		4900 4910 4920 4930
+		
+		# Light Cruiser
+		12010 3170
+
+		# Heavy Cruiser
+		12020 3270
+
+		# Battleship
+		3480 12040 3490
+
+		# Carrier
+		3520 3530
+		
+		# Transport
+		3820 3830 3840 3850
+		
+		# ASW_EQUIPMENT
+		3910 3920
+
+		# Light Carrier
+		12120 12130
+
+		# Nuclear
+		5490 5500 5510
+		
+		#EQUIPMENT Jungle
+		5940 5950
+
+		# Subsidiary Carrier Role
+		81650
+
+		# Amphibious Warfare
+		#82300 82310 
+
+		# Logistic Support
+		82500 82510 
+		
+		# Anti-Submarine Patrols
+		8200 8210 8220 8230 8240 8250 8260 8300 8310 8320 8330 8340 8350 
+
+		# Strategic Destruction - Flying Armada
+		#9140 
+		9150 9160 9170 9180 9430 9440 9450 9460
+	}
+ 
+	armor 		= 6
+	infantry 	= 4
+	industry 	= 2
+	aircraft 	= 4
+	naval 		= 1
+	land_doctrines 	= 5
+	secret_weapons 	= 1
+	air_doctrines 	= 2
+	naval_doctrines = 1
+} 

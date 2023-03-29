@@ -1,0 +1,60 @@
+UZB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+550001;Head of State;Usman Yusupov;1933;1964;1999;LE;Barking Buffoon;High;M526001;X
+550002;Head of Government;Akmal Ikramov;1933;1964;1999;LE;Naive Optimist;High;M526002;X
+550003;Foreign Minister;Fayzulla Khodzhayev;1933;1964;1999;LE;Iron Fisted Brute;High;M526003;X
+550004;Minister of Armament;Abduvali Muminov;1933;1964;1999;LE;Tank Proponent;Medium;M526004;X
+550005;Minister of Security;Abdudzhabar Abdurrakhmanov;1933;1964;1999;LE;Back Stabber;Medium;M526005;X
+550006;Head of Military Intelligence;Gila I. Dzhunkovskaya;1933;1964;1999;LE;Logistics Specialist;Medium;M526006;X
+550007;Chief of Staff;Teginbek Shokirov;1933;1964;1999;LE;School of Fire Support;Medium;M526007;X
+550008;Chief of Army;Abdumannob Streshnev;1933;1964;1999;LE;Armoured Spearhead Doctrine;Medium;M526008;X
+550009;Chief of Navy;Vlateslav Doronin;1933;1964;1999;LE;Base Control Doctrine;Medium;M526009;X
+550010;Chief of Air Force;Istvan M. Dzuba;1933;1964;1999;LE;Carpet Bombing Doctrine;Medium;M526010;X
+550011;Head of State;Yoldashbay oglu Babayev;1933;1964;1999;SD;Insignificant Layman;High;M526011;X
+550012;Head of State;Polvoniz Yusopov;1933;1964;1999;PA;Weary Stiffneck;High;M526012;X
+550013;Head of Government;Farqat Nurutdinov;1933;1964;1999;SD;Corporate Suit;High;M526013;X
+550014;Head of Government;Abdurahim Martemyanov;1933;1964;1999;PA;Silent Workhorse;High;M526014;X
+550015;Foreign Minister;Alisher Ogorodov;1933;1964;1999;LE;The Cloak N Dagger Schemer;High;M526015;X
+550016;Foreign Minister;Ashkar Mukhitdinov;1933;1964;1999;SD;Ideological Crusader;High;M526016;X
+550017;Foreign Minister;Alishaer Jemil;1933;1964;1999;SD;The Cloak N Dagger Schemer;High;M526017;X
+550018;Foreign Minister;Nikolay Chichagov;1933;1964;1999;PA;Apologetic Clerk;High;M526018;X
+550019;Foreign Minister;Alisher Ivanov;1933;1964;1999;PA;Great Compromiser;High;M526019;X
+550020;Minister of Armament;Bil Filipov;1933;1964;1999;LE;laissez-faire capitalist;Medium;M526020;X
+550021;Minister of Armament;Gennadij Davidov;1933;1964;1999;LE;Air to Ground Proponent;Medium;M526021;X
+550022;Minister of Armament;Fakriddin Dzhevetsky;1933;1964;1999;SD;Military Entrepreneur;Medium;M526022;X
+550023;Minister of Armament;Hamid Dorodnitsyn;1933;1964;1999;SD;Strategic Air Proponent;Medium;M526023;X
+550024;Minister of Armament;Babur Ipatiev;1933;1964;1999;PA;Air Superiority Proponent;Medium;M526024;X
+550025;Minister of Armament;Bahauddin Gorchakov;1933;1964;1999;PA;Military Entrepreneur;Medium;M526025;X
+550026;Minister of Security;Innokenti Gerasimov;1933;1964;1999;LE;Crime Fighter;Medium;M526026;X
+550027;Minister of Security;Nizam Dondukov;1933;1964;1999;LE;Compassionate Gentleman;Medium;M526027;X
+550028;Minister of Security;Yamin Dmitriev;1933;1964;1999;SD;Efficient Sociopath;Medium;M526028;X
+550029;Minister of Security;Boris Dmitrievsky;1933;1964;1999;SD;Compassionate Gentleman;Medium;M526029;X
+550030;Minister of Security;Mammaduli Dinnei;1933;1964;1999;PA;Silent Lawyer;Medium;M526030;X
+550031;Minister of Security;Salim Yevgetorv;1933;1964;1999;PA;Man of the People;Medium;M526031;X
+550032;Head of Military Intelligence;Mikhail Dubkov;1933;1964;1999;LE;Technical Specialist;Medium;M526032;X
+550033;Head of Military Intelligence;Ibi Dobatkin;1933;1964;1999;SD;Dismal Enigma;Medium;M526033;X
+550034;Head of Military Intelligence;Avram Golitsin;1933;1964;1999;SD;Logistics Specialist;Medium;M526034;X
+550035;Head of Military Intelligence;Hamza Dobrynin;1933;1964;1999;PA;Logistics Specialist;Medium;M526035;X
+550036;Head of Military Intelligence;Felix Dorozhinsky;1933;1964;1999;PA;Dismal Enigma;Medium;M526036;X
+550037;Chief of Staff;Furkat Drachenk;1933;1964;1999;SD;School of Mass Combat;Medium;M526037;X
+550038;Chief of Staff;Babur Ipatiev;1933;1964;1999;PA;School of Manoeuvre;Medium;M526038;X
+550039;Chief of Army;Nikolay Ghukov;1933;1964;1999;SD;Static Defence Doctrine;Medium;M526039;X
+550040;Chief of Army;Nazhe Dudin;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M526040;X
+550041;Chief of Navy;Osman Dema;1933;1964;1999;SD;Indirect Approach Doctrine;Medium;M526041;X
+550042;Chief of Navy;Salim Ibadinov;1933;1964;1999;PA;Open Seas Doctrine;Medium;M526042;X
+550043;Chief of Air Force;Gennadij Gvornikov;1933;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M526043;X
+550044;Chief of Air Force;Babur Ipatiev;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M526038;X
+550045;Chief of Army;Ismail Enver;1900;1933;1999;PA;Decisive Battle Doctrine;High;2900;X
+550046;Chief of Army;Junaid-Khan;1914;1933;1999;PA;Static Defence Doctrine;High;unknownminister;X
+550047;Chief of Army;Ibrahim-Bek;1920;1933;1999;PA;Guns and Butter Doctrine;High;7986;X
+550048;Chief of Staff;Ismail Enver;1900;1933;1999;PA;School of Mass Combat;High;2900;X
+550049;Chief of Staff;Junaid-Khan;1914;1933;1999;PA;School of Defence;High;unknownminister;X
+550050;Chief of Staff;Ibrahim-Bek;1920;1933;1999;PA;School of Manoeuvre;High;7986;X
+550051;Head of Government;Ismail Enver;1900;1933;1999;PA;Old General;Medium;2900;X
+550052;Head of Government;Ibrahim-Bek;1914;1933;1999;PA;Political Protege;High;7986;X
+550053;Head of Government;Ahmedzhan Abdusaidov;1914;1933;1999;ST;Corporate Suit;High;unknownminister;X
+550054;Head of State;Muhammad Alim Khan;1914;1933;1999;PA;Stern Imperialist;Very High;3679;X
+550055;Head of State;Fayzulla Khodzhayev;1914;1933;1999;ST;Insignificant Layman;Very High;3680;X
+550056;Minister of Armament;Madamin-Bek;1920;1933;1999;PA;laissez-faire capitalist;High;7987;X
+550057;Minister of Security;Ismail Enver;1900;1933;1999;PA;Prince of Terror;High;2900;X
+550058;Minister of Security;Muhammad Alim Khan;1914;1933;1999;PA;Man of the People;High;3679;X

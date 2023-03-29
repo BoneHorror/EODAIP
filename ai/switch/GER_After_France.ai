@@ -1,0 +1,23 @@
+# German country priorities for garrison after French surrender
+construction = {  
+   land_fort = no 
+   max_land_level = 2 
+   fort_borders = { } 
+   fort_provs  = { } 
+} 
+leader_ratio = {
+	land_field_marshal 	= 0.05 # 0.02
+}
+garrison = {
+	country_priorities = {
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		FRA = -1
+		YUG = 50
+		SOV = 50
+		SPR = 10
+		LIT = 5
+		SPA = -1
+	}
+}

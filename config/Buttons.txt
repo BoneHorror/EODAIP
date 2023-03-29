@@ -1,0 +1,521 @@
+# Buttons rollover help text
+# Note 1 when it says "(%d)" basic 20% chance cost for investment shall be inserted
+# Note 2 "F2" -- "F9" keys have been used.
+# Note 3 alt+F4 has been used for "Exit Europa"
+
+# upper is instant rollover text
+# lower is delayed rollover text
+
+	
+generic = {
+	id = "BUTTON_VIEW_INT"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_INT"
+	upper = "BUTTON_INT_IRO"
+	lower = "BUTTON_INT_DRO"
+}
+	
+press = {
+	id = "BUTTON_VIEW_PROVINCES"
+	bitmap = "empty.bmp"
+	background = "Province_btn.bmp" #.bmp
+	upper = "BVP_IRO"
+	lower = "BVP_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_DECISIONS"
+	bitmap = "empty.bmp"
+	background = "Decision_btn.bmp" #.bmp
+	upper = "BVD_IRO"
+	lower = "BVD_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_ARMY"
+	bitmap = "empty.bmp"
+	background = "Army_btn_A.bmp" #.bmp
+	upper = "BVA_IRO"
+	lower = "BVA_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_NAVY"
+	bitmap = "empty.bmp"
+	background = "Navy_btn_A.bmp" #.bmp
+	upper = "BVN_IRO"
+	lower = "BVN_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_AIR"
+	bitmap = "empty.bmp"
+	background = "Airwing_btn_A.bmp" #.bmp
+	upper = "BVR_IRO"
+	lower = "BVR_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_COMBAT"
+	bitmap = "empty.bmp"
+	background = "Combat_btn.bmp" #.bmp
+	upper = "BVC_IRO"
+	lower = "BVC_DRO"
+	}
+press = {
+	id = "BUTTON_VIEW_FORCEPOOL"
+	bitmap = "empty.bmp"
+	background = "Forcepool_btn.bmp" #.bmp
+	upper = "BVF_IRO"
+	lower = "BVF_DRO"
+	}
+
+generic = {
+	id = "BUTTON_VIEW_EYR_PAGE"
+	bitmap = "BUTTON_0003"
+	lower = ""
+	upper = ""
+	}
+
+
+generic = {
+	id = "BUTTON_QUICK_SAVE"
+	bitmap = "BUTTON_0004"
+	shortcut = F3
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_QUICK_LOAD"
+	bitmap = "BUTTON_0005"
+	shortcut = F4
+	lower = ""
+	upper = ""
+	}
+
+
+
+generic = {
+	id = "BUTTON_CANCEL_CONSTRUCTION"
+	bitmap = "BUTTON_0006"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_LOCATE_ARMIES"
+	bitmap = "BUTTON_0007"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_LOCATE_NAVIES"
+	bitmap = "BUTTON_0081"
+	lower = ""
+	upper = ""
+	}
+
+
+
+
+
+generic = {
+	id = "BUTTON_SELECT_ALL"
+	bitmap = "BUTTON_0014"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_REORGANISE"
+	bitmap = "BUTTON_0015"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_VIEW_PROVINCE"
+	bitmap = "BUTTON_0016"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_ENTER_PROVINCE"
+	bitmap = "BUTTON_0017"
+	lower = ""
+	upper = ""
+	}
+
+
+generic = {
+	id = "BUTTON_VIEW_COUNTRY"
+	bitmap = "BUTTON_0020"
+	lower = ""
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_SEND_DIPLOMAT"
+	bitmap = "BUTTON_0021"
+	lower = ""
+	upper = ""
+	}
+
+
+generic = {
+	id = "BUTTON_VIEW_PORT"
+	bitmap = "BUTTON_0024"
+	lower = ""
+	upper = ""
+	}
+
+
+
+generic = {
+	id = "BUTTON_GAME_SETTING"
+	background = "BTN_GAME_SETTING.BMP"
+	bitmap = "MENU"
+	shortcut = F10
+	lower = "BUTTON_0041"
+	upper = ""
+	}
+
+
+generic = {
+	id = "BUTTON_VP"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_MAP"
+	shortcut = F2
+	upper = "BUTTON_MAP_IRO"
+	lower = "BUTTON_MAP_DRO"
+	}
+
+generic = {
+	id = "BUTTON_VIEW_TECH"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_TECH"
+	upper = "BUTTON_TECH_IRO"
+	lower = "BUTTON_TECH_DRO"
+	}
+
+
+
+
+generic = {
+	id = "BUTTON_VIEW_PROD"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_PROD"
+	upper = "BUTTON_PROD_IRO"
+	lower = "BUTTON_PROD_DRO"
+}
+
+generic = {
+	id = "BUTTON_VIEW_DIP"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_DIP"
+	upper = "BUTTON_DIP_IRO"
+	lower = "BUTTON_DIP_DRO"
+}
+
+generic = {
+	id = "BUTTON_VIEW_STATISTICS"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_LEDGER"
+	shortcut = F6
+	upper = "BUTTON_LEDGER_IRO"
+	lower = "BUTTON_LEDGER_DRO"
+	}
+
+
+
+
+press = {
+	id = "BUTTON_MAPMODE_WEATHER"
+	bitmap = "empty.bmp"
+	background = "btn_map_wea.bmp"
+        
+	upper = "BUTTON_WEATHER"
+	lower = ""
+	}
+
+press = {
+	id = "BUTTON_MAPMODE_POLITICAL"
+	bitmap = "empty.bmp"
+	background = "btn_map_pol.bmp"
+	
+	upper = "BUTTON_0039"
+	lower = ""
+	}
+
+press = {
+	id = "BUTTON_MAPMODE_NORMAL"
+	bitmap = "empty.bmp"
+	background = "btn_map_ter.bmp"
+	
+	upper = "BUTTON_0040"
+	lower = ""
+	}
+
+press = {
+	id = "BUTTON_MAPMODE_D"
+	bitmap = "empty.bmp"
+	background = "btn_map_eco.bmp"
+	upper = "BUTTON_ECO"
+	lower = ""
+	}
+
+press = {
+	id = "BUTTON_MAPMODE_E"
+	bitmap = "empty.bmp"
+	background = "btn_map_sup.bmp"
+	
+	upper = "BUTTON_SUPPLY"
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_F"
+	bitmap = "empty.bmp"
+	background = "btn_map_par.bmp"
+	
+	upper = "BUTTON_REVOLT"
+	lower = ""
+	}
+
+press = {
+	id = "BUTTON_MAPMODE_G"
+	bitmap = "empty.bmp"
+	background = "btn_map_reg.bmp"
+	
+	upper = "BUTTON_REGION"
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_H"
+	bitmap = "empty.bmp"
+	background = "btn_map_are.bmp"
+	
+	upper = "BUTTON_AREA"
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_I"
+	bitmap = "empty.bmp"
+	background = "btn_map_dip.bmp"
+	
+	upper = "BUTTON_DIPMODE"
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_J"
+	bitmap = "empty.bmp"
+	background = "btn_map_vp.bmp"
+	
+	upper = "BUTTON_VPMODE"
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_K"
+	bitmap = "empty.bmp"
+	background = "icon_switch_noimage.bmp"
+	
+	upper = ""
+	lower = ""
+	}
+press = {
+	id = "BUTTON_MAPMODE_L"
+	bitmap = "empty.bmp"
+	background = "icon_switch_noimage.bmp"
+	
+	upper = ""
+	lower = ""
+	}
+
+
+press = {
+	id = "BUTTON_ZOOM_IN"
+	background = "BTN_ZOOM_IN.bmp"
+	bitmap = "empty.bmp"
+	shortcut = +
+	lower = "BUTTON_ZOOM_IN_DRO"
+	upper = "BUTTON_ZOOM_IN_IRO"
+	}
+
+press = {
+	id = "BUTTON_SHOW_ARROWS"
+	background = "showArrows.bmp"
+	bitmap = "empty.bmp"
+	lower = "BUTTON_SHOW_ARROWS_IN_DRO"
+	upper = "BUTTON_SHOW_ARROWS_IN_IRO"
+	shortcut = *
+	}
+
+
+press = {
+	id = "BUTTON_ZOOM_OUT"
+	background = "BTN_ZOOM_OUT.bmp"
+	bitmap = "empty.bmp"
+	shortcut = -
+	lower = "BUTTON_ZOOM_OUT_DRO"
+	upper = "BUTTON_ZOOM_OUT_IRO"
+	}
+
+
+
+
+press = {
+	id = "BUTTON_PAUSE"
+	bitmap = "empty.bmp"
+	background = "pause_button.bmp"
+	lower = "BUTTON_0050"
+	upper = ""
+	shortcut = space
+	}
+
+
+
+
+
+
+
+
+press = {
+	id = "BUTTON_DECLARE_WAR"
+	bitmap = "empty.bmp"
+	background = "empty.bmp"
+	upper = "BUTTON_0065"
+	lower = "BUTTON_0066"
+	}
+
+
+
+press = {
+	id = "BUTTON_OFFER_PEACE"
+	bitmap = "empty.bmp"
+	background = "empty.bmp"
+	upper = "BUTTON_0073"
+	lower = "BUTTON_0074"
+	}
+
+
+
+
+
+generic = {
+	id = "BUTTON_SPLIT_ARMY"
+	bitmap = "BUTTON_0201"
+	shortcut = s
+	lower = "BUTTON_0083"
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_REORGANISE_ARMY"
+	bitmap = "BUTTON_0202"
+	shortcut = r
+	lower = "BUTTON_0084"
+	upper = ""
+	}
+
+
+press = {
+	id = "BUTTON_CREATE_DETACHMENT"
+	bitmap = "empty.bmp"
+	background = "empty.bmp"
+	
+	lower = "BUTTON_0085"
+	upper = ""
+	}
+
+generic = {
+	id = "BUTTON_CREATE_UNIT"	
+	bitmap = "BUTTON_0203"
+	lower = "BUTTON_0086"
+	upper = ""
+	}
+
+
+generic = {
+	id = "BUTTON_DISBAND_ARMY"
+	bitmap = "BUTTON_0204"
+	shortcut = DEL 
+	lower = "BUTTON_0087"
+	upper = ""
+	}
+
+
+
+
+
+
+
+generic = {
+	id = "BUTTON_UNLOAD_ARMY"
+	bitmap = "BUTTON_0213"
+	shortcut = u
+	lower = "BUTTON_0097"
+	upper = ""
+	}
+
+
+
+
+
+#
+#
+# EDITOR BUTTONS
+#
+#
+
+
+generic = {
+	id = "BUTTON_EDITOR_CITY"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0098"
+	upper = "BUTTON_0099"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+
+generic = {
+	id = "BUTTON_EDITOR_PORT"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0100"
+	upper = "BUTTON_0101"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+
+generic = {
+	id = "BUTTON_EDITOR_UNIT"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0102"
+	upper = "BUTTON_0103"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+
+generic = {
+	id = "BUTTON_EDITOR_MANUFACTORY"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0104"
+	upper = "BUTTON_0105"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+
+generic = {
+	id = "BUTTON_EDITOR_FORT"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0106"
+	upper = "BUTTON_0107"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+
+generic = {
+	id = "BUTTON_EDITOR_AA"
+	background = "topbar_folder.bmp"
+	bitmap = "BUTTON_0108"
+	upper = "BUTTON_0109"
+	lower = ""
+	up = { BUTTON_EDITOR_MANUFACTORY BUTTON_EDITOR_UNIT BUTTON_EDITOR_PORT BUTTON_EDITOR_CITY BUTTON_EDITOR_FORT BUTTON_EDITOR_AA}
+	}
+

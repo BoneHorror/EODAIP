@@ -1,0 +1,89 @@
+NIC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+315001;Head of State;Juan Bautista Sacasa;1933;1964;1999;SC;Benevolent Gentleman;High;M48001;X
+315002;Head of Government;Julían Irias Navarro;1933;1964;1999;SC;Happy Amateur;High;M48002;X
+315003;Foreign Minister;Leonardo Argüello Vargas;1933;1964;1999;SC;Iron Fisted Brute;High;M48003;X
+315004;Minister of Armament;Anastacio G. Somoza;1933;1964;1999;SC;Corrupt Kleptocrat;Very High;M48004;X
+315005;Minister of Security;Alcacio Trelles Mendoza;1933;1964;1999;ML;Crooked Kleptocrat;Very High;M48005;X
+315006;Head of Military Intelligence;Leonardo Argüello Vargas;1933;1964;1999;SC;Technical Specialist;Medium;M48003;X
+315007;Chief of Staff;Anastacio G. Somoza;1933;1964;1999;SC;School of Defence;Very High;M48004;X
+315008;Chief of Army;Augusto Caraval Antonio;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M48008;X
+315009;Chief of Navy;Gustavo Flores Mendienta;1933;1964;1999;SC;Base Control Doctrine;Very High;M48009;X
+315010;Chief of Air Force;Guillermo R. Cuadra;1933;1964;1999;SC;Naval Aviation Doctrine;Medium;M48010;X
+315011;Head of State;Julían Irias Navarro;1933;1964;1999;SC;Insignificant Layman;High;M48002;X
+315012;Head of State;Carlos Brenes Jarquin;1933;1964;1999;PA;Autocratic Charmer;High;M48032;X
+315013;Head of State;Anastacio G. Somoza;1937;1964;1999;SC;Resigned Generalissimo;High;M48004;X
+315014;Head of State;Benjamin Lacayo Sacasa;1947;1964;1999;SC;Popular Figurehead;High;M48034;X
+315015;Head of State;Victor Roman y Reyes;1947;1964;1999;PA;Pig-headed Isolationist;High;M48035;X
+315016;Head of Government;Leon Cabrales;1933;1964;1999;SC;Happy Amateur;High;M48011;X
+315017;Head of Government;Anastacio G. Somoza;1933;1964;1999;PA;Flamboyant Tough Guy;High;M48004;X
+315018;Head of Government;Vicente Morales;1937;1964;1999;SC;Naive Optimist;High;M48038;X
+315019;Head of Government;Carlos A. Villanueva;1939;1964;1999;SC;Political Protege;High;M48039;X
+315020;Head of Government;Alcacio Trelles Mendoza;1941;1964;1999;SC;Corporate Suit;High;M48005;X
+315021;Head of Government;Carlos Brenes Jarquin;1944;1964;1999;SC;Silent Workhorse;High;M48032;X
+315022;Head of Government;Guillermo Cuadra;1947;1964;1999;SC;Ambitious Union Boss;High;M48012;X
+315023;Foreign Minister;Dario Darío y Debayle;1933;1964;1999;SC;General Staffer;High;M48043;X
+315024;Foreign Minister;Manuel Cordero Reyes;1937;1964;1999;SC;Great Compromiser;High;M48044;X
+315025;Foreign Minister;Mariano Argüello Vargas;1939;1964;1999;SC;Biased Intellectual;High;M48044;X
+315026;Foreign Minister;Victor Roman y Reyes;1944;1964;1999;PA;General Staffer;Very High;M48035;X
+315027;Foreign Minister;Silvio Argüello Cardenal;1947;1964;1999;SC;Great Compromiser;Very High;M48047;X
+315028;Foreign Minister;Anastacio G. Somoza;1947;1964;1999;PA;The Cloak N Dagger Schemer;High;M48004;X
+315029;Minister of Armament;Nicolas Juarez Cejudo;1933;1964;1999;SC;Air to Ground Proponent;Very High;M48049;X
+315030;Minister of Armament;Tomas Francisco Medina;1933;1964;1999;PA;Corrupt Kleptocrat;Medium;M48050;X
+315031;Minister of Armament;Carlos Brenes Jarquin;1937;1964;1999;SC;laissez-faire capitalist;High;M48032;X
+315032;Minister of Armament;Salvador Buenrostrí Cardeñas;1939;1964;1999;SC;Air Superiority Proponent;High;M48052;X
+315033;Minister of Armament;Leonardo Argüello Vargas;1941;1964;1999;SC;Infantry Proponent;High;M48003;X
+315034;Minister of Armament;Benjamin Lacayo Sacasa;1943;1964;1999;SC;Administrative Genius;Medium;M48034;X
+315035;Minister of Armament;Benjamin Casal Cohen;1944;1964;1999;SC;Military Entrepreneur;High;M48055;X
+315036;Minister of Armament;Juan Estrada Ayala;1947;1964;1999;SC;Air to Ground Proponent;High;M48056;X
+315037;Minister of Armament;José Clemón Sacasa;1947;1964;1999;PA;Tank Proponent;Low;M48016;X
+315038;Minister of Security;Anastacio G. Somoza;1933;1964;1999;SC;Efficient Sociopath;Low;M48004;X
+315039;Minister of Security;Victor Roman y Reyes;1939;1964;1999;SC;Prince of Terror;Very High;M48035;X
+315040;Minister of Security;Leon Cabrales;1941;1964;1999;SC;Back Stabber;Medium;M48011;X
+315041;Minister of Security;Gustavo Pavon Ochoa;1944;1964;1999;PA;Silent Lawyer;Medium;M48061;X
+315042;Minister of Security;Nicolas Eden Jímenez;1947;1964;1999;SC;Compassionate Gentleman;Medium;M48062;X
+315043;Head of Military Intelligence;Francisco Estrasa;1933;1964;1999;PA;Industrial Specialist;Medium;M48064;X
+315044;Head of Military Intelligence;Leonardo Argüello Vincés;1937;1964;1999;SC;Dismal Enigma;Medium;M48065;X
+315045;Head of Military Intelligence;Victor Roman y Reyes;1941;1964;1999;SC;Technical Specialist;Very High;M48035;X
+315046;Head of Military Intelligence;José Luís Pavon Vinales;1944;1964;1999;SC;Logistics Specialist;Medium;M48067;X
+315047;Head of Military Intelligence;Juan Pablo Esquerra;1947;1964;1999;SC;Dismal Enigma;Medium;M48026;X
+315048;Head of Military Intelligence;José Clemón Sacasa;1947;1964;1999;PA;Dismal Enigma;Low;M48016;X
+315049;Chief of Staff;Augusto Caraval Antonio;1933;1964;1999;PA;School of Fire Support;Low;M48008;X
+315050;Chief of Staff;Manuel Roque Garcia;1947;1964;1999;SC;School of Manoeuvre;Low;M48017;X
+315051;Chief of Army;Anastacio G. Somoza;1937;1964;1999;SC;Static Defence Doctrine;Very High;M48004;X
+315052;Chief of Army;Victor Roman y Reyes;1941;1964;1999;SC;Decisive Battle Doctrine;Very High;M48035;X
+315053;Chief of Army;Manuel Corovél Kirsch;1944;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M48018;X
+315054;Chief of Army;Manuel Roque Garcia;1947;1964;1999;SC;Guns and Butter Doctrine;Low;M48017;X
+315055;Chief of Navy;Noel Esto Niño Miranda;1944;1964;1999;SC;Open Seas Doctrine;Very High;M48019;X
+315056;Chief of Air Force;Joel Garcia Zaldana;1944;1964;1999;SC;Army Aviation Doctrine;Medium;M48020;X
+315057;Head of State;Leonardo Argüello Vargas;1947;1964;1999;SC;Die-hard Reformer;High;M48003;X
+315058;Head of Government;Anastacio G. Somoza;1947;1964;1999;PA;Old General;High;M48004;X
+315059;Head of State;Leon Cabrales;1933;1964;1999;SL;Insignificant Layman;High;M48011;X
+315060;Head of Government;Guillermo Cuadra;1933;1964;1999;SD;Ambitious Union Boss;High;M48012;X
+315061;Foreign Minister;Leon Cabrales;1933;1964;1999;SL;Biased Intellectual;High;M48011;X
+315062;Minister of Security;Guillermo Cuadra;1933;1964;1999;SD;Crime Fighter;High;M48012;X
+315063;Head of State;Luis Cardenal;1933;1964;1999;LE;Weary Stiffneck;High;M48021;X
+315064;Head of Government;Luis Cardenal;1933;1964;1999;LE;Flamboyant Tough Guy;High;M48021;X
+315065;Foreign Minister;Luis Cardenal;1933;1964;1999;LE;Ideological Crusader;Very High;M48021;X
+315066;Minister of Armament;Teophilo S. Grálles;1933;1964;1999;ST;Strategic Air Proponent;Medium;M48024;X
+315067;Minister of Security;Juan Y. Masquez;1933;1964;1999;LE;Efficient Sociopath;Medium;M48025;X
+315068;Head of Military Intelligence;Juan Pablo Esquerra;1933;1964;1999;LWR;Dismal Enigma;Medium;M48026;X
+315069;Chief of Staff;Juan Pablo Esquerra;1933;1964;1999;LWR;School of Psychology;Medium;M48026;X
+315070;Chief of Army;Manuel Corovél Kirsch;1933;1964;1999;LWR;Static Defence Doctrine;Medium;M48018;X
+315071;Chief of Navy;Noel Esto Niño Miranda;1933;1964;1999;LWR;Open Seas Doctrine;Very High;M48019;X
+315072;Chief of Air Force;Joel Garcia Zaldana;1933;1964;1999;LWR;Army Aviation Doctrine;Medium;M48020;X
+315073;Head of Government;Emiliano Chamorro Vargas;1917;1933;1999;PA;Backroom Backstabber;Medium;2875;X
+315074;Head of Government;Diego Manuel Chamorro Bolaños;1921;1933;1999;PA;Flamboyant Tough Guy;Medium;6120;X
+315075;Head of Government;Rosendo Chamorro Vargas;1923;1933;1999;PA;Happy Amateur;Medium;6121;X
+315076;Head of Government;Adolfo Díaz;1911;1933;1999;PA;Political Protege;Medium;2876;X
+315077;Head of Military Intelligence;Emiliano Chamorro;1914;1933;1999;PA;LOGISTICS SPECIALIST;Medium;2875;X
+315078;Head of State;Emiliano Chamorro Vargas;1917;1933;1999;PA;Autocratic Charmer;Medium;2875;X
+315079;Head of State;Diego Manuel Chamorro Bolaños;1921;1933;1999;PA;Benevolent Gentleman;Medium;6120;X
+315080;Head of State;Rosendo Chamorro Vargas;1923;1933;1999;PA;Benevolent Gentleman;Medium;6121;X
+315081;Head of State;Adolfo Díaz;1911;1933;1999;PA;Stern Imperialist;Medium;2876;X
+315082;Foreign Minister;Bartolomé Martínez González;1914;1933;1999;PA;Iron Fisted Brute;High;2442;X
+315083;Minister of Armament;Diego Manuel Chamorro Bolaños;1914;1933;1999;PA;Air to Ground Proponent;Very High;6120;X
+315084;Chief of Staff;Emiliano Chamorro Vargas;1914;1933;1999;PA;School of Fire Support;Low;2443;X
+315085;Chief of Army;Emiliano Chamorro Vargas;1914;1933;1999;PA;Static Defence Doctrine;Medium;2443;X
+315086;Chief of Navy;Emiliano Chamorro Vargas;1914;1933;1999;PA;Open Seas Doctrine;Very High;2443;X
+315087;Minister of Security;Gilbert D. Hatfield;1914;1933;1999;PA;Prince of Terror;Medium;2444;X

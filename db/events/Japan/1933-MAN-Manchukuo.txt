@@ -1,0 +1,205 @@
+###########################################################################
+# Pacification of Manchuria events
+# 1330120008 MAN Pacification of Manchuria
+# 1330120009 JAP Kirin Province Subjugation
+# 1330120010 MAN Kirin Province Subjugation
+# 1330120011 JAP Campaign against the Anti-Japanese United Army
+# 1330120012 MAN Campaign against the Anti-Japanese United Army
+# 1330120013 JAP Second Campaign against the Anti-Japanese United Army
+# 1330120014 MAN Second Campaign against the Anti-Japanese United Army
+############################################################################
+
+
+event = {
+	id = 1330120008
+	random = no
+	country = MAN
+
+    # Triggered TODO: On Country Formation Trigger
+
+	name = EVT_1330120008_NAME
+	desc = EVT_1330120008_DESC
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		name = ACTION_NAME_YES
+		command = { }
+	}
+}
+
+event = {
+	id = 1330120009
+	random = no
+	country = JAP
+
+	name = EVT_1330120009_NAME
+	desc = EVT_1330120009_DESC
+	style = 2
+ 	picture = "ccip_mukden"
+
+	decision = {
+            event = 1330120008
+			puppet = { country = MAN country = JAP }
+	}
+	decision_trigger = { 
+			supplies = 500
+	}
+	trigger = {
+			puppet = { country = MAN country = JAP }
+			supplies = 500
+	}
+
+    date = { day = 4 month = march year = 1933 }
+    offset = 20
+	deathdate = { day = 29 month = august year = 1963 }
+
+	action = {
+		name = EVT_1330120009_ACTION1
+		command = { type = manpowerpool value = -5 }
+		command = { type = supplies value = -500 }
+		command = { type = event which = 1330120010 where = MAN when = 120 }
+	}
+}
+
+event = {
+	id = 1330120010
+	random = no
+	country = MAN
+	
+	name = EVT_1330120009_NAME
+	desc = EVT_1330120009_DESC
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		name = ACTION_NAME_YES
+		command = { type = addcore which = 1213 }
+		command = { type = addcore which = 1210 }
+		command = { type = addcore which = 1218 }
+		command = { type = addcore which = 1214 }
+		command = { type = addcore which = 1207 }
+		command = { type = addcore which = 1199 }
+	}
+}
+
+event = {
+	id = 1330120011
+	random = no
+	country = JAP
+
+	name = EVT_1330120011_NAME
+	desc = EVT_1330120011_DESC
+	style = 2
+ 	picture = "ccip_mukden"
+
+	decision = {
+			puppet = { country = MAN country = JAP }
+			event = 1330120010
+            event = 1330120008
+	}
+	decision_trigger = { 
+			supplies = 500
+	}
+	trigger = {
+			event = 1330120010
+			puppet = { country = MAN country = JAP }
+			supplies = 500
+	}
+
+	date = { day = 4 month = january year = 1934 }
+	offset = 20
+	deathdate = { day = 29 month = august year = 1963 }
+
+	action = {
+		name = EVT_1330120009_ACTION1
+		command = { type = manpowerpool value = -5 }
+		command = { type = supplies value = -500 }
+		command = { type = event which = 1330120012 where = MAN when = 120 }
+	}
+}
+
+event = {
+	id = 1330120012
+	random = no
+	country = MAN
+	
+	name = EVT_1330120011_NAME
+	desc = EVT_1330120011_DESC
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		name = ACTION_NAME_YES
+		command = { type = addcore which = 1209 }
+		command = { type = addcore which = 1237 }
+		command = { type = addcore which = 1217 }
+		command = { type = addcore which = 1220 }
+		command = { type = addcore which = 1215 }
+		command = { type = addcore which = 1211 }
+		command = { type = addcore which = 1212 }
+		command = { type = addcore which = 1205 }
+		command = { type = addcore which = 1203 }
+	}
+}
+
+event = {
+	id = 1330120013
+	random = no
+	country = JAP
+
+	name = EVT_1330120013_NAME
+	desc = EVT_1330120011_DESC
+	style = 2
+ 	picture = "ccip_mukden"
+
+	decision = {
+			puppet = { country = MAN country = JAP }
+			event = 1330120012
+            event = 1330120008
+	}
+	decision_trigger = { 
+			supplies = 500
+	}
+	trigger = {
+			event = 1330120012
+			puppet = { country = MAN country = JAP }
+			supplies = 500
+	}
+
+	date = { day = 4 month = january year = 1935 }
+	offset = 20
+	deathdate = { day = 29 month = august year = 1963 }
+
+	action = {
+		name = EVT_1330120009_ACTION1
+		command = { type = manpowerpool value = -5 }
+		command = { type = supplies value = -500 }
+		command = { type = event which = 1330120014 where = MAN when = 120 }
+	}
+}
+
+event = {
+	id = 1330120014
+	random = no
+	country = MAN
+	
+	name = EVT_1330120013_NAME
+	desc = EVT_1330120011_DESC
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		name = ACTION_NAME_YES
+		command = { type = addcore which = 1236 }
+		command = { type = addcore which = 1235 }
+		command = { type = addcore which = 1216 }
+		command = { type = addcore which = 1198 }
+		command = { type = addcore which = 1206 }
+		command = { type = addcore which = 1200 }
+		command = { type = addcore which = 1201 }
+		command = { type = addcore which = 1197 }
+		command = { type = addcore which = 1202 }
+		command = { type = addcore which = 1204 }
+	}
+}

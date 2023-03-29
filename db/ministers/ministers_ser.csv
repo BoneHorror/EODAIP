@@ -1,0 +1,134 @@
+SER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+415001;Head of State;Milan Nedic;1933;1964;1999;FA;Resigned Generalissimo;High;8435;X
+415002;Head of Government;Dragisa Cvetkovic;1933;1964;1999;FA;Corporate Suit;High;M20032;X
+415003;Foreign Minister;Milan Nedic;1933;1964;1999;FA;Ideological Crusader;High;8435;X
+415004;Minister of Armament;Slobodan Jovanovic;1933;1964;1999;FA;Military Entrepreneur;Medium;M20034;X
+415005;Minister of Security;Milos Trifunovic;1933;1964;1999;FA;Efficient Sociopath;Medium;M20035;X
+415006;Head of Military Intelligence;Bozidar Puric;1933;1964;1999;FA;Technical Specialist;Medium;M20043;X
+415007;Chief of Staff;Marko Bozovic;1933;1964;1999;FA;School of Manoeuvre;Medium;L46002;X
+415008;Chief of Army;Milan Nedic;1933;1964;1999;FA;Armoured Spearhead Doctrine;Medium;8435;X
+415009;Chief of Navy;Marijan Polic;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;L46046;X
+415010;Chief of Air Force;Petar Vukcevic;1933;1964;1999;FA;Army Aviation Doctrine;Medium;L46062;X
+415011;Head of State;Josip Broz;1933;1964;1999;LWR;Benevolent Gentleman;High;M20021;X
+415012;Head of State;Kosta Tanazovic;1933;1964;1999;ML;Popular Figurehead;High;M547012;X
+415013;Head of Government;Josip Broz;1933;1964;1999;LWR;Happy Amateur;High;M20021;X
+415014;Head of Government;Ivan Subasic;1933;1964;1999;ML;Silent Workhorse;High;M20014;X
+415015;Foreign Minister;Isidor Mandrevic;1942;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M547015;X
+415016;Foreign Minister;Stanoje Simic;1933;1964;1999;LWR;Apologetic Clerk;Medium;M20023;X
+415017;Foreign Minister;Edvard Kardelj;1933;1964;1999;ML;Biased Intellectual;Very High;M20047;X
+415018;Foreign Minister;Dragomir Vijic;1941;1964;1999;ML;Iron Fisted Brute;Very High;M547018;X
+415019;Minister of Armament;Mihovil Tomandl;1942;1964;1999;FA;Air Superiority Proponent;Medium;M547019;X
+415020;Minister of Armament;Milentije Popovic;1933;1964;1999;LWR;Corrupt Kleptocrat;High;M20024;X
+415021;Minister of Armament;Davorin Jenko;1942;1964;1999;LWR;Administrative Genius;High;M547021;X
+415022;Minister of Armament;Ladislav Polic;1933;1964;1999;ML;laissez-faire capitalist;Medium;M20050;X
+415023;Minister of Armament;Vasa Sailovic;1943;1964;1999;ML;Resource Industrialist;Medium;M547023;X
+415024;Minister of Security;Harald Turner;1941;1964;1999;FA;Prince of Terror;Medium;M547024;X
+415025;Minister of Security;Miljutin Bakar;1942;1964;1999;FA;Compassionate Gentleman;Medium;M547025;X
+415026;Minister of Security;Djoda Udovicki;1933;1964;1999;LWR;Silent Lawyer;Medium;M547026;X
+415027;Minister of Security;Dragoljub Stefanic;1933;1964;1999;ML;Crime Fighter;Medium;M20061;X
+415028;Minister of Security;Militin Milankovic;1939;1964;1999;ML;Man of the People;Medium;M547028;X
+415029;Head of Military Intelligence;Leonard Conti;1941;1964;1999;FA;Political Specialist;Medium;M547029;X
+415030;Head of Military Intelligence;Laza Kostic;1933;1964;1999;LWR;Industrial Specialist;Medium;M547030;X
+415031;Head of Military Intelligence;Mihail Milosajevic;1933;1964;1999;ML;Logistics Specialist;Medium;M20068;X
+415032;Head of Military Intelligence;Vasa Zivkovoc;1941;1964;1999;ML;Dismal Enigma;Medium;M547032;X
+415033;Chief of Staff;Arsa Jovanovic;1933;1964;1999;LWR;School of Fire Support;Medium;M20075;X
+415034;Chief of Staff;Radivoje Jankovic;1933;1964;1999;ML;School of Fire Support;Low;L46012;X
+415035;Chief of Army;Borivoje Joksimovic;1933;1964;1999;LWR;Guns and Butter Doctrine;High;L46013;X
+415036;Chief of Army;Mihailo Lukic;1933;1964;1999;ML;Elastic Defence Doctrine;High;L46020;X
+415037;Chief of Navy;Josip Broz;1933;1964;1999;LWR;Base Control Doctrine;High;M20029;X
+415038;Chief of Navy;Boguljub Ilic;1933;1964;1999;ML;Open Seas Doctrine;High;M20029;X
+415039;Chief of Air Force;Josip Broz;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M20028;X
+415040;Chief of Air Force;Dragomir Lukacevic;1933;1964;1999;ML;Air Superiority Doctrine;Medium;L46055;X
+415041;Chief of Air Force;Kosta Miletic;1914;1933;1999;SC;Army Aviation Doctrine;Very High;3129;X
+415042;Chief of Army;Zivojin Misic;1916;1933;1999;PA;Decisive Battle Doctrine;Very High;3130;X
+415043;Chief of Army;Mihailo Rasic;1918;1933;1999;SC;Decisive Battle Doctrine;Very High;3131;X
+415044;Chief of Army;Milos Vasic;1922;1933;1999;SC;Decisive Battle Doctrine;Very High;3132;X
+415045;Chief of Army;Petar Pesic;1922;1933;1999;PA;Decisive Battle Doctrine;Very High;3133;X
+415046;Chief of Army;Radomir Putnik;1914;1933;1999;SC;elastic defence doctrine;Very High;3134;X
+415047;Chief of Army;Milivoje Zecevic;1921;1933;1999;PA;elastic defence doctrine;Very High;unknownminister;X
+415048;Chief of Army;Dusan Trifunovic;1924;1933;1999;PA;elastic defence doctrine;Very High;3135;X
+415049;Chief of Army;Alexander Karadordevic;1915;1933;1999;PA;Guns and Butter Doctrine;Very High;3136;X
+415050;Chief of Army;Alexander Karadordevic;1915;1933;1999;PA;Guns and Butter Doctrine;Very High;3136;X
+415051;Chief of Army;Stevan Hadzic;1919;1933;1999;SC;Guns and Butter Doctrine;Very High;3137;X
+415052;Chief of Army;Branko Jovanovic;1920;1933;1999;SC;static defence doctrine;Very High;unknownminister;X
+415053;Chief of Army;Josip Broz;1918;1933;1999;ST;DECISIVE BATTLE DOCTRINE;Medium;3138;X
+415054;Chief of Staff;Radomir Putnik;1914;1933;1999;SC;school of defence;Very High;3134;X
+415055;Chief of Staff;Milivoje Zecevic;1921;1933;1999;PA;school of defence;Very High;unknownminister;X
+415056;Chief of Staff;Stepan Stepanovic;1914;1933;1999;SC;School of Fire Support;Very High;3139;X
+415057;Chief of Staff;Stevan Hadzic;1919;1933;1999;SC;School of Fire Support;Very High;3137;X
+415058;Chief of Staff;Petar Pesic;1922;1933;1999;PA;School of Fire Support;Very High;3133;X
+415059;Chief of Staff;Petar Bojovic;1916;1933;1999;SC;School of Manoeuvre;Very High;3140;X
+415060;Chief of Staff;Milos Vasic;1922;1933;1999;SC;School of Manoeuvre;Very High;3132;X
+415061;Chief of Staff;Zivko Pavlovic;1915;1933;1999;SC;School of Mass Combat;Very High;3141;X
+415062;Chief of Staff;Mihailo Rasic;1918;1933;1999;SC;School of Mass Combat;Very High;3131;X
+415063;Chief of Staff;Dusan Trifunovic;1924;1933;1999;PA;School of Mass Combat;Very High;3135;X
+415064;Chief of Staff;Zivojin Misic;1918;1933;1999;PA;School of Psychology;Very High;3130;X
+415065;Chief of Staff;Branko Jovanovic;1920;1933;1999;SC;School of Psychology;Very High;unknownminister;X
+415066;Foreign Minister;Jovan Jovanovic-Pizon;1914;1933;1999;SC;Biased Intellectual;Medium;3142;X
+415067;Foreign Minister;Mihailo Gavrilovic;1918;1933;1999;SC;Biased Intellectual;Medium;3143;X
+415068;Foreign Minister;Stojan Protic;1918;1933;1999;SC;Great Compromiser;Medium;3144;X
+415069;Foreign Minister;Momcilo Nincic;1921;1933;1999;PA;Great Compromiser;Medium;3145;X
+415070;Foreign Minister;Vojislav Marinkovic;1924;1933;1999;SC;Great Compromiser;Medium;3146;X
+415071;Foreign Minister;Nikola Pasic;1914;1933;1999;SC;Ideological Crusader;Very High;3147;X
+415072;Foreign Minister;Ante Trumbic;1918;1933;1999;ML;Ideological Crusader;Medium;3148;X
+415073;Foreign Minister;Duro Dakovic;1914;1933;1999;ST;APOLOGETIC CLERK;Medium;3959;X
+415074;Foreign Minister;Andra Nikolic;1914;1933;1999;SC;BIASED INTELLECTUAL;Medium;3149;X
+415075;Foreign Minister;Sima Lozanic;1914;1933;1999;SC;IDEOLOGICAL CRUSADER;Medium;3150;X
+415076;Foreign Minister;Jovan Zujovic;1914;1933;1999;SC;IRON FISTED BRUTE;Medium;3151;X
+415077;Foreign Minister;Milovan Milovanovic;1914;1933;1999;SC;GENERAL STAFFER;Medium;3152;X
+415078;Foreign Minister;Marko Trifkovic;1914;1933;1999;SC;GREAT COMPROMISER;Medium;unknownminister;X
+415079;Foreign Minister;Milenko Vesnic;1920;1933;1999;SC;THE CLOAK N DAGGER SCHEMER;Medium;3153;X
+415080;Head of Government;Nikola Pasic;1914;1933;1999;SC;Backroom Backstabber;High;3147;X
+415081;Head of Government;Stojan Protic;1918;1933;1999;SC;Flamboyant Tough Guy;Very High;3144;X
+415082;Head of Government;Vladimir Copic;1918;1933;1999;ST;Ambitious Union Boss;Medium;3154;X
+415083;Head of Government;Ljubomir Stojanovic;1914;1933;1999;SC;Backroom Backstabber;Medium;3960;X
+415084;Head of Government;Stojan Novakovic;1914;1933;1999;SC;Corporate Suit;Medium;3155;X
+415085;Head of Government;Milovan Milovanovic;1914;1933;1999;SC;Naive Optimist;Medium;3152;X
+415086;Head of Government;Marko Trifkovic;1914;1933;1999;SC;Political Protege;Medium;unknownminister;X
+415087;Head of Government;Milenko Vesnic;1920;1933;1999;SC;Political Protege;Medium;3153;X
+415088;Head of Government;Ljubomir Davidovic;1919;1933;1999;ML;Silent Workhorse;Very High;3156;X
+415089;Head of Military Intelligence;Dragutin Dimitrijevic;1914;1933;1999;PA;Political Specialist;High;3157;X
+415090;Head of Military Intelligence;Josip Broz;1918;1933;1999;ST;DISMAL ENIGMA;Medium;3138;X
+415091;Head of State;Filip Filipovic;1914;1933;1999;ST;Die-Hard Reformer;Very High;3961;X
+415092;Head of State;Aleksandar I;1921;1933;1999;PA;Die-Hard Reformer;Very High;3136;X
+415093;Head of State;Peter I;1914;1933;1999;PA;Weary Stiffneck;High;3158;X
+415094;Head of State;Peter I;1914;1933;1999;SC;Weary Stiffneck;High;3158;X
+415095;Minister of Armament;Momcilo Nincic;1915;1933;1999;PA;Administrative Genius;Medium;3145;X
+415096;Minister of Armament;Velizar Jankovic;1920;1933;1999;PA;Administrative Genius;Medium;unknownminister;X
+415097;Minister of Armament;Kosta Kumanudi;1921;1933;1999;PA;Administrative Genius;Medium;unknownminister;X
+415098;Minister of Armament;Mehmed Spaho;1924;1933;1999;PA;Administrative Genius;Medium;3159;X
+415099;Minister of Armament;Vojislav Veljkovic;1914;1933;1999;SC;Laissez-Faire Capitalist;Medium;unknownminister;X
+415100;Minister of Armament;Milan Stojadinovic;1922;1933;1999;PA;Laissez-Faire Capitalist;Medium;3160;X
+415101;Minister of Armament;Stojan Protic;1914;1933;1999;SC;Military Entrepreneur;Medium;3144;X
+415102;Minister of Armament;Jovan Jovanovic-Pizon;1914;1933;1999;SC;INFANTRY PROPONENT;Medium;3142;X
+415103;Minister of Armament;Lazar Pacu;1914;1933;1999;SC;Resource Industrialist;Medium;3161;X
+415104;Minister of Armament;Kosta Stojanovic;1920;1933;1999;SC;Resource Industrialist;Medium;unknownminister;X
+415105;Minister of Armament;Milorad Draskovic;1921;1933;1999;PA;Resource Industrialist;Medium;unknownminister;X
+415106;Minister of Armament;Josip Broz;1918;1933;1999;ST;ADMINISTRATIVE GENIUS;Medium;3138;X
+415107;Minister of Armament;Milic Radovanovic;1914;1933;1999;SC;laissez-faire capitalist;Medium;3162;X
+415108;Minister of Armament;Mihailo Ilic;1914;1933;1999;SC;THEORETICAL SCIENTIST;Medium;3962;X
+415109;Minister of Security;Ljubomir Jovanovic;1914;1933;1999;SC;Compassionate Gentleman;Medium;3163;X
+415110;Minister of Security;Ljubomir Davidovic;1920;1933;1999;ML;Compassionate Gentleman;Medium;3156;X
+415111;Minister of Security;Milorad Draskovic;1920;1933;1999;PA;Compassionate Gentleman;Medium;unknownminister;X
+415112;Minister of Security;Kosta Kumanudi;1922;1933;1999;PA;Compassionate Gentleman;Medium;unknownminister;X
+415113;Minister of Security;Milan Srskic;1924;1933;1999;PA;Compassionate Gentleman;Medium;3963;X
+415114;Minister of Security;Stojan Protic;1914;1933;1999;SC;Crime Fighter;Medium;3144;X
+415115;Minister of Security;Svetozar Pribicevic;1918;1933;1999;SC;Crime Fighter;Medium;3164;X
+415116;Minister of Security;Kosta Timotijevic;1922;1933;1999;PA;Crime Fighter;Medium;unknownminister;X
+415117;Minister of Security;Milorad Vujicic;1922;1933;1999;PA;Crime Fighter;Medium;unknownminister;X
+415118;Minister of Security;Marko Trifkovic;1914;1933;1999;SC;Man of the People;Medium;unknownminister;X
+415119;Minister of Security;Vojislav Marinkovic;1921;1933;1999;PA;Man of the People;Medium;3146;X
+415120;Minister of Security;Bozidar Maksimovic;1924;1933;1999;PA;Man of the People;Medium;unknownminister;X
+415121;Minister of Security;Mose Pijade;1918;1933;1999;ST;BACK STABBER;Medium;3165;X
+415122;Minister of Security;Dorde Gencic;1914;1933;1999;PA;COMPASSIONATE GENTLEMAN;Medium;3964;X
+415123;Minister of Security;Ljubomir Stojanovic;1914;1933;1999;SC;CRIME FIGHTER;Medium;3960;X
+415124;Minister of Security;Svetozar Milosavljevic;1914;1933;1999;SC;MAN OF THE PEOPLE;Medium;unknownminister;X
+415125;Head of State;Helmuth Förster;1941;1964;1999;NS;Insignificant Layman;High;L914;X
+415126;Head of State;Ludwig von Schröder;1941;1964;1999;NS;Insignificant Layman;High;L887;X
+415127;Head of State;Heinrich Danckelmann;1941;1964;1999;NS;Insignificant Layman;High;9655;X
+415128;Head of State;Franz Böhme;1941;1964;1999;NS;Insignificant Layman;High;L36;X
+415129;Head of State;Paul Bader;1941;1964;1999;NS;Insignificant Layman;High;L8;X
+415130;Head of State;Hans Felber;1943;1964;1999;NS;Insignificant Layman;High;L56;X
+415131;Head of Government;Milan Acimovic;1941;1964;1999;FA;Corporate Suit;High;9656;X
+415132;Head of Government;Milan Nedic;1941;1964;1999;FA;Corporate Suit;High;8435;X

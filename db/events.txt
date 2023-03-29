@@ -1,0 +1,40 @@
+# Darkest Hour events
+
+event = "db\events\bulgaria.txt"
+event = "db\events\china.txt"
+event = "db\events\coups_events.txt"
+event = "db\events\death_events.txt"
+event = "db\events\election_events.txt"
+event = "db\events\france.txt"
+event = "db\events\generic_decisions.txt"
+event = "db\events\germany.txt"
+event = "db\events\hoi2.txt"
+event = "db\events\hungary.txt"
+event = "db\events\italy.txt"
+event = "db\events\japan.txt"
+event = "db\events\Lend_Lease.txt"
+event = "db\events\romania.txt"
+event = "db\events\secret_weapon_events.txt"
+event = "db\events\spain.txt"
+event = "db\events\UK.txt"
+event = "db\events\USA.txt"
+event = "db\events\USSR.txt"
+event = "db\events\Mobilization.txt"
+event = "db\events\Mobilization_events.txt"
+event = "db\events\Election_day.txt"
+
+# AI Events
+
+event = "db\events\AI\AI_ministers.txt"
+event = "db\events\AI\AI_sliders.txt"
+event = "db\events\AI\AI_minorshutinvasion.txt"
+event = "db\events\AI\AI_revolters.txt"
+event = "db\events\AI\AI_mobi.txt"
+event = "db\events\AI\AI_research.txt"
+
+# Mods placeholder
+
+event = "db\events\Mods.txt"
+event = "db\events\Add_on.txt"
+event = "db\events\Generalplan_Ost.txt"
+event = "db\events\new_events.txt"

@@ -1,0 +1,30 @@
+CHL;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+210001;Agua Santa Nitrate Railways;T5100;3;1900;1950;industrial_engineering;mechanics;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210002;Williamson-Balfour Company;T5101;3;1900;2000;industrial_engineering;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210003;Campbell, Outram y Cia.;T5102;3;1900;2000;artillery;munitions;general_equipment;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210004;CORFO;T5104;4;1939;2000;industrial_engineering;general_equipment;management;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210005;ENDESA;T5105;2;1943;2000;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210006;Escuela Militar;T5106;4;1817;2000;combined_arms_focus;small_unit_tactics;general_equipment;artillery;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210007;Transandine Construction Company;T5107;4;1896;2000;industrial_engineering;mechanics;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210008;Antofagasta & Bolivia Railway;T5100;4;1890;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210009;Carlos Jouanne de la Motte;T5109;3;1927;1932;large_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210010;Francisco O'Ryan Orrego;T5110;4;1938;1946;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210011;Diego Aracena;T5111;3;1938;1960;fighter_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210012;Marmaduke Grove;T5112;5;1937;1960;fighter_tactics;piloting;decentralized_execution;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210013;E. Novoa Fuentes;T5113;3;1930;1942;centralized_execution;large_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210014;Carlos Fuentes Rabe;T5114;4;1938;1960;combined_arms_focus;small_unit_tactics;decentralized_execution;training;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210015;Ejército de Chile;100670;3;1890;2000;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210016;Compañía de Lota y Coronel;T5103;4;1905;1920;industrial_engineering;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210017;Compañía Minera e Industrial de Chile;T5103;4;1921;1932;industrial_engineering;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210018;Compañía Carbonifera e Industrial de Lota;T5103;4;1933;1963;industrial_engineering;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210019;Academia de Guerra del Ejército;100671;2;1886;2000;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210020;Escuela de Grumetes;100667;4;1868;2000;seamanship;small_taskforce_tactics;large_taskforce_tactics;mathematics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210021;Manuel Ávalos Prado;100668;4;1913;1919;piloting;fighter_tactics;bomber_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210022;Escuela de Aviación;100666;3;1920;2000;piloting;fighter_tactics;bomber_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210023;José Luis Sánchez Besa;100669;3;1910;1925;avionics;fighter_design;bomber_design;aircraft_testing;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210024;Astillero Naval de Punta Arenas;100672;4;1896;1960;submarine_design;naval_artillery;naval_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210025;Astillero de Valparaíso;100673;2;1817;1960;carrier_design;naval_artillery;naval_engineering;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+210026;Armada de Chile;100783;3;1933;2000;large_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2100000;Ministerio de Defensa Nacional;T2100000;5;1932;1973;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2100001;Dirección de Inteligencia Nacional;T2100001;5;1973;1977;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2100002;Central Nacional de Informaciones;T2100001;6;1977;2013;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

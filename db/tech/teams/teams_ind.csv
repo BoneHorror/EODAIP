@@ -1,0 +1,31 @@
+IND;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+250001;Bharat Electronics Limited;T11400;5;1944;2000;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250002;Defence Research & Development Organisation;T11401;6;1900;2000;munitions;mechanics;artillery;general_equipment;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250003;Garden Reach Workshop;T23002;5;1900;2000;naval_engineering;electronics;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250004;Hindustan Aircraft Limited;T23003;5;1930;2000;bomber_design;aeronautics;aircraft_testing;fighter_design;avionics;rt_user_1;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250005;Indian Academy of Sciences;T11404;5;1900;2000;mathematics;chemistry;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250006;Indian Atomic Energy Commission;T11405;3;1943;2000;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250007;Indian Government Railways;T11406;5;1900;2000;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250008;J.R.D. Tata;T11407;4;1900;2000;industrial_engineering;technical_efficiency;aeronautics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250009;Mazagon Dock Limited;T11408;4;1900;2000;naval_engineering;naval_artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250010;Military Engineering Services;T11409;5;1900;2000;management;general_equipment;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250011;Ordnance Factories Board;T11410;4;1930;2000;mechanics;munitions;general_equipment;electronics;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250012;Shri Ghanshyam Das Birla;T11411;4;1930;2000;industrial_engineering;management;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250013;University of Delhi;T11412;3;1900;2000;management;chemistry;mechanics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250014;Jagdish Chandra Bose;T11413;6;1930;1937;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250015;Satyendra Nath Bose;T11414;7;1930;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250016;Venkata Raman;T11415;6;1930;2000;management;training;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250017;Archibald Wavell;T10805;6;1942;1947;centralized_execution;large_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250018;Frank Messervy;T11417;5;1942;1947;decentralized_execution;small_unit_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250019;Victor Lord Linlithgow;T11418;3;1930;1943;combined_arms_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250020;William E. Parry;T11419;5;1930;1958;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250021;Aspy Merwan Engineer;T11420;5;1930;1964;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250022;R.D. Katri;T23021;4;1954;1965;small_taskforce_tactics;centralized_execution;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250023;K.M. Cariappa;T23022;5;1947;1965;centralized_execution;large_unit_tactics;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250024;Tata Steel;100161;5;1907;2000;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250025;Prafulla Chandra Roy;100162;3;1889;1937;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250026;Indian Association for Cultivation of Science;100163;3;1876;2000;mathematics;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250027;Bengal Chemicals and Pharmaceuticals;100164;5;1901;2000;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250028;Allahabad University;100165;4;1887;2000;management;chemistry;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+250029;Kodendera Subayya Thimayya;100627;5;1950;2000;small_unit_tactics;infantry_focus;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2500000;Intelligence Bureau;T8250000;7;1887;2013;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,280 @@
+#############################################
+# Regular AI Events
+#############################################
+# Behavior Flags
+#	CHCExpForces		= Send out exp forces
+#	UPGPeace			= Upgrading of existing units flag
+
+# Invasion Flags
+#	CHCAttackJAP		= Flag turned on means they are free to attack at will
+################
+# United Front
+#####################
+event = {
+	id = 3053001
+	random = no
+	country = CHC
+
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+		alliance = { country = CHC }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Ferocity_Yes.ai" }
+		command = { type = ai which = "switch/CHC_atwar_JAP.ai" }
+	}
+}
+################
+# Concentrate on upgrading while at peace
+#############################################
+event = {
+	id = 3053002
+	random = no
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = UPGPeace }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_Peace.ai" }
+		command = { type = local_setflag which = UPGPeace }
+	}
+}
+event = {
+	id = 3053003
+	random = no
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = UPGPeace
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_War.ai" }
+		command = { type = local_clrflag which = UPGPeace }
+	}
+}
+################
+# Attack Japan controls
+#	CHCAttackJAP		= Flag turned on means they are free to attack at will ## Wtf is this meme code - Nekron
+#############################################
+event = {
+	id = 3053004
+	random = no
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CHCAttackJAP }
+		OR = { 
+			war = { country = JAP country = CHC }
+			war = { country = CHI country = CHC } #Let's hope this fires sometimes during the civil war ? 
+			}
+		OR = {
+			war = { country = JAP country = SOV }
+			lost_national = { country = CHI value = 40 }
+			lost_national = { country = CHC value = 1 }
+		}
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CHC_Attack_JAP.ai" }
+		command = { type = local_setflag which = CHCAttackJAP }
+	}
+}
+event = {
+	id = 3053005
+	random = no
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		local_flag = CHCAttackJAP
+		NOT = { war = { country = CHI country = CHC } }
+		NOT = { war = { country = JAP country = CHC } }
+		NOT = { lost_national = { country = CHI value = 40 } }
+		NOT = { lost_national = { country = CHC value = 1 } }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CHC_Defend_JAP.ai" }
+		command = { type = local_clrflag which = CHCAttackJAP }
+	}
+}
+################
+# Load Initial Passitivity
+#############################################
+event = {
+	id = 3053006
+	random = no
+	country = CHC
+
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CHC_Defend_JAP.ai" }
+	}
+}
+
+
+
+event = {
+	id = 3053007
+	random = no
+	country = CHC
+
+	trigger = {
+		ai = yes		
+		OR = {
+			war = { country = MAN }
+			war = { country = MEN }
+		}
+		NOT = { war = { country = JAP } }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = 	peace which = MEN }
+		command = { type = 	peace which = MAN }
+		command = { trigger = { non_aggression = { country = CHC country = JAP } } type = non_aggression which = CHC where = MEN }
+		command = { trigger = { non_aggression = { country = CHC country = JAP } } type = non_aggression which = CHC where = MAN }
+	}
+}
+
+####CHC Build Queue + Get cheaper Militia after defeating JAP to simulate CHC capturing Japanese arms
+
+event = {
+	id = 3063008
+	random = no
+	country = CHC
+	persistent = yes
+
+	trigger = {
+		ai = yes		
+		OR = {
+			war = { country = CHI }
+			war = { country = JAP }
+		}
+	}
+
+
+	date = { day = 1 month = january year = 1940 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = bergsjaeger value = engineer when = 6 }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = bergsjaeger when = 6 }
+	}
+}
+
+event = {
+	id = 3063009
+	random = no
+	country = CHC
+
+	trigger = {
+		ai = yes		
+		OR = {
+			event = 2011028 #JAP Japanese surrender negotiations
+			NOT = { exists = MAN }
+			AND = {
+				NOT = { exists = MEN }
+				control = { province = 1252 data = CHC } # Taiyuyan
+				}
+			AND = {
+				NOT = { war = { country = JAP } }
+				year = 1945
+				}
+		}
+		
+	}
+
+
+	date = { day = 1 month = january year = 1940 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = infantry value = artillery cost = -3.0 when = 5 }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = infantry cost = -3.0 when = 5 }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = militia cost = -1.5 when = 5 }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = militia cost = -1.5 when = 5 }
+	}
+}
+

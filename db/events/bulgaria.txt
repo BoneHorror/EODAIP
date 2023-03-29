@@ -1,0 +1,358 @@
+### 2020001  BUL  Bulgarian claims on Dobrich
+### 2020002  BUL  Romania ignores our claims
+### 2020003  BUL  Bulgarian claims on Dobrich
+### 2020004  BUL  The Hungaro-Bulgarian Alliance
+### 2020005  BUL  The Romanian Surrender - Hungary neutral
+### 2020006  BUL  The Romanian Surrender - Hungary involved
+### 2020007  BUL  The Bulgarian Defeat - Hungary neutral
+### 2020008  BUL  The Bulgarian Defeat - Hungary involved
+### 2020009  BUL  Bulgaria switches sides
+### 2007001  SOV  Bulgaria switches sides
+#########################################################################
+#  Claim Constanta!
+#########################################################################
+event = {
+	id = 2020001
+	random = no
+	country = BUL
+
+	trigger = {
+		control = { province = 307 data = ROM } # Dobrich
+		NOT = {	war = { country = ROM country = BUL } }
+		NOT = {	puppet = { country = BUL country = SOV } }
+		NOT = {	puppet = { country = ROM country = SOV } }
+		NOT = {	event = 2020005 } #BUL The Romanian Surrender - Hungary neutral
+		NOT = {	event = 2020006 } #BUL The Romanian Surrender - Hungary involved
+	}
+
+	name = "EVT_2710_NAME"
+	desc = "EVT_2710_DESC"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 6 month = september year = 1940 }
+	offset = 21
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		name = "EVT_2710_ACTA" # Bulgaria demands Dobrich from Romania
+		ai_chance = 95
+		command = { type = trigger which = 2023009 } #Romania's response
+		command = { type = relation which = ROM value = -50 }
+	}
+	action_b = {
+		name = "EVT_2710_ACTB" # Bulgaria does not demand Dobrich from Romania
+		ai_chance = 5
+		command = { type = relation which = ROM value = 25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+#########################################################################
+#  Romania defies Bulgaria
+#########################################################################
+event = {
+	id = 2020002
+	random = no
+	country = BUL
+	
+	# Triggered by ROM 2023009B
+	
+	name = "EVT_2712_NAME"
+	desc = "EVT_2712_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	action_a = {
+		name = "EVT_2712_ACTA" # Bulgaria takes Dobrici by force
+		ai_chance = 5
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = ENG value = 1 }
+		command = { type = end_guarantee which = SOV where = BUL }
+		command = { type = end_guarantee which = GER where = BUL }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = war which = ROM }
+	}
+	action_b = {
+		name = "EVT_2712_ACTB" # Bulgaria stands down
+		ai_chance = 95
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = dissent value = 5 }
+		command = { type = sleepevent which = 2022014 } #HUN An interesting opportunity
+	}
+}
+
+event = {
+	id = 2020003
+	random = no
+	country = BUL
+	
+	# Triggered by ROM 2023009a
+	
+	name = "EVT_2710_NAME"
+	desc = "EVT_13062712_DESC"
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = "EVT_13062712_ACT"
+		command = { type = manpowerpool value =  15 }
+		command = { type = dissent value = -2 }
+		command = { type = sleepevent which = 2022014 } #HUN An interesting opportunity
+	}
+}
+#########################################################################
+#  Bulgaria and Hungary Join Forces
+#########################################################################
+event = {
+	id = 2020004
+	random = no
+	country = BUL
+
+	trigger = {
+		event = 2022014 #HUN An interesting opportunity
+		war = { country = HUN country = ROM }
+		war = { country = BUL country = ROM }
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "EVT_2714_NAME"
+	desc = "EVT_2714_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "EVT_2714_ACTA" # Hungary joins Bulgaria
+		ai_chance = 100
+		command = { type = alliance which = HUN when = 1 }
+		command = { type = relation which = HUN value = 50 }
+		command = { type = trigger which = 2023010 } #An Utter Betrayal
+	}
+}
+
+#########################################################################
+#  Bulgaria Victorious - Hungary neutral
+#########################################################################
+event = {
+	id = 2020005
+	random = no
+	country = BUL
+
+	# Triggered by ROM 2023011A
+
+	name = "EVT_2716_NAME"
+	desc = "EVT_2717_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "ACTION_NAME_HURRAH" # Bulgaria has won
+		ai_chance = 100
+		command = { type = dissent value = -20 }
+	}
+}
+
+#########################################################################
+#  Bulgaria Victorious - Hungary involved
+#########################################################################
+event = {
+	id = 2020006
+	random = no
+	country = BUL
+
+	# Triggered by ROM 2023012A
+
+	name = "EVT_2716_NAME"
+	desc = "EVT_2717_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "ACTION_NAME_HURRAH" # Bulgaria has won
+		command = { type = dissent value = -20 }
+	}
+}
+
+#########################################################################
+#  Bulgaria Defeated - Hungary neutral
+#########################################################################
+event = {
+	id = 2020007
+	random = no
+	country = BUL
+
+	name = "EVT_2721_NAME"
+	desc = "EVT_2721_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2022014 #HUN An interesting opportunity
+		control = { province = 321 data = ROM } # Sofia
+		war = { country = BUL country = ROM }
+		NOT = {
+			war = { country = HUN country = ROM }
+		}
+		NOT = {
+			alliance = { country = BUL country = GER }
+			alliance = { country = ROM country = GER }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = ACTION_NAME_OK # Bulgaria has lost
+		command = { type = removecore which = 307 } # Dobrici - Romania
+		command = { type = peace which = ROM }
+		command = { type = dissent value = 20 }
+		command = { type = trigger which = 2023013 } #Romania victorious - Hungary Neutral
+	}
+}
+
+#########################################################################
+#  Bulgaria Defeated - Hungary involved
+#########################################################################
+event = {
+	id = 2020008
+	random = no
+	country = BUL
+
+	name = "EVT_2721_NAME"
+	desc = "EVT_2721_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2022014 #HUN An interesting opportunity
+		control = { province = 321 data = ROM } # Sofia
+		war = { country = BUL country = ROM }
+		war = { country = HUN country = ROM }
+		NOT = {
+			alliance = { country = BUL country = GER }
+			alliance = { country = ROM country = GER }
+			alliance = { country = HUN country = GER }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1 # Check for trigger conditions day
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = ACTION_NAME_OK # Bulgaria has lost
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = ROM value = 1 }
+		command = { type = removecore which = 307 } # Dobrici - Romania
+		command = { type = dissent value = 20 }
+		command = { type = trigger which = 2023014 } #Romania victorious - Hungary Neutral
+	}
+}
+
+
+########################################################################
+#  Bulgaria switches sides
+########################################################################
+
+event = {
+	id = 2020009
+	random = no
+	country = BUL
+
+	name = "EVT_2750_NAME"
+	desc = "EVT_2750_DESC"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		NOT = { exists = U29 }
+		random = 20
+		NOT = {
+			alliance = { country = ENG country = BUL }
+			alliance = { country = USA country = BUL }
+			alliance = { country = SOV country = BUL }
+			}
+		AND = {
+			OR = {
+				event = 2007061 #SOV  New allies - Romania
+				control = { province = 316 data = SOV } #Bucharest
+				control = { province = 307 data = SOV } #Dobrich
+				control = { province = 321 data = SOV } #Sofia
+				control = { province = 325 data = SOV } #Burgas
+			}
+			OR = {
+				war = { country = BUL country = SOV }
+				AND = {
+					alliance = { country = GER country = BUL }
+					war = { country = GER country = SOV }
+				}
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1938 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = SOV value = 1 }
+		command = { type = peace which = ENG value = 1 }
+		command = { type = peace which = USA value = 1 }
+		command = { type = peace which = FRA value = 1 }
+		command = { type = set_relation which = SOV value = 50 }
+		command = { type = set_relation which = GER value = -50 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = headofstate which = 95019 } 
+		command = { type = headofgovernment which = 19060 }
+		command = { type = foreignminister which = 95029 }
+		command = { type = ministerofsecurity which = 95072 }
+		command = { type = armamentminister which = 95057 }
+		command = { type = ministerofintelligence which = 95082 }
+		command = { type = chiefofarmy which = 95104 }
+		command = { type = chiefofstaff which = 95092 }
+		command = { type = chiefofair which = 95117 }
+		command = { type = chiefofnavy which = 95110 }
+		command = { type = removeclaim which = 331 } #Pirot
+		command = { type = removeclaim which = 334 } #Tetovo		
+		command = { type = trigger which = 2007001 } #SOV event below
+		}
+
+	action_b = {
+		name = "EVT_2750_ACTB"
+		ai_chance = 2
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 2007001
+	random = no
+	country = SOV
+
+
+	#triggered by BUL event 2020009 A choice
+	
+	name = "EVT_2750_NAME"
+	desc = "EVT_2751_DESC"
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = BUL }
+		command = { type = coup_nation which = BUL }
+		command = { type = alliance which = BUL when = 1 }
+		command = { type = money value = 250 }
+	}
+}

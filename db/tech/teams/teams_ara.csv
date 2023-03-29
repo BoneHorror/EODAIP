@@ -1,0 +1,16 @@
+ARA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+560001;Arab Bank;T9400;4;1900;2000;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560002;Ayoub Co.;T9401;4;1900;2000;mechanics;industrial_engineering;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560003;Cairo University;T9402;3;1900;2000;management;chemistry;mathematics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560004;Damascus University;T9403;2;1900;2000;management;chemistry;mechanics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560005;Egyptian Railways;T9404;4;1900;2000;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560006;Ministry of Military Production;T9405;5;1900;2000;mechanics;artillery;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560007;Hassan Sabry Pasha;T9406;3;1930;2000;centralized_execution;large_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560008;Mohammed Naguib;T9407;4;1930;2000;combined_arms_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560009;Abdelhamid Soliman;T9408;3;1930;2000;small_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560010;Arabian State Armaments;T6500;5;1945;2000;general_equipment;training;munitions;artillery;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560011;National Military Academy;T6502;5;1945;2000;decentralized_execution;individual_courage;infantry_focus;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560013;Arabian State Aircraft;T308;4;1945;2000;fighter_design;aeronautics;mechanics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560014;Garyounis University;T6504;5;1945;2000;mechanics;chemistry;management;industrial_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560015;Arabian Naval Yards;T1;5;1945;2000;naval_engineering;naval_artillery;electronics;technical_efficiency;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+560016;Air Forces & Air Defence;T7110;4;1945;2000;centralized_execution;fighter_tactics;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

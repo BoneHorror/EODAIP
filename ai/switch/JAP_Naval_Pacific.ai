@@ -1,0 +1,523 @@
+# Japan Pacific War AI by Lothos
+
+combat = {
+	ENG = 110
+	FRA = 110
+	USA = 200
+}
+target = { 
+     1399  = 45  #Saigon 
+     1393  = 45  #Hanoi 
+     1361  = 45  #Kaohsung 
+     1647  = 45  #Truk 
+     1675  = 45  #Eniwetok 
+     1681  = 45  #Kwajelin 
+     1726  = 45  #Rabaul 
+     1705  = 30  #Sydney 
+	 2151 = 30 #Dutch Harbour
+	 2142 = 5 #Alaska
+	 1734 = 60 #Hawaii
+	 1739 = 55 #Midway
+}
+max_front_ratio = 1.3
+max_front_ratios = {
+	CHI = 0.9
+	PHI = 4.0
+	U05 = 4.0
+	USA = 2.0
+}
+max_garrison_prop = 0.40
+min_garrison_prop = 0.30
+neutrality = 50.000 
+war = 35
+strat_redeploy_threshold = 25 
+exp_force_ratio = 0.05
+exp_force_ratios = {
+	SIA = 1.0
+} 
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.07 
+
+	AA_batteries = atwar
+	max_AA_level = 4
+	AA_provs = { 
+		1552  #Tokyo
+		1557  #Nagoya
+		1556  #Niigata
+		1553  #Osaka
+		1554  #Hiroshima
+		1560  #Fukuoka
+		1726  #Rabaul
+	}
+
+	radar_station = atwar
+	max_radar = 4
+	radar_provs = {
+		1661  #Iwo Jima
+		1647  #Truk
+		1670  #Palau
+		1686  #Saipan
+		1675  #Eniwetok
+		1681  #Kwajelin
+		1726  #Rabaul
+		1564  #Okinawa
+		1552  #Tokyo
+		1557  #Nagoya
+		1556  #Niigata
+		1553  #Osaka
+		1554  #Hiroshima
+		1560  #Fukuoka
+	} 
+	air_base = atwar
+	max_air_base = 4
+	air_base_provs = {
+		1726  #Rabaul
+		1661  #Iwo Jima
+		1686  #Saipan
+		1670  #Palau
+	} 
+
+	naval_base = atwar
+	max_naval_base = 10 
+	naval_base_provs = {
+		1726  #Rabaul
+	} 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = yes 
+	force_ic_until = 1938
+	ic_end_year = 1952
+	IC_provs = {
+		1552  #Tokyo
+		1557  #Nagoya
+		1556  #Niigata
+		1553  #Osaka
+		1554  #Hiroshima
+		1560  #Fukuoka
+	} 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 		= 0.5
+	overseas_multiplier 	= 1.0
+	home_peace_cap 			= 10
+	war_zone_odds 			= 1.8
+	key_point_prio_mult		= 1.5
+	revolt_risk_mult		= 0.5
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 30	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 20
+		CSX = 50
+		SIK = 50
+		CXB = 50
+		CYN = 50
+		CGX = 50
+		CHC = 10
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 15
+		POR = -1
+		ENG = 50
+		FRA = 50
+		U05 = 10
+		USA = 50
+		PHI = 50
+		AST = 10
+		NZL = 10
+	}
+	province_priorities = {
+		1399  = 75  #Saigon
+		1393  = 75  #Hanoi
+		1361  = 75  #Kaohsung
+		1647  = 75  #Truk
+		1675  = 75  #Eniwetok
+		1681  = 75  #Kwajelin
+		1726  = 75  #Rabaul
+		1565  = 50 #Manila
+		1576  = 50 #Panay
+	}
+	area_multiplier = {
+		1672  = 1.5  #Marcus Island
+		1684  = 1.5  #Rota
+		1562  = 1.5  #Anami
+		1234  = 1.5  #Jeju
+		1565  = 1.5  #Philippines
+		1624  = 1.5  #Borneo - NEI
+		1601  = 1.3  #New Guinea - vs AST
+		1662  = 1.5  #Bonin Island
+		1586  = 0.1  #ignore trash south pacific
+		1581  = 0.1
+		1729  = 0.1
+	}
+}
+front = {
+province_priorities = {
+		1399  = 1.75  #Saigon
+		1393  = 1.75  #Hanoi
+		1361  = 1.75  #Kaohsung
+		1647  = 1.75  #Truk
+		1675  = 1.75  #Eniwetok
+		1681  = 1.75  #Kwajelin
+		1726  = 1.75  #Rabaul
+		1565  = 1.50 #Manila
+		1576  = 1.50 #Panay
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion	= yes
+
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 20.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 200.0  #About the distance from Japan to Batavia
+	max_staging_distance = 90.0	# How far should the staging area be from the target invasion point
+	distance			= 0.2	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.0	#prioritise taking pure islands.
+	enemy				= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.9	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    naval_base 			= 2.0 
+    air_support 		= 3.0 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+	province_priorities = yes
+      
+	staging_province = {
+		1399  #Saigon
+		1361  #Kaohsung
+		1647  #Truk
+		1553  #Osaka
+		1231  #Busan
+		1726  #Rabaul
+		1432  #Singapore
+		1686  #Saipan
+		1670  #Palau
+		1676
+		1552
+		2174
+		2151
+		1659
+	}
+	target = {
+		# Japanese Heartland
+		1562  = 4000  #Amami
+		1564  = 4000  #Okinawa
+		1362  = 7000  #Taibei
+		1361  = 7000  #Gaoxiong
+		1662  = 7000  #Bonin Islands
+		1661  = 8000  #Iwo Jima
+		1543  = 7000  #Etorufu
+		1542  = 7000  #Toyohara
+		1541  = 6000  #Okha  (Soviet Controlled)
+
+		#Philippines
+		1567  = 6750  #Lingayen Gulf
+		1568  = 6750  #Lamon Bay
+		1577  = 6750  #Legaspi
+		1579  = 6750  #Davao
+		1575  = 4500  #Samar
+		1573  = 4500  #Leyte
+		1574  = 4500  #Negros
+		1576  = 4500  #Panay
+		1571  = 4500  #Mindoro
+		1572  = 4500  #Palawan
+
+		#Outer Japanese Islands
+		1686  = 5250  #Saipan
+		1685  = 5250  #Tinian
+		1684  = 5250  #Rota
+		1683  = 5250  #Guam
+		1670  = 5250  #Palau
+		1672  = 5250  #Marcus Island
+
+		#Netherlands East Indies
+		1649  = 6000  #Semarang
+		1656  = 6000  #Madura
+		1636  = 3750  #Palembang
+		1635  = 3750  #Dumai
+
+		#Borneo
+		1625  = 4500  #Mini
+		1624  = 4500  #Kuching
+		1631  = 4500  #Pontianak
+		1632  = 4500  #Balikpapan
+		1627  = 4500  #Tarakan
+
+		#Singapore
+		1436  = 2500  #Kota Bahru
+		1435  = 2500  #Alor Star
+		1432  = 6500  #Singapore
+
+		#China
+		1241  = 5500  #Tianjin
+		1328  = 5500  #Qingdao
+		1338  = 5500  #Shanghai
+		1333  = 5500  #Nanton
+		1334  = 5500  #Lianyuang
+		1358  = 5400  #Fuzhou
+
+		#USA
+		1673  = 5750  #Wake Island
+		1734  = 6700  #Pearl Harbor
+		1736  = 5550  #Hawai
+		1738  = 6300  #Johnston
+		1739  = 6800  #Midway
+		1678  = 6500  #Majuro
+		1680  = 6150  #Tarawa
+		1874  = 5050  #Seattle
+
+		#Britain
+		1371  = 7250  #Hong Kong
+
+		#Far Outer Rim Japanese Islands
+		1675  = 2550  #Eniwetok
+		1674  = 2550  #Bikini
+		1676  = 2550  #Wotje
+		1681  = 2550  #Kwajalein
+		1677  = 2550  #Maloelap
+		1679  = 2550  #Mili
+		1687  = 2550  #Ponape
+		1728  = 2550  #Kosrae
+		1669  = 2550  #Ngulu
+		1668  = 2550  #Yap
+		1667  = 2550  #Ulithi
+		1665  = 2550  #Wolelai
+		1666  = 2550  #Woleai
+		1634  = 2550  #Pulusok
+		1647  = 2550  #Truk
+
+		#Indonesia
+		1659  = 2500  #Menado
+		1657  = 2500  #Makassar
+
+		#New Britain
+		1726  = 2300  #Rabaul
+
+		#Indonesia
+		1620  = 1950  #Helmahera
+		1621  = 1950  #Buru
+		1622  = 1950  #Ceram
+
+		#North New Guinea
+		1639  = 2150  #Biak Island
+		1600  = 2150  #Babo
+		1642  = 2150  #Arare
+		1596  = 2450  #Hollandia
+		1604  = 1750  #Lae
+
+		#North Solomon Islands
+		1724  = 1750  #Admirality Islands
+		1725  = 1750  #New Ireland
+		1607  = 1750  #Buka Island
+		1587  = 1750  #Bougainville
+
+		# NEI Last Remaining Islands
+		1643  = 1800  #Bali
+		1619  = 1800  #Lombok
+		1644  = 1800  #Sumbawa
+		1615  = 1800  #Flores
+		1645  = 1800  #Sumba
+		1616  = 1800  #West Timor
+
+		# USA Alaska
+		2150  = 4500  #Attu Island
+		2151  = 4500  #Dutch Harbor
+		2142  = 4500  #Anchorage
+
+		# South Solomon Islands
+		1589  = 1250  #Shortland Island
+		1588  = 1250  #Vella Lavella
+		1590  = 1250  #Kolombangara
+		1591  = 1250  #New Georgia
+		1592  = 1250  #Guadalcanal
+
+		# Australia/New Zealand
+		1697  = 4500
+		1708  = 3500
+		1720  = 3500
+		1721  = 3500
+		1694  = 3500
+		1704  = 3500
+	} 
+} 
+admiral = { 
+	ignore = {
+		"Sea of Japan"
+		
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+		
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+		
+		#North Sea, East Coast of England
+		"Central Northsea"
+		"West Northsea"
+		"Southeast Northsea"
+		
+		#England/France border Sea Areas
+		"English Channel"
+		"Bay of Biscay"
+		"Cape Finisterre"
+		
+		#Spanish Coast (Atlantic Side)
+		"Portugese Coast"
+		"Cap St Vincent"
+		
+		#Iceland
+		"Faroes Gap"
+		"Denmark Strait"
+		
+		#Ireland/West Coast of England
+		"Irish Sea"
+		"The Hebreides"
+		"Irish West Coast"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#Canada East Coast
+		"Hudson Bay"
+		"Grand Banks"
+		"Canadian Maritimes"
+
+		#USA East Coast
+		"US Maritimes"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+		
+		#North Atlantic
+		"North Atlantic"
+		"Western Approaches"
+		"The Seamounts"
+		"Azores"
+		
+		#Central Atlantic
+		"Central Atlantic"
+		"Central Mid-Atlantic Ridge"
+		"Bermuda Triangle"
+		"Guiana Basin"
+		"South-Central Mid-Atlantic Ridge"
+		"Cap Verde"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Caribbean Sea and Guilf of Mexico
+		"West Gulf of Mexico"
+		"East Gulf of Mexico" 
+		"Florida Strait"
+		"Yucatan Strait"
+		"Windward Islands"
+		"Central Carribean"
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+	}
+	base = {
+		1685	#island near ph
+		1552	#tokyo
+		1676   #south pacific island
+	}
+	target = { 
+	2396 = 200	#near dutch harbour
+	2388 = 240  #Sea near Seattle
+	} 
+	core = { 
+		2637 #Dominate Pearl Harbor
+		2631 #Dominate Midway
+		2485 #Defend PHI
+		2564 #Blockade Port Darwin
+		2476 #Make sure Iwo Jima is ours
+		2528 #Blockade Singaport
+		} 
+}

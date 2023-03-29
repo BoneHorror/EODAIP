@@ -1,0 +1,356 @@
+##########################
+### REVOLTERS SET FREE ###
+###     AI EVENTS      ###
+##########################
+event = {
+	id = 3300000
+	
+	random = no
+	persistent = yes
+	tag = { ALG ANG ARM AZB BEN BLR BOS BRU BUR CAM CMB CON CRO CYP EAF EQA EUS FLA GAB GEO GLD GUY ICL IDC INO ISR JOR KAZ KOR KUR KYG LAO LBY LEB MAD MAL MEN MLY MOR MOZ MTN NAM NIG PAK PAL PRI PRK QUE RHO SAR SCA SER SIB SIE SLV SOM SUD SYR TAJ TRA TRK TUN U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UKR UZB VIE WLL }
+	
+	trigger = { NOT = { local_flag = revolter_set } }
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+	
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 }
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300002
+	country = EGY
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	trigger = { NOT = { local_flag = revolter_set } }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 2 } #  Egypt was actually a puppet of the UK in the HOI2 era
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300003
+	
+	random = no
+	persistent = yes
+	country = CSA
+	
+	trigger = { NOT = { local_flag = revolter_set } }
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }	
+	
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 240013 } # USA's Norfolk Naval Yard
+		command = { type = sleepteam which = 240010 } # USA's Newport News Shipbuilding
+		command = { type = waketeam which = 240030 }  # USA's Philadelphia Naval Shipyard
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300004
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = CAL
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 240004 } # USA's Douglas Aircraft Company
+		command = { type = sleepteam which = 240018 } # USA's Standard Oil of California
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300005
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = TEX
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 240019 } # USA's Texas Oil Company
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300006
+	trigger = {  
+		NOT = { local_flag = revolter_set }	
+		ispuppet = USA 
+		}
+
+	random = no
+	persistent = yes
+
+	country = USA
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 } #  The resistance & 'The Right to Bear Arms'
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300007
+	trigger = {  
+		NOT = { local_flag = revolter_set }		
+		ispuppet = CAN 
+		}
+
+	random = no
+	persistent = yes
+
+	country = CAN
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 4 } #  The resistance
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300008
+	trigger = {  
+		NOT = { local_flag = revolter_set }		
+		puppet = { country = PHI country = JAP }
+		}
+
+	random = no
+	persistent = yes
+
+	country = PHI
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 5 } #  The resistance
+		command = { type = sleepteam which = 325005 } #Douglas MacArthur
+		command = { type = sleepleader which = 325044 } # MacArthur
+		command = { type = sleepleader which = 325045 } # Wainwright
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300009
+	trigger = { 
+		NOT = { local_flag = revolter_set }		
+		puppet = { country = POL country = GER }
+		}
+
+	random = no
+	persistent = yes
+
+	country = POL
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 20 } #  The resistance
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+event = {
+	id = 3300010
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = U23 # Saarprotektorat 
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 25 } # Occupied country
+		command = { type = removecore which = 127 }	
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+
+event = {
+	id = 3300011
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = U24 ### western occupied germany exists
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 25 } # Occupied country
+		
+		
+		command = { type = removecore which = 126 }
+		command = { type = removecore which = 127 }
+		command = { type = removecore which = 128 }
+		command = { type = removecore which = 129 }
+		command = { type = removecore which = 130 }	
+		command = { type = removecore which = 131 }
+		command = { type = removecore which = 132 }
+		command = { type = removecore which = 133 }	
+		command = { type = removecore which = 134 }
+		command = { type = removecore which = 135 }
+		command = { type = removecore which = 136 }
+		command = { type = removecore which = 137 }
+		command = { type = removecore which = 138 }
+		command = { type = removecore which = 139 }
+		command = { type = removecore which = 140 }
+		command = { type = removecore which = 141 }
+		command = { type = removecore which = 142 }
+		command = { type = removecore which = 143 }
+		command = { type = removecore which = 144 }
+		command = { type = removecore which = 145 }
+		command = { type = removecore which = 146 }
+		command = { type = removecore which = 147 }
+		command = { type = removecore which = 148 }
+		command = { type = removecore which = 149 }
+		command = { type = removecore which = 150 }	
+		command = { type = removecore which = 151 }
+		command = { type = removecore which = 152 }
+
+		command = { type = removecore which = 154 }
+		
+		command = { type = removecore which = 174 }
+		command = { type = removecore which = 175 }
+		command = { type = removecore which = 176 }
+		command = { type = removecore which = 177 }
+		command = { type = removecore which = 178 }
+		command = { type = removecore which = 179 }
+		command = { type = removecore which = 180 }
+		
+		command = { type = local_setflag which = revolter_set }
+		}
+	}
+	
+event = {
+	id = 3300012
+	trigger = { NOT = { local_flag = revolter_set } }
+	random = no
+	persistent = yes
+
+	country = U25 ### eastern occupied germany exists
+
+	name = "AI_indep_name"
+	desc = "AI_indep_desc"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 25 } # Occupied country
+		command = { type = removecore which = 163 }
+		command = { type = removecore which = 169 }
+		command = { type = removecore which = 157 }
+		command = { type = removecore which = 171 }
+		command = { type = removecore which = 162 }
+		command = { type = removecore which = 153 }
+		command = { type = removecore which = 156 }
+		command = { type = removecore which = 170 }
+		command = { type = removecore which = 172 }
+		command = { type = removecore which = 173 }
+		command = { type = removecore which = 160 }		
+		command = { type = local_setflag which = revolter_set }
+		}
+	}

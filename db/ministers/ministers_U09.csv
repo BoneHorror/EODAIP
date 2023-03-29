@@ -1,0 +1,64 @@
+U09;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+860001;Head of State;Franz Joseph I;1900;1916;1999;PA;Weary Old Emperor;Medium;3504;X
+860002;Head of State;Karl I;1916;1922;1999;PA;die-hard reformer;Medium;3510;X
+860003;Head of State;Maximilian Eugen von Österreich;1916;1952;1999;PA;benevolent gentleman;Medium;3516;X
+860004;Head of Government;Alois Lexa von Aehrenthal;1900;1912;1999;PA;flamboyant tough guy;Medium;3494;X
+860005;Head of Government;Leopold Berchtold;1900;1942;1999;PA;backroom backstabber;Medium;3514;X
+860006;Head of Government;Stephan Burián von Rajecz;1900;1922;1999;PA;silent workhorse;Medium;3525;X
+860007;Head of Government;Ottokar Czernin;1900;1932;1999;PA;smiling oilman;Medium;3521;X
+860008;Head of Government;Gyula Andrássy;1900;1929;1999;PA;naive optimist;Medium;3508;X
+860009;Head of Government;Ludwig von Flotow;1900;1948;1999;PA;corporate suit;Medium;3515;X
+860010;Foreign Minister;Alois Lexa von Aehrenthal;1900;1912;1999;PA;iron fisted brute;Medium;3494;X
+860011;Foreign Minister;Leopold Berchtold;1900;1942;1999;PA;general staffer;Medium;3514;X
+860012;Foreign Minister;Stephan Burián von Rajecz;1900;1922;1999;PA;ideological crusader;Medium;3525;X
+860013;Foreign Minister;Ottokar Czernin;1900;1932;1999;PA;great compromiser;Medium;3521;X
+860014;Foreign Minister;Gyula Andrássy;1900;1929;1999;PA;apologetic clerk;Medium;3508;X
+860015;Foreign Minister;Ludwig von Flotow;1900;1948;1999;PA;biased intellectual;Medium;3515;X
+860016;Minister of Armament;Stephan Burián von Rajecz;1900;1922;1999;PA;corrupt kleptocrat;Medium;3525;X
+860017;Minister of Armament;Leon Bilinski;1900;1923;1999;PA;resource industrialist;Medium;3513;X
+860018;Minister of Armament;Ernest von Koerber;1900;1919;1999;PA;theoretical scientist;Medium;3502;X
+860019;Minister of Armament;Konrad zu Hohenlohe-Schillingsfürst;1900;1918;1999;PA;Oil baron;Medium;3512;X
+860020;Minister of Armament;Alexander Spitzmüller;1900;1953;1999;PA;Steel magnate;Medium;3491;X
+860021;Minister of Armament;Paul Robert Kuh-Chrobak;1900;1931;1999;PA;Industrial chemist;Medium;unknownminister;X
+860022;Minister of Armament;Franz Xaver von Schönaich;1900;1916;1999;PA;infantry proponent;Medium;3506;X
+860023;Minister of Armament;Moritz von Auffenberg;1900;1928;1999;PA;tank proponent;Medium;3519;X
+860024;Minister of Armament;Alexander von Krobatin;1900;1933;1999;PA;military entrepreneur;Medium;3492;X
+860025;Minister of Armament;Rudolf Stöger-Steiner von Steinstätten;1900;1921;1999;PA;air to ground proponent;Medium;3524;X
+860026;Minister of Armament;Rudolf Montecuccoli;1900;1922;1999;PA;air to sea proponent;Medium;3523;X
+860027;Minister of Armament;Anton Haus;1900;1917;1999;PA;battle fleet proponent;Medium;3496;X
+860028;Minister of Armament;Karl Kailer von Kaltenfels;1900;1917;1999;PA;submarine proponent;Medium;3511;X
+860029;Minister of Armament;Maximilian Njegovan;1900;1930;1999;PA;battle fleet proponent;Medium;3517;X
+860030;Minister of Armament;Franz von Holub;1900;1924;1999;PA;air to sea proponent;Medium;3505;X
+860031;Minister of Security;Richard von Bienerth-Schmerling;1900;1918;1999;PA;compassionate gentleman;Medium;3522;X
+860032;Minister of Security;Guido von Haerdtl;1900;1928;1999;PA;man of the people;Medium;unknownminister;X
+860033;Minister of Security;Maximilian von Wickenburg;1900;1918;1999;PA;prince of terror;Medium;unknownminister;X
+860034;Minister of Security;Karl Heinold von Udynski;1900;1943;1999;PA;crime fighter;Medium;unknownminister;X
+860035;Minister of Security;Konrad zu Hohenlohe-Schillingsfürst;1900;1918;1999;PA;silent lawyer;Medium;3512;X
+860036;Minister of Security;Erasmus von Handel;1900;1928;1999;PA;back stabber;Medium;3501;X
+860037;Minister of Security;Edwin von Schwartzenau   ;1900;1926;1999;PA;efficient sociopath;Medium;unknownminister;X
+860038;Minister of Security;Friedrich von Toggenburg;1900;1956;1999;PA;crooked kleptocrat;Medium;unknownminister;X
+860039;Minister of Security;Edmund von Gayer;1900;1952;1999;PA;Media magnate;Medium;unknownminister;X
+860040;Head of Military Intelligence;Arthur Giesl von Gieslingen;1900;1937;1999;PA;industrial specialist;Medium;3498;X
+860041;Head of Military Intelligence;Eugen Hordliczka;1900;1912;1999;PA;political specialist;Medium;unknownminister;X
+860042;Head of Military Intelligence;August Urbanski von Ostrymiecz;1900;1945;1999;PA;logistics specialist;Medium;unknownminister;X
+860043;Head of Military Intelligence;Oskar von Hranilovic-Cvetassin;1900;1945;1999;PA;naval intelligence specialist;Medium;unknownminister;X
+860044;Head of Military Intelligence;Maximilian Ronge;1900;1953;1999;PA;technical specialist;Medium;3518;X
+860045;Head of Military Intelligence;Alfred Redl;1900;1913;1999;PA;logistics specialist;Medium;3493;X
+860046;Head of Military Intelligence;Andreas Figl;1900;1967;1999;PA;dismal enigma;Medium;3495;X
+860047;Head of Military Intelligence;Gustav Hubka;1900;1962;1999;PA;industrial specialist;Medium;unknownminister;X
+860048;Chief of Staff;Franz Conrad von Hötzendorf;1900;1925;1999;PA;school of fire support;Medium;6517;X
+860049;Chief of Staff;Blasius Schemua;1900;1920;1999;PA;school of manoeuvre;Medium;3500;X
+860050;Chief of Staff;Arthur Arz von Straußenburg;1900;1935;1999;PA;school of defence;Medium;3497;X
+860051;Chief of Army;Arthur von Bolfras;1900;1922;1999;PA;guns and butter doctrine;Medium;3499;X
+860052;Chief of Army;Eduard von Paar;1900;1919;1999;PA;armoured spearhead doctrine;Medium;6640;X
+860053;Chief of Army;Franz Ferdinand von Österreich-Este;1900;1914;1999;PA;decisive battle doctrine;Medium;3503;X
+860054;Chief of Army;Friedrich von Österreich-Teschen;1900;1936;1999;PA;static defence doctrine;Medium;3507;X
+860055;Chief of Army;Karl I;1916;1922;1999;PA;elastic defence doctrine;Medium;3510;X
+860056;Chief of Army;Zdenko von Lobkowitz;1900;1933;1999;PA;commando doctrine army;Medium;3526;X
+860057;Chief of Navy;Rudolf Montecuccoli;1900;1922;1999;PA;base control doctrine;Medium;3523;X
+860058;Chief of Navy;Anton Haus;1900;1917;1999;PA;open seas doctrine;Medium;3496;X
+860059;Chief of Navy;Maximilian Njegovan;1900;1930;1999;PA;decisive naval battle doctrine;Medium;3517;X
+860060;Chief of Navy;Miklós Horthy;1900;1957;1999;PA;power projection doctrine;Medium;3996;X
+860065;Chief of Air Force;Milan Emil Uzelac;1900;1954;1999;PA;carpet bombing doctrine;Medium;3527;X
+860066;Chief of Air Force;Joseph Ferdinand von Österreich-Toskana;1900;1942;1999;PA;air superiority doctrine;Medium;3509;X
+860067;Chief of Air Force;Otto Ellison von Nidlef;1900;1947;1999;PA;army aviation doctrine;Medium;3520;X

@@ -1,0 +1,25 @@
+# Germany has won against France, only Russia remains
+#####################################
+### Germany attacks russia
+# 0.49vrc2 by Spocky
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		SCH = -1
+		U09 = -1
+		FRA = -1
+		HOL = -1
+		BEL = -1
+		DEN = -1
+		RUS = 1
+		SOV = 1
+		SER = 1
+		ITA = 1
+	}
+}
+
+###EOF

@@ -1,0 +1,65 @@
+# German no longer garrisons Baltic
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	ignore = {
+		#Baltic States
+		268  #Mazirbe
+		269  #Jelgava
+		264  #Riga
+		271  #Parnu
+		270  #Tallinn
+		550  #Kingisepp
+
+		#Denmark
+		363  #Bornholm
+		219  #Odense
+
+		#Germany
+		151   #Lubeck
+		#296 # Rostock
+		162  #Stralsund
+		158  #Stettin
+		183  #Elbing
+
+		#Poland
+		181  #Danzig
+
+		#Sweden
+     	2152   #Malmo 
+     	2159  #Stockholm 
+		253  #Uppsala
+     	2158  #Gavle 
+		220  #Sundsuall
+		514  #Umea
+     	2166  #Lulea 
+
+		#Finland
+		531  #Viipuri
+		525  #Helsinki
+		524  #Turku
+		518  #Pori
+		521  #Vaasa
+		520  #Oulu
+		516  #Tornio
+
+		370  #alexandropol, ai stacks 40 divs there
+		#Russia Black Sea Coast
+		306 
+		626 
+		622 
+		624 
+		637 
+		623 
+	}
+}	
+#admiral = { 
+#	ignore = {
+#	#Baltic Area
+#		"Northern Baltic"
+#		"Southern Baltic" 
+#		"Bothnian Bay"
+#	}
+#}

@@ -1,0 +1,92 @@
+# USA is planning D-Day so lets help
+
+exp_force_ratio = 0.5
+exp_force_ratios = {
+	USA = 0.75
+	ENG = 0.25
+} 
+no_exp_forces_to = { }
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= yes
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.01	#higher, avoid worst beaches.
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 30.0 # How far should the staging area be from the target invasion point
+	distance			= 0.01	#higher = avoid long distance.
+	pocket				= 0.4	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.10	#higher = much more vary of troops nearby
+	air_base			= 2.5 
+    naval_base 			= 1.5 
+    air_support 		= 3.0 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= yes 	#[yes/no]
+      
+	staging_province = {
+		23  	#Plymouth
+		27  	#Portsmouth
+		26  	#Dover
+		25		#Norwich	
+		}
+		
+	target = {
+		#England
+		26  = 8000  #Dover
+		25  = 6000  #Norwich
+		27  = 6000  #Portsmouth
+		23  = 6000  #Plymouth
+		22  = 6000  #Cardif
+		36  = 6000  #Belfast
+		17  = 6000  #Manchester
+		12  = 6000  #Edinburgh
+		11  = 6000  #Glasgow
+
+		#Denmark
+		217	= 8000  #Arborg
+		220	= 1000  #Arhus
+		219	= 1000	#Odense
+		
+		#Norway
+		491	= 3000	#Alesund
+		485	= 3000	#Kristiansand
+		483	= 8000	#Oslo
+		493	= 1000	#Trondheim
+		495	= 8000	#Narvik
+		
+		#Germany
+		152 = 100   #Kiel
+		147	= 100	#Wilhelmshaven
+		153	= 100	#Rostock
+		158	= 100	#Stettin
+
+	
+		#France
+		49	= 9000  #Calais
+		53	= 8000  #Dieppe
+		44	= 9000  #Caen
+		37	= 8000  #Brest
+		39	= 8000  #Lorient
+		68  = 9000  #Bordeaux
+		69	= 9000	#La Rochelle
+		46	= 8000	#Bayeux
+		51	= 9000	#Dunkirk
+		82	= 8000	#Montpellier
+		86	= 8000	#Marseille
+	
+		# Belgium
+		114	= 8000  #Bruges
+		115	= 8000	#Antwerpen	
+
+		#Holland
+		125	= 8000	#Rotterdam
+		122	= 8000	#Amsterdam
+		}
+} 

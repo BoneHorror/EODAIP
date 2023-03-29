@@ -1,0 +1,622 @@
+######################################
+### Election day
+# Allows players to call general elections and play a political campaign
+####################################################################################
+######### Base events
+event = {
+	id = 9000100 # Call General Elections
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	decision = { 
+			government = democratic 
+			atwar = no 
+			NOT = { ispuppet = yes } 
+			NOT = { local_flag = general_election }
+			NOT = { country = USA } # POTUS cannot call general elections!!
+ 	}
+	decision_trigger = { 
+			NOT = { dissent = 5 } 
+			domestic = { type = free_market value = 2 }
+			NOT = { domestic = { type = defense_lobby value = 8 } }
+	}
+	trigger = { ai = no }
+
+	name = 9000100name
+	desc = 9000100desc
+	style = 2
+	picture = "election_time"
+	decision_picture = "decision_fireside_chat"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000100left # I want left
+		command = { type = local_setflag which = election_time }
+		command = { type = local_setflag which = election_time_left }
+		command = { type = local_setflag which = general_election }
+		command = { type = event which = 9000101 where = -1 when = 30 }
+	}
+	action = {
+		name = 9000100right # I want right
+		command = { type = local_setflag which = election_time }
+		command = { type = local_setflag which = election_time_right }
+		command = { type = local_setflag which = general_election }
+		command = { type = event which = 9000101 where = -1 when = 30 }
+	}
+}
+event = {
+	id = 9000101 # Election Day
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "election_time"
+	
+	action = { trigger = { NOT = { dissent = 10 } local_flag = election_time }
+		name = 9000101wins
+		command = { trigger = { local_flag = election_time_left } type = domestic which = political_left value = 1 } # Left wins the election: more State intervention
+		command = { trigger = { local_flag = election_time_left } type = domestic which = free_market value = -1 }
+		command = { trigger = { local_flag = election_time_left } type = local_clrflag which = election_time_left }
+		command = { trigger = { local_flag = election_time_right } type = domestic which = political_left value = -1 } # Right wins the election: country rearms
+		command = { trigger = { local_flag = election_time_right } type = domestic which = defense_lobby value = 1 }
+		command = { trigger = { local_flag = election_time_right } type = local_clrflag which = election_time_right }
+		command = { type = local_clrflag which = election_time }
+		command = { type = local_clrflag which = campaign_rally }
+		command = { type = dissent value = -5 }
+		command = { type = event which = 9000102 where = -1 when = 600 }
+	}
+	action = { trigger = { dissent = 10 local_flag = election_time }
+		name = 9000101lost
+		command = { trigger = { local_flag = election_time_left } type = domestic which = political_left value = -1 } # Right wins the election: country rearms
+		command = { trigger = { local_flag = election_time_left } type = domestic which = free_market value = 1 }
+		command = { trigger = { local_flag = election_time_left } type = local_clrflag which = election_time_left }
+		command = { trigger = { local_flag = election_time_right } type = domestic which = political_left value = 1 } # Left wins the election: more State intervention
+		command = { trigger = { local_flag = election_time_right } type = domestic which = defense_lobby value = -1 }
+		command = { trigger = { local_flag = election_time_right } type = local_clrflag which = election_time_right }
+		command = { type = local_clrflag which = election_time }
+		command = { type = local_clrflag which = campaign_rally }
+		command = { type = dissent value = 5 }
+		command = { type = event which = 9000102 where = -1 when = 600 }
+	}
+}
+event = {
+	id = 9000102 # General Elections Can Now Be Called Again
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	name = 9000102name
+	desc = 9000102desc
+	style = 2
+	picture = "election_time"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = local_clrflag which = general_election }
+	}
+}
+event = {
+	id = 9000103 # General Elections Cancelled
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { 
+			local_flag = election_time
+			OR = { NOT = { government = democratic } atwar = yes ispuppet = yes }
+ 	}
+
+	name = 9000103name
+	desc = 9000103desc
+	style = 2
+	picture = "election_time"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_OF_COURSE
+		command = { type = local_clrflag which = election_time }
+		command = { trigger = { local_flag = election_time_right } type = local_clrflag which = election_time_right }
+		command = { trigger = { local_flag = election_time_left } type = local_clrflag which = election_time_left }
+	}
+}
+######### Political Campaign Events
+############################# Negative events ############################
+event = {
+	id = 9000110 # Workers Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 10 }
+
+	name = 9000110name
+	desc = 9000110desc
+	style = 2
+	picture = "strike"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000110a
+		command = { type = trigger which = 9000119 }
+	}
+	action = {
+		name = 9000110b
+		command = { type = dissent value = 2 }
+		command = { type = money value = -100 }
+	}
+}
+event = {
+	id = 9000119 # Workers Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000110name
+	desc = 9000110desc
+	style = 2
+	picture = "strike"
+
+	
+	action = {
+		ai_chance = 50
+		name = 9000119a
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000119b
+		command = { type = dissent value = 4 }
+		command = { type = money value = -300 }
+	}
+}
+event = {
+	id = 9000111 # General Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time dissent = 7 random = 20 }
+
+	name = 9000111name
+	desc = 9000111desc
+	style = 2
+	picture = "strike"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000110a
+		command = { type = trigger which = 9000120 }
+	}
+	action = {
+		name = 9000110b
+		command = { type = dissent value = 5 }
+		command = { type = money value = -400 }
+	}
+}
+event = {
+	id = 9000120 # General Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000111name
+	desc = 9000111desc
+	style = 2
+	picture = "strike"
+
+	
+	action = {
+		ai_chance = 50
+		name = 9000119a
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000119b
+		command = { type = dissent value = 8 }
+		command = { type = money value = -500 }
+	}
+}
+event = {
+	id = 9000112 # Public Sector Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 10 }
+
+	name = 9000112name
+	desc = 9000112desc
+	style = 2
+	picture = "strike"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000110a
+		command = { type = trigger which = 9000121 }
+	}
+	action = {
+		name = 9000110b
+		command = { type = dissent value = 2 }
+		command = { type = money value = -100 }
+	}
+}
+event = {
+	id = 9000121 # Public Sector Strike
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000112name
+	desc = 9000112desc
+	style = 2
+	picture = "strike"
+
+	
+	action = {
+		ai_chance = 50
+		name = 9000119a
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000119b
+		command = { type = dissent value = 4 }
+		command = { type = money value = -300 }
+	}
+}
+event = {
+	id = 9000113 # Sex Scandal
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 5 }
+
+	name = 9000113name
+	desc = 9000113desc
+	style = 2
+	picture = "censorship"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000113a
+		command = { type = trigger which = 9000122 }
+	}
+	action = {
+		name = 9000113b
+		command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 9000122 # Sex Scandal
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000113name
+	desc = 9000113desc
+	style = 2
+	picture = "censorship"
+
+	action = {
+		ai_chance = 50
+		name = 9000122a
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000122b
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 9000114 # Corruption Scandal
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 5 }
+
+	name = 9000114name
+	desc = 9000114desc
+	style = 2
+	picture = "censorship"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000113a
+		command = { type = trigger which = 9000123 }
+	}
+	action = {
+		name = 9000113b
+		command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 9000123 # Corruption Scandal
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000114name
+	desc = 9000114desc
+	style = 2
+	picture = "censorship"
+
+	
+	action = {
+		ai_chance = 50
+		name = 9000122a
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000122b
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 9000115 # Bad Poll Numbers
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time dissent = 5 random = 20 }
+
+	name = 9000115name
+	desc = 9000115desc
+	style = 2
+	picture = "news_paper"
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 9000116 # Prominent Party Member Defects
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 5 }
+
+	name = 9000116name
+	desc = 9000116desc
+	style = 2
+	picture = "congress"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 9000117 # National Media Lashes out at Your Program
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 5 }
+
+	name = 9000117name
+	desc = 9000117desc
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+event = {
+	id = 9000118 # Unconvincing Speech
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	trigger = { local_flag = election_time random = 10 }
+
+	name = 9000118name
+	desc = 9000118desc
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+############################ Positive decisions ############################
+event = {
+	id = 9000150 # Promise More Spendings
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	decision = { local_flag = election_time dissent = 5 }
+	decision_trigger = { money = 500 }
+	trigger = { ai = no }
+
+	name = 9000150name
+	desc = 9000150desc
+	style = 2
+	picture = "money_devaluation"
+	decision_picture = "decision_money_devaluation"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -2 }
+		command = { type = money value = -500 }
+		command = { type = free_money value = -1 }
+	}
+}
+event = {
+	id = 9000151 # Hold Military Parade
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	decision = { local_flag = election_time dissent = 5 }
+	decision_trigger = { supplies = 1000 }
+	trigger = { ai = no }
+
+	name = 9000151name
+	desc = 9000151desc
+	style = 2
+	picture = "Rhineland"
+	decision_picture = "decision_mobilization_young_soldier"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -2 }
+		command = { type = supplies value = -1000 }
+	}
+}
+event = {
+	id = 9000152 # Hold Major Campaign Rally
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+
+	decision = { local_flag = election_time NOT = { local_flag = campaign_rally } }
+	decision_trigger = { money = 100 }
+	trigger = { ai = no }
+
+	name = 9000152name
+	desc = 9000152desc
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = 9000152a
+		command = { type = trigger which = 9000153 }
+		command = { type = money value = -100 }
+		command = { type = local_setflag which = campaign_rally }
+	}
+}
+event = {
+	id = 9000153 # Hold Major Campaign Rally
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	persistent = yes
+	random = no
+	one_action = yes
+
+	name = 9000152name
+	desc = 9000152desc
+	style = 2
+	picture = "congress"
+	decision_picture = "decision_congress"
+	
+	action = {
+		ai_chance = 15
+		name = 9000153a
+		command = { type = dissent value = -2 }
+	}
+	action = {
+		ai_chance = 50
+		name = 9000153b
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 15
+		name = 9000153c
+		command = { type = dissent value = 1 }
+	}
+	action = {
+		ai_chance = 10
+		name = 9000153d
+		command = { type = dissent value = 2 }
+	}
+	action = {
+		ai_chance = 5
+		name = 9000153e
+		command = { type = dissent value = 3 }
+	}
+	action = {
+		ai_chance = 5
+		name = 9000153f
+		command = { type = dissent value = 5 }
+	}
+}

@@ -1,0 +1,441 @@
+# Soviet war with Germany AI File by Lothos
+
+target = {
+	1221 = 50 # Pyongyang
+	1219 = 40 # Port Arthur
+	1552 = 10 # Tokyo
+	}
+max_front_ratios = { }
+
+combat = {
+	JAP = 300
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 50	# Beach level 2
+	capital			= 20	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 100	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = 10
+		TUR = 20
+		FIN = 30
+		ROM = 25
+		POL = 75
+		GER = 75
+		USA = 75
+		ENG = 75
+		FRA = 75
+		ITA = 50
+		JAP = 100
+		MAN = 80
+		SWE = 20
+		NOR = 20
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		553  = 50  #Leningrad
+		617  = 50  #Kiev
+		627  = 50  #Dnepropetrovsk
+		663  = 50  #Stalingrad
+		636  = 50  #Kharkov
+		587  = 50  #Bryansk
+		1191  = 50  #Vladivostock
+		535  = 50  #Murmansk
+	}
+	area_multiplier = {
+     	535  = 2.0  #Murmansk 
+		268  = 0.0  #Mazirbe (German Border easy surround hex)
+	}
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human	= 2.0
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.0
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+      	enemy_handicap = { } 
+      	passivity = { 
+		JAP = 30
+		MAN = 30
+		MEN = 30
+		} 
+} 
+
+technology = { 
+	endgoal 	= { 5540 16020 } # Nuclear 
+		preference 	= { 
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Agriculture
+		5700 5710 5010 5020 5030 5040 5720 53000 53010
+
+		# Engineers
+		1830 1840 1850 1860 1870
+
+		# Motorized Infantry
+		1396 1400 1410 1420 1430 1440 1450 1460 
+
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+		
+		# Interceptors
+		4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 15020 4560 4570 4580
+
+		# manufactoring
+		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+
+		# Construction Engineering
+		5090
+		
+		# Applied Assembly lines
+		5140 5150 5160 5170 5180
+		
+		# Computers
+		5320 5330 5340
+
+		#EQUIPMENT Winter
+		5920 5930
+		
+		# Land Doctrines Soviet Branch.
+		6310 6320 6330 6340 6350 6360 6370 14060 6770 6780 6730 6750 6760 6860 6870 6840
+		
+		# Naval Doctrines
+		8120 8210 8310 81380 8160 8330 8200
+
+		# Air Doctrines
+		9070 9080 9090 9100 9110 9130 9140 9190 9200 9220 9240 9260 9270 9280 9310 9320 9330 9350
+
+		# Strategic Destruction - Flying Armada
+		9150 9160 9170 9180 9430 9440 9450 9460
+
+		# Strategic bombers
+		4220 4230
+
+		# Airborne Infantry
+		1670 1680 1690 1700 1710 1720 1730 1740
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+
+		# Carrier
+		3510 3520
+
+		# Naval Bomber
+		4190 4200
+
+		# Nuclear
+		5470 5480 5490
+		
+		# Amphibious Warfare
+		82300 82310 82320 82330 7900
+	} 
+	ignore 		= {
+		# Light / Mountain
+		1210 1220
+		
+		# Armoured Cars
+		2150 2160 2890 11110
+		
+		# Battlecruisers
+		3340 3350
+
+		# Battleship & *Super heavy Battleship
+		3470 3480 3490
+				
+		# ASW_EQUIPMENT
+		3910 3920
+		
+		# Light Carrier
+		12100
+		
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+		
+		# Ship & Rocket Assembly
+		5150 5170
+		
+		# Synthetic Oil
+		5190 5200
+		
+		#EQUIPMENT Jungle / Desert
+		5940 5950 5960 5970
+
+		# Commerce Defense
+		8150 8160 8170 
+		
+		# Anti-Submarine Patrols
+		8200 8210 8220 8230 8240 8250 8260 8300 8310 8320 8330 8340 8350 
+
+	}
+ 
+	armor 		= 3
+	infantry 	= 5
+	industry 	= 3
+	aircraft 	= 2
+	naval 		= 3
+	land_doctrines 	= 3
+	secret_weapons 	= 3
+	air_doctrines 	= 3
+	naval_doctrines = 2
+}
+
+military = { 
+	relative_build_scheme 	= yes
+
+	#### Divisions etc...
+	infantry 	= 15
+	cavalry 	= 2
+	motorized 	= 8
+	mechanized 	= 8
+	light_armor = 0
+	armor 		= 15
+	paratrooper = 2
+	marine 		= 2
+	bergsjaeger = 0
+	garrison	= 0
+    hq 			= 2
+	militia 	= 0
+#				50 %
+	interceptor 	= 4
+	multi_role 		= 8
+	cas 			= 0
+	strategic_bomber = 8
+	tactical_bomber = 2
+	naval_bomber 	= 2
+	transport_plane = 1
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				31 %
+	battleship 		= 0
+	carrier 		= 4
+	escort_carrier	= 0
+	destroyer 		= 2
+	light_cruiser 	= 4
+	heavy_cruiser 	= 2
+	battlecruiser 	= 0
+	submarine 		= 6
+	nuclear_submarine = 0
+	transports 		= 3
+#				19 %
+}
+### Invasion and naval
+invasion = { 
+	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 130.0 # How far should the staging area be from the target invasion point
+	distance			= 0.4	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.3	#prioritise taking pure islands.
+	enemy				= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.1	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    naval_base 			= 2.0 
+    air_support 		= 15.0 
+    redirect 			= nearest
+	ignore				= yes
+	help_allies 		= no 	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+      
+	staging_province = {
+		1191 #Vladivostock
+		}
+		
+	target = {
+		#RyuKyu Islands
+		1562  = 6500	#	Amami
+		1564  = 7500	#	Northern Okinawa
+
+		#China-Korea
+		1217  = -1	#	Anshan
+		1221  = 3000	#	Pyeongyang
+		1228  = 3000	#	Seoul
+		1234  = -1	#	Buna
+		1241  = -1	#	Tianjin
+		1328  = -1	#	Qingdao
+		1333  = -1	#	Huaiyin
+		1334  = -1	#	Nantong
+		1338  = -1	#	Shanghai
+		1358  = -1	#	Fuzhou
+		1361  = -1	#	Gaoxiong
+		1362  = -1	#	Taipei
+		1367  = -1	#	Naoming
+		1369  = -1	#	Guangzhou
+		1371  = 4500	#	Hong Kong
+		1372  = 2000	#	Macao
+
+		#Japan
+		1552  = 7500	#	Tokyo
+		1554  = 7500	#	Hiroshima
+		1559  = -1	#	Matsuyama
+		1561  = 7500	#	Kagoshima
+	}
+} 
+admiral = { 
+	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 5 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	base = {
+		535 # Murmansk
+		542 # Archangelsk
+		1191 # Vladivostok
+		1219 # Port Arthur
+		1232 # Busan
+	}
+	ignore = {
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+		
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+		
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"US Maritimes"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+		
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+		
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+	target = { 
+	2501 = 200 #Sapporo Sea
+	#2671 = 200 #Narvik Sea
+	2494 = 150 #North Japan East
+	2698 = 100 #Disrupt GER English Channel Operations
+	2498 = 200 #Treater Main Japan
+	2691 = 40 #North Sea
+	} 
+	core = { 
+		2493 #Defend Vladivostok
+		2725 #Leningrad
+		2496 #Defend Korea
+		2495 #Defend Korea
+		} 
+}

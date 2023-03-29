@@ -1,0 +1,251 @@
+# MODEL_10_
+
+allowed_brigades =	anti_air
+allowed_brigades =  sp_anti_air
+allowed_brigades =  engineer		
+allowed_brigades =  police
+allowed_brigades = b_02
+allowed_brigades = b_05
+allowed_brigades = b_06
+allowed_brigades = b_07
+
+# 0 - Basic HQ Division (1870)
+model = {
+	cost 					= 8
+	buildtime	 			= 290
+	manpower 				= 13
+	maxspeed 				= 6
+	defaultorganisation		= 15
+	morale					= 15
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 100
+	suppression				= 1
+	airdefence				= 14
+	softattack				= 2
+	hardattack				= 0
+	airattack				= 0
+	transportweight			= 12
+	supplyconsumption 		= 1.8
+	fuelconsumption			= 0
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 13000 horses = 4000 }
+}
+
+# 1 - Basic HQ Division (1914)
+model = {
+	cost 					= 8
+	buildtime	 			= 290
+	manpower 				= 13
+	maxspeed 				= 6
+	defaultorganisation		= 20
+	morale					= 22
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 100
+	suppression				= 2
+	airdefence				= 14
+	softattack				= 6
+	hardattack				= 0
+	airattack				= 0
+	transportweight			= 12
+	supplyconsumption 		= 1.8
+	fuelconsumption			= 0
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 13000 trucks = 18 horses = 5594 artillery = 72 heavy_artillery = 4  }
+}
+
+# 2 - Basic HQ Division (1928)
+model = {
+	cost 					= 8
+	buildtime	 			= 290
+	manpower 				= 13
+	maxspeed 				= 6
+	defaultorganisation		= 20
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 100
+	suppression				= 3
+	airdefence				= 14
+	softattack				= 10
+	hardattack				= 1
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 2
+	fuelconsumption			= 0
+	upgrade_time_factor 	= 0.20 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.33
+	equipment = { manpower = 13000 trucks = 120 horses = 5600 artillery = 140 heavy_artillery = 10 anti_tank = 30 anti_air = 10 }
+}
+
+# 3 - Improved HQ Division (1939) #Motorized/Mechanized
+model = {
+	cost 					= 9
+	buildtime	 			= 260
+	manpower 				= 13
+	maxspeed 				= 6
+	defaultorganisation		= 20
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
+	suppression				= 4
+	airdefence				= 14
+	softattack				= 11
+	hardattack				= 2
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 2.4
+	fuelconsumption			= 4.5
+	upgrade_time_factor 	= 0.45 
+	upgrade_cost_factor 	= 0.66
+	reinforce_time			= 0.45
+	reinforce_cost 			= 0.66
+	equipment = { manpower = 13000 trucks = 1137 horses = 4842 artillery = 194 heavy_artillery = 18 anti_tank = 75 anti_air = 12 }
+}
+
+# 4 - Advanced HQ Division (1943) #Armoured/Mechanized
+model = {
+	cost 					= 10
+	buildtime 				= 260
+	manpower				= 13
+	maxspeed 				= 11
+	defaultorganisation		= 20
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 90
+	suppression				= 4
+	airdefence				= 14
+	softattack				= 13
+	hardattack				= 4
+	airattack				= 2
+	transportweight			= 10
+	supplyconsumption 		= 1.4
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = {  manpower = 13000 trucks = 1053 horses = 4640 artillery = 204 heavy_artillery = 24 anti_tank = 45 anti_air = 13 } 
+}
+
+#######################################################################
+# Modern Blitzkrieg (14100)
+# Assualt Concentration Doctrine (14070)
+# Mechanized Wave (14060)
+# Air Land Battle (14050)
+#######################################################################
+
+# 5 - Modern HQ Division (1946)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 13
+	maxspeed				= 14
+	defaultorganisation		= 20
+	morale 					= 30
+	defensiveness 			= 35
+	toughness 				= 40
+	softness 				= 85
+	suppression 			= 5
+	airdefence				= 14
+	softattack				= 13
+	hardattack				= 5
+	airattack				= 3
+	transportweight			= 10
+	supplyconsumption		= 2.8
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = {  manpower = 13000 trucks = 736 halftracks = 10 horses = 4032 artillery = 82 heavy_artillery = 60 anti_tank = 45 anti_air = 15 }
+}
+
+# 6 - Improved Modern HQ Division (1956)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 13
+	maxspeed				= 17
+	defaultorganisation		= 20
+	morale 					= 30
+	defensiveness 			= 35
+	toughness 				= 40
+	softness 				= 80
+	suppression 			= 5
+	airdefence				= 13
+	softattack				= 14
+	hardattack				= 6
+	airattack				= 4
+	transportweight			= 10
+	supplyconsumption		= 3.2
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 13000 trucks = 800 halftracks = 25 artillery = 82 heavy_artillery = 60 anti_tank = 45 anti_air = 15 helicopter = 54 }
+}
+
+# 7 - Improved Modern HQ Division (1967)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 13
+	maxspeed				= 20
+	defaultorganisation		= 20
+	morale 					= 30
+	defensiveness 			= 35
+	toughness 				= 40
+	softness 				= 60
+	suppression 			= 5
+	airdefence				= 13
+	softattack				= 15
+	hardattack				= 7
+	airattack				= 5
+	transportweight			= 10
+	supplyconsumption		= 3.5
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 13000 trucks = 800 halftracks = 100 artillery = 82 heavy_artillery = 60 anti_tank = 45 anti_air = 15 helicopter = 80 }
+}
+
+# 8 - Improved Modern HQ Division (1975)
+model = {
+	cost					= 10
+	buildtime				= 260
+	manpower				= 5
+	maxspeed				= 25
+	defaultorganisation		= 10
+	morale 					= 30
+	defensiveness 			= 6
+	toughness 				= 10
+	softness 				= 60
+	suppression 			= 5
+	airdefence				= 12
+	softattack				= 16
+	hardattack				= 8
+	airattack				= 6
+	transportweight			= 10
+	supplyconsumption		= 3.5
+	fuelconsumption			= 5 
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 13000 trucks = 800 halftracks = 500 artillery = 120 heavy_artillery = 60 anti_tank = 45 anti_air = 15 helicopter = 120 }
+}

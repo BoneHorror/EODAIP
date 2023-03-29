@@ -1,0 +1,24 @@
+# 0 - MIRV - Minuteman III
+model = { 
+	cost 						= 5
+	buildtime	 				= 45
+	defaultorganisation 		= o
+	morale						= -20
+	manpower					= 0
+	maxspeed					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence					= 0
+	airattack					= 0
+	strategicattack				= 200
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= 0
+	supplyconsumption 			= 1
+	fuelconsumption				= 2
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = { rocket = 2 }
+}

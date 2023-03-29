@@ -1,0 +1,14 @@
+PRK;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+735001;Ministry of Agriculture;T15200;3;1900;2000;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735002;Ministry of Air Transport;T11403;4;1900;2000;aeronautics;bomber_design;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735003;Ministry of Chemical Industry;T10510;6;1900;2000;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735004;Ministry of Construction;T13502;5;1900;2000;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735005;Ministry of Electronic Industry;T13507;4;1900;2000;industrial_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735006;Ministry of Extractive Industries;T10509;6;1900;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735007;Ministry of Land & Marine Transport;T10300;4;1900;2000;mechanics;naval_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735008;Ministry of Metal & Machine Building Factories;T10504;5;1900;2000;mechanics;artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735009;Ministry of Power & Coal Industries;T11000;6;1900;2000;industrial_engineering;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735010;Ministry of Railways;T11200;5;1900;2000;mechanics;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735011;Ministry of Shipping;T11001;4;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+735012;National Military Academy;T10401;3;1900;2000;centralized_execution;decentralized_execution;large_unit_tactics;infantry_focus;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+7350120;Ministry of State Security;T7350120;6;1900;2000;rt_user_2;training;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

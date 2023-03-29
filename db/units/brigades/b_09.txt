@@ -1,0 +1,138 @@
+detachable = yes
+# 0 - Naval Raid Commando '45
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 10 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 }
+}
+
+# 1 - Naval Raid Commando '51
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 11 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 }
+}
+
+# 2 - Naval Raid Commando '57
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 12 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 trucks = 20 }
+}
+
+# 3 - Naval Raid Commando '63
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 13 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 trucks = 20 }
+}
+
+# 4 - Naval Raid Commando '75
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 14 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 halftracks = 20 }
+}
+
+# 5 - Naval Raid Commando '85
+model = {
+	cost 						= 1.5
+	buildtime					= 300
+	manpower 					= 0.2
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 15 #Shock the enemy defences
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.2
+	upgrade_cost_factor 		= 0.3
+	equipment = { manpower = 2000 halftracks = 20 }
+}

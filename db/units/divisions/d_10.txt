@@ -1,0 +1,27 @@
+# Political Leader unit
+
+# 0 - Political Leader Unit
+model = {
+	cost 					= 10
+	buildtime 				= 260
+	manpower				= 13
+	maxspeed 				= 6
+	defaultorganisation		= 20
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 40
+	softness				= 95
+	suppression				= 4
+	airdefence				= 14
+	softattack				= 13
+	hardattack				= 4
+	airattack				= 2
+	transportweight			= 1
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.1
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = {  manpower = 10 } 
+}

@@ -1,0 +1,34 @@
+####################################
+# PER AI events 
+####################################
+
+################
+# Shift Production
+#############################################
+event = {
+	id = 3031006
+	random = no 
+	country = PER
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = TUR
+			atwar = AFG
+			lost_national = { country = SOV value = 40 }
+			lost_national = { country = IRQ value = 2 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

@@ -1,0 +1,35 @@
+# 1330110074 CHC United Front Helper
+
+event = {
+    id = 1330110074
+    random = no
+    country = CHC
+
+	name = EVT_91_NAME
+	desc = EVT_91_DESC
+
+    style = 2
+    picture = "Marco_Polo_bridge"
+
+    action = {
+        name = ACTION_NAME_AGREE
+        ai_chance = 80
+        command = { type = alliance which = CHI when = 1 }
+        command = { type = dissent value = -10 }
+        command = { type = relation which = CHI value = 50 }
+    }
+
+    action = {
+        trigger = {
+            or = {
+                ai = no
+				NOT = { relation = { which = CHI value = 0 } }
+            }
+        }
+        ai_chance = 40
+        name = ACTION_NAME_REFUSE
+        command = { type = dissent value = 10 }
+        command = { type = relation which = CHI value = -25 }
+        command = { type = war which = JAP } # Separate War.
+    }
+}

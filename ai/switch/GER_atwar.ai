@@ -1,0 +1,64 @@
+# Germany atwar construction AI
+
+upgrading = 0.30
+#reinforcement = 1.00 #0.35
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+   	max_factor = 0.10  
+
+	AA_batteries = atwar
+
+   	coastal_fort = no 
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		152  #Kiel
+	} 
+
+	radar_station = atwar
+	max_radar = 2
+	radar_provs = {
+		145  #Essen
+		137  #Kassel
+		147  #Wilhemshafen
+		163  #Berlin
+		134  #Stutgart
+		116  #Brussels
+		122  #Amsterdam
+		52  #Lille
+		55  #Paris
+	} 
+
+   	air_base = atwar 
+	max_air_base = 5
+	air_base_provs = {
+		145  #Essen
+		157  #Potsdam
+	} 
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+   	land_fort = no 
+	max_land_level = 2
+	fort_borders = { FRA }
+	fort_provs = {
+		163  #Berlin
+	}
+
+   	ic_at_war = yes 
+	force_ic_until = 1937
+	ic_end_year = 1943
+	IC_provs = {
+		127   #Saarburken
+		179  #Munchen
+		163  #Berlin
+		131   #Cologne
+		134  #Stuttgart
+		146   #Hannover
+		173  #Dresden
+	} 
+}

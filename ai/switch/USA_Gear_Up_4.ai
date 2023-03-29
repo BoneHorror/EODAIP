@@ -1,0 +1,683 @@
+# USA Gear up 4 AI File by Nekron
+
+neutrality = 90.000 
+war = 		0
+upgrading = 0.20
+#reinforcement = 1.00
+combat = {
+JAP = 200
+GER = 100
+ITA = 150
+}
+target = { 
+ 55 = 10 # Paris
+ 419 = 10 # Rome
+ 51 = 15 # Dunkirk
+ 495 = 15 # Narvik
+ 1661 = 15 # Iwo Jima
+ 1563 = 10 # Okinawa
+ 1565 = 20 # Manila
+ 1607 = 5 # Port Moresby
+ 1625 = 5 # Brunei
+} 
+exp_force_ratio = 0.07 
+exp_force_ratios = { ENG = 0.7 U01 = 0.1 PHI = 0.2 } 
+no_exp_forces_to = { U02 }
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.07
+
+	AA_batteries = no
+	radar_station = atwar
+	max_radar = 4 
+	radar_provs = {
+		1795 # Dover
+		1812 # Norwich
+		1953 # Portsmouth
+		1778 # Plymouth
+		1734 # Shefield
+		1  # Scapa Flow
+	} 
+	air_base = no
+	naval_base = no
+	ic_at_war = yes
+	force_ic_until = 1940
+	ic_end_year = 1942
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.2
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 5
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 2
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 10	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 10	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CAN = -1
+		MEX = -1
+		SPA = -1
+		SPR = -1
+		SCH = -1
+		GER = 60
+		JAP = 100
+		ITA = 60
+		SOV = -1
+	}
+	ignore = {
+		2145 #Nome
+		2142 # Anchorage
+		
+		#Libya
+		773    #Al Jaghbun
+		754    #Aujila
+		774   #Calanslo
+		751    #Ghadames
+		755    #Sorno
+		
+		#Egypt/East Africa
+		800   #Siwa
+		789   #Qattara
+		801   #AinDalla
+		806   #El Atiun
+		808   #El Obeid
+		809   #Waw
+		807   #Malakal
+		805   #Omdurman
+		812   #Gallabal
+		811   #Kassala
+		843   #Marsabit
+
+		#Ethiopia
+		817   #Asmara
+		819   #Adwa
+		822   #Gonder
+		820   #Debre
+		829   #Gambela
+		830   #Jima
+		826   #Moyale
+		821   #Denakil
+		823   #Dese
+		818   #Diredawa
+		827   #Ogaden
+		837   #Bardera
+
+		#Belgian Congo
+		904   #Stanleyville
+		903   #Buta
+		905   #Costermanville
+		906   #Coquihatville
+		898   #Abertville
+		902   #Kindu-Port-Empain
+		901   #Leopoldville
+
+
+	}
+	province_priorities = { }
+	area_multiplier = {
+		1734  = 1.25  #Pearl Harbour
+		2151  = 1.1  #Dutch Harbor
+		1761  = 0.0  #Antilles
+		1564  = 1.2  #Japanese Leapfrog
+		1661  = 1.2  #Japanese Leapfrog
+		1565  = 1.25  #Philippines
+		1364  = 1.2  #Taipei
+		1560  = 1.1  #Nagasaki
+		1624  = 1.1  #Japanese south
+		1636  = 1.1  #Japanese south
+		1652  = 1.1  #Japanese south
+		1586  = 0.0  #ignore trash south pacific
+		1581  = 0.0
+		1729  = 0.0
+		429  = 1.1  #Italy setup 1
+		430  = 1.1  #Italy setup 2
+		49  = 1.2  #Dday setup
+		22  = 1.2  #Try to recover UK
+		2145 = 0.0
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.05
+	max_attack_odds		= 2.2
+	reinforce_odds		= 1.04
+	withdraw_odds		= 0.55
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion			= yes
+ 	base				= 0.4	#Relative modifier. (lower = specific targets much more important.)
+	random				= 12.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 1.0	#increase to avoid coastal forts more.
+	beach				= 0.01	#higher, avoid worst beaches.
+	distance			= 0.07	#higher = avoid long distance.
+	max_distance   		= 250.0 # 40.0
+	max_staging_distance = 50.0 # 500	# How far should the staging area be from the target invasion point
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.2	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.8	#higher = much more vary of troops nearby
+	air_base			= 2.0
+    	naval_base 			= 1.5 
+    	air_support 		= 12.0 
+    	redirect 			= home
+	ignore				= no
+	help_allies 		= no
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+      
+	staging_province = {
+		1734 #Pearl Harbour
+		1673  #Wake
+		1887  #Los Angeles
+		1809 # Washington
+		1565 #Manilla  
+		348 # Gibraltar 
+		747 # Tunis
+		750 # Tripoli
+		1795  	#New York 
+	}
+
+	target = {
+		#England
+		26  = 6000  #Dover
+		25  = 6000  #Norwich
+		27  = 6000  #Portsmouth
+		23  = 6000  #Plymouth
+
+
+		# PACIFIC OCEAN
+		# -------------
+		#Alaska
+		2142  = 50	#	Anchorage
+		2150  = 50	#	Adak
+		2151  = 2500	#	Dutch Harbor
+		2174  = 2500	#	Attu Island
+
+		#Kurils
+		1541  = 250	#	Okha
+		1542  = 250	#	Toyohara
+		1543  = 250	#	Shana
+
+
+		#American Pacific
+
+		1728  = 400	#	Suva
+		1729  = 400	#	Labasa
+		1730  = 400	#	Mata'utu
+		1731  = 400	#	Apia
+		1732  = 400	#	Nukunonu
+		1733  = 400	#	Pago Pago
+		1734  = 8000	#	Pearl Harbor
+		1735  = 4000	#	Kauai
+		1736  = 8000	#	Hawaii
+		1737  = 4000	#	Maui
+		1738  = 3000	#	Johnston
+		1739  = 8000	#	Midway
+		1740  = 400	#	Rikitea
+		1741  = 400	#	Roto
+		1742  = 400	#	Avarua
+		1743  = 400	#	Papeete
+		1744  = 400	#	Taiohae
+		1745  = 400	#	Jarvis Island
+		1746  = 400	#	Christmas Island
+		1747  = 400	#	Palmyra
+		1748  = 400	#	Alofi
+		1749  = 3000	#	Nuku'alofa
+		1750  = 400	#	Kanton
+		1751  = 400	#	Baker Island
+
+		#Asian Pacific
+		1673  = 3000	#	Wake
+		1661  = 6000	#	Iwo Jima
+		1662  = 400	#	Chichi Jima	
+		1672  = 400	#	Minami Torishima	
+		1674  = 400	#	Bikini	
+		1675  = 400	#	Eniwetok	
+		1676  = 400	#	Kwajalein	
+		1677  = 400	#	Majuro	
+		1678  = 400	#	Makin
+		1679  = 2000	#	Abemama
+		1680  = 2000	#	Tarawa
+		1681  = 400	#	Wotje	
+		1682  = 2000	#	Nauru	
+		1683  = 3000	#	Guam	
+		1684  = 400	#	Rota
+		1685  = 400	#	Saipan
+		1686  = 400	#	Pagan	
+		1687  = 400	#	Funafuti	
+
+
+		#New Zealand
+		1720  = 3000	#	Auckland
+		1721  = 3000	#	Wellington
+		1723  = 3000	#	Dunedin
+
+
+		#Australia
+		1694  = 2750	#	Collie
+		1696  = 2750	#	Katherine
+		1697  = 2750	#	Darwin
+		1704  = 2750	#	Brisbane
+		1708  = 2750	#	Melbourne
+		1709  = 2750	#	Geelong
+		1710  = 2750	#	Hobart
+		1711  = 2750	#	Port Lincoln
+		1713  = 2750	#	Robe
+
+
+		#Coral Sea
+		1587  = -1	#	Bougainville
+		1588  = -1	#	Santa Isabel
+		1589  = -1	#	New Georgia
+		1590  = -1	#	Lunga
+		1591  = -1	#	Malaita
+		1592  = -1	#	Nendo
+		1596  = -1	#	Hollandia
+		1600  = -1	#	Fak-Fak
+		1604  = -1	#	Popondetta
+		1607  = -1	#	Port Moresby
+		1608  = -1	#	Kiunga
+		1611  = -1	#	Male
+		1612  = -1	#	Karavatti
+		1613  = -1	#	West Island
+		1614  = -1	#	Christmas
+
+
+		#Carolinese
+		1724  = 120	#	Manus
+		1725  = 120	#	Kavieng
+		1726  = 120	#	Rabaul
+
+
+		#Indonesia
+		1615  = 150	#	Flores
+		1616  = 150	#	Koepang
+		1617  = 150	#	Dili
+		1618  = 150	#	Aru
+		1619  = 150	#	Yamdena
+		1620  = 150	#	Halmahera
+		1621  = 150	#	Buru
+		1622  = 150	#	Ceram
+		1624  = 150	#	Kuching
+		1625  = 150	#	Bandar Seri Begawan
+		1627  = 150	#	Tarakan
+		1631  = 150	#	Poentianak
+		1632  = 150	#	Balikpapan
+		1634  = 150	#	Pakan Baharoe
+		1635  = 150	#	Djambi
+		1636  = 150	#	Palembang
+		1639  = 150	#	Bangka
+		1642  = 150	#	Medan
+		1643  = 150	#	Bali
+		1644  = 150	#	Sumbawa
+		1645  = 150	#	Waingapoe
+		1647  = 150	#	Batavia
+		1649  = 150	#	Tjirebon
+		1653  = 150	#	Soerabaja
+		1656  = 150	#	Madura
+		1657  = 150	#	Makassar
+		1659  = 150	#	Manado
+
+
+
+		#Philippines
+		1565  = 3000	#	Manila	Philippines
+		1566  = 3000	#	Cabanatuan	Philippines
+		1567  = 3000	#	Baguio	Philippines
+		1568  = 3500	#	Legazpi	Philippines
+		1571  = 3000	#	Mindoro	Philippines
+		1572  = 3000	#	Palawan	Philippines
+		1573  = 3000	#	Leyte	Philippines
+		1574  = 3000	#	Cebu	Philippines
+		1575  = 3000	#	Samar	Philippines
+		1576  = 3000	#	Panay	Philippines
+		1577  = 3000	#	Jolo	Philippines
+		1579  = 3000	#	Davao	Philippines
+
+
+		#RyuKyu Islands
+		1562  = 6500	#	Amami
+		1564  = 6500	#	Northern Okinawa
+
+
+		#Indochina
+		1392  = 1000	#	Hai Phong
+		1395  = 1500	#	Hanoi
+		1399  = 1000	#	Saigon
+		1400  = 1000	#	Phnom Penh
+		1415  = 1000	#	Rangoon
+		1423  = 1000	#	Bangkok
+		1424  = 1000	#	Nakhon Sawan
+		1431  = 1000	#	Songhla
+		1432  = 2500	#	Singapore
+		1435  = 1000	#	Ipoh
+		1436  = 1000	#	Kuantan
+
+		#China-Korea
+		1217  = -1	#	Anshan
+		1221  = 300	#	Pyeongyang
+		1228  = 300	#	Seoul
+		1234  = -1	#	Buna
+		1241  = -1	#	Tianjin
+		1328  = -1	#	Qingdao
+		1333  = -1	#	Huaiyin
+		1334  = -1	#	Nantong
+		1338  = -1	#	Shanghai
+		1358  = -1	#	Fuzhou
+		1361  = -1	#	Gaoxiong
+		1362  = -1	#	Taipei
+		1367  = -1	#	Naoming
+		1369  = -1	#	Guangzhou
+		1371  = 1500	#	Hong Kong
+		1372  = 1000	#	Macao
+
+		#Japan
+		1552  = -1	#	Tokyo
+		1554  = 3000	#	Hiroshima
+		1559  = -1	#	Matsuyama
+		1561  = 3000	#	Kagoshima
+
+
+
+		#Canada - vancouver
+		2089  = 4000	#	Vancouver
+		2090  = 4000	#	Victoria
+
+
+		#USA-West Coast
+		1874  = 4000	#	Seattle
+		1878  = 4000	#	Portland
+		1889  = 4000	#	San Francisco
+		1891  = 4000	#	Santa Barbara
+
+		# ATLANTIC OCEAN
+		# -------------
+		#Islands in cold Water
+		1   = 4750	#	Reykjavik
+		2   = 4750	#	Torshavn
+		1783   = 4750	#	Greenland
+		2135   = 7750	#	Saint-Pierre
+		2137   = 7750	#	St. John's
+
+		#Mid Atlantic
+		994   = 4750	#	Madeira	
+		995   = 4750	#	The Azores	
+
+		#South America
+		1967   = 4750	#	Matamoros
+		1968   = 4750	#	Veracruz
+		1970   = 4750	#	Oaxaca de Juarez
+		1980   = 4750	#	Culiacan Rosales
+		1985   = 4750	#	Cali
+		1986   = 4750	#	Barranquilla
+		1988   = 4750	#	Maracaibo
+		1995   = 4750	#	Maturin
+		1997   = 4750	#	Georgetown
+		1999   = 4750	#	Paramaribo
+		2000   = 4750	#	Cayenne
+		2014   = 4750	#	Trujillo
+		2022   = 4750	#	Valparaiso
+		2023   = 4750	#	Santiago de Chile
+		2024   = 4750	#	Iquique
+		2031   = 4750	#	Temuco
+		2032   = 4750	#	Talcahuano
+		2036   = 4750	#	Rio Gallegos
+		2040   = 4750	#	Santiago de Guayaquil
+		2041   = 4750	#	Galapagos Islands
+		2044   = 4750	#	Ushuaia
+		2045   = 4750	#	Falkland Islands
+		2048   = 4750	#	La Plata
+		2050   = 4750	#	Buenos Aires
+		2052   = 4750	#	Montevideo
+		2053   = 4750	#	Mar del Plata
+		2057   = 4750	#	Curitiba
+		2058   = 4750	#	Porto Alegre
+		2068   = 4750	#	Belem
+		2069   = 4750	#	Sao Luis
+		2070   = 4750	#	Natal
+		2074   = 4750	#	Vitoria
+		2075   = 4750	#	Rio de Janeiro
+		2077   = 4750	#	San Jose de David
+		2078   = 4750	#	Ciudad de Panama
+		2079   = 4750	#	San Salvador
+		2080   = 4750	#	Managua
+		2081   = 4750	#	San Jose
+		2082   = 4750	#	Bluefields 
+		2083   = 4750	#	Puerto Limon
+		2084   = 4750	#	San Pedro Sula
+		2085   = 4750	#	Tegucigalpa
+		2086   = 4750	#	Belize City
+		2087   = 4750	#	Puerto Barrios
+		2088   = 4750	#	Ciudad de Guatemala
+
+
+		#Carabean
+		1752  = 5000	#	St-Martin
+		1753  = 5000	#	Dominica
+		1754  = 5000	#	Montserrat
+		1755  = 5000	#	St Vincent
+		1757  = 5000	#	Anguilla
+		1758  = 5000	#	Trinidad
+		1759  = 5000	#	Atigua & Barbuda
+		1760  = 5000	#	Saint Kitts
+		1762  = 5000	#	Netherlands Antilles
+		1763  = 5000	#	Saint George's
+		1764  = 5000	#	Barbados
+		1765  = 5000	#	Puerto Rico
+		1766  = 5000	#	British Virgin Islands
+		1767  = 5000	#	Guadeloupe
+		1768  = 5000	#	Martinique
+		1769  = 5000	#	Tobago
+		1770  = 5000	#	St Lucia
+		1771  = 5000	#	The Bahamas
+		1772  = 5000	#	Turks and Caicos
+		1773  = 5000	#	The Bermudas
+		1774  = 5000	#	Cayman Islands
+		1775  = 5000	#	Camaguey
+		1778  = 5000	#	Guantanamo Bay Naval Base
+		1779  = 5000	#	Santa Clara
+		1780  = 5000	#	Ciudad Trujillo
+		1781  = 5000	#	Port-au-Prince
+		1782  = 5000	#	Jamaica
+
+
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		400  = 500	#	Venice
+		409  = 500	#	Istanbul
+		412  = 500	#	Ancona
+		416  = 500	#	Anzio
+		419  = 2000	#	Rome
+		422  = 500	#	Taranto
+		427  = 500	#	Salerno
+		429   = 6000	#	Malta
+		430  = 6500	#	Palermo
+		433  = 4500	#	Siracuse
+		434  = 4500	#	Cagliari
+
+		#Greece
+		370  = -1	#	Alexandroupoli
+		372  = -1	#	Patra
+		377  = 15	#	Athens
+		378  = -1	#	Kalymnos
+		379  = -1	#	Rodos
+		381  = -1	#	Ermoupoli
+		382  = -1	#	Irakleio
+		383  = -1	#	Mytilene
+		#yugoslavia Albania
+		343  = -1
+		359  = -1
+
+		# North Africa
+		715  = 7000	#	Tangier	Morocco
+		717  = 7000	#	Rabat	Morocco
+		718  = 7000	#	Casablanca	Morocco
+		727  = 7000	#	Algiers	Algeria
+		728  = 7000	#	Oran	Algeria
+		735  = 7000	#	Bona	Algeria
+		747  = 7500	#	Tunis	Tunisia
+		748  = 7500	#	Bizerte	Tunisia
+		750  = 1235	#	Tripoli	Libya
+		761  = 1235	#	Benghazi	Libya
+		765  = 1235	#	Tobruk	Libya
+		789  = 1235	#	Alexandria	Egypt
+
+
+		# Middle East
+		1004  = 35	#	El Arish
+		1005  = 35	#	Sharm el Sheikh
+		1008  = 35	#	Tel Aviv
+		1019  = 35	#	Beirut
+		1032  = 35	#	Basrah
+		1038  = 35	#	Doha
+		1039  = 35	#	Abu Dhabi
+		1040  = 35	#	Dammam
+		1041  = 35	#	Kuwait
+		1043  = 35	#	Khasab
+		1048  = 35	#	Medina
+		1051  = 35	#	El Mukalla
+		1052  = 35	#	Masqat
+
+		#Norway
+		483  = 1000	#	Oslo
+		485  = 1000	#	Kristiansand
+		491  = 1000	#	Alesund
+		493  = 1000	#	Trondheim
+		495  = 2000	#	Narvik
+
+
+		# Baltic States (in case of un-holy alliance)
+		226  = -1	#	Gdynia
+		264  = -1	#	Riga
+		269  = -1	#	Jelgava
+		270  = -1	#	Tallinn
+		275  = -1	#	Kuressaare
+		516  = -1	#	Tornio
+		521  = -1	#	Vaasa
+		524  = -1	#	Turku
+		525  = -1	#	Helsinki
+		526  = -1	#	Ahvenanmaa
+		530  = -1	#	Terijoki
+		531  = -1	#	Viipuri
+		535  = -1	#	Murmansk
+		542  = -1	#	Arkhangelsk
+		553  = -1	#	Leningrad
+
+
+		# German
+		147   = 15	#	Wilhelmshaven
+		152   = -1	#	Kiel
+		153   = -1	#	Rostock
+		158   = -1	#	Stettin
+		181   = -1	#	Danzig
+		184   = -1	#	Koenigsberg
+
+	
+		# Atlantic Wall
+		37   = 100	#	Brest
+		39   = 100	#	Lorient
+		44   = 100	#	Caen
+		46   = -1	#	Bayeux
+		49   = -1	#	Calais
+		51   = -1	#	Dunkirk
+		53   = -1	#	Dieppe
+		68   = -1	#	Bordeaux
+		69   = -1	#	La Rochelle
+		82   = -1	#	Montpellier
+		86   = -1	#	Marseille
+		94   = -1	#	Corsica
+		114   = 15	#	Bruges
+		115   = 15	#	Antwerpen
+		122   = 15	#	Amsterdam
+		125   = 15	#	Rotterdam
+	} 
+} 
+admiral = { 
+	min_org		= 80	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 75    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 50 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 5 	# ENG/USA default 3, JAP default 2 everyone else is 1
+
+	#Which provinces to use as bases..
+	base = {
+		1734 # Pearl harbour
+		1673 #wake
+		1432 # Singapore
+		1647 # Batavia
+		1565 # Manila
+		1683 # Guam
+		348 # Gibraltar
+		5	# Scapa Flow
+       	429 #Malta
+		1661 #Iwo Jima
+		1559
+	}
+	target = {
+		2179 = 250 #Hunt central mediterrean
+		2743 = 150 #Hunt near greece
+		2189 = 215 #Hunt near corsica
+		2556 = 220 #Philipines center
+		2485 = 230 #Philipines sea
+	} 
+	core = {
+		2424 #Sea near st john's
+		#2316 #Sea near florida
+		2388 #Sea near portland
+		2396 #Sea near Dutch Harbor
+		2346 #sea near guantanamo bay
+		2637 #Pearl Harbor
+		2631 #Midway
+		2556 #Philipines center
+		2278 #Defend Gibraltar
+		2279 #Defend Gibraltar
+		2700 #English channel
+	} 
+	ignore = {
+		#Japanese Coast - try to avoid suiciding shit
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk"
+		
+		#Ignore home regions so that navy is not wasting oil for no reason
+		"Florida Strait"
+		"Central Carribean"
+		"East Gulf of Mexico"
+		"West Gulf of Mexico"
+		"Yucatan Strait"
+	}
+}

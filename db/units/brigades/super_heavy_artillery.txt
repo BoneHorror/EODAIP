@@ -1,0 +1,136 @@
+# BRIG_MODEL_35_
+
+# 0 - Super Heavy Artillery (1912)
+model = {
+	cost 				= 8
+	buildtime	 		= 180
+	manpower 			= 3
+	defensiveness 		= -1
+	toughness 			= -5
+	maxspeed 			= -2
+	softattack			= 1
+	hardattack			= 1
+	supplyconsumption 	= 0.44
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 5
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 1 - Super Heavy Artillery (1916)
+model = {
+	cost 				= 8
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -1
+	toughness 			= -5
+	maxspeed 			= -2
+	softattack			= 1
+	hardattack			= 2
+	supplyconsumption 	= 0.52
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 5
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 2 - Super Heavy Artillery (1918)
+model = {
+	cost 				= 8
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -1
+	toughness 			= -6	
+	maxspeed 			= -2
+	softattack			= 2
+	hardattack			= 2
+	supplyconsumption 	= 0.7
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 5
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 3 - Super Heavy Artillery (1940)
+model = {
+	cost 				= 8
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -3
+	toughness 			= -8	
+	maxspeed 			= -2
+	softattack			= 3
+	hardattack			= 4
+	supplyconsumption 	= 0.95
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 5
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 4 - Super Heavy Artillery (1944)
+model = {
+	cost 				= 10
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -5
+	toughness 			= -10	
+	maxspeed 			= -2
+	softattack			= 5
+	hardattack			= 6
+	supplyconsumption	= 0.95
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 16
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 5 - Super Heavy Artillery (1953)
+model = {
+	cost 				= 10
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -5
+	toughness 			= -15	
+	maxspeed 			= -2
+	softattack			= 10
+	hardattack			= 8
+	supplyconsumption 	= 0.80
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 16
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}
+
+# 6 - Self Propelled Super Heavy Artillery (1963)
+model = {
+	cost 				= 10
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -1
+	toughness 			= -5	
+	softattack			= 12
+	hardattack			= 3
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.3
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 16
+	equipment = { manpower = 3000 halftracks = 34 trucks = 56 heavy_artillery = 34 }
+}
+# 7 - Super Heavy Artillery (1975)
+model = {
+	cost 				= 10
+	buildtime	 		= 200
+	manpower 			= 3
+	defensiveness 		= -1
+	toughness 			= -5	
+	maxspeed 			= -2
+	softattack			= 14
+	hardattack			= 5
+	supplyconsumption 	= 0.80
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.55
+	speed_cap			= 16
+	equipment = { manpower = 3000 heavy_artillery = 34 }
+}

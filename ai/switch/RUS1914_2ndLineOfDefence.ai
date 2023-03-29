@@ -1,0 +1,51 @@
+# Russian 1914 Riga and/or Minsk has been captured!
+# build second defence line Pskov-Vitebsk-klincy-kharkov to shield moskva / st petersburg 
+# Jaegerfeld 2011
+#####################################
+
+
+
+front = { 
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+ 
+	province_priorities = {
+	
+	# against Germany
+	226 = 10	
+	158 = 10
+	163 = 10
+	164 = 10
+	165 = 10
+	
+	
+	# against AEIOU
+	242 = 10
+	238 = 10
+	
+	# against OTT
+	1066 = 10
+	1064 = 10
+
+	#second line of defence
+	566 = 50
+	593 = 50
+	590 = 50
+	587 = 50
+	636 = 50
+	644 = 50
+
+	
+	# retake the fallen cities
+	264 = 80
+	599 = 80
+	}
+}
+
+
+###EOF

@@ -1,0 +1,72 @@
+IND;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+250001;Head of State;Rajendra Prasad;1947;1964;1999;SD;Weary Stiffneck;High;M59031;X
+250002;Head of Government;Mahatma Mohandas Gandhi;1933;1964;1999;SD;Naive Optimist;High;M59037;X
+250003;Foreign Minister;Subhas Chandra Bose;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M59011;X
+250004;Minister of Armament;Sardar Vallabhbhai Patel;1933;1964;1999;SD;Military Entrepreneur;High;M59056;X
+250005;Minister of Security;Rafi Ahmed Kidwai;1933;1964;1999;SD;Crime Fighter;Medium;M59068;X
+250006;Head of Military Intelligence;Shri Jagjivan Ram;1933;1964;1999;SD;Political Specialist;Very High;M59077;X
+250007;Chief of Staff;Mohan Singh;1933;1964;1999;SL;School of Mass Combat;Very Low;M59028;X
+250008;Chief of Army;Ram Singh Thakur;1933;1964;1999;SD;Guns and Butter Doctrine;Very High;M59099;X
+250009;Chief of Navy;Bhaskar Soman;1933;1964;1999;SD;Decisive Naval Battle Doctrine;Medium;M59107;X
+250010;Chief of Air Force;Arjan Singh Vibhusan;1933;1964;1999;SD;Air Superiority Doctrine;medium;M59113;X
+250011;Head of State;Bahadur Bathram of Maler Kotla;1933;1964;1999;SL;Pig-headed Isolationist;High;M59032;X
+250012;Head of State;Rashbehari Basu;1933;1964;1999;PA;Insignificant Layman;High;M59016;X
+250013;Head of Government;Jawaharlal Nehru;1938;1964;1999;SD;Silent Workhorse;High;2672;X
+250014;Head of Government;Nabob Kureishi of Bhawalapur;1942;1964;1999;ML;Smiling Oilman;low;M59040;X
+250015;Head of Government;Sir Mohammed Iqbal;1933;1964;1999;PA;Backroom Backstabber;medium;M59041;X
+250016;Foreign Minister;Ananthasayanam Ayyangar;1937;1964;1999;SD;Great Compromiser;Low;M59044;X
+250017;Foreign Minister;Sarat Chandra Bose;1941;1964;1999;SD;Biased Intellectual;Very High;M59045;X
+250018;Foreign Minister;Jawahar Lal Nehru;1941;1964;1999;SD;Ideological Crusader;High;M59046;X
+250019;Foreign Minister;Bhimrao Ramji Ambedkar;1943;1964;1999;SD;Apologetic Clerk;Low;M59025;X
+250020;Foreign Minister;Mohammed Ayub Khan;1943;1964;1999;SL;General Staffer;High;M59049;X
+250021;Foreign Minister;Aly Khan IV;1942;1964;1999;ML;Great Compromiser;High;M59050;X
+250022;Foreign Minister;Ajoy Kumar Ghosh;1943;1964;1999;PA;Biased Intellectual;Medium;M59023;X
+250023;Foreign Minister;Khawaja Nazimuddin;1947;1964;1999;PA;Apologetic Clerk;High;M59055;X
+250024;Minister of Armament;Lal Bahadur Shastri;1944;1964;1999;SD;Administrative Genius;High;M59024;X
+250025;Minister of Armament;Hitendra Desai;1945;1964;1999;SL;Resource Industrialist;Very High;M59060;X
+250026;Minister of Armament;Bahadur Jayla of Khoch Bahur;1933;1964;1999;ML;Battle Fleet Proponent;Medium;M59048;X
+250027;Minister of Armament;Nawab Jaygoor of Pataudi;1939;1964;1999;ML;Resource Industrialist;Medium;M59062;X
+250028;Minister of Armament;Jyoti Basu;1939;1964;1999;PA;Administrative Genius;Very High;M59021;X
+250029;Minister of Armament;Muhammed Ali Bogra;1944;1964;1999;PA;Air to Sea Proponent;Medium;M59067;X
+250030;Minister of Armament;Iskander Mirza;1933;1964;1999;PA;Infantry Proponent;Medium;M59014;X
+250031;Minister of Security;Bhimrao Ramji Ambedkar;1941;1964;1999;SD;Man of the People;Very High;M59025;X
+250032;Minister of Security;Harilal J. Kania;1933;1964;1999;SL;Silent Lawyer;Low;M59070;X
+250033;Minister of Security;Sir Henry Gidney;1942;1964;1999;SL;Compassionate Gentleman;Very High;M59071;X
+250034;Head of Military Intelligence;Rafi Ahmed Kidwai;1943;1964;1999;SD;Dismal Enigma;Medium;M59068;X
+250035;Head of Military Intelligence;Sir Chhotu Ram;1933;1964;1999;SL;Industrial Specialist;High;M59026;X
+250036;Head of Military Intelligence;Jehangir Bhabha Homi;1943;1964;1999;SL;Technical Specialist;Very High;M59079;X
+250037;Head of Military Intelligence;Sir Bwahadur Kandra;1933;1964;1999;ML;Industrial Specialist;Medium;M59083;X
+250038;Head of Military Intelligence;Rashbehari Basu;1939;1964;1999;PA;Logistics Specialist;Very High;M59016;X
+250039;Head of Military Intelligence;Abdul Majeed Khwaja;1945;1964;1999;PA;Dismal Enigma;Medium;M59087;X
+250040;Chief of Staff;Subhas Chandra Bose;1933;1964;1999;LWR;School of Psychology;Medium;M59011;X
+250041;Chief of Staff;Ananthasayanam Ayyangar;1943;1964;1999;SD;School of Defence;High;M59044;X
+250042;Chief of Staff;Sardar Baldev Singh;1941;1964;1999;SL;School of Psychology;Medium;M59092;X
+250043;Chief of Staff;Kodandera Cariappa;1945;1964;1999;SL;School of Fire Support;High;M59093;X
+250044;Chief of Staff;Kodandera Thimayya;1942;1964;1999;ML;School of Defence;Low;M59095;X
+250045;Chief of Staff;Shah Nawaz Khan;1943;1964;1999;PA;School of Manoeuvre;Very High;M59017;X
+250046;Chief of Staff;Rajendra Prasad;1933;1964;1999;ML;School of Defence;Low;M59031;X
+250047;Chief of Army;Mohan Singh;1941;1964;1999;SD;Decisive Battle Doctrine;Very Low;M59028;X
+250048;Chief of Army;Kodandera Cariappa;1933;1964;1999;SL;Elastic Defence Doctrine;Low;M59093;X
+250049;Chief of Army;Kureishi of Bhawalapur;1933;1964;1999;PA;Static Defence Doctrine;Medium;M59040;X
+250050;Chief of Navy;Ram Dass Katari;1947;1964;1999;SL;Power Projection Doctrine;Medium;M59019;X
+250051;Chief of Navy;Harinder Singh;1946;1964;1999;PA;Indirect Approach Doctrine;Medium;M59112;X
+250052;Chief of Air Force;Subroto Mukherjee;1946;1964;1999;SD;Army Aviation Doctrine;medium;M59115;X
+250053;Chief of Air Force;Aspy Merwan Engineer;1943;1964;1999;SL;Naval Aviation Doctrine;medium;M59117;X
+250054;Chief of Air Force;Ravindra Darshan Singh;1933;1964;1999;PA;Carpet Bombing Doctrine;High;M59118;X
+250055;Chief of Air Force;Mehar Singh;1933;1964;1999;SL;Army Aviation Doctrine;medium;M59114;X
+250056;Head of State;Rajendra Prasad;1933;1964;1999;SL;Weary Stiffneck;High;M59031;X
+250057;Foreign Minister;Yeswanthrao II of Indore;1941;1964;1999;PA;Iron Fisted Brute;Medium;2673;X
+250058;Minister of Armament;H.H. Buland of Kishangarh;1942;1964;1999;PA;Air to Ground Proponent;Very High;M59123;X
+250059;Minister of Security;Ali Khan III of Banganapalle;1933;1964;1999;PA;Prince of Terror;Very High;M59124;X
+250060;Minister of Security;H.H. Waghji of Morvi;1944;1964;1999;PA;Compassionate Gentleman;Very High;M59125;X
+250061;Head of Military Intelligence;H.H. Tashi of Sikkim;1933;1964;1999;PA;Political Specialist;Medium;2674;X
+250062;Head of State;Chakravarti Rajagopalachari;1948;1964;1999;SD;Die-hard Reformer;High;2675;X
+250063;Foreign Minister;Ganesh Mavalankar;1952;1964;1999;SD;Great Compromiser;High;M59129;X
+250064;Minister of Security;Sarvepalli Radhakrishnan;1951;1964;1999;SD;Compassionate Gentleman;Very High;2676;X
+250065;Minister of Armament;Mohan Singh;1949;1964;1999;PA;Laissez-Faire Capitalist;High;6089;x
+250066;Chief of Staff;Mohan Singh;1949;1964;1999;PA;School of Mass Combat;High;6089;x
+250067;Minister of Security;Vinayak Damodar Savarkar;1947;1964;1999;SD;Silent Lawyer;High;6090;x
+250068;Minister of Security;Madhav S. Golwalkar;1940;1964;1999;FA;Silent Lawyer;High;8543;x
+250069;Head of State;Subhas Chandra Bose;1941;1964;1999;FA;Resigned Generalissimo;High;M59011;X
+250070;Head of Government;Subhas Chandra Bose;1941;1964;1999;FA;Naive Optimist;High;M59011;X

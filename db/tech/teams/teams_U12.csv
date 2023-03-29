@@ -1,0 +1,27 @@
+U12;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+875001;Workers Cooperative for Petrol;T301;7;1900;2000;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875002;Workers Cooperative for Aeronautics;T302;6;1900;2000;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875003;English Folks Naval Yard;T303;8;1900;2000;naval_engineering;electronics;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875004;Association for Airflight and Design;T304;7;1900;2000;aeronautics;electronics;technical_efficiency;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875005;English Peoples Army;T305;7;1900;2000;mechanics;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875006;English Electric Cooperative;T306;8;1900;2000;electronics;aeronautics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875007;Harland & Wolff Cooperative;T307;8;1900;2000;naval_engineering;naval_artillery;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875008;Cooperative for Naval exploration;T310;6;1900;2000;naval_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875009;English Folks Armory;T311;8;1900;2000;mechanics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875010;Robert Watson-Watt;T312;7;1930;2000;electronics;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875011;Cooperative for Small Arms Production;T313;6;1900;2000;mechanics;general_equipment;training;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875012;English Engineers Union;T315;7;1900;2000;mechanics;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875013;James Chadwick;T309;7;1930;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875014;Vickers-Armstrong;T316;8;1900;2000;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875015;Alan Brooke;T317;6;1930;1963;decentralized_execution;small_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875016;Arthur Harris;T319;8;1941;2000;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875017;Charles Portal;T321;6;1930;2000;bomber_tactics;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875018;Dudley Clarke;T322;7;1939;2000;decentralized_execution;small_unit_tactics;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875019;Trafford Leigh-Mallory;T328;6;1942;2000;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875020;Frank Whittle;T329;7;1936;2000;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875021;George Paget Thomson;T330;5;1930;2000;nuclear_physics;nuclear_engineering;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875022;Earl Mountbatten;T331;5;1955;1965;small_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875023;Alan Turing;T300;9;1930;1953;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875024;National Army;100491;5;1900;2000;centralized_execution;large_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875025;National Navy;100492;5;1900;2000;large_taskforce_tactics;naval_training;decentralized_execution;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+875026;National Air Force;100493;5;1900;2000;bomber_tactics;training;piloting;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

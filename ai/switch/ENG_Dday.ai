@@ -1,0 +1,235 @@
+# English DDay script - Nekron
+
+combat = {
+	GER = 300
+	ITA = 120
+}
+target = { 
+ 55 = 70 # Paris
+ 37 = 80 # Brest
+ 57 = 50 # Nantes
+ 51 = 80 # Dunkirk
+ 49 = 70 # Calais
+ 125 = 50 # Rotterdam
+ 122 = 50 # Amsterdam
+ 116 = 50 # Brussels
+ 135 = 30 # Tubingen - stop the nukes!
+ 1432 = 20 # Singapore
+} 
+exp_force_ratio = 0.2
+exp_force_ratios = {
+	USA = 1.0
+} 
+no_exp_forces_to = { }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.4
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 2
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		348 = 30 # Gibraltar
+		429   = 30  #Malta
+		789  = 30  #Alexandria
+		49 = 20 # Calais
+		20 = 10 # Exeter
+	}
+	area_multiplier = {
+		348 = 2.0 # Gibraltar
+		429   = 2.0  #Malta
+		789  = 1.5  #Alexandria
+		49 = 1.5 #Calais
+	}
+}
+front = {
+       recklessness = 2 # 0-3
+    distrib_vs_ai = offensive
+    distrib_vs_human = op_defensive
+	province_priorities = {
+		348 = 1.1 # Gibraltar
+		429   = 1.2  #Malta
+		789  = 1.2  #Alexandria
+		49 = 1.4 # Calais
+		20 = 1.5 # Exeter
+	}
+	passivity = {
+		JAP = 30
+		SIA = 10
+		SOV = 0
+		ITA = 0
+		RSI = 0
+		GER = 0
+	}  
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= yes
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 20.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.01	#higher, avoid worst beaches.
+	max_distance  		= 120.0  #About the distance from Japan to Batavia
+	max_staging_distance = 30.0 # How far should the staging area be from the target invasion point
+	distance			= 1.0	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.10	#higher = much more vary of troops nearby
+	air_base			= 2.5 
+    naval_base 			= 1.5 
+    air_support 		= 20.0 
+    redirect 			= home
+	ignore				= no
+	help_allies 		= yes 	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+      
+	staging_province = {
+		23  	#Plymouth
+		27  	#Portsmouth
+		26  	#Dover
+		25		#Norwich	
+		}
+		
+	target = {
+		#England
+		26  = 8000  #Dover
+		25  = 6000  #Norwich
+		27  = 6000  #Portsmouth
+		23  = 6000  #Plymouth
+		22  = 6000  #Cardif
+		36  = 6000  #Belfast
+		17  = 6000  #Manchester
+		12  = 6000  #Edinburgh
+		11  = 6000  #Glasgow
+
+		#Denmark
+		217	= 8000  #Arborg
+		220	= 1000  #Arhus
+		219	= 1000	#Odense
+		
+		#Norway
+		491	= 3000	#Alesund
+		485	= 3000	#Kristiansand
+		483	= 8000	#Oslo
+		493	= 1000	#Trondheim
+		495	= 8000	#Narvik
+		
+		#Germany
+		152 = 100   #Kiel
+		147	= 100	#Wilhelmshaven
+		153	= 100	#Rostock
+		158	= 100	#Stettin
+
+	
+		#France
+		49	= 8000  #Calais
+		53	= 8000  #Dieppe
+		44	= 8000  #Caen
+		37	= 7000  #Brest
+		39	= 5000  #Lorient
+		68  = 8000  #Bordeaux
+		69	= 8000	#La Rochelle
+		46	= 5000	#Bayeux
+		51	= 8000	#Dunkirk
+		82	= 3000	#Montpellier
+		86	= 2000	#Marseille
+	
+		# Belgium
+		114	= 8000  #Bruges
+		115	= 8000	#Antwerpen	
+
+		#Holland
+		125	= 8000	#Rotterdam
+		122	= 8000	#Amsterdam
+		
+		#Continue presurring Italy in case NFrance/Netherlands is too hard to get into!
+		# Italy
+		430	= 8000  #Palermo
+		433	= 8000  #Syracuse
+		434	= 1000  #Cagliari
+		94	= 1000  #Corsica
+		422	= 8000  #Taranto
+		427	= 6000  #Salerno
+		416	= 2000  #Anzio
+		419	= -1  #Rome
+		412	= 6000  #Ancona
+		400	= 500  #Venice
+
+		429 = 8000  #Malta
+		
+		#Netherlands East Indies
+		1639  = 50  #Bagka Island
+		1647  = 50  #Batavia		
+		1649  = 50  #Semarang
+		1653  = 50  #Soerabaja
+		1656  = 50  #Madura
+		1636  = 50  #Palembang
+		1635  = 50  #Dumai
+		1642  = 50  #Medan
+
+		#Borneo
+		1625  = 300  #Mini
+		1624  = 300  #Kuching
+		1631  = 300  #Pontianak
+		1632  = 300  #Balikpapan
+		1627  = 300  #Tarakan
+
+		#Singapore
+		1436  = 500  #Kota Bahru
+		1435  = 500  #Alor Star
+		1432  = 500  #Singapore
+
+		#Britain
+		1371  = 1000  #Hong Kong
+		}
+} 
+admiral = {
+#Which provinces to use as bases..
+	base = {
+		5	# Scapa Flow
+		17 # Liverpool/Manchester 
+		348	# Gibraltar
+		789 # Alexandria 
+		1517 # Bombay 
+		1432 # Singapore 
+		1707 # Canberra
+        717 #Rabat
+        728 #Oran
+        727 #Algiers
+        748 #Bizerte
+        747 #Tunis
+        750 #Tripoli
+        761 #Benghazi
+        765 #Tobruk
+        429 #Malta
+	} 
+	target = { 
+	2694 = 600
+	2692 = 500
+	2698 = 450
+	2699 = 450
+	2697 = 280
+	2693 = 180
+	2701 = 180
+	2558 = 80
+	} 
+}

@@ -1,0 +1,636 @@
+# German operation Barbarosa Invasion AI File by Nekron
+
+max_front_ratio = 1.3 
+max_garrison_prop = 0.40 # 0.60
+min_garrison_prop = 0.25 # 0.40
+max_front_ratios = { 
+   SOV = 5.0 
+   ENG = 3.5
+   USA = 3.5
+   TUR = 1.5
+} 
+no_exp_forces_to = { JAP SIA MAN U49 U03 SPA POR FRA }
+war = 100
+exp_force_ratio = 0.07 
+exp_force_ratios = { ITA = 0.15 U45 = 0.1 FIN = 0.3 ROM = 0.1 U73 = 0.1 RSI = 0.15 U44 = 0.1 } 
+strat_redeploy_threshold = 25
+max_redeploying = 0.15
+###################################
+# Diplomacy
+###################################
+combat = {
+	SOV = 300
+	LIT = 200
+	EST = 200
+	LAT = 300
+}
+target = { 
+	572 = 50 # Moscow - Historical target
+	553 = 70 # Leningrad - Historical target
+	617 = 70 # Kiev - Historical target
+	599 = 20 # Minsk 
+	663 = 20 # Stalingrad 
+	713 = 30 # Baku - more focus in 2nd year 
+} 
+befriend = {
+	ROM = 50
+	BUL = 40 
+	HUN = 80 
+	YUG = 50
+	SLO = 50
+	SPA = 20
+	ITA = 80 
+	SWE = 10
+	FIN = 20
+	JAP = 20
+	POR = 10
+	TUR = 30
+	DEN = 50
+}
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.08 
+
+	AA_batteries = atwar
+
+	coastal_fort = atwar
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		152   #Kiel
+		147   #Wilhelmshaven
+		122   #Amsterdam
+		125   #Rotterdam
+		114   #Brugge
+		51   #Dunkerque
+		49   #Calais
+		53   #Dieppe
+		46   #Bayeux
+		44   #Caen
+		37   #Brest
+		39   #Lorient
+		69   #La Rochelle
+		68  #Bordeaux
+	} 
+
+	radar_station = atwar
+	max_radar = 5
+	radar_provs = {
+		145  #Essen
+		137  #Kassel
+		147  #Wilhemshafen
+		163  #Berlin
+		134  #Stutgart
+		116  #Brussels
+		122  #Amsterdam
+		52  #Lille
+		55  #Paris
+	} 
+
+   	air_base = no 
+	max_air_base = 4
+	air_base_provs = { } 
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+   	land_fort = no 
+	max_land_level = 2
+	fort_borders = { } 
+
+   	ic_at_war = no 
+	force_ic_until = 1935
+	ic_end_year = 1942
+	IC_provs = {
+		127   #Saarburken
+		179  #Munchen
+		163  #Berlin
+		131   #Cologne
+		134  #Stuttgart
+		146   #Hannover
+		173  #Dresden
+	} 
+}
+technology = { 
+	endgoal 	= { 5540 16020 21210 } # Nuclear and Super Heavy Tanks
+ 		preference 	= {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+		
+		# Engineers
+		1830 1840 1850 1860 1870
+		
+		# Inf support
+		#1990 199100 199110 199120 199130 199140 199150 199160 199170 199180 
+
+		# Motorized Infantry
+		1396 1400 1410 1420 1430 1440 1450 1460 
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+
+		# Light tanks
+		2630 2640 2646 2650 2030 2040 2050
+		
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+		
+		# Heavy Tanks
+		2100 2110 2120 2126 2127 2130 21210
+		
+		# Field Artillery Support
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+
+		# Submarines
+		3610 3620 3630 3640 3650 3660 3670 3680 3690 3700 3710
+		
+		4290 4250 4260
+		
+		# Interceptors
+		4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 15020 4560 4570 4580
+
+		# Close Air Support
+		4400 4170 4280 4450 4180 15120 15130
+
+		# Tactical bombers 
+		4610 4620 4630 4120 4130 4140 4150 4160
+		
+		# Manufacturing
+		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+		
+		# Applied Assembly lines 
+		5140 5150 5160 5170 5180
+		
+		# Computers
+		5320 5330 5340
+
+		# Cryptography
+		5316 5326 5327 5350 5360 5370 5380 5390 5400 53060 53116
+		
+		# Radar
+		5410 5416
+
+		# MEDICINE
+		5640 5650 5660 5670	
+		
+		# Electronic Computers
+		7140 7150 7160 16000 16040
+		
+		# Mobility Focus - Modern Blitzkrieg (Blitzkrieg Path - GER)
+		6210 6220 6230 6250 6260 6240 6270 6280 6290 14100
+		
+		# Hunter Groups - Unified Axis Doctrine
+		6720 6730 6740 6750 6810 6820 6760 6830
+		
+		# Raider Patrols
+		8550 8560 8570
+
+		# Trade Interdiction Submarine
+		8600 8610 8620 8630 8640 8650 8660 8700 8710 8720 8730 8740 8750
+
+		# Offensive Fighter Box - Fighter Ace Initiative
+		9310 9320 9330 9340
+		# Defensive Fighter Box - Air Reserve
+		9390 9400 9410 9420
+		# Operational Destruction - Key Point Bombardment
+		9090 9100 9110 9120 9130 9350 9360 9370 9380
+		# Battlefield Destruction - Bomber Ace Initiative
+		9040 9050 9060 9070 9080 9270 9280 9290 9300
+		
+		
+	} 
+	armor 		= 5
+	infantry 	= 4
+	industry 	= 3
+	aircraft 	= 4
+	naval 		= 1
+	land_doctrines 	= 2
+	secret_weapons 	= 1
+	air_doctrines 	= 2
+	naval_doctrines = 1
+}  
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	home_multiplier 	= 1.0
+	overseas_multiplier = 0.3
+	revolt_risk_mult	= 0.2
+	province_priorities = {
+		55  = 30  #Paris
+		52  = 30  #Lille
+		116  = 30  #Brussels
+		145  = 30  #Prague
+		104  = 30  #Metz
+		43  = 30  #Cherborg
+		42  = 30  #Avranches
+		69  = 30  #La Rochele
+		147  = 30  #Wilhelmshafen
+		148  = 30  #Bremen
+		150  = 30  #Groningen
+		338  = 30  #Belgrade
+		377 = 20 #Athens
+		
+		#Just in case we succeeded in Sealion
+		23 = 30 #Plymouth
+		34 = 30 #Dublin
+		36 = 20 #Belfast
+		29 = 20 #London
+		1 = 20 #Reykjavik
+		
+		486 = 30 # Heavy Water in Honefoss
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = -1 #Mytilini
+		381 = -1 #Ermoupoli
+		370 = -1 #Alexandropoli
+	}
+country_priorities = {
+     	FRA = -1 
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		AUS = -1
+		TUR = 5
+		SPR = -1
+		SPA = -1
+		SOV = 90
+		ENG = 100
+		USA = 100
+		U01 = 50
+		U02 = 30
+	}
+	area_multiplier = {
+		553    = 1.3  #Leningrad
+		573    = 1.4  #Moscow
+		731    = 1.2  #Baku
+		604	   = 1.3  #Kursk
+		639    = 1.2  #Crimea Breakthrough
+		633    = 1.6  #Stalingrad
+		1006   = 0.5  #Trash africa PoI
+		825    = 0.5	#Addis Adeba
+		1041	= 0.5  #Terrible area near Saudi Arabia
+		1026	= 0.5 #Al Kerak - Transjordan
+	}
+}
+front = { 
+   	recklessness     = 3 # 0-3 
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+   	base_attack_odds   = 1.1 
+   	min_attack_odds   = 1.01  
+	max_attack_odds 	= 2.0 
+	support_defense_prop 	= 0.4
+
+	province_priorities = {
+		553    = 1.3  #Leningrad
+		573    = 1.4  #Moscow
+		731    = 1.1  #Baku
+		604	   = 1.3  #Kursk
+		639    = 1.2  #Crimea Breakthrough
+		633    = 1.2  #Stalingrad
+	}
+	
+    enemy_handicap = { } 
+    passivity = { } 
+}
+
+invasion = { 
+	invasion		= yes
+ 	base			= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random			= 5.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 1.0	#higher = avoid long distance.
+	max_distance    = 34.0 # 34.0  #From Narvik to AA - 34 woulud be Hamburg to AA
+	max_staging_distance = 13.0	# From Narvik to AA
+	pocket			= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 1.5	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.8	#higher = much more vary of troops nearby
+	air_base		= 2.5 
+    naval_base 		= 2.0
+    air_support 	= 15.0 
+    redirect 		= priority
+	ignore			= no
+	help_allies 	= no	#[yes/no] - try to offer help to Italy during Barbarossa, so that German troops can end up in North Africa
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+		122 #Amsterdam
+		125 #Rotterdam
+		114 #Bruges
+		115 #Antwerpen
+		51  #Dunkerque	
+		43  #Cherbourg
+		37	#Brest
+		377	#Athens
+		429 #Malta
+		495 #Narvik
+		184	#Koningsberg	
+	}
+	target = { 
+		#England
+		22	= 1000  #Cardif
+		26  = 2000  #Dover
+		25  = 1000  #Norwich
+		27  = 1000  #Portsmouth
+		23  = 1000  #Plymouth
+		36  = 1000  #Belfast
+		17  = 1000  #Manchester
+		12  = 4000  #Edinburgh
+		11  = 1000  #Glasgow
+		1   = 2000	#Iceland
+		
+		#Soviets
+		535 = 6000 	#Murmansk
+		542 = 6000	#Archangelsk
+		530 = 6000	#Terijoki
+		553 = 5000	#Leningrad
+		641 = -1	#Sevastopol - we ain't gonna get this bc of Turkey
+		264 = 8000	#Riga
+
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 1000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 1000	 #Antwerpen
+		49   = 1000  #Calais
+		51   = 1000  #Dunkerque
+		53   = 1000  #Dieppe
+		46   = 1000  #Bayeux
+		44   = 1000  #Caen
+		37   = 1000  #Brest
+		39   = 1000  #Lorient
+		69   = 1000  #Le Rochelle
+		68   = 1000  #Bordeaux
+
+		#Norway
+		491	= 2000	#Alesund
+		485	= 2000	#Kristiansand
+		483	= 2000	#Oslo
+		493	= 2000	#Trondheim
+		495	= 2000	#Narvik
+		
+		#Sweden
+     	2153 = 1000 # Goterborg 
+     	2152 = 1000 # Malmo 
+     	2159 = 1000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 1000 # Gavle 
+     	2166 = 1000 # Lulea 
+
+		#Finland
+		525 = 1000 # Helsinki
+		524 = 1000 # Turku
+		521 = 1000 # Vaasa
+		516 = 2000 # Tornio
+		531 = 2000 # Viipuri
+		
+		#Denmark
+		294 = 2000 # Copenhagen
+		219 = 1000 # Odense
+		
+		#Baltics
+		275 = 2000 # Kuressaare
+		269 = 2000 # Jelgava
+		
+		184 = 4000 # Koenigsberg
+		181 = 100 # Danzig
+		226 = 100 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+
+		#Mediter.
+		382 = 200 #Irakleio
+		388 = 200 #Nikosia
+		429 = 250 #Malta
+		789 = 200 #Alexandria		
+		765 = 400 #Tobruk
+	}
+} 
+admiral = { 
+	ignore = {
+		#England/France border Sea Areas
+		"Bay of Biscay"
+		"Cape Finisterre"
+		
+		#Spanish Coase (Atlantic Side)
+		"Portugese Coast"
+		"Cap St Vincent"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#Canada East Coast
+		"Hudson Bay"
+		"Grand Banks"
+		"Canadian Maritimes"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+		
+		#North Atlantic
+		"North Atlantic"
+		"Western Approaches"
+		"The Seamounts"
+		"Azores"
+		
+		#Central Atlantic
+		"Bermuda Triangle"
+		"Guiana Basin"
+		"South-Central Mid-Atlantic Ridge"
+		"Cap Verde"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Caribbean Sea and Guilf of Mexico
+		"West Gulf of Mexico"
+		"East Gulf of Mexico" 
+		"Florida Strait"
+		"Yucatan Strait"
+		"Windward Islands"
+		"Central Carribean"
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+		
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+		
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+		
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+		
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"US Maritimes"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+		
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+		
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+	target = { #These targets will be re-written in Sub Patrol AI too!
+		2679 = 140 #Evaluate Archangelsk Invasion
+		2678 = 140 #Evaluate Murmansk Invasion
+		2278 = 120 #Hunt British Convoys near Gibraltar
+		2279 = 120 #Hunt British Convoys near Gibraltar
+		2719 = 40 #Make sure no leftover soviet ships
+		2724 = 50 #Mare sure no leftover soviet ships
+		2696 = 1 #Clean up baltic
+	} 
+	core = { 
+		2719 #Clean up Baltic
+		2694 #Protect Denmark
+		2689 #Protect Alesund
+		2671 #Protect Narvik
+		2699 #Protect Channel invasions
+		2725 #Threaten Leningrad
+		} 
+}

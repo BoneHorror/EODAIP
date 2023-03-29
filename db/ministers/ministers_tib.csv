@@ -1,0 +1,89 @@
+TIB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+440001;Head of State;Dalai Lama Lhamo Tondup;1933;1964;1999;PA;Benevolent Gentleman;High;M73001;X
+440002;Head of Government;Reting Rimpoche;1933;1964;1999;PA;Old General;High;M73002;X
+440003;Foreign Minister;Reting Rimpoche;1933;1964;1999;PA;Apologetic Clerk;High;M73002;X
+440004;Minister of Armament;Tsepon Shakabpa;1933;1964;1999;PA;Corrupt Kleptocrat;High;M73004;X
+440005;Minister of Security;Reting Rimpoche;1933;1964;1999;PA;Compassionate Gentleman;High;M73002;X
+440006;Head of Military Intelligence;W.G. Kundeling;1933;1964;1999;PA;Logistics Specialist;High;M73006;X
+440007;Chief of Staff;Gyato Wangdu;1933;1964;1999;PA;School of Manoeuvre;High;M73007;X
+440008;Chief of Army;Tenpa Jamyang;1933;1964;1999;PA;Elastic Defence Doctrine;High;M73008;X
+440009;Chief of Navy;Chama Samphe;1933;1964;1999;PA;Decisive Naval Battle Doctrine;High;M73009;X
+440010;Chief of Air Force;Sampo Tsewang Rigzin;1933;1964;1999;PA;Army Aviation Doctrine;High;M73010;X
+440011;Head of Government;Taktra Rinpoche;1941;1964;1999;SC;Backroom Backstabber;Medium;M73041;X
+440012;Foreign Minister;Gedun Choephel;1933;1964;1999;SC;Biased Intellectual;Medium;M73012;X
+440013;Foreign Minister;Kuntsig Shamar Rimpoche;1933;1964;1999;PA;Ideological Crusader;Medium;M73043;X
+440014;Foreign Minister;Taktra Rinpoche;1941;1964;1999;PA;Great Compromiser;Medium;M73041;X
+440015;Foreign Minister;Jigme Taring;1943;1964;1999;SC;Apologetic Clerk;Medium;M73045;X
+440016;Foreign Minister;Gyato Wangdu;1943;1964;1999;PA;General Staffer;Medium;M73007;X
+440017;Foreign Minister;Gangdhjom Tharchin;1944;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M73047;X
+440018;Foreign Minister;Dudjom Rimpoche;1945;1964;1999;SC;Iron Fisted Brute;Medium;M73048;X
+440019;Minister of Armament;Reting Rimpoche;1937;1964;1999;PA;laissez-faire capitalist;High;M73002;X
+440020;Minister of Armament;Khilsin Tchansal;1938;1964;1999;PA;Theoretical Scientist;Medium;M73050;X
+440021;Minister of Armament;Chama Samphe;1938;1964;1999;PA;Battle Fleet Proponent;High;M73009;X
+440022;Minister of Armament;Lhalu Tsewang Dorje;1939;1964;1999;SC;Submarine Proponent;Medium;M73019;X
+440023;Minister of Armament;Thupthen Ningee;1940;1964;1999;SC;Resource Industrialist;Medium;M73014;X
+440024;Minister of Armament;Tenpa Jamyang;1941;1964;1999;PA;Infantry Proponent;High;M73008;X
+440025;Minister of Armament;Bapa Yeshe;1942;1964;1999;SC;Air Superiority Proponent;Medium;M73020;X
+440026;Minister of Armament;Gyato Wangdu;1943;1964;1999;PA;Tank Proponent;High;M73007;X
+440027;Minister of Armament;Jigme Taring;1944;1964;1999;SC;Military Entrepreneur;Medium;M73045;X
+440028;Minister of Armament;Sampo Tsewang Rigzin;1944;1964;1999;PA;Air to Ground Proponent;High;M73010;X
+440029;Minister of Armament;W.G. Kundeling;1945;1964;1999;PA;Administrative Genius;High;M73006;X
+440030;Minister of Security;Chama Sanampo;1933;1964;1999;SC;Back Stabber;Medium;M73016;X
+440031;Minister of Security;Bapa Yeshe;1937;1964;1999;SC;Man of the People;Medium;M73020;X
+440032;Minister of Security;Chama Samphe;1937;1964;1999;PA;Efficient Sociopath;High;M73009;X
+440033;Minister of Security;Taktra Rinpoche;1938;1964;1999;PA;Compassionate Gentleman;Medium;M73041;X
+440034;Minister of Security;Thepon Rananpoi;1939;1964;1999;PA;Crime Fighter;Medium;M73064;X
+440035;Minister of Security;Tsepon Shakabpa;1941;1964;1999;PA;Prince of Terror;High;M73004;X
+440036;Minister of Security;Gedun Choephel;1943;1964;1999;SC;Silent Lawyer;Medium;M73012;X
+440037;Head of Military Intelligence;Tenpa Jamyang;1938;1964;1999;PA;Logistics Specialist;High;M73008;X
+440038;Head of Military Intelligence;Khilsin Tchansal;1941;1964;1999;PA;Technical Specialist;Medium;M73050;X
+440039;Head of Military Intelligence;Thupthen Ningee;1943;1964;1999;SC;Industrial Specialist;Medium;M73014;X
+440040;Head of Military Intelligence;Chama Sanampo;1944;1964;1999;SC;Dismal Enigma;Medium;M73016;X
+440041;Head of Military Intelligence;Chama Samphe;1945;1964;1999;PA;Political Specialist;High;M73009;X
+440042;Chief of Staff;Tenpa Jamyang;1937;1964;1999;PA;School of Fire Support;High;M73008;X
+440043;Chief of Staff;Andruk Gonpo Tashi;1938;1964;1999;SC;School of Psychology;Medium;M73017;X
+440044;Chief of Staff;Jampal Rabgyé Rinpoche;1939;1964;1999;SC;School of Defence;Medium;M73018;X
+440045;Chief of Staff;Bapa Yeshe;1944;1964;1999;PA;School of Manoeuvre;High;M73020;X
+440046;Chief of Army;Bapa Yeshe;1933;1964;1999;PA;Elastic Defence Doctrine;High;M73020;X
+440047;Chief of Army;Chaghoe Namgyal Dorje;1942;1964;1999;PA;Decisive Battle Doctrine;Medium;M73078;X
+440048;Chief of Army;Gyato Wangdu;1943;1964;1999;PA;Armoured Spearhead Doctrine;High;M73007;X
+440049;Chief of Army;Jampal Rabgyé Rinpoche;1943;1964;1999;SC;Static Defence Doctrine;Medium;M73018;X
+440050;Chief of Army;Khemey Sonam Wangdi;1943;1964;1999;PA;Guns and Butter Doctrine;Medium;M73081;X
+440051;Chief of Navy;Lhalu Tsewang Dorje;1938;1964;1999;SC;Indirect Approach Doctrine;Medium;M73019;X
+440052;Chief of Navy;Chaghoe Namgyal Dorje;1939;1964;1999;PA;Open Seas Doctrine;Medium;M73078;X
+440053;Chief of Air Force;Gyato Wangdu;1937;1964;1999;PA;Army Aviation Doctrine;High;M73007;X
+440054;Chief of Air Force;Bapa Yeshe;1945;1964;1999;SC;Air Superiority Doctrine;Medium;M73020;X
+440055;Head of State;Dalai Lama Lhamo Tondup;1944;1964;1999;PA;Autocratic Charmer;High;M73086;X
+440056;Chief of Army;Xazha Benjor Doje;1900;1933;1999;PA;Decisive Battle Doctrine;High;unknownminister;X
+440057;Chief of Army;Kalon Lama;1904;1933;1999;PA;Guns and Butter Doctrine;Medium;3366;X
+440058;Chief of Army;Changra Depsn;1910;1933;1999;PA;static defence doctrine;Medium;3367;X
+440059;Chief of Army;Tsarong Dzasa;1912;1933;1999;SC;Decisive Battle Doctrine;Medium;3368;X
+440060;Chief of Staff;Lama Qamqen Ngawang Baisang;1900;1933;1999;PA;School of Mass Combat;High;unknownminister;X
+440061;Chief of Staff;Kalon Lama;1900;1933;1999;PA;School of Fire Support;High;3366;X
+440062;Chief of Staff;Tsarong Dzasa;1912;1933;1999;SC;School of Psychology;High;3368;X
+440063;Foreign Minister;Agvan Drozhiev;1900;1933;1999;PA;Great Compromiser;High;3369;X
+440064;Foreign Minister;Silun Qamqen;1912;1933;1999;PA;biased intellectual;Medium;3370;X
+440065;Foreign Minister;Gudjir Lubsan-Agvan Choinzin;1913;1933;1999;PA;ideological crusader;Medium;unknownminister;X
+440066;Head of Government;Ganden Tripa Isomolin Rimpoche;1900;1933;1999;PA;Naive Optimist;Medium;unknownminister;X
+440067;Head of Government;Gandain Chiba Lobsang Gyaincain;1904;1933;1999;PA;Naive Optimist;Medium;3371;X
+440068;Head of Government;Lonchen Paljor Dorje Shatra;1907;1933;1999;PA;Silent Workhorse;Medium;3372;X
+440069;Head of Government;Sholkhang;1907;1933;1999;PA;Silent Workhorse;Medium;3373;X
+440070;Head of Government;Chikyak Khenpo Champa Tubwang;1913;1933;1999;PA;Backroom Backstabber;Medium;3374;X
+440071;Head of Government;Tsarong Dzasa;1924;1933;1999;SC;Old General;Medium;3368;X
+440072;Head of Military Intelligence;Langserling;1900;1933;1999;PA;Dismal Enigma;High;3375;X
+440073;Head of Military Intelligence;Kalon Lama;1900;1933;1999;PA;Political Specialist;High;3366;X
+440074;Head of Military Intelligence;Tsarong Dzasa;1908;1933;1999;SC;Logistics Specialist;High;3368;X
+440075;Head of State;Thubten Gyatsho;1900;1934;1999;PA;Popular Figurehead;High;3376;X
+440076;Head of State;Tsarong Dzasa;1924;1933;1999;SC;Die-hard Reformer;High;3368;X
+440077;Minister of Armament;Xoikang Cedain Wangqug;1900;1933;1999;PA;Administrative Genius;High;3377;X
+440078;Minister of Armament;Ganden Tripa Isomolin Rimpoche;1900;1933;1999;PA;Resource Industrialist;High;unknownminister;X
+440079;Minister of Armament;Lungshar Kusho;1912;1933;1999;PA;Resource Industrialist;High;unknownminister;X
+440080;Minister of Armament;Tsarong Dzasa;1912;1933;1999;SC;military entrepreneur;High;3368;X
+440081;Minister of Armament;Gudjir Lubsan-Agvan Choinzin;1913;1933;1999;PA;corrupt kleptocrat;High;unknownminister;X
+440082;Minister of Security;Duiboin Minglingba;1900;1933;1999;PA;Crime Fighter;High;unknownminister;X
+440083;Minister of Security;Sholkhang;1907;1933;1999;PA;Crime Fighter;High;3373;X
+440084;Minister of Security;Chikyak Khenpo Champa Tubwang;1913;1933;1999;PA;Compassionate Gentleman;High;unknownminister;X
+440085;Minister of Security;Charong Dasang Zhamdui;1914;1933;1999;PA;Man of the People;Medium;unknownminister;X
+440086;Minister of Security;Dorgar Puncog Raogyi;1922;1933;1999;PA;Silent Lawyer;Medium;3378;X
+440087;Head of State;Reting Rimpoche (Regent);1933;1939;1999;PA;Insignificant Layman;High;M73002;X

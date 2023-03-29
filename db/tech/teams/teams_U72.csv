@@ -1,0 +1,38 @@
+U72;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+1175001;Ho Chi Minh;T97200;7;1930;1969;small_unit_tactics;infantry_focus;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175002;Vo Nguyen Giap;T97201;9;1944;2000;piloting;infantry_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175003;Ministry of Agriculture;T15200;3;1900;2000;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175004;Ministry of Chemical Industry;T10510;6;1900;2000;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175005;Ministry of Construction;T13502;5;1900;2000;industrial_engineering;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175006;Ministry of Electronic Industry;T13507;3;1900;2000;industrial_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175007;Ministry of Extractive Industries;T10509;3;1900;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175008;Ministry of Land & Marine Transport;T10300;4;1900;2000;mechanics;naval_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175009;Ministry of Metal & Machine Building Factories;T10504;4;1900;2000;mechanics;artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175010;Ministry of Power & Coal Industries;T11000;4;1900;2000;industrial_engineering;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175011;Ministry of Railways;T97210;2;1900;2000;mechanics;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175012;1 May Motor Factory;100533;3;1956;2000;mechanics;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175013;A39;100534;2;1960;2000;aeronautics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175014;Bach Dang Shipbuilding Yard;100535;3;1960;2000;technical_efficiency;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175015;Cement Hai Phong;100536;2;1930;2000;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175016;Gia Lam Machine Workshop;100537;2;1930;1956;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175017;Ha Noi Machine Tool;100538;2;1957;2000;industrial_engineering;management;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175018;Hai Phong Dockyard;100539;2;1930;2000;naval_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175019;Le Trong Tan;100540;5;1954;2000;large_unit_tactics;combined_arms_focus;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175020;Le Van Thiem;100541;4;1949;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175021;LILAMA;100542;2;1960;2000;industrial_engineering;chemistry;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175022;Luong Dinh Cua;100543;4;1954;2000;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175023;Song Da Construction Company;100544;2;1961;2000;industrial_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175024;Ta Quang Buu;100545;2;1945;2000;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175025;Thai Nguyen Ironworks;100546;3;1959;2000;industrial_engineering;chemistry;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175026;Tran Dai Nghia;100547;4;1946;2000;artillery;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175027;Verner Schulze;100548;1;1945;1956;training;piloting;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175028;Vietnam Airlines;100549;2;1956;2000;aeronautics;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175029;Vietnam Arsenal;100550;2;1930;1954;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175030;Vietnam Institute of Science and Military Technology;100551;2;1947;2000;training;mathematics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175031;Vietnam National University, Hanoi;100552;3;1930;2000;chemistry;management;mathematics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175032;Vietnam People's Air Force;100553;4;1949;2000;training;fighter_tactics;piloting;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175033;Vietnam People's Navy;100554;2;1955;2000;naval_training;submarine_tactics;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175034;Vietnam Railways;100555;2;1930;2000;general_equipment;industrial_engineering;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175035;X46th Factory;100556;2;1949;2000;naval_artillery;naval_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175036;Z Combine Factory;100557;2;1950;2000;artillery;general_equipment;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1175037;Van Tien Dung;100558;6;1945;2000;management;large_unit_focus;training;large_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

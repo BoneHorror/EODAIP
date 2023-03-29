@@ -1,0 +1,28 @@
+####################################
+# Spanish Nationalists AI events 
+####################################
+
+################################
+# Axis Spain
+##################################
+event = {
+	id = 3008012
+	random = no 
+	country = SPA
+
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1968 }
+
+	action_a = {
+		command = { type = ai which = "switch/SPA_Axis.ai" }
+		command = { type = ai which = "Air_Naval.ai" }
+	}
+}

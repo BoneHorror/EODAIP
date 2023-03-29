@@ -1,0 +1,213 @@
+#MODEL_31_
+
+allowed_brigades = naval_anti_air_l
+allowed_brigades = naval_radar_l
+allowed_brigades = naval_improved_hull_l
+allowed_brigades = light_cag
+allowed_brigades = b_09
+allowed_brigades = b_15
+
+max_allowed_brigades = 4
+
+# 0 - Basic CVL (1929)
+model = {
+	cost						= 1.5
+	buildtime 					= 980
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 28
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 80
+	seadefence					= 36
+	airdefence					= 30
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 10000
+	supplyconsumption			= 0.75
+	fuelconsumption				= 0.75
+	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 1000 }
+}
+
+# 1 - Improved CVL (1941)
+model = {
+	cost						= 2.25
+	buildtime	 				= 1200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.4
+	maxspeed					= 31
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	visibility					= 80
+	seadefence					= 33
+	airdefence					= 27
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 0
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 12000
+	supplyconsumption			= 0.85
+	fuelconsumption				= 0.5
+	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 1400 }
+}
+
+# 2 - Semi-Modern (1944)
+model = {
+	cost						= 3.25
+	buildtime 					= 1240
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.6
+	maxspeed					= 32
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	visibility					= 80
+	seadefence					= 30
+	airdefence					= 26
+	seaattack					= 2
+	convoyattack				= 2
+	subattack					= 1
+	airattack					= 3
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 14000
+	supplyconsumption			= 1.2
+	fuelconsumption				= 1.25
+	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 1600 }
+}
+
+# 3 - Modern (1948)
+model = {
+	cost						= 3.75
+	buildtime 					= 1300
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.8
+	maxspeed					= 33
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 3
+	subdetectioncapability		= 1
+	visibility					= 80
+	seadefence					= 28
+	airdefence					= 26
+	seaattack					= 3
+	convoyattack				= 3
+	subattack					= 2
+	airattack					= 3
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 16000
+	supplyconsumption			= 1.75
+	fuelconsumption				= 1.25
+	distance					= 0.05
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { carrier = 1 manpower = 1800 }
+}
+
+# 4 - Early Helicopter Carrier (1959) - USS Iwo Jima (LPH-2)/Jeanne d'Arc (R97)/Moskva-class
+model = {
+	cost						= 1.5
+	buildtime 					= 877
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.71
+	maxspeed					= 20
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 7
+	subdetectioncapability		= 9
+	visibility					= 75
+	seadefence					= 33
+	airdefence					= 24
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 13000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 714 }
+}
+
+# 5 - Basic Helicopter Carrier (1971) - Tarawa-class/HMS Illustrious (R06)/
+model = {
+	cost						= 2.0
+	buildtime 					= 1870
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 20
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 9
+	subdetectioncapability		= 11
+	visibility					= 75
+	seadefence					= 30
+	airdefence					= 21
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 14000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 807 }
+}
+
+# 6 - Improved Helicopter Carrier (1989) - HMS Ocean (L12)/Wasp-class
+model = {
+	cost						= 2.2
+	buildtime 					= 1870
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.68
+	maxspeed					= 20
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 10
+	subdetectioncapability		= 13
+	visibility					= 75
+	seadefence					= 27
+	airdefence					= 18
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 1
+	airattack					= 2
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 1.0
+	fuelconsumption				= 0.7
+	distance					= 0.42
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { escort_carrier = 1 manpower = 680 }
+}

@@ -1,0 +1,22 @@
+detachable = yes
+# 0 - CIWS 1979
+model = {
+	cost 						= 1
+	buildtime					= 100
+	manpower 					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= -3
+	seadefence					= -10
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}

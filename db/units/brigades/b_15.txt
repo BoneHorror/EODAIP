@@ -1,0 +1,99 @@
+# 0 - Improved ASW Helicopter CAG (1953)
+model = {
+	cost 						= 1.5
+	buildtime					= 330
+	manpower 					= 0.04
+	surfacedetectioncapability	= 30
+	airdetectioncapability		= 9
+	subdetectioncapability		= 18
+	airdefence					= 0
+	seaattack					= 3
+	convoyattack				= 3
+	subattack					= 6
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 22
+		manpower = 44
+	}
+}
+
+# 1 - Advanced ASW Helicopter CAG (1961)
+model = {
+	cost 						= 1.75
+	buildtime					= 330
+	manpower 					= 0.05
+	surfacedetectioncapability	= 36
+	airdetectioncapability		= 12
+	subdetectioncapability		= 24
+	airdefence					= 0
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 12
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 25
+		manpower = 50
+	}
+}
+
+# 2 - Modern ASW Helicopter CAG (1978)
+model = {
+	cost 						= 2
+	buildtime					= 450
+	manpower 					= 0.05
+	surfacedetectioncapability	= 45
+	airdetectioncapability		= 18
+	subdetectioncapability		= 33
+	airdefence					= 0
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 18
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 26
+		manpower = 52
+	}
+}
+
+# 3 - Improved Modern ASW Helicopter (1999) AgustaWestland AW101/Sikorsky CH-148 Cyclone/Eurocopter EC725
+model = {
+	cost 						= 0.5
+	buildtime					= 150
+	manpower 					= 0.01
+	surfacedetectioncapability	= 54
+	airdetectioncapability		= 27
+	subdetectioncapability		= 45
+	airdefence					= 0
+	seaattack					= 21
+	convoyattack				= 21
+	subattack					= 21
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}

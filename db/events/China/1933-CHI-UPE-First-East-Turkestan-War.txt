@@ -1,0 +1,1615 @@
+############################################
+# Xinjiang and First East Turkestan Events #
+############################################
+# 2181000 SIK CXB UPE Ferocity = Yes AI Switch
+#--Historic Chain--------------------------
+# 2181001 SOV Soviet Intervention
+# 2181002 SIK Soviet Intervention Offered
+# 2181003 SOV CHI CXB CGX CSX CYN Soviet Intervention Accepted
+# 2181004 CHI Reaction to Soviet Intervention
+# 2181005 SOV Chinese Ultimatum
+# 2181006 CHI CHC Helper Events
+# 2181007 SIK Helper Events
+#--Peace (No Intervention)-----------------
+# 2181011 SOV Treaty of Qumul
+# 2181012 CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+# 2181021 JAP GER Lessons of the Sino-Soviet War for Xinjiang
+#--Ahistorical CHI-SOV War-----------------
+# 2181008 CHI Soviets Ignore our Demands
+# 2181009 CXB CGX CSX CYN United Front
+# 2181010 CHC Sino-Soviet War
+# 2181013 JAP Sino-Soviet War Intervention
+# 2181014 CHI Japanese Intervention
+# 2181015 JAP Fate of Manchuria #TODO: Unlock CHI divisions
+# 2181016 MAN CHI Helper Event
+# 2181017 CHC Communist Revolt in Manchuria
+# 2181018 CHC SIK Xinjiang to Communists
+# 2181019 GER Sino-Soviet War Intervention
+# 2181020 CHI German Intervention
+# 2181022 CHI Japanese Demands (No event support for refusal)
+#--Alternative Chain-----------------------
+# 2181023 CHI Nationalist Intervention
+# 2181024 CGX CXB CSX CYN SIK Nationalist Intervention (AI Events)
+
+
+#Ferocity = Yes
+event = {
+	id = 2181000
+	random = no
+	tag = { SIK CXB UPE }
+	persistent = yes
+
+	name = AI_EVENT
+	style = 0
+
+	trigger = {
+		ai = yes
+		not = { local_flag = 2181000 }
+	}
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1934 }
+
+	action = {
+		name = AI_EVENT
+		command = { type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = local_setflag which = 2181000 }
+	}
+}
+
+##################
+# Historic Chain #
+##################
+
+#Soviet Intervention
+event = {
+	id = 2181001
+	random = no
+	country = SOV
+
+	decision = {
+		event = 2109013 #Sheng Shicai HoG. #Jin Shuren is replaced by Sheng Shicai as Governor of Sinkiang
+		exists = UPE
+		exists = SIK
+	}
+
+	decision_trigger = {
+		supplies = 1000
+	}
+	
+	trigger = {
+		event = 2109013 #Sheng Shicai HoG. #Jin Shuren is replaced by Sheng Shicai as Governor of Sinkiang
+		exists = UPE
+		exists = SIK
+		random = 30
+	}
+
+	name = EVT_2181001_NAME
+	desc = EVT_2181001_DESC
+
+	picture = "spread_revolution"
+	style = 2
+
+	date = { day = 0 month = 6 year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1935 }
+
+	action = {
+		ai_chance = 100
+		name = ACTION_NAME_ACCEPT
+		command = { type = trigger which =  2181002 } #SIK Soviet Intervention Offered
+		command = { type = relation which = UPE value = -20 }
+		command = { type = relation which = SIK value = 20 }
+	}
+
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_DECLINE
+		command = { type = sleepevent which = 2181001 } #SOV Soviet Intervention
+		command = { type = sleepevent which = 2181002 } #SIK Soviet Intervention Offered
+		command = { type = sleepevent which = 2181003 } #SOV CHI CXB CGX CSX CYN Soviet Intervention Accepted
+		command = { type = sleepevent which = 2181004 } #CHI Reaction to Soviet Intervention
+		command = { type = sleepevent which = 2181005 } #SOV Chinese Ultimatum
+		command = { type = sleepevent which = 2181006 } #CHI CHC Helper Events
+		command = { type = sleepevent which = 2181007 } #SIK Helper Events
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181015 } #JAP Fate of Manchuria #TODO: Unlock CHI divisions
+		command = { type = sleepevent which = 2181016 } #MAN CHI Helper Event
+		command = { type = sleepevent which = 2181017 } #CHC Communist Revolt in Manchuria
+		command = { type = sleepevent which = 2181018 } #CHC SIK Xinjiang to Communists
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+		command = { type = relation which = SIK value = -20 }
+		command = { type = relation which = UPE value = 20 }
+	}
+
+}
+
+#Soviet Intervention?
+event = {
+	id = 2181002
+	random = no
+	country = SIK
+
+	name = EVT_2181002_NAME #Soviet Intervention Offered
+	desc = EVT_2181002_DESC
+
+	picture = "spread_revolution"
+	style = 2
+
+	#Triggered
+
+	action = {
+		ai_chance = 100
+		name = ACTION_NAME_ACCEPT
+		command = { type = relation which = SOV value = 20 }
+		command = { type = relation which = CHI value = -20 }
+		command = { type = relation which = CXB value = -20 }
+		command = { type = relation which = CSX value = -20 }
+		command = { type = relation which = CGX value = -20 }
+		command = { type = relation which = CHC value = 20 }
+		command = { type = event which = 2181003 where = SOV when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181003 where = CXB when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181003 where = CGX when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181003 where = CSX when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181003 where = CYN when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181003 where = CHI when = 0 } #Soviet Intervention Accepted
+		#command = { type = supplies value = 1000 }
+		command = { type = dissent value = 1 }
+		command = { type = sleepevent which = 2181023 } #CHI Nationalist Intervention
+		command = { type = sleepevent which = 2181024 } #CGX CXB CSX CYN SIK Nationalist Intervention (AI Events)
+	}
+
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_DECLINE
+		command = { type = sleepevent which = 2181003 } #SOV CHI CXB CGX CSX CYN Soviet Intervention Accepted
+		command = { type = sleepevent which = 2181004 } #CHI Reaction to Soviet Intervention
+		command = { type = sleepevent which = 2181005 } #SOV Chinese Ultimatum
+		command = { type = sleepevent which = 2181006 } #CHI CHC Helper Events
+		command = { type = sleepevent which = 2181007 } #SIK Helper Events
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181015 } #JAP Fate of Manchuria #TODO: Unlock CHI divisions
+		command = { type = sleepevent which = 2181016 } #MAN CHI Helper Event
+		command = { type = sleepevent which = 2181017 } #CHC Communist Revolt in Manchuria
+		command = { type = sleepevent which = 2181018 } #CHC SIK Xinjiang to Communists
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+		command = { type = dissent value = 1 }
+		command = { type = relation which = SOV value = -20 }
+		command = { type = relation which = CHI value = 20 }
+	}
+}
+
+# Soviet Intervention
+event = {
+	id = 2181003
+	random = no
+	tag = { SOV CHI CXB CGX CSX CYN SIK }
+	persistent = yes
+
+	name = EVT_2181001_NAME
+	desc = EVT_2181003_DESC
+
+	picture = "spread_revolution"
+	style = 2
+
+	#Triggered
+
+	action = {
+		trigger = {
+			country = SOV
+		}
+		name = ACTION_NAME_GREAT
+		command = { type = make_puppet which = SIK }
+		command = { type = war which = UPE }
+		command = { trigger = { ai = no } type = supplies value = -1000 }
+		command = { type = event which = 2181003 where = SIK when = 0 } #Soviet Intervention Accepted
+	}
+
+	action = {
+		trigger = {
+			country = SIK
+		}
+		name = ACTION_NAME_OK
+		command = { type = leave_alliance }
+		command = { type = supplies value = 1000 }
+	}
+	
+	action = {
+		trigger = {
+			country = CXB
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = end_guarantee which = CXB where = SIK }
+		command = { type = embargo which = CXB where = SIK value = 3 }
+	}
+
+	action = {
+		trigger = {
+			country = CGX
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = end_guarantee which = CGX where = SIK }
+		command = { type = embargo which = CGX where = SIK value = 3 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				country = CSX
+				country = CYN
+			}
+		}
+		name = ACTION_NAME_DAMN
+		command = { trigger = { country = CSX } type = embargo which = CSX where = SIK value = 3 }
+		command = { trigger = { country = CYN } type = embargo which = CYN where = SIK value = 3 }
+	}
+
+	action = {
+		trigger = {
+			country = CHI
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = embargo which = CHI where = SIK value = 3 }
+		command = { type = setflag which = 2181003 }
+	}
+}
+
+# Reaction to Soviet Intervention
+event = {
+	id = 2181004
+	country = CHI
+	random = no
+
+	trigger = {
+		flag = 2181003
+		not = { exists = UPE }
+		or = {
+			puppet = { country = SIK country = SOV }
+			and = {
+				not = { exists = SIK } #Soviet Annexation
+				area = { area = "Xinjiang" country = SOV data = 1 value = 80 } #There's a province owned by Raj
+			}
+		}
+	}
+
+	picture = "ccip_gmd"
+	style = 2
+
+	date = { day = 0 month = 6 year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1936 }
+	
+	name = EVT_2181004_NAME
+	desc = EVT_2181004_DESC
+
+	action = {
+		name = EVT_2181004_ACTION1 #Demand the return of Xinjiang
+		ai_chance = 65
+		command = { type = trigger which = 2181005 } #SOV Chinese Ultimatum
+        command = { type = dissent value = -5 }
+        command = { type = relation which = SOV value = -10 }
+		command = { type = clrflag which = 2181003 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { relation = { which = SOV value = 150 } } #Always demand if good relations.
+			}
+		}
+		name = EVT_2181004_ACTION2 #Protest the violation of our sovereignty
+		ai_chance = 0
+		command = { type = relation which = SOV value = -10 }
+		command = { type = sleepevent which = 2181005 } #SOV Chinese Ultimatum
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+		command = { type = clrflag which = 2181003 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { relation = { which = SOV value = 150 } } #Always demand if good relations.
+			}
+		}
+		name = EVT_2181004_ACTION3 #Let it go
+		ai_chance = 0
+		command = { type = relation which = SOV value = 20 }
+		command = { type = dissent value = 5 }
+		command = { type = sleepevent which = 2181005 } #SOV Chinese Ultimatum
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+		command = { type = clrflag which = 2181003 }
+	}
+}
+
+# SOV Chinese Ultimatum
+event = {
+	id = 2181005
+	country = SOV
+	random = no
+	
+	#Triggered
+
+	picture = "spread_revolution"
+	style = 2
+	
+	name = EVT_2181005_NAME
+	desc = EVT_2181005_DESC
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { relation = { which = CHI value = 150 } }
+			}
+		}
+		name = EVT_2181005_ACTION1 #Ignore the demands (Historical)
+		ai_chance = 100
+		command = { type = trigger which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = belligerence which = SOV value = 5 }
+		command = { trigger = { not = { exists = SIK } } type = local_setflag which = EXISTS_SIK }
+		command = { trigger = { local_flag = EXISTS_SIK } type = independence which = SIK value = 1 }
+		command = { trigger = { local_flag = EXISTS_SIK } type = make_puppet which = SIK }
+		command = { trigger = { local_flag = EXISTS_SIK } type = event which = 2181003 where = SIK when = 0 } #Soviet Intervention Accepted
+		command = { trigger = { local_flag = EXISTS_SIK } type = local_clrflag which = EXISTS_SIK }
+		command = { trigger = { puppet = { country = SIK country = SOV } } type = secedearea which = SIK value = "Xinjiang" when = 1 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				random = 12
+				relation = { which = CHI value = -50 }
+			}
+			exists = CHI
+		}
+		name = EVT_2181005_ACTION2 #Agree as a gesture of goodwill
+		ai_chance = 8
+		command = { type = relation which = CHI value = 50 }
+		command = { type = relation which = CHC value = -25 }
+		command = { type = belligerence which = SOV value = -5 }
+		command = { type = secedearea which = CHI value = "Xinjiang" when = 1 }
+		command = { type = event which = 2181006 where = CHI when = 0}
+		command = { type = setflag which = 2181005_CHI }
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				random = 40
+				not = { relation = { which = CHI value = 100 } }
+			}
+			exists = CHC
+		}
+		name = EVT_2181005_ACTION3 #Return Xinjiang to Communist China
+		ai_chance = 50
+		command = { type = secedearea which = CHC value = "Xinjiang" when = 1 }
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = CHC value = 75 }
+		command = { type = belligerence which = SOV value = -5 }
+		command = { type = event which = 2181006 where = CHC when = 0}
+		command = { type = setflag which = 2181005_CHC }
+		command = { type = sleepevent which = 2181008 } #CHI Soviets Ignore our Demands
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+	}
+}
+
+# Helper event
+event = {
+	id = 2181006
+	tag = { CHI CHC }
+	random = no
+
+	#Triggered
+
+	picture = "ccip_gmd"
+	style = 2
+
+	name = EVT_2181006_NAME
+	desc = EVT_2181006_DESC
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = inherit which = SIK value = 1 } #We want to inherit in the off chance Rebels still are alive to prevent being overrun.
+		command = { trigger = { exists = SIK } type = trigger which = 2181007 }
+	}
+}
+
+# Helper event
+event = {
+	id = 2181007
+	country = SIK
+	random = no
+	
+	#Triggered
+
+	picture = "ccip_gmd"
+	style = 2
+	
+	name = EVT_2181005_NAME
+	desc = EVT_2181007_DESC
+
+	action = {
+		trigger = {
+			flag = 2181005_CHI
+		}
+		name = EVT_2181007_ACTION1
+		command = { type = secedearea which = CHI value = "Xinjiang" when = 1 }
+		command = { type = clrflag which = 2181005_CHI }
+	}
+
+	action = {
+		trigger = {
+			flag =  2181005_CHC
+		}
+		name = EVT_2181007_ACTION2
+		command = { type = secedearea which = CHC value = "Xinjiang" when = 1 }
+		command = { type = clrflag which = 2181005_CHC }
+	}
+}
+
+###########################
+# Ahistorical CHI-SOV War #
+###########################
+# Ahistoric in a sense it is a full scale war, not a limited war.
+
+# CHI Soviets ignore our demands!
+event = {
+	id = 2181008
+	country = CHI
+	random = no
+
+	#Triggered
+	
+	picture = "ccip_gmd"
+	style = 2
+
+	name = EVT_2181008_NAME
+	desc = EVT_2181008_DESC
+
+	action = {
+		trigger = { NOT = { flag = JAP_NorthStrategy } }
+		name = ACTION_NAME_WAR
+		ai_chance = 0
+		command = { type = war which = SOV }
+		command = { type = sleepevent which = 2012003 } #We don't want to ally with CHC, this is United Front against Soviet Aggression.
+		command = { type = dissent value = 5 } #Communist Partisans
+		command = { trigger = { exists = CXB not = { puppet = { country = CXB country = SOV } } } type = event which = 2181009 where = CXB when = 0 }
+		command = { trigger = { exists = CGX not = { puppet = { country = CGX country = SOV } } } type = event which = 2181009 where = CGX when = 0 }
+		command = { trigger = { exists = CYN not = { puppet = { country = CYN country = SOV } } } type = event which = 2181009 where = CYN when = 0 }
+		command = { trigger = { exists = CSX not = { puppet = { country = CSX country = SOV } } } type = event which = 2181009 where = CSX when = 0 }
+		command = { type = trigger which = 2181010 } #CHC Sino-Soviet War
+		command = { type = trigger which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { trigger = { exists = GER } type = trigger which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = event which = 2181011 where = CHI when = 120 } #Roughly historical timeline
+	}
+	action = {
+		trigger = { flag = JAP_NorthStrategy }
+		name = ACTION_NAME_WAR
+		ai_chance = 8 #4% chances of war if Japan decided to expand northward
+		command = { type = war which = SOV }
+		command = { type = sleepevent which = 2012003 } #We don't want to ally with CHC, this is United Front against Soviet Aggression.
+		command = { type = dissent value = 5 } #Communist Partisans
+		command = { trigger = { exists = CXB not = { puppet = { country = CXB country = SOV } } } type = event which = 2181009 where = CXB when = 0 }
+		command = { trigger = { exists = CGX not = { puppet = { country = CGX country = SOV } } } type = event which = 2181009 where = CGX when = 0 }
+		command = { trigger = { exists = CYN not = { puppet = { country = CYN country = SOV } } } type = event which = 2181009 where = CYN when = 0 }
+		command = { trigger = { exists = CSX not = { puppet = { country = CSX country = SOV } } } type = event which = 2181009 where = CSX when = 0 }
+		command = { type = trigger which = 2181010 } #CHC Sino-Soviet War
+		command = { type = trigger which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { trigger = { exists = GER } type = trigger which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = event which = 2181011 where = CHI when = 120 } #Roughly historical timeline
+	}
+
+	action = {
+		name = EVT_2181008_ACTION2 #Let it go (Historic)
+		ai_chance = 100
+		command = { type = dissent value = 2 } #Humiliated
+		command = { type = sleepevent which = 2181011 } #SOV Treaty of Qumul
+		command = { type = sleepevent which = 2181012 } #CHC CGX CSX CYN CXB CHI Helper Events (Correct Borders)
+		command = { type = sleepevent which = 2181021 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { type = sleepevent which = 2181009 } #CXB CGX CSX CYN United Front
+		command = { type = sleepevent which = 2181010 } #CHC Sino-Soviet War
+		command = { type = sleepevent which = 2181013 } #JAP Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181014 } #CHI Japanese Intervention
+		command = { type = sleepevent which = 2181019 } #GER Sino-Soviet War Intervention
+		command = { type = sleepevent which = 2181020 } #CHI German Intervention
+		command = { type = sleepevent which = 2181022 } #CHI Japanese Demands (No event support for refusal)
+	}
+}
+
+# CXB CGX CSX CYN United Front
+#TODO: Write ai switches
+event = {
+	id = 2181009
+	tag = { CXB CGX CYN CSX }
+	persistent = yes
+	random = no
+
+	#Triggered
+
+	picture = "ccip_gmd"
+	style = 2
+
+	name = UFRONT_NAME
+	desc = UFRONT_DESC
+
+	action = {
+		name = EVT_91_ACTA
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { war = { country = CXB country = CHI } } type = peace which = CHI value = 1 } #Just in case
+		command = { trigger = { war = { country = CGX country = CHI } } type = peace which = CHI value = 1 }
+		command = { trigger = { war = { country = CYN country = CHI } } type = peace which = CHI value = 1 }
+		command = { trigger = { war = { country = CSX country = CHI } } type = peace which = CHI value = 1 }
+		command = { trigger = { control = { province = 1258 data = -1 } not = { flag = 1258VP } } type = province_keypoints which = 1258 value = 1 } #Xi'an
+		command = { trigger = { control = { province = 1258 data = -1 } } type = setflag which = 1258VP }
+		command = { trigger = { control = { province = 1259 data = -1 } not = { flag = 1259VP } } type = province_keypoints which = 1259 value = 1 } #Yan'an
+		command = { trigger = { control = { province = 1259 data = -1 } } type = setflag which = 1259VP }
+		command = { trigger = { control = { province = 1285 data = -1 } not = { flag = 1285VP } } type = province_keypoints which = 1285 value = 1 } #Yushu
+		command = { trigger = { control = { province = 1285 data = -1 } } type = setflag which = 1285VP }
+		command = { type = alliance which = CHI when = 2}
+		command = { type = dissent value = 10 } #Dragged into war.
+	}
+}
+
+#Sino-Soviet War
+event = {
+	id = 2181010
+	country = CHC
+	random = no
+
+	#Triggered
+
+	picture = "ccip_ccpsov"
+	style = 2
+
+	name = EVT_2181010_NAME
+	desc = EVT_2181010_DESC
+
+	action = {
+		name = ACTION_NAME_WAR
+		command = { type = alliance which = SOV when = 2 } # Join the war!
+		command = { type = dissent value = 20 } # Dragged into the war, some feel is suicidal for CHC
+		command = { type = sleepevent which = 1330110006 } # TODO: Fix Long March event chain, or potentially continue it automatically.
+		command = { type = sleepevent which = 1330110007 }
+		command = { type = sleepevent which = 1330110008 }
+		command = { type = sleepevent which = 1330110009 }
+		command = { type = sleepevent which = 1330110010 }
+		command = { type = sleepevent which = 1330110011 }
+		command = { trigger = { control = { province = 1325 data = CHC } not = { flag = 1325VP } } type = province_keypoints which = 1325 value = 1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } } type = setflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } not = { flag = 1345VP } } type = province_keypoints which = 1345 value = 1 } #Hangzhou
+		command = { trigger = { control = { province = 1345 data = CHC } } type = setflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } not = { flag = 1344VP } } type = province_keypoints which = 1344 value = 1 } #Anqing
+		command = { trigger = { control = { province = 1344 data = CHC } } type = setflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } not = { flag = 1352VP } } type = province_keypoints which = 1352 value = 1 } #Nanchang
+		command = { trigger = { control = { province = 1352 data = CHC } } type = setflag which = 1352VP }
+	}
+}
+
+#################################
+# Peace Event (No Intervention) #
+#################################
+
+# Treaty of Qumul
+event = {
+	id = 2181011
+	random = no
+	country = SOV
+	one_action = yes
+
+	#Triggered
+
+	picture = "spread_revolution"
+	style = 2
+
+	name = EVT_2181011_NAME
+	desc = EVT_2181011_DESC
+
+	action = {
+		trigger = {
+			or = {
+				area = { area = "Xinjiang" country = -3 data = 1 value = 80 }
+				region = { region = "China" country = -3 data = 1 value = 30 } #Mongolia already counts in region.
+			}
+		}
+		name = ACTION_NAME_VICTORY
+		command = { type = peace which = CHI value = 0 }
+		command = { trigger = { not = { exists = SIK } } type = local_setflag which = EXISTS_SIK }
+		command = { trigger = { local_flag = EXISTS_SIK } type = independence which = SIK value = 1 }
+		command = { trigger = { local_flag = EXISTS_SIK } type = make_puppet which = SIK }
+		command = { trigger = { local_flag = EXISTS_SIK } type = event which = 2181003 where = SIK when = 0 } #Soviet Intervention Accepted
+		command = { trigger = { local_flag = EXISTS_SIK } type = local_clrflag which = EXISTS_SIK }
+		command = { type = dissent value = -5 }
+		command = { type = event which = 2181012 where = CHC when = 7 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CHI when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { not = { puppet = { country = CXB country = SOV } } } type = event which = 2181012 where = CXB when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { not = { puppet = { country = CGX country = SOV } } } type = event which = 2181012 where = CGX when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { not = { puppet = { country = CSX country = SOV } } } type = event which = 2181012 where = CSX when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { not = { puppet = { country = CYN country = SOV } } } type = event which = 2181012 where = CYN when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { event = 2181014 } type = event which = 2181021 where = JAP when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { trigger = { event = 2181020 } type = event which = 2181021 where = GER when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					area = { area = "Xinjiang" country = -3 data = 1 value = 80 }
+					region = { region = "China" country = -3 data = 1 value = 30 } #Mongolia already counts in region.
+					and = {
+						not = { area = { area = "Xinjiang" country = -3 data = 1 value = 80 } }
+						not = { region = { region = "China" country = -3 data = 1 value = 30 } }
+					}
+				}
+			}
+		}
+		name = EVT_2181011_ACTION2 #(Historical) TODO: Ask for a map update, technically only half of 1282/1274 were controlled by CXB
+		command = { type = peace which = CHI value = 0 }
+		command = { trigger = { exists = CXB } type = secedeprovince which = CXB value = 1274 when = 2 }
+		command = { trigger = { exists = CXB } type = secedeprovince which = CXB value = 1282 when = 2 }
+		command = { trigger = { exists = CXB } type = secedeprovince which = CXB value = 1277 when = 2 } #TODO: Write events for withdrawl of Xibei troops for Sino-Japanese war, this territory is re-ceded to SIK.
+		command = { trigger = { not =  { exists = CXB } } type = secedeprovince which = CHI value = 1274 when = 2 }
+		command = { trigger = { not =  { exists = CXB } } type = secedeprovince which = CHI value = 1282 when = 2 }
+		command = { trigger = { not =  { exists = CXB } } type = secedeprovince which = CHI value = 1277 when = 2 }
+			command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Gansu" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Suiyuan_Ningxia" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Qinghai" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Shaanxi" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Gansu" when = 1 } 
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Suiyuan_Ningxia" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Qinghai" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Shaanxi" when = 1 }
+		command = { trigger = { not = { exists = SIK } } type = independence which = SIK value = 1 }
+		command = { type = make_puppet which = SIK }
+		command = { trigger = { puppet = { country = SIK country = SOV } } type = event which = 2181003 where = SIK when = 0 } #Soviet Intervention Accepted
+		command = { type = event which = 2181012 where = CHC when = 7 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CHI when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CXB when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CGX when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CSX when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CYN when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { event = 2181014 } type = event which = 2181021 where = JAP when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { trigger = { event = 2181020 } type = event which = 2181021 where = GER when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+	}
+
+	action = {
+		trigger = {
+			not = { area = { area = "Xinjiang" country = -3 data = 1 value = 80 } }
+			not = { region = { region = "China" country = -3 data = 1 value = 30 } }
+		}
+		name = ACTION_NAME_DEFEAT
+		command = { type = peace which = CHI value = 0 }
+		command = { type = secedearea which = CHI value = "Xinjiang" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Gansu" when = 1 } 
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Suiyuan_Ningxia" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Qinghai" when = 1 }
+		command = { trigger = { exists = CXB } type = secedearea which = CXB value = "Shaanxi" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Gansu" when = 1 } 
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Suiyuan_Ningxia" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Qinghai" when = 1 }
+		command = { trigger = { not = { exists = CXB } } type = secedearea which = CHI value = "Shaanxi" when = 1 }
+		command = { trigger = { exists = SIK } type = event which = 2181006 where = CHI when = 0 }
+		command = { trigger = { exists = SIK } type = setflag which = 2181005_CHI }
+		command = { type = dissent value = 10 } #Defeated by backwater country
+		command = { type = event which = 2181012 where = CHC when = 7 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CHI when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CXB when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CGX when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CSX when = 0 } #Helper Events (Correct Borders)
+		command = { type = event which = 2181012 where = CYN when = 0 } #Helper Events (Correct Borders)
+		command = { trigger = { event = 2181014 } type = event which = 2181021 where = JAP when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+		command = { trigger = { event = 2181020 } type = event which = 2181021 where = GER when = 7 } #JAP GER Lessons of the Sino-Soviet War for Xinjiang
+	}
+}
+
+# Helper Events
+event = {
+	id = 2181012
+	random = no
+	tag = { CHC CGX CSX CYN CXB CHI }
+	persistent = yes
+	one_action = yes
+
+	# Triggered
+	picture = "ccip_cw"
+	style = 2
+
+	name = EVT_2181011_NAME
+	desc = EVT_2181011_DESC
+
+	action = {
+		trigger = {
+			country = CHC
+		}
+		name = ACTION_NAME_OK
+		command = { type = leave_alliance when = 1 }
+		command = { type = war which = CHI }
+	}
+
+	action = {
+		trigger = {
+			country = CHI
+		}
+		name = ACTION_NAME_OK
+		command = { trigger = { exists = CXB not = { ispuppet = CXB } } type = make_puppet which = CXB }
+		command = { trigger = { not = { local_flag = CHI_CHC_FIFTH_ENCIRCLEMENT } } type = local_setflag which = CHI_CHC_FIFTH_ENCIRCLEMENT }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				country = CYN
+				country = CGX
+				country = CSX
+			}
+		}
+		name = ACTION_NAME_OK
+		command = { type = leave_alliance when = 1 }
+	}
+
+	action = {
+		trigger = {
+			country = CXB
+		}
+		name = ACTION_NAME_OK
+		command = { }
+	}
+
+}
+
+# 2081021 Lessons of the Sino-Soviet War for Xinjiang
+event = {
+	id = 2181021
+	tag = { JAP GER }
+	random = no
+	persistent = yes
+
+	#Triggered
+
+	picture = "ccip_cw"
+	style = 2
+	
+	name = EVT_2181021_NAME
+	desc = EVT_2181021_DESC
+
+	action = {
+		trigger = {
+			country = JAP
+		}
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+	}
+
+	action = {
+		trigger = {
+			country = GER
+		}
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+	}
+}
+#############################
+# Sino-Sov War Intervention #
+#############################
+
+# 2181013 JAP Sino-Soviet War Intervention
+event = {
+	id = 2181013
+	country = JAP
+	random = no
+
+	#Triggered
+
+	picture = "ccip_japsib"
+	style = 2
+
+	name = EVT_2181013_NAME
+	desc = EVT_2181013_DESC
+
+	action = {
+		trigger = {
+			not = {
+				war = { country = JAP country = CHI }
+			}
+			or = {
+				not = {
+					war = { country = JAP country = SOV } #Propose alliance in this case.
+				}
+				ai = no
+			}
+			or = {
+				ai = no
+				and = {
+					relation = { which = SOV value = -100 }
+					random = 50
+					not = { relation = { which = SOV value = 175 } }
+				}
+			}
+		}
+		ai_chance = 15
+		#ai_chance = 0
+		name = EVT_2181013_ACTION1 #Send supplies and aid
+		command = { type = money value = -50 } #Use money to buy supplies.
+		command = { trigger = { relation = { which = CHI value = 0 } } type = money value = -50 } #Different amount based on relations.
+		command = { trigger = { relation = { which = CHI value = 50 } } type = money value = -50 }
+		command = { trigger = { relation = { which = CHI value = 100 } } type = money value = -50 }
+		command = { trigger = { relation = { which = CHI value = 150 } } type = money value = -50 }
+		command = { trigger = { war = { country = JAP country = SOV } } type = money value = -50 }
+		command = { type = setflag which = 2181013_AID }
+		command = { type = event which = 2181014 where = CHI when = 30 } #CHI Japanese Intervention
+		command = { type = relation which = CHI value = 25 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				war = { country = JAP country = CHI }
+			}
+			or = {
+				not = {
+					war = { country = JAP country = SOV } #Propose alliance in this case.
+				}
+				ai = no
+			}
+			or = {
+				ai = no
+				and = {
+					not = { relation = { which = SOV value = 50 } }
+					random = 50
+					not = { relation = { which = SOV value = 150 } }
+				}
+			}
+		}
+		ai_chance = 15
+		#ai_chance = 0
+		name = EVT_2181013_ACTION2 #Send volunteers and supplies
+		command = { type = money value = -50 } #Use money to buy supplies.
+		command = { trigger = { relation = { which = CHI value = 0 } } type = money value = -50 } #Different amount based on relations.
+		command = { trigger = { relation = { which = CHI value = 50 } } type = money value = -50 }
+		command = { trigger = { relation = { which = CHI value = 100 } } type = money value = -50 }
+		command = { trigger = { relation = { which = CHI value = 150 } } type = money value = -50 }
+		command = { trigger = { war = { country = JAP country = SOV } } type = money value = -50 }
+		command = { trigger = { not = { war = { country = JAP country = SOV } } } type = manpowerpool value = -10 } #Send some troops guised as volunteers, send less if we are at war ourselves.
+		command = { trigger = { relation = { which = CHI value = 0 } } type = manpowerpool value = -10 } #Different amount based on relations.
+		command = { trigger = { relation = { which = CHI value = 50 } not = { war = { country = JAP country = SOV } } } type = manpowerpool value = -10 }
+		command = { trigger = { relation = { which = CHI value = 100 } } type = manpowerpool value = -10 }
+		command = { trigger = { relation = { which = CHI value = 150 } not = { war = { country = JAP country = SOV } } } type = manpowerpool value = -10 }
+		command = { type = setflag which = 2181013_EXP }
+		command = { type = event which = 2181014 where = CHI when = 30 } #CHI Japanese Intervention
+		command = { type = relation which = CHI value = 50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				not = {
+					war = { country = JAP country = CHI }
+				}
+				ai = no
+				and = {
+					event = 1330120019 #Five Minister's Conference
+					flag = JAP_NorthStrategy
+					army = 65
+				}
+				and = {
+					war = { country = JAP country = CHI }
+					random = 30 #Lower chance if JAP at war with CHI, peace out if CHI accepts
+				}
+				war = { country = JAP country = SOV } # We are at war with SOV!
+			}
+			not = { and = { ai = JAP ai = CHI } } # No AI files/switchers to deal with frontage.
+		}
+		ai_chance = 15
+		#ai_chance = 100
+		name = EVT_2181013_ACTION3 #Propose a full alliance
+		command = { type = setflag which = 2181013_ALI }
+		command = { type = relation which = CHI value = 50 }
+		command = { type = event which = 2181014 where = CHI when = 30 } #CHI Japanese Intervention
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				and = {
+					event = 1330120019 #Five Minister's Conference
+					not = { flag = JAP_NorthStrategy } #Japan has chosen a strategy to expand South
+					not = { war = { country = JAP country = SOV } } #We are not at war with SOV
+				}
+				war = { country = JAP country = CHI }
+			}
+			or = {
+				ai = no
+				and = {
+					or = {
+						not = { war = { country = JAP country = SOV } }
+						and = {
+							random = 30
+							war = { country = JAP country = SOV }
+							not = { war = { country = CHI country = JAP } }
+						}
+						and = {
+							war = { country = JAP country = SOV }
+							war = { country = JAP country = CHI }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 10
+		#ai_chance = 0
+		name = EVT1914_2019511_ACTIONC #Do nothing
+		command = { trigger = { not = { war = { country = JAP country = CHI } } relation = { which = CHI value = 50 } } type = relation which = CHI value = -25 }
+		command = { trigger = { not = { war = { country = JAP country = SOV } } } type = relation which = SOV value = 25 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				war = { country = JAP country = CHI } #Would be ignored anyway
+			}
+			or = {
+				and = {
+					not = {
+						event = 1330120019 #Five Minister's Conference
+						flag = JAP_NorthStrategy #Japan has chosen a strategy to expand North
+					}
+					not = { war = { country = JAP country = SOV } } #We are already in a war.
+					or = {
+						not = { relation = { which = CHI value = 50 } } #Decent Relations
+						random = 40
+					}
+					not = { relation = { which = CHI value = 100 } } #Good Relations
+				}
+				ai = no
+			}
+		}
+		ai_chance = 15
+		#ai_chance = 0
+		name = EVT1914_2145518_ACTIONC #Make demands
+		command = { type = event which = 2181022 where = CHI when = 0 } #CHI Japanese Demands
+	}
+}
+
+# Japanese Intervention
+event = {
+	id = 2181014
+	country = CHI
+	random = no
+	
+	#Triggered
+	picture = "ccip_japsib"
+	style = 2
+
+	name = EVT_2181014_NAME
+	desc = EVT_2181014_DESC
+
+	action = {
+		trigger = {
+			flag = 2181013_AID
+		}
+		ai_chance = 100
+		name = EVT_2181014_ACTION1
+		command = { type = supplies value = 1000 } #Use money to buy supplies.
+		command = { trigger = { relation = { which = JAP value = 0 } } type = supplies value = 1000 } #Different amount based on relations.
+		command = { trigger = { relation = { which = JAP value = 50 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = JAP value = 100 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = JAP value = 150 } } type = supplies value = 1000 }
+		command = { trigger = { war = { country = JAP country = SOV } } type = supplies value = 1000 }
+		command = {	type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 0 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 50 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 100 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 150 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = { type = clrflag which = 2181013_AID }
+	}
+
+	action = {
+		trigger = {
+			flag = 2181013_EXP
+		}
+		ai_chance = 100
+		name = EVT_2181014_ACTION2
+		command = { type = supplies value = 1000 } #Use supplies to buy supplies.
+		command = { trigger = { relation = { which = JAP value = 0 } } type = supplies value = 1000 } #Different amount based on relations.
+		command = { trigger = { relation = { which = JAP value = 50 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = JAP value = 100 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = JAP value = 150 } } type = supplies value = 1000 }
+		command = { trigger = { war = { country = JAP country = SOV } } type = supplies value = 1000 }
+		command = { trigger = { not = { war = { country = JAP country = SOV } } } type = add_division which = "Japanese 'Volunteer' Force" value = infantry when = 7 where = artillery }
+		command = { trigger = { relation = { which = JAP value = 0 } } type = add_division which = "Japanese 'Volunteer' Force" value = infantry when = 7 where = artillery }
+		command = { trigger = { relation = { which = JAP value = 50 } not = { war = { country = JAP country = SOV } } } type = add_division which = "Japanese 'Volunteer' Force" value = infantry when = 7 where = artillery }
+		command = { trigger = { relation = { which = JAP value = 100 } } type = add_division which = "Japanese 'Volunteer' Force" value = infantry when = 7 where = artillery }
+		command = { trigger = { relation = { which = JAP value = 150 } not = { war = { country = JAP country = SOV } } } type = add_division which = "Japanese 'Volunteer' Force" value = infantry when = 7 where = artillery }
+		command = {	type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 0 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 50 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 100 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 150 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = { type = clrflag which = 2181013_EXP }
+	}
+
+	action = {
+		trigger = {
+			flag = 2181013_ALI
+			or = {
+				not = {
+					and = {
+						or = {
+							alliance = { country = CHI country = GER } # We are already allied to Germany (perhaps from 1918 scenario)
+							alliance = { country = CHI country = U08 }
+						}
+						war = { country = CHI country = JAP } # And we are at war with Japan (along with Germany)
+					}
+				}
+				ai = no
+			}
+		}
+		ai_chance = 99999
+		name = EVT_2181014_ACTION3
+		command = { trigger = { war = { country = JAP country = CHI } } type = peace which = JAP value = 1 }
+		command = { type = alliance which = JAP when = 1 }
+		command = { trigger = { not = { alliance = { country = CHI country = GER } } not = { participant = { country = JAP value = 1 } } not = { participant = { country = JAP value = 2 } } not = { participant = { country = JAP value = 3 } } not = { participant = { country = CHI value = 1 } } not = { participant = { country = CHI value = 2 } } not = { participant = { country = CHI value = 3 } } } type = alliance_leader which = JAP } #Set Japan as the alliance leader.
+			command = {	type = build_division which = infantry value = artillery when = 5 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 0 } } type = build_division which = infantry value = artillery when = 5 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 50 } } type = build_division which = infantry value = artillery when = 5 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 100 } } type = build_division which = infantry value = artillery when = 5 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = JAP value = 150 } } type = build_division which = infantry value = artillery when = 5 cost = -0.1 name = "Japanese Armed Division" where = 30 }
+		command = { type = add_division which = "Japanese Trained Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Japanese Trained Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Japanese Trained Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Japanese Trained Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Japanese Trained Division" value = infantry when = 7 where = artillery }
+		command = { type = manpowerpool value = -50 }
+		command = { type = relation which = JAP value = 100 }
+		command = { trigger = { not = { relation = { which = JAP value = 0 } } } type = set_relation which = JAP value = 0 }
+		command = { type = event which = 2181018 where = CHC when = 7 } #SIK -> CHC
+		command = { type = sleepevent which = 2011025 } #No Pearl Harbor
+		command = { type = sleepevent which = 1330120000 } #No China-Japan Incidents
+		command = { type = sleepevent which = 1330120001 } 
+		command = { type = sleepevent which = 1330120002 } 
+		command = { type = sleepevent which = 1330120003 } 
+		command = { type = sleepevent which = 1330120004 } 
+		command = { type = sleepevent which = 1330120005 } 
+		command = { type = sleepevent which = 1330120006 } 
+		command = { type = sleepevent which = 1330120007 } 
+		command = { type = sleepevent which = 1330120038 } 
+		command = { type = sleepevent which = 1330120039 }
+		command = { type = sleepevent which = 2011022 } # Marco-Polo Bridge
+		command = { type = sleepevent which = 2011021 } # German Recognition of Manchukuo
+		command = { type = sleepevent which = 2181011 } #We are in a larger war now.
+		command = { type = sleepevent which = 1330110022 } # Long March
+		command = { type = sleepevent which = 1330110014 } # Fifth Encirclement Campaign
+		command = { type = event which = 2181015 where = JAP when = 7 } #JAP Fate of Manchuria
+		command = { type = clrflag which = 2181013_ALI }
+	}
+
+	action = {
+		trigger = {
+			flag = 2181013_ALI
+			or = {
+				ai = no
+				and = {
+					or = {
+						alliance = { country = CHI country = GER } # We are already allied to Germany (perhaps from 1914 scenario)
+						alliance = { country = CHI country = U08 }
+					}
+					war = { country = CHI country = JAP } # And we are at war with Japan (along with Germany)
+				}
+			}
+		}
+		ai_chance = 1
+		name = EVT_2181014_ACTION4
+		command = { trigger = { not = { war = { country = CHI country = JAP } } } type = dissent value = 5 } # No real reason to decline. Pragmatists amoung the populace would be angry.
+		command = { type = relation which = JAP value = -15 }
+		command = { type = clrflag which = 2181013_ALI }
+	}
+
+}
+
+# 2181015 JAP Fate of Manchuria
+event = {
+	id = 2181015
+	country = JAP
+	random = no
+
+	#Triggered
+
+	picture = "ccip_mukden"
+	style = 2
+
+	name = EVT_2181015_NAME
+	desc = EVT_2181015_DESC
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				or = {
+					relation = { which = CHI value = 50 }
+					random = 50
+				}
+			}
+		}
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 90
+		command = { type = event which = 2181016 where = CHI when = 0 } #MAN CHI Helper Event
+		command = { type = free_ic value = 5 }
+		command = { type = sleepevent which = 2181017 } #CHC Communist Revolt in Manchuria
+	}
+
+	action = {
+		name = ACTION_NAME_DECLINE
+		ai_chance = 10
+		command = { type = sleepevent which = 2181016 } #MAN CHI Helper Event
+		command = { type = event which = 2181017 where = CHC when = 7 } #CHC Communist Revolt in Manchuria
+	}
+}
+
+# 2181016 MAN CHI Helper Event
+event = {
+	tag = { MAN CHI }
+	id = 2181016
+	random = no
+	persistent = yes
+	one_action = yes
+
+	#Triggered
+
+	picture = "ccip_mukden"
+	style = 2
+
+	name = EVT_2181016_NAME
+	desc = EVT_2181016_DESC
+
+	action = {
+		trigger = {
+			country = CHI
+		}
+		command = { type = inherit which = MAN value = 1 }
+		command = { type = dissent value = 5 } #Communists in Manchuria
+		command = { type = free_ic value = -5 } #given to Japanese in previous event
+		command = { trigger = { exists = MAN } type = event which = 2181016 where = MAN when = 0 } #MAN CHI Helper Event
+		command = { type = revolt which = 1206 when = 1 }
+		command = { type = revolt which = 1200 when = 1 }
+		command = { type = revolt which = 1198 when = 1 }
+	}
+
+	action = {
+		trigger = {
+			country = MAN
+		}
+		command = { type = secederegion which = CHI value = "China" when = 1 }
+	}
+}
+
+# 2181017 CHC Communist Revolt in Manchuria
+event = {
+	id = 2181017
+	country = CHC
+	random = no
+
+	#Triggered
+
+	picture = "ccip_craf"
+	style = 2
+
+	name = EVT_2181017_NAME
+	desc = EVT_2181017_DESC
+
+	action = {
+		name = ACTION_NAME_GREAT
+		# 1330120010
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1213 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1210 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1218 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1214 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1207 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120010 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1199 }
+			command = { trigger = { not = { event = 1330120010 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+		# 1330120012
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1209 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1237 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1217 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1220 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1215 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1211 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1212 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1205 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120012 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1203 }
+			command = { trigger = { not = { event = 1330120012 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+		# 1330120014
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1236 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1235 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1216 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1198 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1206 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1200 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1201 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1197 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1202 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_corps which = "Northeast Anti-Japanese United Army" value = land where = 1204 }
+			command = { trigger = { not = { event = 1330120014 } } type = add_division which = "Communist Partisans" value = militia when = 4 }	
+	}
+
+}
+# 2181018 CHC SIK Xinjiang to Communists
+event = {
+	id = 2181018
+	tag = { CHC SIK }
+	random = no
+	persistent = yes
+
+	#Triggered
+
+	picture = "ccip_craf"
+	style = 2
+
+	name = EVT_2181018_NAME
+	desc = EVT_2181018_DESC
+
+	action = {
+		trigger = {
+			country = CHC
+		}
+		name = ACTION_NAME_EXCELLENT
+		command = { trigger = { exists = SIK } type = inherit which = SIK value = 1 }
+		command = { trigger = { exists = SIK } type = event which = 2181018 where = SIK when = 0 }
+		command = { trigger = { not = { exists = SIK flag = 1281VP } } type = province_keypoints which = 1281 value = 1 } #Urumqi
+		command = { trigger = { not = { exists = SIK flag = 1279VP } } type = province_keypoints which = 1279 value = 1 } #Kashgar
+		command = { trigger = { not = { exists = SIK } } type = setflag which = 1281VP }
+		command = { trigger = { not = { exists = SIK } } type = setflag which = 1279VP }
+	}
+
+	action = {
+		trigger = {
+			country = SIK
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = event which = 2181018 where = CHC when = 1 }
+		command = { type = secederegion which = CHC value = "China" when = 1 }
+	}
+}
+	
+# 2181019 GER Sino-Soviet War Intervention
+event = {
+	id = 2181019
+	country = GER
+	random = no
+
+	#Triggered
+
+	#picture = ""
+	style = 2
+
+	name = EVT_2181013_NAME
+	desc = EVT_2181019_DESC
+	
+	action = {
+		trigger = {
+			or = {
+				and = {
+					not = {
+						war = { country = GER country = CHI }
+						alliance = { country = GER country = SOV }
+						relation = { which = SOV value = 150 }
+					}
+					or = {
+						not = { relation = { which = SOV value = 50 } }
+						random = 50
+					}
+					or = {
+						relation = { which = CHI value = -50 }
+						random = 50
+					}
+				}
+				ai = no
+			}
+		}
+		ai_chance = 40
+		name = EVT_2181013_ACTION1 #Send supplies and aid
+		command = { type = setflag which = 2181019_AID }
+		command = { type = money value = -100 } #Use money to buy supplies
+		command = { trigger = { relation = { which = CHI value = 0 } } type = money value = 100 } #Different amount based on relations.
+		command = { trigger = { relation = { which = CHI value = 50 } } type = money value = 100 }
+		command = { trigger = { relation = { which = CHI value = 100 } } type = money value = 100 }
+		command = { trigger = { relation = { which = CHI value = 150 } } type = money value = 100 }
+		command = { type = relation which = CHI value = 25 }
+		command = { type = relation which = SOV value = -25 }
+		command = { type = event which = 2181020 where = CHI when = 7 } #CHI German Intervention
+	}
+
+	action = {
+		trigger = {
+			or = {
+				not = {
+					war = { country = GER country = CHI }
+					alliance = { country = GER country = SOV }
+				}
+				ai = no
+			}
+		}
+		ai_chance = 50
+		name = EVT_2181019_ACTION2 #Send advisers and supplies
+		command = { type = setflag which = 2181019_ADV }
+		command = { type = money value = -100 } #Use money to buy supplies
+		command = { trigger = { relation = { which = CHI value = 0 } } type = money value = 100 } #Different amount based on relations.
+		command = { trigger = { relation = { which = CHI value = 50 } } type = money value = 100 }
+		command = { trigger = { relation = { which = CHI value = 100 } } type = money value = 100 }
+		command = { trigger = { relation = { which = CHI value = 150 } } type = money value = 100 }
+		command = { type = relation which = CHI value = 50 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = event which = 2181020 where = CHI when = 7 } #CHI German Intervention
+	}
+
+	action = {
+		trigger = {
+			or = {
+				not = {
+					war = { country = GER country = SOV }
+				}
+				ai = no
+			}
+		}
+		name = EVT1914_2019511_ACTIONC #Do nothing
+		ai_chance = 10
+		command = { type = relation which = CHI value = 25 }
+		command = { type = relation which = SOV value = -25 }
+	}
+
+}
+
+# German Intervention
+event = {
+	id = 2181020
+	country = CHI
+	random = no
+	
+	#Triggered
+	#picture = ""
+	style = 2
+
+	name = EVT_2181020_NAME
+	desc = EVT_2181020_DESC
+
+	action = {
+		trigger = {
+			flag = 2181019_AID
+		}
+		ai_chance = 100
+		name = EVT_2181014_ACTION1
+		command = { type = supplies value = 1000 } #Use money to buy supplies.
+		command = { trigger = { relation = { which = GER value = 0 } } type = supplies value = 1000 } #Different amount based on relations.
+		command = { trigger = { relation = { which = GER value = 50 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = GER value = 100 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = GER value = 150 } } type = supplies value = 1000 }
+		command = { trigger = { war = { country = GER country = SOV } } type = supplies value = 1000 }
+		command = {	type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 0 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 50 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 100 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 150 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = { type = clrflag which = 2181019_AID }
+	}
+
+	action = {
+		trigger = {
+			flag = 2181019_ADV
+		}
+		ai_chance = 100
+		name = EVT_2181020_ACTION2
+		command = { type = supplies value = 1000 } #Use money to buy supplies. #TODO: Wake new leaders
+		command = { type = research_mod value = 5 }
+		command = { type = gain_tech which = -2 }
+		command = { type = gain_tech which = -2 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { trigger = { relation = { which = GER value = 0 } } type = supplies value = 1000 } #Different amount based on relations.
+		command = { trigger = { relation = { which = GER value = 50 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = GER value = 100 } } type = supplies value = 1000 }
+		command = { trigger = { relation = { which = GER value = 150 } } type = supplies value = 1000 }
+		command = { trigger = { war = { country = GER country = SOV } } type = supplies value = 1000 }
+		command = {	type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 0 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 50 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 100 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = {	trigger = { relation = { which = GER value = 150 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 name = "German Armed Division" where = 30 }
+		command = { type = clrflag which = 2181019_ADV }
+	}
+
+}
+
+# 2181022 CHI Japanese Demands
+event = {
+	id = 2181022
+	country = CHI
+	random = no
+
+	#Triggered
+
+	##picture = ""
+	style = 2
+
+	name = EVT_2181022_NAME
+	desc = EVT_2181022_DESC
+
+	action = {
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 100
+		command = { type = trade which = JAP where = CHI energy = 10 metal = 5 rare_materials = 15 money = 0.5 value = 1 }
+		command = { type = dissent value = 10 }
+	}
+
+	action = { 
+		name = ACTION_NAME_REFUSE
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+		command = { type = war which = JAP }
+	}
+}
+
+#####################
+# Alternative Chain #
+#####################
+
+# 2181023 CHI Nationalist Intervention
+event = {
+	id = 2181023
+	country = CHI
+	random = no
+
+	name = EVT_2181023_NAME
+	desc = EVT_2181023_DESC
+
+	decision = {
+		not = { event = 2181003 }
+		exists = UPE
+		not = { ispuppet = UPE }
+	}
+
+	decision_trigger = {
+		or = {
+			not = { exists = SIK }
+			and = {
+				year = 1933
+				month = 7
+			}
+		}
+	}
+
+	trigger = {
+		ai = no
+	}
+
+	##picture = ""
+	style = 2
+
+	date = { day = 0 month = 6 year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1937 }
+
+	action = {
+		name = ACTION_NAME_WAR
+		command = { type = war which = UPE }
+		command = { trigger = { exists = SIK } type = inherit which = SIK value = 1 }
+		command = { trigger = { exists = SIK } type = event which = 2181024 where = SIK when = 0 }
+	}
+}
+
+# TODO: 2181024 *** Nationalist Intervention (AI Events)
+event = {
+	id = 2181024
+	tag = { CGX CXB CSX CYN SIK }
+	persistent = yes
+	random = no
+	one_action = yes
+
+	#Triggered
+
+	##picture = ""
+	style = 2
+
+	name = EVT_2181023_NAME
+	desc = EVT_2181023_DESC
+
+	action = {
+		trigger = {
+			country = SIK
+		}
+		name = ACTION_NAME_OK
+		command = { type = secederegion which = CHI value = "China" when = 1 }
+	}
+
+}

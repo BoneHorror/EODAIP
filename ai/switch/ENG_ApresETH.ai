@@ -1,0 +1,136 @@
+# Priorités IA ENG après la chute de l'AOI par Fernando Torres
+# Temporary fixed for 0.30 beta needs rework when the map is finished, fixes limited to ignore provinces in greater europe regions (ewphoenix123)
+
+garrison = {
+
+	# country_priorities = { ETH = -1	}
+	ignore = {
+		
+		851  #Tanga
+
+		# Libye
+		773    #Al Jaghbun
+		754    #Aujila
+		774   #Calanslo
+		129   #Kufra
+		128   #Murzuk
+		130   #Ghat
+		751    #Ghadames
+		755    #Sorno
+		
+		# Afrique de l'est/Egypte
+		800   #Siwa
+		120   #Great Sand Sea
+		801   #AinDalla
+		106   #Western Desert
+		806   #El Atiun
+		808   #El Obeid
+		809   #Waw
+		807   #Malakal
+		805   #Omdurman
+		812   #Gallabal
+		811   #Kassala
+		843   #Marsabit
+
+		# Ethiopie
+		817   #Asmara
+		819   #Adwa
+		822   #Gonder
+		820   #Debre
+		829   #Gambela
+		830   #Jima
+		826   #Moyale
+		821   #Denakil
+		823   #Dese
+		818   #Diredawa
+		827   #Ogaden
+		837   #Bardera
+1030 841 842 832 836 1028
+
+		# Congo belge
+		904   #Stanleyville
+		903   #Buta
+		905   #Costermanville
+		906   #Coquihatville
+		898   #Abertville
+		902   #Kindu-Port-Empain
+		901   #Leopoldville
+		
+		# Afrique de l'est
+		838 
+		849 
+		929 
+		870   
+		869 
+		871 
+		860 
+		859 
+		866 
+		867 
+		933 
+		861 
+	}
+	province_priorities = {
+		# England Coast
+		23 = 30 # Plymouth 
+		25 = 30 # Norwich 
+		26 = 30 # Dover 
+		27 = 30 # Portsmouth
+		20 = 10 # Exeter
+		
+		12 = 20 # Edinburg
+		22 = 20 # Cardif
+		
+		17 = 10 # Manchester 
+		11 = 10 # Glasgow
+		36 = 10 # Belfast
+
+		# Inde
+		1447  = 30
+		1409  = 30
+		1517  = 30
+		1459  = 30
+		1538  = 30
+		1495  = 30
+     	1508  = 20 
+		1415  = 20  #Rangoon
+		
+
+		# Méditerranée
+		    434  = 20
+    		900 = 80 # suez
+		791  = 30  #port said
+		1008  = 50  #Tel Aviv
+		780  = 50
+	}
+	area_multiplier = {
+
+		348 = 2.0 # Gibraltar
+		429   = 2.0  #Malta
+		900  = 2.0 # Malta
+		789  = 2.5  #Alexandria
+		51  = 2.0  #DK
+
+		# Côte britannique
+		26  = 2.0  #Dover
+		25  = 2.0  #Norwich
+		27  = 2.0  #Portsmouth
+		#20  = 2.0  #Plymouth
+		17  = 1.0  #Blackpool
+		#18  = 2.0  #Sheffield
+		#24  = 1.0  #Liverpool
+		#19  = 1.0  #Bristol
+		#15  = 2.0  #Sunderland
+		#13  = 2.0  #Edinburgh
+		#10  = 1.0  #Dumfries
+		5 = 2.0 # Scap Flow
+		  36  = 1.5  #Belfast
+    #
+		11  = 1.0  #Glasgow 
+		23  = 2.0  #Truro
+		#16  = 1.0  #Lincoln
+		12  = 1.0  #Edinborough
+		21  = 1.5  #Swansea
+		#14  = 1.0  #Carlisle
+	}
+}

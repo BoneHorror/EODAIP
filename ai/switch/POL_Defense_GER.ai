@@ -1,0 +1,67 @@
+# Poland views German threat by Lothos
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.1
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.5
+	# Borders with specific countries
+	country_priorities = {
+		GER = 50
+		ITA = 20
+		ROM = -1
+		BUL = 10
+		HUN = 10
+		SLO = 10
+		SOV = 10
+		LAT = -1
+		LIT = -1
+		EST = -1
+		TAN = -1
+	}
+}
+front = { 
+   	recklessness     	= 0 # 0-3 
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.4
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human	= 2.0
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.3
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 2.0
+	ground_defense 	= 1.0
+	dig_in 		= 3.0 # Against defender
+
+	frozen_attack 	= 0.5
+	snow_attack 	= 0.5
+	blizzard_attack = 0.5
+	storm_attack 	= 0.5
+	muddy_attack 	= 0.5
+
+	mountain_attack = 0.5
+	swamp_attack 	= 0.5
+	forest_attack 	= 0.5
+	hill_attack 	= 0.5
+	urban_attack 	= 0.5
+	river 		= 0.7
+
+      	enemy_handicap = { SOV = 30 ROM = 10 } 
+    passivity = {
+		SOV = 10
+	}  
+} 

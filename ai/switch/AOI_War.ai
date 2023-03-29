@@ -1,0 +1,48 @@
+#Italian Africa At war
+no_exp_forces_to = { JAP SIA MAN U49 U03 SPA POR FRA ITA }
+################################### 
+ # Ground Combat, Leaders and Garrisons 
+ ################################### 
+ garrison = { 
+   defend_overseas_beaches = yes 
+   home_multiplier   = 1.0 
+   overseas_multiplier = 0.1 
+   home_peace_cap     = 20 
+   war_zone_odds     = 2.0 
+   key_point_prio_mult  = 5 
+   revolt_risk_mult  = 1.0 
+  
+   # PRIORITIES: 
+   beach      = 20  # Beach level 2 
+   capital      = 80  # Our capital 
+   human_border  = 0    # Ignored for allied human players 
+   war_target    = 50  # The next country targeted for attack by this AI 
+    
+   opposing_alliance  = 50  # For neutrals, all alliances are "opposing" 
+   claim_threat    = 0  # If we are neutral, countries with claims on us get this 
+   unstable_border    = 0  # Bordering countries at war with someone else get this 
+  
+   # Borders with specific countries 
+   country_priorities = { 
+    FRA = -1
+	ENG = 100
+	U01 = 20
+   } 
+   province_priorities = { 
+	825 = 90 #Addis Adeba
+	} 
+   area_multiplier = {
+	825 = 2.0 #Addis Adeba
+   } 
+ } 
+ front = {  
+   recklessness     = 0 # 0-3 
+   distrib_vs_ai     = defensive
+   distrib_vs_human   = defensive
+	reserve_prop		= 0.5
+	province_priorities = { 825 = 100	}
+     passivity = { 
+	 ENG = 30
+	 U01 = 50
+	 }  
+ }  

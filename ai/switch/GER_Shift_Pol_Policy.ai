@@ -1,0 +1,32 @@
+# Germany switches policy after Poles continue to drift away
+
+befriend = {
+	SLO = 40
+	SPA = 50
+   	ROM = 30 
+   	BUL = 30 
+	ITA = 200
+	POL = 0
+	SWE = 20
+	FIN = 20
+	JAP = 30
+	POR = 30
+	TUR = 10
+	DEN = 10
+	HOL = 20
+	AUS = 300
+}
+protect = {
+	ROM = 80
+	BUL = 80 
+	SWE = 80
+	SCH = 100
+	AUS = 300
+	POL = 100
+	SLO = 80
+	NOR = 100
+	ITA = 100
+	TUR = 80
+	HOL = 10
+	EGY = 10
+}

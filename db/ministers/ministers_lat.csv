@@ -1,0 +1,130 @@
+LAT;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+135001;Head of State;Alberts Kviesis;1930;1964;1999;FA;Powerhungry Demagogue;High;M27001;X
+135002;Head of Government;Kàrlis Ulmanis;1933;1964;1999;FA;Happy Amateur;High;M27002;X
+135003;Foreign Minister;Kàrlis Ulmanis;1933;1964;1999;FA;Biased Intellectual;Undying;M27002;X
+135004;Minister of Armament;Ludvigs Ctis;1933;1964;1999;PA;Infantry Proponent;Medium;M27004;X
+135005;Minister of Security;Vilis Gulbis;1933;1964;1999;FA;Crime Fighter;Medium;M27005;X
+135006;Head of Military Intelligence;Hermanis Apsitis;1933;1964;1999;FA;Political Specialist;Medium;M27006;X
+135007;Chief of Staff;Jànis Balodis;1933;1964;1999;FA;School of Defence;Medium;M27007;X
+135008;Chief of Army;Rudolfs Bangerskis;1933;1964;1999;FA;Static Defence Doctrine;Low;M27008;X
+135009;Chief of Navy;Tomas Spade;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M27009;X
+135010;Chief of Air Force;Janis Indans;1933;1964;1999;FA;Army Aviation Doctrine;Medium;M27010;X
+135011;Head of State;Hans Heinrich Lohse;1941;1964;1999;NS;Stern Imperialist;High;M27031;X
+135012;Head of State;Kàrlis Ulmanis;1933;1964;1999;FA;Barking Buffoon;High;M27002;X
+135013;Head of State;Janis Andersons;1945;1964;1999;PA;Benevolent Gentleman;High;M27033;X
+135014;Head of State;Pauls Kalniñs;1933;1964;1999;SC;Insignificant Layman;High;M27011;X
+135015;Head of State;Jazeps Rancans;1945;1964;1999;SC;Autocratic Charmer;High;M27035;X
+135016;Head of State;Augusts Kirchensteins;1933;1964;1999;LE;Weary Stiffneck;High;M27021;X
+135017;Head of State;Ernests Kreismanis;1945;1964;1999;ST;Ruthless Powermonger;High;M27037;X
+135018;Head of Government;Alfreds Valdmanis;1941;1964;1999;NS;Smiling Oilman;High;M27038;X
+135019;Head of Government;Oskars Dankers;1941;1964;1999;NS;Happy Amateur;High;M27039;X
+135020;Head of Government;Jànis Kaminskis;1940;1964;1999;FA;Naive Optimist;High;M27041;X
+135021;Head of Government;Rudolfs Bangerskis;1945;1964;1999;PA;Flamboyant Tough Guy;High;M27008;X
+135022;Head of Government;Pauls Kalniñs;1933;1964;1999;SC;Silent Workhorse;High;M27011;X
+135023;Head of Government;Reinhold K. Zariñs;1940;1964;1999;SC;Political Protege;High;M27012;X
+135024;Head of Government;Augusts Kirchensteins;1933;1964;1999;LE;Silent Workhorse;High;M27021;X
+135025;Head of Government;Roberts Osis;1945;1964;1999;ST;Old General;High;M27046;X
+135026;Head of Government;Vilis Làcis;1946;1964;1999;ST;Backroom Backstabber;High;M27025;X
+135027;Foreign Minister;Alfreds Valdmanis;1941;1964;1999;NS;Iron Fisted Brute;Medium;M27038;X
+135028;Foreign Minister;Oskars Dankers;1941;1964;1999;NS;General Staffer;Medium;M27039;X
+135029;Foreign Minister;Màrtiñs Prïmanis;1944;1964;1999;NS;Ideological Crusader;Medium;M27050;X
+135030;Foreign Minister;Vilhelms Munters;1933;1964;1999;FA;Great Compromiser;Medium;M27051;X
+135031;Foreign Minister;Jànis Kaminskis;1945;1964;1999;PA;Iron Fisted Brute;Medium;M27041;X
+135032;Foreign Minister;Reinhold K. Zariñs;1933;1964;1999;SC;Apologetic Clerk;Medium;M27012;X
+135033;Foreign Minister;Alfreds Bïlmanis;1940;1964;1999;SC;Biased Intellectual;Medium;M27054;X
+135034;Foreign Minister;Julijcs Lacis;1933;1964;1999;LE;Great Compromiser;Medium;M27029;X
+135035;Foreign Minister;Augusts Kirchensteins;1940;1964;1999;LE;Ideological Crusader;Undying;M27021;X
+135036;Foreign Minister;Arnolds Skrebers;1945;1964;1999;ST;Great Compromiser;Medium;M27057;X
+135037;Foreign Minister;Peteris Valeskalns;1946;1964;1999;ST;Ideological Crusader;Medium;M27058;X
+135038;Foreign Minister;Ernests Kreismanis;1947;1964;1999;ST;The Cloak N Dagger Schemer;Very High;M27037;X
+135039;Minister of Armament;Evalds Andersons;1941;1964;1999;NS;Military Entrepreneur;High;M27060;X
+135040;Minister of Armament;Jànis Skujevics;1941;1964;1999;NS;Resource Industrialist;Medium;M27061;X
+135041;Minister of Armament;Jànis Miezis;1944;1964;1999;NS;Infantry Proponent;Very High;M27062;X
+135042;Minister of Armament;Vilis Gulbis;1933;1964;1999;FA;Air to Sea Proponent;Medium;M27005;X
+135043;Minister of Armament;Kornelijs Veidnieks;1938;1964;1999;FA;Air Superiority Proponent;Medium;M27064;X
+135044;Minister of Armament;Jànis Kaminskis;1939;1964;1999;FA;Resource Industrialist;Medium;M27041;X
+135045;Minister of Armament;Alfreds Valdmanis;1940;1964;1999;FA;Administrative Genius;Medium;M27038;X
+135046;Minister of Armament;Petrus Apskalns;1933;1964;1999;SC;Infantry Proponent;Medium;M27068;X
+135047;Minister of Armament;Edgars Andersons;1945;1964;1999;SC;Military Entrepreneur;Medium;M27014;X
+135048;Minister of Armament;Roberts Dambïtis;1933;1964;1999;LE;Resource Industrialist;Medium;M27070;X
+135049;Minister of Armament;Kàrlis Karlsons;1940;1964;1999;LE;Military Entrepreneur;Medium;M27024;X
+135050;Minister of Armament;Aleksandrs Bulle;1945;1964;1999;ST;laissez-faire capitalist;Medium;M27072;X
+135051;Minister of Armament;Arnolds Tabaks;1946;1964;1999;ST;Resource Industrialist;Medium;M27073;X
+135052;Minister of Security;Alfreds Valdmanis;1941;1964;1999;NS;Crime Fighter;Medium;M27038;X
+135053;Minister of Security;Teodors Zvejnieks;1941;1964;1999;NS;Efficient Sociopath;Low;M27075;X
+135054;Minister of Security;Alberts Kviesis;1943;1964;1999;NS;Man of the People;Low;M27001;X
+135055;Minister of Security;Hermanis Apsitis;1933;1964;1999;FA;Prince of Terror;Medium;M27006;X
+135056;Minister of Security;Jànis Balodis;1940;1964;1999;FA;Man of the People;Medium;M27007;X
+135057;Minister of Security;Janis Andersons;1945;1964;1999;PA;Crooked Kleptocrat;Low;M27033;X
+135058;Minister of Security;Pauls Kalniñs;1933;1964;1999;SC;Efficient Sociopath;High;M27011;X
+135059;Minister of Security;Jazeps Rancans;1945;1964;1999;SC;Man of the People;Very High;M27035;X
+135060;Minister of Security;Jurijs Rabersz;1933;1964;1999;LE;Compassionate Gentleman;Medium;M27082;X
+135061;Minister of Security;Vilis Làcis;1940;1964;1999;LE;Efficient Sociopath;Medium;M27025;X
+135062;Minister of Security;Rodolfs Rocin;1945;1964;1999;ST;Silent Lawyer;Medium;M27084;X
+135063;Minister of Security;Andrejs Jablonskis;1946;1964;1999;ST;Prince of Terror;Medium;M27085;X
+135064;Head of Military Intelligence;Hans Heinrich Lohse;1941;1964;1999;NS;Industrial Specialist;Medium;M27031;X
+135065;Head of Military Intelligence;Erich Koch;1943;1964;1999;NS;Logistics Specialist;Medium;M27087;X
+135066;Head of Military Intelligence;Kàrlis Ulmanis;1938;1964;1999;FA;Dismal Enigma;Undying;M27002;X
+135067;Head of Military Intelligence;Felix Cielens;1933;1964;1999;SC;Industrial Specialist;Medium;M27091;X
+135068;Head of Military Intelligence;Fricis Celmins;1940;1964;1999;SC;Dismal Enigma;Medium;M27016;X
+135069;Head of Military Intelligence;Reinhold K. Zariñs;1945;1964;1999;SC;Technical Specialist;Medium;M27012;X
+135070;Head of Military Intelligence;Jurijs Rabersz;1933;1964;1999;LE;Technical Specialist;Medium;M27082;X
+135071;Head of Military Intelligence;Teodors Zvejnieks;1945;1964;1999;ST;Naval Intelligence Specialist;Low;M27075;X
+135072;Head of Military Intelligence;Vilis Làcis;1946;1964;1999;ST;Logistics Specialist;Medium;M27025;X
+135073;Chief of Staff;Konstantins Cakste;1941;1964;1999;NS;School of Fire Support;Medium;M27097;X
+135074;Chief of Staff;Arturs M. Silgailis;1943;1964;1999;NS;School of Fire Support;High;M27098;X
+135075;Chief of Staff;Krisjànis Berkis;1939;1964;1999;FA;School of Manoeuvre;Medium;M27100;X
+135076;Chief of Staff;Rudolfs Kociñs;1945;1964;1999;PA;School of Psychology;Medium;M27101;X
+135077;Chief of Staff;Verners Tefpers;1933;1964;1999;SC;School of Manoeuvre;Medium;M27017;X
+135078;Chief of Staff;Janis Berzins;1933;1964;1999;LE;School of Mass Combat;Medium;M27027;X
+135079;Chief of Staff;Roberts Dambïtis;1938;1964;1999;LE;School of Fire Support;Medium;M27070;X
+135080;Chief of Staff;Izglitibas Tautas;1945;1964;1999;ST;School of Mass Combat;Medium;M27030;X
+135081;Chief of Staff;Arturs Sprogis;1946;1964;1999;ST;School of Fire Support;High;M27106;X
+135082;Chief of Army;Otto Hellmich;1941;1964;1999;NS;Elastic Defence Doctrine;Medium;M27107;X
+135083;Chief of Army;Fricis Celmins;1937;1964;1999;FA;Elastic Defence Doctrine;Medium;M27016;X
+135084;Chief of Army;Rudolfs Kociñs;1945;1964;1999;PA;Elastic Defence Doctrine;Medium;M27101;X
+135085;Chief of Army;Janis Berzins;1933;1964;1999;LE;Decisive Battle Doctrine;Medium;M27027;X
+135086;Chief of Army;Roberts Dambïtis;1938;1964;1999;LE;Guns and Butter Doctrine;Medium;M27070;X
+135087;Chief of Army;Arturs Sprogis;1945;1964;1999;ST;Decisive Battle Doctrine;High;M27106;X
+135088;Chief of Army;Roberts Osis;1946;1964;1999;ST;Guns and Butter Doctrine;Medium;M27046;X
+135089;Chief of Navy;Konstantins Cakste;1941;1964;1999;NS;Base Control Doctrine;Medium;M27097;X
+135090;Chief of Navy;Janis Andersons;1933;1964;1999;SC;Base Control Doctrine;Low;M27033;X
+135091;Chief of Navy;Augusts Kirchensteins;1933;1964;1999;LE;Open Seas Doctrine;Medium;M27021;X
+135092;Chief of Navy;Julijcs Lacis;1940;1964;1999;LE;Indirect Approach Doctrine;Medium;M27029;X
+135093;Chief of Navy;Teodors Zvejnieks;1945;1964;1999;ST;Power Projection Doctrine;Low;M27075;X
+135094;Chief of Air Force;Konstantins Cakste;1941;1964;1999;NS;Army Aviation Doctrine;Medium;M27097;X
+135095;Chief of Air Force;Rudolfs Bangerskis;1945;1964;1999;PA;Army Aviation Doctrine;Low;M27008;X
+135096;Chief of Air Force;Jucums Vacietis;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M27126;X
+135097;Chief of Air Force;Edgars Andersons;1945;1964;1999;SC;Vertical Envelopment Doctrine;Medium;M27014;X
+135098;Chief of Air Force;Izglitibas Tautas;1933;1964;1999;LE;Naval Aviation Doctrine;Medium;M27030;X
+135099;Chief of Army;von Timroth;1914;1933;1999;ML;static defence doctrine;Very High;unknownminister;X
+135100;Chief of Staff;Rudolfs Bangerskis;1914;1933;1999;ML;school of defence;Very High;2815;X
+135101;Foreign Minister;Zigfrids Meierovics;1914;1933;1999;ML;Great Compromiser;High;2816;X
+135102;Foreign Minister;Peteris Stucka;1914;1933;1999;ST;Ideological Crusader;Very High;3873;X
+135103;Foreign Minister;Kàrlis Seja;1924;1933;1999;SL;Ideological Crusader;High;unknownminister;X
+135104;Head of Government;Zigfrïds Meierovics;1921;1933;1999;ML;Political Protege;High;2816;X
+135105;Head of Government;Andrievs Niedra;1919;1933;1999;ML;Backroom Backstabber;High;2817;X
+135106;Head of Government;Janis Pauluks;1923;1933;1999;ML;Smiling Oilman;High;2818;X
+135107;Head of Government;Karlis Ulmanis;1914;1933;1999;ML;Corporate Suit;High;2819;X
+135108;Head of Government;Peteris Stucka;1914;1933;1999;ST;Ambitious Union Boss;High;3873;X
+135109;Head of Government;Voldemars Zamuels;1924;1933;1999;SL;Naive Optimist;High;2820;X
+135110;Head of Military Intelligence;Jànis Lencmanis;1914;1933;1999;ST;Political Specialist;High;unknownminister;X
+135111;Head of State;Janis Cakste;1914;1933;1999;ML;Benevolent Gentleman;High;2821;X
+135112;Head of State;Pauls Kalnins;1919;1933;1999;SD;Popular Figurehead;High;2822;X
+135113;Head of State;Peteris Stucka;1914;1933;1999;ST;Autocratic Charmer;High;3873;X
+135114;Minister of Armament;Hermanis Punga;1923;1933;1999;ML;Laissez-Faire Capitalist;High;2823;X
+135115;Minister of Armament;Kàrlis Puriks;1914;1933;1999;ML;military entrepreneur;High;unknownminister;X
+135116;Minister of Armament;Rudolfs Endrups;1914;1933;1999;ST;Resource Industrialist;Very High;unknownminister;X
+135117;Minister of Armament;Roberts Erhards;1919;1933;1999;ML;Infantry Proponent;Very High;unknownminister;X
+135118;Minister of Armament;Ringlods Kalnings;1921;1933;1999;ML;Laissez-Faire Capitalist;Very High;unknownminister;X
+135119;Minister of Armament;Alfreds Riekstiks;1922;1933;1999;ML;Administrative Genius;Very High;3874;X
+135120;Minister of Armament;Ansis Busnevics;1923;1933;1999;ML;Administrative Genius;Very High;unknownminister;X
+135121;Minister of Armament;Jànis Blumbergs;1924;1933;1999;SL;Resource Industrialist;High;unknownminister;X
+135122;Minister of Security;Mikelis Valters;1914;1933;1999;ML;Man of the People;High;3875;X
+135123;Minister of Security;Jànis Lencmanis;1914;1933;1999;ST;Prince of Terror;Medium;unknownminister;X
+135124;Minister of Security;Arveds Bergs;1919;1933;1999;ML;Compassionate Gentleman;High;3876;X
+135125;Minister of Security;Alfreds Birznieks;1919;1933;1999;ML;Crime Fighter;High;unknownminister;X
+135126;Minister of Security;Alberts Kviesis;1921;1933;1999;ML;Compassionate Gentleman;High;M27001;X
+135127;Minister of Security;Peteris Bergis;1923;1933;1999;ML;Crime Fighter;Very High;unknownminister;X
+135128;Minister of Security;Edvards-Kàrlis Laimiñs;1924;1933;1999;SL;Silent Lawyer;Very High;unknownminister;X

@@ -1,0 +1,11 @@
+# Germany has high belligerence
+
+neutrality = 80.000 
+war = 10
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	GER = 300
+}

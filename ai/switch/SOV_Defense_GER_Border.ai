@@ -1,0 +1,144 @@
+# Soviet war with Germany AI File by Lothos
+# ger-sov border fixed for 0.30 beta, needs rework later (ewphoenix123)
+
+max_garrison_prop = 0.95
+min_garrison_prop = 0.80
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.5
+	home_peace_cap 			= 50
+	war_zone_odds 			= 1.0
+	key_point_prio_mult		= 1.5
+	revolt_risk_mult		= 0.3
+
+	# PRIORITIES:
+	beach			= 15	# Beach level 2
+	capital			= 100 # 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 10 # 50	# The next country targeted for attack by this AI
+	reserves     = 100 # 50  # bonus for provinces just behind a frontline. 
+	
+	opposing_alliance	= 5 # 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = -1
+		TUR = -1
+		CGX = -1
+		CYN = -1
+		CHC = -1
+		CSX = -1
+		FIN = 25
+		ROM = 20
+		POL = 100
+		GER = 50
+		ITA = 50
+		JAP = 20
+		MAN = 20
+		SWE = -1
+		NOR = -1
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		553   = 30  #Leningrad
+		617   = 20  #Kiev
+		632   = 20  #Dnepropetrovsk
+		663   = 20  #Stalingrad
+		636   = 20  #Kharkov
+		587   = 20  #Bryansk
+		1191  = 20  #Vladivostock
+		535   = 20  #Murmansk
+		641   = 20  #Sevastopool
+		589   = 20  #Smolensk
+
+		# In depth defense
+
+		270 = 30 # Tallinn
+		604 = 30 # Kursk
+		590 = 30 # Vitebsk
+		552 = 30 # Gdov
+		584 = 30 # Tula
+		644 = 30 # Rostov
+		599 = 30 # Minsk
+		628 = 30 # Kirovograd
+		597 = 30 # Luban
+		566 = 30 # Pskov
+		611 = 30 # Zitomir
+		
+		# German Soviet Border
+	
+		264  = 10  #riga
+		267  = 10
+		258  = 10
+		255  = 10
+		251  = 10
+		248  = 10
+		595  = 10
+		616  = 10
+		612  = 10
+		619  = 10
+		620  = 10
+		626  = 10
+	}
+	ignore = {
+		268  #Liepaja (German Border easy surround hex)
+	}
+	area_multiplier = {	}
+}
+front = {
+province_priorities = {
+		553   = 1.30  #Leningrad
+		617   = 1.20  #Kiev
+		632   = 1.20  #Dnepropetrovsk
+		663   = 1.20  #Stalingrad
+		636   = 1.20  #Kharkov
+		587   = 1.20  #Bryansk
+		1191  = 1.20  #Vladivostock
+		535   = 1.20  #Murmansk
+		641   = 1.20  #Sevastopool
+		589   = 1.20  #Smolensk
+
+		# In depth defense
+
+		270 = 1.30 # Tallinn
+		604 = 1.30 # Kursk
+		590 = 1.30 # Vitebsk
+		552 = 1.30 # Gdov
+		584 = 1.30 # Tula
+		644 = 1.30 # Rostov
+		599 = 1.30 # Minsk
+		628 = 1.30 # Kirovograd
+		597 = 1.30 # Luban
+		566 = 1.30 # Pskov
+		611 = 1.30 # Zitomir
+		
+		# German Soviet Border
+	
+		264  = 1.10  #riga
+		267  = 1.10
+		258  = 1.10
+		255  = 1.10
+		251  = 1.10
+		248  = 1.10
+		595  = 1.10
+		616  = 1.10
+		612  = 1.10
+		619  = 1.10
+		620  = 1.10
+		626  = 1.10
+	}
+}

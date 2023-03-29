@@ -1,0 +1,54 @@
+SAU;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+295001;Head of State;Abdul Aziz al Saud;1933;1964;1999;PA;Ruthless Powermonger;High;M63001;X
+295002;Head of Government;Saud al Saud;1933;1964;1999;PA;Backroom Backstabber;High;M63002;X
+295003;Foreign Minister;Faisal al Saud;1933;1964;1999;PA;Apologetic Clerk;High;M63003;X
+295004;Minister of Armament;Faisal al Saud;1933;1964;1999;PA;Resource Industrialist;High;M63003;X
+295005;Minister of Security;Khalid al Saud;1933;1964;1999;PA;Crooked Kleptocrat;High;M63005;X
+295006;Head of Military Intelligence;Khalid al Saud;1933;1964;1999;PA;Logistics Specialist;High;M63005;X
+295007;Chief of Staff;Saud al Saud;1933;1964;1999;PA;School of Manoeuvre;High;M63002;X
+295008;Chief of Army;Faisal al Saud;1933;1964;1999;PA;Guns and Butter Doctrine;High;M63003;X
+295009;Chief of Navy;Faisal al Saud;1933;1964;1999;PA;Open Seas Doctrine;High;M63003;X
+295010;Chief of Air Force;Faisal Saud;1933;1964;1999;PA;Army Aviation Doctrine;High;M63003;X
+295011;Foreign Minister;Hubert Scott-Paine;1939;1964;1999;SC;General Staffer;High;M63031;X
+295012;Foreign Minister;Charles Lord Parmoor;1941;1964;1999;SC;Apologetic Clerk;High;M63032;X
+295013;Foreign Minister;Harry St.John Philby;1944;1964;1999;PA;Ideological Crusader;High;M63033;X
+295014;Foreign Minister;Saud al Saud;1945;1964;1999;PA;Biased Intellectual;Very High;M63002;X
+295015;Minister of Armament;G.G. Aime-Murray;1937;1964;1999;SC;Administrative Genius;High;M63035;X
+295016;Minister of Armament;Harry St.John Philby;1938;1964;1999;PA;Infantry Proponent;High;M63033;X
+295017;Minister of Armament;Arthur J. Salter;1939;1964;1999;SC;Theoretical Scientist;High;M63037;X
+295018;Minister of Armament;Malcolm de le Vingne;1940;1964;1999;SC;Resource Industrialist;High;M63038;X
+295019;Minister of Armament;Geoffrey George Knox;1941;1964;1999;SC;Tank Proponent;High;M63039;X
+295020;Minister of Armament;Salih al Rajihi;1945;1964;1999;PA;laissez-faire capitalist;High;M63040;X
+295021;Minister of Security;Hubert Scott-Paine;1938;1964;1999;SC;Silent Lawyer;High;M63031;X
+295022;Minister of Security;Harry St.John Philby;1941;1964;1999;PA;Compassionate Gentleman;High;M63033;X
+295023;Minister of Security;James Power Carne;1942;1964;1999;SC;Efficient Sociopath;High;M63043;X
+295024;Minister of Security;Alwyn Parker;1943;1964;1999;SC;Man of the People;High;M63044;X
+295025;Minister of Security;Suleiman al Olyan;1945;1964;1999;PA;Back Stabber;High;M63045;X
+295026;Head of Military Intelligence;Sir Eric Fullerton;1937;1964;1999;SC;Naval Intelligence Specialist;High;M63046;X
+295027;Head of Military Intelligence;Harry St.John Philby;1939;1964;1999;PA;Dismal Enigma;High;M63033;X
+295028;Head of Military Intelligence;Hubert Scott-Paine;1941;1964;1999;SC;Political Specialist;High;M63031;X
+295029;Head of Military Intelligence;Faisal al Saud;1945;1964;1999;PA;Industrial Specialist;High;M63003;X
+295030;Chief of Staff;Sir Eric Fullerton;1933;1964;1999;SC;School of Psychology;High;M63046;X
+295031;Chief of Staff;William Campbell-Rice;1937;1964;1999;SC;School of Defence;High;M63051;X
+295032;Chief of Staff;T.E. Shaw;1938;1964;1999;SC;School of Fire Support;High;M63052;X
+295033;Chief of Staff;T.R.S. Smythe-Cooper;1940;1964;1999;SC;School of Mass Combat;High;M63053;X
+295034;Chief of Staff;Faisal al Saud;1945;1964;1999;PA;School of Manoeuvre;High;M63003;X
+295035;Chief of Army;William Campbell-Rice;1938;1964;1999;SC;Static Defence Doctrine;High;M63051;X
+295036;Chief of Army;T.E. Shaw;1939;1964;1999;SC;Elastic Defence Doctrine;High;M63052;X
+295037;Chief of Army;T.R.S. Smythe-Cooper;1941;1964;1999;SC;Decisive Battle Doctrine;High;M63053;X
+295038;Chief of Navy;Sir Eric Fullerton;1937;1964;1999;SC;Indirect Approach Doctrine;High;M63046;X
+295039;Chief of Navy;Philip Gordon-Lee;1941;1964;1999;SC;Open Seas Doctrine;High;M63060;X
+295040;Chief of Air Force;Sir Eric Fullerton;1938;1964;1999;SC;Naval Aviation Doctrine;High;M63046;X
+295041;Chief of Air Force;T.E. Shaw;1939;1964;1999;SC;Army Aviation Doctrine;High;M63052;X
+295042;Chief of Air Force;Arthur Dawkins;1941;1964;1999;SC;Air Superiority Doctrine;High;M63064;X
+295043;Chief of Air Force;Bassam Abu Khadar;1945;1964;1999;PA;Vertical Envelopment Doctrine;High;M63065;X
+295044;Chief of Army;Abdul Aziz Al Saud;1914;1933;1999;PA;Decisive Battle Doctrine;Very High;3107;X
+295045;Chief of Staff;Abdul Aziz Al Saud;1914;1933;1999;PA;School of Mass Combat;Very High;3107;X
+295046;Foreign Minister;Abdul Aziz Al Saud;1914;1933;1999;PA;Ideological Crusader;Very High;3107;X
+295047;Foreign Minister;St. John Philby;1899;1964;1999;PA;Ideological Crusader;Very High;3108;X
+295048;Head of Government;Abdul Aziz Al Saud;1914;1933;1999;PA;Old General;Very High;3107;X
+295049;Head of Military Intelligence;Abdul Aziz Al Saud;1914;1933;1999;PA;Political Specialist;Very High;3107;X
+295050;Head of State;Abdul Aziz Al Saud;1914;1933;1999;PA;Popular Figurehead;Very High;3107;X
+295051;Minister of Armament;Abdul Aziz Al Saud;1914;1933;1999;PA;military entrepreneur;Very High;3107;X
+295052;Minister of Security;Abdul Aziz Al Saud;1914;1933;1999;PA;Efficient Sociopath;Very High;3107;X

@@ -1,0 +1,523 @@
+# Japan Prepares against SOV AI File by Nekron
+
+###################################
+# Spying
+###################################
+spyprefs =
+{
+	percentage_on_spies 		= 0.1
+	percentage_foreign_mission 	= 0.5
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
+	spyprefsdata = 
+	{
+		NumberOfSpies = 20
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country = JAP
+	}
+	spyprefsdata = {
+		country_priorities	= 4
+		steal_blueprint 	= 1
+		minister_assassination 		= 3
+		smear_campaign 		= 6
+		coup 				= 2
+		sabotage_industry 	= 8
+		nuclear_sabotage 	= 0
+		found_partisans		= 2 # 4
+		massmedia 			= 3
+		disrupt_techteam 	= 6
+		country 			= CHI
+	}
+	spyprefsdata = {
+		country_priorities	= 10
+		steal_blueprint 	= 4 # 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 6 # 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 2
+		massmedia 			= 2
+		disrupt_techteam 	= 5
+		country 			= SOV
+	}
+	spyprefsdata = {
+		country_priorities	= 8
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 5
+		nuclear_sabotage 	= 0
+		found_partisans		= 0
+		massmedia 			= 1
+		disrupt_techteam 	= 5
+		country 			= USA
+	}
+	spyprefsdata = {
+		country_priorities	= 6
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 6
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= ENG
+	}
+	spyprefsdata = {
+		country_priorities	= 2 # 4
+		steal_blueprint 	= 10
+		minister_assassination          = 1
+		smear_campaign 		= 4
+		coup 				= 0
+		sabotage_industry 	= 6
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= FRA
+	}
+	spyprefsdata = {
+		country_priorities	= 1 # 2
+		steal_blueprint 	= 1
+		minister_assassination 		= 1
+		smear_campaign 		= 4
+		coup 				= 3
+		sabotage_industry 	= 6
+		nuclear_sabotage 	= 0
+		found_partisans		= 1
+		massmedia 			= 0
+		disrupt_techteam 	= 5
+		country 			= PHI
+	}
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 30
+		CSX = 30
+		SIK = 25
+     	CXB = 40
+		U74 = 10
+     	U67 = 10 
+		CYN = 25
+		CGX = 25
+		CHC = 45
+		MAN = -1
+		MON = -1
+		SIA = -1
+     	SOV = 80
+		POR = -1
+		ENG = 50
+		FRA = 50
+		U05 = 10
+		USA = 50
+		AST = 10
+		NZL = 10
+	}
+	province_priorities = {
+	}
+	area_multiplier = {
+		1191  = 2.0  #Vladivostok
+		1338 = 2.0 # Shanghai, China
+		1216 = 2.0	# Jinzhou, Northern China
+		1232 = 1.5 	# Busan, Korea
+		1362 = 0.5	# Taipei, Taiwan
+		1661 = 0.5	# Iwo Jima
+		1564 = 0.5	# Okinawa
+		1670 = 0.5	# Peleliu
+		1685 = 1.0	# Saipan
+		1219 = 1.5	# Port Arthur
+	}
+}
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.1 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		1661 # Iwo Jima
+		1667 # Truk
+	}
+
+	naval_base = no
+	max_naval_base = 10
+	naval_base_provs = {
+		1726 # Rabaul
+	} 
+
+	land_fort = yes
+	max_land_level = 2
+	fort_borders = { SOV } 
+
+	ic_at_war = yes 
+	force_ic_until = 1937
+	ic_end_year = 1943
+	IC_provs = {
+		1552 # Tokyo
+		1557 # Nagoya
+		1556 # 
+		1553 # Osaka
+		1554 # Hiroshima
+		1560 # Nagasaki
+	} 
+}
+technology = { 
+	endgoal = { } 
+	preference = { 
+		# Cavalry
+		1380 1390
+		
+		#Armor Division Formation
+		6900 
+		
+		# Marines
+		1600 1610 1620 1630 1640 1650 1660
+
+		# Field Artillery Support
+		2930 2940 2320 2330 2340 2360 2950 2350
+		
+		# Destroyers 
+		1885 3020 3030 3040 3050 3060 3070 12000 3080 3090
+		
+		# Light Cruiser
+		3110 3120 3130 3140 3150 3160 12010 3170 3180 
+		
+		# Heavy Cruiser
+		3230 3240 3250 3260 12020 3270 3280
+
+		# Battleship - two last are super heavy
+		3456 3460 3470 3480 12040 3490 12050
+
+		# Carrier
+		3530 3540 3550 12060 3560 3570
+
+		# Light Carrier
+		12110 12120 12130 12140 12150
+
+		# Submarines
+		3610 3620 3630 3640 3650 3660 3670 3680 3690 3700 3710
+		
+		4290 4250 4260
+		
+		# Multi role
+		4300 4310 4320 4330 4340 4040 4070 4100 4350 15030 15040 15050 4360 
+
+		# Naval Bomber
+		4190 4200 4210 15140 15150
+		
+		# Cags
+		4910 4920 4930 4940 4950 4960 7050 7280
+		
+		# Manufactoring
+		5060 5070 5130 5840 5850 5860
+
+		# Construction Engineering
+		5800 5080 5090 5100 5900 5910
+		
+		# Assembly lines
+		5140 5150 5180
+		
+		# Synthetic Oil
+		5190 5200
+		
+		# Computers
+		5330 5340 7140 7150 7160 16000 16040
+		
+		# Computers
+		5360
+		
+		# Radar
+		5410 5416 5417 5420 5326
+
+		# MEDICINE
+		5630 5640 5650 5660 5670
+		
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Inf support
+		1910 1920 1930 1940 1950 1960 1970 1980 1990 199100 199110 199120 199130 199140 199150 199160 199170 199180
+
+		# Motorized Infantry
+		1396 1400 1410 1420 1430 1440 1450 1460 
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+
+		# Light tanks
+		7600 7610 2010 2630 2640 2646 2650 2030 2040 2050 2060
+		
+		#EQUIPMENT Winter
+		5920 5930
+		
+		# Naval Doctrines
+		81300 81310 81320 81330 81340 81350 81360 81370 81380
+		
+		# Amphibious Warfare
+		82320 82330 7900
+
+		# Land Doctrines
+		6410 6430 6440 6160 6190 6490
+
+		# Air Doctrines
+		9060 9070 9080 9090 9100 9110 9120 9130 9200 9230 9240 9250 9260 9270 9280 9300 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
+		
+		# Transports
+		3820 3830 3840 3850
+	} 
+	ignore 	= {
+		# Airborne Infantry
+		1670 1680 1690 1700 1710 1720 1730 1740
+
+		# Tank destroyers
+		2170 2180 2850
+
+		# Self-Propelled Anti-Air
+		22910 22920
+		
+		# Battlecruisers
+		3340 3350
+
+		# Close Air Support
+		4170 4280
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+
+		# Vehicle Assembly & Rocket Assembly
+		5170
+		
+		# Strategic Destruction - Flying Armada
+		9180 9430 9440 9450 9460
+	}
+ 
+	armor 		= 3
+	infantry 	= 6
+	industry 	= 5
+	aircraft 	= 3
+	naval 		= 5
+	land_doctrines 	= 3
+	secret_weapons 	= 1
+	air_doctrines 	= 2
+	naval_doctrines = 3
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion	= yes
+
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 10.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 150.0  #About the distance from Japan to Batavia
+	max_staging_distance = 60.0	# How far should the staging area be from the target invasion point
+	distance			= 1.0	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.0	#prioritise taking pure islands.
+	enemy				= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.7	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    naval_base 			= 0.1 
+    air_support 		= 1.0 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+	province_priorities = yes
+      
+	staging_province = {
+		1399  #Saigon
+		1361  #Kaohsung
+		1647  #Truk
+		1553  #Osaka
+		1231  #Busan
+		1726  #Rabaul
+		1432  #Singapore
+		1686  #Saipan
+		1670  #Palau
+		1676
+		1552
+		2174
+		2151
+		1659
+	}
+	target = {
+		# Japanese Heartland
+		1562  = 4000  #Amami
+		1564  = 4000  #Okinawa
+		1362  = 7000  #Taibei
+		1361  = 7000  #Gaoxiong
+		1662  = 7000  #Bonin Islands
+		1661  = 8000  #Iwo Jima
+		1543  = 7000  #Etorufu
+		1542  = 7000  #Toyohara
+		1541  = 6000  #Okha  (Soviet Controlled)
+		
+		# Soviet Coast
+		1191  = 8000  #Vladivostok
+		1185  = 7000  #Gavan
+		1189  = 6000  #Amur
+		1184  = 4000  #Petropavlowsk
+
+		#Philippines
+		1567  = 675  #Lingayen Gulf
+		1568  = 675  #Lamon Bay
+		1577  = 675  #Legaspi
+		1579  = 675  #Davao
+		1575  = 450  #Samar
+		1573  = 450  #Leyte
+		1574  = 450  #Negros
+		1576  = 450  #Panay
+		1571  = 450  #Mindoro
+		1572  = 450  #Palawan
+
+		#Outer Japanese Islands
+		1686  = 5250  #Saipan
+		1685  = 5250  #Tinian
+		1684  = 5250  #Rota
+		1683  = 5250  #Guam
+		1670  = 5250  #Palau
+		1672  = 5250  #Marcus Island
+
+		#Netherlands East Indies
+		1649  = 600  #Semarang
+		1656  = 600  #Madura
+		1636  = 375  #Palembang
+		1635  = 375  #Dumai
+
+		#Borneo
+		1625  = 45  #Mini
+		1624  = 45  #Kuching
+		1631  = 45  #Pontianak
+		1632  = 45  #Balikpapan
+		1627  = 45  #Tarakan
+
+		#Singapore
+		1436  = 25  #Kota Bahru
+		1435  = 25  #Alor Star
+		1432  = 65  #Singapore
+
+		#China
+		1241  = 550  #Tianjin
+		1328  = 550  #Qingdao
+		1338  = 550  #Shanghai
+		1333  = 550  #Nanton
+		1334  = 550  #Lianyuang
+		1358  = 540  #Fuzhou
+
+		#USA
+		1673  = 575  #Wake Island
+		1734  = 670  #Pearl Harbor
+		1736  = 555  #Hawai
+		1738  = 630  #Johnston
+		1739  = 680  #Midway
+		1678  = 650  #Majuro
+		1680  = 615  #Tarawa
+		1874  = 505  #Seattle
+
+		#Britain
+		1371  = 725  #Hong Kong
+
+		#Far Outer Rim Japanese Islands
+		1675  = 255  #Eniwetok
+		1674  = 255  #Bikini
+		1676  = 255  #Wotje
+		1681  = 255  #Kwajalein
+		1677  = 255  #Maloelap
+		1679  = 255  #Mili
+		1687  = 255  #Ponape
+		1728  = 255  #Kosrae
+		1669  = 255  #Ngulu
+		1668  = 255  #Yap
+		1667  = 255  #Ulithi
+		1665  = 255  #Wolelai
+		1666  = 255  #Woleai
+		1634  = 255  #Pulusok
+		1647  = 255  #Truk
+
+		#Indonesia
+		1659  = 250  #Menado
+		1657  = 250  #Makassar
+
+		#New Britain
+		1726  = 230  #Rabaul
+
+		#Indonesia
+		1620  = 195  #Helmahera
+		1621  = 195  #Buru
+		1622  = 195  #Ceram
+
+		#North New Guinea
+		1639  = 215  #Biak Island
+		1600  = 215  #Babo
+		1642  = 215  #Arare
+		1596  = 245  #Hollandia
+		1604  = 175  #Lae
+
+		#North Solomon Islands
+		1724  = 175  #Admirality Islands
+		1725  = 175  #New Ireland
+		1607  = 175  #Buka Island
+		1587  = 175  #Bougainville
+
+		# NEI Last Remaining Islands
+		1643  = 180  #Bali
+		1619  = 180  #Lombok
+		1644  = 180  #Sumbawa
+		1615  = 180  #Flores
+		1645  = 180  #Sumba
+		1616  = 180  #West Timor
+	} 
+} 
+admiral = { 
+	min_org		= 80	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 68    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 50 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	target = {
+		2516  = 200
+		2517  = 200
+		2518  = 200
+		2514  = 150
+		2515  = 100
+		2524  = 100
+		2523  = 100
+	} 
+	core = {
+		2489
+		2490
+		2491
+		2492
+		2494
+		2497
+		2498
+		2499
+		2501
+		2512
+	} 
+}

@@ -1,0 +1,48 @@
+PRI;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+730001;Head of State;Konradin Asimov;1933;1964;1999;LE;Barking Buffoon;High;M527001;X
+730002;Head of Government;Aleksei Shipunov;1933;1964;1999;LE;Happy Amateur;High;M527002;X
+730003;Foreign Minister;Zletav Baransky;1933;1964;1999;LE;Apologetic Clerk;High;M527003;X
+730004;Minister of Armament;Piotr Shpitalny;1933;1964;1999;LE;Resource Industrialist;Medium;M527004;X
+730005;Minister of Security;Sergey Tretyakov;1933;1964;1999;LE;Prince of Terror;Medium;M527005;X
+730006;Head of Military Intelligence;Ivan Shelest;1933;1964;1999;LE;Logistics Specialist;Medium;M527006;X
+730007;Chief of Staff;Anton Shipov;1933;1964;1999;LE;School of Fire Support;Medium;M527007;X
+730008;Chief of Army;Tryfil Shimansky;1933;1964;1999;LE;Elastic Defence Doctrine;Medium;M527008;X
+730009;Chief of Navy;Vitalmo Panov;1933;1964;1999;LE;Open Seas Doctrine;Medium;M527009;X
+730010;Chief of Air Force;Nikolai Shutt;1933;1964;1999;LE;Vertical Envelopment Doctrine;Medium;M527010;X
+730011;Head of State;Nikolay Smirnov;1933;1964;1999;ML;Ruthless Powermonger;High;M527011;X
+730012;Head of State;Mirsha Vuchilkov;1933;1964;1999;PA;Insignificant Layman;High;M527012;X
+730013;Head of Government;Mihail Akseimov;1933;1964;1999;ML;Flamboyant Tough Guy;High;M527013;X
+730014;Head of Government;Gennadij Shiyanov;1933;1964;1999;PA;Old Admiral;High;M527014;X
+730015;Foreign Minister;Mahmud Gaidar;1933;1964;1999;LE;Ideological Crusader;High;M527015;X
+730016;Foreign Minister;Jegor K. Chahine;1933;1964;1999;ML;Biased Intellectual;High;M527016;X
+730017;Foreign Minister;Aleksei Sidorenko;1933;1964;1999;ML;Great Compromiser;High;M527017;X
+730018;Foreign Minister;Piotr Shulgin;1933;1964;1999;PA;Great Compromiser;High;M527018;X
+730019;Foreign Minister;Magomed Gasanovich;1933;1964;1999;PA;Iron Fisted Brute;High;M527019;X
+730020;Minister of Armament;Sirazhudin Khabuleyev;1933;1964;1999;LE;Military Entrepreneur;Medium;M527020;X
+730021;Minister of Armament;Tryin Tryubachev;1933;1964;1999;ML;Administrative Genius;Medium;M527021;X
+730022;Minister of Armament;Gennadij Selezhnev;1933;1964;1999;ML;Air to Ground Proponent;Medium;M527022;X
+730023;Minister of Armament;Vladimir Bolshanin;1933;1964;1999;PA;Tank Proponent;Medium;M527023;X
+730024;Minister of Armament;Roman Basilevsky;1933;1964;1999;PA;Air to Ground Proponent;Medium;M527024;X
+730025;Minister of Security;Gennadij Bukaev;1933;1964;1999;LE;Man of the People;Medium;M527025;X
+730026;Minister of Security;Victor Krhistenko;1933;1964;1999;ML;Compassionate Gentleman;Medium;M527026;X
+730027;Minister of Security;Vladimir Kevorkov;1933;1964;1999;ML;Back Stabber;Medium;M527027;X
+730028;Minister of Security;Father Georgij Gapon;1933;1964;1999;PA;Silent Lawyer;Medium;M527028;X
+730029;Minister of Security;Aleksandyr Davidenko;1933;1964;1999;PA;Compassionate Gentleman;Medium;M527029;X
+730030;Head of Military Intelligence;Jelena Shvanova;1933;1964;1999;LE;Industrial Specialist;Medium;M527030;X
+730031;Head of Military Intelligence;Viktor A. Shanin;1933;1964;1999;ML;Industrial Specialist;Medium;M527031;X
+730032;Head of Military Intelligence;Jegor Koptev;1933;1964;1999;ML;Technical Specialist;Medium;M527032;X
+730033;Head of Military Intelligence;Viktor Karelin;1933;1964;1999;PA;Dismal Enigma;Medium;M527033;X
+730034;Head of Military Intelligence;Wilfred Filon;1933;1964;1999;PA;Logistics Specialist;Medium;M527034;X
+730035;Chief of Staff;Voldar Shalimov;1933;1964;1999;LE;School of Mass Combat;Medium;M527035;X
+730036;Chief of Staff;Vassilij A. Shiryaev;1933;1964;1999;ML;School of Defence;Medium;M527036;X
+730037;Chief of Staff;Ivan Vysoitsky;1933;1964;1999;PA;School of Psychology;Medium;M527037;X
+730038;Chief of Army;Ivan Tretyak;1933;1964;1999;LE;Static Defence Doctrine;Medium;M527038;X
+730039;Chief of Army;Pavel Shein;1933;1964;1999;ML;Static Defence Doctrine;Medium;M527039;X
+730040;Chief of Army;Pavel Panov;1933;1964;1999;PA;Decisive Battle Doctrine;Medium;M527040;X
+730041;Chief of Navy;Dmytry Kulik;1933;1964;1999;LE;Indirect Approach Doctrine;Medium;M527041;X
+730042;Chief of Navy;Igor Keppenrus;1933;1964;1999;ML;Power Projection Doctrine;Medium;M527042;X
+730043;Chief of Navy;Sergei Bytchkov;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M527043;X
+730044;Chief of Air Force;Viktor Shavrov;1933;1964;1999;LE;Army Aviation Doctrine;Medium;M527044;X
+730045;Chief of Air Force;Mihai Shevrigin;1933;1964;1999;ML;Naval Aviation Doctrine;Medium;M527045;X
+730046;Chief of Air Force;Grigorij Shubin;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M527046;X

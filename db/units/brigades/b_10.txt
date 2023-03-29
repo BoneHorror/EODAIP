@@ -1,0 +1,54 @@
+detachable = yes
+# 0-  HAC CAG 1970
+model = {
+	cost 						= 3.5
+	buildtime 					= 200
+	manpower 					= 0.1
+	surfacedetectioncapability	= 11
+	airdetectioncapability 		= 9
+	subdetectioncapability		= 10
+	airdefence					= -9
+	seaattack					= 13
+	convoyattack				= 13
+	subattack					= 14
+	airattack					= 5
+	shorebombardment			= 5
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		helicopter = 17
+		manpower = 100
+	}
+}
+
+# 1-  HAC CAG 1981
+model = {
+	cost 						= 3.75
+	buildtime 					= 200
+	manpower 					= 0.1
+	surfacedetectioncapability	= 12
+	airdetectioncapability 		= 10
+	subdetectioncapability		= 12
+	airdefence					= -10
+	seaattack					= 14
+	convoyattack				= 14
+	subattack					= 16
+	airattack					= 6
+	shorebombardment			= 6
+	distance					= 2.5
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.75
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+	equipment = { 
+		fighter = 15
+		bomber = 15
+		helicopter = 17
+		manpower = 100
+	}
+}

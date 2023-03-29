@@ -1,0 +1,35 @@
+U14;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+885001;Head of State;Palmiro Togliatti;1933;1964;1999;ST;Powerhungry Demagogue;High;M3021;X
+885002;Head of State;Amadeo Bordiga;1933;1964;1999;LE;Benevolent Gentleman;High;3528;X
+885003;Head of State;Mauro Scoccimarro;1933;1964;1999;ST;Autocratic Charmer;High;M3088;X
+885004;Head of Government;Luigi Longo;1933;1964;1999;LE;Political Protege;High;M3022;X
+885005;Head of Government;Amadeo Bordiga;1933;1964;1999;LE;Naive Optimist;High;3528;X
+885006;Head of Government;Giorgio Amendola;1933;1964;1999;LE;Happy Amateur;High;3529;X
+885007;Head of Government;Mauro Scoccimarro;1933;1964;1999;ST;Flamboyant Tough Guy;High;M3088;X
+885008;Foreign Minister;Palmiro Togliatti;1933;1964;1999;ST;Ideological Crusader;High;M3021;X
+885009;Foreign Minister;Amadeo Bordiga;1933;1964;1999;LE;The Cloak N Dagger Schemer;High;3528;X
+885010;Foreign Minister;Luigi Longo;1933;1964;1999;LE;Ideological Crusader;High;M3022;X
+885011;Foreign Minister;Ruggiero Grieco;1933;1964;1999;LE;Great Compromiser;High;3530;X
+885012;Minister of Armament;Vittorio Vidali;1933;1964;1999;ST;Infantry Proponent;High;M3087;X
+885013;Minister of Armament;Mauro Scoccimarro;1933;1964;1999;ST;Air to Sea Proponent;High;M3088;X
+885014;Minister of Armament;Antonio Pesenti;1933;1964;1999;LE;Resource Industrialist;High;M3024;X
+885015;Minister of Armament;Giuseppe di Vittorio;1933;1964;1999;LE;Military Entrepreneur;High;M3120;X
+885016;Minister of Security;Palmiro Togliatti;1933;1964;1999;ST;Crime Fighter;High;M3021;X
+885017;Minister of Security;Antonio Pesenti;1933;1964;1999;LE;Compassionate Gentleman;High;M3024;X
+885018;Minister of Security;Ruggiero Grieco;1933;1964;1999;LE;Man of the People;High;3530;X
+885019;Head of Military Intelligence;Giuseppe di Vittorio;1933;1964;1999;LE;Political Specialist;High;M3120;X
+885020;Head of Military Intelligence;Palmiro Togliatti;1933;1964;1999;ST;Technical Specialist;High;M3021;X
+885021;Head of Military Intelligence;Antonio Pesenti;1933;1964;1999;LE;Industrial Specialist;High;M3024;X
+885022;Head of Military Intelligence;Giorgio Amendola;1933;1964;1999;LE;Dismal Enigma;High;3529;X
+885023;Chief of Staff;Luigi Longo;1933;1964;1999;LE;School of Mass Combat;High;M3022;X
+885024;Chief of Staff;Mauro Scoccimarro;1933;1964;1999;LE;School of Psychology;High;M3088;X
+885025;Chief of Staff;Ruggiero Grieco;1933;1964;1999;LE;School of Defence;High;3530;X
+885026;Chief of Army;Giancarlo Pajetta;1933;1964;1999;LE;Guns and Butter Doctrine;High;M3028;X
+885027;Chief of Army;Vittorio Vidali;1933;1964;1999;ST;Elastic Defence Doctrine;High;M3087;X
+885028;Chief of Army;Luigi Longo;1933;1964;1999;LE;Armoured Spearhead Doctrine;High;M3022;X
+885029;Chief of Navy;Giancarlo Pajetta;1933;1964;1999;LE;Open Seas Doctrine;High;M3028;X
+885030;Chief of Navy;Ruggiero Grieco;1933;1964;1999;LE;Decisive Naval Battle Doctrine;High;3530;X
+885031;Chief of Air Force;Ruggiero Grieco;1933;1964;1999;LE;Air Superiority Doctrine;High;3530;X
+885032;Chief of Air Force;Luigi Longo;1933;1964;1999;LE;Army Aviation Doctrine;High;M3022;X
+885033;Chief of Air Force;Giorgio Amendola;1933;1964;1999;LE;Vertical Envelopment Doctrine;High;3529;X

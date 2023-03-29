@@ -1,0 +1,15 @@
+# Germany succesfully got POL into the Iron Pact
+
+combat = {
+	SOV = 0
+	FRA = 100
+	BEL = 200
+	HOL = 200
+	DEN = 200
+	SCH = 10
+	YUG = 20
+	LUX = 200
+	LIT = 200
+	LAT = 200
+}
+war = 0

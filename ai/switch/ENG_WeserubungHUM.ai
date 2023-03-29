@@ -1,0 +1,173 @@
+# Réaction à Fall Weserübung par FT
+#Obsolete - do not use. Nothing here to elicit a separate HUM script - Nekron
+max_front_ratios = {
+	GER = 4.0
+	ITA = 4.0
+	JAP = 2.0
+	VIC = 2.0
+	SCA = 2.0
+	SPA = 2.0
+}
+
+exp_force_ratio = 0.1
+exp_force_ratios = {
+	FRA = 1.0
+} 
+garrison = {
+	province_priorities  = { 497  = 200 493  = 200 491  = 150 483  = 150
+		20 = 10 # Exeter
+} }
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human	= 1.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 1.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+admiral = {
+#	min_core_attack_fleets  = 0
+
+	ignore = {
+		"Southeast Northsea"
+		"kattegat"
+		"Bothnian Bay"
+		"northern baltic"
+		"southern baltic"
+	}	
+}
+
+invasion = { 
+ 	invasion			= yes
+ 	base				= 0.01	#Relative modifier. (lower = specific targets much more important.)
+	random				= 33.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 250	# How far should the staging area be from the target invasion point
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.5	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
+	air_base			= 1.5
+    naval_base 			= 1.5 
+    air_support 		= 3.0 
+    redirect 			= nearest
+	ignore				= no
+	help_allies 		= no	#[yes/no]
+
+	staging_province = {
+		23  	#Plymouth
+		26  	#Dover
+		25		#Norwich
+		5 		#Scapa Flow		
+		}	
+
+	target = { 
+		#Norway
+		491	= 8000	#Alesund
+		485	= 8000	#Kristiansand
+		483	= 3000	#Oslo
+		493	= 8000	#Trondheim
+		495	= 8000	#Narvik
+
+		429 = 8000  #Malta
+		
+		# Italy
+		430	= -1  #Palermo
+		433	= -1  #Syracuse
+		434	= -1  #Cagliari
+		94	= -1  #Corsica
+		422	= -1  #Taranto
+		427	= -1  #Salerno
+		416	= -1  #Anzio
+		419	= -1  #Rome
+		412	= -1  #Ancona
+		400	= -1  #Venice
+
+		# North Africa
+		791	= 8000	#Port Said
+		789	= 1000  #Alexandra
+		717	= 500	#Rabat
+		728	= 500	#Oran
+		727	= 500	#Algiers
+		748	= 500	#Bizerte
+		747	= 500	#Tunis
+		750	= 500	#Tripoli
+		761	= 500	#Benghazi
+		765	= 500	#Tobruk
+
+		# Middle East
+		1019  = 2500	#Beirut
+		1008  = 2500 #Tel Aviv
+		1004  = 2500 #El Arish	
+	
+		# Greece
+		382  = 2000  #Crete
+		372  = -1  #Patras
+		377  = -1  #Athens
+		370  = -1   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = -1  #Tirana
+		343  = -1  #Dubrovnik
+		
+		# Turkey
+		378  = -1  #Kalymnos
+		379  = 500 #Rhodes
+		388  = 2000  #Nicosia
+		
+		#Spain
+		475	 = 3000	 #Palma de Mallorca
+		473	 = -1	 #Cadiz
+		449  = -1  #Vigo
+		441  = -1  #Coruna
+		472  = -1  #Huelva
+		463  = -1  #Murcia
+		464  = -1  #Valencia		
+		440  = -1  #Barcelona
+		
+		#Portugal
+		995  = 3000  #Azores
+		477  = -1  #Setubal
+		476  = -1  #Lissabon		
+	}
+}

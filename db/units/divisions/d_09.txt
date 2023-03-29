@@ -1,0 +1,49 @@
+# Kamikaze
+#0 Kamikaze
+model = {
+	cost 						= 12
+	buildtime					= 180
+	defaultorganisation 		= 80
+	morale						= 100
+	manpower					= 0.05
+	maxspeed					= 200
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 0
+	surfacedefence				= 7
+	airdefence					= 2
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 2
+	hardattack					= 3
+	navalattack					= 80
+	range						= 600
+	supplyconsumption 			= 1.4
+	fuelconsumption				= 5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { bomber = 50 manpower = 50 }
+}
+#1 Kamikaze
+model = {
+	cost 						= 16
+	buildtime					= 240
+	defaultorganisation 		= 80
+	morale						= 100
+	manpower					= 0.05
+	maxspeed					= 400
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 0
+	surfacedefence				= 7
+	airdefence					= 2
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 2
+	hardattack					= 3
+	navalattack					= 100
+	range						= 1000
+	supplyconsumption 			= 1.6
+	fuelconsumption				= 5.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	equipment = { bomber = 50 manpower = 50 }
+}

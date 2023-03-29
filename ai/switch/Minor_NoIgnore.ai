@@ -1,0 +1,70 @@
+# Minors Research switch - No ignore
+#Edit to not change research preference
+###################################
+# Tech Research
+###################################
+technology = { 
+	#endgoal 	= { } 
+	
+	#preference = {
+	#	# Regular Infantry
+	#	1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+	#
+	#	# Inf support 
+	#	1970 1980 1990 199100 199110 199120 199130 199140 199150 199160 199170 199180
+	#	
+	#	#Light armor brigades & Divisions techs
+	#	2630 2640 2646 2650 2030 2040 2050
+	#	
+	#	#Medium armor brigades & Divisions techs
+	#	2080 2090 2140 11000 2660 11010 2670
+	#	
+	#	# Field Artillery Support
+	#	2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+	#	
+	#	# Light Cruiser
+	#	3160 12010 3170 3180
+	#
+	#	# Interceptors
+	#	4030 4060 4090 15000 15010 4560 4570
+	#
+	#	# Close Air support
+	#	4400 4170 4280 4450 4180 15120 15130
+	#	
+	#	# Manufacturing
+	#	5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+	#
+	#	# Practical Turbojet Engine
+	#	15500
+	#} 
+	
+	ignore 	= { 
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Rocket Intercepters
+		7010 7020
+
+		#Super heavy armor brigade
+		2130
+
+		# Battleship & *Super heavy Battleship
+		3410 3420 3430 3440 3450 3460 3470 3480 12040 3490 12050
+
+		# Battlecruisers
+		3310 3320 3330 3340 3350 12030
+
+		# Strategic Destruction branch. / Mass Destruction
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
+	}
+ 
+	#armor 		= 3
+	#infantry 	= 5
+	#industry 	= 2
+	#aircraft 	= 2
+	#naval 		= 1
+	#land_doctrines 	= 4
+	#secret_weapons 	= 1
+	#air_doctrines 	= 2
+	#naval_doctrines = 1
+}

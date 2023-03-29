@@ -1,0 +1,24 @@
+GUI;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+665001;Head of State;Louis P. Blacher;1933;1964;1999;SL;Powerhungry Demagogue;High;M537001;X
+665002;Head of Government;Louis P. Blacher;1933;1964;1999;SL;Political Protege;High;M537001;X
+665003;Foreign Minister;Eugene Claudius-Petit;1933;1964;1999;SL;Great Compromiser;High;M537003;X
+665004;Minister of Armament;Emilienne Moreau-Evrard;1933;1964;1999;SL;Infantry Proponent;Medium;M537004;X
+665005;Minister of Security;Antoine Giacobbi;1933;1964;1999;SL;Back Stabber;Medium;M537005;X
+665006;Head of Military Intelligence;Horace Crocicchia;1933;1964;1999;SL;Naval Intelligence Specialist;Medium;M533004;X
+665007;Chief of Staff;Edouard Terrac;1933;1964;1999;SL;School of Manoeuvre;Medium;M537007;X
+665008;Chief of Army;Jean Francois Guelard;1933;1964;1999;SL;Decisive Battle Doctrine;Medium;M537008;X
+665009;Chief of Navy;Jean Brasseur-Kermadec;1933;1964;1999;SL;Open Seas Doctrine;Medium;M537009;X
+665010;Chief of Air Force;Georges Bergé;1933;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M537010;X
+665011;Head of State;Antoine Giacobbi;1940;1964;1999;SL;Popular Figurehead;High;M537005;X
+665012;Head of State;Horace Crocicchia;1942;1964;1999;SL;Weary Stiffneck;High;M533004;X
+665013;Head of State;Edouard Terrac;1946;1964;1999;SL;Resigned Generalissimo;High;M537007;X
+665014;Head of Government;Antoine Giacobbi;1940;1964;1999;SL;Happy Amateur;High;M537005;X
+665015;Head of Government;Horace Crocicchia;1942;1964;1999;SL;Naive Optimist;High;M533004;X
+665016;Head of Government;Edouard Terrac;1946;1964;1999;SL;Old General;High;M537007;X
+665017;Foreign Minister;Emmanuel Temple;1942;1964;1999;SL;Apologetic Clerk;High;M537017;X
+665018;Minister of Armament;René Bouissou;1941;1964;1999;SL;Submarine Proponent;Medium;M537018;X
+665019;Minister of Armament;Keita Fodiba;1943;1964;1999;SL;Air to Ground Proponent;Medium;M537019;X
+665020;Minister of Security;Ahmad Sekou Toure;1944;1964;1999;SL;Crime Fighter;Medium;M537020;X
+665021;Head of Military Intelligence;André Mazana;1939;1964;1999;SL;Logistics Specialist;Medium;M537021;X
+665022;Chief of Staff;Pierre Delsol;1942;1964;1999;SL;School of Fire Support;Medium;M537022;X

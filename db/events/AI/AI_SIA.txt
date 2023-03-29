@@ -1,0 +1,52 @@
+####################################
+# Siam AI events 
+####################################
+
+################
+# Siam sends EXP forces to Japan
+#############################################
+event = {
+	id = 3059009
+	random = no 
+	country = SIA
+	
+	trigger = {
+		ai = yes
+		war = { country = ENG }
+		alliance = { country = JAP }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 2 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_100.ai" }
+	}
+}
+event = {
+	id = 3059010
+	random = no 
+	country = SIA
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { war = { country = ENG } }
+		alliance = { country = JAP }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_50.ai" }
+	}
+}

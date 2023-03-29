@@ -1,0 +1,14 @@
+BUL;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+95001;CBSA;T800;3;1920;2000;aeronautics;bomber_design;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95002;Darzhavna Aeroplanna Rabotilnitsa;T801;3;1924;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95003;Atanas Burov;T802;5;1910;1954;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95004;Ivan Valkov;T803;3;1930;2000;large_unit_tactics;centralized_execution;infantry_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95005;Nikola Bakardzhiev;T804;3;1930;1944;large_unit_tactics;decentralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95006;Sava Ivanov;T805;2;1930;1940;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95007;Atanas Shalapatov;T806;2;1940;2000;submarine_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95008;Zahari Zahariev;T807;4;1944;2000;bomber_tactics;combined_arms_focus;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95009;Stoyan Stoyanov;T808;4;1942;1956;fighter_tactics;decentralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95010;Vasil Boydev;T809;3;1930;1944;fighter_tactics;decentralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95011;Kazanlak State Military Factory;T810;3;1900;2000;mechanics;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95012;Ministry of Defence;T811;4;1900;2000;large_unit_tactics;centralized_execution;small_taskforce_tactics;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+95013;Bulgarian Academy of Sciences;T812;3;1900;2000;electronics;chemistry;mathematics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

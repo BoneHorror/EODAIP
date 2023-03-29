@@ -1,0 +1,44 @@
+WLL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+795001;Head of State;Léon Degrelle;1933;1964;1999;NS;Powerhungry Demagogue;NA;M511001;X
+795002;Head of Government;Léon Degrelle;1933;1964;1999;NS;Old General;NA;M511001;X
+795003;Foreign Minister;Léon Degrelle;1933;1964;1999;NS;Iron Fisted Brute;Very High;M511001;X
+795004;Minister of Armament;Victor Matthys;1933;1964;1999;NS;Military Entrepreneur;Very High;M15058;X
+795005;Minister of Security;Paul Ouwerx;1933;1964;1999;NS;Crime Fighter;Very High;M15075;X
+795006;Head of Military Intelligence;Paul Ouwerx;1933;1964;1999;NS;Logistics Specialist;Very High;M15075;X
+795007;Chief of Staff;Jean Vermeire;1933;1964;1999;NS;School of Defence;Very High;M511007;X
+795008;Chief of Army;Lambert Chardome;1933;1964;1999;FA;Armoured Spearhead Doctrine;Very High;L68002;X
+795009;Chief of Navy;Jean Vermeire;1933;1964;1999;NS;Open Seas Doctrine;Very High;M511007;X
+795010;Chief of Air Force;Lucien Lippert;1933;1964;1999;NS;Army Aviation Doctrine;Very High;M511010;X
+795011;Head of State;Alexander von Falkenhausen;1940;1964;1999;NS;Resigned Generalissimo;Very High;M510086;X
+795012;Head of State;Victor Matthys;1941;1964;1999;NS;Insignificant Layman;Very High;M15058;X
+795013;Head of Government;Alexander von Falkenhausen;1940;1964;1999;NS;Silent Workhorse;Very High;M510086;X
+795014;Head of Government;José Streel;1942;1964;1999;NS;Political Protege;Very High;M511014;X
+795015;Head of Government;Victor Matthys;1941;1964;1999;NS;Silent Workhorse;Very High;M15058;X
+795016;Foreign Minister;Jean-François Collard;1940;1964;1999;FA;Apologetic Clerk;Very High;M511016;X
+795017;Foreign Minister;José Streel;1942;1964;1999;NS;Ideological Crusader;Very High;M511014;X
+795018;Foreign Minister;Xavier de Grunne;1933;1964;1999;FA;Biased Intellectual;Very High;M511018;X
+795019;Minister of Armament;Baron de Launoit;1933;1964;1999;FA;Resource Industrialist;Very High;M511019;X
+795020;Minister of Armament;Jean-François Collard;1940;1964;1999;FA;laissez-faire capitalist;Very High;M511016;X
+795021;Minister of Armament;Léon Degrelle;1937;1964;1999;NS;Infantry Proponent;Very High;M511001;X
+795022;Minister of Armament;Paul Garain;1942;1964;1999;NS;Military Entrepreneur;Very High;M511022;X
+795023;Minister of Armament;Xavier de Grunne;1933;1964;1999;FA;laissez-faire capitalist;Very High;M511018;X
+795024;Minister of Security;Jean Vermeire;1933;1964;1999;NS;Efficient Sociopath;Very High;M511007;X
+795025;Minister of Security;John Hagemans;1940;1964;1999;NS;Man of the People;Very High;M511025;X
+795026;Minister of Security;José Streel;1942;1964;1999;NS;Man of the People;Very High;M511014;X
+795027;Minister of Security;Léon Degrelle;1937;1964;1999;NS;Prince of Terror;Very High;M511001;X
+795028;Minister of Security;Xavier de Grunne;1933;1964;1999;FA;Silent Lawyer;Very High;M511018;X
+795029;Head of Military Intelligence;John Hagemans;1940;1964;1999;NS;Dismal Enigma;Very High;M511025;X
+795030;Head of Military Intelligence;José Streel;1942;1964;1999;NS;Political Specialist;Very High;M511014;X
+795031;Chief of Staff;Eggert Reeder;1940;1964;1999;NS;School of Manoeuvre;Very High;M510061;X
+795032;Chief of Staff;Lambert Chardome;1933;1964;1999;FA;School of Fire Support;Very High;L68002;X
+795033;Chief of Staff;Léon Degrelle;1933;1964;1999;NS;School of Mass Combat;Very High;M511001;X
+795034;Chief of Staff;Lucien Lippert;1940;1964;1999;NS;School of Psychology;Very High;M511010;X
+795035;Chief of Staff;Paul Ouwerx;1938;1964;1999;NS;School of Manoeuvre;Very High;M15075;X
+795036;Chief of Army;Eggert Reeder;1940;1964;1999;NS;Elastic Defence Doctrine;Very High;M510061;X
+795037;Chief of Army;Jean Vermeire;1933;1964;1999;NS;Static Defence Doctrine;Very High;M511007;X
+795038;Chief of Army;Léon Degrelle;1933;1964;1999;NS;Guns and Butter Doctrine;Very High;M511001;X
+795039;Chief of Army;Lucien Lippert;1940;1964;1999;NS;Decisive Battle Doctrine;Very High;M511010;X
+795040;Chief of Army;Paul Ouwerx;1938;1964;1999;NS;Static Defence Doctrine;Very High;M15075;X
+795041;Chief of Navy;Eggert Reeder;1940;1964;1999;NS;Base Control Doctrine;Very High;M510061;X
+795042;Chief of Air Force;Eggert Reeder;1940;1964;1999;NS;Air Superiority Doctrine;Very High;M510061;X

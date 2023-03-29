@@ -1,0 +1,106 @@
+# Bulgaria 1914 War startup AI File by Jaegerfeld
+
+
+ferocity = yes
+
+target = {  
+	
+	
+	#Serbia
+		330 = 300
+		329 = 300
+		333 = 200
+		338 = 200
+		340 = 200
+		#Greece
+		364 = 5
+		365 = 5
+		368 = 5
+		372 = 5
+		#Romania
+		315 = 100 
+		308 = 100
+		307 = 100
+		309 = 100
+					
+	
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 40	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 10	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		U08 = -1
+		U09 = -1
+		ROM = 2
+		SER = 2
+		GRE = 2
+		RUS = 2
+		SLO = -1
+		ENG = 10
+		OTT = 1
+	}
+	province_priorities = {	
+		
+		#Serbia
+		330 = 3
+		329 = 3
+		333 = 2
+		327 = 3
+		340 = 3
+		338 = 4
+		#Greece
+		364 = 5
+		365 = 5
+		368 = 5
+		372 = 5
+		#Romania
+		315 = 5
+		308 = 5
+		307 = 5
+		309 = 1
+	
+	
+	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= reactive
+	
+	province_priorities = {	
+		
+		#Serbia
+		330 = 300
+		329 = 300
+		333 = 200
+		#Greece
+		364 = 5
+		365 = 5
+		368 = 5
+		372 = 5
+		#Romania
+		315 = 10 
+		308 = 10
+		307 = 10
+		309 = 10
+	}
+} 
+

@@ -1,0 +1,125 @@
+FLA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+650001;Head of State;Staf de Clercq;1933;1964;1999;NS;Powerhungry Demagogue;NA;M15033;X
+650002;Head of Government;Staf de Clercq;1933;1964;1999;NS;Flamboyant Tough Guy;NA;M15033;X
+650003;Foreign Minister;Staf de Clercq;1933;1964;1999;NS;Biased Intellectual;Very High;M15033;X
+650004;Minister of Armament;Hendrik de Man;1933;1964;1999;PA;Administrative Genius;Very High;M15056;X
+650005;Minister of Security;Jan Timmermans;1933;1964;1999;NS;Man of the People;Very High;M15117;X
+650006;Head of Military Intelligence;Reimond Tollenaere;1933;1964;1999;NS;Dismal Enigma;Very High;M15082;X
+650007;Chief of Staff;Jef Francois;1933;1964;1999;NS;School of Mass Combat;Very High;M15015;X
+650008;Chief of Army;Jef Francois;1933;1964;1999;NS;Decisive Battle Doctrine;Very High;M15015;X
+650009;Chief of Navy;Ernst Junkermann;1933;1964;1999;NS;Open Seas Doctrine;Very High;M510009;X
+650010;Chief of Air Force;Ottfried Sattler;1933;1964;1999;NS;Air Superiority Doctrine;Very High;M510010;X
+650011;Chief of Air Force;Egert Reeder;1940;1964;1999;NS;Vertical Envelopment Doctrine;Very High;M510061;X
+650012;Chief of Air Force;Konrad Schellong;1942;1964;1999;NS;Army Aviation Doctrine;Very High;L510007;X
+650013;Chief of Army;Egert Reeder;1940;1964;1999;NS;Elastic Defence Doctrine;Very High;M510061;X
+650014;Chief of Army;G.H. von Craushaar;1940;1964;1999;NS;Guns and Butter Doctrine;Very High;M510084;X
+650015;Chief of Army;Gottlob Berger;1940;1964;1999;NS;Guns and Butter Doctrine;Very High;M510027;X
+650016;Chief of Army;Hans-Albert von Lettow-Vorbeck;1940;1964;1999;NS;Decisive Battle Doctrine;Very High;M510088;X
+650017;Chief of Army;Konrad Schellong;1942;1964;1999;NS;Armoured Spearhead Doctrine;Very High;L510007;X
+650018;Chief of Army;Lucien Rijckeboer;1941;1964;1999;NS;Static Defence Doctrine;Very High;M510065;X
+650019;Chief of Army;Raf Van Hulse;1942;1964;1999;NS;Guns and Butter Doctrine;Very High;M510078;X
+650020;Chief of Army;Réné Lagrou;1933;1964;1999;NS;Decisive Battle Doctrine;Very High;M15017;X
+650021;Chief of Navy;Egert Reeder;1940;1964;1999;NS;Base Control Doctrine;Very High;M510061;X
+650022;Chief of Staff;Egert Reeder;1940;1964;1999;NS;School of Manoeuvre;Very High;M510061;X
+650023;Chief of Staff;G.H. von Craushaar;1940;1964;1999;NS;School of Fire Support;Very High;M510084;X
+650024;Chief of Staff;Gottlob Berger;1940;1964;1999;NS;School of Psychology;Very High;M510027;X
+650025;Chief of Staff;Lucien Rijckeboer;1941;1964;1999;NS;School of Defence;Very High;M510065;X
+650026;Chief of Staff;Raf Van Hulse;1942;1964;1999;NS;School of Manoeuvre;Very High;M510078;X
+650027;Chief of Staff;Robert Verbelen;1940;1964;1999;NS;School of Psychology;Very High;M510081;X
+650028;Chief of Staff;Seraf Trio;1940;1964;1999;NS;School of Fire Support;Very High;M510073;X
+650029;Foreign Minister;Dr. August Borms;1933;1964;1999;FA;Biased Intellectual;Very High;M510025;X
+650030;Foreign Minister;Cyriel Verschaeve;1933;1964;1999;FA;Great Compromiser;Very High;M510083;X
+650031;Foreign Minister;E. Van den Heuvel;1941;1964;1999;NS;Ideological Crusader;Very High;M510077;X
+650032;Foreign Minister;Frans Daels;1938;1964;1999;FA;Ideological Crusader;Very High;M510035;X
+650033;Foreign Minister;Gottlob Berger;1940;1964;1999;NS;General Staffer;Very High;M510027;X
+650034;Foreign Minister;Hendrik J. Elias;1942;1964;1999;FA;Biased Intellectual;Very High;M15039;X
+650035;Foreign Minister;Jef van de Wiele;1938;1964;1999;NS;Iron Fisted Brute;Very High;M15011;X
+650036;Foreign Minister;Jeroom Leuridan;1937;1964;1999;NS;Ideological Crusader;Very High;M510058;X
+650037;Foreign Minister;Karel Lambrechts;1939;1964;1999;NS;Great Compromiser;Very High;M510049;X
+650038;Foreign Minister;Odiel Daem;1940;1964;1999;NS;The Cloak N Dagger Schemer;Very High;M510037;X
+650039;Foreign Minister;Pol Le Roy;1942;1964;1999;FA;Biased Intellectual;Very High;M510054;X
+650040;Foreign Minister;Reimond Speleers;1938;1964;1999;FA;Biased Intellectual;Very High;M510072;X
+650041;Foreign Minister;Walter Lampaert;1941;1964;1999;NS;General Staffer;Very High;M510052;X
+650042;Head of Government;Alexander von Falkenhausen;1940;1964;1999;NS;Silent Workhorse;Very High;M510086;X
+650043;Head of Government;Dr. August Borms;1933;1964;1999;FA;Silent Workhorse;Very High;M510025;X
+650044;Head of Government;Dr. Schulze;1940;1964;1999;NS;Flamboyant Tough Guy;Very High;M510070;X
+650045;Head of Government;Frans Daels;1938;1964;1999;FA;Flamboyant Tough Guy;Very High;M510035;X
+650046;Head of Government;Gottlob Berger;1940;1964;1999;NS;Old General;Very High;M510027;X
+650047;Head of Government;Hendrik J. Elias;1942;1964;1999;FA;Political Protege;NA;M15039;X
+650048;Head of Government;Jef van de Wiele;1940;1964;1999;NS;Backroom Backstabber;NA;M15011;X
+650049;Head of Government;Jeroom Leuridan;1937;1964;1999;NS;Ambitious Union Boss;Very High;M510058;X
+650050;Head of Government;Lucien Rijckeboer;1941;1964;1999;NS;Happy Amateur;Very High;M510065;X
+650051;Head of Government;Piet Wijndaele;1937;1964;1999;FA;Naive Optimist;Very High;M510091;X
+650052;Head of Government;R. Claeys;1941;1964;1999;NS;Political Protege;Very High;M510033;X
+650053;Head of Military Intelligence;A. De Bontridder;1933;1964;1999;FA;Political Specialist;Very High;M510039;X
+650054;Head of Military Intelligence;Edgar Lehembre;1940;1964;1999;NS;Technical Specialist;Very High;M510056;X
+650055;Head of Military Intelligence;Jos Henskens;1939;1964;1999;NS;Logistics Specialist;Very High;M510044;X
+650056;Head of Military Intelligence;Karel Lambrechts;1939;1964;1999;NS;Industrial Specialist;Very High;M510049;X
+650057;Head of Military Intelligence;R. Claeys;1941;1964;1999;NS;Political Specialist;Very High;M510033;X
+650058;Head of Military Intelligence;Richard Jungclaus;1941;1964;1999;NS;Dismal Enigma;Very High;M510047;X
+650059;Head of Military Intelligence;Robert Verbelen;1940;1964;1999;NS;Technical Specialist;Very High;M510081;X
+650060;Head of Military Intelligence;Seraf Trio;1940;1964;1999;NS;Logistics Specialist;Very High;M510073;X
+650061;Head of State;Alexander von Falkenhausen;1940;1964;1999;NS;Resigned Generalissimo;Very High;M510086;X
+650062;Head of State;Dr. Schulze;1940;1964;1999;NS;Barking Buffoon;Very High;M510070;X
+650063;Head of State;Gottlob Berger;1940;1964;1999;NS;Powerhungry Demagogue;Very High;M510027;X
+650064;Head of State;Hendrik J. Elias;1942;1964;1999;FA;Stern Imperialist;NA;M15039;X
+650065;Head of State;Jef van de Wiele;1940;1964;1999;NS;Powerhungry Demagogue;NA;M15011;X
+650066;Minister of Armament;Alfons Wachtelaer;1942;1964;1999;NS;Infantry Proponent;Very High;M510089;X
+650067;Minister of Armament;Edgard Delvo;1933;1964;1999;NS;Resource Industrialist;Very High;M510042;X
+650068;Minister of Armament;Fritz-Jan Hendriks;1939;1964;1999;FA;Administrative Genius;Very High;M510043;X
+650069;Minister of Armament;Jan Timmermans;1937;1964;1999;NS;Resource Industrialist;Very High;M15117;X
+650070;Minister of Armament;Jef van de Wiele;1940;1964;1999;NS;Military Entrepreneur;Very High;M15011;X
+650071;Minister of Armament;Joris Fassotte;1933;1964;1999;NS;Military Entrepreneur;Very High;M15057;X
+650072;Minister of Armament;Jos Henskens;1939;1964;1999;NS;Infantry Proponent;Very High;M510044;X
+650073;Minister of Armament;Marcel Mannaerts;1940;1964;1999;FA;Resource Industrialist;Very High;M510060;X
+650074;Minister of Armament;Piet Wijndaele;1937;1964;1999;FA;laissez-faire capitalist;Very High;M510091;X
+650075;Minister of Armament;Victor Leemans;1938;1964;1999;FA;laissez-faire capitalist;Very High;M510055;X
+650076;Minister of Armament;Victor Matthys;1933;1964;1999;NS;Military Entrepreneur;Very High;M15058;X
+650077;Minister of Security;A. De Bontridder;1933;1964;1999;FA;Silent Lawyer;Very High;M510039;X
+650078;Minister of Security;Alfons Herten;1940;1964;1999;NS;Efficient Sociopath;Very High;M510046;X
+650079;Minister of Security;Alfons Wachtelaer;1942;1964;1999;NS;Efficient Sociopath;Very High;M510089;X
+650080;Minister of Security;Edgar Lehembre;1940;1964;1999;NS;Prince of Terror;Very High;M510056;X
+650081;Minister of Security;Gottlob Berger;1940;1964;1999;NS;Prince of Terror;Very High;M510027;X
+650082;Minister of Security;Hendrik J. Elias;1942;1964;1999;FA;Silent Lawyer;Very High;M15039;X
+650083;Minister of Security;J. De Meyer;1933;1964;1999;NS;Man of the People;Very High;M510041;X
+650084;Minister of Security;Joris Vansteenland;1940;1964;1999;NS;Prince of Terror;Very High;M510080;X
+650085;Minister of Security;Karel Lambrechts;1939;1964;1999;NS;Compassionate Gentleman;Very High;M510049;X
+650086;Minister of Security;Odiel Daem;1940;1964;1999;NS;Crime Fighter;Very High;M510037;X
+650087;Minister of Security;Reimond Tollenaere;1939;1964;1999;NS;Prince of Terror;Very High;M15082;X
+650088;Minister of Security;Richard Jungclaus;1941;1964;1999;NS;Efficient Sociopath;Very High;M510047;X
+650089;Minister of Security;Seraf Trio;1940;1964;1999;NS;Man of the People;Very High;M510073;X
+650090;Minister of Security;Walter Lampaert;1941;1964;1999;NS;Crime Fighter;Very High;M510052;X
+650091;Head of State;Leopold III;1933;1964;1999;SC;Benevolent Gentleman;Very High;M15001;X
+650092;Head of Government;Frans Van Cauwelaert;1933;1964;1999;SC;Naive Optimist;Very High;M15132;X
+650093;Foreign Minister;Frans Van Cauwelaert;1933;1964;1999;SC;Ideological Crusader;Very High;M15132;X
+650094;Head of State;Leopold III;1933;1964;1999;PA;Benevolent Gentleman;Very High;M15001;X
+650095;Head of Government;Staf de Clercq;1933;1964;1999;PA;Flamboyant Tough Guy;Very High;M15033;X
+650096;Foreign Minister;Staf de Clercq;1933;1964;1999;PA;Biased Intellectual;Very High;M15033;X
+650097;Foreign Minister;August Borms;1933;1964;1999;FA;Ideological Crusader;Very High;M510099;X
+650098;Foreign Minister;Clemens De Landtsheer;1933;1964;1999;SC;Ideological Crusader;Very High;M510100;X
+650099;Head of State;Camille Huysmans;1933;1964;1999;SD;Benevolent Gentleman;Very High;M15038;X
+650100;Head of Government;Camille Huysmans;1933;1964;1999;SD;Happy Amateur;NA;M15038;X
+650101;Head of Government;Achille Van Acker;1939;1964;1999;SD;Corporate Suit;NA;M15041;X
+650102;Minister of Armament;Hendrik de Man;1933;1964;1999;SL;Administrative Genius;Very High;M15056;X
+650103;Minister of Armament;Franz de Voghel;1945;1964;1999;ML;Laissez-Faire Capitalist;Very High;M15067;X
+650104;Minister of Armament;Albert de Vleeschauwer;1946;1964;1999;SC;Resource Industrialist;Very High;M15069;X
+650105;Minister of Security;Albert Janssen;1933;1964;1999;SC;Compassionate Gentleman;Very High;M15071;X
+650106;Minister of Security;Paul Hymans;1933;1964;1999;SL;Compassionate Gentleman;Very High;M15073;X
+650107;Minister of Security;Adolphe Van Glabbeke;1945;1964;1999;SC;Man of the People;Very High;M15086;X
+650108;Minister of Security;Paul Struye;1947;1964;1999;SC;Man of the People;Very High;M15090;X
+650109;Head of Military Intelligence;Herman Vos;1944;1964;1999;SD;Political Specialist;Very High;M15099;X
+650110;Head of Military Intelligence;Pierre Vermeylen;1947;1964;1999;SC;Technical Specialist;Very High;M15102;X
+650111;Chief of Staff;Oscar Michiels;1940;1964;1999;SC;School of Mass Combat;Very High;M15107;X
+650112;Chief of Army;Raoul van Overstraeten;1938;1964;1999;SC;Guns and Butter Doctrine;Very High;M15110;X
+650113;Minister of Armament;Edmond Rubbens;1933;1964;1999;SC;Resource Industrialist;Very High;M15124;X
+650114;Minister of Armament;Albert Wauters;1939;1964;1999;SD;Military Entrepreneur;Very High;M15125;X
+650115;Minister of Armament;Louis Franck;1933;1964;1999;SC;Resource Industrialist;Very High;M15128;X
+650116;Minister of Armament;Hendrik Heyman;1933;1964;1999;SC;Air to Ground Proponent;Very High;M15129;X
+650117;Minister of Armament;Maurice Lippens;1933;1964;1999;ML;Resource Industrialist;Very High;M15130;X
+650118;Minister of Security;Philippe Van Isacker;1933;1964;1999;SC;Crime Fighter;Very High;M15131;X
+650119;Minister of Armament;Cyriel Van Overbergh;1937;1964;1999;SC;Theoretical Scientist;High;M15137;X
+650120;Minister of Armament;Gustaaf Sap;1933;1964;1999;SC;Military Entrepreneur;High;M15140;X
+650121;Chief of Navy;G. Timmermans;1933;1964;1999;SC;Indirect Approach Doctrine;Very High;M15009;X
+650122;Chief of Air Force;L.F.E. Wouters;1933;1964;1999;SC;Vertical Envelopment Doctrine;Very High;M15010;X
+650123;Chief of Staff;Leon Gillis;1949;1964;1999;NS;School of Manoeuvre;medium;6069;x

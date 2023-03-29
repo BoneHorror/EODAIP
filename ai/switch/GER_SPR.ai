@@ -1,0 +1,153 @@
+# German Invasion of Spain AI 1936 AI File by Lothos
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	SPR = 300
+	SPA = 300
+}
+befriend = {
+	ROM = 50
+	BUL = 40 
+	HUN = 80 
+	YUG = 50
+	SLO = 50
+	SPA = 20
+	ITA = 80 
+	SWE = 10
+	FIN = 20
+	JAP = 20
+	POR = 10
+	TUR = 30
+	DEN = 50
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+# German Spanish Invasion (Vichy Axis Controled) AI File by Lothos
+
+max_garrison_prop = 0.60
+min_garrison_prop = 0.50
+max_front_ratios = { }
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	province_priorities = {
+		55  = 20  #Paris
+		52  = 20  #Lille
+		116  = 20  #Brussels
+		145  = 20  #Prague
+		104  = 20  #Metz
+		43  = 20  #Cherborg
+		42  = 20  #Avranches
+		69  = 10  #La Rochele
+		147  = 20  #Wilhelmshafen
+		148  = 20  #Bremen
+		150  = 20  #Groningen
+	}
+	area_multiplier = {	}
+}
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 0.8
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.2	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 0.2	#higher = avoid long distance.
+	max_distance    = 25.0 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 18.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 5.0	#higher = much more vary of troops in province. #Don't launch paratroops if France has a strong beach def
+	adjacentenemy 	= 1.0	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 1.0
+    air_support 	= 20.0 
+    redirect 		= home
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+	}
+	target = { 
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 4000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 5000	 #Antwerpen
+		49   = 3000  #Calais
+		51   = 3000  #Dunkerque
+		53   = 3000  #Dieppe
+		46   = 3000  #Bayeux
+		44   = 3000  #Caen
+		37   = 3000  #Brest
+		39   = 1000  #Lorient
+		69   = 7000  #Le Rochelle
+		68   = 8000  #Bordeaux
+
+		#Norway
+		491	= 5000	#Alesund
+		485	= 5000	#Kristiansand
+		483	= 6000	#Oslo
+		493	= 5000	#Trondheim
+		495	= 8000	#Narvik
+		
+		#Sweden
+     	2153 = 1000 # Goterborg 
+     	2152 = 1000 # Malmo 
+     	2159 = 1000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 1000 # Gavle 
+     	2166 = 1000 # Lulea 
+
+		#Finland
+		525 = 100 # Helsinki
+		524 = 100 # Turku
+		521 = 100 # Vaasa
+		516 = 100 # Tornio
+		531 = 100 # Viipuri
+		530 = 100 # Terijoki
+		
+		#Spain
+		475	 = 4000	 #Palma de Mallorca
+		473	 = 4500	 #Cadiz
+		449  = 4500  #Vigo
+		441  = 6500  #Coruna
+		472  = 4500  #Huelva
+		463  = 4500  #Murcia
+		464  = 4500  #Valencia		
+		440  = 4500  #Barcelona
+		
+		#Portugal
+		995  = 100  #Azores
+		477  = 500  #Setubal
+		476  = 500  #Lissabon	
+	}
+} 

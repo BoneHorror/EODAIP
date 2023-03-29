@@ -1,0 +1,166 @@
+CZE;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+120001;Head of State;Edouard Benes;1933;1964;1999;ML;Pig-headed Isolationist;High;2379;X
+120002;Head of Government;Milan Hodza;1933;1964;1999;ML;Naive Optimist;High;2380;X
+120003;Foreign Minister;Edouard Benes;1933;1964;1999;ML;Biased Intellectual;High;2379;X
+120004;Minister of Armament;Josef Kalfus;1933;1964;1999;ML;Resource Industrialist;High;M24004;X
+120005;Minister of Security;Ivan Derer;1933;1964;1999;ML;Man of the People;Medium;M24005;X
+120006;Head of Military Intelligence;Frantisek Machník;1933;1964;1999;ML;Logistics Specialist;Very High;M24006;X
+120007;Chief of Staff;Frantisek Machník;1933;1964;1999;ML;School of Defence;Very High;M24006;X
+120008;Chief of Army;Ludvik Krejci;1933;1964;1999;ML;static defence doctrine;Medium;M24008;X
+120009;Chief of Navy;Antonin Hasal;1933;1964;1999;ML;Indirect Approach Doctrine;Medium;M24009;X
+120010;Chief of Air Force;Emil Janouska;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M24010;X
+120011;Head of State;Emil Hácha;1938;1964;1999;ML;Insignificant Layman;High;2381;X
+120012;Head of State;Edouard Benes;1945;1964;1999;ST;Pig-headed Isolationist;High;2379;X
+120013;Head of State;Jan Syrovy;1933;1964;1999;PA;Resigned Generalissimo;High;2382;X
+120014;Head of State;Stefan Osusky;1945;1964;1999;SC;Weary Stiffneck;High;M24035;X
+120015;Head of State;Konrad Henlein;1933;1964;1999;NS;Insignificant Layman;High;M24013;X
+120016;Head of State;Johann Schwerin von Krosigk;1939;1964;1999;NS;Benevolent Gentleman;High;M24037;X
+120017;Head of State;Kurt Daluege;1941;1964;1999;NS;Ruthless Powermonger;High;M24038;X
+120018;Head of State;Karl Hermann Frank;1943;1964;1999;NS;Powerhungry Demagogue;High;M24011;X
+120019;Head of State;Alois Elias;1945;1964;1999;NS;Resigned Generalissimo;High;M24040;X
+120020;Head of State;Elias Kohn;1933;1964;1999;ST;Die-hard Reformer;High;M24041;X
+120021;Head of State;Klement Gottwald;1941;1964;1999;ST;Barking Buffoon;High;M24021;X
+120022;Head of Government;Ján Srámek;1939;1964;1999;ML;Ambitious Union Boss;High;M24044;X
+120023;Head of Government;Jan Syrový;1933;1964;1999;SC;Old General;High;2382;X
+120024;Head of Government;Rudolf Beran;1938;1964;1999;PA;Political Protege;High;M24012;X
+120025;Head of Government;Bedrich Homola;1945;1964;1999;SC;Happy Amateur;High;M24047;X
+120026;Head of Government;Karel Kalemcek;1933;1964;1999;NS;Happy Amateur;High;M24048;X
+120027;Head of Government;Alois Elias;1939;1964;1999;NS;Old General;High;M24040;X
+120028;Head of Government;Joseph Jezek;1945;1964;1999;NS;Flamboyant Tough Guy;High;M24016;X
+120029;Head of Government;Teodor Escherich;1933;1964;1999;ST;Naive Optimist;High;M24051;X
+120030;Head of Government;Gustav Husak;1943;1964;1999;ST;Political Protege;High;M24022;X
+120031;Foreign Minister;Kamil Krofta;1933;1964;1999;ML;Great Compromiser;High;M24053;X
+120032;Foreign Minister;Frantisek Chvalkovsky;1938;1964;1999;ML;Iron Fisted Brute;Very High;M24054;X
+120033;Foreign Minister;Ján Masaryk;1940;1964;1999;ML;Ideological Crusader;Very High;M24055;X
+120034;Foreign Minister;Stefan Osusky;1933;1964;1999;SC;Great Compromiser;Very High;M24035;X
+120035;Foreign Minister;Juraj Slávik;1940;1964;1999;SC;Biased Intellectual;Medium;M24057;X
+120036;Foreign Minister;Oldrich Otamír;1933;1964;1999;PA;Apologetic Clerk;Medium;M24058;X
+120037;Foreign Minister;Bedrich Neumann;1945;1964;1999;PA;General Staffer;Medium;M24059;X
+120038;Foreign Minister;Constantin von Econovec;1933;1964;1999;NS;The Cloak N Dagger Schemer;High;M24060;X
+120039;Foreign Minister;Konrad Henlein;1939;1964;1999;NS;Ideological Crusader;High;M24013;X
+120040;Foreign Minister;Jaromir Kricaj;1945;1964;1999;NS;Apologetic Clerk;High;M24062;X
+120041;Foreign Minister;Vladimir Clementis;1933;1964;1999;ST;Great Compromiser;Medium;M24023;X
+120042;Foreign Minister;Gustav Husak;1941;1964;1999;ST;Iron Fisted Brute;High;M24022;X
+120043;Foreign Minister;Rudolf Slanský;1943;1964;1999;ST;the cloak n dagger schemer;High;M24024;X
+120044;Minister of Armament;Emil Franke;1933;1964;1999;ML;Theoretical Scientist;High;M24066;X
+120045;Minister of Armament;Karel Basilek;1939;1964;1999;ML;Military Entrepreneur;High;M24068;X
+120046;Minister of Armament;Ferdinand Veverka;1943;1964;1999;ML;Administrative Genius;Medium;M24069;X
+120047;Minister of Armament;Emilé Dobricek;1933;1964;1999;PA;Administrative Genius;Low;M24070;X
+120048;Minister of Armament;Emil Hácha;1939;1964;1999;PA;Balanced budget economy;Low;2381;X
+120049;Minister of Armament;Frantisek Bekr;1941;1964;1999;SC;Theoretical Scientist;Medium;M24072;X
+120050;Minister of Armament;Karel Cérny;1943;1964;1999;PA;Infantry Proponent;High;M24073;X
+120051;Minister of Armament;Antonin Pavlik;1945;1964;1999;PA;Tank Proponent;High;M24074;X
+120052;Minister of Armament;Ernst Kundt;1933;1964;1999;NS;Resource Industrialist;High;M24014;X
+120053;Minister of Armament;Otokar Sebrin;1938;1964;1999;NS;laissez-faire capitalist;High;M24076;X
+120054;Minister of Armament;Karel Kalemcek;1941;1964;1999;NS;Administrative Genius;Low;M24048;X
+120055;Minister of Armament;Jan Prhcla;1945;1964;1999;NS;Infantry Proponent;Low;M24078;X
+120056;Minister of Armament;Bohumil Stepanec;1933;1964;1999;ST;Tank Proponent;Medium;M24079;X
+120057;Minister of Armament;Karel Olmanec;1941;1964;1999;ST;laissez-faire capitalist;Medium;M24080;X
+120058;Minister of Armament;Rudolf Slansky;1945;1964;1999;ST;Planned economy proponent;Medium;M24024;X
+120059;Minister of Security;Victor Folancec;1933;1964;1999;ML;Crime Fighter;Medium;M24082;X
+120060;Minister of Security;Jaromir Kopecky;1939;1964;1999;ML;Prince of Terror;Medium;M24084;X
+120061;Minister of Security;Ján Srámek;1940;1964;1999;ML;Silent Lawyer;Medium;M24044;X
+120062;Minister of Security;Ernst Frischer;1943;1964;1999;ML;Back Stabber;Medium;M24086;X
+120063;Minister of Security;Otakar Eischer;1933;1964;1999;PA;Compassionate Gentleman;Very High;M24087;X
+120064;Minister of Security;Francois Hodac;1939;1964;1999;SC;Silent Lawyer;Medium;M24088;X
+120065;Minister of Security;Joseph Jezek;1941;1964;1999;SC;Crime Fighter;Medium;M24016;X
+120066;Minister of Security;Juraj Slávik;1943;1964;1999;SC;Man of the People;High;M24057;X
+120067;Minister of Security;Jan Kapras;1945;1964;1999;PA;Prince of Terror;Medium;M24015;X
+120068;Minister of Security;Johann Schwerin von Krosigk;1939;1964;1999;NS;Man of the People;Medium;M24037;X
+120069;Minister of Security;Kurt Daluege;1941;1964;1999;NS;Secret police chief;Very High;M24038;X
+120070;Minister of Security;Karl Hermann Frank;1943;1964;1999;NS;Secret police chief;High;M24011;X
+120071;Minister of Security;Prokop Drtina;1933;1964;1999;ST;Man of the People;High;M24025;X
+120072;Minister of Security;Teodor Escherich;1939;1964;1999;ST;Prince of Terror;High;M24051;X
+120073;Minister of Security;Kristoph Emmerich;1941;1964;1999;ST;Silent Lawyer;Very High;M24097;X
+120074;Minister of Security;Jozef Zeman;1945;1964;1999;ST;Back Stabber;Very High;M24098;X
+120075;Head of Military Intelligence;Boris Trumper;1933;1964;1999;ML;Political Specialist;Very High;M24099;X
+120076;Head of Military Intelligence;Tobias Kaller;1938;1964;1999;ML;Industrial Specialist;Very High;M24100;X
+120077;Head of Military Intelligence;Boris Kovancok;1943;1964;1999;ML;Technical Specialist;Very High;M24102;X
+120078;Head of Military Intelligence;Bedrich Homola;1933;1964;1999;SC;Dismal Enigma;Medium;M24047;X
+120079;Head of Military Intelligence;Bohumil Nemec;1933;1964;1999;PA;Industrial Specialist;High;M24104;X
+120080;Head of Military Intelligence;Rudolf Beran;1943;1964;1999;PA;Political Specialist;High;M24012;X
+120081;Head of Military Intelligence;Bohuslav Vseticka;1945;1964;1999;PA;Logistics Specialist;High;M24106;X
+120082;Head of Military Intelligence;Joseph Jezek;1933;1964;1999;NS;Political Specialist;Very High;M24016;X
+120083;Head of Military Intelligence;Bohumil Krpec;1941;1964;1999;NS;Logistics Specialist;Very High;M24108;X
+120084;Head of Military Intelligence;Elias Kohn;1933;1964;1999;ST;Technical Specialist;High;M24041;X
+120085;Head of Military Intelligence;Rudolf Slanský;1940;1964;1999;ST;Political Specialist;High;M24024;X
+120086;Head of Military Intelligence;Zdenek Fierlinger;1945;1964;1999;ST;Dismal Enigma;Very High;M24026;X
+120087;Chief of Staff;Vladimir Kajdos;1933;1964;1999;ML;School of Fire Support;Very High;M24112;X
+120088;Chief of Staff;Sergej Ján Ingr;1941;1964;1999;ML;School of Manoeuvre;Very High;M24114;X
+120089;Chief of Staff;Jaroslav Cihak;1943;1964;1999;ML;School of Mass Combat;Very High;M24115;X
+120090;Chief of Staff;Bruno Sklenkovsky;1945;1964;1999;ML;School of Psychology;Very High;M24116;X
+120091;Chief of Staff;Ferdinand Catlos;1933;1964;1999;PA;School of Defence;Medium;M24117;X
+120092;Chief of Staff;Jan Golian;1941;1964;1999;PA;School of Manoeuvre;Very High;M24118;X
+120093;Chief of Staff;Josef Turanec;1933;1964;1999;NS;School of Psychology;Very High;M24119;X
+120094;Chief of Staff;Robert Rychtrmoc;1941;1964;1999;NS;School of Manoeuvre;Medium;9710;X
+120095;Chief of Staff;Ludvik Svoboda;1933;1964;1999;ST;School of Mass Combat;High;M24027;X
+120096;Chief of Army;Frantisek Zaviska;1938;1964;1999;ML;Guns and Butter Doctrine;Medium;M24123;X
+120097;Chief of Army;Emil Fiala;1939;1964;1999;ML;Decisive Battle Doctrine;Medium;M24124;X
+120098;Chief of Army;Sergej Ján Ingr;1941;1964;1999;ML;Elastic Defence Doctrine;Very High;M24114;X
+120099;Chief of Army;Bohumil Bosek;1943;1964;1999;ML;Armoured Spearhead Doctrine;Very High;M24126;X
+120100;Chief of Army;Jan Syrovy;1933;1964;1999;PA;Guns and Butter Doctrine;Medium;2382;X
+120101;Chief of Army;Bedrich Homola;1939;1964;1999;PA;Static Defence Doctrine;Very High;M24047;X
+120102;Chief of Army;Andrei Vlasov;1943;1964;1999;PA;Decisive Battle Doctrine;High;M24129;X
+120103;Chief of Army;Rudolf Viest;1945;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M24130;X
+120104;Chief of Army;Jaroslav Behac;1933;1964;1999;NS;Elastic Defence Doctrine;Medium;M24131;X
+120105;Chief of Army;Alois Elias;1939;1964;1999;NS;Static Defence Doctrine;Medium;M24040;X
+120106;Chief of Army;Otto Bláha;1943;1964;1999;NS;Armoured Spearhead Doctrine;Medium;M24018;X
+120107;Chief of Army;Ludvik Svoboda;1933;1964;1999;ST;Static Defence Doctrine;High;M24027;X
+120108;Chief of Navy;Jaroslav Cihak;1939;1964;1999;ML;Decisive Naval Battle Doctrine;Medium;M24115;X
+120109;Chief of Navy;Ferdinand Catlos;1933;1964;1999;PA;Base Control Doctrine;Medium;M24117;X
+120110;Chief of Navy;Robert Rychtrmoc;1933;1964;1999;NS;Open Seas Doctrine;High;9710;X
+120111;Chief of Navy;Klement Gottwald;1933;1964;1999;ST;Base Control Doctrine;High;M24021;X
+120112;Chief of Air Force;Joseph Frantisek;1933;1964;1999;ML;Air Superiority Doctrine;Low;M24140;X
+120113;Chief of Air Force;Karel Kuttelwascher;1943;1964;1999;ML;Army Aviation Doctrine;Very High;M24142;X
+120114;Chief of Air Force;Augustin Malar;1933;1964;1999;NS;Vertical Envelopment Doctrine;High;M24020;X
+120115;Chief of Air Force;Jan Prokop;1933;1964;1999;ST;Vertical Envelopment Doctrine;High;M24030;X
+120116;Minister of Security;Otakar Eischer;1933;1964;1999;NS;Compassionate Gentleman;Very High;M24087;X
+120117;Head of Government;Klement Gottwald;1945;1964;1999;ST;Backroom Backstabber;High;M24021;X
+120118;Head of State;Edouard Benes;1939;1964;1999;ML;Pig-headed Isolationist;High;2379;X
+120119;Head of Government;Karel Kalemcek;1933;1964;1999;PA;Happy Amateur;High;M24048;X
+120120;Head of State;Constantin von Econovec;1945;1964;1999;NS;Autocratic Charmer;High;M24060;X
+120121;Minister of Armament;Rudolf Slanský;1933;1964;1999;ST;Theoretical Scientist;Medium;M24024;X
+120122;Head of Military Intelligence;Zdenak Fierlinger;1933;1964;1999;ST;Political Specialist;Very High;M24026;X
+120123;Head of State;Antonin Zapotocky;1953;1964;1999;ST;Pig-headed Isolationist;High;M24151;X
+120124;Head of Government;Antonin Novotny;1953;1964;1999;ST;Corporate Suit;High;M24152;X
+120125;Foreign Minister;Viliam Sirocky;1950;1964;1999;ST;Iron Fisted Brute;Medium;M24153;X
+120126;Minister of Armament;Ludvik Svoboda;1933;1964;1999;ST;Military Entrepreneur;Medium;M24027;X
+120127;Minister of Armament;Alexej Cepicka;1950;1964;1999;ST;Infantry Proponent;Medium;M24155;X
+120128;Minister of Security;Vaclav Nosek;1945;1964;1999;ST;Efficient Sociopath;Very High;M24156;X
+120129;Head of Military Intelligence;Prokop Drtina;1945;1964;1999;ST;Political Specialist;High;M24025;X
+120130;Head of Military Intelligence;Alexej Cepicka;1948;1964;1999;ST;Logistics Specialist;High;M24155;X
+120131;Head of Military Intelligence;Stefan Rais;1950;1964;1999;ST;Dismal Enigma;High;M24158;X
+120132;Chief of Air Force;Heinrich Kostrba;1914;1933;1999;ML;air superiority doctrine;Medium;2383;X
+120133;Chief of Army;Milan Stefánik;1914;1933;1999;ML;static defence doctrine;Medium;2384;X
+120134;Chief of Staff;Milan Stefánik;1914;1933;1999;ML;School of Defence;Very High;2384;X
+120135;Foreign Minister;Edouard Benes;1914;1933;1999;SD;Ideological Crusader;High;2379;X
+120136;Head of Government;Vlastimil Tusar;1919;1933;1999;SD;Ambitious Union Boss;High;3726;X
+120137;Head of Government;Ján Cerný;1920;1933;1999;SL;Backroom Backstabber;High;3727;X
+120138;Head of Government;Edouard Benes;1920;1933;1999;SD;Flamboyant Tough Guy;High;2379;X
+120139;Head of Government;Antonin Svehla;1922;1933;1999;ML;Happy Amateur;High;3728;X
+120140;Head of Government;Karel Kramár;1914;1933;1999;ML;Naive Optimist;High;3729;X
+120141;Head of State;Tomás Masaryk;1914;1938;1999;ML;Popular Figurehead;High;3730;X
+120142;Minister of Armament;Kyril Horácek;1919;1933;1999;SD;Resource Industrialist;High;3731;X
+120143;Minister of Armament;Kunes Sonntag;1919;1933;1999;SL;Administrative Genius;High;3732;X
+120144;Minister of Armament;Karel Englis;1920;1933;1999;SL;Resource Industrialist;High;3733;X
+120145;Minister of Armament;Waldemar Honacík;1920;1933;1999;SL;Resource Industrialist;High;unknownminister;X
+120146;Minister of Armament;Augustin Novák;1921;1933;1999;SD;Resource Industrialist;High;3734;X
+120147;Minister of Armament;Alois Rasín;1922;1933;1999;ML;Laissez-Faire Capitalist;High;3735;X
+120148;Minister of Armament;Bohdan Becka;1923;1933;1999;SL;Resource Industrialist;High;3736;X
+120149;Minister of Armament;Alois Rasín;1914;1933;1999;ML;Resource Industrialist;High;3735;X
+120150;Minister of Security;Ján Cerný;1920;1933;1999;SL;Silent Lawyer;High;3727;X
+120151;Minister of Security;Ján Malypetr;1922;1933;1999;SL;Crime Fighter;High;3737;X
+120152;Minister of Security;Antonín Svehla;1914;1933;1999;ML;Man of the People;Medium;3738;X
+120153;Minister of Security;Emanuel Moravec;1939;1964;1999;NS;Prince of Terror;Low;6074;x
+120154;Chief of Staff;Emanuel Moravec;1945;1964;1999;NS;School of Defence;Low;6074;x
+120155;Head of Government;Ján Malypetr;1922;1947;1999;SL;Flamboyant Tough Guy;High;3737;X
+120156;Head of Government;Antonín Nemec;1917;1933;1999;SD;happy amateur;Medium;unknownminister;X
+120157;Head of Government;František Udrzal;1929;1938;1999;SL;naive optimist;Medium;unknownminister;X
+120158;Head of Government;Antonín Hampl;1925;1938;1999;SD;ambitious union boss;Medium;unknownminister;X
+120159;Head of Military Intelligence;Vladimír Chalupa;1929;1934;1938;ML;logistics specialist;High;9768;X
+120160;Head of Military Intelligence;Šimon Drgác;1934;1951;1981;SD;logistics specialist;High;9769;X
+120161;Head of Military Intelligence;František Hájek;1936;1939;1943;ML;technical specialist;High;unknownminister;X
+120162;Head of Military Intelligence;František Moravec;1939;1948;1967;ML;dismal enigma;High;9770;X
+120163;Chief of Air Force;Jaroslav Fjafr;1927;1940;1959;ML;air superiority doctrine;High;9771;X
+120164;Chief of Air Force;Karel Janousek;1940;1945;1972;ML;army aviation doctrine;High;9772;X

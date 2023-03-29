@@ -1,0 +1,255 @@
+BUL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+95001;Head of State;Boris III;1933;1964;1999;PA;Autocratic Charmer;High;M19001;X
+95002;Head of Government;Georgi Kyoseivanov;1933;1964;1999;PA;Backroom Backstabber;High;M19002;X
+95003;Foreign Minister;Georgi Kyoseivanov;1933;1964;1999;PA;Biased Intellectual;High;M19002;X
+95004;Minister of Armament;Kiril Gunev;1933;1964;1999;PA;Administrative Genius;Medium;M19004;X
+95005;Minister of Security;Georgi Sapov;1933;1964;1999;PA;Crime Fighter;Low;M19005;X
+95006;Head of Military Intelligence;Dimitar Peshev;1933;1964;1999;PA;Dismal Enigma;Medium;M19006;X
+95007;Chief of Staff;Hristo Lukov;1933;1964;1999;PA;School of Defence;Low;M19007;X
+95008;Chief of Army;Todor Georgiev;1933;1964;1999;PA;Static Defence Doctrine;Medium;M19008;X
+95009;Chief of Navy;Sava Ivanov;1933;1964;1999;PA;Open Seas Doctrine;Medium;M19009;X
+95010;Chief of Air Force;Vasil Boydev;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M19010;X
+95011;Head of State;Kiril Preslavski;1943;1964;1999;PA;Stern Imperialist;High;M19042;X
+95012;Head of State;Boris III;1939;1964;1999;NS;Autocratic Charmer;High;M19001;X
+95013;Head of State;Aleksandar Tsankov;1943;1964;1999;NS;Barking Buffoon;High;M19021;X
+95014;Head of State;Boris III;1939;1964;1999;SC;Autocratic Charmer;High;M19001;X
+95015;Head of State;Kiril Preslavski;1943;1964;1999;SC;Stern Imperialist;High;M19042;X
+95016;Head of State;Nikola Petkov;1945;1964;1999;SC;Die-hard Reformer;High;M19047;X
+95017;Head of State;Kiril Preslavski;1944;1964;1999;LWR;Stern Imperialist;High;M19042;X
+95018;Head of State;Comrade Boris Coburg;1939;1964;1999;ST;Autocratic Charmer;High;M19001;X
+95019;Head of State;Georgi Dimitrov;1943;1964;1999;ST;Powerhungry Demagogue;High;M19032;X
+95020;Head of State;Vasil Kolarov;1945;1964;1999;ST;Weary Stiffneck;High;M19031;X
+95021;Head of Government;Bogdan Filov;1939;1964;1999;PA;Political Protege;High;M19024;X
+95022;Head of Government;Dobri Bozhilov;1943;1964;1999;PA;Corporate Suit;High;M19053;X
+95023;Head of Government;Ivan Bagryanov;1944;1964;1999;PA;Old General;High;M19054;X
+95024;Head of Government;Aleksandar Tsankov;1939;1964;1999;NS;Backroom Backstabber;High;M19021;X
+95025;Head of Government;Petar Gabrovski;1943;1964;1999;PA;Naive Optimist;High;M19022;X
+95026;Head of Government;Konstantin Muraviev;1939;1964;1999;SC;Happy Amateur;High;M19012;X
+95027;Head of Government;Nikola Petkov;1944;1964;1999;SC;Flamboyant Tough Guy;High;M19047;X
+95028;Head of Government;Kimon Georgiev;1934;1964;1999;LWR;Naive Optimist;High;M19059;X
+95029;Head of Government;Georgi Dimitrov;1939;1964;1999;ST;Political Protege;High;M19032;X
+95030;Foreign Minister;Ivan Popov;1939;1964;1999;PA;Biased Intellectual;Medium;M19061;X
+95031;Foreign Minister;Aleksandar Nikolaev;1939;1964;1999;PA;Ideological Crusader;Medium;M19062;X
+95032;Foreign Minister;Bogdan Filov;1942;1964;1999;PA;Biased Intellectual;Medium;M19024;X
+95033;Foreign Minister;Dimitar Shishmanov;1943;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M19064;X
+95034;Foreign Minister;Ivan Bagrianov;1944;1964;1999;PA;Iron Fisted Brute;Medium;M19054;X
+95035;Foreign Minister;Parvan Draganov;1944;1964;1999;FA;General Staffer;Medium;M19066;X
+95036;Foreign Minister;Aleksandar Tsankov;1939;1964;1999;FA;Ideological Crusader;Medium;M19021;X
+95037;Foreign Minister;Atanas Burov;1939;1964;1999;SC;Great Compromiser;Low;M19068;X
+95038;Foreign Minister;Georgi Brasov;1943;1964;1999;SC;Biased Intellectual;Low;M19069;X
+95039;Foreign Minister;Konstantin Muraviev;1944;1964;1999;SC;Apologetic Clerk;Medium;M19012;X
+95040;Foreign Minister;Nikola Petkov;1945;1964;1999;SC;The Cloak N Dagger Schemer;Medium;M19047;X
+95041;Foreign Minister;Petko Stainov;1944;1964;1999;LWR;Biased Intellectual;Medium;M19072;X
+95042;Foreign Minister;Georgi Kulishev;1945;1964;1999;LWR;The Cloak N Dagger Schemer;Very High;M19073;X
+95043;Foreign Minister;Vasil Kolarov;1939;1964;1999;ST;Ideological Crusader;High;M19031;X
+95044;Foreign Minister;Georgi Damyanov;1944;1964;1999;ST;Iron Fisted Brute;Very High;M19075;X
+95045;Foreign Minister;Kimon Georgiev;1945;1964;1999;LE;General Staffer;Medium;M19059;X
+95046;Minister of Armament;Dobri Bozhilov;1938;1964;1999;PA;Infantry Proponent;Medium;M19053;X
+95047;Minister of Armament;Georgi Sapov;1939;1964;1999;PA;Corrupt Kleptocrat;Low;M19005;X
+95048;Minister of Armament;Sava Kirov;1941;1964;1999;PA;laissez-faire capitalist;Low;M19079;X
+95049;Minister of Armament;Stanko Nikoladorov;1944;1964;1999;PA;Corrupt Kleptocrat;Low;M19080;X
+95050;Minister of Armament;Bogdan Filov;1939;1964;1999;FA;Infantry Proponent;Medium;M19024;X
+95051;Minister of Armament;Aleksandar Gerginov;1933;1964;1999;SC;Resource Industrialist;Medium;M19014;X
+95052;Minister of Armament;Atanas Burov;1943;1964;1999;SC;laissez-faire capitalist;Low;M19083;X
+95053;Minister of Armament;Dimitar Savov;1944;1964;1999;SC;Tank Proponent;Low;M19084;X
+95054;Minister of Armament;Ivan Gaydimitriv;1945;1964;1999;SC;Strategic Air Proponent;Low;M19085;X
+95055;Minister of Armament;Petko Stoyanov;1944;1964;1999;LWR;Theoretical Scientist;Low;M19086;X
+95056;Minister of Armament;Stancho Cholakov;1945;1964;1999;LWR;Administrative Genius;Medium;M19087;X
+95057;Minister of Armament;Georgi Dimitrov;1939;1964;1999;ST;Military Entrepreneur;Medium;M19032;X
+95058;Minister of Armament;Ivan Stefanov;1944;1964;1999;LE;Planned economy proponent;Low;M19034;X
+95059;Minister of Armament;Petko Kunin;1945;1964;1999;ST;Air to Ground Proponent;High;M19090;X
+95060;Minister of Security;Ivan Krasnovski;1936;1964;1999;PA;Efficient Sociopath;Medium;M19091;X
+95061;Minister of Security;Nikolay Nikolaev;1938;1964;1999;PA;Crime Fighter;Medium;M19092;X
+95062;Minister of Security;Nikola Nedev;1938;1964;1999;PA;Silent Lawyer;Medium;M19093;X
+95063;Minister of Security;Docho Hristov;1943;1964;1999;PA;Crooked Kleptocrat;Medium;M19094;X
+95064;Minister of Security;Aleksandar Stanishev;1944;1964;1999;PA;Prince of Terror;Medium;M19095;X
+95065;Minister of Security;Dimitar Peshev;1939;1964;1999;FA;Compassionate Gentleman;Low;M19006;X
+95066;Minister of Security;Petur Gabrovski;1943;1964;1999;FA;Back Stabber;Low;M19022;X
+95067;Minister of Security;Aleksandar Gerginov;1939;1964;1999;SC;Silent Lawyer;Medium;M19014;X
+95068;Minister of Security;Raycho Pekimov;1943;1964;1999;SC;Efficient Sociopath;Medium;M19099;X
+95069;Minister of Security;Vergil Dimov;1944;1964;1999;SC;Man of the People;Medium;M19100;X
+95070;Minister of Security;Nikola Mushanov;1945;1964;1999;SC;Compassionate Gentleman;High;M19015;X
+95071;Minister of Security;Georgi Kulishev;1944;1964;1999;LWR;Crime Fighter;Very High;M19073;X
+95072;Minister of Security;Valko Chervenkov;1939;1964;1999;ST;Secret police chief;High;M19103;X
+95073;Minister of Security;Anton Yugov;1944;1964;1999;ST;Secret police chief;High;M19035;X
+95074;Head of Military Intelligence;Kiril Gunev;1939;1964;1999;PA;Naval Intelligence Specialist;Medium;M19004;X
+95075;Head of Military Intelligence;Stefan Noykov;1943;1964;1999;PA;Political Specialist;Low;M19106;X
+95076;Head of Military Intelligence;Sava Kirov;1944;1964;1999;PA;Industrial Specialist;Low;M19079;X
+95077;Head of Military Intelligence;Kiril Stanchev;1939;1964;1999;FA;Dismal Enigma;Medium;M19026;X
+95078;Head of Military Intelligence;Ivan Rogosarski;1944;1964;1999;NS;Logistics Specialist;Medium;M19109;X
+95079;Head of Military Intelligence;Boris Botan;1939;1964;1999;SC;Naval Intelligence Specialist;Medium;M19110;X
+95080;Head of Military Intelligence;Atanas Burov;1943;1964;1999;SC;Industrial Specialist;Medium;M19016;X
+95081;Head of Military Intelligence;Georgi Kulishev;1944;1964;1999;LWR;Naval Intelligence Specialist;Very High;M19073;X
+95082;Head of Military Intelligence;Traicho Kostov;1939;1964;1999;ST;Logistics Specialist;Medium;M19036;X
+95083;Head of Military Intelligence;Mincho Neychev;1945;1964;1999;ST;Political Specialist;Medium;M19114;X
+95084;Chief of Staff;Teodosi Daskalov;1939;1964;1999;PA;School of Defence;Medium;M19115;X
+95085;Chief of Staff;Nikola Mihov;1942;1964;1999;PA;School of Fire Support;Medium;M19116;X
+95086;Chief of Staff;Russi Rusev;1943;1964;1999;PA;School of Mass Combat;High;M19117;X
+95087;Chief of Staff;Todor Georgiev;1944;1964;1999;PA;School of Manoeuvre;Medium;M19008;X
+95088;Chief of Staff;Ivan Valkov;1939;1964;1999;FA;School of Defence;High;M19027;X
+95089;Chief of Staff;Ivan Marinov;1939;1964;1999;SC;School of Manoeuvre;Very Low;M19017;X
+95090;Chief of Staff;Georgi Petsov;1943;1964;1999;SC;School of Defence;Medium;M19019;X
+95091;Chief of Staff;Damjan Velchev;1944;1964;1999;LWR;School of Psychology;Medium;M19122;X
+95092;Chief of Staff;Hristo Mihailov;1939;1964;1999;ST;School of Mass Combat;Medium;M19037;X
+95093;Chief of Staff;Asen Grekov;1945;1964;1999;ST;School of Manoeuvre;Medium;M19124;X
+95094;Chief of Army;Yordan Peev;1937;1964;1999;PA;Decisive Battle Doctrine;Medium;M19125;X
+95095;Chief of Army;Nikola Hadzhipetkov;1939;1964;1999;PA;Static Defence Doctrine;Low;M19126;X
+95096;Chief of Army;Vasil Boydev;1941;1964;1999;PA;Elastic Defence Doctrine;Medium;M19127;X
+95097;Chief of Army;Konstantin Lukash;1943;1964;1999;PA;Guns and Butter Doctrine;Medium;M19128;X
+95098;Chief of Army;Kiril Stanchev;1944;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M19026;X
+95099;Chief of Army;Hristo Lukov;1939;1964;1999;FA;Static Defence Doctrine;High;M19007;X
+95100;Chief of Army;Trifon Trifonov;1944;1964;1999;FA;Elastic Defence Doctrine;Medium;M19131;X
+95101;Chief of Army;Ivan Marinov;1939;1964;1999;SC;Static Defence Doctrine;Low;M19017;X
+95102;Chief of Army;Raycho Slavkov;1944;1964;1999;SC;Guns and Butter Doctrine;Medium;M19018;X
+95103;Chief of Army;Mihail Minchev;1944;1964;1999;LWR;Guns and Butter Doctrine;Medium;M19134;X
+95104;Chief of Army;Tsvyatko Radoynov;1939;1964;1999;ST;Decisive Battle Doctrine;High;M19038;X
+95105;Chief of Army;Ivan Kinov;1944;1964;1999;ST;Armoured Spearhead Doctrine;Medium;M19136;X
+95106;Chief of Navy;Ivan Variklechkov;1938;1964;1999;PA;Base Control Doctrine;High;M19137;X
+95107;Chief of Navy;Asen Toshev;1939;1964;1999;PA;Open Seas Doctrine;High;M19138;X
+95108;Chief of Navy;Atanas Shalapatov;1939;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M19029;X
+95109;Chief of Navy;Racho Batanov;1944;1964;1999;LWR;Open Seas Doctrine;Medium;M19141;X
+95110;Chief of Navy;Kiril Halachev;1939;1964;1999;ST;Indirect Approach Doctrine;Medium;M19039;X
+95111;Chief of Navy;Stefan Tsanev;1945;1964;1999;ST;Decisive Naval Battle Doctrine;Very Low;M19143;X
+95112;Chief of Air Force;Dimitar Ayryanov;1941;1964;1999;PA;Air Superiority Doctrine;Medium;M19145;X
+95113;Chief of Air Force;Chudomir Toplodolski;1939;1964;1999;FA;Vertical Envelopment Doctrine;Medium;M19030;X
+95114;Chief of Air Force;Stoyan Stoyanov;1939;1964;1999;SL;Air Superiority Doctrine;Medium;M19020;X
+95115;Chief of Air Force;Georgi Drenikov;1944;1964;1999;SC;Carpet Bombing Doctrine;Medium;M19148;X
+95116;Chief of Air Force;Vasil Valkov;1944;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M19149;X
+95117;Chief of Air Force;Zahari Zahariev;1939;1964;1999;ST;Vertical Envelopment Doctrine;Medium;M19150;X
+95118;Head of State;Vergil Dimov;1945;1964;1999;PA;Insignificant Layman;High;M19100;X
+95119;Head of State;Vergil Dimov;1947;1964;1999;SC;Insignificant Layman;High;M19100;X
+95120;Head of State;Georgi Kulishev;1945;1964;1999;LWR;Popular Figurehead;Very High;M19073;X
+95121;Head of Government;Vergil Dimov;1945;1964;1999;PA;Silent Workhorse;High;M19100;X
+95122;Head of Government;Vergil Dimov;1947;1964;1999;SC;Silent Workhorse;High;M19100;X
+95123;Head of Government;Georgi Kulishev;1946;1964;1999;LWR;Happy Amateur;Very High;M19073;X
+95124;Chief of Navy;Georgi Petsov;1933;1964;1999;SC;Base Control Doctrine;Medium;M19019;X
+95125;Foreign Minister;Vasil Kolarov;1933;1964;1999;ST;Ideological Crusader;High;M19031;X
+95126;Chief of Army;Tsvyatko Radoynov;1933;1964;1999;ST;Decisive Battle Doctrine;High;M19038;X
+95127;Head of State;Valko Chervenkov;1949;1964;1999;ST;Stern Imperialist;High;M19103;X
+95128;Head of Government;Vasil Kolarov;1949;1964;1999;ST;Flamboyant Tough Guy;High;M19031;X
+95129;Head of Government;Valko Chervenkov;1950;1964;1999;ST;Happy Amateur;High;M19103;X
+95130;Foreign Minister;Vladimir Poptomov;1949;1964;1999;ST;Iron Fisted Brute;High;M19159;X
+95131;Foreign Minister;Mincho Neychev;1950;1964;1999;ST;The Cloak N Dagger Schemer;High;M19114;X
+95132;Minister of Armament;Georgi Damyanov;1946;1964;1999;ST;Tank Proponent;High;M19161;X
+95133;Minister of Armament;Petur Panchevski;1949;1964;1999;ST;Military Entrepreneur;High;M19162;X
+95134;Minister of Security;Rusi Hristozov;1949;1964;1999;ST;Back Stabber;High;M19163;X
+95135;Minister of Security;Georgi Chankov;1951;1964;1999;ST;Crooked Kleptocrat;High;M19164;X
+95136;Head of Military Intelligence;Petko Kunin;1950;1964;1999;ST;Industrial Specialist;Medium;M19165;X
+95137;Chief of Air Force;Radul Milkov;1919;1933;1999;ML;Army Aviation Doctrine;Medium;2245;X
+95138;Chief of Air Force;Vasil Zlatarov;1914;1933;1999;SC;Air Superiority Doctrine;Very High;2246;X
+95139;Chief of Army;Kliment Boyadzhiev;1915;1933;1999;PA;Decisive Battle Doctrine;High;2247;X
+95140;Chief of Army;Hristo Burmov;1914;1933;1999;SC;static defence doctrine;Medium;2248;X
+95141;Chief of Army;Hristo Burmov;1918;1933;1999;ML;static defence doctrine;Medium;2248;X
+95142;Chief of Army;Ivan Lukov;1916;1933;1999;PA;static defence doctrine;High;2249;X
+95143;Chief of Army;Stefan Nerezov;1914;1933;1999;LWR;elastic defence doctrine;Very Low;2250;X
+95144;Chief of Army;Stefan Nerezov;1919;1933;1999;PA;elastic defence doctrine;Medium;2250;X
+95145;Chief of Army;Nikola Topaldzhikov;1920;1933;1999;LWR;Guns and Butter Doctrine;Medium;3714;X
+95146;Chief of Army;Vladimir Stoyanov;1923;1933;1999;SL;decisive battle doctrine;Medium;3715;X
+95147;Chief of Army;Mihail Savov;1914;1933;1999;PA;Decisive Battle Doctrine;High;2251;X
+95148;Chief of Army;Pravoslav Tenev;1914;1933;1999;SC;Guns and Butter Doctrine;Medium;2252;X
+95149;Chief of Army;Konstantin Zhostov;1915;1933;1999;PA;elastic defence doctrine;High;2253;X
+95150;Chief of Navy;Lazar Draganov;1914;1933;1999;LWR;Open Seas Doctrine;High;2254;X
+95151;Chief of Navy;Konstantin Kirkov;1914;1933;1999;SC;Indirect Approach Doctrine;Medium;2255;X
+95152;Chief of Navy;Rashko Serafimov;1914;1933;1999;ML;Indirect Approach Doctrine;High;2256;X
+95153;Chief of Navy;Sava Stefanov;1923;1933;1999;PA;Open Seas Doctrine;High;3716;X
+95154;Chief of Staff;Kliment Boyadzhiev;1915;1933;1999;SC;School of Fire Support;High;2247;X
+95155;Chief of Staff;Kliment Boyadzhiev;1914;1915;1999;SC;School of Psychology;Medium;2247;X
+95156;Chief of Staff;Hristo Burmov;1918;1933;1999;ML;School of Mass Combat;High;2248;X
+95157;Chief of Staff;Georgi Dimitrov;1914;1933;1999;ST;School of Mass Combat;Very High;2257;X
+95158;Chief of Staff;Ivan Fichev;1914;1933;1999;SC;School of Fire Support;Very Low;2258;X
+95159;Chief of Staff;Ivan Lukov;1916;1933;1999;SC;School of Mass Combat;High;2249;X
+95160;Chief of Staff;Konstantin Muraviev;1923;1933;1999;SD;School of Mass Combat;Medium;2259;X
+95161;Chief of Staff;Kalin Naidenov;1915;1933;1999;PA;School of Defence;Very High;2260;X
+95162;Chief of Staff;Stefan Nerezov;1919;1933;1999;SD;School of Psychology;High;2250;X
+95163;Chief of Staff;Aleksandar Dimitrov;1921;1933;1999;LWR;School of Psychology;High;3717;X
+95164;Chief of Staff;Stefan Paprikov;1899;1920;1999;SC;School of Fire Support;High;2261;X
+95165;Chief of Staff;Mihail Savov;1914;1933;1999;PA;School of Mass Combat;High;2251;X
+95166;Chief of Staff;Sava Savov;1914;1933;1999;SC;School of Psychology;Medium;2262;X
+95167;Chief of Staff;Atanas Nazlamov;1914;1933;1999;SC;School of Psychology;High;234;X
+95168;Chief of Staff;Nikola Topaldzhikov;1920;1933;1999;LWR;School of Psychology;High;3714;X
+95169;Chief of Staff;Petar Midilev;1920;1933;1999;SC;School of Psychology;High;3718;X
+95170;Chief of Staff;Radko Dimitriev;1914;1933;1999;SC;School of Manoeuvre;High;3719;X
+95171;Chief of Staff;Vicho Dikov;1914;1933;1999;SC;School of Mass Combat;High;3720;X
+95172;Chief of Staff;Vladimir Stoyanov;1923;1933;1999;SL;school of fire support;High;3715;X
+95173;Chief of Staff;Ivan Valkov;1923;1933;1999;NS;School of Mass Combat;Very High;2263;X
+95174;Chief of Staff;Nikola Zhekov;1915;1933;1999;PA;School of Mass Combat;Very High;2264;X
+95175;Chief of Staff;Konstantin Zhostov;1915;1933;1999;SC;School of Fire Support;High;2253;X
+95176;Foreign Minister;Stoyan Danev;1914;1933;1999;ML;Apologetic Clerk;Very High;2265;X
+95177;Foreign Minister;Nikola Genadiev;1914;1933;1999;ML;Apologetic Clerk;Very High;2266;X
+95178;Foreign Minister;Ivan Evstratiev Geshov;1914;1933;1999;SC;Biased Intellectual;Very High;2267;X
+95179;Foreign Minister;Hristo Kalfov;1923;1933;1999;PA;General Staffer;Very High;2268;X
+95180;Foreign Minister;Vasil Kolarov;1914;1933;1999;ST;Ideological Crusader;Very High;2269;X
+95181;Foreign Minister;Mihail Madzharov;1919;1933;1999;SC;Biased Intellectual;Very High;2270;X
+95182;Foreign Minister;Aleksandar Malinov;1914;1933;1999;ML;Biased Intellectual;Very High;2271;X
+95183;Foreign Minister;Stefan Paprikov;1914;1933;1999;SC;General Staffer;Very High;2261;X
+95184;Foreign Minister;Racho Petrov;1914;1933;1999;ML;General Staffer;Very High;2272;X
+95185;Foreign Minister;Vasil Radoslavov;1914;1933;1999;ML;Ideological Crusader;Very High;2273;X
+95186;Foreign Minister;Aleksandar Stamboliyski;1920;1933;1999;LWR;Great Compromiser;Very High;2274;X
+95187;Foreign Minister;Dimitar Stanchov;1914;1933;1999;ML;Apologetic Clerk;Very High;2275;X
+95188;Foreign Minister;Teodor Teodorov;1918;1933;1999;SC;Great Compromiser;Very High;2276;X
+95189;Head of Government;Dimitar Blagoev;1914;1933;1999;ST;Ambitious Union Boss;High;2277;X
+95190;Head of Government;Stoyan Danev;1914;1933;1999;ML;Naive Optimist;High;2265;X
+95191;Head of Government;Georgi Dimitrov;1914;1933;1999;ST;Flamboyant Tough Guy;High;2257;X
+95192;Head of Government;Ivan Evstratiev Geshov;1914;1933;1999;SC;Flamboyant Tough Guy;High;2267;X
+95193;Head of Government;Petar Gudev;1914;1933;1999;ML;Political Protege;High;2278;X
+95194;Head of Government;Aleksandar Malinov;1914;1933;1999;SC;Silent Workhorse;High;2271;X
+95195;Head of Government;Racho Petrov;1914;1933;1999;ML;Old General;High;2272;X
+95196;Head of Government;Vasil Radoslavov;1914;1933;1999;ML;Flamboyant Tough Guy;High;2273;X
+95197;Head of Government;Aleksandar Stamboliyski;1919;1933;1999;LWR;Silent Workhorse;High;2274;X
+95198;Head of Government;Dimitar Stanchov;1914;1933;1999;SC;Political Protege;High;2275;X
+95199;Head of Government;Teodor Teodorov;1918;1933;1999;SC;Naive Optimist;High;2276;X
+95200;Head of Government;Aleksandar Tsankov;1923;1933;1999;PA;Flamboyant Tough Guy;High;2279;X
+95201;Head of Military Intelligence;Stefan Noykov;1914;1933;1999;SC;Logistics Specialist;Medium;2280;X
+95202;Head of Military Intelligence;Atanas Vatev;1914;1933;1999;PA;Political Specialist;Medium;2281;X
+95203;Head of State;Dimitar Blagoev;1914;1933;1999;ST;Pig-Headed Isolationist;High;2277;X
+95204;Head of State;Georgi Dimitrov;1924;1933;1999;ST;Ruthless Powermonger;High;2257;X
+95205;Head of State;Ferdinand I;1914;1933;1999;PA;Stern Imperialist;High;2282;X
+95206;Head of State;Aleksandar Stamboliyski;1923;1933;1999;LWR;Ruthless Powermonger;High;2274;X
+95207;Head of State;Aleksandar Tsankov;1923;1933;1999;PA;Barking Buffoon;High;2279;X
+95208;Minister of Armament;Dimitar Blagoev;1914;1933;1999;ST;Resource Industrialist;High;2277;X
+95209;Minister of Armament;Stoyan Danev;1918;1933;1999;ML;Resource Industrialist;High;2265;X
+95210;Minister of Armament;Rayko Daskalov;1920;1933;1999;LWR;Military Entrepreneur;High;2283;X
+95211;Minister of Armament;Georgi Dimitrov;1914;1933;1999;ST;Military Entrepreneur;High;2257;X
+95212;Minister of Armament;Ivan Evstratiev Geshov;1914;1933;1999;SC;Administrative Genius;High;2267;X
+95213;Minister of Armament;Todor Ivanchov;1914;1933;1999;ML;Laissez-Faire Capitalist;High;2284;X
+95214;Minister of Armament;Andrey Tasev Lyapchev;1914;1933;1999;ML;Laissez-Faire Capitalist;High;2285;X
+95215;Minister of Armament;Ivan Salabashev;1914;1933;1999;SC;Theoretical Scientist;High;2286;X
+95216;Minister of Armament;Teodor Teodorov;1914;1933;1999;SC;Resource Industrialist;High;2276;X
+95217;Minister of Armament;Petar Todorov;1923;1935;1999;PA;Resource Industrialist;High;2287;X
+95218;Minister of Armament;Dimitar Tonchev;1914;1933;1999;ML;Resource Industrialist;High;2288;X
+95219;Minister of Armament;Marko Tourlakov;1920;1933;1999;LWR;Corrupt Kleptocrat;High;2289;X
+95220;Minister of Armament;Petar Yanev;1923;1933;1999;LWR;Resource Industrialist;High;2290;X
+95221;Minister of Security;Rayko Daskalov;1922;1933;1999;LWR;Silent Lawyer;High;2283;X
+95222;Minister of Security;Aleksandar Dimitrov;1919;1933;1999;LWR;Silent Lawyer;High;2291;X
+95223;Minister of Security;Nikola Genadiev;1914;1933;1999;ML;Silent Lawyer;High;2266;X
+95224;Minister of Security;Petar Gudev;1914;1933;1999;ML;Crime Fighter;High;2278;X
+95225;Minister of Security;Vasil Kolarov;1914;1933;1999;ST;Silent Lawyer;High;2269;X
+95226;Minister of Security;Aleksandar Lyudskanov;1902;1933;1999;ML;Silent Lawyer;High;2292;X
+95227;Minister of Security;Mihail Madzharov;1914;1933;1999;SC;Silent Lawyer;High;2270;X
+95228;Minister of Security;Nikola Mushanov;1914;1933;1999;ML;Silent Lawyer;High;2293;X
+95229;Minister of Security;Aleksandar Obbov;1923;1933;1999;LWR;Silent Lawyer;High;2294;X
+95230;Minister of Security;Krastyu Pastuhov;1919;1933;1999;SD;Man of the People;High;2295;X
+95231;Minister of Security;Racho Petrov;1914;1933;1999;ML;Silent Lawyer;High;2272;X
+95232;Minister of Security;Hristo Popov;1914;1933;1999;ML;Silent Lawyer;High;2296;X
+95233;Minister of Security;Aleksandar Radolov;1914;1933;1999;LWR;Silent Lawyer;High;2297;X
+95234;Minister of Security;Vasil Radoslavov;1914;1933;1999;ML;Prince of Terror;Very High;2273;X
+95235;Minister of Security;Ivan Rusev;1923;1933;1999;PA;Crime Fighter;High;2298;X
+95236;Minister of Security;Hristo Stoyanov;1923;1933;1999;LWR;Silent Lawyer;High;2299;X
+95237;Minister of Security;Konstantin Tomov;1921;1933;1999;LWR;Silent Lawyer;High;2300;X
+95238;Chief of Army;Nikola Zhekov;1914;1933;1999;PA;Decisive Battle Doctrine;Very High;2264;X
+95239;Chief of Staff;Pravoslav Tenev;1914;1933;1999;SC;School of Fire Support;High;2252;X
+95240;Head of State;Boris III;1914;1933;1999;SC;Autocratic Charmer;High;8657;X
+95241;Head of Government;Nikola Mushanov;1931;1964;1999;SC;Silent Workhorse;High;M19015;X
+95242;Foreign Minister;Nikola Mushanov;1931;1964;1999;SC;Biased Intellectual;High;M19015;X
+95243;Foreign Minister;Sava Kirov;1941;1964;1999;PA;Biased Intellectual;Low;M19079;X
+95244;Minister of Armament;Stefan Stefanov;1931;1964;1999;SC;Planned economy proponent;High;660;X
+95245;Foreign Minister;Kimon Georgiev;1934;1964;1999;LWR;General Staffer;Medium;M19059;X
+95246;Minister of Security;Petar Midilev;1934;1964;1999;SC;Man of the People;High;3718;X
+95247;Head of Government;Pencho Zlatev;1935;1964;1999;PA;Old General;High;9661;X
+95248;Foreign Minister;Konstantin Batolov;1935;1939;1999;SC;Apologetic Clerk;High;9662;X
+95249;Minister of Armament;Mihail Kalenderov;1935;1964;1999;SC;Resource Industrialist;High;9663;X
+95250;Minister of Security;Krum Kolev;1935;1964;1999;SC;Efficient Sociopath;Medium;9664;X
+95251;Head of Government;Andrey Toshev;1935;1964;1999;SC;Silent Workhorse;Medium;9665;X
+95252;Minister of Armament;Marko Ryaskov;1935;1964;1999;SC;laissez-faire capitalist;Medium;9666;X
+95253;Minister of Security;Rashko Atanasov;1935;1945;1999;SC;Prince of Terror;Medium;9667;X
+95254;Minister of Armament;Stoycho Moshanov;1935;1964;1999;SC;Resource Industrialist;Medium;9668;X

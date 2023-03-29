@@ -1,0 +1,141 @@
+# German Low Countries Invasion AI File by Lothos
+
+max_front_ratio = 1.0
+max_garrison_prop = 0.35
+min_garrison_prop = 0.15
+max_front_ratios = {
+	BEL = 4.0
+	HOL = 4.0
+	LUX = 4.0
+	NOR = 3.0
+	FRA = 0.8
+}
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	HOL = 100
+	BEL = 100
+	LUX = 100
+}
+target = { 
+ 102 = 50 # Sedan 
+ 55 = 70 # Paris 
+ 53 = 40 # Dieppe 
+} 
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+   	air_base = no 
+	max_air_base = 4
+	air_base_provs = {
+		145  #Essen
+		132  #Freiburg to allow Paras from Maginot to participate
+		157  #Potsdam to fix another Para bug :D
+	} 
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	
+	home_multiplier 	= 1.0
+	overseas_multiplier = 0.1
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.0
+	revolt_risk_mult	= 0.1
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 10	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 40	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		VIC = -1
+		SWE = -1
+		FIN = -1
+		ITA = 5
+		SCH = -1
+		AUS = -1
+		HUN = -1
+		CZE = 75
+		POL = 75
+		YUG = 5
+		LIT = 5
+		HOL = 100
+		BEL = 100
+		FRA = 30
+		NOR = 20
+		DEN = 5
+		SOV = 5
+	}
+	province_priorities = {
+	486 = 30 # Heavy Water in Honefoss
+	}
+	area_multiplier = {
+		#Denmark border
+		158  = 0.1  #Stettin
+		
+		#Belgium Dutch Border
+		131  = 2.0 #Overlaps with magi, focus on south
+		141  = 15.0 #Netherlands
+		147 = 15.0 #Middle
+		
+		#Russian Border
+		252  = 0.1
+		221  = 0.1
+		243  = 0.1
+		236  = 0.1
+		237  = 0.1
+		
+		132 = 0.2 #Maginot
+	}
+}
+front = { 
+   	recklessness     = 2 # 0-3 
+  	distrib_vs_ai     = reactive
+   	distrib_vs_human   = reactive 
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.0
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human= 2.5
+	front_leader_overseas	= 5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 0.9
+	max_attack_odds		= 3.0
+	reinforce_odds		= 3.0
+	withdraw_odds		= 0.6
+
+    enemy_handicap = { } 
+    passivity = { } 
+
+	province_priorities = {
+		#Maginot Line
+		127  = 0.15
+		132  = 0.03
+		130  = 0.03
+		
+		#Spearhead into ardennes
+		126	= 4.0
+		131	= 4.0
+		
+		102 = 1.50 # Sedan 
+		55 = 1.70 # Paris 
+		53 = 1.40 # Dieppe 
+	}
+}
+invasion = { 
+    air_support 	= 30.0 
+} 

@@ -1,0 +1,9 @@
+# North Atlantic Patrol
+
+admiral = { 
+	base = {
+		542  
+		535
+	}
+	target = { 2671 = 50 2694 = 30 2738 = 20 } 
+}

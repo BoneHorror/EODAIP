@@ -1,0 +1,211 @@
+HUN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+105001;Head of State;Miklós Horthy de Nagybánya;1933;1964;1999;FA;Resigned Generalissimo;High;M21001;X
+105002;Head of Government;Gyula Gömbös de Jakfa;1932;1937;1999;FA;Flamboyant Tough Guy;High;M21002;X
+105003;Foreign Minister;Kálmán Kánya;1933;1964;1999;FA;Great Compromiser;Medium;M21003;X
+105004;Minister of Armament;Tihamér Fabinyi;1933;1964;1999;FA;Military Entrepreneur;Medium;M21004;X
+105005;Minister of Security;Miklós Kozma;1933;1964;1999;FA;Prince of Terror;Medium;M21005;X
+105006;Head of Military Intelligence;Gyula Gömbös de Jakfa;1933;1964;1999;FA;Political Specialist;High;M21002;X
+105007;Chief of Staff;Gusztáv Hennyey;1933;1964;1999;FA;School of Mass Combat;High;M21007;X
+105008;Chief of Army;István Shvoy;1933;1964;1999;FA;Decisive Battle Doctrine;Medium;M21008;X
+105009;Chief of Navy;Miklós Horthy de Nagybánya;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M21001;X
+105010;Chief of Air Force;László Tomor;1933;1964;1999;FA;Air Superiority Doctrine;Medium;M21010;X
+105011;Head of State;Ferenc Szálasi;1944;1964;1999;NS;Powerhungry Demagogue;High;M21021;X
+105012;Head of State;Miklós Horthy de Nagybánya;1944;1964;1999;NS;Resigned Generalissimo;High;M21001;X
+105013;Head of State;Otto I Habsburg;1945;1964;1999;PA;Benevolent Gentleman;High;M21044;X
+105014;Head of State;Károly Peyer;1945;1964;1999;SD;Insignificant Layman;High;M21045;X
+105015;Head of State;Zoltán Tildy;1945;1964;1999;SC;Autocratic Charmer;High;M21011;X
+105016;Head of State;Zoltán Tildy;1947;1964;1999;ST;Autocratic Charmer;High;M21011;X
+105017;Head of State;Béla Zsedényi;1933;1964;1999;ST;Stern Imperialist;High;M21031;X
+105018;Head of State;Lászó Rajk;1939;1964;1999;ST;Autocratic Charmer;High;M21035;X
+105019;Head of State;Mátyás Rákosi;1944;1964;1999;ST;Powerhungry Demagogue;High;M21032;X
+105020;Head of Government;Döme Sztójay;1939;1964;1999;NS;Happy Amateur;High;M21051;X
+105021;Head of Government;Jenö Rácz;1944;1964;1999;NS;Political Protege;High;M21022;X
+105022;Head of Government;K. Darányi de Pusztaszentgyörgyi;1933;1964;1999;FA;Smiling Oilman;High;M21053;X
+105023;Head of Government;Béla Imrédy de Omoravia;1938;1964;1999;FA;Corporate Suit;High;M21024;X
+105024;Head of Government;Pál Teleki de Szek;1939;1964;1999;FA;Naive Optimist;High;M21055;X
+105025;Head of Government;László Bárdossy;1941;1964;1999;FA;Silent Workhorse;High;M21056;X
+105026;Head of Government;M. Kállay de Nagy-Kalló;1942;1964;1999;FA;Happy Amateur;High;M21057;X
+105027;Head of Government;Géza Lakatos;1944;1964;1999;FA;Old General;High;M21058;X
+105028;Head of Government;Béla Miklós de Dalnók;1944;1964;1999;PA;Corporate Suit;High;M21059;X
+105029;Head of Government;Karoly Bartha von Dálnokfalva;1945;1964;1999;PA;Old General;High;M21060;X
+105030;Head of Government;Arpád Szakasits;1945;1964;1999;SD;Happy Amateur;High;M21061;X
+105031;Head of Government;Zoltán Tildy;1933;1964;1999;SC;Silent Workhorse;High;M21011;X
+105032;Head of Government;Ferenc Nagy;1946;1964;1999;SC;Happy Amateur;High;M21012;X
+105033;Head of Government;László Rajk;1933;1964;1999;ST;Flamboyant Tough Guy;High;M21035;X
+105034;Head of Government;Mátyas Rákosi;1944;1964;1999;ST;Local tyrant;High;M21032;X
+105035;Foreign Minister;Döme Sztójay;1944;1964;1999;NS;Ideological Crusader;Medium;M21051;X
+105036;Foreign Minister;Gábor Kemény;1944;1964;1999;NS;Great Compromiser;Medium;M21067;X
+105037;Foreign Minister;Béla Imrédy de Omoravia;1938;1964;1999;FA;Ideological Crusader;Medium;M21024;X
+105038;Foreign Minister;István Csáky;1939;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M21070;X
+105039;Foreign Minister;László Bárdossy;1941;1964;1999;FA;Iron Fisted Brute;Medium;M21056;X
+105040;Foreign Minister;Gusztáv Hennyey;1944;1964;1999;FA;General Staffer;High;M21007;X
+105041;Foreign Minister;Edgar Keksz;1944;1964;1999;PA;Iron Fisted Brute;Medium;M21073;X
+105042;Foreign Minister;Endre Bajcsy-Zsilinszky;1945;1964;1999;PA;General Staffer;Medium;M21074;X
+105043;Foreign Minister;Arpád Szakasits;1945;1964;1999;SD;Biased Intellectual;High;M21061;X
+105044;Foreign Minister;Francois Deak;1933;1964;1999;SC;Apologetic Clerk;Medium;M21076;X
+105045;Foreign Minister;Ferenc Nagy;1939;1964;1999;SC;Great Compromiser;High;M21012;X
+105046;Foreign Minister;János Gyöngyösi;1944;1964;1999;SC;Great Compromiser;Medium;M21013;X
+105047;Foreign Minister;Erik Molnár;1933;1964;1999;ST;Ideological Crusader;Medium;M21079;X
+105048;Foreign Minister;Matta Zalka;1944;1964;1999;ST;General Staffer;Medium;M21037;X
+105049;Foreign Minister;László Rajk;1947;1964;1999;ST;Iron Fisted Brute;Medium;M21035;X
+105050;Minister of Armament;Jenö Rácz;1939;1964;1999;NS;Planned economy proponent;Medium;M21022;X
+105051;Minister of Armament;Bela Imrédy de Omoravia;1933;1964;1999;FA;Infantry Proponent;Medium;M21024;X
+105052;Minister of Armament;Lajos Reményi-Schneller;1938;1964;1999;FA;Keynesian economy;Medium;M21084;X
+105053;Minister of Armament;Laszlo Endre;1944;1964;1999;FA;Strategic Air Proponent;Medium;M21085;X
+105054;Minister of Armament;Imre Oltványi;1944;1964;1999;PA;Balanced budget economy;Medium;M21086;X
+105055;Minister of Armament;Edgar Keksz;1945;1964;1999;PA;Corrupt Kleptocrat;Medium;M21073;X
+105056;Minister of Armament;Etienne de Winchkler;1946;1964;1999;PA;Resource Industrialist;Medium;M21088;X
+105057;Minister of Armament;Reszö Kastner;1945;1964;1999;SD;Administrative Genius;Medium;M21089;X
+105058;Minister of Armament;Albert Apponyi;1933;1964;1999;SC;Strategic Air Proponent;Medium;M21090;X
+105059;Minister of Armament;Miklos Olgyay;1939;1964;1999;SC;Resource Industrialist;Medium;M21014;X
+105060;Minister of Armament;Béla Zsedényi;1933;1964;1999;ST;Infantry Proponent;High;M21031;X
+105061;Minister of Armament;Ernö Gerö;1939;1964;1999;ST;Planned economy proponent;Medium;M21093;X
+105062;Minister of Armament;Zoltán Vas;1946;1964;1999;ST;Military Entrepreneur;Medium;M21034;X
+105063;Minister of Security;Andor Jaross;1939;1964;1999;NS;Prince of Terror;Medium;M21025;X
+105064;Minister of Security;Gábor Vajna;1944;1964;1999;NS;Man of the People;Medium;M21096;X
+105065;Minister of Security;K. Darányi de Pusztaszentgyörgyi;1938;1964;1999;FA;Back Stabber;Medium;M21053;X
+105066;Minister of Security;Pál Teleki de Szek;1939;1964;1999;FA;Compassionate Gentleman;Low;M21055;X
+105067;Minister of Security;Ferenc Keresztes-Fischer;1933;1964;1999;FA;Secret police chief;High;M21100;X
+105068;Minister of Security;M. Kállay de Nagy-Kalló;1942;1964;1999;FA;Man of the People;Medium;M21057;X
+105069;Minister of Security;Kalmán Szell;1944;1964;1999;FA;Crime Fighter;Medium;M21103;X
+105070;Minister of Security;Edgar Keksz;1944;1964;1999;PA;Crooked Kleptocrat;Medium;M21073;X
+105071;Minister of Security;Laszlo Baky;1945;1964;1999;PA;Crime Fighter;Medium;M21105;X
+105072;Minister of Security;Jozsef Revay;1945;1964;1999;SD;Crime Fighter;Medium;M21107;X
+105073;Minister of Security;József Széll;1933;1964;1999;SC;Efficient Sociopath;Medium;M21108;X
+105074;Minister of Security;Miklós Bonczos;1944;1964;1999;SC;Silent Lawyer;Medium;M21109;X
+105075;Minister of Security;Mihaly Farkas;1933;1964;1999;ST;Prince of Terror;Medium;M21110;X
+105076;Minister of Security;László Rajk;1939;1964;1999;ST;Crime Fighter;Medium;M21035;X
+105077;Minister of Security;Mátyás Rákosi;1944;1964;1999;ST;Secret police chief;Very High;M21032;X
+105078;Minister of Security;Imre Nagy;1945;1964;1999;ST;Back Stabber;Medium;M21113;X
+105079;Minister of Security;Ferenc Erdei;1947;1964;1999;ST;Compassionate Gentleman;Medium;M21114;X
+105080;Head of Military Intelligence;Ferenc Rajniss;1944;1964;1999;NS;Dismal Enigma;Medium;M21115;X
+105081;Head of Military Intelligence;Andor Jaross;1944;1964;1999;NS;Political Specialist;Medium;M21025;X
+105082;Head of Military Intelligence;Rezsö Andorka;1933;1964;1999;FA;Technical Specialist;Medium;M21117;X
+105083;Head of Military Intelligence;Mihaly Ujvári;1939;1964;1999;FA;Logistics Specialist;High;M21118;X
+105084;Head of Military Intelligence;András Zákó;1941;1964;1999;FA;Political Specialist;Medium;M21119;X
+105085;Head of Military Intelligence;Kádár Gyula;1943;1964;1999;FA;Dismal Enigma;Medium;M21120;X
+105086;Head of Military Intelligence;Edgar Keksz;1944;1964;1999;PA;Naval Intelligence Specialist;Medium;M21073;X
+105087;Head of Military Intelligence;Ferenc Keresztes-Fischer;1945;1964;1999;PA;Industrial Specialist;Medium;M21100;X
+105088;Head of Military Intelligence;Károly Peyer;1945;1964;1999;SD;Industrial Specialist;Low;M21045;X
+105089;Head of Military Intelligence;Zoltán Tildy;1933;1964;1999;SC;Dismal Enigma;Medium;M21011;X
+105090;Head of Military Intelligence;József Széll;1944;1964;1999;SC;Political Specialist;Medium;M21108;X
+105091;Head of Military Intelligence;Ernö Gerö;1933;1964;1999;ST;Logistics Specialist;Medium;M21093;X
+105092;Head of Military Intelligence;László Rajk;1946;1964;1999;ST;Political Specialist;Medium;M21035;X
+105093;Chief of Staff;Lajos Csatay von Csatai;1939;1964;1999;NS;School of Manoeuvre;Medium;M21128;X
+105094;Chief of Staff;Károlyi Beregffy;1944;1964;1999;NS;School of Manoeuvre;Medium;M21129;X
+105095;Chief of Staff;Karoly Barthá von Dálnokfalva;1938;1964;1999;FA;School of Psychology;Medium;M21060;X
+105096;Chief of Staff;Vilmos Nagy;1942;1964;1999;FA;School of Defence;Medium;M21132;X
+105097;Chief of Staff;Sandór Szurmay;1944;1964;1999;FA;School of Fire Support;Medium;M21133;X
+105098;Chief of Staff;Vilmos Röder;1945;1964;1999;PA;commando doctrine staff;Medium;M21135;X
+105099;Chief of Staff;János Vörös;1933;1964;1999;SC;School of Manoeuvre;Medium;M21017;X
+105100;Chief of Staff;Matta Zalka;1933;1964;1999;ST;School of Psychology;Medium;M21037;X
+105101;Chief of Army;Lajos Csatay von Csatai;1944;1964;1999;NS;Armoured Spearhead Doctrine;Medium;M21128;X
+105102;Chief of Army;Károlyi Beregffy;1944;1964;1999;NS;Guns and Butter Doctrine;Medium;M21129;X
+105103;Chief of Army;Henrik Werth;1938;1964;1999;FA;Static Defence Doctrine;Medium;M21142;X
+105104;Chief of Army;Edgar Keksz;1942;1964;1999;FA;Guns and Butter Doctrine;Medium;M21073;X
+105105;Chief of Army;Géza Lakatos;1944;1964;1999;FA;Elastic Defence Doctrine;Low;M21058;X
+105106;Chief of Army;Béla Miklós de Dalnók;1944;1964;1999;PA;Static Defence Doctrine;Medium;M21059;X
+105107;Chief of Army;Hugó Sónyi;1945;1964;1999;PA;Decisive Battle Doctrine;Medium;M21146;X
+105108;Chief of Army;Gabor Sziszkalatay;1945;1964;1999;SD;commando doctrine army;Medium;M21136;X
+105109;Chief of Army;Ferenc Szombathelyi;1933;1964;1999;SC;Static Defence Doctrine;High;M21148;X
+105110;Chief of Army;János Vörös;1944;1964;1999;SC;Elastic Defence Doctrine;Medium;M21017;X
+105111;Chief of Army;Nikolaj Berzin;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M21038;X
+105112;Chief of Navy;Sandor Csia;1939;1964;1999;NS;Base Control Doctrine;Medium;M21151;X
+105113;Chief of Navy;Edgar Keksz;1944;1964;1999;PA;Base Control Doctrine;Medium;M21073;X
+105114;Chief of Navy;Otto I Habsburg;1945;1964;1999;PA;Indirect Approach Doctrine;High;M21044;X
+105115;Chief of Navy;Reszö Kastner;1945;1964;1999;SD;Base Control Doctrine;High;M21089;X
+105116;Chief of Navy;Francois Deak;1933;1964;1999;SC;Power Projection Doctrine;High;M21076;X
+105117;Chief of Navy;Kálmán Hardy;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Medium;M21039;X
+105118;Chief of Air Force;Sandor Maguarosy;1939;1964;1999;NS;Army Aviation Doctrine;Medium;M21030;X
+105119;Chief of Air Force;Ferenc Szálasi;1944;1964;1999;NS;Naval Aviation Doctrine;Medium;M21021;X
+105120;Chief of Air Force;Ferenc Feketehalmy-Czeydner;1938;1964;1999;FA;Army Aviation Doctrine;Medium;M21161;X
+105121;Chief of Air Force;Györghyi De Brody;1941;1964;1999;FA;Vertical Envelopment Doctrine;Medium;M21040;X
+105122;Chief of Air Force;Kálmán Ternegg-Ratz;1944;1964;1999;PA;Army Aviation Doctrine;Medium;M21163;X
+105123;Chief of Air Force;Ferenc Keresztes-Fischer;1946;1964;1999;PA;Air Superiority Doctrine;High;M21100;X
+105124;Chief of Air Force;Edgar Keksz;1945;1964;1999;SD;Air Superiority Doctrine;Medium;M21073;X
+105125;Chief of Air Force;Béla Rákosi;1933;1964;1999;SC;Vertical Envelopment Doctrine;Medium;M21020;X
+105126;Chief of Air Force;Györghyi De Brody;1933;1964;1999;ST;Air Superiority Doctrine;Medium;M21040;X
+105127;Head of State;Miklós Horthy de Nagybánya;1933;1964;1999;SC;Resigned Generalissimo;High;M21001;X
+105128;Foreign Minister;Ferenc Szálasi;1939;1964;1999;NS;Iron Fisted Brute;Medium;M21021;X
+105129;Head of Military Intelligence;Sandor Csia;1939;1964;1999;NS;Industrial Specialist;Medium;M21151;X
+105130;Chief of Army;Ferenc Feketehalmy-Czeydner;1939;1964;1999;NS;Elastic Defence Doctrine;Medium;M21161;X
+105131;Head of State;Géza Lakatos;1944;1964;1999;PA;Resigned Generalissimo;High;M21058;X
+105132;Chief of Staff;Gabor Sziszkalatay;1947;1964;1999;ST;commando doctrine staff;Medium;M21136;X
+105133;Head of Government;Ferenc Keresztes-Fischer;1942;1964;1999;FA;Happy Amateur;High;M21100;X
+105134;Foreign Minister;Pál Teleki de Szek;1941;1964;1999;FA;Great Compromiser;High;M21055;X
+105135;Foreign Minister;Ferenc Keresztes-Fischer;1942;1964;1999;FA;Apologetic Clerk;High;M21100;X
+105136;Foreign Minister;M. Kállay de Nagy-Kalló;1942;1964;1999;FA;General Staffer;High;M21057;X
+105137;Foreign Minister;Jenö Ghyczy;1943;1964;1999;FA;Apologetic Clerk;High;M21179;X
+105138;Head of State;Arpád Szakasits;1948;1964;1999;ST;Insignificant Layman;High;M21061;X
+105139;Head of State;Sandor Ronai;1950;1964;1999;ST;Popular Figurehead;High;M21181;X
+105140;Head of State;Istvan Dobi;1952;1964;1999;ST;Autocratic Charmer;High;M21182;X
+105141;Head of Government;Lajos Dinnyes;1947;1964;1999;ST;Happy Amateur;High;M21183;X
+105142;Head of Government;Istvan Dobi;1948;1964;1999;ST;Ambitious Union Boss;High;M21182;X
+105143;Head of Government;Imre Nagy;1953;1964;1999;ST;Naive Optimist;High;M21113;X
+105144;Foreign Minister;Gyula Kallai;1948;1964;1999;ST;The Cloak N Dagger Schemer;Medium;M21186;X
+105145;Foreign Minister;Karoly Kiss;1952;1964;1999;ST;Apologetic Clerk;Medium;M21187;X
+105146;Minister of Armament;Imre Horvath;1952;1964;1999;ST;Theoretical Scientist;Medium;M21188;X
+105147;Minister of Security;Janos Kadar;1952;1964;1999;ST;Back Stabber;Very High;M21189;X
+105148;Chief of Navy;Miklós Horthy;1914;1933;1999;PA;Decisive Naval Battle Doctrine;Medium;M21001;X
+105149;Foreign Minister;Mihály Károlyi;1914;1933;1999;SL;apologetic clerk;Medium;3864;X
+105150;Foreign Minister;Antal Dovcsák;1914;1933;1999;LE;Ideological Crusader;Medium;9568;X
+105151;Head of Government;Mihály Károlyi;1914;1933;1999;SL;Backroom Backstabber;Medium;3864;X
+105152;Head of Government;Sándor Garbai;1914;1933;1999;ST;Flamboyant Tough Guy;Medium;3865;X
+105153;Head of Government;István Friedrich;1919;1933;1999;SD;Naive Optimist;Medium;3866;X
+105154;Head of Government;Sándor Simonyi-Semadam;1920;1933;1999;SD;Political Protege;Medium;3867;X
+105155;Head of State;Mihály Károlyi;1914;1933;1999;SL;Insignificant Layman;Medium;3864;X
+105156;Head of State;Miklós Horthy;1914;1933;1999;PA;Autocratic Charmer;Medium;M21001;X
+105157;Head of State;Belá Kun;1914;1933;1999;ST;Die-hard Reformer;Medium;3868;X
+105158;Head of State;Archduke Josef;1919;1933;1999;ML;Popular Figurehead;Medium;3869;X
+105159;Head of State;Karl;1920;1933;1999;SL;Popular Figurehead;Medium;3870;X
+105160;Head of State;Gyula Peidl;1919;1931;1999;SD;Pig-headed Isolationist;Medium;9576;X
+105161;Head of State;István Friedrich;1919;1933;1999;SC;powerhungry demagogue;High;3866;X
+105162;Head of State;Károly Huszár de Sárvár;1919;1933;1999;SC;stern imperialist;Medium;9583;X
+105163;Head of Government;Dénes Berinkey;1919;1933;1999;ML;Political Protege;Medium;9569;X
+105164;Head of Government;Károly Huszár de Sárvár;1919;1933;1999;SC;Happy Amateur;Medium;9583;X
+105165;Head of Government;Gyula Peidl;1919;1931;1999;SD;Ambitious Union Boss;Medium;9576;X
+105166;Head of Government;István Bethlen;1918;1933;1999;ML;Backroom Backstabber;High;9578;X
+105167;Head of Government;Gyula Károlyi de Nagykároly;1920;1933;1999;FA;Naive Optimist;High;9575;X
+105168;Foreign Minister;Béla Kun;1914;1933;1999;LE;Ideological Crusader;Medium;3868;X
+105169;Foreign Minister;Dénes Berinkey;1919;1933;1999;SL;Apologetic Clerk;Medium;9569;X
+105170;Foreign Minister;Ferenc Harrer;1919;1933;1999;SL;biased intellectual;Medium;9572;X
+105171;Foreign Minister;Béla Kun;1914;1933;1999;LE;Ideological Crusader;Medium;3868;X
+105172;Foreign Minister;József Pogány;1919;1933;1999;LE;Ideological Crusader;Medium;9580;X
+105173;Foreign Minister;Péter Ágoston;1919;1933;1999;SD;Great Compromiser;Medium;unknownminister;X
+105174;Foreign Minister;Gábor Tánczos;1919;1933;1999;ML;General Staffer;Very High;unknownminister;X
+105175;Foreign Minister;Márton Lovászy;1919;1933;1999;ML;Biased Intellectual;Medium;9587;X
+105176;Foreign Minister;József Somssich;1919;1933;1999;ML;Great Compromiser;Medium;9581;X
+105177;Foreign Minister;Sándor Simonyi-Semadam;1920;1933;1999;SD;Great Compromiser;Medium;3867;X
+105178;Foreign Minister;Pál Teleki de Szek;1920;1941;1999;PA;Apologetic Clerk;High;M21055;X
+105179;Foreign Minister;Imre Csáky;1920;1933;1999;ML;Great Compromiser;High;9577;X
+105180;Foreign Minister;Gusztáv Gratz;1921;1933;1999;ML;Ideological Crusader;High;9574;X
+105181;Foreign Minister;Miklós Bánffy;1921;1933;1999;SL;Biased Intellectual;High;9588;X
+105182;Foreign Minister;Géza Daruváry;1922;1933;1999;ML;Biased Intellectual;Medium;unknownminister;X
+105183;Foreign Minister;István Bethlen;1924;1933;1999;PA;Great Compromiser;High;9578;X
+105184;Foreign Minister;Tibor Scitovszky de Nagykér;1924;1933;1999;FA;Iron Fisted Brute;Medium;unknownminister;X
+105185;Foreign Minister;Lajos Walko;1931;1964;1999;FA;Ideological Crusader;Medium;9585;X
+105186;Foreign Minister;Endre Puky;1932;1964;1999;FA;the cloak n dagger schemer;Medium;9570;X
+105187;Foreign Minister;Gyula Gömbös de Jakfa;1933;1964;1999;FA;Ideological Crusader;High;M21002;X
+105188;Foreign Minister;Kálmán de Kánya;1933;1964;1999;PA;Great Compromiser;High;9582;X
+105189;Minister of Armament;Mihály Károlyi;1914;1933;1999;SL;theoretical scientist;Medium;3864;X
+105190;Minister of Armament;Pál Szende;1919;1933;1999;SL;laissez-faire capitalist;Medium;9589;X
+105191;Minister of Armament;Eugen Samuilovich Varga;1914;1933;1999;LE;resource industrialist;Medium;9571;X
+105192;Minister of Armament;Gyula Lengyel;1919;1933;1999;LE;Administrative Genius;Medium;unknownminister;X
+105193;Minister of Armament;Béla Székely;1919;1933;1999;LE;Oil baron;Medium;unknownminister;X
+105194;Minister of Armament;Ferenc Miákits;1919;1933;1999;LE;Steel magnate;Medium;unknownminister;X
+105195;Minister of Armament;Gyula Peidl;1919;1933;1999;SD;Laissez-Faire Capitalist;Medium;9576;X
+105196;Minister of Armament;János Grünn;1919;1933;1999;ML;Industrial chemist;Medium;unknownminister;X
+105197;Minister of Armament;Frigyes Korányi de Tolcsva;1919;1933;1999;ML;Laissez-Faire Capitalist;Medium;9573;X
+105198;Minister of Armament;Lóránt Hegedüs;1920;1933;1999;PA;Laissez-Faire Capitalist;Medium;9586;X
+105199;Minister of Armament;Lajos Hegyeshalmi;1921;1933;1999;PA;Resource Industrialist;Medium;9584;X
+105200;Minister of Armament;István Bethlen;1921;1933;1999;PA;Administrative Genius;High;9578;X
+105201;Minister of Armament;Tibor Kállay de Nagykálló;1921;1933;1999;PA;Laissez-Faire Capitalist;Medium;9591;X
+105202;Minister of Armament;Lajos Walko;1924;1933;1999;PA;Planned economy proponent;Medium;9585;X
+105203;Minister of Armament;János Bud;1924;1933;1999;PA;Resource Industrialist;Medium;9579;X
+105204;Minister of Armament;Sándor Wekerle;1928;1933;1999;PA;Military Entrepreneur;Medium;9590;X
+105205;Minister of Armament;Gyula Károlyi de Nagykároly;1931;1964;1999;PA;Keynesian economy;Medium;9575;X
+105206;Head of Government;Ferenc Szálasi;1944;1964;1999;NS;Happy Amateur;High;M21021;X
+105207;Head of Military Intelligence;Béla Miklós de Dalnók;1932;1933;1949;FA;Logistics Specialist;High;M21002;X
+105208;Head of Military Intelligence;Gusztáv Hennyey;1933;1937;1964;FA;Logistics Specialist;High;M21007;X
+105209;Head of Military Intelligence;Mihály Ibrányi;1934;1938;1963;FA;dismal enigma;High;L31141;X

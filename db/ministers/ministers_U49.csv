@@ -1,0 +1,51 @@
+U49;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;x
+;Replacements;;;;;;;;;x
+1060001;Head of State;Pietro Badoglio;1933;1937;1999;FA;Resigned Generalissimo;High;badoglio_pietro_u49;x
+1060002;Head of State;Rodolfo Graziani;1936;1938;1999;FA;Local tyrant2;High;graziani_rodolfo_u49;x
+1060003;Head of State;Amedeo di Savoia-Aosta;1937;1942;1999;FA;Popular Figurehead;High;amedeo_di_savoia-aosta_ita;x
+1060004;Head of State;Pietro Gazzera;1941;1954;1999;FA;Resigned Generalissimo;High;gazzera_pietro_ita;x
+1060005;Head of State;Guglielmo Nasi;1941;1964;1999;SC;Resigned Generalissimo;High;nasi_guglielmo_ita;x
+1060006;Head of Government;Arnaldo Pedretti;1933;1938;1999;FA;Local tyrant;High;pedretti_arnaldo_u49;x
+1060007;Head of Government;Enrico Cerulli;1937;1964;1999;FA;Happy Amateur;High;cerulli_enrico_u49;x
+1060008;Head of Government;Guglielmo Nasi;1939;1964;1999;FA;Silent Workhorse;High;nasi_guglielmo_ita;x
+1060009;Head of Government;Giuseppe Daodice;1939;1964;1999;FA;Old General;High;daodice_giuseppe_u49;x
+1060010;Head of Government;Agenore Frangipani;1941;1964;1999;FA;Old General;High;unknownminister;x
+1060011;Foreign Minister;Pietro Badoglio;1933;1937;1999;FA;General Staffer;High;badoglio_pietro_u49;x
+1060012;Foreign Minister;Rodolfo Graziani;1936;1938;1999;FA;General Staffer;High;graziani_rodolfo_u49;x
+1060013;Foreign Minister;Amedeo di Savoia-Aosta;1937;1942;1999;FA;Apologetic Clerk;High;amedeo_di_savoia-aosta_ita;x
+1060014;Foreign Minister;Enrico Cerulli;1933;1964;1999;FA;Biased Intellectual;High;cerulli_enrico_u49;x
+1060015;Foreign Minister;Jacopo Gasparini;1933;1964;1999;FA;Great Compromiser;High;gasparini_jacopo_u49;x
+1060016;Foreign Minister;Martino Mario Moreno;1933;1964;1999;FA;Apologetic Clerk;High;moreno_martino_u49;x
+1060017;Foreign Minister;Luigi Pignatelli della Leonessa;1941;1966;1966;FA;The Cloak N Dagger Schemer;High;pignatelli_luigi_u49;X
+1060018;Minister of Armament;Arnaldo Pedretti;1933;1938;1999;FA;Infantry Proponent;High;pedretti_arnaldo_u49;x
+1060019;Minister of Armament;Enrico Cerulli;1937;1964;1999;FA;Administrative Genius;High;cerulli_enrico_u49;x
+1060020;Minister of Armament;Guglielmo Nasi;1939;1964;1999;FA;Military Entrepreneur;High;nasi_guglielmo_ita;x
+1060021;Minister of Armament;Giuseppe Daodice;1933;1964;1999;FA;Infantry Proponent;High;daodice_giuseppe_u49;x
+1060022;Minister of Armament;Jacopo Gasparini;1933;1942;1999;FA;Resource Industrialist;High;gasparini_jacopo_u49;x
+1060023;Minister of Armament;Pietro Gazzera;1933;1954;1999;FA;Military Entrepreneur;High;gazzera_pietro_ita;x
+1060024;Minister of Armament;Pompeo Gorini;1936;1964;1999;FA;Laissez-Faire Capitalist;High;gorini_pompeo_som;x
+1060025;Minister of Security;Arnaldo Pedretti;1933;1938;1999;FA;Efficient Sociopath;High;pedretti_arnaldo_u49;x
+1060026;Minister of Security;Enrico Cerulli;1933;1964;1999;FA;Prince of Terror;High;cerulli_enrico_u49;x
+1060027;Minister of Security;Pietro Gazzera;1941;1954;1999;FA;Compassionate Gentleman;High;gazzera_pietro_ita;x
+1060028;Minister of Security;Guglielmo Nasi;1933;1964;1999;FA;Crime Fighter;High;nasi_guglielmo_ita;x
+1060029;Minister of Security;Giuseppe Daodice;1933;1964;1999;FA;Compassionate Gentleman;High;daodice_giuseppe_u49;x
+1060030;Minister of Security;Francesco Saverio Caroselli;1933;1964;1999;FA;Man of the People;High;caroselli_francesco_saverio_som;x
+1060031;Head of Military Intelligence;Alessandro Bruttini;1933;1964;1999;FA;Logistics Specialist;High;unknownminister;x
+1060032;Head of Military Intelligence;Francesco de Martini;1941;1964;1999;FA;Naval Intelligence Specialist;High;de_martini_francesco_u49;x
+1060033;Chief of Staff;Italo Gariboldi;1933;1938;1999;FA;School of Mass Combat;High;gariboldi_italo_ita;x
+1060034;Chief of Staff;Marino Valletti Borgnini;1937;1999;1999;FA;School of Psychology;High;unknownminister;x
+1060035;Chief of Staff;Claudio Trezzani;1938;1964;1999;FA;School of Manoeuvre;High;trezzani_claudio_ita;x
+1060036;Chief of Staff;Guglielmo Nasi;1937;1964;1999;FA;School of Defence;High;nasi_guglielmo_ita;x
+1060037;Chief of Army;Ugo Cavallero;1933;1939;1999;FA;Static Defence Doctrine;High;cavallero_ugo_ita;x
+1060038;Chief of Army;Pietro Gazzera;1933;1964;1999;FA;Guns and Butter Doctrine;High;gazzera_pietro_ita;x
+1060039;Chief of Army;Guglielmo Nasi;1933;1964;1999;FA;Elastic Defence Doctrine;High;nasi_guglielmo_ita;x
+1060040;Chief of Navy;Aldo Ascoli;1933;1937;1999;FA;Decisive Naval Battle Doctrine;High;ascoli_aldo_ita;x
+1060041;Chief of Navy;Pellegrino Matteucci;1936;1939;1999;FA;Open Seas Doctrine;High;matteucci_pellegrino_ita;x
+1060042;Chief of Navy;Carlo Balsamo di Specchia Normandia;1939;1964;1999;FA;Indirect Approach Doctrine;High;balsamo_carlo_ita;x
+1060043;Chief of Navy;Mario Bonetti;1941;1964;1999;FA;Base Control Doctrine;High;bonetti_mario_ita;x
+1060044;Chief of Air Force;Mario Ajmone Cat;1933;1937;1999;FA;Air Superiority Doctrine;High;ajmone_cat_mario_ita;X
+1060045;Chief of Air Force;Aurelio Liotta;1936;1938;1999;FA;Air Superiority Doctrine;High;liotta_aurelio_ita;x
+1060046;Chief of Air Force;Renato Mazzucco;1937;1938;1999;FA;Army Aviation Doctrine;High;mazzucco_renato_ita;x
+1060047;Chief of Air Force;Gennaro Tedeschini Lalli;1937;1939;1999;FA;Army Aviation Doctrine;High;tedeschini-lalli_gennaro_ita;x
+1060048;Chief of Air Force;Pietro Pinna Parpaglia;1939;1964;1999;FA;Army Aviation Doctrine;High;pinna_parpaglia_pietro_ita;x
+1060049;Chief of Air Force;Mario Pezzi;1941;1964;1999;FA;Air Superiority Doctrine;High;pezzi_mario_u49;x

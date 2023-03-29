@@ -1,0 +1,210 @@
+# Italy vs Russia/Usa/France AI File by Lothos
+
+max_garrison_prop = 0.40
+min_garrison_prop = 0.25
+exp_force_ratio = 0.20
+exp_force_ratios = {
+	GER = 1.0
+} 
+
+no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN U03 }
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.7
+	overseas_multiplier	= 1.5
+	home_peace_cap 		= 2.0
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 40	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		434  = 10  #Sardinia
+		379  = 10  #Rhodes
+		
+		# North Africa
+		752  = 10
+		750  = 10
+		761  = 10
+		771  = 10
+		769  = 20
+		770  = 20
+		
+		# Albania prep for Greece invasion
+		360  = 10
+	}
+	area_multiplier = {
+		# French Border
+		398  = 1.0  #Turin
+		396  = 1.0  #Genoa
+
+		434  = 1.0  #Sardinia
+		379  = 1.0  #Rhodes
+
+		# North Africa
+		769  = 1.5
+		770  = 1.5
+		752  = 1.5
+		765  = 1.7 #Tobruk
+		
+		#Low prio
+		921   = 0.1  #shit african desert
+		808   = 0.1
+	}
+   	country_priorities = {  
+		FRA = -1  
+		FIN = -1 
+		SCH = 1
+		ENG = 75 
+		GRE = -1
+		AUS = -1 
+		YUG = -1 
+		SOV = 40 
+		USA = 50
+		U01 = 5
+		U02 = 10
+ 	} 
+}
+front = { 
+	province_priorities = {
+		425 = 1.50  #Reggio Calabra
+		431  = 1.30  #Messina
+		
+		# North Africa
+		752  = 1.10 #Az Zawiyah
+		750  = 1.10 #Tripoli
+		761  = 1.30 #Benghazi
+		771  = 1.10 #Bardia
+		769  = 1.10 #Bir Hakeim
+		770  = 1.10 #Al Jaghbub
+		765  = 1.30 #Tobruk
+	}
+   	enemy_handicap = { 
+	U01 = 20
+	ENG = 10
+	} 
+    passivity = {
+		SOV = 10
+		FRA = 50
+		AST = 30
+		ENG = 30
+		USA = 10
+		GRE = 10
+		U01 = 70
+	}  
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random			= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.2	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 1.0	#higher = avoid long distance.
+	max_distance    = 65 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 25.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.5	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 1.0	#prioritise taking pure islands.
+	enemy			= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.3	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 2.0
+    air_support 	= 1.0 
+    redirect 		= home
+	ignore			= no
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	staging_province = {
+		422 # Taranto 
+		430	# Palermo
+		433	# Syracuse	
+		379	# Rhodes		
+		264 #Riga
+		495 #Narvik
+		184	#Koningsberg	
+	}
+	
+	target = { 
+		429 = 8000  #Malta
+		
+		# Italy
+		430	= 8000  #Palermo
+		433	= 8000  #Syracuse
+		434	= 8000  #Cagliari
+		94	= 8000  #Corsica
+		422	= 8000  #Taranto
+		427	= 8000  #Salerno
+		416	= 8000  #Anzio
+		419	= 8000  #Rome
+		412	= 8000  #Ancona
+		400	= 8000  #Venice	
+		
+		#Soviets
+		535 = 1000 	#Murmansk
+		542 = 1000	#Archangelsk
+		530 = 2000	#Terijoki
+		553 = 1000	#Leningrad
+		264 = 500	#Riga
+	
+		# North Africa
+		791	= 5000	#Port Said
+		789	= 5000  #Alexandra
+		717	= 2000	#Rabat
+		728	= 2000	#Oran
+		727	= 2000	#Algiers
+		748	= 2000	#Bizerte
+		747	= 2000	#Tunis
+		750	= 2000	#Tripoli
+		761	= 2000	#Benghazi
+		765	= 2000	#Tobruk
+
+		# Middle East
+		1019  = 1500	#Beirut
+		1008  = 1500 #Tel Aviv
+		1004  = 1500 #El Arish	
+	
+		# Greece
+		382  = 6000  #Crete
+		372  = 3500  #Patras
+		377  = 5500  #Athens
+		370  = 3500   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = 8000  #Tirana
+		343  = 400  #Dubrovnik
+
+		# Turkey
+		378  = 500  #Kalymnos
+		379  = 4000 #Rhodes
+		388  = 4000  #Nicosia
+		
+		#Spain
+		475	 = 1500	 #Palma de Mallorca
+		473	 = 1500	 #Cadiz
+		449  = 1500  #Vigo
+		441  = 1500  #Coruna
+		472  = 1500  #Huelva
+		463  = 1500  #Murcia
+		464  = 1500  #Valencia		
+		440  = 1500  #Barcelona
+		
+		#Portugal
+		#995  = 1200  #Azores
+		#477  = 1500  #Setubal
+		#476  = 1500  #Lissabon	
+	} 
+}

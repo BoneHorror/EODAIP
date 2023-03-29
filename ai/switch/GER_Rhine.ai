@@ -1,0 +1,75 @@
+# German Post-Rhineland Buildup by Nekron
+
+garrison = {
+	ignore = { }
+	province_priorities = {
+		130  = 150
+		132  = 150
+		127   = 150
+	}
+}
+
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+	passivity = {
+	FRA = 80
+	BEL = 90
+	HOL = 90
+	LUX = 90
+	CZE = 50
+	}
+} 
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.75 
+}
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry			= 0		#33
+	cavalry				= 5	#GER had cavalry during Battle of Poland
+	motorized			= 7		#5
+	mechanized			= 0		#4
+	light_armor			= 15		#Start building up LT
+	armor				= 2		#10
+	paratrooper			= 5		#0
+	marine				= 0
+	bergsjaeger			= 0		#1
+	garrison			= 0		#5
+	hq					= 0		#4
+	militia				= 5 #Some front coverage
+#				0 #62 %
+
+	interceptor			= 5		#4
+	multi_role			= 5
+	cas					= 10
+	strategic_bomber	= 10
+	tactical_bomber		= 10		#5
+	naval_bomber		= 1		#2
+	transport_plane		= 0
+	flying_bomb			= 0
+	flying_rocket		= 0 	#0
+#				0 #19 %
+
+	battleship			= 0		#0
+	carrier				= 0
+	escort_carrier		= 0		#0
+	destroyer			= 0		#4
+	light_cruiser		= 0		#3
+	heavy_cruiser		= 0
+	battlecruiser		= 0
+	submarine			= 15		#10
+	nuclear_submarine	= 5
+	transports			= 0		#2 #Handled by forced transport event training
+#				6 %
+}

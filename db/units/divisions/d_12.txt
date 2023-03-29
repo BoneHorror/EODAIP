@@ -1,0 +1,68 @@
+#MODEL_42_
+allowed_brigades = naval_anti_air_s
+allowed_brigades = naval_radar_s
+allowed_brigades = naval_fire_controll_s
+allowed_brigades = naval_improved_hull_s
+allowed_brigades = naval_torpedoes_s
+allowed_brigades = b_01
+allowed_brigades = b_14
+
+max_allowed_brigades = 3
+
+# 0 - Early Nuclear Heavy Cruiser (1957) - Long Beach/Bainbridge/Truxtun
+model = {
+	cost						= 3
+	buildtime 					= 1300
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 33
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 3
+	subdetectioncapability		= 8
+	visibility					= 70
+	seadefence					= 25
+	airdefence					= 22
+	seaattack					= 15
+	convoyattack				= 15
+	subattack					= 1
+	airattack					= 6
+	shorebombardment			= 6
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 1.6
+	fuelconsumption				= 0
+	distance					= 0.32
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { heavy_cruiser = 1 manpower = 2000 }
+}
+
+# 1 - Basic Nuclear Missile Cruiser (1971) - California/Virginia class
+model = {
+	cost						= 3
+	buildtime 					= 1400
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.5
+	maxspeed					= 35
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 8
+	visibility					= 70
+	seadefence					= 20
+	airdefence					= 26
+	seaattack					= 20
+	convoyattack				= 20
+	subattack					= 1
+	airattack					= 14
+	shorebombardment			= 10
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 1.9
+	fuelconsumption				= 0
+	distance					= 0.34
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { heavy_cruiser = 1 manpower = 1500 }
+}

@@ -1,0 +1,37 @@
+U38;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+1010001;Standard Oil;T117;8;1879;1970;industrial_engineering;chemistry;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010002;Texaco;T118;9;1901;1970;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010003;General Electric;T128;7;1878;1970;electronics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010004;IBM;100366;8;1924;1970;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010005;Bendix Corporation;u38_t_bendix;7;1924;1970;industrial_engineering;general_equipment;electronics;avionics;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010006;Alcoa;u38_t_alcoa;9;1925;1970;chemistry;industrial_engineering;general_equipment;management;technical_efficiency;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010007;DuPont;u38_t_dupont;8;1930;1970;chemistry;industrial_engineering;management;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010008;Dow Chemical;u38_t_dow;8;1930;1970;chemistry;industrial_engineering;management;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010009;Carnegie Mellon University;u38_t_carnegie;7;1930;1970;chemistry;mechanics;mathematics;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010010;IT&T;u38_t_itt;7;1930;1970;electronics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010011;OSRD;u38_t_osrd;6;1930;1970;nuclear_physics;nuclear_engineering;mathematics;electronics;medicine;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010012;Ford Motor Company;u38_t_ford;9;1903;1970;mechanics;industrial_engineering;vehicle_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010013;General Motors;T10503;7;1900;1970;mechanics;industrial_engineering;technical_efficiency;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010014;Chrysler Motors;T10304;7;1900;1970;mechanics;industrial_engineering;technical_efficiency;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010015;Lima Army Tank Plant;u38_t_lima;6;1940;1970;mechanics;technical_efficiency;munitions;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010016;Remington Arms;u38_t_remington;8;1930;1970;mechanics;artillery;general_equipment;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010017;Springfield Armory;T116;7;1819;1970;munitions;mechanics;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010018;Winchester Repeating Arms Co.;T119;7;1866;1970;general_equipment;mechanics;munitions;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010019;Ford Aerospace;u38_t_fordaero;7;1930;1970;technical_efficiency;aeronautics;avionics;aircraft_testing;rocketry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010020;Eastern Aircraft Division;u38_t_eastern;6;1930;1970;fighter_design;aeronautics;avionics;aircraft_testing;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010021;Douglas Aircraft Company;T103;7;1921;1970;bomber_design;aeronautics;avionics;mechanics;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010022;United Aircraft Corporation;u38_t_united;8;1925;1970;bomber_design;aeronautics;avionics;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010023;Portsmouth Naval Shipyard;u38_t_portsmouth;8;1890;1970;naval_engineering;technical_efficiency;electronics;naval_artillery;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010024;Norfolk Naval Shipyard;T112;7;1890;1970;naval_engineering;technical_efficiency;electronics;naval_artillery;carrier_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010025;Brooklyn Navy Yard;T110;9;1890;1970;naval_engineering;technical_efficiency;electronics;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010026;Philadelphia Naval Shipyard;T129;6;1890;1970;naval_engineering;naval_artillery;electronics;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010027;Douglas MacArthur;u38_t_macarthur;7;1936;1964;small_unit_tactics;centralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010028;Mark W. Clark;u38_t_clark;5;1939;1984;small_unit_tactics;decentralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010029;Pedro A. del Valle;u38_t_delvalle;8;1939;1978;small_unit_tactics;marine_training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010030;Ridgely Gaither;u38_t_gaither;6;1945;1970;small_unit_tactics;centralized_execution;airborne_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010031;Charles M. Cooke;u38_t_cooke;7;1939;1970;small_taskforce_tactics;submarine_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010032;John G. Crommelin;u38_t_crommelin;6;1939;1996;large_taskforce_tactics;carrier_tactics;centralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010033;Arthur W. Radford;u38_t_radford;8;1939;1973;large_taskforce_tactics;carrier_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010034;Frank O. Hunter;u38_t_hunter;7;1939;1982;centralized_execution;training;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010035;Curtis E. LeMay;u38_t_lemay;7;1939;1990;centralized_execution;bomber_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1010036;George E. Stratemeyer;u38_t_stratemeyer;6;1939;1969;decentralized_execution;bomber_tactics;training;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

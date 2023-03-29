@@ -1,0 +1,145 @@
+U73;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+1180001;Head of State;Aneurin Bevan;1933;1964;1999;LWR;Pig-headed Isolationist;High;M1021;X
+1180002;Head of Government;Oswald Mosley;1933;1964;1999;FA;Flamboyant Tough Guy;High;M1012;X
+1180003;Head of Government;Harry Pollitt;1933;1964;1999;LWR;Ambitious Union Boss;High;M1022;X
+1180004;Foreign Minister;William Joyce;1933;1964;1999;FA;General Staffer;Low;M1013;X
+1180005;Foreign Minister;Lord Arthur Wellesley;1939;1964;1999;FA;Great Compromiser;Low;3822;X
+1180006;Foreign Minister;Lord Josslyn Erroll;1940;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M1051;X
+1180007;Foreign Minister;Henry Williamson;1941;1964;1999;FA;Biased Intellectual;Medium;M1052;X
+1180008;Foreign Minister;Duke of Westminster;1942;1964;1999;FA;Apologetic Clerk;Medium;M1053;X
+1180009;Foreign Minister;Archibald Ramsay;1943;1964;1999;FA;Iron Fisted Brute;Medium;M1054;X
+1180010;Foreign Minister;Rajani Palme Dutt;1933;1964;1999;LWR;Biased Intellectual;Medium;M1023;X
+1180011;Foreign Minister;Phil Piratin;1940;1964;1999;ST;The Cloak N Dagger Schemer;Medium;M1056;X
+1180012;Foreign Minister;D.N. Pritt;1943;1964;1999;ST;Apologetic Clerk;Medium;M1057;X
+1180013;Foreign Minister;Dave Springhall;1944;1964;1999;LWR;Iron Fisted Brute;Medium;M1058;X
+1180014;Foreign Minister;Ian Mikardo;1945;1964;1999;LWR;Ideological Crusader;Medium;M1059;X
+1180015;Minister of Armament;Oswald Mosley;1933;1964;1999;FA;Planned economy proponent;Undying;M1012;X
+1180016;Minister of Armament;Alliott Vernon-Roe;1938;1964;1999;FA;Air to Ground Proponent;High;M1069;X
+1180017;Minister of Armament;Neil Francis-Hawkins;1939;1964;1999;FA;Submarine Proponent;High;M1070;X
+1180018;Minister of Armament;Alexander Raven-Thomson;1941;1964;1999;FA;Strategic Air Proponent;High;M1071;X
+1180019;Minister of Armament;Jorian Jenks;1942;1964;1999;FA;Battle Fleet Proponent;High;M1072;X
+1180020;Minister of Armament;A.J.P. Taylor;1944;1964;1999;FA;laissez-faire capitalist;High;M1073;X
+1180021;Minister of Armament;Stafford Cripps;1933;1964;1999;LWR;Mixed economy;Medium;M1024;X
+1180022;Minister of Armament;Leslie Solley;1938;1964;1999;ST;Resource Industrialist;Medium;M1075;X
+1180023;Minister of Armament;Arthur Horner;1940;1964;1999;ST;Administrative Genius;Medium;M1076;X
+1180024;Minister of Armament;Jack Gaster;1941;1964;1999;ST;Submarine Proponent;Medium;M1077;X
+1180025;Minister of Armament;Abe Moffatt;1942;1964;1999;LWR;Tank Proponent;Medium;M1078;X
+1180026;Minister of Armament;William Rust;1944;1964;1999;ST;Infantry Proponent;Medium;M1079;X
+1180027;Minister of Armament;Konnie Zilliacus;1945;1964;1999;LWR;Air Superiority Proponent;Medium;M1080;X
+1180028;Minister of Security;Arnold Spencer-Leese;1933;1964;1999;FA;Prince of Terror;Low;M1015;X
+1180029;Minister of Security;John Beckett;1940;1964;1999;FA;Compassionate Gentleman;Medium;M1091;X
+1180030;Minister of Security;Arthur Chesterton;1941;1964;1999;FA;Back Stabber;Medium;M1092;X
+1180031;Minister of Security;Jeffrey Hamm;1942;1964;1999;FA;Crime Fighter;Medium;M1093;X
+1180032;Minister of Security;Maxwell Knight;1943;1964;1999;FA;Secret police chief;Medium;M1094;X
+1180033;Minister of Security;Violet Lansbury;1933;1964;1999;ST;Prince of Terror;Medium;M1095;X
+1180034;Minister of Security;Lester Hutchinson;1938;1964;1999;ST;Back Stabber;Medium;M1096;X
+1180035;Minister of Security;John Platts-Mills;1933;1964;1999;LWR;Silent Lawyer;Medium;M1097;X
+1180036;Minister of Security;Sydney Silvermann;1941;1964;1999;ST;Man of the People;Medium;M1098;X
+1180037;Minister of Security;Barbara Castle;1945;1964;1999;LWR;Crime Fighter;Medium;M1099;X
+1180038;Minister of Security;Kim Philby;1946;1964;1999;ST;Secret police chief;Very High;M1025;X
+1180039;Head of Military Intelligence;S.P. James;1933;1964;1999;FA;Industrial Specialist;High;M1016;X
+1180040;Head of Military Intelligence;Sir Barry E. Domvile;1940;1964;1999;FA;Naval Intelligence Specialist;High;3817;X
+1180041;Head of Military Intelligence;Maxwell Knight;1942;1964;1999;FA;Logistics Specialist;Medium;M1094;X
+1180042;Head of Military Intelligence;John Amery;1944;1964;1999;FA;Dismal Enigma;Medium;M1110;X
+1180043;Head of Military Intelligence;William Gallacher;1933;1964;1999;LWR;Industrial Specialist;High;M1111;X
+1180044;Head of Military Intelligence;Christopher Hill;1941;1964;1999;ST;Naval Intelligence Specialist;High;M1112;X
+1180045;Head of Military Intelligence;Aneurin Bevan;1943;1964;1999;LWR;Dismal Enigma;High;M1021;X
+1180046;Head of Military Intelligence;Anthony Blunt;1945;1964;1999;LWR;Political Specialist;Very High;M1026;X
+1180047;Head of Military Intelligence;Kim Philby;1946;1964;1999;ST;Technical Specialist;Very High;M1105;X
+1180048;Chief of Staff;J.F.C. Fuller;1933;1964;1999;NS;School of Manoeuvre;Medium;3816;X
+1180049;Chief of Staff;Sir Barry E. Domvile;1939;1964;1999;FA;commando doctrine staff;High;3817;X
+1180050;Chief of Staff;Tom Wintringham;1933;1964;1999;ST;School of Mass Combat;High;M1027;X
+1180051;Chief of Army;J.F.C. Fuller;1933;1964;1999;NS;Armoured Spearhead Doctrine;Medium;3816;X
+1180052;Chief of Army;Bill Alexander;1933;1964;1999;ST;Static Defence Doctrine;High;M1028;X
+1180053;Chief of Navy;Sir Barry E. Domvile;1933;1964;1999;FA;Power Projection Doctrine;High;3817;X
+1180054;Chief of Navy;E.H. Cole;1942;1964;1999;NS;Open Seas Doctrine;High;M1143;X
+1180055;Chief of Navy;Fred Copeman;1933;1964;1999;ST;Indirect Approach Doctrine;High;M1029;X
+1180056;Chief of Navy;Harry Pollitt;1939;1964;1999;ST;Decisive Naval Battle Doctrine;High;M1022;X
+1180057;Chief of Air Force;Sir John Chamier;1933;1964;1999;FA;Vertical Envelopment Doctrine;High;M1020;X
+1180058;Chief of Air Force;Lord Williams Sempill;1939;1964;1999;FA;Carpet Bombing Doctrine;High;M1152;X
+1180059;Chief of Air Force;Donald Marendaz;1941;1964;1999;FA;Air Superiority Doctrine;High;M1153;X
+1180060;Chief of Air Force;Railton Freeman;1943;1964;1999;FA;Naval Aviation Doctrine;High;M1154;X
+1180061;Chief of Air Force;John Strachey;1933;1964;1999;ST;Carpet Bombing Doctrine;High;M1030;X
+1180062;Head of State;Duke of Westminster;1942;1964;1999;SC;Pig-headed Isolationist;Medium;M1053;X
+1180063;Head of State;Archibald Ramsay;1943;1964;1999;SC;Pig-headed Isolationist;Medium;M1054;X
+1180064;Head of State;Duke of Westminster;1942;1964;1999;PA;Pig-headed Isolationist;Medium;M1053;X
+1180065;Head of State;Archibald Ramsay;1943;1964;1999;PA;Pig-headed Isolationist;Medium;M1054;X
+1180066;Head of State;Duke of Westminster;1942;1964;1999;LE;Pig-headed Isolationist;Medium;M1053;X
+1180067;Head of State;Archibald Ramsay;1943;1964;1999;LE;Pig-headed Isolationist;Medium;M1054;X
+1180068;Head of State;Aneurin Bevan;1933;1964;1999;SL;Pig-headed Isolationist;High;M1021;X
+1180069;Head of Government;Oswald Mosley;1933;1964;1999;SC;Flamboyant Tough Guy;High;M1012;X
+1180070;Head of Government;Harry Pollitt;1933;1964;1999;SL;Ambitious Union Boss;High;M1022;X
+1180071;Foreign Minister;William Joyce;1933;1964;1999;SC;General Staffer;Low;M1013;X
+1180072;Foreign Minister;Lord Arthur Wellesley;1939;1964;1999;SC;Great Compromiser;Low;3822;X
+1180073;Foreign Minister;Lord Josslyn Erroll;1940;1964;1999;SC;The Cloak N Dagger Schemer;Medium;M1051;X
+1180074;Foreign Minister;Henry Williamson;1941;1964;1999;SC;Biased Intellectual;Medium;M1052;X
+1180075;Foreign Minister;Duke of Westminster;1942;1964;1999;SC;Apologetic Clerk;Medium;M1053;X
+1180076;Foreign Minister;Archibald Ramsay;1943;1964;1999;SC;Iron Fisted Brute;Medium;M1054;X
+1180077;Foreign Minister;Rajani Palme Dutt;1933;1964;1999;SL;Biased Intellectual;Medium;M1023;X
+1180078;Foreign Minister;Phil Piratin;1940;1964;1999;SL;The Cloak N Dagger Schemer;Medium;M1056;X
+1180079;Foreign Minister;D.N. Pritt;1943;1964;1999;SL;Apologetic Clerk;Medium;M1057;X
+1180080;Foreign Minister;Dave Springhall;1944;1964;1999;SL;Iron Fisted Brute;Medium;M1058;X
+1180081;Foreign Minister;Ian Mikardo;1945;1964;1999;SL;Ideological Crusader;Medium;M1059;X
+1180082;Minister of Armament;Oswald Mosley;1933;1964;1999;SC;Resource Industrialist;Undying;M1012;X
+1180083;Minister of Armament;Alliott Vernon-Roe;1938;1964;1999;SC;Air to Ground Proponent;High;M1069;X
+1180084;Minister of Armament;Neil Francis-Hawkins;1939;1964;1999;SC;Submarine Proponent;High;M1070;X
+1180085;Minister of Armament;Alexander Raven-Thomson;1941;1964;1999;SC;Strategic Air Proponent;High;M1071;X
+1180086;Minister of Armament;Jorian Jenks;1942;1964;1999;SC;Battle Fleet Proponent;High;M1072;X
+1180087;Minister of Armament;A.J.P. Taylor;1944;1964;1999;SC;laissez-faire capitalist;High;M1073;X
+1180088;Minister of Armament;Stafford Cripps;1933;1964;1999;SL;Air to Ground Proponent;Medium;M1024;X
+1180089;Minister of Armament;Leslie Solley;1938;1964;1999;SL;Resource Industrialist;Medium;M1075;X
+1180090;Minister of Armament;Arthur Horner;1940;1964;1999;SL;Planned economy proponent;Medium;M1076;X
+1180091;Minister of Armament;Jack Gaster;1941;1964;1999;SL;Submarine Proponent;Medium;M1077;X
+1180092;Minister of Armament;Abe Moffatt;1942;1964;1999;SL;Tank Proponent;Medium;M1078;X
+1180093;Minister of Armament;William Rust;1944;1964;1999;SL;Infantry Proponent;Medium;M1079;X
+1180094;Minister of Armament;Konnie Zilliacus;1945;1964;1999;SL;Air Superiority Proponent;Medium;M1080;X
+1180095;Minister of Security;Arnold Spencer-Leese;1933;1964;1999;SC;Prince of Terror;Low;M1015;X
+1180096;Minister of Security;John Beckett;1940;1964;1999;SC;Compassionate Gentleman;Medium;M1091;X
+1180097;Minister of Security;Arthur Chesterton;1941;1964;1999;SC;Back Stabber;Medium;M1092;X
+1180098;Minister of Security;Jeffrey Hamm;1942;1964;1999;SC;Crime Fighter;Medium;M1093;X
+1180099;Minister of Security;Maxwell Knight;1943;1964;1999;SC;Secret police chief;Medium;M1094;X
+1180100;Minister of Security;Violet Lansbury;1933;1964;1999;SL;Prince of Terror;Medium;M1095;X
+1180101;Minister of Security;Lester Hutchinson;1938;1964;1999;SL;Back Stabber;Medium;M1096;X
+1180102;Minister of Security;John Platts-Mills;1933;1964;1999;SL;Silent Lawyer;Medium;M1097;X
+1180103;Minister of Security;Sydney Silvermann;1941;1964;1999;SL;Man of the People;Medium;M1098;X
+1180104;Minister of Security;Barbara Castle;1945;1964;1999;SL;Crime Fighter;Medium;M1099;X
+1180105;Minister of Security;Kim Philby;1946;1964;1999;SL;Secret police chief;Very High;M1025;X
+1180106;Head of Military Intelligence;S.P. James;1933;1964;1999;SC;Industrial Specialist;High;M1016;X
+1180107;Head of Military Intelligence;Sir Barry E. Domvile;1940;1964;1999;SC;Naval Intelligence Specialist;High;3817;X
+1180108;Head of Military Intelligence;Maxwell Knight;1942;1964;1999;SC;Logistics Specialist;Medium;M1094;X
+1180109;Head of Military Intelligence;John Amery;1944;1964;1999;SC;Dismal Enigma;Medium;M1110;X
+1180110;Head of Military Intelligence;William Gallacher;1933;1964;1999;SL;Industrial Specialist;High;M1111;X
+1180111;Head of Military Intelligence;Christopher Hill;1941;1964;1999;SL;Naval Intelligence Specialist;High;M1112;X
+1180112;Head of Military Intelligence;Aneurin Bevan;1943;1964;1999;SL;Dismal Enigma;High;M1021;X
+1180113;Head of Military Intelligence;Anthony Blunt;1945;1964;1999;SL;Political Specialist;Very High;M1026;X
+1180114;Head of Military Intelligence;Kim Philby;1946;1964;1999;SL;Technical Specialist;Very High;M1105;X
+1180115;Chief of Staff;J.F.C. Fuller;1933;1964;1999;SC;School of Manoeuvre;Medium;3816;X
+1180116;Chief of Staff;Sir Barry E. Domvile;1939;1964;1999;SC;commando doctrine staff;High;3817;X
+1180117;Chief of Staff;Tom Wintringham;1933;1964;1999;SL;School of Mass Combat;High;M1027;X
+1180118;Chief of Army;J.F.C. Fuller;1933;1964;1999;SC;Armoured Spearhead Doctrine;Medium;3816;X
+1180119;Chief of Army;Bill Alexander;1933;1964;1999;SL;Static Defence Doctrine;High;M1028;X
+1180120;Chief of Navy;Sir Barry E. Domvile;1933;1964;1999;SC;Power Projection Doctrine;High;3817;X
+1180121;Chief of Navy;E.H. Cole;1942;1964;1999;SC;Open Seas Doctrine;High;M1143;X
+1180122;Chief of Navy;Fred Copeman;1933;1964;1999;SL;Indirect Approach Doctrine;High;M1029;X
+1180123;Chief of Navy;Harry Pollitt;1939;1964;1999;SL;Decisive Naval Battle Doctrine;High;M1022;X
+1180124;Chief of Air Force;Sir John Chamier;1933;1964;1999;SC;Vertical Envelopment Doctrine;High;M1020;X
+1180125;Chief of Air Force;Lord Williams Sempill;1939;1964;1999;SC;Carpet Bombing Doctrine;High;M1152;X
+1180126;Chief of Air Force;Donald Marendaz;1941;1964;1999;SC;Air Superiority Doctrine;High;M1153;X
+1180127;Chief of Air Force;Railton Freeman;1943;1964;1999;SC;Naval Aviation Doctrine;High;M1154;X
+1180128;Chief of Air Force;John Strachey;1933;1964;1999;SL;Carpet Bombing Doctrine;High;M1030;X
+1180129;Minister of Security;Dr Franz Alfred Six;1939;1964;1999;NS;Prince of Terror;High;5906;X
+1180130;Chief of Staff;Dr Franz Alfred Six;1941;1964;1999;NS;School of Manoeuvre;High;5906;X
+1180131;Foreign Minister;Henry Hamilton Beamish;1933;1947;1999;NS;The Cloak N Dagger Schemer;Low;8560;X
+1180132;Foreign Minister;Robert C. G. Canning;1935;1964;1999;FA;Biased Intellectual;Medium;8561;X
+1180133;Minister of Security;Norah Dacre Fox;1937;1964;1999;FA;Efficient Sociopath;Medium;8562;X
+1180134;Foreign Minister;Neil Francis-Hawkins;1943;1964;1999;FA;General Staffer;High;unknownminister;X
+1180135;Foreign Minister;Arthur K. Chesterton;1942;1964;1999;FA;Biased Intellectual;Medium;8608;X
+1180136;Foreign Minister;John Angus Macnab;1939;1964;1999;FA;Great Compromiser;High;8563;X
+1180137;Minister of Security;Gerard Vernon Wallop;1938;1964;1999;FA;Back Stabber;Medium;8564;X
+1180138;Chief of Staff;Adrian Carton;1943;1964;1999;ML;School of Manoeuvre;High;8565;X
+1180139;Foreign Minister;Adrian Carton;1943;1964;1999;ML;General Staffer;High;8565;X
+1180140;Chief of Staff;Harold Alexander;1940;1964;1999;SC;School of Psychology;Medium;unknownminister;X
+1180141;Chief of Staff;Claude J.E Auchinleck;1935;1964;1999;SL;School of Defence;High;unknownminister;X
+1180142;Chief of Army;Claude J.E Auchinleck;1941;1964;1999;SL;Decisive Battle Doctrine;High;unknownminister;X
+1180143;Chief of Air Force;John C. Slessor;1945;1964;1999;ML;Army Aviation Doctrine;High;unknownminister;X

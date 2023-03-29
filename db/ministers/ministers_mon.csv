@@ -1,0 +1,117 @@
+MON;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+300001;Head of State;Agdanbuugiyn Amar;1933;1964;1999;LE;Weary Stiffneck;High;M94001;X
+300002;Head of Government;Dogijavyn Luvsanshara;1933;1964;1999;LE;Happy Amateur;High;M94002;X
+300003;Foreign Minister;Peljidiyn Genden;1933;1964;1999;LE;Great Compromiser;Very High;M94003;X
+300004;Minister of Armament;Jambyn Lhümbe;1933;1964;1999;LE;Military Entrepreneur;Very High;M94004;X
+300005;Minister of Security;Jamtsangryin Damdinsüren;1933;1964;1999;LE;Efficient Sociopath;Very High;M94005;X
+300006;Head of Military Intelligence;Horloogiyn Choybalsan;1933;1964;1999;LE;Logistics Specialist;Very High;M94006;X
+300007;Chief of Staff;Chimid;1933;1964;1999;LE;School of Psychology;Very High;M94007;X
+300008;Chief of Army;Chimid;1933;1964;1999;LE;Elastic Defence Doctrine;Very High;M94007;X
+300009;Chief of Navy;V.G. Pyrselov;1933;1964;1999;LE;Open Seas Doctrine;Medium;M94009;X
+300010;Chief of Air Force;Ulanhu;1933;1964;1999;LE;Army Aviation Doctrine;Medium;M94010;X
+300011;Head of State;Yundunwangcug;1937;1964;1999;PA;Resigned Generalissimo;High;M94011;X
+300012;Head of State;Pai Yun-ti;1937;1964;1999;SD;Benevolent Gentleman;High;M94021;X
+300013;Head of State;Dansrabilegyin Dogsam;1937;1964;1999;LWR;Insignificant Layman;High;M94025;X
+300014;Head of State;Gomgchigryn Bumtsend;1940;1964;1999;ST;Powerhungry Demagogue;High;M94034;X
+300015;Head of State;Buma Tsende;1946;1964;1999;ST;Ruthless Powermonger;High;M94035;X
+300016;Head of Government;Demcuydungrub;1937;1964;1999;PA;Political Protege;High;M94012;X
+300017;Head of Government;Pai Yun-ti;1937;1964;1999;SD;Happy Amateur;High;M94021;X
+300018;Head of Government;Dashiyin Damba;1937;1964;1999;LWR;Smiling Oilman;High;M94038;X
+300019;Head of Government;Horloogiyn Choybalsan;1938;1964;1999;LWR;Old General;High;M94006;X
+300020;Head of Government;Horloogiyn Choybalsan;1940;1964;1999;ST;Old General;High;M94006;X
+300021;Head of Government;Jumdjaagijn Tsedenbal;1942;1964;1999;ST;Corporate Suit;High;M94041;X
+300022;Foreign Minister;Demcuydungrub;1937;1964;1999;PA;General Staffer;Very Low;M94012;X
+300023;Foreign Minister;Tsengubal Badrach;1937;1964;1999;SD;Apologetic Clerk;Medium;M94023;X
+300024;Foreign Minister;Dogijavyn Luvsanshara;1937;1964;1999;LE;Iron Fisted Brute;High;M94002;X
+300025;Foreign Minister;Banzarjavyn Baasanjav;1937;1964;1999;LWR;Biased Intellectual;High;M94045;X
+300026;Foreign Minister;Dashiyin Damba;1938;1964;1999;LWR;The Cloak N Dagger Schemer;High;M94038;X
+300027;Foreign Minister;Marcel Rosenberg;1940;1964;1999;ST;Biased Intellectual;Very High;M94047;X
+300028;Foreign Minister;Jumdjaagijn Tsedenbal;1941;1964;1999;ST;Iron Fisted Brute;Very High;M94041;X
+300029;Foreign Minister;Horloogiyn Choybalsan;1944;1964;1999;ST;General Staffer;Very High;M94049;X
+300030;Minister of Armament;Tsevelsodnom;1937;1964;1999;PA;Military Entrepreneur;Very High;M94014;X
+300031;Minister of Armament;Tsengubal Badrach;1937;1964;1999;LE;Air to Ground Proponent;Medium;M94023;X
+300032;Minister of Armament;Tsevelsodnom;1937;1964;1999;LWR;Military Entrepreneur;Very High;M94014;X
+300033;Minister of Armament;Zalbengryin Sereeter;1938;1964;1999;LWR;Theoretical Scientist;Medium;M94024;X
+300034;Minister of Armament;Battur;1940;1964;1999;ST;Air to Sea Proponent;Medium;M94055;X
+300035;Minister of Armament;Horloogiyn Choybalsan;1942;1964;1999;ST;Resource Industrialist;Very High;M94006;X
+300036;Minister of Armament;Jamsrangyin Sambuu;1944;1964;1999;ST;laissez-faire capitalist;High;M94057;X
+300037;Minister of Armament;Gomgchigryn Bumtsend;1946;1964;1999;ST;Military Entrepreneur;Very High;M94034;X
+300038;Minister of Armament;Sükhbaataryn Yanjmaa;1947;1964;1999;ST;Administrative Genius;Medium;M94020;X
+300039;Minister of Security;Buyanmandu;1937;1964;1999;PA;Prince of Terror;Low;M94015;X
+300040;Minister of Security;Dagva;1937;1964;1999;LE;Prince of Terror;Low;M94028;X
+300041;Minister of Security;Dansrabilegyin Dogsam;1937;1964;1999;LWR;Compassionate Gentleman;Medium;M94025;X
+300042;Minister of Security;Buyannmeh;1938;1964;1999;LWR;Silent Lawyer;Very Low;M94064;X
+300043;Minister of Security;Dashdoorov;1940;1964;1999;ST;Crooked Kleptocrat;High;M94065;X
+300044;Minister of Security;Jamsrangyin Sambuu;1942;1964;1999;ST;Back Stabber;High;M94057;X
+300045;Minister of Security;Mikhailovna Kollontay;1944;1964;1999;ST;Man of the People;Low;M94067;X
+300046;Minister of Security;Nyambuu;1946;1964;1999;ST;Crime Fighter;High;M94068;X
+300047;Head of Military Intelligence;Ichinhorloo;1937;1964;1999;PA;Logistics Specialist;Medium;M94016;X
+300048;Head of Military Intelligence;Dogijavyn Luvsanshara;1937;1964;1999;SD;Logistics Specialist;Low;M94002;X
+300049;Head of Military Intelligence;Dorgijavyn Luvsansambuu;1937;1964;1999;LE;Political Specialist;Medium;M94071;X
+300050;Head of Military Intelligence;Ichinhorloo;1937;1964;1999;LWR;Logistics Specialist;Medium;M94016;X
+300051;Head of Military Intelligence;Dashnyam;1938;1964;1999;LWR;Logistics Specialist;Medium;M94073;X
+300052;Head of Military Intelligence;Nyambuu;1940;1964;1999;ST;Industrial Specialist;High;M94068;X
+300053;Head of Military Intelligence;Dashdorj;1942;1964;1999;ST;Political Specialist;High;M94075;X
+300054;Head of Military Intelligence;Dashzegve;1944;1964;1999;ST;Logistics Specialist;High;M94076;X
+300055;Head of Military Intelligence;Buyannmeh;1946;1964;1999;ST;Naval Intelligence Specialist;Very High;M94064;X
+300056;Chief of Staff;Lee Shou-hsin;1937;1964;1999;PA;School of Mass Combat;Medium;M94017;X
+300057;Chief of Staff;Pai Yun-ti;1937;1964;1999;SD;School of Defence;Medium;M94021;X
+300058;Chief of Staff;Horloogiyn Choybalsan;1937;1964;1999;LWR;School of Manoeuvre;Very High;M94081;X
+300059;Chief of Staff;Ölziytrygyn Badrak;1938;1964;1999;LWR;School of Defence;Very High;M94082;X
+300060;Chief of Staff;Buma Tsende;1940;1964;1999;ST;School of Defence;Very High;M94035;X
+300061;Chief of Army;Lee Shou-hsin;1937;1964;1999;PA;Guns and Butter Doctrine;Medium;M94017;X
+300062;Chief of Army;Dagva;1937;1964;1999;SD;Guns and Butter Doctrine;Medium;M94028;X
+300063;Chief of Army;Ölziytrygyn Badrak;1937;1964;1999;LWR;Static Defence Doctrine;Very High;M94082;X
+300064;Chief of Army;Horloogiyn Choybalsan;1938;1964;1999;LWR;Guns and Butter Doctrine;Very High;M94049;X
+300065;Chief of Navy;Yundunwangcug;1937;1964;1999;PA;Open Seas Doctrine;Medium;M94011;X
+300066;Chief of Navy;Haidav;1937;1964;1999;LE;Power Projection Doctrine;Medium;M94093;X
+300067;Chief of Navy;Ganbaatar;1937;1964;1999;LWR;Base Control Doctrine;Medium;M94029;X
+300068;Chief of Navy;Gomgchigryn Bumtsend;1940;1964;1999;ST;Base Control Doctrine;Very High;M94034;X
+300069;Chief of Navy;Dashdorj;1942;1964;1999;ST;Indirect Approach Doctrine;High;M94075;X
+300070;Chief of Air Force;Sükhbaataryn Yanjmaa;1937;1964;1999;PA;Naval Aviation Doctrine;Medium;M94020;X
+300071;Chief of Air Force;Haidav;1937;1964;1999;LE;Naval Aviation Doctrine;Medium;M94093;X
+300072;Chief of Air Force;Ganbaatar;1937;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M94029;X
+300073;Chief of Air Force;Sükhbaataryn Yanjmaa;1940;1964;1999;ST;Naval Aviation Doctrine;Medium;M94020;X
+300074;Chief of Air Force;Gomgchigryn Bumtsend;1942;1964;1999;ST;Vertical Envelopment Doctrine;Very High;M94034;X
+300075;Chief of Air Force;Buyannmeh;1944;1964;1999;ST;Carpet Bombing Doctrine;Very High;M94064;X
+300076;Chief of Army;Ja Lama Dambijanstan;1914;1933;1999;PA;Guns and Butter Doctrine;Medium;2852;X
+300077;Chief of Army;Khatanbaatar Magsarjav;1914;1933;1999;PA;elastic defence doctrine;Medium;unknownminister;X
+300078;Chief of Army;Sukhe Bator;1920;1933;1999;ST;Decisive Battle Doctrine;Very High;2853;X
+300079;Chief of Army;Roman von Ungern-Sternberg;1920;1933;1999;PA;Decisive Battle Doctrine;Very High;2854;X
+300080;Chief of Army;Khatanbaatar Magsarjav;1922;1933;1999;ST;elastic defence doctrine;Medium;unknownminister;X
+300081;Chief of Army;Horloyn Choybalsan;1923;1933;1999;ST;Decisive Battle Doctrine;Very High;2855;X
+300082;Chief of Staff;Ja Lama Dambijanstan;1914;1933;1999;PA;School of Mass Combat;Medium;2852;X
+300083;Chief of Staff;Khatanbaatar Magsarjav;1914;1933;1999;PA;school of defence;Medium;unknownminister;X
+300084;Chief of Staff;Sukhe Bator;1920;1933;1999;ST;School of Mass Combat;Very High;2853;X
+300085;Chief of Staff;Roman von Ungern-Sternberg;1920;1933;1999;PA;School of Manoeuvre;Very High;2854;X
+300086;Chief of Staff;Horloyn Choybalsan;1923;1933;1999;ST;School of Psychology;Very High;2855;X
+300087;Foreign Minister;Tserenchimit;1914;1933;1999;PA;Great Compromiser;Very High;unknownminister;X
+300088;Foreign Minister;Tögs-Ochiryn Namnansüren;1914;1933;1999;PA;Biased Intellectual;Very High;2856;X
+300089;Foreign Minister;Manlaibaatar Damdinsüren;1914;1933;1999;PA;General Staffer;Very High;unknownminister;X
+300090;Foreign Minister;Da Lama Ravdan;1914;1933;1999;PA;Great Compromiser;Very High;unknownminister;X
+300091;Foreign Minister;Da Lama Shanzav Badamdorji;1915;1933;1999;PA;Great Compromiser;Very High;2857;X
+300092;Foreign Minister;Khatan Baatar Maksarjav;1919;1933;1999;PA;iron fisted brute;Very High;unknownminister;X
+300093;Foreign Minister;Sodomyn Damdinbazar;1919;1933;1999;PA;Biased Intellectual;Very High;2858;X
+300094;Foreign Minister;Dogsomyn Bodoo;1920;1933;1999;ST;General Staffer;Very High;2859;X
+300095;Foreign Minister;Ferdynand Ossendowski;1920;1933;1999;PA;Ideological Crusader;Very High;2860;X
+300096;Foreign Minister;Balingiin Tserendorj;1922;1933;1999;ST;Biased Intellectual;Very High;2861;X
+300097;Head of Government;Tögs-Ochiryn Namnansüren;1912;1933;1999;PA;Silent Workhorse;Very High;2856;X
+300098;Head of Government;Da Lama Shanzav Badamdorji;1915;1933;1999;PA;Silent Workhorse;Very High;2857;X
+300099;Head of Government;Khatan Baatar Maksarjav;1919;1933;1999;PA;Backroom Backstabber;Very High;unknownminister;X
+300100;Head of Government;Dogsomyn Bodoo;1920;1933;1999;ST;Old General;Very High;2859;X
+300101;Head of Government;Roman von Ungern-Sternberg;1920;1933;1999;PA;Happy Amateur;Very High;2854;X
+300102;Head of Government;Sodomyn Damdinbazar;1920;1933;1999;PA;Silent Workhorse;Very High;2858;X
+300103;Head of Government;Sodnomyn Damdinbazar;1922;1933;1999;ST;Silent Workhorse;Very High;2858;X
+300104;Head of Government;Balingiin Tserendorj;1923;1933;1999;ST;Happy Amateur;Very High;2861;X
+300105;Head of Military Intelligence;Ja Lama Dambijanstan;1914;1933;1999;PA;Dismal Enigma;Very High;2852;X
+300106;Head of Military Intelligence;Khatanbaatar Magsarjav;1914;1933;1999;PA;Logistics Specialist;Very High;unknownminister;X
+300107;Head of Military Intelligence;Sukhe Bator;1920;1933;1999;ST;Dismal Enigma;Very High;2853;X
+300108;Head of Military Intelligence;Ferdynand Ossendowski;1920;1933;1999;PA;Dismal Enigma;Very High;2860;X
+300109;Head of Military Intelligence;Horloogiyn Dandzan;1922;1933;1999;ST;Logistics Specialist;Very High;unknownminister;X
+300110;Head of State;Bogd Kahn;1914;1933;1999;PA;Stern Imperialist;Very High;2862;X
+300111;Head of State;Bogd Khan;1920;1933;1999;ST;Weary Stiffneck;Very High;2862;X
+300112;Head of State;Balingiin Tserendorj;1924;1933;1999;ST;Weary Stiffneck;Very High;2861;X
+300113;Head of State;Navaandorjiin Jadambaa;1924;1933;1999;ST;Weary Stiffneck;Very High;unknownminister;X
+300114;Minister of Security;Bogd Kahn;1914;1933;1999;PA;Man of the People;Very High;2862;X
+300115;Minister of Security;Sodnomyn Damdinbazar;1914;1933;1999;PA;Crime Fighter;Very High;2858;X

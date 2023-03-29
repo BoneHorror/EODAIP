@@ -1,0 +1,1041 @@
+#### 100-106  SOV  Barbarossa
+#########################################################################
+#  Barbarossa
+#########################################################################
+event = {
+	id = 100
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		war = { country = SOV country = GER }
+		NOT = { difficulty = 2 }
+		OR = { 
+			NOT = { ai = GER } 
+			AND = { ai = GER lost_national = { country = SOV value = 10 } } 
+		}
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { trigger = { control = { province = 572 data = SOV } } type = activate_division which = 10848 value = 300 where = 572 when = 0 } # Moscow
+		command = { trigger = { control = { province = 572 data = SOV } } type = activate_division which = 10848 value = 301 where = 572 when = 0 } # Moscow
+		command = { trigger = { control = { province = 572 data = SOV } } type = activate_division which = 10848 value = 302 where = 572 when = 0 } # Moscow
+		command = { trigger = { control = { province = 553 data = SOV } } type = activate_division which = 10848 value = 303 where = 553 when = 0 } # Leningrad
+		command = { trigger = { control = { province = 553 data = SOV } } type = activate_division which = 10848 value = 304 where = 553 when = 0 } # Leningrad
+		command = { trigger = { control = { province = 553 data = SOV } } type = activate_division which = 10848 value = 305 where = 553 when = 0 } # Leningrad
+		command = { trigger = { control = { province = 663 data = SOV } } type = activate_division which = 10848 value = 306 where = 663 when = 0 } # Stalingrad
+		command = { trigger = { control = { province = 663 data = SOV } } type = activate_division which = 10848 value = 307 where = 663 when = 0 } # Stalingrad
+		command = { trigger = { control = { province = 663 data = SOV } } type = activate_division which = 10848 value = 308 where = 663 when = 0 } # Stalingrad
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 309 where = 641 when = 0 } # Stevastopol
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 310 where = 641 when = 0 } # Stevastopol
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 311 where = 641 when = 0 } # Stevastopol
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 312 where = 644 when = 0 } # Rostov
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 313 where = 644 when = 0 } # Rostov
+		command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 314 where = 644 when = 0 } # Rostov
+		# command = { trigger = { control = { province = 641 data = SOV } } type = activate_division which = 10848 value = 315 - 317 where = 644 when = 0 } # Rostov
+		command = { trigger = { control = { province = 553 } } type = construct which = land_fort where = 553 value = 1 } # Leningrad
+		command = { trigger = { control = { province = 247 } } type = construct which = land_fort where = 247 value = 3 } # Brest Litovsk
+		command = { trigger = { control = { province = 617 } } type = construct which = land_fort where = 617 value = 3 } # Kiev
+		command = { trigger = { control = { province = 599 } } type = construct which = land_fort where = 599 value = 3 } # Minsk
+		command = { trigger = { control = { province = 589 } } type = construct which = land_fort where = 589 value = 3 } # Smolensk
+		command = { trigger = { control = { province = 576 } } type = construct which = land_fort where = 576 value = 3 } # Kaluga
+		command = { trigger = { control = { province = 584 } } type = construct which = land_fort where = 584 value = 3 } # Tula
+		command = { trigger = { control = { province = 636 } } type = construct which = land_fort where = 636 value = 3 } # Kharkov
+		command = { trigger = { control = { province = 604 } } type = construct which = land_fort where = 604 value = 3 } # Kursk
+		command = { trigger = { control = { province = 644 } } type = construct which = land_fort where = 644 value = 3 } # Rostov
+      	command = { type = free_oil value = 12 }
+		command = { type = morale which = land value = 1 }
+		command = { trigger = { difficulty = 4 } type = morale which = air value = 10 }
+		command = { trigger = { difficulty = 4 } type = free_ic value = 20 }
+	  	command = { type = frozen_move which = land value = 6 }
+      	command = { type = frozen_attack which = land value = 6 }
+      	command = { type = frozen_defense which = land value = 9 }
+      	command = { type = snow_move which = land value = 5 }
+      	command = { type = snow_attack which = land value = 5 }
+      	command = { type = snow_defense which = land value = 8 }
+      	command = { type = forest_move which = land value = 1 }
+      	command = { type = forest_attack which = land value = 1 }
+     	command = { type = forest_defense which = land value = 2 }
+      	command = { type = muddy_move which = land value = 3 }
+      	command = { type = muddy_attack which = land value = 2 }
+      	command = { type = muddy_defense which = land value = 4 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 8 }
+		command = { type = activate_division which = 10848 value = 5554 where = 659 when = 0 }
+		command = { type = activate_division which = 10848 value = 5555 where = 659 when = 0 }
+		command = { type = activate_division which = 10848 value = 5556 where = 659 when = 0 }
+		command = { type = lock_division which = 10848 value = 5554 }	
+		command = { type = lock_division which = 10848 value = 5555 }	
+		command = { type = lock_division which = 10848 value = 5556 }
+		command = { type = activate_division which = 10848 value = 5557 where = 553 when = 0 }
+		command = { type = activate_division which = 10848 value = 5558 where = 553 when = 0 }
+		command = { type = activate_division which = 10848 value = 5559 where = 553 when = 0 }
+		command = { type = lock_division which = 10848 value = 5557 }	
+		command = { type = lock_division which = 10848 value = 5558 }	
+		command = { type = lock_division which = 10848 value = 5559 }
+		command = { type = activate_division which = 10848 value = 5560 where = 572 when = 0 }
+		command = { type = activate_division which = 10848 value = 5561 where = 572 when = 0 }
+		command = { type = activate_division which = 10848 value = 5562 where = 572 when = 0 }
+		command = { type = activate_division which = 10848 value = 5563 where = 572 when = 0 }
+		command = { type = activate_division which = 10848 value = 5564 where = 572 when = 0 }
+		command = { type = lock_division which = 10848 value = 5560 }	
+		command = { type = lock_division which = 10848 value = 5561 }	
+		command = { type = lock_division which = 10848 value = 5562 }	
+		command = { type = lock_division which = 10848 value = 5563 }	
+		command = { type = lock_division which = 10848 value = 5564 }
+	}
+}
+event = {
+	id = 101
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		war = { country = SOV country = GER }
+		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 15 } } AND = { ai = GER lost_national = { country = SOV value = 20 } } }
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action = {
+	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+		command = { type = morale which = land value = 5 }
+      	command = { type = mountain_move which = land value = 2 }
+      	command = { type = mountain_attack which = land value = 2 }
+      	command = { type = mountain_defense which = land value = 2 }
+      	command = { type = hill_move which = land value = 2 }
+      	command = { type = hill_attack which = land value = 2 }
+      	command = { type = hill_defense which = land value = 2 }
+	}
+}
+event = {
+	id = 102
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		war = { country = SOV country = GER }
+		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 20 } } AND = { ai = GER lost_national = { country = SOV value = 25 } } }
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = armor when = 1 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 5 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 5 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = interceptor when = 9 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = interceptor when = 9 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = interceptor when = 9 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = interceptor when = 9 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = cas when = 2 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = cas when = 2 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = cas when = 2 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = cas when = 2 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 7 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 7 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 7 }
+	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = tactical_bomber when = 7 }
+	}
+}
+event = {
+	id = 103
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		war = { country = SOV country = GER }
+		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 30 } } AND = { ai = GER lost_national = { country = SOV value = 30 } } }
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = industrial_modifier which = ic value = 5 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = morale which = land value = 1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = morale which = air value = 1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = counterattack value = 1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = assault value = 2 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = ambush value = 2 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = breakthrough value = 2 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = encirclement value = 2 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = hq_supply_eff value = 1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = sce_frequency value = 0.1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = attrition_mod value = 1 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = trickleback_mod value = 1 }
+	}
+}	
+
+########################
+# Great Patriotic War Speech
+event = {
+	id = 9300274
+	random = no
+	country = SOV
+
+	trigger = { event = 9300273 war = { country = GER country = SOV } } # Stalin's Surprise
+
+	name = 9300274name
+	desc = 9300274desc
+	style = 2
+	picture = "Stalin_Order"
+
+        date = { day = 1 month = january year = 1933 }
+        offset = 5
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action = { trigger = { NOT = { ai = GER } ai = yes }
+		name = ACTION_NAME_OK
+		command = { type = ground_def_eff value = 0.3 when = 1 } 
+		command = { type = task_efficiency which = attack value = 0.5 } 
+		command = { type = max_organization which = land value = 5 }
+		command = { type = dissent value = -20 }
+		command = { trigger = { local_flag = Barbarossa_easy } type = wartime_ic_mod value = 20 }
+		command = { trigger = { local_flag = Barbarossa_normal } type = wartime_ic_mod value = 25 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = wartime_ic_mod value = 40 }
+		command = { type = peacetime_ic_mod value = 30 } # Clear the starting penalty for post WWII play
+		command = { type = songs which = StalinJuly1941.txt }
+	}
+	action = { trigger = { OR = { ai = GER ai = no } }
+		name = ACTION_NAME_OK
+		command = { type = ground_def_eff value = 0.25 when = 1 } 
+		command = { type = task_efficiency which = attack value = 0.5 }
+		command = { type = max_organization which = land value = 5 }
+		command = { type = dissent value = -15 }
+		command = { type = wartime_ic_mod value = 25 }
+		command = { type = peacetime_ic_mod value = 30 } # Clear the starting penalty for post WWII play
+		command = { type = songs which = StalinJuly1941.txt }
+		command = { type = war which = LIT }
+		command = { type = war which = EST }
+	}
+}
+################################
+# China AI Help
+################################
+event = {
+	id = 104
+	random = no
+	country = CHI
+
+	name = "AI_EVENT"
+
+	trigger = {
+	war = { country = CHI country = JAP }
+	NOT = { exists = CSX }
+	ai = CHI
+	NOT = { ai = JAP }	
+}
+
+	date = { day = 1 month = february year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = august year = 1939 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+	  	command = { type = construct which = land_fort where = 1320 value = 5 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1320 }
+		command = { type = activate_division which = 22000 value = 997 where = 1320 when = 0 }
+		command = { type = activate_division which = 22000 value = 996 where = 1320 when = 0 }
+		command = { type = activate_division which = 22000 value = 995 where = 1320 when = 0 }
+		command = { type = activate_division which = 22000 value = 994 where = 1320 when = 0 }
+		command = { type = activate_division which = 22000 value = 993 where = 1320 when = 0 }
+		command = { type = lock_division which = 22000 value = 997 }
+		command = { type = lock_division which = 22000 value = 996 }
+		command = { type = lock_division which = 22000 value = 995 }
+		command = { type = lock_division which = 22000 value = 994 }
+		command = { type = lock_division which = 22000 value = 993 }
+
+	  	command = { type = construct which = land_fort where = 1324 value = 5 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1324 }
+		command = { type = activate_division which = 22000 value = 992 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 991 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 990 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 989 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 988 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 964 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 963 where = 1324 when = 0 }
+		command = { type = activate_division which = 22000 value = 962 where = 1324 when = 0 }
+		command = { type = lock_division which = 22000 value = 992 }
+		command = { type = lock_division which = 22000 value = 991 }
+		command = { type = lock_division which = 22000 value = 990 }
+		command = { type = lock_division which = 22000 value = 989 }
+		command = { type = lock_division which = 22000 value = 988 }
+
+	  	command = { type = construct which = land_fort where = 1319 value = 3 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1319 }
+		command = { type = activate_division which = 22000 value = 987 where = 1319 when = 0 }
+		command = { type = activate_division which = 22000 value = 986 where = 1319 when = 0 }
+		command = { type = activate_division which = 22000 value = 985 where = 1319 when = 0 }
+		command = { type = activate_division which = 22000 value = 984 where = 1319 when = 0 }
+		command = { type = activate_division which = 22000 value = 983 where = 1319 when = 0 }
+		command = { type = lock_division which = 22000 value = 987 }
+		command = { type = lock_division which = 22000 value = 986 }
+		command = { type = lock_division which = 22000 value = 985 }
+		command = { type = lock_division which = 22000 value = 984 }
+		command = { type = lock_division which = 22000 value = 983 }
+
+	  	command = { type = construct which = land_fort where = 1257 value = 5 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1257 }
+		command = { type = activate_division which = 22000 value = 982 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 981 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 980 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 979 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 978 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 961 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 960 where = 1257 when = 0 }
+		command = { type = activate_division which = 22000 value = 959 where = 1257 when = 0 }
+		command = { type = lock_division which = 22000 value = 982 }
+		command = { type = lock_division which = 22000 value = 981 }
+		command = { type = lock_division which = 22000 value = 980 }
+		command = { type = lock_division which = 22000 value = 979 }
+		command = { type = lock_division which = 22000 value = 978 }
+
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 977 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 976 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 975 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 974 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 973 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 972 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 971 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 970 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 969 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 968 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 967 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 966 where = 1337 when = 0 }
+		command = { trigger = { NOT = { ai = JAP } }  type = activate_division which = 22000 value = 965 where = 1337 when = 0 }
+		command = { type = province_keypoints which = 1261 value = 1 }
+		command = { type = province_keypoints which = 1297 value = 1 }
+		command = { type = province_keypoints which = 1298 value = 1 }
+		command = { type = province_keypoints which = 1300 value = 1 }
+		command = { type = province_keypoints which = 1303 value = 1 }
+		command = { type = province_keypoints which = 1381 value = 1 }
+		command = { type = province_keypoints which = 1376 value = 1 }
+		command = { type = province_keypoints which = 1267 value = 1 }
+		command = { type = province_keypoints which = 1302 value = 1 }
+		command = { type = province_keypoints which = 1299 value = 1 }
+		command = { type = province_keypoints which = 1304 value = 1 }
+		command = { type = province_keypoints which = 1305 value = 1 }
+		command = { type = province_keypoints which = 1382 value = 1 }
+		command = { type = province_keypoints which = 1379 value = 1 }
+		command = { type = province_keypoints which = 1374 value = 1 }
+		command = { type = province_keypoints which = 1301 value = 1 }
+		command = { type = province_keypoints which = 1307 value = 1 }
+		command = { type = province_keypoints which = 1306 value = 1 }
+		command = { type = province_keypoints which = 1380 value = 1 }
+		command = { type = province_keypoints which = 1383 value = 1 }
+		command = { type = province_keypoints which = 1310 value = 1 }
+		command = { type = province_keypoints which = 1312 value = 1 }
+		command = { type = province_keypoints which = 1378 value = 1 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+	  	command = { trigger = { NOT = { ai = JAP } } type = add_division value = militia when = 4 }
+		command = { trigger = { NOT = { ai = JAP } } type = industrial_modifier which = ic value = 15 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { type = build_division which = militia when = 6 cost = -0.1 where = 9 }
+		command = { trigger = { ai = JAP } type = industrial_modifier which = ic value = 10 }
+		command = { type = supplies value = 200000 }
+
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1310 }
+		command = { type = activate_division which = 22000 value = 956 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 955 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 954 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 953 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 952 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 951 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 950 where = 1310 when = 0 }
+		command = { type = activate_division which = 22000 value = 949 where = 1310 when = 0 }
+		command = { type = lock_division which = 22000 value = 956 }
+		command = { type = lock_division which = 22000 value = 955 }
+		command = { type = lock_division which = 22000 value = 954 }
+		command = { type = lock_division which = 22000 value = 953 }
+		command = { type = lock_division which = 22000 value = 952 }
+		command = { type = lock_division which = 22000 value = 951 }
+		command = { type = lock_division which = 22000 value = 950 }
+		command = { type = lock_division which = 22000 value = 949 }
+
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1309 }
+		command = { type = activate_division which = 22000 value = 948 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 947 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 946 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 945 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 944 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 943 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 942 where = 1309 when = 0 }
+		command = { type = activate_division which = 22000 value = 941 where = 1309 when = 0 }
+		command = { type = lock_division which = 22000 value = 948 }
+		command = { type = lock_division which = 22000 value = 947 }
+		command = { type = lock_division which = 22000 value = 946 }
+		command = { type = lock_division which = 22000 value = 945 }
+		command = { type = lock_division which = 22000 value = 944 }
+		command = { type = lock_division which = 22000 value = 943 }
+		command = { type = lock_division which = 22000 value = 942 }
+		command = { type = lock_division which = 22000 value = 941 }
+
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1312 }
+		command = { type = activate_division which = 22000 value = 940 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 939 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 938 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 937 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 936 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 935 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 934 where = 1312 when = 0 }
+		command = { type = activate_division which = 22000 value = 933 where = 1312 when = 0 }
+		command = { type = lock_division which = 22000 value = 940 }
+		command = { type = lock_division which = 22000 value = 939 }
+		command = { type = lock_division which = 22000 value = 938 }
+		command = { type = lock_division which = 22000 value = 937 }
+		command = { type = lock_division which = 22000 value = 936 }
+		command = { type = lock_division which = 22000 value = 935 }
+		command = { type = lock_division which = 22000 value = 934 }
+		command = { type = lock_division which = 22000 value = 933 }
+
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1315 }
+		command = { type = activate_division which = 22000 value = 932 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 931 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 930 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 929 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 928 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 927 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 926 where = 1315 when = 0 }
+		command = { type = activate_division which = 22000 value = 925 where = 1315 when = 0 }
+		command = { type = lock_division which = 22000 value = 932 }
+		command = { type = lock_division which = 22000 value = 931 }
+		command = { type = lock_division which = 22000 value = 930 }
+		command = { type = lock_division which = 22000 value = 929 }
+		command = { type = lock_division which = 22000 value = 928 }
+		command = { type = lock_division which = 22000 value = 927 }
+		command = { type = lock_division which = 22000 value = 926 }
+		command = { type = lock_division which = 22000 value = 925 }
+
+		command = { type = activate_division which = 22000 value = 924 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 923 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 922 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 921 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 920 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 919 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 918 where = 1378 when = 0 }
+		command = { type = activate_division which = 22000 value = 917 where = 1378 when = 0 }
+		command = { type = lock_division which = 22000 value = 924 }
+		command = { type = lock_division which = 22000 value = 923 }
+		command = { type = lock_division which = 22000 value = 922 }
+		command = { type = lock_division which = 22000 value = 921 }
+		command = { type = lock_division which = 22000 value = 920 }
+		command = { type = lock_division which = 22000 value = 919 }
+		command = { type = lock_division which = 22000 value = 918 }
+		command = { type = lock_division which = 22000 value = 917 }
+
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1369 }
+		command = { type = activate_division which = 22000 value = 916 where = 1369 when = 0 }
+		command = { type = activate_division which = 22000 value = 915 where = 1369 when = 0 }
+		command = { type = activate_division which = 22000 value = 914 where = 1369 when = 0 }
+		command = { type = activate_division which = 22000 value = 913 where = 1369 when = 0 }
+		command = { type = activate_division which = 22000 value = 912 where = 1369 when = 0 }
+		command = { type = lock_division which = 22000 value = 916 }
+		command = { type = lock_division which = 22000 value = 915 }
+		command = { type = lock_division which = 22000 value = 914 }
+		command = { type = lock_division which = 22000 value = 913 }
+		command = { type = lock_division which = 22000 value = 912 }
+		command = { type = free_energy value = 20 }
+		command = { type = free_metal value = 14 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = free_oil value = 2 }
+		}		  
+}
+
+event = {
+	id = 105
+	random = no
+	country = CHC
+
+	name = "AI_EVENT"
+
+	trigger = {
+	OR = { 
+		war = { country = CHC country = JAP }
+		AND = {
+			war = { country = CHI country = CHC }
+			year = 1940
+			}
+		}
+	ai = CHC
+		}
+
+	date = { day = 1 month = february year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = august year = 1939 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+	  	command = { type = construct which = land_fort where = 1325 value = 6 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1325 }
+		command = { type = activate_division which = 24000 value = 999 where = 1325 when = 0 }
+		command = { type = activate_division which = 24000 value = 998 where = 1325 when = 0 }
+		command = { type = activate_division which = 24000 value = 997 where = 1325 when = 0 }
+		command = { type = activate_division which = 24000 value = 996 where = 1325 when = 0 }
+		command = { type = activate_division which = 24000 value = 995 where = 1325 when = 0 }
+		command = { type = lock_division which = 24000 value = 999 }
+		command = { type = lock_division which = 24000 value = 998 }
+		command = { type = lock_division which = 24000 value = 997 }
+		command = { type = lock_division which = 24000 value = 996 }
+		command = { type = lock_division which = 24000 value = 995 }
+	  	command = { type = construct which = land_fort where = 1255 value = 6 }
+	  	command = { type = construct which = land_fort where = 1259 value = 6 }
+	  	command = { type = construct which = land_fort where = 1260 value = 6 }
+ 		command = { type = free_ic value = 8 }
+		command = { type = manpowerpool value = 300 }
+		command = { type = free_supplies value = 18 }
+		command = { type = free_money value = 0.1 }
+		command = { type = free_metal value = 40 }
+		command = { type = free_oil value = 8 }
+		command = { type = industrial_modifier which = total value = 15 }
+		command = { type = morale which = land value = 1 }
+		command = { type = morale which = air value = 1 }
+		command = { type = counterattack value = 1 }
+		}
+}
+ event = {
+	id = 106
+	random = no
+	country = CXB
+
+	name = "AI_EVENT"
+
+	trigger = {
+	war = { country = CHI country = JAP }
+	ai = CXB
+}
+
+	date = { day = 1 month = february year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = august year = 1939 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = construct which = land_fort where = 1269 value = 7 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1269 }
+		command = { type = activate_division which = 22200 value = 999 where = 1269 when = 0 }
+		command = { type = activate_division which = 22200 value = 998 where = 1269 when = 0 }
+		command = { type = activate_division which = 22200 value = 997 where = 1269 when = 0 }
+		command = { type = lock_division which = 22200 value = 999 }
+		command = { type = lock_division which = 22200 value = 998 }
+		command = { type = lock_division which = 22200 value = 997 }
+
+		command = { type = construct which = land_fort where = 1270 value = 7 }
+		command = { type = add_corps which = "Chinese Reserves" value = land where = 1270 }
+		command = { type = activate_division which = 22200 value = 996 where = 1270 when = 0 }
+		command = { type = activate_division which = 22200 value = 995 where = 1270 when = 0 }
+		command = { type = activate_division which = 22200 value = 994 where = 1270 when = 0 }
+		command = { type = lock_division which = 22200 value = 996 }
+		command = { type = lock_division which = 22200 value = 995 }
+		command = { type = lock_division which = 22200 value = 994 }
+		 }
+ }
+
+event = {
+	id = 107
+	random = no
+	country = U02
+
+	trigger = {
+		ai = yes
+		war = { country = JAP country = U02 }
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+	command = { type = industrial_modifier which = ic value = -30 }
+	command = { type = dissent value = 20 }
+	command = { type = morale which = land value = -8 }
+	}
+}	
+event = {
+	id = 108
+	random = no
+	country = CHI
+
+	trigger = {
+		ai = yes
+		war = { country = JAP country = CHI }
+		#lost_national = { country = CHI value = 5 } 
+	}
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { type = industrial_modifier which = ic value = 10 }
+      	command = { type = free_oil value = 4 }
+		command = { type = free_metal value = 20 }
+		command = { type = free_energy value = 50 }
+		command = { type = free_supplies value = 32 }
+		command = { type = free_money value = 0.1 }
+		command = { type = free_ic value = 5 }
+		command = { type = dissent value = -15 }
+		command = { type = building_prod_mod which = land_fort value = 20 }
+		command = { type = morale which = air value = 3 }
+		command = { type = counterattack value = 2 }
+		command = { type = assault value = 1 }
+		command = { type = ambush value = 1 }
+		command = { type = breakthrough value = 1 }
+		command = { type = encirclement value = 1 }
+		command = { type = hq_supply_eff value = 1 }
+		command = { type = sce_frequency value = 0.1 }
+		command = { type = attrition_mod value = 1 }
+		command = { type = trickleback_mod value = 1 }
+		command = { type = supplies value = 500 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+		command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+	  	command = { type = add_division value = militia when = 4 }
+		command = { type = money value = 100 }
+	}
+}
+event = {
+	id = 109
+	random = no
+	country = SIA
+
+	trigger = { ai = yes }
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { type = industrial_modifier which = ic value = 20 }
+		command = { type = free_ic value = 3 }
+		command = { type = free_supplies value = 6 }
+	}
+}
+event = { ###German Very Strong Axis industry bonus event
+	id = 144
+	random = no
+	country = GER
+
+	trigger = { ai = yes NOT = { difficulty = 1 } }
+
+	name = "AI_EVENT"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { type = industrial_modifier which = total value = 36 } #Remove German industry malus in 33
+	}
+}
+#############################################
+# Barbarossa
+#############################################
+event = {
+	id = 110
+	random = no
+	country = GER
+
+	trigger = { ai = yes
+		    NOT = { event = 2003046 }
+		 }
+
+	name = "AI_EVENT"
+
+	date = { day = 20 month = july year = 1933 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action_a = {
+		command = { type = trigger which = 2003046 }
+	}
+}
+#############################################
+# AI Help Africa War
+#############################################
+event = {
+	id = 111
+	random = no
+	country = ENG
+
+	name = "AI_EVENT"
+
+	trigger = { 	ai = yes 
+			war = { country = ENG country = ITA }
+		  }
+                
+        date = { day = 10 month = october year = 1939 }
+        offset = 1
+	deathdate = { day = 20 month = june year = 1943 }
+	
+        action_a = {
+                name = ACTION_NAME_OK
+                command = { trigger = { NOT = { ai = ITA } } type = add_corps which = "Middle east army" value = land when = 1224 where = 789 } 
+				command = { trigger = { NOT = { ai = ITA } } type = add_division which = "MEA HQ" value = hq when = 3 }
+                command = { trigger = { NOT = { ai = ITA } } type = add_division which = "7th tank div" value = armor when = 0 }
+                command = { trigger = { NOT = { ai = ITA } } type = add_division which = "11th tank div" value = armor when = 0 }
+                command = { trigger = { NOT = { ai = ITA } } type = add_corps which = "Second corpus" value = land where = 789 } # Alexandria
+				command = { trigger = { NOT = { ai = ITA } } type = add_division which = "1st SAF division" value = infantry when = 10 }
+				command = { trigger = { NOT = { ai = ITA } } type = add_division which = "2nd New Zealand division" value = infantry when = 10 }
+				command = { trigger = { NOT = { ai = ITA } } type = add_division which = "8th Indian division" value = infantry when = 10 }
+                command = { type = construct which = land_fort where = 789 value = 2 }
+                command = { type = construct which = land_fort where = 783 value = 2 }      
+           
+        }
+}
+#############################################
+# Delete victory points
+#############################################
+event = {
+	id = 112
+	random = no
+	country = JAP
+
+	trigger = { 	event = 104
+			NOT = { exists = CHI 
+				exists = U87 }
+		  }
+                
+	name = "EVT_114_NAME" 
+	desc = "EVT_114_DESC"
+	style = 2
+	picture = "news_paper"
+
+        date = { day = 10 month = october year = 1939 }
+        offset = 1
+	deathdate = { day = 20 month = june year = 1943 }
+	
+        action_a = {
+                name = "ACTION_NAME_OK"
+		command = { type = province_keypoints which = 1261 value = -1 }
+		command = { type = province_keypoints which = 1297 value = -1 }
+		command = { type = province_keypoints which = 1298 value = -1 }
+		command = { type = province_keypoints which = 1300 value = -1 }
+		command = { type = province_keypoints which = 1303 value = -1 }
+		command = { type = province_keypoints which = 1381 value = -1 }
+		command = { type = province_keypoints which = 1376 value = -1 }
+		command = { type = province_keypoints which = 1267 value = -1 }
+		command = { type = province_keypoints which = 1302 value = -1 }
+		command = { type = province_keypoints which = 1299 value = -1 }
+		command = { type = province_keypoints which = 1304 value = -1 }
+		command = { type = province_keypoints which = 1305 value = -1 }
+		command = { type = province_keypoints which = 1382 value = -1 }
+		command = { type = province_keypoints which = 1379 value = -1 }
+		command = { type = province_keypoints which = 1374 value = -1 }
+		command = { type = province_keypoints which = 1301 value = -1 }
+		command = { type = province_keypoints which = 1307 value = -1 }
+		command = { type = province_keypoints which = 1306 value = -1 }
+		command = { type = province_keypoints which = 1380 value = -1 }
+		command = { type = province_keypoints which = 1383 value = -1 }
+		command = { type = province_keypoints which = 1310 value = -1 }
+		command = { type = province_keypoints which = 1312 value = -1 }
+		command = { type = province_keypoints which = 1378 value = -1 }
+		}		  
+}
+#############################################
+# AI Declare war on GRE
+#############################################
+event = {
+	id = 113
+	random = no
+	country = ITA
+
+	trigger = { 	ai = yes 
+			alliance = { country = ITA country = GER }
+			exists = GRE
+			NOT = { atwar = GRE }
+		  }
+
+	name = "AI_EVENT"
+                
+        date = { day = 27 month = october year = 1940 }
+        offset = 1
+	deathdate = { day = 29 month = october year = 1944 }
+	
+        action_a = {
+                name = "ACTION_NAME_OK"
+		command = { type = war which = GRE }               
+        }
+}
+#############################################
+# AI France troops
+#############################################
+event = {
+	id = 114
+	random = no
+	country = FRA
+
+	trigger = { 	ai = yes 
+			event = 2002016
+			alliance = { country = FRA country = GER }			
+		  }
+
+	name = "AI_EVENT"
+                
+        date = { day = 27 month = october year = 1939 }
+        offset = 1
+	deathdate = { day = 29 month = october year = 1944 }
+	
+        action_a = {
+                name = "ACTION_NAME_OK"
+	  	command = { type = add_division value = infantry when = 9 }
+	  	command = { type = add_division value = infantry when = 9 }
+	  	command = { type = add_division value = infantry when = 9 }
+	  	command = { type = add_division value = infantry when = 9 }             
+        }
+}
+#############################################
+# AI ITA garrission
+#############################################
+event = {
+	id = 115
+	random = no
+	country = ITA
+
+	trigger = { 	ai = yes
+			alliance = { country = ITA country = GER }			
+		  }
+
+	name = "AI_EVENT"
+                
+        date = { day = 27 month = october year = 1939 }
+        offset = 1
+	deathdate = { day = 29 month = october year = 1944 }
+	
+        action_a = {
+                name = "ACTION_NAME_OK"
+		command = { type = activate_division which = 23500 value = 1012 where = 761 when = 0 }
+		command = { type = activate_division which = 23500 value = 1013 where = 750 when = 0 }
+		command = { type = activate_division which = 23500 value = 1014 where = 765 when = 0 }    
+		command = { type = add_corps which = "LXIII Corpo d'Armata" value = land where = 761 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+	  	command = { type = add_division value = infantry when = 8 }
+        }
+}
+#####################################################
+#  JAP support
+######################################################
+event = {
+	id = 116
+	random = no
+	country = JAP
+
+	name = "AI_EVENT"
+
+	trigger = {
+	ai = yes
+	war = { country = CHI country = JAP }
+	ai = CHI
+	}
+
+	date = { day = 1 month = february year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = august year = 1939 }
+
+	action_a = {
+		name = "ACTION_NAME_OK"
+		command = { type = add_corps which = "Japanese Reserves" value = land where = 1240 }
+		command = { type = activate_division which = 13016 value = 2025 where = 1240 when = 0 }
+		command = { type = activate_division which = 13016 value = 2026 where = 1240 when = 0 }
+		command = { type = activate_division which = 13016 value = 2027 where = 1240 when = 0 }
+		command = { type = activate_division which = 13016 value = 2028 where = 1240 when = 0 }
+		command = { type = lock_division which = 13016 value = 2025 }
+		command = { type = lock_division which = 13016 value = 2026 }
+		command = { type = lock_division which = 13016 value = 2027 }
+
+		command = { type = add_corps which = "China Force No 1" value = land when = -1 where = 1362 } #taipei
+		command = { type = add_division value = marine when = 0 }
+		command = { type = add_division value = marine when = 0 }
+		command = { type = add_division value = marine when = 0 }
+		
+		command = { type = add_corps which = "Nippon Transport Flotilla No 3" value = naval when = -1 where = 1362 }
+		command = { type = add_division which = "Nippon Trans 1" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 2" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 3" value = transport when = 3 }
+
+		command = { type = add_corps which = "China Force No 1" value = land when = -1 where = 1219 } #port arthur
+		command = { type = add_division value = marine when = 0 }
+		command = { type = add_division value = marine when = 0 }
+		command = { type = add_division value = marine when = 0 }
+		
+		command = { type = add_corps which = "Nippon Transport Flotilla No 3" value = naval when = -1 where = 1219 }
+		command = { type = add_division which = "Nippon Trans 1" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 2" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 3" value = transport when = 3 }
+		command = { type = free_oil value = 30 }
+		}
+}
+#############################################
+# Delete victory points
+#############################################
+event = {
+	id = 117
+	random = no
+	country = U87
+
+	trigger = { 	event = 104
+			NOT = { exists = CHI }
+		  }
+                
+	name = "EVT_114_NAME" 
+	desc = "EVT_114_DESC"
+	style = 2
+	picture = "news_paper"
+
+        date = { day = 10 month = october year = 1939 }
+        offset = 1
+	deathdate = { day = 20 month = june year = 1943 }
+	
+        action_a = {
+                name = "ACTION_NAME_OK"
+		command = { type = province_keypoints which = 1261 value = -1 }
+		command = { type = province_keypoints which = 1297 value = -1 }
+		command = { type = province_keypoints which = 1298 value = -1 }
+		command = { type = province_keypoints which = 1300 value = -1 }
+		command = { type = province_keypoints which = 1303 value = -1 }
+		command = { type = province_keypoints which = 1381 value = -1 }
+		command = { type = province_keypoints which = 1376 value = -1 }
+		command = { type = province_keypoints which = 1267 value = -1 }
+		command = { type = province_keypoints which = 1302 value = -1 }
+		command = { type = province_keypoints which = 1299 value = -1 }
+		command = { type = province_keypoints which = 1304 value = -1 }
+		command = { type = province_keypoints which = 1305 value = -1 }
+		command = { type = province_keypoints which = 1382 value = -1 }
+		command = { type = province_keypoints which = 1379 value = -1 }
+		command = { type = province_keypoints which = 1374 value = -1 }
+		command = { type = province_keypoints which = 1301 value = -1 }
+		command = { type = province_keypoints which = 1307 value = -1 }
+		command = { type = province_keypoints which = 1306 value = -1 }
+		command = { type = province_keypoints which = 1380 value = -1 }
+		command = { type = province_keypoints which = 1383 value = -1 }
+		command = { type = province_keypoints which = 1310 value = -1 }
+		command = { type = province_keypoints which = 1312 value = -1 }
+		command = { type = province_keypoints which = 1378 value = -1 }
+		}		  
+}
+
+#############################################
+# German AI handicap (Edge of Darkness)
+#############################################
+#event = {
+#	id = 118
+#	random = no
+#	country = GER
+#
+#	trigger = { 	
+#			ai = GER #GER AI is a bit too strong in EoD and this is help ensure the war against SOV lasts for several years instead of consistently resulting in GER victory. EDIT: Do we even need this? The game is actually balanced now
+#	}
+#                
+#	name = "AI_EVENT" 
+#
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 1
+#	deathdate = { day = 1 month = january year = 1999 }
+#	
+#    action_a = {
+#		#command = { type = wartime_ic_mod value = -1 } 
+#		command = { type = peacetime_ic_mod value = -3 } #-10%
+#		command = { type = free_ic value = -5 } #-10
+#	}		  
+#}
+
+#############################################
+# Finnish return of Norwegian provinces (Edge of Darkness)
+#############################################
+event = {
+	id = 119
+	random = no
+	country = FIN
+
+	trigger = { 	
+			ai = FIN 
+			NOT = { exists = NOR }
+			owned = { province = 483 data = GER } #Oslo
+	}
+                
+	name = "AI_EVENT" 
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 1 month = january year = 1999 }
+	
+    action_a = {
+		command = { type = secederegion which = GER value = Norway when = 1 } #AI Finland is sometimes mysteriously receiving northern Norway provinces during the German invasion of Norway. This event cleans that up.
+	}		  
+}
+
+

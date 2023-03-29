@@ -1,0 +1,70 @@
+SOV;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+30001;61 Kommunara Nikolayev Shipyards;T3700;4;1930;2000;naval_engineering;electronics;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30002;Barrikada Factory Design Bureau;T3701;5;1930;2000;artillery;mechanics;general_equipment;training;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30003;Kharkov Factory Design Bureau;T3702;7;1927;2000;mechanics;artillery;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30004;RNII;T3703;5;1930;1944;rocketry;mathematics;technical_efficiency;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30005;Igor Kurchatov;T3704;4;1930;1960;nuclear_physics;nuclear_engineering;mathematics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30006;Boris Shaposhnikov;T3705;5;1930;1945;large_unit_tactics;centralized_execution;training;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30007;Mikhail Tukhachevsky;T3706;5;1930;1938;combined_arms_focus;large_unit_tactics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30008;Alexander Vasilevsky;T3707;7;1940;1958;combined_arms_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30009;Grabin Design Bureau;T3708;5;1930;2000;mechanics;artillery;technical_efficiency;munitions;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30010;Ilyushin Design Bureau;T3709;6;1930;2000;aeronautics;bomber_design;general_equipment;munitions;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30011;Kirov Factory Design Bureau;T3710;6;1930;2000;mechanics;artillery;munitions;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30012;Nevskoye Design Bureau;T3711;5;1930;2000;naval_engineering;technical_efficiency;naval_artillery;submarine_design;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30013;Nizhny Tagil Factories;T3712;6;1930;2000;mechanics;chemistry;technical_efficiency;industrial_engineering;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30014;STZ Factory Design Bureau;T3713;5;1930;2000;mechanics;general_equipment;electronics;technical_efficiency;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30015;Tupolev Design Bureau;T3714;7;1922;2000;aeronautics;bomber_design;rocketry;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30016;Nikolai G. Kuznetsov;T3715;6;1930;1956;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30017;J.I. Alksnis;T3716;6;1930;1938;training;piloting;fighter_tactics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30018;Alexander A. Novikov;T3717;6;1940;1956;piloting;bomber_tactics;fighter_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30019;A.S. Yakovlev Design Bureau;T3718;8;1934;2000;aeronautics;mechanics;fighter_design;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30020;Igor Tamm;T3719;6;1945;2000;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30021;Sergei Korolev;T3720;7;1946;1966;rocketry;aeronautics;technical_efficiency;avionics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30022;Vozdushno-Desantnye Voyska;T3721;6;1930;2000;artillery;small_unit_tactics;airborne_training;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30023;MIG Design Bureau;100317;8;1940;2000;aeronautics;general_equipment;fighter_design;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30024;Moscow Institute of Railway Engineering;100472;6;1890;2000;mechanics;industrial_engineering;general_equipment;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30025;Tula Arsenal;100780;5;1890;2000;general_equipment;training;artillery;medicine;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30026;Leon Trotsky;100318;7;1914;1929;large_unit_tactics;infantry_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30027;Vasili Altfater;100459;4;1914;1919;small_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30028;Yevgeni Berens;100782;4;1919;1928;small_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30029;Aleksandr Nemits;100460;4;1920;1947;small_taskforce_tactics;naval_training;seamanship;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30030;Eduard Pantserzhansky;100781;4;1922;1937;small_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30031;Rubin Marine Engineering;T7209;5;1901;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30032;Sukhoi Design Bureau;T7212;4;1939;2000;aeronautics;avionics;fighter_design;rocketry;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30033;Baltiysky Zavod 189;100276;5;1856;2000;naval_engineering;naval_artillery;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30034;General Staff Academy;100479;4;1930;2000;training;large_unit_tactics;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30035;Zhukovsky Air Force Academy;100706;6;1930;2000;aeronautics;electronics;training;centralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30036;Georgy Zhukov;100832;8;1940;2000;combined_arms_focus;large_unit_tactics;centralized_execution;training;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30037;K.E. Voroshilov RKKF Naval Academy;100504;3;1930;2000;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30100;Sergey Gorshkov;T30100;7;1956;2000;naval_training;small_taskforce_tactics;large_taskforce_tactics;submarine_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30101;Rubin Design Bureau;T30101;5;1901;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30102;Dalzavod Naval Industries;T12702;5;1900;2000;naval_engineering;naval_artillery;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30103;Sukhoi Design Bureau;T7212;6;1939;2000;aeronautics;avionics;fighter_design;rocketry;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30104;Uralvagonzavod;T14708;9;1944;2000;mechanics;technical_efficiency;electronics;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30105;Kurganmashzavod;T14705;6;1950;2000;mechanics;artillery;vehicle_engineering;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30106;Izhevsk Ordnance and Steel Plant;T14704;7;1942;2000;mechanics;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30107;Sergey Lebedev;T30107;6;1943;2000;chemistry;mechanics;mathematics;electronics;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30108;Marine Scientific Research Institute of Radioelectronics;T30108;5;1938;2000;small_taskforce_tactics;naval_training;seamanship;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30109;Valentin Glushko;R19;6;1930;1986;rocketry;mathematics;centralized_execution;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30110;Ivan Konev;R30;5;1940;1960;large_unit_tactics;centralized_execution;training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30111;Vasily Sokolovsky;R29;6;1941;1960;combined_arms_focus;large_unit_tactics;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30112;Konstantin Vershinin;R28;6;1941;1969;training;piloting;fighter_tactics;bomber_tactics;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30113;Aleksei Antonov;R24;7;1940;1962;large_unit_tactics;infantry_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30114;Vladimir Tributs;R23;5;1939;1961;small_taskforce_tactics;naval_training;seamanship;naval_artillery;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30115;Ivan S. Yumashev;R22;6;1939;1957;small_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30116;Shiprepair DVZ Zvezda;R20;6;1957;1980;small_taskforce_tactics;naval_training;seamanship;submarine_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30117;R&D PE Zvezda;R21;8;1952;1980;mechanics;electronics;rocketry;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30118;Yuri Pobedonostsev;R38;5;1932;1973;mechanics;rocketry;aeronautics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30119;Mikhail Tikhonravov;R39;5;1932;1974;mechanics;rocketry;aeronautics;avionics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30120;Aksel Berg;R40;5;1922;1960;naval_training;electronics;submarine_tactics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30121;Klimov Design Bureau;R42;6;1932;1990;mechanics;artillery;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30122;Gosplan;T30122;5;1932;1990;technical_efficiency;industrial_engineering;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30123;GAZ Factory Design Bureau;T30123;5;1927;2000;mechanics;general_equipment;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+30124;Uralvagonzavod;T14708;4;1936;1943;mechanics;technical_efficiency;electronics;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300123;Mil Design Bureau;T300123;9;1948;1999;rt_user_1;aircraft_testing;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300124;Kamov Design Bureau;T300124;7;1944;1999;rt_user_1;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300125;Cheka;T300125;5;1917;1922;rt_user_2;training;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300126;GPU;T300126;5;1922;1924;rt_user_2;training;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300127;OGPU;T300126;6;1924;1934;rt_user_2;training;small_unit_tactics;individual_courage;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300128;NKVD;T300128;8;1934;1954;rt_user_2;training;small_unit_tactics;individual_courage;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+300129;KGB;T300129;9;1954;2000;rt_user_2;training;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

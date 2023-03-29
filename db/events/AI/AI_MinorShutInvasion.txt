@@ -1,0 +1,37 @@
+###################################
+# Minor invasion shut down events
+###################################
+
+event = {
+	id = 2400000
+	random = no 
+	persistent = yes
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CGX CHC CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY EQA EST ETH EUS FIN FLA GAB GEO GLD GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO RUS SAF SAL SAR SAU SCH SCO SER SIA SIB SIE SIK SLO SOM SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN UKR URU UZB VEN VIE WLL YEM YUG U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 U50 U51 U52 U53 U54 U55 U56 U67 U39 U23 U24 U25 }
+	#Remove RSI, ROM, SCA, SPA, SPR, AST, CAN, GRE as they should be supported scriptside
+	trigger = {
+		ai = yes
+		NOT = { local_flag = InvShutOff }
+		OR = {
+			alliance = { country = GER }
+			alliance = { country = ITA }
+			alliance = { country = USA }
+			alliance = { country = FRA }
+			alliance = { country = ENG }
+			alliance = { country = JAP }
+			alliance = { country = SOV }
+			alliance = { country = CHI }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = InvShutOff }
+		command = { type = ai which = "switch/Invasion_Shutoff.ai" }
+	}
+}

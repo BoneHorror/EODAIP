@@ -1,0 +1,215 @@
+BEL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+70001;Head of State;Leopold III;1933;1964;1999;ML;Benevolent Gentleman;Medium;M15001;X
+70002;Head of Government;Paul Van Zeeland;1933;1964;1999;ML;Silent Workhorse;Medium;M15002;X
+70003;Foreign Minister;Paul Van Zeeland;1933;1964;1999;ML;Biased Intellectual;Very High;M15002;X
+70004;Minister of Armament;Albert Devèze;1933;1964;1999;ML;Laissez-Faire Capitalist;Very High;M15004;X
+70005;Minister of Security;Eugène Soudan;1933;1964;1999;SL;Silent Lawyer;Very High;M15005;X
+70006;Head of Military Intelligence;Albert Devèze;1933;1964;1999;ML;Political Specialist;Very High;M15004;X
+70007;Chief of Staff;Adolphe Cumont;1933;1964;1999;SC;School of Defence;Very High;121;X
+70008;Chief of Army;Victor van Strydonck de Burkel;1933;1964;1999;SC;Static Defence Doctrine;Very High;M15008;X
+70009;Chief of Navy;Georges Timmermans;1933;1964;1999;SC;Indirect Approach Doctrine;Very High;M15009;X
+70010;Chief of Air Force;L.F.E. Wouters;1933;1964;1999;SC;Vertical Envelopment Doctrine;Very High;M15010;X
+70011;Head of State;Leopold III;1933;1964;1999;NS;Benevolent Gentleman;Medium;M15001;X
+70012;Head of State;Karel;1944;1964;1999;ML;Benevolent Gentleman;Medium;M15031;X
+70013;Head of State;Julien Lahaut;1945;1964;1999;ST;Ruthless Powermonger;Medium;M15024;X
+70014;Head of Government;Paul-Henri Spaak;1933;1964;1999;SD;Ambitious Union Boss;Medium;M15034;X
+70015;Head of Government;Leon Degrelle;1933;1964;1999;NS;Old General;Medium;M15013;X
+70016;Head of Government;Paul-Emile Janson;1937;1964;1999;ML;Silent Workhorse;Medium;M15036;X
+70017;Head of Government;Hubert Pierlot;1938;1964;1999;SC;Naive Optimist;Medium;M15037;X
+70018;Head of Government;Camille Huysmans;1939;1964;1999;SD;Happy Amateur;Medium;M15038;X
+70019;Head of Government;Joseph Jacquemotte;1944;1964;1999;LE;Political Protege;Medium;M15020;X
+70020;Head of Government;Achille Van Acker;1939;1964;1999;SD;Corporate Suit;Medium;M15041;X
+70021;Head of Government;Gaston Eyskens;1945;1964;1999;SC;Corporate Suit;Medium;M15042;X
+70022;Head of Government;Julien Lahaut;1945;1964;1999;ST;Backroom Backstabber;Medium;M15024;X
+70023;Foreign Minister;Paul-Henri Spaak;1933;1964;1999;SL;Great Compromiser;Very High;M15034;X
+70024;Foreign Minister;Leon Degrelle;1933;1964;1999;NS;Iron Fisted Brute;Very High;M15013;X
+70025;Foreign Minister;Louis de Brouckère;1937;1964;1999;SD;Ideological Crusader;Very High;M15047;X
+70026;Foreign Minister;Eugène Soudan;1938;1964;1999;SL;Ideological Crusader;Very High;M15005;X
+70027;Foreign Minister;Hubert Pierlot;1939;1964;1999;SC;Great Compromiser;Very High;M15037;X
+70028;Foreign Minister;Jules Pire;1941;1964;1999;SD;General Staffer;Very High;M15051;X
+70029;Foreign Minister;Jef van de Wiele;1942;1964;1999;NS;Iron Fisted Brute;Very High;M15011;X
+70030;Foreign Minister;Edgar Lalmand;1943;1964;1999;ST;Biased Intellectual;Very High;M15022;X
+70031;Foreign Minister;Julien Lahaut;1945;1964;1999;ST;Ideological Crusader;Very High;M15024;X
+70032;Foreign Minister;Gaston Eyskens;1947;1964;1999;SC;Great Compromiser;Very High;M15042;X
+70033;Minister of Armament;Hendrik de Man;1933;1964;1999;SL;Administrative Genius;Very High;M15056;X
+70034;Minister of Armament;Camille Gutt;1937;1964;1999;ML;Administrative Genius;Very High;M15059;X
+70035;Minister of Armament;Leon Degrelle;1937;1964;1999;NS;Infantry Proponent;Very High;M15013;X
+70036;Minister of Armament;Jules Merlot;1938;1964;1999;SD;Resource Industrialist;Very High;M15061;X
+70037;Minister of Armament;Emmanuel Michez;1939;1964;1999;ML;Tank Proponent;Very High;M15062;X
+70038;Minister of Armament;Paul-Henri Spaak;1939;1964;1999;SD;Resource Industrialist;Very High;M15034;X
+70039;Minister of Armament;Henri Denis;1940;1964;1999;SC;Infantry Proponent;Very High;M15064;X
+70040;Minister of Armament;Edgar Lalmand;1944;1964;1999;LE;Resource Industrialist;Very High;M15022;X
+70041;Minister of Armament;Gaston Eyskens;1940;1964;1999;ML;Administrative Genius;Very High;M15042;X
+70042;Minister of Armament;Franz de Voghel;1945;1964;1999;ML;Laissez-Faire Capitalist;Very High;M15067;X
+70043;Minister of Armament;Marcel Vauthier;1946;1964;1999;ML;Laissez-Faire Capitalist;Very High;M15068;X
+70044;Minister of Armament;Albert de Vleeschauwer;1946;1964;1999;SC;Resource Industrialist;Very High;M15069;X
+70045;Minister of Armament;Jean Duvieusart;1947;1964;1999;SC;Administrative Genius;Very High;M15070;X
+70046;Minister of Security;Albert Janssen;1933;1964;1999;SC;Compassionate Gentleman;Very High;M15071;X
+70047;Minister of Security;François Bovesse;1933;1964;1999;SC;Silent Lawyer;Very High;M15072;X
+70048;Minister of Security;Paul Hymans;1933;1964;1999;SL;Compassionate Gentleman;Very High;M15073;X
+70049;Minister of Security;Paul Ouwerx;1933;1964;1999;NS;Crime Fighter;Very High;M15075;X
+70050;Minister of Security;Paul-Emile Janson;1937;1964;1999;ML;Crime Fighter;Very High;M15036;X
+70051;Minister of Security;Leon Degrelle;1937;1964;1999;NS;Prince of Terror;Very High;M15013;X
+70052;Minister of Security;Joseph Pholien;1938;1964;1999;SC;Silent Lawyer;Very High;M15079;X
+70053;Minister of Security;Henri Comte Carton de Wiart;1939;1964;1999;ML;Crime Fighter;Very High;M15081;X
+70054;Minister of Security;Jules Pire;1942;1964;1999;SD;Prince of Terror;Very High;M15051;X
+70055;Minister of Security;Victor de Laveleye;1944;1964;1999;SL;Crime Fighter;Very High;M15084;X
+70056;Minister of Security;Julien Lahaut;1944;1964;1999;ST;Prince of Terror;Very High;M15024;X
+70057;Minister of Security;Adolphe Van Glabbeke;1945;1964;1999;SC;Man of the People;Very High;M15086;X
+70058;Minister of Security;Auguste Buisseret;1945;1964;1999;SC;Silent Lawyer;Very High;M15087;X
+70059;Minister of Security;Charles du Bus de Warnaffe;1945;1964;1999;SC;Crime Fighter;Very High;M15088;X
+70060;Minister of Security;Albert Lilar;1946;1964;1999;ML;Compassionate Gentleman;Very High;M15089;X
+70061;Minister of Security;Paul Struye;1947;1964;1999;SC;Man of the People;Very High;M15090;X
+70062;Minister of Security;Jean Rey;1947;1964;1999;SC;Silent Lawyer;Very High;M15091;X
+70063;Head of Military Intelligence;Victor de Laveleye;1933;1964;1999;SD;Logistics Specialist;Very High;M15084;X
+70064;Head of Military Intelligence;Henri Denis;1933;1964;1999;SC;Logistics Specialist;Very High;M15064;X
+70065;Head of Military Intelligence;Paul Ouwerx;1933;1964;1999;NS;Industrial Specialist;Very High;M15075;X
+70066;Head of Military Intelligence;Jules Pire;1940;1964;1999;SD;Logistics Specialist;Very High;M15051;X
+70067;Head of Military Intelligence;Léon Delsinne;1944;1964;1999;ML;Industrial Specialist;Very High;M15097;X
+70068;Head of Military Intelligence;Auguste Buisseret;1944;1964;1999;SC;Technical Specialist;Very High;M15087;X
+70069;Head of Military Intelligence;Herman Vos;1944;1964;1999;SD;Political Specialist;Very High;M15099;X
+70070;Head of Military Intelligence;Léon Mundeleer;1945;1964;1999;ML;Dismal Enigma;Very High;M15100;X
+70071;Head of Military Intelligence;B.E.M. de Fraiteur;1946;1964;1999;ML;Dismal Enigma;Very High;M15101;X
+70072;Head of Military Intelligence;Pierre Vermeylen;1947;1964;1999;SL;Technical Specialist;Very High;M15102;X
+70073;Chief of Staff;Leon Degrelle;1933;1964;1999;NS;School of Mass Combat;Very High;M15013;X
+70074;Chief of Staff;Georges Deffontaine;1938;1964;1999;SC;School of Fire Support;Very High;M15105;X
+70075;Chief of Staff;Victor van Strydonck de Burkel;1940;1964;1999;SC;School of Mass Combat;Very High;M15008;X
+70076;Chief of Staff;Oscar Michiels;1940;1964;1999;SC;School of Mass Combat;Very High;M15107;X
+70077;Chief of Army;Réné Lagrou;1933;1964;1999;NS;Decisive Battle Doctrine;Very High;M15017;X
+70078;Chief of Army;Leon Degrelle;1933;1964;1999;NS;Guns and Butter Doctrine;Very High;M15013;X
+70079;Chief of Army;Raoul van Overstraeten;1938;1964;1999;SC;Guns and Butter Doctrine;Very High;M15110;X
+70080;Chief of Army;Yvan Gérard;1940;1964;1999;ML;Elastic Defence Doctrine;Very High;M15111;X
+70081;Chief of Army;Charles Bastin;1939;1964;1999;SD;Static Defence Doctrine;Very High;M15112;X
+70082;Chief of Army;Jules Pire;1943;1964;1999;SD;Armoured Spearhead Doctrine;Very High;M15051;X
+70083;Chief of Navy;Fritz Conrad;1933;1964;1999;NS;Indirect Approach Doctrine;Very High;M15018;X
+70084;Chief of Air Force;Fritz Löb;1933;1964;1999;NS;Army Aviation Doctrine;Very High;M15019;X
+70085;Chief of Air Force;Jules Iserentant;1937;1964;1999;SC;Air Superiority Doctrine;Very High;M15116;X
+70086;Minister of Security;Auguste De Schrijver;1933;1964;1999;SC;Compassionate Gentleman;Very High;M15117;X
+70087;Head of State;Leopold III;1937;1964;1999;ML;Benevolent Gentleman;Very High;M15001;X
+70088;Minister of Armament;Guy Bouthillier;1941;1964;1999;SD;Theoretical Scientist;Very High;M15119;X
+70089;Minister of Armament;Emile Francqui;1933;1964;1999;ML;Laissez-Faire Capitalist;Very High;M15120;X
+70090;Minister of Armament;Albert-Edouard Janssen;1938;1964;1999;ML;Resource Industrialist;Very High;M15121;X
+70091;Minister of Armament;Charles Pomaret;1938;1964;1999;SD;Infantry Proponent;Very High;M15122;X
+70092;Minister of Armament;Charles Régnier;1933;1964;1999;SC;Air Superiority Proponent;Very High;M15123;X
+70093;Minister of Armament;Edmond Rubbens;1933;1964;1999;SC;Resource Industrialist;Very High;M15124;X
+70094;Minister of Armament;Albert Wauters;1939;1964;1999;SD;Military Entrepreneur;Very High;M15125;X
+70095;Minister of Security;Antoine Delfosse;1942;1964;1999;ML;Compassionate Gentleman;Very High;M15126;X
+70096;Minister of Security;Victor Maistriau;1937;1964;1999;ML;Silent Lawyer;Very High;M15127;X
+70097;Minister of Armament;Louis Franck;1933;1964;1999;SC;Resource Industrialist;Very High;M15128;X
+70098;Minister of Armament;Hendrik Heyman;1933;1964;1999;SC;Air to Ground Proponent;Very High;M15129;X
+70099;Minister of Armament;Maurice Lippens;1933;1964;1999;ML;Resource Industrialist;Very High;M15130;X
+70100;Minister of Security;Philippe Van Isacker;1933;1964;1999;SC;Crime Fighter;Very High;M15131;X
+70101;Head of Government;Frans Van Cauwelaert;1933;1964;1999;SC;Naive Optimist;Very High;M15132;X
+70102;Foreign Minister;Frans Van Cauwelaert;1933;1964;1999;SC;Ideological Crusader;Very High;M15132;X
+70103;Head of State;Leopold III;1933;1964;1999;PA;Benevolent Gentleman;Very High;M15001;X
+70104;Head of State;Joseph Jacquemotte;1933;1964;1999;LE;Weary Stiffneck;Medium;M15020;X
+70105;Head of Government;Joseph Jacquemotte;1933;1964;1999;LE;Political Protege;Medium;M15020;X
+70106;Foreign Minister;War van Overstraeten;1933;1964;1999;LE;Biased Intellectual;Very High;M15118;X
+70107;Minister of Armament;Abraham Leon;1933;1964;1999;LE;Resource Industrialist;Very High;M15023;X
+70108;Minister of Security;Adhemar Hennaut;1933;1964;1999;LE;Crime Fighter;Very High;unknownminister;X
+70109;Head of Military Intelligence;Julien Lahaut;1933;1964;1999;LE;Political Specialist;Very High;M15024;X
+70110;Chief of Staff;Georges Vereecken;1933;1964;1999;LE;School of Mass Combat;Very High;unknownminister;X
+70111;Chief of Army;Georges Vereecken;1933;1964;1999;LE;Elastic Defence Doctrine;Very High;unknownminister;X
+70112;Chief of Navy;Georges Vereecken;1933;1964;1999;LE;decisive naval battle doctrine;Very High;unknownminister;X
+70113;Chief of Air Force;Georges Vereecken;1933;1964;1999;LE;air superiority doctrine;Very High;unknownminister;X
+70114;Head of State;Leopold III;1933;1964;1999;SL;Benevolent Gentleman;Very High;M15001;X
+70115;Head of State;Karel;1933;1964;1999;SL;Benevolent Gentleman;Very High;M15031;X
+70116;Minister of Armament;Cyriel Van Overbergh;1937;1964;1999;SC;Theoretical Scientist;High;M15137;X
+70117;Head of Government;Georges Theunis;1933;1964;1999;SC;Naive Optimist;High;M15138;X
+70118;Minister of Armament;Georges Theunis;1933;1964;1999;SC;Laissez-Faire Capitalist;High;M15138;X
+70119;Minister of Armament;Gustaaf Sap;1933;1964;1999;SC;Military Entrepreneur;High;M15140;X
+70120;Head of Government;Joris Van Severen;1933;1964;1999;FA;Flamboyant Tough Guy;Very High;M15141;X
+70121;Head of Government;Charles Somville;1933;1964;1999;FA;Flamboyant Tough Guy;Very High;M15142;X
+70122;Foreign Minister;Emiel Thiers;1933;1964;1999;FA;Great Compromiser;Very High;M15143;X
+70123;Foreign Minister;Ward Hermans;1933;1964;1999;FA;Biased Intellectual;Very High;M15144;X
+70124;Foreign Minister;Pol Le Roy;1933;1964;1999;FA;Ideological Crusader;Very High;M15145;X
+70125;Minister of Armament;René Lambrichts;1937;1964;1999;FA;Administrative Genius;Very High;M15146;X
+70126;Minister of Armament;Joris Van Severen;1933;1964;1999;FA;Military Entrepreneur;Very High;M15141;X
+70127;Minister of Armament;Charles Somville;1933;1964;1999;FA;Resource Industrialist;Very High;M15142;X
+70128;Minister of Security;René Lambrichts;1937;1964;1999;FA;Efficient Sociopath;Very High;M15146;X
+70129;Minister of Security;Emiel Thiers;1933;1964;1999;FA;Compassionate Gentleman;Very High;M15143;X
+70130;Minister of Security;Jan Rijckoort;1933;1964;1999;FA;Man of the People;Very High;M15151;X
+70131;Minister of Security;Ward Hermans;1933;1964;1999;FA;Silent Lawyer;Very High;M15144;X
+70132;Head of Military Intelligence;Joris Van Severen;1933;1964;1999;FA;Logistics Specialist;Very High;M15141;X
+70133;Head of Military Intelligence;Jan Rijckoort;1933;1964;1999;FA;Political Specialist;Very High;M15151;X
+70134;Chief of Staff;Joris Van Severen;1933;1964;1999;FA;School of Psychology;Very High;M15141;X
+70135;Minister of Armament;Alexandre Galopin;1933;1964;1999;ML;Administrative Genius;Very High;M15156;X
+70136;Head of State;Boudewijn I;1950;1964;1999;SL;Autocratic Charmer;High;M15158;X
+70137;Head of State;Boudewijn I;1950;1964;1999;ML;Autocratic Charmer;High;M15158;X
+70138;Head of Government;Jean Duvieusart;1950;1964;1999;SC;Political Protege;Medium;M15070;X
+70139;Head of Government;Joseph Pholien;1950;1964;1999;SC;Backroom Backstabber;Medium;M15079;X
+70140;Head of Government;Jean van Houtte;1953;1964;1999;SC;Naive Optimist;Medium;M15162;X
+70141;Minister of Armament;B.E.M. de Fraiteur;1946;1964;1999;SL;Military Entrepreneur;Medium;M15101;X
+70142;Minister of Armament;Etienne de Greef;1950;1964;1999;ML;Resource Industrialist;High;M15165;X
+70143;Minister of Security;Albert de Vleeschauwer;1949;1964;1999;SC;Silent Lawyer;Very High;M15069;X
+70144;Minister of Security;Maurice Brasseur;1950;1964;1999;ML;Man of the People;Very High;M15168;X
+70145;Minister of Security;Ludovic Moyersoen;1952;1964;1999;SC;Prince of Terror;Very High;M15169;X
+70146;Minister of Armament;Auguste Buisseret;1949;1964;1999;SC;Laissez-Faire Capitalist;Very High;M15087;X
+70147;Minister of Armament;Oscar Behogne;1949;1964;1999;ML;Resource Industrialist;High;M15171;X
+70148;Minister of Armament;Léon-Eli Troclet;1947;1964;1999;SD;Resource Industrialist;Very High;M15172;X
+70149;Minister of Armament;B.E.M. de Fraiteur;1870;1964;1999;SL;Infantry Proponent;High;M15101;X
+70150;Minister of Security;Pierre Vermeylen;1947;1964;1999;SL;Silent Lawyer;Very High;M15102;X
+70151;Minister of Armament;Jean van Houtte;1950;1964;1999;SC;Laissez-Faire Capitalist;Very High;M15162;X
+70152;Chief of Air Force;Clément de Saint-Marcq;1914;1933;1999;ML;Air Superiority Doctrine;Medium;unknownminister;X
+70153;Chief of Air Force;Baron Mathieu;1914;1933;1999;ML;Air Superiority Doctrine;High;unknownminister;X
+70154;Chief of Air Force;Baron Wahis;1915;1933;1999;ML;Army Aviation Doctrine;High;7957;X
+70155;Chief of Air Force;Marcel de Crombrugghe;1918;1933;1999;ML;Carpet Bombing Doctrine;High;7968;X
+70156;Chief of Army;Albert I;1914;1933;1999;ML;Decisive Battle Doctrine;Very High;2195;X
+70157;Chief of Navy;Albert I;1914;1933;1999;ML;Decisive Naval Battle Doctrine;Very High;2195;X
+70158;Chief of Staff;Ridder de Selliers de Moranville;1914;1933;1999;ML;school of defence;Medium;2196;X
+70159;Chief of Staff;Félix Wielemans;1914;1933;1999;ML;School of Fire Support;High;2197;X
+70160;Chief of Staff;Rucqouy;1917;1933;1999;ML;School of Psychology;High;2198;X
+70161;Chief of Staff;Cyriaque Gillain;1914;1933;1999;ML;School of Mass Combat;High;2199;X
+70162;Chief of Staff;Henry H. Maglinse;1920;1933;1999;ML;School of Fire Support;High;7962;X
+70163;Chief of Staff;Joseph Hellebaut;1914;1933;1999;SC;School of Mass Combat;Very High;2200;X
+70164;Foreign Minister;Jules Davignon;1914;1933;1999;ML;Ideological Crusader;Very High;7963;X
+70165;Foreign Minister;Baron Beyens;1914;1933;1999;ML;Great Compromiser;High;7956;X
+70166;Foreign Minister;Charles de Broqueville;1914;1933;1999;ML;Apologetic Clerk;High;2201;X
+70167;Foreign Minister;Paul Hymans;1918;1933;1999;ML;Biased Intellectual;High;7970;X
+70168;Foreign Minister;Léon Delacroix;1920;1933;1999;ML;Great Compromiser;High;7966;X
+70169;Foreign Minister;P.H. Jaspar;1920;1933;1999;ML;Great Compromiser;High;7969;X
+70170;Foreign Minister;Paul de Favereau;1914;1933;1999;ML;Great Compromiser;High;7937;X
+70171;Foreign Minister;Eugène Beyens;1914;1933;1999;ML;Biased Intellectual;High;7956;X
+70172;Head of Government;Charles de Broqueville;1914;1933;1999;ML;Silent Workhorse;High;2201;X
+70173;Head of Government;Léon Lesoil;1927;1933;1999;ST;Ambitious Union Boss;High;7967;X
+70174;Head of Government;Geraard Cooreman;1914;1933;1999;ML;Happy Amateur;High;7961;X
+70175;Head of Government;Léon Delacroix;1918;1933;1999;ML;Flamboyant Tough Guy;High;7966;X
+70176;Head of Government;Count Carton de Wiart;1920;1933;1999;ML;Silent Workhorse;High;7958;X
+70177;Head of Government;Georges Theunis;1921;1933;1999;ML;Political Protege;High;7960;X
+70178;Head of Government;Aloys Van de Vyvere;1920;1933;1999;ML;Silent Workhorse;High;7955;X
+70179;Head of Government;Jules Vandenpeereboom ;1914;1933;1999;ML;Silent Workhorse;High;unknownminister;X
+70180;Head of Government;Jules de Trooz ;1914;1933;1999;ML;Happy Amateur;High;2202;X
+70181;Head of Government;Frans Schollaert ;1914;1933;1999;ML;Silent Workhorse;High;2203;X
+70182;Head of Government;Edwart Anseele;1918;1933;1999;SD;Ambitious Union Boss;High;7959;X
+70183;Head of Military Intelligence;Charles de Broqueville;1914;1933;1999;ML;Industrial Specialist;High;2201;X
+70184;Head of Military Intelligence;Jules Vandenpeereboom;1914;1933;1999;ML;Political Specialist;High;unknownminister;X
+70185;Head of Military Intelligence;Joseph Hellebaut;1914;1933;1999;SC;Logistics Specialist;High;2200;X
+70186;Head of Military Intelligence;Fulgence Mason;1918;1933;1999;ML;Political Specialist;High;unknownminister;X
+70187;Head of State;Albert I;1914;1933;1999;ML;Benevolent Gentleman;High;2195;X
+70188;Minister of Armament;Michel Levie;1914;1933;1999;ML;Administrative Genius;High;unknownminister;X
+70189;Minister of Armament;Leon Lesoil;1927;1933;1999;ST;Resource Industrialist;Medium;7967;X
+70190;Minister of Armament;Aloys Van de Vyvere;1914;1933;1999;ML;Military Entrepreneur;High;7955;X
+70191;Minister of Armament;Léon Delacroix;1918;1933;1999;ML;Resource Industrialist;High;7966;X
+70192;Minister of Armament;Georges Theunis;1920;1933;1999;ML;Administrative Genius;High;7960;X
+70193;Minister of Armament;Julien Liebaert;1914;1933;1999;ML;Administrative Genius;High;7965;X
+70194;Minister of Armament;Henri Jaspar;1918;1933;1999;ML;Resource Industrialist;High;7969;X
+70195;Minister of Armament;Edwart Anseele;1918;1933;1999;SD;Administrative Genius;High;7959;X
+70196;Minister of Security;P. Berryer;1914;1933;1999;ML;Silent Lawyer;High;unknownminister;X
+70197;Minister of Security;Henri Denis;1918;1933;1999;ML;Compassionate Gentleman;High;2201;X
+70198;Minister of Security;A. Ruzette;1919;1933;1999;ML;Crime Fighter;High;unknownminister;X
+70199;Minister of Security;Jules Renkin;1919;1933;1999;ML;Silent Lawyer;High;7964;X
+70200;Minister of Security;P.H. Jaspar;1920;1933;1999;ML;Man of the People;High;7969;X
+70201;Minister of Security;Count Carton de Wiart;1920;1933;1999;ML;Silent Lawyer;High;7958;X
+70202;Minister of Security;Viscount Poullet;1924;1933;1999;ML;Compassionate Gentleman;High;7971;X
+70203;Minister of Security;Frans Schollaert;1914;1933;1999;ML;Compassionate Gentleman;High;2203;X
+70204;Minister of Security;Emile Vandervelden;1918;1933;1999;SL;Silent Lawyer;High;unknownminister;X
+70205;Chief of Staff;Leon Gillis;1949;1964;1999;NS;School of Manoeuvre;medium;6069;x
+70206;Chief of Navy;Charles de Broqueville;1914;1933;1999;ML;decisive naval battle doctrine;High;2201;X
+70207;Head of State;Albert I;1933;1934;1999;ML;Benevolent Gentleman;High;5780;X
+70208;Chief of Staff;Émile-Joseph Galet;1926;1933;1933;ML;school of defence;medium;9745;x
+70209;Chief of Staff;Prudent Armand Nuyten;1933;1935;1935;ML;school of fire support;medium;L68019;x
+70210;Chief of Staff;Edouard-Marie Van den Bergen;1935;1941;1942;ML;school of defence;medium;L68027;x
+70211;Chief of Staff;Gustave-Georges-Félix Fromont;1945;1947;1947;ML;school of psychology;medium;9746;x
+70212;Chief of Staff;Jean-Baptiste Piron;1951;1957;1958;ML;school of mass combat;medium;L68021;x
+70213;Head of Military Intelligence;Robert de Foy;1933;1941;1958;ML;Logistics Specialist;Very High;9747;X

@@ -1,0 +1,37 @@
+CAM;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+580001;Head of State;Jules Repiquet;1933;1964;1999;SL;Popular Figurehead;High;M534001;X
+580002;Head of Government;Emmanuel Endeley;1933;1964;1999;SL;Political Protege;High;M534002;X
+580003;Foreign Minister;Richard Brunot;1933;1964;1999;SL;Great Compromiser;High;M534003;X
+580004;Minister of Armament;Pierre Charles Cournarie;1933;1964;1999;SL;Corrupt Kleptocrat;Medium;M534004;X
+580005;Minister of Security;Hubert E.P. Carras;1933;1964;1999;SL;Back Stabber;Medium;M534005;X
+580006;Head of Military Intelligence;Henri Pierre Nicolas;1933;1964;1999;SL;Political Specialist;Medium;M534006;X
+580007;Chief of Staff;Francois Priaux;1933;1964;1999;SL;School of Psychology;Medium;M534007;X
+580008;Chief of Army;Pierre Ravel-Ecourd;1933;1964;1999;SL;Decisive Battle Doctrine;Medium;M534008;X
+580009;Chief of Navy;Robert Delavignette;1933;1964;1999;SL;Indirect Approach Doctrine;Medium;M534009;X
+580010;Chief of Air Force;Pierre Boisson;1933;1964;1999;SL;Naval Aviation Doctrine;Medium;M534010;X
+580011;Head of State;Pierre Boisson;1937;1964;1999;SL;Powerhungry Demagogue;High;M534010;X
+580012;Head of State;Richard Brunot;1938;1964;1999;SL;Benevolent Gentleman;High;M534003;X
+580013;Head of State;Pierre Charles Cournarie;1940;1964;1999;SL;Insignificant Layman;High;M534004;X
+580014;Head of State;Hubert E.P. Carras;1943;1964;1999;SL;Weary Stiffneck;High;M534005;X
+580015;Head of State;Henri Pierre Nicolas;1944;1964;1999;SL;Barking Buffoon;High;M534006;X
+580016;Head of State;Robert Delavignette;1946;1964;1999;SL;Die-hard Reformer;High;M534009;X
+580017;Head of State;René Hoffherr;1947;1964;1999;SL;Pig-headed Isolationist;High;M534017;X
+580018;Head of State;Ahmadou Ahidjo;1933;1964;1999;SC;Stern Imperialist;High;M534018;X
+580019;Head of Government;Andre Marie Mbida;1933;1964;1999;SC;Flamboyant Tough Guy;High;M534019;X
+580020;Foreign Minister;André Gerberon;1942;1964;1999;SL;Apologetic Clerk;High;M534020;X
+580021;Foreign Minister;John Ngu Foncha;1933;1964;1999;SC;The Cloak N Dagger Schemer;High;M534021;X
+580022;Minister of Armament;Antoine Bissagnet;1942;1964;1999;SL;Military Entrepreneur;Medium;M534022;X
+580023;Minister of Armament;Vincent de Paul Ahanda;1933;1964;1999;SC;Administrative Genius;Medium;M534023;X
+580024;Minister of Security;Eugene Chavant;1940;1964;1999;SL;Man of the People;Medium;M534024;X
+580025;Minister of Security;Georges Bonnet;1933;1964;1999;SC;Compassionate Gentleman;Medium;M534025;X
+580026;Head of Military Intelligence;René Hoffherr;1942;1964;1999;SL;Logistics Specialist;Medium;M534017;X
+580027;Head of Military Intelligence;Charles Assale;1933;1964;1999;SC;Industrial Specialist;Medium;M534027;X
+580028;Chief of Staff;Alpheé Maziéras;1942;1964;1999;SL;School of Defence;Medium;M534028;X
+580029;Chief of Staff;Valentin Abeille;1933;1964;1999;SC;School of Mass Combat;Medium;M534029;X
+580030;Chief of Army;Georges Hugo;1942;1964;1999;SL;Guns and Butter Doctrine;Medium;M534030;X
+580031;Chief of Army;Valentin Abeille;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M534029;X
+580032;Chief of Navy;Jean Cédile;1939;1964;1999;SL;Decisive Naval Battle Doctrine;Medium;M534032;X
+580033;Chief of Navy;Charles Assale;1933;1964;1999;SC;Power Projection Doctrine;Medium;M534027;X
+580034;Chief of Air Force;Roger Motte;1941;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M534034;X
+580035;Chief of Air Force;Louis Ferrant;1933;1964;1999;SC;Army Aviation Doctrine;Medium;M534035;X

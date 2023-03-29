@@ -1,0 +1,257 @@
+# Soviet war with Germany AI File by Lothos
+
+target = { 
+ 232 = 80
+ 163 = 100
+ 242 = 20
+ 311 = 80
+ 55 = 50
+ 325 = 40
+ 195 = 10
+} 
+max_garrison_prop = 0.60
+min_garrison_prop = 0.30
+neutrality = 100.000 
+max_front_ratio = 1.5 
+max_front_ratios = {
+	FIN = 0.08 # 0.08
+	ROM = 1.0 # 1.0
+	GER = 3.0
+	ITA = 2.0
+	JAP = 1.2
+}
+
+no_exp_forces_to = { FIN JAP SIA MAN VIC }
+combat = { GER = 50 }
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.05
+
+	AA_batteries = no
+	coastal_fort = no
+	radar_station = no 
+	air_base = atwar
+	naval_base = no 
+	land_fort = atwar
+	ic_at_war = no
+	force_ic_until = 1935
+	ic_end_year = 1935
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.05
+	home_peace_cap 			= 250
+	war_zone_odds 			= 2.0
+	key_point_prio_mult		= 1.5
+	revolt_risk_mult		= 0.1
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 80	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 100 # 20	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		AFG = -1
+		PER = -1
+		TUR = -1
+		CGX = -1
+		CYN = -1
+		CHC = -1
+		CHI = -1
+		CSX = -1
+		FIN = 10 #10
+		ROM = 70 # 100
+		POL = 70
+		GER = 150
+		ITA = 100
+		JAP = 5
+		MAN = 5
+		SWE = -1
+		NOR = -1
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		553   = 70  #Leningrad
+		617   = 20  #Kiev
+		627   = 20  #Dnepropetrovsk
+		663   = 20  #Stalingrad
+		636   = 20  #Kharkov
+		587   = 20  #Bryansk
+		1191  = 20  #Vladivostock
+		535   = 20  #Murmansk
+		641   = 20  #Sevastopool
+		566   = 20  # Pskov
+		597   = 20
+
+		# In depth defense
+
+		270 = 30 # Tallinn
+		604 = 30 # Kursk
+		590 = 30 # Vitebsk
+		552 = 30 # Gdov
+		584 = 30 # Tula
+		644 = 30 # Rostov
+	}
+	ignore = {
+		268  #Liepaja (German Border easy surround hex)
+	}
+	area_multiplier = {	}
+}
+front = { 
+	recklessness 		= 2 # 2
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.5
+	panic_ratio_vs_ai	= 3.0
+	panic_ratio_vs_human = 3.0
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.1
+	max_attack_odds		= 5.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.7
+
+	strength 	= 0.9
+	organisation 	= 1.0
+	soft_attack 	= 1.25
+	hard_attack 	= 1.5
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+	province_priorities = {
+		553   = 1.70  #Leningrad
+		617   = 1.20  #Kiev
+		627   = 1.20  #Dnepropetrovsk
+		663   = 1.20  #Stalingrad
+		636   = 1.20  #Kharkov
+		587   = 1.20  #Bryansk
+		1191  = 1.20  #Vladivostock
+		535   = 1.20  #Murmansk
+		641   = 1.20  #Sevastopool
+		566   = 1.20  # Pskov
+		597   = 1.20
+
+		# In depth defense
+
+		270 = 1.30 # Tallinn
+		604 = 1.30 # Kursk
+		590 = 1.30 # Vitebsk
+		552 = 1.30 # Gdov
+		584 = 1.30 # Tula
+		644 = 1.30 # Rostov
+	}
+	passivity = {
+		FIN = 30
+		ROM = 80
+		BUL = 90
+		HUN = 20
+		GER = 15
+	} 
+} 
+invasion = { 
+	invasion		= yes
+ 	base			= 0.4	#Relative modifier. (lower = specific targets much more important.)
+	random			= 12.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 1.5	#higher = avoid long distance.
+	max_distance    = 34.0 # AA to Hamburg
+	max_staging_distance = 14.0	# AA to Narvik
+	pocket			= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.5	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 0.1
+    air_support 	= 18.0 
+    redirect 		= nearest
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	641 #Sevastopol
+		708 #Kutaisi
+		553 #Leningrad
+		542 #Archangelsk
+		535 #Murmansk
+	}
+	target = { 
+		#England
+		22	= 250  #Cardif
+		26  = 250  #Dover
+		25  = 250  #Norwich
+		27  = 250  #Portsmouth
+		23  = 250  #Plymouth
+		36  = 250  #Belfast
+		17  = 250  #Manchester
+		12  = 250  #Edinburgh
+		11  = 250  #Glasgow
+		
+		#Soviets
+		535 = 2000 	#Murmansk
+		542 = 2000	#Archangelsk
+		530 = 2000	#Terijoki
+		553 = 2000	#Leningrad
+		641 = 500	#Sevastopol
+		264 = 4000	#Riga
+
+		#Norway
+		491	= 2000	#Alesund
+		485	= 2000	#Kristiansand
+		483	= 2000	#Oslo
+		493	= 2000	#Trondheim
+		495	= 6000	#Narvik
+		
+		#Sweden
+     	2153 = 1000 # Goterborg 
+     	2152 = 1000 # Malmo 
+     	2159 = 4000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 1000 # Gavle 
+     	2166 = 1000 # Lulea 
+
+		#Finland
+		525 = 3000 # Helsinki
+		524 = 3000 # Turku
+		521 = 3000 # Vaasa
+		516 = 6000 # Tornio
+		531 = 6000 # Viipuri
+		
+		#Denmark
+		294 = 2000 # Copenhagen
+		219 = 1000 # Odense
+		
+		#Baltics
+		184 = 4000 # Koenigsberg
+		181 = 100 # Danzig
+		226 = 100 # Gdynia
+		
+		158 = 1000 # Stettin
+		153 = 1000 # Rostock
+		152 = 1000 # Kiel
+		
+		#Romania
+		310 = 500 #Constanza
+		307 = 500 #Dobrich
+		626 = 4000 #Odessa
+	}
+} 

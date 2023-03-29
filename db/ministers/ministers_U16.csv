@@ -1,0 +1,28 @@
+U16;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+895001;Head of State;Karl Renner;1933;1964;1999;LWR;Benevolent Gentleman;High;M23021;X
+895002;Head of State;Otto Bauer;1933;1964;1999;ST;Insignificant Layman;High;M23031;X
+895003;Head of State;Josef Teufl;1933;1964;1999;ST;Barking Buffoon;High;M23047;X
+895004;Head of Government;Adolf Schärf;1933;1964;1999;LWR;Naive Optimist;High;M23022;X
+895005;Head of Government;Willi Frank;1933;1964;1999;ST;Happy Amateur;High;M23035;X
+895006;Head of Government;Josef Teufl;1933;1964;1999;ST;Backroom Backstabber;High;M23047;X
+895007;Foreign Minister;Alfred Klahr;1933;1964;1999;ST;Ideological Crusader;High;M23033;X
+895008;Foreign Minister;Willi Frank;1933;1964;1999;ST;Iron Fisted Brute;Medium;M23035;X
+895009;Minister of Armament;Karl Tuppy;1933;1964;1999;LWR;Corrupt Kleptocrat;Low;M23077;X
+895010;Minister of Armament;Fritz Stöckinger;1933;1964;1999;LWR;Air to Ground Proponent;High;M23078;X
+895011;Minister of Armament;Ludwig Huelgerth;1933;1964;1999;LWR;Air to Sea Proponent;Medium;M23052;X
+895012;Minister of Armament;Robert Winterstein;1933;1964;1999;ST;Submarine Proponent;Medium;M23025;X
+895013;Minister of Armament;Erwin Puschmann;1933;1964;1999;ST;Infantry Proponent;Medium;M23034;X
+895014;Minister of Security;Franz Sebek;1933;1964;1999;LWR;Compassionate Gentleman;High;M23036;X
+895015;Minister of Security;Otto Bauer;1933;1964;1999;ST;Back Stabber;Very Low;M23031;X
+895016;Minister of Security;Willi Frank;1933;1964;1999;ST;Crime Fighter;Medium;M23035;X
+895017;Head of Military Intelligence;Franz Sebek;1933;1964;1999;LWR;Political Specialist;High;M23036;X
+895018;Head of Military Intelligence;Richard Bernaschek;1933;1964;1999;ST;Technical Specialist;High;M23038;X
+895019;Chief of Staff;Adolf Schärf;1933;1964;1999;LWR;School of Fire Support;Medium;M23022;X
+895020;Chief of Staff;Ferdinand Strasser;1933;1964;1999;ST;School of Manoeuvre;High;M23037;X
+895021;Chief of Army;Richard Bernaschek;1933;1964;1999;ST;Static Defence Doctrine;Medium;M23038;X
+895022;Chief of Navy;Eric von Klopfenburg;1933;1964;1999;ST;Open Seas Doctrine;High;M23039;X
+895023;Chief of Navy;Josef Teufl;1933;1964;1999;ST;Base Control Doctrine;Medium;M23047;X
+895024;Chief of Air Force;Artur Breycha-Vauthier;1933;1964;1999;ST;Naval Aviation Doctrine;Low;M23136;X
+895025;Head of State;Theodor Körner;1933;1964;1999;LWR;Weary Stiffneck;High;M23144;X
+895026;Foreign Minister;Adolf Schärf;1933;1964;1999;LWR;Biased Intellectual;Very High;M23022;X

@@ -1,0 +1,162 @@
+war = 20
+combat = {
+	CHC = 100
+	TIB = 100
+}
+
+military = { 
+	relative_build_scheme 	= yes 
+	max_batch_peace 	= 360 
+	max_batch_war 		= 180 
+	max_batch_home_front 	= 180
+
+	#### Divisions etc...
+	infantry 	= 30
+	cavalry 		= 0
+	motorized 	= 5
+	mechanized 	= 4
+	light_armor 		= 0
+	armor 		= 6
+	paratrooper 		= 0
+	marine 		= 2
+	bergsjaeger 	= 2
+	garrison	= 5
+      	hq 		= 3
+	militia 		= 0
+#				57 %
+	interceptor 	= 4
+	multi_role 	= 3
+	cas 		= 3
+	strategic_bomber = 2
+	tactical_bomber = 7
+	naval_bomber 	= 2
+	transport_plane 	= 0
+	flying_bomb 		= 0
+	flying_rocket 		= 0
+#				18 %
+	battleship 		= 0
+	carrier 	= 0
+	destroyer 	= 8
+	light_cruiser 	= 4
+	heavy_cruiser 	= 3
+	battlecruiser 		= 0
+	submarine 	= 4
+	transports 	= 3
+#				22 %
+
+	#### Brigades
+	artillery 		= 20
+	sp_artillery 		= 5
+	cavalry_brigade	= 5 
+	sp_anti_air 	= 5
+	medium_armor 		= 8
+	tank_destroyer 		= 8
+	light_armor_brigade 	= 6
+	heavy_armor 		= 5
+	super_heavy_armor 	= 3
+	armored_car 		= 15
+	anti_air 		= 5
+	police 			= 10	
+	engineer 		= 5 
+
+	cag = 100.000 
+}
+technology = { 
+	endgoal = { } 
+	preference = {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Field Artillery
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+		
+		# Light tanks
+		2630 2640 2646 2650 2030 2040 2050
+		
+		# Medium tanks
+		2070 2080 2090 2140 11000 2660 11010 2670
+		
+		# Intercepters
+		4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 15020 4560 4570 4580
+		
+		# Manufactoring
+		5810 5820 5050 5830 5060 5070 5130 5110 5120 5840 5850 5860
+		
+		# Air Doctrines
+		9040 9090 9100 9110 9120 9130 9210 9220 9230 9240 9250 9350
+
+		# Manpower Focus Human Wave Path (SOV)
+		6570 6300 6310 6320 6330 6340 6350 6360 6370 14060
+	} 
+	ignore = {
+		# Airborne Infantry
+		1670 1680 1690 1700 1710 1720 1730 1740
+
+		# Marines
+		1560 1570 1580 1590 1600 1610 1620 1630 1640 1650 1660
+
+		#Heavy armor brigades
+		2620 2100 2110 2120 2126 2127
+
+		#Super heavy armor brigade
+		2130
+
+		#Tank Destroyer
+		2170 2180 2850 2190 2200 2210 11020 11026
+
+		# Anti-Air Brigades
+		2810 2820 2510 2520 2530 2540 11090
+
+		# Rocket
+		2970 2370 2380 2390 
+
+		# SP-Rocket
+		2980 2260 2270 2280 11050 11060 2990
+
+		# Custom Equipment
+		5920 5930 5940 5950 5960 5970 5980 5990
+
+		# Rocketry
+		5560 7550 7560 7570 7580 7590
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Radar Warning
+		5410 5416 5417 5420 5426 5430 5440 5466 5450 5460 53030 5476 53070
+
+		# Escort/Multirole Fighters
+		4040 4050 4070 4080 4100 4110
+		
+		# Close Air Support
+		#4400 4170 4280 4450 4180 15120 15130 
+
+		# Naval Bomber
+		4700 4710 4190 4200 4210 15140 15150
+
+		# Strategic Bomber
+		4800 4810 4820 4220 4230 4240 4246 15160 15170 16030
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+
+		#SEAPLANES
+		4740 4750 4760 4770 4780 4790 4850 4860
+
+		# Land Doctrines
+		6900
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
+	}
+ 
+	armor 			= 2
+	infantry 		= 7
+	industry 		= 2
+	aircraft 		= 1
+	naval 			= 0
+	land_doctrines 	= 4
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 0
+}

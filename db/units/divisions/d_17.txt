@@ -1,0 +1,86 @@
+# 0 - Early Large ASW Ship (1959) Kashin Class
+model = {
+	cost						= 1.4
+	buildtime 					= 1230
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.2
+	maxspeed					= 33
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 8
+	subdetectioncapability		= 9
+	visibility					= 42
+	seadefence					= 32
+	airdefence					= 20
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 15
+	airattack					= 14
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 10500
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.4
+	distance					= 0.26
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { light_cruiser = 1 manpower = 266 }
+}
+
+# 1 - Basic Large ASW Ship (1966) Kresta II Class/Kara Class/Duguay-Trouin-class
+model = {
+	cost						= 1.45
+	buildtime 					= 1150
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 38
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 7
+	subdetectioncapability		= 14
+	visibility					= 42
+	seadefence					= 29
+	airdefence					= 19
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 17
+	airattack					= 14
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 7500
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.4
+	distance					= 0.26
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { light_cruiser = 1 manpower = 427 }
+}
+
+# 2 - Improved Large ASW Ship (1977) Udaloy I Class
+model = {
+	cost						= 1.15
+	buildtime 					= 1487
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 38
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 8
+	subdetectioncapability		= 16
+	visibility					= 42
+	seadefence					= 26
+	airdefence					= 17
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 19
+	airattack					= 14
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 8125
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.4
+	distance					= 0.26
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { light_cruiser = 1 manpower = 460 }
+}

@@ -1,0 +1,71 @@
+UER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+1360001;Head of State;Direktoria;1914;1932;1999;ML;benevolent gentleman;Very High;8918;X
+1360002;Head of State;Pyotr Derber;1914;1932;1999;SL;insignificant layman;Very High;8910;X
+1360003;Head of State;Pyotr Vologodsky;1914;1932;1999;SC;autocratic charmer;Very High;8909;X
+1360004;Head of State;I. A. Lavrov;1914;1932;1999;SL;weary stiffneck;Very High;9125;X
+1360005;Head of State;Evgeniy Rogovsky;1914;1932;1999;SL;ruthless powermonger;Very High;9126;X
+1360006;Head of State;Aleksandr Kolchak;1914;1932;1999;PA;popular figurehead;Very High;8868;X
+1360007;Head of State;Dmitriy Horvath;1914;1932;1999;PA;pig-headed isolationist;Very High;8880;X
+1360008;Head of State;Vasiliy Boldyrev;1914;1932;1999;ML;die-hard reformer;Very High;8920;X
+1360009;Head of Government;Pyotr Vologodsky;1914;1932;1999;SC;backroom backstabber;Very High;8909;X
+1360010;Head of Government;Pyotr Derber;1914;1932;1999;SL;silent workhorse;Very High;8910;X
+1360011;Head of Government;I. A. Lavrov;1914;1932;1999;SL;smiling oilman;Very High;9125;X
+1360012;Head of Government;Evgeniy Rogovsky;1914;1932;1999;SL;naive optimist;Very High;9126;X
+1360013;Head of Government;Viktor Pepelyaev;1914;1932;1999;PA;corporate suit;Very High;8921;X
+1360014;Foreign Minister;Yuri Klyuchnikov;1914;1932;1999;SC;iron fisted brute;Very High;unknownminister;X
+1360015;Foreign Minister;Pyotr Vologodsky;1914;1932;1999;SC;general staffer;Very High;8909;X
+1360016;Foreign Minister;Vladimir Volsky;1914;1932;1999;SL;ideological crusader;Very High;8925;X
+1360017;Foreign Minister;Ivan Sukin;1914;1932;1999;PA;great compromiser;Very High;8890;X
+1360018;Foreign Minister;Sergey Tretyakov;1914;1932;1999;PA;apologetic clerk;Very High;8933;X
+1360019;Foreign Minister;Sergei Sazonov;1914;1932;1999;PA;biased intellectual;Very High;3055;X
+1360020;Minister of Security;Nikolay Avksentev;1914;1932;1999;SL;compassionate gentleman;Very High;8902;X
+1360021;Minister of Security;Aleksandr Gattenberger;1914;1932;1999;SC;man of the people;Very High;8867;X
+1360022;Minister of Security;Aleksandr Novoselov ;1914;1932;1999;SL;prince of terror;Very High;8865;X
+1360023;Minister of Security;Vladimir Krutovsky;1914;1932;1999;SC;crime fighter;Very High;8926;X
+1360024;Minister of Security;Pavel Mikhailov;1914;1932;1999;SL;silent lawyer;Very High;unknownminister;X
+1360025;Minister of Security;Mikhail Shatilov;1914;1932;1999;SL;back stabber;Very High;8932;X
+1360026;Minister of Security;Evgeniy Rogovsky;1914;1932;1999;SL;efficient sociopath;Very High;9126;X
+1360027;Minister of Security;Arseniy Bylinkin;1914;1932;1999;SL;crooked kleptocrat;Very High;unknownminister;X
+1360028;Minister of Security;Prokopiy Klimushkin;1914;1932;1999;SL;Media magnate;Very High;8908;X
+1360029;Minister of Security;Viktor Pepelyaev;1914;1932;1999;PA;Health and safety;Very High;8921;X
+1360030;Minister of Security;Aleksandr Cherven-Vodaly;1914;1932;1999;PA;Secret police chief;Very High;8864;X
+1360031;Minister of Armament;Nikolay Alekseyev;1914;1932;1999;ML;administrative genius;Very High;unknownminister;X
+1360032;Minister of Armament;Ivan Mikhailov;1914;1932;1999;SC;laissez-faire capitalist;Very High;8887;X
+1360033;Minister of Armament;Ivan Serebrennikov;1914;1932;1999;SC;corrupt kleptocrat;Very High;8889;X
+1360034;Minister of Armament;M. A. Kolobov;1914;1932;1999;SL;resource industrialist;Very High;unknownminister;X
+1360035;Minister of Armament;Vasiliy Abramov;1914;1932;1999;SL;theoretical scientist;Very High;8919;X
+1360036;Minister of Armament;Vasiliy Filippovsky;1914;1932;1999;SL;Oil baron;Very High;unknownminister;X
+1360037;Minister of Armament;Lev Goyer;1914;1932;1999;PA;Steel magnate;Very High;unknownminister;X
+1360038;Minister of Armament;Pavel Buryshkin;1914;1932;1999;PA;Industrial chemist;Very High;8905;X
+1360039;Minister of Armament;Nikolay Shukin;1914;1932;1999;PA;Planned economy proponent;Very High;unknownminister;X
+1360040;Minister of Armament;Sergey Tretyakov;1914;1932;1999;PA;Keynesian economy;Very High;8933;X
+1360041;Minister of Armament;Arkadiy Krakovetsky;1914;1932;1999;SL;infantry proponent;Very High;8875;X
+1360042;Minister of Armament;Aleksandr Kolchak;1914;1932;1999;SC;tank proponent;Very High;8868;X
+1360043;Minister of Armament;Boris Fortunatov;1914;1932;1999;SL;military entrepreneur;Very High;8878;X
+1360044;Minister of Armament;Nikolay Stepanov;1914;1932;1999;PA;infantry proponent;Very High;unknownminister;X
+1360045;Minister of Armament;Dmitriy Lebedev;1914;1932;1999;PA;tank proponent;Very High;8881;X
+1360046;Minister of Armament;Mikhail Diterikhs;1914;1932;1999;PA;military entrepreneur;Very High;8898;X
+1360047;Minister of Armament;Aleksey von Budberg;1914;1932;1999;PA;air superiority proponent;Very High;8870;X
+1360048;Minister of Armament;Mikhail Khanzhin;1914;1932;1999;PA;air to ground proponent;Very High;8899;X
+1360049;Minister of Armament;Mikhail Smirnov;1914;1932;1999;PA;battle fleet proponent;Very High;8897;X
+1360050;Minister of Armament;Mikhail Fyodorovich;1914;1932;1999;PA;submarine proponent;Very High;unknownminister;X
+1360051;Head of Military Intelligence;Evgeniy Rogovsky;1914;1932;1999;SL;industrial specialist;Very High;9126;X
+1360052;Head of Military Intelligence;Ivan Krasilnikov;1914;1932;1999;PA;political specialist;Very High;unknownminister;X
+1360053;Head of Military Intelligence;I. Zaychek ;1914;1932;1999;PA;dismal enigma;Very High;unknownminister;X
+1360054;Head of Military Intelligence;Simonov;1914;1932;1999;PA;technical specialist;Very High;unknownminister;X
+1360055;Chief of Staff;Vasiliy Boldyrev;1914;1932;1999;SL;school of fire support;Very High;8920;X
+1360056;Chief of Staff;Aleksey Grishin-Almazov;1914;1932;1999;SL;school of manoeuvre;Very High;8869;X
+1360057;Chief of Staff;Vladimir Kappel;1914;1932;1999;SC;school of defence;Very High;8927;X
+1360058;Chief of Staff;Dmitriy Lebedev;1914;1932;1999;PA;school of psychology;Very High;8881;X
+1360059;Chief of Staff;Mikhail Diterikhs;1914;1932;1999;PA;school of mass combat;Very High;8898;X
+1360060;Chief of Staff;Konstantin Sakharov;1914;1932;1999;PA;school of fire support;Very High;8892;X
+1360061;Chief of Staff;Sergey Voitsechovsky;1914;1932;1999;PA;school of manoeuvre;Very High;8915;X
+1360062;Chief of Staff;Nikolay Stepanov;1914;1932;1999;PA;school of defence;Very High;unknownminister;X
+1360063;Chief of Army;Vasiliy Boldyrev;1914;1932;1999;SL;guns and butter doctrine;Very High;8920;X
+1360064;Chief of Army;Aleksey Grishin-Almazov;1914;1932;1999;SL;armoured spearhead doctrine;Very High;8869;X
+1360065;Chief of Army;Vladimir Kappel;1914;1932;1999;SC;decisive battle doctrine;Very High;8927;X
+1360066;Chief of Army;Dmitriy Lebedev;1914;1932;1999;PA;static defence doctrine;Very High;8881;X
+1360067;Chief of Army;Mikhail Diterikhs;1914;1932;1999;PA;elastic defence doctrine;Very High;8898;X
+1360068;Chief of Army;Konstantin Sakharov;1914;1932;1999;PA;commando doctrine army;Very High;8892;X
+1360069;Chief of Army;Sergey Voitsechovsky;1914;1932;1999;PA;Doctrine of autonomy;Very High;8915;X
+1360070;Chief of Navy;Mikhail Smirnov;1914;1932;1999;PA;decisive naval battle doctrine;Very High;8897;X

@@ -1,0 +1,26 @@
+####################################
+# Philippines AI events 
+####################################
+event = {
+	id = 3066001
+
+	random = no
+	persistent = no
+
+	country = PHI
+
+	trigger = {  
+		puppet = { country = PHI country = USA }
+	}
+	
+	name = "AI_EVENT"
+	style = 2
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1935 }
+	
+	action = {
+		command = { type = ai which = "PHI_1936.ai" }
+	}
+}

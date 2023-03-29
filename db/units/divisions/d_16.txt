@@ -1,0 +1,146 @@
+allowed_brigades = b_08
+allowed_brigades = b_01
+# 0 - Converted Missile Destroyer (1953) Kotlin 56M class/Converted Daring Class/Converted Forrest Sherman class
+model = {
+	cost						= 0.7
+	buildtime 					= 820
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.3
+	maxspeed					= 35
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 5
+	subdetectioncapability		= 7
+	visibility					= 25
+	seadefence					= 35
+	airdefence					= 21
+	seaattack					= 9
+	convoyattack				= 9
+	subattack					= 8
+	airattack					= 9
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 10000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.3
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 300 }
+}
+
+# 1 - Basic Missile Destroyer (1958) County class/Farragut class/Kildin class
+model = {
+	cost						= 0.8
+	buildtime 					= 1340
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 36
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 6
+	subdetectioncapability		= 8
+	visibility					= 25
+	seadefence					= 33
+	airdefence					= 20
+	seaattack					= 10
+	convoyattack				= 10
+	subattack					= 9
+	airattack					= 10
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 11000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.3
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 470 }
+}
+
+# 2 - Improved Missile Destroyer (1962) Type 82 class/Charles F. Adams-class/Kanin-class/Type 51 Luda class
+model = {
+	cost						= 0.9
+	buildtime 					= 820
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.35
+	maxspeed					= 37
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 7
+	subdetectioncapability		= 9
+	visibility					= 25
+	seadefence					= 30
+	airdefence					= 18
+	seaattack					= 12
+	convoyattack				= 12
+	subattack					= 11
+	airattack					= 11
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 12000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.3
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 357 }
+}
+
+# 3 - Advanced Missile Destroyer (1972) Type 42 destroyer/Spruance-class/Sovremenny Class/Type 52 Luhu class
+model = {
+	cost						= 1.1
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.31
+	maxspeed					= 38
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 8
+	subdetectioncapability		= 10
+	visibility					= 25
+	seadefence					= 28
+	airdefence					= 16
+	seaattack					= 14
+	convoyattack				= 15
+	subattack					= 13
+	airattack					= 13
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 13000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.3
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 315 }
+}
+
+# 4 - AEGIS Missile Destroyer (1972) Arleigh Bruke-class
+model = {
+	cost						= 1.1
+	buildtime 					= 1000
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.31
+	maxspeed					= 38
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 8
+	subdetectioncapability		= 10
+	visibility					= 25
+	seadefence					= 32
+	airdefence					= 8
+	seaattack					= 7
+	convoyattack				= 7
+	subattack					= 6
+	airattack					= 26
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 13000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.3
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 1 manpower = 315 }
+}

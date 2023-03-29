@@ -1,0 +1,174 @@
+allowed_brigades = b_01
+# 0 - Early Frigate (1941) River Class/Tacoma class/Project 29K
+model = {
+	cost						= 0.65
+	buildtime 					= 285
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 37
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 3
+	subdetectioncapability		= 14
+	visibility					= 20
+	seadefence					= 36
+	airdefence					= 25
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 16
+	airattack					= 3
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 2000
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 535 }
+}
+
+# 1 - Basic Frigate (1945) Bay class/Kola class
+model = {
+	cost						= 0.7
+	buildtime 					= 285
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.78
+	maxspeed					= 37
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 3
+	subdetectioncapability		= 16
+	visibility					= 20
+	seadefence					= 35
+	airdefence					= 23
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 18
+	airattack					= 4
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 2250
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 785 }
+}
+
+# 2 - Improved Frigate (1951) Whitby-class/Riga class
+model = {
+	cost						= 0.8
+	buildtime 					= 300
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.87
+	maxspeed					= 38
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 5
+	subdetectioncapability		= 15
+	visibility					= 20
+	seadefence					= 31
+	airdefence					= 20
+	seaattack					= 5
+	convoyattack				= 5
+	subattack					= 20
+	airattack					= 5
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 2500
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.10
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 875 }
+}
+
+# 3 - Developed Frigate (1958) Rothesay-class/Petya Class
+model = {
+	cost						= 0.9
+	buildtime 					= 300
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.76
+	maxspeed					= 38
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 6
+	subdetectioncapability		= 17
+	visibility					= 20
+	seadefence					= 30
+	airdefence					= 22
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 21
+	airattack					= 6
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 2750
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 760 }
+}
+
+# 4 - Advanced Frigate (1962) Leander-class/Krivak I Class/Bronstein-Garcia-Knox class
+model = {
+	cost						= 1.0
+	buildtime 					= 330
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.14
+	maxspeed					= 40
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 7
+	subdetectioncapability		= 19
+	visibility					= 20
+	seadefence					= 29
+	airdefence					= 20
+	seaattack					= 7
+	convoyattack				= 7
+	subattack					= 23
+	airattack					= 7
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 3000
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 1142 }
+}
+
+# 5 - Modern Frigate (1973) Type 22 Broadsword class/Koni Class/Oliver Hazard Perry class
+model = {
+	cost						= 1.2
+	buildtime 					= 350
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.38
+	maxspeed					= 42
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 8
+	subdetectioncapability		= 23
+	visibility					= 20
+	seadefence					= 25
+	airdefence					= 18
+	seaattack					= 9
+	convoyattack				= 9
+	subattack					= 26
+	airattack					= 9
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 3250
+	supplyconsumption			= 0.2
+	fuelconsumption				= 0.2
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { destroyer = 5 manpower = 1380 }
+}

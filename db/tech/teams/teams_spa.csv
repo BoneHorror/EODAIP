@@ -1,0 +1,43 @@
+SPA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+35001;CASA;T3100;3;1930;2000;aeronautics;bomber_design;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35002;CROS, SA;T3101;2;1936;2000;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35003;Dr. Areilza y Mtez.-Rodas;T3102;3;1930;2000;management;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35004;Esperanza & Unceta;100106;4;1926;1953;artillery;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35005;Fábrica Nacional de Cañones de Trubia;100319;4;1794;2000;mechanics;artillery;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35006;Maestranza Artillería Ferrol;T3105;4;1930;2000;mechanics;artillery;munitions;training;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35007;Juan López Soler;100320;4;1930;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35008;Franco Bahamonde;T3108;4;1930;2000;infantry_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35009;García Valiño;100321;5;1930;2000;decentralized_execution;small_unit_tactics;mountain_training;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35010;Instituto Químico de Sarriá;100321;4;1930;2000;chemistry;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35011;García Morato;T3111;5;1930;1939;training;fighter_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35012;Hispano Aviación;100696;4;1939;2000;aeronautics;fighter_design;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35013;Sociedad Española de Construcción Naval;100322;5;1909;1969;naval_engineering;naval_artillery;electronics;carrier_design;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35014;Cervera Valderrama;T3115;4;1930;2000;naval_training;small_taskforce_tactics;seamanship;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35015;Alfredo Kindelán y Duany;T3116;3;1930;1946;training;bomber_tactics;piloting;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35016;Compañía Española de Petróleos SA;100323;4;1930;2000;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35017;Angel Salas Larrazabal;100324;4;1939;2000;training;fighter_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35018;Eduardo Gonzalez-Gallarza;100609;4;1944;1960;bomber_tactics;piloting;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35019;Esperanza y Unceta;100106;4;1908;1926;general_equipment;munitions;cavalry_tactics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35020;Fábrica Nacional de Armas Portátiles de Oviedo;100328;4;1856;2000;artillery;mechanics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35021;José María Chacón y Pery;100687;4;1900;1922;large_taskforce_tactics;small_taskforce_tactics;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35022;Laboratorio Químico del Ebro;100326;4;1905;1916;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35023;Instituto Químico de Sarriá;100326;4;1916;2000;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35024;Leonardo Torres y Quevedo;100462;6;1893;1935;mechanics;industrial_engineering;management;mathematics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35025;Juan de la Cierva;100501;7;1918;1935;aircraft_testing;aeronautics;avionics;fighter_design;bomber_design;rt_user_1;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35026;Pedro Vives Vich;100688;5;1898;1915;piloting;fighter_tactics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35027;Echevarrieta y Larrinaga;100463;4;1917;1952;naval_engineering;naval_artillery;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35028;Valeriano Weyler;100464;4;1900;1913;large_unit_tactics;large_unit_focus;static_defense_tactics;infantry_focus;maneuver_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35029;Dámaso Berenguer y Fusté;100327;3;1913;1930;large_unit_tactics;large_unit_focus;static_defense_tactics;infantry_focus;maneuver_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35030;Escuela Naval Militar;100329;5;1913;1943;naval_training;seamanship;marine_training;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35031;Juan Bautista Aznar-Cabañas;100465;5;1922;1933;large_taskforce_tactics;small_taskforce_tactics;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35032;Escuela de aviación militar en Cuatro Vientos;100330;1;1911;1932;piloting;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35033;Alfredo Kindelán y Duany;100466;4;1913;1930;fighter_tactics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35034;Academia de Ingenieros del Ejército;100689;6;1833;1931;technical_efficiency;mechanics;aeronautics;aircraft_testing;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35035;Escuela Catalana de Aviación;100690;3;1916;1932;piloting;fighter_tactics;bomber_tactics;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35036;Academia de Infantería de Toledo;100691;4;1850;1932;mountain_training;training;maneuver_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35037;Mateo García de los Reyes;100692;3;1915;1932;submarine_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35038;Academia General Militar;100693;5;1882;1932;centralized_execution;decentralized_execution;small_unit_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35039;Academia de Caballería;100694;4;1852;1932;cavalry_tactics;small_unit_tactics;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35040;Santiago Ramón y Cajal;100695;8;1875;1932;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35041;Hispano-Suiza;100323;5;1904;1939;aeronautics;vehicle_engineering;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+35042;Escuela Técnica Superior de Ingenieros Industriales;100697;3;1907;2000;mechanics;industrial_engineering;management;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

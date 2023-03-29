@@ -1,0 +1,899 @@
+### 1330120019  JAP  Five Ministers conference
+### 1330120020  JAP  Zhenbao Incident (ahistorical)
+### 1330030000  SOV  Sue for peace with the Japanese
+### 1330120021  JAP  Stalin sues for peace
+### 1330030001  SOV  The treaty of Xinjing
+### 1330120022  JAP  The treaty of Xinjing
+### 1330120023  JAP  The Soviets are about to lose the war!
+### 1330120024  JAP  The Russian Fascist Party
+### 1330120025  JAP  The Russian Club in Manzhouli
+### 1330120026  JAP  The Asano Detachment
+### 1330120027  JAP  Remove Modifiers
+### 1330120028  JAP  The Russian All-Military Union endorses us
+### 1330120029  JAP  The Russian All-Military Union endorses us
+### 1330120030  MAN  The Russian All-Military Union endorses us
+### 1330120031  JAP  Russian Migrant Network
+### 1330120032  JAP  The Shanghai Russians
+### 1330120033  MAN  The Russian Blackshirts
+### 1330120034  ***  Bitter Peace Helper (TODO)
+### 1330120035  JAP  The Bitter Peace with the Soviets
+
+######################################################################
+#Five Ministers conference
+######################################################################
+
+event = {
+	id = 1330120019
+	random = no
+	country = JAP
+
+	name = EVT_1330120019_NAME
+	desc = EVT_1330120019_DESC
+	style = 2
+ 	picture = "news_paper"
+
+    # Triggered
+
+	action = {
+        ai_chance = 92 #92
+		name = EVT_1330120019_ACTION1 # Historical
+		command = { type = relation which = SOV value = 10 }
+		command = { type = sleepevent which = 1330120020 } #No Zhenbao incident
+        command = { type = sleepevent which = 1330030000 } #Sue for Peace with the Japanese
+        command = { type = sleepevent which = 1330030001 } #The Treaty of Xinjiang
+        command = { type = sleepevent which = 1330120021 } #Stalin sues for Peace
+        command = { type = sleepevent which = 1330120022 } #The Treaty of Xinjiang
+        command = { type = sleepevent which = 1330120023 } #The Soviets are about to lose the war!
+        command = { type = sleepevent which = 1330120024 } #The Russian Fascist Party
+        command = { type = sleepevent which = 1330120025 } #The Russian Club in Manzhouli
+        command = { type = sleepevent which = 1330120026 } #The Asano Detachment
+        command = { type = sleepevent which = 1330120027 } #Stalin sues for Peace
+        command = { type = sleepevent which = 1330120028 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120029 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120030 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120031 } #Russian Migrant Network
+        command = { type = sleepevent which = 1330120032 } #The Shanghai Russians
+        command = { type = sleepevent which = 1330120033 } #Russian Blackshirts
+        command = { type = sleepevent which = 1330120034 } #
+        command = { type = sleepevent which = 1330120035 } #The Soviets are defeated
+		command = { type = event which = 1330120000 where = CHI when = 3 }
+	}
+
+	action = {
+        ai_chance = 8 #8
+		name = EVT_1330120019_ACTION2 # Ahistorical
+		command = { type = belligerence which = JAP value = 5 } #no way to pass this off as peaceful
+		command = { type = sleepevent which = 2011025 } #Pearl Harbor
+		command = { type = sleepevent which = 1330120000 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120001 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120002 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120003 } #The He-Umezo Agreement
+		command = { type = sleepevent which = 1330120004 } #The He-Umezo Agreement
+		command = { type = sleepevent which = 1330120005 } #The He-Umezo Agreement - refused
+		command = { type = sleepevent which = 1330120006 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120007 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120038 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120039 } #The Chin-Doihara Agreement - refused
+		command = { type = sleepevent which = 2011022 } # Marco Polo Bridge
+		#command = { type = sleepevent which = 2011021 } # German Recognition of Manchukuo
+		command = { type = relation which = CHI value = 20 } #Policy Shift
+		command = { type = relation which = CHC value = -20 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = GER value = 25 } #Commie haters
+		command = { type = relation which = ITA value = 25 }
+		command = { type = setflag which = JAP_NorthStrategy }
+	}
+}
+
+#########################################################################
+#  Zhenbao Incident (ahistorical)
+#########################################################################
+event = {
+	id = 1330120020
+	random = no
+	country = JAP
+
+	name = EVT_1330120020_NAME
+	desc = EVT_1330120020_DESC
+	style = 2
+ 	picture = "news_paper"
+
+	decision = {
+		exists = SOV
+		flag = JAP_NorthStrategy #North Strike Group at the helm
+		NOT = {
+			war = { country = JAP country = SOV }
+			event = 1330120022 #JAP  The treaty of Xinjing
+		}
+	}
+	decision_trigger = { 
+		exists = SOV
+		not = { ispuppet = SOV }
+		not = { ispuppet = JAP }
+	}
+	
+	trigger = {
+		AI = yes
+		random = 25
+		flag = JAP_NorthStrategy #North Strike Group at the helm
+		or = {
+			and = {
+				not = { relation = { which = SOV value = 60 } }
+				army = 74
+			}
+			and = {
+				or = {
+					war = { country = SOV country = GER }
+					war = { country = SOV country = U08 }
+					war = { country = SOV country = USA }
+					war = { country = SOV country = DDR }
+				}
+				army = 60
+			}
+		}
+		NOT = {
+			war = { country = JAP country = SOV }
+			event = 1330120022 #JAP  The treaty of Xinjing
+		}
+	}
+
+    date = { day = 0 month = january year = 1936 }
+    offset = 15
+	deathdate = { day = 29 month = august year = 1963 }
+
+	action = {
+		name = EVT_1330120020_ACTION1
+		command = { type = war which = SOV }
+		command = { type = end_non_aggression which = JAP where = SOV }
+		command = { type = end_non_aggression which = SOV where = JAP }
+		command = { type = relation which = GER value = 25 } #Commie haters
+		command = { type = relation which = ITA value = 25 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 2 }
+	}
+}
+
+#########################################################################
+#  Sue for peace with the Japanese
+#########################################################################
+event = {
+	id = 1330030000
+	random = no
+	country = SOV
+
+	trigger = {
+		war = { country = JAP country = SOV }
+		NOT = { war = { country = GER country = SOV } } #If GER is involved, there should be Bitter peace
+		random = 35
+		control = { province = 1124 data = -2 } # Ulan Bator is controlled by enemies
+		control = { province = 1119 data = -2 } # Tuva is controlled by enemies
+		control = { province = 1191 data = -2 } # Vladivostok is controlled by enemies
+		control = { province = 1142 data = -2 } # Novosibirsk is controlled by enemies
+		control = { province = 1156 data = -2 } # Krasnoyarsk is controlled by enemies
+		control = { province = 1164 data = -2 } # Ust-Kut is controlled by enemies
+		control = { province = 1169 data = -2 } # Chita is controlled by enemies
+		control = { province = 1176 data = -2 } # Blagoveshchensk is controlled by enemies
+		control = { province = 1190 data = -2 } # Khabarovsk is controlled by enemies
+		NOT = { land_percentage = { country = JAP value = 3.0 } } #SOV has to be able to defend against GER
+		NOT = { lost_national = { country = MAN value = 7 } } #MAN is fine
+		NOT = { war = { country = JAP country = ENG } } #Japan isn't tied up with the West
+		NOT = {	war = { country = JAP country = FRA } }
+		NOT = { war = { country = JAP country = USA } }
+		NOT = { flag = NO_JAP_Anti_comintern_pact } #JAP and GER get along
+		flag = anti_comintern_pact # GER and ITA aren't fans of Stalin
+		OR = {
+			NOT = {
+				or = {
+					event = 2007018 #No Molotov-Ribbentrop
+					event = 2007019
+				}
+			}
+			event = 2007021 #Or Molotov-Ribbentrop has been broken
+		}
+	}
+	
+	name = EVT_1330030000_NAME
+	desc = EVT_1330030000_DESC
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 10 
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		name = EVT_1330030000_ACTION1
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 1330120021 } # JAP
+	}
+}
+
+event = {
+	id = 1330120021
+	random = no
+	country = JAP
+	
+	name = EVT_2024_NAME
+	desc = EVT_1330120021_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = EVT_1330120021_ACTION1 #Demand a free hand in Mongolia!
+		ai_chance = 80
+		command = { type = dissent value = -5 } 
+		command = { type = setflag which = 1330120021_Mongolia }
+		command = { type = trigger which = 1330030001 } # SOV 	
+	}
+
+	action = {
+		name = EVT_1330120021_ACTION2 #Mongolia and north Sakhalin!
+		ai_chance = 20
+		command = { type = dissent value = -10 }
+		command = { type = setflag which = 1330120021_MonSak }  
+		command = { type = trigger which = 1330030001 } # SOV	
+	}
+
+	action = {
+		name = EVT_1330120021_ACTION3 #We embarked to destroy Communism!
+		ai_chance = 0
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 1330030001
+	random = no
+	country = SOV
+	
+	name = EVT_1330030001_NAME
+	desc = EVT_1330030001_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		trigger = { flag = 1330120021_Mongolia }
+		name = EVT_1330030001_ACTION1 #Give them free reign in Mongolia
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = secedearea which = JAP value = Mongolia when = 1 } #Just in case SOV ended up owning it
+		command = { type = trigger which = 1330120022 }	
+	}
+	action = {
+		trigger = { flag = 1330120021_MonSak }
+		name = EVT_1330030001_ACTION2 #Mongolia and north Sakhalin are a small price to pay
+		ai_chance = 70
+		command = { type = dissent value = 5 }
+		command = { type = secedearea which = JAP value = Mongolia when = 1 } #Just in case SOV ended up owning it
+		command = { type = secedeprovince which = JAP value = 1541 when = 1 }
+		command = { type = trigger which = 1330120022 }	
+	}
+	action = {
+		trigger = { NOT = { flag = 1330120021_Mongolia } }
+		name = ACTION_NAME_REFUSE_PEACE 
+		ai_chance = 30
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 1330120022
+	random = no
+	country = JAP
+	
+	name = EVT_1330030001_NAME
+	desc = EVT_1330120022_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		trigger = { flag = 1330120021_Mongolia }
+		name = EVT_1330120022_ACTION1
+		command = { type = peace which = SOV value = 0 }
+		command = { type = dissent value = -5 } 
+		command = { trigger = { puppet = { country = MON country = SOV } } type = inherit which = MON when = 3 }
+		command = { trigger = { puppet = { country = TAN country = SOV } } type = inherit which = TAN when = 3 }
+		command = { type = independence which = MEN value = 1 } #Just in case
+		command = { type = make_puppet which = MEN }
+	}
+	action = {
+		trigger = { flag = 1330120021_MonSak }
+		name = EVT_1330120022_ACTION1
+		command = { type = peace which = SOV value = 0 } 
+		command = { type = dissent value = -10 }
+		command = { trigger = { puppet = { country = MON country = SOV } } type = inherit which = MON when = 3 }
+		command = { trigger = { puppet = { country = TAN country = SOV } } type = inherit which = TAN when = 3 }		
+		command = { type = independence which = MEN value = 1 } #Just in case
+		command = { type = make_puppet which = MEN }
+	}
+}
+
+#########################################################################
+#  The Soviets are about to lose the war!
+#########################################################################
+event = {
+	id = 1330120023
+	random = no
+	country = JAP
+
+	decision = {
+		NOT = { flag = NO_JAP_Anti_comintern_pact } #JAP and GER get along
+		flag = anti_comintern_pact # GER and ITA aren't fans of Stalin
+		war = { country = GER country = SOV }
+		NOT = { war = { country = JAP country = SOV } }
+	}
+
+	decision_trigger = {
+		#Historical conditions for Japanese entry, according to Richard Sorge's Spy network
+		OR = {
+			control = { province = 572 data = GER } # Moscow is controlled by GER
+			control = { province = 663 data = GER } # Stalingrad is controlled by GER
+			war = { country = SIB country = SOV } #Civil war in Siberia
+			war = { country = PRI country = SOV }
+		}	
+	}
+
+	trigger = {
+		NOT = { flag = NO_JAP_Anti_comintern_pact } #JAP and GER get along
+		flag = anti_comintern_pact # GER and ITA aren't fans of Stalin
+		war = { country = GER country = SOV }
+		NOT = { war = { country = JAP country = SOV } } 
+		random = 35
+		OR = {
+			control = { province = 572 data = GER } # Moscow is controlled by GER
+			control = { province = 663 data = GER } # Stalingrad is controlled by GER
+			war = { country = SIB country = SOV } #Civil war in Siberia
+			war = { country = PRI country = SOV }	
+		}
+		land_percentage = { country = SOV value = 0.3 } #Most troops are fighting the Germans anyway
+		OR = {
+			AND = {
+				garrison = { country = -3 province = 1225 type = land size = 3 area = 2 } #At least 3 divisions in Korea
+				garrison = { country = -3 province = 1200 type = land size = 7 area = 1 } #At least 7 divisions in east Manchuria
+			}
+			NOT = {
+				garrison = { country = -2 province = 1190 type = land size = 3 area = 2 } #less than 3 Divisions in the Far East
+				garrison = { country = -2 province = 1169 type = land size = 3 area = 2 } #less than 3 Divisions in Irkutsk Region
+			}
+		}
+	}
+	
+	name = EVT_1330120023_NAME
+	desc = EVT_1330120023_DESC
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 10 
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		name = EVT_1330120023_ACTION1
+		command = { type = war which = SOV }
+		command = { type = relation which = GER value = 25 }
+		command = { type = relation which = ITA value = 25 }
+		command = { type = sleepevent which = 1330120020 }
+	}
+}
+
+########################################################
+#The Russian Emigre Community
+########################################################
+event = {
+	id = 1330120024
+	random = no
+	country = JAP
+
+	decision = {
+		flag = JAP_NorthStrategy
+	}
+
+	decision_trigger = {
+		puppet = { country = MAN country = JAP }
+	}
+
+	trigger = {
+		puppet = { country = MAN country = JAP }
+		flag = JAP_NorthStrategy
+		war = { country = JAP country = SOV }
+	}
+
+	name = EVT_1330120024_NAME
+	desc = EVT_1330120024_DESC
+	
+	picture = "ccip_RFP"
+	style = 2
+	decision_picture = "ccip_RFP"
+
+	date = { day = 0 month = january year = 1931 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_1330120024_ACTION1
+		ai_chance = 50
+		command = { type = free_money value = -0.5 }
+		command = { type = local_setflag which = 1330120024_RFPnom }
+	}
+	action = {
+		name = EVT_1330120024_ACTION2
+		ai_chance = 50
+		command = { type = free_money value = -1 } 
+		command = { type = local_setflag which = 1330120024_RFPsupport } 
+	}
+}
+
+event = {
+	id = 1330120025
+	random = no
+	country = JAP
+
+	trigger = {
+		puppet = { country = MAN country = JAP }
+		OR = {
+			AND = { 
+				local_flag = 1330120024_RFPsupport
+				random = 20
+			}
+			AND = { 
+				local_flag = 1330120024_RFPnom
+				random = 10
+			}
+			random = 5
+		}
+	}
+	
+	name = EVT_1330120025_NAME
+	desc = EVT_1330120025_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 60 
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		name = EVT_1330120025_ACTION1
+		command = { type = relation which = SOV value = -10 }
+	}
+}
+
+event = {
+	id = 1330120026
+	random = no
+	country = JAP
+
+	trigger = {
+		puppet = { country = MAN country = JAP }
+		war = { country = JAP country = SOV }
+		OR = {
+			AND = { 
+				local_flag = 1330120024_RFPsupport
+				random = 5
+			}
+			AND = { 
+				local_flag = 1330120024_RFPnom
+				random = 3
+			}
+		}
+	}
+	
+	name = EVT_1330120026_NAME
+	desc = EVT_1330120026_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30 
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		name = ACTION_NAME_EXCELLENT
+		ai_chance = 50
+		command = { type = army_detection which = us value = 5 }
+		command = { type = local_setflag which = 1330120026_ARM }
+	}
+
+	action = {
+		name = ACTION_NAME_EXCELLENT
+		ai_chance = 50
+		command = { type = intelligence which = us value = 5 }
+		command = { type = local_setflag which = 1330120026_INT }
+	}
+}
+
+# Remove modifier when no longer at war
+event = {
+	id = 1330120027
+	random = no
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		event = 1330120026
+		not = { war = { country = JAP country = SOV } }
+	}
+
+	name = EVT_2024_NAME
+	desc = EVT_1330120021_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30 
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		trigger = {
+			local_flag = 1330120026_ARM
+		}
+		name = ACTION_NAME_OK
+		command = { type = army_detection which = us value = -5 }
+		command = { type = local_clrflag which = 1330120026_ARM }
+	}
+
+	action = {
+		trigger = {
+			local_flag = 1330120026_INT
+		}
+		name = ACTION_NAME_OK
+		command = { type = intelligence which = us value = -5 }
+		command = { type = local_clrflag which = 1330120026_INT }
+	}
+}
+
+event = {
+	id = 1330120028
+	random = no
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		puppet = { country = MAN country = JAP }
+		OR = {
+			AND = { 
+				local_flag = 1330120024_RFPsupport
+				random = 10
+			}
+			AND = { 
+				local_flag = 1330120024_RFPnom
+				random = 5
+			}
+			random = 3
+		}
+	}
+
+	name = EVT_1330120028_NAME
+	desc = EVT_1330120028_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 30 
+	deathdate = { day = 29 month = september year = 1963 } 
+	
+	action = {
+		name = EVT_1330120028_ACTION1
+		command = { type = money value = 25 }  #donations
+	}
+}
+
+event = {
+	id = 1330120029
+	random = no
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		exists = MAN
+		war = { country = MAN country = SOV }
+		alliance = { country = MAN country = JAP }
+		OR = {
+			AND = {
+				war = { country = JAP country = SOV }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 10
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 5
+					}
+					random = 3
+				}
+			}
+			AND = {
+				NOT = { war = { country = JAP country = SOV } }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 5
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 3
+					}
+					random = 1
+				}
+			}
+		}
+	}
+	
+	name = EVT_1330120028_NAME
+	desc = EVT_1330120028_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 30 
+	deathdate = { day = 29 month = september year = 1963 }
+
+	action = {
+		trigger = {
+			not = {
+				local_flag = 1330120029_2
+			}
+		}
+		name = ACTION_NAME_GREAT
+		command = { type = event which = 1330120030 where = MAN when = 0 }
+		command = { trigger = { local_flag = 1330120029_1 } type = local_setflag which = 1330120029_2 }
+		command = { type = local_setflag which = 1330120029_1 }
+	}
+
+}
+
+event = {
+	id = 1330120030
+	random = no
+	country = MAN
+	persistent = yes
+
+	# Triggered
+	
+	name = EVT_1330120028_NAME
+	desc = EVT_1330120028_DESC
+
+	style = 2
+	picture = "ccip_RFP"
+	
+	action = {
+		trigger = {
+			not = {
+				local_flag = 1330120030_1
+			}
+		}
+		name = EVT_1330120029_ACTION1
+		command = { type = add_corps which = "Belaya Armiya" value = land where = 1208 } 
+		command = { type = add_division which = "Belaya Gvardiya" value = infantry when = 5 }
+		command = { type = local_setflag which = 1330120030_1 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				local_flag = 1330120030_2
+			}
+			local_flag = 1330120030_1
+		}
+		name = EVT_1330120029_ACTION1
+		command = { type = add_corps which = "Dobrovolcheskaya Armiya" value = land where = 1208 } 
+		command = { type = add_division which = "Dobrovolcheskaya Diviziya" value = militia when = 4 }
+		command = { type = local_setflag which = 1330120030_2 }
+	}
+}
+
+event = {
+	id = 1330120031
+	random = no
+	country = JAP
+	one_action = yes
+	persistent = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				war = { country = JAP country = SOV }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 10
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 5
+					}
+						random = 3
+					}
+				}
+			AND = {
+				NOT = { war = { country = JAP country = SOV } }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 5
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 3
+					}
+					random = 1
+				}
+			}
+		}
+	}
+	
+	name = EVT_1330120031_NAME
+	desc = EVT_1330120031_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 30 
+	deathdate = { day = 29 month = september year = 1963 }
+	
+	action = {
+		trigger = { exists = GER }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION1
+		command = { type = relation which = GER value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = YUG }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION2
+		command = { type = relation which = YUG value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = SER }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION2
+		command = { type = relation which = SER value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = FRA }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION4
+		command = { type = relation which = FRA value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = TUR }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION5
+		command = { type = relation which = TUR value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = CHI }
+		ai_chance = 5 #economical hardships for Russians in China
+		name = EVT_1330120031_ACTION6
+		command = { type = relation which = CHI value = 5 } #Lobby work
+	}
+	action = {
+		trigger = { exists = USA }
+		ai_chance = 15
+		name = EVT_1330120031_ACTION7
+		command = { type = relation which = USA value = 5 } #Lobby work
+	}
+}
+
+event = {
+	id = 1330120032
+	random = no
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				control = { province = 1338 data = -3 } #Shanghai controlled by friends
+				war = { country = JAP country = SOV }
+				local_flag = 1330120024_RFPsupport
+				random = 20
+			}
+			AND = {
+				NOT = { war = { country = JAP country = SOV } }
+				control = { province = 1338 data = -3 } #Shanghai controlled by friends
+				local_flag = 1330120024_RFPsupport
+				random = 10
+			}
+		}
+	}
+
+	name = EVT_1330120032_NAME
+	desc = EVT_1330120032_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 90 
+	deathdate = { day = 29 month = september year = 1963 }
+	
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = manpowerpool value = 1 when = 1 } #Russian collaborators free up Japanese recruits for more crucial tasks
+	}
+
+}
+
+event = {
+	id = 1330120033
+	random = no
+	country = JAP
+
+	trigger = {
+		exists = MAN
+		war = { country = MAN country = SOV }
+		alliance = { country = MAN country = JAP }
+		OR = {
+			AND = {
+				war = { country = JAP country = SOV }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 10
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 5
+					}
+					random = 3
+				}
+			}
+			AND = {
+				NOT = { war = { country = JAP country = SOV } }
+				OR = {
+					AND = { 
+						local_flag = 1330120024_RFPsupport
+						random = 5
+					}
+					AND = { 
+						local_flag = 1330120024_RFPnom
+						random = 3
+					}
+					random = 1
+				}
+			}
+		}
+	}
+	
+	name = EVT_1330120033_NAME
+	desc = EVT_1330120033_DESC
+	style = 2
+	picture = "ccip_RFP"
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 60 
+	deathdate = { day = 29 month = september year = 1963 }
+	
+	action = {
+		name = EVT_1330120029_ACTION1
+		command = { type = add_corps which = "Rossijskaya Fashistskaya Partiya" value = land where = 1208 } 
+		command = { type = add_division which = "Chernorubashechniki" value = militia when = 2 } #low unit level - just a bunch of thugs
+	}
+}
+
+###########################################################
+#The Bitter Peace with the Soviets
+###########################################################
+event = {
+	id = 1330120035
+	random = no
+	country = JAP
+
+	#triggered by SOV 2007033
+	
+	name = EVT_1330120035_NAME
+	desc = EVT_1330120035_DESC
+	style = 2
+	picture = "news_paper"
+	
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -10 } 
+		command = { trigger = { exists = MON NOT = { puppet = { country = MEN country = JAP } } } type = make_puppet which = MON } 
+		command = { trigger = { exists = TAN NOT = { puppet = { country = MEN country = JAP } } } type = make_puppet which = TAN } 
+		#TODO: MEN/MAN/etc.
+		command = { trigger = { event = 1330120024 } type = independence which = PRI }
+		command = { trigger = { event = 1330120024 } type = make_puppet which = PRI }
+	}
+}

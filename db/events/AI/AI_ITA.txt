@@ -1,0 +1,1182 @@
+####################################
+# Italy 
+####################################
+# Who he is invading flags
+#	ITAInvadeGreece		= Prepare for the invasion of Greece
+#	ITAInvadeRussia		= Not actual war prep but send exp forces to Germany if allied
+
+# Behavior Flags
+#	ITADefendItaly		= Homeland defense AI
+#	ITABuildStandard	= Standard builds
+#	ITABuildLand		= Build Heavy on Land units
+
+# Air AI Flags
+#	ITAAirAINaval		= Priority on Naval targets
+#	ITAAirAIGround		= Priority on Ground targets
+
+# Naval AI Flags
+#	ITANavalStandard	= Protect the central part of the med
+#	ITANavalEthiopia	= Support Ethiopia
+#	ITANavalGreece		= Support Greece invasion
+#	ITANavalWestMed		= Support Spanish Invasion of Western Med is secured
+#	ITANavalEastMed		= Support Eastern med as it is secured
+#	ITANavalAllMed		= All of the Med is secured
+
+################
+# Italy changes political stance in war
+#############################################
+event = {
+	id = 3006001
+	random = no 
+	country = ITA
+
+	trigger = {
+		ai = yes
+		control = { province = 163 data = GER } # Berlin
+		OR = {
+			AND = {
+				area = { area = "Wallonia" country = GER }
+				area = { area = "Flanders" country = GER }
+			}
+			lost_national = { country = FRA value = 10 }
+			control = { province = 55 data = GER } # Paris
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Neutrality.ai" }
+		command = { type = leave_alliance when = 1 }
+		command = { type = alliance which = GER when = 1 }
+	}
+}
+################
+# Italy prepares for Greece invasion
+#############################################
+event = {
+	id = 3006002
+	random = no 
+	country = ITA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		exists = GRE
+		control = { province = 359 data = ITA }
+		control = { province = 360 data = ITA } # Albania
+		control = { province = 361 data = ITA }
+		control = { province = 362 data = ITA }
+		NOT = { alliance = { country = GER country = GRE } }
+		NOT = { alliance = { country = SOV country = GRE } }
+		NOT = { alliance = { country = GRE } }
+		NOT = { local_flag = ITADefendItaly }
+		NOT = { local_flag = ITAInvadeGreece }
+		NOT = { war = { country = GRE } }
+		NOT = { war = { country = USA } }
+		NOT = { control = { province = 55 data = -2 } } # Paris not controlled by enemy
+		NOT = { control = { province = 163 data = -2 } } # Berlin not controlled by enemy		
+		OR = { 
+			participant = { country = ITA value = 2 } 
+			year = 1941
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ITAInvadeGreece }
+		command = { type = local_clrflag which = ITAInvadeRussia }
+		command = { type = ai_prepare_war which = GRE }
+		command = { type = ai which = "switch/ITA_Greece_Buildup.ai" }
+	}
+}
+################
+# Italy invades Greece
+#############################################
+event = {
+	id = 3006003
+	random = no 
+	country = ITA
+
+	trigger = {
+		ai = yes
+		local_flag = ITAInvadeGreece
+		NOT = { local_flag = ITADefendItaly }
+		NOT = { alliance = { country = GER country = GRE } }
+		NOT = { alliance = { country = SOV country = GRE } }
+		NOT = { alliance = { country = GRE } }
+		NOT = { war = { country = GRE } }
+		control = { province = 359 data = ITA }
+		control = { province = 360 data = ITA } # Albania
+		control = { province = 361 data = ITA }
+		control = { province = 362 data = ITA }
+		NOT = { war = { country = USA } }
+		NOT = { control = { province = 55 data = -2 } } # Paris not controlled by enemy
+		NOT = { control = { province = 163 data = -2 } } # Berlin not controlled by enemy
+		OR = {
+			NOT = { exists = GRE } #if not exists, reset flag
+			AND = {
+				exists = GRE
+				OR = {
+					garrison = { country = ITA province = 359 type = land size = 3 area = no } # Tirana
+					garrison = { country = ITA province = 362 type = land size = 3 area = no } # Vlore
+					garrison = { country = ITA province = 360 type = land size = 3 area = no } # Kprai
+					garrison = { country = ITA province = 361 type = land size = 3 area = no } # 
+				}
+				OR = {
+					month = 9 # October
+					AND = {
+						month = 0 # January
+						NOT = { month = 1 } # Febuary
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1943 }
+
+	action_a = {
+		command = { trigger = { exists = GRE } type = war which = GRE }
+		command = { trigger = { exists = YUG NOT = { atwar = YUG } NOT = { alliance = { country = ITA country = YUG } } } type = war which = YUG }
+		command = { trigger = { exists = GRE } type = ai which = "switch/ITA_Greece_Attack.ai" }
+		command = { type = sleepevent which = 3006002 }
+		command = { type = local_clrflag which = ITAInvadeGreece }
+	}
+}
+################
+# Italy at war with Russia
+#############################################
+event = {
+	id = 3006004
+	random = no 
+	country = ITA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		NOT = { local_flag = ITAInvadeRussia }
+		NOT = { local_flag = ITADefendItaly }
+		NOT = { local_flag = ITAInvadeGreece }
+		#OR = {
+		war = { country = SOV }
+		#	war = { country = USA }
+		#}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = february year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Russia.ai" }
+		command = { type = local_setflag which = ITAInvadeRussia }
+		command = { type = local_clrflag which = ITAInvadeAllies }
+	}
+}
+#This part of AI gets used when Russia is Done and ITA can help with USA
+event = {
+	id = 3006040
+	random = no 
+	country = ITA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		war = { country = USA }
+		NOT = {
+			war = { country = SOV }
+		}
+		NOT = { local_flag = ITADefendItaly }
+		NOT = { local_flag = ITAInvadeAllies }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1943 }
+	offset = 4
+	deathdate = { day = 29 month = february year = 1960 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_StrikeAllies.ai" }
+		command = { type = local_setflag which = ITAInvadeAllies }
+		command = { type = local_clrflag which = ITAInvadeRussia }
+	}
+}
+#This part of AI gets used when Russia is Done and ITA can help with USA
+event = {
+	id = 3006041
+	random = no 
+	country = RSI
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		war = { country = USA }
+		NOT = {
+			war = { country = SOV }
+		}
+		NOT = { local_flag = ITADefendItaly }
+		NOT = { local_flag = ITAInvadeAllies }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1943 }
+	offset = 4
+	deathdate = { day = 29 month = february year = 1960 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_StrikeAllies.ai" }
+		command = { type = local_setflag which = ITAInvadeAllies }
+		command = { type = local_clrflag which = ITAInvadeRussia }
+	}
+}
+################
+# Italy reset garrison after Ethiopia war
+#############################################
+event = {
+	id = 3006005
+	random = no 
+	country = ITA
+
+	trigger = {
+		ai = yes
+		NOT = { war = { country = ETH } }
+		NOT = { local_flag = ItaEthPeace }
+	}
+	
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Reset_Garrison.ai" }
+		command = { type = free_ic value = 8 }
+		command = { type = free_supplies value = 10 }
+		command = { type = industrial_modifier which = ic value = 15 } #Help AI ITA because it's way harder to manage ITA for AI than most countries. IC instead of which = total because ITA needs to struggle with resources (why expand otherwise?)
+	}
+}
+	
+################
+# Italy defends the homeland
+#############################################
+event = {
+	id = 3006006
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		NOT = { local_flag = ITADefendItaly }
+		OR = {
+			lost_national = { country = ITA value = 15 }
+			AND = { # Means they attacked Italy
+				lost_national = { country = ITA value = 10 }
+				NOT = { naval_percentage = { country = ENG value = 0.4 } }
+			}
+			AND = { # Means they are preparing to attack Italy
+				# Libya
+				control = { province = 750 data = -2 } # Tripoli 
+				control = { province = 761 data = -2 } # Bengazi
+				control = { province = 765 data = -2 } # Tobruk
+				OR = {
+					NOT = { land_percentage = { country = USA value = 0.5 } }
+					NOT = { land_percentage = { country = ENG value = 0.5 } }
+					}
+			}
+			
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ITADefendItaly }
+		command = { type = local_clrflag which = ITAInvadeRussia }
+		command = { type = local_clrflag which = ITAInvadeAllies }
+		command = { type = ai which = "switch/ITA_Homeland.ai" }
+	}
+}
+################
+# Italy sends troops back out
+#############################################
+event = {
+	id = 3006007
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ITADefendItaly
+		AND = { # Means they attacked Italy
+				control = { province = 435 data = ITA }
+				control = { province = 434 data = ITA } # Sardinia
+			}
+			AND = { 
+				NOT = { lost_national = { country = ITA value = 15 } }
+				naval_percentage = { country = ENG value = 0.4 }
+			}
+		AND = { # Means they are preparing to attack Italy
+				# Libya
+				NOT = { control = { province = 750 data = -2 } }
+				NOT = { control = { province = 761 data = -2 } }
+				NOT = { control = { province = 765 data = -2 } } # Tripoli, Bengazi and Tobruk
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITADefendItaly }
+		command = { type = ai which = "switch/ITA_Homeland_Normal.ai" }
+	}
+}
+################
+# Italy Air AI Naval portion
+#############################################
+event = {
+	id = 3006008
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITAAirAINaval }
+		NOT = { lost_national = { country = ITA value = 5 } }
+		OR = {		# Central Med
+					garrison = { country = -2 province = 2734   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2735   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2736   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2737   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2738   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2739   type = naval size = 2 area = no } #west greece coast
+					garrison = { country = -2 province = 2175   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2177   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2179   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2180   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2181   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2182   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2183   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2184   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2185   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2189   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2192   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2193   type = naval size = 2 area = no }
+				}
+			}
+			
+	
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ITAAirAINaval }
+		command = { type = local_clrflag which = ITAAirAIGround }
+		command = { type = ai which = "switch/ITA_Air_Naval.ai" }
+	}
+}
+################
+# Italy Air AI Ground portion
+#############################################
+event = {
+	id = 3006009
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITAAirAIGround }
+		lost_national = { country = ITA value = 5 } 
+		NOT = {
+			OR = {	# Central Med
+					garrison = { country = -2 province = 2734   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2735   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2736   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2737   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2738   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2739   type = naval size = 2 area = no } #west greece coast
+					garrison = { country = -2 province = 2175   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2177   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2179   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2180   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2181   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2182   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2183   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2184   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2185   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2189   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2192   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2193   type = naval size = 2 area = no }
+				}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITAAirAINaval }
+		command = { type = local_setflag which = ITAAirAIGround }
+		command = { type = ai which = "switch/ITA_Air_Ground.ai" }
+	}
+}
+################
+# Italy standard Naval AI
+#############################################
+event = {
+	id = 3006010
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ITANavalStandard }
+
+		NOT = { war = { country = GRE } }
+		NOT = { war = { country = TUR } }
+		NOT = {
+			OR = {
+				control = { province = 789 data = ITA } # Alexandria
+				AND = {
+					alliance = { country = GER country = ITA }
+					control = { province = 789 data = GER } # Alexandria
+				}
+			}
+			OR = {
+				war = { country = SPR }
+				war = { country = SPA }
+				control = { province = 464 data = ITA } # Valencia
+				AND = {
+					alliance = { country = GER }
+					control = { province = 464 data = GER } # Valencia
+				}
+			}
+			AND = {
+				NOT = { war = { country = ENG } }
+				NOT = { war = { country = FRA } }
+				NOT = { war = { country = USA } }
+				NOT = { war = { country = SPR } }
+				NOT = { war = { country = SPA } }
+				OR = {
+					war = { country = ETH }
+					AND = {
+						year = 1936
+						NOT = { year = 1937 }
+						OR = {
+							NOT = { exists = ETH }
+							puppet = { country = ETH }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ITANavalStandard }
+		command = { type = local_clrflag which = ITANavalEthiopia }
+		command = { type = local_clrflag which = ITANavalGreece }
+		command = { type = local_clrflag which = ITANavalWestMed }
+		command = { type = local_clrflag which = ITANavalEastMed }
+		command = { type = local_clrflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_Standard.ai" }
+	}
+}
+################
+# Italy Ethiopia Naval AI
+#############################################
+event = {
+	id = 3006011
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITANavalEthiopia }
+
+		NOT = { war = { country = ENG } }
+		NOT = { war = { country = FRA } }
+		NOT = { war = { country = USA } }
+		NOT = { war = { country = SPR } }
+		NOT = { war = { country = SPA } }
+		OR = {
+			war = { country = ETH }
+			AND = {
+				year = 1936
+				NOT = { year = 1937 }
+				OR = {
+					NOT = { exists = ETH }
+					puppet = { country = ETH }
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITANavalStandard }
+		command = { type = local_setflag which = ITANavalEthiopia }
+		command = { type = local_clrflag which = ITANavalGreece }
+		command = { type = local_clrflag which = ITANavalWestMed }
+		command = { type = local_clrflag which = ITANavalEastMed }
+		command = { type = local_clrflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_Ethiopia.ai" }
+	}
+}
+################
+# Italy Greece Naval AI
+#############################################
+event = {
+	id = 3006012
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITANavalGreece }
+
+		war = { country = GRE }
+		NOT = {
+			OR = {
+				control = { province = 789 data = ITA } # Alexandria
+				AND = {
+					alliance = { country = GER }
+					control = { province = 789 data = GER } # Alexandria
+				}
+			}
+			OR = {
+				war = { country = SPR }
+				war = { country = SPA }
+				control = { province = 464 data = ITA } # Valencia
+				AND = {
+					alliance = { country = GER country = ITA }
+					control = { province = 464 data = GER } # Valencia
+				}
+			}
+			AND = {
+				NOT = { war = { country = ENG } }
+				NOT = { war = { country = FRA } }
+				NOT = { war = { country = USA } }
+				NOT = { war = { country = SPR } }
+				NOT = { war = { country = SPA } }
+				year = 1936
+				NOT = { year = 1937 }
+				OR = {
+					NOT = { exists = ETH }
+					puppet = { country = ETH }
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITANavalStandard }
+		command = { type = local_clrflag which = ITANavalEthiopia }
+		command = { type = local_setflag which = ITANavalGreece }
+		command = { type = local_clrflag which = ITANavalWestMed }
+		command = { type = local_clrflag which = ITANavalEastMed }
+		command = { type = local_clrflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_Greece.ai" }
+	}
+}
+################
+# Italy Western Med Naval AI
+#############################################
+event = {
+	id = 3006013
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITANavalWestMed }
+
+		NOT = { war = { country = GRE } }
+		OR = {
+			war = { country = SPR }
+			war = { country = SPA }
+			control = { province = 464 data = ITA } # Valencia
+			AND = {
+				alliance = { country = GER country = ITA }
+				control = { province = 464 data = GER } # Valencia
+			}
+		}
+		NOT = {
+			OR = {
+				control = { province = 789 data = ITA } # Alexandria
+				AND = {
+					alliance = { country = GER country = ITA }
+					control = { province = 789 data = GER } # Alexandria
+				}
+			}
+			AND = {
+				NOT = { war = { country = ENG } }
+				NOT = { war = { country = FRA } }
+				NOT = { war = { country = USA } }
+				NOT = { war = { country = SPR } }
+				NOT = { war = { country = SPA } }
+				year = 1936
+				NOT = { year = 1937 }
+				OR = {
+					NOT = { exists = ETH }
+					puppet = { country = ETH }
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITANavalStandard }
+		command = { type = local_clrflag which = ITANavalEthiopia }
+		command = { type = local_clrflag which = ITANavalGreece }
+		command = { type = local_setflag which = ITANavalWestMed }
+		command = { type = local_clrflag which = ITANavalEastMed }
+		command = { type = local_clrflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_WestMed.ai" }
+	}
+}
+################
+# Italy Eastern Med Naval AI
+#############################################
+event = {
+	id = 3006014
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITANavalEastMed }
+
+		NOT = { war = { country = GRE } }
+		OR = {
+			control = { province = 789 data = ITA } # Alexandria
+			AND = {
+				alliance = { country = GER }
+				control = { province = 789 data = GER } # Alexandria
+			}
+		}
+		NOT = {
+			AND = {
+				NOT = { war = { country = ENG } }
+				NOT = { war = { country = FRA } }
+				NOT = { war = { country = USA } }
+				NOT = { war = { country = SPR } }
+				NOT = { war = { country = SPA } }
+				year = 1936
+				NOT = { year = 1937 }
+				OR = {
+					NOT = { exists = ETH }
+					puppet = { country = ETH }
+				}
+			}
+			OR = {
+				war = { country = SPR }
+				war = { country = SPA }
+				control = { province = 464 data = ITA } # Valencia
+				AND = {
+					alliance = { country = GER }
+					control = { province = 464 data = GER } # Valencia
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITANavalStandard }
+		command = { type = local_clrflag which = ITANavalEthiopia }
+		command = { type = local_clrflag which = ITANavalGreece }
+		command = { type = local_clrflag which = ITANavalWestMed }
+		command = { type = local_setflag which = ITANavalEastMed }
+		command = { type = local_clrflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_EastMed.ai" }
+	}
+}
+################
+# Italy All of the Med Naval AI
+#############################################
+event = {
+	id = 3006015
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ITANavalAllMed }
+
+		NOT = { war = { country = GRE } }
+		OR = {
+			control = { province = 789 data = ITA } # Alexandria
+			AND = {
+				alliance = { country = GER }
+				control = { province = 789 data = GER } # Alexandria
+			}
+		}
+		OR = {
+			war = { country = SPR }
+			war = { country = SPA }
+			control = { province = 464 data = ITA } # Valencia
+			AND = {
+				alliance = { country = GER country = ITA }
+				control = { province = 464 data = GER } # Valencia
+			}
+		}
+		NOT = {
+			AND = {
+				NOT = { war = { country = ENG } }
+				NOT = { war = { country = FRA } }
+				NOT = { war = { country = USA } }
+				NOT = { war = { country = SPR } }
+				NOT = { war = { country = SPA } }
+				year = 1936
+				NOT = { year = 1937 }
+				OR = {
+					NOT = { exists = ETH }
+					puppet = { country = ETH }
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ITANavalStandard }
+		command = { type = local_clrflag which = ITANavalEthiopia }
+		command = { type = local_clrflag which = ITANavalGreece }
+		command = { type = local_clrflag which = ITANavalWestMed }
+		command = { type = local_clrflag which = ITANavalEastMed }
+		command = { type = local_setflag which = ITANavalAllMed }
+		command = { type = ai which = "switch/ITA_Naval_AllMed.ai" }
+	}
+}
+################
+# Italy Ethiopia Naval AI
+#############################################
+event = {
+	id = 3006016
+	random = no 
+	country = ITA
+	persistent = yes
+	
+	trigger = {
+		NOT = { local_flag = ITAatwarENG_FRA }
+		ai = yes
+		OR = {
+			war = { country = ENG }
+			war = { country = FRA }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_atwar_ENG_FRA.ai" }
+		command = { type = local_setflag which = ITAatwarENG_FRA }
+	}
+}
+################
+# Italy Build AI
+#	ITABuildStandard	= Standard builds
+#	ITABuildLand		= Build Heavy on Land units
+#############################################
+event = {
+	id = 3006017
+	random = no 
+	tag = { ITA RSI }
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ITABuildLand }
+		OR = {
+			lost_national = { country = ITA value = 1 }
+			war = { country = GER }
+			AND = {
+				ai = ENG
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 0.5 } }
+			}
+			AND = {
+				NOT = { ai = ENG }
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 0.8 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Build_Land.ai" }
+		command = { type = local_setflag which = ITABuildLand }
+		command = { type = local_clrflag which = ITABuildStandard }
+	}
+}
+event = {
+	id = 3006018
+	random = no 
+	tag = { ITA RSI }
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ITABuildStandard }
+		NOT = {
+			lost_national = { country = ITA value = 1 }
+			war = { country = GER }
+			AND = {
+				ai = ENG
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 0.55 } }
+			}
+			AND = {
+				NOT = { ai = ENG }
+				war = { country = ENG }
+				NOT = { land_percentage = { country = ENG value = 0.85 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Build_Standard.ai" }
+		command = { type = local_clrflag which = ITABuildLand }
+		command = { type = local_setflag which = ITABuildStandard }
+	}
+}
+################
+# Italy at war with Albania
+#############################################
+event = {
+	id = 3006039
+	random = no 
+	country = ITA
+
+	trigger = {
+		ai = yes
+		exists = ALB
+		atwar = no
+		war =  { country = GRE }
+		NOT = { alliance = { country = GER } }
+		NOT = { war = { country = GER } }
+		NOT = { war = { country = ENG } }
+		NOT = { war = { country = FRA } }
+		NOT = { war = { country = SOV } }
+		NOT = { war = { country = EGY } }
+		NOT = { lost_national = { country = ITA value = 10 } }
+		NOT = { local_flag = ITADefendItaly }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ITA_Albania.ai" }
+	}
+}
+################
+# AOI At War AI
+#############################################
+event = {
+	id = 3006042
+	random = no 
+	country = U49
+
+	trigger = {
+		ai = yes
+		atwar = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/AOI_War.ai" }
+	}
+}
+################
+# AOI Infra Resources part
+#############################################
+event = {
+	id = 3006043
+	random = no 
+	country = U49
+
+	trigger = {
+		event = 9300325 # Subsidize AOI Development - this needs to be a separate event because resource commands dont work on other countries
+	}
+
+	name = 9300326name
+	desc = 9300326desc
+	style = 2
+	picture = "Dubats"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+	name = ACTION_NAME_GREAT
+	trigger = { flag = AoIBuild1 }
+		command = { type = add_prov_resource which = 815 value = 8 where = energy }
+		command = { type = add_prov_resource which = 816 value = 3 where = metal }
+		command = { type = add_prov_resource which = 817 value = 2 where = rare_materials }
+		command = { type = addcore which = 815 } #Eritrea  
+		command = { type = addcore which = 816 } #  
+		command = { type = addcore which = 817 } #  
+	}
+	action_b = {
+	name = ACTION_NAME_GREAT
+	trigger = { flag = AoIBuild2 }
+		command = { type = add_prov_resource which = 825 value = 18 where = energy } 
+		command = { type = add_prov_resource which = 825 value = 1 where = rare_materials } #Addis Adeba - no core bc we already have it
+	}
+	action_c = {
+	name = ACTION_NAME_GREAT
+	trigger = { flag = AoIBuild3 }
+		command = { type = add_prov_resource which = 838 value = 12 where = energy }
+		command = { type = add_prov_resource which = 836 value = 6 where = metal } 
+		command = { type = addcore which = 838 } #
+		command = { type = addcore which = 836 } #
+	}
+	action_d = {
+	name = ACTION_NAME_GREAT
+	trigger = { flag = AoIBuild4 }
+		command = { type = add_prov_resource which = 820 value = 4 where = energy }
+		command = { type = add_prov_resource which = 821 value = 3 where = energy }
+		command = { type = add_prov_resource which = 826 value = 4 where = energy }
+		command = { type = add_prov_resource which = 831 value = 4 where = rare_materials }
+		command = { type = addcore which = 820 } #  
+		command = { type = addcore which = 821 } #  
+		command = { type = addcore which = 826 } #  
+		command = { type = addcore which = 831 } #  
+	}
+}
+###Build Queue for ITA leading into 1939
+event = {
+	id = 3006044
+	random = no 
+	country = ITA
+	
+	trigger = {
+		ai = yes
+		manpower = 65
+		exists = ENG
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ITA
+				alliance = { country = ITA country = SOV }
+				alliance = { country = ITA country = ENG }
+				alliance = { country = ITA country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1941 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = ENG } } type = manpowerpool value = 250 }
+		command = { trigger = { ai = ENG } type = manpowerpool value = 50 }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = infantry }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = infantry }
+		command = { type = build_division which = destroyer }
+		command = { type = build_division which = destroyer }
+		command = { type = build_division which = destroyer }
+		command = { type = build_division which = light_cruiser }
+		command = { type = build_division which = heavy_cruiser }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = hq }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = interceptor }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = interceptor }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = naval_bomber }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = naval_bomber }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = motorized }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = motorized }
+		command = { type = build_division which = submarine }
+		command = { type = build_division which = submarine }
+		command = { type = build_division which = nuclear_submarine }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = nuclear_submarine }
+	}
+}
+event = {
+	id = 3006045
+	random = no 
+	country = ITA
+	
+	trigger = {
+		ai = yes
+		exists = ENG
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ITA
+				alliance = { country = ITA country = SOV }
+				alliance = { country = ITA country = ENG }
+				alliance = { country = ITA country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1941 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = ENG } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = ENG } type = manpowerpool value = 80 }
+	}
+}

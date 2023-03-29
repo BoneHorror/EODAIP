@@ -1,0 +1,37 @@
+SWE;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+40001;Arne Beurling;T3200;7;1930;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40002;Bofors AB;100331;7;1894;2000;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40003;Götaverken;T3202;5;1930;2000;naval_engineering;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40004;Husqvarna Vapenfabriks AB;100332;5;1689;2000;general_equipment;mechanics;artillery;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40005;Karlskrona Naval Yard;T3204;6;1800;2000;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40006;KaMeVe;T3205;5;1930;2000;mechanics;general_equipment;industrial_engineering;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40007;Landsverk AB;T3206;6;1872;2000;mechanics;technical_efficiency;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40008;AB. LM. Ericsson & Co;100286;5;1876;2000;electronics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40009;SAAB;T3208;6;1937;2000;aeronautics;fighter_design;technical_efficiency;rocketry;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40010;Scania-Vabis;100333;6;1911;2000;industrial_engineering;mechanics;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40011;Volvo;T3210;6;1927;2000;mechanics;industrial_engineering;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40012;Bengt Nordenskiöld;T3211;5;1936;2000;fighter_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40013;Helge Jung;T3212;5;1944;1951;combined_arms_focus;decentralized_execution;small_unit_tactics;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40014;The Svedberg;T3213;6;1912;2000;nuclear_physics;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40015;Olof Thörnell;T3214;5;1930;1944;centralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40016;Charles de Champs;T3215;5;1930;1939;large_taskforce_tactics;centralized_execution;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40017;Gösta Ehrensvärd;T3216;5;1939;1960;small_taskforce_tactics;centralized_execution;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40018;Manne Siegbahn;T3217;6;1924;2000;nuclear_physics;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40019;Nils Swedlund;T3218;5;1951;1961;centralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40020;Torsten Rapp;T3219;5;1944;2000;bomber_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40021;AB Enoch Thulins Aeroplansfabrik;100334;6;1914;2000;aeronautics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40022;SKF;100335;7;1907;2000;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40023;Kockums AB;100336;5;1890;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40024;Svante Arrhenius;100337;5;1895;1927;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40025;Carl Richson;100338;6;1905;1925;naval_engineering;submarine_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40026;Lars Tingsten;100339;5;1905;1922;centralized_execution;large_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40027;Scania;100340;6;1900;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40028;Carl Ehrenswärd;100341;5;1907;1928;centralized_execution;small_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40029;AGA;100342;4;1904;2000;chemistry;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40030;Munktells Mekaniska Verkstads AB;100343;4;1832;1932;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40031;Casten Warberg;100766;3;1895;1909;centralized_execution;small_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40032;Axel Rappe;100344;6;1899;1905;centralized_execution;large_unit_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40033;Knut Gillis Bildt;100345;5;1905;1919;centralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+40034;Carl Gustaf Hammarskjöld;100467;5;1922;1930;centralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+400340;IB;T400340;5;1965;1994;rt_user_2;individual_courage;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+400341;MUST;T400341;7;1994;2000;rt_user_2;individual_courage;small_unit_tactics;training;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

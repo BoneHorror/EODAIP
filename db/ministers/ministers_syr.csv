@@ -1,0 +1,90 @@
+SYR;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+430001;Head of State;Muhammed Bey al-Abid;1932;1964;1999;SL;Stern Imperialist;High;M528001;X
+430002;Head of Government;Damien Comte de Martel;1933;1964;1999;SL;Ambitious Union Boss;High;M528002;X
+430003;Foreign Minister;Jamil Mardam Bay;1933;1964;1999;SL;Great Compromiser;High;M528003;X
+430004;Minister of Armament;Faris al-Khouri;1933;1964;1999;SL;Air to Ground Proponent;Medium;M528004;X
+430005;Minister of Security;Yves Morandat;1933;1964;1999;SL;Crooked Kleptocrat;Medium;M528005;X
+430006;Head of Military Intelligence;Damien Comte de Martel;1933;1964;1999;SL;Logistics Specialist;Medium;M528002;X
+430007;Chief of Staff;Henri Amiel;1933;1964;1999;SL;School of Manoeuvre;Medium;M528007;X
+430008;Chief of Army;Gabriel Puaux;1933;1964;1999;SL;Armoured Spearhead Doctrine;Medium;M528008;X
+430009;Chief of Navy;Yves Carré de Lusancay;1933;1964;1999;SL;Base Control Doctrine;Medium;M528009;X
+430010;Chief of Air Force;Christian Coudray;1933;1964;1999;SL;Naval Aviation Doctrine;Medium;M528010;X
+430011;Head of State;Shaykh Muhammed al-Zawahri;1933;1964;1999;PA;Autocratic Charmer;High;M528011;X
+430012;Head of State;Hassim al-Atassi;1933;1964;1999;SL;Insignificant Layman;High;M528012;X
+430013;Head of State;Bahij ad din al-Khatib;1939;1964;1999;SL;Barking Buffoon;High;M528013;X
+430014;Head of State;Shaykh Taj ad-din al-Hasani;1928;1964;1999;SC;Weary Stiffneck;High;M528014;X
+430015;Head of State;Shukri al-Kuwaitli;1943;1964;1999;SL;Benevolent Gentleman;High;M528015;X
+430016;Head of State;Lufti al-Haffar;1933;1964;1999;SC;Die-hard Reformer;High;M528016;X
+430017;Head of Government;Henri Dentz;1933;1964;1999;PA;Old General;High;L24059;X
+430018;Head of Government;Gabriel Puaux;1938;1964;1999;SL;Silent Workhorse;High;M528008;X
+430019;Head of Government;Georges Catroux;1941;1964;1999;SL;Old General;High;L24029;X
+430020;Head of Government;Yves Chataigneau;1943;1964;1999;SL;Corporate Suit;High;M528020;X
+430021;Head of Government;Shukri al-Kuwaitli;1945;1964;1999;SL;Backroom Backstabber;High;M528015;X
+430022;Head of Government;Jamil Mardam Bay;1933;1964;1999;ML;Political Protege;High;M528003;X
+430023;Foreign Minister;Faris al-Khouri;1933;1964;1999;PA;The Cloak N Dagger Schemer;High;M528004;X
+430024;Foreign Minister;Shaykh Muhammed al-Gawzi;1941;1964;1999;SL;General Staffer;High;M528024;X
+430025;Foreign Minister;Lufti al-Haffar;1943;1964;1999;SL;Iron Fisted Brute;High;M528016;X
+430026;Foreign Minister;Saadallah al-Jabiri;1945;1964;1999;SL;The Cloak N Dagger Schemer;High;M528026;X
+430027;Foreign Minister;Shaykh Mustafa al-Maraghi;1933;1964;1999;SC;Great Compromiser;High;M528027;X
+430028;Minister of Armament;Yves Morandat;1933;1964;1999;PA;Air Superiority Proponent;Medium;M528005;X
+430029;Minister of Armament;Shaykh Muhammed al-Shinnawi;1938;1964;1999;SL;Infantry Proponent;Medium;M528029;X
+430030;Minister of Armament;Shaykh Abd al-Alim Selim;1941;1964;1999;SL;Military Entrepreneur;Medium;M528030;X
+430031;Minister of Armament;Michel Maurice-Bokanowski;1944;1964;1999;SL;Tank Proponent;Medium;M528031;X
+430032;Minister of Armament;Paul Leistenschneider;1946;1964;1999;SL;laissez-faire capitalist;Medium;M528032;X
+430033;Minister of Armament;Shaykh Mustafa al-Maraghi;1939;1964;1999;SC;Air to Ground Proponent;Medium;M528027;X
+430034;Minister of Security;Shaykh Mustafa al-Maraghi;1933;1964;1999;PA;Back Stabber;Medium;M528027;X
+430035;Minister of Security;Mustafa al-Atassi;1939;1964;1999;SL;Man of the People;Medium;M528035;X
+430036;Minister of Security;André Salvat;1941;1964;1999;SL;Crime Fighter;Medium;M528036;X
+430037;Minister of Security;Jamil Chakrura;1943;1964;1999;SL;Back Stabber;Medium;M528037;X
+430038;Minister of Security;Jean Abdel Foukha;1945;1964;1999;SL;Compassionate Gentleman;Medium;M528038;X
+430039;Minister of Security;Faris al-Khouri;1933;1964;1999;SC;Man of the People;Medium;M528004;X
+430040;Head of Military Intelligence;Henri Dentz;1938;1964;1999;PA;Logistics Specialist;Medium;L24059;X
+430041;Head of Military Intelligence;Gabriel Puaux;1938;1964;1999;SL;Industrial Specialist;Medium;M528008;X
+430042;Head of Military Intelligence;Georges Catroux;1941;1964;1999;SL;Dismal Enigma;Medium;L24029;X
+430043;Head of Military Intelligence;Yves Chataigneau;1943;1964;1999;SL;Political Specialist;Medium;M528020;X
+430044;Head of Military Intelligence;Shaykh Muhammed al-Gawzi;1933;1964;1999;SC;Industrial Specialist;Medium;M528024;X
+430045;Chief of Staff;Henri Dentz;1933;1964;1999;PA;School of Defence;Medium;L24059;X
+430046;Chief of Staff;Lucien Cambas;1941;1964;1999;SL;School of Manoeuvre;Medium;M528046;X
+430047;Chief of Staff;Hussein al-Zaim;1945;1964;1999;SL;School of Mass Combat;Medium;M528047;X
+430048;Chief of Staff;Shaykh Muhammed al-Gawzi;1933;1964;1999;SC;School of Fire Support;Medium;M528024;X
+430049;Chief of Army;Fawzi al-Quawugji;1933;1964;1999;PA;Static Defence Doctrine;Medium;M528049;X
+430050;Chief of Army;Georges Catroux;1941;1964;1999;SL;Decisive Battle Doctrine;Medium;L24029;X
+430051;Chief of Army;Adib al-Shishakli;1945;1964;1999;SL;Guns and Butter Doctrine;Medium;M528051;X
+430052;Chief of Army;Bernard Duperier;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M528052;X
+430053;Chief of Navy;Shaykh Muhammed al-Gawzi;1933;1964;1999;PA;Base Control Doctrine;Medium;M528024;X
+430054;Chief of Navy;Omar Abrash;1945;1964;1999;SL;Open Seas Doctrine;Medium;M528054;X
+430055;Chief of Navy;Yves Morandat;1933;1964;1999;SC;Decisive Naval Battle Doctrine;Medium;M528005;X
+430056;Chief of Air Force;Hussein al-Zaim;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M528047;X
+430057;Chief of Air Force;Henri Amiel;1945;1964;1999;SL;Army Aviation Doctrine;Medium;M528007;X
+430058;Chief of Air Force;Henri Amiel;1933;1964;1999;SC;Vertical Envelopment Doctrine;Medium;M528007;X
+430059;Minister of Armament;Amir Mustafa al-Shihabi;1940;1964;1999;PA;laissez-faire capitalist;High;M528059;X
+430060;Head of State;Hussein al-Zaim;1949;1964;1999;SL;Resigned Generalissimo;High;M528047;X
+430061;Head of State;Fawzi as Silu;1951;1964;1999;SL;Barking Buffoon;High;M528061;X
+430062;Head of State;Adib al-Shishakli;1953;1964;1999;SL;Powerhungry Demagogue;High;M528051;X
+430063;Head of Government;Khalid al Azm;1941;1964;1999;SL;Flamboyant Tough Guy;High;M528063;X
+430064;Head of Government;Hussein al-Zaim;1949;1964;1999;SL;Old General;High;M528047;X
+430065;Head of Government;Muhsin al Barazi;1949;1964;1999;SL;Silent Workhorse;High;M528065;X
+430066;Head of Government;Hassim al-Atassi;1949;1964;1999;SL;Happy Amateur;High;M528012;X
+430067;Head of Government;Nazim al Kudsi;1950;1964;1999;SL;Ambitious Union Boss;High;M528067;X
+430068;Head of Government;Hassan al Hakim;1941;1964;1999;SL;Smiling Oilman;High;M528068;X
+430069;Head of Government;Fawzi as Silu;1951;1964;1999;SL;Old General;High;M528061;X
+430070;Head of Government;Adib al-Shishakli;1953;1964;1999;SL;Corporate Suit;High;M528051;X
+430071;Chief of Staff;Fawzi as Silu;1949;1964;1999;SL;School of Defence;Medium;M528061;X
+430072;Minister of Armament;Khalid al Azm;1946;1964;1999;SL;Resource Industrialist;Medium;M528063;X
+430073;Foreign Minister;Muhsin al Barazi;1939;1964;1999;SL;Apologetic Clerk;High;M528065;X
+430074;Minister of Security;Nazim al Kudsi;1943;1964;1999;SL;Silent Lawyer;Medium;M528067;X
+430075;Minister of Armament;Hassan al Hakim;1949;1964;1999;SL;Air to Ground Proponent;Medium;M528068;X
+430076;Head of Military Intelligence;Sami Hinnawi;1944;1964;1999;SL;Logistics Specialist;Medium;M528076;X
+430077;Chief of Air Force;Khaleed al Razi;1949;1964;1999;SL;Carpet Bombing Doctrine;Medium;M528077;X
+430078;Minister of Armament;Michel Aflaq;1945;1964;1999;SD;Laissez-Faire Capitalist;High;6060;x 
+430079;Chief of Staff;Fawzi al-Qawuqji;1947;1964;1999;PA;School of Defence;High;6061;x
+430080;Minister of Armament;Hafez al-Assad;1958;1964;1999;SC;Air Superiority Proponent;High;6062;x
+430081;Chief of Staff;Mustafa Tlass;1961;1964;1999;SC;School of Manoeuvre;High;6063;x
+430082;Chief of Staff;Sultan al-Atrash;1937;1964;1999;SD;School of Defence;Very High;6064;x
+430083;Chief of Staff;Sultan al-Atrash;1937;1964;1999;SL;School of Defence;Very High;6064;x
+430084;Foreign Minister;Sultan al-Atrash;1939;1964;1999;SL;Great Compromiser;Very High;6064;x
+430085;Foreign Minister;Sultan al-Atrash;1939;1964;1999;SD;Great Compromiser;Very High;6064;x
+430086;Foreign Minister;Salah al-Din al-Bitar;1956;1964;1999;SD;Ideological Crusader;High;6065;x
+430087;Head of Government;Antun Saadeh;1947;1964;1999;FA;Naive Optimist;High;6066;x
+430088;Foreign Minister;Antun Saadeh;1947;1964;1999;FA;Biased Intellectual;High;6066;x

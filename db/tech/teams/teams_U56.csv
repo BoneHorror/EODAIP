@@ -1,0 +1,46 @@
+U56;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+5301;Kuhlmann;T1407;4;1900;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5302;Renault;T1410;7;1900;2000;mechanics;industrial_engineering;management;munitions;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5303;SOMUA;T1415;6;1914;2000;mechanics;industrial_engineering;vehicle_engineering;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5304;Rhône-Poulenc;T1411;4;1928;2000;chemistry;industrial_engineering;general_equipment;management;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5305;F. & I. Joliot-Curie;T1405;7;1930;1958;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5306;Jean-Jacques Barre;T1406;3;1930;2000;rocketry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5307;Saint-Gobain;T1412;3;1890;2000;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5308;Louis de Broglie;T1425;7;1924;2000;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5309;Bertrand Goldschmidt;T1427;7;1946;2000;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5310;Victor Grignat;100123;6;1914;1930;chemistry;rocketry;artillery;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5311;Atelier de Construction de Puteaux;100122;7;1890;2000;mechanics;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5312;FAMH;T1404;4;1910;2000;mechanics;electronics;training;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5313;Manufacture d'Armes de St.Etienne;T1408;6;1890;2000;munitions;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5314;Schneider;100118;4;1890;2000;vehicle_engineering;mechanics;electronics;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5315;Chantiers de Penhoët;T1400;5;1890;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5316;Arsenal de Brest;100117;7;1890;2000;naval_engineering;naval_artillery;general_equipment;technical_efficiency;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5317;A C de la Loire;100387;5;1890;1940;naval_engineering;naval_artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5318;Nieuport;100119;7;1902;1932;aeronautics;electronics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5319;Voisin;100121;7;1905;1918;aeronautics;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5320;Henri et Maurice Farman;100120;7;1908;1930;aeronautics;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5321;Morane-Saulnier;T1409;4;1912;2000;fighter_design;aeronautics;aircraft_testing;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5322;Felix Amiot;T1401;5;1920;2000;aeronautics;bomber_design;aircraft_testing;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5323;Emile Dewoitine;T1403;7;1921;2000;fighter_design;general_equipment;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5324;Societe des Avions Marcel Bloch;100385;5;1928;1946;avionics;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5325;Dassault Aviation;T1426;8;1947;2000;rocketry;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5326;Boue de Lapeyrere;100386;6;1909;1922;centralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5327;François Darlan;T1418;4;1930;1952;large_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5328;Marcel Gensoul;T1420;3;1930;2000;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5329;Etienne Schlumberger;T1417;4;1942;2000;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5330;Victor Denain;T1424;3;1920;1945;bomber_tactics;combined_arms_focus;training;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5331;François d'Astier de la Vigerie;T1419;3;1940;2000;fighter_tactics;piloting;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5332;Martial Valin;T1421;6;1940;2000;fighter_tactics;piloting;training;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5333;CEMAA;T1430;4;1950;2000;fighter_tactics;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5334;Henri Bonnal;team_noimage;5;1897;1912;large_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5335;Louis Loyzeau de Grandmaison;100646;5;1906;1915;small_unit_tactics;individual_courage;infantry_focus;static_defense_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5336;Joseph Joffre;100124;5;1910;1920;centralized_execution;maneuver_tactics;large_unit_focus;cavalry_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5337;Ferdinand Foch;100785;5;1914;1923;small_unit_tactics;static_defense_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5338;Henri-Philippe Petain;100125;6;1917;1930;centralized_execution;large_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5339;Andre Laffargue;100645;7;1926;1951;decentralized_execution;small_unit_tactics;individual_courage;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5340;Maurice Gamelin;T1422;3;1930;1958;centralized_execution;large_unit_tactics;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5341;Maxime Weygand;T1423;4;1930;1950;centralized_execution;large_unit_tactics;individual_courage;infantry_focus;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5342;Charles de Gaulle;T1416;6;1940;2000;small_unit_tactics;decentralized_execution;individual_courage;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5343;Alphonse Juin;T1429;6;1942;1962;centralized_execution;large_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5344;Raoul Salan;T1428;4;1948;1960;centralized_execution;combined_arms_focus;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5345;Ecole Militaire de Haute Montagne;100384;6;1890;2000;artillery;mountain_training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

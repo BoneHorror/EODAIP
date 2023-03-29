@@ -1,0 +1,327 @@
+####################################
+# Romania AI events 
+####################################
+
+#############################################
+# Invasion Flags
+#	ROMInvadeYUG	= Invade Yugoslavia
+#############################################
+
+################
+# Romania exp forces to Germany
+#############################################
+event = {
+	id = 3023008
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		alliance = { country = GER }
+		OR = {
+			AND = {
+				war = { country = GER country = SOV }
+				war = { country = SOV }
+			}
+			AND = {
+				NOT = { ai = GER }
+				war = { country = GER country = YUG }
+				war = { country = YUG }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Romania sends more exp forces to Germany
+#############################################
+event = {
+	id = 3023009
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		alliance = { country = GER }
+		war = { country = GER country = SOV }
+		war = { country = SOV }
+		OR = {
+			puppet = { country = GER }
+			NOT = { ispuppet = ROM }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_80.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Romania joins Germany because of Baklan Campaign
+#############################################
+event = {
+	id = 3023010
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		atwar = no
+		NOT = { alliance = { country = SOV } }
+		NOT = { alliance = { country = ENG } }
+		NOT = { alliance = { country = ITA } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = TUR } }
+		OR = {
+			war = { country = GER country = SOV }
+			war = { country = GER country = YUG }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = alliance which = GER when = 1 }
+	}
+}
+################
+# Romania invades Yugoslavia
+#############################################
+event = {
+	id = 3023011
+	random = no 
+	country = ROM
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		exists = YUG
+		flag = InvYugoslavia
+		NOT = { local_flag = ROMInvadeYUG }
+		NOT = { war = { country = SOV } }
+		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER } }	
+		NOT = { alliance = { country = YUG country = GER } }		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ROMInvadeYUG }
+		command = { type = ai which = "switch/ROM_Invade_YUG_Buildup.ai" }
+	}
+}
+event = {
+	id = 3023012
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		
+		OR = { 
+			AND = {
+				local_flag = ROMInvadeYUG
+				NOT = { flag = InvYugoslavia }
+			}
+			alliance = { country = YUG country = GER }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { trigger = { NOT = { alliance = { country = YUG country = GER } } } type = war which = YUG }
+		command = { type = local_clrflag which = ROMInvadeYUG }
+		command = { type = ai which = "switch/ROM_Invade_Release.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3023013
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = SOV
+			atwar = POL
+			atwar = BUL
+			atwar = YUG
+			atwar = HUN
+			NOT = { ai = YUG }
+			NOT = { ai = BUL }
+			NOT = { ai = HUN }
+			NOT = { ai = POL }
+			year = 1939
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}
+
+#Romania shift Garrisons to Soviet Border since yug is no threat.
+event = { 
+	id = 3023017
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER country = ROM }
+		OR = { 
+			NOT = { exists = YUG }
+			alliance = { country = YUG country = GER }
+			alliance = { country = YUG }
+			}
+		}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }	
+		
+	action_a = {
+		command = { type = local_clrflag which = ROMInvadeYUG }
+		command = { type = ai which = "switch/ROM_Invade_Release.ai" }
+	}
+}
+#### Build queue towards 1939 for ROM/HUN
+event = {
+	id = 3023018
+	random = no 
+	country = ROM
+
+	trigger = {
+		ai = yes
+		manpower = 75
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ROM
+				alliance = { country = ROM country = SOV }
+				alliance = { country = ROM country = ENG }
+				alliance = { country = ROM country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { type = build_division which = hq value = anti_air when = 1 cost = 1 }
+		command = { type = build_division which = light_cruiser value = naval_anti_air_s when = 1 cost = 1 }
+		command = { type = build_division which = light_cruiser value = naval_anti_air_s when = 1 cost = 1 }
+		command = { type = build_division which = naval_bomber when = 1 cost = 1 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 2 cost = 1 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 1 cost = 1 }
+		command = { type = build_division which = bergsjaeger value = engineer when = 1 cost = 1 }
+		command = { type = build_division which = infantry value = artillery when = 2 cost = 1 }
+	}
+}
+#### Build queue towards 1939 for ROM/HUN - manpower required for queuing 
+event = {
+	id = 3023019
+	random = no 
+	country = ROM
+
+	trigger = {
+		ai = yes
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ROM
+				alliance = { country = ROM country = SOV }
+				alliance = { country = ROM country = ENG }
+				alliance = { country = ROM country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = SOV } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = SOV } type = manpowerpool value = 100 }
+	}
+}

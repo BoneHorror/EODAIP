@@ -1,0 +1,159 @@
+PRU;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+185001;Head of State;Oscar Benavides Larrea;1933;1964;1999;PA;Resigned Generalissimo;High;M39001;X
+185002;Head of Government;Manuel Esteban Rodríguez;1933;1964;1999;PA;Old General;High;M39002;X
+185003;Foreign Minister;Alberto Ulloa Sotomayor;1933;1964;1999;PA;Iron Fisted Brute;Medium;M39003;X
+185004;Minister of Armament;Ernesto Scroth;1933;1964;1999;PA;Battle Fleet Proponent;Medium;M39004;X
+185005;Minister of Security;Luis Sanchez Cerro;1933;1964;1999;PA;Back Stabber;Medium;M39005;X
+185006;Head of Military Intelligence;Oscar Gilardi;1933;1964;1999;PA;Technical Specialist;Very Low;M39006;X
+185007;Chief of Staff;Gustavo Jimenez;1933;1964;1999;PA;School of Psychology;Medium;M39007;X
+185008;Chief of Army;Oscar Benavides Larrea;1933;1964;1999;PA;Static Defence Doctrine;Medium;M39001;X
+185009;Chief of Navy;Ernesto Scroth;1933;1964;1999;PA;Open Seas Doctrine;Medium;M39004;X
+185010;Chief of Air Force;Paul de Beaudiez;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M39010;X
+185011;Head of State;Oscar Benavides Larrea;1933;1964;1999;SC;Resigned Generalissimo;High;M39001;X
+185012;Head of State;Manuel Prado y Ugarteche;1939;1964;1999;SC;Autocratic Charmer;High;M39032;X
+185013;Head of State;José Bustamante y Rivero;1945;1964;1999;ML;Benevolent Gentleman;High;M39033;X
+185014;Head of State;Augusto Leguia Swayne;1933;1964;1999;LWR;Powerhungry Demagogue;High;M39034;X
+185015;Head of State;Reynaldo Vinatea;1939;1964;1999;SD;Barking Buffoon;High;M39035;X
+185016;Head of State;Eloy G. Ureta;1945;1964;1999;SD;Resigned Generalissimo;High;M39036;X
+185017;Head of Government;Ernesto Montagne Sanchez;1933;1964;1999;SC;Smiling Oilman;High;M39037;X
+185018;Head of Government;Augusto Leguia Swayne;1933;1964;1999;LWR;Happy Amateur;High;M39034;X
+185019;Head of Government;Alfredo Solf y Muro;1939;1964;1999;SC;Naive Optimist;High;M39039;X
+185020;Head of Government;Oscar Miro Quesada;1939;1964;1999;SD;Silent Workhorse;High;M39040;X
+185021;Head of Government;Manuel Cisneros Sanchez;1944;1964;1999;ML;Political Protege;High;M39041;X
+185022;Head of Government;Julio Tello East;1945;1964;1999;SL;Smiling Oilman;High;M39042;X
+185023;Head of Government;Enrique García Sayan;1945;1964;1999;ML;Flamboyant Tough Guy;High;M39043;X
+185024;Head of Government;David S. Ocampo;1945;1964;1999;SD;Ambitious Union Boss;High;M39044;X
+185025;Head of Government;Rafel Belaunde Díez;1946;1964;1999;ML;Naive Optimist;High;M39045;X
+185026;Head of Government;Julio Portugal Montero;1947;1964;1999;ML;Silent Workhorse;High;M39046;X
+185027;Foreign Minister;Carlos Concha;1933;1964;1999;SC;Apologetic Clerk;Medium;M39047;X
+185028;Foreign Minister;Rafael Escardo;1933;1964;1999;SD;General Staffer;Medium;M39048;X
+185029;Foreign Minister;Enrique Goytisola Bolognesi;1939;1964;1999;SC;Iron Fisted Brute;Medium;M39049;X
+185030;Foreign Minister;Reynaldo Vinatea;1939;1964;1999;SD;Ideological Crusader;Medium;M39035;X
+185031;Foreign Minister;Alfredo Solf y Muro;1940;1964;1999;SC;The Cloak N Dagger Schemer;High;M39039;X
+185032;Foreign Minister;Manuel Gallagher;1944;1964;1999;SC;General Staffer;High;M39052;X
+185033;Foreign Minister;Manuel Gallagher;1945;1964;1999;SL;Biased Intellectual;High;M39052;X
+185034;Foreign Minister;Javier Correa Elías;1945;1964;1999;ML;Iron Fisted Brute;High;M39054;X
+185035;Foreign Minister;Oscar Miro Quesada;1945;1964;1999;SD;The Cloak N Dagger Schemer;Medium;M39040;X
+185036;Foreign Minister;Enrique García Sayan;1946;1964;1999;ML;The Cloak N Dagger Schemer;Medium;M39043;X
+185037;Foreign Minister;Manuel Prado y Ugarteche;1947;1964;1999;SD;Apologetic Clerk;Medium;M39032;X
+185038;Minister of Armament;José Julio Bravo;1933;1964;1999;SC;Submarine Proponent;High;M39058;X
+185039;Minister of Armament;Luis Sanchez Cerro;1938;1964;1999;SC;Infantry Proponent;Medium;M39005;X
+185040;Minister of Armament;Teófilo Iglesias;1933;1964;1999;SD;Tank Proponent;High;M39060;X
+185041;Minister of Armament;Augusto Leguia Swayne;1939;1964;1999;SC;Administrative Genius;High;M39034;X
+185042;Minister of Armament;Manuel Vásquez Díaz;1939;1964;1999;SD;Air to Ground Proponent;High;M39062;X
+185043;Minister of Armament;David S. Ocampo;1939;1964;1999;SD;Military Entrepreneur;Medium;M39044;X
+185044;Minister of Armament;Eduardo Rebagliati Martins;1941;1964;1999;SC;Military Entrepreneur;High;M39064;X
+185045;Minister of Armament;David Dasso;1942;1964;1999;SC;laissez-faire capitalist;High;M39065;X
+185046;Minister of Armament;Oscar Trelles Montés;1943;1964;1999;SC;Submarine Proponent;Medium;M39066;X
+185047;Minister of Armament;Julio Portugal Montero;1944;1964;1999;ML;Theoretical Scientist;Medium;M39046;X
+185048;Minister of Armament;Benjamín Roca;1944;1964;1999;ML;Theoretical Scientist;High;M39068;X
+185049;Minister of Armament;Alberto Roque Saldías;1945;1964;1999;ML;Battle Fleet Proponent;Medium;M39069;X
+185050;Minister of Armament;Guillermo Almenara Irigoyen;1945;1964;1999;ML;Administrative Genius;Medium;M39070;X
+185051;Minister of Armament;Luis Ramírez Ortiz;1946;1964;1999;SD;Infantry Proponent;Medium;M39071;X
+185052;Minister of Armament;Rómulo Ferrero;1946;1964;1999;ML;Laissez-Faire Capitalist;Medium;M39072;X
+185053;Minister of Armament;Constantino Carvallo;1947;1964;1999;SD;Strategic Air Proponent;Medium;M39024;X
+185054;Minister of Armament;Ernesto Scroth;1947;1964;1999;SD;Battle Fleet Proponent;Medium;M39004;X
+185055;Minister of Security;Benigno Ballón Farfán;1933;1964;1999;SC;Crooked Kleptocrat;Medium;M39075;X
+185056;Minister of Security;Eleodoro Romero;1937;1964;1999;SC;Silent Lawyer;Medium;M39076;X
+185057;Minister of Security;Victor N. Benavente;1933;1964;1999;SD;Silent Lawyer;Medium;M39077;X
+185058;Minister of Security;Antonio Rodríguez Ramírez;1939;1964;1999;SD;Compassionate Gentleman;Medium;M39079;X
+185059;Minister of Security;Luis A. Flores;1940;1964;1999;SC;Prince of Terror;Low;M39015;X
+185060;Minister of Security;Carlos Berninzon;1942;1964;1999;SC;Compassionate Gentleman;Low;M39081;X
+185061;Minister of Security;Guillermo Landa Arisueño;1944;1964;1999;ML;Man of the People;Medium;M39082;X
+185062;Minister of Security;Augusto Leguia Swayne;1945;1964;1999;SL;Man of the People;High;M39034;X
+185063;Minister of Security;Juan Cortés Azar;1945;1964;1999;ML;Back Stabber;Medium;M39025;X
+185064;Minister of Security;Maximó Silva;1945;1964;1999;SD;Crime Fighter;Medium;M39085;X
+185065;Minister of Security;Juan F. Guabloche Rodrígues;1946;1964;1999;ML;Prince of Terror;Medium;M39086;X
+185066;Minister of Security;Ildefonso Ballón Beltrán;1947;1964;1999;SD;Efficient Sociopath;Medium;M39087;X
+185067;Head of Military Intelligence;Horacio Patiño Cruzatti;1933;1964;1999;SC;Naval Intelligence Specialist;Medium;M39088;X
+185068;Head of Military Intelligence;Alberto Ayala y Lacroix;1933;1964;1999;SD;Dismal Enigma;Medium;M39089;X
+185069;Head of Military Intelligence;Benigno Ballón Farfán;1939;1964;1999;SC;Dismal Enigma;Medium;M39075;X
+185070;Head of Military Intelligence;Juan Bautista de Lavalle;1942;1964;1999;SC;Industrial Specialist;Medium;M39091;X
+185071;Head of Military Intelligence;Alfredo Alvarez Calderón;1943;1964;1999;SC;Technical Specialist;Medium;M39092;X
+185072;Head of Military Intelligence;Miguel Montero y Tirado;1939;1964;1999;SD;Political Specialist;Medium;M39093;X
+185073;Head of Military Intelligence;Jorge T. de la Flor;1944;1964;1999;ML;Industrial Specialist;Medium;M39094;X
+185074;Head of Military Intelligence;Enrique Torres Gonzalez;1945;1964;1999;SL;Political Specialist;Medium;M39095;X
+185075;Head of Military Intelligence;Juan F. Guabloche Rodrígues;1945;1964;1999;ML;Dismal Enigma;Medium;M39086;X
+185076;Head of Military Intelligence;Riccardo Barrea Laos;1945;1964;1999;SD;Technical Specialist;Medium;M39097;X
+185077;Head of Military Intelligence;Armando Montes de Peralta;1946;1964;1999;ML;Logistics Specialist;Medium;M39026;X
+185078;Head of Military Intelligence;Bernardo Palacios y Montecinos;1947;1964;1999;SD;Technical Specialist;Medium;M39016;X
+185079;Chief of Staff;Luis Sánchez Cerro;1939;1964;1999;SC;School of Mass Combat;Medium;M39102;X
+185080;Chief of Staff;Bernardo Palacios y Montecinos;1939;1964;1999;SD;School of Fire Support;Medium;M39016;X
+185081;Chief of Staff;Riccardo P. Godoy;1944;1964;1999;ML;School of Manoeuvre;Medium;M39104;X
+185082;Chief of Staff;Fortunato Quesada Larrea;1945;1964;1999;ML;School of Defence;Medium;M39106;X
+185083;Chief of Staff;Juan Poncé Diaz;1945;1964;1999;SD;School of Psychology;Medium;M39027;X
+185084;Chief of Staff;Alberto Hurtado Abadia;1947;1964;1999;SD;School of Defence;Medium;M39108;X
+185085;Chief of Army;Oscar Gilardi;1933;1964;1999;SD;Static Defence Doctrine;Low;M39006;X
+185086;Chief of Army;Luis Saenz Diaz;1939;1964;1999;SC;Elastic Defence Doctrine;Medium;M39111;X
+185087;Chief of Army;Eloy G. Ureta;1939;1964;1999;SD;Guns and Butter Doctrine;Medium;M39036;X
+185088;Chief of Army;Eduardo Montero Rojas;1944;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M39113;X
+185089;Chief of Army;Vladimiro Lopéz Trigoso;1945;1964;1999;ML;Decisive Battle Doctrine;Medium;M39028;X
+185090;Chief of Army;Rafael Escardo;1947;1964;1999;SD;Elastic Defence Doctrine;Low;M39048;X
+185091;Chief of Navy;Alberto Roque Saldías;1939;1964;1999;SC;Indirect Approach Doctrine;Medium;M39069;X
+185092;Chief of Navy;Manuel R. Nieto;1939;1964;1999;SD;Open Seas Doctrine;Medium;M39120;X
+185093;Chief of Navy;José de la Riva Agüero;1941;1964;1999;SC;Base Control Doctrine;Medium;M39011;X
+185094;Chief of Navy;Nicolas Lindley Lopez;1944;1964;1999;ML;Decisive Naval Battle Doctrine;Low;M39019;X
+185095;Chief of Navy;Luis Navarreté;1945;1964;1999;ML;Power Projection Doctrine;High;M39124;X
+185096;Chief of Navy;Juan Poncé Diaz;1945;1964;1999;SD;Base Control Doctrine;Medium;M39027;X
+185097;Chief of Navy;Felipe Tudela;1947;1964;1999;SD;Open Seas Doctrine;Medium;M39013;X
+185098;Chief of Air Force;Victor Solano;1939;1964;1999;SC;Army Aviation Doctrine;High;M39129;X
+185099;Chief of Air Force;Romulo Frias;1939;1964;1999;SD;Air Superiority Doctrine;High;M39130;X
+185100;Chief of Air Force;Manuel Montero y Tirada;1943;1964;1999;SC;Naval Aviation Doctrine;Medium;M39131;X
+185101;Chief of Air Force;Fernando M. Quesada Blanco;1944;1964;1999;ML;Carpet Bombing Doctrine;Medium;M39020;X
+185102;Chief of Air Force;Luis Navarreté;1945;1964;1999;ML;Naval Aviation Doctrine;High;M39124;X
+185103;Chief of Air Force;Alberto Lopez Flores;1945;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M39030;X
+185104;Chief of Air Force;Eduardo Cantabria Gomez;1947;1964;1999;SD;Army Aviation Doctrine;Medium;M39023;X
+185105;Head of Government;Alberto Rey de Castro;1939;1964;1999;SC;Old General;High;M39137;X
+185106;Head of Government;José Alcamora;1947;1964;1999;ML;Corporate Suit;High;M39138;X
+185107;Foreign Minister;Cesar de la Fuente;1933;1964;1999;SC;General Staffer;Medium;L260004;X
+185108;Head of State;José de la Riva Agüero;1933;1964;1999;FA;Stern Imperialist;High;M39011;X
+185109;Head of Government;José de la Riva Agüero;1933;1964;1999;FA;Old Admiral;High;M39011;X
+185110;Foreign Minister;Felipe Tudela;1933;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M39013;X
+185111;Head of State;Lodovico Rovino Morales;1933;1964;1999;ST;Benevolent Gentleman;High;M39021;X
+185112;Head of Government;Lodovico Rovino Morales;1933;1964;1999;ST;old airmarshal;High;M39021;X
+185113;Foreign Minister;Eduardo Cantabria Gomez;1933;1964;1999;LE;Great Compromiser;Medium;M39023;X
+185114;Head of State;Manuel Odria Amoretti;1948;1964;1999;PA;Resigned Generalissimo;High;L260017;X
+185115;Head of Government;Alberto Roque Saldías;1947;1964;1999;SC;Old Admiral;High;M39069;X
+185116;Head of Government;Armando Reveredo Iglesias;1948;1964;1999;ML;old airmarshal;High;M39142;X
+185117;Head of Government;Alberto Zenon Agüero;1948;1964;1999;PA;Old General;High;L260016;X
+185118;Chief of Staff;Alberto Zenon Agüero;1948;1964;1999;SC;School of Psychology;Medium;L260016;X
+185119;Chief of Staff;Nicolas Lindley Lopez;1950;1964;1999;PA;School of Manoeuvre;Medium;L260036;X
+185120;Chief of Army;Manuel Odria Amoretti;1948;1964;1999;SC;Elastic Defence Doctrine;Medium;L260017;X
+185121;Chief of Army;Riccardo Perez Godoy;1950;1964;1999;PA;Armoured Spearhead Doctrine;Medium;L260020;X
+185122;Minister of Armament;Armando Reveredo Iglesias;1950;1964;1999;SC;Military Entrepreneur;Medium;M39142;X
+185123;Minister of Security;Rocas Sanchez Mapás;1951;1964;1999;PA;Efficient Sociopath;Low;M39149;X
+185124;Chief of Staff;Benjamín Boza;1914;1933;1999;ML;SCHOOL OF DEFENCE;Medium;2464;X
+185125;Foreign Minister;J. Fernando Gazzani;1914;1933;1999;ML;APOLOGETIC CLERK;Medium;2465;X
+185126;Foreign Minister;Javier Prado;1914;1933;1999;ML;BIASED INTELLECTUAL;Medium;unknownminister;X
+185127;Foreign Minister;Jose Matías Manzanilla;1914;1933;1999;ML;GENERAL STAFFER;Medium;unknownminister;X
+185128;Foreign Minister;Sólon Pole;1914;1933;1999;ML;GREAT COMPROMISER;Medium;unknownminister;X
+185129;Foreign Minister;Arturo Garcia Salazar;1915;1933;1999;ML;THE CLOAK N DAGGER SCHEMER;Medium;unknownminister;X
+185130;Foreign Minister;Ricardo L. Flores;1915;1933;1999;ML;IRON FISTED BRUTE;Medium;unknownminister;X
+185131;Foreign Minister;Alberto Salomón Osorio;1919;1933;1999;ML;IDEOLOGICAL CRUSADER;Medium;unknownminister;X
+185132;Foreign Minister;Germán Leguía;1919;1933;1999;ML;BIASED INTELLECTUAL;Medium;unknownminister;X
+185133;Foreign Minister;Melitón F. Porras;1919;1933;1999;ML;APOLOGETIC CLERK;Medium;unknownminister;X
+185134;Foreign Minister;Francisco Tudela y Varela;1914;1933;1999;ML;GENERAL STAFFER;Medium;2980;X
+185135;Head of Government;Aurelio Matute;1914;1933;1999;ML;Ambitious Union Boss;Medium;unknownminister;X
+185136;Head of Government;Germán Waddington;1914;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+185137;Head of Government;Manuel Carvajal;1914;1933;1999;ML;Happy Amateur;Medium;unknownminister;X
+185138;Head of Government;Pedro E. Muñiz;1914;1933;1999;ML;Smiling Oilman;Medium;unknownminister;X
+185139;Head of Government;Carlos Abrill;1915;1933;1999;ML;Silent Workhorse;Medium;unknownminister;X
+185140;Head of Government;Enrique de la Riva-Agüero;1915;1933;1999;ML;Political Protege;Medium;unknownminister;X
+185141;Head of Government;Francisco Tudela;1917;1933;1999;ML;Naive Optimist;Medium;unknownminister;X
+185142;Head of Government;Germán Arenas;1918;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+185143;Head of Government;Germán Leguía;1919;1933;1999;ML;Corporate Suit;Medium;unknownminister;X
+185144;Head of Government;Juan Manuel Zuloaga;1919;1933;1999;ML;Backroom Backstabber;Medium;unknownminister;X
+185145;Head of Government;Alejandrino Maguiña;1922;1933;1999;ML;Ambitious Union Boss;Medium;unknownminister;X
+185146;Head of Government;Julio Aguirre;1922;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+185147;Head of Government;Enrique Varela;1914;1933;1999;ML;Corporate Suit;Medium;unknownminister;X
+185148;Head of Military Intelligence;Luis Miguel Sánchez Cerro;1914;1933;1999;ML;logistics specialist;Medium;2981;X
+185149;Head of State;Óscar Raymundo Benavides;1914;1933;1999;ML;Autocratic Charmer;Medium;unknownminister;X
+185150;Head of State;José Simón Pardo;1915;1933;1999;ML;Die-hard Reformer;Medium;2982;X
+185151;Head of State;Augusto Bernardino Leguía;1919;1933;1999;ML;powerhungry demagogue;Medium;2983;X
+185152;Head of State;Guillermo E. Billinghurst;1914;1933;1999;ML;Ruthless Powermonger;Medium;2984;X
+185153;Minister of Armament;Arturo Osores;1914;1933;1999;ML;ADMINISTRATIVE GENIUS;Medium;2463;X
+185154;Minister of Armament;Baldomero F. Maldonado;1914;1933;1999;ML;THEORETICAL SCIENTIST;Medium;unknownminister;X
+185155;Minister of Security;Antonio Rodríguez Ramirez;1914;1933;1999;ML;BACK STABBER;Medium;unknownminister;X
+185156;Minister of Security;Elías Malpartida;1914;1933;1999;ML;MAN OF THE PEOPLE;Medium;unknownminister;X
+185157;Head of State;Luis Miguel Sánchez Cerro;1930;1934;1999;PA;Resigned Generalissimo;High;2981;X

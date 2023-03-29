@@ -1,0 +1,83 @@
+ETH;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+245001;Head of State;Haile Selassie I;1930;1964;1999;PA;Stern Imperialist;High;M65001;X
+245002;Head of Government;Bedjironde Tekle Hawariate;1933;1964;1999;PA;Happy Amateur;High;M65002;X
+245003;Foreign Minister;Herouy Wolde Selassie;1933;1964;1999;PA;General Staffer;Very High;M65003;X
+245004;Minister of Armament;Herouy Wolde Selassie;1933;1964;1999;PA;Military Entrepreneur;Very High;M65003;X
+245005;Minister of Security;Bedjironde Tekle Hawariate;1933;1964;1999;PA;Crime Fighter;Very High;M65002;X
+245006;Head of Military Intelligence;Haile Selassie I;1933;1964;1999;PA;Logistics Specialist;Very High;M65001;X
+245007;Chief of Staff;Ras Mulugueta;1933;1964;1999;PA;School of Defence;Very High;M65007;X
+245008;Chief of Army;Desta Damtew;1933;1964;1999;PA;Guns and Butter Doctrine;Very High;M65008;X
+245009;Chief of Navy;Ras Seyum;1933;1964;1999;PA;Indirect Approach Doctrine;Very High;M65009;X
+245010;Chief of Air Force;John Robinson;1933;1964;1999;PA;Vertical Envelopment Doctrine;Medium;M65010;X
+245011;Head of State;Lij Johannes;1933;1964;1999;FA;Insignificant Layman;High;M65011;X
+245012;Head of State;Vittorio Emmanuele III;1939;1964;1999;FA;Resigned Generalissimo;High;M65033;X
+245013;Head of State;Ras Imru Haile Selassie;1933;1964;1999;SC;Benevolent Gentleman;High;M65021;X
+245014;Head of Government;Makonnen Endelkatchew;1941;1964;1999;PA;Political Protege;High;M65036;X
+245015;Head of Government;Haile Selassie Gugsa;1930;1964;1999;FA;Naive Optimist;High;M65012;X
+245016;Head of Government;Ras Getachew;1939;1964;1999;FA;Old General;High;M65014;X
+245017;Head of Government;Ras Imru Haile Selassie;1933;1964;1999;SC;Corporate Suit;High;M65021;X
+245018;Head of Government;Blatta Zawde Belaineh;1941;1964;1999;SC;Silent Workhorse;High;M65024;X
+245019;Foreign Minister;Makonnen Endelkatchew;1941;1964;1999;PA;Great Compromiser;High;M65036;X
+245020;Foreign Minister;Aklilu Habtewold;1943;1964;1999;PA;Biased Intellectual;Very High;M65043;X
+245021;Foreign Minister;Mered Azmatch Asfa Wossen;1945;1964;1999;PA;The Cloak N Dagger Schemer;High;M65044;X
+245022;Foreign Minister;Ras Hailu Tekle Haimanot;1933;1964;1999;FA;Iron Fisted Brute;Medium;M65013;X
+245023;Foreign Minister;Ras Kebbede;1939;1964;1999;FA;General Staffer;Medium;M65017;X
+245024;Foreign Minister;Ras Sega;1933;1964;1999;SC;Biased Intellectual;Medium;M65023;X
+245025;Foreign Minister;Dedja Zinatch Nadeon;1941;1964;1999;SC;Iron Fisted Brute;Medium;M65029;X
+245026;Foreign Minister;Tsehafe Taezaz;1943;1964;1999;SC;Ideological Crusader;Very High;M65049;X
+245027;Minister of Armament;Pierre Linant de Bellefonds;1937;1964;1999;PA;Administrative Genius;Very High;M65050;X
+245028;Minister of Armament;Tsehafe Taezaz;1945;1964;1999;PA;Air Superiority Proponent;Very High;M65049;X
+245029;Minister of Armament;Ras Getachew;1933;1964;1999;FA;Military Entrepreneur;Medium;M65014;X
+245030;Minister of Armament;Ras Hailu Tekle Haimanot;1939;1964;1999;FA;Corrupt Kleptocrat;Medium;M65013;X
+245031;Minister of Armament;Blatta Zawde Belaineh;1933;1964;1999;SC;Resource Industrialist;Medium;M65024;X
+245032;Minister of Armament;Wagshum Wosen Hailu;1941;1964;1999;SC;Tank Proponent;Medium;M65056;X
+245033;Minister of Security;Aklilu Habtewold;1941;1964;1999;PA;Efficient Sociopath;Very High;M65058;X
+245034;Minister of Security;Deajaz Gabremariam;1945;1964;1999;PA;Compassionate Gentleman;Very High;M65059;X
+245035;Minister of Security;Kantiba Wosene Zamanel;1933;1964;1999;FA;Prince of Terror;Medium;M65015;X
+245036;Minister of Security;Lij Asrate;1939;1964;1999;FA;Silent Lawyer;Medium;M65061;X
+245037;Minister of Security;Ras Gugsa Arya;1933;1964;1999;SC;Compassionate Gentleman;Medium;M65025;X
+245038;Minister of Security;Ato Fassika;1941;1964;1999;SC;Prince of Terror;Medium;M65063;X
+245039;Head of Military Intelligence;Fikre Selasse Katama;1941;1964;1999;PA;Logistics Specialist;Very High;M65065;X
+245040;Head of Military Intelligence;Tamrat Yigezu;1945;1964;1999;PA;Dismal Enigma;Very High;M65066;X
+245041;Head of Military Intelligence;Markos Wolde Gabriel;1933;1964;1999;FA;Dismal Enigma;Medium;M65067;X
+245042;Head of Military Intelligence;Haile Selassie Gugsa;1939;1964;1999;FA;Political Specialist;Medium;M65012;X
+245043;Head of Military Intelligence;Ras Imru Haile Selassie;1933;1964;1999;SC;Political Specialist;Medium;M65021;X
+245044;Head of Military Intelligence;Lij Araya Abebe;1941;1964;1999;SC;Industrial Specialist;Medium;M65070;X
+245045;Chief of Staff;Hapte Mikael Agafari;1937;1964;1999;PA;School of Psychology;Very High;M65071;X
+245046;Chief of Staff;Haile Wolde Rufe;1945;1964;1999;PA;School of Mass Combat;Very High;M65072;X
+245047;Chief of Staff;Ras Kebbede;1933;1964;1999;FA;School of Defence;Medium;M65017;X
+245048;Chief of Staff;Woldemeskal Tariku;1933;1964;1999;SC;School of Defence;Medium;M65027;X
+245049;Chief of Staff;Abanefso Balcha;1941;1964;1999;SC;School of Mass Combat;Medium;M65075;X
+245050;Chief of Army;Haile Abba Mersa;1941;1964;1999;PA;Decisive Battle Doctrine;Very High;M65077;X
+245051;Chief of Army;Lij Abiye Abebe;1945;1964;1999;PA;Armoured Spearhead Doctrine;High;M65078;X
+245052;Chief of Army;Ras Kassa;1933;1964;1999;FA;Decisive Battle Doctrine;Medium;M65018;X
+245053;Chief of Army;Ras Seyum;1939;1964;1999;FA;Static Defence Doctrine;Medium;M65009;X
+245054;Chief of Army;Woldemeskal Tariku;1933;1964;1999;SC;Guns and Butter Doctrine;Medium;M65027;X
+245055;Chief of Army;Ras Kassa;1941;1964;1999;SC;Static Defence Doctrine;Medium;M65018;X
+245056;Chief of Army;Lij Abiye Abebe;1945;1964;1999;SC;Armoured Spearhead Doctrine;High;M65078;X
+245057;Chief of Navy;Wondossen Kassa;1937;1964;1999;PA;Open Seas Doctrine;Medium;M65084;X
+245058;Chief of Navy;Lij Johannes;1933;1964;1999;FA;Open Seas Doctrine;Medium;M65011;X
+245059;Chief of Navy;Ras Seyum;1939;1964;1999;FA;Indirect Approach Doctrine;Very High;M65009;X
+245060;Chief of Navy;Dedja Zinatch Nadeon;1933;1964;1999;SC;Power Projection Doctrine;Medium;M65029;X
+245061;Chief of Air Force;Mesfin Sileshi;1939;1964;1999;PA;Carpet Bombing Doctrine;Medium;M65089;X
+245062;Chief of Air Force;Fitauri Zawde Gobena;1945;1964;1999;PA;Air Superiority Doctrine;Medium;M65020;X
+245063;Chief of Air Force;Fitauri Zawde Gobena;1933;1964;1999;FA;Air Superiority Doctrine;Medium;M65020;X
+245064;Chief of Air Force;Gabriel Zawde Gilaneh;1933;1964;1999;SC;Army Aviation Doctrine;Medium;M65030;X
+245065;Chief of Army;Habte Giyorgis Dinegde;1914;1933;1999;PA;Guns and Butter Doctrine;Very High;3753;X
+245066;Chief of Army;Teferri Mekonnen;1916;1933;1999;PA;Static Defence Doctrine;Very High;2498;X
+245067;Chief of Staff;Teferri Mekonnen;1916;1933;1999;PA;School of Defence;Very High;2498;X
+245068;Chief of Staff;Habte Giyorgis Dinegde;1914;1933;1999;PA;School of Fire Support;Very High;3753;X
+245069;Foreign Minister;Teferri Mekonnen;1917;1933;1999;PA;Great Compromiser;High;2498;X
+245070;Foreign Minister;Tizaz Wolde Meskel;1917;1933;1999;PA;Ideological Crusader;High;unknownminister;X
+245071;Foreign Minister;Ras Mulugeta Yigezu;1916;1933;1999;PA;General Staffer;Very High;2498;X
+245072;Foreign Minister;Dejazmach Beyene Yimer;1914;1933;1999;PA;biased intellectual;High;unknownminister;X
+245073;Head of Government;Habte Giyorgis Dinegde;1914;1933;1999;PA;Political Protege;High;3753;X
+245074;Head of State;Zauditu;1916;1933;1999;PA;Popular Figurehead;High;2499;X
+245075;Head of State;Iyasu V;1914;1933;1999;PA;Stern Imperialist;High;2500;X
+245076;Minister of Armament;Habte Giyorgis Dinegde;1914;1933;1999;PA;Military Entrepreneur;Very High;3753;X
+245077;Head of Government;Mikael of Wollo;1913;1933;1999;PA;Happy Amateur;Medium;8027;X
+245078;Head of Military Intelligence;Habte Giyorgis Dinegde;1907;1926;1999;PA;Logistics Specialist;Very High;3753;X
+245079;Minister of Security;Habte Giyorgis Dinegde;1907;1926;1999;PA;Crime Fighter;Very High;3753;X
+245080;Chief of Air Force;Habte Giyorgis Dinegde;1907;1926;1999;PA;Army Aviation Doctrine;Very High;3753;X
+245081;Chief of Navy;Habte Giyorgis Dinegde;1907;1926;1999;PA;Power Projection Doctrine;Very High;3753;X

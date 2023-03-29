@@ -1,0 +1,44 @@
+RSI;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+750001;Head of State;Benito Mussolini;1921;1946;1969;NS;Barking Buffoon;Very High;2688;X
+750002;Head of Government;Benito Mussolini;1921;1946;1969;NS;Imperialist Buffoon;Very High;2688;X
+750003;Foreign Minister;Serafino Mazzolini;1928;1946;1976;NS;biased intellectual;High;9109;X
+750004;Minister of Armament;Domenico Pellegrini Giampietro;1939;1971;1971;FA;Planned economy proponent;High;8571;X
+750005;Minister of Security;Guido Buffarini-Guidi;1933;1946;1981;FA;Efficient Sociopath;Very High;6380;X
+750006;Head of Military Intelligence;Renato Ricci;1923;1957;1957;FA;logistics specialist;Medium;8574;X
+750007;Chief of Staff;Gastone Gambara;1927;1963;1963;FA;School of Mass Combat;Medium;L6074;X
+750008;Chief of Army;Rodolfo Graziani;1930;1956;1956;FA;Decisive Battle Doctrine;Medium;M508008;X
+750009;Chief of Navy;Antonio Legnani;1933;1944;1944;FA;Open Seas Doctrine;Medium;9110;X
+750010;Chief of Air Force;Ernesto Botto;1931;1985;1985;FA;air superiority doctrine;Medium;9116;X
+750011;Head of State;Alessandro Pavolini;1939;1946;1989;NS;ruthless powermonger;High;M508017;X
+750012;Head of Government;Junio Borghese;1940;1975;1975;NS;Corporate Suit;High;M508012;X
+750013;Head of Government;Augusto De Marsanich;1950;1974;1974;FA;Silent Workhorse;High;6081;X
+750014;Foreign Minister;Benito Mussolini;1921;1946;1969;NS;Aggressive Nationalist;Very High;2688;X
+750015;Foreign Minister;Filippo Anfuso;1938;1964;1964;NS;great compromiser;Very High;9111;X
+750016;Foreign Minister;Augusto De Marsanich;1945;1974;1974;FA;Great Compromiser;High;6081;X
+750017;Foreign Minister;Giorgio Almirante;1945;1989;1989;NS;The Cloak N Dagger Schemer;High;6082;X
+750018;Minister of Armament;Romano Ruggero;1932;1946;1981;NS;Theoretical Scientist;Medium;M508014;X
+750019;Minister of Armament;Rodolfo Graziani;1930;1956;1956;FA;Infantry Proponent;High;M508008;X
+750020;Minister of Armament;Edoardo Moroni;1943;1976;1976;FA;laissez-faire capitalist;High;M508003;X
+750021;Minister of Armament;Silvio Gai;1922;1968;1968;FA;Oil baron;High;9112;X
+750022;Minister of Armament;Angelo Tarchi;1939;1975;1975;FA;Industrial chemist;High;9113;X
+750023;Minister of Armament;Giuseppe Spinelli;1943;1988;1988;FA;Planned economy proponent;High;9114;X
+750024;Minister of Armament;Arturo Michelini;1948;1970;1970;FA;Laissez-Faire Capitalist;High;6080;X
+750025;Minister of Security;Alessandro Pavolini;1939;1946;1989;NS;Prince of Terror;Very High;M508017;X
+750026;Minister of Security;Renzo Montagna;1940;1979;1979;FA;Crime Fighter;Very High;L6265;X
+750027;Minister of Security;Piero Pisenti;1939;1981;1981;FA;Compassionate Gentleman;Very High;9612;X
+750028;Minister of Security;Paolo Zerbino;1943;1946;1991;FA;Silent Lawyer;Very High;9115;X
+750029;Minister of Security;Antonino Tringali-Casanova;1942;1944;1944;FA;Efficient Sociopath;High;8570;X
+750030;Minister of Security;Giorgio Almirante;1945;1989;1989;NS;Back Stabber;High;6082;X
+750031;Head of Military Intelligence;Candelore De Leo;1943;1964;1964;NS;Dismal Enigma;Medium;unknownminister;X
+750032;Head of Military Intelligence;Benito Mussolini;1921;1946;1969;NS;technical specialist;Medium;2688;X
+750033;Head of Military Intelligence;Rodolfo Graziani;1930;1956;1956;NS;logistics specialist;Medium;M508008;X
+750034;Chief of Staff;Alessandro Pavolini;1939;1946;1989;NS;School of fire support;Medium;M508017;X
+750035;Chief of Staff;Rodolfo Graziani;1930;1956;1956;FA;school of defence;High;M508008;X
+750036;Chief of Army;Junio Borghese;1940;1975;1975;NS;commando doctrine army;High;M508012;X
+750037;Chief of Army;Renato Ricci;1923;1957;1957;FA;Guns and Butter Doctrine;High;8574;X
+750038;Chief of Army;Carlo Emanuele Basile;1943;1973;1973;FA;static defence doctrine;High;unknownminister;X
+750039;Chief of Navy;Ferruccio Ferrini;1943;1964;1964;FA;Base Control Doctrine;Medium;8573;X
+750040;Chief of Navy;Giuseppe Sparzani;1943;1964;1964;FA;Indirect Approach Doctrine;Medium;9133;X
+750041;Chief of Air Force;Arrigo Tessari;1933;1964;1964;FA;Army Aviation Doctrine;Medium;L6283;X
+750042;Chief of Air Force;Manlio Molfese;1943;1970;1970;FA;air superiority doctrine;Medium;9117;X
+750043;Chief of Air Force;Ruggero Bonomi;1940;1974;1974;FA;Vertical Envelopment Doctrine;Medium;M508027;X

@@ -1,0 +1,89 @@
+# Mission efficiency effect in combat modifiers.;;;;X
+# Following modifiers are used to define the mission efficiency effect in combats (used as combat modifier) when combat type matches unit's mission.;;;;X
+# There are 3 modifiers for each mission:;;;;X
+# 1. Added - it is added to current mission efficiency for the country owning the unit.;;;;X
+#     It can be negative to limit the combat effect only when mission efficiency is above certain value.;;;;X
+# 2. Min - mission efficiency + Added value (from above) should be at least equal to THIS.;;;;X
+#     Setting this to 0.0 ensures that there will be no combat penalty.;;;;X
+# 3. Combat efficiency multiplier - Used to weight the effect of current mission efficiency (modified by first two modifiers) in the combat.;;;;X
+#     Added combat efficiency = THIS * (Mission efficiency + Added value). Set to 0.0 to give no effect for this mission type in the combat.;;;;X
+# Example 1:;;;;X
+# Mission efficiency = 60% (0.6), Added Value = -0.5, Min Value = 0.0, Multiplier = 0.2;;;;X
+# Mission efficiency modifier in combat = (0.6 + (-0.5)) * 0.2 = 0.02 or +2% combat modifier;;;;X
+#;;;;X
+# Example 2:;;;;X
+# Mission efficiency = 40% (0.4), Added Value = -0.5, Min Value = 0.0, Multiplier = 0.2;;;;X
+# Mission efficiency modifier in combat = (0.4 + (-0.5)) * 0.2 = 0.0 (or no combat modifier);;;;X
+#  because (0.4 + (-0.5)) = -0.1 which is less then Min Value, so Min Value (0.0) is used instead;;;;X
+### Land Combat (Land vs. Land);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+None (defender);0;0;0;X
+Attack/Move (defender);0;0;0;X
+Support Attack (defender);0;0;0;X
+Support Defence (defender);0;0;0;X
+Reserves (defender);0;0;0;X
+Anti-Partisan Duty (defender);0;0;0;X
+Planned Defence (defender);0;0;0;X
+None (attacker);0;0;0;X
+Attack/Move (attacker);-1;-0.99;1;X
+Support Attack (attacker);-1;-0.99;1;X
+Support Defence (attacker);0;0;0;X
+Reserves (attacker);0;0;0;X
+Anti-Partisan Duty (attacker);0;0;0;X
+Planned Defence (attacker);0;0;0;X
+### Naval Combat (Navy vs. Navy);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+None;0;0;0;X
+Rebase;0;0;0;X
+Move;0;0;0;X
+Convoy Raiding;0;0;0;X
+ASW;-0.5;0;0.2;X
+Naval Interdiction;-0.5;0;0.2;X
+Shore Bombardment;0;0;0;X
+Amphibious Assault;0;0;0;X
+Sea Transport;0;0;0;X
+Naval Combat Patrol;-0.5;0;0.2;X
+Carrier Strike on Port;0;0;0;X
+Carrier Strike on Airbase;0;0;0;X
+Sneak Move;0;0;0;X
+Naval Scramble;0;0;0;X
+### Air Combat (Air vs. Air);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+Rebase;0;0;0;X
+Air Superiority;-0.5;0;0.2;X
+Ground Attack;0;0;0;X
+Runway Cratering;0;0;0;X
+Installation Strike;0;0;0;X
+Ground Support;0;0;0;X
+Naval Strike;0;0;0;X
+Port Strike;0;0;0;X
+Logistical Strike;0;0;0;X
+Strategic Bombardment;0;0;0;X
+Air Supply;0;0;0;X
+Airborne Assault;0;0;0;X
+Bomb Convoys;0;0;0;X
+Air Scramble;-0.5;0;0.2;X
+Nuke;0;0;0;X
+### Tactical Bombardment (Air vs. Land);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+Ground Attack;-0.5;0;0.2;X
+Ground Support;-0.5;0;0.2;X
+### Naval Bombardment (Air vs. Navy);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+Naval Strike;-0.5;0;0.2;X
+Port Strike;-0.5;0;0.2;X
+### Strategic Bombardment (Air vs. Province);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+Runway Cratering;-0.5;0;0.2;X
+Installation Strike;-0.5;0;0.2;X
+Logistical Strike;-0.5;0;0.2;X
+Strategic Bombardment;-0.5;0;0.2;X
+Nuke;-0.5;0;0.2;X
+### Fleet Attack on Port (Carrier vs. Port);;;;X
+### Unit's Current Mission Type:;Added;Min;Multiplier;X
+Carrier Strike on Port;-0.5;0;0.2;X
+### Fleet Attack on Airbase (Carrier vs. Airbase);;;;X
+### Unit's Current Mission Type;Added;Min;Multiplier;X
+Carrier Strike on Airbase:;-0.5;0;0.2;X
+#EOF;;;;X
+#EOF;;;;X

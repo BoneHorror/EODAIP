@@ -1,0 +1,129 @@
+# MODEL_4_
+
+allowed_brigades = medium_armor		
+allowed_brigades =  anti_air		
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_anti_air
+allowed_brigades =  tank_destroyer
+allowed_brigades =  heavy_armor	
+allowed_brigades =  super_heavy_armor
+allowed_brigades =  light_armor_brigade
+allowed_brigades =  amph_armor # Light Amphibious Armor
+allowed_brigades =  armored_car
+allowed_brigades =  engineer		
+
+upgrade = { type = infantry		upgrade_time_factor = 0.19	upgrade_cost_factor = 1.16 }
+upgrade = { type = motorized	upgrade_time_factor = 0.23	upgrade_cost_factor = 0.96 }
+upgrade = { type = mechanized	upgrade_time_factor = 0.56	upgrade_cost_factor = 0.39 }
+upgrade = { type = armor		upgrade_time_factor = 0.80	upgrade_cost_factor = 0.36 }
+
+# 0 - Early Light Armored Division (1936)
+model = {
+	cost 					= 16
+	buildtime	 			= 270
+	manpower 				= 8
+	maxspeed 				= 21
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 40
+	suppression				= 1
+	airdefence				= 7
+	softattack				= 13
+	hardattack				= 3
+	airattack				= 1
+	transportweight			= 30
+	supplyconsumption 		= 1.6
+	fuelconsumption			= 4
+	no_fuel_combat_mod 		= -0.3
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 8000 trucks = 680 horses = 1860 artillery = 28 anti_tank = 12 anti_air = 8 armored_car = 28 medium_armor = 324 }
+}
+
+# 1 - Basic Light Armored Division (1938) 
+model = {
+	cost 					= 18
+	buildtime	 			= 270
+	manpower 				= 8
+	maxspeed 				= 22
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 35
+	suppression				= 1
+	airdefence				= 7
+	softattack				= 13
+	hardattack				= 3
+	airattack				= 1
+	transportweight			= 30
+	supplyconsumption 		= 1.8
+	fuelconsumption			= 5
+	no_fuel_combat_mod 		= -0.3
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	equipment = { manpower = 8000 trucks = 480 horses = 624 artillery = 43 heavy_artillery = 8 anti_tank = 16 anti_air = 12 armored_car = 32 medium_armor = 218   }
+}
+
+# 2 - Improved Light Armored Division (1940)
+model = {
+	cost 					= 20
+	buildtime	 			= 270
+	manpower 				= 8
+	maxspeed 				= 22
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 22
+	toughness				= 28
+	softness				= 30
+	suppression				= 1
+	airdefence				= 7
+	softattack				= 15
+	hardattack				= 5
+	airattack				= 2
+	transportweight			= 30
+	supplyconsumption 		= 2
+	fuelconsumption			= 6
+	no_fuel_combat_mod 		= -0.3
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	armor = -2 #stop upgrading to armored
+	light_armor = 3 #upgrade to adv light armor
+	equipment = {  manpower = 8000 trucks = 658 artillery = 50 heavy_artillery = 8 anti_tank = 18 anti_air = 12 armored_car = 48 medium_armor = 302   }
+}
+# 3 - Advanced Light Armored Division (1944)
+model = {
+	cost 					= 20
+	buildtime	 			= 270
+	manpower 				= 8
+	maxspeed 				= 23
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 21
+	toughness				= 27
+	softness				= 30
+	suppression				= 1
+	airdefence				= 9
+	softattack				= 19
+	hardattack				= 5
+	airattack				= 2
+	transportweight			= 30
+	supplyconsumption 		= 2
+	fuelconsumption			= 6
+	no_fuel_combat_mod 		= -0.3
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.75
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.75
+	armor					= 3		# 3 ? Upgrade to 1945 Medium Armored Division
+	upgrade_time_boost 		= no 	# Do not reduce upgrade time on obsolete models 
+	equipment = {  manpower = 8000 trucks = 658 artillery = 50 heavy_artillery = 8 anti_tank = 18 anti_air = 12 armored_car = 48 medium_armor = 302   }
+}

@@ -1,0 +1,289 @@
+# England goes on the attack 1936 AI File by Lothos
+
+neutrality = 70.000 
+war = 0
+strat_redeploy_threshold = 25
+exp_force_ratio = 0.0
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 1.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 30	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		BEL = -1
+		HOL = -1
+		LUX = -1
+		GER = 100
+		SPA = -1
+		SPR = -1
+		ITA = 50
+		ETH = -1
+		SCH = -1
+		FRA = -1
+		CAN = -1
+		AST = -1
+		NZL = -1
+		POR = -1
+		CYN = -1
+		TUR = -1
+		SIK = -1
+		TIB = -1
+		AFG = -1
+		PER = -1
+		SAU = -1
+		IRQ = -1
+	}
+	ignore = {
+		#Actual Beaches to Ignore
+		1005  #Sharm el-Sheikh
+		1010   #Eilat
+		1009  #Gaza
+		851  #Tanga
+		1004  #El-Arish
+		850  #Dar es Salaam
+
+		#Libya
+		773    #Al Jaghbun
+		754    #Aujila
+		774   #Calanslo
+		129   #Kufra
+		128   #Murzuk
+		130   #Ghat
+		751    #Ghadames
+		755    #Sorno
+		
+		#Egypt/East Africa
+		800   #Siwa
+		120   #Great Sand Sea
+		801   #AinDalla
+		106   #Western Desert
+		806   #El Atiun
+		808   #El Obeid
+		809   #Waw
+		807   #Malakal
+		805   #Omdurman
+		812   #Gallabal
+		811   #Kassala
+		843   #Marsabit
+
+		#Ethiopia
+		817   #Asmara
+		819   #Adwa
+		822   #Gonder
+		820   #Debre
+		829   #Gambela
+		830   #Jima
+		826   #Moyale
+		821   #Denakil
+		823   #Dese
+		818   #Diredawa
+		827   #Ogaden
+		837   #Bardera
+
+		#Belgian Congo
+		904   #Stanleyville
+		903   #Buta
+		905   #Costermanville
+		906   #Coquihatville
+		898   #Abertville
+		902   #Kindu-Port-Empain
+		901   #Leopoldville
+		
+		#Desicable south pacific trash that annihilates the AI
+		1725 #Kavieng
+		1724 #Manus
+		1587 #Bougainville
+		1588 #Santa Isabel
+		1589 #New Georgia
+		1591 #Malaita
+		1592 #Nendo
+		
+	}
+}
+front = { 
+   	recklessness     = 1 # 0-3 
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+	base_attack_odds	= 1.01
+	min_attack_odds		= 0.8
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.0
+	withdraw_odds		= 0.6
+   	enemy_handicap = { JAP = 30 ITA = 0 } 
+    passivity = {
+		JAP = 50
+		SIA = 90
+		SOV = 30
+		ITA = 0
+	}  
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= yes
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 25.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 180.0  #About the distance from Japan to Batavia
+	max_staging_distance = 60.0	# How far should the staging area be from the target invasion point
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 0.7	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.4	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 1.5	#higher = much more vary of troops nearby
+	air_base			= 2.5 
+   	naval_base 			= 3.0 
+   	air_support 		= 3.0 
+   	redirect 			= home
+	ignore				= no
+	help_allies 		= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+
+	staging_province = {
+		5	# Scapa flow
+		23	# Plymouth 
+		429 # Malta 
+		747 # Tunis 
+		348 # Gibraltar
+		382	#Crete	
+		17  #Manchester
+		900	#Suez
+		789	#Alexandria
+	}	
+
+	target = {
+		# Italy
+		430	= 8000  #Palermo
+		433	= 8000  #Syracuse
+		434	= 4000  #Cagliari
+		94	= 4000  #Corsica
+		422	= 8000  #Taranto
+		427	= 8000  #Salerno
+		416	= 8000  #Anzio
+		419	= 8000  #Rome
+		412	= 2000  #Ancona
+		400	= 2000  #Venice
+
+		429 = 8000  #Malta
+
+		# North Africa
+		791	= 8000	#Port Said
+		789	= 1000  #Alexandra
+		717	= 1000	#Rabat
+		728	= 1000	#Oran
+		727	= 2000	#Algiers
+		748	= 2000	#Bizerte
+		747	= 3000	#Tunis
+		750	= 3000	#Tripoli
+		761	= 2000	#Benghazi
+		765	= 2000	#Tobruk
+
+		# Middle East
+		1019  = 500	#Beirut
+		1008  = 500 #Tel Aviv
+		1004  = 500 #El Arish	
+	
+		# Greece
+		382  = 1400  #Crete
+		372  = 1200  #Patras
+		377  = 1200  #Athens
+		370  = 600   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = 500  #Tirana
+		343  = 500  #Dubrovnik
+		
+		# Turkey
+		378  = 900  #Kalymnos
+		379  = 900  #Rhodes
+		388  = 900  #Nicosia
+		
+		#Spain
+		475	 = 3000	 #Palma de Mallorca
+		473	 = 3000	 #Cadiz
+		449  = 3000  #Vigo
+		441  = 3000  #Coruna
+		472  = 3000  #Huelva
+		463  = 2750  #Murcia
+		464  = 2750  #Valencia		
+		440  = 2750  #Barcelona
+		
+		#Portugal
+		995  = 3000  #Azores
+		477  = 3000  #Setubal
+		476  = 3000  #Lissabon
+		
+		#China-Korea
+		1217  = -1	#	Anshan
+		1221  = 300	#	Pyeongyang
+		1228  = 300	#	Seoul
+		1234  = -1	#	Buna
+		1241  = -1	#	Tianjin
+		1328  = -1	#	Qingdao
+		1333  = -1	#	Huaiyin
+		1334  = -1	#	Nantong
+		1338  = -1	#	Shanghai
+		1358  = -1	#	Fuzhou
+		1361  = -1	#	Gaoxiong
+		1362  = -1	#	Taipei
+		1367  = -1	#	Naoming
+		1369  = -1	#	Guangzhou
+		1372  = 900	#	Macao
+
+		#Japan
+		1552  = 900	#	Tokyo
+		1554  = 900	#	Hiroshima
+		1559  = -1	#	Matsuyama
+		1561  = 900	#	Kagoshima
+		2135  = 100 #
+		2137  = 100 #
+		
+		#Netherlands East Indies
+		1639  = 50  #Bagka Island
+		1647  = 50  #Batavia		
+		1649  = 50  #Semarang
+		1653  = 50  #Soerabaja
+		1656  = 50  #Madura
+		1636  = 50  #Palembang
+		1635  = 50  #Dumai
+		1642  = 50  #Medan
+
+		#Borneo
+		1625  = 300  #Mini
+		1624  = 300  #Kuching
+		1631  = 300  #Pontianak
+		1632  = 300  #Balikpapan
+		1627  = 300  #Tarakan
+
+		#Singapore
+		1436  = 500  #Kota Bahru
+		1435  = 500  #Alor Star
+		1432  = 500  #Singapore
+
+		#Britain
+		1371  = 1450  #Hong Kong
+	}
+}

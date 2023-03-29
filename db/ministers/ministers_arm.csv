@@ -1,0 +1,56 @@
+ARM;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+455001;Head of State;Antranig Osanian;1933;1964;1999;FA;Popular Figurehead;High;M515001;X
+455002;Head of Government;Antranig Osanian;1933;1964;1999;FA;Old General;High;M515001;X
+455003;Foreign Minister;Boghas Nubar Pasha;1933;1964;1999;FA;Ideological Crusader;High;M515003;X
+455004;Minister of Armament;Hagop Andonian;1933;1964;1999;FA;Military Entrepreneur;Medium;M515004;X
+455005;Minister of Security;Karek Pastermadjan;1933;1964;1999;FA;Prince of Terror;Medium;M515005;X
+455006;Head of Military Intelligence;Jack Agazarian;1933;1964;1999;PA;Dismal Enigma;Medium;M515006;X
+455007;Chief of Staff;Paul Hoffmann;1933;1964;1999;FA;School of Mass Combat;Medium;M515007;X
+455008;Chief of Army;Antranig Osanian;1933;1964;1999;FA;Guns and Butter Doctrine;Medium;M515008;X
+455009;Chief of Navy;Wilhelm Betche;1933;1964;1999;FA;Indirect Approach Doctrine;Medium;M515009;X
+455010;Chief of Air Force;Hans Klein;1933;1964;1999;FA;Army Aviation Doctrine;Medium;M515010;X
+455011;Foreign Minister;Berch Keresteciyan;1933;1964;1999;PA;Great Compromiser;High;M515011;X
+455012;Foreign Minister;Jivan Hamparsumian;1933;1964;1999;FA;The Cloak N Dagger Schemer;High;M515012;X
+455013;Foreign Minister;Father Romanos;1933;1964;1999;NS;Iron Fisted Brute;High;M515013;X
+455014;Minister of Armament;Berch Keresteciyan;1933;1964;1999;PA;Administrative Genius;Medium;M515011;X
+455015;Minister of Armament;Arshag K. Schmavonian;1933;1964;1999;NS;Resource Industrialist;Medium;M515015;X
+455016;Minister of Armament;Dikran Arafian;1933;1964;1999;FA;laissez-faire capitalist;Medium;M515016;X
+455017;Minister of Security;Garegin Nzdek;1933;1964;1999;NS;Efficient Sociopath;Medium;M515017;X
+455018;Minister of Security;Father Hovhannes;1933;1964;1999;NS;Crime Fighter;Medium;M515018;X
+455019;Minister of Security;Aram Andonian;1933;1964;1999;FA;Compassionate Gentleman;Medium;M515019;X
+455020;Minister of Security;Patriarch Lalazar;1933;1964;1999;PA;Man of the People;Medium;M515020;X
+455021;Head of Military Intelligence;Khint Osebian;1933;1964;1999;NS;Industrial Specialist;Medium;M515021;X
+455022;Head of Military Intelligence;Vartan Sharents;1933;1964;1999;PA;Technical Specialist;Medium;M515022;X
+455023;Head of Military Intelligence;Father Christapor;1933;1964;1999;FA;Logistics Specialist;Medium;M515023;X
+455024;Chief of Army;Misak Babajanian;1933;1964;1999;FA;Armoured Spearhead Doctrine;Medium;M515024;X
+455025;Chief of Army;Drastamat Kanyan;1933;1964;1999;NS;Elastic Defence Doctrine;Medium;M515025;X
+455026;Chief of Navy;Berj Isahakian;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M515026;X
+455027;Chief of Air Force;Garabed Arafian;1933;1964;1999;PA;Vertical Envelopment Doctrine;Medium;M515027;X
+455028;Chief of Air Force;Sarkis Petrikian;1933;1964;1999;FA;Air Superiority Doctrine;Medium;M515028;X
+455029;Chief of Army;Aram Manougian;1914;1933;1999;PA;static defence doctrine;Medium;2174;X
+455030;Chief of Staff;Aram Manougian;1914;1933;1999;PA;school of defence;Medium;2174;X
+455031;Foreign Minister;Yeghishe Ishkhanian;1914;1933;1999;PA;Great Compromiser;Medium;5941;X
+455032;Head of Government;Hovhannes Kacharznuni;1914;1933;1999;PA;Flamboyant Tough Guy;Medium;2175;X
+455033;Head of Government;Sargis Hambardzumian;1914;1933;1999;LE;flamboyant tough guy;Medium;5942;X
+455034;Head of Government;Aleksandr I. Khatisyan;1919;1933;1999;PA;Naive Optimist;Medium;2176;X
+455035;Head of Government;Hamazasp Ohandzhanyan;1920;1933;1999;PA;Silent Workhorse;Medium;5943;X
+455036;Head of Government;Simeon Vratsyan;1920;1933;1999;PA;Backroom Backstabber;Medium;2177;X
+455037;Head of Government;Sargis Hambardzumian;1920;1933;1999;ST;flamboyant tough guy;Medium;5942;X
+455038;Head of Government;Sarkis Kasyan;1920;1933;1999;ST;Silent Workhorse;Medium;5944;X
+455039;Head of Government;Aleksandr Miasnikyan;1921;1933;1999;ST;Flamboyant Tough Guy;Medium;5945;X
+455040;Head of Government;Sarkis Ambartsumyan;1922;1933;1999;ST;Corporate Suit;Medium;unknownminister;X
+455041;Head of Military Intelligence;General Siligian;1914;1933;1999;PA;Logistics Specialist;Medium;unknownminister;X
+455042;Head of State;Avetik Sahakian;1914;1933;1999;PA;Popular Figurehead;Medium;5946;X
+455043;Head of State;Sargis Hambardzumian;1914;1933;1999;LE;Weary Stiffneck;Medium;5942;X
+455044;Head of State;Avestis Aharonyan;1918;1933;1999;PA;Resigned Generalissimo;Medium;2178;X
+455045;Head of State;Avetik Sahakyan;1920;1933;1999;PA;Benevolent Gentleman;Medium;5946;X
+455046;Head of State;Sarkis Kasyan;1920;1933;1999;ST;Insignificant Layman;Medium;5944;X
+455047;Head of State;Aleksandr Miasnikyan;1921;1933;1999;ST;Popular Figurehead;Medium;5945;X
+455048;Head of State;Sarkis Ambartsumyan;1922;1933;1999;ST;Powerhungry demagogue;Medium;unknownminister;X
+455049;Minister of Armament;General Nazarpekian;1914;1933;1999;PA;Infantry Proponent;Medium;unknownminister;X
+455050;Minister of Security;Aleksandr I. Khatisyan;1914;1933;1999;PA;Man of the People;Medium;2176;X
+455051;Minister of Security;Abraham Gulkhandanian;1919;1933;1999;PA;Silent Lawyer;Medium;unknownminister;X
+455052;Minister of Security;Ruben Ter-Minasian;1920;1933;1999;PA;Crime Fighter;Medium;5947;X
+455053;Minister of Security;Sargis Araratian;1920;1933;1999;PA;Crime Fighter;Medium;5948;X
+455054;Minister of Security;Simeon Vratsyan;1920;1933;1999;PA;Back Stabber;Medium;2177;X

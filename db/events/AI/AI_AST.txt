@@ -1,0 +1,123 @@
+####################################
+# Australia AI events 
+####################################
+
+################
+# Australia changes production
+#############################################
+event = {
+	id = 3046013
+	random = no 
+	country = AST
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			year = 1939
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/AST_Change_Production.ai" }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = free_oil value = 2 }
+		command = { type = manpowerpool value = 6.5 when = 1 }
+		command = { trigger = { NOT = { ai = JAP } } type = free_manpower value = 0.05 }
+	}
+}
+################
+# Australia Air AI
+#############################################
+event = {
+	id = 3046014
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ASTGroundAir }
+		lost_national = { country = AST value = 1 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ASTGroundAir }
+		command = { type = local_clrflag which = ASTNavalAir }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+event = {
+	id = 3046015
+	random = no 
+	country = AST
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ASTNavalAir }
+		NOT = { lost_national = { country = AST value = 1 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ASTGroundAir }
+		command = { type = local_setflag which = ASTNavalAir }
+		command = { type = ai which = "Air_Naval.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3046016
+	random = no 
+	country = AST
+	
+	trigger = {
+		ai = yes
+		OR = {
+			year = 1938
+			atwar = HOL
+			atwar = PHI
+			atwar = USA
+			war = { country = JAP }
+			AND = {
+				atwar = yes
+				lost_national = { country = AST value = 1 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+        	command = { trigger = { control = { province = 1710 data = AST } } type = activate_division which = 30001 value = 1001 where = 1710 when = 0 } # Tanzania
+	}
+}

@@ -1,0 +1,86 @@
+# 0 - Early Missile Corvette (1958) Osa-class
+model = {
+	cost						= 0.4
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.3
+	maxspeed					= 37
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 2
+	subdetectioncapability		= 9
+	visibility					= 10
+	seadefence					= 42
+	airdefence					= 14
+	seaattack					= 6
+	convoyattack				= 6
+	subattack					= 4
+	airattack					= 4
+	shorebombardment			= 4
+	transportcapability			= 0
+	range						= 1400
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 330 }
+}
+
+# 1 - Basic Missile Corvette (1967) Nanuchka-class
+model = {
+	cost						= 0.5
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 37
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 10
+	seadefence					= 40
+	airdefence					= 13
+	seaattack					= 8
+	convoyattack				= 8
+	subattack					= 5
+	airattack					= 8
+	shorebombardment			= 8
+	transportcapability			= 0
+	range						= 1600
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 580 }
+}
+
+# 2 - Improved Missile Corvette (1977) Tarantul-class
+model = {
+	cost						= 0.6
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 37
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 4
+	subdetectioncapability		= 11
+	visibility					= 10
+	seadefence					= 40
+	airdefence					= 13
+	seaattack					= 10
+	convoyattack				= 10
+	subattack					= 5
+	airattack					= 10
+	shorebombardment			= 10
+	transportcapability			= 0
+	range						= 1700
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 460 }
+}

@@ -1,0 +1,42 @@
+RUS;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+515001;Central Research Institute of Shipbuilding Technology;T11003;6;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515002;Grabin Design Bureau;T3708;5;1930;2000;mechanics;artillery;technical_efficiency;munitions;general_equipment;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515003;Igor Y. Tamm;T7202;3;1932;2000;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515004;Ilyushin Design Bureau;T3709;5;1933;2000;aeronautics;bomber_design;general_equipment;munitions;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515005;Machine-Building Plant-MZiK;T7204;5;1890;2000;general_equipment;rocketry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515006;Vyatka Factory Design Bureau;T3710;6;1863;2000;mechanics;artillery;munitions;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515007;Mikoyan Design Bureau;T7207;5;1939;2000;aeronautics;general_equipment;fighter_design;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515008;Nevskoye Design Bureau;T3711;4;1931;2000;naval_engineering;technical_efficiency;naval_artillery;general_equipment;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515009;Rubin Marine Engineering;T7209;5;1901;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515010;Sergei Korolev;T3720;7;1930;1966;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515011;Kharkov Locomotive Factory;T3713;4;1895;2000;mechanics;general_equipment;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515012;Sukhoi Design Bureau;T7212;4;1939;2000;aeronautics;avionics;fighter_design;rocketry;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515013;V.A. Degtyarev Plant;T7213;6;1917;2000;general_equipment;artillery;chemistry;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515015;Saint-Petersburg Naval Academy;100504;3;1900;2000;naval_artillery;small_taskforce_tactics;submarine_tactics;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515016;Moscow Institute of Railway Engineering;100472;5;1913;2000;mechanics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515017;Tula Arsenal;100272;3;1712;2000;general_equipment;training;artillery;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515018;Igor Sikorsky;100273;7;1912;2000;aeronautics;mechanics;electronics;artillery;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515019;Alexander Friedman;100274;8;1910;1925;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515020;Abram Ioffe;100275;7;1910;1960;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515021;Ivan Pavlov;100473;7;1890;1930;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515022;Nikolai Lebedenko;100474;3;1914;1930;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515023;Baltic Shipyard;100276;5;1856;2000;naval_engineering;naval_artillery;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515024;Alexei Brusilov;100277;7;1906;1924;centralized_execution;infantry_focus;large_unit_tactics;small_unit_tactics;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515025;Mikhail Alexeev;100278;4;1904;1918;centralized_execution;large_unit_focus;large_unit_tactics;individual_courage;training;static_defense_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515033;Pavel Bermondt-Avalov;100591;5;1938;1955;infantry_focus;decentralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515040;Nikolay Yudenich;100710;5;1908;1925;centralized_execution;large_unit_focus;maneuver_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515014;Moscow Military Academy;100503;4;1900;2000;centralized_execution;decentralized_execution;large_unit_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515031;Nicholas General Staff Academy;100479;4;1855;1909;training;large_unit_tactics;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515026;Nikolai von Essen;100475;5;1910;1915;centralized_execution;small_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515027;Alexander Kolchak;100279;5;1915;1960;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515028;Alexei Kazakov;100476;4;1915;1950;piloting;fighter_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515029;Moscow Engineering School;100477;5;1703;1912;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515030;Aleksandr Lyapunov;100478;6;1885;1918;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515032;George Gamow;100480;6;1926;2000;mathematics;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515034;Vladimir Zvorykin;100704;8;1917;1954;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515035;Vladimir Galkovsky;100705;5;1929;1958;mathematics;rocketry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515036;Zhukovsky Air Force Academy;100706;6;1906;2000;aeronautics;electronics;training;centralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515037;Alexander Prokofiev-Seversky;100707;5;1915;2000;piloting;bomber_tactics;fighter_design;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515038;Petr Nesterov;100708;8;1909;1917;piloting;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+515039;Obukhov plant;100709;7;1863;2000;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+5150390;Okhrana;T5150390;5;1866;2000;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

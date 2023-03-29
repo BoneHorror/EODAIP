@@ -1,0 +1,49 @@
+TUN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+535001;Head of State;Ahmad II al-Tunis;1933;1964;1999;SL;Ruthless Powermonger;High;M532001;X
+535002;Head of Government;Hedi Lakhoue;1933;1964;1999;SL;Happy Amateur;High;M532002;X
+535003;Foreign Minister;Armand Guillon;1933;1964;1999;SL;Great Compromiser;High;M532003;X
+535004;Minister of Armament;Slaheddine Bekkouche;1933;1964;1999;SL;Tank Proponent;Medium;M532004;X
+535005;Minister of Security;M'Hamed Chenik;1933;1964;1999;SL;Man of the People;Medium;M532005;X
+535006;Head of Military Intelligence;Mustapha Kaak;1933;1964;1999;SL;Industrial Specialist;Medium;M532006;X
+535007;Chief of Staff;Henri d'Astier de la Vigerie;1933;1964;1999;SL;School of Manoeuvre;Medium;M532007;X
+535008;Chief of Army;Bohumil Vazac;1933;1964;1999;SL;Guns and Butter Doctrine;Medium;M532008;X
+535009;Chief of Navy;Jules Evenou;1933;1964;1999;SL;Open Seas Doctrine;Medium;M532009;X
+535010;Chief of Air Force;Emile Ginas;1933;1964;1999;SL;Army Aviation Doctrine;Medium;M532010;X
+535011;Head of State;Shaykh Tahar ben Ammar;1933;1964;1999;SD;Autocratic Charmer;High;M532011;X
+535012;Head of State;Muhammad VII al-Munsif;1942;1964;1999;SL;Die-hard Reformer;High;M532012;X
+535013;Head of State;Muhammad VIII al-Amin;1943;1964;1999;SL;Powerhungry Demagogue;High;M532013;X
+535014;Head of State;M'Hamed Chenik;1933;1964;1999;SC;Popular Figurehead;High;M532005;X
+535015;Head of Government;Habib Bourguiba;1933;1964;1999;SD;Ambitious Union Boss;High;M532015;X
+535016;Head of Government;M'Hamed Chenik;1943;1964;1999;SL;Corporate Suit;High;M532005;X
+535017;Head of Government;Slaheddine Bekkouche;1943;1964;1999;SL;Smiling Oilman;High;M532004;X
+535018;Head of Government;Mustapha Kaak;1947;1964;1999;SL;Smiling Oilman;High;M532006;X
+535019;Head of Government;Hamouda Shadrani;1933;1964;1999;SC;Political Protege;High;M532019;X
+535020;Foreign Minister;Bahi Ladgham;1933;1964;1999;SD;Great Compromiser;High;M532020;X
+535021;Foreign Minister;Erik Labonne;1938;1964;1999;SL;Apologetic Clerk;High;M531014;X
+535022;Foreign Minister;Jean Pierre Esteva;1940;1964;1999;SL;General Staffer;High;L24159;X
+535023;Foreign Minister;Charles Emmanuel Mast;1943;1964;1999;SL;The Cloak N Dagger Schemer;High;M532023;X
+535024;Foreign Minister;Jean Mons;1947;1964;1999;SL;Biased Intellectual;High;M532024;X
+535025;Foreign Minister;Shaykh Mohammed Jallouli;1933;1964;1999;SC;Biased Intellectual;High;M532025;X
+535026;Minister of Armament;Taieb Mehiri;1933;1964;1999;SD;Battle Fleet Proponent;Medium;M532026;X
+535027;Minister of Armament;Roger Alloues;1942;1964;1999;SL;Theoretical Scientist;Medium;M532027;X
+535028;Minister of Armament;Mohammed Masmoudi;1944;1964;1999;SL;Military Entrepreneur;Medium;M532028;X
+535029;Minister of Armament;Ali Belhaouane;1933;1964;1999;SC;Air Superiority Proponent;Medium;M532029;X
+535030;Minister of Security;Mongi Slim;1933;1964;1999;SD;Crime Fighter;Medium;M532030;X
+535031;Minister of Security;Ferhat Keltoum;1943;1964;1999;SL;Compassionate Gentleman;Medium;M532031;X
+535032;Minister of Security;Hedi Nouira;1933;1964;1999;SC;Back Stabber;Medium;M532032;X
+535033;Head of Military Intelligence;Habib Bourguiba;1933;1964;1999;SD;Technical Specialist;Medium;M532015;X
+535034;Head of Military Intelligence;André Lichtwitz;1941;1964;1999;SL;Political Specialist;Medium;M532034;X
+535035;Head of Military Intelligence;Hamouda Shadrani;1933;1964;1999;SC;Dismal Enigma;Medium;M532019;X
+535036;Chief of Staff;Jean Laurent-Champrosay;1933;1964;1999;SD;School of Fire Support;Medium;M532036;X
+535037;Chief of Staff;Jacques Massu;1943;1964;1999;SL;School of Psychology;Medium;M532037;X
+535038;Chief of Staff;Jacques Sevestre;1933;1964;1999;SC;School of Mass Combat;Medium;M532038;X
+535039;Chief of Army;Emile Couladon;1943;1964;1999;SL;Decisive Battle Doctrine;Medium;M532039;X
+535040;Chief of Army;Henri d'Astier de la Vigerie;1933;1964;1999;SC;Static Defence Doctrine;Medium;M532007;X
+535041;Chief of Army;Emile Ginas;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M532010;X
+535042;Chief of Navy;Djellouli Fares;1933;1964;1999;SD;Base Control Doctrine;Medium;M532042;X
+535043;Chief of Navy;Jacques Sevestre;1943;1964;1999;SL;Indirect Approach Doctrine;Medium;M532038;X
+535044;Chief of Navy;Sadok Mokkadem;1933;1964;1999;SC;Decisive Naval Battle Doctrine;Medium;M532044;X
+535045;Chief of Air Force;Abdallah Farhat;1933;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M532045;X
+535046;Chief of Air Force;Emile Allegret;1943;1964;1999;SL;Carpet Bombing Doctrine;Medium;M532046;X
+535047;Chief of Air Force;Ahmed Tlili;1933;1964;1999;SC;Naval Aviation Doctrine;Medium;M532047;X

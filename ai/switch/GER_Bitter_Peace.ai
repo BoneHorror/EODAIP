@@ -1,0 +1,413 @@
+# Germany after Bitter Peace with Soviet Union - prepare for US naval war but don't overextend our fleet + prepare nukes for ENG! - Nekron
+
+liberate = { ARA CRO RSI SLO SPA SIK POR BUL SCA HUN ROM FIN SER MTN MEN MAN SIB PRI TRA TAN IND IRE PAK PER BUR NEP BHU MON SIA SAF SCO VIE IRQ EGY SYR TUR KOR CHI U40 U41 U42 U43 U48 U51 U73 } # SCA
+combat = {
+	SWE = 150
+	SCH = 150
+	SPA = 150
+	SAU = 150
+	TUR = 150
+	SOV = 100
+}
+war = 50
+exp_force_ratio = 0.08 
+exp_force_ratios = { ITA = 0.2 U45 = 0.1 IRE = 0.3 U73 = 0.4 } 
+target = { 
+ 25 = 100 # Oslo
+ 23 = 80 # Bergen
+ 29 = 30 # Trondheim
+ 1 = 100 # Narvik
+} 
+###################################
+# Construction
+###################################
+construction = {
+	max_nuclear = 8
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+     	FRA = -1 
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = 5
+		AUS = -1
+		TUR = 30
+		SPR = -1
+		SPA = -1
+		SOV = 40
+		ENG = 70
+		USA = 80
+		U01 = 40
+		U02 = 50
+	}
+	area_multiplier = {
+		261  = 1.0  #Klaipeda
+		182  = 1.0 #Insterbourg
+		185  = 1.0  #Allenstein
+		252  = 1.0  #Suwalki
+		230  = 1.0
+		229  = 1.0
+		228  = 1.0 
+		246  = 1.0
+		243  = 1.0  #Lubin
+		236  = 1.0
+		237  = 1.0
+		1761  = 0.0  #Antilles
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.2	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 2.0	#higher = avoid long distance.
+	max_distance    = 20 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 8.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 1.2	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.0	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 0.5
+    air_support 	= 12.0 
+    redirect 		= home
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+		122 #Amsterdam
+		51  #Dunkerque	
+		43  #Cherbourg
+		37	#Brest
+		377	#Athens
+		429 #Malta
+		491 #Alesund
+	}
+	target = { 
+		#England
+		22	= 8000  #Cardif
+		26  = 8000  #Dover
+		25  = 8000  #Norwich
+		27  = 8000  #Portsmouth
+		23  = 8000  #Plymouth
+		36  = 6000  #Belfast
+		17  = 6000  #Manchester
+		12  = 6000  #Edinburgh
+		11  = 6000  #Glasgow
+		
+		#Ignore US for now - we swap to US AI after Bitter Peace
+		2131	= -1
+		1953	= -1
+		1773	= -1
+		1778	= -1
+		476     = -1
+		2086	= -1
+		2087	= -1
+		1995	= -1
+		2137	= -1
+
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 1000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 1000	 #Antwerpen
+		49   = 1000  #Calais
+		51   = 1000  #Dunkerque
+		53   = 1000  #Dieppe
+		46   = 1000  #Bayeux
+		44   = 1000  #Caen
+		37   = 1000  #Brest
+		39   = 1000  #Lorient
+		69   = 1000  #Le Rochelle
+		68   = 1000  #Bordeaux
+
+		#Norway
+		491	= 2000	#Alesund
+		485	= 2000	#Kristiansand
+		483	= 4000	#Oslo
+		493	= 2000	#Trondheim
+		495	= 4000	#Narvik
+		
+		#Sweden
+     	2153 = 2000 # Goterborg 
+     	2152 = 2000 # Malmo 
+     	2159 = 8000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 2000 # Gavle 
+     	2166 = 2000 # Lulea 
+
+		#Finland
+		525 = 3000 # Helsinki
+		524 = 2000 # Turku
+		521 = 1000 # Vaasa
+		516 = 2000 # Tornio
+		531 = 4000 # Viipuri
+		530 = 2000 # Terijoki
+		
+		#Denmark
+		294 = 6000 # Copenhagen
+		219 = 2000 # Odense
+		
+		#Baltics
+		270 = 2000 # Tallin
+		275 = 2000 # Kuressaare
+		
+		264 = 2000 # Riga
+		269 = 2000 # Jelgava
+		
+		184 = 4000 # Koenigsberg
+		181 = 100 # Danzig
+		226 = 100 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+		553 = 4000 # Leningrad
+
+		#Mediter. - shut off until we have a fleet
+		382 = -1 #Irakleio
+		388 = -1 #Nikosia
+		429 = -1 #Malta
+		765 = -1 #TODO
+		789 = -1 #Alexandria		
+		
+		#Singapore
+		1436  = -1  #Kota Bahru
+		1435  = -1  #Alor Star
+		1432  = -1  #Singapore
+		#Philippines
+		1567  = -1 #Lingayen Gulf
+		1568  = -1 #Lamon Bay
+		1577  = -1 #Legaspi
+		1579  = -1 #Davao
+		1575  = -1 #Samar
+		1573  = -1 #Leyte
+		1574  = -1 #Negros
+		1576  = -1  #Panay
+		1571  = -1  #Mindoro
+		1572  = -1  #Palawan
+
+		#Outer Japanese Islands
+		1686  = -1  #Saipan
+		1685  = -1  #Tinian
+		1684  = -1  #Rota
+		1683  = -1  #Guam
+		1670  = -1  #Palau
+		1672  = -1  #Marcus Island
+
+		#Netherlands East Indies
+		1649  = -1  #Semarang
+		1656  = -1  #Madura
+		1636  = -1  #Palembang
+		1635  = -1  #Dumai
+
+		#Borneo
+		1625  = -1  #Mini
+		1624  = -1  #Kuching
+		1631  = -1  #Pontianak
+		1632  = -1  #Balikpapan
+		1627  = -1  #Tarakan
+		
+		#China
+		1362  = -1	#	Taipei
+
+		#Japan
+		1552  = -1	#	Tokyo
+		1554  = -1	#	Hiroshima
+		1561  = -1	#	Kagoshima
+	}
+}
+admiral = { 
+	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 6 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		"Kattegat"
+
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+		
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+		
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+		
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+		
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+		
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+		
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+	target = { 
+		#2709 = 100 #Evaluate invasions Cardiff
+		#2700 = 100 #Evaluate invasions to Portsmouth
+		#2698 = 100 #Evaluate invasions to Dover
+		#2708 = 80 #Evaluate Case Green
+		#2278 = 200 #Hunt British Convoys near Gibraltar
+		#2279 = 200 #Hunt British Convoys near Gibraltar
+		#2664 = 50 #Target iceland
+		#2320 = 120 #Patrol Bahamas
+		#2306 = 60 #Make sure we can invade South America
+		2671 = 400 #Protect Narvik
+		2685 = 50 #Threaten Scapa Flow
+	} 
+	core = { 
+		2694 #Protect Denmark
+		2689 #Protect Alesund
+		2671 #Protect Narvik
+		2699 #Protect Channel invasions
+		} 
+}

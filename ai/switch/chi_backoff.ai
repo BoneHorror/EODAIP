@@ -1,0 +1,13 @@
+# China 1936 AI File by Lothos
+
+max_front_ratios = { 	
+	JAP = 1.0 
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human	= op_defensive
+}

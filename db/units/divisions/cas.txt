@@ -1,0 +1,222 @@
+# MODEL_17_
+
+allowed_brigades = b_11
+upgrade = { type = interceptor			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+upgrade = { type = multi_role			upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+upgrade = { type = rocket_interceptor	upgrade_time_factor = 0.42	upgrade_cost_factor = 1.40 }
+
+# 0 - Early Close Air Support Aircraft (1934)
+model = {
+	cost 					= 14
+	buildtime	 			= 210
+	manpower 				= 1.5
+	maxspeed 				= 200
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 7
+	airdefence				= 15
+	softattack				= 2
+	hardattack				= 1
+	airattack				= 2
+	navalattack				= 1
+	supplyconsumption 		= 0.8
+	range					= 400
+	fuelconsumption			= 1.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 1 - Basic Close Air Support Aircraft (1937)
+model = {
+	cost 					= 15
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 250
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 15
+	softattack				= 5
+	hardattack				= 2
+	airattack				= 2
+	navalattack				= 1
+	supplyconsumption 		= 0.8
+	range					= 500
+	fuelconsumption			= 1.6
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 2 - Improved Close Air Support Aircraft (1940)
+model = {
+	cost 					= 16
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 300
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 5
+	airdefence				= 15
+	softattack				= 6
+	hardattack				= 3
+	airattack				= 2
+	navalattack				= 1
+	supplyconsumption 		= 1.0
+	range					= 600
+	fuelconsumption			= 1.7
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 3 - Semi-modern Close Air Support Aircraft (1943)
+model = {
+	cost 					= 17
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 350
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 15
+	softattack				= 5
+	hardattack				= 5
+	airattack				= 2
+	navalattack				= 3
+	supplyconsumption 		= 1.2
+	range					= 700
+	fuelconsumption			= 1.8
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 4 - Advanced Close Air Support Aircraft (1945)
+model = {
+	cost 					= 18
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 400
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 15
+	softattack				= 6
+	hardattack				= 5
+	airattack				= 3
+	navalattack				= 2
+	supplyconsumption 		= 1.2
+	range					= 750
+	fuelconsumption			= 1.9
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 5 - Turbojet Close Air Support Aircraft (1948)
+model = {
+	cost 					= 20
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 650
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 8
+	softattack				= 6
+	hardattack				= 6
+	airattack				= 4
+	navalattack				= 2
+	supplyconsumption 		= 1.4
+	range					= 700
+	fuelconsumption			= 2.1
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 6 - Improved Turbojet Close Air Support Aircraft (1954)
+model = {
+	cost 					= 21
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 900
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 3
+	airdefence				= 8
+	softattack				= 7
+	hardattack				= 6
+	airattack				= 4
+	navalattack				= 4
+	supplyconsumption 		= 1.5
+	range					= 800
+	fuelconsumption			= 2.3
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 7 - Improved Turbojet Close Air Support Aircraft (1966) Mig-27K/Dassault Mirage 5F/SEPECAT Jaguar A/Nanchang Q-5
+model = {
+	cost 					= 23
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 1300
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 8
+	softattack				= 8
+	hardattack				= 7
+	airattack				= 5
+	navalattack				= 5
+	supplyconsumption 		= 1.7
+	range					= 900
+	fuelconsumption			= 2.5
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}
+
+# 8 - Improved Turbojet Close Air Support Aircraft (1975) Fairchild Republic A-10 Thunderbolt II/Dassault Mirage 2000D/Sukhoi Su-25
+model = {
+	cost 					= 25
+	buildtime	 			= 230
+	manpower 				= 1.5
+	maxspeed 				= 1500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 5
+	airdefence				= 9
+	softattack				= 11
+	hardattack				= 10
+	airattack				= 6
+	navalattack				= 6
+	supplyconsumption 		= 2.0
+	range					= 1100
+	fuelconsumption			= 2.8
+	upgrade_time_factor 	= 0.60 
+	upgrade_cost_factor 	= 0.50
+	reinforce_time			= 0.60
+	reinforce_cost 			= 0.50
+	equipment = { bomber = 100 manpower = 200 }
+}

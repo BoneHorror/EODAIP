@@ -1,0 +1,91 @@
+AFG;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+155001;Head of State;Muhammed Zahir;1933;1964;1999;FA;Autocratic Charmer;Very High;2138;X
+155002;Head of Government;Muhammed Hashim;1933;1964;1999;FA;Happy Amateur;High;M54002;X
+155003;Foreign Minister;Haji Faiz Muhammed Zikeria;1933;1964;1999;FA;Ideological Crusader;High;M54003;X
+155004;Minister of Armament;Abdul Majid Zabuli;1933;1964;1999;FA;Laissez-Faire Capitalist;High;M54004;X
+155005;Minister of Security;Muhammed Hashim;1933;1964;1999;FA;Crooked Kleptocrat;Medium;M54002;X
+155006;Head of Military Intelligence;Shah Mahmud Ghazi;1933;1964;1999;FA;Dismal Enigma;Medium;M54006;X
+155007;Chief of Staff;Mohammed Daoud;1933;1964;1999;FA;School of Psychology;High;M54007;X
+155008;Chief of Army;Mohammed Daoud;1933;1964;1999;FA;Elastic Defence Doctrine;Medium;M54007;X
+155009;Chief of Navy;Muhammed Zahir;1933;1964;1999;FA;Indirect Approach Doctrine;Medium;M54009;X
+155010;Chief of Air Force;Mohammed Daoud;1933;1964;1999;FA;Army Aviation Doctrine;Medium;M54007;X
+155011;Head of State;Muhammed Zahir;1939;1964;1999;SC;Benevolent Gentleman;High;2138;X
+155012;Head of State;Muhammed Zahir;1946;1964;1999;PA;Autocratic Charmer;Very High;2138;X
+155013;Head of Government;Muhammed Hashim;1939;1964;1999;SC;Happy Amateur;High;M54002;X
+155014;Head of Government;Shah Mahmud Ghazi;1946;1964;1999;PA;Old General;High;M54006;X
+155015;Foreign Minister;Abdul Hadi Dawai;1937;1964;1999;FA;Apologetic Clerk;High;M54013;X
+155016;Foreign Minister;Amanullah;1933;1964;1999;FA;Ideological Crusader;Low;M54011;X
+155017;Foreign Minister;Mohammed Daoud;1939;1964;1999;SC;Great Compromiser;Medium;M54007;X
+155018;Foreign Minister;Wazir Akbar Khan;1942;1964;1999;SC;General Staffer;Medium;M54018;X
+155019;Foreign Minister;Ali Muhammed Khan;1939;1964;1999;SC;Biased Intellectual;Medium;M54020;X
+155020;Foreign Minister;Mohammed Etemadi Khan;1944;1964;1999;SC;The Cloak N Dagger Schemer;Medium;M54016;X
+155021;Foreign Minister;Asadullah Seraj Khan;1945;1964;1999;PA;Iron Fisted Brute;High;M54031;X
+155022;Minister of Armament;Mohammed Daoud;1937;1964;1999;FA;Air to Ground Proponent;Medium;M54007;X
+155023;Minister of Armament;Italo Sergente;1938;1964;1999;FA;Tank Proponent;Low;M54033;X
+155024;Minister of Armament;Bortolo Berlotti;1939;1964;1999;FA;Administrative Genius;Low;M54034;X
+155025;Minister of Armament;Asadullah Seraj Khan;1939;1964;1999;SC;Infantry Proponent;Medium;M54031;X
+155026;Minister of Armament;Haji Faiz Muhammed Zikeria;1940;1964;1999;SC;laissez-faire capitalist;High;M54003;X
+155027;Minister of Armament;Nasirullah Husain;1940;1964;1999;SC;Battle Fleet Proponent;Medium;M54019;X
+155028;Minister of Armament;Feruccio Serafini;1940;1964;1999;SC;Air Superiority Proponent;Medium;M54038;X
+155029;Minister of Armament;Amanullah;1933;1964;1999;SC;Corrupt Kleptocrat;Low;M54011;X
+155030;Minister of Armament;Massimo Pilotti;1941;1964;1999;SC;Theoretical Scientist;Medium;M54040;X
+155031;Minister of Armament;Pompeo Aloisi;1943;1964;1999;SC;Military Entrepreneur;Medium;M54041;X
+155032;Minister of Armament;Shah Wali Khan;1944;1964;1999;SC;Strategic Air Proponent;Medium;M54042;X
+155033;Minister of Armament;Mohammed Etemadi Khan;1945;1964;1999;PA;Submarine Proponent;Medium;M54016;X
+155034;Minister of Armament;Muhammed Nowroz;1946;1964;1999;PA;Resource Industrialist;High;M54044;X
+155035;Minister of Armament;Ali Muhammed Khan;1947;1964;1999;PA;Air to Sea Proponent;Medium;M54020;X
+155036;Minister of Security;Carlo Garbasso;1938;1964;1999;FA;Prince of Terror;High;M54046;X
+155037;Minister of Security;Ghulam Faruq Usman;1939;1964;1999;FA;Crime Fighter;High;M54047;X
+155038;Minister of Security;Ali Muhammed Khan;1939;1964;1999;SC;Efficient Sociopath;Medium;M54020;X
+155039;Minister of Security;Muhammed Zahir;1941;1964;1999;SC;Man of the People;Medium;M54009;X
+155040;Minister of Security;Ricci A. Busatti;1943;1964;1999;SC;Silent Lawyer;High;M54050;X
+155041;Minister of Security;Abdul Majid Zabuli;1945;1964;1999;PA;Crooked Kleptocrat;High;M54004;X
+155042;Minister of Security;Muhammed Ghobar;1946;1964;1999;PA;Back Stabber;Medium;M54015;X
+155043;Minister of Security;Asadullah Seraj Khan;1947;1964;1999;PA;Compassionate Gentleman;High;M54031;X
+155044;Head of Military Intelligence;Pietro Stoppani;1937;1964;1999;FA;Industrial Specialist;Medium;M54054;X
+155045;Head of Military Intelligence;Carlo Schanzer;1938;1964;1999;FA;Technical Specialist;Medium;M54055;X
+155046;Head of Military Intelligence;Carlo Enrico Barduzzi;1939;1964;1999;SC;Political Specialist;Medium;M54056;X
+155047;Head of Military Intelligence;Ali Muhammed Khan;1940;1964;1999;SC;Naval Intelligence Specialist;Medium;M54020;X
+155048;Head of Military Intelligence;Abdul Majid Zabuli;1943;1964;1999;SC;Dismal Enigma;High;M54004;X
+155049;Head of Military Intelligence;Mohammed Etemadi Khan;1945;1964;1999;PA;Logistics Specialist;Medium;M54016;X
+155050;Chief of Staff;Shah Mahmud Ghazi;1933;1964;1999;FA;School of Psychology;Medium;M54006;X
+155051;Chief of Staff;Wazir Akbar Khan;1939;1964;1999;SC;School of Defence;Medium;M54018;X
+155052;Chief of Staff;Nasirullah Husain;1943;1964;1999;SC;School of Fire Support;Medium;M54019;X
+155053;Chief of Staff;Gholam Wali;1944;1964;1999;SC;School of Manoeuvre;Medium;M54063;X
+155054;Chief of Army;Renato Bardolucci;1937;1964;1999;FA;Armoured Spearhead Doctrine;Medium;M54065;X
+155055;Chief of Army;Asadullah Seraj Khan;1939;1964;1999;SC;Elastic Defence Doctrine;Medium;M54031;X
+155056;Chief of Army;Wazir Akbar Khan;1942;1964;1999;SC;Static Defence Doctrine;Medium;M54018;X
+155057;Chief of Army;Gholam Wali;1943;1964;1999;SC;Guns and Butter Doctrine;Medium;M54063;X
+155058;Chief of Army;Nasirullah Husain;1945;1964;1999;PA;Decisive Battle Doctrine;Medium;M54019;X
+155059;Chief of Navy;Muhammed Hashim;1939;1964;1999;SC;Base Control Doctrine;Medium;M54002;X
+155060;Chief of Navy;Mohammed Etemadi Khan;1943;1964;1999;SC;Indirect Approach Doctrine;Medium;M54016;X
+155061;Chief of Navy;Ali Muhammed Khan;1944;1964;1999;SC;Power Projection Doctrine;Medium;M54020;X
+155062;Chief of Navy;Nasirullah Husain;1945;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M54019;X
+155063;Chief of Navy;Shah Wali Khan;1946;1964;1999;PA;Open Seas Doctrine;Medium;M54042;X
+155064;Chief of Air Force;Gholam Wali;1937;1964;1999;FA;Vertical Envelopment Doctrine;Medium;M54063;X
+155065;Chief of Air Force;Shah Wali Khan;1938;1964;1999;FA;Carpet Bombing Doctrine;Medium;M54042;X
+155066;Chief of Air Force;Feruccio Serafini;1939;1964;1999;FA;Air Superiority Doctrine;Medium;M54038;X
+155067;Chief of Air Force;Muhammed Zahir;1939;1964;1999;SC;Army Aviation Doctrine;Medium;M54009;X
+155068;Chief of Air Force;Ali Muhammed Khan;1945;1964;1999;PA;Naval Aviation Doctrine;Medium;M54020;X
+155069;Head of State;Amanullah;1919;1964;1999;PA;Resigned Generalissimo;High;M54011;X
+155070;Head of Government;Muhammed Ghobar;1933;1964;1999;PA;Backroom Backstabber;High;M54012;X
+155071;Minister of Armament;Abdul Hadi Dawai;1933;1964;1999;PA;Laissez-Faire Capitalist;Medium;M54014;X
+155072;Foreign Minister;Mohammed Maiwandwal;1951;1964;1999;PA;Ideological Crusader;Medium;M54080;X
+155073;Chief of Army;Muhammad Sulaiman Khan;1914;1933;1999;PA;Decisive Battle Doctrine;Very High;unknownminister;X
+155074;Chief of Army;Muhammed Nadir;1919;1934;1999;PA;Decisive Battle Doctrine;Very High;2139;X
+155075;Chief of Staff;Muhammad Sulaiman Khan;1914;1933;1999;PA;School of Mass Combat;Very High;unknownminister;X
+155076;Chief of Staff;Muhammed Nadir;1919;1934;1999;PA;School of Mass Combat;Very High;2139;X
+155077;Foreign Minister;Habibullah;1914;1933;1999;PA;Iron Fisted Brute;Very High;2140;X
+155078;Foreign Minister;Sardar Mahmud Tarzi;1919;1933;1999;PA;Great Compromiser;High;2141;X
+155079;Head of Government;Muhammed Asef Khan;1914;1933;1999;PA;Silent Workhorse;High;unknownminister;X
+155080;Head of Government;Saradar Muhammad Yusuf;1914;1933;1999;PA;Naive Optimist;High;unknownminister;X
+155081;Head of Government;Amanullah;1919;1933;1999;PA;Flamboyant Tough Guy;High;M54011;X
+155082;Head of State;Habibullah;1914;1933;1999;PA;Stern Imperialist;High;2140;X
+155083;Head of State;Nasrullah;1919;1933;1999;PA;Autocratic Charmer;High;3721;X
+155084;Minister of Armament;Habibullah;1914;1933;1999;PA;Military Entrepreneur;Medium;2140;X
+155085;Minister of Armament;Ghulam Muhammad Wardak;1919;1933;1999;PA;Administrative Genius;High;5921;X
+155086;Minister of Security;Habibullah;1914;1933;1999;PA;Man of the People;Medium;2140;X
+155087;Minister of Security;Sardar Ali Ahmad Loynab;1919;1933;1999;PA;Silent Lawyer;High;5922;X
+155088;Minister of Security;Amanullah;1919;1933;1999;PA;Crime Fighter;High;M54011;X
+155089;Head of State;Muhammed Nadir;1929;1934;1999;PA;Resigned Generalissimo;Very High;2139;X

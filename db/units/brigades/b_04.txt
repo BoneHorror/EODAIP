@@ -1,0 +1,66 @@
+#BRIG_MODEL_44_
+detachable = yes
+
+# 0 - Basic Fixed Wing Aircraft (1965)
+model = {
+	cost 				= 2
+	buildtime	 		= 100
+	manpower 			= 0.4
+	defaultorganisation = 0
+	suppression			= 4
+	hardattack			= 5
+	softattack			= 8
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 400 transport_plane = 20 trucks = 66 }
+}
+
+# 1 - Improved Fixed Wing Aircraft (1968)
+model = {
+	cost 				= 2
+	buildtime	 		= 110
+	manpower 			= 0.4
+	defaultorganisation = 0
+	suppression			= 5
+	hardattack			= 8
+	softattack			= 12
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 400 transport_plane = 20 trucks = 66 }
+}
+
+# 3 - Advanced Fixed Wing Aircraft (1975)
+model = {
+	cost 				= 2.5
+	buildtime	 		= 114
+	manpower 			= 0.4
+	defaultorganisation = 0
+	suppression			= 6
+	hardattack			= 10
+	softattack			= 14
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 400 transport_plane = 20 trucks = 66 }
+}
+
+# 3 - Unmanned Aerial Vehicle (1995)
+model = {
+	cost 				= 1.5
+	buildtime	 		= 100
+	manpower 			= 0.1
+	defaultorganisation = 0
+	suppression			= 6
+	hardattack			= 12
+	softattack			= 16
+	supplyconsumption 	= 0.3
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 100 bomber = 5 }
+}

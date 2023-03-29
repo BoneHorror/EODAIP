@@ -1,0 +1,2286 @@
+####################################
+# United Kingdom and Minors 24000 - 24999 
+####################################
+# Unit building AI
+#	ENGBuildStandard	= Standard Building of units 
+#	ENGBuildLand		= Priority Building land units
+
+# Air AI Flags
+#	ENGAirAINaval		= Air vs Naval priority
+#	ENGAirAIStrategic	= Strategic Bombing has priority
+#	ENGAirAIGround		= Ground Support has priority
+
+# Behavior Flags
+#	ENGInvadeItaly		= England is trying to invade Norway since low garrison
+#	ENGInvadeNorway		= England is trying to invade Norway since low garrison
+#	ENGDDay				= England is trying to help an AI USA with D-Day
+#   ENGCatherine		= England attempts Operation Catherine
+#	ENGPike				= England Operation Pike AI
+#	ENGUnthinkable		= England attacks Soviets if it has land advantage
+
+# Naval AI Flags
+#	... were a complete mess. Ctrl+F "ENGNaval" to find them all and learn more =)
+#	Now, we check for permutations of 3 eternally-checked flag (ENGSingapore, ENGNavalMedProt and ENGNavalChannel) and direct navy based on which combination is currently true.
+#	The quarduple-negative system is instead changed into a positive statement ("go there" instead of "don't go to x"), the original was really unclear IMO --Nekron
+#	
+#	
+#	
+
+################
+# Battle of Britain
+#############################################
+event = {
+	id = 3001001
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		NOT = { war = { country = GER country = SOV } }
+		OR = {
+			control = { province = 55 data = GER } # Paris
+			AND = {
+				area = { area = "Flanders" country = GER }
+				area = { area = "Wallonia" country = GER }
+			}
+			event = 2002004 # It Is Done - FRA
+		}
+		OR = {
+			garrison = { country = -2 province = 125  type = land size = 9 area = 2 } #Rotterdam, Flanders Region
+			garrison = { country = -2 province = 43  type = land size = 6 area = 1 } #Cherbourg, Normandy Area
+			garrison = { country = -2 province = 37  type = land size = 6 area = 1 } #Brest, Brittany Area
+			garrison = { country = -2 province = 81  type = land size = 6 area = 1 } #Dunkirk, Pas de Calais
+			garrison = { country = -2 province = 147  type = land size = 8 area = 1 } #Wilhelmshaven, Hannover
+			garrison = { country = -2 province = 152  type = land size = 8 area = 1 } #Kiel, Holstein
+			garrison = { country = -2 province = 2699  type = naval size = 3 area = 1 } #English Channel Area
+			garrison = { country = -2 province = 2683  type = naval size = 3 area = 1 } #East Approach to Isles
+			garrison = { country = -2 province = 2708  type = naval size = 3 area = 1 } #West or Ireland
+			lost_national = { country = ENG value = 2 }
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Britain.ai" }
+		command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10001 where = 23 when = 0 } # Homeland
+		command = { trigger = { control = { province = 23 data = ENG } } type = activate_division which = 12700 value = 10002 where = 23 when = 0 } # Homeland
+		command = { trigger = { control = { province = 27 data = ENG } } type = activate_division which = 12700 value = 10003 where = 27 when = 0 } # Homeland
+		command = { trigger = { control = { province = 27 data = ENG } } type = activate_division which = 12700 value = 10004 where = 27 when = 0 } # Homeland
+		command = { trigger = { control = { province = 26 data = ENG } } type = activate_division which = 12700 value = 10005 where = 26 when = 0 } # Homeland
+		command = { trigger = { control = { province = 26 data = ENG } } type = activate_division which = 12700 value = 10006 where = 26 when = 0 } # Homeland
+		command = { trigger = { control = { province = 29 data = ENG } } type = activate_division which = 12700 value = 10007 where = 29 when = 0 } # Homeland
+		command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10008 where = 22 when = 0 } # Homeland
+		command = { trigger = { control = { province = 22 data = ENG } } type = activate_division which = 12700 value = 10009 where = 25 when = 0 } # Homeland
+		command = { trigger = { control = { province = 36 data = ENG } } type = activate_division which = 12700 value = 10010 where = 36 when = 0 } # Homeland
+		command = { trigger = { control = { province = 36 data = ENG } } type = activate_division which = 12700 value = 10011 where = 36 when = 0 } # Homeland
+		command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10012 where = 17 when = 0 } # Homeland
+		command = { trigger = { control = { province = 17 data = ENG } } type = activate_division which = 12700 value = 10013 where = 17 when = 0 } # Homeland
+		command = { trigger = { control = { province = 11 data = ENG } } type = activate_division which = 12700 value = 10014 where = 11 when = 0 } # Homeland
+		command = { trigger = { control = { province = 11 data = ENG } } type = activate_division which = 12700 value = 10015 where = 11 when = 0 } # Homeland
+		command = { trigger = { control = { province = 12 data = ENG } } type = activate_division which = 12700 value = 10016 where = 12 when = 0 } # Homeland
+		command = { trigger = { control = { province = 12 data = ENG } } type = activate_division which = 12700 value = 10017 where = 12 when = 0 } # Homeland        	
+		command = { trigger = { control = { province = 9 data = ENG } } type = activate_division which = 12700 value = 10018 where = 9 when = 0 } # Homeland
+	}
+}
+################
+# England sends help to Greece
+#############################################
+event = {
+	id = 3001002
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		random = 30
+		war = { country = ITA country = GRE }
+		alliance = { country = GRE }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Balkans.ai" }
+	}
+}
+
+################
+# England release troops from England to attack with
+#############################################
+event = {
+	id = 3001003
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		OR = {
+			AND = {
+				random = 30
+				NOT = { 
+					local_flag = ENGCatherine
+					local_flag = ENGAgression
+					}
+				}
+			alliance = { country = USA }
+		}
+		war = { country = GER }
+		OR = {
+			war = { country = GER country = USA }
+			war = { country = GER country = SOV }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Attack.ai" }
+	}
+}
+################
+# England sends more troops to France since they are allive still
+#############################################
+event = {
+	id = 3001004
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		exists = FRA
+		control = { province = 55 data = -3 } # Paris
+		NOT = { event = 2002004 }
+		war = { country = FRA country = GER }
+		alliance = { country = FRA }
+		NOT = { lost_national = { country = FRA value = 35 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1941 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_EXP_France.ai" }
+	}
+}
+################
+# England changes production prios
+#############################################
+event = {
+	id = 3001005
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Atwar.ai" }
+		command = { type = carrier_level value = 1.0 }
+	}
+}
+event = {
+	id = 3001115
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		command = { type = industrial_modifier which = total value = 10 }
+	}
+}
+
+################
+# England updates Protection list
+#############################################
+event = {
+	id = 3001006
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = SOV }
+		war = { country = GER }
+		NOT = { war = { country = SOV } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_SOV_Protect.ai" }
+	}
+}
+################
+# England loads EXP Force Ratio for war with SOV
+#############################################
+event = {
+	id = 3001007
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		war = { country = USA country = SOV }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_ALIvsSOV2.ai" }
+	}
+}
+################
+# England Load D-Day AI
+#############################################
+event = {
+	id = 3001008
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ENGDDay }
+		alliance = { country = USA }
+		OR = {
+			AND = {
+				year = 1944
+				lost_national = { country = GER value = 5 }
+			}
+			lost_national = { country = GER value = 20 }
+		}
+		OR = {
+			AND = {
+				ai = USA
+				flag = DDay
+			}
+			region = { region = "Germany" country = -3 value = 1 }
+			region = { region = "Benelux" country = -3 value = 1 }
+			region = { region = "Denmark" country = -3 value = 1 }
+			region = { region = "France" country = -3 value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Dday.ai" }
+		command = { type = local_setflag which = ENGDDay }
+		command = { type = local_clrflag which = ENGInvadeItaly }
+		command = { type = local_clrflag which = ENGInvadeNorway }
+	}
+}
+event = {
+	id = 3001009
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGDDay
+		alliance = { country = USA }
+		NOT = {
+			AND = {
+				ai = USA
+				flag = DDay
+			}
+			
+			region = { region = "Germany" country = -3 value = 1 }
+			region = { region = "Benelux" country = -3 value = 1 }
+			region = { region = "Denmark" country = -3 value = 1 }
+			region = { region = "France" country = -3 value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Attack.ai" }
+		command = { type = local_clrflag which = ENGDDay }
+	}
+}
+
+################
+# England Air AI Naval portion
+#############################################
+event = {
+	id = 3001010
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGAirAINaval }
+		NOT = { local_flag = ENGAirAIBelgium }
+		#OR = {	 # - I have no idea what is this clause doing, but it makes AirNaval repeat itself. Moving flag check outside
+		#	AND = {
+		#		day = 1
+		#		NOT = { day = 2 }
+		#	}
+		#}
+		# These statements must be false if not the land air AI has priority
+		NOT = {	lost_national = { country = ENG value = 2 } }
+		
+		# These statements have to be true for it to load naval AI
+			AND = {
+				OR = {
+				war = { country = GER }
+				war = { country = ITA }
+				war = { country = SPA }
+				war = { country = USA }
+				war = { country = SOV }
+				     }
+				OR = {
+					# North Sea
+					garrison = { country = -2 province = 2686   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2688   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2689   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2690   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2691   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2692   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2693   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2697   type = naval size = 2 area = no }
+					# East Coast
+					garrison = { country = -2 province = 2682   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2683   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2684   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2685   type = naval size = 2 area = no }
+					#West Coast
+					garrison = { country = -2 province = 2708   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2709   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2710   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2711   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2712   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2713   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2714   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2715   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2716   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2717   type = naval size = 2 area = no }
+					# Channel
+					garrison = { country = -2 province = 2698   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2699   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2700   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2701   type = naval size = 2 area = no }
+				}
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ENGAirAINaval }
+		command = { type = local_clrflag which = ENGAirAIStrategic }
+		command = { type = local_clrflag which = ENGAirAIGround }
+		command = { type = ai which = "switch/ENG_Air_Naval.ai" }
+	}
+}
+################
+# England Air AI Land portion
+#############################################
+event = {
+	id = 3001011
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGAirAIBelgium }
+		OR = {
+			NOT = { local_flag = ENGAirAIGround }
+			AND = {
+				day = 1
+				NOT = { day = 2 }
+			}
+		}
+		# These statements must be false if not the land air AI has priority
+		OR = {
+			lost_national = { country = ENG value = 2 }
+			OR = {
+				area = { area = "South Italy" value = 1 }
+				area = { area = "Thrace" value = 1 }
+				area = { area = "Attica" value = 1 }
+			}
+		}
+		# These statements have to be true for it to load naval AI
+		NOT = {
+				OR = {
+				war = { country = GER }
+				war = { country = ITA }
+				war = { country = SPA }
+				war = { country = USA }
+				war = { country = SOV }
+				     }
+				NOT = { lost_national = { country = ENG value = 2 } }
+				OR = {
+					# North Sea
+					garrison = { country = -2 province = 2686   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2688   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2689   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2690   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2691   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2692   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2693   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2697   type = naval size = 2 area = no }
+					# East Coast
+					garrison = { country = -2 province = 2682   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2683   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2684   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2685   type = naval size = 2 area = no }
+					#West Coast
+					garrison = { country = -2 province = 2708   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2709   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2710   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2711   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2712   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2713   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2714   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2715   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2716   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2717   type = naval size = 2 area = no }
+					# Channel
+					garrison = { country = -2 province = 2698   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2699   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2700   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2701   type = naval size = 2 area = no }
+				}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGAirAINaval }
+		command = { type = local_clrflag which = ENGAirAIStrategic }
+		command = { type = local_setflag which = ENGAirAIGround }
+		command = { type = ai which = "switch/ENG_Air_Ground.ai" }
+	}
+}
+################
+# England Air AI Strategic portion
+#############################################
+event = {
+	id = 3001012
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGAirAIBelgium }
+		OR = {
+			NOT = { local_flag = ENGAirAIStrategic }
+			AND = {
+				day = 1
+				NOT = { day = 2 }
+			}
+		}
+		# These statements must be false to load the Strategic AI
+		NOT = {
+			lost_national = { country = ENG value = 2 }
+			OR = {
+				area = { area = "South Italy" value = 1 }
+				area = { area = "Thrace" value = 1 }
+				area = { area = "Attica" value = 1 }
+			}
+		}
+		# These statements must be false to load the Strategic AI
+		NOT = {
+				OR = {
+				war = { country = GER }
+				war = { country = ITA }
+				war = { country = SPA }
+				war = { country = USA }
+				war = { country = SOV }
+				     }
+				OR = {
+					# North Sea
+					garrison = { country = -2 province = 2686   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2688   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2689   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2690   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2691   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2692   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2693   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2697   type = naval size = 2 area = no }
+					# East Coast
+					garrison = { country = -2 province = 2682   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2683   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2684   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2685   type = naval size = 2 area = no }
+					#West Coast
+					garrison = { country = -2 province = 2708   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2709   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2710   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2711   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2712   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2713   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2714   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2715   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2716   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2717   type = naval size = 2 area = no }
+					# Channel
+					garrison = { country = -2 province = 2698   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2699   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2700   type = naval size = 2 area = no }
+					garrison = { country = -2 province = 2701   type = naval size = 2 area = no }
+				}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGAirAINaval }
+		command = { type = local_setflag which = ENGAirAIStrategic }
+		command = { type = local_clrflag which = ENGAirAIGround }
+		command = { type = ai which = "switch/ENG_Air_Strategic.ai" }
+	}
+}
+################
+# Englands loads Standard builds AI
+#############################################
+event = {
+	id = 3001013
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGBuildStandard }
+		NOT = {
+			AND = {
+				war = { country = GER }
+				NOT = { land_percentage = { country = GER value = 0.55 } }
+			}
+			AND = {
+				war = { country = ITA }
+				NOT = { land_percentage = { country = ITA value = 0.95 } }
+			}
+			AND = {
+				war = { country = SOV }
+				NOT = { land_percentage = { country = SOV value = 0.25 } }
+			}
+			AND = {
+				war = { country = USA }
+				NOT = { land_percentage = { country = USA value = 0.25 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ENGBuildStandard }
+		command = { type = local_clrflag which = ENGBuildLand }
+		command = { type = ai which = "switch/ENG_Build_Standard.ai" }
+	}
+}
+################
+# Englands loads Land builds AI
+#############################################
+event = {
+	id = 3001014
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGBuildLand }
+		OR = {
+			AND = {
+				war = { country = GER }
+				NOT = { land_percentage = { country = GER value = 0.5 } }
+			}
+			AND = {
+				war = { country = ITA }
+				NOT = { land_percentage = { country = ITA value = 0.9 } }
+			}
+			AND = {
+				war = { country = SOV }
+				NOT = { land_percentage = { country = SOV value = 0.2 } }
+			}
+			AND = {
+				war = { country = USA }
+				NOT = { land_percentage = { country = USA value = 0.2 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGBuildStandard }
+		command = { type = local_setflag which = ENGBuildLand }
+		command = { type = ai which = "switch/ENG_Build_Land.ai" }
+	}
+}
+################
+# England invades Norway due to lack of defenses
+#	ENGInvadeNorway
+#############################################
+event = {
+	id = 3001015
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = { 
+			AND = { 
+				NOT = { ai = GER } 
+				year = 1941 
+				} 
+				year = 1943 }
+		random = 10
+		atwar = yes
+		NOT = { lost_national = { country = ENG value = 2 } }
+		NOT = { local_flag = ENGInvadeNorway }
+		NOT = { local_flag = ENGNavalChannel }
+		OR = {
+			NOT = { exists = NOR }
+			puppet = { country = NOR country = GER }
+		}
+		OR = {
+			war = { country = GER country = SOV }
+			war = { country = GER country = USA }
+		}
+			region = { region = "Norway" value = 1 }
+		OR = {
+				NOT = { garrison = { country = -2 province = 483  type = land size = 2 area = no } } # Oslo
+				NOT = { garrison = { country = -2 province = 485  type = land size = 1 area = no } } # Kristiansan
+				NOT = { garrison = { country = -2 province = 491  type = land size = 1 area = no } } # Alesund
+				NOT = { garrison = { country = -2 province = 493  type = land size = 1 area = no } } # Trondheim
+				NOT = { garrison = { country = -2 province = 495  type = land size = 2 area = no } } # Narvik
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = november year = 1960 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Norway.ai" }
+		command = { trigger = { ai = yes exists = NOR NOT = { alliance = { country = NOR } } } type = ai_prepare_war which = NOR }
+		command = { type = local_setflag which = ENGInvadeNorway }
+	}
+}
+event = {
+	id = 3001016
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGInvadeNorway
+			region = { region = "Norway" value = 1 }
+		OR = {
+			lost_national = { country = ENG value = 2 }
+			local_flag = ENGDDay
+			local_flag = ENGInvadeItaly
+			NOT = {
+				OR = {
+					NOT = { garrison = { country = -2 province = 483  type = land size = 2 area = no } } # Oslo
+					NOT = { garrison = { country = -2 province = 485  type = land size = 1 area = no } } # Kristiansan
+					NOT = { garrison = { country = -2 province = 491  type = land size = 1 area = no } } # Alesund
+					NOT = { garrison = { country = -2 province = 493  type = land size = 1 area = no } } # Trondheim
+					NOT = { garrison = { country = -2 province = 495  type = land size = 2 area = no } } # Narvik
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		command = { trigger = { NOT = { local_flag = ENGDDay local_flag = ENGInvadeItaly } } type = ai which = "switch/ENG_Norway_Backoff.ai" }
+		command = { type = local_clrflag which = ENGInvadeNorway }
+	}
+}
+################
+# England Naval AI Section
+#	ENGNavalChannel		= Protect the English Channel cause France fell
+#	ENGNavalNorway		= English Navy support Norway Invasion
+#	ENGNavalMedProt		= English protect Med
+#	ENGNavalChannelMed	= Same as Channel but al protect Med
+#	ENGNavalNorwayMed	= Same as Norway but protect Med
+#	ENGNavalSingapore			= English protect Pacific if atwar with JAP and worried about Singapore
+#	ENGNavalChannelPacific		= Defend Channel and Pacific
+#	ENGNavalNorwayPacific		= Defend Norway and Pacific
+#	ENGNavalChannelPacificMed	= Defend Channel Pacific and Med
+#	ENGNavalNorwayPacificMed	= Defend Norway Pacific and Med
+
+#############################################
+event = { #Protect the English Channel - this has to be evergreen, mostly checkable regardless of other naval flags even if it interrupts some of them - otherwise ENG looks incapable when defending
+	id = 3001017
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGNavalChannel }
+		OR = { 
+		local_flag = ENGDDay
+		local_flag = ENGPanic
+		garrison = { country = -2 province = 2682   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2698   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2700   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2709   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2683   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2708   type = naval size = 2 area = no }
+		}
+		OR = {
+			war = { country = GER country = ENG }
+			war = { country = SOV country = ENG }
+		}
+		OR = {
+		local_flag = ENGDDay
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 125  type = land size = 9 area = 2 } #Rotterdam, Flanders Region
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 43  type = land size = 6 area = 1 } #Cherbourg, Normandy Area
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 37  type = land size = 6 area = 1 } #Brest, Brittany Area
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 81  type = land size = 6 area = 1 } #Dunkirk, Pas de Calais
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 147  type = land size = 8 area = 1 } #Wilhelmshaven, Hannover
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 152  type = land size = 8 area = 1 } #Kiel, Holstein
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 2699  type = naval size = 3 area = 1 } #English Channel Area
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 2683  type = naval size = 3 area = 1 } #East Approach to Isles
+		}
+		AND = { lost_national = { country = ENG value = 2 }
+		garrison = { country = -2 province = 2708  type = naval size = 3 area = 1 } #West or Ireland
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Channel_Protect.ai" }
+		command = { type = local_setflag which = ENGNavalChannel }
+	}
+}
+################
+# England Naval AI Section
+#	ENGNavalChannel		= Rescind channel defense when we're no longer threatened
+#############################################
+event = {
+	id = 3001018
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGNavalChannel
+		NOT = {
+		garrison = { country = -2 province = 2682   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2698   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2700   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2709   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2683   type = naval size = 2 area = no }
+		garrison = { country = -2 province = 2708   type = naval size = 2 area = no }
+		lost_national = { country = ENG value = 2 }
+		local_flag = ENGDDay
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGNavalChannel }
+	}
+}
+################
+# England Naval AI Section
+#	ENGNavalNorway		= English Navy support Norway Invasion
+#############################################
+event = {
+	id = 3001019
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGNavalNorway }
+		NOT = { local_flag = ENGNavalChannel }
+		local_flag = ENGInvadeNorway
+		NOT = { local_flag = ENGDDay }
+		NOT = { local_flag = ENGInvadeItaly }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Norway.ai" }
+		command = { type = local_setflag which = ENGNavalNorway }
+	}
+}
+event = {
+	id = 3001022
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGNavalNorway
+		OR = {
+			local_flag = ENGNavalChannel
+			NOT = { local_flag = ENGInvadeNorway }
+			local_flag = ENGDDay
+			local_flag = ENGInvadeItaly
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGNavalNorway }
+		command = { type = local_clrflag which = ENGNavalNorwayMed }
+		command = { type = local_clrflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed } #Just to be safe!
+	}
+}
+################
+# England Naval AI Section
+#	ENGNavalMedProt - ENG wants to Invade Italy or otherwise wants to operate Med
+#############################################
+event = {
+	id = 3001020
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGNavalMedProt }
+		OR = {
+			local_flag = ENGInvadeItaly
+			flag = InvadeItaly
+			}
+		#NOT = { local_flag = ENGDDay }
+		NOT = { local_flag = ENGPanic }
+		OR = {
+			AND = {
+				war = { country = ITA country = ENG }
+				naval_percentage = { country = ITA value = 0.9 }
+			}
+			AND = {
+				war = { country = RSI country = ENG }
+				naval_percentage = { country = RSI value = 1.05 }
+			}
+			AND = {
+				war = { country = FRA country = ENG }
+				naval_percentage = { country = FRA value = 1.4 }
+			}
+			AND = {
+				war = { country = U55 country = ENG }
+				naval_percentage = { country = U55 value = 1.4 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ENGNavalMedProt }
+		#command = { trigger = { local_flag = ENGInvadeItaly } type = local_clrflag which = ENGNavalNorway } #Clear Norway invasion script if we're interested in ITA now #Edit - this is actually not very important to do here. Just put more emphasis on Mediterrean scriptside
+		command = { trigger = { NOT = { local_flag = ENGNavalNorway local_flag = ENGNavalChannel } } type = local_setflag which = ENGNavalChannelMed } #If no proper init flag is set, I want to force channel+Med so that something is played
+		command = { trigger = { NOT = { local_flag = ENGNavalNorway local_flag = ENGNavalChannel } } type = ai which = "switch/ENG_Naval_Channel_Protect_Med.ai" }
+	}
+}
+event = {
+	id = 3001021
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGNavalMedProt
+		OR = {
+			NOT = {
+				local_flag = ENGInvadeItaly
+				}
+			#local_flag = ENGDDay
+			local_flag = ENGPanic
+			}
+		OR = {
+			NOT = {
+				war = { country = ITA country = ENG }
+				naval_percentage = { country = ITA value = 0.9 }
+			}
+			NOT = {
+				war = { country = RSI country = ENG }
+				naval_percentage = { country = RSI value = 1.05 }
+			}
+			NOT = {
+				war = { country = FRA country = ENG }
+				naval_percentage = { country = FRA value = 1.4 }
+			}
+			NOT = {
+				war = { country = U55 country = ENG }
+				naval_percentage = { country = U55 value = 1.4 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGNavalMedProt }
+	}
+}
+################
+# England Naval AI Section
+#	ENGNavalChannel	= Protect the English Channel
+#	ENGNavalNorway		= English Navy support Norway Invasion
+#	ENGNavalMedProt		= Protect Med
+#	ENGNavalChannelMed	= Protect Channel and Italy
+#	ENGNavalNorwayMed	= Protect Norway and Med
+#############################################
+
+event = {
+	id = 3001023
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGNavalMedProt
+		local_flag = ENGNavalChannel
+		OR = { #Special case when we care amount Mediterrean more
+			NOT = { local_flag = ENGSingapore }
+			AND = {
+				local_flag = ENGSingapore
+				NOT = { local_flag = ENGNavalChannelPacificMed }
+				#NOT = { local_flag = ENGNavalNorwayPacificMed }
+				local_flag = ENGInvadeItaly
+				}
+		}
+		#NOT = { local_flag = ENGNavalNorway } # I guess this should already be covered by main flags checking eachother - If ENGNavalChannel is positive we don't need to doublecheck the  negative here
+		NOT = { local_flag = ENGNavalChannelMed }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Channel_Protect_Med.ai" }
+		command = { type = local_setflag which = ENGNavalChannel }
+		#command = { type = local_clrflag which = ENGNavalMedProt } #Commmented out because MED is set separately
+		command = { type = local_setflag which = ENGNavalChannelMed }
+		command = { type = local_clrflag which = ENGNavalNorwayMed }
+		command = { type = local_clrflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_clrflag which = ENGNavalChannelPacific }
+		command = { type = local_clrflag which = ENGNavalChannelPacificMed }
+	}
+}
+event = {
+	id = 3001024
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGNavalMedProt
+		NOT = { local_flag = ENGSingapore }
+		#NOT = { local_flag = ENGNavalChannel } #Read above - probably don't need to care abt this
+		OR = {
+			NOT = { local_flag = ENGSingapore }
+			AND = {
+				local_flag = ENGSingapore
+				#NOT = { local_flag = ENGNavalChannelPacificMed }
+				NOT = { local_flag = ENGNavalNorwayPacificMed }
+				local_flag = ENGInvadeItaly
+				}
+		}
+		local_flag = ENGNavalNorway
+		NOT = { local_flag = ENGNavalNorwayMed }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Norway_Med.ai" }
+		command = { type = local_clrflag which = ENGNavalChannel }
+		command = { type = local_setflag which = ENGNavalNorway }
+		#command = { type = local_clrflag which = ENGNavalMedProt } #Commmented out because MED is set separately
+		command = { type = local_clrflag which = ENGNavalChannelMed }
+		command = { type = local_setflag which = ENGNavalNorwayMed }
+		command = { type = local_clrflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_clrflag which = ENGNavalChannelPacific }
+		command = { type = local_clrflag which = ENGNavalChannelPacificMed }
+	}
+}
+
+################
+# England Naval AI Section - 
+# Check if we're worried about Singapore and Pacific
+#############################################
+event = {
+	id = 3001027
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ENGPanic }
+		NOT = { local_flag = Singapore }
+		war = { country = JAP country = ENG }
+		war = { country = USA country = JAP }
+		control = { province = 1432 data = ENG } #Singapore
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = ENGSingapore }
+	}
+}
+#Something scary happened! Release Singapore fleet
+event = {
+	id = 3001028
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGSingapore
+		OR = {
+			NOT = { war = { country = JAP country = ENG } }
+			local_flag = ENGPanic
+			control = { province = 1432 data = -2 } #Singapore
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGSingapore }
+	}
+}
+################
+# England Naval AI Section
+# Pacific Permutations
+#############################################
+event = {
+	id = 3001029
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGNavalMedProt }
+		local_flag = ENGNavalChannel
+		local_flag = ENGSingapore
+		NOT = { local_flag = ENGNavalNorway }
+		NOT = { local_flag = ENGNavalChannelPacific }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Channel_Protect_Pacific.ai" }
+		command = { type = local_setflag which = ENGNavalChannel }
+		command = { type = local_clrflag which = ENGNavalNorway }
+		command = { type = local_clrflag which = ENGNavalChannelMed }
+		command = { type = local_clrflag which = ENGNavalNorwayMed }
+		command = { type = local_clrflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_setflag which = ENGNavalChannelPacific }
+		command = { type = local_clrflag which = ENGNavalChannelPacificMed }
+	}
+}
+
+event = {
+	id = 3001031
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGNavalMedProt }
+		NOT = { local_flag = ENGNavalChannel }
+		local_flag = ENGSingapore
+		local_flag = ENGNavalNorway
+		NOT = { local_flag = ENGNavalNorwayPacific }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Norway_Pacific.ai" }
+		command = { type = local_setflag which = ENGNavalNorway }
+		command = { type = local_clrflag which = ENGNavalChannelMed }
+		command = { type = local_clrflag which = ENGNavalNorwayMed }
+		command = { type = local_setflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_clrflag which = ENGNavalChannelPacific }
+		command = { type = local_clrflag which = ENGNavalChannelPacificMed }
+	}
+}
+################
+# England Naval AI Section
+#	Pacific and Med Shut Down
+#	ENGNavalChannelPacificMed	= Same as Channel but also protect (...)
+#	ENGNavalNorwayPacificMed	= Same as Norway but also protect (...)
+#############################################
+event = {
+	id = 3001032
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGNavalMedProt
+		local_flag = ENGNavalChannel
+		local_flag = ENGSingapore
+		NOT = { local_flag = ENGNavalNorway }
+		NOT = { local_flag = ENGNavalChannelPacificMed }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Channel_Protect_Pacific_Med.ai" }
+		command = { type = local_setflag which = ENGNavalChannel }
+		command = { type = local_clrflag which = ENGNavalNorway }
+		command = { type = local_setflag which = ENGNavalChannelMed }
+		command = { type = local_clrflag which = ENGNavalNorwayMed }
+		command = { type = local_clrflag which = ENGNavalNorwayPacific }
+		command = { type = local_clrflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_setflag which = ENGNavalChannelPacific }
+		command = { type = local_setflag which = ENGNavalChannelPacificMed }
+	}
+}
+#event = {
+#	id = 3001033
+#	random = no 
+#	country = ENG
+#	persistent = yes
+# Unused ID
+event = {
+	id = 3001034
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGNavalMedProt
+		NOT = { local_flag = ENGNavalChannel }
+		local_flag = ENGSingapore
+		local_flag = ENGNavalNorway
+		NOT = { local_flag = ENGNavalNorwayPacificMed }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Naval_Norway_Pacific_Med.ai" }
+		command = { type = local_clrflag which = ENGNavalChannel }
+		command = { type = local_setflag which = ENGNavalNorway }
+		command = { type = local_clrflag which = ENGNavalChannelMed }
+		command = { type = local_setflag which = ENGNavalNorwayMed }
+		command = { type = local_setflag which = ENGNavalNorwayPacific }
+		command = { type = local_setflag which = ENGNavalNorwayPacificMed }
+		command = { type = local_clrflag which = ENGNavalChannelPacific }
+		command = { type = local_clrflag which = ENGNavalChannelPacificMed }
+	}
+}
+################
+# England invades Italy
+#############################################
+event = {
+	id = 3001025
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ENGInvadeItaly }
+		NOT = {
+			AND = {
+				local_flag = ENGDDay
+				flag = DDay
+				}
+		}
+		war = { country = ITA }
+		NOT = { region = { region = "Libya" country = -2 value = 10 } }
+		NOT = { region = { region = "Egypt" country = -2 value = 10 } }
+		NOT = { control = { province = 750 data = -2 } } # Tripoli
+		OR = {
+			NOT = { exists = FRA }
+			NOT = { war = { country = FRA } }
+			AND = {
+				war = { country = FRA }
+				NOT = {  region = {  region = "Algeria" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Tunisia" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Morocco" country = -2 value = 10 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Attack_Italy.ai" }
+		command = { type = setflag which = InvadeItaly }
+		command = { type = local_setflag which = ENGInvadeItaly }
+		command = { type = local_clrflag which = ENGNavalNorway }
+		command = { type = local_clrflag which = ENGDDay }
+	}
+}
+### Eng goes on attack in Libya?
+event = {
+	id = 3001026
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = ENGInvadeItaly
+		
+		# Italian North Africa
+		OR = {
+			NOT = { war = { country = ITA } }
+			region = { region = "Libya" country = -2 value = 10 }
+			region = { region = "Egypt" country = -2 value = 10 }
+			control = { province = 750 data = -2 } # Tripoli
+			AND = {
+				war = { country = FRA }
+				area = { area = "Maghreb Coast" country = -2 value = 10 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Attack.ai" }
+		command = { type = local_clrflag which = ENGInvadeItaly }
+	}
+}
+##################################################
+# Ethiopia under control
+##################################################
+event = { 
+	id = 3001056
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		NOT = { region = { region = "Ethiopia" country = -2 value = 5 } }
+                war = { country = ITA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_ApresETH.ai" }
+	}
+}
+##################################################
+# Egypt on the move
+##################################################
+event = { 
+	id = 3069001
+	random = no 
+	country = EGY
+	
+	trigger = {
+		ai = yes
+                war = { country = ITA }
+                alliance = { country = ENG }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/EGY_Attack.ai" }
+	}
+}
+##################################################
+# British Raj prepares for war
+##################################################
+event = { 
+	id = 3185001
+	random = no 
+	country = U02
+	
+	trigger = {
+		ai = yes
+               OR = { war = { country = ENG country = ITA }
+                war = { country = ENG country = GER } }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		command = { type = ai which = "switch/low_construction_factor.ai" }
+	}
+}
+################
+# Production Queue
+#############################################
+event = {
+	id = 3001057
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		OR = { 
+			war = { country = ITA }
+			war = { country = GER } 
+		}
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1943 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		command = { type = manpowerpool value = 100 }	
+	}
+}
+
+event = {
+	id = 3001058
+	country = ENG
+	
+	trigger = { 
+		ai = yes
+		guarantee = { country = ENG country = POL }
+		war = { country = GER country = POL }
+		war = { country = GER country = ENG }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action = {
+		command = { type = end_guarantee which = ENG where = POL }
+	}
+}
+### ENG Tries Operation Catherine Part 1 (Secure Zealand) (historically deemed unviable)
+event = {
+	id = 3001059
+	country = ENG
+	
+	trigger = { 
+		ai = yes
+		war = { country = GER country = ENG }
+		NOT = { war = { country = ENG country = ITA } }
+		random = 40
+		OR = {
+			AND = {
+				control = { province = 294 data = -2 } # Copenhagen
+				alliance = { country = NOR }
+				}
+			AND = {
+				exists = NOR
+				alliance = { country = DEN }
+				}
+				war = { country = ENG country = DEN }
+				land_percentage = { country = GER value = 0.55 }
+		}
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = october year = 1939 }
+	offset = 5
+	deathdate = { day = 29 month = march year = 1941 }
+
+	action_a = {
+		ai_chance = 12 #8 was the first value but now that it's segmented and easier to abandon, I can increase the odds
+		command = { type = ai which = "switch/ENG_Catherine.ai" }
+		command = { type = local_setflag which = ENGCatherine }
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { trigger = { AND = { NOT = { war = { country = ENG country = DEN } } NOT = { alliance = { country = DEN  } } } } type = war which = DEN } ### Attack DEN in Catherine if we were not already at war
+	}
+	action_b = { 
+		ai_chance = 88 # 88
+		command = { type = manpowerpool value = 1 }	
+	}
+}
+### ENG can challenge soviets
+event = {
+	id = 3001060
+	country = ENG
+	
+	trigger = { 
+		ai = yes
+		NOT = { war = { country = ENG country = GER } }
+		NOT = { war = { country = ENG country = SOV } }
+		NOT = { war = { country = ENG country = ITA } }
+		NOT = { exists = GER }
+		land_percentage = { country = SOV value = 0.5 }
+		random = 60
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = october year = 1943 }
+	offset = 15
+	deathdate = { day = 29 month = march year = 1960 }
+
+	action = {
+		command = { type = ai which = "switch/ENG_Unthinkable.ai" }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = SOV }
+		command = { type = local_setflag which = ENGUnthinkable }
+		command = { type = industrial_modifier which = total value = 8 }
+	}
+}
+### FRA can help :D 
+event = {
+	id = 3001030
+	country = FRA
+	
+	trigger = { 
+		ai = yes
+		NOT = { war = { country = FRA country = GER } }
+		war = { country = FRA country = SOV }
+		NOT = { war = { country = FRA country = ITA } }
+		NOT = { exists = GER }
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = october year = 1943 }
+	offset = 15
+	deathdate = { day = 29 month = march year = 1960 }
+
+	action = {
+		command = { type = ai which = "switch/FRA_Pike.ai" }
+	}
+}
+### Liberate + ITA ALB GRE
+event = {
+	id = 3001061
+	random = no
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		control = { province = 163 data = -3 } # Berlin owned by ally
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action_a = {
+		command = { type = ai which = "switch/Ally_Liberate.ai" }
+	}
+}
+### Escalate Catherine if we managed to capture DEN
+event = {
+	id = 3001062
+	random = no
+	country = ENG
+
+		trigger = { 
+		ai = yes
+		war = { country = GER country = ENG }
+		NOT = { war = { country = ENG country = ITA } }
+		local_flag = ENGCatherine
+		OR = { 
+			event = 9300302 #GER  Establish Protectorate Government in Denmark
+			AND = {
+			 year = 1941
+			 month = 1
+			 }
+		}
+		OR = {
+			AND = {
+				control = { province = 294 data = ENG } # Copenhagen
+				alliance = { country = NOR }
+				NOT = { exists = DEN }
+				}
+			AND = {
+				exists = NOR
+				NOT = { war = { country = ENG country = NOR } }
+				control = { province = 294 data = -3 } # Copenhagen
+				control = { province = 219 data = -3 } # Odense
+				}
+			AND = {
+				control = { province = 294 data = -3 } # Copenhagen
+				control = { province = 219 data = -3 } # Odense
+				land_percentage = { country = GER value = 0.5 }
+				naval_percentage = { country = GER value = 1.0 }
+				}
+		}
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = october year = 1939 }
+	offset = 5
+	deathdate = { day = 29 month = march year = 1941 }
+
+	action_a = {
+		ai_chance = 50 #8
+		command = { type = ai which = "switch/ENG_Catherine_Flw.ai" }
+		command = { type = industrial_modifier which = total value = 5 }
+	}
+	action_b = { 
+		ai_chance = 50
+		command = { type = manpowerpool value = 1 }	
+	}
+}
+###Allies try to secure a southern front early on in the war (Historically the offensive was not started)
+event = {
+	id = 3001063
+	country = ENG
+	
+	trigger = { 
+		ai = yes
+		war = { country = GER country = ENG }
+		alliance = { country = FRA }
+		NOT = { war = { country = ENG country = ITA } }
+		NOT = { local_flag = ENGCatherine }
+		land_percentage = { country = GER value = 0.35 }
+		exists = GRE
+		exists = TUR
+	}
+
+	name = "AI_EVENT"
+	
+	date = { day = 1 month = january year = 1940 }
+	offset = 5
+	deathdate = { day = 29 month = april year = 1940 }
+
+	action_a = {
+		ai_chance = 8 #8
+		command = { type = ai which = "switch/ENG_SouthernFront.ai" }
+		command = { type = setflag  which = AlliesSouth }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = GRE }
+		command = { trigger = { ai = yes } type = ai_prepare_war which = TUR }
+		command = { type = local_setflag which = ENGAgression }
+		command = { type = industrial_modifier which = total value = 4 }
+		command = { type = event which = 3001064 where = -1 when = 14 } #Declare wars
+	}
+	action_b = { 
+		ai_chance = 92 #92
+		command = { type = manpowerpool value = 1 }	
+	}
+}
+### Dominate Balkans
+event = {
+	id = 3001064
+	random = no
+	country = ENG
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = war which = GRE }
+		command = { type = war which = TUR }
+		command = { type = manpowerpool value = 30 }	
+	}
+}
+### ENG Threatens GER at high belligerence
+event = {
+	id = 3001065
+	random = no
+	country = ENG
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_GER_Atwar.ai" }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = interventionism value = 10 }
+	}
+}
+### ENG panics
+event = {
+	id = 3001066
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		NOT = { local_flag = ENGPanic }
+		OR = {
+			control = { province = 55 data = -2 } # Paris
+			AND = {
+				area = { area = "Flanders" country = GER }
+				area = { area = "Wallonia" country = GER }
+			}
+			event = 2002004 # It Is Done - FRA
+		}
+		lost_national = { country = ENG value = 2 }
+		OR = {
+			garrison = { country = -2 province = 125  type = land size = 18 area = 2 } #Rotterdam, Flanders Region
+			garrison = { country = -2 province = 43  type = land size = 14 area = 1 } #Cherbourg, Normandy Area
+			garrison = { country = -2 province = 37  type = land size = 14 area = 1 } #Brest, Brittany Area
+			garrison = { country = -2 province = 81  type = land size = 14 area = 1 } #Dunkirk, Pas de Calais
+			garrison = { country = -2 province = 147  type = land size = 20 area = 1 } #Wilhelmshaven, Hannover
+			garrison = { country = -2 province = 152  type = land size = 22 area = 1 } #Kiel, Holstein
+			garrison = { country = -2 province = 2699  type = naval size = 20 area = 1 } #English Channel Area
+			garrison = { country = -2 province = 2683  type = naval size = 20 area = 1 } #East Approach to Isles
+			garrison = { country = -2 province = 2708  type = naval size = 20 area = 1 } #West or Ireland
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Panic.ai" }
+		command = { type = local_setflag which = ENGPanic }
+	}
+}
+### ENG Panic release
+event = {
+	id = 3001067
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		local_flag = ENGPanic 
+		NOT = {
+		lost_national = { country = ENG value = 2 }
+		OR = {
+			garrison = { country = -2 province = 125  type = land size = 18 area = 2 } #Rotterdam, Flanders Region
+			garrison = { country = -2 province = 43  type = land size = 14 area = 1 } #Cherbourg, Normandy Area
+			garrison = { country = -2 province = 37  type = land size = 14 area = 1 } #Brest, Brittany Area
+			garrison = { country = -2 province = 81  type = land size = 14 area = 1 } #Dunkirk, Pas de Calais
+			garrison = { country = -2 province = 147  type = land size = 20 area = 1 } #Wilhelmshaven, Hannover
+			garrison = { country = -2 province = 152  type = land size = 22 area = 1 } #Kiel, Holstein
+			garrison = { country = -2 province = 2699  type = naval size = 20 area = 1 } #English Channel Area
+			garrison = { country = -2 province = 2683  type = naval size = 20 area = 1 } #East Approach to Isles
+			garrison = { country = -2 province = 2708  type = naval size = 20 area = 1 } #West or Ireland
+			}
+		}	
+		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/ENG_Panic_OFF.ai" }
+		command = { type = local_clrflag which = ENGPanic }
+	}
+}
+### ENG Guarantees SWE YUG SCH TUR if Germany screws around
+event = {
+	id = 3001068
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		random = 30
+		exists = SWE
+		exists = GER
+		belligerence = { country = GER value = 15 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = SWE country = SOV }
+				alliance = { country = SWE country = GER }
+				alliance = { country = SWE country = ENG }
+			}
+		}
+		NOT = {
+			atwar = SWE
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = guarantee which = ENG where = SWE }
+	}
+}
+event = {
+	id = 3001069
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		random = 30
+		exists = YUG
+		exists = GER
+		belligerence = { country = GER value = 15 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = YUG country = SOV }
+				alliance = { country = YUG country = GER }
+				alliance = { country = YUG country = ENG }
+			}
+		}
+		NOT = {
+			atwar = YUG
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = guarantee which = ENG where = YUG }
+	}
+}
+event = {
+	id = 3001070
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		random = 30
+		exists = SCH
+		exists = GER
+		belligerence = { country = GER value = 15 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = SCH country = SOV }
+				alliance = { country = SCH country = GER }
+				alliance = { country = SCH country = ENG }
+			}
+		}
+		NOT = {
+			atwar = SCH
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = guarantee which = ENG where = SCH }
+	}
+}
+event = {
+	id = 3001071
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		random = 30
+		exists = TUR
+		exists = GER
+		belligerence = { country = GER value = 15 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = TUR country = SOV }
+				alliance = { country = TUR country = GER }
+				alliance = { country = TUR country = ENG }
+			}
+		}
+		NOT = {
+			atwar = TUR
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = guarantee which = ENG where = TUR }
+	}
+}
+###Build Queue for ENG leading into 1939
+event = {
+	id = 3001072
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		manpower = 100
+		exists = GER
+		belligerence = { country = GER value = 1 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = ENG country = SOV }
+				alliance = { country = ENG country = GER }
+				alliance = { country = ENG country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = october year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = GER } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = GER } type = manpowerpool value = 120 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = infantry value = anti_air when = 2 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = infantry value = artillery }
+		command = { type = build_division which = battleship }
+		command = { type = build_division which = destroyer value = naval_fire_controll_s when = 3 }
+		command = { type = build_division which = destroyer value = naval_fire_controll_s }
+		command = { type = build_division which = destroyer value = naval_anti_air_s }
+		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 2 }
+		command = { type = build_division which = heavy_cruiser value = naval_fire_controll_s }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = hq value = anti_air }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = armor }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = motorized }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = motorized }
+		command = { type = build_division which = interceptor when = 2 }
+		command = { type = build_division which = interceptor }
+		command = { type = build_division which = tactical_bomber }
+		command = { type = build_division which = paratrooper cost = -6.0 when = 2 }
+		command = { type = build_division which = transport_plane cost = 13.3 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = strategic_bomber }
+	}
+}
+###Build Queue for ENG leading into 1939
+event = {
+	id = 3001073
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		exists = GER
+		belligerence = { country = GER value = 1 }
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = ENG
+				alliance = { country = ENG country = SOV }
+				alliance = { country = ENG country = GER }
+				alliance = { country = ENG country = JAP }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = october year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = GER } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = GER } type = manpowerpool value = 120 }
+	}
+}
+###ENG cedes Torch-related terrain to facilitate US help, if France was annexed by GER
+event = {
+	id = 3001075
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		region = { region = "Tunisia" country = ENG }
+		region = { region = "Algeria" country = ENG }
+		war = { country = USA country = GER }
+		alliance = { country = ENG country = USA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = october year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1944 }
+
+	action_a = {
+		command = { type = secederegion which = USA value = "Algeria" when = 1 } # Torch
+		command = { type = secederegion which = USA value = "Tunisia" when = 1 } # Torch
+		command = { trigger = { region = { region = "Morocco" country = ENG value = 70 } } type = secederegion which = USA value = "Morocco" when = 1 }
+	}
+}
+################
+# England Air AI - France requests help in Belgium. Log strikes with high loss tolerance
+#############################################
+event = {
+	id = 3001076
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		NOT = { local_flag = ENGAirAIBelgium }
+		lost_national = { country = BEL value = 2 }
+		AND = {
+			war = { country = BEL country = GER }
+			alliance = { country = BEL }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1943 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGAirAINaval }
+		command = { type = local_clrflag which = ENGAirAIStrategic }
+		command = { type = local_clrflag which = ENGAirAIGround }
+		command = { type = local_setflag which = ENGAirAIBelgium }
+		command = { type = ai which = "switch/ENG_Air_Belgium.ai" }
+	}
+}
+event = {
+	id = 3001077
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGAirAIBelgium
+		OR = {
+			NOT = { exists = BEL }
+			control = { province = 116 data = -2 } # Brussels owned by enemy
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1943 }
+
+	action_a = {
+		command = { type = local_clrflag which = ENGAirAIBelgium }
+		command = { type = ai which = "switch/ENG_Air_Ground.ai" }
+	}
+}

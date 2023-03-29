@@ -1,0 +1,120 @@
+COS;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+310001;Head of State;Romualdo Jímenez Oreamuno;1933;1964;1999;SL;Ruthless Powermonger;High;M47001;X
+310002;Head of Government;Leon Cortes Castro;1933;1964;1999;SL;Political Protege;High;M47002;X
+310003;Foreign Minister;Raúl Gundían;1933;1964;1999;SL;General Staffer;Medium;M47003;X
+310004;Minister of Armament;Julio Acosta Garcia;1933;1964;1999;SL;Military Entrepreneur;Medium;M47004;X
+310005;Minister of Security;Victor Sanabria Martinéz;1933;1964;1999;SL;Efficient Sociopath;Very High;M47005;X
+310006;Head of Military Intelligence;Federico Tinoco;1933;1964;1999;SL;Industrial Specialist;Medium;M47006;X
+310007;Chief of Staff;Federico Tinoco;1933;1964;1999;SL;School of Defence;Medium;M47006;X
+310008;Chief of Army;Federico Tinoco;1933;1964;1999;SL;Static Defence Doctrine;Medium;M47006;X
+310009;Chief of Navy;Roberto Juarez Camposino;1933;1964;1999;SL;Open Seas Doctrine;Medium;M47009;X
+310010;Chief of Air Force;Don Arnaldo Zamora;1933;1964;1999;SL;Army Aviation Doctrine;Medium;M47010;X
+310011;Chief of Air Force;Oscar Padilla Sellean;1933;1964;1999;LWR;Naval Aviation Doctrine;Medium;M47030;X
+310012;Head of State;Otilio Ulate;1944;1964;1999;SD;Benevolent Gentleman;High;M47031;X
+310013;Head of State;Leon Cortes Castro;1933;1964;1999;SL;Autocratic Charmer;High;M47002;X
+310014;Head of State;Tobias Zúñiaga Montúfar;1940;1964;1999;SL;Stern Imperialist;High;M47033;X
+310015;Head of State;Alejandro de Castro Lopez;1944;1964;1999;SL;Barking Buffoon;High;M47034;X
+310016;Head of State;Otto Cortes Fernandez;1933;1964;1999;SC;Insignificant Layman;High;M47035;X
+310017;Head of State;Rafael Calderon Guardia;1940;1964;1999;SC;Barking Buffoon;High;M47036;X
+310018;Head of State;Teodoro Picado Michalski;1944;1964;1999;SC;Resigned Generalissimo;High;M47037;X
+310019;Head of State;Romualdo Pino Roja;1933;1964;1999;FA;Resigned Generalissimo;High;M47011;X
+310020;Head of State;Manuel Mora Valverde;1940;1964;1999;LE;Insignificant Layman;High;M47021;X
+310021;Head of State;Isalino de Silva Londres;1947;1964;1999;LWR;Autocratic Charmer;High;M47040;X
+310022;Head of Government;Jose Figueres Ferrer;1944;1964;1999;SD;Political Protege;High;M47041;X
+310023;Head of Government;Tobias Zúñiaga Montúfar;1933;1964;1999;SL;Ambitious Union Boss;High;M47033;X
+310024;Head of Government;Alejandro de Castro Lopez;1944;1964;1999;SL;Happy Amateur;High;M47034;X
+310025;Head of Government;Adolfo Urribe Castro;1933;1964;1999;SC;Smiling Oilman;High;M47044;X
+310026;Head of Government;Teodoro Picado Michalski;1940;1964;1999;SC;Old General;High;M47037;X
+310027;Head of Government;Rafael Calderon Guardia;1944;1964;1999;SC;Flamboyant Tough Guy;High;M47046;X
+310028;Head of Government;Otto Cortes Fernandez;1944;1964;1999;SC;Silent Workhorse;High;M47035;X
+310029;Head of Government;Romualdo Pino Roja;1933;1964;1999;PA;Old General;High;M47011;X
+310030;Head of Government;Manuel Mora Valverde;1940;1964;1999;LE;Happy Amateur;High;M47021;X
+310031;Head of Government;Isalino de Silva Londres;1947;1964;1999;LWR;Political Protege;High;M47040;X
+310032;Foreign Minister;Otilio Ulate;1944;1964;1999;SD;The Cloak N Dagger Schemer;Very High;M47031;X
+310033;Foreign Minister;Luís Fernandéz Rodríguez;1947;1964;1999;SD;Ideological Crusader;Medium;M47024;X
+310034;Foreign Minister;Leon Cortes Castro;1933;1964;1999;SL;The Cloak N Dagger Schemer;Medium;M47002;X
+310035;Foreign Minister;Manuel F. Jímenez;1938;1964;1999;SL;General Staffer;Medium;M47054;X
+310036;Foreign Minister;Albert Echandi Montero;1939;1964;1999;SL;Iron Fisted Brute;Medium;M47055;X
+310037;Foreign Minister;Roberto Brenes Mesen;1940;1964;1999;SL;Apologetic Clerk;Medium;M47056;X
+310038;Foreign Minister;Tobias Zúñiaga Montúfar;1942;1964;1999;SL;Biased Intellectual;High;M47033;X
+310039;Foreign Minister;Chico Orlich Bolmarich;1944;1964;1999;SL;Ideological Crusader;High;M47058;X
+310040;Foreign Minister;Adolfo Urribe Castro;1933;1964;1999;SC;Apologetic Clerk;Medium;M47044;X
+310041;Foreign Minister;Rafael Calderon Guardia;1940;1964;1999;SC;Biased Intellectual;Medium;M47036;X
+310042;Foreign Minister;Julio Acosta Garcia;1942;1964;1999;SC;Great Compromiser;Medium;M47004;X
+310043;Foreign Minister;Teodoro Picado Michalski;1943;1964;1999;SC;Ideological Crusader;High;M47037;X
+310044;Foreign Minister;Manuel de Peralta;1944;1964;1999;SC;Iron Fisted Brute;Medium;M47063;X
+310045;Foreign Minister;Raúl Gundían;1933;1964;1999;PA;General Staffer;Medium;M47003;X
+310046;Foreign Minister;Manuel Mora Valverde;1940;1964;1999;LE;The Cloak N Dagger Schemer;Medium;M47021;X
+310047;Foreign Minister;Enrique Díaz Toledo;1947;1964;1999;LWR;Apologetic Clerk;Medium;M47066;X
+310048;Minister of Armament;Jose Figueres Ferrer;1944;1964;1999;SD;Administrative Genius;Medium;M47041;X
+310049;Minister of Armament;Calufa Fallas Sinaja;1947;1964;1999;SD;Submarine Proponent;High;M47068;X
+310050;Minister of Armament;Chico Orlich Bolmarich;1940;1964;1999;SL;Tank Proponent;High;M47058;X
+310051;Minister of Armament;Roberto Brenes Mesen;1944;1964;1999;SL;Infantry Proponent;Medium;M47056;X
+310052;Minister of Armament;Tobias Zúñiaga Montúfar;1947;1964;1999;SL;Air to Ground Proponent;High;M47033;X
+310053;Minister of Armament;Juan Cortes Castro;1933;1964;1999;SC;laissez-faire capitalist;Medium;M47073;X
+310054;Minister of Armament;Otto Cortes Fernandez;1938;1964;1999;SC;Administrative Genius;High;M47035;X
+310055;Minister of Armament;Tobias Picado Cortes;1941;1964;1999;SC;Battle Fleet Proponent;Very High;M47075;X
+310056;Minister of Armament;Ignacio Mendéz Alino;1933;1964;1999;PA;Corrupt Kleptocrat;High;M47014;X
+310057;Minister of Armament;Luís Fernandéz Rodríguez;1940;1964;1999;LE;Air to Ground Proponent;Medium;M47024;X
+310058;Minister of Armament;Ignacio Mendéz Alino;1947;1964;1999;LWR;Corrupt Kleptocrat;High;M47014;X
+310059;Minister of Security;Calufa Fallas Sinaja;1944;1964;1999;SD;Silent Lawyer;Medium;M47068;X
+310060;Minister of Security;Jose Figueres Ferrer;1947;1964;1999;SD;Man of the People;High;M47041;X
+310061;Minister of Security;Isalino de Silva Londres;1940;1964;1999;SL;Crime Fighter;Low;M47040;X
+310062;Minister of Security;Tobias Zúñiaga Montúfar;1944;1964;1999;SL;Silent Lawyer;High;M47033;X
+310063;Minister of Security;Alejandro de Castro Lopez;1947;1964;1999;SL;Man of the People;High;M47034;X
+310064;Minister of Security;Adolfo Urribe Castro;1933;1964;1999;SC;Compassionate Gentleman;Medium;M47044;X
+310065;Minister of Security;Tobias Picado Cortes;1946;1964;1999;SC;Prince of Terror;Very High;M47075;X
+310066;Minister of Security;Alberto Marten Chavarria;1933;1964;1999;PA;Crooked Kleptocrat;Very Low;M47015;X
+310067;Minister of Security;Isalino de Silva Londres;1940;1964;1999;LWR;Crime Fighter;Low;M47040;X
+310068;Minister of Security;Carmen Lyra;1947;1964;1999;LWR;Prince of Terror;Low;M47025;X
+310069;Head of Military Intelligence;Jose Figueres Ferrer;1944;1964;1999;SD;Political Specialist;Medium;M47041;X
+310070;Head of Military Intelligence;Romualdo Jímenez Oreamuno;1933;1964;1999;SL;Technical Specialist;High;M47001;X
+310071;Head of Military Intelligence;Raúl Gundían;1933;1964;1999;SL;Dismal Enigma;Medium;M47003;X
+310072;Head of Military Intelligence;Enrique Díaz Toledo;1944;1964;1999;SL;Logistics Specialist;Medium;M47066;X
+310073;Head of Military Intelligence;Tobias Zúñiaga Montúfar;1947;1964;1999;SL;Political Specialist;High;M47033;X
+310074;Head of Military Intelligence;Benjamin Nuñez Vargas;1933;1964;1999;SC;Logistics Specialist;High;M47096;X
+310075;Head of Military Intelligence;Romualdo Pino Roja;1946;1964;1999;SC;Dismal Enigma;Low;M47011;X
+310076;Head of Military Intelligence;José Mendéz Alino;1933;1964;1999;PA;Industrial Specialist;Medium;M47016;X
+310077;Head of Military Intelligence;Hugo Montés Ramirez;1940;1964;1999;LE;Logistics Specialist;Medium;M47100;X
+310078;Head of Military Intelligence;Miguel Ramirez Alcantara;1947;1964;1999;LWR;Dismal Enigma;Medium;M47026;X
+310079;Chief of Staff;Felipe Abreu Castro;1945;1964;1999;SD;School of Fire Support;High;M47102;X
+310080;Chief of Staff;Jose Figueres Ferrer;1947;1964;1999;SD;School of Mass Combat;High;M47103;X
+310081;Chief of Staff;Alejandro de Castro Lopez;1947;1964;1999;SL;School of Mass Combat;High;M47034;X
+310082;Chief of Staff;Jorge Volio Jimenéz;1944;1964;1999;SC;School of Manoeuvre;Medium;M47107;X
+310083;Chief of Staff;Hugo Montés Ramirez;1940;1964;1999;LE;School of Psychology;Medium;M47100;X
+310084;Chief of Staff;Miguel Ramirez Alcantara;1947;1964;1999;LWR;School of Fire Support;Medium;M47026;X
+310085;Chief of Army;Jose Figueres Ferrer;1947;1964;1999;SD;Decisive Battle Doctrine;High;M47103;X
+310086;Chief of Army;Tobias Zúñiaga Montúfar;1947;1964;1999;SL;Elastic Defence Doctrine;High;M47033;X
+310087;Chief of Army;Don Arnaldo Zamora;1940;1964;1999;SC;Guns and Butter Doctrine;Medium;M47111;X
+310088;Chief of Army;Jorge Volio Jimenéz;1944;1964;1999;SC;Armoured Spearhead Doctrine;High;M47107;X
+310089;Chief of Army;Baptista E. Gutierrez;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M47018;X
+310090;Chief of Army;Hugo Montés Ramirez;1940;1964;1999;LE;Decisive Battle Doctrine;Medium;M47100;X
+310091;Chief of Army;Francisco Rosendo Arguello;1947;1964;1999;LWR;Guns and Butter Doctrine;Medium;M47028;X
+310092;Chief of Navy;Felipe Abreu Castro;1944;1964;1999;SD;Power Projection Doctrine;High;M47102;X
+310093;Chief of Navy;Manuel Mora Valverde;1940;1964;1999;LE;Base Control Doctrine;Medium;M47021;X
+310094;Chief of Navy;Hugo Siedler Mendoza;1947;1964;1999;LWR;Indirect Approach Doctrine;Medium;M47029;X
+310095;Chief of Air Force;Guillermo Macho Nuñez;1944;1964;1999;SD;Air Superiority Doctrine;Medium;M47127;X
+310096;Chief of Air Force;Carlos Uribé Alpoveda;1933;1964;1999;SC;Carpet Bombing Doctrine;Medium;M47129;X
+310097;Chief of Air Force;Manuel Mora Valverde;1940;1964;1999;LE;Army Aviation Doctrine;Medium;M47021;X
+310098;Chief of Air Force;Oscar Padilla Sellean;1947;1964;1999;LWR;Naval Aviation Doctrine;Medium;M47030;X
+310099;Head of State;Santos León Herrera;1947;1964;1999;SC;Pig-headed Isolationist;High;M47133;X
+310100;Head of Government;Santos León Herrera;1947;1964;1999;SC;Corporate Suit;High;M47133;X
+310101;Chief of Army;Federico Tinoco Granados;1914;1933;1999;PA;Guns and Butter Doctrine;Very High;2449;X
+310102;Chief of Army;Jaoquin Jose Tinoco Granados;1914;1933;1999;PA;Decisive Battle Doctrine;Very High;2370;X
+310103;Chief of Navy;Federico Tinoco Granados;1914;1933;1999;PA;Power Projection Doctrine;High;2449;X
+310104;Chief of Navy;Jaoquin Jose Tinoco Granados;1914;1933;1999;PA;Base Control Doctrine;High;2370;X
+310105;Chief of Staff;Federico Tinoco Granados;1914;1933;1999;PA;School of Manoeuvre;Very High;2449;X
+310106;Head of Government;Alfredo González Flores;1914;1933;1999;SL;Silent Workhorse;High;2448;X
+310107;Head of Government;Federico Tinoco Granados;1914;1933;1999;PA;Old General;High;2449;X
+310108;Head of Government;Francisco Aguilar Barquero;1919;1933;1999;PA;Happy Amateur;High;unknownminister;X
+310109;Head of Government;Julio Acosta García;1920;1933;1999;PA;Flamboyant Tough Guy;High;unknownminister;X
+310110;Head of Government;Ricardo Jiménez Oreamuno;1910;1937;1999;ML;Happy Amateur;High;unknownminister;X
+310111;Head of Military Intelligence;Juan Bautista Quirós Segura;1914;1933;1999;PA;Political Specialist;High;2371;X
+310112;Head of State;Alfredo González Flores;1914;1933;1999;SL;Benevolent Gentleman;High;2448;X
+310113;Head of State;Federico Tinoco Granados;1914;1933;1999;PA;Die-hard Reformer;High;2449;X
+310114;Head of State;Francisco Aguilar Barquero;1919;1933;1999;PA;Weary Stiffneck;High;unknownminister;X
+310115;Head of State;Julio Acosta García;1920;1933;1999;PA;Stern Imperialist;High;unknownminister;X
+310116;Head of State;Ricardo Jiménez Oreamuno;1910;1937;1999;ML;Weary Stiffneck;High;unknownminister;X
+310117;Minister of Security;Francisco Aguilar Barquero;1914;1933;1999;SL;Man of the People;Low;2445;X
+310118;Foreign Minister;Manuel Castro Quesada;1914;1933;1999;SL;Iron Fisted Brute;Medium;2446;X
+310119;Minister of Armament;Ricardo Jiménez Oreamuno;1914;1933;1999;SL;Administrative Genius;Medium;2447;X

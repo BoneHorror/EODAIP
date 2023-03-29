@@ -1,0 +1,3022 @@
+### 2011006  JAP  The 2-26 Incident
+### 2011022  JAP  Marco Polo Bridge incident
+### 2011007  JAP  The Nanjing Massacre
+### 2011008  JAP  Automedon Incident
+### 2011009  JAP  Japan puts pressure on Thailand
+### 2059001  SIA  Japan puts Pressure on Thailand
+### 2059002  SIA  The Siamese surrender
+### 2011010  JAP  Thailand aligns with Japan
+### 2186003  U03  Thailand aligns with Japan
+### 2011011  SIA  Thailand Resists Japanese Pressure
+### 2011012  JAP  The Chinese question - first peace proposal
+### 2012017  CHI  The Chinese question - first peace proposal
+### 2011013  JAP  The Chinese refuse to surrender
+### 2011014  JAP  The Chinese have accepted our peace proposal
+### 2011015  JAP  The Chinese question - final peace proposal
+### 2012018  CHI  The Chinese question - final peace proposal
+### 2011016  JAP  The Chinese refuse to surrender
+### 2011017  JAP  The Chinese have accepted our peace proposal
+### 2011018  JAP  The Fading Sun
+### 2011019  JAP  China defeats Japan and Korea is freed
+### 2048001  MAN  The Manchurian Transfer of Xilinhot
+### 2011020  JAP  Japan organises Inner Mongolia
+### 2141001  MEN  Mengjiang takes shape
+### 2011021  JAP  Seek German recognition of Manchukuo
+### 2003072  GER  The Recognition of Manchukuo
+### 2003073  GER  No Pact is Necessary
+### 2011023  JAP  Nomonhan Incident
+### 2007009  SOV  Battle of Khalkin Ghol
+### 2011024  JAP  Changfukeng Lake Incident
+### 2007010  SOV  Chasan Lake Incident
+### 2011025  JAP  Pearl Harbor
+### 2049002  USA  Pearl Harbor
+### 2011026  JAP  The Attack on Pearl Harbor is a success!
+### 2011027  JAP  The Attack on Pearl Harbor is a failure!
+### 2011028  JAP  Japanese surrender negotiations
+### 2007011  SOV  Japan surrenders
+### 2049003  USA  Japan surrenders
+### 2011037  JAP  Japan surrenders
+### 2011039  HOL  Japan surrenders
+### 2011040  ENG  Japan surrenders
+### 2011041  USA  Japan surrenders
+### 2011042 - 2011048 used in DayofDecision.txt
+### 2011049	 JAP Inner Mongolia
+### 2011050  U74 Absorb Hebei into JAP, CHI or CHC when these are at war
+### 2011051  JAP, CHI or CHC - inherit U74 (called by 2011050)
+###
+
+#########################################################################
+#  The 2-2-6 incident (Japan)
+#########################################################################
+event = {
+	id = 2011006
+	random = no
+	country = JAP
+
+	name = EVT_1_NAME
+	desc = EVT_1_DESC
+	style = 2
+  	picture = "news_paper"
+	trigger = {
+		atwar = no
+		NOT = {
+			ispuppet = JAP
+		}
+	}
+
+	date = { day = 25 month = february year = 1936 }
+
+	action_a = {
+		ai_chance = 90
+		name = EVT_1_ACTA
+		command = { type = dissent value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+	action_b = {
+		ai_chance = 10
+		name = EVT_1_ACTB
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = interventionism value = 2 }  #  NOTE: The B choice effects are stronger than A by design
+		command = { type = domestic which = democratic value = -3 }      #  This represent a greater shift towards the military and
+		command = { type = domestic which = political_left value = -3 }  #  right wing control.
+		command = { type = domestic which = freedom value = -3 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = headofstate which = 50001 }
+		command = { type = headofgovernment which = 50013 }
+		command = { type = foreignminister which = 50039 }
+		command = { type = armamentminister which = 50062 }
+		command = { type = ministerofsecurity which = 50086 }
+		command = { type = ministerofintelligence which = 50114 }
+		command = { type = chiefofstaff which = 50007 }
+		command = { type = chiefofarmy which = 50008 }
+		command = { type = chiefofnavy which = 50148 }
+		command = { type = chiefofair which = 50154 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = CHI value = -10 }
+	}
+}
+
+#########################################################################
+#  The Nanking Massacre
+#########################################################################
+event = { 
+	id = 2011007
+	random = no
+	country = JAP
+	
+	trigger = {
+		war = { country = JAP country = CHI }
+		control = { province = 1337 data = JAP } # We control Nanjing
+	}
+	
+	name = "EVT_3802_NAME"
+	desc = "EVT_3802_DESC"
+	style = 2
+ 	picture = "news_paper"
+	date = { day = 2 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action_a = {
+		name = "ACTIONNAME3802A" # That will hurt us more than them!
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = CGX value = -30 }
+		command = { type = belligerence which = JAP value = 10 }	
+		command = { type = trigger which = 2012001 } # CHI
+		command = { type = trigger which = 2049022 } # USA
+	}
+}
+#########################################################################
+#  The Capture of the Automedon
+#########################################################################
+event = {
+	id = 2011008
+	random = no
+	country = JAP
+
+	name = EVT_89_NAME
+	desc = EVT_89_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ENG country = GER }
+		NOT = { war = { country = ENG country = JAP } }
+		NOT = { war = { country = GER country = JAP } }
+		NOT = { alliance = { country = JAP country = ENG } }
+		random = 5
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = EVT_89_ACTA
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = oilpool value = 1000 }
+		command = { type = relation which = GER value = 5 }
+		command = { type = relation which = ENG value = -5 }
+	}
+
+	action_b = {
+		ai_chance = 0
+		name = EVT_89_ACTB
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -1 }
+	}
+}
+#########################################################################
+# Japan puts Pressure on Siam
+#########################################################################
+event = { 
+	id = 2011009
+	random = no
+	country = JAP
+	
+	decision = {
+		exists = SIA
+		event = 2011007 #The Nanjing Massacre
+		NOT = {
+			event = 2011028 #JAP Japanese surrender negotiations
+			ispuppet = SIA
+		}
+	}
+	decision_trigger = {
+		OR = {
+			puppet = { country = U03 country = JAP }
+			control = { province = 1399 data = -3 } 
+		}
+		NOT = { war = { country = JAP country = SIA } } 
+	}
+	trigger = {
+		random = 30
+		exists = SIA
+		event = 2011007 #The Nanjing Massacre
+		OR = {
+			puppet = { country = U03 country = JAP }
+			control = { province = 1399 data = -3 } 
+		}
+		NOT = {
+			event = 2011028 #JAP Japanese surrender negotiations
+			ispuppet = SIA
+			war = { country = JAP country = SIA }
+		}
+	}
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "EVT_3806_NAME"
+	desc = "EVT_3806_DESC"
+	style = 2
+ 	picture = "news_paper"
+	action = {
+		name = "ACTIONNAME3806A" # Lean on Siam
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 2059001 } # Siam/Thailand
+	}
+}
+event = { 
+	id = 2059001
+	random = no
+	country = SIA
+	
+	# Triggered by JAP 2011009
+	
+	name = "EVT_4500_NAME"
+	desc = "EVT_4500_DESC"
+	style = 2
+ 	picture = "news_paper"
+	action_a = {
+		name = "ACTION_NAME_ACCEPT" # Accept
+		ai_chance = 100
+		command = { type = trigger which = 2011010 } # Japan
+		command = { type = alliance which = JAP when = 1 }
+		command = { type = addcore which = 1413 } # Kengtung - Indochine
+		#command = { type = addcore which = 1435 } # Ipoh - Indochine
+		#command = { type = addcore which = 1436 } # Kuantan - Indochine
+		command = { type = addcore which = 1434 } # Alor Setar - Indochine
+		command = { type = addcore which = 1402 } # Battambang - Indochine
+		command = { type = addcore which = 1391 } # Muang Xaignaboul
+		#command = { type = addcore which = 1401 } # Siem Reap - Indochine
+		#command = { type = addcore which = 1400 } # Phnum Penh - Indochine
+		#command = { type = secedeprovince which = JAP value = 1428 } # Phetchabun - Indochine
+		#command = { type = secedeprovince which = JAP value = 1424 } # Nakhon Sawan - Indochine
+		#command = { type = secedeprovince which = JAP value = 1429 } # Prachuap Khiri Khan - Indochine
+		#command = { type = secedeprovince which = JAP value = 1430 } # Nakhon Sri Thammarat - Indochine
+		#command = { type = secedeprovince which = JAP value = 1425 } # Chiang Mai - Indochine
+		#command = { type = secedeprovince which = JAP value = 1426 } # Phitsanulok - Indochine
+		command = { type = relation which = JAP value = 20 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = ENG value = -25 }
+		command = { type = relation which = FRA value = -20 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 290001 }
+		command = { type = headofgovernment which = 290014 }
+		command = { type = foreignminister which = 290022 }
+		command = { type = armamentminister which = 290037 }
+		command = { type = ministerofsecurity which = 290050 }
+		command = { type = ministerofintelligence which = 290061 }
+		command = { type = chiefofstaff which = 290066 }
+		command = { type = chiefofarmy which = 290072 }
+		command = { type = chiefofnavy which = 290077 }
+		command = { type = chiefofair which = 290082 }
+		
+		#Garrison divisions to help Japan guard Siam (Edge of Darkness)
+		
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2042 where = 1423 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2043 where = 1424 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2044 where = 1425 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2045 where = 1426 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2046 where = 1429 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2047 where = 1430 when = 0 }
+		command = { trigger = { AI = JAP } type = activate_division which = 13016 value = 2048 where = 1431 when = 0 }
+	}
+	action = {
+		name = "ACTIONNAME4500B" # Decline
+		ai_chance = 0
+		command = { type = relation which = JAP value = -15 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = FRA value = 15 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = trigger which = 2011011 } # Japan
+	}
+}
+#########################################################################
+# Siam Gives Up
+#########################################################################
+event = {
+	id = 2059002
+	random = no
+	country = SIA
+
+	trigger = {
+		war = { country = SIA country = ENG }
+		OR = {
+			event = 2011028 # Japan already surrendered
+			NOT = { exists = JAP }
+			AND = {
+				OR = {
+					control = { province = 1423 data = ENG }
+					control = { province = 1423 data = FRA }
+					control = { province = 1423 data = AST }
+					control = { province = 1423 data = NZL }
+					control = { province = 1423 data = USA }
+				}
+				OR = {
+					control = { province = 1424 data = ENG }
+					control = { province = 1424 data = FRA }
+					control = { province = 1424 data = AST }
+					control = { province = 1424 data = NZL }
+					control = { province = 1424 data = USA }
+				}
+			}
+		}
+	}
+
+	name = "EVT_3813_NAME"
+	desc = "EVT_3813_DESC"
+  	style = 2
+ 	picture = "news_paper"
+	date = { day = 0 month = january year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_3813_ACTA" #
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = access which = USA }
+		command = { type = access which = ENG }
+		command = { type = access which = FRA }
+		command = { type = access which = CAN }
+		command = { type = access which = AST }
+		command = { type = access which = NZL }
+		command = { type = access which = SAF }
+		command = { type = access which = PAN } #was ITA
+		command = { type = access which = HOL }
+		command = { type = access which = U05 }
+		command = { type = access which = BEL }
+		command = { type = end_access which = JAP }
+		command = { type = military_control which = JAP where = SIA value = 0 }
+		command = { type = removecore which = 1413 } # Kengtung - Indochine
+		command = { type = removecore which = 1434 } # Alor Setar - Indochine
+		command = { type = removecore which = 1402 } # Battambang - Indochine
+		command = { type = removecore which = 1391 } # Muang Xaignaboul
+		command = { type = secedeprovince which = U03 value = 1402 when = 1 } # Battambang - Indochine
+		command = { type = secedeprovince which = U03 value = 1391 when = 1 } # Muang Xaignaboul - Indochine
+		command = { type = secedeprovince which = FRA value = 1402 when = 1 } # Battambang - Indochine
+		command = { type = secedeprovince which = FRA value = 1391 when = 1 } # Muang Xaignaboul - Indochine
+		command = { type = war which = JAP }
+	}
+}
+#########################################################################
+# Siam Accepts
+#########################################################################
+event = { 
+	id = 2011010
+	random = no
+	country = JAP
+	
+	# Triggered by SIA 2059001
+
+	trigger = {
+		NOT = { ispuppet = JAP }
+		alliance = { country = JAP country = SIA }
+		OR = {
+			NOT = { ispuppet = SIA }
+			puppet= { country = SIA country = JAP }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	name = "EVT_3808_NAME"
+	desc = "EVT_3808_DESC"
+	style = 2
+ 	picture = "news_paper"
+	action_a = {
+		name = ACTION_NAME_OK # Excellent!
+		command = { type = make_puppet which = SIA }
+		command = { trigger = { ai = yes } type = military_control which = JAP where = SIA value = 1 }
+		command = { trigger = { puppet = { country = U03 country = JAP } } type = trigger which = 2186003 }
+		command = { type = sleepevent which = 2011009 }
+  	}
+}
+event = { 
+	id = 2186003
+	random = no
+	country = U03
+	
+	name = "EVT_3808_NAME"
+	desc = "EVT_3808_DESC"
+	style = 2
+ 	picture = "news_paper"
+	action_a = {
+		name = ACTION_NAME_OK # Excellent!
+		command = { trigger = { OR = { government = fascist ideology = social_conservative } } type = headofstate which = 830203 } #Jean Decoux
+		command = { trigger = { OR = { government = fascist ideology = social_conservative } } type = headofgovernment which = 830054 } #Jean Decoux
+		command = { trigger = { OR = { government = fascist ideology = social_conservative } } type = ministerofintelligence which = 830122 } #Jean Decoux
+		command = { trigger = { OR = { government = fascist ideology = social_conservative } } type = chiefofarmy which = 830164 } #Jean Decoux
+		command = { trigger = { OR = { government = fascist ideology = social_conservative } } type = chiefofnavy which = 830180 } #Jean Decoux
+  		command = { type = secedeprovince which = SIA value = 1402 when = 1 } # Battambang - Indochine
+  		command = { type = secedeprovince which = SIA value = 1391 when = 1 } # Muang Xaignabouli - Indochine
+  	}
+}
+#########################################################################
+# Siam Refuses
+#########################################################################
+event = { 
+	id = 2011011
+	random = no
+	country = JAP
+	
+	# Triggered by SIA 2059001 or 2186003
+	
+	name = "EVT_3809_NAME"
+	desc = "EVT_3809_DESC"
+	style = 2
+ 	picture = "news_paper"
+	action_a = {
+		name = "ACTIONNAME3809A" # Declare War!
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = war which = SIA }
+	}
+	action_b = {
+		name = "ACTIONNAME3809B" # Their Loss!
+		ai_chance = 0
+		command = { type = relation which = SIA value = 10 }
+	}
+}
+##########################################
+# The Chinese question - first peace proposal
+##################################################
+event = {
+	id = 2011012
+	random = no
+	country = JAP
+
+	name = 3814name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	decision = {
+		war = { country = CHI country = JAP }
+		NOT = { lost_national = { country = CHI value = 80 } }
+		NOT = { ispuppet = JAP }
+	}
+	decision_trigger = {
+		lost_national = { country = CHI value = 25 }
+		region = { region = "China" country = -3 data = 1 value = 27 } #about 50 provinces out of 185
+	}
+
+	trigger = {
+		lost_national = { country = CHI value = 25 }
+		NOT = { lost_national = { country = CHI value = 80 } }
+		region = { region = "China" country = -3 data = 1 value = 27 } #about 50 provinces out of 185
+		#control = { province = 1338 data = -1 }
+		#control = { province = 1337 data = -1 }
+		#control = { province = 1247 data = -1 }
+		#control = { province = 1330 data = -1 } #Jinan
+		#control = { province = 1345 data = -1 }
+		war = { country = CHI country = JAP }
+		NOT = { ispuppet = JAP }
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 60
+		name = 3814a
+		command = { type = setflag which = China_surrender_puppet }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1241 } #Tianjin
+		
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1331 } #Yantai
+		
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1343 } #Huainan
+		command = { type = addclaim which = 1338 } #Shanghai
+		#command = { type = addclaim which = 1337 } #Nanjing
+		#command = { type = addclaim which = 1340 } #Hefei
+		command = { type = addclaim which = 1346 } #Ningbo
+		command = { type = addclaim which = 1345 } #Hangzhou
+		command = { type = addclaim which = 1342 } #Xuanzhou
+		command = { type = addclaim which = 1348 } #Jinhua
+		
+		command = { type = addclaim which = 1358 } #Fuzhou
+		
+		command = { type = addclaim which = 1356 } #Zhangzhou
+		command = { type = addclaim which = 1375 } #Shantou
+		command = { type = addclaim which = 1370 } #Lufeng
+		command = { type = addclaim which = 1369 } #Guangzhou
+		command = { type = addclaim which = 1368 } #Shaoguan
+		command = { type = addclaim which = 1383 } #Wuzhou
+		
+		command = { type = addclaim which = 1365 } #Haikou
+		command = { type = trigger which = 2012017 }
+	}
+	action = {
+		ai_chance = 0
+		name = 3814b
+		command = { type = setflag which = China_surrender_north }
+		command = { type = trigger which = 2012017 }
+		#Hebei
+		command = { type = addclaim which = 1241 } #Tianjin
+		command = { type = addclaim which = 1242 } #Shijazhuang
+		command = { type = addclaim which = 1243 } #Baoding
+		command = { type = addclaim which = 1244 } #Changzhou
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1323 } #Anyang
+		#Shandong
+		command = { type = addclaim which = 1327 } #Heze
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1329 } #Weifang
+		command = { type = addclaim which = 1330 } #Jinan
+		command = { type = addclaim which = 1331 } #Yantai
+		command = { type = addclaim which = 1332 } #Zaozhuang
+		#Jiangsu
+		command = { type = addclaim which = 1333 } #Huaiyin
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1335 } #Yancheng
+		command = { type = addclaim which = 1336 } #Xuzhou
+		command = { type = addclaim which = 1337 } #Nanjing
+		command = { type = addclaim which = 1338 } #Shanghai
+	}
+	action = {
+		ai_chance = 40
+		name = 3814c
+		command = { type = setflag which = China_surrender_coasts }
+		command = { type = trigger which = 2012017 }
+		#Hebei
+		command = { type = addclaim which = 1241 } #Tianjin
+		command = { type = addclaim which = 1242 } #Shijazhuang
+		command = { type = addclaim which = 1243 } #Baoding
+		command = { type = addclaim which = 1244 } #Changzhou
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1323 } #Anyang
+		#Shandong
+		command = { type = addclaim which = 1327 } #Heze
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1329 } #Weifang
+		command = { type = addclaim which = 1330 } #Jinan
+		command = { type = addclaim which = 1331 } #Yantai
+		command = { type = addclaim which = 1332 } #Zaozhuang
+		#Jiangsu
+		command = { type = addclaim which = 1333 } #Huaiyin
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1335 } #Yancheng
+		command = { type = addclaim which = 1336 } #Xuzhou
+		command = { type = addclaim which = 1337 } #Nanjing
+		command = { type = addclaim which = 1338 } #Shanghai	
+		#Zheijang
+		command = { type = addclaim which = 1345 } #Hangzhou
+		command = { type = addclaim which = 1346 } #Ningbo
+		command = { type = addclaim which = 1347 } #Wenzhou
+		command = { type = addclaim which = 1348 } #Jinhua
+		#Fujian
+		command = { type = addclaim which = 1356 } #Zhangzhou
+		command = { type = addclaim which = 1357 } #Nanping
+		command = { type = addclaim which = 1358 } #Fuzhou
+		command = { type = addclaim which = 1359 } #Sanming
+		command = { type = addclaim which = 1360 } #Xiamen
+		#Guangdong
+		command = { type = addclaim which = 1365 } #Haikou
+		command = { type = addclaim which = 1367 } #Naoming
+		command = { type = addclaim which = 1368 } #Shaoguan
+		command = { type = addclaim which = 1369 } #Guangzhou
+		command = { type = addclaim which = 1370 } #Lufeng
+		#command = { type = addclaim which = 1371 } #Hong Kong
+		#command = { type = addclaim which = 1372 } #Macao
+		command = { type = addclaim which = 1373 } #Jiangmen
+		command = { type = addclaim which = 1374 } #Pingxiang
+		command = { type = addclaim which = 1375 } #Shantou
+		command = { type = addclaim which = 1377 } #Yulin
+	}
+}
+event = {
+	id = 2012017
+	random = no
+	country = CHI
+
+	name = 3814name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = { 
+		trigger = { flag = China_surrender_puppet }
+		ai_chance = 100
+		name = "3815a"
+		command = { type = trigger which = 2011013 }
+		command = { type = free_ic value = 8 }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_puppet }
+		ai_chance = 0
+		name = "3815b"
+		command = { type = access which = JAP }
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = JAP value = 1 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units before change TAG command		
+		command = { trigger = { NOT = { exists = U87 } } type = country which = U87 }
+		command = { trigger = { exists = U87 puppet = {  country = U87 country = JAP } } type = secederegion which = U87 value = "China" when = 1 }
+		command = { type = dissent value = 20 }
+		command = { type = secedeprovince which = JAP value = 1247 when = 1 } #Beijing
+		command = { type = secedeprovince which = JAP value = 1241 when = 1 } #Tianjin
+		command = { type = secedeprovince which = JAP value = 1328 when = 1 } #Qindao
+		command = { type = secedeprovince which = JAP value = 1331 when = 1 } #Yantai
+		command = { type = secedeprovince which = JAP value = 1334 when = 1 } #Nantong
+		command = { type = secedeprovince which = JAP value = 1343 when = 1 } #Huainan
+		command = { type = secedeprovince which = JAP value = 1338 when = 1 } #Shanghai
+		#command = { type = secedeprovince which = JAP value = 1337 when = 1 } #Nanjing
+		#command = { type = secedeprovince which = JAP value = 1340 when = 1 } #Hefei
+		command = { type = secedeprovince which = JAP value = 1346 when = 1 } #Ningbo
+		command = { type = secedeprovince which = JAP value = 1345 when = 1 } #Hangzhou
+		command = { type = secedeprovince which = JAP value = 1342 when = 1 } #Xuanzhou
+		command = { type = secedeprovince which = JAP value = 1348 when = 1 } #Jinhua
+		command = { type = secedeprovince which = JAP value = 1358 when = 1 } #Fuzhou
+		command = { type = secedeprovince which = JAP value = 1356 when = 1 } #Zhangzhou
+		command = { type = secedeprovince which = JAP value = 1375 when = 1 } #Shantou
+		command = { type = secedeprovince which = JAP value = 1370 when = 1 } #Lufeng
+		command = { type = secedeprovince which = JAP value = 1369 when = 1 } #Guangzhou
+		command = { type = secedeprovince which = JAP value = 1368 when = 1 } #Shaoguan
+		command = { type = secedeprovince which = JAP value = 1383 when = 1 } #Wuzhou
+		command = { type = secedeprovince which = JAP value = 1365 when = 1 } #Haikou
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		command = { trigger = { NOT ={ exists = MEN } } type = secedearea which = JAP value = "Chahar" when = 1 }
+      	command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1269 when = 1 } #Uqai
+		command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1270 when = 1 } #Linhe
+		command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1272 when = 1 } #Bayan Hot		
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+		command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	#Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -100 }
+		command = { trigger = { NOT = { year = 1945 } } type = headofstate which = 1250011 } #Wang Jingwei
+		command = { trigger = { year = 1945 } type = headofstate which = 1250031 } #Chen Gongbo
+		command = { type = headofgovernment which = 1250012 } #Zhou Fohai
+		command = { type = foreignminister which = 1250013 } #Chu Minyi
+		command = { type = armamentminister which = 1250014 } #Zhou Fohai
+		command = { type = ministerofsecurity which = 1250015 } #Chen Gongbo
+		command = { type = ministerofintelligence which = 1250016 } #Li Shiqun
+		command = { type = chiefofstaff which = 1250017 } #Bao Wenyue
+		command = { type = chiefofarmy which = 1250018 } #Xiao Shuxuan
+		command = { type = chiefofnavy which = 1250019 } #Ren Yuandao
+		command = { type = chiefofair which = 1250020 }	#Chen Changchu
+		command = { type = trigger which = 2011014 }
+    } 
+	action = { 
+		trigger = { flag = China_surrender_north }
+		ai_chance = 27
+		name = "3815a"
+		command = { type = trigger which = 2011013 }
+		command = { type = free_ic value = 3 }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_north }
+        ai_chance = 73
+		name = "3815b"
+		command = { type = dissent value = 5 }
+		command = { type = secedearea which = JAP value = "Hebei" when = 1 }
+		command = { type = secedearea which = JAP value = "Shandong" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jiangsu" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1323 when = 1 } #Anyang
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+		command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	#Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -30 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units
+		command = { type = trigger which = 2011014 }
+		command = { type = clrflag which = China_surrender_north }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_coasts }
+		ai_chance = 60
+		name = "3815a"
+		command = { type = trigger which = 2011013 }
+		command = { type = free_ic value = 5 }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_coasts }
+		ai_chance = 40
+		name = "3815b"
+		command = { type = dissent value = 10 }
+		command = { type = secedearea which = JAP value = "Hebei" when = 1 }
+		command = { type = secedearea which = JAP value = "Shandong" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1323 when = 1 } #Anyang
+		command = { type = secedearea which = JAP value = "Jiangsu" when = 1 }
+		command = { type = secedearea which = JAP value = "Zhejiang" when = 1 }
+		command = { type = secedearea which = JAP value = "Fujian" when = 1 }
+		command = { type = secedearea which = JAP value = "Guangdong" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1377 when = 1 } #Yulin
+		
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+      	command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	# Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -60 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units
+		command = { type = trigger which = 2011014 }
+		command = { type = clrflag which = China_surrender_coasts }
+	} 
+}
+event = {
+	id = 2011013
+	random = no
+	country = JAP
+
+	name = 3816name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 3 }
+		#remove claims for each proposals (second peace proposal may be different)
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1247 } #Beijing
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1241 } #Tianjin
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1328 } #Qindao
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1331 } #Yantai
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1334 } #Nantong
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1343 } #Huainan
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1338 } #Shanghai
+		#command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1337 } #Nanjing
+		#command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1340 } #Hefei
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1346 } #Ningbo
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1345 } #Hangzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1342 } #Xuanzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1348 } #Jinhua
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1358 } #Fuzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1356 } #Zhangzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1375 } #Shantou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1370 } #Lufeng
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1369 } #Guangzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1368 } #Shaoguan
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1383 } #Wuzhou
+		command = { trigger = { flag = China_surrender_puppet } type = removeclaim which = 1365 } #Haikou
+		command = { trigger = { flag = China_surrender_puppet } type = clrflag which = China_surrender_puppet }
+		
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1241 } #Tianjin
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1242 } #Shijazhuang
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1243 } #Baoding
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1244 } #Changzhou
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1247 } #Beijing
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1323 } #Anyang
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1327 } #Heze
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1328 } #Qindao
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1329 } #Weifang
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1330 } #Jinan
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1331 } #Yantai
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1332 } #Zaozhuang
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1333 } #Huaiyin
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1334 } #Nantong
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1335 } #Yancheng
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1336 } #Xuzhou
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1337 } #Nanjing
+		command = { trigger = { flag = China_surrender_north } type = removeclaim which = 1338 } #Shanghai		
+		command = { trigger = { flag = China_surrender_north } type = clrflag which = China_surrender_north }
+
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1241 } #Tianjin
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1242 } #Shijazhuang
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1243 } #Baoding
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1244 } #Changzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1247 } #Beijing
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1323 } #Anyang
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1327 } #Heze
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1328 } #Qindao
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1329 } #Weifang
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1330 } #Jinan
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1331 } #Yantai
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1332 } #Zaozhuang
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1333 } #Huaiyin
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1334 } #Nantong
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1335 } #Yancheng
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1336 } #Xuzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1337 } #Nanjing
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1338 } #Shanghai	
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1345 } #Hangzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1346 } #Ningbo
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1347 } #Wenzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1348 } #Jinhua
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1356 } #Zhangzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1357 } #Nanping
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1358 } #Fuzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1359 } #Sanming
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1360 } #Xiamen
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1365 } #Haikou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1367 } #Naoming
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1368 } #Shaoguan
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1369 } #Guangzhou
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1370 } #Lufeng
+		#command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1371 } #Hong Kong
+		#command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1372 } #Macao
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1373 } #Jiangmen
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1374 } #Pingxiang
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1375 } #Shantou		
+		command = { trigger = { flag = China_surrender_coasts } type = removeclaim which = 1377 } #Yulin		
+		command = { trigger = { flag = China_surrender_coasts } type = clrflag which = China_surrender_coasts }
+		
+	} 
+}
+event = {
+	id = 2011014
+	random = no
+	country = JAP
+
+	name = 3817name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -3 }
+		command = { trigger = { flag = China_surrender_puppet } type = peace which = U87 value = 0 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Xikang" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Yunnan" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Tibet" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Xinjiang" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Qinghai" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Gansu" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Shaanxi" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Sichuan" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Shanxi" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Hubei" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1314 when = 1 } #Shiyan
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1322 when = 1 } #Luoyang
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1325 when = 1 } #Nanyang
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = peace which = CHI value = 0 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Xikang" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Yunnan" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Tibet" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Xinjiang" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Qinghai" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Gansu" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Shaanxi" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Sichuan" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Shanxi" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Hubei" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1314 when = 1 } #Shiyan
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1322 when = 1 } #Luoyang
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1325 when = 1 } #Nanyang	
+		command = { trigger = { war = { country = JAP country = CHC } NOT = { flag = China_surrender_puppet } } type = peace which = CHC value = 0 }
+		command = { trigger = { flag = China_surrender_puppet NOT = { exists = MEN} } type = independence which = MEN value = 1 }
+		command = { trigger = { flag = China_surrender_puppet NOT = { ispuppet = MEN} } type = make_puppet which = MEN }
+		command = { trigger = { NOT = { exists = MAN} } type = independence which = MAN value = 1 }
+		command = { trigger = { NOT = { ispuppet = MAN} } type = make_puppet which = MAN }
+		#Manchurian provinces under Japanese control for gameplay reasons are given back to Manchukuo
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1216 } #Jinzhou
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1235 } #Fuxin
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1236 } #Chengde
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1216 } #Jinzhou
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1235 } #Fuxin
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1236 } #Chengde
+		#China becomes a puppet and its puppets are transferred to Japan
+		command = { trigger = { flag = China_surrender_puppet } type = make_puppet which = U87 }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = SIK country = U87 } } type = make_puppet which = SIK }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CSX country = U87 } } type = make_puppet which = CSX }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CGX country = U87 } } type = make_puppet which = CGX }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CYN country = U87 } } type = make_puppet which = CYN }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CXB country = U87 } } type = make_puppet which = CXB }
+		command = { trigger = { puppet = { country = MAN country = CHI } } type = make_puppet which = MAN }
+		command = { trigger = { puppet = { country = MAN country = U87 } } type = make_puppet which = MAN }
+		command = { trigger = { puppet = { country = MEN country = CHI } } type = make_puppet which = MEN }
+		command = { trigger = { puppet = { country = MEN country = U87 } } type = make_puppet which = MEN }
+		command = { trigger = { puppet = { country = KOR country = CHI } } type = inherit which = KOR }
+		command = { trigger = { puppet = { country = KOR country = U87 } } type = inherit which = KOR }
+		#if Xibei San Ma is now a puppet, some of its provinces are given to MEN
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1270 data = CXB } 
+									control = { province = 1270 data = JAP } 
+									control = { province = 1270 data = MEN } 
+								}
+								owned = { province = 1270 data = CXB } 
+					} type = secedeprovince which = MEN value = 1270 when = 2 } #Linhe
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1269 data = CXB } 
+									control = { province = 1269 data = JAP } 
+									control = { province = 1269 data = MEN } 
+								}
+								owned = { province = 1269 data = CXB } 
+					} type = secedeprovince which = MEN value = 1269 when = 2 } #Uqai
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1268 data = CXB } 
+									control = { province = 1268 data = JAP } 
+									control = { province = 1268 data = MEN } 
+								}
+								owned = { province = 1268 data = CXB } 
+					} type = secedeprovince which = MEN value = 1268 when = 2 } #Yinchuan
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1272 data = CXB } 
+									control = { province = 1272 data = JAP } 
+									control = { province = 1272 data = MEN } 
+								}
+								owned = { province = 1272 data = CXB } 
+					} type = secedeprovince which = MEN value = 1272 when = 2 } #Bayan Hot
+		command = { trigger = { flag = China_surrender_puppet } type = clrflag which = China_surrender_puppet }
+		#command = { type = ai which = "switch/jap_build_standard.ai" } #Really stupid to trigger this without flags...
+		command = { type = free_ic value = 8 }
+		command = { trigger = { ai = JAP } type = industrial_modifier which = total value = 5 }
+		#command = { type = trigger which = 26003 }
+	} 
+}
+
+##############################################
+# The Chinese question - final peace proposal
+#################################################
+event = {
+	id = 2011015
+	random = no
+	country = JAP
+
+	name = 3818name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	decision = {
+		war = { country = CHI country = JAP }
+		OR = { 
+			lost_national = { country = CHI value = 80 }
+			lost_vp = { country = CHI value = 80 }
+		}
+		NOT = { ispuppet = JAP }
+	}
+	decision_trigger = {
+		land_percentage = { country = CHI value = 1.1 }
+		region = { region = "China" country = -3 data = 1 value = 48 } #about 90 provinces out of 185
+		OR = { 
+			lost_national = { country = CHI value = 90 }
+			lost_vp = { country = CHI value = 90 }
+		}
+	}
+	trigger = {
+		OR = { 
+			lost_national = { country = CHI value = 90 }
+			lost_vp = { country = CHI value = 90 }
+		}
+		region = { region = "China" country = -3 data = 1 value = 48 } #about 90 provinces out of 185
+		land_percentage = { country = CHI value = 1.1 }
+		#control = { province = 1338 data = -1 }
+		#control = { province = 1337 data = -1 }
+		#control = { province = 1247 data = -1 }
+		#control = { province = 1330 data = -1 } #Jinan
+		#control = { province = 1345 data = -1 }
+		#control = { province = 1369 data = -1 }
+		#control = { province = 1390 data = -1 }
+		#control = { province = 1297 data = -1 }
+		war = { country = CHI country = JAP }
+		NOT = { ispuppet = JAP }
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = 3814a
+		command = { type = setflag which = China_surrender_puppet }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = trigger which = 2012018 }
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1241 } #Tianjin
+		
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1331 } #Yantai
+		
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1343 } #Huainan
+		command = { type = addclaim which = 1338 } #Shanghai
+		#command = { type = addclaim which = 1337 } #Nanjing
+		#command = { type = addclaim which = 1340 } #Hefei
+		command = { type = addclaim which = 1346 } #Ningbo
+		command = { type = addclaim which = 1345 } #Hangzhou
+		command = { type = addclaim which = 1342 } #Xuanzhou
+		command = { type = addclaim which = 1348 } #Jinhua
+		
+		command = { type = addclaim which = 1358 } #Fuzhou
+		
+		command = { type = addclaim which = 1356 } #Zhangzhou
+		command = { type = addclaim which = 1375 } #Shantou
+		command = { type = addclaim which = 1370 } #Lufeng
+		command = { type = addclaim which = 1369 } #Guangzhou
+		command = { type = addclaim which = 1368 } #Shaoguan
+		command = { type = addclaim which = 1383 } #Wuzhou
+		
+		command = { type = addclaim which = 1365 } #Haikou		
+	}
+	action = {
+		ai_chance = 0
+		name = 3814b
+		command = { type = setflag which = China_surrender_north }
+		command = { type = trigger which = 2012018 }
+		#Hebei
+		command = { type = addclaim which = 1241 } #Tianjin
+		command = { type = addclaim which = 1242 } #Shijazhuang
+		command = { type = addclaim which = 1243 } #Baoding
+		command = { type = addclaim which = 1244 } #Changzhou
+		command = { type = addclaim which = 1245 } #Tangshan
+		command = { type = addclaim which = 1246 } #Zhangyuan
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1323 } #Anyang
+		#Shandong
+		command = { type = addclaim which = 1327 } #Heze
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1329 } #Weifang
+		command = { type = addclaim which = 1330 } #Jinan
+		command = { type = addclaim which = 1331 } #Yantai
+		command = { type = addclaim which = 1332 } #Zaozhuang
+		#Jiangsu
+		command = { type = addclaim which = 1333 } #Huaiyin
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1335 } #Yancheng
+		command = { type = addclaim which = 1336 } #Xuzhou
+		command = { type = addclaim which = 1337 } #Nanjing
+		command = { type = addclaim which = 1338 } #Shanghai		
+	}
+	action = {
+		ai_chance = 0
+		name = 3814c
+		command = { type = setflag which = China_surrender_coasts }
+		command = { type = trigger which = 2012018 }
+		#Hebei
+		command = { type = addclaim which = 1241 } #Tianjin
+		command = { type = addclaim which = 1242 } #Shijazhuang
+		command = { type = addclaim which = 1243 } #Baoding
+		command = { type = addclaim which = 1244 } #Changzhou
+		command = { type = addclaim which = 1245 } #Tangshan
+		command = { type = addclaim which = 1246 } #Zhangyuan
+		command = { type = addclaim which = 1247 } #Beijing
+		command = { type = addclaim which = 1323 } #Anyang
+		#Shandong
+		command = { type = addclaim which = 1327 } #Heze
+		command = { type = addclaim which = 1328 } #Qindao
+		command = { type = addclaim which = 1329 } #Weifang
+		command = { type = addclaim which = 1330 } #Jinan
+		command = { type = addclaim which = 1331 } #Yantai
+		command = { type = addclaim which = 1332 } #Zaozhuang
+		#Jiangsu
+		command = { type = addclaim which = 1333 } #Huaiyin
+		command = { type = addclaim which = 1334 } #Nantong
+		command = { type = addclaim which = 1335 } #Yancheng
+		command = { type = addclaim which = 1336 } #Xuzhou
+		command = { type = addclaim which = 1337 } #Nanjing
+		command = { type = addclaim which = 1338 } #Shanghai	
+		#Zheijang
+		command = { type = addclaim which = 1345 } #Hangzhou
+		command = { type = addclaim which = 1346 } #Ningbo
+		command = { type = addclaim which = 1347 } #Wenzhou
+		command = { type = addclaim which = 1348 } #Jinhua
+		#Fujian
+		command = { type = addclaim which = 1356 } #Zhangzhou
+		command = { type = addclaim which = 1357 } #Nanping
+		command = { type = addclaim which = 1358 } #Fuzhou
+		command = { type = addclaim which = 1359 } #Sanming
+		command = { type = addclaim which = 1360 } #Xiamen
+		#Guangdong
+		command = { type = addclaim which = 1365 } #Haikou
+		command = { type = addclaim which = 1367 } #Naoming
+		command = { type = addclaim which = 1368 } #Shaoguan
+		command = { type = addclaim which = 1369 } #Guangzhou
+		command = { type = addclaim which = 1370 } #Lufeng
+		#command = { type = addclaim which = 1371 } #Hong Kong
+		#command = { type = addclaim which = 1372 } #Macao
+		command = { type = addclaim which = 1373 } #Jiangmen
+		command = { type = addclaim which = 1374 } #Pingxiang
+		command = { type = addclaim which = 1375 } #Shantou		
+		command = { type = addclaim which = 1377 } #Yulin
+	}
+	action = {
+		ai_chance = 0
+		name = 3814d
+		command = { }
+	}
+}
+event = {
+	id = 2012018
+	random = no
+	country = CHI
+
+	name = 3818name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = { 
+		trigger = { flag = China_surrender_puppet }
+		ai_chance = 20
+		name = "3815a"
+		command = { type = trigger which = 2011016 }
+		command = { type = clrflag which = China_surrender_puppet }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_puppet }
+		ai_chance = 80
+		name = "3815b"
+		command = { type = access which = JAP }
+		command = { type = leave_alliance when = 1 }
+		command = { type = peace which = JAP value = 1 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units before change TAG command
+		command = { trigger = { NOT = { exists = U87 } } type = country which = U87 }
+		command = { trigger = { exists = U87 puppet = {  country = U87 country = JAP } } type = secederegion which = U87 value = "China" when = 1 }
+		command = { type = dissent value = 20 }
+		command = { type = secedeprovince which = JAP value = 1247 when = 1 } #Beijing
+		command = { type = secedeprovince which = JAP value = 1241 when = 1 } #Tianjin
+		command = { type = secedeprovince which = JAP value = 1328 when = 1 } #Qindao
+		command = { type = secedeprovince which = JAP value = 1331 when = 1 } #Yantai
+		command = { type = secedeprovince which = JAP value = 1334 when = 1 } #Nantong
+		command = { type = secedeprovince which = JAP value = 1343 when = 1 } #Huainan
+		command = { type = secedeprovince which = JAP value = 1338 when = 1 } #Shanghai
+		#command = { type = secedeprovince which = JAP value = 1337 when = 1 } #Nanjing
+		#command = { type = secedeprovince which = JAP value = 1340 when = 1 } #Hefei
+		command = { type = secedeprovince which = JAP value = 1346 when = 1 } #Ningbo
+		command = { type = secedeprovince which = JAP value = 1345 when = 1 } #Hangzhou
+		command = { type = secedeprovince which = JAP value = 1342 when = 1 } #Xuanzhou
+		command = { type = secedeprovince which = JAP value = 1348 when = 1 } #Jinhua
+		command = { type = secedeprovince which = JAP value = 1358 when = 1 } #Fuzhou
+		command = { type = secedeprovince which = JAP value = 1356 when = 1 } #Zhangzhou
+		command = { type = secedeprovince which = JAP value = 1375 when = 1 } #Shantou
+		command = { type = secedeprovince which = JAP value = 1370 when = 1 } #Lufeng
+		command = { type = secedeprovince which = JAP value = 1369 when = 1 } #Guangzhou
+		command = { type = secedeprovince which = JAP value = 1368 when = 1 } #Shaoguan
+		command = { type = secedeprovince which = JAP value = 1383 when = 1 } #Wuzhou
+		command = { type = secedeprovince which = JAP value = 1365 when = 1 } #Haikou
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		command = { trigger = { NOT ={ exists = MEN } } type = secedearea which = JAP value = "Chahar" when = 1 }
+      	command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1268 when = 1 } #Yinchuan
+      	command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1269 when = 1 } #Uqai
+		command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1270 when = 1 } #Linhe
+		command = { trigger = { NOT ={ exists = MEN } } type = secedeprovince which = JAP value = 1272 when = 1 } #Bayan Hot		
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+		command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	#Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -100 }
+		command = { trigger = { NOT = { year = 1945 } } type = headofstate which = 1250011 } #Wang Jingwei
+		command = { trigger = { year = 1945 } type = headofstate which = 1250031 } #Chen Gongbo
+		command = { type = headofgovernment which = 1250012 } #Zhou Fohai
+		command = { type = foreignminister which = 1250013 } #Chu Minyi
+		command = { type = armamentminister which = 1250014 } #Zhou Fohai
+		command = { type = ministerofsecurity which = 1250015 } #Chen Gongbo
+		command = { type = ministerofintelligence which = 1250016 } #Li Shiqun
+		command = { type = chiefofstaff which = 1250017 } #Bao Wenyue
+		command = { type = chiefofarmy which = 1250018 } #Xiao Shuxuan
+		command = { type = chiefofnavy which = 1250019 } #Ren Yuandao
+		command = { type = chiefofair which = 1250020 }	#Chen Changchu		
+		command = { type = trigger which = 2011017 }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_north }
+		ai_chance = 0
+		name = "3815a"
+		command = { type = trigger which = 2011016 }
+		command = { type = clrflag which = China_surrender_north }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_north }
+		ai_chance = 100
+		name = "3815b"
+		command = { type = dissent value = 5 }
+		command = { type = secedearea which = JAP value = "Hebei" when = 1 }
+		command = { type = secedearea which = JAP value = "Shandong" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jiangsu" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1323 when = 1 } #Anyang
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+		command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	#Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -30 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units
+		command = { type = leave_alliance when = 1 }
+		command = { type = trigger which = 2011017 }
+		command = { type = clrflag which = China_surrender_north }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_coasts }
+		ai_chance = 3
+		name = "3815a"
+		command = { type = trigger which = 2011016 }
+		command = { type = clrflag which = China_surrender_coasts }
+	} 
+	action = { 
+		trigger = { flag = China_surrender_coasts }
+		ai_chance = 97
+		name = "3815b"
+		command = { type = dissent value = 10 }
+		command = { type = secedearea which = JAP value = "Hebei" when = 1 }
+		command = { type = secedearea which = JAP value = "Shandong" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1323 when = 1 } #Anyang
+		command = { type = secedearea which = JAP value = "Jiangsu" when = 1 }
+		command = { type = secedearea which = JAP value = "Zhejiang" when = 1 }
+		command = { type = secedearea which = JAP value = "Fujian" when = 1 }
+		command = { type = secedearea which = JAP value = "Guangdong" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1377 when = 1 } #Yulin
+		
+		#MEN
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedearea which = MEN value = "Chahar" when = 1 }
+      	command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1268 when = 1 } #Yinchuan
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1269 when = 1 } #Uqai
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1270 when = 1 } #Linhe
+		command = { trigger = { alliance = { country = JAP country = MEN } } type = secedeprovince which = MEN value = 1272 when = 1 } #Bayan Hot
+		#MAN
+		command = { type = secedearea which = JAP value = "Heilongjiang" when = 1 }
+      	command = { type = secedearea which = JAP value = "Jilin" when = 1 }
+		command = { type = secedearea which = JAP value = "Liaoning" when = 1 }
+      	command = { type = secedearea which = JAP value = "Rehe" when = 1 }
+		#Korea + Port Arthur
+		command = { type = secederegion which = JAP value = "Korea" when = 1 }
+		command = { type = secedeprovince which = JAP value = 1219 when = 1 } #Port Arthur
+		
+      	command = { type = sleepteam which = 55006 } 	# Chiang Kai-shek
+		command = { type = sleepteam which = 55005 } 	# Von Falkenhausen
+		command = { type = sleepminister which = 55002 } # Chiang Kai-shek HOG
+		command = { type = sleepleader which = 55049 } # Chiang Kai-shek
+		command = { type = sleepleader which = 55304 } # von Falkenhausen
+		command = { type = sleepleader which = 55368 } # Chennault
+		command = { type = sleepleader which = 55377 } # Khryukin
+		command = { type = relation which = USA value = -60 }
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units
+		command = { type = leave_alliance when = 1 }
+		command = { type = trigger which = 2011017 }
+		command = { type = clrflag which = China_surrender_coasts }
+	} 
+}
+event = {
+	id = 2011016
+	random = no
+	country = JAP
+
+	name = 3816name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 3 }
+	} 
+}
+event = {
+	id = 2011017
+	random = no
+	country = JAP
+
+	name = 3817name
+	desc = 3814desc
+  	style = 2
+  	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -3 }
+		#command = { trigger = { flag = China_surrender_puppet } type = peace which = U87 value = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Xikang" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Yunnan" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Tibet" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Xinjiang" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Qinghai" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Gansu" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Shaanxi" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Sichuan" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Shanxi" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedearea which = U87 value = "Hubei" when = 1 }
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1314 when = 1 } #Shiyan
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1322 when = 1 } #Luoyang
+		command = { trigger = { flag = China_surrender_puppet } type = secedeprovince which = U87 value = 1325 when = 1 } #Nanyang
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = peace which = CHI value = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Xikang" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Yunnan" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Tibet" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Xinjiang" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Qinghai" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Gansu" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Shaanxi" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Sichuan" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Shanxi" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedearea which = CHI value = "Hubei" when = 1 }
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1314 when = 1 } #Shiyan
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1322 when = 1 } #Luoyang
+		command = { trigger = { NOT = { flag = China_surrender_puppet } } type = secedeprovince which = CHI value = 1325 when = 1 } #Nanyang	
+		command = { trigger = { war = { country = JAP country = CHC } NOT = { flag = China_surrender_puppet } } type = peace which = CHC value = 1 }
+		command = { trigger = { flag = China_surrender_puppet NOT = { exists = MEN} } type = independence which = MEN value = 1 }
+		command = { trigger = { flag = China_surrender_puppet NOT = { ispuppet = MEN} } type = make_puppet which = MEN }
+		command = { trigger = { NOT = { exists = MAN} } type = independence which = MAN value = 1 }
+		command = { trigger = { NOT = { ispuppet = MAN} } type = make_puppet which = MAN }
+		#Manchurian provinces under Japanese control for gameplay reasons are given back to Manchukuo
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1216 } #Jinzhou
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1235 } #Fuxin
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = removeclaim which = 1236 } #Chengde
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1216 } #Jinzhou
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1235 } #Fuxin
+		command = { trigger = { flag = China_surrender_puppet alliance = { country = JAP country = MAN } } type = secedeprovince which = MAN value = 1236 } #Chengde
+		#China becomes a puppet and its puppets are transferred to Japan
+		command = { trigger = { flag = China_surrender_puppet } type = make_puppet which = U87 }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = SIK country = U87 } } type = make_puppet which = SIK }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CSX country = U87 } } type = make_puppet which = CSX }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CGX country = U87 } } type = make_puppet which = CGX }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CYN country = U87 } } type = make_puppet which = CYN }
+		command = { trigger = { flag = China_surrender_puppet puppet = { country = CXB country = U87 } } type = make_puppet which = CXB }
+		#transfer control of JAP puppets
+		command = { trigger = { puppet = { country = MAN country = CHI } } type = make_puppet which = MAN }
+		command = { trigger = { puppet = { country = MEN country = U87 } } type = make_puppet which = MEN }
+		command = { trigger = { puppet = { country = MEN country = CHI } } type = make_puppet which = MEN }
+		command = { trigger = { puppet = { country = MEN country = U87 } } type = make_puppet which = MEN }
+		command = { trigger = { puppet = { country = KOR country = CHI } } type = inherit which = KOR }
+		command = { trigger = { puppet = { country = KOR country = U87 } } type = inherit which = KOR }
+		#if Xibei San Ma is now a puppet, some of its provinces are given to MEN
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1270 data = CXB } 
+									control = { province = 1270 data = JAP } 
+									control = { province = 1270 data = MEN } 
+								}
+								owned = { province = 1270 data = CXB } 
+					} type = secedeprovince which = MEN value = 1270 when = 2 } #Linhe
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1269 data = CXB } 
+									control = { province = 1269 data = JAP } 
+									control = { province = 1269 data = MEN } 
+								}
+								owned = { province = 1269 data = CXB } 
+					} type = secedeprovince which = MEN value = 1269 when = 2 } #Uqai
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1268 data = CXB } 
+									control = { province = 1268 data = JAP } 
+									control = { province = 1268 data = MEN } 
+								}
+								owned = { province = 1268 data = CXB } 
+					} type = secedeprovince which = MEN value = 1268 when = 2 } #Yinchuan
+		command = { trigger = { flag = China_surrender_puppet
+								OR = {
+									puppet = { country = CXB country = JAP }
+									puppet = { country = CXB country = CHI }
+									puppet = { country = CXB country = U87 }
+								}
+								puppet = { country = MEN country = JAP }
+								OR = {
+									control = { province = 1272 data = CXB } 
+									control = { province = 1272 data = JAP } 
+									control = { province = 1272 data = MEN } 
+								}
+								owned = { province = 1272 data = CXB } 
+					} type = secedeprovince which = MEN value = 1272 when = 2 } #Bayan Hot
+		command = { trigger = { flag = China_surrender_puppet } type = clrflag which = China_surrender_puppet }
+		#command = { type = ai which = "switch/jap_build_standard.ai" } #Really stupid to trigger this without flags...
+		command = { type = free_ic value = 12 }
+		command = { trigger = { ai = JAP } type = industrial_modifier which = total value = 8 }
+		#command = { type = trigger which = 26003 }
+	}
+}
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+event = {
+	id = 2011018
+	random = no
+	country = JAP
+
+	name = "EVT_3824_NAME"
+	desc = "EVT_3824_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	#Triggered by CHI 2012004
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_3824_ACTA" #	
+		#command = { type = leave_alliance when = 1 }
+		command = { type = peace which = CHI value = 0 }
+		command = { type = peace which = CHC value = 0 }
+		command = { type = peace which = CGX value = 0 }
+		command = { type = peace which = CSX value = 0 }
+		command = { type = peace which = CYN value = 0 }
+		command = { type = peace which = CXB value = 0 }
+
+		command = { type = dissent value = 10 }
+
+		command = { type = domestic which = democratic value = 4 }
+		command = { type = domestic which = political_left value = 4 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		#command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = domestic which = defense_lobby value = -3 }
+		command = { type = domestic which = interventionism value = -3 }
+
+		command = { trigger = { flag = fs_kmt } type = secederegion which = CHI value = "China" when = 1 }
+		command = { trigger = { flag = fs_ccp } type = secederegion which = CHC value = "China" when = 1 }
+
+		command = { type = end_mastery which = MAN } 
+		command = { type = end_mastery which = MEN } 
+
+		#Korea
+		command = { type = removecore which = 1234 } # Jeju - Korea
+		command = { type = removecore which = 1230 } # Gwangju - Korea
+		command = { type = removecore which = 1231 } # Daegu - Korea
+		command = { type = removecore which = 1232 } # Busan - Korea
+		command = { type = removecore which = 1233 } # Chuncheon - Korea
+		command = { type = removecore which = 1228 } # Seoul - Korea
+		command = { type = removecore which = 1229 } # Seoul - Korea
+		command = { type = removecore which = 1224 } # Sinuiju - Korea
+		command = { type = removecore which = 1226 } # Ganggye - Korea
+		command = { type = removecore which = 1225 } # Cheongjin - Korea
+		command = { type = removecore which = 1227 } # Hamheung - Korea
+		command = { type = removecore which = 1223 } # Wonsan - Korea
+		command = { type = removecore which = 1221 } # Pyeongyang - Korea
+		command = { type = removecore which = 1222 } # Sariwon - Korea
+		
+        command = { type = removeclaim which = 1234 } # Jeju - Korea
+		command = { type = removeclaim which = 1230 } # Gwangju - Korea
+		command = { type = removeclaim which = 1231 } # Daegu - Korea
+		command = { type = removeclaim which = 1232 } # Busan - Korea
+		command = { type = removeclaim which = 1233 } # Chuncheon - Korea
+		command = { type = removeclaim which = 1228 } # Seoul - Korea
+		command = { type = removeclaim which = 1229 } # Seoul - Korea
+		command = { type = removeclaim which = 1224 } # Sinuiju - Korea
+		command = { type = removeclaim which = 1226 } # Ganggye - Korea
+		command = { type = removeclaim which = 1225 } # Cheongjin - Korea
+		command = { type = removeclaim which = 1227 } # Hamheung - Korea
+		command = { type = removeclaim which = 1223 } # Wonsan - Korea
+		command = { type = removeclaim which = 1221 } # Pyeongyang - Korea
+		command = { type = removeclaim which = 1222 } # Sariwon - Korea
+		    
+        command = { trigger = { claims = { province = 1241 } } type = removeclaim which = 1241 } #Tianjin
+		command = { trigger = { claims = { province = 1242 } } type = removeclaim which = 1242 } #Shijazhuang
+		command = { trigger = { claims = { province = 1243 } } type = removeclaim which = 1243 } #Baoding
+		command = { trigger = { claims = { province = 1244 } } type = removeclaim which = 1244 } #Changzhou
+		command = { trigger = { claims = { province = 1247 } } type = removeclaim which = 1247 } #Beijing
+		command = { trigger = { claims = { province = 1323 } } type = removeclaim which = 1323 } #Anyang
+		command = { trigger = { claims = { province = 1327 } } type = removeclaim which = 1327 } #Heze
+		command = { trigger = { claims = { province = 1328 } } type = removeclaim which = 1328 } #Qindao
+		command = { trigger = { claims = { province = 1329 } } type = removeclaim which = 1329 } #Weifang
+		command = { trigger = { claims = { province = 1330 } } type = removeclaim which = 1330 } #Jinan
+		command = { trigger = { claims = { province = 1331 } } type = removeclaim which = 1331 } #Yantai
+		command = { trigger = { claims = { province = 1332 } } type = removeclaim which = 1332 } #Zaozhuang
+		command = { trigger = { claims = { province = 1333 } } type = removeclaim which = 1333 } #Huaiyin
+		command = { trigger = { claims = { province = 1334 } } type = removeclaim which = 1334 } #Nantong
+		command = { trigger = { claims = { province = 1335 } } type = removeclaim which = 1335 } #Yancheng
+		command = { trigger = { claims = { province = 1336 } } type = removeclaim which = 1336 } #Xuzhou		
+		command = { trigger = { claims = { province = 1337 } } type = removeclaim which = 1337 } #Nanjing
+		command = { trigger = { claims = { province = 1338 } } type = removeclaim which = 1338 } #Shanghai
+		command = { trigger = { claims = { province = 1340 } } type = removeclaim which = 1340 } #Hefei
+		command = { trigger = { claims = { province = 1342 } } type = removeclaim which = 1342 } #Xuanzhou
+		command = { trigger = { claims = { province = 1343 } } type = removeclaim which = 1343 } #Huainan
+		command = { trigger = { claims = { province = 1345 } } type = removeclaim which = 1345 } #Hangzhou
+		command = { trigger = { claims = { province = 1346 } } type = removeclaim which = 1346 } #Ningbo
+		command = { trigger = { claims = { province = 1347 } } type = removeclaim which = 1347 } #Wenzhou
+		command = { trigger = { claims = { province = 1348 } } type = removeclaim which = 1348 } #Jinhua
+		command = { trigger = { claims = { province = 1356 } } type = removeclaim which = 1356 } #Zhangzhou
+		command = { trigger = { claims = { province = 1357 } } type = removeclaim which = 1357 } #Nanping
+		command = { trigger = { claims = { province = 1358 } } type = removeclaim which = 1358 } #Fuzhou
+		command = { trigger = { claims = { province = 1359 } } type = removeclaim which = 1359 } #Sanming
+		command = { trigger = { claims = { province = 1360 } } type = removeclaim which = 1360 } #Xiamen
+		command = { trigger = { claims = { province = 1365 } } type = removeclaim which = 1365 } #Haikou
+		command = { trigger = { claims = { province = 1367 } } type = removeclaim which = 1367 } #Naoming
+		command = { trigger = { claims = { province = 1368 } } type = removeclaim which = 1368 } #Shaoguan
+		command = { trigger = { claims = { province = 1369 } } type = removeclaim which = 1369 } #Guangzhou
+		command = { trigger = { claims = { province = 1370 } } type = removeclaim which = 1370 } #Lufeng
+		command = { trigger = { claims = { province = 1371 } } type = removeclaim which = 1371 } #Hong Kong
+		command = { trigger = { claims = { province = 1372 } } type = removeclaim which = 1372 } #Macao
+		command = { trigger = { claims = { province = 1373 } } type = removeclaim which = 1373 } #Jiangmen
+		command = { trigger = { claims = { province = 1374 } } type = removeclaim which = 1374 } #Pingxiang	
+		command = { trigger = { claims = { province = 1375 } } type = removeclaim which = 1375 } #Shantou
+		command = { trigger = { claims = { province = 1383 } } type = removeclaim which = 1383 } #Wuzhou		
+		#remove various Japanese claims
+		command = { trigger = { claims = { province = 1219 } } type = removeclaim which = 1219 } #Port Arthur / Dalian
+		command = { trigger = { claims = { province = 1216 } } type = removeclaim which = 1216 } #Jinzhou
+		command = { trigger = { claims = { province = 1235 } } type = removeclaim which = 1235 } #Fuxin
+		command = { trigger = { claims = { province = 1236 } } type = removeclaim which = 1236 } #Chengde
+		command = { trigger = { claims = { province = 1240 } } type = removeclaim which = 1240 } #Sili-yin Qota 
+		command = { trigger = { claims = { province = 1245 } } type = removeclaim which = 1245 } #Tangshan
+
+        #Taiwan
+        command = { type = removeclaim which = 1361 }
+		command = { type = removeclaim which = 1362 }
+		command = { type = removeclaim which = 1363 }
+		command = { type = removeclaim which = 1364 }
+        
+        command = { type = removecore which = 1361 }
+		command = { type = removecore which = 1362 }
+		command = { type = removecore which = 1363 }
+		command = { type = removecore which = 1364 }
+		   
+		command = { type = non_aggression which = JAP where = CHI }
+		command = { type = non_aggression which = JAP where = CHC }
+
+		command = { trigger = { puppet = { country = KOR country = JAP } }  type = setflag which = KOR_FROM_JAP_TO_CHI }
+		command = { trigger = { flag = fs_kmt } type = independence which = KOR value = 1 when = 0 }
+		command = { trigger = { flag = fs_ccp } type = independence which = PRK value = 1 when = 0 }
+		command = { trigger = { exists = KOR puppet = { country = KOR country = JAP } } type = end_mastery which = KOR }
+		command = { trigger = { exists = PRK puppet = { country = PRK country = JAP } } type = end_mastery which = PRK }
+		command = { trigger = { flag = fs_kmt } type = secederegion which = KOR value = "Korea" when = 1 }
+		command = { trigger = { flag = fs_ccp } type = secederegion which = PRK value = "Korea" when = 1 }
+		command = { trigger = { ai = yes } type = ai which = "switch/Combat_off.ai" }
+		command = { trigger = { OR = { flag = fs_kmt flag = fs_ccp } } type = trigger which = 2011019 }
+		
+		#sleep various events
+		command = { type = sleepevent which = 1330120020 } #No Zhenbao incident
+        command = { type = sleepevent which = 1330030000 } #Sue for Peace with the Japanese
+        command = { type = sleepevent which = 1330030001 } #The Treaty of Xinjiang
+        command = { type = sleepevent which = 1330120021 } #Stalin sues for Peace
+        command = { type = sleepevent which = 1330120022 } #The Treaty of Xinjiang
+        command = { type = sleepevent which = 1330120023 } #The Soviets are about to lose the war!
+        command = { type = sleepevent which = 1330120024 } #The Russian Fascist Party
+        command = { type = sleepevent which = 1330120025 } #The Russian Club in Manzhouli
+        command = { type = sleepevent which = 1330120026 } #The Asano Detachment
+        command = { type = sleepevent which = 1330120027 } #Stalin sues for Peace
+        command = { type = sleepevent which = 1330120028 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120029 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120030 } #The Russian All-Military Union endorses us
+        command = { type = sleepevent which = 1330120031 } #Russian Migrant Network
+        command = { type = sleepevent which = 1330120032 } #The Shanghai Russians
+        command = { type = sleepevent which = 1330120033 } #Russian Blackshirts
+        command = { type = sleepevent which = 1330120034 } #
+        command = { type = sleepevent which = 1330120035 } #The Soviets are defeated
+		command = { type = sleepevent which = 2011025 } #Pearl Harbor
+		command = { type = sleepevent which = 1330120000 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120001 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120002 } #The Tanggu truce
+		command = { type = sleepevent which = 1330120003 } #The He-Umezo Agreement
+		command = { type = sleepevent which = 1330120004 } #The He-Umezo Agreement
+		command = { type = sleepevent which = 1330120005 } #The He-Umezo Agreement - refused
+		command = { type = sleepevent which = 1330120006 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120007 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120038 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 1330120039 } #The Chin-Doihara Agreement
+		command = { type = sleepevent which = 2011022 } # Marco Polo Bridge
+		command = { type = sleepevent which = 2011021 } # German Recognition of Manchukuo
+		command = { type = demobilize which = land when = 0 where = 0 value = 5 }
+	}
+
+	action_b = {
+		ai_chance = 0
+		name = "EVT_3824_ACTB" #
+		command = { type = dissent value = 10 }
+	}
+}
+
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+
+event = {
+	id = 2011019
+	random = no
+	country = JAP
+
+	name = "EVT_3825_NAME"
+	desc = "EVT_3825_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	#Triggered by JAP 2011018
+
+	action_a = {
+		name = "EVT_3825_ACTA" #
+		command = { }
+		#KOR is released as JAP puppet so that in next event CHI or CHC can puppet it
+		command = { trigger = { NOT = { exists = KOR } } type = setflag which = KOR_FROM_JAP_TO_CHI }
+		command = { trigger = { NOT = { exists = KOR } } type = local_setflag which = KOR_JAP_PUPPET }
+		command = { trigger = { local_flag = KOR_JAP_PUPPET } type = independence which = KOR value = 1 when = 0 }
+		command = { trigger = { local_flag = KOR_JAP_PUPPET } type = make_puppet which = KOR }
+		command = { trigger = { local_flag = KOR_JAP_PUPPET } type = local_clrflag which = KOR_JAP_PUPPET }
+		command = { trigger = { NOT = { exists = KOR } } type = clrflag which = KOR_FROM_JAP_TO_CHI } #removes it if KOR couldn't be created
+		command = { trigger = { flag = fs_kmt } type = event which = 2012005 where = CHI when = 0 }
+		command = { trigger = { flag = fs_ccp } type = event which = 2012005 where = CHC when = 0 }
+	}
+}
+
+######################################
+# Manchurian Land to Japan
+######################################
+event = {
+	id = 2048001
+	random = no
+	country = MAN
+
+	trigger = {
+		control = { province = 1240 data = MAN } # Xilinhot
+		}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 3 month = january year = 1963 }
+
+	name = "EVT_3831_NAME"
+	desc = "EVT_3831_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK # Opportunists
+		command = { type = secedeprovince which = JAP value = 1240 } # Sili-yin Qota - China 
+	}
+}
+
+#########################################################################
+#  Japan installs puppet government in Mengukuo
+#########################################################################
+event = { 
+	id = 2011020
+	random = no
+	country = JAP
+	
+	#Triggered by MEN 2141001
+	
+	name = "EVT_3833_NAME"
+	desc = "EVT_3833_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	action_a = {
+		name = ACTION_NAME_OK # Install a Puppet
+		command = { type = dissent value = -1 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = relation which = ENG value = -5 }
+		command = { type = relation which = USA value = -5 }		
+		command = { type = secedeprovince which = MEN value = 1240 } # Sili-yin Qota - China  to Mengukuo
+		command = { type = secedeprovince which = MAN value = 1236 } # Chengde - China  to Manchuria
+	}
+}
+
+#########################################################################
+#  Mengukuo country setup
+#########################################################################
+event = { 
+	id = 2141001				
+	random = no
+	country = MEN
+
+	trigger = {
+		exists = MEN
+		puppet = { country = MEN country = JAP }
+	}	
+	
+	name = "EVT_3834_NAME"
+	desc = "EVT_3834_DESC"
+	style = 2
+ 	picture = "news_paper"
+	
+	date = { year = 1936 month = january day = 1 }
+	offset = 10
+	deathdate = { year = 1948 month = january day = 3 }
+	
+	action_a = {
+		name = "ACTION_NAME_HURRAH" 
+		#Diplomacy:
+		command = { type = alliance which = MAN when = 1 }
+		command = { type = access which = JAP }
+		command = { type = access which = MAN }
+		command = { type = trigger which = 2011020 } # Japan Puppet Mengukuo
+		#Government:
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 700001 }
+		command = { type = headofgovernment which = 700002 }
+		command = { type = foreignminister which = 700003 }
+		command = { type = armamentminister which = 700004 }
+		command = { type = ministerofsecurity which = 700005 }
+		command = { type = ministerofintelligence which = 700006 }
+		command = { type = chiefofstaff which = 700007 }
+		command = { type = chiefofarmy which = 700008 }
+		command = { type = chiefofnavy which = 700009 }
+		command = { type = chiefofair which = 700010 }
+		#Army:
+		command = { type = add_corps which = "Di'1 Mengkukuo Jun" value = land where = 1240 } 
+		command = { type = add_division which = "1. Mengkukuo Kiheishidan" value = cavalry when = 9 where = -90 }
+		command = { type = add_division which = "2. Mengkukuo Kiheishidan" value = cavalry when = 9 where = -90 }
+		command = { type = add_division which = "3. Mengkukuo Kiheishidan" value = cavalry when = 9 where = -90 }
+		command = { type = add_division which = "9. Mengkukuo Hoheishidan" value = militia when = 4 where = -90 }
+		command = { type = add_division which = "Teh Wang's personal troops" value = infantry when = 5 where = -90 }
+		command = { type = add_division which = "Grand Han Righteous Army 1st Brigade" value = militia when = 4 where = -90 }
+		command = { type = add_division which = "Grand Han Righteous Army 2nd Brigade" value = militia when = 4 where = -90 }
+		#Resources:
+		command = { type = free_ic value = 9 }
+		command = { type = manpowerpool value = 4.5 when = 1 } 	# manpower
+		}
+	}
+
+
+####################################################################
+#  Japan Pressures Germany over Manchukuo
+####################################################################
+event = { 
+	id = 2011021
+	random = no
+	country = JAP
+
+	trigger = {
+		OR = { random = 12 AND = { year = 1938 random = 70 } }
+		flag = anti_comintern_pact
+		exists = CHI
+		exists = GER
+		exists = MAN
+		OR = {
+			war = { country = JAP country = CHI }
+			alliance = { country = GER country = JAP }
+			flag = JAP_NorthStrategy
+		}
+		NOT = {
+			alliance = { country = GER country = CHI }
+			alliance = { country = GER country = CYN }
+			alliance = { country = GER country = CSX }
+			alliance = { country = GER country = CXB }
+			alliance = { country = GER country = SIK }
+			war = { country = GER country = JAP }
+		}
+	}
+
+	name = "EVT_3835_NAME" 
+	desc = "EVT_3835_DESC"
+	style = 2
+ 	picture = "news_paper"
+
+	date = { day = 0 month = february year = 1936 }
+	offset = 14
+	deathdate = { day = 29 month = august year = 1945 }
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_3835_ACTA"
+		command = { type = trigger which = 2003072 } #GER response
+		command = { type = money value = -50 } #Expenditure
+		command = { type = relation which = MAN value = 20 }
+		command = { type = relation which = GER value = -10 }
+		}
+
+	action_b = {
+		ai_chance = 0
+		name = "EVT_3835_ACTB"
+		command = { type = dissent value = 1 }
+		command = { type = relation which = MAN value = -10 }
+		command = { type = relation which = CHI value = 5 }
+		command = { type = setflag which = NO_JAP_Anti_comintern_pact }
+		command = { type = trigger which = 2003073 }
+		}
+	}
+#####################################
+# German response to Japanese pressure over Manchuria
+#####################################
+event = {
+	id = 2003072
+	random = no
+	country = GER
+
+	#Triggered by JAP2011021A
+
+	#Already some text for an event 2003072 so naming it b
+	name = "EVT_2035B_NAME"
+	desc = "EVT_2035B_DESC"
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		ai_chance = 100
+		name = "ACTIONNAME2035A"
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = MAN value = 20 }
+		command = { type = relation which = CHI value = -15 }
+		command = { type = end_trades which = GER where = CHI }
+		command = { trigger = { NOT = { flag = JAP_NorthStrategy } } type = wakeleader which = 292 } #Von Falkenhausen
+		command = { trigger = { NOT = { flag = JAP_NorthStrategy } } type = trigger which = 2012002 } #CHI Event
+		command = { type = trigger which = 2011004 } #JAP event
+	}
+	action = {
+		ai_chance = 0
+		name = "ACTIONNAME2035B"
+		command = { type = relation which = JAP value = -15 }
+		command = { type = relation which = MAN value = -20 }
+		command = { type = relation which = CHI value = 20 }
+		command = { type = setflag which = NO_JAP_Anti_comintern_pact }
+	}
+}
+event = {
+	id = 2003073
+	random = no
+	country = GER
+
+	#Triggered by JAP 
+
+	name = "evt_20351_name"
+	desc = "evt_20351_desc"
+  	style = 2
+  	picture = "news_paper"
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 1 }
+		command = { type = relation which = JAP value = -10 }
+	}
+
+}
+#########################################################################
+#  Nomonhan Incident / Khalkin Ghol (Japan, USSR)
+#########################################################################
+event = {
+	id = 2011023
+	random = no
+	country = JAP
+
+	# Historical event May to August 1939
+        # http://ibiblio.org/pha/monos/144/144chap4.html#Nomonham Incident (May - August 1939)
+
+	name = EVT_22_NAME
+	desc = EVT_22_DESC
+	style = 2
+ 	picture = "news_paper"
+
+	trigger = {
+		random = 10
+		puppet = { country = MAN country = JAP }
+		NOT = {
+			war = { country = JAP country = SOV }
+			war = { country = GER country = SOV }
+			alliance = { country = JAP country = SOV }
+		}
+	}
+
+	date = { day = 11 month = may year = 1939 }
+	offset = 6
+	deathdate = { day = 20 month = september year = 1939 }
+
+	action_a = {
+		name = EVT_22_ACTA
+		ai_chance = 100
+		command = { type = non_aggression which = JAP where = SOV }
+		command = { type = dissent value = 1 }
+        	command = { type = manpowerpool value = -40 }
+        	command = { type = supplies value = -1500 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = trigger which = 2007009 }
+		command = { type = domestic which = defense_lobby value = 1 } # one step Hawk intentional
+	}
+	action_b = {
+		name = EVT_22_ACTB
+		ai_chance = 0
+		#command = { type = dissent value = 1 }
+        	command = { type = manpowerpool value = -40 }
+        	command = { type = supplies value = -1500 }
+		command = { type = alliance which = MAN when = 1 }
+		command = { type = alliance which = MEN when = 1 }
+		command = { type = war which = SOV }
+		command = { type = trigger which = 2007009 }
+		command = { type = domestic which = defense_lobby value = 2 }  # two steps Hawk
+	}
+}
+
+event = {
+	id = 2007009
+	random = no
+	country = SOV
+
+	name = EVT_23_NAME
+	desc = EVT_23_DESC
+	style = 2
+ 	picture = "news_paper"
+
+	# triggered by 2011023
+
+	action_a = {
+		name = EVT_23_ACTA
+                command = { type = manpowerpool value = -5 }
+                command = { type = supplies value = -1000 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = JAP value = -10 }
+		#command = { type = non_aggression which = SOV where = JAP }
+	}
+}
+#########################################################################
+#  Changfukeng Incident / Chasan Lake (Japan, USSR)
+#########################################################################
+
+event = {
+	id = 2011024
+	random = no
+	country = JAP
+
+	name = EVT_24_NAME
+	desc = EVT_24_DESC
+	style = 2
+ 	picture = "news_paper"
+
+	trigger = {
+		random = 10
+		puppet = { country = MAN country = JAP }
+		NOT = {
+			war = { country = JAP country = SOV }
+			war = { country = GER country = SOV }
+			alliance = { country = JAP country = SOV }
+                }
+	}
+
+	date = { day = 15 month = july year = 1938 }
+	offset = 3
+	deathdate = { day = 20 month = september year = 1938 }
+
+	action_a = {
+		name = EVT_24_ACTA
+                command = { type = manpowerpool value = -3 }
+                command = { type = supplies value = -500 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = trigger which = 2007010 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+
+}
+
+event = {
+	id = 2007010
+	random = no
+	country = SOV
+
+	name = EVT_25_NAME
+	desc = EVT_25_DESC
+	style = 2
+ 	picture = "news_paper"
+
+	# triggered by 2011024
+
+	action_a = {
+		name = EVT_25_ACTA
+                command = { type = manpowerpool value = -3 }
+                command = { type = supplies value = -500 }
+		command = { type = relation which = JAP value = -5 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = sleepleader which = 30050 }
+	}
+}
+#########################################################################
+#  Pearl Harbour
+#########################################################################
+event = {
+	id = 2011025
+	random = no 
+	country = JAP
+	
+	decision = {
+		event = { id = 2049026 days = 120 }
+		NOT = { ispuppet = JAP }
+		NOT = { alliance = { country = JAP country = USA } }
+		NOT = { alliance = { country = JAP country = ENG } }
+		NOT = { alliance = { country = JAP country = U05 } }
+		NOT = { war = { country = JAP country = USA } }
+		NOT = { event = 2011018 } #JAP The Fading Sun
+		NOT = { event = 2011028 } #JAP Japanese surrender negotiations
+	}
+	decision_trigger = {
+		garrison = { country = JAP province = 2637 type = naval size = 6 area = no } # Pearl Harbor Bay
+	}
+	trigger = {
+		event = { id = 2049026 days = 120 }
+		OR = { 
+			event = 2011012
+			event = 2011007
+		} # Either Nanjing massacre or First peace proposal to China - Prevents Japanese AI to attack the US when they lose in China
+		NOT = { control = { province = 1208 data = -2 } } #Changchun not controlled by enemy country
+		OR = { 
+			random = 30 
+			year = 1942
+		}
+		NOT = { ispuppet = JAP }
+		#NOT = { lost_VP = { country = JAP value = 3 } } #This is really bad when we take over Warlords but CHI regains territory. Replaced with lost_national
+		NOT = { lost_national = { country = JAP value = 1 } } #JAP is not losing national provinces
+		NOT = { alliance = { country = JAP country = USA } }
+		NOT = { alliance = { country = JAP country = ENG } }
+		NOT = { alliance = { country = JAP country = U05 } }
+		NOT = { war = { country = JAP country = SOV } }
+		NOT = { war = { country = JAP country = USA } }
+		NOT = { event = 2011018 } #JAP The Fading Sun
+		NOT = { event = 2011028 } #JAP Japanese surrender negotiations		
+	}
+
+	name = EVT_17_NAME
+	desc = EVT_17_DESC
+	style = 2
+	picture = "Pearl_harbor"
+	decision_picture = "decision_Pearl_harbor"
+	
+	date = { day = 0 month = november year = 1941 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_17_ACTA
+		ai_chance = 100
+		trigger = { NOT = { alliance = { country = U05 country = GER } } }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011001 }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011002 }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011003 }
+		command = { type = war which = USA }
+		command = { trigger = { NOT = { alliance = { country = ENG country = GER } } } type = war which = ENG }
+		command = { trigger = { NOT = { puppet = { country = PHI country = USA } } } type = war which = PHI }
+		command = { trigger = { OR = { 
+						NOT = { alliance = { country = U05 country = ENG } } 
+						NOT = { atwar = ENG } # In case UK surrendered to Germany already
+						} 
+				} 
+			    type = war which = U05
+			}
+		command = { type = trigger which = 2049002 }
+	}
+	action = {
+		name = EVT_17_ACTA
+		ai_chance = 100
+		trigger = { alliance = { country = U05 country = GER } }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011001 }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011002 }
+		command = { trigger = { ai = yes } type = sleepevent which = 3011003 }
+		command = { type = war which = USA }
+		command = { trigger = { NOT = { alliance = { country = ENG country = GER } } } type = war which = ENG }
+		command = { trigger = { NOT = { puppet = { country = PHI country = USA } } } type = war which = PHI }
+		command = { type = trigger which = 2049002 }
+	}
+	
+}
+event = {
+	id = 2049002
+	random = no
+	country = USA
+        	one_action = yes
+
+	name = EVT_17_NAME
+	desc = EVT_17_DESC
+	style = 2
+	picture = "Pearl_harbor"
+
+	action = {
+		trigger = { 
+                    intel_diff = { country = JAP country = USA value = 30 data = 3 }
+        }
+		name = "4063a"	# Nightmare!  All 8 BBs of Battleship Row, plus both nearby CV TFs.
+        	ai_chance = 100
+		command = { type = remove_division which = 14800 value = 29 } # USS Arizona
+		command = { type = remove_division which = 14800 value = 33 } # USS Oklahoma
+		command = { type = remove_division which = 14800 value = 35 } # USS California
+		command = { type = remove_division which = 14800 value = 38 } # USS West Virginia
+		command = { type = remove_division which = 14800 value = 28 } # USS Nevada
+		command = { type = remove_division which = 14800 value = 30 } # USS Pennsylvania
+		command = { type = remove_division which = 14800 value = 34 } # USS Tennessee
+		command = { type = remove_division which = 14800 value = 39 } # USS Maryland
+		command = { type = remove_division which = 14800 value = 27 } # USS Lexington
+		command = { type = remove_division which = 14800 value = 501 } # USS Enterprise
+		command = { type = remove_division which = 14800 value = 60 } # USS San Francisco
+		command = { type = remove_division which = 14800 value = 52 } # USS Northampton
+		command = { type = remove_division which = 14800 value = 48 } # USS Salt Lake City
+		command = { type = remove_division which = 14800 value = 57 } # USS New Orleans
+		command = { type = remove_division which = 14800 value = 44 } # USS Raleigh
+		command = { type = remove_division which = 14800 value = 2296 } # DD Division
+		command = { type = remove_division which = 14800 value = 62 } # DD Division		
+		command = { type = damage_division which = 14800 value = 510 where = 95 } # USS Honolulu
+		command = { type = damage_division which = 14800 value = 2291 where = 70 } # DD Division
+		command = { type = damage_division which = 14800 value = 2298 where = 70 } # DD Division
+		command = { type = dissent value = 20 }
+		command = { type = manpowerpool value = -20 }
+		command = { trigger = { NOT = { policy = { type = interventionism value = 8 } } } type = set_domestic which = interventionism value = 8 }
+		command = { trigger = { NOT = { policy = { type = defense_lobby value = 8 } } } type = set_domestic which = defense_lobby value = 8 }
+		command = { type = trigger which = 2011026 }
+		command = { type = songs which = PearlHarbor.txt }
+    } 
+	action = {
+		trigger = {
+                AND = {
+                    intel_diff = { country = JAP country = USA value = 15 data = 3 }
+                    NOT = { intel_diff = { country = JAP country = USA value = 30 data = 3 } }
+                }
+            }
+		name = "4063b"   # Pretty Bad!  (6 BBs lost, 2 near-lost/refloated)
+		ai_chance = 100
+		command = { type = remove_division which = 14800 value = 29 } # USS Arizona
+		command = { type = remove_division which = 14800 value = 33 } # USS Oklahoma
+		command = { type = remove_division which = 14800 value = 35 } # USS California
+		command = { type = remove_division which = 14800 value = 38 } # USS West Virginia
+		command = { type = remove_division which = 14800 value = 28 } # USS Nevada
+		command = { type = remove_division which = 14800 value = 30 } # USS Pennsylvania
+		command = { type = remove_division which = 14800 value = 57 } # USS New Orleans
+		command = { type = remove_division which = 14800 value = 44 } # USS Raleigh
+		command = { type = remove_division which = 14800 value = 2296 } # DD Division
+		command = { type = damage_division which = 14800 value = 34 where = 95 } # USS Tennessee
+		command = { type = damage_division which = 14800 value = 39 where = 90 } # USS Maryland
+		command = { type = damage_division which = 14800 value = 510 where = 95 } # USS Honolulu
+		command = { type = damage_division which = 14800 value = 2291 where = 70 } # DD Division
+		command = { type = damage_division which = 14800 value = 2298 where = 70 } # DD Division
+		command = { type = dissent value = 10 }
+		command = { type = manpowerpool value = -15 }
+		command = { trigger = { NOT = { policy = { type = interventionism value = 8 } } } type = set_domestic which = interventionism value = 8 }
+		command = { trigger = { NOT = { policy = { type = defense_lobby value = 8 } } } type = set_domestic which = defense_lobby value = 8 }
+		command = { type = trigger which = 2011026 }
+		command = { type = songs which = PearlHarbor.txt }
+	}
+	action = {
+		trigger = {
+                AND = {
+                    intel_diff = { country = JAP country = USA value = 0 data = 3 }
+                    NOT = { intel_diff = { country = JAP country = USA value = 15 data = 3 } }
+                }
+            }
+		name = "4063c"   # Worse than historic  (4 BBs lost, 3 near-lost/refloated)
+        	ai_chance = 100
+		command = { type = remove_division which = 14800 value = 29 } # USS Arizona
+		command = { type = remove_division which = 14800 value = 33 } # USS Oklahoma
+		command = { type = remove_division which = 14800 value = 35 } # USS California
+		command = { type = remove_division which = 14800 value = 38 } # USS West Virginia
+		command = { type = remove_division which = 14800 value = 44 } # USS Raleigh
+		command = { type = remove_division which = 14800 value = 2296 } # DD Division
+		command = { type = damage_division which = 14800 value = 28 where = 95 } # USS Nevada
+		command = { type = damage_division which = 14800 value = 30 where = 95 } # USS Pennsylvania
+		command = { type = damage_division which = 14800 value = 34 where = 90 } # USS Tennessee
+		command = { type = damage_division which = 14800 value = 39 where = 25 } # USS Maryland
+		command = { type = damage_division which = 14800 value = 57 where = 90 } # USS New Orleans
+		command = { type = damage_division which = 14800 value = 510 where = 90 } # USS Honolulu
+		command = { type = damage_division which = 14800 value = 2291 where = 60 } # DD Division
+		command = { type = damage_division which = 14800 value = 2298 where = 60 } # DD Division
+		command = { type = dissent value = 5 }
+		command = { type = manpowerpool value = -10 }
+		command = { trigger = { NOT = { policy = { type = interventionism value = 8 } } } type = set_domestic which = interventionism value = 8 }
+		command = { trigger = { NOT = { policy = { type = defense_lobby value = 8 } } } type = set_domestic which = defense_lobby value = 8 }
+		command = { type = trigger which = 2011026 }
+		command = { type = songs which = PearlHarbor.txt }
+	}
+	action = {
+		trigger = {
+                AND = {
+                    intel_diff = { country = JAP country = USA value = -10 data = 3 }
+                    NOT = { intel_diff = { country = JAP country = USA value = 0 data = 3 } }
+                }
+            }
+		name = "4063d"   # Historic losses (2 BBs lost, 3 sunk but refloated)
+        	ai_chance = 100
+		command = { type = remove_division which = 14800 value = 29 } # USS Arizona
+		command = { type = remove_division which = 14800 value = 33 } # USS Oklahoma
+		command = { type = remove_division which = 14800 value = 2296 } # DD Division
+		command = { type = damage_division which = 14800 value = 35 where = 95 } # USS California, sunk but refloated
+		command = { type = damage_division which = 14800 value = 38 where = 95 } # USS West Virginia, sunk but refloated
+		command = { type = damage_division which = 14800 value = 28 where = 75 } # USS Nevada, beached but refloated
+		command = { type = damage_division which = 14800 value = 30 where = 25 } # USS Pennsylvania
+		command = { type = damage_division which = 14800 value = 34 where = 15 } # USS Tennessee
+		command = { type = damage_division which = 14800 value = 39 where = 20 } # USS Maryland
+		command = { type = damage_division which = 14800 value = 57 where = 5 } # USS New Orleans
+		command = { type = damage_division which = 14800 value = 44 where = 40 } # USS Raleigh
+		command = { type = damage_division which = 14800 value = 510 where = 5 } # USS Honolulu
+		command = { type = damage_division which = 14800 value = 2291 where = 50 } # DD Division
+		command = { type = damage_division which = 14800 value = 2298 where = 50 } # DD Division
+#		command = { type = damage_division which = 14800 value =  where = 40 } # USS Helena, can't do this.  :-(
+		command = { type = dissent value = 5 }
+		command = { type = manpowerpool value = -10 }
+		command = { trigger = { NOT = { policy = { type = interventionism value = 8 } } } type = set_domestic which = interventionism value = 8 }
+		command = { trigger = { NOT = { policy = { type = defense_lobby value = 8 } } } type = set_domestic which = defense_lobby value = 8 }
+		command = { type = trigger which = 2011026 }
+		command = { type = songs which = PearlHarbor.txt }
+	}
+	action = {
+		trigger = {
+                    NOT = { intel_diff = { country = JAP country = USA value = -10 data = 3 } }
+            }
+		name = "4063e"   # Less than historic losses (1 BB lost, 1 sunk but refloated)
+		ai_chance = 100
+		command = { type = remove_division which = 14800 value = 29 } # USS Arizona
+		command = { type = damage_division which = 14800 value = 33 where = 95 } # USS Oklahoma
+		command = { type = damage_division which = 14800 value = 35 where = 50 } # USS California
+		command = { type = damage_division which = 14800 value = 38 where = 40 } # USS West Virginia 
+		command = { type = damage_division which = 14800 value = 44 where = 40 } # USS Raleigh
+		command = { type = damage_division which = 14800 value = 510 where = 10 } # USS Honolulu		
+		command = { type = damage_division which = 14800 value = 2291 where = 50 } # DD Division		
+		command = { type = dissent value = 2 }
+		command = { trigger = { NOT = { policy = { type = interventionism value = 8 } } } type = set_domestic which = interventionism value = 8 }
+		command = { trigger = { NOT = { policy = { type = defense_lobby value = 8 } } } type = set_domestic which = defense_lobby value = 8 }
+		command = { type = trigger which = 2011027 }
+		command = { type = songs which = PearlHarbor.txt }
+	} 
+}
+event = {
+	id = 2011026
+	random = no
+	country = JAP
+	style = 2
+	picture = "Pearl_harbor"
+
+	name = 18name
+	desc = EVT_19_DESC
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -10 }
+        } 
+}
+event = {
+	id = 2011027
+	random = no
+	country = JAP
+	style = 2
+	picture = "Pearl_harbor"
+
+	name = 19name
+	desc = EVT_19_DESC
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 10 }
+		command = { type = manpowerpool value = -10 }
+                                 } 
+}
+#########################################################################
+#  Surrender events - Partition of Japan
+#########################################################################
+
+event = {  
+	id = 2011028
+	random = no
+	country = JAP
+	save_date = yes
+	
+	name = EVT_43_NAME
+	desc = EVT_43_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		OR = {
+			war = { country = JAP country = USA }
+			war = { country = JAP country = SOV }
+			#war = { country = JAP country = CHI }
+		}
+		OR = {
+			AND = {
+				NOT = { nuked = 2 } #We didn't nuke anyone else twice
+				nuked = -2 #We were nuked twice
+				OR = { #at least one nuke over the Home Islands
+					nuked = { country = JAP data = -1 where = 1544 } #Kushiro
+					nuked = { country = JAP data = -1 where = 1545 } #Sapporo
+					nuked = { country = JAP data = -1 where = 1546 } #Shizuoka
+					nuked = { country = JAP data = -1 where = 1547 } #Akita
+					nuked = { country = JAP data = -1 where = 1548 } #Nagano
+					nuked = { country = JAP data = -1 where = 1549 } #Sendai
+					nuked = { country = JAP data = -1 where = 1550 } #Yokohama
+					nuked = { country = JAP data = -1 where = 1551 } #Niigata
+					nuked = { country = JAP data = -1 where = 1552 } #Tokyo
+					nuked = { country = JAP data = -1 where = 1553 } #Osaka
+					nuked = { country = JAP data = -1 where = 1554 } #Hiroshima
+					nuked = { country = JAP data = -1 where = 1555 } #Kobe
+					nuked = { country = JAP data = -1 where = 1556 } #Kanazawa
+					nuked = { country = JAP data = -1 where = 1557 } #Nagoya
+					nuked = { country = JAP data = -1 where = 1558 } #Kyoto
+					nuked = { country = JAP data = -1 where = 1559 } #Matsuyama
+					nuked = { country = JAP data = -1 where = 1560 } #Nagasaki
+					nuked = { country = JAP data = -1 where = 1561 } #Kagoshima
+				}
+			}
+		 	lost_national = { country = JAP value = 60 }
+		 	NOT = {
+		        #control = { province = 1561 data = JAP } #Kagoshima
+		        #control = { province = 1560 data = JAP } #Nagasaki
+		        #control = { province = 1559 data = JAP } #Matsuyama
+		        #control = { province = 1554 data = JAP } #Hiroshima
+				#Try to have less requirements for JAP surrender
+		        control = { province = 1553 data = JAP } #Osaka
+		        control = { province = 1558 data = JAP } #Kyoto
+		        control = { province = 1557 data = JAP } #Nagoya
+		        control = { province = 1552 data = JAP } #Tokyo
+		        #control = { province = 1556 data = JAP } #Kanazawa
+		        #control = { province = 1550 data = JAP } #Yokohama
+		        #control = { province = 1551 data = JAP } #Niigata
+		        #control = { province = 1549 data = JAP } #Sendai
+		 	}
+		}
+	}
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 90
+		trigger = { NOT = { alliance = { country = JAP country = GER } } }
+		name = EVT_43_ACTA 
+		command = { trigger = { puppet = { country = MAN country = JAP } } type = inherit which = MAN }
+		command = { trigger = { puppet = { country = MEN country = JAP } } type = inherit which = MEN }
+		command = { trigger = { puppet = { country = U87 country = JAP } } type = inherit which = U87 }
+		command = { trigger = { puppet = { country = U74 country = JAP } } type = inherit which = U74 }
+		
+		command = { trigger = { NOT = { exists = OMN } } type = independence which = OMN value = 1 when = 1 } #Oman
+		command = { trigger = { puppet = { country = OMN country = JAP } } type = end_mastery which = OMN } #Oman
+		command = { trigger = { NOT = { exists = PHI } } type = independence which = PHI value = 1 when = 1 } #Philippines
+		command = { trigger = { exists = PHI } type = secederegion which = PHI value = "Philippines" when = 1 }
+		command = { trigger = { NOT = { exists = INO } } type = independence which = INO value = 1 when = 1 } #Indonesia
+		command = { trigger = { exists = INO } type = secederegion which = INO value = "Indonesia" when = 1 }
+		command = { trigger = { exists = INO } type = secederegion which = INO value = "New Guinea" when = 1 }
+		command = { trigger = { NOT = { exists = AST } } type = independence which = AST value = 1 when = 1 } #Australia
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Brisbane" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Perth" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Darwin" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Cairns" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Alice Springs" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Sydney" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Melbourne" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Alice Springs" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Lae" when = 1 }
+		command = { trigger = { exists = AST } type = secedearea which = AST value = "Port Moresby" when = 1 }
+		command = { trigger = { NOT = { exists = NZL } } type = independence which = NZL value = 1 when = 1 } #New Zealand
+		command = { trigger = { exists = NZL } type = secedearea which = NZL value = "New Zealand" when = 1 }
+		command = { trigger = { puppet = { country = CHI country = JAP } } type = end_mastery which = CHI } #China
+		command = { trigger = { puppet = { country = U87 country = JAP } } type = end_mastery which = U87 } #China-Nanking
+		command = { trigger = { puppet = { country = U03 country = JAP } } type = end_mastery which = U03 } #Indochinese Union
+		command = { trigger = { puppet = { country = SIA country = JAP } } type = setflag which = SIA_JAP_PUPPET } #Siam
+		command = { trigger = { puppet = { country = SIA country = JAP } } type = end_mastery which = SIA } #Siam
+		command = { trigger = { puppet = { country = PHI country = JAP } } type = end_mastery which = PHI } #Philippines
+		command = { trigger = { puppet = { country = BUR country = JAP } } type = secedearea which = BUR value = "North Burma" when = 1 } #Burma
+		command = { trigger = { puppet = { country = BUR country = JAP } } type = secedearea which = BUR value = "Burma" when = 1 } #Burma
+		command = { trigger = { puppet = { country = BUR country = JAP } } type = end_mastery which = BUR } #Burma
+		command = { trigger = { puppet = { country = INO country = JAP } } type = secederegion which = INO value = "Indonesia" when = 1 } #Burma
+		command = { trigger = { puppet = { country = INO country = JAP } } type = secedearea which = INO value = "Babo" when = 1 } #Burma
+		command = { trigger = { puppet = { country = INO country = JAP } } type = secedearea which = INO value = "Sarmi" when = 1 } #Burma
+		command = { trigger = { puppet = { country = INO country = JAP } } type = secedearea which = INO value = "Agats" when = 1 } #Burma
+		command = { trigger = { puppet = { country = INO country = JAP } } type = end_mastery which = INO } #Indonesia
+		command = { trigger = { puppet = { country = PAK country = JAP } } type = secedearea which = PAK value = "Pakistan" when = 1 } #Burma
+		command = { trigger = { puppet = { country = PAK country = JAP } } type = setflag which = PAK_JAP_PUPPET } #Pakistan
+		command = { trigger = { puppet = { country = PAK country = JAP } } type = end_mastery which = PAK } #Pakistan
+		command = { trigger = { puppet = { country = U02 country = JAP } } type = secederegion which = U02 value = "India" when = 1 } #Burma
+		command = { trigger = { puppet = { country = U02 country = JAP } } type = setflag which = U02_JAP_PUPPET } #British Raj
+		command = { trigger = { puppet = { country = U02 country = JAP } } type = end_mastery which = U02 } #British Raj
+		command = { trigger = { puppet = { country = IND country = JAP } } type = secederegion which = IND value = "India" when = 1 } #Burma
+		command = { trigger = { puppet = { country = IND country = JAP } } type = setflag which = IND_JAP_PUPPET } #India
+		command = { trigger = { puppet = { country = IND country = JAP } } type = end_mastery which = IND } #India		
+		command = { trigger = { puppet = { country = BHU country = JAP } } type = setflag which = BHU_JAP_PUPPET } #Bhutan
+		command = { trigger = { puppet = { country = BHU country = JAP } } type = end_mastery which = BHU } #Bhutan
+		command = { trigger = { puppet = { country = NEP country = JAP } } type = setflag which = NEP_JAP_PUPPET } #Nepal
+		command = { trigger = { puppet = { country = NEP country = JAP } } type = end_mastery which = NEP } #Nepal
+		command = { trigger = { puppet = { country = AST country = JAP } } type = end_mastery which = AST } #Australia
+		command = { trigger = { puppet = { country = NZL country = JAP } } type = end_mastery which = NZL } #New Zealand
+		command = { trigger = { puppet = { country = PRI country = JAP } } type = end_mastery which = PRI } #Primorsk
+		command = { trigger = { puppet = { country = SIB country = JAP } } type = end_mastery which = SIB } #Siberia
+		#remove claims added in chinese peace proposals
+		command = { trigger = { claims = { province = 1241 } } type = removeclaim which = 1241 } #Tianjin
+		command = { trigger = { claims = { province = 1242 } } type = removeclaim which = 1242 } #Shijazhuang
+		command = { trigger = { claims = { province = 1243 } } type = removeclaim which = 1243 } #Baoding
+		command = { trigger = { claims = { province = 1244 } } type = removeclaim which = 1244 } #Changzhou
+		command = { trigger = { claims = { province = 1247 } } type = removeclaim which = 1247 } #Beijing
+		command = { trigger = { claims = { province = 1323 } } type = removeclaim which = 1323 } #Anyang
+		command = { trigger = { claims = { province = 1327 } } type = removeclaim which = 1327 } #Heze
+		command = { trigger = { claims = { province = 1328 } } type = removeclaim which = 1328 } #Qindao
+		command = { trigger = { claims = { province = 1329 } } type = removeclaim which = 1329 } #Weifang
+		command = { trigger = { claims = { province = 1330 } } type = removeclaim which = 1330 } #Jinan
+		command = { trigger = { claims = { province = 1331 } } type = removeclaim which = 1331 } #Yantai
+		command = { trigger = { claims = { province = 1332 } } type = removeclaim which = 1332 } #Zaozhuang
+		command = { trigger = { claims = { province = 1333 } } type = removeclaim which = 1333 } #Huaiyin
+		command = { trigger = { claims = { province = 1334 } } type = removeclaim which = 1334 } #Nantong
+		command = { trigger = { claims = { province = 1335 } } type = removeclaim which = 1335 } #Yancheng
+		command = { trigger = { claims = { province = 1336 } } type = removeclaim which = 1336 } #Xuzhou		
+		command = { trigger = { claims = { province = 1337 } } type = removeclaim which = 1337 } #Nanjing
+		command = { trigger = { claims = { province = 1338 } } type = removeclaim which = 1338 } #Shanghai
+		command = { trigger = { claims = { province = 1340 } } type = removeclaim which = 1340 } #Hefei
+		command = { trigger = { claims = { province = 1342 } } type = removeclaim which = 1342 } #Xuanzhou
+		command = { trigger = { claims = { province = 1343 } } type = removeclaim which = 1343 } #Huainan
+		command = { trigger = { claims = { province = 1345 } } type = removeclaim which = 1345 } #Hangzhou
+		command = { trigger = { claims = { province = 1346 } } type = removeclaim which = 1346 } #Ningbo
+		command = { trigger = { claims = { province = 1347 } } type = removeclaim which = 1347 } #Wenzhou
+		command = { trigger = { claims = { province = 1348 } } type = removeclaim which = 1348 } #Jinhua
+		command = { trigger = { claims = { province = 1356 } } type = removeclaim which = 1356 } #Zhangzhou
+		command = { trigger = { claims = { province = 1357 } } type = removeclaim which = 1357 } #Nanping
+		command = { trigger = { claims = { province = 1358 } } type = removeclaim which = 1358 } #Fuzhou
+		command = { trigger = { claims = { province = 1359 } } type = removeclaim which = 1359 } #Sanming
+		command = { trigger = { claims = { province = 1360 } } type = removeclaim which = 1360 } #Xiamen
+		command = { trigger = { claims = { province = 1365 } } type = removeclaim which = 1365 } #Haikou
+		command = { trigger = { claims = { province = 1367 } } type = removeclaim which = 1367 } #Naoming
+		command = { trigger = { claims = { province = 1368 } } type = removeclaim which = 1368 } #Shaoguan
+		command = { trigger = { claims = { province = 1369 } } type = removeclaim which = 1369 } #Guangzhou
+		command = { trigger = { claims = { province = 1370 } } type = removeclaim which = 1370 } #Lufeng
+		command = { trigger = { claims = { province = 1371 } } type = removeclaim which = 1371 } #Hong Kong
+		command = { trigger = { claims = { province = 1372 } } type = removeclaim which = 1372 } #Macao
+		command = { trigger = { claims = { province = 1373 } } type = removeclaim which = 1373 } #Jiangmen
+		command = { trigger = { claims = { province = 1374 } } type = removeclaim which = 1374 } #Pingxiang	
+		command = { trigger = { claims = { province = 1375 } } type = removeclaim which = 1375 } #Shantou
+		command = { trigger = { claims = { province = 1375 } } type = removeclaim which = 1377 } #Yulin
+		command = { trigger = { claims = { province = 1383 } } type = removeclaim which = 1383 } #Wuzhou		
+		#remove various Japanese claims
+		command = { trigger = { claims = { province = 1219 } } type = removeclaim which = 1219 } #Port Arthur / Dalian
+		command = { trigger = { claims = { province = 1216 } } type = removeclaim which = 1216 } #Jinzhou
+		command = { trigger = { claims = { province = 1235 } } type = removeclaim which = 1235 } #Fuxin
+		command = { trigger = { claims = { province = 1236 } } type = removeclaim which = 1236 } #Chengde
+		command = { trigger = { claims = { province = 1240 } } type = removeclaim which = 1240 } #Sili-yin Qota 
+		command = { trigger = { claims = { province = 1245 } } type = removeclaim which = 1245 } #Tangshan
+		command = { trigger = { claims = { province = 1683 } } type = removeclaim which = 1683 } #Guam
+		command = { trigger = { claims = { province = 1665 } } type = removeclaim which = 1665 } #Ponape
+		command = { trigger = { claims = { province = 1666 } } type = removeclaim which = 1666 } #Kusaie
+		command = { trigger = { claims = { province = 1667 } } type = removeclaim which = 1667 } #Truk
+		command = { trigger = { claims = { province = 1668 } } type = removeclaim which = 1668 } #Woleai
+		command = { trigger = { claims = { province = 1669 } } type = removeclaim which = 1669 } #Yap
+		command = { trigger = { claims = { province = 1670 } } type = removeclaim which = 1670 } #Peleliu
+		command = { trigger = { claims = { province = 1671 } } type = removeclaim which = 1671 } #Kloulklubed
+		command = { trigger = { claims = { province = 1672 } } type = removeclaim which = 1672 } #Minami Torishima
+		command = { trigger = { claims = { province = 1674 } } type = removeclaim which = 1674 } #Bikini
+		command = { trigger = { claims = { province = 1675 } } type = removeclaim which = 1675 } #Eniwetok
+		command = { trigger = { claims = { province = 1676 } } type = removeclaim which = 1676 } #Kwajalein
+		command = { trigger = { claims = { province = 1677 } } type = removeclaim which = 1677 } #Majuro
+		command = { trigger = { claims = { province = 1681 } } type = removeclaim which = 1681 } #Wotje
+		command = { trigger = { claims = { province = 1684 } } type = removeclaim which = 1684 } #Rota
+		command = { trigger = { claims = { province = 1685 } } type = removeclaim which = 1685 } #Saipan
+		command = { trigger = { claims = { province = 1686 } } type = removeclaim which = 1686 } #Pagan
+		#remove cores on Korea, Taiwan, Sakhalin
+		command = { trigger = { core = { province = 1228 } } type = removecore which = 1228 } #Seoul		
+		command = { trigger = { core = { province = 1229 } } type = removecore which = 1229 } #Daejeon
+		command = { trigger = { core = { province = 1230 } } type = removecore which = 1230 } #Gwangju
+		command = { trigger = { core = { province = 1231 } } type = removecore which = 1231 } #Daegu
+		command = { trigger = { core = { province = 1232 } } type = removecore which = 1232 } #Busan
+		command = { trigger = { core = { province = 1233 } } type = removecore which = 1233 } #Chuncheon
+		command = { trigger = { core = { province = 1221 } } type = removecore which = 1221 } #Pyeongyang
+		command = { trigger = { core = { province = 1222 } } type = removecore which = 1222 } #Sariwon
+		command = { trigger = { core = { province = 1223 } } type = removecore which = 1223 } #Wonsan
+		command = { trigger = { core = { province = 1224 } } type = removecore which = 1224 } #Sinuiju
+		command = { trigger = { core = { province = 1225 } } type = removecore which = 1225 } #Cheongjin
+		command = { trigger = { core = { province = 1226 } } type = removecore which = 1226 } #Ganggye
+		command = { trigger = { core = { province = 1227 } } type = removecore which = 1227 } #Hamheung
+		command = { trigger = { core = { province = 1361 } } type = removecore which = 1361 } #Gaoxiong
+		command = { trigger = { core = { province = 1362 } } type = removecore which = 1362 } #Taipei
+		command = { trigger = { core = { province = 1363 } } type = removecore which = 1363 } #Taizhong
+		command = { trigger = { core = { province = 1364 } } type = removecore which = 1364 } #Hualian
+		command = { trigger = { core = { province = 1541 } } type = removecore which = 1541 } #Okha
+		command = { trigger = { core = { province = 1542 } } type = removecore which = 1542 } #Toyohara
+		command = { trigger = { claims = { province = 1228 } } type = removeclaim which = 1228 } #Seoul		
+		command = { trigger = { claims = { province = 1229 } } type = removeclaim which = 1229 } #Daejeon
+		command = { trigger = { claims = { province = 1230 } } type = removeclaim which = 1230 } #Gwangju
+		command = { trigger = { claims = { province = 1231 } } type = removeclaim which = 1231 } #Daegu
+		command = { trigger = { claims = { province = 1232 } } type = removeclaim which = 1232 } #Busan
+		command = { trigger = { claims = { province = 1233 } } type = removeclaim which = 1233 } #Chuncheon
+		command = { trigger = { claims = { province = 1221 } } type = removeclaim which = 1221 } #Pyeongyang
+		command = { trigger = { claims = { province = 1222 } } type = removeclaim which = 1222 } #Sariwon
+		command = { trigger = { claims = { province = 1223 } } type = removeclaim which = 1223 } #Wonsan
+		command = { trigger = { claims = { province = 1224 } } type = removeclaim which = 1224 } #Sinuiju
+		command = { trigger = { claims = { province = 1225 } } type = removeclaim which = 1225 } #Cheongjin
+		command = { trigger = { claims = { province = 1226 } } type = removeclaim which = 1226 } #Ganggye
+		command = { trigger = { claims = { province = 1227 } } type = removeclaim which = 1227 } #Hamheung
+		command = { trigger = { claims = { province = 1361 } } type = removeclaim which = 1361 } #Gaoxiong
+		command = { trigger = { claims = { province = 1362 } } type = removeclaim which = 1362 } #Taipei
+		command = { trigger = { claims = { province = 1363 } } type = removeclaim which = 1363 } #Taizhong
+		command = { trigger = { claims = { province = 1364 } } type = removeclaim which = 1364 } #Hualian
+		command = { trigger = { claims = { province = 1541 } } type = removeclaim which = 1541 } #Okha
+		command = { trigger = { claims = { province = 1542 } } type = removeclaim which = 1542 } #Toyohara
+		
+		command = { trigger = { war = { country = SOV } } type = secedearea which = SOV value = "Pyongyang"  when = 1 } # North Korea
+		command = { trigger = { war = { country = USA } NOT = { war = { country = SOV } } } type = secedearea which = USA value = "Pyongyang"  when = 1 } # North Korea
+		command = { trigger = { war = { country = USA } } type = secedearea which = USA value = "Seoul" when = 1 } # South Korea
+		command = { trigger = { war = { country = SOV } NOT = { war = { country = USA }}} type = secedearea which = SOV value = "Seoul"  when = 1 } # South - Korea
+		command = { trigger = { war = { country = SOV } } type = secedeprovince which = SOV value = 1219 when = 1 } # Dalian / Port Arthur
+		command = { trigger = { war = { country = SOV } } type = secedeprovince which = SOV value = 1542 when = 1 } # Toyohara 
+		command = { trigger = { war = { country = SOV } } type = secedeprovince which = SOV value = 1543 when = 1 } # Shana /Kuril Islands
+		command = { type = secedeprovince which = ENG value = 1371 } # Hong Kong - China
+		command = { type = secedeprovince which = POR value = 1372 } # Macao - China
+		command = { trigger = { 
+						NOT = { exists = CHI }
+						exists = CHC
+						NOT = { 
+							alliance = { country = CHC country = JAP }
+						}
+					} type = secederegion which = CHC value = "China" when = 1 }
+		command = { trigger = { 
+						NOT = { exists = CHI }
+						OR = {
+							NOT = { exists = CHC }
+							alliance = { country = CHC country = JAP }
+						}
+					} type = independence which = CHI value = 1 when = 1 
+					}
+		command = { trigger = { 
+						exists = CHI
+					} type = secederegion which = CHI value = "China" when = 1 }
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1563 } #Southern Okinawa
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1564 } #Northern Okinawa
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1661 } #Iwo Jima
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1662 } #Chichi Jima
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1663 } #Motoyama
+		command = { trigger = { war = { country = USA } } type = secedeprovince which = USA value = 1664 } #Mount Suribachi
+
+		command = { trigger = { exists = U03 } type = secedearea which = U03 value = Indochine } 
+		command = { trigger = { exists = U01} type = secedearea which = U01 value = Indochine }
+		command = { trigger = { exists = FRA  NOT = { war = { country = FRA country = USA } war = { country = FRA country = SOV } } } type = secedearea which = FRA value = Indochine }
+		command = { trigger = { war = { country = USA } } type = secederegion which = USA value = "Asian Pacific" when = 1 } 
+		command = { trigger = { war = { country = ENG } NOT = { war = { country = USA } } } type = secederegion which = ENG value = "Asian Pacific" when = 1 }
+		command = { type = domestic which = democratic value = 2 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = domestic which = defense_lobby value = -5 }
+		command = { type = demobilize which = land when = 0 where = 0 value = 5 }
+		command = { type = demobilize which = air when = 0 where = 0 value = 10 } #Cull JAP Air
+		command = { type = demobilize which = naval when = 0 where = 0 value = 30 } #Cull JAP Navy to avoid making USA too strong
+		command = { trigger = { war = { country = USA } } type = event which = 2049003 where = USA when = 1 } #Japan Surrenders     
+		command = { trigger = { war = { country = SOV } } type = event which = 2007011 where = SOV when = 1 } #Japan Surrenders     
+		command = { trigger = { war = { country = USA } NOT = { ispuppet = JAP } } type = peace which = USA value = 0 }
+		command = { trigger = { war = { country = SOV } NOT = { ispuppet = JAP } } type = peace which = SOV value = 0 }
+		command = { trigger = { war = { country = ENG } NOT = { ispuppet = JAP } } type = peace which = ENG value = 0 }
+		command = { trigger = { war = { country = CHI } NOT = { ispuppet = JAP } } type = peace which = CHI value = 0 }  
+		command = { trigger = { war = { country = USA } ispuppet = JAP } type = peace which = USA value = 1 }
+		command = { trigger = { war = { country = SOV } ispuppet = JAP } type = peace which = SOV value = 1 }
+		command = { trigger = { war = { country = ENG } ispuppet = JAP } type = peace which = ENG value = 1 }
+		command = { trigger = { war = { country = CHI } ispuppet = JAP } type = peace which = CHI value = 1 }
+		command = { type = military_control which = JAP where = SIA value = 0 }
+		command = { type = military_control which = JAP where = U03 value = 0 }
+	}
+	action_b = {
+		ai_chance = 10
+		trigger = { OR = { not = { nuked = -2 } alliance = { country = JAP country = GER } } }
+		name = EVT_43_ACTB
+		command = { type = sleepevent which = 2007011 }
+		command = { type = sleepevent which = 2049003 }
+		command = { type = dissent value = 25 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 2007011
+	random = no
+	country = SOV
+
+	name = EVT_44_NAME
+	desc = EVT_44_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by Japanese event 2011028
+
+	action_a = {
+		name = EVT_44_ACTA
+		command = { type = inherit which = MAN }
+		command = { type = inherit which = MEN }
+		command = { type = money value = 1000 }
+		command = { type = dissent value = -5 }
+		command = { trigger = { NOT = { exists = PRK} } type = independence which = PRK value = 1 } 
+		command = { trigger = { NOT = { ispuppet = PRK } } type = make_puppet which = PRK }
+		command = { trigger = { area = { area = "Seoul" country = SOV } } type = secedearea which = PRK value = "Seoul" } # Korea
+		command = { trigger = { NOT = { event = 2049003 } } type = event which = 2011037 where = JAP when = 1 } #JAP Japan Surrenders         
+	}
+}
+
+event = {
+	id = 2049003
+	random = no
+	country = USA
+	
+	name = EVT_45_NAME
+	desc = EVT_45_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by Japanese event 2011028
+
+	action_a = {
+		name = EVT_45_ACTA
+		command = { trigger = { exists = U87 exists = CHI } type = inherit which = U87 } 
+		command = { trigger = { exists = U87 NOT = { exists = CHI } } type = coup_nation which = U87 } 
+		command = { type = addclaim which = 1563 } #Southern Okinawa
+		command = { type = addclaim which = 1564 } #Northern Okinawa
+		command = { type = addclaim which = 1661 } #Iwo Jima
+		command = { type = addclaim which = 1662 } #Chichi Jima
+		command = { type = addclaim which = 1663 } #Motoyama
+		command = { type = addclaim which = 1664 } #Mount Suribachi		
+		command = { type = addclaim which = 1665 } #Ponape
+		command = { type = addclaim which = 1666 } #Kusaie
+		command = { type = addclaim which = 1667 } #Truk
+		command = { type = addclaim which = 1668 } #Woleai
+		command = { type = addclaim which = 1669 } #Yap
+		command = { type = addclaim which = 1670 } #Peleliu
+		command = { type = addclaim which = 1671 } #Kloulklubed
+		command = { type = addclaim which = 1672 } #Minami Torishima
+		command = { type = addclaim which = 1674 } #Bikini
+		command = { type = addclaim which = 1675 } #Eniwetok
+		command = { type = addclaim which = 1676 } #Kwajalein
+		command = { type = addclaim which = 1677 } #Majuro
+		command = { type = addclaim which = 1681 } #Wotje
+		command = { type = addclaim which = 1684 } #Rota
+		command = { type = addclaim which = 1685 } #Saipan
+		command = { type = addclaim which = 1686 } #Pagan		
+		command = { trigger = { war = { country = U03 country = USA } } type = peace which = U03 value = 0 }
+		command = { trigger = { war = { country = INO country = USA } } type = peace which = INO value = 0 }
+		command = { trigger = { war = { country = PAK country = USA } } type = peace which = PAK value = 0 }
+		command = { trigger = { war = { country = IND country = USA } } type = peace which = IND value = 0 }
+		command = { trigger = { war = { country = BUR country = USA } } type = peace which = BUR value = 0 }
+		command = { trigger = { war = { country = PHI country = USA } } type = peace which = PHI value = 0 }
+		command = { trigger = { NOT = { ispuppet = U03 } } type = make_puppet which = U03 }
+		command = { trigger = { NOT = { ispuppet = INO } } type = make_puppet which = INO }
+		command = { trigger = { NOT = { ispuppet = PHI } } type = make_puppet which = PHI }
+		command = { type = relation which = JAP value = 50 }
+		command = { type = money value = 1000 }
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = defense_lobby value = -3 }
+		command = { trigger = { NOT = { exists = KOR} } type = independence which = KOR value = 1 } 
+		command = { trigger = { NOT = { ispuppet = KOR } } type = make_puppet which = KOR } 
+		command = { trigger = { area = { area = "Pyongyang" country = USA }} type = secedearea which = KOR value = "Pyongyang" } # North Korea
+		command = { type = event which = 2011037 where = JAP when = 1 } #JAP Japan Surrenders
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = ENG } 
+						alliance = { country = ENG country = USA }
+					} } type = event which = 2011039 where = U05 when = 2 } #ENG Japan Surrenders
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = U05 } 
+						puppet = { country = U05 country = ENG }
+						alliance = { country = U05 country = USA }
+					} } type = event which = 2011040 where = ENG when = 2 } #HOL Japan Surrenders
+		command = { type = event which = 2011041 where = USA when = 3 } #USA Japan Surrenders
+	}
+}
+
+event = {  
+	id = 2011037
+	random = no
+	country = JAP
+
+	trigger = {
+		NOT = { event = 2011037 } #to prevent it firing twice
+	}
+	
+	name = EVT_44_NAME
+	desc = 2011037desc
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = EVT_43_ACTA
+		command = { trigger = { puppet = { country = MAN country = JAP } } type = inherit which = MAN }
+		command = { trigger = { puppet = { country = MEN country = JAP } } type = inherit which = MEN }
+		command = { trigger = { puppet = { country = U87 country = JAP } } type = inherit which = U87 }
+		command = { trigger = { NOT = { exists = CHI } } type = independence which = CHI value = 1 when = 1 }		
+		command = { trigger = { exists = CHI } type = secederegion which = CHI value = "China" when = 1 }
+		command = { trigger = { exists = CHC NOT = { exists = CHI } } type = secederegion which = CHC value = "China" when = 1 }	  
+		command = { trigger = { exists = CHI } type = secedearea which = CHI value = "Taiwan" when = 1 }
+		command = { trigger = { exists = CHC NOT = { exists = CHI } } type = secedearea which = CHC value = "Taiwan" when = 1 }
+		command = { trigger = { exists = U02 } type = secederegion which = U02 value = "India" } 
+		command = { trigger = { exists = IND } type = secederegion which = IND value = "India" } 
+		command = { trigger = { war = { country = JAP country = USA } } type = peace which = USA }
+		command = { trigger = { war = { country = JAP country = SOV } } type = peace which = SOV }
+		command = { trigger = { war = { country = JAP country = CHI } } type = peace which = CHI }      
+		command = { trigger = { war = { country = JAP country = ENG } } type = peace which = ENG }       
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedearea which = ENG value = "Burma"  when = 1 } # Burma
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedearea which = ENG value = "North Burma"  when = 1 } # Burma
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedearea which = ENG value = "Malacka"  when = 1 } # Malaysia
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedeprovince which = ENG value = 1624 when = 1 } # Kuching
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedeprovince which = ENG value = 1625 when = 1 } # Bandar Seri Begawan
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedeprovince which = ENG value = 1626 when = 1 } # Jesselton
+		command = { trigger = { NOT = { ispuppet = ENG } } type = secedeprovince which = ENG value = 1629 when = 1 } # Singkawang		
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = U05 } 
+						puppet = { country = U05 country = ENG }
+						puppet = { country = U05 country = USA }
+					} } type = secederegion which = U05 value = "Indonesia"  when = 1 } #Netherland East Indies
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = U05 } 
+						puppet = { country = U05 country = ENG }
+						puppet = { country = U05 country = USA }
+					} } type = secedearea which = U05 value = "Babo"  when = 1 } #Netherland East Indies
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = U05 } 
+						puppet = { country = U05 country = ENG }
+						puppet = { country = U05 country = USA }
+					} } type = secedearea which = U05 value = "Sarmi"  when = 1 } #Netherland East Indies
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = U05 } 
+						puppet = { country = U05 country = ENG }
+						puppet = { country = U05 country = USA }
+					} } type = secedearea which = U05 value = "Agats"  when = 1 } #Netherland East Indies
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = AST } 
+						puppet = { country = AST country = ENG }
+						puppet = { country = AST country = USA }
+					} } type = secedearea which = AST value = "Lae"  when = 1 } #Papua New Guinea
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = AST } 
+						puppet = { country = AST country = ENG }
+						puppet = { country = AST country = USA }
+					} } type = secedearea which = AST value = "Port Moresby"  when = 1 } #Papua New Guinea
+		command = { trigger = { 
+					OR = { 
+						NOT = { ispuppet = AST } 
+						puppet = { country = AST country = ENG }
+						puppet = { country = AST country = USA }
+					} } type = secedeprovince which = AST value = 1725  when = 1 } #Kavieng Papua New Guinea 
+	}
+}   
+
+event = {
+	id = 2011039
+	random = no
+	country = HOL
+	
+	name = EVT_44_NAME
+	desc = EVT_44_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by Japanese event 2011028
+
+	action_a = {
+		name = EVT_45_ACTA
+		command = { type = inherit which = INO }
+	}
+}
+
+event = {
+	id = 2011040
+	random = no
+	country = ENG
+	
+	name = EVT_44_NAME
+	desc = EVT_44_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by Japanese event 2011028
+
+	action_a = {
+		name = EVT_45_ACTA
+		command = { trigger = { NOT = { ispuppet = U02 } flag = U02_JAP_PUPPET } type = make_puppet which = U02 }
+		command = { trigger = { NOT = { ispuppet = IND } flag = IND_JAP_PUPPET } type = make_puppet which = IND }
+		command = { trigger = { NOT = { ispuppet = PAK } flag = PAK_JAP_PUPPET } type = make_puppet which = PAK }
+		command = { trigger = { NOT = { ispuppet = SIA } flag = SIA_JAP_PUPPET } type = make_puppet which = SIA }
+		command = { trigger = { NOT = { ispuppet = BHU } flag = BHU_JAP_PUPPET } type = make_puppet which = BHU }
+		command = { trigger = { NOT = { ispuppet = NEP } flag = NEP_JAP_PUPPET } type = make_puppet which = NEP }
+		command = { trigger = { flag = U02_JAP_PUPPET } type = clrflag which = U02_JAP_PUPPET }
+		command = { trigger = { flag = IND_JAP_PUPPET } type = clrflag which = IND_JAP_PUPPET }
+		command = { trigger = { flag = PAK_JAP_PUPPET } type = clrflag which = PAK_JAP_PUPPET }
+		command = { trigger = { flag = SIA_JAP_PUPPET } type = clrflag which = SIA_JAP_PUPPET }
+		command = { trigger = { flag = BHU_JAP_PUPPET } type = clrflag which = BHU_JAP_PUPPET }
+		command = { trigger = { flag = NEP_JAP_PUPPET } type = clrflag which = NEP_JAP_PUPPET }
+	}
+}
+
+event = {
+	id = 2011041
+	random = no
+	country = USA
+	
+	name = EVT_44_NAME
+	desc = EVT_44_DESC
+	style = 2
+	picture = "news_paper"
+
+	# triggered by Japanese event 2011028
+
+	action_a = {
+		name = EVT_45_ACTA
+		command = { type = make_puppet which = JAP }
+	}
+}
+
+event = {
+	id = 2011049
+	country = JAP
+
+	trigger = { 
+		not = { exists = MEN }  
+		control = { province = 1240 data = -1 } #Sili-yin Qota
+	}
+
+	name = EVT_2011049_NAME # Inner Mongolia
+	desc = EVT_2011049_DESC
+	picture = "ccip_mukden"
+	style = 2
+
+
+	date = { day = 0 month = may year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = { 
+		name = ACTION_NAME_EXCELLENT 
+		command = { type = independence which = MEN value = 1 when = 0 }
+		command = { type = make_puppet which = MEN }
+		command = { type = belligerence which = JAP value = 5 } #Slicing up countries is rather rude
+	}	
+}
+
+event = {	# Absorb Hebei into JAP, CHI or CHC when these are at war
+	id = 2011050
+	country = U74
+	random = no
+
+	trigger = { 
+		OR = {
+			war = { country = JAP  country = CHI }
+			war = { country = JAP  country = CHC }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {	# Japan inherits Hebei
+		trigger = { 
+			OR = {	
+				# JAP controls at least one province north of Hebei
+				control = { province = 1216 data = JAP }
+				control = { province = 1235 data = JAP }
+				control = { province = 1236 data = JAP }
+				control = { province = 1240 data = JAP }
+				# Or controls Hebei as puppet
+				puppet = { country = U74 country = JAP }
+			}
+		}
+		ai_chance = 100
+		command = { type = event which = 2011051 where = JAP when = 0 } #JAP CHI CHC - inherit U74
+	}
+	
+	action = {	# CHI inherits Hebei
+		trigger = {
+			war = { country = JAP  country = CHI }
+		}
+		ai_chance = 0
+		command = { type = event which = 2011051 where = CHI when = 0 } #JAP CHI CHC - inherit U74
+	}
+	
+	action = {	# CHC inherits Hebei
+		trigger = {
+			war = { country = JAP  country = CHC }
+		}
+		ai_chance = 0
+		command = { type = event which = 2011051 where = CHC when = 0 } #JAP CHI CHC - inherit U74
+	}
+}
+
+event = {
+	id = 2011051
+
+	name = ACTION_NAME_EXCELLENT 
+	desc = EMPTYLINE
+	style = 2
+    picture = "diplomatic_campaign"
+	
+	action = {
+		trigger = {
+			OR = {
+				NOT = { country = JAP }
+				AND = {
+					country = JAP
+					puppet = { country = U74 country = JAP }
+				}
+			}
+		}
+		name = ACTION_NAME_EXCELLENT 
+		command = { type = inherit which = U74 when = 3 value = 1 }	# Inherit troops and everything only if CHI/CHC or for JAP when Hebei is puppet 
+	}
+	
+	action = {
+		trigger = {
+			country = JAP
+			NOT = {	puppet = { country = U74 country = JAP } }
+		}
+		name = ACTION_NAME_EXCELLENT 
+		command = { type = inherit which = U74 when = 3 } # Just annex Hebei
+	}
+}

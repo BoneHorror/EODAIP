@@ -1,0 +1,36 @@
+####Norway attacked by Germans!
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# PRIORITIES:
+	capital			= 50	# Our capital
+
+	# Borders with specific countries
+	country_priorities = {
+		FIN = 5
+		SWE = -1
+		SOV = -1
+		ENG = -1
+		USA = -1
+		GER = 80
+		ITA = 50
+	}
+	province_priorities = {
+		491 = 50 #Alesund
+		}
+	area_multiplier = { 
+		495 = 1.5 #Narvik
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+	
+	province_priorities = {
+		483 = 1.5 #Oslo
+		}
+   	enemy_handicap = { GER = 50 } 
+	passivity = { GER = 20 } # %
+} 

@@ -1,0 +1,32 @@
+ARG;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+165001;AFNE;T400;3;1900;2000;naval_engineering;electronics;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165002;Astilleros Alianza S.A.;T401;3;1900;1988;naval_engineering;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165003;Buenos Aires Railway Company;T402;4;1900;1949;industrial_engineering;mechanics;electronics;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165004;CAC;T403;4;1900;2000;aeronautics;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165005;Esteban de Luca Arsenal;T404;5;1900;1943;mechanics;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165006;Fabricaciones Militares;T405;5;1941;2000;general_equipment;mechanics;munitions;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165007;FMA;T406;3;1900;1943;aeronautics;aircraft_testing;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165008;Yacimientos Petrolíferos Fiscales;100013;5;1922;2000;industrial_engineering;chemistry;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165009;Antonio Parodi;T408;4;1930;1945;training;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165010;Augustín Justo;T409;2;1923;1938;large_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165011;Armada de la República Argentina;T410;5;1900;2000;large_taskforce_tactics;centralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165012;Francisco Velez;T411;4;1930;1941;small_unit_tactics;decentralized_execution;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165013;Escuela de Aviación Militar;T412;4;1939;2000;piloting;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165014;Juan Peron;T413;4;1941;1960;large_unit_tactics;centralized_execution;combined_arms_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165015;Pedro Casal;T414;4;1930;1946;large_taskforce_tactics;centralized_execution;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165016;Luis F. Leloir;T415;7;1938;1944;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165017;SOMISA;T416;6;1947;1991;artillery;mechanics;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165018;Fábrica Militar de Pólvoras y Explosivos Villa María;T417;5;1937;2000;artillery;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165019;Comision Nacional de Energia Atomica;T418;4;1937;2000;mechanics;chemistry;technical_efficiency;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165020;Alfredo Baisi;T419;6;1943;1948;artillery;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165021;Kurt Tank;T420;6;1947;1955;rocketry;aeronautics;avionics;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165022;National University of Córdoba;T421;3;1900;2000;mathematics;chemistry;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165023;Escuela Militar;T422;3;1900;2000;mountain_training;small_unit_tactics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165024;Bunge y Borne;100009;5;1890;2000;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165025;Siam di Tella;100010;6;1911;1967;industrial_engineering;mechanics;electronics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165026;Tandanor Shipyard;100011;4;1879;1922;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165027;Comodoro Rivadavia Oil Exploitation;100012;3;1907;1922;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+165029;Ejército Argentino;100014;5;1810;2000;general_equipment;artillery;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1650001;SIDE;T1650001;5;1946;2000;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1650002;Chincul SACAIFI;T1650002;2;1972;2013;rt_user_1;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1650003;Cicaré Helicópteros S.A.;T1650003;3;1972;2000;rt_user_1;aeronautics;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

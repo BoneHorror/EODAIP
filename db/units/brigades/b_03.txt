@@ -1,0 +1,18 @@
+#BRIG_MODEL_43_
+detachable = yes
+
+# 0 - COIN Aircraft (1966) BAC 167 Strikemaster/Morane-Saulnier MS.1500 Epervier
+model = {
+	cost 				= 2.3
+	buildtime	 		= 130
+	manpower 			= 0.5
+	defaultorganisation = 0
+	suppression			= 12
+	hardattack			= 3
+	softattack			= 4
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 500 bomber = 24 trucks = 66 }
+}

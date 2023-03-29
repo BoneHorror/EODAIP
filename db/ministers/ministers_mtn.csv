@@ -1,0 +1,73 @@
+MTN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+390001;Head of State;Sekula Drljevic;1933;1964;1999;FA;Autocratic Charmer;High;M544001;X
+390002;Head of Government;Blazo Djukanovic;1933;1964;1999;FA;Ambitious Union Boss;High;M544002;X
+390003;Foreign Minister;Jovan S. Plamenec;1933;1964;1999;FA;Iron Fisted Brute;High;M544003;X
+390004;Minister of Armament;Eugen von Albori;1933;1964;1999;FA;Corrupt Kleptocrat;Medium;M544004;X
+390005;Minister of Security;Ljubo Vukcevic;1933;1964;1999;FA;Silent Lawyer;Medium;M544005;X
+390006;Head of Military Intelligence;Milutin Bojic;1933;1964;1999;FA;Political Specialist;Medium;M544006;X
+390007;Chief of Staff;Luka Gojna;1933;1964;1999;FA;School of Psychology;Medium;M544007;X
+390008;Chief of Army;Anto Gvozdenovic;1933;1964;1999;FA;Armoured Spearhead Doctrine;Medium;M544008;X
+390009;Chief of Navy;Mitar Martinovic;1933;1964;1999;FA;Open Seas Doctrine;Medium;M544009;X
+390010;Chief of Air Force;Bora Todorovic;1933;1964;1999;FA;Naval Aviation Doctrine;Medium;M544010;X
+390011;Head of State;Danilo I Petrova-Njegos;1921;1940;1999;SC;Popular Figurehead;High;M544011;X
+390012;Head of State;Ivan Ribar;1933;1964;1999;LWR;Pig-headed Isolationist;High;M20093;X
+390013;Head of Government;Savo Cerovic;1933;1964;1999;SC;Political Protege;High;M544013;X
+390014;Head of Government;Pavle Djurisic;1933;1964;1999;LWR;Old General;High;M544014;X
+390015;Foreign Minister;Mitar Martinovic;1933;1964;1999;FA;General Staffer;High;M544009;X
+390016;Foreign Minister;Milutin Vucinec;1933;1964;1999;SC;Apologetic Clerk;High;M544016;X
+390017;Foreign Minister;Jovan Ducic;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M544017;X
+390018;Minister of Armament;Krste Djuricic;1942;1964;1999;FA;Tank Proponent;Medium;M544018;X
+390019;Minister of Armament;Duhan Vukovitch;1933;1964;1999;SC;Air to Sea Proponent;Medium;M544019;X
+390020;Minister of Armament;Goce Kolicevski;1933;1964;1999;LWR;Infantry Proponent;Medium;M544020;X
+390021;Minister of Security;Karl Wolff;1942;1964;1999;FA;Efficient Sociopath;Medium;M544021;X
+390022;Minister of Security;Mitrofan Ban;1933;1964;1999;SC;Back Stabber;Medium;M544022;X
+390023;Minister of Security;Ivan Gvenkovski;1933;1964;1999;LWR;Prince of Terror;Medium;M544023;X
+390024;Head of Military Intelligence;Mirko Tirkuvic;1933;1964;1999;SC;Dismal Enigma;Medium;M544024;X
+390025;Head of Military Intelligence;Kiro Filipovic;1933;1964;1999;LWR;Industrial Specialist;Medium;M544025;X
+390026;Chief of Staff;Baltasar Uljarevic;1933;1964;1999;SC;School of Mass Combat;Medium;M544026;X
+390027;Chief of Staff;Pavle Djurisic;1933;1964;1999;LWR;School of Defence;Medium;M544014;X
+390028;Chief of Army;Wilhelm Behrendt;1942;1964;1999;FA;Static Defence Doctrine;Medium;M544028;X
+390029;Chief of Army;Bozidar Jankovic;1933;1964;1999;SC;Guns and Butter Doctrine;Medium;M544029;X
+390030;Chief of Army;Milan Cheric;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M544030;X
+390031;Chief of Navy;Evgenij Popovic;1933;1964;1999;SC;Decisive Naval Battle Doctrine;Medium;M544031;X
+390032;Chief of Navy;Djuradj Negros;1933;1964;1999;LWR;Indirect Approach Doctrine;Medium;M544032;X
+390033;Chief of Air Force;Branko Petrovic;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M544033;X
+390034;Chief of Air Force;Slobodan Jovanovic;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M544034;X
+390035;Chief of Army;Janko Vukotic;1914;1933;1999;PA;static defence doctrine;Medium;2864;X
+390036;Chief of Army;Masan Bozovic;1914;1933;1999;PA;Decisive Battle Doctrine;Medium;6122;X
+390037;Chief of Army;Radomir Vesovic;1914;1933;1999;PA;elastic defence doctrine;Medium;5983;X
+390038;Chief of Army;Djuro Dragov Soc;1914;1933;1999;PA;Guns and Butter Doctrine;High;2865;X
+390039;Chief of Army;Nikola I;1914;1933;1999;PA;Guns and Butter Doctrine;Very High;2866;X
+390040;Chief of Staff;Bozidar Jankovic;1914;1933;1999;PA;school of defence;Medium;2867;X
+390041;Chief of Staff;Janko Vukotic;1914;1933;1999;PA;School of Psychology;High;2864;X
+390042;Chief of Staff;Nikola I;1914;1933;1999;PA;school of defence;Medium;2866;X
+390043;Foreign Minister;Petar Plamenac;1914;1933;1999;PA;Great Compromiser;Medium;2868;X
+390044;Foreign Minister;Mirko Mijuskovic;1916;1933;1999;PA;Great Compromiser;Medium;unknownminister;X
+390045;Foreign Minister;Lazar Mijuskovic;1916;1933;1999;PA;Ideological Crusader;Medium;2869;X
+390046;Foreign Minister;Milutin Tomanovic;1917;1933;1999;PA;Ideological Crusader;Medium;unknownminister;X
+390047;Head of Government;Janko Vukotic;1914;1933;1999;PA;Flamboyant Tough Guy;High;2864;X
+390048;Head of Government;Milo Matanovic;1915;1933;1999;PA;Political Protege;High;6123;X
+390049;Head of Government;Lazar Mijuskovic;1916;1933;1999;PA;Happy Amateur;High;2869;X
+390050;Head of Government;Andrija Radovic;1916;1933;1999;PA;Political Protege;High;2870;X
+390051;Head of Government;Evgenije Popovic;1917;1933;1999;PA;Happy Amateur;High;unknownminister;X
+390052;Head of Government;Mitar Martinovic;1914;1933;1999;PA;Old General;High;2871;X
+390053;Head of Military Intelligence;Ljubomir Brkic;1914;1933;1999;PA;Logistics Specialist;Medium;unknownminister;X
+390054;Head of Military Intelligence;Marko Radulovic;1915;1933;1999;PA;Political Specialist;Medium;2872;X
+390055;Head of Military Intelligence;Janko Spasojevic;1916;1933;1999;PA;Logistics Specialist;Medium;unknownminister;X
+390056;Head of State;Nikola I;1914;1922;1999;PA;Stern Imperialist;High;2866;X
+390057;Minister of Armament;Risto Popovic;1914;1933;1999;PA;military entrepreneur;Medium;2873;X
+390058;Minister of Armament;Andrija Radovic;1915;1933;1999;PA;Administrative Genius;Medium;2870;X
+390059;Minister of Armament;Stanisa Ilic;1916;1933;1999;PA;Resource Industrialist;Medium;unknownminister;X
+390060;Minister of Security;Labud Gojnic;1914;1933;1999;PA;Crime Fighter;Medium;2874;X
+390061;Minister of Security;Savo Vuletic;1915;1933;1999;PA;Silent Lawyer;Medium;unknownminister;X
+390062;Minister of Security;Janko Spasojevic;1916;1933;1999;PA;Compassionate Gentleman;Medium;unknownminister;X
+390063;Minister of Security;Jovan Plamenac;1914;1933;1999;PA;Compassionate Gentleman;Medium;6124;X
+390064;Head of State;Serafino Mazzolini;1941;1944;1976;FA;Insignificant Layman;High;9109;X
+390065;Head of State;Alessandro Pirzio-Biroli;1941;1944;1999;FA;Insignificant Layman;High;2953;X
+390066;Head of State;Curio Barbasetti di Prun;1943;1944;1953;FA;Insignificant Layman;High;2957;X
+390067;Head of State;Theodor Geib;1943;1944;1999;NS;Insignificant Layman;High;2958;X
+390068;Head of State;Wilhelm Keiper;1944;1963;1999;NS;Insignificant Layman;High;2978;X
+390069;Head of Government;Sekula Drljevic;1941;1944;1999;FA;Ambitious Union Boss;High;M544001;X
+390070;Head of Government;Blazo Djukanovic;1941;1944;1999;FA;Ambitious Union Boss;High;M544002;X
+390071;Head of Government;Ljubo Vukcevic;1943;1963;1999;FA;Ambitious Union Boss;Medium;M544005;X

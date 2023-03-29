@@ -1,0 +1,170 @@
+IRQ;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+365001;Head of State;Ghazi I ibn Faysal;1933;1940;1999;SC;Autocratic Charmer;High;M91001;X
+365002;Head of Government;Yasin Pasha al Hashimi;1924;1937;1938;SC;Naive Optimist;High;M91002;X
+365003;Foreign Minister;Nuri as Said;1930;1964;1999;SC;General Staffer;Medium;M91003;X
+365004;Minister of Armament;Ghazi I ibn Faysal;1933;1940;1999;SC;laissez-faire capitalist;High;M91001;X
+365005;Minister of Security;Ali Abn Hussein;1933;1964;1999;SC;Back Stabber;Medium;M91005;X
+365006;Head of Military Intelligence;Yasin Pasha al Hashimi;1924;1937;1938;SC;Naval Intelligence Specialist;High;M91002;X
+365007;Chief of Staff;Bakr Sidqi;1933;1964;1999;SC;School of Defence;Low;M91007;X
+365008;Chief of Army;Frederic G.Peake;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M91008;X
+365009;Chief of Navy;A.R.H. Nye;1933;1964;1999;SC;Open Seas Doctrine;Medium;M91009;X
+365010;Chief of Air Force;Ali ben Jawad;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M91010;X
+365011;Head of State;Ghazi I ibn Faysal;1933;1940;1999;LWR;Autocratic Charmer;High;M91001;X
+365012;Head of State;Ghazi I ibn Faysal;1933;1940;1999;PA;Autocratic Charmer;High;M91001;X
+365013;Head of State;Ghazi I ibn Faysal;1933;1940;1999;FA;Autocratic Charmer;High;M91001;X
+365014;Head of State;Amir al Illah;1939;1964;1999;LWR;Stern Imperialist;High;M91035;X
+365015;Head of State;Amir al Illah;1939;1964;1999;SC;Stern Imperialist;High;M91035;X
+365016;Head of State;Amir al Illah;1939;1964;1999;PA;Stern Imperialist;High;M91035;X
+365017;Head of State;Amir al Illah;1939;1964;1999;FA;Stern Imperialist;High;M91035;X
+365018;Head of State;Faysal II ibn Ghazi;1946;1964;1999;LWR;Benevolent Gentleman;High;M91039;X
+365019;Head of State;Faysal II ibn Ghazi;1946;1964;1999;PA;Benevolent Gentleman;High;M91039;X
+365020;Head of State;Faysal II ibn Ghazi;1946;1964;1999;FA;Benevolent Gentleman;High;M91039;X
+365021;Head of Government;Moussa al Alami;1933;1964;1999;SC;Silent Workhorse;High;M91043;X
+365022;Head of Government;Taha Pasha al Hashimi;1941;1964;1999;PA;Happy Amateur;High;M91044;X
+365023;Head of Government;Ragheb Nashashibi;1946;1964;1999;SC;Flamboyant Tough Guy;High;M91045;X
+365024;Head of Government;Azam Pasha;1933;1964;1999;PA;Old General;High;M91046;X
+365025;Head of Government;Jamil al Midfai;1933;1964;1999;PA;Smiling Oilman;High;M91047;X
+365026;Head of Government;Nuri as Said;1930;1964;1999;PA;Old General;High;M91003;X
+365027;Head of Government;Hamdi al Pachachi;1944;1964;1999;PA;Silent Workhorse;High;M91049;X
+365028;Head of Government;Salih Jabr;1947;1964;1999;PA;Political Protege;High;M91050;X
+365029;Head of Government;Fawsi al Kaukji;1933;1964;1999;FA;Flamboyant Tough Guy;High;M91014;X
+365030;Head of Government;Rashid Ali al-Gaylani;1933;1964;1999;FA;Smiling Oilman;High;M91011;X
+365031;Head of Government;Haj Amini al Husseini;1941;1964;1999;FA;Backroom Backstabber;High;M91013;X
+365032;Head of Government;Hikmet Suleyman;1933;1964;1999;LWR;Naive Optimist;High;M91054;X
+365033;Head of Government;Yahya Hamudeh;1940;1964;1999;LWR;Backroom Backstabber;High;M91021;X
+365034;Head of Government;Tawfiq al Suwaidi;1946;1964;1969;LWR;Ambitious Union Boss;High;M91056;X
+365035;Head of Government;Arshad al Umari;1946;1964;1999;LWR;Happy Amateur;High;M91027;X
+365036;Foreign Minister;Ragheb Nashashibi;1933;1964;1999;SC;Biased Intellectual;Medium;M91045;X
+365037;Foreign Minister;Taha Pasha al Hashimi;1940;1964;1999;PA;Ideological Crusader;High;M91044;X
+365038;Foreign Minister;Moussa al Alami;1941;1964;1999;SC;Great Compromiser;Low;M91043;X
+365039;Foreign Minister;Azam Pasha;1933;1964;1999;PA;Apologetic Clerk;Medium;M91046;X
+365040;Foreign Minister;Tawfiq al Suwaidi;1937;1964;1969;PA;Apologetic Clerk;Low;M91056;X
+365041;Foreign Minister;Ali Jawdat;1939;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M91064;X
+365042;Foreign Minister;Jamil al Midfai;1940;1964;1999;PA;Apologetic Clerk;Medium;M91047;X
+365043;Foreign Minister;Salih Jabr;1941;1964;1999;PA;Ideological Crusader;Medium;M91050;X
+365044;Foreign Minister;Abdallah al Damluji;1942;1964;1999;PA;Iron Fisted Brute;Medium;M91067;X
+365045;Foreign Minister;Abd al Illah al Hafiz;1942;1964;1999;PA;Great Compromiser;Medium;M91068;X
+365046;Foreign Minister;Nasrat al Farisi;1943;1964;1999;PA;Iron Fisted Brute;Medium;M91069;X
+365047;Foreign Minister;Tahsin al Askari;1943;1964;1999;PA;Ideological Crusader;Medium;M91070;X
+365048;Foreign Minister;Mahmud Subhi al Daftari;1943;1964;1999;PA;Apologetic Clerk;High;M91071;X
+365049;Foreign Minister;Arshad al Umari;1944;1964;1999;PA;General Staffer;Low;M91027;X
+365050;Foreign Minister;Ahmad Abdul Baqi;1946;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M91073;X
+365051;Foreign Minister;Muhammed Fadelfomali;1946;1964;1999;PA;Biased Intellectual;Medium;M91074;X
+365052;Foreign Minister;Rashid Ali al-Gaylani;1933;1964;1999;FA;The Cloak N Dagger Schemer;High;M91011;X
+365053;Foreign Minister;Ali Mahmud al Shaykh;1940;1964;1999;FA;Great Compromiser;Medium;M91019;X
+365054;Foreign Minister;Haj Amini al Husseini;1940;1964;1999;FA;Ideological Crusader;High;M91013;X
+365055;Foreign Minister;Musa Bey al Shahbandar;1941;1964;1999;FA;Biased Intellectual;Medium;M91078;X
+365056;Foreign Minister;Naji al Asil;1933;1964;1999;PA;Ideological Crusader;Medium;M91080;X
+365057;Foreign Minister;Hikmet Suleyman;1933;1964;1999;PA;Great Compromiser;Medium;M91054;X
+365058;Foreign Minister;Tawfiq al Suwaidi;1946;1964;1969;LWR;Apologetic Clerk;Low;M91056;X
+365059;Foreign Minister;Ali Mumtaz;1946;1964;1999;LWR;General Staffer;Medium;M91083;X
+365060;Foreign Minister;Muhammed Fadelfomali;1946;1964;1999;LWR;Biased Intellectual;Medium;M91074;X
+365061;Foreign Minister;Yahya Hamudeh;1947;1964;1999;LWR;Iron Fisted Brute;High;M91021;X
+365062;Minister of Armament;Abdel Latif Salah;1933;1964;1999;SC;Resource Industrialist;High;M91086;X
+365063;Minister of Armament;Moussa al Alami;1941;1964;1999;SC;laissez-faire capitalist;High;M91043;X
+365064;Minister of Armament;Elie Mosseri;1946;1964;1999;SC;Administrative Genius;Medium;M91088;X
+365065;Minister of Armament;Nuri as Said;1914;1964;1999;PA;Infantry Proponent;Medium;M91003;X
+365066;Minister of Armament;Ya'goub Farraj;1938;1964;1999;PA;laissez-faire capitalist;High;M91090;X
+365067;Minister of Armament;Jamil al Midfai;1941;1964;1999;PA;Theoretical Scientist;Medium;M91047;X
+365068;Minister of Armament;Robert H. Brand;1942;1964;1999;PA;Air to Ground Proponent;High;M91092;X
+365069;Minister of Armament;Jamal Husseini;1943;1964;1999;PA;Air Superiority Proponent;High;M91093;X
+365070;Minister of Armament;Tawfiq al Suwaidi;1944;1964;1969;PA;Submarine Proponent;Low;M91056;X
+365071;Minister of Armament;Ali Abn Hussein;1946;1964;1999;PA;Corrupt Kleptocrat;High;M91005;X
+365072;Minister of Armament;Abdullah;1946;1964;1999;PA;Military Entrepreneur;Medium;M91028;X
+365073;Minister of Armament;Amir al Jahed;1933;1964;1999;FA;Military Entrepreneur;Medium;M91097;X
+365074;Minister of Armament;Yahya al Najif;1937;1964;1999;FA;Submarine Proponent;Medium;M91098;X
+365075;Minister of Armament;Azam Pasha;1941;1964;1999;FA;Infantry Proponent;Medium;M91046;X
+365076;Minister of Armament;Fawsi al Kaukji;1940;1964;1999;FA;Corrupt Kleptocrat;Medium;M91014;X
+365077;Minister of Armament;Khaled al Dalabeeh;1933;1964;1999;LWR;Theoretical Scientist;Medium;M91030;X
+365078;Minister of Armament;Anwar Khatib;1946;1964;1999;LWR;Strategic Air Proponent;Medium;M91024;X
+365079;Minister of Security;Ghulam Ali Allana;1940;1964;1999;SC;Compassionate Gentleman;Medium;M91104;X
+365080;Minister of Security;Ragheb Nashashibi;1946;1964;1999;SC;Crime Fighter;Medium;M91045;X
+365081;Minister of Security;Kamel Erekat;1933;1964;1999;PA;Crooked Kleptocrat;Medium;M91106;X
+365082;Minister of Security;Ahmad Abdul Baqi;1937;1964;1999;PA;Man of the People;Medium;M91073;X
+365083;Minister of Security;Suleiman al Taji;1939;1964;1999;PA;Prince of Terror;Medium;M91108;X
+365084;Minister of Security;Robert H. Brand;1941;1964;1999;PA;Silent Lawyer;Medium;M91092;X
+365085;Minister of Security;John Sanderson-Haldane;1944;1964;1999;PA;Crime Fighter;Medium;M91110;X
+365086;Minister of Security;Nuri as Said;1920;1964;1999;PA;crime fighter;Medium;M91003;X
+365087;Minister of Security;Jamil al Midfai;1933;1964;1999;FA;Crooked Kleptocrat;Low;M91047;X
+365088;Minister of Security;Ali Rassakh;1937;1964;1999;FA;Man of the People;Medium;M91113;X
+365089;Minister of Security;Ahmed Amir Badi;1940;1964;1999;FA;Efficient Sociopath;Medium;M91114;X
+365090;Minister of Security;Rashid Ali al-Gaylani;1941;1964;1999;FA;Prince of Terror;High;M91011;X
+365091;Minister of Security;Haj Amini al Husseini;1941;1964;1999;FA;Efficient Sociopath;High;M91013;X
+365092;Minister of Security;Anwar Khatib;1933;1964;1999;LWR;Man of the People;Medium;M91024;X
+365093;Minister of Security;Hikmet Suleyman;1941;1964;1999;LWR;Compassionate Gentleman;Medium;M91054;X
+365094;Head of Military Intelligence;Mohammed al Azir;1941;1964;1999;SC;Logistics Specialist;Medium;M91120;X
+365095;Head of Military Intelligence;Taha Pasha al Hashimi;1946;1964;1999;SC;Dismal Enigma;High;M91044;X
+365096;Head of Military Intelligence;Emil Ghoury;1933;1964;1999;PA;Technical Specialist;Medium;M91122;X
+365097;Head of Military Intelligence;Jamil al Midfai;1938;1964;1999;PA;Political Specialist;Medium;M91047;X
+365098;Head of Military Intelligence;John Bagot Glubb;1941;1964;1999;PA;Logistics Specialist;Medium;M91124;X
+365099;Head of Military Intelligence;John Sanderson-Haldane;1941;1964;1999;PA;Dismal Enigma;Medium;M91110;X
+365100;Head of Military Intelligence;Francis P. Walters;1944;1964;1999;PA;Industrial Specialist;Medium;M91126;X
+365101;Head of Military Intelligence;Abdullah;1945;1964;1999;PA;Political Specialist;Medium;M91028;X
+365102;Head of Military Intelligence;Nuri as Said;1914;1964;1999;PA;Logistics Specialist;Medium;M91003;X
+365103;Head of Military Intelligence;Rifai al Fadel;1933;1964;1999;FA;Political Specialist;Medium;M91129;X
+365104;Head of Military Intelligence;Rashid Ali al-Gaylani;1940;1964;1999;FA;Dismal Enigma;Medium;M91011;X
+365105;Head of Military Intelligence;Azam Pasha;1940;1964;1999;FA;Logistics Specialist;Medium;M91046;X
+365106;Head of Military Intelligence;Fawsi al Kaukji;1946;1964;1999;FA;Industrial Specialist;Medium;M91014;X
+365107;Head of Military Intelligence;Taha al Ahmani;1933;1964;1999;LWR;Industrial Specialist;Medium;M91029;X
+365108;Head of Military Intelligence;Abdallah Mumtaz;1940;1964;1999;LWR;Technical Specialist;Medium;M91026;X
+365109;Head of Military Intelligence;Suleiman al Taji;1941;1964;1999;LWR;Political Specialist;Medium;M91108;X
+365110;Head of Military Intelligence;Rifai al Fadel;1946;1964;1999;LWR;Dismal Enigma;Medium;M91129;X
+365111;Chief of Staff;Frederic Peake;1933;1964;1999;SC;School of Fire Support;Low;M91008;X
+365112;Chief of Staff;John Bagot Glubb;1941;1964;1999;SC;School of Psychology;Low;M91124;X
+365113;Chief of Staff;Nuri as-Said;1914;1964;1999;PA;School of Mass Combat;Medium;M91003;X
+365114;Chief of Staff;Fawsi al Kaukji;1933;1964;1999;FA;School of Fire Support;Medium;M91014;X
+365115;Chief of Staff;Bakr Sidqi;1933;1964;1999;LWR;School of Defence;Low;M91007;X
+365116;Chief of Staff;Arshad al Umari;1939;1964;1999;LWR;School of Fire Support;Medium;M91027;X
+365117;Chief of Army;John Bagot Glubb;1946;1964;1999;PA;Decisive Battle Doctrine;High;M91124;X
+365118;Chief of Army;Ghazi I ibn Faysal;1933;1940;1999;PA;Guns and Butter Doctrine;High;M91001;X
+365119;Chief of Army;Nuri as Said;1914;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M91003;X
+365120;Chief of Army;Amir al Illah;1944;1964;1999;PA;Static Defence Doctrine;Medium;M91035;X
+365121;Chief of Army;Faysal II ibn Ghazi;1945;1964;1999;PA;Static Defence Doctrine;High;M91039;X
+365122;Chief of Army;Fawsi al Kaukji;1933;1964;1999;FA;Static Defence Doctrine;Medium;M91014;X
+365123;Chief of Army;Abdullah;1941;1964;1999;FA;Elastic Defence Doctrine;Medium;M91028;X
+365124;Chief of Army;Arshad al Umari;1933;1964;1999;LWR;Guns and Butter Doctrine;Medium;M91027;X
+365125;Chief of Navy;Hamdi al Pachachi;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Low;M91049;X
+365126;Chief of Navy;Jamil al Midfai;1946;1964;1999;PA;Indirect Approach Doctrine;Medium;M91047;X
+365127;Chief of Navy;Ali Mahmud al Shaykh;1933;1964;1999;FA;Indirect Approach Doctrine;Medium;M91019;X
+365128;Chief of Navy;Taha al Ahmani;1933;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M91029;X
+365129;Chief of Air Force;Alan Rawlinson;1941;1964;1999;SC;Army Aviation Doctrine;Medium;M91164;X
+365130;Chief of Air Force;Amir al Illah;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M91035;X
+365131;Chief of Air Force;Abdullah al-Tell;1940;1964;1999;PA;Naval Aviation Doctrine;Medium;M91166;X
+365132;Chief of Air Force;Jamil al Midfai;1944;1964;1999;PA;Carpet Bombing Doctrine;Medium;M91047;X
+365133;Chief of Air Force;Faysal II ibn Ghazi;1946;1964;1999;PA;Vertical Envelopment Doctrine;High;M91039;X
+365134;Chief of Air Force;Fahmi Sa'id;1933;1964;1999;FA;Air Superiority Doctrine;Medium;M91020;X
+365135;Chief of Air Force;Khaled al Dalabeeh;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M91030;X
+365136;Head of State;Rashid Ali al-Gaylani;1941;1964;1999;FA;Powerhungry Demagogue;High;M91011;X
+365137;Chief of Navy;Rashid Ali al-Gaylani;1946;1964;1999;FA;Power Projection Doctrine;Medium;M91011;X
+365138;Head of Government;Hikmet Suleyman;1933;1964;1999;PA;Naive Optimist;High;M91054;X
+365140;Head of Government;Jamil al Midfai;1941;1964;1999;PA;Smiling Oilman;High;M91047;X
+365141;Head of Government;Nuri as Said;1941;1964;1999;PA;Ambitious Union Boss;High;M91003;X
+365142;Head of Government;Nuri as Said;1946;1964;1999;PA;Flamboyant Tough Guy;High;M91003;X
+365143;Head of State;Rashid Ali al-Gaylani;1933;1964;1999;FA;Powerhungry Demagogue;High;M91011;X
+365145;Head of State;Yahya Hamudeh;1933;1964;1999;ST;Barking Buffoon;High;M91021;X
+365146;Head of Government;Yahya Hamudeh;1933;1964;1999;ST;Backroom Backstabber;High;M91021;X
+365147;Head of Government;Muhammad as Sadr;1948;1964;1999;PA;Naive Optimist;High;M91179;X
+365148;Head of Government;Muzahim al Bayyaji;1948;1964;1999;SC;Corporate Suit;High;M91180;X
+365149;Head of Government;Ali Jawdat;1934;1964;1999;PA;Backroom Backstabber;High;M91064;X
+365150;Head of Government;Tawfiq al Suwaidi;1950;1964;1969;PA;Ambitious Union Boss;High;M91056;X
+365151;Head of Government;Nurreddin Mahmud;1952;1964;1999;PA;Old General;High;M91183;X
+365152;Head of Government;Mustafa al Umari;1952;1964;1999;ML;Silent Workhorse;High;M91184;X
+365153;Head of Government;Muhamed Fadhel al-Jamali;1953;1964;1999;SC;Happy Amateur;High;M91185;X
+365154;Head of Military Intelligence;Nurreddin Mahmud;1945;1964;1999;PA;Logistics Specialist;Medium;M91183;X
+365155;Head of State;Faysal II ibn Ghazi;1946;1964;1999;SC;Benevolent Gentleman;High;M91039;X
+365156;Chief of Army;Abdul Rahman Arif;1948;1964;1999;PA;Decisive Battle Doctrine;High;6071;x     
+365157;Chief of Staff;Abdul Rahman Arif;1945;1964;1999;PA;School of Fire Support;High;6071;x
+365158;Chief of Army;Abdul Rahman Arif;1948;1964;1999;SC;Decisive Battle Doctrine;High;6071;x     
+365159;Chief of Staff;Abdul Rahman Arif;1945;1964;1999;SC;School of Fire Support;High;6071;x
+365160;Head of State;Faisal I ibn Hussein;1914;1934;1934;SC;Benevolent Gentleman;High;5767;X
+365161;Head of State;Faisal I ibn Hussein;1914;1933;1934;FA;Benevolent Gentleman;High;5767;X
+365162;Head of Government;Abd Al-Rahman Al-Gillani;1914;1927;1928;SC;backroom backstabber;High;2757;X
+365163;Head of Government;Abd al-Muhsin Al-Saadoon;1914;1929;1930;SC;old general;High;2773;X
+365164;Head of Government;Jafar Pasha al-Askari;1914;1937;1937;SC;old general;High;2785;X
+365165;Foreign Minister;Jafar Pasha al-Askari;1914;1937;1937;SC;general staffer;High;2785;X
+365166;Minister of Security;Jafar Pasha al-Askari;1914;1937;1937;SC;efficient sociopath;High;2785;X
+365167;Head of Government;Tawfiq al Suwaidi;1929;1932;1933;SC;Ambitious Union Boss;High;M91056;X
+365168;Foreign Minister;Tawfiq al Suwaidi;1914;1932;1933;SC;Apologetic Clerk;High;M91056;X
+365169;Head of Government;Naji al-Suwaydi;1929;1931;1943;SC;political protege;High;5907;X
+365170;Head of Government;Muhammad Naji Shawkat;1932;1933;1981;SC;political protege;High;7528;X

@@ -1,0 +1,170 @@
+name = "CHAPTER2_NAME"
+panel = "scenarios/data/scenario_winterwar.bmp"
+##diplo tut
+header = {
+	tutorial = yes
+	tutorialfile = "Tutorial/Chapter2.csv"
+	name = "Tutorial Chapter 3"
+	startyear = 1941
+	endyear = 1945
+
+	selectable = { GER }
+
+	GER = {
+	}
+
+}
+
+globaldata = {
+	dormant_leaders = YES
+	rules = {
+		diplomacy = yes
+		intelligence = no
+		production = no
+		technology = no
+	}
+    startdate = {
+        year = 1941
+        month = july
+		day = 29
+        }
+	enddate = {
+        year = 1945
+        month = may
+        day = 8   
+        }
+
+axis =
+  { id          = { type = 15000 id = 2 }
+    participant = { GER SLO ITA HUN ROM BUL FIN CRO SER MTN }
+  }
+  allies =
+  { id          = { type = 15000 id = 1 }
+    participant = { ENG U01 AST NZL CAN SAF NEP BHU EGY U02 OMN BEL HOL U05 }
+  }
+  comintern =
+  { id          = { type = 15000 id = 3 }
+    participant = { SOV MON TAN }
+  }
+  alliance =
+  { id          = { type = 15000 id = 10 }
+    participant = { CHI CHC }
+  }
+  alliance =
+  { id          = { type = 15000 id = 12 }
+    participant = { JAP MAN MEN U03 SIA }
+  }
+  war =
+  { id        = { type = 9430 id = 1 }
+    date      = { year = 1939 month = september day = 0 }
+    enddate   = { year = 1941 month = june day = 21 }
+    attackers =
+    { id          = { type = 9430 id = 2 }
+      participant = { GER SLO ITA HUN ROM BUL CRO SER MTN }
+    }
+    defenders =
+    { id          = { type = 9430 id = 3 }
+      participant = { ENG U01 AST NZL CAN SAF NEP BHU EGY U02 OMN BEL HOL U05 }
+    }
+  }
+  war =
+  { id        = { type = 9430 id = 4 }
+    date      = { year = 1937 month = july day = 6 }
+    enddate   = { year = 1941 month = june day = 21 }
+    attackers =
+    { id          = { type = 9430 id = 5 }
+      participant = { CHI CHC }
+    }
+    defenders =
+    { id          = { type = 9430 id = 6 }
+      participant = { JAP MAN MEN U03 SIA }
+    }
+  }
+  war =
+  { id        = { type = 9430 id = 7 }
+    date      = { year = 1941 month = june day = 21 }
+    enddate   = { year = 1941 month = june day = 21 }
+    attackers =
+    { id          = { type = 9430 id = 8 }
+      participant = { GER SLO ITA HUN ROM BUL FIN CRO SER MTN }
+    }
+    defenders =
+    { id          = { type = 9430 id = 9 }
+      participant = { SOV MON TAN }
+    }
+  }
+}
+
+# Countries
+
+include = "scenarios\1941.06\afghanistan.inc"
+include = "scenarios\1941.06\argentina.inc"
+include = "scenarios\1941.06\australia.inc"
+include = "scenarios\1941.06\belgium.inc"
+include = "scenarios\1941.06\bhutan.inc"
+include = "scenarios\1941.06\bolivia.inc"
+include = "scenarios\1941.06\brasil.inc"
+include = "scenarios\1941.06\bulgaria.inc"
+include = "scenarios\1941.06\canada.inc"
+include = "scenarios\1941.06\china communist.inc"
+include = "scenarios\1941.06\china nationalist.inc"
+include = "scenarios\1941.06\chile.inc"
+include = "scenarios\1941.06\columbia.inc"
+include = "scenarios\1941.06\costa rica.inc"
+include = "scenarios\1941.06\croatia.inc"
+include = "scenarios\1941.06\cuba.inc"
+include = "scenarios\1941.06\dominican republic.inc"
+include = "scenarios\1941.06\ecuador.inc"
+include = "scenarios\1941.06\egypt.inc"
+include = "scenarios\1941.06\united kingdom.inc"
+include = "scenarios\1941.06\finland.inc"
+include = "scenarios\1941.06\free france.inc"
+include = "scenarios\1941.06\germany.inc"
+include = "scenarios\1941.06\guatemala.inc"
+include = "scenarios\1941.06\haiti.inc"
+include = "scenarios\1941.06\holland.inc"
+include = "scenarios\1941.06\honduras.inc"
+include = "scenarios\1941.06\hungary.inc"
+include = "scenarios\1941.06\ireland.inc"
+include = "scenarios\1941.06\italy.inc"
+include = "scenarios\1941.06\japan.inc"
+include = "scenarios\1941.06\liberia.inc"
+include = "scenarios\1941.06\manchuko.inc"
+include = "scenarios\1941.06\mengjiang.inc"
+include = "scenarios\1941.06\mexico.inc"
+include = "scenarios\1941.06\mongolia.inc"
+include = "scenarios\1941.06\montenegro.inc"
+include = "scenarios\1941.06\nepal.inc"
+include = "scenarios\1941.06\nicaragua.inc"
+include = "scenarios\1941.06\newzealand.inc"
+include = "scenarios\1941.06\oman.inc"
+include = "scenarios\1941.06\panama.inc"
+include = "scenarios\1941.06\paraguay.inc"
+include = "scenarios\1941.06\persia.inc"
+include = "scenarios\1941.06\philippines.inc"
+include = "scenarios\1941.06\portugal.inc"
+include = "scenarios\1941.06\peru.inc"
+include = "scenarios\1941.06\romania.inc"
+include = "scenarios\1941.06\south africa.inc"
+include = "scenarios\1941.06\san salvador.inc"
+include = "scenarios\1941.06\saudi arabia.inc"
+include = "scenarios\1941.06\serbia.inc"
+include = "scenarios\1941.06\slovakia.inc"
+include = "scenarios\1941.06\switzerland.inc"
+include = "scenarios\1941.06\china sinkiang.inc"
+include = "scenarios\1941.06\soviet union.inc"
+include = "scenarios\1941.06\spain.inc"
+include = "scenarios\1941.06\sweden.inc"
+include = "scenarios\1941.06\tannu tuva.inc"
+include = "scenarios\1941.06\thailand.inc"
+include = "scenarios\1941.06\tibet.inc"
+include = "scenarios\1941.06\turkey.inc"
+include = "scenarios\1941.06\british raj.inc"
+include = "scenarios\1941.06\indochinese union.inc"
+include = "scenarios\1941.06\netherlands east indies.inc"
+include = "scenarios\1941.06\uruguay.inc"
+include = "scenarios\1941.06\usa.inc"
+include = "scenarios\1941.06\venezuela.inc"
+include = "scenarios\1941.06\vichy france.inc"
+include = "scenarios\1941.06\yemen.inc"
+include = "scenarios\1941.06\bases.inc"

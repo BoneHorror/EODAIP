@@ -1,0 +1,116 @@
+# 0 - Early Ballistic Submarine (1953) Modified Zulu/Golf Class/USS Grayback (NON NUCLEAR)
+model = {
+	cost						= 1
+	buildtime					= 1200
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.08
+	maxspeed					= 20
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 14
+	airdefence					= 8
+	seaattack					= 2
+	convoyattack				= 3
+	subattack					= 2
+	airattack					= 1
+	shorebombardment			= 4
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 1
+	fuelconsumption				= 0.25
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 85 }
+}
+
+# 1 - Basic Ballistic Submarine (1958) Hotel-class/George Washington-class
+model = {
+	cost						= 2.25
+	buildtime					= 760
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.1
+	maxspeed					= 25
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 13
+	airdefence					= 8
+	seaattack					= 3
+	convoyattack				= 4
+	subattack					= 3
+	airattack					= 1
+	shorebombardment			= 6
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 105 }
+}
+
+# 2 - Improved Ballistic Submarine (1963) Lafayette-class/Yankee-class/Resolution-class/Redoutable-class
+model = {
+	cost						= 2.5
+	buildtime					= 990
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.13
+	maxspeed					= 26
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 12
+	airdefence					= 8
+	seaattack					= 4
+	convoyattack				= 5
+	subattack					= 4
+	airattack					= 1
+	shorebombardment			= 7
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 133 }
+}
+
+# 3 - Advanced Ballistic Submarine (1974) Delta/Typhoon-class/Ohio-class/Vanguard-class/Triomphant-class
+model = {
+	cost						= 2.5
+	buildtime					= 2024
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.13
+	maxspeed					= 28
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 10
+	airdefence					= 8
+	seaattack					= 5
+	convoyattack				= 6
+	subattack					= 5
+	airattack					= 1
+	shorebombardment			= 10
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.1
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 133 }
+}
+

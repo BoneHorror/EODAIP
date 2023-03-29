@@ -1,0 +1,466 @@
+#9005000 USA Return provinces to France, Belgium, Netherlands and Luxembourg
+#9005001 ENG Return provinces to Italy
+#9005002 USA Return the Pacific islands to their rightful owners
+#9005003 ROM A new communist goverment
+#9005004 GER Failure of the Wehrmacht
+
+###########################################################################
+event = {
+    id = 9005000
+    random = no
+    country = USA
+
+    trigger = {
+		OR = {
+			NOT = { exists = GER }
+			NOT = { war = { country = USA country = GER } }
+		}
+		NOT = { government = communist }
+        NOT = { region = { region = France country = -2 } }
+        OR = { 
+			claims = { province = 55 } #Paris
+			claims = { province = 109 } #Luxembourg
+			claims = { province = 116 } #Brussels
+			claims = { province = 122 } #Amsterdam
+		}
+    }
+
+    name = "EVT_9005000_NAME"
+    desc = "EVT_9005000_DESC"
+    style = 2
+    picture = "news_paper"
+
+    date = { day = 0 month = july year = 1943 }
+    offset = 29
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		# France
+		command = { type = removeclaim which = 37 }
+		command = { type = removeclaim which = 38 }
+		command = { type = removeclaim which = 39 }
+		command = { type = removeclaim which = 40 }
+		command = { type = removeclaim which = 41 }
+		command = { type = removeclaim which = 42 }
+		command = { type = removeclaim which = 43 }
+		command = { type = removeclaim which = 44 }
+		command = { type = removeclaim which = 45 }
+		command = { type = removeclaim which = 46 }
+		command = { type = removeclaim which = 47 }
+		command = { type = removeclaim which = 48 }
+		command = { type = removeclaim which = 49 }
+		command = { type = removeclaim which = 50 }
+		command = { type = removeclaim which = 51 }
+		command = { type = removeclaim which = 52 }
+		command = { type = removeclaim which = 53 }
+		command = { type = removeclaim which = 54 }
+		command = { type = removeclaim which = 55 }
+		command = { type = removeclaim which = 56 }
+		command = { type = removeclaim which = 57 }
+		command = { type = removeclaim which = 58 }
+		command = { type = removeclaim which = 59 }
+		command = { type = removeclaim which = 60 }
+		command = { type = removeclaim which = 61 }
+		command = { type = removeclaim which = 62 }
+		command = { type = removeclaim which = 63 }
+		command = { type = removeclaim which = 64 }
+		command = { type = removeclaim which = 65 }
+		command = { type = removeclaim which = 66 }
+		command = { type = removeclaim which = 67 }
+		command = { type = removeclaim which = 68 }
+		command = { type = removeclaim which = 69 }
+		command = { type = removeclaim which = 70 }
+		command = { type = removeclaim which = 71 }
+		command = { type = removeclaim which = 72 }
+		command = { type = removeclaim which = 73 }
+		command = { type = removeclaim which = 74 }
+		command = { type = removeclaim which = 75 }
+		command = { type = removeclaim which = 76 }
+		command = { type = removeclaim which = 77 }
+		command = { type = removeclaim which = 78 }
+		command = { type = removeclaim which = 79 }
+		command = { type = removeclaim which = 80 }
+		command = { type = removeclaim which = 81 }
+		command = { type = removeclaim which = 82 }
+		command = { type = removeclaim which = 83 }
+		command = { type = removeclaim which = 84 }
+		command = { type = removeclaim which = 85 }
+		command = { type = removeclaim which = 86 }
+		command = { type = removeclaim which = 87 }
+		command = { type = removeclaim which = 88 }
+		command = { type = removeclaim which = 89 }
+		command = { type = removeclaim which = 90 }
+		command = { type = removeclaim which = 91 }
+		command = { type = removeclaim which = 92 }
+		command = { type = removeclaim which = 93 }
+		command = { type = removeclaim which = 94 }
+		command = { type = removeclaim which = 95 }
+		command = { type = removeclaim which = 96 }
+		command = { type = removeclaim which = 97 }
+		command = { type = removeclaim which = 98 }
+		command = { type = removeclaim which = 99 }
+		command = { type = removeclaim which = 101 }
+		command = { type = removeclaim which = 102 }
+		command = { type = removeclaim which = 103 }
+		command = { type = removeclaim which = 100 }
+		command = { type = removeclaim which = 104 }
+		command = { type = removeclaim which = 105 }
+		command = { type = removeclaim which = 106 }
+		command = { type = removeclaim which = 107 }
+		#Benelux
+		command = { type = removeclaim which = 108 }
+		command = { type = removeclaim which = 109 }
+		command = { type = removeclaim which = 110 }
+		command = { type = removeclaim which = 111 }
+		command = { type = removeclaim which = 112 }
+		command = { type = removeclaim which = 113 }
+		command = { type = removeclaim which = 114 }
+		command = { type = removeclaim which = 115 }
+		command = { type = removeclaim which = 116 }
+		command = { type = removeclaim which = 117 }
+		command = { type = removeclaim which = 118 }
+		command = { type = removeclaim which = 119 }
+		command = { type = removeclaim which = 120 }
+		command = { type = removeclaim which = 121 }
+		command = { type = removeclaim which = 122 }
+		command = { type = removeclaim which = 123 }
+		command = { type = removeclaim which = 124 }
+		command = { type = removeclaim which = 125 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } NOT = { exists = FRA } } type = secederegion which = U01 value = France when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } NOT = { exists = FRA } } type = secederegion which = U01 value = Morocco when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } NOT = { exists = FRA } } type = secederegion which = U01 value = Algeria when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } NOT = { exists = FRA } } type = secederegion which = U01 value = Tunisia when = 1 }
+		command = { trigger = { NOT = { exists = FRA exists = U01 } } type = local_setflag which = FRA_ally }
+		command = { trigger = { local_flag = FRA_ally } type = independence which = FRA value = 1 when = 1 }
+		command = { trigger = { local_flag = FRA_ally } type = alliance which = FRA when = 1 }
+		command = { trigger = { local_flag = FRA_ally } type = local_clrflag which = FRA_ally }			
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secederegion which = FRA value = France when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secederegion which = FRA value = Morocco when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secederegion which = FRA value = Algeria when = 1 }		
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secederegion which = FRA value = Tunisia when = 1 }		
+		command = { trigger = { exists = LUX alliance = { country = USA country = LUX } } type = secedeprovince which = LUX value = 109 when = 1 }
+		command = { trigger = { NOT = { exists = LUX  } } type = local_setflag which = LUX_ally }
+		command = { trigger = { local_flag = LUX_ally } type = independence which = LUX value = 1 when = 1 }
+		command = { trigger = { local_flag = LUX_ally } type = alliance which = LUX when = 1 }
+		command = { trigger = { local_flag = LUX_ally } type = local_clrflag which = LUX_ally }			
+		command = { trigger = { exists = BEL alliance = { country = USA country = BEL } } type = secedearea which = BEL value = Flanders when = 1 }
+		command = { trigger = { exists = BEL alliance = { country = USA country = BEL } } type = secedearea which = BEL value = Wallonia when = 1 }
+		command = { trigger = { NOT = { exists = BEL  } } type = local_setflag which = BEL_ally }
+		command = { trigger = { local_flag = BEL_ally } type = independence which = BEL value = 1 when = 1 }
+		command = { trigger = { local_flag = BEL_ally } type = alliance which = BEL when = 1 }
+		command = { trigger = { local_flag = BEL_ally } type = local_clrflag which = BEL_ally }		
+		command = { trigger = { exists = HOL alliance = { country = USA country = HOL } } type = secedearea which = HOL value = Netherlands when = 1 }
+		command = { trigger = { NOT = { exists = HOL  } } type = local_setflag which = HOL_ally }
+		command = { trigger = { local_flag = HOL_ally } type = independence which = HOL value = 1 when = 1 }
+		command = { trigger = { local_flag = HOL_ally } type = alliance which = HOL when = 1 }
+		command = { trigger = { local_flag = HOL_ally } type = local_clrflag which = HOL_ally }		
+    }
+    action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 0
+		command = { type = belligerence which = USA	value = 30 }
+		command = { type = dissent value = 10 }
+	}
+} 
+
+event = {
+    id = 9005001
+    random = no
+    country = ENG
+
+    trigger = {
+		OR = {
+			NOT = { exists = GER }
+			NOT = { war = { country = ENG country = GER } }
+		}
+		NOT = { government = communist }
+        NOT = { region = { region = Italy country = -2 } }
+        OR = { 
+			claims = { province = 407 } #Milan
+			claims = { province = 419 } #Rome
+			claims = { province = 421 } #Naples
+		}
+    }
+
+    name = "EVT_9005001_NAME"
+    desc = "EVT_9005001_DESC"
+    style = 2
+    picture = "news_paper"
+
+    date = { day = 0 month = july year = 1943 }
+    offset = 29
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		command = { type = removeclaim which = 393 }
+		command = { type = removeclaim which = 394 }
+		command = { type = removeclaim which = 395 }
+		command = { type = removeclaim which = 396 }
+		command = { type = removeclaim which = 398 }
+		command = { type = removeclaim which = 399 }
+		command = { type = removeclaim which = 400 }
+		command = { type = removeclaim which = 401 }
+		command = { type = removeclaim which = 402 }
+		command = { type = removeclaim which = 404 }
+		command = { type = removeclaim which = 405 }
+		command = { type = removeclaim which = 408 }
+		command = { type = removeclaim which = 410 }
+		command = { type = removeclaim which = 411 }
+		command = { type = removeclaim which = 412 }
+		command = { type = removeclaim which = 413 }
+		command = { type = removeclaim which = 414 }
+		command = { type = removeclaim which = 415 }
+		command = { type = removeclaim which = 416 }
+		command = { type = removeclaim which = 417 }
+		command = { type = removeclaim which = 418 }
+		command = { type = removeclaim which = 419 }
+		command = { type = removeclaim which = 420 }
+		command = { type = removeclaim which = 421 }
+		command = { type = removeclaim which = 422 }
+		command = { type = removeclaim which = 423 }
+		command = { type = removeclaim which = 424 }
+		command = { type = removeclaim which = 425 }
+		command = { type = removeclaim which = 426 }
+		command = { type = removeclaim which = 427 }
+		command = { type = removeclaim which = 428 }
+		command = { type = removeclaim which = 430 }
+		command = { type = removeclaim which = 431 }
+		command = { type = removeclaim which = 432 }
+		command = { type = removeclaim which = 433 }
+		command = { type = removeclaim which = 434 }
+		command = { type = removeclaim which = 435 }
+		command = { trigger = { exists = ITA alliance = { country = ENG country = ITA } } type = secederegion which = ITA value = Italy when = 1 }
+		command = { trigger = { exists = RSI alliance = { country = ENG country = RSI } } type = secederegion which = RSI value = Italy when = 1 }
+		command = { trigger = { NOT = { exists = ITA  } } type = local_setflag which = ITA_ally }
+		command = { trigger = { local_flag = ITA_ally } type = independence which = ITA value = 1 when = 0 }
+		command = { trigger = { local_flag = ITA_ally } type = alliance which = ITA when = 1 }
+		command = { trigger = { local_flag = ITA_ally } type = event which = 2006013 where = ITA when = 1 }
+		command = { trigger = { local_flag = ITA_ally } type = local_clrflag which = ITA_ally }
+    }
+    action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 0
+		command = { type = belligerence which = ENG value = 30 }
+		command = { type = dissent value = 10 }
+	}
+} 
+
+event = {
+    id = 9005002
+    random = no
+    country = USA
+
+    trigger = {
+		OR = {
+			NOT = { exists = JAP }
+			NOT = { war = { country = USA country = JAP } }
+		}
+        OR = { 
+			claims = { province = 1581 }
+			claims = { province = 1588 }
+			claims = { province = 1678 }
+			claims = { province = 1750 }
+			claims = { province = 1587 }
+			claims = { province = 1606 }
+			claims = { province = 1726 }
+		}
+    }
+
+    name = "EVT_9005002_NAME"
+    desc = "EVT_9005002_DESC"
+    style = 2
+    picture = "news_paper"
+
+    date = { day = 0 month = july year = 1943 }
+    offset = 29
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		# France
+		command = { type = removeclaim which = 1581 }
+		command = { type = removeclaim which = 1582 }
+		command = { type = removeclaim which = 1583 }
+		command = { type = removeclaim which = 1584 }
+		command = { type = removeclaim which = 1586 }
+		# United Kingdom
+		command = { type = removeclaim which = 1588 }
+		command = { type = removeclaim which = 1589 }
+		command = { type = removeclaim which = 1590 }
+		command = { type = removeclaim which = 1591 }
+		command = { type = removeclaim which = 1592 }
+		command = { type = removeclaim which = 1593 }
+		command = { type = removeclaim which = 1678 }
+		command = { type = removeclaim which = 1679 }
+		command = { type = removeclaim which = 1680 }
+		command = { type = removeclaim which = 1682 }
+		command = { type = removeclaim which = 1687 }
+		command = { type = removeclaim which = 1750 }
+		#Australia
+		command = { type = removeclaim which = 1234 }
+		command = { type = removeclaim which = 1587 }
+		command = { type = removeclaim which = 1602 }
+		command = { type = removeclaim which = 1603 }
+		command = { type = removeclaim which = 1604 }
+		command = { type = removeclaim which = 1605 }
+		command = { type = removeclaim which = 1606 }
+		command = { type = removeclaim which = 1607 }
+		command = { type = removeclaim which = 1608 }
+		command = { type = removeclaim which = 1609 }
+		command = { type = removeclaim which = 1610 }
+		command = { type = removeclaim which = 1724 }
+		command = { type = removeclaim which = 1725 }
+		command = { type = removeclaim which = 1726 }
+		command = { type = removeclaim which = 1727 }
+		# France
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1581 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1581 when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1582 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1582 when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1583 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1583 when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1584 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1584 when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1585 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1585 when = 1 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = addclaim which = 1586 where = U01 }
+		command = { trigger = { exists = U01 alliance = { country = USA country = U01 } } type = secedeprovince which = U01 value = 1586 when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = addclaim which = 1581 where = FRA }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secedeprovince which = FRA value = 1581 when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = addclaim which = 1582 where = FRA }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secedeprovince which = FRA value = 1582 when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = addclaim which = 1583 where = FRA }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secedeprovince which = FRA value = 1583 when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = addclaim which = 1584 where = FRA }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = secedeprovince which = FRA value = 1584 when = 1 }
+		command = { trigger = { exists = FRA alliance = { country = USA country = FRA } } type = addclaim which = 1585 where = FRA }
+		# United Kingdom
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1588 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1588 where = ENG }		
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1589 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1589 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1590 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1590 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1591 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1591 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1592 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1592 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1593 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1593 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1678 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1678 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1679 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1679 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1680 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1680 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1682 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1682 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1687 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1687 where = ENG }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = secedeprovince which = ENG value = 1750 when = 1 }
+		command = { trigger = { exists = ENG alliance = { country = USA country = ENG } } type = addclaim which = 1750 where = ENG }
+		#Australia
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1234 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1234 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1587 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1587 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1602 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1602 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1603 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1603 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1604 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1604 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1605 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1605 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1606 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1606 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1607 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1607 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1608 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1608 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1609 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1609 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1610 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1610 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1724 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1724 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1725 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1725 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1726 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1726 where = AST }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = secedeprovince which = AST value = 1727 when = 1 }
+		command = { trigger = { exists = AST alliance = { country = USA country = AST } } type = addclaim which = 1727 where = AST }
+    }
+    action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 0
+		command = { type = belligerence which = USA	value = 15 }
+		command = { type = dissent value = 5 }
+	}
+} 
+
+event = {
+    id = 9005003
+    random = no
+    country = ROM
+    
+    trigger = {
+		headofgovernment = 110027 # Radescu
+		puppet = { country = ROM country = SOV }
+		government = { type = communist country = SOV }
+    }
+    
+    name = "EVT_9005003_NAME"
+    desc = "EVT_9005003_DESC"
+    style = 2
+    picture = "spread_revolution"
+
+    date = { day = 0 month = january year = 1945 }
+    offset = 61
+    deathdate = { day = 29 month = december year = 1999 }
+
+    action = {
+        name = "ACTION_NAME_OK"
+        command = { type = country which = U30 }
+        command = { type = set_domestic which = democratic value = 1 }
+        command = { type = set_domestic which = political_left value = 10 }
+        command = { type = headofstate which = 965002 }
+        command = { type = headofgovernment which = 965003 }
+    }
+} 
+
+event = {
+    id = 9005004
+    random = no
+    country = GER
+       
+    trigger = {
+		ai = yes
+		NOT = { region = { region = Germany country = -3 value = 5 } }
+		NOT = { region = { region = France country = -3 value = 5 } }
+		NOT = { region = { region = Benelux country = -3 value = 5 } }
+		NOT = { region = { region = Poland country = -3 value = 5 } }
+    }
+    
+    name = "EVT_9005004_NAME"
+    desc = "EVT_9005004_DESC"
+    style = 2
+    picture = "German_mobilization2"
+
+    date = { day = 0 month = june year = 1944 }
+    offset = 32
+    deathdate = { day = 29 month = december year = 1999 }
+
+    action = {
+        name = "ACTION_NAME_OK"
+		command = { type = dissent value = 25 }
+		command = { type = strength which = land when = 0 where = 0 value = 0.15 org = 0.10 }
+		command = { type = strength which = air when = 0 where = 0 value = 0.25 org = 0.10 }
+		command = { type = strength which = naval when = 0 where = 0 value = 0 }
+    }
+} 

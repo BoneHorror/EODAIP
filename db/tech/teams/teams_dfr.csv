@@ -1,0 +1,29 @@
+DFR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+630001;Blohm & Voss;T1;7;1900;2000;naval_engineering;naval_artillery;technical_efficiency;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630002;Konrad Zuse;T5;7;1900;2000;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630003;Krupp;100089;9;1900;2000;industrial_engineering;mechanics;technical_efficiency;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630004;MAN;T8;8;1900;2000;mechanics;vehicle_engineering;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630005;Mauser Werke;100090;8;1900;2000;general_equipment;mechanics;training;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630006;Messerschmitt;T10;9;1900;2000;fighter_design;aeronautics;rocketry;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630007;Opel;T11;7;1900;2000;mechanics;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630008;Porsche;T12;9;1900;2000;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630009;Rheinmetall;100004;7;1900;2000;artillery;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630010;Siemens;100091;8;1900;2000;electronics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630011;Volkswagen;T15;6;1900;2000;mechanics;vehicle_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630012;Werner Heisenberg;T16;7;1927;1976;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630013;Erich von Manstein;T20;8;1930;2000;combined_arms_focus;small_unit_tactics;decentralized_execution;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630014;Heinz Guderian;T22;9;1930;2000;combined_arms_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630015;Naval Academy Mürwik;T7014;6;1900;2000;seamanship;small_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630016;Alfred Bülowius;T7015;6;1930;2000;piloting;training;bomber_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630017;Josef Kammhuber;T7016;6;1930;2000;centralized_execution;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630018;Smilo von Lüttwitz;100604;6;1945;1960;training;small_unit_tactics;combined_arms_focus;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630019;Adolf Heusinger;100605;7;1954;2000;training;small_unit_tactics;combined_arms_focus;centralized_execution;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630100;Jäger Kampfschule;100130;7;1900;1999;Airborne_Training;Mountain_Training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630101;Deutsche Werft;T630101;6;1914;1999;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630102;Bayer;T630102;8;1945;1999;chemistry;medicine;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630103;BASF;T630103;7;1945;1999;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630104;Focke-Wulf;T26;8;1923;1999;fighter_design;aeronautics;rocketry;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+630105;Dornier;T630105;7;1943;1999;bomber_design;aeronautics;rocketry;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+6300000;Bundesnachrichtendienst;T6300000;7;1945;2013;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+6300001;Bölkow Entwicklungen KG.;T6300001;5;1948;1968;rt_user_1;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+6300002;Messerschmitt-Bölkow-Blohm;T6300002;7;1968;2000;rt_user_1;aeronautics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,241 @@
+# BRIG_MODEL_7_
+
+# 0 - Great war Tank (1918)
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 2000 medium_armor = 36 }
+}
+
+# 1 - Postwar Tank I (1919)
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 2000 medium_armor = 44 armored_car = 20 }
+}
+
+# 2 - Postwar Tank II (1924)
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 7
+	equipment = { manpower = 2000 medium_armor = 86  }
+}
+
+# 3 - Postwar Tank III (1928)
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -3
+	hardattack			= 1
+	softattack			= 1
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 14
+	equipment = { manpower = 2500 medium_armor = 98 }
+}
+
+# 4 - Postwar Tank IV (1934)
+model = {
+	cost 				= 5
+	buildtime	 		= 133
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -4
+	hardattack			= 1
+	softattack			= 3
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 17
+	equipment = { manpower = 2500 medium_armor = 98 }
+}
+
+# 5 - Early Light Tank (1936)
+model = {
+	cost 				= 6
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -2
+	defaultorganisation = 2
+	softness			= -5
+	hardattack			= 1
+	softattack			= 4
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 2.1
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 18
+	equipment = { manpower = 2500 medium_armor = 86 }
+}
+
+# 6 - Basic Light Tank (1938)
+model = {
+	cost 				= 6.5
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -3
+	defaultorganisation = 2
+	softness			= -5
+	hardattack			= 1
+	softattack			= 6
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 2.2
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 18
+	equipment = { manpower = 2500 medium_armor = 98 }
+}
+
+# 7 - Improved Light Tank (1939)
+model = {
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -4
+	defaultorganisation = 2
+	softness			= -7
+	hardattack			= 2
+	softattack			= 6
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 2.2
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 19
+	equipment = { manpower = 2500 medium_armor = 103 }
+}
+
+# 8 - Advanced Light Tank Brigade (1944)
+model = {
+	cost 				= 8
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -4
+	defaultorganisation = 2
+	softness			= -10
+	hardattack			= 2
+	softattack			= 10
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 2.1
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 20
+	equipment = { manpower = 2500 medium_armor = 104 }
+}
+
+# 9 - Semi-Modern Light Tank Brigade (1952)
+model = {
+	cost 				= 9
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -5
+	defaultorganisation = 2
+	softness			= -10
+	hardattack			= 3
+	softattack			= 12
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 21
+	equipment = { manpower = 2500 medium_armor = 106 }
+}
+
+# 10 - Modern Light Tank Brigade (1959)
+model = {
+	cost 				= 10
+	buildtime	 		= 140
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= -5
+	defaultorganisation = 2
+	softness			= -15
+	hardattack			= 5
+	softattack			= 14
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.7
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 22
+	equipment = { manpower = 2500 medium_armor = 110 }
+}
+
+# 11 - Infantry Fighting Vehicle (1965)
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 1.3
+	maxspeed 			= 0
+	defensiveness 		= -1
+	toughness 			= 0
+	defaultorganisation = 2
+	softness			= -20
+	hardattack			= 1
+	softattack			= 20
+	supplyconsumption 	= 1
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 22
+	equipment = { manpower = 1364 halftracks = 136 }
+}

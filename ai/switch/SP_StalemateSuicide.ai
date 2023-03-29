@@ -1,0 +1,17 @@
+# Spanish Civil War - make the front extremely impatient if it went on too long - Nekron
+
+front = { 
+	recklessness 		= 3 # 0-3
+	
+	enemy_reinf_days	= 9
+	reserve_prop		= 0.05
+	base_attack_odds	= 1.1
+	min_attack_odds		= 0.9
+	max_attack_odds		= 1.5
+	reinforce_odds		= 0.8
+	withdraw_odds		= 0.5 
+      	enemy_handicap = {
+		} 
+      	passivity = { 
+		} 
+}

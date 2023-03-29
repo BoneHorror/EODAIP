@@ -1,0 +1,566 @@
+# This event chain is for if CHC is successful in overthrowing Jiang Jieshi in Fifth Encirclement Campaign
+#-End of (Early) Chinese Civil War---------
+# 1330110024 REB End of Early Chinese Civil War
+# 1330110025 CHI Nationalists Win
+# 1330110026 *** Secede Helper
+# 1330110027 CHC Communists Win
+#-Warlords Win-----------------------------
+# 1330110028 *** Power Vacuum
+# 1330110029 SOV Power Vacuum
+# 1330110030 JAP Power Vacuum
+#-Japan Intervention-----------------------
+# 1330110053 JAP Enemy at the Gates!
+####################################
+# End of (Early) Chinese Civil War #
+####################################
+# End of Early Chinese Civil War
+event = {
+	id = 1330110024
+	country = REB # We don't know who is still alive
+	random = no
+	one_action = yes
+
+	name = AI_EVENT
+
+	trigger = {
+		or = {
+			and = {
+				event = 1330110014 #CHI Fifth Encirclement Campaigns
+				not = {
+					event = 1330110022 #CHC The Long March
+				}
+			}
+		}
+		or = {
+			and = {
+				exists = CHC
+				not = { exists = UCH }
+				not = { lost_national = { country = CHC value = 80 } }
+				or = {
+					not = { exists = CHI }
+					lost_national = { country = CHI value = 90 }
+				}
+			}
+			and = {
+				exists = CHI
+				not = { exists = UCH }
+				not = { lost_national = { country = CHI value = 80 } }
+				or = {
+					not = { exists = CHC }
+					lost_national = { country = CHC value = 90 }
+				}
+				not = { flag = 1330110016_HISTORICAL } # Use Long March event
+			}
+			and = {
+				not = { exists = CHI }
+				not = { exists = CHC }
+				not = { exists = UCH }
+				or = {
+					exists = CGX
+					exists = CYN
+					exists = CSX
+					exists = CXB
+					puppet = { country = SIK country = SOV }
+				}
+			}
+		}
+	}
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1935 }
+
+	action = {
+		trigger = {
+			exists = CHC
+			not = { lost_national = { country = CHC value = 80 } }
+			or = {
+				not = { exists = CHI }
+				lost_national = { country = CHI value = 90 }
+			}
+		}
+		name = EVT_1330110024_ACTION1 #Communists Win
+		command = { type = trigger which = 1330110027 } #CHC Communists Win
+	}
+
+	action = {
+		trigger = {
+			exists = CHI
+			not = { lost_national = { country = CHI value = 80 } }
+			or = {
+				not = { exists = CHC }
+				lost_national = { country = CHC value = 90 }
+			}
+		}
+		name = EVT_1330110024_ACTION2 #Nationalists Win
+		command = { type = trigger which = 1330110025 } #CHI Nationalists Win
+	}
+
+	action = { #TODO - Warlords DoW one another
+		trigger = {
+			not = { exists = CHI }
+			not = { exists = CHC }
+			not = { exists = UCH }
+			or = {
+				exists = CGX
+				exists = CYN
+				exists = CSX
+				exists = CXB
+				puppet = { country = SIK country = SOV }
+			}
+		}
+		name = EVT_1330110024_ACTION3 #Warlords Win
+		command = { trigger = { exists = CGX } type = event which = 1330110028 where = CGX when = 0 } #Power Vacuum
+		command = { trigger = { exists = CYN } type = event which = 1330110028 where = CYN when = 0 } #Power Vacuum
+		command = { trigger = { exists = CSX } type = event which = 1330110028 where = CSX when = 0 } #Power Vacuum
+		command = { trigger = { exists = CXB } type = event which = 1330110028 where = CXB when = 0 } #Power Vacuum
+		command = { trigger = { puppet = { country = SIK country = SOV } exists = SIK exists = SOV } type = event which = 1330110029 where = SOV when = 3 } #SOV Power Vacuum
+	}
+}
+
+# Nationalists Win
+event = {
+	id = 1330110025
+	random = no
+	country = CHI
+
+	#Triggered
+
+	name = ACTION_NAME_VICTORY
+	desc = EVT_1330110025_DESC
+
+	picture = "ccip_gmd"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { trigger = { exists = CHC } type = inherit which = CHC value = 0 }
+		command = { trigger = { exists = CHC } type = event which = 1330110026 where = CHC when = 0 } #Secede Helper
+		command = { trigger = { exists = CGX war = { country = CGX country = CHI } } type = inherit which = CGX value = 1 }
+		command = { trigger = { exists = CGX war = { country = CGX country = CHI } } type = event which = 1330110026 where = CGX when = 0 } #Secede Helper
+		command = { type = dissent value = -20 }
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+	}
+}
+
+# Secede Helper
+event = {
+	id = 1330110026
+	random = no
+	tag = { CGX CHC CHI CXB CYN CSX }
+	persistent = yes
+
+	#Triggered
+
+	name = ACTION_NAME_DEFEAT
+	desc = ACTION_NAME_DEFEAT
+
+	picture = "ccip_cw"
+	style = 2
+
+	action = {
+		trigger = {
+			or = {
+				country = CGX
+				country = CHC
+			}
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = secederegion which = CHI value = "China" when = 1 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				country = CYN
+				country = CXB
+				country = CSX
+				country = CHI
+			}
+		}
+		name = ACTION_NAME_DAMN
+		command = { type = secederegion which = CHC value = "China" when = 1 }
+	}
+}
+
+# Communists Win
+event = {
+	id = 1330110027
+	random = no
+	country = CHC
+
+	#Triggered
+
+	name = ACTION_NAME_VICTORY
+	desc = EVT_1330110027_DESC
+
+	picture = "ccip_craf"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { trigger = { exists = CHI } type = inherit which = CHI value = 0 }
+		command = { trigger = { exists = CHI } type = event which = 1330110026 where = CHI when = 0 } #Secede Helper
+		command = { trigger = { exists = CXB war = { country = CXB country = CHC } } type = inherit which = CXB value = 0 }
+		command = { trigger = { exists = CXB war = { country = CXB country = CHC } } type = event which = 1330110026 where = CXB when = 0 } #Secede Helper
+		command = { trigger = { exists = CSX war = { country = CSX country = CHC } } type = inherit which = CSX value = 1 }
+		command = { trigger = { exists = CSX war = { country = CSX country = CHC } } type = event which = 1330110026 where = CSX when = 0 } #Secede Helper
+		command = { trigger = { exists = CGX war = { country = CGX country = CHC } } type = inherit which = CGX value = 0 }
+		command = { trigger = { exists = CGX war = { country = CGX country = CHC } } type = event which = 1330110026 where = CGX when = 0 } #Secede Helper
+		command = { trigger = { exists = CYN war = { country = CYN country = CHC } } type = inherit which = CYN value = 0 }
+		command = { trigger = { exists = CYN war = { country = CYN country = CHC } } type = event which = 1330110026 where = CYN when = 0 } #Secede Helper
+		command = { type = dissent value = -20 }
+		command = { type = waketeam which = 260020 when = 1 } #Jiangnan Shipbuilding Factory
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+		command = { type = event which = 1330110031 where = CHC when = 7 } #New United Front
+        command = { type = event which = 1330110053 where = JAP when = 0 } #Enemy at the Gates!
+	}
+}
+
+################
+# Warlords Win #
+################
+# 1330110028 Power Vacuum
+event = {
+	id = 1330110028
+	random = no
+	tag = { CGX CYN CSX CXB SIK }
+	persistent = yes
+
+	#Triggered
+
+	name = EVT_1330110028_NAME
+	desc = EVT_1330110028_DESC
+
+	picture = "ccip_cw"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { trigger = { country = SIK } type = country which = CHC } # SIK->CHC
+		command = { type = leave_alliance when = 1 } # Proxy war
+		command = { trigger = { country = CHC } type = set_domestic which = democratic value = 2 }
+		command = { trigger = { country = CHC } type = set_domestic which = freedom value = 3 }
+		command = { trigger = { country = CHC } type = set_domestic which = political_left value = 7 }
+		command = { trigger = { exists = CYN not = { country = CYN } } type = war which = CYN }
+		command = { trigger = { exists = CGX not = { country = CGX } } type = war which = CGX }
+		command = { trigger = { exists = CSX not = { country = CSX } } type = war which = CSX }
+		command = { trigger = { exists = CXB not = { country = CXB } } type = war which = CXB }
+		command = { trigger = { exists = CHC not = { country = CHC } } type = war which = CHC }
+		command = { trigger = { exists = SIK not = { country = SIK country = CHC } } type = war which = SIK }
+	}
+}
+
+# 1330110029 Power Vacuum
+event = {
+	id = 1330110029
+	country = SOV
+	random = no
+
+	#Triggered
+
+	name = EVT_1330110029_NAME
+	desc = EVT_1330110029_DESC #Due to infighting in China, both central authorities have fallen and warlords are now seeking to become the new central authority. As we control the Xinjiang government, we can turn the territory into the start of a new Chinese Soviet Republic
+
+	picture = "spread_revolution"
+	style = 2
+
+	action = {
+		ai_chance = 70
+		name = ACTION_NAME_OF_COURSE
+		command = { type = relation which = SIK value = 100 }
+		command = { type = relation which = JAP value = -100 }
+		command = { type = end_mastery which = SIK }
+		command = { type = event which = 1330110028 where = SIK when = 0 } #Power Vacuum
+		command = { type = event which = 1330110030 where = JAP when = 7 } #Power Vacuum
+		command = { type = domestic which = interventionism value = 1 }
+	}
+
+	action = {
+		ai_chance = 30
+		name = ACTION_NAME_NO
+		command = { type = relation which = JAP value = 50 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}
+
+#The reason this isn't available if Soviets don't intervene is because Japan preferred a split China and wouldn't have cared unless Soviets invaded.
+# 1330110030 Power Vacuum
+event = {
+	id = 1330110030
+	random = no
+	country = JAP
+
+	#Triggered
+
+	name = EVT_1330110029_NAME
+	desc = EVT_1330110030_DESC
+
+	picture = "ccip_cw"
+	style = 2
+
+	action = {
+		name = EVT_1330110030_ACTION1
+		ai_chance = 70
+		command = { type = relation which = CGX value = 50 }
+		command = { type = relation which = CSX value = 50 }
+		command = { type = relation which = CYN value = 50 }
+		command = { type = relation which = CXB value = 50 }
+		command = { type = relation which = CHC value = -50 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = local_setflag which = 1330110030_WARLORD } #TODO: Mods or 1.05 expand this
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = 1 }
+	}
+
+	action = {
+		trigger = {
+			puppet = { country = MAN country = JAP }
+		}
+		name = EVT_1330110030_ACTION2
+		ai_chance = 30
+		command = { type = alliance which = MAN }
+		command = { trigger = { exists = U74 puppet = { country = U74 country = JAP } } type = inherit when = 3 which = U74 value = 1 }
+		command = { type = war which = CGX }
+		command = { type = war which = CSX }
+		command = { type = war which = CYN }
+		command = { type = war which = CHC }
+		command = { type = war which = CXB }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = name where = MAN which = MAN_QING }
+		command = { type = flag_ext where = MAN which = _QING }
+		command = { type = addclaim which = 1337 where = MAN } #Add claims for MAN
+		command = { type = addclaim which = 1299 where = MAN }
+		command = { type = addclaim which = 1303 where = MAN }
+		command = { type = addclaim which = 1333 where = MAN }
+		command = { type = addclaim which = 1339 where = MAN }
+		command = { type = addclaim which = 1334 where = MAN }
+		command = { type = addclaim which = 1336 where = MAN }
+		command = { type = addclaim which = 1340 where = MAN }
+		command = { type = addclaim which = 1341 where = MAN }
+		command = { type = addclaim which = 1319 where = MAN }
+		command = { type = addclaim which = 1323 where = MAN }
+		command = { type = addclaim which = 1322 where = MAN }
+		command = { type = addclaim which = 1324 where = MAN }
+		command = { type = addclaim which = 1325 where = MAN }
+		command = { type = addclaim which = 1326 where = MAN }
+		command = { type = addclaim which = 1316 where = MAN }
+		command = { type = addclaim which = 1317 where = MAN }
+		command = { type = addclaim which = 1344 where = MAN }
+		command = { type = addclaim which = 1342 where = MAN }
+		command = { type = addclaim which = 1338 where = MAN }
+		command = { type = addclaim which = 1345 where = MAN }
+		command = { type = addclaim which = 1346 where = MAN }
+		command = { type = addclaim which = 1347 where = MAN }
+		command = { type = addclaim which = 1348 where = MAN }
+		command = { type = addclaim which = 1357 where = MAN }
+		command = { type = addclaim which = 1358 where = MAN }
+		command = { type = addclaim which = 1359 where = MAN }
+		command = { type = addclaim which = 1360 where = MAN }
+		command = { type = addclaim which = 1354 where = MAN }
+		command = { type = addclaim which = 1353 where = MAN }
+		command = { type = addclaim which = 1318 where = MAN }
+		command = { type = addclaim which = 1355 where = MAN }
+		command = { type = addclaim which = 1309 where = MAN }
+		command = { type = addclaim which = 1311 where = MAN }
+		command = { type = addclaim which = 1312 where = MAN }
+		command = { type = addclaim which = 1310 where = MAN }
+		command = { type = addclaim which = 1304 where = MAN }
+		command = { type = addclaim which = 1302 where = MAN }
+		command = { type = addclaim which = 1258 where = MAN }
+		command = { type = addclaim which = 1262 where = MAN }
+		command = { type = addclaim which = 1257 where = MAN }
+		command = { type = addclaim which = 1296 where = MAN }
+		command = { type = addclaim which = 1292 where = MAN }
+		command = { type = addclaim which = 1293 where = MAN }
+		command = { type = addclaim which = 1297 where = MAN }
+		command = { type = addclaim which = 1298 where = MAN }
+		command = { type = addclaim which = 1305 where = MAN }
+		command = { type = addclaim which = 1306 where = MAN }
+		command = { type = addclaim which = 1291 where = MAN }
+		command = { type = addclaim which = 1313 where = MAN }
+		command = { type = addclaim which = 1307 where = MAN }
+		command = { type = addclaim which = 1308 where = MAN }
+		command = { type = addclaim which = 1356 where = MAN }
+		command = { type = addclaim which = 1349 where = MAN }
+		command = { type = addclaim which = 1335 where = MAN }
+		command = { type = addclaim which = 1314 where = MAN }
+		command = { type = addclaim which = 1315 where = MAN }
+		command = { type = addclaim which = 1267 where = MAN }
+		command = { type = addclaim which = 1256 where = MAN }
+		command = { type = addclaim which = 1320 where = MAN }
+		command = { type = addclaim which = 1321 where = MAN }
+		command = { type = addclaim which = 1343 where = MAN }
+		command = { type = addclaim which = 1300 where = MAN }
+		command = { type = addclaim which = 1301 where = MAN }
+		command = { type = addclaim which = 1350 where = MAN }
+		command = { type = addclaim which = 1351 where = MAN }
+		command = { type = addclaim which = 1352 where = MAN }
+		command = { type = addclaim which = 1389 where = MAN }
+		command = { type = addclaim which = 1390 where = MAN }
+		command = { type = addclaim which = 1385 where = MAN }
+		command = { type = addclaim which = 1386 where = MAN }
+		command = { type = addclaim which = 1387 where = MAN }
+		command = { type = addclaim which = 1388 where = MAN }
+		command = { type = addclaim which = 1384 where = MAN }
+		command = { type = addclaim which = 1378 where = MAN }
+		command = { type = addclaim which = 1365 where = MAN }
+		command = { type = addclaim which = 1376 where = MAN }
+		command = { type = addclaim which = 1377 where = MAN }
+		command = { type = addclaim which = 1375 where = MAN }
+		command = { type = addclaim which = 1380 where = MAN }
+		command = { type = addclaim which = 1381 where = MAN }
+		command = { type = addclaim which = 1382 where = MAN }
+		command = { type = addclaim which = 1383 where = MAN }
+		command = { type = addclaim which = 1369 where = MAN }
+		command = { type = addclaim which = 1370 where = MAN }
+		command = { type = addclaim which = 1373 where = MAN }
+		command = { type = addclaim which = 1379 where = MAN }
+		command = { type = addclaim which = 1367 where = MAN }
+		command = { type = addclaim which = 1361 where = MAN }
+		command = { type = addclaim which = 1368 where = MAN }
+		command = { type = addclaim which = 1241 where = MAN }
+		command = { type = addclaim which = 1247 where = MAN }
+		command = { type = addclaim which = 1246 where = MAN }
+		command = { type = addclaim which = 1251 where = MAN }
+		command = { type = addclaim which = 1242 where = MAN }
+		command = { type = addclaim which = 1254 where = MAN }
+		command = { type = addclaim which = 1331 where = MAN }
+		command = { type = addclaim which = 1332 where = MAN }
+		command = { type = addclaim which = 1252 where = MAN }
+		command = { type = addclaim which = 1253 where = MAN }
+		command = { type = addclaim which = 1248 where = MAN }
+		command = { type = addclaim which = 1249 where = MAN }
+		command = { type = addclaim which = 1250 where = MAN }
+		command = { type = addclaim which = 1327 where = MAN }
+		command = { type = addclaim which = 1243 where = MAN }
+		command = { type = addclaim which = 1244 where = MAN }
+		command = { type = addclaim which = 1245 where = MAN }
+		command = { type = addclaim which = 1328 where = MAN }
+		command = { type = addclaim which = 1329 where = MAN }
+		command = { type = addclaim which = 1330 where = MAN }
+		command = { type = addclaim which = 1374 where = MAN }
+		command = { type = addclaim which = 1204 where = MAN }
+		command = { type = addclaim which = 1212 where = MAN }
+		command = { type = addclaim which = 1205 where = MAN }
+		command = { type = addclaim which = 1199 where = MAN }
+		command = { type = addclaim which = 1203 where = MAN }
+		command = { type = addclaim which = 1200 where = MAN }
+		command = { type = addclaim which = 1206 where = MAN }
+		command = { type = addclaim which = 1213 where = MAN }
+		command = { type = addclaim which = 1237 where = MAN }
+		command = { type = addclaim which = 1207 where = MAN }
+		command = { type = addclaim which = 1220 where = MAN }
+		command = { type = addclaim which = 1218 where = MAN }
+		command = { type = addclaim which = 1236 where = MAN }
+		command = { type = addclaim which = 1201 where = MAN }
+		command = { type = addclaim which = 1208 where = MAN }
+		command = { type = addclaim which = 1209 where = MAN }
+		command = { type = addclaim which = 1210 where = MAN }
+		command = { type = addclaim which = 1211 where = MAN }
+		command = { type = addclaim which = 1214 where = MAN }
+		command = { type = addclaim which = 1215 where = MAN }
+		command = { type = addclaim which = 1216 where = MAN }
+		command = { type = addclaim which = 1235 where = MAN }
+		command = { type = addclaim which = 1217 where = MAN }
+		command = { type = addclaim which = 1197 where = MAN }
+		command = { type = addclaim which = 1198 where = MAN }
+		command = { type = addclaim which = 1268 where = MAN }
+		command = { type = addclaim which = 1271 where = MAN }
+		command = { type = addclaim which = 1264 where = MAN }
+		command = { type = addclaim which = 1263 where = MAN }
+		command = { type = addclaim which = 1272 where = MAN }
+		command = { type = addclaim which = 1265 where = MAN }
+		command = { type = addclaim which = 1266 where = MAN }
+		command = { type = addclaim which = 1283 where = MAN }
+		command = { type = addclaim which = 1284 where = MAN }
+		command = { type = addclaim which = 1285 where = MAN }
+		command = { type = addclaim which = 1270 where = MAN }
+		command = { type = addclaim which = 1260 where = MAN }
+		command = { type = addclaim which = 1255 where = MAN }
+		command = { type = addclaim which = 1202 where = MAN }
+		command = { type = addclaim which = 1238 where = MAN }
+		command = { type = addclaim which = 1240 where = MAN }
+		command = { type = addclaim which = 1239 where = MAN }
+		command = { type = addclaim which = 1219 where = MAN }
+		command = { type = addclaim which = 1371 where = MAN }
+		command = { type = addclaim which = 1372 where = MAN }
+		command = { type = addclaim which = 1362 where = MAN }
+		command = { type = addclaim which = 1363 where = MAN }
+		command = { type = addclaim which = 1364 where = MAN }
+		command = { type = addclaim which = 1269 where = MAN }
+		command = { type = addclaim which = 1259 where = MAN }
+		command = { type = addclaim which = 1261 where = MAN }
+		command = { type = addclaim which = 1273 where = MAN }
+		command = { type = addclaim which = 1274 where = MAN }
+		command = { type = addclaim which = 1275 where = MAN }
+		command = { type = addclaim which = 1276 where = MAN }
+		command = { type = addclaim which = 1277 where = MAN }
+		command = { type = addclaim which = 1279 where = MAN }
+		command = { type = addclaim which = 1280 where = MAN }
+		command = { type = addclaim which = 1281 where = MAN }
+		command = { type = addclaim which = 1282 where = MAN }
+		command = { type = addclaim which = 1286 where = MAN }
+		command = { type = addclaim which = 1287 where = MAN }
+		command = { type = addclaim which = 1288 where = MAN }
+		command = { type = addclaim which = 1289 where = MAN }
+		command = { type = addclaim which = 1290 where = MAN }
+		command = { type = addclaim which = 1294 where = MAN }
+		command = { type = addclaim which = 1295 where = MAN }
+		command = { type = addclaim which = 1120 where = MAN }
+		command = { type = addclaim which = 1124 where = MAN }
+		command = { type = addclaim which = 1125 where = MAN }
+		command = { type = addclaim which = 1123 where = MAN }
+		command = { type = addclaim which = 1121 where = MAN }
+		command = { type = addclaim which = 1122 where = MAN }
+		command = { type = addclaim which = 1413 where = MAN }
+		command = { type = addclaim which = 1278 where = MAN }
+		command = { type = addclaim which = 1455 where = MAN }
+		command = { type = addclaim which = 1458 where = MAN }
+		command = { type = addclaim which = 1414 where = MAN }
+	}
+
+	action = {
+		name = EVT_1330110030_ACTION3
+		ai_chance = 10
+		command = { type = relation which = SOV value = 50 }
+		command = { type = relation which = CHC value = 100 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}
+
+######################
+# Japan Intervention #
+######################
+
+event = {
+    id = 1330110053 #Enemy at the Gates!
+    country = JAP
+    random = no
+
+    #Triggered
+
+	trigger = {
+			not = { event = 2011018 } #Fading Sun
+			not = { event = 2011028 } #WW2 Defeat
+	}
+    		
+    name = 2611name
+    desc = EVT_1330110053_DESC
+
+    style = 2
+    picture = "spread_revolution"
+
+    action = {
+		name = ACTION_NAME_FIGHT
+        command = { type = war which = CHC }
+		command = { trigger = { exists = U74 puppet = { country = U74 country = JAP } } type = inherit when = 3 which = U74 value = 1 }
+        command = { type = ai which = "switch/ferocity_yes.ai" }
+        command = { type = ai which = "switch/jap_chc.ai" }
+    }
+}

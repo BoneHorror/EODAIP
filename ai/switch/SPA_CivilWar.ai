@@ -1,0 +1,142 @@
+# Republic Spain 1936 AI File by Lothos
+
+switch = no # [yes/no]
+max_front_ratio = 1.2
+max_garrison_prop = 0.10
+min_garrison_prop = 0.05
+neutrality = 150
+war = 0
+strat_redeploy_threshold = 25
+exp_force_ratio = 0.750
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+use_offensive_supply = no
+
+target = { 
+	451 = 100 # Burgos
+	460 = 80 # Madrid
+	474	= 70 # Sevilla
+	440 = 50 # Barcelona
+	473 = 20 # Cadiz
+} 
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.00 
+}
+military = { 
+	#### Divisions etc...
+	infantry 		= 40
+	cavalry 		= 0
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 		= 0
+	armor 			= 0
+	paratrooper 		= 0
+	marine 			= 0
+	bergsjaeger 	= 15
+	garrison		= 10
+    	hq 		= 3
+	militia 		= 10
+#				78 %
+	interceptor 	= 10
+	multi_role 		= 0
+	cas 			= 7
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				22 %
+	battleship 		= 0
+	carrier 		= 0
+	destroyer 		= 0
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	transports 		= 0
+#				0 %
+	escort = 0.000  # Escort Fighterss
+}
+technology = { 
+	armor 		= 2
+	infantry 	= 4
+	industry 	= 2
+	aircraft 	= 1
+	naval 		= 0
+	land_doctrines 	= 2
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 0
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 2.0
+	overseas_multiplier 	= 0.1
+	home_peace_cap 			= 50
+	war_zone_odds 			= 2.0
+	key_point_prio_mult		= 1
+	revolt_risk_mult		= 0
+
+	# PRIORITIES:
+	beach			= 0		# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		FRA = -1
+		ENG = -1
+		POR = -1
+		SPA = 150
+	}
+	province_priorities = {
+	460 = 50 #Madrid
+	470 = 30 #Grenada
+	451 = 20 #Burgos
+	}
+	area_multiplier = { 
+	474 = 1.5 #Grenada
+	460 = 1.5 #Madrid
+	441 = 1.3 #Leon
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 10
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human = 2.0
+	base_attack_odds	= 1.7
+	min_attack_odds		= 1.4
+	max_attack_odds		= 2.5
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.65 
+	province_priorities = {
+	460 = 1.50 #Madrid
+	470 = 1.30 #Grenada
+	451 = 1.20 #Burgos
+	}
+	enemy_handicap = {
+		SPR = 20
+		}
+	passivity = {
+		SPR = 85
+	}
+}

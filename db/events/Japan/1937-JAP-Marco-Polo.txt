@@ -1,0 +1,134 @@
+# 2011022 JAP Marco Polo Bridge
+
+#########################################################################
+#  Marco Polo Bridge Incident (Japan, China)
+#########################################################################
+event = {
+	id = 2011022
+	random = no
+	country = JAP
+
+	name = EVT_20_NAME
+	desc = EVT_20_DESC
+	style = 2
+ 	picture = "Marco_Polo_bridge"
+
+	decision = {
+		exists = CHI
+		NOT = {
+			or = {
+				war = { country = JAP country = CHI }
+				puppet = { country = JAP country = CHI }
+				puppet = { country = CHI country = JAP }
+				war = { country = JAP country = CSX }
+				puppet = { country = JAP country = CSX }
+				war = { country = JAP country = CGX }
+				puppet = { country = JAP country = CGX }
+				war = { country = JAP country = CYN }
+				war = { country = JAP country = CXB }
+				puppet = { country = JAP country = CYN }
+				puppet = { country = JAP country = CXB }
+				alliance = { country = JAP country = CHI }
+				alliance = { country = JAP country = CSX }
+				alliance = { country = JAP country = CGX }
+				alliance = { country = JAP country = CYN }
+				alliance = { country = JAP country = CXB }
+				alliance = { country = CHI country = SOV }
+				alliance = { country = CHI country = USA }
+				alliance = { country = CHI country = ENG }
+				control = { province = 1247 data = JAP } 
+				war = { country = JAP country = SOV }
+				event = 2011028 #JAP Japanese surrender negotiations
+				event = 2011018 #JAP  The Fading Sun
+			}
+		}
+	}
+	decision_trigger = { 
+	    atwar = no
+		or = {
+			and = {
+				exists = U74
+				puppet = { country = U74 country = JAP }
+				not = { exists = CHC }
+			}
+			year = 1937
+			month = 7
+		}
+	}
+
+	trigger = {
+	    atwar = no
+		army = 40
+		land_percentage = { country = CHI value = 0.25 }
+        random = 50
+		exists = CHI
+		NOT = {
+			or = {
+				war = { country = JAP country = CHI }
+				puppet = { country = JAP country = CHI }
+				puppet = { country = CHI country = JAP }
+				war = { country = JAP country = CSX }
+				puppet = { country = JAP country = CSX }
+				war = { country = JAP country = CGX }
+				puppet = { country = JAP country = CGX }
+				war = { country = JAP country = CYN }
+				war = { country = JAP country = CXB }
+				puppet = { country = JAP country = CYN }
+				puppet = { country = JAP country = CXB }
+				alliance = { country = JAP country = CHI }
+				#alliance = { country = JAP country = CSX }
+				alliance = { country = JAP country = CGX }
+				alliance = { country = JAP country = CYN }
+				alliance = { country = JAP country = CXB }
+				alliance = { country = CHI country = SOV }
+				alliance = { country = CHI country = USA }
+				alliance = { country = CHI country = ENG }
+				control = { province = 1247 data = JAP } 
+				war = { country = JAP country = SOV }
+				event = 2011028 #JAP Japanese surrender negotiations
+				event = 2011018 #JAP  The Fading Sun
+			}
+		}
+		or = {
+			and = {
+				exists = U74
+				puppet = { country = U74 country = JAP }
+				not = { exists = CHC }
+			}
+			year = 1937
+		}
+	}
+
+	date = { day = 0 month = july year = 1937 }
+	offset = 1
+	deathdate = { day = 29 month = august year = 1963 }
+
+	action = {
+		name = EVT_20_ACTA
+		command = { type = war which = CHI }
+		command = { trigger = { exists = U74 puppet = { country = U74 country = JAP } } type = inherit when = 3 which = U74 value = 1 }
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = CHI value = -50 }
+		command = { type = relation which = CSX value = -50 }
+		command = { type = relation which = CGX value = -50 }
+        	command = { type = relation which = CYN value = -50 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = trigger which = 2012016 } # Chinese unified front
+		command = { trigger = { ai = yes NOT = { local_flag = MOB7 } NOT = { local_flag = demob } } type = trigger which = 8300107 } #partial Mobilization
+			command = { type = sleepevent which = 1330120000 } #No China-Japan Incidents
+		command = { type = sleepevent which = 1330120001 } 
+		command = { type = sleepevent which = 1330120002 } 
+		command = { type = sleepevent which = 1330120003 } 
+		command = { type = sleepevent which = 1330120004 } 
+		command = { type = sleepevent which = 1330120005 } 
+		command = { type = sleepevent which = 1330120006 } 
+		command = { type = sleepevent which = 1330120007 } 
+		command = { type = sleepevent which = 1330120038 } 
+		command = { type = sleepevent which = 1330120039 }
+		command = { type = sleepevent which = 1330110014 } # Fifth Encirclement Campaign
+		command = { type = event which = 1330110078 where = CHI when = 3 }
+	}
+}

@@ -1,0 +1,235 @@
+BRA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+160001;Head of State;Getulio Vargas;1933;1964;1999;PA;Autocratic Charmer;High;M34001;X
+160002;Head of Government;Getulio Vargas;1933;1964;1999;PA;Naive Optimist;High;M34001;X
+160003;Foreign Minister;José de Macedo Soares;1933;1964;1999;PA;Iron Fisted Brute;Medium;M34003;X
+160004;Minister of Armament;Joao Café Filho;1933;1964;1999;SD;Military Entrepreneur;Low;M34004;X
+160005;Minister of Security;Marcondes Filho;1933;1964;1999;SD;Crime Fighter;High;M34005;X
+160006;Head of Military Intelligence;Filinto Muller;1933;1964;1999;SD;Political Specialist;Very High;M34006;X
+160007;Chief of Staff;Eurico Gaspar Dutra;1933;1964;1999;PA;School of Defence;Medium;M34007;X
+160008;Chief of Army;Joao Neves da Fontoura;1933;1964;1999;PA;Static Defence Doctrine;Medium;M34008;X
+160009;Chief of Navy;Aristides Guilhem;1933;1964;1999;SD;Open Seas Doctrine;Medium;M34009;X
+160010;Chief of Air Force;Salgado Filho;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M34010;X
+160011;Head of State;Luis Carlos Prestes;1933;1964;1999;ST;Die-hard Reformer;High;M34051;X
+160012;Head of State;Nero Fiuza de Castro;1945;1964;1999;SD;Benevolent Gentleman;High;M34031;X
+160013;Head of State;Eduardo Gomes;1937;1964;1999;ML;Stern Imperialist;High;M34021;X
+160014;Head of State;Washington Luis Pereira;1943;1964;1999;SC;Insignificant Layman;High;M34066;X
+160015;Head of State;Eurico Gaspar Dutra;1945;1964;1999;SC;Weary Stiffneck;High;M34011;X
+160016;Head of State;Plinio Salgado;1933;1964;1999;FA;Powerhungry Demagogue;High;M34041;X
+160017;Head of Government;Luis Carlos Prestes;1933;1964;1999;ST;Smiling Oilman;High;M34051;X
+160018;Head of Government;Nero Fiuza de Castro;1945;1964;1999;SD;Naive Optimist;High;M34031;X
+160019;Head of Government;Eduardo Gomes;1937;1964;1999;ML;Flamboyant Tough Guy;High;M34021;X
+160020;Head of Government;Washington Luis Pereira;1943;1964;1999;SC;Naive Optimist;High;M34066;X
+160021;Head of Government;Eurico Gaspar Dutra;1945;1964;1999;PA;Old General;High;M34011;X
+160022;Head of Government;Plinio Salgado;1933;1964;1999;FA;Backroom Backstabber;High;M34041;X
+160023;Foreign Minister;Oswaldo Aranha;1938;1964;1999;LWR;Biased Intellectual;Medium;M34076;X
+160024;Foreign Minister;Pedro Leão Veloso;1944;1964;1999;LWR;Great Compromiser;Medium;M34077;X
+160025;Foreign Minister;Henry Berger;1939;1964;1999;ST;Ideological Crusader;Very Low;M34053;X
+160026;Foreign Minister;Oscar Weinschenck;1942;1964;1999;LE;The Cloak N Dagger Schemer;High;M34079;X
+160027;Foreign Minister;Mario Pimentel Brandão;1937;1964;1999;SD;The Cloak N Dagger Schemer;High;M34080;X
+160028;Foreign Minister;Otavio Mangabeira;1945;1964;1999;SD;Great Compromiser;High;M34033;X
+160029;Foreign Minister;Otavio Mangabeira;1937;1964;1999;ML;The Cloak N Dagger Schemer;Low;M34033;X
+160030;Foreign Minister;Afranio de Mello Franco;1939;1964;1999;ML;Great Compromiser;High;M34083;X
+160031;Foreign Minister;Acyr de Nascimento Paes;1943;1964;1999;ML;Biased Intellectual;Low;M34084;X
+160032;Foreign Minister;Paso Fernandes Morã;1943;1964;1999;SC;Ideological Crusader;High;M34086;X
+160033;Foreign Minister;S. de Sousa Leão Gracíe;1946;1964;1999;SC;Biased Intellectual;High;M34087;X
+160034;Foreign Minister;Raul Fernandes;1947;1964;1999;SC;Great Compromiser;High;M34013;X
+160035;Foreign Minister;Joao Neves da Fontoura;1945;1964;1999;SC;General Staffer;High;M34008;X
+160036;Foreign Minister;Miguel Costas;1937;1964;1999;FA;Iron Fisted Brute;Low;M34043;X
+160037;Foreign Minister;Plinio Salgado;1942;1964;1999;FA;Apologetic Clerk;Medium;M34041;X
+160038;Foreign Minister;Newton Cavalcanti;1944;1964;1999;FA;General Staffer;Medium;M34047;X
+160039;Minister of Armament;Januario Coelho Neto;1937;1964;1999;LWR;Tank Proponent;High;M34093;X
+160040;Minister of Armament;José de Macedo Soares;1939;1964;1999;LWR;laissez-faire capitalist;Medium;M34003;X
+160041;Minister of Armament;Getulio Vargas;1941;1964;1999;LWR;Administrative Genius;High;M34001;X
+160042;Minister of Armament;Agustin Juarez Folhã;1943;1964;1999;LWR;Corrupt Kleptocrat;Medium;M34096;X
+160043;Minister of Armament;Henry Berger;1941;1964;1999;ST;Air Superiority Proponent;Very Low;M34053;X
+160044;Minister of Armament;Luis Carlos Prestes;1945;1964;1999;SD;Strategic Air Proponent;Very Low;M34051;X
+160045;Minister of Armament;Americo de Almeida;1937;1964;1999;ML;Resource Industrialist;Medium;M34024;X
+160046;Minister of Armament;Gastão da Cunha Bahiana;1939;1964;1999;ML;Theoretical Scientist;Medium;M34103;X
+160047;Minister of Armament;José Linhares Filho;1940;1964;1999;ML;laissez-faire capitalist;High;M34104;X
+160048;Minister of Armament;Eduardo Gomes;1943;1964;1999;ML;Air to Ground Proponent;Medium;M34021;X
+160049;Minister of Armament;Elyseu F. de Montarroyos;1945;1964;1999;ML;Air Superiority Proponent;High;M34106;X
+160050;Minister of Armament;Washington Luis Pereira;1943;1964;1999;SC;Administrative Genius;Low;M34066;X
+160051;Minister of Armament;Afranio de Mello Franco;1942;1964;1999;SC;Battle Fleet Proponent;High;M34083;X
+160052;Minister of Armament;Gastão Vidigal;1945;1964;1999;SC;Resource Industrialist;High;M34014;X
+160053;Minister of Armament;Gustavo Barroso;1946;1964;1999;SC;Submarine Proponent;Medium;M34044;X
+160054;Minister of Armament;Gustavo Barroso;1937;1964;1999;FA;Military Entrepreneur;Medium;M34044;X
+160055;Minister of Armament;Waldemar Costa Neto;1941;1964;1999;FA;Infantry Proponent;High;M34112;X
+160056;Minister of Armament;Carlos Ferreira de Camargo;1943;1964;1999;FA;laissez-faire capitalist;High;M34113;X
+160057;Minister of Security;Pedro Leão Veloso;1937;1964;1999;LWR;Compassionate Gentleman;Medium;M34077;X
+160058;Minister of Security;Manuel A. Venâncio;1940;1964;1999;LWR;Man of the People;Low;M34035;X
+160059;Minister of Security;Mario Pimentel Brandão;1943;1964;1999;LWR;Crooked Kleptocrat;High;M34080;X
+160060;Minister of Security;Carlos Abguar Bastos;1939;1964;1999;ST;Prince of Terror;High;M34055;X
+160061;Minister of Security;Ademar de Carvalho Gomes;1944;1964;1999;ST;Man of the People;High;M34119;X
+160062;Minister of Security;Guilherme Guinlé de Silvio;1939;1964;1999;SD;Efficient Sociopath;High;M34118;X
+160063;Minister of Security;Oscar Weinschenck;1941;1964;1999;SD;Silent Lawyer;High;M34079;X
+160064;Minister of Security;Carlos Abguar Bastos;1945;1964;1999;SD;Back Stabber;Low;M34055;X
+160065;Minister of Security;Costa Neto;1937;1964;1999;ML;Compassionate Gentleman;Medium;M34015;X
+160066;Minister of Security;Mesquito da Costa;1939;1964;1999;ML;Silent Lawyer;High;M34025;X
+160067;Minister of Security;Teotonio da Fonseca;1943;1964;1999;ML;Prince of Terror;High;M34126;X
+160068;Minister of Security;Raul Fernandes;1943;1964;1999;SC;Back Stabber;High;M34013;X
+160069;Minister of Security;Epitacio da Silva Pessoa;1945;1964;1999;SC;Crime Fighter;Medium;M34128;X
+160070;Minister of Security;Teotonio da Fonseca;1946;1964;1999;SC;Prince of Terror;High;M34126;X
+160071;Minister of Security;Carlos Almeida Neto;1947;1964;1999;SC;Efficient Sociopath;High;M34130;X
+160072;Minister of Security;Riccardo Cassiano;1937;1964;1999;FA;Efficient Sociopath;Medium;M34045;X
+160073;Minister of Security;Carlos Ferreira de Camargo;1940;1964;1999;FA;Prince of Terror;High;M34113;X
+160074;Minister of Security;Carlos Almeida Neto;1943;1964;1999;FA;Back Stabber;High;M34130;X
+160075;Head of Military Intelligence;Raulinho Volta Redondo;1939;1964;1999;LWR;Logistics Specialist;High;M34134;X
+160076;Head of Military Intelligence;Ahusto de Souza e Silva;1943;1964;1999;LWR;Political Specialist;High;M34056;X
+160077;Head of Military Intelligence;Ademar de Carvalho Gomes;1943;1964;1999;ST;Naval Intelligence Specialist;High;M34119;X
+160078;Head of Military Intelligence;Manuel A. Venâncio;1945;1964;1999;SD;Technical Specialist;Low;M34035;X
+160079;Head of Military Intelligence;Costa Neto;1937;1964;1999;ML;Naval Intelligence Specialist;Medium;M34015;X
+160080;Head of Military Intelligence;Mesquito da Costa;1939;1964;1999;ML;Dismal Enigma;High;M34025;X
+160081;Head of Military Intelligence;Rodrigo Octavio;1945;1964;1999;ML;Political Specialist;High;M34143;X
+160082;Head of Military Intelligence;Pedro Perotti;1943;1964;1999;SC;Dismal Enigma;Medium;M34144;X
+160083;Head of Military Intelligence;Riccardo Cassiano;1937;1964;1999;FA;Political Specialist;Medium;M34045;X
+160084;Head of Military Intelligence;Carlos Almeida Neto;1944;1964;1999;FA;Logistics Specialist;High;M34130;X
+160085;Chief of Staff;Magalhães Barata de Azevedo;1943;1964;1999;LWR;School of Manoeuvre;Medium;M34037;X
+160086;Chief of Staff;Luis Carlos Prestes;1939;1964;1999;ST;School of Mass Combat;Undying;M34051;X
+160087;Chief of Staff;Nero Fiuza de Castro;1945;1964;1999;SD;School of Mass Combat;Medium;M34031;X
+160088;Chief of Staff;Henrique Teixeira Lott;1937;1964;1999;ML;School of Fire Support;Medium;M34027;X
+160089;Chief of Staff;Argemiro Assis;1939;1964;1999;ML;School of Defence;Medium;M34154;X
+160090;Chief of Staff;Augusto da Gama Leiros;1943;1964;1999;ML;School of Manoeuvre;Medium;M34155;X
+160091;Chief of Staff;Mesquito da Costa;1945;1964;1999;ML;School of Mass Combat;Medium;M34025;X
+160092;Chief of Staff;Eurico Gaspar Dutra;1943;1964;1999;SC;School of Mass Combat;Medium;M34011;X
+160093;Chief of Staff;Joao Neves da Fontoura;1945;1964;1999;SC;School of Defence;High;M34008;X
+160094;Chief of Staff;Newton Cavalcanti;1937;1964;1999;FA;School of Psychology;Medium;M34047;X
+160095;Chief of Staff;Tomas Sebistao de Mendonca;1943;1964;1999;FA;School of Mass Combat;Medium;M34161;X
+160096;Chief of Army;Eurico Gaspar Dutra;1937;1964;1999;LWR;Static Defence Doctrine;Medium;M34011;X
+160097;Chief of Army;Silo Meireles;1943;1964;1999;LWR;Elastic Defence Doctrine;Very Low;M34058;X
+160098;Chief of Army;Mario da Silva Camargo;1941;1964;1999;ST;Guns and Butter Doctrine;High;M34165;X
+160099;Chief of Army;Magalhães Barata de Azevedo;1939;1964;1999;SD;Armoured Spearhead Doctrine;Medium;M34037;X
+160100;Chief of Army;Nero Fiuza de Castro;1945;1964;1999;SD;Elastic Defence Doctrine;Medium;M34031;X
+160101;Chief of Army;Henrique Teixeira Lott;1937;1964;1999;ML;Decisive Battle Doctrine;Medium;M34027;X
+160102;Chief of Army;Argemiro Assis;1939;1964;1999;ML;Static Defence Doctrine;Medium;M34154;X
+160103;Chief of Army;Augusto da Gama Leiros;1943;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M34155;X
+160104;Chief of Army;Mesquito da Costa;1945;1964;1999;ML;Elastic Defence Doctrine;Medium;M34025;X
+160105;Chief of Army;Goes Monteiro;1943;1964;1999;SC;Guns and Butter Doctrine;High;M34018;X
+160106;Chief of Army;Eurico Gaspar Dutra;1945;1964;1999;SC;Static Defence Doctrine;Medium;M34011;X
+160107;Chief of Army;Tomas Sebistao de Mendonca;1937;1964;1999;FA;Guns and Butter Doctrine;Medium;M34161;X
+160108;Chief of Army;Newton Cavalcanti;1943;1964;1999;FA;Decisive Battle Doctrine;Medium;M34047;X
+160109;Chief of Navy;Alvaro de Souza;1937;1964;1999;LWR;Indirect Approach Doctrine;Very Low;M34059;X
+160110;Chief of Navy;Moreira Lima;1939;1964;1999;SD;Power Projection Doctrine;Low;M34039;X
+160111;Chief of Navy;Jorge Martins;1937;1964;1999;ML;Base Control Doctrine;Medium;M34029;X
+160112;Chief of Navy;Sylvio de Noronha;1943;1964;1999;SC;Open Seas Doctrine;High;M34019;X
+160113;Chief of Navy;Floriano Peixoto;1945;1964;1999;SC;Decisive Naval Battle Doctrine;High;M34182;X
+160114;Chief of Navy;Tarcisio Padilha;1937;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M34049;X
+160115;Chief of Air Force;Epaminondas dos Santos;1943;1964;1999;LWR;Air Superiority Doctrine;Medium;M34040;X
+160116;Chief of Air Force;Agliberto Vieira;1939;1964;1999;ST;Naval Aviation Doctrine;Very High;M34060;X
+160117;Chief of Air Force;Leonel Benevides de Rezende;1944;1964;1999;ST;Vertical Envelopment Doctrine;Very High;M34187;X
+160118;Chief of Air Force;Nero Moura;1937;1964;1999;ML;Vertical Envelopment Doctrine;Medium;M34030;X
+160119;Chief of Air Force;Figueira de Almeida;1943;1964;1999;SC;Army Aviation Doctrine;Medium;M34020;X
+160120;Chief of Air Force;Eduardo Gomés;1945;1964;1999;SC;Army Aviation Doctrine;Medium;M34021;X
+160121;Chief of Air Force;Mourão Filho;1937;1964;1999;FA;Carpet Bombing Doctrine;Very High;M34050;X
+160122;Head of State;José Linhares Filho;1945;1964;1999;SC;Popular Figurehead;High;M34104;X
+160123;Foreign Minister;Raoul Fernandes;1933;1964;1999;SC;Great Compromiser;Medium;M34013;X
+160124;Head of State;Getulio Vargas;1951;1964;1999;SC;Die-hard Reformer;High;M34001;X
+160125;Head of State;Afranio de Mello Franco;1951;1964;1999;SD;Benevolent Gentleman;High;M34083;X
+160126;Head of Government;Joao Café Filho;1951;1964;1999;SC;Silent Workhorse;High;M34004;X
+160127;Head of Government;Afranio de Mello Franco;1951;1964;1999;SD;Naive Optimist;High;M34083;X
+160128;Foreign Minister;Manuel A. Venâncio;1951;1964;1999;SD;Biased Intellectual;Medium;M34035;X
+160129;Minister of Armament;Vicente Raõ;1951;1964;1999;SC;laissez-faire capitalist;Medium;M34200;X
+160130;Minister of Armament;S. Rauliono de Oliviera;1951;1964;1999;SD;Resource Industrialist;Medium;M34201;X
+160131;Minister of Security;José de Macedo Soares;1951;1964;1999;SC;Compassionate Gentleman;Medium;M34202;X
+160132;Minister of Security;Horacio Lafér;1951;1964;1999;SD;Crime Fighter;Medium;M34203;X
+160133;Head of Military Intelligence;Raoul Fernandes;1951;1964;1999;SC;Political Specialist;High;M34013;X
+160134;Head of Military Intelligence;Horacio Lafér;1951;1964;1999;SD;Dismal Enigma;High;M34203;X
+160135;Chief of Staff;Amaury Kruel;1951;1964;1999;SC;School of Manoeuvre;Medium;L31091;X
+160136;Chief of Army;Artur da Costa é Silva;1951;1964;1999;SC;Decisive Battle Doctrine;Medium;L31012;X
+160137;Chief of Air Force;Ismael Motta Paes;1945;1964;1999;SC;Air Superiority Doctrine;Medium;L31078;X
+160138;Head of State;Afonso Augusto Moreira Pena;1906;1909;1999;SC;Die-hard Reformer;Medium;2217;X
+160139;Head of State;Nilo Procópio Peçanha;1909;1910;1999;SC;Barking Buffoon;Medium;2835;X
+160140;Head of State;Hermes Rodrigues da Fonseca;1910;1914;1999;SC;Autocratic Charmer;Medium;2237;X
+160141;Head of State;Venceslau Brás Pereira Gomes;1914;1918;1999;SC;Benevolent Gentleman;Medium;6610;X
+160142;Head of State;Delfim Moreira da Costa Ribeiro;1918;1919;1999;SC;Ruthless Powermonger;Medium;2228;X
+160143;Head of State;Epitácio Lindolfo da Silva Pessoa;1919;1922;1999;SC;Insignificant Layman;Medium;2231;X
+160144;Head of State;Artur da Silva Bernardes;1922;1926;1999;SC;Popular Figurehead;Medium;2223;X
+160145;Head of Government;Nilo Procópio Peçanha;1906;1910;1999;SC;Flamboyant Tough Guy;Medium;2835;X
+160146;Head of Government;Venceslau Brás Pereira Gomes;1910;1914;1999;SC;Ambitious Union Boss;Medium;6610;X
+160147;Head of Government;Urbano Santos da Costa Araújo;1914;1918;1999;SC;Backroom Backstabber;Medium;6270;X
+160148;Head of Government;Delfim Moreira da Costa Ribeiro;1918;1920;1999;SC;Naive Optimist;Medium;2228;X
+160149;Head of Government;Francisco Álvaro Bueno de Paiva;1920;1922;1999;SC;Smiling Oilman;Medium;2234;X
+160150;Head of Government;Estácio de Albuquerque Coimbra;1922;1926;1999;SC;Political Protege;Medium;2233;X
+160151;Foreign Minister;José Maria da Silva Paranhos Júnior;1906;1912;1999;SC;Ideological Crusader;Medium;1671;X
+160152;Foreign Minister;Enéas Martins;1912;1919;1999;SC;Biased Intellectual;Medium;2230;X
+160153;Foreign Minister;Lauro Severiano Müller;1912;1926;1999;SC;Great Compromiser;Medium;2082;X
+160154;Foreign Minister;Nilo Procópio Peçanha;1917;1924;1999;SC;Ideological Crusader;Medium;2835;X
+160155;Foreign Minister;Domício da Gama;1918;1925;1999;SC;General Staffer;Medium;2229;X
+160156;Foreign Minister;Augusto Cochrane de Alencar;1919;1927;1999;SC;Apologetic Clerk;Medium;unknownminister;X
+160157;Foreign Minister;José Manuel de Azevedo Marques;1919;1932;1999;SC;The Cloak N Dagger Schemer;Medium;unknownminister;X
+160158;Foreign Minister;José Félix Alves Pacheco;1922;1932;1999;SC;Iron Fisted Brute;Medium;2244;X
+160159;Minister of Armament;David Morethson Campista;1906;1911;1999;SC;laissez-faire capitalist;Medium;2227;X
+160160;Minister of Armament;José Leopoldo de Bulhões Jardim;1909;1928;1999;SC;Corrupt Kleptocrat;Medium;3713;X
+160161;Minister of Armament;Francisco Antônio de Sales;1910;1932;1999;SC;Air to Sea Proponent;Medium;2235;X
+160162;Minister of Armament;Rivadávia da Cunha Correia;1913;1920;1999;SC;Air to Ground Proponent;Medium;6230;X
+160163;Minister of Armament;Sabino Alves Barroso Júnior;1914;1919;1999;SC;Theoretical Scientist;Medium;6243;X
+160164;Minister of Armament;João Pandiá Calógeras;1915;1932;1999;SC;Battle Fleet Proponent;Medium;2240;X
+160165;Minister of Armament;Augusto Tavares de Lira;1916;1932;1999;SC;Submarine Proponent;Medium;2225;X
+160166;Minister of Armament;Antônio Carlos Ribeiro de Andrada;1917;1932;1999;SC;Military Entrepreneur;Medium;2221;X
+160167;Minister of Armament;Amaro Bezerra Cavalcanti de Albuquerque;1918;1922;1999;SC;Air Superiority Proponent;Medium;2219;X
+160168;Minister of Armament;João Ribeiro de Oliveira e Sousa;1919;1932;1999;SC;Administrative Genius;Medium;2241;X
+160169;Minister of Armament;Homero Batista;1919;1924;1999;SC;Infantry Proponent;Medium;2238;X
+160170;Minister of Armament;Rafael de Abreu Sampaio Vidal;1922;1932;1999;SC;Resource Industrialist;Medium;3918;X
+160171;Minister of Security;Augusto Tavares de Lira;1906;1932;1999;SC;Compassionate Gentleman;Medium;2225;X
+160172;Minister of Security;Esmeraldino Olímpio Torres Bandeira;1909;1928;1999;SC;Prince of Terror;Medium;2232;X
+160173;Minister of Security;Rivadávia da Cunha Correia;1910;1920;1999;SC;Man of the People;Medium;6230;X
+160174;Minister of Security;Uladislau Herculano de Freitas Guimarães;1913;1926;1999;SC;Crime Fighter;Medium;6268;X
+160175;Minister of Security;Carlos Maximiliano Pereira dos Santos;1914;1932;1999;SC;Compassionate Gentleman;Medium;2226;X
+160176;Minister of Security;Amaro Cavalcanti Soares de Brito;1918;1922;1999;SC;Silent Lawyer;Medium;2220;X
+160177;Minister of Security;Urbano Santos da Costa Araújo;1918;1922;1999;SC;Efficient Sociopath;Medium;6270;X
+160178;Minister of Security;Alfredo Pinto Vieira de Melo;1919;1923;1999;SC;Back Stabber;Medium;2218;X
+160179;Minister of Security;Joaquim Ferreira Chaves Filho;1921;1932;1999;SC;Man of the People;Medium;2242;X
+160180;Minister of Security;João Luís Alves;1922;1925;1999;SC;Prince of Terror;Medium;2239;X
+160181;Chief of Staff;Hermes Rodrigues da Fonseca;1906;1923;1999;SC;School of Manoeuvre;Medium;192;X
+160182;Chief of Staff;Luís Mendes de Morais;1908;1914;1999;SC;School of Fire Support;Medium;2210;X
+160183;Chief of Staff;Carlos Eugênio de Andrade Guimarães;1909;1920;1999;SC;School of Mass Combat;Medium;188;X
+160184;Chief of Staff;José Bernardino Bormann;1909;1919;1999;SC;School of Defence;Medium;196;X
+160185;Chief of Staff;Emídio Dantas Barreto;1910;1932;1999;SC;School of Psychology;Medium;189;X
+160186;Chief of Staff;Antônio Adolfo da Fontoura Mena Barreto;1911;1923;1999;SC;School of Defence;Medium;185;X
+160187;Chief of Staff;Vespasiano Gonçalves de Albuquerque e Silva;1912;1924;1999;SC;School of Fire Support;Medium;2214;X
+160188;Chief of Staff;José Caetano de Faria;1914;1920;1999;SC;School of Mass Combat;Medium;2208;X
+160189;Chief of Staff;Alberto Cardoso de Aguiar;1918;1932;1999;SC;School of Psychology;Medium;183;X
+160190;Chief of Staff;João Pandiá Calógeras;1919;1932;1999;SC;School of Manoeuvre;Medium;2240;X
+160191;Chief of Staff;Fernando Setembrino de Carvalho;1922;1932;1999;SC;School of Defence;Medium;191;X
+160192;Chief of Army;Hermes Rodrigues da Fonseca;1906;1923;1999;SC;Armoured Spearhead Doctrine;Medium;192;X
+160193;Chief of Army;Luís Mendes de Morais;1908;1914;1999;SC;Guns and Butter Doctrine;Medium;2210;X
+160194;Chief of Army;Carlos Eugênio de Andrade Guimarães;1909;1920;1999;SC;Static Defence Doctrine;Medium;188;X
+160195;Chief of Army;José Bernardino Bormann;1909;1919;1999;SC;Decisive Battle Doctrine;Medium;196;X
+160196;Chief of Army;Emídio Dantas Barreto;1910;1932;1999;SC;elastic defence doctrine;Medium;189;X
+160197;Chief of Army;Antônio Adolfo da Fontoura Mena Barreto;1911;1923;1999;SC;Static Defence Doctrine;Medium;185;X
+160198;Chief of Army;Vespasiano Gonçalves de Albuquerque e Silva;1912;1924;1999;SC;Guns and Butter Doctrine;Medium;2214;X
+160199;Chief of Army;José Caetano de Faria;1914;1920;1999;SC;elastic defence doctrine;Medium;2208;X
+160200;Chief of Army;Alberto Cardoso de Aguiar;1918;1932;1999;SC;Decisive Battle Doctrine;Medium;183;X
+160201;Chief of Army;João Pandiá Calógeras;1919;1932;1999;SC;Static Defence Doctrine;Medium;2240;X
+160202;Chief of Army;Fernando Setembrino de Carvalho;1922;1932;1999;SC;Armoured Spearhead Doctrine;Medium;191;X
+160203;Chief of Navy;Alexandrino Faria de Alencar;1906;1926;1999;SC;Decisive Naval Battle Doctrine;Medium;184;X
+160204;Chief of Navy;Joaquim Marques Batista de Leão;1910;1913;1999;SC;Base Control Doctrine;Medium;195;X
+160205;Chief of Navy;Manuel Inácio Belfort Vieira;1912;1913;1999;SC;Power Projection Doctrine;Medium;2211;X
+160206;Chief of Navy;Vespasiano Gonçalves de Albuquerque e Silva;1913;1924;1999;SC;Open Seas Doctrine;Medium;2214;X
+160207;Chief of Navy;Antônio Coutinho Gomes Pereira;1918;1926;1999;SC;Decisive Naval Battle Doctrine;Medium;186;X
+160208;Chief of Navy;Raul Soares de Moura;1919;1924;1999;SC;Base Control Doctrine;Medium;6168;X
+160209;Chief of Navy;Joaquim Ferreira Chaves Filho;1920;1932;1999;SC;Indirect Approach Doctrine;Medium;2242;X
+160210;Chief of Navy;João Pedro da Veiga Miranda;1921;1932;1999;SC;Open Seas Doctrine;Medium;unknownminister;X
+160211;Chief of Air Force;José Carlos de Carvalho;1911;1912;1999;SC;Army Aviation Doctrine;Medium;2209;X
+160212;Chief of Air Force;Ricardo Kirk;1912;1915;1999;SC;Carpet Bombing Doctrine;Medium;6228;X
+160213;Chief of Air Force;Bento Ribeiro Filho;1916;1932;1999;SC;Air Superiority Doctrine;Medium;unknownminister;X
+160214;Head of State;Antônio Evaristo de Morais;1902;1932;1999;LWR;Die-hard Reformer;Medium;2222;X
+160215;Head of Government;Silvério Fontes;1902;1914;1999;LWR;Ambitious Union Boss;Medium;6245;X
+160216;Head of Government;Astrojildo Pereira;1914;1932;1999;LWR;Silent Workhorse;Medium;2224;X
+160217;Head of Government;Abílio de Nequete;1918;1932;1999;LWR;Naive Optimist;Medium;2216;X
+160218;Foreign Minister;Álvaro Palmeira;1902;1918;1999;LWR;Ideological Crusader;Medium;unknownminister;X
+160219;Foreign Minister;Silvério Fontes;1902;1928;1999;LWR;Great Compromiser;Medium;6245;X
+160220;Foreign Minister;Manuel Bomfim;1902;1932;1999;LWR;Apologetic Clerk;Medium;2084;X
+160221;Foreign Minister;Francisco Cavalcanti Pontes de Miranda;1918;1932;1999;LWR;Biased Intellectual;Medium;2236;X
+160222;Minister of Armament;José Rodrigues Leite e Oiticica;1902;1932;1999;LWR;Resource Industrialist;Medium;1741;X
+160223;Minister of Armament;Agripino Nazaré;1902;1918;1999;LWR;Military Entrepreneur;Medium;unknownminister;X
+160224;Minister of Armament;Maurício Paiva de Lacerda;1918;1932;1999;LWR;Corrupt Kleptocrat;Medium;unknownminister;X
+160225;Minister of Security;José Francisco da Rocha Pombo;1902;1932;1999;LWR;Prince of Terror;Medium;3712;X
+160226;Minister of Security;José Veríssimo Dias de Matos;1902;1916;1999;LWR;Man of the People;Medium;2069;X
+160227;Minister of Security;Manuel Bomfim;1902;1932;1999;LWR;Compassionate Gentleman;Medium;2084;X
+160228;Minister of Security;Cruz Júnior;1918;1932;1999;LWR;Efficient Sociopath;Medium;unknownminister;X
+160229;Chief of Navy;Protógenes Guimarães;19;19;19;SC;decisive naval battle doctrine;Medium;9748;X
+160230;Chief of Navy;Renato de Almeida Guillobel;1951;1954;1976;SC;open seas doctrine;Medium;9749;X
+160231;Chief of Navy;Edmundo Jordão Amorim do Valle;1954;1955;1972;SC;decisive naval battle doctrine;Medium;9750;X
+160232;Chief of Navy;Antônio Alves Câmara Júnior;1955;1958;1959;SC;open seas doctrine;Medium;9751;X
+160233;Chief of Navy;Jorge do Paço Matoso Maia;1958;1962;1974;SC;decisive naval battle doctrine;Medium;9752;X

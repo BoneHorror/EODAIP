@@ -1,0 +1,65 @@
+# German prepares for Poland AI File by Lothos
+
+upgrading = 0.50
+##reinforcement = 0.10
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+   	air_base = yes 
+	max_air_base = 2
+	air_base_provs = {
+		157  #Potsdam
+	} 
+}
+############Garrison##########
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.7
+	home_peace_cap 		= 20
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 0.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+     		FRA = 60 
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		AUS = -1
+		POL = 75
+		YUG = 10
+		HOL = 5
+		BEL = 25
+		DEN = 15
+		SOV = 25
+	}
+	ignore = { }
+	province_priorities = {
+		183  = 100  #Elbing
+		184  = 100  #Königsberg in order to get a decent build-up before Fall Weiss.
+	     	132 = 50 # French border 
+     		130 = 50 
+	     	127 = 50 
+		214 = 20 # Slovakia
+		212 = 20
+	}
+	area_multiplier = {
+		183  = 6.0  #Elbing
+		184  = 6.0  #Königsberg in order to get a decent build-up before Fall Weiss.
+     		130 = 4.0 
+	}
+}

@@ -1,0 +1,26 @@
+# Romania invasion of Yugoslavia AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		GER = -1
+		ITA = -1
+		HUN = -1
+		YUG = 100
+		BUL = -1
+		SOV = 50
+		SLO = -1
+		SER = -1
+	}
+	province_priorities = {
+		285  = 100
+		315  = 100
+	}
+	area_multiplier = {
+		285  = 8.0
+		315  = 8.0
+	}
+}

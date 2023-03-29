@@ -1,0 +1,124 @@
+# MODEL_29_
+
+allowed_brigades = floatplane
+allowed_brigades = naval_improved_hull_s
+allowed_brigades = b_01
+#allowed_brigades = naval_torpedoes_s
+
+max_allowed_brigades = 2
+
+# 0 - Type J's (1924)
+model = {
+	cost						= 1.0 
+	buildtime					= 400 
+	defaultorganisation 		= 10
+	morale						= 30
+	manpower					= 0.08
+	maxspeed					= 18
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 1.5
+	seadefence					= 38
+	airdefence					= 25
+	seaattack					= 5
+	convoyattack				= 6
+	subattack					= 2
+	airattack					= 1
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 15000
+	supplyconsumption			= 0.4
+	fuelconsumption				= 0.5
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { nuclear_submarine = 1 manpower = 80 }
+}
+
+# 1 - Type A/B's (1933)
+model = {
+	cost						= 1.2 
+	buildtime					= 420 
+	defaultorganisation 		= 10
+	morale						= 30
+	manpower					= 0.08
+	maxspeed					= 22
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 1.5
+	seadefence					= 37
+	airdefence					= 23
+	seaattack					= 6
+	convoyattack				= 7
+	subattack					= 2
+	airattack					= 1
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 20000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 0.6
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { nuclear_submarine = 1 manpower = 80 }
+}
+
+# 2 - Super-Heavy / Sen Toku (1940)
+model = {
+	cost						= 1.2
+	buildtime					= 440
+	defaultorganisation 		= 10
+	morale						= 30
+	manpower					= 0.14
+	maxspeed					= 19
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 2
+	seadefence					= 37
+	airdefence					= 22
+	seaattack					= 7
+	convoyattack				= 8
+	subattack					= 2
+	airattack					= 2
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 24000
+	supplyconsumption			= 0.8
+	fuelconsumption				= 0.8
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { nuclear_submarine = 1	manpower = 140 }
+}
+
+# 3 - Fictional (1943)
+model = {
+	cost						= 1.5
+	buildtime					= 480
+	defaultorganisation 		= 10
+	morale						= 30
+	manpower					= 0.11
+	maxspeed					= 23
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 2
+	seadefence					= 35
+	airdefence					= 22
+	seaattack					= 7
+	convoyattack				= 9
+	subattack					= 4
+	airattack					= 2
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 30000
+	supplyconsumption			= 0.9
+	fuelconsumption				= 0.9
+	distance					= 0.2
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { nuclear_submarine = 1	manpower = 110 }
+}

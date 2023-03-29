@@ -1,0 +1,11 @@
+# France Homeland defense AI File by Lothos
+upgrading = 0.30
+#reinforcement = 0.30
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 4.0
+	overseas_multiplier 	= 0.0
+}

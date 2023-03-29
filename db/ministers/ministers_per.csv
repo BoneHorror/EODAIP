@@ -1,0 +1,127 @@
+PER;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+150001;Head of State;Reza Pahlavi;1925;1964;1999;PA;Resigned Generalissimo;High;M53001;X
+150002;Head of Government;Mahmud Jam;1933;1964;1999;PA;Silent Workhorse;High;M53002;X
+150003;Foreign Minister;Inoyatullah Khan Sami;1933;1964;1999;PA;Great Compromiser;Medium;M53003;X
+150004;Minister of Armament;Ahmad Khan Nakhjaavan;1933;1964;1999;PA;Battle Fleet Proponent;Medium;M53004;X
+150005;Minister of Security;Ali Akbar Deiva;1933;1964;1999;PA;Back Stabber;Medium;M53005;X
+150006;Head of Military Intelligence;Reza Mizani;1933;1964;1999;PA;Naval Intelligence Specialist;Medium;M53006;X
+150007;Chief of Staff;Reza Pahlavi;1933;1964;1999;PA;School of Defence;Medium;M53001;X
+150008;Chief of Army;Abdolreza Afkhami;1933;1964;1999;PA;Static Defence Doctrine;Medium;M53008;X
+150009;Chief of Navy;Ahmad Mira Khosravani;1933;1964;1999;PA;Indirect Approach Doctrine;High;M53009;X
+150010;Chief of Air Force;Ahmad Khan Nakhjavan;1933;1964;1999;PA;Naval Aviation Doctrine;High;M53004;X
+150011;Head of State;Mohammed Reza Pahlavi;1941;1964;1999;SC;Benevolent Gentleman;High;M53011;X
+150012;Head of State;Mohammed Reza Pahlavi;1941;1964;1999;PA;Autocratic Charmer;High;M53011;X
+150013;Head of Government;Ahmad Matin-Daftary;1939;1964;1999;FA;Naive Optimist;High;M53033;X
+150014;Head of Government;Ali Khan Mansour;1940;1964;1999;PA;Old General;High;M53034;X
+150015;Head of Government;Mohammed Ali Foroughi;1941;1964;1999;SC;Political Protege;High;M53015;X
+150016;Head of Government;Ali Zohayli;1943;1964;1999;SL;Smiling Oilman;High;M53036;X
+150017;Head of Government;Ahmeed Qawan as Saltana;1942;1964;1999;SC;Happy Amateur;High;M53037;X
+150018;Head of Government;Mohammed Said Maraghei;1944;1964;1999;SC;Silent Workhorse;High;M53038;X
+150019;Head of Government;Sayed Morteza Khan Bayat;1944;1964;1999;SL;FLamboyant Tough Guy;High;M53039;X
+150020;Head of Government;Ibrahim Hakimi al Mulk;1945;1964;1999;PA;Backroom Backstabber;High;M53040;X
+150021;Head of Government;Muhsin Sadr al Araf;1945;1964;1999;SC;Corporate Suit;High;M53041;X
+150022;Foreign Minister;Mustafa Adil;1937;1964;1999;PA;Biased Intellectual;Medium;M53042;X
+150023;Foreign Minister;Miria Muhsin Khan;1938;1964;1999;PA;Ideological Crusader;Medium;M53043;X
+150024;Foreign Minister;Ali Zohayli;1939;1964;1999;PA;Iron Fisted Brute;Low;M53036;X
+150025;Foreign Minister;Muzzafar Alam;1939;1964;1999;PA;Apologetic Clerk;Medium;M53045;X
+150026;Foreign Minister;Ibrahim Alam;1940;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M53046;X
+150027;Foreign Minister;Amari Jawad;1940;1964;1999;FA;Biased Intellectual;Medium;M53047;X
+150028;Foreign Minister;Ali Zohayli;1941;1964;1999;SL;The Cloak N Dagger Schemer;Medium;M53036;X
+150029;Foreign Minister;Mohammed Said Maraghei;1942;1964;1999;SC;Great Compromiser;High;M53038;X
+150030;Foreign Minister;Nusrullah Intizam;1944;1964;1999;SL;Biased Intellectual;Medium;M53051;X
+150031;Foreign Minister;Anushirvan Sepahbody;1945;1964;1999;PA;Apologetic Clerk;Medium;M53052;X
+150032;Foreign Minister;Abul Qasim Najm;1945;1964;1999;SC;The Cloak N Dagger Schemer;Medium;M53053;X
+150033;Foreign Minister;Ahmeed Qawan as Saltana;1946;1964;1999;SC;Ideological Crusader;High;M53037;X
+150034;Foreign Minister;Mohammed Mossadeq;1946;1964;1999;SL;The Cloak N Dagger Schemer;Medium;M53013;X
+150035;Minister of Armament;Reza Mizani;1937;1964;1999;PA;Resource Industrialist;Medium;M53006;X
+150036;Minister of Armament;Mirza Riza Arfa Dowleh;1937;1964;1999;PA;Infantry Proponent;Medium;M53057;X
+150037;Minister of Armament;Alfred Rudolph Zimmermann;1938;1964;1999;SC;laissez-faire capitalist;Medium;M53014;X
+150038;Minister of Armament;Ahmad Khan Nakhjavan;1938;1964;1999;PA;Air to Sea Proponent;High;M53004;X
+150039;Minister of Armament;Ahmad Mira Khosravani;1939;1964;1999;PA;Submarine Proponent;High;M53009;X
+150040;Minister of Armament;Abdolreza Afkhami;1939;1964;1999;FA;Military Entrepreneur;Medium;M53008;X
+150041;Minister of Armament;Mohammed Nakhjavani;1940;1964;1999;FA;Tank Proponent;Medium;M53062;X
+150042;Minister of Armament;Morteza Yazdi;1940;1964;1999;FA;Air Superiority Proponent;Medium;M53024;X
+150043;Minister of Armament;Sayyid al-Din Tabataba'i;1941;1964;1999;SC;Battle Fleet Proponent;Medium;M53012;X
+150044;Minister of Armament;Zoka Dowleh;1943;1964;1999;SL;Theoretical Scientist;Medium;M53065;X
+150045;Minister of Armament;Mohammed Bahrami;1944;1964;1999;SC;Strategic Air Proponent;Medium;M53026;X
+150046;Minister of Armament;Zoka Dowleh;1945;1964;1999;PA;Tank Proponent;Medium;M53065;X
+150047;Minister of Armament;Ja'fer Pishevari;1945;1964;1999;SC;Resource Industrialist;Medium;M53023;X
+150048;Minister of Armament;Anushirvan Sepahbody;1946;1964;1999;SC;Administrative Genius;Medium;M53052;X
+150049;Minister of Security;Soleiman Mirza;1933;1964;1999;PA;Crime Fighter;Medium;M53022;X
+150050;Minister of Security;Mirza Riza Arfa Dowleh;1933;1964;1999;PA;Back Stabber;Medium;M53057;X
+150051;Minister of Security;Ali Mansour;1938;1964;1999;PA;Man of the People;Medium;M53034;X
+150052;Minister of Security;Hussein Khan Ala;1939;1964;1999;FA;Silent Lawyer;Medium;M53073;X
+150053;Minister of Security;Mohammed Bahrami;1941;1964;1999;SC;Compassionate Gentleman;Medium;M53026;X
+150054;Minister of Security;Eraj Eskandari;1942;1964;1999;SL;Prince of Terror;Medium;M53025;X
+150055;Minister of Security;Edward G.V.S. Lord Derby;1941;1964;1999;SC;Efficient Sociopath;Medium;M53076;X
+150056;Minister of Security;Mehdi Manjarani;1945;1964;1999;PA;Prince of Terror;Medium;M53077;X
+150057;Minister of Security;Abolhassan Hakimi;1945;1964;1999;SC;Back Stabber;Medium;M53078;X
+150058;Minister of Security;Hossein Arfazni;1946;1964;1999;SC;Silent Lawyer;Medium;M53079;X
+150059;Head of Military Intelligence;Muhammed Reza Pahlavi;1937;1964;1999;PA;Political Specialist;Medium;M53011;X
+150060;Head of Military Intelligence;Dinshah Irani;1938;1964;1999;PA;Technical Specialist;Medium;M53021;X
+150061;Head of Military Intelligence;Alfred Rudolph Zimmermann;1939;1964;1999;FA;Industrial Specialist;Medium;M53014;X
+150062;Head of Military Intelligence;Ahmad Matin-Daftary;1941;1964;1999;FA;Naval Intelligence Specialist;Medium;M53033;X
+150063;Head of Military Intelligence;Ali Sepahbodi Qajar;1941;1964;1999;SC;Dismal Enigma;Medium;M53084;X
+150064;Head of Military Intelligence;Sir Neville Grantleigh;1941;1964;1999;SL;Industrial Specialist;Medium;M53085;X
+150065;Head of Military Intelligence;Abdol Hossein Sardarie;1945;1964;1999;PA;Dismal Enigma;Medium;M53086;X
+150066;Head of Military Intelligence;Abdollah Entezam;1945;1964;1999;SC;Technical Specialist;Medium;M53087;X
+150067;Head of Military Intelligence;Ovassaq al-Doleh Noorie;1945;1964;1999;SC;Naval Intelligence Specialist;Medium;M53088;X
+150068;Head of Military Intelligence;Mohammed Mossadeq;1946;1964;1999;SL;Logistics Specialist;Medium;M53013;X
+150069;Chief of Staff;Ali Akbar Deiva;1939;1964;1999;PA;School of Psychology;Medium;M53005;X
+150070;Chief of Staff;Hassan Majid Firooz;1939;1964;1999;FA;School of Defence;Medium;M53028;X
+150071;Chief of Staff;Reza Mizani;1941;1964;1999;SC;School of Mass Combat;Medium;M53006;X
+150072;Chief of Staff;Ali Khan Nakziam;1943;1964;1999;SL;School of Manoeuvre;Medium;M53027;X
+150073;Chief of Staff;Mohammed Reza Pahlavi;1945;1964;1999;PA;School of Defence;Medium;M53011;X
+150074;Chief of Staff;Hossein Afkhami;1945;1964;1999;SC;School of Fire Support;Medium;M53017;X
+150075;Chief of Army;Mir Afkhami;1938;1964;1999;PA;Guns and Butter Doctrine;Medium;M53018;X
+150076;Chief of Army;Hassan Majid Firooz;1939;1964;1999;FA;Static Defence Doctrine;Medium;M53028;X
+150077;Chief of Army;Azram Mir Ghani;1941;1964;1999;SC;Elastic Defence Doctrine;Medium;M53098;X
+150078;Chief of Army;Mohammed Nakhjavani;1945;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M53062;X
+150079;Chief of Army;Hedayat Gilanshah;1945;1964;1999;SC;Decisive Battle Doctrine;Medium;M53100;X
+150080;Chief of Navy;Reza Mizani;1938;1964;1999;PA;Base Control Doctrine;Medium;M53006;X
+150081;Chief of Navy;Schapur Khisrabadi;1939;1964;1999;FA;Open Seas Doctrine;Medium;M53102;X
+150082;Chief of Navy;Mohammed Mir Mohanna;1941;1964;1999;SC;Power Projection Doctrine;Medium;M53029;X
+150083;Chief of Navy;Ahmad Khan Nakhjaavan;1945;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M53004;X
+150084;Chief of Navy;Mohammed Moini;1945;1964;1999;SC;Indirect Approach Doctrine;Medium;M53020;X
+150085;Chief of Air Force;Sadegh Khan Koopal;1937;1964;1999;PA;Army Aviation Doctrine;High;M53106;X
+150086;Chief of Air Force;Mohammed Nakhjavani;1939;1964;1999;FA;Air Superiority Doctrine;Medium;M53062;X
+150087;Chief of Air Force;Mohammed Moini;1941;1964;1999;SC;Vertical Envelopment Doctrine;Medium;M53020;X
+150088;Chief of Air Force;Mohammed Mir Mohanna;1945;1964;1999;SC;Naval Aviation Doctrine;Medium;M53029;X
+150089;Chief of Air Force;Hedayat Gilanshah;1946;1964;1999;PA;Carpet Bombing Doctrine;Medium;M53100;X
+150090;Minister of Security;Mohammed Ali Foroughi;1933;1964;1999;SC;Crime Fighter;Medium;M53015;X
+150091;Head of State;Dinshah Irani;1933;1964;1999;ST;Stern Imperialist;High;M53021;X
+150092;Head of Government;Soleiman Mirza;1933;1964;1999;ST;Happy Amateur;High;M53022;X
+150093;Foreign Minister;Ja'fer Pishevari;1933;1964;1999;ST;Iron Fisted Brute;Medium;M53023;X
+150094;Head of Military Intelligence;Mohammed Bahrami;1933;1964;1999;ST;Political Specialist;Medium;M53026;X
+150095;Head of Government;Abdol Hossein Hajir;1948;1964;1999;ML;Happy Amateur;High;M53111;X
+150096;Head of Government;Mohammed Said Maraghei;1948;1964;1999;ML;Flamboyant Tough Guy;High;M53038;X
+150097;Head of Government;Ali Mansour;1950;1964;1999;SC;Political Protege;High;M53034;X
+150098;Head of Government;Ali Razmara;1950;1964;1999;PA;old airmarshal;High;M53114;X
+150099;Head of Government;Hussein Khan Ala;1951;1964;1999;PA;Backroom Backstabber;High;M53073;X
+150100;Head of Government;Mohammed Mossadeq;1951;1964;1999;SL;Smiling Oilman;High;M53013;X
+150101;Head of Government;Fazlollah Zahedi;1953;1964;1999;PA;Old General;High;M53117;X
+150102;Foreign Minister;Abdol Hossein Hajir;1951;1964;1999;ML;Ideological Crusader;Medium;M53111;X
+150103;Chief of Staff;Ali Razmara;1953;1964;1999;PA;School of Psychology;Medium;M53114;X
+150104;Chief of Air Force;Ali Razmara;1949;1964;1999;PA;Army Aviation Doctrine;Medium;M53114;X
+150105;Chief of Army;Fazlollah Zahedi;1951;1964;1999;PA;Guns and Butter Doctrine;Medium;M53117;X
+150106;Chief of Army;Ahmad Shah Qajar;1914;1933;1999;PA;Decisive Battle Doctrine;Medium;2930;X
+150107;Chief of Staff;Ahmad Shah Qajar;1914;1933;1999;PA;school of defence;Medium;2930;X
+150108;Head of Government;Abdol Majid Mirza;1914;1933;1999;ML;Silent Workhorse;Medium;unknownminister;X
+150109;Head of Government;Ahmad Qawam as-Saltana;1921;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+150110;Head of Government;Mirza Mohammad-Ali Khan;1914;1933;1999;ML;Happy Amateur;Medium;unknownminister;X
+150111;Head of Government;Mostowfi ol-Mamalek;1914;1933;1999;ML;Silent Workhorse;Medium;unknownminister;X
+150112;Head of Government;Hossein Farmanfarma;1915;1933;1999;ML;Corporate Suit;Medium;2929;X
+150113;Head of Government;Abdol Majid Mirza;1915;1933;1999;ML;Corporate Suit;Medium;unknownminister;X
+150114;Head of Government;Vosough od-Dowleh;1914;1933;1999;ML;Backroom Backstabber;Medium;unknownminister;X
+150115;Head of Government;Hassan Pirnia;1918;1933;1999;ML;Smiling Oilman;Medium;unknownminister;X
+150116;Head of Government;Momtaz os-Saltaneh;1918;1933;1999;PA;Naive Optimist;Medium;unknownminister;X
+150117;Head of Government;Fathollah Khan Akbar;1920;1933;1999;ML;Ambitious Union Boss;Medium;unknownminister;X
+150118;Head of Government;Zia'eddin Tabatabaee;1921;1933;1999;ML;Smiling Oilman;Medium;unknownminister;X
+150119;Head of Government;Ahmad Qavam;1921;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+150120;Head of Government;Malek Mansur Mirza;1921;1933;1999;PA;Ambitious Union Boss;Medium;unknownminister;X
+150121;Head of State;Ahmad Shah Qajar;1914;1933;1999;PA;Weary Stiffneck;Medium;2930;X
+150122;Minister of Security;Hossein Farmanfarma;1915;1933;1999;PA;Silent Lawyer;Medium;2929;X
+150123;Head of Government;Davud Monshizadeh;1946;1964;1999;NS;Political Protege;medium;6077;x
+150124;Foreign Minister;Davud Monshizadeh;1946;1964;1999;NS;Biased Intellectual;medium;6077;x
+150125;Chief of Navy;Gholamali Bayandor;1933;1942;1942;PA;Decisive Naval Battle Doctrine;High;9705;X

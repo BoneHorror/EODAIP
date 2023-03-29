@@ -1,0 +1,79 @@
+# German operation Barbarosa Invasion AI File by Nekron
+
+desperation = 0.25 #Start spamming MIL once we lose 25% of our IC
+#Oil fields prio
+target = { 
+	572 = 50 # Moscow 
+	553 = 30 # Leningrad 
+	617 = 30 # Kiev 
+	599 = 30 # Minsk 
+	663 = 70 # Stalingrad 
+	713 = 100 # Baku
+	641 = 70 # Sevastopol
+	694 = 60 # Novorossiysk
+	709 = 60 # Tbilisi
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	area_multiplier = {
+		638  = 1.3 #Crimea as way to Baku
+		694  = 1.3 #Novorossiysk as a way to Baku
+		708  = 1.3 #Georgia as a way to Baku
+		713  = 1.5 #Baku
+		567  = 1.7 #Stalingrad
+		553    = 1.2  #Leningrad
+		573    = 1.2  #Moscow
+		102		= 1.2 #Sedan - protect from DDay!
+		407		= 1.2 #N Italy - protect from Overlord!
+	}
+	country_priorities = {
+     	FRA = -1 
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		AUS = -1
+		TUR = 5
+		SPR = 5
+		SPA = -1
+		SOV = 75
+		ENG = 80
+		USA = 80
+		U01 = 50
+		U02 = 30
+	}
+}
+
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.15
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human	= 2.0
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.1
+	max_attack_odds		= 2.5
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.65
+	support_defense_prop 	= 0.33
+	
+	province_priorities = {
+		553    = 1.2  #Leningrad
+		573    = 1.2  #Moscow
+		731    = 1.4  #Baku
+		604	   = 1.2  #Kursk
+		639    = 1.3  #Crimea Breakthrough
+		633    = 1.5  #Stalingrad
+	}
+      	enemy_handicap = { } 
+      	passivity = { SOV = 5 } 
+}
+invasion = {
+	ignore			= yes
+	help_allies 	= yes
+	}

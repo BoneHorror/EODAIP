@@ -1,0 +1,130 @@
+####################################
+# Bulgaria AI events 
+####################################
+
+################
+# Bulgaria exp forces to Germany
+#############################################
+event = {
+	id = 3020008
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		alliance = { country = GER }
+		OR = {
+			AND = {
+				war = { country = GER country = SOV }
+				war = { country = SOV }
+			}
+			AND = {
+				war = { country = GER country = YUG }
+				war = { country = YUG }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		#command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Bulgaria invades Yugoslavia
+#############################################
+event = {
+	id = 3020009
+	random = no 
+	country = BUL
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		exists = YUG
+		flag = InvYugoslavia
+		NOT = { local_flag = BULInvadeYUG }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER } }		
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = BULInvadeYUG }
+		command = { type = ai which = "switch/BUL_Invade_YUG_Buildup.ai" }
+	}
+}
+event = {
+	id = 3020010
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		local_flag = BULInvadeYUG
+		NOT = { flag = InvYugoslavia }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = war which = YUG }
+		command = { type = local_clrflag which = BULInvadeYUG }
+		command = { type = ai which = "switch/BUL_Invade_Release.ai" }
+	}
+}
+################
+# Bulgaria lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3020011
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		OR = {
+			event = 2023003 # Soviets claimed Bessarabia
+			event = 2023004 # Vienna Diktat
+			event = 2023009 # Claim Constanta
+			war = { country = GER country = YUG }
+			AND = {
+				war = { country = GER country = ROM }
+				NOT = { alliance = { country = SOV country = ROM } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+	}
+}

@@ -1,0 +1,278 @@
+####################################
+# Spanish Republic AI events 
+####################################
+
+################
+# Spanish Civil War AI
+#############################################
+event = {
+	id = 3052011
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = ai which = "switch/SPR_CivilWar.ai" }
+		command = { type = free_supplies value = 18 }
+		command = { type = free_ic value = 3 }
+		command = { type = free_money value = 0.1 }
+		command = { type = local_setflag which = SPEco }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# End of Spanish Civil War AI
+#############################################
+event = {
+	id = 3052012
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		event = 3052011
+		NOT = { war = { country = SPR country = SPA } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/SP_EndCivilWar.ai" }
+		command = { trigger = { local_flag = SPEco } type = free_supplies value = -18 }
+		command = { trigger = { local_flag = SPEco } type = free_ic value = -3 }
+		command = { trigger = { local_flag = SPEco } type = free_money value = -0.1 }
+		command = { type = local_clrflag which = SPEco }
+		command = { trigger = { local_flag = SPArmyShattered } type = max_organization which = land value = 5 }
+		command = { trigger = { local_flag = SPArmyShattered } type = morale which = land value = 10 } 
+	}
+}
+
+################
+# Spanish Civil War AI
+#############################################
+event = {
+	id = 3052013
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = ai which = "switch/SPR_CivilWar.ai" }
+		command = { type = free_supplies value = 18 }
+		command = { type = free_ic value = 3 }
+		command = { type = free_money value = 0.1 }
+		command = { type = local_setflag which = SPEco }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# End of Spanish Civil War AI
+#############################################
+event = {
+	id = 3052015
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		event = 3052013
+		NOT = { war = { country = SPR country = SPA } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/SP_EndCivilWar.ai" }
+		command = { trigger = { local_flag = SPEco } type = free_supplies value = -18 }
+		command = { trigger = { local_flag = SPEco } type = free_ic value = -3 }
+		command = { trigger = { local_flag = SPEco } type = free_money value = -0.1 }
+		command = { type = local_clrflag which = SPEco }
+		command = { trigger = { local_flag = SPArmyShattered } type = max_organization which = land value = 5 }
+		command = { trigger = { local_flag = SPArmyShattered } type = morale which = land value = 10 } 
+	}
+}
+
+############ Increase passivity when the enemy nearly lost and it's not yet 1939
+event = {
+	id = 3052016
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		NOT = { region = { region = "Spain" country = SPR value = 20 } }
+		NOT = { year = 1939 } #If it's already 1939 we might as well end the war =)
+		#NOT = { event = 3052012 } # End of war AI did not fire, just in case
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = ai which = "switch/SPA_PassivityUP.ai" }
+	}
+}
+event = {
+	id = 3052017
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		NOT = { region = { region = "Spain" country = SPA value = 20 } }
+		NOT = { year = 1939 } #If it's already 1939 we might as well end the war =)
+		#NOT = { event = 3052015 } # End of war AI did not fire, just in case
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = ai which = "switch/SPR_PassivityUP.ai" }
+	}
+}
+############ Start suiciding units to gain territory if we're getting late with resolving the civil war
+event = {
+	id = 3052018
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		#NOT = { region = { region = "Spain" country = SPR value = 80 } } #Don't need to do this if we're the ones losing severely, makes for border gore
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 15 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { type = ai which = "switch/SP_StalemateSuicide.ai" }
+	}
+}
+event = {
+	id = 3052019
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		#NOT = { region = { region = "Spain" country = SPA value = 80 } } #Don't need to do this if we're the ones losing severely, makes for border gore #We actually may..
+	}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 15 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { type = ai which = "switch/SP_StalemateSuicide.ai" }
+	}
+}
+################ Late into war, if we have below 25% territory give Army Shattered penalty
+event = {
+	id = 3052020
+	random = no 
+	country = SPA
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		NOT = { region = { region = "Spain" country = SPA value = 25 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 15 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { dissent = 20 } } type = dissent value = 10 }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 } 
+		command = { type = local_setflag which = SPArmyShattered }
+		command = { trigger = { local_flag = SPEco } type = free_supplies value = -18 }
+		command = { trigger = { local_flag = SPEco } type = free_ic value = -3 }
+		command = { trigger = { local_flag = SPEco } type = free_money value = -0.1 }
+		command = { type = local_clrflag which = SPEco }
+	}
+}
+event = {
+	id = 3052021
+	random = no 
+	country = SPR
+	
+	trigger = {
+		ai = yes
+		war = { country = SPR country = SPA }
+		NOT = { region = { region = "Spain" country = SPR value = 25 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 15 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { dissent = 20 } } type = dissent value = 10 }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 } 
+		command = { type = local_setflag which = SPArmyShattered }
+		command = { trigger = { local_flag = SPEco } type = free_supplies value = -18 }
+		command = { trigger = { local_flag = SPEco } type = free_ic value = -3 }
+		command = { trigger = { local_flag = SPEco } type = free_money value = -0.1 }
+		command = { type = local_clrflag which = SPEco }
+	}
+}

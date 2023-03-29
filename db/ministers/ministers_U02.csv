@@ -1,0 +1,117 @@
+U02;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+825001;Head of State;Victor Lord Linlithgow;1933;1964;1999;ML;Stern Imperialist;High;M59001;X
+825002;Head of Government;John Edward Golightly;1933;1964;1999;ML;Silent Workhorse;High;M59002;X
+825003;Foreign Minister;Sir Jilendra Vayaphrasattar;1933;1964;1999;ML;Iron Fisted Brute;High;M59003;X
+825004;Minister of Armament;Anyang Bhula;1933;1964;1999;ML;Air Superiority Proponent;Very High;M59004;X
+825005;Minister of Security;George H. Douglas;1933;1964;1999;ML;Man of the People;Medium;M59005;X
+825006;Head of Military Intelligence;Archibald Angus;1933;1964;1999;ML;Political Specialist;Very High;M59006;X
+825007;Chief of Staff;Victor Lord Linlithgow;1933;1964;1999;ML;School of Defence;Medium;M59007;X
+825008;Chief of Army;Arthur A. Barrett;1933;1964;1999;ML;Static Defence Doctrine;High;M59008;X
+825009;Chief of Navy;William E. Parry;1933;1964;1999;ML;Power Projection Doctrine;Very High;L1378;X
+825010;Chief of Air Force;Bruce W. McPherson;1933;1964;1999;ML;Vertical Envelopment Doctrine;High;M59010;X
+825011;Head of State;Lord Louis Mountbatten;1945;1964;1999;SL;Popular Figurehead;High;M59033;X
+825012;Head of State;Archibald Wavell;1942;1964;1999;ML;Resigned Generalissimo;High;M59034;X
+825013;Head of Government;Michael Morris;1933;1964;1999;SL;Happy Amateur;High;M59038;X
+825014;Head of Government;Dr. John Mathai;1945;1964;1999;SL;Corporate Suit;High;M59039;X
+825015;Foreign Minister;Bahadur Jayla of Khoch Bahur;1933;1964;1999;SL;Apologetic Clerk;High;M59048;X
+825016;Foreign Minister;Agha Khan III;1933;1964;1999;PA;Great Compromiser;Medium;M59051;X
+825017;Minister of Armament;Michael Morris;1933;1964;1999;SL;Laissez-Faire Capitalist;Medium;M59038;X
+825018;Minister of Armament;Dr. John Mathai;1940;1964;1999;SL;Theoretical Scientist;Medium;M59039;X
+825019;Minister of Armament;Sir Chhotu Ram;1938;1964;1999;PA;Air Superiority Proponent;High;M59026;X
+825020;Minister of Security;Nizam Osman of Hyderabad;1933;1964;1999;ML;Prince of Terror;Very High;M59015;X
+825021;Minister of Security;Muhammed Mujeeb;1938;1964;1999;ML;Back Stabber;low;M59073;X
+825022;Minister of Security;Ajoy Kumar Ghosh;1942;1964;1999;PA;Efficient Sociopath;Very Low;M59023;X
+825023;Head of Military Intelligence;Stephen Hope Carlill;1945;1964;1999;SL;Naval Intelligence Specialist;Medium;L1356;X
+825024;Head of Military Intelligence;Lindsey Stephenson;1938;1964;1999;ML;Dismal Enigma;Medium;M59084;X
+825025;Chief of Staff;Sir H. R. Pownall;1941;1964;1999;SC;School of Mass Combat;High;L1253;X
+825026;Chief of Army;Robert Brooke-Popham;1939;1964;1999;SC;Static Defence Doctrine;Medium;L1051;X
+825027;Chief of Army;Sir Frank Messervy;1945;1964;1999;SL;Armoured Spearhead Doctrine;Very Low;M59102;X
+825028;Chief of Army;Archibald Wavell;1942;1964;1999;ML;Elastic Defence Doctrine;High;M59034;X
+825029;Chief of Navy;W.H. Gould-Bradford;1942;1964;1999;ML;Open Seas Doctrine;Medium;L1349;X
+825030;Head of State;Gilbert Elliot-Murray-Kynynmound;1905;1910;1999;SC;Insignificant Layman;Medium;3399;X
+825031;Head of State;Charles Hardinge;1910;1916;1999;SC;Popular Figurehead;Medium;2676;X
+825032;Head of State;Frederic Thesiger;1916;1921;1999;SC;Barking Buffoon;Medium;2672;X
+825033;Head of State;Rufus Isaacs;1921;1926;1999;SC;Die-hard Reformer;Medium;3387;X
+825034;Head of Government;John Morley;1905;1910;1999;SC;Political Protege;Medium;3405;X
+825035;Head of Government;Robert Crewe-Milnes;1910;1915;1999;SC;Naive Optimist;Medium;2674;X
+825036;Head of Government;Austen Chamberlain;1915;1917;1999;PA;Flamboyant Tough Guy;Medium;2675;X
+825037;Head of Government;Edwin Samuel Montagu;1917;1922;1999;SC;Silent Workhorse;Medium;3386;X
+825038;Head of Government;William Peel;1922;1924;1999;PA;Backroom Backstabber;Medium;3990;X
+825039;Head of Government;Sydney Olivier;1924;1925;1999;ML;Smiling Oilman;Medium;3407;X
+825040;Head of Government;Frederick Edwin Smith;1925;1929;1999;PA;Corporate Suit;Medium;3396;X
+825041;Foreign Minister;John Morley;1905;1910;1999;SC;Iron Fisted Brute;Medium;3405;X
+825042;Foreign Minister;Robert Crewe-Milnes;1910;1915;1999;SC;General Staffer;Medium;2674;X
+825043;Foreign Minister;Austen Chamberlain;1915;1917;1999;PA;Ideological Crusader;Medium;2675;X
+825044;Foreign Minister;Edwin Samuel Montagu;1917;1922;1999;SC;Great Compromiser;Medium;3386;X
+825045;Foreign Minister;William Peel;1922;1924;1999;PA;Apologetic Clerk;Medium;3990;X
+825046;Foreign Minister;Sydney Olivier;1924;1925;1999;ML;Biased Intellectual;Medium;3407;X
+825047;Foreign Minister;Frederick Edwin Smith;1925;1929;1999;PA;The Cloak N Dagger Schemer;Medium;3396;X
+825048;Minister of Armament;W. H. Michael;1908;1914;1999;SC;Administrative Genius;Medium;unknownminister;X
+825049;Minister of Armament;William Stevenson Meyer;1913;1918;1999;SC;Resource Industrialist;Medium;unknownminister;X
+825050;Minister of Armament;Bertie Munro Staig;1921;1933;1999;PA;laissez-faire capitalist;Medium;unknownminister;X
+825051;Minister of Armament;Montagu de Pomeroy Webb;1921;1925;1999;SC;Administrative Genius;Medium;unknownminister;X
+825052;Minister of Armament;John Arthur Godley ;1913;1918;1999;SC;Corrupt Kleptocrat;Medium;unknownminister;X
+825053;Minister of Armament;Garrett O'Moore Creagh;1905;1911;1999;PA;Theoretical Scientist;Medium;3397;X
+825054;Minister of Armament;Beauchamp Duff;1907;1916;1999;SC;Military Entrepreneur;Medium;3384;X
+825055;Minister of Armament;Edmund George Barrow;1912;1919;1999;PA;Infantry Proponent;Medium;unknownminister;X
+825056;Minister of Armament;Herbert Cox;1915;1922;1999;SC;Air Superiority Proponent;Medium;unknownminister;X
+825057;Minister of Armament;Alexander Cobbe;1918;1928;1999;SC;Tank Proponent;Medium;1356;X
+825058;Minister of Security;John Morley;1905;1910;1999;SC;Compassionate Gentleman;Medium;3405;X
+825059;Minister of Security;Robert Crewe-Milnes;1910;1915;1999;SC;Man of the People;Medium;2674;X
+825060;Minister of Security;Austen Chamberlain;1915;1917;1999;PA;Prince of Terror;Medium;2675;X
+825061;Minister of Security;Edwin Samuel Montagu;1917;1922;1999;SC;Crime Fighter;Medium;3386;X
+825062;Minister of Security;William Peel;1922;1924;1999;PA;Silent Lawyer;Medium;3990;X
+825063;Minister of Security;Sydney Olivier;1924;1925;1999;ML;Back Stabber;Medium;3407;X
+825064;Minister of Security;Frederick Edwin Smith;1925;1929;1999;PA;Efficient Sociopath;Medium;3396;X
+825065;Head of Military Intelligence;Herbert Mullaly;1904;1912;1999;PA;Industrial Specialist;Medium;3404;X
+825066;Head of Military Intelligence;Alexander Hamilton Gordon;1908;1916;1999;SC;Political Specialist;Medium;unknownminister;X
+825067;Head of Military Intelligence;George Macaulay Kirkpatrick;1912;1918;1999;SC;Dismal Enigma;Medium;3398;X
+825068;Head of Military Intelligence;Andrew Skeen;1914;1919;1999;PA;Naval Intelligence Specialist;Medium;1363;X
+825069;Head of Military Intelligence;Frederick J. Moberly;1915;1922;1999;SC;Technical Specialist;Medium;unknownminister;X
+825070;Head of Military Intelligence;Walter Pitt-Taylor;1918;1925;1999;SC;Logistics Specialist;Medium;3409;X
+825071;Head of Military Intelligence;William L. O. Twiss;1922;1929;1999;PA;Dismal Enigma;Medium;unknownminister;X
+825072;Chief of Staff;Beauchamp Duff;1904;1911;1999;SC;School of Fire Support;Medium;3384;X
+825073;Chief of Staff;Douglas Haig;1907;1913;1999;SC;School of Manoeuvre;Medium;3393;X
+825074;Chief of Staff;Percy Lake;1910;1917;1999;PA;School of Defence;Medium;3406;X
+825075;Chief of Staff;George Macaulay Kirkpatrick;1914;1922;1999;SC;School of Psychology;Medium;3398;X
+825076;Chief of Staff;Claud Jacob;1918;1926;1999;SC;School of Mass Combat;Medium;1367;X
+825077;Chief of Staff;Andrew Skeen;1922;1930;1999;PA;School of Fire Support;Medium;1363;X
+825078;Chief of Army;Herbert Kitchener;1900;1911;1999;SC;Guns and Butter Doctrine;Medium;3402;X
+825079;Chief of Army;Garrett O'Moore Creagh;1907;1916;1999;SC;Armoured Spearhead Doctrine;Medium;3397;X
+825080;Chief of Army;Beauchamp Duff;1912;1918;1999;PA;Decisive Battle Doctrine;Medium;3384;X
+825081;Chief of Army;Charles Monro;1914;1922;1999;SC;Static Defence Doctrine;Medium;3385;X
+825082;Chief of Army;Henry Rawlinson;1918;1927;1999;SC;elastic defence doctrine;Medium;2673;X
+825083;Chief of Navy;G. S. Howett;1902;1911;1999;PA;Base Control Doctrine;Medium;unknownminister;X
+825084;Chief of Navy;Walter Lumsden;1907;1919;1999;SC;Open Seas Doctrine;Medium;unknownminister;X
+825085;Chief of Navy;N. F. Wilson;1915;1922;1999;SC;Decisive Naval Battle Doctrine;Medium;unknownminister;X
+825086;Chief of Navy;B. H. Jones;1918;1922;1999;PA;Power Projection Doctrine;Medium;unknownminister;X
+825087;Chief of Navy;Edward James Headlam;1918;1931;1999;SC;Indirect Approach Doctrine;Medium;3394;X
+825088;Chief of Navy;Henry Lancelot Mawbey;1918;1924;1999;SC;Base Control Doctrine;Medium;unknownminister;X
+825089;Head of State;Freeman Freeman-Thomas;1931;1936;1999;ML;Insignificant Layman;High;5773;X
+825090;Chief of Air Force;Cecil Bouchier;1933;1937;1954;ML;air superiority doctrine;High;9830;X
+825091;Chief of Navy;Herbert Fitzherbert;1937;1944;1946;SC;open seas doctrine;Medium;9831;X
+825092;Head of Military Intelligence;Macan Saunders;1939;1940;1941;SC;logistics specialist;Medium;unknownminister;X
+825093;Head of Military Intelligence;Alan Fleming Hartley;1933;1937;1945;SC;dismal enigma;Medium;unknownminister;X
+825094;Head of Military Intelligence;Ashton Gerard Oswald Mosely Mayne;1936;1939;1948;SC;logistics specialist;Medium;L1229;X
+825095;Head of Military Intelligence;George Burton Henderson;1940;1941;1941;SC;dismal enigma;Medium;unknownminister;X
+825096;Head of Military Intelligence;Geoffry Allen Percival Scoones;1941;1942;1950;SC;logistics specialist;Medium;L1278;X
+825097;Chief of Staff;Philip Chetwode;1928;1935;1936;SC;school of manoeuvre;Medium;9832;X
+825098;Chief of Staff;Cyril Deverell;1930;1931;1938;SC;school of fire support;Medium;9833;X
+825099;Chief of Staff;Kenneth Wigram;1931;1934;1937;SC;school of defence;Medium;unknownminister;X
+825100;Chief of Staff;William Bartholomew;1934;1937;1941;SC;school of fire support;Medium;9834;X
+825101;Chief of Staff;Ivo Vesey;1937;1939;1940;SC;school of defence;Medium;9835;X
+825102;Chief of Staff;Eric de Burgh;1939;1941;1942;SC;school of manoeuvre;Medium;L1094;X
+825103;Chief of Staff;Thomas Hutton;1941;1942;1945;SC;school of defence;Medium;L1171;X
+825104;Chief of Staff;Edwin Morris;1942;1944;1949;SC;school of fire support;Medium;9836;X
+825105;Chief of Staff;John Swayne;1944;1946;1947;SC;school of defence;Medium;unknownminister;X
+825106;Chief of Staff;Arthur Smith;1946;1947;1949;SC;school of fire support;Medium;9837;X
+825107;Chief of Army;Claud Jacob;1925;1926;1931;SC;static defence doctrine;Medium;1367;X
+825108;Chief of Army;William Birdwood;1925;1931;1931;SC;decisive battle doctrine;Medium;6960;X
+825109;Chief of Army;Philip Chetwode;1930;1935;1936;SC;elastic defence doctrine;Medium;9832;X
+825110;Chief of Army;Robert Cassels;1935;1941;1942;SC;guns and butter doctrine;Medium;9838;X
+825111;Chief of Army;Claude Auchinleck;1941;1947;1948;SC;static defence doctrine;Medium;L1014;X
+825112;Chief of Army;Alan Fleming Hartley;1942;1943;1945;SC;decisive battle doctrine;Medium;unknownminister;X
+825113;Chief of Navy;Humphrey Walwyn;1934;1935;1935;SC;open seas doctrine;Medium;L1402;X
+825114;Chief of Navy;Arthur Edward Frederick Bedford;1934;1937;1938;SC;decisive naval battle doctrine;Medium;unknownminister;X
+825115;Chief of Navy;John Henry Godfrey;1943;1946;1947;SC;open seas doctrine;Medium;9839;X
+825116;Chief of Navy;Geoffrey John Audley Miles;19;19;19;SC;decisive naval battle doctrine;Medium;9840;X

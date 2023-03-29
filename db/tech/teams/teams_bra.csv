@@ -1,0 +1,26 @@
+BRA;Name;Pic Name;Skill;Start Year;End Year;speciality1;speciality2;speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+160001;Cassio Muniz;T4400;4;1930;2000;aeronautics;fighter_design;mechanics;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160002;CCNA;T4401;5;1930;2000;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160003;CCNC;T4402;5;1930;2000;munitions;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160004;Companhia Siderúrgica Nacional;T4403;5;1941;2000;industrial_engineering;general_equipment;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160005;Departamento Nacional da Produção Mineral;T4404;4;1933;2000;industrial_engineering;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160006;Arsenal de Marinha;T4405;5;1900;2000;naval_engineering;technical_efficiency;naval_artillery;Marine_Training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160007;IPT;T4406;6;1933;2000;aeronautics;management;electronics;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160008;Organizacão Henrique Lage;T4407;6;1922;2000;industrial_engineering;management;chemistry;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160009;Eurico Gaspar Dutra;T4408;4;1936;1952;large_unit_tactics;centralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160010;João Mascarenhas de Morais;T4409;4;1937;1954;small_unit_tactics;decentralized_execution;combined_arms_focus;training;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160011;Aristides Guilhem;T4410;4;1935;1948;large_taskforce_tactics;centralized_execution;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160012;Escola Naval de Guerra;100415;3;1911;2000;small_taskforce_tactics;decentralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160013;Salgado Filhõ;T4412;4;1930;1947;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160014;Epaminondas dos Santos;T4413;4;1930;1954;fighter_tactics;decentralized_execution;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160015;NMC;T4414;5;1933;2000;mechanics;electronics;technical_efficiency;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160016;Cordeiro de Farias;T4415;6;1940;1966;artillery;general_equipment;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160017;Nero Moura;T4416;6;1943;1964;fighter_tactics;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160018;Estrada de Ferro Central do Brasil;100039;4;1860;2000;mechanics;general_equipment;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160019;Academia Militar das Agulhas Negras;100040;5;1811;1933;large_unit_tactics;small_unit_tactics;centralized_execution;decentralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160020;Industrias Matarazzo;100041;7;1890;2000;industrial_engineering;chemistry;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160021;Fábrica Presidente Vargas;100042;4;1902;1933;mechanics;technical_efficiency;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160022;Arsenal da Força Pública;100043;2;1890;1919;general_equipment;artillery;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160023;Fundação Oswaldo Cruz;100654;4;1900;2000;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160024;Aero-Club Brasileiro;100486;1;1911;1933;fighter_tactics;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+160025;Escola de Aviação Militar;100662;5;1919;1933;fighter_tactics;bomber_tactics;training;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

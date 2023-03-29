@@ -1,0 +1,23 @@
+POR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+20001;Lisbon Dockyard;T2800;4;1900;2000;naval_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20002;Oficinas Gerais de Material Aeronáutico;T2801;3;1900;2000;aeronautics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20003;Arsenal do Alfeite;T2802;3;1900;2000;naval_engineering;technical_efficiency;naval_artillery;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20004;Caminhos de Ferro Portugueses;T2803;5;1900;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20005;José Norton de Matos;T2804;2;1912;1949;small_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20006;Francisco Soares;T2805;4;1930;2000;small_unit_tactics;decentralized_execution;combined_arms_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20007;Oficinas Gerais de Material de Engenharia;T2806;3;1900;2000;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20008;Fábrica Militar de Santa Clara;T2807;3;1900;2000;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20009;Escola Naval;T2808;3;1900;2000;small_taskforce_tactics;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20010;Academia da Força Aérea;T2809;3;1930;2000;training;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20011;Companhia União Fabril;100269;3;1865;2000;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20012;Fábrica de Material de Guerra;100442;2;1890;2000;artillery;general_equipment;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20013;Arsenal da Marinha;100270;4;1890;2000;naval_engineering;naval_artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20014;Empresa Industria Portugesa;100443;2;1890;2000;industrial_engineering;mechanics;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20015;Escola de Guerra;100444;1;1890;1919;small_unit_tactics;centralized_execution;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20016;Escola Militar;100445;2;1919;2000;small_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+20017;OGMA;100446;2;1918;2000;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+200170;PVDE;T200170;3;1933;1945;rt_user_2;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+200171;PIDE;T200171;4;1945;1969;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+200172;DGS;T200172;6;1969;1974;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+200173;SIRP;T200173;6;1974;1984;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+200174;SIS;T200174;7;1984;2000;rt_user_2;training;individual_courage;small_unit_tactics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

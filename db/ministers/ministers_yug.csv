@@ -1,0 +1,107 @@
+YUG;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+100001;Head of State;Pavle Karadjordjevic;1933;1964;1999;PA;Benevolent Gentleman;High;3691;X
+100002;Head of Government;Milan Stojadinovic;1933;1964;1999;PA;Silent Workhorse;High;M20002;X
+100003;Foreign Minister;Milan Stojadinovic;1933;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M20002;X
+100004;Minister of Armament;Boguljub Jevtic;1933;1964;1999;PA;Corrupt Kleptocrat;Medium;M20004;X
+100005;Minister of Security;Pavle Karadjordjevic;1933;1964;1999;PA;Prince of Terror;High;3691;X
+100006;Head of Military Intelligence;Borivoje Josimovic;1933;1964;1999;PA;Political Specialist;Medium;L46013;X
+100007;Chief of Staff;Petar Kosic;1933;1964;1999;PA;School of Mass Combat;Medium;L46015;X
+100008;Chief of Army;Aleksandar Cincar-Markovic;1933;1964;1999;PA;Decisive Battle Doctrine;Very High;L46005;X
+100009;Chief of Navy;Bogoljub Ilic;1933;1964;1999;PA;Base Control Doctrine;Very High;L46043;X
+100010;Chief of Air Force;Dusan Simovic;1933;1964;1999;PA;Army Aviation Doctrine;Medium;L46060;X
+100011;Head of State;Josip Broz;1933;1964;1999;LWR;Powerhungry Demagogue;High;M20021;X
+100012;Head of Government;Dragisa Cvetkovic;1939;1964;1999;PA;Naive Optimist;High;M20032;X
+100013;Head of Government;Dusan Simovic;1941;1964;1999;SC;Happy Amateur;High;M20033;X
+100014;Head of Government;Slobodan Jovanovic;1942;1964;1999;FA;Political Protege;High;M20034;X
+100015;Head of Government;Milos Trifunovic;1943;1964;1999;NS;Old General;High;M20035;X
+100016;Head of Government;Ivan Subasic;1944;1964;1999;ML;Corporate Suit;High;M20014;X
+100017;Head of Government;Josip Broz;1933;1964;1999;LWR;Backroom Backstabber;High;M20021;X
+100018;Head of Government;Vlatko Macek;1933;1964;1999;SD;old airmarshal;High;M20038;X
+100019;Foreign Minister;Aleksandar Cincar-Markovic;1939;1964;1999;PA;General Staffer;Very High;L46005;X
+100020;Foreign Minister;Momcilo Nincic;1941;1964;1999;SC;Great Compromiser;Medium;M20013;X
+100021;Foreign Minister;Slobodan Jovanovic;1943;1964;1999;FA;Biased Intellectual;High;M20034;X
+100022;Foreign Minister;Milan Grol;1943;1964;1999;NS;Apologetic Clerk;High;M20042;X
+100023;Foreign Minister;Bozidar Puric;1943;1964;1999;NS;Ideological Crusader;High;M20043;X
+100024;Foreign Minister;Ivan Subasic;1944;1964;1999;ML;Apologetic Clerk;Medium;M20014;X
+100025;Foreign Minister;Stanoje Simic;1933;1964;1999;LWR;Great Compromiser;Medium;M20023;X
+100026;Foreign Minister;Vlatko Macek;1933;1964;1999;SD;Apologetic Clerk;Medium;M20038;X
+100027;Foreign Minister;Edvard Kardelj;1941;1964;1999;SD;Ideological Crusader;Very High;M20047;X
+100028;Foreign Minister;Dimitrije Ljotic;1943;1964;1999;NS;Iron Fisted Brute;Medium;M20048;X
+100029;Minister of Armament;Edo Bogdan Markovic;1939;1964;1999;PA;Resource Industrialist;Medium;M20049;X
+100030;Minister of Armament;Ladislav Polic;1941;1964;1999;SC;laissez-faire capitalist;Medium;M20050;X
+100031;Minister of Armament;Anton Kozarev;1942;1964;1999;FA;Tank Proponent;Medium;M20051;X
+100032;Minister of Armament;Tanasije Tasa Dinic;1943;1964;1999;NS;Corrupt Kleptocrat;Medium;M20052;X
+100033;Minister of Armament;Petar Ivelich;1944;1964;1999;ML;Theoretical Scientist;Medium;M20053;X
+100034;Minister of Armament;Milentije Popovic;1933;1964;1999;LWR;Resource Industrialist;High;M20024;X
+100035;Minister of Armament;Draza Mihailovic;1933;1964;1999;SD;Tank Proponent;Medium;M20055;X
+100036;Minister of Security;Michel Yovanovic;1939;1964;1999;PA;Compassionate Gentleman;Low;M20056;X
+100037;Minister of Security;Momcilo Dujic;1941;1964;1999;SC;Silent Lawyer;Low;M20015;X
+100038;Minister of Security;Petar Grabovski;1942;1964;1999;FA;Efficient Sociopath;Low;M20058;X
+100039;Minister of Security;Milan Nedic;1943;1964;1999;NS;Prince of Terror;Medium;8435;X
+100040;Minister of Security;Spiro Kitinchev;1944;1964;1999;NS;Back Stabber;Medium;M20060;X
+100041;Minister of Security;Dragoljub Stefanic;1944;1964;1999;ML;Crime Fighter;Medium;M20061;X
+100042;Minister of Security;Koca Popovic;1933;1964;1999;SD;Silent Lawyer;Medium;M20025;X
+100043;Head of Military Intelligence;Andrija Stampar;1939;1964;1999;PA;Technical Specialist;Medium;M20063;X
+100044;Head of Military Intelligence;Djorde Petrelic;1941;1964;1999;SC;Industrial Specialist;Medium;M20064;X
+100045;Head of Military Intelligence;Dimitar Ckatrov;1942;1964;1999;FA;Dismal Enigma;Medium;M20065;X
+100046;Head of Military Intelligence;Kosta Ecanec;1943;1964;1999;NS;Logistics Specialist;Medium;M20066;X
+100047;Head of Military Intelligence;Drogoljub Jovanovic;1943;1964;1999;NS;Political Specialist;Medium;M20067;X
+100048;Head of Military Intelligence;Mihail Milosajevic;1944;1964;1999;ML;Technical Specialist;Medium;M20068;X
+100049;Head of Military Intelligence;Aleksandar Rankovic;1933;1964;1999;SD;Dismal Enigma;High;M20026;X
+100050;Chief of Staff;Radivoje Jankovic;1941;1964;1999;SC;School of Fire Support;Low;L46012;X
+100051;Chief of Staff;Dimitar Duzelov;1942;1964;1999;FA;School of Manoeuvre;Low;M20072;X
+100052;Chief of Staff;Marko Bozovic;1943;1964;1999;NS;School of Mass Combat;Low;L46002;X
+100053;Chief of Staff;Jovan Nikolic;1944;1964;1999;ML;School of Psychology;Low;M20074;X
+100054;Chief of Staff;Arsa Jovanovic;1933;1964;1999;LWR;School of Mass Combat;Medium;M20075;X
+100055;Chief of Staff;Draza Mihailovic;1933;1964;1999;SD;School of Defence;Medium;M20012;X
+100056;Chief of Army;Milutin Nedic;1941;1964;1999;SC;Decisive Battle Doctrine;Very High;8436;X
+100057;Chief of Army;Dimitar Duzelov;1942;1964;1999;FA;Armoured Spearhead Doctrine;Very High;M20072;X
+100058;Chief of Army;Marko Bozovic;1943;1964;1999;NS;Elastic Defence Doctrine;Very High;L46002;X
+100059;Chief of Army;Jovan Nikolic;1944;1964;1999;ML;Guns and Butter Doctrine;Very High;M20074;X
+100060;Chief of Army;Draza Mihailovic;1933;1964;1999;SD;static defence doctrine;Medium;M20012;X
+100061;Chief of Navy;Milutin Nedic;1941;1964;1999;SC;Decisive Naval Battle Doctrine;High;8436;X
+100062;Chief of Navy;Petra Dumev;1942;1964;1999;FA;Indirect Approach Doctrine;High;M20085;X
+100063;Chief of Navy;Nikola Mandic;1943;1964;1999;NS;Base Control Doctrine;High;M20086;X
+100064;Chief of Navy;Pavle Karadjordjevic;1944;1964;1999;ML;Power Projection Doctrine;Very High;3691;X
+100065;Chief of Air Force;Petra Dumev;1942;1964;1999;FA;Vertical Envelopment Doctrine;Medium;M20085;X
+100066;Chief of Air Force;Ademaga Mesic;1943;1964;1999;NS;Army Aviation Doctrine;Medium;M20091;X
+100067;Chief of Air Force;Petar Vukcevic;1944;1964;1999;ML;Naval Aviation Doctrine;Medium;L46062;X
+100068;Chief of Air Force;Ivan Ribar;1933;1964;1999;LWR;Air Superiority Doctrine;High;M20093;X
+100069;Head of State;Petar II;1941;1964;1999;SC;Benevolent Gentleman;High;8437;X
+100070;Head of State;Petar II;1941;1964;1999;FA;Barking Buffoon;High;8437;X
+100071;Head of State;Petar II;1941;1964;1999;NS;Popular Figurehead;High;8437;X
+100072;Foreign Minister;Momcilo Nincic;1941;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M20013;X
+100073;Chief of Staff;Koca Popovic;1933;1964;1999;LWR;School of Mass Combat;High;M20025;X
+100074;Chief of Army;Josip Broz;1933;1964;1999;LWR;Armoured Spearhead Doctrine;High;M20028;X
+100075;Chief of Navy;Josip Broz;1933;1964;1999;LWR;Indirect Approach Doctrine;High;M20029;X
+100076;Head of State;Petar II;1933;1964;1999;ML;Autocratic Charmer;High;8437;X
+100077;Head of Government;Draza Mihailovic;1933;1964;1999;ML;Naive Optimist;High;M20012;X
+100078;Minister of Armament;Ivan Subasic;1933;1964;1999;ML;Infantry Proponent;Medium;M20014;X
+100079;Head of Military Intelligence;Miroslav Spalaikovic;1933;1964;1999;ML;Technical Specialist;High;M20016;X
+100080;Chief of Staff;Mihailo Lukic;1933;1941;1999;ML;School of Manoeuvre;High;L46020;X
+100081;Chief of Air Force;Josip Broz;1933;1964;1999;LWR;Army Aviation Doctrine;Medium;M20028;X
+100082;Foreign Minister;Koca Popovic;1953;1964;1999;LWR;The Cloak N Dagger Schemer;Very High;M20025;X
+100083;Minister of Armament;Ivan Gosnjak;1953;1964;1999;LWR;Infantry Proponent;High;M20104;X
+100084;Minister of Security;Vladimir Simic;1953;1964;1999;LWR;Compassionate Gentleman;Medium;M20105;X
+100085;Head of Military Intelligence;Milovan Djilas;1953;1964;1999;SD;Political Specialist;High;M20106;X
+100086;Head of State;Aleksandar I;1921;1935;1999;PA;Die-Hard Reformer;Very High;3136;X
+100087;Head of Government;Petar Zivkovic;1925;1933;1999;PA;Political Protege;High;unknownminister;x
+100088;Head of Government;Nikola Uzunovic;1926;1936;1999;SC;silent workhorse;Medium;9302;x
+100089;Head of Government;Velimir Vukicevic;1927;1936;1999;SC;Political Protege;Medium;unknownminister;x
+100090;Head of Government;Anton Korosec;1918;1936;1999;SC;Naive Optimist;High;unknownminister;x
+100091;Head of Government;Vojislav Marinkovic;1921;1933;1999;PA;corporate suit;Medium;3146;x
+100092;Head of Government;Milan Srskic;1924;1934;1999;PA;silent workhorse;Medium;3963;x
+100093;Head of Government;Bogoljub Jevtic;1934;1941;1999;SC;Backroom Backstabber;Medium;M20004;x
+100094;Head of Military Intelligence;Milivoje Alimpic;1925;1926;1960;PA;logistics specialist;Medium;unknownminister;X
+100095;Head of Military Intelligence;Mihailo Bodi;1929;1931;1941;PA;dismal enigma;Medium;9849;X
+100096;Head of Military Intelligence;Petar Aracic;1931;1936;1941;PA;logistics specialist;Medium;9850;X
+100097;Chief of Staff;Petar Bojovic;1905;1922;1941;PA;school of fire support;Medium;1117;X
+100098;Chief of Staff;Petar Pesic;1921;1930;1945;PA;school of defence;Medium;L46058;X
+100099;Chief of Staff;Milan Nedic;1934;1936;1947;PA;school of fire support;Medium;8435;X
+100100;Chief of Staff;Milutin Nedic;1936;1938;1946;PA;school of defence;Medium;8436;X
+100101;Chief of Staff;Dusan Simovic;1938;1946;1963;PA;school of defence;Medium;M20033;X
+100102;Chief of Army;Petar Pesic;1922;1942;1945;PA;static defence doctrine;Medium;L46058;X
+100103;Chief of Navy;Petar Pesic;1922;1942;1945;PA;decisive naval battle doctrine;Medium;L46058;X
+100104;Chief of Army;Dusan Simovic;1941;1946;1963;PA;decisive battle doctrine;Medium;M20033;X
+100105;Chief of Navy;Dusan Simovic;1941;1946;1963;PA;decisive naval battle doctrine;Medium;M20033;X

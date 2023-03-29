@@ -1,0 +1,194 @@
+HOL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyality;Picture Name;X
+;Replacements;;;;;;;;;X
+15001;Head of State;Wilhelmina;1933;1964;1999;SC;Stern Imperialist;High;M8001;X
+15002;Head of Government;Hendricus Colijn;1925;1964;1999;ML;Silent Workhorse;High;M8002;X
+15003;Foreign Minister;Frans B. van Blokland;1933;1964;1999;SC;Ideological Crusader;Low;M8003;X
+15004;Minister of Armament;Pieter Oud;1933;1964;1999;ML;Submarine Proponent;Medium;M8004;X
+15005;Minister of Security;Josephus H.H. van Schaik;1933;1964;1999;ML;Silent Lawyer;High;M8005;X
+15006;Head of Military Intelligence;Johan W. van Oorschot;1933;1964;1999;SC;Dismal Enigma;Very High;M8006;X
+15007;Chief of Staff;Adriaan Dijxhoorn;1933;1964;1999;SC;School of Defence;Very High;M8007;X
+15008;Chief of Army;Izaak Reynders;1933;1964;1999;SC;Static Defence Doctrine;Very High;M8008;X
+15009;Chief of Navy;Johannes Furstner;1933;1964;1999;ML;Indirect Approach Doctrine;High;M8009;X
+15010;Chief of Air Force;Marius Raaijmakers;1933;1964;1999;ML;Air Superiority Doctrine;High;M8010;X
+15011;Head of State;Wilhelmina;1945;1964;1999;PA;Stern Imperialist;High;M8001;X
+15012;Head of State;Anton Mussert;1937;1964;1999;NS;Barking Buffoon;High;M8011;X
+15013;Head of State;Benjamin Boers;1937;1964;1999;ST;Insignificant Layman;High;M8040;X
+15014;Head of State;Jan Dieters;1940;1964;1999;ST;Autocratic Charmer;High;M8041;X
+15015;Head of State;Saul de Groot;1943;1964;1999;ST;Ruthless Powermonger;High;M8021;X
+15016;Head of Government;Johan Albarda;1939;1964;1999;SD;Happy Amateur;High;M8043;X
+15017;Head of Government;Louis Beel;1946;1964;1999;ML;Smiling Oilman;High;M8044;X
+15018;Head of Government;Pieter Gerbrandy;1939;1964;1999;ML;Flamboyant Tough Guy;High;M8046;X
+15019;Head of Government;Willem Schermerhorn;1945;1964;1999;ML;Naive Optimist;High;M8047;X
+15020;Head of Government;Andries Dirk de Graaf;1937;1964;1999;SC;Happy Amateur;High;M8048;X
+15021;Head of Government;Dirk Jan de Geer;1926;1964;1999;SC;Political Protege;High;M8049;X
+15022;Head of Government;Jan de Quay;1940;1964;1999;SC;Happy Amateur;High;M8050;X
+15023;Head of Government;Meinout van Tonningen;1937;1964;1999;NS;Backroom Backstabber;High;M8012;X
+15024;Head of Government;Anton Mussert;1940;1964;1999;NS;Ambitious Union Boss;High;M8011;X
+15025;Head of Government;Graaf de Marchant et d'Ansembourg;1940;1964;1999;PA;Flamboyant Tough Guy;High;M8013;X
+15026;Head of Government;Nicolaas Beuzemaker;1937;1964;1999;ST;Happy Amateur;High;M8054;X
+15027;Head of Government;David Wijnkoop;1943;1964;1999;ST;Naive Optimist;High;M8022;X
+15028;Head of Government;Daniel Goulooze;1945;1964;1999;ST;Smiling Oilman;High;M8025;X
+15029;Foreign Minister;Servatius Baart;1937;1964;1999;SD;Great Compromiser;Medium;M8057;X
+15030;Foreign Minister;Adrianus Pelt;1938;1964;1999;SD;Apologetic Clerk;Medium;M8058;X
+15031;Foreign Minister;George van den Bergh;1943;1964;1999;SD;Iron Fisted Brute;Medium;M8059;X
+15032;Foreign Minister;Jan van Royen;1946;1964;1999;SD;Biased Intellectual;Low;M8060;X
+15033;Foreign Minister;Pim van Boetzelaer;1946;1964;1999;ML;General Staffer;Medium;M8061;X
+15034;Foreign Minister;Charles Guillaume Cramer;1947;1964;1999;SD;The Cloak N Dagger Schemer;Very High;M8062;X
+15035;Foreign Minister;Hendricus Colijn;1937;1964;1999;ML;Ideological Crusader;Medium;M8002;X
+15036;Foreign Minister;Jacobus Patijn;1937;1964;1999;ML;Apologetic Clerk;Medium;M8064;X
+15037;Foreign Minister;Andries Dirk de Graaf;1933;1964;1999;SC;Great Compromiser;High;M8048;X
+15038;Foreign Minister;Eelco van Kleffens;1939;1964;1999;SC;Great Compromiser;Medium;M8065;X
+15039;Foreign Minister;Jacobus Patijn;1940;1964;1999;PA;Apologetic Clerk;Medium;M8064;X
+15040;Foreign Minister;Graaf de Marchant et d'Ansembourg;1937;1964;1999;FA;Ideological Crusader;Very Low;M8013;X
+15041;Foreign Minister;Anton Mussert;1943;1964;1999;FA;The Cloak N Dagger Schemer;Low;M8011;X
+15042;Foreign Minister;Meinout van Tonningen;1943;1964;1999;NS;Iron Fisted Brute;Medium;M8012;X
+15043;Foreign Minister;Benjamin Boers;1937;1964;1999;ST;Great Compromiser;Medium;M8040;X
+15044;Foreign Minister;Nicolaas Beuzemaker;1939;1964;1999;ST;The Cloak N Dagger Schemer;Very High;M8054;X
+15045;Foreign Minister;David Wijnkoop;1940;1964;1999;ST;Biased Intellectual;Low;M8022;X
+15046;Foreign Minister;Saul de Groot;1941;1964;1999;LE;Ideological Crusader;Low;M8021;X
+15047;Foreign Minister;Willem van Ravesteyn;1943;1964;1999;LE;Apologetic Clerk;Medium;M8023;X
+15048;Minister of Armament;Jacob van Gelderen;1937;1964;1999;SD;laissez-faire capitalist;High;M8077;X
+15049;Minister of Armament;Lambertus H. Mansholt;1939;1964;1999;SD;Resource Industrialist;Medium;M8078;X
+15050;Minister of Armament;Charles Welter;1940;1964;1999;SD;Theoretical Scientist;Medium;M8079;X
+15051;Minister of Armament;Johan Albarda;1941;1964;1999;SD;laissez-faire capitalist;High;M8043;X
+15052;Minister of Armament;Jacques de Kadt;1942;1964;1999;SD;Military Entrepreneur;High;M8081;X
+15053;Minister of Armament;Charles Guillaume Cramer;1944;1964;1999;SD;Air Superiority Proponent;Very High;M8062;X
+15054;Minister of Armament;Alexander Fiévez;1946;1964;1999;ML;Administrative Genius;Medium;M8083;X
+15055;Minister of Armament;Jan Tinbergen;1947;1964;1999;SD;Resource Industrialist;Very High;M8084;X
+15056;Minister of Armament;Tietse Pieter Sevensma;1939;1964;1999;ML;Laissez-Faire Capitalist;Medium;M8086;X
+15057;Minister of Armament;Daniel van der Zee;1940;1964;1999;ML;Air to Sea Proponent;Medium;M8087;X
+15058;Minister of Armament;W.G. van Wettum;1941;1964;1999;ML;Tank Proponent;Medium;M8088;X
+15059;Minister of Armament;Willem Schermerhorn;1941;1964;1999;ML;Resource Industrialist;Medium;M8047;X
+15060;Minister of Armament;O. van Lidth de Jeude;1942;1964;1999;ML;Administrative Genius;Medium;M8090;X
+15061;Minister of Armament;James de Booy;1945;1964;1999;ML;Battle Fleet Proponent;Medium;M8091;X
+15062;Minister of Armament;Johannes Meynen;1945;1964;1999;ML;Theoretical Scientist;High;M8092;X
+15063;Minister of Armament;Joest van Hamel;1946;1964;1999;ML;Military Entrepreneur;High;M8093;X
+15064;Minister of Armament;Dirk Jan de Geer;1939;1964;1999;SC;Infantry Proponent;High;M8049;X
+15065;Minister of Armament;Adriaan Dijxhoorn;1940;1964;1999;SC;Tank Proponent;Very High;M8007;X
+15066;Minister of Armament;Maximilien Steenberghe;1942;1964;1999;SC;Air to Ground Proponent;Medium;M8096;X
+15067;Minister of Armament;Jan de Quay;1944;1964;1999;SC;Resource Industrialist;High;M8050;X
+15068;Minister of Armament;Jannes van Dijk;1940;1964;1999;SC;Administrative Genius;High;M8098;X
+15069;Minister of Armament;C.J. Huygens;1937;1964;1999;NS;Administrative Genius;Very Low;M8014;X
+15070;Minister of Armament;Gerrit van Burink;1943;1964;1999;NS;Infantry Proponent;Medium;M8100;X
+15071;Minister of Armament;Gerrit van Burink;1945;1964;1999;PA;Infantry Proponent;Medium;M8100;X
+15072;Minister of Armament;Peiter Bergsma;1937;1964;1999;ST;laissez-faire capitalist;Medium;M8102;X
+15073;Minister of Armament;Jacques de Kadt;1939;1964;1999;LE;Military Entrepreneur;High;M8081;X
+15074;Minister of Armament;Jan Postma;1940;1964;1999;LE;Theoretical Scientist;Low;M8024;X
+15075;Minister of Armament;Jacobus Engels;1944;1964;1999;LE;Strategic Air Proponent;High;M8105;X
+15076;Minister of Security;Franc van der Goes;1937;1964;1999;SD;Man of the People;Medium;M8106;X
+15077;Minister of Security;Jan Bergmeijer;1939;1964;1999;SD;Compassionate Gentleman;Medium;M8107;X
+15078;Minister of Security;Louis Beel;1940;1964;1999;SD;Man of the People;Medium;M8044;X
+15079;Minister of Security;Charles Guillaume Cramer;1941;1964;1999;SD;Silent Lawyer;Very High;M8062;X
+15080;Minister of Security;Johan Brautigam;1945;1964;1999;SD;Prince of Terror;Medium;M8110;X
+15081;Minister of Security;Pieter Gerbrandy;1939;1964;1999;ML;Crime Fighter;Very High;M8046;X
+15082;Minister of Security;Fedde Schurer;1946;1964;1999;ML;Man of the People;Medium;M8113;X
+15083;Minister of Security;Wilhelmus Andriessen;1940;1964;1999;ML;Prince of Terror;Medium;M8114;X
+15084;Minister of Security;John Loudon;1942;1964;1999;ML;Compassionate Gentleman;Medium;M8115;X
+15085;Minister of Security;Bernard C.J. Loder;1937;1964;1999;SC;Back Stabber;Medium;M8116;X
+15086;Minister of Security;Louis Einthoven;1939;1964;1999;SC;Crime Fighter;Very High;M8117;X
+15087;Minister of Security;Gerrit van Heuven Goedhart;1943;1964;1999;SC;Compassionate Gentleman;High;M8118;X
+15088;Minister of Security;Corneliis van Geelkerken;1937;1964;1999;NS;Prince of Terror;High;M8015;X
+15089;Minister of Security;Corneliis van Geelkerken;1945;1964;1999;PA;Prince of Terror;High;M8015;X
+15090;Minister of Security;Carel Gooseling;1940;1964;1999;PA;Compassionate Gentleman;Medium;M8122;X
+15091;Minister of Security;Fokke Bosman;1937;1964;1999;ST;Compassionate Gentleman;High;M8123;X
+15092;Minister of Security;Hendrickus Sneevliet;1939;1964;1999;ST;Man of the People;High;M8124;X
+15093;Minister of Security;Daniel Goulooze;1943;1964;1999;ST;Crime Fighter;Low;M8025;X
+15094;Head of Military Intelligence;Emanuel Boekman;1937;1964;1999;SD;Dismal Enigma;Very High;M8126;X
+15095;Head of Military Intelligence;Harmen de Boer;1939;1964;1999;SD;Political Specialist;Very High;M8127;X
+15096;Head of Military Intelligence;Charles Guillaume Cramer;1940;1964;1999;SD;Technical Specialist;Very High;M8062;X
+15097;Head of Military Intelligence;Jan Lambertus Faber;1943;1964;1999;SD;Political Specialist;Very High;M8129;X
+15098;Head of Military Intelligence;Willem Drees;1945;1964;1999;SD;Logistics Specialist;Very High;M8130;X
+15099;Head of Military Intelligence;H.A. van Kamebeek;1937;1964;1999;ML;Technical Specialist;Very High;M8131;X
+15100;Head of Military Intelligence;Jan Slotemaker;1939;1964;1999;ML;Logistics Specialist;Very High;M8132;X
+15101;Head of Military Intelligence;G.J. Sas;1940;1964;1999;ML;Logistics Specialist;Very High;M8133;X
+15102;Head of Military Intelligence;Frans Fuykschot;1946;1964;1999;ML;Dismal Enigma;Very High;M8134;X
+15103;Head of Military Intelligence;Christoffel van Tuinen;1939;1964;1999;SC;Industrial Specialist;Very High;M8136;X
+15104;Head of Military Intelligence;Simon Spoor;1942;1964;1999;SC;Naval Intelligence Specialist;Very High;M8137;X
+15105;Head of Military Intelligence;Henk Feldmeijer;1937;1964;1999;NS;Political Specialist;Low;M8016;X
+15106;Head of Military Intelligence;Michiel de Bruyne;1945;1964;1999;PA;Technical Specialist;Low;M8139;X
+15107;Head of Military Intelligence;Abraham Menist;1937;1964;1999;LE;Political Specialist;High;M8026;X
+15108;Head of Military Intelligence;Ina Willekes-MacDonald;1943;1964;1999;ST;Dismal Enigma;Very High;M8141;X
+15109;Chief of Staff;Bernhard Coltof;1937;1964;1999;SD;School of Psychology;High;M8142;X
+15110;Chief of Staff;Simon Spoor;1943;1964;1999;SC;School of Psychology;High;M8137;X
+15111;Chief of Staff;Anton Mussert;1937;1964;1999;FA;School of Psychology;High;M8148;X
+15112;Chief of Staff;Hendrik Seyffardt;1943;1964;1999;FA;School of Defence;Medium;M8017;X
+15113;Chief of Staff;Thomas Struik;1937;1964;1999;ST;School of Mass Combat;High;M8027;X
+15114;Chief of Staff;Geert Sterringa;1940;1964;1999;ST;School of Defence;High;M8152;X
+15115;Chief of Staff;Jacobus Engels;1943;1964;1999;LE;School of Psychology;High;M8105;X
+15116;Chief of Army;Jan van Voorst tot Voorst;1937;1964;1999;ML;Static Defence Doctrine;High;M8155;X
+15117;Chief of Army;Henri Winkelman;1940;1964;1999;ML;Elastic Defence Doctrine;High;M8154;X
+15118;Chief of Army;Adrianus Zondervan;1937;1964;1999;NS;Decisive Battle Doctrine;Very Low;M8018;X
+15119;Chief of Army;Hendrik Seyffardt;1943;1964;1999;FA;Guns and Butter Doctrine;Very High;M8017;X
+15120;Chief of Army;Herman van Voorst tot Voorst;1945;1964;1999;PA;Elastic Defence Doctrine;Very High;M8161;X
+15121;Chief of Army;Alexander de Leeuw;1937;1964;1999;ST;Elastic Defence Doctrine;Very High;M8162;X
+15122;Chief of Army;Nico van Straaten;1943;1964;1999;LE;Armoured Spearhead Doctrine;Low;M8028;X
+15123;Chief of Army;Anthon Koejemans;1945;1964;1999;ST;Guns and Butter Doctrine;Very High;M8164;X
+15124;Chief of Navy;Pieter Koenraad;1937;1964;1999;FA;Base Control Doctrine;Low;M8019;X
+15125;Chief of Navy;Christiaan Beekman;1937;1964;1999;LE;Base Control Doctrine;Low;M8170;X
+15126;Chief of Navy;Fokke Bosman;1940;1964;1999;ST;Open Seas Doctrine;High;M8123;X
+15127;Chief of Air Force;Petrus W. Best;1939;1964;1999;SD;Naval Aviation Doctrine;High;M8172;X
+15128;Chief of Air Force;Claes Douw van der Krap;1937;1964;1999;FA;Naval Aviation Doctrine;Low;M8020;X
+15129;Chief of Air Force;Jan Dieters;1937;1964;1999;ST;Vertical Envelopment Doctrine;High;M8041;X
+15130;Chief of Air Force;Julius Zegers;1943;1964;1999;LE;Air Superiority Doctrine;Low;M8030;X
+15131;Chief of Army;Bernhard Coltof;1939;1964;1999;SD;Elastic Defence Doctrine;High;M8142;X
+15132;Head of State;Alexander von Falkenhausen;1940;1964;1999;NS;Resigned Generalissimo;Very High;M510086;X
+15133;Head of State;Arthur Seyss-Inquart;1940;1964;1999;NS;Powerhungry Demagogue;Very High;M58;X
+15134;Chief of Navy;Karel Doorman;1933;1964;1999;LWR;Open Seas Doctrine;Low;M8029;X
+15135;Head of State;Wilhelmina;1933;1964;1999;SL;Stern Imperialist;Very High;M8001;X
+15136;Head of State;Juliana;1948;1964;1999;SD;Popular Figurehead;High;M8186;X
+15137;Head of State;Juliana;1948;1964;1999;SC;Popular Figurehead;High;M8186;X
+15138;Head of Government;Willem Drees;1948;1964;1999;SD;Ambitious Union Boss;High;M8130;X
+15139;Foreign Minister;Dirk U. Stikker;1948;1964;1999;SL;Great Compromiser;Medium;M8189;X
+15140;Foreign Minister;Jan Willem Beyen;1951;1964;1999;SL;Apologetic Clerk;Medium;M8190;X
+15141;Minister of Armament;Wim Schokking;1948;1964;1999;SD;Air to Ground Proponent;Medium;M8191;X
+15142;Minister of Armament;Louis de Visser;1950;1964;1999;LWR;Theoretical Scientist;Medium;M8192;X
+15143;Minister of Armament;Kees Staf;1951;1964;1999;SL;Resource Industrialist;Medium;M8193;X
+15144;Minister of Security;Johannes van Maarseveen;1946;1964;1999;ML;Silent Lawyer;Medium;M8194;X
+15145;Minister of Security;Teun Struiken;1948;1964;1999;SL;Back Stabber;Medium;M8195;X
+15146;Minister of Security;Henrik Mulderije;1951;1964;1999;SL;Crime Fighter;Medium;M8196;X
+15147;Minister of Security;Leendert A. Donker;1952;1964;1999;SD;Compassionate Gentleman;Medium;M8197;X
+15148;Chief of Air Force;Hendrik Walaardt Sacré;1914;1933;1999;ML;Army Aviation Doctrine;Very High;2653;X
+15149;Chief of Army;Cornelis Snijders;1914;1933;1999;ML;static defence doctrine;Very High;2654;X
+15150;Chief of Army;Cornelis Snijders;1914;1933;1999;PA;static defence doctrine;Very High;2654;X
+15151;Chief of Army;Nicolaas Bosboom;1914;1933;1999;ML;elastic defence doctrine;Very High;2655;X
+15152;Chief of Army;P. Forbes Wels;1922;1933;1999;ML;Guns and Butter Doctrine;Very High;3904;X
+15153;Chief of Navy;Jean Rambonnet;1914;1933;1999;ML;Open Seas Doctrine;High;2656;X
+15154;Chief of Navy;Jean Rambonnet;1914;1933;1999;PA;Open Seas Doctrine;High;2656;X
+15155;Chief of Navy;Willem Naudin ten Cate;1918;1933;1999;ML;Decisive Naval Battle Doctrine;High;2657;X
+15156;Chief of Staff;Cornelis Snijders;1914;1933;1999;ML;school of defence;Very High;2654;X
+15157;Chief of Staff;Cornelis Snijders;1914;1933;1999;PA;school of defence;Very High;2654;X
+15158;Chief of Staff;Nicolaas Bosboom;1914;1933;1999;ML;School of Fire Support;Very High;2655;X
+15159;Chief of Staff;P. Forbes Wels;1922;1933;1999;ML;School of Fire Support;Very High;3904;X
+15160;Foreign Minister;David Wijnkoop;1914;1933;1999;ST;Ideological Crusader;Very High;2658;X
+15161;Foreign Minister;Herman van Karnebeek;1918;1933;1999;ML;Ideological Crusader;High;2659;X
+15162;Foreign Minister;John Loudon;1914;1933;1999;SL;Great Compromiser;High;2660;X
+15163;Foreign Minister;Pieter Cort van der Linden;1914;1933;1999;SL;Apologetic Clerk;High;2661;X
+15164;Foreign Minister;Reneke de Marees van Swinderen;1914;1933;1999;SC;Great Compromiser;High;3859;X
+15165;Foreign Minister;Willem Naudin ten Cate;1914;1933;1999;PA;General Staffer;High;2657;X
+15166;Head of Government;Charles Ruijs de Beerenbrouck;1914;1933;1999;SC;Happy Amateur;Very High;2662;X
+15167;Head of Government;Cornelis Snijders;1914;1933;1999;PA;Old General;High;2654;X
+15168;Head of Government;David Wijnkoop;1914;1933;1999;ST;Flamboyant Tough Guy;High;2658;X
+15169;Head of Government;Pieter Cort van der Linden;1913;1933;1999;SL;Naive Optimist;Very High;2661;X
+15170;Head of Government;Pieter Troelstra;1914;1933;1999;LWR;Happy Amateur;High;2663;X
+15171;Head of Military Intelligence;Cornelis Snijders;1914;1933;1999;PA;LOGISTICS SPECIALIST;High;2654;X
+15172;Head of Military Intelligence;J.J. Le Roy;1914;1933;1999;SL;Dismal Enigma;Very High;3905;X
+15173;Head of State;Louis de Visser;1914;1933;1999;ST;Barking Buffoon;High;M8192;X
+15174;Head of State;Wilhelmina;1914;1933;1999;SC;Stern Imperialist;High;2664;X
+15175;Head of State;Wilhelmina;1914;1933;1999;PA;Stern Imperialist;High;2664;X
+15176;Minister of Armament;Anthonij Bertling;1914;1933;1999;SL;Corrupt Kleptocrat;High;3860;X
+15177;Minister of Armament;Anton van Gijn;1916;1933;1999;SL;Laissez-Faire Capitalist;High;3861;X
+15178;Minister of Armament;David Wijnkoop;1914;1933;1999;ST;Resource Industrialist;Very High;2658;X
+15179;Minister of Armament;Dirk Jan de Geer;1921;1933;1999;SC;Resource Industrialist;High;2665;X
+15180;Minister of Armament;Hendrikus Colijn;1923;1933;1999;SC;Military Entrepreneur;High;2666;X
+15181;Minister of Armament;Jean Rambonnet;1914;1933;1999;PA;Battle Fleet Proponent;High;2656;X
+15182;Minister of Armament;Johannes Harte van Tecklenburg;1914;1933;1999;SC;Corrupt Kleptocrat;High;3862;X
+15183;Minister of Armament;Maximilien Kolkman;1914;1933;1999;SC;Administrative Genius;High;3863;X
+15184;Minister of Armament;Simon de Vries Czn;1918;1933;1999;SC;Resource Industrialist;High;2667;X
+15185;Minister of Armament;Willem Treub;1914;1933;1999;SL;Resource Industrialist;High;2668;X
+15186;Minister of Security;Charles Ruijs de Beerenbrouck;1918;1933;1999;SC;Compassionate Gentleman;High;2662;X
+15187;Minister of Security;Hendrik Goeman Borgesius;1914;1933;1999;SL;Crime Fighter;High;2669;X
+15188;Minister of Security;Horace van Gybland Oosterhoff;1914;1933;1999;PA;Efficient Sociopath;High;unknownminister;X
+15189;Minister of Security;Louis de Visser;1914;1933;1999;ST;Man of the People;Medium;M8192;X
+15190;Minister of Security;Pieter Cort van der Linden;1914;1933;1999;SL;Compassionate Gentleman;High;2661;X
+15191;Minister of Security;Pieter Rink;1914;1933;1999;SL;Silent Lawyer;High;2670;X
+15192;Minister of Security;Theodorus Heemskerk;1914;1933;1999;SC;Man of the People;High;2671;X

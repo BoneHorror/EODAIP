@@ -1,0 +1,11 @@
+# Spanish Civil War - let's get more passive because it's early and we made too much progress - Nekron
+
+front = { 
+	recklessness 		= 0 # 0-3
+      	enemy_handicap = {
+		SPA = 30
+		} 
+      	passivity = { 
+		SPA = 97
+		} 
+}

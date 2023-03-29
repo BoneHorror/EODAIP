@@ -1,0 +1,41 @@
+# BRIG_MODEL_32_
+
+# 0 - Light Amphibious Armor (1939)
+model = {
+	cost 				= 7
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -3
+	defaultorganisation = 2
+	softness			= -5
+	hardattack			= 1
+	softattack			= 4 # 4
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 1.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 20
+	equipment = { manpower = 2500 medium_armor = 86 }
+}
+
+# 1 - Light Amphibious Armor (1944)
+model = {
+	cost 				= 8
+	buildtime	 		= 170 # 140 for regular L ARM
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -2
+	toughness 			= -4
+	defaultorganisation = 2
+	softness			= -5
+	hardattack			= 2
+	softattack			= 5 # 5
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 1.0
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	speed_cap			= 24
+	equipment = { manpower = 2500 medium_armor = 94 }
+}

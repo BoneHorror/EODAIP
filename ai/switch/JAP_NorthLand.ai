@@ -1,0 +1,68 @@
+# Japan gets further inland during Northern Strike AI file by Nekron
+
+target = { 
+	1164 = 70 #Ust-Kut Airfield
+	1142 = 90 #Novosibirsk
+	1138 = 80 #Omsk
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	area_multiplier = {
+		1225  = 1.2  #Cheongjin
+		1191  = 1.2  #Vladivostok
+		1212  = 1.2  #Yanji
+		1205  = 1.2  #Mudanjiang
+	}
+	country_priorities = {
+		CHI = 5
+		CSX = 5
+		SIK = 5
+		CXB = 5
+		CYN = 5
+		CGX = 5
+		CHC = 15
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 25
+		POR = -1
+		ENG = 15
+		FRA = 8
+		U05 = 10
+		USA = 20
+		AST = 10
+		NZL = 10
+		U02 = 10
+	}
+}
+
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human	= 1.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.1
+	max_attack_odds		= 2.5
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+    enemy_handicap = { SOV = 5 } 
+    passivity = {
+		SOV = 30
+		MON = 20
+		U02 = 10
+		CHC = 30
+		CYN = 30
+		CXB = 30
+		CSX = 30
+		CHI = 30
+	}  
+}

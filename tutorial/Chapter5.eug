@@ -1,0 +1,526 @@
+name = "CHAPTER2_NAME"
+panel = "scenarios/data/scenario_winterwar.bmp"
+#### basic warfare tut
+header = {
+	tutorial = yes
+	tutorialfile = "Tutorial/Chapter5.csv"
+	name = "Grand Campaign"
+    startyear = 1939
+    endyear = 1939
+   free = no
+	combat = yes	#this is a battlescenario
+
+
+	GER = {
+			desc = FW_GER
+	}
+
+
+	POL = {
+			desc = FW_POL
+			bottom = yes
+	}
+
+
+
+}
+
+globaldata = {
+	 rules = {
+         diplomacy = no
+         production = no
+         technology = no
+         }
+    startdate = {
+        year = 1939
+        month = september
+		day = 0
+        }
+    enddate = {
+        year = 1939
+        month = october
+        day = 29   
+        }
+		allies = {
+	        id = { type = 15000 id = 1 }
+			participant = { POL }
+				}
+		axis = 	{
+	        id = { type = 15000 id = 2 }
+			participant = { GER }
+		}
+
+		comintern = 	{
+	        id = { type = 15000 id = 3 }
+			participant = { SOV }
+		}
+
+	war = {
+	        id = { type = 9430 id = 1 }
+	        date = {
+	            year = 1939
+	            month = september
+	            day = 1
+	            hour = 1
+            }
+            enddate = {
+	            year = 1939
+	            month = september
+	            day = 1
+            }
+        	attackers = {
+        	    id = { type = 9430 id = 2 }
+        	    participant = { GER }
+        	}
+	        defenders = {
+       			id = { type = 9430 id = 3 }
+			participant = { POL }
+        	}
+	}
+
+    }
+
+
+map = {
+no = all
+#Poland
+yes = 181
+yes = 226
+yes = 225
+#Germany Proper
+yes = 155	
+yes = 161	
+yes = 183
+
+
+top = {	x = 15800 y = 2000 }
+bottom = {	x = 16500 y = 2470 }
+
+}
+
+
+province = { id = 181 points = 2 } #Danzig
+province = { id = 225   # Bydgoszcz - Poznan - Poland
+   points = 5
+   anti_air = 1 
+ } 
+province = { id = 226   # Gdynia - Poznan - Poland
+   points = 1 
+   anti_air = 2 
+   naval_base = { size = 8 current_size = 8 } 
+   air_base = { size = 4 current_size = 4 } 
+ } 
+province = { id = 155   # Stolp - Brandenburg - Germany
+   landfort = 1 
+ } 
+province = { id = 161   # Deutsch-Krone - Brandenburg - Germany
+   landfort = 1 
+ } 
+########################################################
+#### Germany  ##########################################
+########################################################
+
+
+
+#Bratislava
+
+
+
+
+
+country = {
+    tag = GER
+
+    capital = 155
+
+    policy = {
+        date = { year = 0 month = january day = 0 }
+        democratic = 1
+        political_left = 1
+        free_market = 5
+        freedom = 2
+        professional_army = 5
+        defense_lobby = 10
+        interventionism = 10
+    }
+
+	foreignminister = { type = 9 id = 49 }
+ 	armamentminister = { type = 9 id = 58 }
+ 	ministerofsecurity = { type = 9 id = 69 }
+  	chiefofstaff = { type = 9 id = 90 }
+ 	chiefofarmy = { type = 9 id = 98 }
+
+
+   	manpower = 850
+
+	extra_tc = 130	#Not balanced! 
+
+        transports = 40
+        escorts = 20
+
+	# Resource Reserves		#No production in this scenario!
+	oil 	=	40000
+	supplies =	65000
+
+    ownedprovinces =
+	{
+		155 161 183 
+	}
+    controlledprovinces =
+	{
+		155 161 183 
+	}
+    nationalprovinces =
+	{
+		155 161 183
+	}
+
+############################
+#  ARMIES        	   #
+############################
+
+
+landunit = {
+id = { type = 30010 id = 9 }
+name = "4. Armee"
+# leader = X # v.Kluge
+location = 155
+
+
+division = {
+id = { type = 30010 id = 11 }
+name = "207. Infanterie-Division"
+strength = 100
+type = infantry
+model = 10
+}
+}
+
+landunit = {
+	id = { type = 30010 id = 12 }
+	name = "II. Armeekorps"
+	# leader = X # GenOb. A. Strauss
+	location = 155
+
+
+
+	division = {
+		id = { type = 30010 id = 14 }
+		name = "3. Infanterie-Division"
+		strength = 100
+		type = infantry
+		model = 10
+	}
+
+	division = {
+		id = { type = 30010 id = 15 }
+		name = "32. Infanterie-Division"
+		strength = 100
+		type = infantry
+		model = 10
+	}
+}
+
+landunit = {
+	id = { type = 30010 id = 16 }
+	name = "III. Armeekorps"
+	# leader = X # GenOb. C.Haase
+	location = 161
+
+
+
+	division = {
+		id = { type = 30010 id = 18 }
+		name = "50. Infanterie-Division"
+		strength = 100
+		type = infantry
+		model = 10
+		extra = artillery
+	}
+	division = {
+		id = { type = 30010 id = 19 }
+		name = "239. Infanterie-Division"
+		strength = 100
+		type = infantry
+		model = 10
+		extra = artillery
+	}
+}
+
+landunit = {
+id = { type = 30010 id = 20 }
+name = "XIX. Armeekorps"
+# leader = X # GenOb. H.Guderian
+location = 161
+
+
+
+division = {
+id = { type = 30010 id = 22 }
+name = "2. Infanterie-Division (mot)"
+strength = 100
+type = motorized
+}
+
+division = {
+id = { type = 30010 id = 23 }
+name = "20. Infanterie-Division (mot)"
+strength = 100
+type = motorized
+}
+
+division = {
+id = { type = 30010 id = 24 }
+name = "3. Panzer-Division"
+strength = 100
+type = armor
+model = 0
+}
+}
+
+
+landunit = {
+id = { type = 30010 id = 28 }
+name = "I. Armeekorps"
+# leader = X # Gen. W.Petzel
+location = 183
+
+
+division = {
+id = { type = 30010 id = 30 }
+name = "1. Infanterie-Division"
+strength = 100
+type = infantry
+model = 10
+extra = artillery
+}
+
+division = {
+id = { type = 30010 id = 31 }
+name = "61. Infanterie-Division"
+strength = 100
+type = infantry
+model = 10
+}
+
+division = {
+id = { type = 30010 id = 32 }
+name = "Panzer-Division Kempf"
+strength = 60
+type = armor
+model = 0
+}
+}
+
+
+
+}
+
+
+########################################################
+#### POLAND  ##########################################
+########################################################
+
+
+
+
+
+country = {
+    tag = POL
+
+	capital = 181
+	policy = {
+        date = { year = 0 month = january day = 0 }
+        democratic = 3
+        political_left = 4
+        freedom = 4
+        free_market = 5
+        professional_army = 3
+        defense_lobby = 8
+        interventionism = 6
+    }
+
+	headofgovernment = { type = 9 id = 13011 }
+ 	foreignminister = { type = 9 id = 13012 }
+ 	armamentminister = { type = 9 id = 13013 }
+ 	ministerofsecurity = { type = 9 id = 13014 }
+
+	manpower = 0	#275
+
+	# Resource Reserves				#No production in this scenario!
+	oil = 25000
+	supplies = 65000
+
+
+	ownedprovinces =      {
+		181 226 225
+	}
+	controlledprovinces = {
+		181 226 225 
+	}
+	nationalprovinces =   {
+		181 226 225 
+	}
+		
+
+
+########################################################
+
+
+
+landunit = {
+	id = { type = 30013 id = 20 }
+	name = "Armia Pomorze"
+	location = 181 #Danzig
+
+	division = {
+		id = { type = 30013 id = 21 }
+		name = "9 Dywizja Piechoty"
+		strength = 50
+		type = infantry
+		model = 9
+		}
+	division = {
+		id = { type = 30013 id = 23 }
+		name = "27 Dywizja Piechoty"
+		strength = 50
+		type = infantry
+		model = 9
+		
+		}
+	division = {
+		id = { type = 30013 id = 24 }
+		name = "27 Dywizja Piechoty"
+		strength = 50
+		type = infantry
+		model = 9
+		
+		}
+	division = {
+		id = { type = 30013 id = 25 }
+		name = "27 Dywizja Piechoty"
+		strength = 50
+		type = infantry
+		model = 9
+		
+		}
+
+	}
+
+
+
+landunit = {
+	id = { type = 30013 id = 27 }
+	name = "GO Czersk"
+	location = 181 #Danzig
+
+	division = {
+		id = { type = 30013 id = 28 }
+		name = "Pomorska BK"
+		strength = 30.000 
+		type = cavalry
+		model = 9
+		}
+	}
+
+landunit = {
+	id = { type = 30013 id = 29 }
+	name = "Ladowa Obrona Wybrzeza"
+	location = 181 #Danzig
+
+	division = {
+		id = { type = 30013 id = 30 }
+		name = "Morska Brygada ON"
+		strength = 40
+		type = infantry
+		model = 8
+		}
+	}
+
+landunit = {
+	id = { type = 30013 id = 31 }
+	name = "GO Kutno"
+	location = 226 #Bydgoszcz
+
+	division = {
+		id = { type = 30013 id = 32 }
+		name = "5 Dywizja Piechoty"
+		strength = 100
+		type = infantry
+		model = 9
+		
+		}
+}
+
+landunit = {
+		id = { type = 30013 id = 34 }
+		name = "Armia Poznan"
+		location = 225 #Poznan
+
+	division = {
+		id = { type = 30013 id = 35 }
+		name = "Wielkopolska BK"
+		strength = 30.000 
+		type = cavalry
+		model = 9
+		
+		}
+	division = {
+		id = { type = 30013 id = 36 }
+		name = "14 Dywizja Piechoty"
+		strength = 100
+		type = infantry
+		model = 9
+		
+		}
+	division = {
+		id = { type = 30013 id = 37 }
+		name = "25 Dywizja Piechoty"
+		strength = 100
+		type = infantry
+		model = 9
+		
+		}
+	division = {
+		id = { type = 30013 id = 38 }
+		name = "26 Dywizja Piechoty"
+		strength = 100
+		type = infantry
+		model = 9
+		
+		}
+}
+
+landunit = {
+	id = { type = 30013 id = 39 }
+	name = "17 Dywizja Piechoty"
+	location = 225 #Poznan
+
+	division = {
+		id = { type = 30013 id = 40 }
+		name = "17 Dywizja Piechoty"
+		strength = 100
+		type = infantry
+		model = 9
+		
+		}
+	}
+
+landunit = {
+	id = { type = 30013 id = 41 }
+	name = "Podolska BK"
+	location = 225 #Poznan
+
+	division = {
+		id = { type = 30013 id = 42 }
+		name = "Podolska BK"
+		strength = 30.000
+		type = cavalry
+		model = 9
+		
+		}
+	}
+
+#############END#################
+}
+#include = "scenarios/1936/bases.inc"

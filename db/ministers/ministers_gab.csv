@@ -1,0 +1,55 @@
+GAB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+655001;Head of State;Louis Bonvin;1931;1964;1999;SL;Powerhungry Demagogue;High;M536001;X
+655002;Head of Government;Francois Reste;1933;1964;1999;SL;Political Protege;High;M536002;X
+655003;Foreign Minister;Victor Valentin Smith;1933;1964;1999;SL;Great Compromiser;High;M536003;X
+655004;Minister of Armament;Georges Pierre Masson;1933;1964;1999;SL;Administrative Genius;Medium;M536004;X
+655005;Minister of Security;Georges Parisot;1933;1964;1999;SL;Silent Lawyer;Medium;M536005;X
+655006;Head of Military Intelligence;Charles A.M. Assier de Perpigan;1933;1964;1999;SL;Naval Intelligence Specialist;Medium;M536006;X
+655007;Chief of Staff;André Parant;1933;1964;1999;SL;School of Fire Support;Medium;L533014;X
+655008;Chief of Army;Felix Eboue;1933;1964;1999;SL;Decisive Battle Doctrine;Medium;M536008;X
+655009;Chief of Navy;Francois Reste;1933;1964;1999;SL;Base Control Doctrine;Medium;M536002;X
+655010;Chief of Air Force;André Parant;1933;1964;1999;SL;Army Aviation Doctrine;Medium;L533014;X
+655011;Head of State;Georges Parisot;1937;1964;1999;SL;Weary Stiffneck;High;M536005;X
+655012;Head of State;Georges Pierre Masson;1938;1964;1999;SL;Pig-headed Isolationist;High;M536004;X
+655013;Head of State;André Parant;1940;1964;1999;SL;Resigned Generalissimo;High;L533014;X
+655014;Head of State;Victor Valentin Smith;1941;1964;1999;SL;Benevolent Gentleman;High;M536003;X
+655015;Head of State;Maurice Assier de Pompignan;1942;1964;1999;SL;Benevolent Gentleman;High;M536006;X
+655016;Head of State;Paul Vuillaume;1943;1964;1999;SL;Insignificant Layman;High;M536016;X
+655017;Head of State;Roland Pré;1944;1964;1999;SL;Barking Buffoon;High;M536017;X
+655018;Head of State;Numa Sadoul;1946;1964;1999;SL;Die-hard Reformer;High;M536018;X
+655019;Head of State;Leon Gabriel M'ba;1933;1964;1999;LWR;Autocratic Charmer;High;M536019;X
+655020;Head of State;Jean Baptiste Robert;1933;1964;1999;PA;Barking Buffoon;High;M536020;X
+655021;Head of Government;Pierre Boisson;1939;1964;1999;SL;Flamboyant Tough Guy;High;M536021;X
+655022;Head of Government;Felix Eboue;1940;1964;1999;SL;Old Admiral;High;M536008;X
+655023;Head of Government;André Bayardelle;1944;1964;1999;SL;Ambitious Union Boss;High;M536023;X
+655024;Head of Government;Fulbert Youlou;1933;1964;1999;LWR;Happy Amateur;High;M536024;X
+655025;Head of Government;Jean Baptiste Robert;1933;1964;1999;PA;Flamboyant Tough Guy;High;M536020;X
+655026;Foreign Minister;Albert Kohan;1940;1964;1999;SL;The Cloak N Dagger Schemer;High;M536026;X
+655027;Foreign Minister;Maurice Perriot;1943;1964;1999;SL;Apologetic Clerk;High;M536027;X
+655028;Foreign Minister;Pascal Lissouba;1933;1964;1999;LWR;Ideological Crusader;High;M536028;X
+655029;Foreign Minister;Francois Reste;1933;1964;1999;PA;General Staffer;High;M536002;X
+655030;Minister of Armament;André Bayardelle;1941;1964;1999;SL;Submarine Proponent;Medium;M536023;X
+655031;Minister of Armament;Gaston Flaubert;1943;1964;1999;SL;Air Superiority Proponent;Medium;M536031;X
+655032;Minister of Armament;Alphonse Massemba-Debat;1933;1964;1999;LWR;Corrupt Kleptocrat;Medium;M536032;X
+655033;Minister of Armament;Albert Kohan;1933;1964;1999;PA;laissez-faire capitalist;Medium;M536026;X
+655034;Minister of Security;Pierre Boisson;1938;1964;1999;SL;Prince of Terror;Medium;M536021;X
+655035;Minister of Security;Numa Sadoul;1944;1964;1999;SL;Man of the People;Medium;M536018;X
+655036;Minister of Security;Nkola Mbomo;1933;1964;1999;LWR;Efficient Sociopath;Medium;M536036;X
+655037;Minister of Security;Gaston Flaubert;1933;1964;1999;PA;Back Stabber;Medium;M536031;X
+655038;Head of Military Intelligence;Paul Vuillaume;1941;1964;1999;SL;Political Specialist;Medium;M536016;X
+655039;Head of Military Intelligence;Maurice Kaouza;1944;1964;1999;SL;Industrial Specialist;Medium;M536039;X
+655040;Head of Military Intelligence;David Mousseda;1933;1964;1999;LWR;Logistics Specialist;Medium;M536040;X
+655041;Head of Military Intelligence;Pierre Boisson;1933;1964;1999;PA;Dismal Enigma;Medium;M536021;X
+655042;Chief of Staff;Raymond Delange;1941;1964;1999;SL;School of Psychology;Medium;M536042;X
+655043;Chief of Staff;Charles Mahango;1933;1964;1999;LWR;School of Manoeuvre;Medium;M536043;X
+655044;Chief of Staff;Francois Reste;1933;1964;1999;PA;School of Psychology;Medium;M536002;X
+655045;Chief of Army;Raphaël Folliot;1944;1964;1999;SL;Guns and Butter Doctrine;Medium;M536045;X
+655046;Chief of Army;Fulbert Youlou;1933;1964;1999;LWR;Static Defence Doctrine;Medium;M536046;X
+655047;Chief of Army;Jean l'Huillier;1933;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M536047;X
+655048;Chief of Navy;Maurice Assier de Pompignan;1944;1964;1999;SL;Power Projection Doctrine;Medium;M536006;X
+655049;Chief of Navy;Felix Eboue;1933;1964;1999;LWR;Open Seas Doctrine;Medium;M536008;X
+655050;Chief of Navy;Maurice Kaouza;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M536039;X
+655051;Chief of Air Force;Roland Pré;1941;1964;1999;SL;Air Superiority Doctrine;Medium;M536017;X
+655052;Chief of Air Force;Felix Eboue;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M536008;X
+655053;Chief of Air Force;Jacques Andrieux;1933;1964;1999;PA;Naval Aviation Doctrine;Medium;M536053;X

@@ -1,0 +1,35 @@
+ANG;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+555001;Head of State;Antonio Lopes Mateus;1933;1964;1999;PA;Insignificant Layman;High;M568001;X
+555002;Head of Government;Manoel Costa Marques Mano;1933;1964;1999;PA;Flamboyant Tough Guy;High;M568002;X
+555003;Foreign Minister;Alvaro de Freitas Morna;1933;1964;1999;PA;General Staffer;High;M568003;X
+555004;Minister of Armament;Vasco Lopes Alves;1933;1964;1999;PA;Tank Proponent;Medium;M568004;X
+555005;Minister of Security;Paulo Cordeiro;1933;1964;1999;PA;Man of the People;Medium;M568005;X
+555006;Head of Military Intelligence;Fernando Ferreira Mello;1933;1964;1999;PA;Dismal Enigma;Medium;M568006;X
+555007;Chief of Staff;João Macedo é Brito;1933;1964;1999;PA;School of Psychology;Medium;M568007;X
+555008;Chief of Army;Francesco Perreira de Eca;1933;1964;1999;PA;Static Defence Doctrine;Medium;M568008;X
+555009;Chief of Navy;Mousinho de Albuquerque;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M568009;X
+555010;Chief of Air Force;Rogerio Fangueiro;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M568010;X
+555011;Head of State;Eugenio Daõ Schneider;1933;1964;1999;ML;Pig-headed Isolationist;High;M568011;X
+555012;Head of State;Vasco Lopes Alves;1933;1964;1999;LWR;Resigned Generalissimo;High;M568004;X
+555013;Head of Government;Victor Buhr;1933;1964;1999;ML;Happy Amateur;High;M568013;X
+555014;Head of Government;Paulo Tjipilica;1933;1964;1999;LWR;Political Protege;High;M568014;X
+555015;Foreign Minister;Waldemar Bornhausen;1933;1964;1999;ML;Ideological Crusader;High;M568015;X
+555016;Foreign Minister;Manuel Gracioa Tuluma;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M568016;X
+555017;Minister of Armament;Fernando Cunha e Costa;1933;1964;1999;ML;Military Entrepreneur;Medium;M568017;X
+555018;Minister of Armament;Joaquim Duarte David Costa;1933;1964;1999;LWR;Resource Industrialist;Medium;M568018;X
+555019;Minister of Security;Manuel Gomes da Costa;1933;1964;1999;ML;Crooked Kleptocrat;Medium;M568019;X
+555020;Minister of Security;Wenceslau Borini;1943;1964;1999;ML;Silent Lawyer;Medium;M568020;X
+555021;Minister of Security;Euclides da Costa Bravo;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M568021;X
+555022;Head of Military Intelligence;Horacio Silva e Silva;1933;1964;1999;ML;Industrial Specialist;Medium;M568022;X
+555023;Head of Military Intelligence;Pedro de Paula Pinheido;1933;1964;1999;LWR;Logistics Specialist;Medium;M568023;X
+555024;Chief of Staff;Vasco Lopes Alves;1943;1964;1999;PA;School of Manoeuvre;Medium;M568004;X
+555025;Chief of Staff;Joaquim Placido Durate;1933;1964;1999;ML;School of Defence;Medium;M568025;X
+555026;Chief of Staff;Julio Goncalves de Campos;1933;1964;1999;LWR;School of Mass Combat;Medium;M568026;X
+555027;Chief of Army;Julio de Morais Sarmento;1941;1964;1999;PA;Elastic Defence Doctrine;Medium;M568027;X
+555028;Chief of Army;Francisco d'Aluz Ribeiro;1933;1964;1999;ML;Guns and Butter Doctrine;Medium;M568028;X
+555029;Chief of Army;Alvaro de Freitas Morna;1933;1964;1999;LWR;Decisive Battle Doctrine;Medium;M568003;X
+555030;Chief of Navy;Francisco da Costa Andrade;1933;1964;1999;ML;Decisive Naval Battle Doctrine;High;M568030;X
+555031;Chief of Navy;Paulo Tjipilica;1933;1964;1999;LWR;Base Control Doctrine;High;M568014;X
+555032;Chief of Air Force;Joao Luís Carvalho;1933;1964;1999;ML;Air Superiority Doctrine;Medium;M568032;X
+555033;Chief of Air Force;Manuel Gracioa Tuluma;1933;1964;1999;LWR;Carpet Bombing Doctrine;Medium;M568016;X

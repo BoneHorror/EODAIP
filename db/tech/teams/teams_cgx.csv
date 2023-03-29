@@ -1,0 +1,26 @@
+CGX;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+585001;Li Zongren;100722;4;1922;1966;large_unit_tactics;combined_arms_focus;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585002;Guangdong Arsenal;100723;2;1900;1999;mechanics;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585003;Guangzhou Shipyard;T8702;2;1881;1999;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585004;Chen Jitang;100724;3;1908;1955;centralized_execution;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585005;Bai Chongxi;100725;4;1915;1967;combined_arms_focus;decentralized_execution;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585006;Sun Zhongshan Academy;100726;3;1924;1999;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585007;Ministry of Defense;T8707;2;1900;1999;naval_training;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585100;Guangxi Army Primary School;100718;1;1907;1918;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585101;Guangxi Army Primary School;100718;2;1918;1928;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585102;Guangxi University;100719;1;1928;1936;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585103;Guangxi University;100719;2;1936;1939;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585104;Guangxi University;100719;4;1939;1949;mathematics;industrial_engineering;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585105;Guangxi University;100719;5;1949;1999;mathematics;industrial_engineering;mechanics;electronics;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585106;Guangxi Aviation Academy;100720;2;1934;1999;aeronautics;training;piloting;mechanics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585107;Guangxi Military Cadre Training School ;100721;1;1900;1923;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585300;Guangdong Naval Academy;100727;1;1882;1911;small_taskforce_tactics;seamanship;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585301;Guangdong-Hankou Railway Authority;100728;1;1936;1999;industrial_engineering;mechanics;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585302;Guangzhou Diesel Engine Factory;100729;1;1911;1928;mechanics;general_equipment;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585303;Guangzhou Diesel Engine Factory;100729;2;1928;1936;mechanics;general_equipment;vehicle_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585304;Guangzhou Diesel Engine Factory;100729;4;1936;1999;mechanics;general_equipment;vehicle_engineering;electronics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585305;Shaoguan Airplane Factory;100730;1;1936;1945;aeronautics;general_equipment;aircraft_testing;bomber_design;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585306;Dongshan Airplane Factory;100731;1;1928;1933;aeronautics;general_equipment;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585400;Kaiping Coal Mine;T1004;3;1877;1898;industrial_engineering;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585401;Kaiping Coal Mine;T1004;1;1898;1912;industrial_engineering;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+585402;Kailan Mining Administration ;T1004;2;1912;1999;industrial_engineering;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

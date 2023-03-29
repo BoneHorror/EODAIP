@@ -1,0 +1,141 @@
+# Hungary 1936 AI File by Lothos
+
+neutrality = 80
+war = 5
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -60
+
+combat = { }
+
+demand_claims = {
+	CZE
+	YUG
+	ROM
+	AUS
+}
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.050 
+
+	AA_batteries = atwar
+	max_AA_level = 4 
+	AA_provs = {
+		284  #Budapest
+		278  #Györ
+	} 
+	coastal_fort = no
+	max_coastal_level = 2
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = no
+	max_air_base = 2
+	air_base_provs = { } 
+
+	naval_base = no
+	max_naval_base = 3 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = yes 
+	force_ic_until = 1935
+	ic_end_year = 1940
+	IC_provs = {
+		284  #Budapest
+	} 
+}
+
+military = { 
+	relative_build_scheme 	= no
+	max_batch_peace 		= 360 
+	max_batch_war 			= 240 
+	max_batch_home_front 	= 180
+
+	#### Divisions etc...
+	infantry 		= 55
+	cavalry 		= 0
+	motorized 		= 10
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 10
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 0
+	garrison		= 0
+    hq 				= 4
+	militia 		= 0
+#				78 %
+	interceptor 	= 10
+	multi_role 		= 0
+	cas 			= 5
+	strategic_bomber = 1
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				22 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 0
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 0
+#				0 %
+}
+
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier = 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 70	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		GER = -1
+		ITA = -1
+		AUS = -1
+		CZE = -1
+		ROM = 20
+		YUG = 50
+		BUL = 10
+		SOV = 50
+		SLO = -1
+		POL = 10
+	}
+	province_priorities = {
+		284  = 100 # Greek beaches
+		278  = 60 # Greek beaches
+	}
+	area_multiplier = { }
+}

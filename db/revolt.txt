@@ -1,0 +1,3401 @@
+##########
+# Format #
+##########
+#
+# COUNTRY_TAG = { [PARAMETERS] } 
+#
+##############
+# Parameters #
+##############
+#
+# date = { day = DD month = [MONTH_NAME] year = YYYY }			# Country cannot be released before this date
+# expirydate = { day = DD month = [MONTH_NAME] year = YYYY }	# Country cannot be released after this date
+#	MONTH_NAME: january / february / march / april / may / june / july / august / september / october / november / december
+#
+# minimum = { PROV_ID PROV_ID ... PROV_ID } 	# List of provinces (by IDs) that are required for this country to be released. These are considered as Core provinces.
+# extra = { PROV_ID PROV_ID ... PROV_ID } 		# List of provinces (by IDs) that are optional for this country. These are considered as Core provinces.
+# capital = PROV_ID								# ID of the province that is prefered to be capital of the new country. Usually it is part of minimum = { ... } list too.
+# revolt = no/yes[DEFAULT]						# If this country can be created by revolt (released by Rebels) or not. By default this is enabled.
+# liberate = no/yes[DEFAULT]					# If this country can be liberated by other countries or not. By default this is enabled.
+#
+# intrinsic_gov_type = [GOV_TYPE]	
+#	GOV_TYPE: 
+#		nazi / fascist / paternal_autocrat			# These are considered as RIGHT regimes and can be released only by RIGHT policy countries
+#		social_conservative / market_liberal [DEFAULT] / social_liberal / social_democrat	# These are considered as NEUTRAL regimes and can be released by any countries
+#		left_wing_radical / leninist / stalinist	# These are considered as LEFT regimes and can be released only LEFT policy countries
+# 	Defines prefered country regime. Used to refine availabe for relese countries list based on the policy of the current country. 
+#	If there are 2 or more countries sharing TAG or regular_id, the country with closest intrinsic_gov_type will be made available for release.
+#
+# regular_id = [TAG]	
+# 	Defines if this country is a shadow country of [TAG] (like GER and DDR for example). 
+#	Having more then one shadow country while allowed should be avoided when possible and those countries must differ in intrinsic_gov_type setting.
+#	This setting is used on coups/revolts and could trigger country TAG change. 
+#	It is used as a filter on available for release countries list generation making only one country available based on the intrinsic_gov_type - 
+#    the one with the closest Gov. type to the releaser country is made available.
+#	Wars between shadow countries and [TAG] are considered as civil and winner takes all (units, build queue etc.) on annexation.
+#
+# NOTE: intrinsic_gov_type and regular_id usage can be changed from misc.txt ("Filter used on available for release countries list based on regular_id and intrinsic_gov_type" modifier in "diplomacy" section)
+#
+##############################################
+# New (optional) parameters for Darkest Hour #
+##############################################
+#
+# country = { TAG1 TAG2 … TAGx }	# Only countries in that list can release the country
+# no = { TAG1 TAG2 … TAGx }			# Countries in that list cannot release the country
+# not = { TAG1 TAG2 … TAGx }		# The country cannot be released if any of those countries exist at the moment
+# claims = { PROV_ID …} 			# List of provinces (by IDs) that are claimed by this country. These are not required for release and are considered as Claimed provinces.
+# min = X  							# Allows release if at least X provinces of minimum list are controlled by releaser country. By default (no min entry or min = -1) it is equal to provinces in minimum list. 
+# min_extra = X 					# Allows release if at least X provinces of extra list are controlled by releaser country. By default (no min_ extra entry) it is 0. 
+#
+# coup = { TAG1 TAG2 … TAGx }		# Used only when "Used change TAG on coup logic." modifier in misc.txt is set to 1! 
+#	On coup country that have such list defined can change its TAG to countries from that list only 
+#	 (the TAG of country that can be created AND has the closest intrinsic_gov_type to the country that initiated the coup will be used for the switch).
+#
+# value = X.X (0.0 – 1.25) 			# Used by the old release model only (when no min or min_extra are defined). 
+#	When 'score' is above that value the country will be available for release (see below for details). By default (no value) it is 0.51.
+#	A country will be available for liberation if it has at least 0.51 final score (can be changed - see above). 
+#	Capital province gives 0.25 and (available minimum provinces / total minimum) provinces gives the rest. 
+#	Claims, cores and current capital excluded of the liberator are excluded from the above calculation! 
+#	If minimum list is empty, but extra is not, then extra list will be used in place of the minimum. Otherwise extra list is not used.
+#
+##############################################
+
+ ETH = { # Abyssinia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 818 819 820 821 822 823 824 825 826 827 828 829 830 831 
+ } 
+ extra = { 815 816 817 } 
+ capital = 825 
+ } 
+
+ AFG = { # Afghanistan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2171 } 
+ 
+ extra = { 1537 2168 2169 2170 2172 2173 } 
+ capital = 2171 
+ } 
+ 
+ 
+ 
+ 
+ ALB = { # Albania
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 359 360 361 362 } 
+ 
+ #extra = { 329 334 } 
+ capital = 359 
+ } 
+ 
+ 
+ 
+ 
+ ALG = { # Algeria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 727 728 729 730 731 732 733 734 735 736 737 738 739 743 } 
+ extra = { } 
+ capital = 727 
+ } 
+ 
+ 
+ 
+ 
+ 
+ ANG = { # Angola
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 888 892 895 } 
+ extra = { 887 890 891 893 }
+ capital = 895 
+ } 
+
+ ARA = { # Arabic State
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1172 } #Jerusalem
+ extra = { 
+ #Egypt 
+ 778 779 780 781 782 783 784 785 786 787 788 790 791 792 793 794 795 796 798 799 
+ 900  #suez 
+ #Syria 
+ 1016 1017 1021 
+ #Jordan 
+ 1022 1023 1024 1025 1026
+ #Egypt 
+ 789 797 800 801 802 1004 1005 1006 1007 1009
+ #Syria 
+ 1020 1014 
+ #Lebanon 
+ 1019 1018 
+ #Iraq 
+ 1028 1030 1031 1032 1033 1034 1035 1036 1037 
+ #Kuwait 
+ 1041 
+ #Palestine 
+ 1008 1010 1011  
+ #Saudi Arabia 
+ 1040 1044 1045 1046 1047 1048 1049 
+ #Oman 
+ 1039 1043 1052
+ #Yemen 
+ 1050 1051 1053 840 
+ ## 
+ 1013 1015 1027 1029 1038 
+ } 
+ revolt = no 
+ capital = 1172 #Jerusalem 
+ country = { GER ITA U55 RSI }
+ } 
+ 
+ ARG = { # Argentina
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2050 2048 2027 2054 } 
+ 
+ extra = { 2026 2028 2029 2034 2035 2036 2037 2038 2039 2043 2044 2045 2049 2053 2055 2056 } 
+ capital = 2050 #Buenos Aires 
+ } 
+
+ ARM = { # Armenia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 711 } 
+ extra = { 712 714 } 
+ claims = { 386 1063 1067 }
+ capital = 711 
+ }
+ 
+ AST = { # Australia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1697 1716 1698 1695 1688 1692 1689 1690 1694 1691 1703 1693 1711 
+ 1712 1715 1704 1705 1706 1717 1707 1710 1708 1709 1713 
+ 1701 1699 1714 1700 1702 1696 
+ } 
+ extra = { } 
+ capital = 1707 #Canberra 
+ } 
+
+ AUS = { # Austria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 186 187 188 189 190 191 192 193 194 195 } 
+ extra = { } 
+ capital = 195 
+ no = { GER }
+ } 
+ 
+ 
+ U09 = { # Austro-Hungary
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1930 } 
+ minimum = { 
+186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 277 284 278 282 280 281 276 283 279 285 286 296 289 295 288 287 291 300 301 
+ 241 242 238 240 237 236 239 235 349 346 345 347 357 352 353 344 350 351 356 378 358 355 354 337 401 402 394 341 336 292 293 343
+ } 
+ extra = { 
+ } 
+  capital = 195 
+ } 
+  
+ AZB = { #Azerbaijan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 713 } 
+ 
+ extra = { 712 714 } 
+ capital = 713 
+ }  
+ 
+ BEL = { # Belgium
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 108 110 111 112 113 114 115 116 117 } 
+ 
+ extra = {  } 
+ capital = 116 
+ } 
+
+ BEN = { #Benin-Sahel
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 949 951 } 
+ 
+ extra = { } 
+ capital = 951 
+ }  
+ 
+ BHU = { # Bhutan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1456 } 
+ 
+ extra = { } 
+ capital = 1456 
+ }  
+ 
+ BOL = { # Bolivia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2019 2020 2021 2063 2064 } 
+  extra = {   } 
+ capital = 2020 
+ } 
+
+ BOS = { # Bosnia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 355 354 353 } 
+ 
+ extra = { 356 357 358 } 
+ capital = 355 #Sarajevo 
+ }  
+ 
+ BRA = { # Brazil
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2060 2061 2004 2003 2002 2001 2005 2062 2071 2066 2065 2068 2069 2067 2076 2059 
+ 2075 2074 2073 2072 2070 2006 
+ } 
+ extra = { 2058 2057 } 
+ capital = 2075 #Rio de Janeiro
+ } 
+ 
+ BRU = { # Brunei
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1625 } 
+ 
+ extra = { } 
+ revolt = no 
+ capital = 1625 
+ } 
+
+ BUL = { # Bulgaria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 317 318 321 322 323 326 } 
+ extra = { 307 319 320 324 325 } 
+ capital = 321 
+ }  
+ 
+ BUR = { # Burma
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1411 1409 1420 1419 1415 1410 1417 1416 1418 1412 1413 1407 1408 1406 1414 } 
+ 
+ extra = { } 
+ capital = 1415 
+ } 
+  
+ BLR = { # Byleo Russia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 599 594 595 591 600 596 } 
+ 
+ extra = { 597 601 255 257 251 247 598 590 592 593 256 248 253 } 
+ capital = 599 
+ no = { GER }
+ } 
+ 
+ CAL = { # California
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = {1890 1884 1885 1888 1889 1883 1891 1892 1887 1886             } 
+ extra = {   1894 1881 1870 1861 1898 1896 1862 1866 1868 1897 1865 1871 
+ 1895 1869 1893  1981 1899 1880 1873 1875 1876 1874 1877 1878 1882 1879 1864 1863 1872
+ 1979 1977 1904 1900 1901 1902
+ } 
+ capital = 1888 
+ } 
+
+ CAM = { # Cameroon
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 911 909 910 928 925 933 } 
+ 
+ extra = { 916 913 } 
+ capital = 909 
+ } 
+
+ CMB = { # Cambodia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1400 1401 1402 1398} 
+ 
+ extra = { } 
+ capital = 1401 
+ }
+
+ CAN = { # Canada
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2110 2129 2113 2114 2148 2149 2112 2130 2127 2108 2111 2109 } 
+ 
+ extra = { 
+ 2137 2090 2089 2092 2105 2102 2099 2093 2091 2095 2094 2096 2103 2104 2101 2100 2097 2098 2107 2115 
+ 2106 2119 2117 2116 2123 2122 2121 2120 2125 2124 2135 2128 2132 2131 2134 2126 2133 2136 2138 2118 
+ } 
+ capital = 2108 
+ }  
+ 
+ 
+ U82 = { # Central Africa 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 923 926 } 
+ extra = { 919 927 } 
+ capital = 926 
+ } 
+
+ U78 = { # Central American Union
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2080 2082 2081 2083 2087 2088 2079 2084 2085 } 
+ extra = { 2086 } 
+ capital = 2079 #San Salvador 
+ revolt = no 
+ } 
+ 
+
+ 
+ U83 = { # Ceylon 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1510 1511 1509 } 
+ extra = { } 
+ revolt = no 
+ capital = 1511 
+ } 
+
+
+ 
+ U84 = { # Chad 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 924 920 922 } 
+ extra = { 921 } 
+ capital = 920 
+ } 
+ 
+ CHL = { # Chile 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2025 2022 2023 2032 } 
+ 
+ extra = { 2031 2024 2043 2030 } 
+ capital = 2023 #Santiago de Chile 
+ }  
+ 
+ 
+ CHC = { # China - Communist
+ date = { day = 3 month = may year = 1919 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1260 } 
+ 
+ extra = { #Nationalist China at Start 
+ 1217 1261 1303 1339 1334 1336 1340 1341 1319
+ 1323 1322 1324 1325 1326 1316 1317 1344 1342
+ 1337 1338 1345 1346 1347 1348 1357 1358 1359
+ 1360 1354 1353 1318 1355 1309 1311 1312 1310
+ 1304 1302 1258 1262 1257 1296 1292 1293 1297
+ 1298 1305 1306 1291 1313 1307 1308 1356 1349
+ 1335 1314 1315 1267 1256 1320 1321 1299 1343
+ 1300 1301 1350 1351 1352 1333
+ 
+ #Yunnan 
+ 1389 1390 1385 1386 1387 1388 1384
+ 
+ #Guanxi Clique 
+ 1378 1365 1376 1377 1375 1380 1381 1382 1383
+ 1369 1370 1373 1379 1367 1361 1374 1368 
+ 
+ #Shanxi 
+ 1241 1247 1246 1251 1242 1254 1331 1332 1252
+ 1253 1248 1249 1250 1327 1243 1244 1245 1328
+ 1329 1330 
+ 
+ #Manchoukou 
+ 1204 1212 1205 1199 1203 1200 1206 1213 1237
+ 1207 1220 1218 1236 1201 1208 1209 1210 1211
+ 1214 1215 1216 1235 1197 1198 
+ 
+ #Xibei san ma 
+ 1272 1268 1271 1264 1263 1265 1266 1283 1284
+ 1285 
+ 
+ #Communist China 
+ 1270 1255 #1260 (Capital)
+ 
+ #Japan In China 
+ 1202 1238 1240 1239 
+ 
+ #Port Arthur
+ 1219
+ 
+ #European Possessions 
+ 1371 1372 
+ 
+ #Taiwan 
+ 1362 1363 1364
+ 1269 1259 
+ 
+ #Sinkiang
+ 1273 1274 1275 1276 1277 1279 1280 1281 1282
+ 
+ #Tibet
+ 1286 1287 1288 1289 1290 1294 1295
+
+ # Additional Claims
+ 1413 1278
+ }
+ 
+ claims = { 
+ 1455 1458 1414
+ # Japan
+ 1563 1562 1564
+ }
+
+ capital = 1260 
+ no = { JAP }
+ regular_id = UCH
+ intrinsic_gov_type = leninist 
+ }
+
+ 
+ U87 = { # China-Nanjing (Japanese puppet)
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1337 } 
+ 
+ claims = { 
+ #Nationalist China at Start 
+  1303 1333 1339 1334 1336 1340 1341 1319 1323 1322 1324 1325 1326 1316 1317 1344 1342 1338 1345 1346 1347 1348 1357 1358 1359 1360 1354 1353 1318 1355 1309 1311 1312 1310 1304 1302 1258 1262 1257 1296 1292 1293 1297 1298 1305 1306 1291 1313 1307 1308 1356 1349 1335 1314 1315 1267 1256 1320 1321 1299 1343 1300 1301 1350 1351 1352 
+ 
+ #Yunnan 
+ 1389 1390 1385 1386 1387 1388 1384
+ 
+ #Guanxi Clique 
+ 1378 1365 1376 1377 1375 1380 1381 1382 1383 1369 1370 1373 1379 1367 1368 1374
+ 
+ #Shanxi 
+ 1241 1247 1251 1242 1254 1331 1332 1252 1253 1248 1249 1250 1327 1243 1244 1245 1328 1329 1330 
+ #1246  
+
+ #Xibei san ma 
+ 1271 1264 1263 1265 1266 1283 1284 1285 
+ #1268 1272 1269
+ 
+ #Communist China 
+ #1270 
+ 1260 1255 
+ 
+ #European Possessions 
+ 1371 1372 
+ 
+ 1259 1261 
+ 
+ #Sinkiang
+ 1273 1274 1275 1276 1277 1279 1280 1281 1282
+ 
+ #Tibet
+ 1286 1287 1288 1289 1290 1294 1295 
+
+ } 
+
+ capital = 1337 
+ revolt = no
+ regular_id = CHI 
+ not = { CHI UCH } #cannot be released if CHI exists
+ intrinsic_gov_type = fascist
+ country = { JAP } #only JAP can release it
+ }
+
+ CHI = { # China - nationalist
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1337 1299 } 
+ min = 1
+ extra = { 
+ #Nationalist China at Start 
+ 1303 1333 1339 1334 1336 1340 1341 1319 1323
+ 1322 1324 1325 1326 1316 1317 1344 1342 1338
+ 1345 1346 1347 1348 1357 1358 1359 1360 1354
+ 1353 1318 1355 1309 1311 1312 1310 1304 1302
+ 1258 1262 1257 1296 1292 1293 1297 1298 1305
+ 1306 1291 1313 1307 1308 1356 1349 1335 1314
+ 1315 1267 1256 1320 1321 1343 1300 1301 1350
+ 1351 1352 
+
+ #Yunnan 
+ 1389 1390 1385 1386 1387 1388 1384
+ 
+ #Guanxi Clique 
+ 1378 1365 1376 1377 1375 1380 1381 1382 1383
+ 1369 1370 1373 1379 1367 1361 1368 
+
+ #Shanxi 
+ 1241 1247 1246 1251 1242 1254 1331 1332 1252
+ 1253 1248 1249 1250 1327 1243 1244 1245 1328
+ 1329 1330 
+
+ #Manchoukou 
+ 1374 1204 1212 1205 1199 1203 1200 1206 1213
+ 1237 1207 1220 1218 1236 1201 1208 1209 1210
+ 1211 1214 1215 1216 1235 1217 1197 1198 
+
+ #Xibei san ma 
+ 1268 1271 1264 1263 1272 1265 1266 1283 1284 1285 
+ 
+ #Communist China 
+ 1270 1260 1255 
+ 
+ #Japan In China 
+ 1202 1238 1240 1239
+ 
+ #Port Arthur
+ 1219
+ 
+ #European Possessions 
+ 1371 1372 
+ 
+ #Taiwan 
+ 1362 1363 1364 
+ 1269 1259 1261 
+  
+ #Sinkiang
+ 1273 1274 1275 1276 1277 1279 1280 1281 1282
+ 
+ #Tibet
+ 1286 1287 1288 1289 1290 1294 1295
+ 
+ #Mongolia
+ 1120 1124 1125 1123 1121 1122
+
+ # Additional Claims
+ 1413 1278
+
+ } 
+ claims = { 
+ 1455 1458 1414
+ # Japan
+ 1563 1562 1564
+ }
+ regular_id = UCH
+ capital = 1337
+ no = { JAP }
+ }
+ 
+ COL = { # Columbia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1990 1991 1987 1986 1994  2009 1756 1985 } 
+ 
+ extra = { } 
+ capital = 1991 #Santa Fe de Bogota 
+ }
+
+
+ CSA = { # Confederate States of America
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1951 
+ 1915 1918 1929 1932 1930 1934 1931 
+ 1944 1939 1936 1937 1940 1943 1942 
+ 1950 1947 1955 1964 1960 1958 1956 1954 
+ 1952 1948 1953 1963 1961 1812 1813 1962 1814 1818 1815 1816 1817 
+ 1949 1935 1945 1957 1811 1810
+ 
+ } 
+ extra = {    
+ 1917 1933 1941 1946 1959  
+ 1938 
+ 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928
+ } 
+ capital = 1813 #Richmond 
+ } 
+ 
+ CON = { # Congo-Leopoldville
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 904 903 905 906 901 894 902 898 897 899 } 
+ 
+ extra = { 890 } 
+ capital = 899 #Leopoldville/Kinshasa 
+ }  
+ 
+ U85 = { # Congo-Brazzaville
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 907 908  } 
+ extra = { 917 } 
+ capital = 907 
+ }  
+
+ COS = { # Costa Rica
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2081 2083 } 
+ 
+ extra = { } 
+ capital = 2081 
+ }  
+ 
+ CRO = { # Croatia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 352 
+ } 
+ 
+ extra = { 343 345 347 353 350 351 355 354 356 357 358 337 344 406 } #455 
+ capital = 352 
+ } 
+
+ 
+ CZE = { # Czechoslovakia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 199 207 198 212 }# move 212 to extra, to make it possible to creat CZE while SLO exists 
+  min = 1
+ extra = { 200 206 205 197 201 196 211 209 213 208 204 214 202 210 215 203 } 
+ revolt = no 
+ capital = 207 
+ no = { GER }
+ }  
+ 
+ CUB = { # Cuba
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1775 1776 1777 1779 } 
+ 
+ extra = { 1778 } 
+ capital = 1776 
+ }  
+ CYP = { # Cyprus
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 388 387 
+ } 
+ extra = { } 
+ revolt = no 
+ capital = 388 
+ }  
+
+ DDR = { # DDR
+ date = { day = 0 month = january year = 1919 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 169 157 163 162 153 156 170 172 173 160 171 
+ } 
+ extra = { 147 141 137 174 176 146 148 154 151 152 177 138 134 132 175 179 
+ 178 142 145 131 127 126 149 144 136 130 128 129 139 135 180 143 150 140 133 } 
+ capital = 163 
+ revolt = no 
+ regular_id = GER 
+ intrinsic_gov_type = leninist 
+ no = { USA ENG FRA CAN U01 AST NZL }
+ } 
+ 
+ DEN = { # Denmark
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 217 218 219 294 220 2 1783
+ } 
+ extra = { 216 } 
+ capital = 294 
+ }  
+
+ DOM = { # Dominican Republic
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1780 
+ } 
+ extra = { 1781 } 
+ capital = 1780 
+ } 
+
+ EAF = { # East African Union
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 848 849 850 851 
+ } 
+ extra = { 843 839 841 842 846 844 847 845 852 } 
+ capital = 850 #Dar es Salaam 
+ } 
+ 
+ ECU = { # Ecuador
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2040 2042 2007   
+ } 
+ extra = {  2041 } 
+ capital = 2042 
+ }  
+
+ EGY = { # Egypt
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 790 780 785 779 799 784 783 778 789 792 788 787 786 791 796 800 801 
+ 793 794 797 795 798 } 
+ extra = { 1009 1004 1005 802 1006 1007 
+ 900 #suez canal 
+ 781 782
+ } 
+ capital = 787 
+ } 
+
+ SAL = { # El Salvador
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2079 
+ } 
+ extra = { } 
+ capital = 2079 
+ }  
+ 
+ 
+ U73 = { # England 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 25 26 27 28 29 } 
+ extra = { 13 14 15 16 17 18 19 20 21 22 23 24 } 
+ capital = 29 
+ revolt = no 
+ } 
+
+ EQA = { # Equatorial Africa
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 922 920 924 926 923 907 908 912 914 915 921 927 917 918 909 910 911 919 925 928 
+ } 
+ extra = { 913 933 } 
+ capital = 926 
+ } 
+ 
+ 
+ EST = { # Estonia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 270 271 272 273 274 275 
+ } 
+ extra = { } 
+ capital = 270 #Tallin 
+ no = { GER }
+ }  
+ 
+ EUS = { # Euskadia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 443 
+ } 
+ extra = {  } 
+ capital = 443 
+ }  
+ 
+ FIN = { # Finland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+   minimum = { 525 520 527 516 521 531 } 
+  min = 2
+  extra = { 526 524 518 514 515 523 529 522 528 533 512 511 513 519 530 517 532 } 
+  min_extra = 3
+ capital = 525 
+ }  
+
+ FLA = { # Flandern
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 114 115 116 117 
+ } 
+ extra = { 49 51 } 
+ capital = 116 
+ } 
+
+	
+ FRA = { #France
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 55 
+ 
+ } 
+ extra = { 
+ 52 51 49 87 90 94 85 86 89 81 82 80 70 84 79 67 40 77 71 
+ 75 69 68 62 65 66 54 63 100 59 50 99 45 
+ 60 61 37 38 39 57 58 42 43 44 47 72 73 93 78 74 76 
+ 83 48 91 103 88 97 64 95 96 106 
+ 92 46 41 53 102 56 101 98 105 107 104} 
+ capital = 55 
+ no = { GER }
+ } 
+
+ 
+ U01 = { # Free France 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 85 86 89 81 82 80 70 84 79 67 40 77 71 68 
+ 75 69 62 65 66 54 63 100 59 50 99 45 55 48 52 
+ 60 61 37 38 39 57 58 42 43 44 47 72 73 93 78 74 
+ 107 95 97 88 64 91 83 105 106 104 96 
+ } 
+ extra = { 
+ 51 49 87 90 94 907 917 76 92 98 41 46 53 56 101 102 103 132 
+ } 
+ country = { ENG }
+ capital = 55
+ revolt = no  
+ } 
+ 
+ 
+ GAB = { # Gabon
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 914 915 
+ } 
+ extra = {  918 913 } 
+ capital = 915 #Libreville 
+ }  
+ 
+ 
+ U86 = { # Gambia 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 979 } 
+ extra = { } 
+ capital = 979 
+ } 
+
+ DFR = { # German Federal Republic
+ date = { day = 0 month = january year = 1919 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 147 141 137 174 176 146 148 154 151 152 177 138 134 132 175 179 178 142 145 131 127 126 149 
+ 180 144 129 136 130 128 139 135 143 150 140 133 
+ } 
+ extra = { 169 157 163 162 153 156 170 172 173 160 171 } 
+ capital = 131 
+ revolt = no 
+ regular_id = GER 
+ intrinsic_gov_type = market_liberal 
+ no = { SOV }
+ } 
+
+
+ 
+U08 = { #  Germany - WW1
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1930 } 
+ minimum = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154  
+ 151 152 153 156 169 157 163 162 158 183 159 172 170 173 177 138 
+               134 132 178 175 179 167 164 184 104 107 105 109  
+ 182 155 161 185 165 166 168 133 
+ 144 160 180 136 139 135 129 128 130 
+ 216 181 261 225 224 392 389 221 149 110 
+ 150 143 140 
+ 226 222 
+ # Austria 
+ 186 187 188 189 190 191 192 193 194 195 
+ # Poland 226 230 222 
+ } 
+ extra = { 
+ } 
+ capital = 163 
+ } 
+ 
+ GEO = { # Georgia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 708 709 
+ } 
+ extra = { 710 707 } 
+ capital = 709 
+ }  
+
+
+GER = { # Germany
+ date = { day = 0 month = january year = 1934 }
+ expirydate = { day = 29 month = december year = 1999 }
+ minimum = {
+ 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 157 163 162 158 172
+ 170 173 177 138 134 132 178 175 179 160 143 150 140 133 149 144 110 128 129 130 139 180 135 136
+ }
+ extra = { 167 165 166 164 159 183 184 203 221 168 224 225 155 161 226 181 222 182 185 261
+ # Elsass-Lothringen
+ 104 107 105
+ # Luxemburg
+ 109 }
+ capital = 163
+ intrinsic_gov_type = fascist 
+ no = { SOV USA ENG FRA CAN U01 AST NZL }
+ } 
+
+ 
+ GLD = { # Ghana
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 952 955 956 
+ } 
+ extra = { 954 953 } 
+ capital = 956 
+ } 
+ GUY = { # Guyana
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1997 
+ } 
+ extra = { 1998 1999 2000 } 
+ revolt = no 
+ capital = 1997 
+ } 
+
+ U77 = { # Gran Colombia 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1989 1990 1988 1995 1996 1991 1987 2040 2042 2007  2009 1756 1994 1985 1992 1993 1986 } 
+ extra = { 2078 889 1998 2077 2008 2010 2033 2041 } 
+ capital = 1991 #Santa Fe de Bogotá
+ revolt = no 
+ } 
+ 
+ GRE = { # Greece
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 377 365 369 }
+ min = 1 
+ extra = { 372 373 367 371 382 374 368 375 383 364 366 370 381 380 376 363 378 379 388 387 } 
+ min_extra = 2 
+ capital = 377 
+ } 
+
+
+ 
+ 
+ CGX = { # Guangxi Clique
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1378 } 
+ 
+ extra = { 1365 1376 1377 1375 1380 1381 1382 1383 1369 1370 1373 1379 1367 1374 1368 1303 1305 1306 1307 } 
+ capital = 1378
+ no = { JAP }
+ regular_id = UCH
+ liberate = no
+ revolt = no
+ }  
+ 
+ GUA = { # Guatemala
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2087 2088 
+ } 
+ extra = { 2086 } 
+ capital = 2088 
+ } 
+ 
+ GUI = { # Guinea
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 966 965 } 
+ extra = { 963 967 } 
+ capital = 966 
+ }  
+
+ HAI = { # Haiti
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1781 
+ } 
+ extra = { 1780 } 
+ capital = 1781 
+ } 
+ 
+ U39 = {   #Hatay State
+  date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1054 
+ } 
+ extra = { } 
+ capital = 1054 
+ revolt = no 
+ } 
+ 
+ 
+ HON = { # Honduras
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2084 2085 
+ } 
+ extra = { } 
+ capital = 2085 
+ } 
+ 
+ HUN = { # Hungary
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 276 277 284 278 282 280 281 283 279 
+ } 
+ extra = { } 
+ capital = 284 
+ } 
+ ICL = { # Iceland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1  3 
+ } 
+ extra = { 2 } 
+ revolt = no 
+ capital = 1 
+ } 
+ 
+ IND = { # India
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1459 
+ 
+ } 
+ extra = { 
+ 1522 1518 1525 1531 1527 1463 1460 1461 1462 1446 1524 
+ 1523 1521 1484 1483 1476  1471 1477 1493 1482 1517 
+ 1512 1487 1494 1501 1502 1513 1503 1495 1504 1451 
+ 1439 1442 1443 1455 1464 1468 1454 1453 1535  
+ 1480 1479 1505 1506 1507 1490 1491 1488 1492 1485 1511 1489 1516 
+ 1519 1497 1515 1499 1500 1496 1498 1475 1474 1470 1473 1472 
+ 1469 1466 1465 1467 1452 1526 1528 1481 1478 1514 1520 1486 
+ 1540 1510 1508 1421 1448 1509 1612 1440 1441 1458 1278
+ ## bangladesh
+ 1444 1445 1447 1449 1450 
+ } 
+ capital = 1459 
+ }  
+ 
+ IDC = { # Indochina
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1393 1395 1396 1397 1399 1403 1400 1401 1402 1405 1394 1398 1404 1391 } 
+ extra = { 1392 } 
+ revolt = no 
+ capital = 1395 #Hanoi 
+ } 
+
+
+ 
+ INO = { # Indonesia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1648 1651 1649 1654 1653 1655 1656 
+ } 
+ extra = { 
+ 1639 1640 1635 1637 1636 1638 1650 1647 1634 1643 1619 1644 1645 1615 1657 1630 1631 1628 1627 
+ 1632 1633 1660 1658 1659 1620 1621 1622 1616 1617 1599 1600 1641 1601 1642 1595 1596 1598 
+ 1597 1602 1234 1603 1604 1606 1607 1610 1608 1609 1605 
+ 1652 1618 1623 1594 1646 
+ } 
+ revolt = no 
+ capital = 1654 
+ } 
+
+
+ 
+ PER = { # Iran
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1095 1085 1082 1089 1091 1090 1088 1086 1092 1094 1093 
+ } 
+ extra = { 1083 1084 1087 1081 1080 } 
+ capital = 1085 
+ }  
+
+ IRQ = { # Iraq
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1034 1035 1037 1028 1032 1031 1030 } 
+ extra = { 1033 1036 1027 1029 1041 } 
+ capital = 1034
+ }  
+ 
+ IRE = { # Ireland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 30 31 32 33 34 
+ } 
+ extra = { 35 36 } 
+ capital = 34 
+ }  
+
+
+ 
+ U71 = { #  Ireland - Northern 
+ regular_id = IRE
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 36 35 } 
+ extra = { } 
+ capital = 36 
+ revolt = no 
+ } 
+  
+ ISR = { # Israel
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1008 } 
+ extra = { 1011 1010 1172 1013  } 
+ revolt = no 
+ capital = 1008 
+ no = { GER }
+ }  
+
+
+ ITA = { # Italy
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 398 400 407 419 421 430 434 }
+ min = 2
+ extra = { 393 394 395 396 399 401 402 403 404 405 406 408 410 411 412 
+	413 414 415 416 417 418 420 422 423 424 425 426 427 428 431 432 433 435 } 
+ min_extra = 3
+ capital = 419 
+ }  
+ 
+ RSI = { # Italy - Socialist republic
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 407 
+ } 
+ extra = { 394 395 418 426 427 428 433 401 400 393 411 410 412 419 414 415 398 396 408 423 416 420 421 424 422 425 
+ 430 431 434 399 86 87 90 91 404 405 406 403 94 413 417 432 435 } 
+ capital = 407 
+ regular_id = ITA 
+ intrinsic_gov_type = fascist 
+ revolt = no 
+ } 
+ 
+ U88 = { # Ivory Coast 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 962 960 } 
+ extra = { 968 970 961 } 
+ capital = 962 
+ } 
+ 
+ 
+ U89 = { # Jamaica 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1782 } 
+ extra = { } 
+ capital = 1782 
+ } 
+ 
+ 
+ JAP = { # Japan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1544 1545 1549 1551 1550 1556 1552 1557 1558 1553 1554 1559 1560 1561 1555 1542 1547 1548 1546 
+ } 
+ extra = { 1543 1562 1563 1564 1662 1661 1663 1664 1672 1683 1684 1685 1686 1541 } 
+ capital = 1552 
+ }  
+
+
+ JOR = { # Jordan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1022 1023 1024 1025 1026
+ } 
+ extra = { } 
+ capital = 1022 
+ } 
+ 
+ 
+ U80 = { # Kashmir 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1540 1278 1539 } 
+ extra = { } 
+ capital = 1540 
+ } 
+
+
+ KAZ = { #Kazakhstan
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 506 507 505 500 498 504 } 
+ extra = { 1114 1117 1118 1116 503 1110 1108 1113 1115 1111 502 
+ 499 1109 1112 501 } 
+ capital = 506 
+ } 
+ 
+ U90 = { # Kenya 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 843 841 842 839 } 
+ extra = { } 
+ capital = 841 
+ } 
+
+ 
+ KOR = { # Korea
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1230 1231 1232 1233 1228 1229 
+ } 
+ extra = { 
+ 1224 1226 1225 1227 1223 1221 1222 
+ } 
+ capital = 1228 
+ }  
+
+ PRK = { # Korea, peoples republic
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1223 1221 1226 1227 1224 1225 1222 
+ } 
+ extra = { 1228 1233 1232 1231 1230 1229 } 
+ capital = 1221 
+ regular_id = KOR 
+ intrinsic_gov_type = stalinist 
+ }  
+ 
+ 
+ KUR = { # Kurdistan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1036 
+ } 
+ extra = { 1084 1063 1064 1060 1027 1062 1015 1029 } 
+ capital = 1036 
+ } 
+ 
+ 
+ U91 = { # Kuwait 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1041 } 
+ extra = { } 
+ capital = 1041 
+ } 
+
+ KYG = { # Kyrgistan
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1107 1106 
+ } 
+ extra = { } 
+ capital = 1107 
+ } 
+ 
+ LAO = { # Laos
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1405 1394 1391 1404 
+ } 
+ extra = { } 
+ capital = 1405 
+ } 
+
+ 
+ 
+ LAT = { # Latvia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 267 269 268 264 266 } 
+ extra = { 265 } 
+ capital = 264 #Riga 
+ no = { GER }
+ } 
+
+ LEB = { # Lebanon
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1018 1019 
+ } 
+ extra = { } 
+ capital = 1019 
+ no = { GER }
+ } 
+
+ 
+ LIB = { # Liberia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 969 
+ } 
+ extra = { } 
+ capital = 969 
+ } 
+
+ LBY = { # Libya
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 761 753 769 770 771 765 766 760 768 762 773 754 755 756 757 751 750 752 
+ 774 } 
+ extra = { 758 759 763 764 775 767 772 776 777 } 
+ capital = 750 
+ } 
+
+ LIT = { # Lithaunia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 262 259 263 260 
+ } 
+ extra = { 258 261 } 
+ capital = 262 #Kaunas 
+ no = { GER }
+ }  
+
+ LUX = { # Luxembourg
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 109 
+ } 
+ extra = { } 
+ capital = 109 
+ no = { GER }
+ } 
+
+
+ 
+ MAD = { # Madagaskar
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1001 1002 1003 
+ } 
+ extra = { } 
+ revolt = no 
+ capital = 1001 #Tananarive 
+ } 
+
+ MLY = { # Malaysia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1435 1436 1437 1438 1433 1434 
+ } 
+ extra = { 1432 1624 1625 1626 1629 } 
+ revolt = no 
+ capital = 1438 
+ } 
+
+
+ MAL = { # Mali
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+   975 972 971 973 985 
+ } 
+ extra = { 984 974 976 } 
+ capital = 976 #Bamako 
+ }  
+ 
+  U92 = { # Malta 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 429 } 
+ extra = { } 
+ capital = 429 
+ } 
+
+ MAN = { # Manchuko
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1208 1219
+
+ }
+ claims = {  1207 
+ 1212 1205 1204 1202 1199 1201 1203 1213 1206 1200 
+ 1220 1218 1237 1216 1235 1214 1215 
+ 1211 1217 1210 1209 1197 1198 1236
+ }
+ capital = 1208 #Changchun
+ revolt = no
+ } 
+ 
+ U93 = { # Mauritania 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 981 982 } 
+ extra = { 986 } 
+ capital = 981 
+ } 
+
+ MEN = { # Mengkuko
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1238 1239 1240 1246 1270 } #Inner Mongolia
+ min = 4
+ extra = { 1268 1272 1269 #Inner Mongolia
+ 1120 1121 1122 1123 1124 1125 #Mongolia
+ 1119 #Tuva
+ }
+ capital = 1246
+ revolt = no
+ } 
+ 
+ MEX = { # Mexico
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1966 1965 1970 1968 1974 1972 1971 1973 1967 1975 1976 
+ 1978 1980 
+ } 
+ extra = { 1981 1982 1979 1977 1969 } 
+ capital = 1974 
+ } 
+
+ MON = { # Mongolia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1120 1121 1122 1123 1124 1125 
+ } 
+ extra = { } 
+ capital = 1124 
+ }  
+
+ MTN = { # Montenegro
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 332 
+ } 
+ extra = { 335 } 
+ capital = 332 
+ } 
+ 
+ MOR = { # Moroccoa
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 721 717 724 718 722 725 726 723
+ } 
+ extra = { 987 715 988 989 719 716 720 } 
+ capital = 717 
+ } 
+ 
+ MOZ = { # Mozambique
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 853 854 857 858 856 855 
+ } 
+ extra = { } 
+ capital = 855 
+ }
+
+ NAM = { # Namibia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 885 886 882 883 884 
+ } 
+ extra = { } 
+ capital = 884 
+ } 
+
+ NEP = { # Nepal
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1457 
+ } 
+ extra = { } 
+ capital = 1457 
+ } 
+
+ 
+ 
+ HOL = { # Netherlands
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 122 123 119 124 120 
+ } 
+ min = 1
+ extra = { 
+ 125 118 121 
+  } 
+ capital = 122 
+ }  
+
+ NZL = { # New Zealand
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1718 1719 1720 1721 1722 1723 
+ } 
+ extra = { } 
+ capital = 1721 
+ } 
+
+ NIC = { # Nicaragua
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2080 2082 
+ } 
+ extra = { } 
+ capital = 2080 
+ } 
+ 
+ U94 = { # Niger 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 942 943 944 } 
+ extra = { 947 946 } 
+ capital = 944 #Niamey 
+ } 
+
+ NIG = { # Nigeria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 939 929 940 932 938 937 
+ } 
+ extra = { 941 930 931 933 934 935 936 } 
+ capital = 929 #Lagos 
+ }  
+ 
+ NOR = { # Norway
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ no = { GER }
+ minimum = { 483 488 493 495 497 }
+ min = 1 
+ extra = { 484 485 486 487 489 490 491 492 494 496 } 
+ min_extra = 1  
+ capital = 483 
+ } 
+
+ OMN = { # Oman
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1052 
+ } 
+ extra = { 1039 1043 } 
+ capital = 1052 
+ }  
+ 
+ OTT = { # Ottoman Empire
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 409 1078 1079 1057 1076 1068 1074 1058 1075 1065 386 
+ 1066 1059 1067 } #Turkey 
+ extra = { 1062 1063 1064 1060 1061 #Turkey 
+ 1016 1017 1021 1020 1014 # Syria 
+ 1034 1035 1037 1028 1032 1031 1030 1033 1036 # Iraq 
+ 1022 1025 1024 1026 # Jordan 
+ 1172 1008 1009 1011 1010 # Palestine 
+ 384 385 1077 1072 1073 1055 1056 1029 1027 1040 1048 1049
+ 1041 # Kuwait 
+ 1018 1019 # Lebanon 
+  #Cyprus 
+ 1071  1054 1015 1013 1023 
+ } 
+ capital = 409 #Istanbul 
+ }  
+ 
+
+ PAK = { # Pakistan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1538 1533 1532 1534 1539 1537 1530 1529
+ } 
+ extra = { 1536 } 
+ capital = 1533 #Karachi 
+ }  
+ 
+ PAL = { # Palestine
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1172 } 
+ extra = { 1011 1010 1008 1009 1013 } 
+ capital = 1172 
+ }  
+ 
+ PAN = { # Panama
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2077 2078 
+ } 
+ extra = { 889 } 
+ capital = 2078 
+ }   
+ 
+ PAR = { # Paraguay
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2046 2047 
+ } 
+ extra = { } 
+ capital = 2047 #Asuncion 
+ } 
+
+ 
+ PRU = { # Peru
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2017 2015 2016 2011 2014 2018 } 
+ extra = { 2008 2010 2033 2012 2013} 
+ capital = 2016 
+ }   
+ 
+ PHI = { # Philippines
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1565 1566 1567 1568 1569 1570 1571 1572 1573 1574 1575 1576 1577 1578 1579 1580 
+ } 
+ extra = { } 
+ capital = 1565 
+ } 
+ 
+ #U66 = { # Pindus 
+ #date = { day = 0 month = january year = 1933 } 
+ #expirydate = { day = 29 month = december year = 1999 } 
+ #minimum = { 369 } 
+ #extra = { } 
+ #country = { ITA ROM }
+ #capital = 369 
+ #revolt = no 
+ #intrinsic_gov_type = fascist 
+ #}  
+ 
+ POL = { # Poland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 223 231 232 233 234 } 
+ extra = { 181 158 159 167 164 226 222 224 235 230 183 221 236 237 243 
+ # NEW 
+ 252 254 250 228 246 229 227 155 185 161 225 203 168 166 165 239
+ } 
+ capital = 232 
+ no = { GER SOV }
+ } 
+ 
+ POR = { # Portugal
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 481 476 479 477 478 482 480 
+ } 
+ extra = { 994 995
+ } 
+ capital = 476 
+ } 
+
+
+ PRI = { # Primorsk
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1185 1191 1192 1193 1195 1196 } 
+ extra = { 1161 1162 1167 1168 1169 1170 1171 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1186 1187 1188 1189 1190 1194 1541 1542 } 
+ capital = 1191 
+ } 
+ 
+ QUE = { # Quebec
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2116 2123 2122 2121 2120 2125 2124 2117 2119 2127 } 
+ extra = { 2118 2136 2137 2138 2133 2132 2131 2134 2126 2128 2135 2130 } 
+ capital = 2117 #Quebec City
+ }  
+ 
+ 
+ RHO = { # Rhodesia and Nyasaland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 867 866 
+ } 
+ extra = { 860 859 863 861 864 862 865 868  
+ } 
+ capital = 867 
+ } 
+ 
+ ROM = { # Romania
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 308 309 310 311 314 316 } 
+ extra = { 315 285 297 312 295 621 289 299 291 286 303 304 288 296 306 313 298 305 302 301 292 287 293 300 } 
+ capital = 316 
+ }  
+
+ RUS = { # Russia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 553 572 663 589 669 560 535 542 580 604 678 551 582 602 } 
+ 
+ extra = { 688 686 681 543 547 538 539 537 536 534 706 702 696 695 
+ 694 691 692 697 698 700 645 659 662 661 660 666 665 658 668 
+ 670 667 675 674 672 664 673 684 693 655 642 651 650 656 
+ 578 683 682 679 571 680 677 676 548 556 554 569 570 585 574 540 541 559 561 
+ 557 549 550 552 566 586 581 587 579 657 654 652 634 647 646 644 643 
+ 633 649 653 648 567 573 565 575 577 562 558 563 544 546 
+ 1155 685 1157 1148 1140 1142 1143 1144 1145 1152 1153 1150 1146 1158 1147 
+ 1166 1167 1162 1163 1164 1165 1169 1179 1178 1177 1168 545 
+ 1156 1189 1186 1541 1139 583 584 568 1149 
+ 1141 1135 1138 1129 671 1134 1131 1137 1136 1132 699 1130 
+ 707 564 1151 1133 588 689 687 
+ 576 690 1154 603 1542 
+ 1180 1181 1182 1183 1184 1176 1174 1188 1175 1187 1185 1190 1195 
+ 1194 1192 1193 1196 1191 555 
+ 701 710 708 703 709 704 705 
+ #1568 1114 
+ 1126 1127 1128 1069 1070 1170 1171 1161 
+ } 
+ capital = 553 
+ no = { GER }
+ }  
+ 
+ U95 = { # Rwanda 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 846 } 
+ extra = { } 
+ capital = 846 
+ } 
+
+ SAR = { #Sarawak
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1624 
+ } 
+ extra = { 1631 1628 1625 1626 1627 1632 1633 1630 1629 1623 } 
+ revolt = no 
+ capital = 1624 
+ } 
+
+ SAU = { #Saudi Arabia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1040 1044 1045 1046 1047 1048 1049 
+ } 
+ extra = { 1038 1050 1051 1053 } 
+ capital = 1045 
+ }  
+ 
+ SCO = { # Scotland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 4 5 6 7 11 10 12 8 
+ } 
+ extra = { 9 } 
+ capital = 12 #Edinburgh 
+ } 
+
+ 
+ U96 = { # Senegal 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 978 980 } 
+ extra = { 979 983 977 } 
+ capital = 978 
+ } 
+
+ SER = { # Serbia
+ regular_id = YUG
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 338 330 342 } 
+ extra = { 329 336 341 340 327 337 339 331 } # 
+ capital = 338 
+ }  
+ 
+ CSX = { #Shanxi
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1252 } 
+ extra = { 1251 1331 1332 1333 1336 1253 1246 1247 1241 1242 1254 1323 1236 
+ 1321 1248 1249 1250 1327 1243 1244 1245 1328 1329 1330 
+ } 
+ capital = 1252
+ no = { JAP }
+ regular_id = UCH
+ revolt = no
+ liberate = no
+ }  
+
+SIB = { # Siberia
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1142 
+ } 
+ extra = { 1155 1157 1148 1140 1143 1144 1145 1152 
+ 1153 1150 1146 1158 1147 1166 1167 1162 1163 1164 1165 1169 1179 1178 1177 1168 
+ 1156 1189 1186 1541 
+ 1139 1149 1141 1135 1138 
+ 1154 1180 1181 1182 1183 1184 1176 1174 1188 1175 1187 1185 1190 1195 1194 1192 1193 1196 1191 
+ 1132 1137 1136 1151 1542 
+ 1069 1070 1170 1171 1161 1128
+ } 
+ capital = 1142 
+ } 
+
+ 
+ SIE = { # Sierra Leone
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 964 
+ } 
+ extra = { } 
+ capital = 964 
+ } 
+ 
+ U75 = { # Singapore 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1432 } 
+ extra = { } 
+ revolt = no 
+ capital = 1432 
+ } 
+
+ 
+ SIK = { # Sinkiang
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1281 
+ } 
+ extra = { 1273 1280 1275 1278 1279 1277 1274 1282 1276 } 
+ capital = 1281
+ regular_id = CHI
+ } 
+
+ 
+ SLO = { #Slovakia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 208 211 212 214 # added presov 
+ } 
+ extra = { 209 210 } # added the hungarian provs 
+ capital = 208 # Bratislava 
+ }  
+
+ SLV = { # Slovenia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 349 } 
+ extra = { 346 403 404 } 
+ capital = 349 
+ }  
+ 
+ SOM = { # Somalia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 837 836 838 
+ } 
+ extra = { 832 833 834 835 } 
+ capital = 836 
+ }  
+
+ SAF = { # South African Union
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 872 873 875 876 878 879 880 881 882 883 884 885 886 
+ } 
+ extra = { 869 870 871 874 877 } 
+ capital = 873 
+ } 
+
+ SOV = { 
+  date = { day = 0 month = january year = 1914 } 
+  expirydate = { day = 29 month = december year = 1999 } 
+  no = { GER }
+  minimum = { 
+  633 644 631 686 681 699 583 584 576 588
+  706 694 691 692 697 698 700 601 645 659 662 661 
+  660 666 665 669 658 668 670 667 675 674 672 664 671 673 594 591 590 592
+  684 663 693 655 642 651 650 656 578 683 682 679 571 680 678 677 676 564
+  548 556 554 569 572 570 585 574 559 561 551 557 549 553 550 552 560 530
+  566 586 581 587 582 579 657 654 604 580 652 647 646 643 649 653 648 573 
+  565 589 575 577 562 558 563 593 567 544 685 555 568 1113
+  } 
+  extra = { 1191 1193 1192 1196 1195 1190 1187 1188 1175 1174 1541 
+  1189 1176 1180 1181 1182 1183 1184 1542 540 541 547 687 689
+  1194 1179 1178 1168 1177 1169 1164 1163 1162 1167 695 696 
+  1166 1186 1165 1150 1154 507 505 614 498 1153 1152 1145 1146 
+  1147 1158 1156 1157 1144 1143 1129 1142 1140 1148 1155 546  
+  545 615 625 621 500 1138 1139 1136 1135 1111 1110 504 1112 
+  1102 1101 1118 502 501 1151 1130 1137 598 1132 1131 1133 
+  1115 1116 503 1117 1114 690 632 688 542 543 538 539 537 536 
+  534 535 702 704 703 709 708 710 701 639 1134 637 641 640 618 
+  638 599 595 616 611 612 619 620 626 622 624 623 627 628 613 
+  617 608 609 600 596 607 597 630 634 635 636 603 602 1097 
+  1098 1105 1104 1099 1103 1106 1109 1108 1119 531 532 1107 
+  605 606 610 629 707 1185 506 1100 711 712 713 1149 1141 499 
+  519 705 714 1069 1070 1126 1127 1128 1161 1170 1171 } 
+  capital = 572 
+  regular_id = RUS 
+  intrinsic_gov_type = leninist 
+  } 
+ 
+ SPA = { #Spain - nationalist
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 441 451 456 442 438 467 453 474 
+ 448 449 447 450 452
+ }
+ min = 7
+ extra = { 348 443 444 460 457 458 472 471 470 466 463 468 464 461 436 440 437 715
+  475 439  716 473 465 462 454 455 459 446 445 469 990 991 } 
+ capital = 451 # Burgos 
+ intrinsic_gov_type = paternal_autocrat  
+ regular_id = SPR 
+ } 
+
+ SPR = { # Spain - republican
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 444 451 441 453 466 456 460 457 458 472 474 471 470 467 463 468 464 461 469 } 
+ min = 7
+ extra = { 348 440 438 436 442 443 475 437 439 452 447 450 
+ 455 448 449 446 462 445 459 473 465 454 990 991
+ } 
+ capital = 460 # Madrid 
+ } 
+
+ 
+ SUD = { # Sudan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 803 804 806 808 809 813 814 811 812 810 807 805  
+ } 
+ extra = { } 
+ capital = 810 
+ }  
+ 
+ SWE = { #Sweden
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2152 2153 2159 2162 2165 2166 } 
+ min = 2
+ extra = { 2167 2163 2164  2161 2160 2157 2154 2155 2156 2158 526 } 
+ min_extra = 1
+ capital = 2159 
+ } 
+
+ SCH = { # Switzerland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 389 390 391 392 } 
+ extra = { } 
+ capital = 392 
+ } 
+ 
+ 
+ SYR = { # Syria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1016 1017 1021 1020 1014 1015 
+ } 
+ extra = { 1054 1018 1019 1024 1022 1026 1025 1009 1008 1172 1010 1011 1023 1013 } #Antakya, Jordan, Palestine
+ capital = 1016 
+ }  
+
+ TAJ = { # Tajikistan
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1105 1104 
+ } 
+ extra = {  } 
+ capital = 1105 
+ } 
+ 
+ U97 = { # Tanganyika 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 848 849 850 851 } 
+ extra = { 852 } 
+ capital = 850 
+ } 
+
+ TAN = { # Tannu Tuva
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1119 
+ } 
+ extra = { } 
+ capital = 1119 
+ }  
+ 
+ TEX = { # Texas
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1928 1924 1926 1922 1925 1920 1921 1923    
+ 1919    1914  1927
+ } 
+ extra = {  1903 1905 1906 1908 1909 1910 1859 1911 1913 1916 1912 1907 1904 } 
+ capital = 1925 #Austin 
+ }  
+ 
+ SIA = { # Thailand
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1430 1429 1424 1423 1422 1427 1426 1428 1425 
+ } 
+ extra = { 1391 1394 1398 1400 1401 1402 1404 1405 1409 1412 1431 1433 1434 } 
+ capital = 1423 
+ }  
+
+ TIB = { # Tibet
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1286 1287 1288 1289 1295 
+ } 
+ extra = { 1294 1290 1285 1278}
+ claims = { 1455 1458 1283 1284 1292 1293 1262 }
+ capital = 1289 #Lhasa
+ } 
+
+ 
+ U99 = { # Togo 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 950 948 } 
+ extra = { } 
+ capital = 950 
+ } 
+
+
+ TRA = { # Transural Republic
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1137 1136 1131
+ } 
+ min = 1
+ extra = { 
+ 1132 1130 1134 690 
+ 1151 1133  
+ 689 687 1153 1129 
+ 1126 1127 1128 
+ #1778 664 660 666 671 1150 1135 1149 1138 1141 1139
+ } 
+ capital = 1137 
+ } 
+ 
+ U98 = { # Trinidad & Tobago 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1769 1758 } 
+ extra = { } 
+ capital = 1758 
+ } 
+ 
+
+
+ TUN = { #Tunisia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 741 742 746 745 747 748 749 744} 
+ extra = { 740 } 
+ capital = 747 
+ }  
+
+ 
+ TUR = { # Turkey
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 409 1078 1079 1057 1076 1068 1074 1058 1075 1065 386 
+ 1066 1059 1067 1071 1054 385 1077 } 
+ extra = { 1062 1063 1064 1060 1061 370 384 1072 1073 1055 1056 } 
+ capital = 1075 
+ }  
+
+ TRK = { # Turkmenistan
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1097 1098 
+ } 
+ extra = { } 
+ capital = 1097 
+ } 
+
+ 
+ U70 = { # Uganda 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 844 } 
+ extra = { 845 } 
+ capital = 844 
+ } 
+
+ UKR = { # Ukraine
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 617 608 613 610 612 611 606 605 
+ } 
+ extra = { 245 242 240 244 
+ 241 637 640 641 213 
+ 619 620 626 622 616 635 
+ 627 628 609 
+ 629 636 630 623 624 607 
+ 638 639 631 632 615 625 618 614 238 249 
+ 621 633 634
+ #1401 300 
+ } 
+ capital = 617 #Kiev 
+ no = { GER }
+ } 
+ 
+ ENG = { # United Kingdom
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 15 17 18 24 22 28 25 29 26 27 19 20 8 12 14 21 16 23 9 
+ } 
+ extra = { 4 5 6 7 11 10 13 35 36 2045 
+ } 
+ capital = 29 
+ no = { GER }
+ }  
+ 
+ USA = { # United States of America
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1809 
+ } 
+ extra = { 
+ 1953 1949 1948 1952 1951 1950 1947 1956 1954 1955 1960 1958 1963 1961 
+ 1962 1964 1813 1812 1814 1818 1815 1816 1817 1808 1807 1801 1797 1791 1795 1793 
+ 1792 1805 1803 1804 1790 1787 1788 1784 1785 1789 1796 1826 1806 
+ 1810 1811 1820 1819 1942 1943 1940 1939 1936 1937 1944 1931 1825 1821 1842 1845 1802 
+ 1957 1828 1934 1930 1929 1932 1918 1915 1925 1836 1833 1830 1829 1832 1839 
+ 1838 1841 1843 1834 1837 2140 2145 2144 2146 2151 1846 1850 1855 1856 1858 1857 1859 
+ 1860 1914 1913 1919 1910 1911 1924 1928 1926 1920 1921 1922 
+ 1905 1906 1904 1900 1901 1902 1898 1896 1907 1908 1897 1909 
+ 1868 1866 1862 1869 1865 1871 1873 1875 1876 1874 
+ 1877 1878 1882 1879 1880 1895 1893 1892 1899 1886 1887 1883 
+ 1888 1889 1884 2141 2142 2147 2143 2139 
+ 1923 
+ 1831 1847 1935 1945 1885 1872 1863 2150 1864 1778 
+ 1890 1891 1894 1881 
+ 1870 1861 1903 1851 1916 1927 1912 1852 1853 1854 1867 1849 1917 1933 1835 1840 1848 1844 1822 1823 1827 1941 1946 1959 1800 
+ 1794 1824 1798 1799 1786 1938 
+ } 
+ capital = 1809 
+ } 
+ 
+ U81 = { # Upper Volta 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 945 959 958 957 } 
+ extra = { } 
+ capital = 957 
+ } 
+ 
+ URU = { # Urugay
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 2051 2052 
+ } 
+ extra = { } 
+ capital = 2052 
+ } 
+
+ UZB = { # Uzbehkistan
+ date = { day = 0 month = january year = 1920 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1101 1102 1100 1103 1099 
+ } 
+ extra = { } 
+ capital = 1103 
+ }  
+ 
+ VEN = { # Venezuela
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1988 1989 1992 1993 1995 1996 
+ } 
+ extra = {  } 
+ capital = 1993 #Caracas 
+ }  
+ 
+ #VIC = { # Vichy
+ #date = { day = 0 month = january year = 1933 } 
+ #expirydate = { day = 29 month = december year = 1999 } 
+ #minimum = { 78 72 73 75 76 84  80 77 74 71 82 81 89 93 85 94 86 87 90 83 64 88 91 92 79 } 
+ # extra = { 
+ #} 
+ #capital = 72 
+ #revolt = no 
+ #regular_id = FRA 
+ #intrinsic_gov_type = fascist 
+ #} 
+ 
+ VIE = { # Vietnam
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1395 1396 1397 1399 1403 } 
+ extra = { 1392 1393 } 
+ capital = 1399 
+ } 
+ 
+ U72 = { #  Vietnam - Communist
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1392 1393 } 
+ extra = { 1395 1396 1397 1399 1403 } 
+ capital = 1393 
+ regular_id = VIE 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+ 
+ 
+ U76 = { # Wales 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 22 21 } 
+ extra = { } 
+ capital = 22 
+ revolt = no 
+ } 
+  
+ WLL = { # Wallonia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 112 113 108 111 
+ } 
+ extra = { 52 } 
+ capital = 113 
+ }  
+ 
+ U79 = { # West Indies 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1770 1763 1764 1769 1758 1782 1759 } 
+ extra = { 1755 1761 1772 1752 1760 1753 1754 1757 1766 1767 1768 1774 1765 1762 1771 } 
+ capital = 1758 
+ revolt = no 
+ intrinsic_gov_type = social_liberal 
+ } 
+
+ CXB = { # Xibei San Ma
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1265 
+ } 
+ extra = { 
+ 1259 1263 1282 1274 1283 1266 1277 1272 1285 1284 1264 1270 1255 1260 1269 1271 
+ 1268 1256 
+ } 
+ capital = 1265
+ no = { JAP }
+ regular_id = UCH
+ revolt = no
+ liberate = no
+ }  
+ 
+ YEM = { # Yemen
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1050 
+ } 
+ extra = { 1053 1051 840 } 
+ capital = 1050 
+ } 
+ 
+ YUG = { # Yugoslavia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 338 352 355 } 
+ extra = { 349 346 345 344 353 350 354 356 343 332 330 342 329 341 336 333 328 331 334 347 357 358 351 335 340 327 337 339 } 
+ revolt = no 
+ capital = 338 
+ no = { GER }
+ } 
+
+ CYN = { # Yunan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1390 
+ } 
+ extra = { 1413 1304 
+ 1302 1296 1297 1298 # Sichuan 
+ 1293 1292 1389 1291 1384 1385 1386 1387 1388 
+ 1299 1300 
+ } 
+ capital = 1390
+ no = { JAP }
+ regular_id = UCH
+ revolt = no
+ liberate = no
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################## 
+##### new communist countries 
+################################################## 
+ 
+ 
+U10 = { # Dutch Socialist Union 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 122 118 119 120 121 123 124 125 } 
+ min = 2
+ extra = { } 
+ capital = 122 
+ revolt = no 
+ regular_id = HOL 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U11 = { # FRA 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 55 102 104 107 }
+ min = 1 
+ extra = { 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 56 57 58 59 60 
+	61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 
+	84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 103 105 106 } 
+ min_extra = 10
+ capital = 55    
+ 
+ revolt = no 
+ regular_id = FRA 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U12 = { # ENG 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 25 26 27 28 29 }
+ extra = {  13 14 15 16 17 18 19 20 21 22 23 24 } 
+ capital = 29 
+ revolt = no 
+ regular_id = ENG 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U13 = { # HUN 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 284 282 283 } 
+ min = 1
+ extra = { 276 277 278 279 280 281 } 
+ min_extra = 2 
+ capital = 284 
+ revolt = no 
+ regular_id = HUN 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U14 = { # ITA 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 398 400 407 419 421 430 434 }
+ min = 1
+ extra = { 393 394 395 396 399 401 402 403 404 405 406 408 410 411 412 
+	413 414 415 416 417 418 420 422 423 424 425 426 427 428 431 432 433 435 } 
+ min_extra = 1
+ capital = 419 
+ revolt = no 
+ regular_id = ITA 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U15 = { # POR 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 476 481 } 
+ min = 1
+ extra = { 477 478 479 480 482 994 995 } 
+ min_extra = 2 
+ capital = 476 
+ revolt = no 
+ regular_id = POR 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U16 = { # AUS 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 188 193 194 195 } 
+ min = 2
+ extra = { 186 187 189 190 191 192 } 
+ min_extra = 2 
+ capital = 195 
+ revolt = no 
+ regular_id = AUS 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U17 = { # BEL 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 116 108 110 111 } 
+ min = 2
+ extra = { 112 113 114 115 117 }
+ min_extra = 2 
+ capital = 116 
+ revolt = no 
+ regular_id = BEL 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U18 = { # LUX 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 109 } 
+ extra = {  } 
+ capital = 109 
+ revolt = no 
+ regular_id = LUX 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U19 = { # NOR 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 483 488 493 495 497 }
+ min = 1 
+ extra = { 484 485 486 487 489 490 491 492 494 496 } 
+ min_extra = 1 
+ capital = 483 
+ revolt = no 
+ regular_id = NOR 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U20 = { # FIN 
+  date = { day = 0 month = january year = 1914 } 
+  expirydate = { day = 29 month = december year = 1999 } 
+  minimum = { 525 520 527 516 } 
+  min = 2
+  extra = { 526 524 518 514 521 515 523 529 522 528 533 512 511 513 } 
+  min_extra = 3
+  capital = 525 
+  revolt = no 
+  regular_id = FIN 
+  intrinsic_gov_type = leninist 
+ } 
+ 
+U21 = { # SWE 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 2152 2153 2159 2162 2165 2166 } 
+ min = 2
+ extra = { 2167 2163 2164  2161 2160 2157 2154 2155 2156 2158 526 } 
+ min_extra = 1
+ capital = 2159 
+ revolt = no 
+ regular_id = SWE 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U22 = { # DEN 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 294 216 217 } 
+ min = 1
+ extra = { 218 219 220 2 1783 } 
+ min_extra = 1
+ capital = 294 
+ revolt = no 
+ regular_id = DEN 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U23 = { # Saarprotektorat 
+ date = { day = 0 month = january year = 1965 } 
+ expirydate = { day = 29 month = december year = 1966 } 
+ minimum = { 127 128 129 130 } 
+ min = 1
+ extra = { } 
+ capital = 127 
+ revolt = no 
+ Country = { FRA U01 ENG USA CAN NZL AST }
+ } 
+ 
+U24 = { # Allied occ ger 
+ date = { day = 0 month = january year = 1934 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 131 150 147 }
+ min = 1 
+ extra = {}
+ claims = { 
+ 141 137 174 143 176 146 148 154 151 152 177 138 134 132 175 179 178 142 145 127 126 149 
+ 180 144 129 136 130 128 139 135 140 133 
+ 169 157 171 162 153 156 170 172 173 160 163 
+ 186 187 188 189 190 191 192 193 194 195 
+  } 
+ capital = 131 
+ revolt = no 
+ not = { GER DFR }
+ country = { USA ENG FRA CAN U01 U02 AST NZL }
+ } 
+ 
+U25 = { # Sov occ ger 
+ date = { day = 0 month = january year = 1919 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 163 160 170 173 }
+ min = 1 
+ extra ={}
+ claims = { 
+ 169 157 171 162 153 156 172  
+ 147 141 137 174 143 176 146 148 154 151 152 177 138 134 132 175 179 178 142 145 127 126 149 
+ 180 144 129 136 130 128 139 135 150 140 133 131 
+ 186 187 188 189 190 191 192 193 194 195 
+ } 
+ capital = 163 
+ revolt = no  
+ not = { GER DDR }
+ country = { SOV }
+ } 
+ 
+U26 = { # Switzerland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 392 389 390 391 } 
+ min = 1
+ extra = { } 
+ capital = 392 
+ revolt = no 
+ regular_id = SCH 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U27 = { # Yugoslavia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 338 344 355 } 
+ min = 1
+ extra = { 352 349 346 345 353 350 354 356 343 332 330 342 329 341 336 333 328 331 
+ 334 347 357 358 351 335 340 327 337 339 403 404 406 } 
+ min_extra = 6
+ capital = 338 
+ revolt = no 
+ regular_id = YUG 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U28 = { # Albania
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 359 360 361 362 } 
+ min = 2
+ extra = { } 
+ capital = 359 
+ revolt = no 
+ regular_id = ALB 
+ intrinsic_gov_type = leninist 
+ }   
+ 
+U29 = { # Bulgaria
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 321 317 324 }
+ min = 1 
+ extra = { 307 318 322 323 326 319 320 325 } 
+ min_extra = 3
+ capital = 321 
+ revolt = no 
+ regular_id = BUL 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U30 = { # Romania 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 316 289 299 } 
+ min = 1
+ extra = { 315 285 297 312 295 291 286 288 296 313 298 301 292 287 293 308 309 311 310 314 } 
+ min_extra = 5
+ capital = 316 
+ revolt = no 
+ regular_id = ROM 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U31 = { # Czechoslovakia 
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 207 201 208 214 } 
+ min = 2
+ extra = { 199 198 212 200 206 205 197 196 211 209 204 202 210 203 } 
+ min_extra = 4
+ capital = 207 
+ revolt = no 
+ regular_id = CZE 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U32 = { # Poland
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 232 181 235 224 }
+ min = 2 
+ extra = { 223 231 233 234 158 159 167 164 226 222 230 183 221 236 237 243 
+ 252 254 250 228 246 229 227 155 185 161 225 203 168 166 165 239 } 
+ min_extra = 8
+ capital = 232 
+ revolt = no 
+ regular_id = POL 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U33 = { # Greece
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 377 365 369 }
+ min = 1 
+ extra = { 372 373 367 371 382 374 368 375 383 364 366 370 381 380 376 363 378 379 388 387 } 
+ min_extra = 2 
+ capital = 377 
+ revolt = no 
+ regular_id = GRE 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U34 = { # Turkey
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 1075 409 } 
+ min = 1 
+ extra = { 1074 1057 1076 1068 1058 1065 386 1066 1059 1067 1071 1054 385 1077 
+ 1062 1063 1064 1060 1061 370 1079 1078 384 1072 1073 1055 1056 } 
+ min_extra = 8
+ capital = 1075
+ revolt = no 
+ regular_id = TUR 
+ intrinsic_gov_type = leninist 
+ }
+ 
+U35 = { # Spain
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 460 440 448 474 }
+ min = 2 
+ extra = { 438 436 442 443 475 437 439 452 447 990 991 450 444 451 441 453 466 456 457
+ 458 472 471 470 467 463 468 464 461 469 455 449 446 462 445 459 473 465 454 348 }
+ min_extra = 10 
+ capital = 460 # Madrid 
+ revolt = no 
+ regular_id = SPR 
+ intrinsic_gov_type = leninist 
+ } 
+ 
+U38 = { # American Union State
+date = { day = 0 month = january year = 1914 } 
+expirydate = { day = 29 month = december year = 1999 } 
+minimum = { 
+1809 
+} 
+claims = { 
+1953 1949 1948 1952 1951 1950 1947 1956 1954 1955 1960 1958 1963 1961 1962 1964 1813 1812 1814 1818 1815 1816 1817 1808 1807 1801 1797 1791 1795 1793 1792 1805 1803 1804 1790 1787 1788 1784 1785 1789 1796 1826 1806 1810 1811 1820 1819 1942 1943 1940 1939 1936 1937 1944 1931 1825 1821 1842 1845 1802 1957 1828 1934 1930 1929 1932 1918 1915 1925 1836 1833 1830 1829 1832 1839 1838 1841 1843 1834 1837 1846 1850 1855 1856 1858 1857 1859 1860 1914 1913 1919 1910 1911 1924 1928 1926 1920 1921 1922 1905 1906 1904 1900 1901 1902 1898 1896 1907 1908 1897 1909 1868 1866 1862 1869 1865 1871 1873 1875 1876 1874 1877 1878 1882 1879 1880 1895 1893 1892 1899 1886 1887 1883 1888 1889 1884 1923 1831 1847 1935 1945 1885 1872 1863 1864 1890 1891 1894 1881 1870 1861 1903 1851 1916 1927 1912 1852 1853 1854 1867 1849 1917 1933 1835 1840 1848 1844 1822 1823 1827 1941 1946 1959 1800 1794 1824 1798 1799 1786 1938 
+} 
+capital = 1809 
+country = { GER }
+intrinsic_gov_type = nazi
+} 
+ 
+
+################################################## 
+##### greater reich komissariat districts
+################################################## 
+  
+ U40 = { # Reichskommissariat Ostland
+ date = { day = 0 month = january year = 1918 }
+ expirydate = { day = 29 month = december year = 1966 }
+ minimum = { 264 270 262 }
+ min = 1
+ extra = {
+}
+ claims = {
+ # Estonia
+ 274 275 271 272 273
+ # Latvia
+ 267 269 268 266 265
+ # Lithuania
+ 259 263 260
+ # Belarus
+ 599 594 591 600 596 601 255 257 251 590 592 593 256 258
+ # Ingria
+ 549 550 552 560 564 565 566
+ # parts of russia
+ 561 573 589 575 586 587 588
+ 
+}
+ country = { GER } 
+ #min_extra = 12
+ capital = 264 # Riga
+ revolt = no
+ intrinsic_gov_type = nazi
+ }
+ 
+ U41 = { # Reichskommissariat Ukraine
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1966 }
+ minimum = { 244 }
+ min = 1
+ extra = { 
+ 666 #capital of the Volga German Autonomous Soviet Socialist Republic
+ }
+ claims = { 
+ 608 613 610 612 617 634 642 643 644 611 606 605 245 637 640 622 616 635 627 628 609 629 636 630 623 624 607 638 639 631 632 615 618 614 249 247 # Ukraine
+ 248 595 597 598 645 646 647 648 649 650 663 669 651 658 659 660 661 662 665 652 653
+ 654 604 633 655 657 602 603 580 581 582 # parts of Russia
+ 641
+ }
+ country = { GER }
+ #min_extra = 25
+ capital = 244 # Rowne
+ revolt = no
+ intrinsic_gov_type = nazi
+ }
+ 
+  U42 = { # Reichskommissariat Kaukasus
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1966 }
+ minimum = { 709 } # Tbilisi
+ min = 1
+ extra = {
+ }
+ claims = {
+ # Armenia
+ 1067 1062 1063 712 714 386
+ # Azerbaijan
+ 1083 713 1081 1082
+ # Georgia
+  710 701 703 705 707 708 711 695
+ # Eg Russian Provinces
+ 700 702 704 699 706 698 692 697 691 696 693 694
+ }
+ country = { GER }
+ #min_extra = 14
+ capital = 709
+ revolt = no
+ intrinsic_gov_type = nazi
+ }
+ 
+ U43 = { # Reichskommissariat Moskowien
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1966 }
+ minimum = { 572  }
+ min = 1
+ extra = {
+ }
+ claims = {
+ 542 543 544 545 546 547 548 551
+ 553 554 555 556 557 558 559 562 563 567 568 569 570 571
+ 574 576 577 578 579 583 584 585 656 664 667 668
+ 670 671 672 673 674 675 676 677
+ 678 679 680 681 682 683 684 685 686 688 }
+ country = { GER }
+ #min_extra = 20
+ capital = 572 # Moscow
+ revolt = no
+ intrinsic_gov_type = nazi
+ }
+ 
+ U44 = { # Generalgouvernement
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1966 }
+ minimum = { 235 }
+ extra = {
+ }
+ claims = {
+ # Poland
+ 229 236 228 246 237 243 239 233 234 232
+ 238 240 241 242
+ }
+ country = { GER }
+ capital = 235 # Krakow
+ revolt = no
+ intrinsic_gov_type = nazi
+ }
+ 
+ U45 = { # Reichskommissariat Norwegen
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1966 } 
+ minimum = { 483 } 
+ min = 1
+ extra = {  } 
+ claims = { 491 495 484 485 486 487 488 489 490 492 493 494 496 497 } 
+ country = { GER }
+ #min_extra = 5
+ capital = 483 # Oslo
+ revolt = no 
+ intrinsic_gov_type = nazi 
+ } 
+ 
+ U46 = { # Reichskommissariat Niederlande
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1966 } 
+ minimum = { 122  } 
+ min = 1
+ extra = { } 
+ claims = { 118 119 120 121 123 124 125 } 
+ country = { GER }
+ capital = 122 # Amsterdam
+ revolt = no 
+ intrinsic_gov_type = nazi 
+ } 
+ 
+ U47 = { # Reichskommissariat Belgien-Nordfrankreich
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1966 } 
+ minimum = { 116  } 
+ min = 1
+ extra = { 
+ } 
+ claims = { 112 113 114 115 108 111 117 
+  # Pas De Calais
+ 51 52 49
+ }
+ country = { GER }
+ capital = 116 # Brussels
+ revolt = no 
+ intrinsic_gov_type = nazi 
+ } 
+ 
+ U48 = { # Reichskommissariat Turkestan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1966 } 
+ minimum = { 1099  } 
+ extra = { 
+ }  
+ claims = { 
+ #Kazakhstan
+ 498 499 500 501 502 503 504 505 506 507 1108 1109 1110 1111 1112 1113 1114 1115 1116 1117 1118 
+ #Turkmenistan
+ 1097 1098
+ #Tajikistan
+ 1105 1104
+ #Kirgizistan
+ 1107 1106
+ #Uzbekistan
+ 1101 1102 1100 1103
+ #Claims on Persia
+ 1080 1092
+ } 
+ country = { GER }
+ capital = 1070  
+ revolt = no 
+ intrinsic_gov_type = nazi 
+ } 
+ 
+ SCA = { # Reichskommissariat Scandinavia
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 483 } 
+ extra = { } 
+ claims = { 1 2 3 486 1783 2167 2166 526 2165 220 2163 2164 2162 2158 2161 2160 2159 2157 2154 2153 2155 2152 2156 217 218 219 294 484 485 487 491 489 492 490 493 494 497 496 488 495 511 513 514 515 516 517 521 522 524 527 535 534 536 519 537 538 539 532 531 530 540 541 518 520 523 533 528 529 525 512 }
+ country = { GER }
+ revolt = no 
+ capital = 294 
+ intrinsic_gov_type = nazi
+ }  
+ 
+ U49 = { # AOI
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1970 }
+ minimum = { 825 } #Addis Abeba
+ claims = {
+ 815 816 817 #Eritrea
+ 836 837 838 832 833 #Somalia
+ 822 823 820 829 830 819 821 818 828 831 826 827 824 834 835 #Abyssinia
+ 813 803 804 805 814 811 810 806 808 809 812 807 #Somalia
+ }
+ country = { } # ITA
+ capital = 825 #Addis Abeba
+ revolt = no 
+ intrinsic_gov_type = fascist 
+ } 
+
+U50 = { #Hejaz #added a revolt-tag for U50 # Hejaz, to allow Saudi-Arabia to properly form and wage war
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1963 }
+ minimum = {
+  1048 1049
+ }
+ extra = {
+  #Rest of Arabia
+  1045 1047 1040 1044 1046 1039 1043 1038  
+ }
+ claims = {
+  1050 1053
+ }
+ capital = 1048
+ regular_id = SAU
+ liberate = no
+}
+
+ UTC = { # Volunteers army by Rhysaxiel
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1930 } 
+ minimum = { 
+ 644 
+ } 
+ extra = {  } 
+ liberate = no
+ revolt = no
+ capital = 644 
+ } 
+
+UER = { # Ufa Directorate
+	date = { day = 0 month = january year = 1914 } 
+	expirydate = { day = 29 month = december year = 1930 } 
+	minimum = { 
+		1131 #Ufa
+		1138 #Omsk
+	}
+	min = 1
+	extra = {  
+		668 #Samara/Kuybyshev
+		672 #Kazan
+		669 #Saratov
+		665 #Volsk
+		1162 #Irkutsk
+		#Kazakstan region
+		498 #Pavlodar
+		499 #Ekibastuz
+		500 #Balkhash
+		501 #Kokchetav
+		502 #Akmolinsk
+		503 #Karaganda
+		504 #Alma-Ata
+		505 #Sar
+		506 #Taldy-Kurgan
+		507 #Ust-Kamenogorsk
+		1108 #Dzhambul
+		1109 #Chimkent
+		1110 #Kzyl-Orda
+		1111 #Fyodorovka
+		1112 #Novokazalinsk
+		1113 #Uralsk
+		1114 #Aktyubinsk
+		1115 #Kustanay
+		1116 #Derzhavinsk
+		1117 #Chelkar
+		1118 #Fort Alexandrovsky
+		#Novosibirsk region
+		1135 #Tobolsk
+		1136 #Tyumen
+		1137 #Kurgan
+		1139 #Tara
+		1140 #Barnaul
+		1141 #Barabinsk
+		1142 #Novosibirsk
+		1143 #Biysk
+		1144 #Kemerovo
+		1145 #Kuznetsk
+		1146 #Oyrot-Tura
+		1147 #Abakan
+		#Eastern Russia region
+		660 #Volzhsky
+		664 #Naberezhnye Chelny
+		666 #Balakowo
+		667 #Tolyatti
+		690 #Sterlitamak
+		1132 #Chelyabi
+		1133 #Orsk
+		1134 #Orenburg
+		#Krasnoyarsk region
+		1119 #Kyzyl
+		1156 #Krasnoyarsk
+		1157 #Kansk
+		1158 #Minusinsk
+		#Irkutsk area
+		1069 #Tayshet
+		1070 #Kachug
+		1163 #Bodaybo
+		1164 #Ust-Kut
+		1165 #Bratsk
+		1166 #Cheremkhovo
+		#Primorski area
+		1191 #Vladivostok
+		1192 #Semyonovka
+		1193 #Nakhodka
+		1194 #Lesozavodsk
+		1195 #Tetyukhe
+		1196 #Nikolsk-Ussuriysky
+	} 
+	liberate = no
+	revolt = no
+	capital = 1138  #Omsk
+} 
+UPE = { # East Turkestan
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1281 
+ } 
+ extra = { 1273 1280 1275 1278 1279 1277 1274 1282 1276 } 
+ capital = 1281
+ regular_id = SIK
+ } 
+
+UGS = { # Arkhangelsk Government
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1930 } 
+ minimum = { 542  } 
+ extra = { 688 545 546 541 538 540 537 } 
+ capital = 542 
+ liberate = no
+ revolt = no
+ } 
+ 
+ U05 = { # Netherlands East Indies
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 }
+ country = { HOL }
+ minimum = { 1647 } 
+ extra = { 
+	1639 1642 1640 1635 1634 1637 1636 1641 1638 1648 1646 1651 1650 1649 1654 1653 1652 1655 1656 1643 1645 1615 1616 1619 1644 1657 1658 1660 1659 1620 1621 1622 1599 1600 1595 1601 1618 1598 1597 1596 1594 1633 1631 1628 1623 1627 1632 1629 1630
+} 
+ capital = 1647
+ } 
+ 
+ U06 = { # Free city of Danzig
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1925 } 
+ minimum = { 
+ 181 #Danzig 
+ } 
+ extra = { } 
+ capital = 181 
+ revolt = no
+ liberate = no
+ } 
+ 
+ U02 = { # British Raj
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1999 } 
+ minimum = { 
+ 1459 #Delhi 
+ } 
+ extra = { 
+  #Burma                 
+  1406 1407 1408 1409 1410 1411 1412 1413 1414 1415 1416 1417 1418 1419 1420 1421 1439 1440 1441 1442 1443 1445 1450 1455 1458
+  #India  
+  1444 1446 1447 1448 1449 1451 1452 1453 1454 1460 1461 1462 1463 1464 1465 1466 1467 1468 1469 1470 1471 1472 1473 1474 1475 1476 1477 1478 1479 1480 1481 1482 1483 1484 1485 1486 1487 1488 1489 1490 1491 1492 1493 1494 1495 1496 1497 1498 1499 1500 1501 1502 1503 1504 1505 1506 1507 1508 1512 1514 1515 1516 1517 1518 1519 1520 1521 1522 1523 1524 1525 1526 1527 1528 1530 1531 1532 1535 1536 
+  #Pakistan 
+  1278 1529 1533 1534 1537 1538 1539 1540  
+ } 
+ capital = 1459 
+ country = { ENG } #only UK can release it
+ revolt = no
+ } 
+ 
+U52 = { # Burgundy SS State
+ date = { day = 0 month = january year = 1933 }
+ expirydate = { day = 29 month = december year = 1999 }
+ minimum = {
+ 106 
+ }
+ claims = { 50 63 64 86 87 88 89 90 91 92 93 95 96 97 98 99 100 101 102 103 391
+ }
+ capital = 106
+ country = { GER }
+ intrinsic_gov_type = nazi 
+}
+
+#U51 = { #Qatar replaced by mittelafrika
+# date = { day = 0 month = january year = 1914 }
+# expirydate = { day = 29 month = december year = 1963 }
+# minimum = {
+#  1038
+# }
+# capital = 1038
+#}
+
+
+U53 = { #Trucial States / Abu Dhabi
+ date = { day = 0 month = january year = 1914 }
+ expirydate = { day = 29 month = december year = 1963 }
+ minimum = {
+  1039
+ }
+ capital = 1039
+}
+
+U54 = { # British Union
+date = { day = 0 month = january year = 1914 } 
+expirydate = { day = 29 month = december year = 1999 } 
+minimum = { 
+15 17 18 24 22 28 25 29 26 27 19 20 8 12 14 21 16 23 9 
+} 
+extra = { 4 5 6 7 11 10 13 2045 
+} 
+capital = 29 
+country = { GER }
+intrinsic_gov_type = nazi
+}  
+
+U55 = { # French State
+date = { day = 0 month = january year = 1914 } 
+expirydate = { day = 29 month = december year = 1999 } 
+minimum = { 55 
+} 
+
+extra = { 90 85 86 89 81 82 80 70 84 79 67 40 77 71 
+75 69 68 62 65 66 54 63 100 59 50 99 45 
+60 61 37 38 39 57 58 42 43 44 47 72 73 93 78 74 76 
+83 48 103 88 97 64 95 96 106 
+92 46 41 53 102 56 101 98 52 51 49 87 91 94 } 
+
+claims = { 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736 737 738 739 743 740 741 742 744 745 746 747 748 749 907 908 909 910 911 914 915 917 918 919 920 921 922 923 924 925 926 927 928 942 943 944 945 946 947 948 949 950 951 957 958 959 960 961 962 965 966 967 968 970 971 972 973 974 975 976 977 978 980 981 982 983 984 985 986 833 1001 1002 1003 996 999 1000 2000 1752 1767 1768 1581 1582 1583 1584 1585 1586 1730 1740 1743 1744 2135 }
+
+capital = 55 
+country = { GER }
+intrinsic_gov_type = nazi
+} 
+
+
+
+U56 = { # Britanny
+date = { day = 0 month = january year = 1914 } 
+expirydate = { day = 29 month = december year = 1999 } 
+minimum = { 38 
+} 
+extra = { 37 39 40 41 } 
+capital = 55 
+country = { GER }
+intrinsic_gov_type = nazi
+}   
+
+
+U60 = { # Newfoundland
+date = { day = 0 month = january year = 1914 } 
+expirydate = { day = 29 month = december year = 1934 } 
+minimum = { 2136 2137 2138  
+} 
+extra = { } 
+capital = 2137  
+revolt = no 
+country = { ENG } #only UK can release it
+} 
+
+U37 = { # United Baltic Duchy
+	date = { day = 0 month = january year = 1914 } 
+	expirydate = { day = 29 month = december year = 1929 } 
+	minimum = { 264 }
+	extra = { 265 266 267 268 269 270 271 272 273 274 275 }
+	capital = 264 #Riga
+}
+
+U62 = { # Far Eastern Host
+	date = { day = 0 month = january year = 1914 }
+	expirydate = { day = 29 month = december year = 1929 }
+	minimum = { 1169 }
+	extra = {
+		#Zabaikalye area
+		1161 #Kalakan
+		1167 #Ulan-Ude
+		1168 #Borzya
+		#Amur area
+		1170 #Never
+		1171 #Ekimchan
+		1174 #Kuybyshevka-Vostochnaya
+		1175 #Birobidzhan
+		1176 #Blagoveshchensk
+		#Khabarovsk area
+		1185 #Gavan
+		1186 #Okhotsk
+		1187 #Sofiysk
+		1188 #Elban
+		1189 #Nikolayevsk-on-Amur 
+		1190 #Khabarovsk
+	}
+	capital = 1169 #Chita
+	revolt = no
+	liberate = no
+}
+
+U74 = { # East Hebei/Imperial China
+ date = { day = 0 month = january year = 1914 } 
+ expirydate = { day = 29 month = december year = 1964 } 
+ minimum = { 1247 }
+ capital = 1247 #Beijing
+ revolt = no
+ liberate = no
+}
+U51 = { # Mittelafrika
+	date = { day = 0 month = january year = 1933 } 
+	expirydate = { day = 29 month = december year = 1990 } 
+	minimum = { 885 868 866 855 856 857 867 888 890 891 860 859 892 887 862 863 865 858 864 854 853 849 861 896 897 898 895 901 902 899 894 893 907 917 906 918 914 908 915 913 909 910 911 919 904 903 905 851 850 848 847 846 843 844 845 841 842 839 }
+	extra = { 883 884 882 886 }
+	capital = 899 #Leopoldville
+}

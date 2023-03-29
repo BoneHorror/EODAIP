@@ -1,0 +1,150 @@
+detachable = yes
+# 0 - Early Naval Scout Helicopter (1943) Sikorsky R-4 Sikorsky H-5/Kamov Ka-8 Irkutyanin/Flettner Fl-282
+model = {
+	cost 						= 0.5
+	buildtime					= 100
+	manpower 					= 0.01
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 2
+	subdetectioncapability		= 4
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
+# 1 - Basic Naval Scout Helicopter (1947) Bell H-13 Sioux/Mil Mi-1
+model = {
+	cost 						= 0.5
+	buildtime					= 101
+	manpower 					= 0.01
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 2
+	subdetectioncapability		= 4
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack				= 0
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
+# 2 - Improved ASW Helicopter (1953) Westland Whirlwind /Mil Mi-4PL
+model = {
+	cost 						= 0.5
+	buildtime					= 110
+	manpower 					= 0.01
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 3
+	subdetectioncapability		= 6
+	airdefence					= 0
+	seaattack					= 1
+	convoyattack				= 1
+	subattack					= 2
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
+# 3 - Advanced ASW Helicopter (1961) Westland Sea King/Kamov Ka-25/Kaman SH-2 Seasprite
+model = {
+	cost 						= 0.5
+	buildtime					= 130
+	manpower 					= 0.01
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 4
+	subdetectioncapability		= 8
+	airdefence					= 0
+	seaattack					= 2
+	convoyattack				= 2
+	subattack					= 4
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
+# 4 - Modern ASW Helicopter (1978) Westland Lynx/Kamov Ka-27;
+model = {
+	cost 						= 0.5
+	buildtime					= 150
+	manpower 					= 0.01
+	surfacedetectioncapability	= 15
+	airdetectioncapability		= 6
+	subdetectioncapability		= 11
+	airdefence					= 0
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 6
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}
+
+# 5 - Improved Modern ASW Helicopter (1999) AgustaWestland AW101/Sikorsky CH-148 Cyclone/Eurocopter EC725/Kamov Ka-40
+model = {
+	cost 						= 0.5
+	buildtime					= 150
+	manpower 					= 0.01
+	surfacedetectioncapability	= 18
+	airdetectioncapability		= 9
+	subdetectioncapability		= 15
+	airdefence					= 0
+	seaattack					= 7
+	convoyattack				= 7
+	subattack					= 9
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0.03
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0.1
+	upgrade_time_factor 		= 0.8
+	upgrade_cost_factor 		= 0.6
+	equipment = {
+		helicopter = 1
+		manpower = 2
+	}
+}

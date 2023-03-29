@@ -1,0 +1,36 @@
+CAN;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+220003;Imperial Oil;100050;6;1880;2000;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220002;Canadian Pacific Railway;100049;5;1881;2000;mechanics;general_equipment;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220007;Montreal Locomotive Works;T906;5;1883;2000;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220017;University of Toronto;T916;4;1900;2000;mathematics;mechanics;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220020;Bell Canada;100051;6;1880;2000;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220018;Chalk River Laboratories;T917;5;1943;2000;mathematics;nuclear_physics;nuclear_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220001;Canadian Enfield Arsenal;T900;6;1890;2000;artillery;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220006;Leyland Motors;T311;7;1910;2000;mechanics;technical_efficiency;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220008;Canadian Vickers;T907;7;1897;2000;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220005;Kingston Shipbuilding Co.;T904;5;1908;1943;naval_engineering;technical_efficiency;electronics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220004;de Havilland Canada;T903;7;1928;2000;bomber_design;aeronautics;avionics;munitions;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220016;Avro Canada;T302;6;1945;2000;bomber_design;aeronautics;rocketry;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220013;Harold Baillie-Grohman;T912;5;1938;1946;naval_training;small_taskforce_tactics;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220015;Percy Nelles;T914;6;1930;1945;naval_training;large_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220019;Harry DeWolf;T918;5;1947;1960;naval_training;small_taskforce_tactics;carrier_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220022;William Bishop;100053;4;1917;1944;decentralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220010;C.N. Cuffe;T909;6;1930;2000;fighter_tactics;training;decentralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220012;George Croil;T911;4;1930;1944;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220011;Frank-Robert Miller;T910;6;1942;2000;bomber_tactics;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220024;Richard Hebden O'Grady Haly;100055;3;1900;1902;decentralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220026;Percy Lake;100057;4;1904;1908;centralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220027;William Dillon Otter;100058;5;1908;1910;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220023;Edward Hutton;100054;5;1898;1915;decentralized_execution;infantry_focus;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220025;Douglas Cochrane;100056;3;1902;1915;decentralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220029;Willoughby Garnons Gwatkin;team_noimage;4;1907;1922;centralized_execution;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220028;Colin John Mackenzie;team_noimage;4;1910;1931;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220021;Arthur Currie;100052;6;1914;1920;centralized_execution;large_unit_focus;large_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220009;Andrew McNaughton;T908;6;1939;1945;infantry_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220014;Henry Crerar;T913;5;1940;1960;infantry_focus;large_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220030;Royal Canadian Mounted Police;100711;6;1920;2000;small_unit_tactics;centralized_execution;vehicle_engineering;general_equipment;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220031;Halifax Shipyard Limited;100712;7;1920;2000;naval_engineering;naval_artillery;carrier_design;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220032;Frederick Banting;100713;8;1921;1941;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220033;Bombardier;T12800;5;1942;2000;general_equipment;mechanics;industrial_engineering;management;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220034;Canadian Car & Foundry;T12801;5;1909;1957;mechanics;technical_efficiency;artillery;vehicle_engineering;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+220035;Canadair;100714;6;1944;2000;fighter_design;aeronautics;general_equipment;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

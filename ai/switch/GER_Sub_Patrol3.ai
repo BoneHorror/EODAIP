@@ -1,0 +1,23 @@
+# South Atlantic Patrol 
+
+admiral = { 
+	target = { #These targets will be re-written in Sub Patrol AI too!
+		2679 = 140 #Evaluate Archangelsk Invasion
+		2678 = 140 #Evaluate Murmansk Invasion
+		2236 = 250 #Mexico Gulf
+		2232 = 260 #Grand Banks
+		2278 = 80 #Hunt British Convoys near Gibraltar
+		2279 = 80 #Hunt British Convoys near Gibraltar
+		2719 = 40 #Make sure no leftover soviet ships
+		2724 = 50 #Mare sure no leftover soviet ships
+		2696 = 1 #Clean up baltic
+	} 
+	core = { 
+		2719 #Clean up Baltic
+		2694 #Protect Denmark
+		2689 #Protect Alesund
+		2671 #Protect Narvik
+		2699 #Protect Channel invasions
+		2725 #Threaten Leningrad
+		} 
+}

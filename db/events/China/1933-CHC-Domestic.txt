@@ -1,0 +1,142 @@
+#-Domestic---------------------------------
+# 1330110031 CHC New United Front
+# 1330110032 CHC Sun Zhongshan's Legacy
+
+############
+# Domestic #
+############
+# 1330110031 New United Front
+event = {
+	id = 1330110031
+	random = no
+	country = CHC
+
+	#Triggered
+
+	name = EVT_1330110031_NAME
+	desc = EVT_1330110031_DESC
+
+	picture = "ccip_craf"
+	style = 2
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				headofstate = 260838 #CHC Wang Ming
+			}
+		}
+		name = EVT_1330110031_ACTION1 #Establish a new United Front
+		ai_chance = 80
+		command = { type = dissent value = 10 }
+		command = { type = relation which = CGX value = 100 }
+		command = { type = relation which = CYN value = 100 }
+		command = { type = relation which = CSX value = 100 }
+		command = { type = relation which = CXB value = 100 }
+		command = { trigger = { not = { relation = { which = CGX value = 100 } } } type = set_relation which = CGX value = 100 }
+		command = { trigger = { not = { relation = { which = CYN value = 100 } } } type = set_relation which = CYN value = 100 }
+		command = { trigger = { not = { relation = { which = CSX value = 100 } } } type = set_relation which = CSX value = 100 }
+		command = { trigger = { not = { relation = { which = CXB value = 100 } } } type = set_relation which = CXB value = 100 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = event which = 1330110032 where = CHC when = 7 } #Sun Zhongshan's Legacy
+	}
+
+	action = {
+		name = EVT_1330110031_ACTION2 #Purge untrustworthy elements
+		ai_chance = 20
+		command = { type = dissent value = 20 }
+		command = { type = relation which = CGX value = -100 }
+		command = { type = relation which = CYN value = -100 }
+		command = { type = relation which = CSX value = -100 }
+		command = { type = relation which = CXB value = -100 }
+		command = { trigger = { relation = { which = CGX value = -100 } } type = set_relation which = CGX value = -100 }
+		command = { trigger = { relation = { which = CYN value = -100 } } type = set_relation which = CYN value = -100 }
+		command = { trigger = { relation = { which = CSX value = -100 } } type = set_relation which = CSX value = -100 }
+		command = { trigger = { relation = { which = CXB value = -100 } } type = set_relation which = CXB value = -100 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = event which = 1330110032 where = CHC when = 7 } #Sun Zhongshan's Legacy
+	}
+}
+
+# 1330110032 Sun Zhongshan's Legacy
+event = {
+	id = 1330110032
+	random = no
+	country = CHC
+
+	#Triggered
+
+	name = EVT_1330110032_NAME
+	desc = EVT_1330110032_DESC
+
+	picture = "ccip_mus"
+	style = 2
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { puppet = { country = CHC country = SOV } }
+			}
+		}
+		name = EVT_1330110032_ACTION1 #Socialism (Sun)
+		ai_chance = 30
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = freedom value = 4 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = free_market value = 5 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				and = {
+					or = {
+						headofstate = 260848 #CHC Mao Zedong
+						random = 30
+					}
+					or = {
+						not = { headofstate = 260810 } #CHC Deng Xiaoping
+						random = 50
+					}
+					not = { puppet = { country = CHC country = SOV } }
+				}
+			}
+		}
+		name = EVT_1330110032_ACTION2 #Decentralized Communism (Mao)
+		ai_chance = 60
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = freedom value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = set_domestic which = free_market value = 4 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				or = {
+					and = {
+						relation = { which = SOV value = 0 }
+						headofstate = 260838 #CHC Wang Ming
+					}
+					and = {
+						relation = { which = SOV value = 100 }
+						random = 50
+						not = { headofstate = 260848 } #CHC Mao Zedong
+						not = { headofstate = 260810 } #CHC Deng Xiaoping
+					}
+					random = 50
+				}
+				puppet = { country = CHC country = SOV }
+			}
+		}
+		name = EVT_1330110032_ACTION3 #Centralized Communism (Stalin)
+		ai_chance = 60
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = freedom value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = free_market value = 2 }
+	}
+}

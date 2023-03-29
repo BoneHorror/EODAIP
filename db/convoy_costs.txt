@@ -1,0 +1,12 @@
+transports = {
+	cost		= 4
+	buildtime 	= 40
+	manpower	= 0.01
+	size		= 15
+}
+escorts = {
+	cost		= 4
+	buildtime 	= 80
+	manpower	= 0.15
+	size		= 10
+}

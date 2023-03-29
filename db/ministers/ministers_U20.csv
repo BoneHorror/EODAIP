@@ -1,0 +1,55 @@
+U20;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+915001;Head of State;Juho K. Paasikivi;1945;1964;1999;LWR;Autocratic Charmer;High;2509;X
+915002;Head of State;Otto Ville Kuusinen;1933;1964;1999;ST;Ruthless Powermonger;High;2513;X
+915003;Head of Government;V. Kivisalo;1933;1964;1999;LWR;Naive Optimist;High;2514;X
+915004;Head of Government;Mauno Pekkala;1945;1964;1999;LWR;Political Protege;High;2516;X
+915005;Head of Government;Otto Ville Kuusinen;1939;1964;1999;ST;Flamboyant Tough Guy;High;2513;X
+915006;Foreign Minister;Anselmi Pitkäsilta;1933;1964;1999;LWR;Apologetic Clerk;Medium;M29067;X
+915007;Foreign Minister;V. Kivisalo;1943;1964;1999;LWR;Iron Fisted Brute;Very High;2514;X
+915008;Foreign Minister;Carl J. Enckell;1944;1964;1999;LWR;Great Compromiser;Medium;2521;X
+915009;Foreign Minister;Otto Ville Kuusinen;1939;1964;1999;ST;Apologetic Clerk;Low;2513;X
+915010;Foreign Minister;Hella M. Wuolijoki;1942;1964;1999;ST;Great Compromiser;Low;2523;X
+915011;Minister of Armament;V. Viljam Sinisalo;1933;1964;1999;LWR;Strategic Air Proponent;Medium;M29082;X
+915012;Minister of Armament;Karl-August Fagerholm;1943;1964;1999;LWR;Keynesian economy;Medium;2524;X
+915013;Minister of Armament;Mauno Pekkala;1944;1964;1999;LWR;Theoretical Scientist;Medium;2516;X
+915014;Minister of Armament;Otto Toivonen;1946;1964;1999;LWR;Military Entrepreneur;Medium;M29085;X
+915015;Minister of Armament;Mauritz F. Rosenberg;1939;1964;1999;ST;Planned economy proponent;Low;2526;X
+915016;Minister of Security;Hugo E. Aattela;1943;1964;1999;LWR;Prince of Terror;Medium;2527;X
+915017;Minister of Security;Valfrid Eskola;1944;1964;1999;LWR;Back Stabber;Medium;2528;X
+915018;Minister of Security;Olavi I. Kajala;1946;1964;1999;LWR;Crime Fighter;Medium;2529;X
+915019;Minister of Security;Yrjö K. Leino;1933;1964;1999;ST;Secret police chief;Low;M29025;X
+915020;Head of Military Intelligence;Edvard Kajala;1933;1964;1999;LWR;Naval Intelligence Specialist;High;M29120;X
+915021;Head of Military Intelligence;Bruno Suviranta;1944;1964;1999;LWR;Dismal Enigma;High;2533;X
+915022;Head of Military Intelligence;Tuure V. Lehén;1939;1964;1999;ST;Political Specialist;High;2536;X
+915023;Chief of Staff;Leonard A. M. Grandell;1933;1964;1999;LWR;School of Fire Support;Very High;392;X
+915024;Chief of Staff;Akseli Anttila;1939;1964;1999;ST;School of Mass Combat;Very High;2537;X
+915025;Chief of Army;Kaarle Väinö Voionmaa;1933;1964;1999;LWR;Guns and Butter Doctrine;Very High;M29140;X
+915026;Chief of Army;Akseli Anttila;1939;1964;1999;ST;Guns and Butter Doctrine;Very High;2537;X
+915027;Chief of Navy;Claes H.;1933;1964;1999;LWR;Open Seas Doctrine;High;M29148;X
+915028;Chief of Navy;Eero Rahola;1939;1964;1999;ST;Indirect Approach Doctrine;Very High;M29029;X
+915029;Chief of Air Force;V. V. Valtsu Porvari;1933;1964;1999;LWR;Army Aviation Doctrine;Very High;2539;X
+915030;Chief of Air Force;Akseli Anttila;1939;1964;1999;ST;Army Aviation Doctrine;Very High;2537;X
+915031;Head of Government;Karl-August Fagerholm;1948;1964;1999;LWR;Ambitious Union Boss;High;2524;X
+915032;Minister of Armament;Ralf J. G. Törngren;1948;1964;1999;LWR;Military Entrepreneur;Medium;2540;X
+915033;Minister of Security;Karl-August Fagerholm;1948;1964;1999;LWR;Man of the People;Medium;2524;X
+915034;Chief of Staff;Johannes Sihvo;1948;1964;1999;LWR;School of Psychology;Very High;419;X
+915035;Chief of Army;K. Lauri T. Malmberg;1947;1964;1999;LWR;Armoured Spearhead Doctrine;Very High;407;X
+915036;Chief of Navy;Jouko O. Arho;1948;1964;1999;LWR;Indirect Approach Doctrine;Medium;L9757;X
+915037;Chief of Air Force;Olavi Sarko;1948;1964;1999;LWR;Vertical Envelopment Doctrine;Very High;L9777;X
+915038;Head of State;Valfrid Perttilä;1914;1954;1954;LE;ruthless powermonger;High;8358;X
+915039;Head of Government;Kullervo Manner;1914;1940;1966;LE;happy amateur;High;8361;X
+915040;Foreign Minister;Yrjö Sirola;1914;1937;1937;LE;Ideological Crusader;Low;8582;X
+915041;Minister of Armament;Oskari Tokoi;1914;1964;1964;LE;Military Entrepreneur;Medium;8583;X
+915042;Minister of Armament;Jalo Kohonen;1914;1936;1970;LE;Planned economy proponent;Medium;8584;X
+915043;Minister of Security;Eero Haapalainen;1914;1938;1966;LE;Back Stabber;Medium;8585;X
+915044;Minister of Security;Adolf Taimi;1914;1955;1955;LE;Crime Fighter;Medium;8587;X
+915045;Minister of Security;Lauri Letonmäki;1914;1936;1972;LE;compassionate gentleman;Low;8588;X
+915046;Head of Military Intelligence;Ali Aaltonen;1914;1919;1960;LE;Logistics Specialist;High;8589;X
+915047;Chief of Staff;Ali Aaltonen;1914;1919;1960;LE;School of Fire Support;Very High;8589;X
+915048;Chief of Staff;Mikhail Stepanovich Svechnikov;1914;1939;1939;LE;school of manoeuvre;Very High;8590;X
+915049;Chief of Army;Eero Haapalainen;1914;1938;1966;LE;static defence doctrine;Very High;8585;X
+915050;Chief of Army;Eino Rahja;1914;1937;1961;LE;Doctrine of autonomy;Very High;8604;X
+915051;Chief of Army;Mikhail Stepanovich Svechnikov;1914;1939;1939;LE;decisive battle doctrine;Very High;8590;X
+915052;Chief of Navy;Eero Haapalainen;1914;1938;1966;LE;decisive naval battle doctrine;Medium;8585;X
+915053;Chief of Air Force;Eero Haapalainen;1914;1938;1966;LE;air superiority doctrine;Very High;8585;X

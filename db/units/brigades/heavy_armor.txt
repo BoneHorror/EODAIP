@@ -1,0 +1,124 @@
+# BRIG_MODEL_8_
+
+# 0 - Great War Heavy Tank (1917)
+model = {
+	cost 				= 8
+	buildtime	 		= 160
+	manpower 			= 3.0
+	maxspeed 			= 0
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 5
+	softness			= -7
+	hardattack			= 2
+	softattack			= 1
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 3
+	upgrade_time_factor = 0.95
+	upgrade_cost_factor = 0.95
+	medium_armor		= 0		# Upgrade to 1924 Medium Armor Brigade
+	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+	speed_cap			= 6
+	equipment = { manpower = 2500 heavy_armor = 24 }
+	}
+	
+# 1 - Basic Heavy Tank (1939)
+model = {
+	cost 				= 8
+	buildtime	 		= 160
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 5
+	softness			= -7
+	hardattack			= 3
+	softattack			= 2
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 13
+	equipment = { manpower = 2500 heavy_armor = 80 }
+}
+
+# 2 - Improved Heavy Tank (1941)
+model = {
+	cost 				= 9
+	buildtime	 		= 160
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 5
+	softness			= -7
+	hardattack			= 4
+	softattack			= 2
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 5
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 12
+	equipment = { manpower = 2500 heavy_armor = 94  }
+}
+
+# 3 - Advanced Heavy Tank (1943)
+model = {
+	cost 				= 10
+	buildtime	 		= 160
+	manpower 			= 2.5
+	maxspeed 			= 0
+	defensiveness 		= -4
+	defaultorganisation = 5
+	toughness 			= -4
+	softness			= -7
+	hardattack			= 5
+	softattack			= 2
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 5.2
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 17
+	equipment = { manpower = 2500 heavy_armor = 102  }
+}
+
+# 4 - Semi-modern Heavy Tank (1945)
+model = {
+	cost 				= 11
+	buildtime	 		= 160
+	manpower 			= 2.5
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 5
+	maxspeed 			= 0
+	softness			= -7
+	hardattack			= 6
+	softattack			= 3
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 5.4
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 18
+	equipment = { manpower = 2500 heavy_armor = 111 }
+}
+
+# 5 - Modern Heavy Tank (1955)
+model = {
+	cost 				= 12
+	buildtime	 		= 160
+	manpower 			= 2.5
+	defensiveness 		= -4
+	toughness 			= -4
+	defaultorganisation = 5
+	maxspeed 			= 0
+	softness			= -7
+	hardattack			= 7
+	softattack			= 6
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 5.8
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 20
+	medium_armor = 9
+	equipment = { manpower = 2500 heavy_armor = 98  }
+}

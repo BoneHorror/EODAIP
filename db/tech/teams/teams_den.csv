@@ -1,0 +1,28 @@
+DEN;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+75001;Absalon;T200;3;1930;2000;mechanics;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75002;Atlas A/S;T201;3;1930;2000;aeronautics;naval_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75003;Burmeister & Wain;100079;6;1872;2000;naval_engineering;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75004;Niels Bohr;T203;8;1921;1943;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75005;F.L. Smidt;100080;7;1882;2000;mechanics;industrial_engineering;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75006;HF Vaerkstader;T205;3;1930;2000;aeronautics;aircraft_testing;general_equipment;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75007;Dansk Industri Syndikat;T206;4;1930;2000;mechanics;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75008;Sadolin & Holmblad A/S;T207;3;1912;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75009;Vølund;T208;4;1930;2000;mechanics;naval_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75010;Royal Danish Army;T209;4;1900;2000;small_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75011;Royal Danish Air Force;T210;3;1945;2000;fighter_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75012;Hærens Flyvertropper;100829;3;1912;2000;bomber_tactics;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75013;Asger Emil Valdemar Grandjean;T212;3;1930;1948;bomber_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75014;Aage Vedel;T213;4;1941;1958;seamanship;large_taskforce_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75015;Hjalmar Rechnitzer;100081;3;1914;1942;submarine_tactics;small_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75016;Novo Nordisk;T215;6;1930;2000;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75017;Svend Pontoppidan;T216;4;1958;1966;seamanship;small_taskforce_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75018;Nielsen & Winther A/S;100082;3;1916;2000;aeronautics;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75019;Danske Statsbaner;100083;2;1885;2000;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75020;Vilhelm Madsen;100084;4;1879;1900;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75021;Compagnie Madsen A/S;100085;6;1900;2000;general_equipment;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75022;Orlogsværftet;100086;6;1890;2000;naval_engineering;naval_artillery;technical_efficiency;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75023;Anton Ferdinand Mazanti Evers;100087;4;1914;1924;naval_training;seamanship;centralized_execution;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75024;Asger Emil Valdemar Grandjean;100088;4;1918;1948;fighter_tactics;piloting;carrier_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75025;Søofficersskolen;100375;4;1869;1903;naval_training;seamanship;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+75026;Kadetskolen;100375;5;1903;1914;naval_training;seamanship;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+750260;Forsvarets Efterretningstjeneste;T750260;6;1950;2013;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

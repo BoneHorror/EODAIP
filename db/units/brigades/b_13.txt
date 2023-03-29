@@ -1,0 +1,49 @@
+detachable = yes
+
+# 0 - Early VSTOL Aircraft (1967) Hawker Siddeley Harrier/Rockwell XFV-12/Yakovlev Yak-36/Dassault Mirage IIIV
+model = {
+	cost 				= 1
+	buildtime	 		= 300
+	manpower 			= 0.1
+	defaultorganisation = 0
+	suppression			= 2
+	hardattack			= 10
+	softattack			= 13
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 2
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 100 fighter = 32  }
+}
+
+# 1 - Basic VSTOL Aircraft (1970) Harrier GR.3/Yakovlev Yak-38
+model = {
+	cost 				= 1.25
+	buildtime	 		= 325
+	manpower 			= 0.1
+	defaultorganisation = 0
+	suppression			= 2
+	hardattack			= 11
+	softattack			= 14
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 2
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 100 fighter = 32  }
+}
+
+# 2 - Improved VSTOL Aircraft (1976) British Aerospace Harrier II/McDonnell Douglas AV-8B Harrier II/Yakovlev Yak-141
+model = {
+	cost 				= 1.25
+	buildtime	 		= 325
+	manpower 			= 0.1
+	defaultorganisation = 0
+	suppression			= 2
+	hardattack			= 11
+	softattack			= 14
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 2
+	upgrade_time_factor = 0.4
+	upgrade_cost_factor = 0.6
+	equipment = { manpower = 100 fighter = 32  }
+}

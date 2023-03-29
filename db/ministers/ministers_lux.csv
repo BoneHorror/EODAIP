@@ -1,0 +1,100 @@
+LUX;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+385001;Head of State;Charlotte;1933;1964;1999;SC;Autocratic Charmer;High;M66001;X
+385002;Head of Government;Joseph Bech;1926;1975;1999;SC;Naive Optimist;High;M66002;X
+385003;Foreign Minister;Joseph Bech;1933;1964;1999;SC;Ideological Crusader;Very High;M66002;X
+385004;Minister of Armament;Pierre Dupong;1933;1964;1999;SC;laissez-faire capitalist;Very High;M66004;X
+385005;Minister of Security;Norbert Dumont;1933;1964;1999;SC;Crime Fighter;Very High;M66005;X
+385006;Head of Military Intelligence;Nicholas Marque;1933;1964;1999;SC;Industrial Specialist;Very High;M66006;X
+385007;Chief of Staff;Pierre Dupong;1933;1964;1999;SC;School of Defence;Very High;M66004;X
+385008;Chief of Army;Emile Speller;1933;1964;1999;SC;Static Defence Doctrine;Very High;M66008;X
+385009;Chief of Navy;Emile Speller;1933;1964;1999;SC;Open Seas Doctrine;Very High;M66008;X
+385010;Chief of Air Force;Nicholas Diedrich;1933;1964;1999;SC;Army Aviation Doctrine;Very High;M66010;X
+385011;Head of State;Alexander von Falkenhausen;1940;1964;1999;FA;Resigned Generalissimo;High;M66034;X
+385012;Head of State;Guillaume Soisson;1945;1964;1999;PA;Popular Figurehead;High;M66016;X
+385013;Head of State;Paul Medinger;1933;1964;1999;LE;Pig-headed Isolationist;High;M66021;X
+385014;Head of State;Martin Karp;1945;1964;1999;LWR;Die-hard Reformer;High;M66024;X
+385015;Head of Government;Pierre Dupong;1937;1964;1999;SC;Silent Workhorse;High;M66004;X
+385016;Head of Government;René Blum;1933;1964;1999;SD;Ambitious Union Boss;High;M66039;X
+385017;Head of Government;Damian Kratzenberg;1933;1964;1999;FA;Corporate Suit;High;M66011;X
+385018;Head of Government;Guillaume Soisson;1945;1964;1999;PA;Happy Amateur;High;M66016;X
+385019;Head of Government;Paul Medinger;1933;1964;1999;LE;Ambitious Union Boss;High;M66021;X
+385020;Head of Government;Martin Karp;1945;1964;1999;LWR;Corporate Suit;High;M66024;X
+385021;Foreign Minister;Pierre Krier;1933;1964;1999;SD;Apologetic Clerk;High;M66045;X
+385022;Foreign Minister;René Blum;1939;1964;1999;SD;Iron Fisted Brute;High;M66039;X
+385023;Foreign Minister;Damian Kratzenberg;1933;1964;1999;FA;Biased Intellectual;Low;M66011;X
+385024;Foreign Minister;Henri Ahnen;1945;1964;1999;PA;Iron Fisted Brute;Medium;M66015;X
+385025;Foreign Minister;Paul Medinger;1933;1964;1999;LE;Biased Intellectual;Medium;M66021;X
+385026;Foreign Minister;Francois Schammel;1945;1964;1999;LWR;General Staffer;Very High;M66050;X
+385027;Minister of Armament;Jules Keiffer;1944;1964;1999;SC;Military Entrepreneur;Medium;M66052;X
+385028;Minister of Armament;Auguste Oster;1945;1964;1999;SC;Administrative Genius;High;M66053;X
+385029;Minister of Armament;Pierre Krier;1933;1964;1999;SD;Resource Industrialist;High;M66045;X
+385030;Minister of Armament;Alex Federspiel;1940;1964;1999;SD;Infantry Proponent;Medium;M66055;X
+385031;Minister of Armament;Gustave Farver;1933;1964;1999;FA;Tank Proponent;Medium;M66014;X
+385032;Minister of Armament;Philip Hoffmann;1945;1964;1999;PA;Theoretical Scientist;Medium;M66057;X
+385033;Minister of Armament;Martin Karp;1933;1964;1999;LE;Infantry Proponent;Medium;M66024;X
+385034;Minister of Armament;Jean Pierre Kauder;1945;1964;1999;LWR;Military Entrepreneur;Medium;M66025;X
+385035;Minister of Security;Nicolas Braunshausen;1933;1964;1999;SC;Back Stabber;High;M66060;X
+385036;Minister of Security;Etienne Schmit;1937;1964;1999;SC;Silent Lawyer;High;M66061;X
+385037;Minister of Security;Joseph Bech;1938;1964;1999;SC;Compassionate Gentleman;Very High;M66002;X
+385038;Minister of Security;Robert Als;1944;1964;1999;SC;Crime Fighter;High;M66063;X
+385039;Minister of Security;Victor Bodson;1946;1964;1999;SC;Man of the People;High;M66064;X
+385040;Minister of Security;René Blum;1933;1964;1999;SD;Crime Fighter;Very High;M66039;X
+385041;Minister of Security;Joseph Goedert;1944;1964;1999;SD;Compassionate Gentleman;Medium;M66066;X
+385042;Minister of Security;Henri Ahnen;1933;1964;1999;FA;Compassionate Gentleman;Medium;M66015;X
+385043;Minister of Security;Jean Pierre Kauder;1933;1964;1999;LE;Man of the People;Medium;M66025;X
+385044;Minister of Security;Michel Hansen;1945;1964;1999;LWR;Efficient Sociopath;High;M66070;X
+385045;Head of Military Intelligence;Edmond Klein;1940;1964;1999;SC;Dismal Enigma;Very High;M66072;X
+385046;Head of Military Intelligence;Joseph Tockert;1933;1964;1999;SD;Technical Specialist;Very High;M66073;X
+385047;Head of Military Intelligence;Francois Schammel;1944;1964;1999;SD;Logistics Specialist;Very High;M66050;X
+385048;Head of Military Intelligence;Charles Becker;1945;1964;1999;SD;Political Specialist;Very High;M66075;X
+385049;Head of Military Intelligence;Guillaume Soisson;1933;1964;1999;FA;Logistics Specialist;Medium;M66016;X
+385050;Head of Military Intelligence;Max Simon;1940;1964;1999;FA;Political Specialist;Medium;M66077;X
+385051;Head of Military Intelligence;Jules Prussen;1945;1964;1999;PA;Technical Specialist;High;M66078;X
+385052;Head of Military Intelligence;Jean Pierre Kauder;1933;1964;1999;LE;Industrial Specialist;Medium;M66025;X
+385053;Head of Military Intelligence;Max Weckering;1945;1964;1999;LWR;Dismal Enigma;Low;M66080;X
+385054;Chief of Staff;Jean Seurlis;1940;1964;1999;SC;School of Psychology;Very High;M66082;X
+385055;Chief of Staff;Alex Federspiel;1933;1964;1999;SD;School of Fire Support;Medium;M66055;X
+385056;Chief of Staff;Francois Schammel;1944;1964;1999;SD;School of Mass Combat;Very High;M66050;X
+385057;Chief of Staff;Aloyse Glodt;1933;1964;1999;FA;School of Fire Support;Medium;M66017;X
+385058;Chief of Staff;Martin Karp;1933;1964;1999;LE;School of Mass Combat;Medium;M66024;X
+385059;Chief of Army;Felix Bourbon-Parma;1940;1964;1999;SC;Armoured Spearhead Doctrine;Very High;M66090;X
+385060;Chief of Army;Aloyse Glodt;1933;1964;1999;FA;Armoured Spearhead Doctrine;Medium;M66017;X
+385061;Chief of Army;Alexander von Falkenhausen;1940;1964;1999;FA;Decisive Battle Doctrine;Medium;M66034;X
+385062;Chief of Army;Martin Karp;1933;1964;1999;LE;Elastic Defence Doctrine;Medium;M66024;X
+385063;Chief of Navy;Henri Ahnen;1933;1964;1999;FA;Indirect Approach Doctrine;Medium;M66015;X
+385064;Chief of Navy;Paul Medinger;1933;1964;1999;LE;Base Control Doctrine;Medium;M66021;X
+385065;Chief of Air Force;Guillaume Soisson;1933;1964;1999;FA;Air Superiority Doctrine;Medium;M66016;X
+385066;Chief of Air Force;Jean Marc Steffen;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M66030;X
+385067;Head of State;Charlotte;1945;1964;1999;FA;Autocratic Charmer;High;M66001;X
+385068;Chief of Navy;Pierre Fischbach;1940;1964;1999;SC;Open Seas Doctrine;Very High;M66111;X
+385069;Minister of Security;Max Simon;1940;1964;1999;FA;Prince of Terror;Medium;M66077;X
+385070;Minister of Security;Eugene Schaus;1946;1964;1999;SL;Man of the People;Medium;M66114;X
+385071;Head of Military Intelligence;Joseph Wohlfart;1951;1964;1999;ML;Industrial Specialist;Very High;M66115;X
+385072;Foreign Minister;Paul Eyschen;1914;1933;1999;ML;GENERAL STAFFER;High;2825;X
+385073;Foreign Minister;Hubert Loutsch;1915;1933;1999;ML;GENERAL STAFFER;High;3906;X
+385074;Foreign Minister;Léon Kauffman;1917;1933;1999;ML;APOLOGETIC CLERK;High;3907;X
+385075;Foreign Minister;Émile Reuter;1918;1933;1999;ML;Great Compromiser;High;3908;X
+385076;Head of Government;Paul Eyschen;1914;1933;1999;ML;Happy Amateur;High;2825;X
+385077;Head of Government;Mathias Mongenast;1915;1933;1999;ML;Happy Amateur;High;2826;X
+385078;Head of Government;Hubert Loutsch;1915;1933;1999;ML;Smiling Oilman;High;3906;X
+385079;Head of Government;Victor Thorn;1916;1933;1999;ML;Naive Optimist;High;3909;X
+385080;Head of Government;Léon Kauffman;1917;1933;1999;ML;Silent Workhorse;High;3907;X
+385081;Head of Government;Émile Reuter;1918;1933;1999;ML;Flamboyant Tough Guy;High;3908;X
+385082;Head of Military Intelligence;Jaques Tillmany;1914;1933;1999;ST;political specialist;High;unknownminister;X
+385083;Head of State;Maria-Adelheid;1914;1933;1999;SL;Insignificant Layman;High;2827;X
+385084;Head of State;Maria-Adelheid;1914;1933;1999;PA;Insignificant Layman;High;2827;X
+385085;Head of State;Aloys Kaiser;1914;1933;1999;ST;Die-hard Reformer;High;unknownminister;X
+385086;Head of State;Charlotte;1919;1933;1999;PA;Popular Figurehead;High;2828;X
+385087;Head of State;Charlotte;1919;1933;1999;SL;Popular Figurehead;High;2828;X
+385088;Minister of Armament;Mathias Mongenast;1914;1933;1999;ML;Administrative Genius;High;2826;X
+385089;Minister of Armament;Edmond Reiffers;1915;1933;1999;ML;laissez-faire capitalist;High;unknownminister;X
+385090;Minister of Armament;Léon Kauffman;1916;1933;1999;ML;INFANTRY PROPONENT;High;3907;X
+385091;Minister of Armament;Alphonse Neyens;1918;1933;1999;ML;Administrative Genius;High;unknownminister;X
+385092;Minister of Security;Pierre Braun;1914;1933;1999;ML;BACK STABBER;High;unknownminister;X
+385093;Minister of Security;Ernest Leclere;1915;1933;1999;ML;Silent Lawyer;High;unknownminister;X
+385094;Minister of Security;Jean-Baptiste Sax;1915;1933;1999;ML;COMPASSIONATE GENTLEMAN;High;unknownminister;X
+385095;Minister of Security;Léon Moutrier;1916;1933;1999;ML;CRIME FIGHTER;High;unknownminister;X
+385096;Minister of Security;Maurice Kohn;1917;1933;1999;ML;Silent Lawyer;High;unknownminister;X
+385097;Minister of Security;Émile Reuter;1918;1933;1999;ML;PRINCE OF TERROR;High;3908;X
+385098;Minister of Security;Joseph Bech;1921;1933;1999;ML;MAN OF THE PEOPLE;High;3910;X

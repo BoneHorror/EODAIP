@@ -1,0 +1,51 @@
+UTC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+1335001;Head of State;Mikhail Alekseyev ;1914;1918;1999;PA;stern imperialist;Medium;8732;X
+1335002;Head of State;Anton Denikin;1914;1932;1999;PA;autocratic charmer;Medium;8696;X
+1335003;Head of State;Pyotr Vrangel;1914;1932;1999;PA;popular figurehead;Medium;5670;X
+1335004;Head of Government;Mikhail Alekseyev ;1914;1918;1999;PA;backroom backstabber;Medium;8732;X
+1335005;Head of Government;Abram Dragomirov;1914;1932;1999;PA;silent workhorse;Medium;8676;X
+1335006;Head of Government;Aleksandr Lukomsky;1914;1932;1999;PA;flamboyant tough guy;Medium;4801;X
+1335007;Head of Government;Afrikan Bogayevsky;1914;1932;1999;PA;naive optimist;Medium;4160;X
+1335008;Head of Government;Aleksandr Krivoshein;1914;1932;1999;PA;corporate suit;Medium;8685;X
+1335009;Foreign Minister;Mikhail Alekseyev ;1914;1918;1999;PA;iron fisted brute;Medium;8732;X
+1335010;Foreign Minister;Sergey Sazonov;1914;1932;1999;PA;general staffer;Medium;8801;X
+1335011;Foreign Minister;Anatoliy Neratov;1914;1932;1999;PA;ideological crusader;Medium;8802;X
+1335012;Foreign Minister;Nikolay Baratov;1914;1932;1999;PA;great compromiser;Medium;4098;X
+1335013;Foreign Minister;Pyotr Struve;1914;1932;1999;PA;apologetic clerk;Medium;8761;X
+1335014;Foreign Minister;Grigoriy Trubetskoy;1914;1932;1999;PA;biased intellectual;Medium;8713;X
+1335015;Minister of Armament;Mikhail Alekseyev ;1914;1918;1999;PA;administrative genius;Medium;8732;X
+1335016;Minister of Armament;I. A. Geiman;1914;1932;1999;PA;laissez-faire capitalist;Medium;unknownminister;X
+1335017;Minister of Armament;Vladimir Lebedev;1914;1932;1999;PA;corrupt kleptocrat;Medium;8782;X
+1335018;Minister of Armament;Mikhail Bernatsky;1914;1932;1999;PA;resource industrialist;Medium;8739;X
+1335019;Minister of Armament;V. S. Nalbandov;1914;1932;1999;PA;theoretical scientist;Medium;8773;X
+1335020;Minister of Armament;B. V. Matysevich;1914;1932;1999;PA;Steel magnate;Medium;unknownminister;X
+1335021;Minister of Armament;Aleksandr Lukomsky;1914;1932;1999;PA;infantry proponent;Medium;4801;X
+1335022;Minister of Armament;Vasiliy Vyazmitinov;1914;1932;1999;PA;tank proponent;Medium;8774;X
+1335023;Minister of Armament;Nikolay Tikhmenev ;1914;1932;1999;PA;military entrepreneur;Medium;8743;X
+1335024;Minister of Armament;Anatoliy Kelchevsky ;1914;1932;1999;PA;battle fleet proponent;Medium;8724;X
+1335025;Minister of Armament;Vladimir Nikolsky;1914;1932;1999;PA;submarine proponent;Medium;8789;X
+1335026;Minister of Armament;Pavel Shatilov;1914;1932;1999;PA;air to ground proponent;Medium;5292;X
+1335027;Minister of Armament;Sergey Evdokimov;1914;1932;1999;PA;air superiority proponent;Medium;8769;X
+1335028;Minister of Security;Mikhail Alekseyev ;1914;1918;1999;PA;back stabber;Medium;8732;X
+1335029;Minister of Security;Nikolay Astrov;1914;1932;1999;PA;efficient sociopath;Medium;8742;X
+1335030;Minister of Security;Nikolay Chebyshev;1914;1932;1999;PA;crooked kleptocrat;Medium;8803;X
+1335031;Minister of Security;Nikolay Tagantsev;1914;1932;1999;PA;Media magnate;Medium;8804;X
+1335032;Minister of Security;Nikolay Martos;1914;1932;1999;PA;Health and safety;Medium;8805;X
+1335033;Head of Military Intelligence;Vasiliy Shulgin;1914;1932;1999;PA;logistics specialist;Medium;8775;X
+1335034;Head of Military Intelligence;Pavel Shatilov;1914;1932;1999;PA;political specialist;Medium;5292;X
+1335035;Head of Military Intelligence;Evgeniy Klimovich ;1914;1932;1999;PA;dismal enigma;Medium;8707;X
+1335036;Head of Military Intelligence;Aleksei Dvigubsky;1914;1932;1999;PA;technical specialist;Medium;8806;X
+1335037;Chief of Staff;Anton Denikin;1914;1932;1999;PA;school of fire support;Medium;8696;X
+1335038;Chief of Staff;Ivan Romanovsky;1914;1932;1999;PA;school of manoeuvre;Medium;8721;X
+1335039;Chief of Staff;Nikolay Efimov;1914;1932;1999;PA;school of defence;Medium;8748;X
+1335040;Chief of Staff;Yakov Yuzefovich;1914;1932;1999;PA;school of psychology;Medium;8723;X
+1335041;Chief of Staff;Dmitriy von Siegel ;1914;1932;1999;PA;school of mass combat;Medium;8704;X
+1335042;Chief of Army;Lavr Kornilov;1914;1918;1999;PA;guns and butter doctrine;Medium;4675;X
+1335043;Chief of Army;Anton Denikin;1914;1932;1999;PA;armoured spearhead doctrine;Medium;8696;X
+1335044;Chief of Army;Vladimir May-Maevsky;1914;1932;1999;PA;decisive battle doctrine;Medium;4873;X
+1335045;Chief of Army;Pyotr Vrangel;1914;1932;1999;PA;static defence doctrine;Medium;5670;X
+1335046;Chief of Navy;Vasiliy Kanin;1914;1932;1999;PA;base control doctrine;Medium;4547;X
+1335047;Chief of Navy;Mikhail Sablin;1914;1920;1999;PA;open seas doctrine;Medium;5228;X
+1335048;Chief of Navy;Dmitriy Nenyukov;1914;1932;1999;PA;decisive naval battle doctrine;Medium;4951;X
+1335049;Chief of Navy;Mikhail Kedrov;1914;1932;1999;PA;power projection doctrine;Medium;4575;X
+1335050;Chief of Air Force;Ivan Kravtsevich;1914;1932;1999;PA;army aviation doctrine;Medium;8807;X

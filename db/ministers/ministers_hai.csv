@@ -1,0 +1,128 @@
+HAI;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+350001;Head of State;Stenio Vincent;1930;1964;1999;SC;Pig-headed Isolationist;High;M78001;X
+350002;Head of Government;Stenio Vincent;1930;1964;1999;SC;Corporate Suit;High;M78001;X
+350003;Foreign Minister;Albert Blanchet;1933;1964;1999;SC;Apologetic Clerk;High;M78003;X
+350004;Minister of Armament;Élie Lescot;1933;1964;1999;SC;Infantry Proponent;Medium;9803;X
+350005;Minister of Security;Luis Dabtes Bellegarde;1933;1964;1999;SC;Crooked Kleptocrat;Medium;M78005;X
+350006;Head of Military Intelligence;Sebastien de Arrondé;1933;1964;1999;SC;Political Specialist;Medium;M78006;X
+350007;Chief of Staff;Élie Lescot;1933;1964;1999;SC;School of Fire Support;Medium;9803;X
+350008;Chief of Army;Élie Lescot;1933;1964;1999;SC;Static Defence Doctrine;Medium;9803;X
+350009;Chief of Navy;Alfred Nemours;1933;1964;1999;SC;Open Seas Doctrine;Medium;M78009;X
+350010;Chief of Air Force;G.Edouard Roy;1933;1964;1999;SC;Army Aviation Doctrine;Medium;M78010;X
+350011;Head of State;Élie Lescot;1941;1964;1999;SC;Resigned Generalissimo;High;9803;X
+350012;Head of State;Louis Dejoie;1946;1964;1999;SC;Die-hard Reformer;High;M78033;X
+350013;Head of State;Dumarsais Estimé;1937;1964;1999;SL;Popular Figurehead;High;M78034;X
+350014;Head of State;Franck Lavaud;1946;1964;1999;PA;Resigned Generalissimo;High;M78035;X
+350015;Head of State;F. d'Orleans Juste Constant;1937;1964;1999;LWR;Insignificant Layman;High;M78021;X
+350016;Head of State;Demosthenes Calixte;1946;1964;1999;LWR;Popular Figurehead;High;M78037;X
+350017;Head of Government;Élie Lescot;1941;1964;1999;SC;Old General;High;9803;X
+350018;Head of Government;Louis Dejoie;1946;1964;1999;SC;Backroom Backstabber;High;M78033;X
+350019;Head of Government;Albert Blanchet;1937;1964;1999;SL;Happy Amateur;High;M78003;X
+350020;Head of Government;Dumarsais Estimé;1941;1964;1999;SL;Flamboyant Tough Guy;High;M78034;X
+350021;Head of Government;Paul Magloire;1946;1964;1999;PA;Old General;High;M78043;X
+350022;Head of Government;F. d'Orleans Juste Constant;1937;1964;1999;LWR;Happy Amateur;High;M78021;X
+350023;Head of Government;Daniel Fignole;1946;1964;1999;LWR;Political Protege;High;M78045;X
+350024;Foreign Minister;Georges Léger;1933;1964;1999;SC;The Cloak N Dagger Schemer;High;M78046;X
+350025;Foreign Minister;Marcel Fombrun;1941;1964;1999;SC;Iron Fisted Brute;High;M78013;X
+350026;Foreign Minister;Élie Lescot;1943;1964;1999;SC;General Staffer;Medium;9803;X
+350027;Foreign Minister;Dr. Georges Rigaud;1946;1964;1999;SC;Biased Intellectual;Medium;M78049;X
+350028;Foreign Minister;Albert Blanchet;1937;1964;1999;SL;Apologetic Clerk;High;M78003;X
+350029;Foreign Minister;Jacques Wadestrand;1941;1964;1999;SL;Great Compromiser;High;M78051;X
+350030;Foreign Minister;Andre Dumont;1943;1964;1999;SL;Iron Fisted Brute;Medium;M78052;X
+350031;Foreign Minister;Timoléon Cesar Brutus;1946;1964;1999;SL;Ideological Crusader;Medium;M78053;X
+350032;Foreign Minister;Timoléon Cesar Brutus;1946;1964;1999;PA;Ideological Crusader;Medium;M78053;X
+350033;Foreign Minister;Mirko Chandler;1937;1964;1999;LWR;The Cloak N Dagger Schemer;Medium;M78023;X
+350034;Foreign Minister;F. d'Orleans Juste Constant;1941;1964;1999;LWR;Biased Intellectual;High;M78021;X
+350035;Foreign Minister;Clement Jumelle;1946;1964;1999;LWR;Apologetic Clerk;High;M78057;X
+350036;Minister of Armament;Luis Dabtes Bellegarde;1937;1964;1999;SC;Corrupt Kleptocrat;Medium;M78005;X
+350037;Minister of Armament;Luc Dominique;1941;1964;1999;SC;Tank Proponent;Medium;M78014;X
+350038;Minister of Armament;Jean Francois Duvalier;1945;1964;1999;SC;Administrative Genius;Low;M78015;X
+350039;Minister of Armament;Louis Dejoie;1946;1964;1999;SC;laissez-faire capitalist;Low;M78033;X
+350040;Minister of Armament;Max Charlmes;1937;1964;1999;SL;Strategic Air Proponent;Low;M78062;X
+350041;Minister of Armament;Frederic Doret;1941;1964;1999;SL;Resource Industrialist;Low;M78063;X
+350042;Minister of Armament;Armand Ouellet;1946;1964;1999;SL;Administrative Genius;Low;M78064;X
+350043;Minister of Armament;F. d'Orleans Juste Constant;1946;1964;1999;PA;laissez-faire capitalist;High;M78021;X
+350044;Minister of Armament;Clement Jumelle;1937;1964;1999;LWR;Air Superiority Proponent;High;M78057;X
+350045;Minister of Armament;Michel Corvington Raymond;1941;1964;1999;LWR;Theoretical Scientist;Medium;M78024;X
+350046;Minister of Security;Stenio Vincent;1937;1964;1999;SC;Crooked Kleptocrat;High;M78001;X
+350047;Minister of Security;Auguste Bonamy;1941;1964;1999;SC;Silent Lawyer;High;M78069;X
+350048;Minister of Security;Élie Lescot;1945;1964;1999;SC;Man of the People;Medium;9803;X
+350049;Minister of Security;Gusley Vildrouin;1946;1964;1999;SC;Back Stabber;Low;M78071;X
+350050;Minister of Security;Dumarsais Estimé;1937;1964;1999;SL;Back Stabber;High;M78034;X
+350051;Minister of Security;Max Charlmes;1941;1964;1999;SL;Crooked Kleptocrat;Low;M78062;X
+350052;Minister of Security;Jean Francois Duvalier;1946;1964;1999;SL;Efficient Sociopath;Low;M78015;X
+350053;Minister of Security;Antoine Levelt;1946;1964;1999;PA;Silent Lawyer;High;M78075;X
+350054;Minister of Security;Belmeau Max-Pierre;1937;1964;1999;LWR;Back Stabber;Medium;M78076;X
+350055;Minister of Security;Victor Vivian;1941;1964;1999;LWR;Efficient Sociopath;Medium;M78025;X
+350056;Minister of Security;Daniel Fignole;1946;1964;1999;LWR;Silent Lawyer;High;M78045;X
+350057;Head of Military Intelligence;Joseph Louis Borno;1937;1964;1999;SC;Technical Specialist;High;M78079;X
+350058;Head of Military Intelligence;Luis Dabtes Bellegarde;1941;1964;1999;SC;Industrial Specialist;Medium;M78005;X
+350059;Head of Military Intelligence;Dr. Georges Rigaud;1945;1964;1999;SC;Logistics Specialist;Medium;M78049;X
+350060;Head of Military Intelligence;Gusley Vildrouin;1937;1964;1999;SL;Logistics Specialist;Low;M78071;X
+350061;Head of Military Intelligence;Andre Dumont;1941;1964;1999;SL;Naval Intelligence Specialist;Medium;M78052;X
+350062;Head of Military Intelligence;Max Charlmes;1946;1964;1999;SL;Technical Specialist;Low;M78062;X
+350063;Head of Military Intelligence;Antoine Levelt;1946;1964;1999;PA;Logistics Specialist;High;M78075;X
+350064;Head of Military Intelligence;Rock Desroses;1937;1964;1999;LWR;Technical Specialist;Medium;M78026;X
+350065;Head of Military Intelligence;Belmeau Max-Pierre;1941;1964;1999;LWR;Logistics Specialist;Medium;M78076;X
+350066;Head of Military Intelligence;Demosthenes Calixte;1946;1964;1999;LWR;Political Specialist;Medium;M78037;X
+350067;Chief of Staff;Sebastien de Arrondé;1939;1964;1999;SC;School of Manoeuvre;Medium;M78006;X
+350068;Chief of Staff;Franck Lavaud;1941;1964;1999;SC;School of Psychology;Medium;M78035;X
+350069;Chief of Staff;Antoine Levelt;1946;1964;1999;SC;School of Manoeuvre;High;M78075;X
+350070;Chief of Staff;Andre Dumont;1937;1964;1999;SL;School of Manoeuvre;Medium;M78052;X
+350071;Chief of Staff;Paul Magloire;1946;1964;1999;SL;School of Mass Combat;Medium;M78043;X
+350072;Chief of Staff;Antioche Benot;1937;1964;1999;LWR;School of Defence;Medium;M78027;X
+350073;Chief of Army;Franck Lavaud;1941;1964;1999;SC;Elastic Defence Doctrine;Medium;M78035;X
+350074;Chief of Army;Antoine Levelt;1946;1964;1999;SC;Armoured Spearhead Doctrine;High;M78075;X
+350075;Chief of Army;Andre Dumont;1937;1964;1999;SL;Decisive Battle Doctrine;Medium;M78052;X
+350076;Chief of Army;Paul Magloire;1946;1964;1999;SL;Guns and Butter Doctrine;Medium;M78043;X
+350077;Chief of Army;Franck Lavaud;1946;1964;1999;PA;Elastic Defence Doctrine;Medium;M78035;X
+350078;Chief of Army;Ernst Severe;1937;1964;1999;LWR;Guns and Butter Doctrine;Medium;M78028;X
+350079;Chief of Navy;Georges Léger;1937;1964;1999;SC;Base Control Doctrine;High;M78046;X
+350080;Chief of Navy;André Sainté Frederic;1937;1964;1999;SL;Power Projection Doctrine;Medium;M78106;X
+350081;Chief of Navy;Raymond Gassner;1937;1964;1999;LWR;Power Projection Doctrine;Medium;M78029;X
+350082;Chief of Air Force;André Sainté Frederic;1941;1964;1999;SC;Naval Aviation Doctrine;Medium;M78106;X
+350083;Chief of Air Force;Pascalé B.G. Guillaume;1937;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M78020;X
+350084;Chief of Air Force;Antoine Levelt;1946;1964;1999;PA;Carpet Bombing Doctrine;High;M78075;X
+350085;Chief of Air Force;Belmeau Max-Pierre;1937;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M78076;X
+350086;Chief of Air Force;Charles H. Forbin;1946;1964;1999;LWR;Air Superiority Doctrine;Medium;M78030;X
+350087;Foreign Minister;Leon Laleau;1938;1964;1999;SC;Ideological Crusader;High;M78115;X
+350088;Head of State;Paul Magloire;1950;1964;1999;PA;Ruthless Powermonger;High;M78043;X
+350089;Head of Government;Oreste Zamor;1914;1933;1999;PA;Naive Optimist;Medium;8009;X
+350090;Head of Government;Joseph Davilmar Théodore;1914;1933;1999;PA;Ambitious Union Boss;Medium;unknownminister;X
+350091;Head of Government;Vilbrun Guillaume Sam;1914;1933;1999;PA;Political Protege;Medium;8013;X
+350092;Head of Government;Philippe Sudré Dartiguenave;1914;1933;1999;PA;Silent Workhorse;Medium;8010;X
+350093;Head of Government;Louis Borno;1915;1933;1999;PA;Happy Amateur;Medium;8000;X
+350098;Head of State;Oreste Zamor;1914;1933;1999;PA;Die-hard Reformer;Medium;8009;X
+350099;Head of State;Joseph Davilmar Théodore;1914;1917;1999;PA;Weary Stiffneck;Medium;unknownminister;X
+350100;Head of State;Vilbrun Guillaume Sam;1914;1915;1999;PA;powerhungry demagogue;Medium;8013;X
+350101;Head of State;Philippe Sudré Dartiguenave;1914;1926;1999;PA;Stern Imperialist;Medium;8010;X
+350102;Head of State;Louis Borno;1915;1933;1999;PA;Ruthless Powermonger;Medium;8000;X
+350103;Foreign Minister;Jacques Nicolas Léger;1914;1933;1999;PA;Biased Intellectual;Medium;8007;X
+350104;Foreign Minister;Gaston Dalencourt;1914;1933;1999;PA;Apologetic Clerk;Medium;unknownminister;X
+350105;Foreign Minister;Justin Bar;1914;1933;1999;PA;Great Compromiser;Medium;8008;X
+350106;Foreign Minister;Tertullian Guilbeaud;1914;1933;1999;PA;Iron Fisted Brute;Medium;8012;X
+350107;Minister of Armament;Ermane Robin;1914;1933;1999;PA;Administrative Genius;Medium;unknownminister;X
+350108;Minister of Armament;F. Baufossé Laroche;1914;1921;1999;PA;laissez-faire capitalist;Medium;unknownminister;X
+350109;Minister of Armament;Diogène Délinois;1914;1933;1999;PA;Strategic Air Proponent;Medium;unknownminister;X
+350110;Minister of Armament;Ernest Laporte;1914;1933;1999;PA;Resource Industrialist;Medium;8005;X
+350111;Minister of Security;Edmond Lespinasse;1914;1933;1999;PA;Back Stabber;Medium;8003;X
+350112;Minister of Security;Edouard Latortue;1914;1933;1999;PA;Crooked Kleptocrat;Medium;8004;X
+350113;Minister of Security;Stephen Dorneval;1914;1933;1999;PA;Efficient Sociopath;Medium;unknownminister;X
+350114;Minister of Security;Seymour Pradel;1914;1933;1999;PA;Silent Lawyer;Medium;8011;X
+350115;Minister of Security;Fercy Chatelain;1914;1933;1999;PA;Back Stabber;Medium;8006;X
+350116;Head of Military Intelligence;Charles Zamor;1914;1933;1999;PA;Logistics Specialist;Medium;unknownminister;X
+350117;Head of Military Intelligence;Constantin Benoit;1914;1933;1999;PA;Naval Intelligence Specialist;Medium;8001;X
+350118;Head of Military Intelligence;Edmond Dupuy;1914;1933;1999;PA;Technical Specialist;Medium;8002;X
+350119;Chief of Staff;Edmond Polynice;1914;1933;1999;PA;School of Manoeuvre;Medium;unknownminister;X
+350120;Chief of Staff;Charles Zamor;1914;1933;1999;PA;School of Manoeuvre;Medium;unknownminister;X
+350121;Chief of Staff;Oreste Zamor;1914;1931;1999;PA;School of Mass Combat;Medium;8009;X
+350122;Chief of Army;Edmond Polynice;1914;1933;1999;PA;Guns and Butter Doctrine;Medium;unknownminister;X
+350123;Chief of Army;Charles Zamor;1914;1931;1999;PA;Elastic Defence Doctrine;Medium;unknownminister;X
+350124;Chief of Army;Oreste Zamor;1914;1933;1999;PA;Guns and Butter Doctrine;Medium;8009;X
+350125;Chief of Navy;Edmond Polynice;1914;1933;1999;PA;Base Control Doctrine;Medium;unknownminister;X
+350126;Chief of Navy;Charles Zamor;1914;1933;1999;PA;Power Projection Doctrine;Medium;unknownminister;X
+350127;Chief of Navy;Oreste Zamor;1914;1931;1999;PA;Power Projection Doctrine;Medium;8009;X
+350128;Chief of Air Force;Edmond Polynice;1914;1933;1999;PA;Vertical Envelopment Doctrine;Medium;unknownminister;X
+350129;Chief of Air Force;Charles Zamor;1914;1933;1999;PA;Carpet Bombing Doctrine;Medium;unknownminister;X
+350130;Chief of Air Force;Oreste Zamor;1914;1931;1999;PA;Vertical Envelopment Doctrine;Medium;8009;X

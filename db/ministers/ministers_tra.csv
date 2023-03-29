@@ -1,0 +1,52 @@
+TRA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+785001;Head of State;Arseniy Zverev;1933;1964;1999;LWR;Barking Buffoon;High;M523001;X
+785002;Head of Government;Vlas Chubar;1933;1964;1999;LWR;Smiling Oilman;High;M523002;X
+785003;Foreign Minister;Grigory Grinko;1933;1964;1999;LWR;Great Compromiser;High;M523003;X
+785004;Minister of Armament;Nikolay Bryukhanov;1933;1964;1999;LWR;Infantry Proponent;Medium;M523004;X
+785005;Minister of Security;Vselevod Merkulov;1933;1964;1999;LWR;Back Stabber;Medium;M523005;X
+785006;Head of Military Intelligence;Grigorij Sokolnikov;1933;1964;1999;LWR;Dismal Enigma;Medium;M523006;X
+785007;Chief of Staff;Keldysh Nikitin;1933;1964;1999;LWR;School of Defence;Medium;M523007;X
+785008;Chief of Army;Osip Fokine;1933;1964;1999;LWR;Decisive Battle Doctrine;Medium;M523008;X
+785009;Chief of Navy;Rurik Ertelkin;1933;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;L502013;X
+785010;Chief of Air Force;Genneadij Abakumov;1933;1964;1999;LWR;Army Aviation Doctrine;Medium;M523010;X
+785011;Head of State;Mikhail Lazurkin;1933;1964;1999;ML;Popular Figurehead;High;M523011;X
+785012;Head of State;H.R.H. Igor III. Chavchavadzhe;1933;1964;1999;PA;Pig-headed Isolationist;High;M523012;X
+785013;Head of Government;Mikhail Serbryakov;1933;1964;1999;ML;Silent Workhorse;High;M523013;X
+785014;Head of Government;Sergey Bulich;1933;1964;1999;PA;Ambitious Union Boss;High;M523014;X
+785015;Foreign Minister;Nikolay Voznesensky;1933;1964;1999;LWR;Biased Intellectual;High;M523015;X
+785016;Foreign Minister;Vsevolod Tomashevsky;1933;1964;1999;ML;Apologetic Clerk;High;M523016;X
+785017;Foreign Minister;Sergei Bernstein;1933;1964;1999;ML;Iron Fisted Brute;High;M523017;X
+785018;Foreign Minister;Viktor Fausek;1933;1964;1999;PA;Great Compromiser;High;M523018;X
+785019;Foreign Minister;Vladimir Orlov;1933;1964;1999;PA;Iron Fisted Brute;High;M523019;X
+785020;Minister of Armament;Maksim Saburov;1933;1964;1999;LWR;Theoretical Scientist;Medium;M523020;X
+785021;Minister of Armament;Nikolay Derzhavin;1933;1964;1999;ML;Air Superiority Proponent;Medium;M523021;X
+785022;Minister of Armament;Nikita Krylov;1933;1964;1999;ML;Military Entrepreneur;Medium;M523022;X
+785023;Minister of Armament;Dimitrij Golenkov;1933;1964;1999;PA;Tank Proponent;Medium;M523023;X
+785024;Minister of Armament;Pavel Vorony;1933;1964;1999;PA;Battle Fleet Proponent;Medium;M523024;X
+785025;Minister of Armament;Dimitri Grabbe-Nikitin;1933;1964;1999;PA;Infantry Proponent;Medium;M523025;X
+785026;Minister of Security;Gennadij Smirnov;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M526026;X
+785027;Minister of Security;Viktor Abakumov;1933;1964;1999;LWR;Secret police chief;Medium;M523027;X
+785028;Minister of Security;Vladimir Shimkevich;1933;1964;1999;ML;Efficient Sociopath;Medium;M523028;X
+785029;Minister of Security;Nikita Günther;1933;1964;1999;ML;Crime Fighter;Medium;M523029;X
+785030;Minister of Security;Alexei Friedmann;1933;1964;1999;PA;Prince of Terror;Medium;M523030;X
+785031;Minister of Security;Shavrov Nikitin;1933;1964;1999;PA;Crime Fighter;Medium;M523031;X
+785032;Head of Military Intelligence;Aleksandr Ivanov;1933;1964;1999;LWR;Industrial Specialist;Medium;M523032;X
+785033;Head of Military Intelligence;Yurtsev Smirnov;1933;1964;1999;ML;Technical Specialist;Medium;M523033;X
+785034;Head of Military Intelligence;Boris Galerkin;1933;1964;1999;ML;Dismal Enigma;Medium;M523034;X
+785035;Head of Military Intelligence;Patriarch Tikhon;1933;1964;1999;PA;Political Specialist;Medium;M523035;X
+785036;Head of Military Intelligence;Gleb Krzhizhanovsky;1933;1964;1999;PA;Dismal Enigma;Medium;M523036;X
+785037;Chief of Staff;Vasili Chebykimov;1933;1964;1999;ML;School of Fire Support;Medium;M523037;X
+785038;Chief of Staff;Razak Hadjiev;1933;1964;1999;PA;School of Mass Combat;Medium;M523038;X
+785039;Chief of Army;Alesksandr Saburov;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M523039;X
+785040;Chief of Army;Volya Borshevski;1933;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M523040;X
+785041;Chief of Army;Igor Kovlon;1933;1964;1999;PA;Static Defence Doctrine;Medium;M523041;X
+785042;Chief of Army;Sergei Korovalcheff;1933;1964;1999;PA;Guns and Butter Doctrine;Medium;M523042;X
+785043;Chief of Navy;Ignatz Dmyrkin;1933;1964;1999;ML;Open Seas Doctrine;Medium;L504000;X
+785044;Chief of Navy;Dimitriy Sakarski;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M520034;X
+785045;Chief of Air Force;Nikifor Gapon;1933;1964;1999;ML;Carpet Bombing Doctrine;Medium;M523045;X
+785046;Chief of Air Force;Karl Deinhardt;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M523046;X
+785047;Chief of Staff;Grigory Mikhaylovich Semyonov;1938;1964;1999;PA;School of Manoeuvre;High;6084;x
+785048;Chief of Army;Grigory Mikhaylovich Semyonov;1942;1964;1999;PA;Static Defence Doctrine;High;6084;x
+785049;Chief of Staff;Grigory Mikhaylovich Semyonov;1938;1964;1999;SC;School of Manoeuvre;High;6084;x
+785050;Chief of Army;Grigory Mikhaylovich Semyonov;1942;1964;1999;SC;Static Defence Doctrine;High;6084;x

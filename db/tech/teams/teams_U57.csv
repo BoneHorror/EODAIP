@@ -1,0 +1,52 @@
+U57;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+240101;Ford Motor Company;T104;9;1903;2000;mechanics;industrial_engineering;aeronautics;technical_efficiency;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240102;Standard Oil of California;T117;8;1879;2000;industrial_engineering;chemistry;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240103;Texas Oil Company;T118;9;1901;2000;industrial_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240104;General Electric;T128;7;1878;2000;electronics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240105;Raytheon;T113;8;1930;2000;electronics;technical_efficiency;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240106;IBM;100366;8;1924;2000;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240107;John von Neumann;T106;8;1937;1957;chemistry;mechanics;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240108;Robert Truax;T115;6;1936;1967;rocketry;technical_efficiency;chemistry;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240109;Lyman Briggs;100447;5;1936;1940;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240110;Robert Oppenheimer;T114;9;1941;1953;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240111;Edward Teller;T111;8;1951;2000;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240112;Springfield Armory;T116;7;1819;2000;munitions;mechanics;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240113;Winchester Repeating Arms Co.;T119;7;1866;2000;general_equipment;mechanics;munitions;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240114;Walter Christie;T101;6;1912;1944;mechanics;artillery;technical_efficiency;vehicle_engineering;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240115;Detroit Arsenal Tank Plant;T108;8;1940;2000;mechanics;technical_efficiency;munitions;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240116;John Holland;100449;7;1897;1914;naval_engineering;submarine_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240117;Newport News Shipbuilding;100069;8;1907;2000;naval_engineering;technical_efficiency;naval_artillery;carrier_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240118;New York Naval Yard;T110;7;1890;2000;naval_engineering;technical_efficiency;electronics;naval_artillery;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240119;Norfolk Naval Yard;T112;7;1827;2000;naval_engineering;technical_efficiency;electronics;naval_artillery;carrier_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240120;Philadelphia Naval Shipyard;T129;6;1917;2000;naval_engineering;naval_artillery;electronics;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240121;Boeing;T100;8;1920;1945;bomber_design;aeronautics;aircraft_testing;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240122;Boeing;T100;9;1945;2000;bomber_design;aeronautics;avionics;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240123;Curtiss-Wright;T102;6;1929;2000;fighter_design;aeronautics;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240124;Curtiss;100826;5;1912;1929;fighter_design;aeronautics;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240125;Douglas Aircraft Company;T103;7;1921;2000;bomber_design;aeronautics;avionics;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240126;Glenn L. Martin Company;100825;7;1912;1961;bomber_design;aeronautics;avionics;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240127;Consolidated Aircraft;100365;7;1923;2000;bomber_design;aeronautics;avionics;aircraft_testing;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240128;Kelly Johnson's Skunk Works;T107;9;1943;2000;fighter_design;rocketry;aeronautics;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240129;North American Aviation;T10307;8;1937;2000;fighter_design;aeronautics;avionics;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240130;Alfred T. Mahan;100373;7;1897;1913;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240131;William S. Benson;100370;5;1913;1930;centralized_execution;small_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240132;William S. Sims;100369;6;1914;1922;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240133;Joel R. P. Pringle;100450;6;1923;1930;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240134;Ernest King;T124;7;1933;1947;large_taskforce_tactics;carrier_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240135;Chester Nimitz;T121;8;1939;1950;small_taskforce_tactics;submarine_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240136;Hyman Rickover;T126;7;1946;2000;nuclear_engineering;chemistry;electronics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240137;Arthur Radford;T131;6;1948;1957;large_taskforce_tactics;carrier_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240138;Eddie Rickenbacker;100372;7;1917;1926;fighter_tactics;piloting;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240139;William Lendrum Mitchell;100448;6;1917;1926;centralized_execution;fighter_tactics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240140;Jimmy Doolittle;100451;6;1927;1959;centralized_execution;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240141;Henry Arnold;T125;7;1935;1946;decentralized_execution;training;bomber_tactics;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240142;Curtis LeMay;T122;7;1938;1965;centralized_execution;bomber_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240143;Carl Spaatz;T120;7;1939;1955;training;bomber_tactics;centralized_execution;aeronautics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240144;John Pershing;100371;6;1914;1924;infantry_focus;large_unit_tactics;large_unit_focus;individual_courage;maneuver_tactics;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240145;Frederick Funston;100787;6;1914;1917;infantry_focus;individual_courage;static_defense_tactics;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240146;Omar Bradley;T127;8;1938;1954;small_unit_tactics;decentralized_execution;training;combined_arms_focus;maneuver_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240147;Dwight Eisenhower;T123;8;1939;1952;small_unit_tactics;decentralized_execution;combined_arms_focus;training;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240148;Maxwell Taylor;T130;6;1953;1965;small_unit_tactics;centralized_execution;combined_arms_focus;training;airborne_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240149;US Marine Corps;100367;7;1800;2000;small_unit_tactics;munitions;vehicle_engineering;Marine_Training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240150;Ranger School;100368;7;1950;2000;small_unit_tactics;centralized_execution;vehicle_engineering;airborne_training;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+240151;American Medical Assn;100686;7;1847;2000;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

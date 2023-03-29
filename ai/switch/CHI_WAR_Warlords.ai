@@ -1,0 +1,255 @@
+# China 1936 AI File by Lothos
+
+neutrality = 100.000 
+war = 60
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	CHC = 150
+	CSX = 150
+	SIK = 150
+	CXB = 150
+	CYN = 150
+	CGX = 150
+	TIB = 150
+}
+demand_claims = {
+	CHC
+	CSX
+	SIK
+	CXB
+	CYN
+	CGX
+	TIB
+}
+befriend = { }
+protect = { }
+target = { 
+	#Guangxi Clique
+	1381  = 150
+	1382  = 150
+	1380  = 150
+	1383  = 150
+	1375  = 150 
+	1370  = 150
+	1369  = 150
+	1373  = 150
+	1367  = 150
+	1374  = 150
+	1379  = 150
+
+	#Yunan
+	1293 = 125
+	1292  = 125
+	1413  = 125
+   	2174  = 125 
+	1390  = 125
+   	1128  = 125 
+	1389  = 125
+
+	#Shanxi
+	1246  = 115
+	1247  = 115
+	1241  = 115
+	2035  = 115
+	2039  = 115
+	1242  = 115
+	1254  = 115
+	1323  = 115
+	1332  = 115
+	1331  = 115
+	1238  = 115
+	2038  = 115
+	1269  = 115
+	1251  = 115
+	1252  = 115
+	1253  = 115
+
+	#Xibei San Ma
+	1283  = 110
+	1266  = 110
+	1270  = 110
+	1265  = 110
+	1284  = 110
+	1271  = 110
+	1285  = 110
+	1272  = 110
+
+	#Communist China
+	1259  = 200
+	1260  = 200
+
+	# Sinkiang
+	1277  = 90
+	1274  = 90
+	1282  = 90
+	1273  = 90
+	1280  = 90
+	1281  = 90
+	1275  = 90
+	1278  = 90
+	1279  = 90
+
+	#United Kingdom
+	1371  = 40  #Hong Kong
+
+	#Portugal
+	1372  = 100  #Macao
+} 
+trade = {
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+
+	favored = {
+		GER = 100
+		ENG = 70
+		FRA = 50
+		USA = 100
+		AST = 90
+		NZL = 90
+		SIA = 40
+	}
+	embargo = { JAP }
+}
+tech_sharing = {
+	favored = {
+		GER = 100
+		ENG = 70
+		FRA = 50
+		USA = 100
+	}
+	embargo = { }
+	not = { }
+	prioritized = {	}
+}
+###################################
+# Construction and Tech Research
+###################################
+technology = { 
+	endgoal 	= { } 
+		preference 	= {
+		
+		# Armored Divisions
+		6900
+ 
+		# Logistics
+		1310
+	} 
+	ignore 		= {
+		# Airborne Infantry
+		1070 1080 1090 1100
+
+		# Marines
+		1150 1160 1170 1180
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+
+		# Rocketry
+		5560 7550 7560 7570 7580 7590
+	}
+ 
+	armor 		= 1 
+	infantry 	= 7
+	industry 	= 4
+	aircraft 	= 1
+	naval 		= 1
+	land_doctrines 	= 2
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 1
+}  
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		SOV = -1
+		MON = -1
+		TIB = 50
+		NEP = -1
+		AFG = -1
+		FRA = -1
+		ENG = -1
+		POR = -1
+		JAP = 50
+		CHC = 50
+		MAN = 50
+		CSX = 50
+		SIK = 50
+		CXB = 50
+		CYN = 50
+		CGX = 50
+	}
+	province_priorities = {	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.0
+	panic_ratio_vs_human	= 2.0
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 1.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+
+	
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 

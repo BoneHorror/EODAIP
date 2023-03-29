@@ -1,0 +1,314 @@
+ITA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+25001;Head of State;Vittorio Emanuele III;1933;1948;1948;FA;Weary Stiffneck;High;vittorio_emanuele_III_ita;X
+25002;Head of Government;Benito Mussolini;1933;1945;1999;FA;Imperialist buffoon;High;mussolini_benito_ita;X
+25003;Foreign Minister;Gian Galeazzo Ciano;1933;1944;1999;FA;Fascist Crusader;Very High;ciano_galezzo_ita;X
+25004;Minister of Armament;Benito Mussolini;1933;1945;1999;FA;Autarkic Fascist;Very High;mussolini_benito_arm_ita;X
+25005;Minister of Security;Benito Mussolini;1933;1945;1999;FA;Media Magnate;Very High;mussolini_benito_sec_ita;X
+25006;Head of Military Intelligence;Mario Roatta;1932;1945;1968;FA;Logistics Specialist;High;roatta_mario_ita;X
+25007;Chief of Staff;Pietro Badoglio;1925;1946;1957;PA;School of Mass Combat;Medium;badoglio_pietro_ita;X
+25008;Chief of Army;Alberto Pariani;1932;1940;1955;FA;Undersecretary of War;Medium;pariani_alberto_ita;X
+25009;Chief of Navy;Domenico Cavagnari;1933;1941;1966;FA;Old School Admiral;Medium;cavagnari_domenico_ita;X
+25010;Chief of Air Force;Giuseppe Valle;1928;1940;1976;FA;Army Aviation Doctrine;Medium;valle_giuseppe_ita;X
+25011;Head of State;Vittorio Emanuele III;1933;1948;1948;PA;Weary Stiffneck;High;vittorio_emanuele_III_ita;X
+25012;Head of State;Vittorio Emanuele III;1933;1948;1948;SC;Weary Stiffneck;High;vittorio_emanuele_III_ita;X
+25013;Head of State;Umberto II;1933;1964;1999;PA;Insignificant Layman;High;umberto_II_d'italia_ita;X
+25014;Head of State;Umberto II;1933;1964;1999;SC;Insignificant Layman;High;umberto_II_d'italia_ita;X
+25015;Head of State;Enrico De Nicola;1933;1960;1960;ML;Benevolent Gentleman;High;de_nicola_enrico_ita;X
+25016;Head of State;Luigi Einaudi;1947;1962;1962;ML;Popular Figurehead;High;einaudi_luigi_ita;X
+25017;Head of State;Carlo Sforza;1947;1953;1953;SL;Stern Imperialist;High;sforza_carlo_ita;X
+25018;Head of State;Benito Mussolini;1933;1945;1999;NS;Barking Buffoon;High;mussolini_benito_ita;X
+25019;Head of State;Junio Valerio Borghese;1944;1975;1975;NS;Resigned Generalissimo;High;borghese_junio_valerio_ita;X
+25020;Head of State;Giovanni Gronchi;1953;1979;1979;SC;Benevolent Gentleman;High;gronchi_giovanni_ita;X
+25021;Head of Government;Pietro Badoglio;1933;1957;1957;PA;Old General;High;badoglio_pietro_ita;X
+25022;Head of Government;Ivanoe Bonomi;1933;1952;1952;SD;Silent Workhorse;High;bonomi_ivanoe_ita;X
+25023;Head of Government;Ferruccio Parri;1933;1982;1982;SL;Political Protege;High;parri_ferruccio_ita;X
+25024;Head of Government;Alcide De Gasperi;1933;1955;1955;SC;Backroom Backstabber;High;de_gasperi_alcide_ita;X
+25025;Head of Government;Amintore Fanfani;1947;1999;1999;SC;Silent Workhorse;High;fanfani_amintore_ita;X
+25026;Head of Government;Giuseppe Pella;1945;1982;1982;SC;Political Protege;High;pella_giuseppe_ita;X
+25027;Head of Government;Dino Grandi;1933;1989;1989;FA;Backroom Backstabber;High;grandi_dino_ita;X
+25028;Head of Government;Junio Valerio Borghese;1944;1975;1975;NS;Old Admiral;High;borghese_junio_valerio_ita;X
+25029;Head of Government;Paolo Thaon di Revel;1933;1948;1948;PA;Old Admiral;High;thaon_di_revel_paolo_ita;X
+25030;Head of Government;Italo Balbo;1933;1941;1999;FA;Old Airmarshal;High;balbo_italo_ita;x
+25031;Foreign Minister;Benito Mussolini;1933;1945;1999;FA;Aggressive Nationalist;Very High;mussolini_benito_for_ita;X
+25032;Foreign Minister;Dino Grandi;1933;1989;1989;FA;Great Compromiser;High;grandi_dino_for_ita;X
+25033;Foreign Minister;Raffaele Guariglia;1933;1971;1971;PA;Apologetic Clerk;High;guariglia_raffaele_ita;X
+25034;Foreign Minister;Pietro Badoglio;1933;1958;1958;PA;General Staffer;High;badoglio_pietro_ita;X
+25035;Foreign Minister;Ivanoe Bonomi;1933;1952;1952;SD;Ideological Crusader;High;bonomi_ivanoe_ita;X
+25036;Foreign Minister;Alcide De Gasperi;1933;1955;1955;SC;Ideological Crusader;High;de_gasperi_alcide_ita;X
+25037;Foreign Minister;Carlo Sforza;1933;1953;1953;SL;Great Compromiser;High;sforza_carlo_ita;X
+25038;Foreign Minister;Giuseppe Pella;1946;1982;1982;SC;Ideological Crusader;High;pella_giuseppe_ita;X
+25039;Foreign Minister;Giuseppe Bastianini;1933;1962;1962;FA;Apologetic Clerk;High;bastianini_giuseppe_ita;X
+25040;Foreign Minister;Pietro d'Acquarone;1939;1949;1949;PA;The Cloak N Dagger Schemer;High;d'acquarone_pietro_ita;X
+25041;Foreign Minister;Bernardo Attolico;1933;1942;1942;FA;Biased Intellectual;High;attolico_bernardo_ita;X
+25042;Foreign Minister;Augusto De Marsanich;1944;1974;1974;FA;Great Compromiser;High;de_marsanich_augusto_ita;X
+25043;Foreign Minister;Giorgio Almirante;1946;1989;1989;NS;Ideological Crusader;High;almirante_giorgio_ita;x
+25044;Foreign Minister;Guglielmo Imperiali di Francavilla;1933;1944;1944;SC;Great Compromiser;High;imperiali_guglielmo_ita;X
+25045;Foreign Minister;Giacomo Paulucci di Calboli;1933;1962;1962;PA;Apologetic Clerk;High;paulucci_giacomo_ita;X
+25046;Foreign Minister;Ugo La Malfa;1945;1980;1980;SL;Great Compromiser;High;la_malfa_ugo_ite;X
+25051;Minister of Armament;Pietro Gazzera;1933;1936;1956;FA;Military Entrepreneur;High;gazzera_pietro_ita;X
+25052;Minister of Armament;Antonio Sorice;1936;1972;1972;FA;Military Entrepreneur;High;sorice_antonio_ita;X
+25053;Minister of Armament;Taddeo Orlando;1944;1950;1950;PA;Infantry Proponent;High;orlando_taddeo_ita;X
+25054;Minister of Armament;Alessandro Casati;1933;1956;1956;ML;Balanced budget economy;High;casati_alessandro_ita;X
+25055;Minister of Armament;Stefano Jacini;1939;1953;1953;SC;Laissez-Faire Capitalist;High;jacini_stefano_ita;X
+25056;Minister of Armament;Manlio Brosio;1945;1981;1981;ML;Mixed economy;High;brosio_manlio_ita;X
+25057;Minister of Armament;Cipriano Facchinetti;1946;1953;1953;SL;Balanced budget economy;High;facchinetti_cipriano_ita;X
+25058;Minister of Armament;Luigi Gasparotto;1933;1955;1955;SD;Air Superiority Proponent;High;gasparotto_luigi_ita;X
+25059;Minister of Armament;Mario Cingolani;1933;1972;1972;SC;Theoretical Scientist;High;cingolani_mario_ita;X
+25060;Minister of Armament;Randolfo Pacciardi;1933;1992;1992;SL;Military Entrepreneur;High;pacciardi_randolfo_ita;X
+25061;Minister of Armament;Paolo Emilio Taviani;1948;1999;1999;SC;Mixed economy;High;taviani_paolo_emilio;X
+25062;Minister of Armament;Guido Jung;1932;1950;1950;PA;Construction magnate;High;jung_guido_ita;X
+25063;Minister of Armament;Paolo I.M. Thaon di Revel;1935;1974;1974;FA;Balanced budget economy;High;paolo_i_m_thaon_di_revel_ita;X
+25064;Minister of Armament;Giacomo Acerbo;1935;1970;1970;PA;Planned economy proponent;High;acerbo_giacomo_ita;X
+25065;Minister of Armament;Domenico Bartolini;1943;1961;1961;PA;Mixed economy;High;bartolini_domenico_ita;X
+25066;Minister of Armament;Quinto Quintieri;1944;1969;1969;PA;Resource Industrialist;High;quintieri_quinto_ita;X
+25067;Minister of Armament;Giuseppe Pella;1946;1982;1982;SC;Laissez-Faire Capitalist;High;pella_giuseppe_ita;X
+25068;Minister of Armament;Ezio Vanoni;1946;1957;1957;SC;Reformer;High;vanoni_ezio_ita;X
+25069;Minister of Armament;Pietro Badoglio;1933;1956;1956;PA;Infantry Proponent;High;badoglio_pietro_ita;X
+25070;Minister of Armament;Paolo Thaon di Revel;1933;1948;1948;PA;Submarine Proponent;High;thaon_di_revel_paolo_ita;X
+25071;Minister of Armament;Ettore Conti di Verampio;1933;1972;1972;FA;Resource Industrialist;High;conti_ettore_ita;X
+25072;Minister of Armament;Arturo Michelini;1946;1970;1970;FA;Laissez-Faire Capitalist;High;michelini_arturo_ita;x
+25073;Minister of Armament;Enrico Mattei;1945;1963;1963;SC;Oil baron;High;mattei_enrico_ita;X
+25074;Minister of Armament;Achille Lauro;1938;1983;1983;PA;Battle Fleet Proponent;High;lauro_achille_ita;X
+25081;Minister of Security;Luigi Federzoni;1933;1968;1968;FA;Compassionate Gentleman;Very High;federzoni_luigi_ita;X
+25082;Minister of Security;Arturo Bocchini;1933;1941;1941;FA;Secret police chief;Very High;bocchini_arturo_ita;X
+25083;Minister of Security;Bruno Fornaciari;1943;1960;1960;FA;Silent Lawyer;Very High;fornaciari_bruno_ita;X
+25084;Minister of Security;Umberto Ricci;1943;1958;1958;FA;Back Stabber;High;ricci_umberto_ita;X
+25085;Minister of Security;Vito Reale;1943;1954;1954;SC;Crime Fighter;High;reale_vito_ita;X
+25086;Minister of Security;Salvatore Aldisio;1943;1965;1965;SC;Man of the People;Very High;aldisio_salvatore_ita;X
+25087;Minister of Security;Ivanoe Bonomi;1933;1952;1952;SD;Man of the People;High;bonomi_ivanoe_ita;X
+25088;Minister of Security;Ferruccio Parri;1933;1982;1982;SL;Crime Fighter;High;parri_ferruccio_ita;X
+25089;Minister of Security;Alcide De Gasperi;1933;1955;1955;SC;Health and safety;High;de_gasperi_alcide_ita;X
+25090;Minister of Security;Mario Scelba;1943;1992;1992;SC;Back Stabber;High;scelba_mario_ita;X
+25091;Minister of Security;Amintore Fanfani;1947;1999;1999;SC;Compassionate Gentleman;High;fanfani_amintore_ita;X
+25092;Minister of Security;Guido Leto;1938;1964;1999;FA;Secret police chief;Very High;leto_guido_ita;X
+25093;Minister of Security;Guido Buffarini Guidi;1933;1945;1999;FA;Man of the People;Very High;guido_buffarini_guidi_ita;X
+25094;Minister of Security;Umberto Albini;1933;1974;1974;FA;Silent Lawyer;High;albini_umberto_ita;X
+25095;Minister of Security;Piero Brandimarte;1933;1972;1972;FA;Efficient Sociopath;High;brandimarte_piero_ita;X
+25096;Minister of Security;Roberto Farinacci;1933;1945;1999;FA;Prince of Terror;High;farinacci_roberto_ita;X
+25097;Minister of Security;Enrico De Nicola;1933;1960;1960;SC;Man of the People;High;de_nicola_enrico_ita;X
+25098;Minister of Security;Stefano Jacini;1939;1953;1953;SC;Silent Lawyer;High;jacini_stefano_ita;X
+25099;Minister of Security;Giorgio Almirante;1946;1989;1989;NS;Prince of Terror;High;almirante_giorgio_ita;x
+25100;Minister of Security;Alfredo Rocco;1925;1935;1935;FA;Crime Fighter;Medium;rocco_alfredo_ita;X
+25101;Minister of Security;Dino Grandi;1933;1989;1989;FA;Compassionate Gentleman;Medium;grandi_dino_ita;X
+25102;Minister of Security;Alfredo De Marsico;1933;1986;1986;PA;Silent Lawyer;Low;de_marsico_alfredo_ita;X
+25103;Minister of Security;Cesare Mori;1924;1942;1942;FA;Crime Fighter;Very High;mori_cesare_ita;X
+25111;Head of Military Intelligence;Vittorio Sogno;1933;1948;1971;FA;Logistics Specialist;Low;sogno_vittorio_ita;X
+25112;Head of Military Intelligence;Paolo Angioy;1936;1975;1975;PA;Logistics Specialist;Low;angioy_paolo_ita;X
+25113;Head of Military Intelligence;Giacomo Carboni;1938;1973;1973;PA;Logistics Specialist;Low;carboni_giacomo_ita;X
+25114;Head of Military Intelligence;Cesare Amè;1940;1984;1984;PA;Dismal Enigma;Very High;ame_cesare_ita;X
+25115;Head of Military Intelligence;Pompeo Agrifoglio;1943;1949;1949;SC;Dismal Enigma;Very High;unknownminister;X
+25116;Head of Military Intelligence;Giovanni Carlo Re;1947;1964;1999;SC;Technical Specialist;Very High;unknownminister;X
+25117;Head of Military Intelligence;Umberto Broccoli;1951;1964;1999;SC;Political Specialist;Very High;unknownminister;X
+25118;Head of Military Intelligence;Ettore Musco;1952;1990;1990;SC;Logistics Specialist;Very High;musco_ettore_ita;X
+25119;Head of Military Intelligence;Giuseppe Pieche;1933;1977;1977;FA;Political Specialist;Low;pieche_giuseppe_ita;X
+25120;Head of Military Intelligence;Emilio Faldella;1935;1976;1976;PA;Dismal Enigma;Low;faldella_emilio_ita;X
+25121;Head of Military Intelligence;Emilio Pagliano;1933;1954;1954;SL;Political Specialist;High;pagliano_emilio_ita;X
+25122;Head of Military Intelligence;Ettore Muti;1943;1944;1999;FA;Technical Specialist;High;muti_ettore_ita;X
+25123;Head of Military Intelligence;Giovanni Duca;1939;1943;1999;SC;Technical Specialist;High;duca_giovanni_ita;X
+25130;Chief of Staff;Italo Balbo;1933;1941;1999;FA;School of Fire Support;High;balbo_italo_ita;x
+25131;Chief of Staff;Ugo Cavallero;1940;1944;1999;FA;School of Defence;High;cavallero_ugo_ita;X
+25132;Chief of Staff;Vittorio Ambrosio;1943;1945;1958;PA;School of Manoeuvre;Low;ambrosio_vittorio_ita;X
+25133;Chief of Staff;Giovanni Messe;1943;1949;1968;PA;School of Manoeuvre;High;messe_giovanni_ita;X
+25134;Chief of Staff;Claudio Trezzani;1945;1955;1955;SC;School of Fire Support;High;trezzani_claudio_ita;X
+25135;Chief of Staff;Luigi Efisio Marras;1950;1955;1981;SC;School of Psychology;High;marras_efisio_ita;X
+25136;Chief of Staff;Achille Starace;1925;1945;1999;FA;School of Mass Combat;High;starace_achille_ita;X
+25137;Chief of Staff;Francesco Grazioli;1925;1951;1951;PA;School of Psychology;Medium;grazioli_francesco_ita;X
+25138;Chief of Staff;Enrico Caviglia;1925;1945;1945;PA;School of Defence;Low;caviglia_enrico_ita;X
+25139;Chief of Staff;Paolo Thaon di Revel;1925;1945;1948;PA;School of Defence;Medium;thaon_di_revel_paolo_ita;X
+25140;Chief of Staff;Gastone Gambara;1944;1962;1962;NS;School of Defence;High;gambara_gastone_ita;X
+25151;Chief of Army;Alberto Bonzani;1929;1936;1936;FA;Static Defence Doctrine;High;bonzani_alberto_ita;X
+25152;Chief of Army;Federico Baistrocchi;1934;1945;1947;FA;Decisive Battle Doctrine;High;baistrocchi_federico_ita;X
+25153;Chief of Army;Rodolfo Graziani;1939;1941;1955;FA;Static Defence Doctrine;Medium;graziani_rodolfo_ita;X
+25154;Chief of Army;Mario Roatta;1941;1945;1968;FA;Elastic Defence Doctrine;High;roatta_mario_ita;X
+25155;Chief of Army;Vittorio Ambrosio;1942;1945;1958;PA;Decisive Battle Doctrine;Low;ambrosio_vittorio_ita;X
+25156;Chief of Army;Raffaele Cadorna;1943;1949;1973;SC;Armoured Spearhead Doctrine;High;cadorna_raffaele_ita;X
+25157;Chief of Army;Luigi Efisio Marras;1947;1955;1981;SC;Guns and Butter Doctrine;High;marras_efisio_ita;X
+25158;Chief of Army;Ernesto Cappa;1947;1955;1955;SC;Elastic Defence Doctrine;High;cappa_ernesto_ita;X
+25159;Chief of Army;Giuseppe Pizzorno;1947;1980;1980;SC;Decisive Battle Doctrine;High;pizzorno_giuseppe_ita;X
+25160;Chief of Army;Giovanni Messe;1941;1949;1968;PA;Doctrine of autonomy;High;messe_giovanni_ita;X
+25161;Chief of Army;Junio Valerio Borghese;1944;1975;1975;NS;Commando Doctrine Army;High;borghese_junio_valerio_ita;X
+25171;Chief of Navy;Ernesto Burzagli;1927;1937;1937;PA;Decisive Naval Battle Doctrine;High;burzagli_ernesto_ita;X
+25172;Chief of Navy;Gino Ducci;1931;1962;1962;PA;Decisive Naval Battle Doctrine;High;ducci_gino_ita;X
+25173;Chief of Navy;Arturo Riccardi;1940;1945;1967;FA;Open Seas Doctrine;Medium;riccardi_arturo_ita;X
+25174;Chief of Navy;Raffaele de Courten;1943;1978;1978;SC;Indirect Approach Doctrine;Medium;de_courten_raffaele_ita;X
+25175;Chief of Navy;Francesco Maugeri;1947;1979;1979;SC;Indirect Approach Doctrine;High;maugeri_francesco_ita;X
+25176;Chief of Navy;Emilio Ferreri;1948;1981;1981;SC;Open Seas Doctrine;High;ferreri_emilio_ita;X
+25177;Chief of Navy;Paolo Thaon di Revel;1925;1945;1948;PA;Indirect Approach Doctrine;Medium;thaon_di_revel_paolo_ita;X
+25178;Chief of Navy;Junio Valerio Borghese;1944;1975;1975;NS;Base Control Doctrine;High;borghese_junio_valerio_ita;X
+25180;Chief of Air Force;Italo Balbo;1933;1941;1999;FA;Vertical Envelopment Doctrine;High;balbo_italo_ita;x
+25181;Chief of Air Force;Antonio Bosio;1933;1940;1967;FA;Air Superiority Doctrine;High;bosio_antonio_ita;X
+25182;Chief of Air Force;Francesco Pricolo;1939;1945;1981;FA;Naval Aviation Doctrine;High;pricolo_francesco_ita;X
+25183;Chief of Air Force;Rino Corso Fougier;1941;1945;1964;FA;Air Superiority Doctrine;Low;fougier_rino_corso_ita;X
+25184;Chief of Air Force;Renato Sandalli;1943;1956;1969;PA;Army Aviation Doctrine;High;sandalli_renato_ita;X
+25185;Chief of Air Force;Pietro Piacentini;1944;1964;1964;SC;Army Aviation Doctrine;High;piacentini_pietro_ita;X
+25186;Chief of Air Force;Mario Ajmone Cat;1944;1953;1953;SC;Air Superiority Doctrine;High;ajmone_cat_mario_ita;X
+25187;Chief of Air Force;Aldo Urbani;1951;1974;1974;SC;Naval Aviation Doctrine;High;urbani_aldo_ita;X
+25188;Chief of Air Force;Arrigo Tessari;1944;1972;1972;NS;Army Aviation Doctrine;High;tessari_arrigo_ita;X
+25201;Head of State;Palmiro Togliatti;1933;1965;1965;ST;Ruthless Powermonger;High;togliatti_palmiro_ita;X
+25202;Head of State;Amadeo Bordiga;1933;1971;1971;LE;Autocratic Charmer;High;bordiga_amadeo_ita;X
+25203;Head of State;Pietro Nenni;1933;1981;1981;LWR;Die-hard Reformer;High;nenni_pietro_ita;X
+25204;Head of Government;Luigi Longo;1933;1969;1969;ST;Political Protege;High;longo_luigi_hog_ita;X
+25205;Head of Government;Ruggero Grieco;1933;1956;1956;LE;Silent Workhorse;High;grieco_ruggero_ita;X
+25206;Head of Government;Sandro Pertini;1933;1991;1991;LWR;Flamboyant Tough Guy;High;pertini_sandro_ita;X
+25207;Foreign Minister;Palmiro Togliatti;1933;1965;1965;ST;Ideological Crusader;High;togliatti_palmiro_ita;X
+25208;Foreign Minister;Ruggero Grieco;1933;1956;1956;LE;Great Compromiser;High;grieco_ruggero_ita;X
+25209;Foreign Minister;Pietro Nenni;1933;1981;1981;LWR;The Cloak N Dagger Schemer;High;nenni_pietro_ita;X
+25210;Minister of Armament;Vittorio Vidali;1933;1984;1984;ST;Infantry Proponent;High;vidali_vittorio_ita;X
+25211;Minister of Armament;Mauro Scoccimarro;1933;1973;1973;LE;Reformer;High;scoccimarro_mauro_ita;X
+25212;Minister of Armament;Antonio Pesenti;1933;1974;1974;LE;Planned economy proponent;High;pesenti_antonio_ita;X
+25213;Minister of Armament;Pietro Secchia;1933;1974;1974;LE;Military Entrepreneur;High;secchia_pietro_ita;X
+25214;Minister of Armament;Emilio Lussu;1933;1976;1976;LWR;Tank Proponent;High;lussu_emilio_ita;X
+25215;Minister of Armament;Alfredo Pizzoni;1933;1959;1959;LWR;Administrative Genius;High;pizzoni_alfredo_ita;X
+25216;Minister of Security;Palmiro Togliatti;1933;1941;1965;ST;Prince of Terror;High;togliatti_palmiro_ita;X
+25217;Minister of Security;Ruggero Grieco;1941;1956;1956;LE;Compassionate Gentleman;High;grieco_ruggero_ita;X
+25218;Minister of Security;Giuseppe Romita;1933;1959;1959;LWR;Man of the People;High;romita_giuseppe_ita;X
+25219;Head of Military Intelligence;Giuseppe Di Vittorio;1933;1958;1958;LE;Dismal Enigma;High;di_vittorio_giuseppe_ita;X
+25220;Head of Military Intelligence;Pietro Secchia;1933;1974;1974;LE;Political Specialist;High;secchia_pietro_ita;X
+25221;Head of Military Intelligence;Francesco Fausto Nitti;1933;1975;1975;LWR;Logistics Specialist;High;nitti_francesco_fausto_ita;X
+25222;Chief of Staff;Luigi Longo;1933;1969;1969;ST;School of Defence;High;longo_luigi_ita;X
+25223;Chief of Staff;Ilio Barontini;1933;1952;1952;ST;School of Mass Combat;High;barontini_ilio_ita;X
+25224;Chief of Staff;Vittorio Vidali;1933;1984;1984;ST;School of Manoeuvre;High;vidali_vittorio_ita;X
+25225;Chief of Staff;Emilio Lussu;1933;1976;1976;LWR;School of Fire Support;High;lussu_emilio_ita;X
+25226;Chief of Army;Pietro Secchia;1933;1974;1974;LE;Static Defence Doctrine;High;secchia_pietro_ita;X
+25227;Chief of Army;Giorgio Amendola;1933;1981;1981;LE;Armoured Spearhead Doctrine;High;amendola_giorgio_ita;X
+25228;Chief of Army;Giancarlo Pajetta;1940;1991;1991;LWR;commando doctrine army;High;pajetta_giancarlo_ita;X
+25229;Chief of Army;Francesco Fausto Nitti;1933;1975;1975;LWR;Elastic Defence Doctrine;High;nitti_francesco_fausto_ita;X
+25230;Chief of Navy;Ilio Barontini;1933;1952;1952;ST;Base Control Doctrine;High;barontini_ilio_ita;X
+25231;Chief of Navy;Luciano Barca;1944;1999;1999;LE;Indirect Approach Doctrine;High;barca_luciano_ita;X
+25232;Chief of Air Force;Umberto Nobile;1933;1979;1979;LE;Vertical Envelopment Doctrine;High;nobile_umberto_ita;X
+25233;Chief of Air Force;Angelo Antonini;1935;1964;1999;LE;Army Aviation Doctrine;High;antonini_angelo_ita;X
+25234;Chief of Air Force;Emilio Croce;1935;1972;1972;LE;Carpet Bombing Doctrine;High;croce_emilio_ita;X
+25235;Chief of Air Force;Cesare Roda;1935;1963;1963;LE;Air Superiority Doctrine;High;roda_cesare_ita;X
+25236;Chief of Air Force;Giulio Vespignani;1935;1964;1999;LE;Air Superiority Doctrine;High;vespignani_giulio_ita;X
+25237;Chief of Air Force;Giuseppe Krizaj;1935;1949;1999;LWR;Air Superiority Doctrine;High;krizaj_giuseppe_ita;X
+25301;Head of State;Umberto II;1933;1964;1999;FA;Insignificant Layman;High;umberto_II_d'italia_ita;X
+25302;Head of Government;Gian Galeazzo Ciano;1940;1944;1999;FA;Happy Amateur;High;ciano_galezzo_ita;X
+25303;Head of Government;Alessandro Pavolini;1945;1964;1999;NS;Flamboyant Tough Guy;High;pavolini_alessandro_rsi;X
+25304;Foreign Minister;Filippo Anfuso;1946;1964;1964;FA;Great Compromiser;Very High;anfuso_filippo_rsi;X
+25305;Minister of Armament;Domenico Pellegrini Giampietro;1946;1971;1971;FA;Planned economy proponent;High;pellegrini_giampietro_domenico_rsi;X
+25306;Head of Military Intelligence;Candeloro De Leo;1946;1964;1964;FA;Dismal Enigma;Medium;de_leo_candeloro_rsi;X
+25307;Chief of Army;Renato Ricci;1946;1957;1957;FA;Guns and Butter Doctrine;High;ricci_renato_ita;X
+25501;Head of State;Vittorio Emanuele III;1914;1932;1948;PA;Stern Imperialist;Very High;vittorio_emanuele_III_ww1_ita;X
+25502;Head of State;Vittorio Emanuele III;1914;1932;1948;ML;Insignificant Layman;Very High;vittorio_emanuele_III_ww1_ita;X
+25503;Head of State;Vittorio Emanuele III;1920;1932;1948;FA;Weary Stiffneck;Very High;vittorio_emanuele_III_ww1_ita;X
+25504;Head of State;Emanuele Filiberto I;1914;1932;1932;FA;Resigned Generalissimo;Very High;emanuele_filiberto_ita;X
+25505;Head of State;Giacinto Menotti Serrati;1914;1927;1927;LE;Popular Figurehead;Very High;menotti_serrati_giacinto_ita;X
+25511;Head of Government;Antonio Salandra;1914;1932;1932;SC;Flamboyant Tough Guy;Very High;salandra_antonio_ita;X
+25512;Head of Government;Paolo Boselli;1916;1932;1932;SC;Happy Amateur;Very High;boselli_paolo_ita;X
+25513;Head of Government;Vittorio Emanuele Orlando;1917;1932;1953;ML;Naive Optimist;Very High;orlando_vittorio_emanuele_ita;X
+25514;Head of Government;Francesco Saverio Nitti;1919;1932;1954;LWR;Political Protege;Very High;nitti_francesco_ita;X
+25515;Head of Government;Giovanni Giolitti;1914;1929;1929;ML;Flamboyant Tough Guy;Very High;giolitti_giovanni_ita;X
+25516;Head of Government;Ivanoe Bonomi;1921;1932;1952;SD;Political Protege;Very High;bonomi_ivanoe_ww1_ita;X
+25517;Head of Government;Luigi Facta;1922;1931;1931;ML;Naive Optimist;Very High;facta_luigi_ita;X
+25518;Head of Government;Benito Mussolini;1920;1932;1999;FA;Flamboyant Tough Guy;Very High;mussolini_benito_ww1_ita;X
+25519;Head of Government;Sidney Sonnino;1914;1923;1923;SC;Naive Optimist;Very High;sonnino_sidney_ita;X
+25520;Head of Government;Tommaso Tittoni;1914;1932;1932;SC;Political Protege;Very High;tittoni_tommaso_ita;X
+25521;Head of Government;Gabriele D'Annunzio;1914;1932;1939;FA;Flamboyant Tough Guy;Very High;d'annunzio_gabriele_ita;X
+25522;Head of Government;Amadeo Bordiga;1914;1932;1971;LE;Ambitious Union Boss;Very High;bordiga_amadeo_ita;X
+25531;Foreign Minister;Antonino Paternò-Castello;1914;1915;1915;ML;Great Compromiser;High;paterno_castello_antonino_ita;X
+25532;Foreign Minister;Sidney Sonnino;1914;1923;1923;SC;Great Compromiser;High;sonnino_sidney_ita;X
+25533;Foreign Minister;Tommaso Tittoni;1914;1932;1932;SC;Apologetic Clerk;High;tittoni_tommaso_ita;X
+25534;Foreign Minister;Vittorio Scialoja;1919;1932;1934;SD;Great Compromiser;High;scialoja_vittorio_ita;X
+25535;Foreign Minister;Carlo Sforza;1920;1932;1953;SL;Great Compromiser;High;sforza_carlo_ww1_ita;X
+25536;Foreign Minister;Pietro Tomasi Della Torretta;1921;1932;1963;SD;Great Compromiser;High;tomasi_della_torretta_pietro_ita;X
+25537;Foreign Minister;Carlo Schanzer;1922;1932;1954;SL;Great Compromiser;High;schanzer_carlo_ita;X
+25538;Foreign Minister;Benito Mussolini;1914;1932;1999;FA;Aggressive Nationalist;High;mussolini_benito_ww1_ita;X
+25539;Foreign Minister;Gabriele D'Annunzio;1914;1932;1939;FA;Iron Fisted Brute;Very High;d'annunzio_gabriele_ita;X
+25540;Foreign Minister;Eugenio Coselschi;1914;1932;1999;FA;The Cloak N Dagger Schemer;Very High;coselschi_eugenio_ww1_ita;X
+25541;Foreign Minister;Nicola Bombacci;1914;1932;1945;LE;Ideological Crusader;Very High;bombacci_nicola_ita;X
+25542;Foreign Minister;Giacinto Menotti Serrati;1914;1927;1927;LE;Biased Intellectual;Very High;menotti_serrati_giacinto_ita;X
+25551;Minister of Armament;Enrico Arlotta;1914;1932;1933;SC;Resource Industrialist;Very High;arlotta_enrico_ita;X
+25552;Minister of Armament;Luigi Facta;1914;1931;1931;ML;Administrative Genius;Very High;facta_luigi_ita;X
+25553;Minister of Armament;Luigi Rava;1914;1932;1939;SC;Administrative Genius;Very High;rava_luigi_ita;X
+25554;Minister of Armament;Edoardo Daneo;1914;1923;1923;SC;Resource Industrialist;Very High;daneo_edoardo_ita;X
+25555;Minister of Armament;Filippo Meda;1916;1932;1939;ML;Laissez-Faire Capitalist;Very High;meda_filippo_ita;X
+25556;Minister of Armament;Francesco Tedesco;1919;1922;1922;SD;Resource Industrialist;Very High;tedesco_francesco_ita;X
+25557;Minister of Armament;Carlo Schanzer;1920;1932;1954;SL;Resource Industrialist;Very High;schanzer_carlo_ita;X
+25558;Minister of Armament;Giuseppe de Nava;1914;1924;1924;ML;Administrative Genius;Very High;de_nava_giuseppe_ita;X
+25559;Minister of Armament;Giovanni Battista Bertone;1922;1932;1999;ML;Laissez-Faire Capitalist;Very High;bertone_giovanni_battista_ita;X
+25560;Minister of Armament;Alberto de Stefani;1914;1932;1970;FA;Administrative Genius;Very High;de_stefani_alberto_ita;X
+25561;Minister of Armament;Paolo Spingardi;1914;1918;1918;SC;Military Entrepreneur;Very High;spingardi_paolo_ita;X
+25562;Minister of Armament;Domenico Grandi;1914;1932;1938;SC;Infantry Proponent;Very High;grandi_domenico_ita;X
+25563;Minister of Armament;Vittorio Italico Zupelli;1914;1932;1946;SC;Military Entrepreneur;Very High;zupelli_vittorio_italico_ita;X
+25564;Minister of Armament;Paolo Morrone;1916;1932;1938;SC;Infantry Proponent;Very High;morrone_paolo_ita;X
+25565;Minister of Armament;Vittorio Alfieri;1917;1919;1919;SC;Military Entrepreneur;Very High;alfieri_vittorio_ita;X
+25566;Minister of Armament;Leone Viale;1914;1918;1918;SC;Battle Fleet Proponent;Very High;viale_leone_ita;X
+25567;Minister of Armament;Camillo Corsi;1914;1921;1921;SC;Battle Fleet Proponent;Very High;corsi_camillo_ita;X
+25568;Minister of Armament;Giovanni Sechi;1919;1932;1949;SC;Battle Fleet Proponent;Very High;sechi_giovanni_ita;X
+25569;Minister of Armament;Alfredo Dallolio;1917;1932;1953;SC;Military Entrepreneur;Very High;dallolio_alfredo_ita;X
+25570;Minister of Armament;Paolo Carcano;1914;1918;1918;ML;Laissez-Faire Capitalist;Very High;carcano_paolo_ita;X
+25571;Minister of Armament;Marcello Soleri;1919;1932;1945;SD;Resource Industrialist;High;soleri_marcello_ita;X
+25572;Minister of Armament;Leone Wollemborg;1914;1932;1932;SL;Laissez-Faire Capitalist;Very High;wollemborg_leone_ita;X
+25573;Minister of Armament;Vito Volterra;1914;1932;1940;ML;Theoretical Scientist;Medium;volterra_vito_ita;X
+25574;Minister of Armament;Antonio Graziadei;1914;1932;1954;LE;Resource Industrialist;Very High;graziadei_antonio_ita;X
+25575;Minister of Armament;Antonio Gramsci;1918;1932;1938;LE;Administrative Genius;Very High;gramsci_antonio_ita;X
+25576;Minister of Armament;Maffeo Pantaleoni;1914;1925;1925;FA;Laissez-Faire Capitalist;Very High;pantaleoni_maffeo_ita;X
+25581;Minister of Security;Giovanni Giolitti;1914;1929;1929;ML;Crime Fighter;High;giolitti_giovanni_ita;X
+25582;Minister of Security;Antonio Salandra;1914;1932;1932;SC;Efficient Sociopath;High;salandra_antonio_ita;X
+25583;Minister of Security;Vittorio Emanuele Orlando;1914;1932;1953;ML;Back Stabber;High;orlando_vittorio_emanuele_ita;X
+25584;Minister of Security;Francesco Saverio Nitti;1914;1932;1954;LWR;Man of the People;High;nitti_francesco_ita;X
+25585;Minister of Security;Ivanoe Bonomi;1916;1932;1952;SD;Efficient Sociopath;High;bonomi_ivanoe_ww1_ita;X
+25586;Minister of Security;Luigi Facta;1914;1931;1931;ML;Man of the People;High;facta_luigi_ita;X
+25587;Minister of Security;Paolo Boselli;1914;1932;1932;SC;Silent Lawyer;Very High;boselli_paolo_ita;X
+25588;Minister of Security;Sidney Sonnino;1914;1923;1923;SC;Back Stabber;Very High;sonnino_sidney_ita;X
+25589;Minister of Security;Tommaso Tittoni;1914;1932;1932;SC;Silent Lawyer;Very High;tittoni_tommaso_ita;X
+25590;Minister of Security;Benito Mussolini;1914;1932;1999;FA;Efficient Sociopath;Very High;mussolini_benito_ww1_ita;X
+25591;Minister of Security;Filippo Turati;1914;1932;1932;LE;Man of the People;Medium;turati_filippo_ita;X
+25592;Minister of Security;Paolo Thaon di Revel;1914;1933;1948;PA;Compassionate Gentleman;High;thaon_di_revel_paolo_ww1_ita;X
+25593;Minister of Security;Enrico Millo;1914;1930;1930;FA;Prince of Terror;High;millo_enrico_ita;X
+25601;Head of Military Intelligence;Eugenio De Rossi;1914;1921;1921;SC;Technical Specialist;Very High;de_rossi_eugenio_ita;X
+25602;Head of Military Intelligence;Vincenzo Garioni;1914;1920;1920;SC;Logistics Specialist;Very High;garioni_vincenzo_ita;X
+25603;Head of Military Intelligence;Felice de Chaurand;1914;1917;1917;SC;Logistics Specialist;Very High;de_chaurand_felice_ita;X
+25604;Head of Military Intelligence;Rosolino Poggi;1914;1932;1932;SC;Dismal Enigma;Very High;unknownminister;X
+25605;Head of Military Intelligence;Giovanni Garruccio;1915;1921;1921;SC;Political Specialist;Very High;garruccio_melis_giovanni_ita;X
+25606;Head of Military Intelligence;Odoardo Marchetti;1917;1932;1999;SC;Dismal Enigma;Very High;unknownminister;X
+25607;Head of Military Intelligence;Camillo Caleffi;1919;1932;1999;SC;Dismal Enigma;Very High;unknownminister;X
+25608;Head of Military Intelligence;Attilio Vigevano;1921;1927;1927;SC;Dismal Enigma;Very High;unknownminister;X
+25609;Head of Military Intelligence;Giovanni Giuriati;1914;1929;1929;FA;Logistics Specialist;Very High;giuriati_giovanni_ita;X
+25610;Head of Military Intelligence;Bruno Fortichiari;1914;1932;1982;LE;Political Specialist;Medium;fortichiari_bruno_ita;X
+25611;Chief of Staff;Luigi Cadorna;1914;1917;1929;SC;Stubborn Disciplinarian;Very High;cadorna_luigi_ita;X
+25612;Chief of Staff;Armando Diaz;1915;1928;1928;SC;School of Psychology;Very High;diaz_armando_ita;X
+25613;Chief of Staff;Pietro Badoglio;1919;1925;1958;SC;School of Defence;Very High;badoglio_pietro_ww1_ita;X
+25614;Chief of Staff;Giuseppe Vaccari;1921;1927;1927;SC;School of Fire Support;Very High;vaccari_giuseppe_ita;X
+25615;Chief of Staff;Emanuele Filiberto di Savoia-Aosta;1914;1932;1932;PA;School of Manoeuvre;Very High;emanuele_filiberto_ita;X
+25616;Chief of Staff;Luigi Zuccari;1914;1932;1999;ML;School of Mass Combat;Very High;zuccari_luigi_ita;X
+25617;Chief of Staff;Enrico Caviglia;1915;1925;1945;SC;School of Fire Support;Very High;caviglia_enrico_ww1_ita;X
+25618;Chief of Staff;Luigi Capello;1914;1928;1928;LWR;School of Mass Combat;Very High;capello_luigi_ita;X
+25619;Chief of Staff;Alberto Pollio;1908;1915;1915;SC;School of Fire Support;Very High;pollio_alberto_ita;X
+25620;Chief of Staff;Settimio Piacentini;1914;1921;1921;SC;School of Defence;Very High;piacentini_settimio_ita;X
+25621;Chief of Army;Luigi Cadorna;1914;1917;1929;SC;Decisive Battle Doctrine;Very High;cadorna_luigi_ita;X
+25622;Chief of Army;Armando Diaz;1915;1928;1928;SC;Guns and Butter Doctrine;Very High;diaz_armando_ita;X
+25623;Chief of Army;Pietro Badoglio;1919;1925;1958;SC;Static Defence Doctrine;Very High;badoglio_pietro_ww1_ita;X
+25624;Chief of Army;Giuseppe Vaccari;1921;1927;1927;SC;Decisive Battle Doctrine;Very High;vaccari_giuseppe_ita;X
+25625;Chief of Army;Emanuele Filiberto di Savoia-Aosta;1914;1932;1932;PA;Static Defence Doctrine;Very High;emanuele_filiberto_ita;X
+25626;Chief of Army;Luigi Zuccari;1914;1926;1926;SC;Guns and Butter Doctrine;Very High;zuccari_luigi_ita;X
+25627;Chief of Army;Enrico Caviglia;1915;1925;1945;SC;Decisive Battle Doctrine;Very High;caviglia_enrico_ww1_ita;X
+25628;Chief of Army;Luigi Capello;1914;1928;1928;LWR;Decisive Battle Doctrine;Very High;capello_luigi_ita;X
+25629;Chief of Army;Alberto Pollio;1908;1915;1915;SC;Guns and Butter Doctrine;Very High;pollio_alberto_ita;X
+25630;Chief of Army;Settimio Piacentini;1914;1921;1921;SC;Static Defence Doctrine;Very High;piacentini_settimio_ita;X
+25631;Chief of Navy;Paolo Thaon di Revel;1914;1925;1948;PA;Indirect Approach Doctrine;High;thaon_di_revel_paolo_ww1_ita;X
+25632;Chief of Navy;Luigi Amedeo di Savoia-Aosta;1914;1920;1933;PA;Decisive Naval Battle Doctrine;Very High;luigi_amedeo_ita;X
+25633;Chief of Navy;Camillo Corsi;1914;1922;1922;SC;Base Control Doctrine;Very High;corsi_camillo_ita;X
+25634;Chief of Navy;Alfredo Acton;1917;1928;1928;SC;Power Projection Doctrine;Very High;acton_alfredo_ita;X
+25635;Chief of Navy;Luigi Rizzo;1914;1932;1951;FA;Indirect Approach Doctrine;Very High;rizzo_luigi_ww1_ita;X
+25641;Chief of Air Force;Maurizio Moris;1914;1932;1945;SC;Army Aviation Doctrine;High;moris_maurizio_ita;X
+25642;Chief of Air Force;Mario Calderara;1914;1925;1925;SC;Naval Aviation Doctrine;Very High;calderara_mario_ita;X
+25643;Chief of Air Force;Giulio Douhet;1914;1931;1931;SC;Carpet Bombing Doctrine;Very High;douhet_giulio_ita;X
+27644;Chief of Air Force;Luigi Bongiovanni;1918;1925;1925;SC;Air Superiority Doctrine;Very High;bongiovanni_luigi_ita;X
+27645;Chief of Air Force;Amedeo De Siebert;1920;1932;1932;SC;Air Superiority Doctrine;Very High;de_siebert_amedeo_ita;X
+27646;Chief of Air Force;Pier Ruggero Piccio;1923;1932;1934;SC;Army Aviation Doctrine;Very High;piccio_pier_ruggero_ww1_ita;X
+25647;Chief of Air Force;Gabriele D'Annunzio;1914;1932;1939;FA;Vertical Envelopment Doctrine;Very High;d'annunzio_gabriele_ita;X
+27648;Chief of Air Force;Giovanni Battista Marieni;1915;1921;1933;SC;Air Superiority Doctrine;Very High;marieni_giovanni_ita;X
+27649;Chief of Air Force;Ernesto Cabruna;1914;1932;1960;FA;Air Superiority Doctrine;Very High;cabruna_ernesto_ita;X
+25650;Chief of Staff;Sante Ceccherini;1914;1932;1932;FA;School of Mass Combat;Very High;ceccherini_sante_ita;X
+25651;Chief of Army;Corrado Tamajo;1914;1932;1960;FA;Guns and Butter Doctrine;Very High;tamajo_corrado_ita;X
+25901;Head of State;Vittorio Emanuele II;1850;1870;1870;SC;Stern Imperialist;High;1866_vittorio;X
+25902;Head of Government;Bettino Ricasoli;1850;1870;1870;SC;Silent Workhorse;High;1866_ricasoli;X
+25903;Foreign Minister;Emilio Visconti Venosta;1850;1870;1870;SC;Apologetic Clerk;Very High;1866_venosta;X
+25904;Minister of Armament;Ignazio De Genova di Pettinengo;1850;1870;1870;SC;Military Entrepreneur;Very High;1866_pettinengo;X
+25905;Minister of Security;Bettino Ricasoli;1850;1870;1870;SC;Prince of Terror;Very High;1866_ricasoli;X
+25906;Head of Military Intelligence;Edoardo Driquet;1850;1870;1870;SC;Logistics Specialist;High;1866_driquet;X
+25907;Chief of Staff;Vittorio Emanuele II;1850;1870;1870;SC;School of Mass Combat;Medium;1866_vittorio;X
+25908;Chief of Army;Alfonso La Marmora;1850;1870;1870;SC;Decisive Battle Doctrine;Medium;1866_lamarmora;X
+25909;Chief of Navy;Agostino Depretis;1850;1870;1870;SC;Base Control Doctrine;Medium;1866_depretis;X

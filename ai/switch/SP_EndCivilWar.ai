@@ -1,0 +1,223 @@
+# End of Spanish Civil War AI File by Lothos
+
+switch = no # [yes/no]
+max_front_ratio = 1.2 
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+neutrality = 150
+war = 0
+strat_redeploy_threshold = 25
+exp_force_ratio = 0.750
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+use_offensive_supply = yes
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.050 
+}
+military = { 
+	#### Divisions etc...
+	infantry 		= 20
+	cavalry 		= 0
+	motorized 		= 5
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 6
+	paratrooper 	= 0
+	marine 			= 5
+	bergsjaeger 	= 10
+	garrison		= 0
+    hq 				= 3
+	militia 		= 0
+#				49 %
+	interceptor 	= 10
+	multi_role 		= 0
+	cas 			= 7
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				22 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier		= 0
+	destroyer 		= 14
+	light_cruiser 	= 7
+	heavy_cruiser 	= 5
+	battlecruiser 	= 0
+	submarine 		= 0
+	transports 		= 3
+#				29 %
+}
+technology = { 
+	endgoal 	= { } 
+	preference = { 6900 
+		# Manufacturing
+		5050 5060 5070
+
+		# Construction Engineering
+		5080 5090 5100
+		
+		# Production Control
+		5110 5120
+		
+		# Assembly Line
+		5140 5150 5160 5180
+		
+		# Cryptography
+		5310 5320 5330 5340
+		
+		# Special Weapons
+		7140 7150 16000 16040 7160
+
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Light tanks
+		2020 2030 2040 2050 2060
+
+		# Medium tanks
+		2070 2080 2090
+
+		# Light / Mountain
+		1110 1120 1130 1140
+
+		# Naval Doctrines
+		8070
+
+		# Air Doctrines
+		9040 9050 9060 9080 9100 9110 9120 9130 9140 9190 9200 9210 9220 9230 9240 9250 9260 9270 9280 9290 9300 9310 9320 9330 9340 9350 9360 9370 9380 9390 9400 9410 9420
+
+		# Close Air Support
+		4170 4280 4180
+	} 
+	ignore 	= {
+		# Rocket Assembly
+		5170
+
+		# Airborne Infantry
+		1070 1080 1090 1100
+
+		# Mechanized Infantry
+		1260 1270 1280 1290
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Rocketry
+		5560 7550 7560 7570 7580 7590
+
+		# Radar Warning
+		5410 5416 5417 5420 5426 5430 5440 5466 5450 5460 53030 5476 53070
+
+		# Air Transports
+		4290 4250 4260 4270 15180 15190
+
+		# Multi-Role
+		4300 4310 4320 4330 4340 4040 4070 4100 4350
+
+		# Naval Bomber
+		4190 4200 4210
+
+		# Strategic bombers
+		4800 4810 4820 4220 4230 4240 4246 15160 15170 16030
+
+		# Tank destroyers
+		2170 2180 2190 2200 2210
+
+		# Self-Propelled Artillery
+		2220 2230 2240 2250
+
+		# SP Rocket Artillery
+		2260 2270 2280 
+		
+		# Rocket Artillery
+		2970 2370 2380 2390
+
+		# Battlecruisers
+		3310 3320 3330 3340 3350 12030
+
+		# Battleship
+		3410 3420 3430 3440 3450 3456 3460 3470 3480 12040 3490 12050
+
+		# Aircraft Carriers
+		3510 3520 3530 3540 3550 12060 3560 3570
+
+		# Light Carrier
+		12100 12110 12120 12130 12140 12150
+
+		# Submarines
+		3610 3620 3630 3640 3650 3660 3670 3680 3690 3700 3710
+
+		# Strategic Destruction - Flying Armada
+		9140 9150 9160 9170 9180 9430 9440 9450 9460
+	}
+ 
+	armor 		= 3
+	infantry 	= 5
+	industry 	= 4
+	aircraft 	= 1
+	naval 		= 1
+	land_doctrines 	= 2
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 1
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 		= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 			= 20
+	war_zone_odds 			= 2.0
+	key_point_prio_mult		= 1.0
+	revolt_risk_mult		= 1.0
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		FRA = 20
+		ENG = 20
+		GER = 40
+		VIC = 20
+		USA = 40
+		POR = -1
+	}
+	province_priorities = {	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 7
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human = 2.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.1
+	max_attack_odds		= 2.5
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.65
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+}

@@ -1,0 +1,57 @@
+JAP;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+50011;Sumitomo;T1910;6;1650;2000;electronics;chemistry;general_equipment;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50008;Mitsui;T1907;6;1683;1950;electronics;chemistry;general_equipment;industrial_engineering;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50029;Mitsui;T1907;8;1951;2000;electronics;chemistry;general_equipment;industrial_engineering;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50010;Nissan;T1909;6;1933;2000;electronics;industrial_engineering;mechanics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50032;Komatsu;100208;6;1917;2000;industrial_engineering;vehicle_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50012;Teiji Takagi;T1911;6;1900;1960;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50014;Yoshio Nishina;T1913;4;1928;1951;nuclear_physics;mathematics;chemistry;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50021;Sin-Itiro Tomonaga;T1920;5;1941;2000;nuclear_physics;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50026;Nippon Electric Company;T1925;5;1899;2000;chemistry;electronics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50059;Nitobe Inazo;100228;5;1891;1930;training;management;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50060;Tokyo Imperial University;100229;5;1877;1930;mathematics;chemistry;electronics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50061;Tokyo Imperial University;100229;6;1931;2000;mathematics;chemistry;electronics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50002;Tokyo Gas and Electric Industry;T1901;5;1917;2000;mechanics;artillery;electronics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50006;Mitsubishi Jukogyo;T1905;5;1870;2000;vehicle_engineering;artillery;management;mechanics;munitions;rt_user_1;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50013;Tokyo Arsenal;T1912;5;1898;2000;munitions;training;general_equipment;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50033;Kwaishinsha;100209;4;1911;1933;mechanics;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50034;Kwaishinsha;100210;5;1934;2000;mechanics;artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50062;Kijiro Nambu;100230;6;1897;1927;general_equipment;management;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50063;Nambu Arms Manufacturing Company;100231;7;1927;2000;general_equipment;management;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50003;Kawasaki Jukogyo;T1902;8;1896;2000;naval_engineering;technical_efficiency;carrier_design;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50036;Yokosuka Naval Yard;100211;5;1871;1920;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50037;Yokosuka Naval Yard;100211;7;1921;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50004;Kure Naval Yard;100203;7;1889;2000;naval_engineering;electronics;naval_artillery;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50007;Mitsubishi Zousensho;T1906;7;1870;2000;naval_engineering;naval_artillery;technical_efficiency;submarine_design;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50001;Aichi Kokuki;T1900;6;1898;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50005;Mitsubishi Hikoki;T1904;7;1870;2000;fighter_design;naval_artillery;avionics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50009;Nakajima;100204;7;1918;2000;technical_efficiency;fighter_design;mechanics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50028;Kawasaki Hikoki;T1902;7;1896;2000;bomber_design;munitions;aeronautics;aircraft_testing;fighter_design;rt_user_1;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50064;Kugisho;100232;5;1936;2000;aeronautics;avionics;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50038;Kamimura Hikonojo;100212;5;1894;1914;small_taskforce_tactics;naval_training;individual_courage;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50035;Togo Heihachiro;T1907;7;1903;1923;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50018;Osami Nagano;T1917;6;1923;1950;naval_training;large_taskforce_tactics;centralized_execution;seamanship;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50017;Isoroku Yamamoto;T1916;9;1926;1954;large_taskforce_tactics;centralized_execution;carrier_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50022;Shigetaro Shimada;T1921;6;1929;2000;large_taskforce_tactics;centralized_execution;carrier_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50024;Maritime Self-Defence Force;T1923;6;1954;2000;small_taskforce_tactics;centralized_execution;naval_training;seamanship;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50065;Imperial Submarines;100233;5;1914;2000;decentralized_execution;submarine_tactics;small_taskforce_tactics;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50019;Shunroku Hata;T1918;6;1926;1962;bomber_tactics;centralized_execution;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50020;Tomoyuki Yamashita;T1919;7;1922;1953;small_unit_tactics;centralized_execution;combined_arms_focus;training;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50025;Air Self-Defence Force;T1924;6;1954;2000;fighter_tactics;centralized_execution;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50047;Imperial Japanese Army Air Force;100220;4;1919;1934;centralized_execution;fighter_tactics;training;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50048;Imperial Japanese Army Air Force;100220;6;1934;1954;centralized_execution;fighter_tactics;training;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50049;Imperial Japanese Navy Air Service;100221;5;1912;1934;centralized_execution;individual_courage;training;carrier_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50050;Imperial Japanese Navy Air Service;100221;8;1934;1954;centralized_execution;individual_courage;training;carrier_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50052;Mitsuo Fuchida;100222;7;1939;2000;decentralized_execution;individual_courage;bomber_tactics;carrier_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50044;Klemens Wilhelm Jacob Meckel;100217;7;1885;1905;decentralized_execution;large_taskforce_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50045;Katsura Taro;100218;5;1870;1913;decentralized_execution;large_taskforce_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50041;Army War College;100215;4;1882;1888;centralized_execution;large_taskforce_tactics;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50042;Army War College;100215;5;1888;2000;centralized_execution;large_taskforce_tactics;management;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50039;Oyama Iwao;100213;5;1897;1914;centralized_execution;large_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50043;Yamagata Aritomo;100216;5;1870;1920;centralized_execution;large_taskforce_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50016;Hisaichi Terauchi;T1915;6;1927;1959;large_unit_tactics;combined_arms_focus;training;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50015;Hideki Tojo;T1914;5;1930;1954;large_unit_tactics;individual_courage;centralized_execution;training;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50027;Tokubetsu Heigakkô;100205;6;1930;2000;small_unit_tactics;airborne_training;marine_training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50023;Ground Self-Defence Force;T1922;5;1954;2000;small_unit_tactics;combined_arms_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+500000;Kempeitai;T500000;7;1881;1946;small_unit_tactics;rt_user_2;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+500001;Fuji Heavy Industries;T500001;8;1953;2000;rt_user_1;aeronautics;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

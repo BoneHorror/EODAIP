@@ -1,0 +1,66 @@
+BEN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+565001;Head of State;Leon Geismar;1933;1964;1999;SL;Ruthless Powermonger;High;M533001;X
+565002;Head of Government;Julien Georges Lamy;1933;1964;1999;SL;Backroom Backstabber;High;M533002;X
+565003;Foreign Minister;Hubert Deschamps;1933;1964;1999;SL;Iron Fisted Brute;High;M533003;X
+565004;Minister of Armament;Horace Valentin Crocicchia;1933;1964;1999;SL;Battle Fleet Proponent;Medium;M533004;X
+565005;Minister of Security;Louis Bressolles;1933;1964;1999;SL;Crime Fighter;Medium;M533005;X
+565006;Head of Military Intelligence;Albert Mercadier;1933;1964;1999;SL;Technical Specialist;Medium;M533006;X
+565007;Chief of Staff;Jean de Saint-Alary;1933;1964;1999;SL;School of Defence;Medium;M533007;X
+565008;Chief of Army;Leonce Joseph Delpech;1933;1964;1999;SL;Static Defence Doctrine;Medium;M533008;X
+565009;Chief of Navy;Francis d'Oultre Seille;1933;1964;1999;SL;Indirect Approach Doctrine;Medium;M533009;X
+565010;Chief of Air Force;Louis Flury-Hérard;1933;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M533010;X
+565011;Head of State;Michel Lucien Montagne;1933;1964;1999;SL;Autocratic Charmer;High;M533011;X
+565012;Head of State;Leonce Joseph Delpech;1941;1964;1999;SL;Resigned Generalissimo;High;M533008;X
+565013;Head of State;Jean de Saint-Alary;1941;1964;1999;SL;Weary Stiffneck;High;M533007;X
+565014;Head of State;Pierre Salceti;1942;1964;1999;SL;Benevolent Gentleman;High;M533014;X
+565015;Head of State;Albert Mercadier;1943;1964;1999;SL;Stern Imperialist;High;M533006;X
+565016;Head of State;Jean Noutary;1944;1964;1999;SL;Pig-headed Isolationist;High;M533016;X
+565017;Head of State;Gaston Mondon-Vidailhet;1933;1964;1999;PA;Die-hard Reformer;High;M533017;X
+565018;Head of State;Felix Houphouet-Boigny;1933;1964;1999;LWR;Popular Figurehead;High;M533018;X
+565019;Head of Government;Gaston Mondon-Vidailhet;1933;1964;1999;SL;Corporate Suit;High;M533017;X
+565020;Head of Government;Louis Bressolles;1938;1964;1999;SL;Flamboyant Tough Guy;High;M533005;X
+565021;Head of Government;Horace Valentin Crocicchia;1938;1964;1999;SL;Old Admiral;High;M533004;X
+565022;Head of Government;Hubert Deschamps;1941;1964;1999;SL;Naive Optimist;High;M533003;X
+565023;Head of Government;Georges Pierre Rey;1942;1964;1999;SL;Naive Optimist;High;M533023;X
+565024;Head of Government;Andre Latrille;1943;1964;1999;SL;Old General;High;M533024;X
+565025;Head of Government;Henry de Mauduit;1945;1964;1999;SL;Ambitious Union Boss;High;M533025;X
+565026;Head of Government;Oswald Durand;1947;1964;1999;SL;Ambitious Union Boss;High;M533026;X
+565027;Head of Government;Georges Pierre Rey;1933;1964;1999;PA;Political Protege;High;M533023;X
+565028;Head of Government;Sylvanus Olympio;1933;1964;1999;LWR;Corporate Suit;High;M533028;X
+565029;Foreign Minister;Louis Picon;1940;1964;1999;SL;The Cloak N Dagger Schemer;High;M533029;X
+565030;Foreign Minister;Jean Noutary;1943;1964;1999;SL;Great Compromiser;High;M533016;X
+565031;Foreign Minister;Edme-Henri Gallois;1945;1964;1999;SL;Apologetic Clerk;High;M533031;X
+565032;Foreign Minister;Oswald Durand;1933;1964;1999;PA;Iron Fisted Brute;High;M533026;X
+565033;Foreign Minister;Nicolas Grunitzky;1933;1964;1999;LWR;Biased Intellectual;High;M533033;X
+565034;Foreign Minister;Souro Migan Apithy;1942;1964;1999;LWR;Ideological Crusader;High;M533034;X
+565035;Minister of Armament;Georges Pierre Rey;1939;1964;1999;SL;Submarine Proponent;Medium;M533023;X
+565036;Minister of Armament;Epiphanio Olympio;1941;1964;1999;SL;Military Entrepreneur;Medium;M533036;X
+565037;Minister of Armament;Raymond Echanne;1943;1964;1999;SL;laissez-faire capitalist;Medium;M533037;X
+565038;Minister of Armament;Charles Guéritault;1933;1964;1999;PA;Air to Ground Proponent;Medium;M533038;X
+565039;Minister of Armament;Hubert Maga;1933;1964;1999;LWR;Battle Fleet Proponent;Medium;M533039;X
+565040;Minister of Armament;Pierre Azenard;1941;1964;1999;LWR;Air Superiority Proponent;Medium;M533040;X
+565041;Minister of Security;Paul Milleliri;1941;1964;1999;SL;Back Stabber;Medium;M533041;X
+565042;Minister of Security;Henry de Mauduit;1943;1964;1999;SL;Man of the People;Medium;M533025;X
+565043;Minister of Security;André Lavergne;1945;1964;1999;SL;Prince of Terror;Medium;M533043;X
+565044;Minister of Security;Albert Doti;1933;1964;1999;PA;Back Stabber;Medium;M533044;X
+565045;Minister of Security;Maurice Yameogo;1933;1964;1999;LWR;Crime Fighter;Medium;M533045;X
+565046;Head of Military Intelligence;Charles Guéritault;1940;1964;1999;SL;Dismal Enigma;Medium;M533038;X
+565047;Head of Military Intelligence;Oswald Durand;1944;1964;1999;SL;Political Specialist;Medium;M533026;X
+565048;Head of Military Intelligence;Robert Joany;1933;1964;1999;PA;Naval Intelligence Specialist;Medium;M533048;X
+565049;Head of Military Intelligence;Hamani Diori;1933;1964;1999;LWR;Naval Intelligence Specialist;Medium;M533049;X
+565050;Head of Military Intelligence;Babacar Ba;1943;1964;1999;LWR;Industrial Specialist;Medium;M533050;X
+565051;Chief of Staff;Andre Latrille;1943;1964;1999;SL;School of Manoeuvre;Medium;M533024;X
+565052;Chief of Staff;Francis d'Oultre Seille;1933;1964;1999;PA;School of Defence;Medium;M533009;X
+565053;Chief of Staff;Akira Jomo;1933;1964;1999;LWR;School of Psychology;Medium;M533053;X
+565054;Chief of Staff;Ali Saibou;1941;1964;1999;LWR;School of Defence;Medium;M533054;X
+565055;Chief of Army;Pierre Salceti;1942;1964;1999;SL;Elastic Defence Doctrine;Medium;M533014;X
+565056;Chief of Army;Roger Podeur;1933;1964;1999;PA;Decisive Battle Doctrine;Medium;M533056;X
+565057;Chief of Army;Habib al-Aziz;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M533057;X
+565058;Chief of Army;Yorgui Koli;1941;1964;1999;LWR;Guns and Butter Doctrine;Medium;M533058;X
+565059;Chief of Navy;Edmond Louveau;1942;1964;1999;SL;Base Control Doctrine;Medium;M533059;X
+565060;Chief of Navy;Jean Lassere;1933;1964;1999;PA;Base Control Doctrine;Medium;M533060;X
+565061;Chief of Navy;Francois Tombalbaye;1933;1964;1999;LWR;Power Projection Doctrine;Medium;M533061;X
+565062;Chief of Air Force;Fred Scamaroni;1941;1964;1999;SL;Army Aviation Doctrine;Medium;M533062;X
+565063;Chief of Air Force;Augustino de Souza;1933;1964;1999;PA;Naval Aviation Doctrine;Medium;M533063;X
+565064;Chief of Air Force;Auguste Denise;1933;1964;1999;LWR;Air Superiority Doctrine;Medium;M533064;X

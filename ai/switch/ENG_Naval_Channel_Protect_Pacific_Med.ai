@@ -1,0 +1,50 @@
+# England sends fleet into the Channel
+
+admiral = { 
+target = { 
+		2682 = 100 #Near Norwich
+		2709 = 50 #Near Plymouth
+		2698 = 200 #Channel East
+		2700 = 400 #Channel North
+		2559 = 100 #Borneo
+		2528 = 300 #Singapore
+		2176 = 200 #Egypt
+		2181 = 600 #Malta
+		2699 = 300 #Target for D-Day - South Channel
+		2697 = 200 #Target for D-Day - Rotterdam
+	} 
+	core = {
+		#British coast
+     	2683 #Scotland
+     	2682 #Norwich
+     	2698 #Dover
+     	2700 #North Channel
+     	2708 #Irish Sea
+		
+		#### Gibraltar
+		2430 #Gibraltar
+     	
+		#Pacific
+		2540 #Above NEI - Risky but let's use for Pacific
+		2559 #Brunei
+		2528 #Singapore
+	
+		#Norwegia
+		#2671 #Narvik
+		#2689 #Alesund
+		
+		#Mediterranean
+		2176 #Suez
+		2181 #Malta
+		2180 #Palermo
+	}
+ignore = {
+		"Southeast Northsea"
+		"kattegat"
+		"Bothnian Bay"
+		"northern baltic"
+		"southern baltic"
+		"East North Sea"
+		"Norwegian Sea"
+	}
+}

@@ -1,0 +1,235 @@
+target = { 
+ 430 = 80 # Palermo
+ 433 = 80 # Stracuse? Prov below Palermo
+ 425 = 70 # Calabria
+ 419 = 60 # Rome
+ 422 = 75 # Taranto
+ 396 = 30 # Genoa
+ 761 = 30 # Benghazi
+ 750 = 30 # Tripoli
+ 429 = 100 # Malta
+ 435 = 35 # Cagliary (Sardinia)
+ 1432 = 20 # Singapore
+} 
+exp_force_ratio = 0.1
+exp_force_ratios = {
+    USA = 1.0
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = {
+       recklessness = 1 # 0-3
+    distrib_vs_ai = offensive
+    distrib_vs_human = offensive
+	passivity = {
+		JAP = 50
+		SIA = 90
+		SOV = 30
+		ITA = 0
+		RSI = 75
+		GER = 50
+	}  
+}
+garrison = {
+   	defend_overseas_beaches = yes 
+	home_multiplier 	= 0.55
+	overseas_multiplier = 1.0
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+		invasion = yes
+		base = 0.4 #Relative modifier. (lower = specific targets much more important.)
+		random = 16.0 #How big a random range. (1.0 = 1%)
+		coastal = 0.1 #increase to avoid coastal forts more.
+		beach = 0.1 #higher, avoid worst beaches.
+		max_distance = 250.0 #About the distance from Japan to Batavia
+		max_staging_distance = 25.0 # How far should the staging area be from the target invasion point
+		distance = 0.2 #higher = avoid long distance.
+		pocket = 1.0 #prioritise pockets, ie provinces with no adjacent controlled by same.
+		island = 0.2 #prioritise taking pure islands.
+		enemy = 1.0 #higher = much more vary of troops in province.
+		adjacentenemy = 0.5 #higher = much more vary of troops nearby
+		air_base = 2.5
+		naval_base = 2.0
+		air_support = 15.0
+		redirect = home
+		ignore = no
+		help_allies = yes #[yes/no]
+		province_priorities = yes #Invade only provinces in target list with priority higher then 0
+
+    staging_province = {
+        717 #Rabat
+        728 #Oran
+        727 #Algiers
+        748 #Bizerte
+        747 #Tunis
+        750 #Tripoli
+        761 #Benghazi
+        765 #Tobruk
+        789 #Alexandria
+        348 #Gibraltar
+        429 #Malta
+    }
+    
+    target = {
+        # Italy
+        430 = 8000 #Palermo
+        433 = 8000 #Syracuse
+        434 = 4000 #Cagliari
+        94 = 4000 #Corsica
+        422 = 8000 #Taranto
+        427 = 8000 #Salerno
+        416 = 8000 #Anzio
+        419 = 7000 #Rome
+        412 = 8000 #Ancona
+        400 = 2000 #Venice
+
+        429 = 8500 #Malta
+
+        # North Africa
+        791	= 8000 #Port Said
+        789 = 1000 #Alexandra
+        717 = 1000 #Rabat
+        728 = 1000 #Oran
+        727 = 2000 #Algiers
+        748 = 2000 #Bizerte
+        747 = 3000 #Tunis
+        750 = 3000 #Tripoli
+        761 = 2000 #Benghazi
+        765 = 2000 #Tobruk
+
+        # Middle East
+        1019 = 500 #Beirut
+        1008 = 500 #Tel Aviv
+        1004 = 500 #El Arish
+    
+        # Greece
+        382 = 1400 #Crete
+        372 = 1200 #Patras
+        377 = 1200 #Athens
+        370 = 600 #Alexandroupoli
+
+        # Yugoslavia/Albania
+        359 = 500 #Tirana
+        343 = 500 #Dubrovnik
+        
+        # Turkey
+        378 = 900 #Kalymnos
+        379 = 900 #Rhodes
+        388 = 900 #Nicosia
+
+        #Denmark
+        217 = -1 #Arborg
+        220 = -1 #Arhus
+        219 = -1 #Odense
+        
+		#Norway
+		491	= 1000	#Alesund
+		485	= 1000	#Kristiansand
+		483	= 1000	#Oslo
+		493	= 500	#Trondheim
+		495	= 2500	#Narvik - higher prio to spend ENG_Naval_Norway properly
+		
+		#Germany
+		152 = 100   #Kiel
+		147	= 100	#Wilhelmshaven
+		153	= 100	#Rostock
+		158	= 100	#Stettin
+
+	
+		#France
+		49	= 900  #Calais
+		53	= 1800  #Dieppe
+		44	= 900  #Caen
+		37	= 800  #Brest
+		39	= 800  #Lorient
+		68  = 2000  #Bordeaux
+		69	= 900	#La Rochelle
+		46	= 800	#Bayeux
+		51	= 1800	#Dunkirk
+		82	= 800	#Montpellier
+		86	= 800	#Marseille
+	
+    
+        # Belgium
+        114 = -1 #Bruges
+        115 = -1 #Antwerpen
+
+        #Holland
+        125 = -1 #Rotterdam
+        122 = -1 #Amsterdam
+	#Spain
+		475	 = 1000	 #Palma de Mallorca
+		473	 = 1000	 #Cadiz
+		449  = 1000  #Vigo
+		441  = 1000  #Coruna
+		472  = 1000  #Huelva
+		463  = 750  #Murcia
+		464  = 750  #Valencia		
+		440  = 750  #Barcelona
+		
+		#Portugal
+		995  = 1000  #Azores
+		477  = 1000  #Setubal
+		476  = 1000  #Lissabon
+		
+		#Netherlands East Indies
+		1639  = 1250  #Bagka Island
+		1647  = 1000  #Batavia		
+		1649  = 1000  #Semarang
+		1653  = 1000  #Soerabaja
+		1656  = 1000  #Madura
+		1636  = 1750  #Palembang
+		1635  = 1750  #Dumai
+		1642  = 1750  #Medan
+
+		#Borneo
+		1625  = 2500  #Mini
+		1624  = 2500  #Kuching
+		1631  = 2500  #Pontianak
+		1632  = 2500  #Balikpapan
+		1627  = 2500  #Tarakan
+
+		#Singapore
+		1436  = 2500  #Kota Bahru
+		1435  = 2500  #Alor Star
+		1432  = 2500  #Singapore
+
+		#Britain
+		1371  = 2250  #Hong Kong
+    }
+} 
+admiral = { 
+#Which provinces to use as bases..
+	base = {
+		5	# Scapa Flow
+		17 # Liverpool/Manchester 
+		348	# Gibraltar
+		789 # Alexandria 
+		1517 # Bombay 
+		1432 # Singapore 
+		1707 # Canberra
+        717 #Rabat
+        728 #Oran
+        727 #Algiers
+        748 #Bizerte
+        747 #Tunis
+        750 #Tripoli
+        761 #Benghazi
+        765 #Tobruk
+        429 #Malta
+	}
+	target = { 
+	2186 = 250 # Sea Zones that need protected transports NEW TECH EDIT - This is pretty much temporary until some kind of ENG_Naval kicks in, to remove if everything looks good
+	2184 = 400
+	2180 = 400
+	2528 = 350
+	2476 = 350
+	2558 = 150
+	} 
+
+}

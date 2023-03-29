@@ -1,0 +1,102 @@
+IDC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+480001;Head of State;H.M. Bao Dai;1933;1964;1999;SL;Weary Stiffneck;High;M542001;X
+480002;Head of Government;Ngo Dinh Diem;1933;1964;1999;SL;Political Protege;High;M542018;X
+480003;Foreign Minister;Tong Doc Phuong;1933;1964;1999;SL;Apologetic Clerk;High;M542003;X
+480004;Minister of Armament;Nguyen Van Tam;1933;1964;1999;SL;Resource Industrialist;Medium;M542004;X
+480005;Minister of Security;Ho Dac Trung;1933;1964;1999;SL;Man of the People;Medium;M542005;X
+480006;Head of Military Intelligence;Tran Gia Thoai;1933;1964;1999;SL;Naval Intelligence Specialist;Medium;M542032;X
+480007;Chief of Staff;Le Quan;1933;1964;1999;SL;School of Fire Support;Medium;M542042;X
+480008;Chief of Army;Duong Van Minh;1933;1964;1999;SL;Armoured Spearhead Doctrine;Medium;M542046;X
+480009;Chief of Navy;Nguyen Van Thinh;1933;1964;1999;SL;Indirect Approach Doctrine;Medium;M542025;X
+480010;Chief of Air Force;Nguyen Van Xuan;1933;1964;1999;SL;Carpet Bombing Doctrine;High;M542023;X
+480011;Head of State;Pol Pot;1933;1964;1999;ST;Powerhungry Demagogue;High;M541014;X
+480012;Head of State;Ho Chi Minh;1933;1964;1999;LE;Ruthless Powermonger;High;M542012;X
+480013;Head of State;H.R.H. Souphanou Vong;1933;1964;1999;LWR;Die-hard Reformer;High;M540012;X
+480014;Head of State;H.M. Sisowath Monivong;1933;1964;1999;SD;Benevolent Gentleman;High;M541001;X
+480015;Head of State;Norodom Suramarit;1933;1964;1999;ML;Barking Buffoon;High;M541012;X
+480016;Head of State;H.M. Sasiavong Vong;1933;1964;1999;SC;Pig-headed Isolationist;High;M540001;X
+480017;Head of State;Sisowath Monipong;1933;1964;1999;PA;Popular Figurehead;High;M541003;X
+480018;Head of State;H.R.H. Khai Dinh;1933;1964;1999;FA;Stern Imperialist;High;M542011;X
+480019;Head of State;H.R.H. Savang Vatana;1933;1964;1999;NS;Autocratic Charmer;High;M540011;X
+480020;Head of Government;Khieu Samphan;1933;1964;1999;ST;Smiling Oilman;High;M541022;X
+480021;Head of Government;Truong Tchin;1933;1964;1999;LE;Backroom Backstabber;High;M542019;X
+480022;Head of Government;Khambulatom Oomau;1933;1964;1999;LWR;Happy Amateur;High;M540019;X
+480023;Head of Government;H.R.H. Norodom Sihanouk;1933;1964;1999;SD;Old Admiral;High;M541011;X
+480024;Head of Government;Son Sann;1933;1964;1999;ML;Silent Workhorse;High;M541020;X
+480025;Head of Government;H.R.H. Phaya Khammao;1933;1964;1999;SC;Corporate Suit;High;M540003;X
+480026;Head of Government;Sisowath Sirik Matak;1933;1964;1999;PA;Naive Optimist;High;M541021;X
+480027;Head of Government;Ngo Dinh Diem;1933;1964;1999;FA;Flamboyant Tough Guy;High;M542018;X
+480028;Head of Government;Phetsarath Mahaouphatat;1933;1964;1999;NS;Old General;High;M540008;X
+480029;Foreign Minister;Leng Sary;1933;1964;1999;ST;The Cloak N Dagger Schemer;High;M541027;X
+480030;Foreign Minister;Pham Van Dong;1933;1964;1999;LE;Ideological Crusader;High;M542024;X
+480031;Foreign Minister;Phomvihanh Kaysone;1933;1964;1999;LWR;Iron Fisted Brute;High;M540020;X
+480032;Foreign Minister;Sisowath Monipong;1933;1964;1999;SD;Great Compromiser;High;M541003;X
+480033;Foreign Minister;Phan Sina;1933;1964;1999;ML;Biased Intellectual;High;M541025;X
+480034;Foreign Minister;Sasorith Kataydon;1933;1964;1999;SC;The Cloak N Dagger Schemer;High;M540021;X
+480035;Foreign Minister;Krisan Cheda;1933;1964;1999;PA;General Staffer;High;M541026;X
+480036;Foreign Minister;Nguyen Van Xuan;1933;1964;1999;FA;Ideological Crusader;High;M542023;X
+480037;Foreign Minister;H.R.H. Boun Oum;1933;1964;1999;NS;Iron Fisted Brute;High;M540010;X
+480038;Minister of Armament;Nuon Chea;1933;1964;1999;ST;Corrupt Kleptocrat;Medium;M541033;X
+480039;Minister of Armament;Le Duan;1933;1964;1999;LE;Military Entrepreneur;Medium;M542030;X
+480040;Minister of Armament;H.R.H. Boun Oum;1933;1964;1999;LWR;Infantry Proponent;High;M540010;X
+480041;Minister of Armament;Sisowath Monireth;1933;1964;1999;SD;Tank Proponent;Medium;M541004;X
+480042;Minister of Armament;Sam An;1933;1964;1999;ML;Battle Fleet Proponent;Medium;M541031;X
+480043;Minister of Armament;H.R.H. Souvanna Rath;1933;1964;1999;SC;laissez-faire capitalist;High;M540009;X
+480044;Minister of Armament;Norodom Phanouvong;1933;1964;1999;PA;Submarine Proponent;Medium;M541032;X
+480045;Minister of Armament;Le Van Hoac;1933;1964;1999;FA;Theoretical Scientist;Medium;M542027;X
+480046;Minister of Armament;H.R.H. Souvanna Rath;1933;1964;1999;NS;Administrative Genius;Medium;M540009;X
+480047;Minister of Security;Pol Pot;1933;1964;1999;ST;Efficient Sociopath;Medium;M541014;X
+480048;Minister of Security;The Lu;1933;1964;1999;LE;Silent Lawyer;Medium;M542035;X
+480049;Minister of Security;Phomvihanh Kaysone;1933;1964;1999;LWR;Prince of Terror;Medium;M540029;X
+480050;Minister of Security;Sisowath Youtevong;1933;1964;1999;SD;Compassionate Gentleman;Medium;M541005;X
+480051;Minister of Security;Sisowath Monirak;1933;1964;1999;ML;Crime Fighter;High;M541023;X
+480052;Minister of Security;Aphay Khou;1933;1964;1999;SC;Crooked Kleptocrat;Medium;M540034;X
+480053;Minister of Security;Sakiwat Phirun;1933;1964;1999;PA;Efficient Sociopath;Medium;M541037;X
+480054;Minister of Security;Ngo Dinh Nhu;1933;1964;1999;FA;Silent Lawyer;Medium;M542033;X
+480055;Minister of Security;Phetsarath Mahaouphatat;1933;1964;1999;NS;Prince of Terror;Medium;M540008;X
+480056;Head of Military Intelligence;Tea Banh;1933;1964;1999;ST;Dismal Enigma;Medium;M541043;X
+480057;Head of Military Intelligence;Phan Huy Quat;1933;1964;1999;LE;Political Specialist;Medium;M542039;X
+480058;Head of Military Intelligence;Khambulatom Oomau;1933;1964;1999;LWR;Technical Specialist;Medium;M540019;X
+480059;Head of Military Intelligence;Son Ngoc Thanh;1933;1964;1999;SD;Industrial Specialist;Medium;M541006;X
+480060;Head of Military Intelligence;Hy Weng;1933;1964;1999;ML;Dismal Enigma;Medium;M541041;X
+480061;Head of Military Intelligence;Savang Vong;1933;1964;1999;SC;Political Specialist;Medium;M540037;X
+480062;Head of Military Intelligence;Sisowath Youtevong;1933;1964;1999;PA;Technical Specialist;Medium;M541005;X
+480063;Head of Military Intelligence;Pham Toc Quia;1933;1964;1999;FA;Industrial Specialist;Medium;M542038;X
+480064;Head of Military Intelligence;Phousannani Kone;1933;1964;1999;NS;Naval Intelligence Specialist;Medium;M540031;X
+480065;Chief of Staff;Kieng Vang;1933;1964;1999;ST;School of Mass Combat;Medium;M541047;X
+480066;Chief of Staff;Vo Nguyen Giap;1933;1964;1999;LE;School of Psychology;Medium;M542044;X
+480067;Chief of Staff;Phichith Douangchai;1933;1964;1999;LWR;School of Defence;Medium;M540035;X
+480068;Chief of Staff;Norodom Sihanouk;1933;1964;1999;SD;School of Manoeuvre;Medium;M541044;X
+480069;Chief of Staff;Chhun Lim;1933;1964;1999;ML;School of Mass Combat;Medium;M541045;X
+480070;Chief of Staff;H.R.H. Souphanou Vong;1933;1964;1999;SC;School of Psychology;Medium;M540041;X
+480071;Chief of Staff;Sisowath Monireth;1933;1964;1999;PA;School of Defence;Medium;M541046;X
+480072;Chief of Staff;Nguyen Huu Coo;1933;1964;1999;FA;School of Manoeuvre;Medium;M542043;X
+480073;Chief of Staff;Aphay Khou;1933;1964;1999;NS;School of Fire Support;Medium;M540034;X
+480074;Chief of Army;Son Sen;1933;1964;1999;ST;Guns and Butter Doctrine;Medium;M541051;X
+480075;Chief of Army;Ho Chi Minh;1933;1964;1999;LE;Elastic Defence Doctrine;Medium;M542047;X
+480076;Chief of Army;Vang Pao;1933;1964;1999;LWR;Static Defence Doctrine;Medium;M540038;X
+480077;Chief of Army;Sisowath Monireth;1933;1964;1999;SD;Decisive Battle Doctrine;High;M541046;X
+480078;Chief of Army;Sisowath Watchayavong;1933;1964;1999;ML;Guns and Butter Doctrine;Medium;M541049;X
+480079;Chief of Army;Phetsarath Mahaouphatat;1933;1964;1999;SC;Elastic Defence Doctrine;Medium;M540008;X
+480080;Chief of Army;Lon Nol;1933;1964;1999;PA;Static Defence Doctrine;Medium;M541035;X
+480081;Chief of Army;Duong Van Minh;1933;1964;1999;FA;Decisive Battle Doctrine;Medium;M542046;X
+480082;Chief of Army;Savang Vong;1933;1964;1999;NS;Armoured Spearhead Doctrine;Medium;M540037;X
+480083;Chief of Navy;You Hok Kry;1933;1964;1999;ST;Base Control Doctrine;Medium;M541055;X
+480084;Chief of Navy;Thrang Tun Doc;1933;1964;1999;LE;Power Projection Doctrine;Medium;M542052;X
+480085;Chief of Navy;H.R.H. Souphanou Vong;1933;1964;1999;LWR;Open Seas Doctrine;Medium;M540041;X
+480086;Chief of Navy;Lon Nol;1933;1964;1999;SD;Decisive Naval Battle Doctrine;Medium;M541035;X
+480087;Chief of Navy;Hy Weng;1933;1964;1999;ML;Base Control Doctrine;Medium;M541041;X
+480088;Chief of Navy;H.R.H. Souvanna Rath;1933;1964;1999;SC;Power Projection Doctrine;Medium;M540009;X
+480089;Chief of Navy;Norodom Sihanouk;1933;1964;1999;PA;Open Seas Doctrine;Medium;M541054;X
+480090;Chief of Navy;Ho Tan Quyen;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M542051;X
+480091;Chief of Navy;Aphay Khou;1933;1964;1999;NS;Indirect Approach Doctrine;Medium;M540034;X
+480092;Chief of Air Force;Proum Sokha;1933;1964;1999;ST;Vertical Envelopment Doctrine;Medium;M541059;X
+480093;Chief of Air Force;Nguyen Huu Tho;1933;1964;1999;LE;Air Superiority Doctrine;Medium;M542055;X
+480094;Chief of Air Force;Vang Pao;1933;1964;1999;LWR;Army Aviation Doctrine;Medium;M540038;X
+480095;Chief of Air Force;Chai Saing Yun;1933;1964;1999;SD;Naval Aviation Doctrine;Medium;M541029;X
+480096;Chief of Air Force;Sisowath Youtevong;1933;1964;1999;ML;Vertical Envelopment Doctrine;High;M541005;X
+480097;Chief of Air Force;H.R.H. Boun Oum;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M540010;X
+480098;Chief of Air Force;Norodom Sihanouk;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M541058;X
+480099;Chief of Air Force;Duong Van Minh;1933;1964;1999;FA;Naval Aviation Doctrine;Medium;M542046;X
+480100;Chief of Air Force;Sourith Sasorith;1933;1964;1999;NS;Carpet Bombing Doctrine;Medium;M540043;X

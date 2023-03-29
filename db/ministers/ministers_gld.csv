@@ -1,0 +1,43 @@
+GLD;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+660001;Head of State;Sir Arnold W. Hodgson;1933;1964;1999;ML;Stern Imperialist;High;M551001;X
+660002;Head of Government;Sir Allan C.M. Burns;1933;1964;1999;ML;Silent Workhorse;High;M551002;X
+660003;Foreign Minister;George Edwardes;1933;1964;1999;ML;Great Compromiser;High;M551003;X
+660004;Minister of Armament;Ernest McGilvery;1933;1964;1999;ML;Submarine Proponent;Medium;M551004;X
+660005;Minister of Security;William Lowdendale;1933;1964;1999;ML;Man of the People;Medium;M551005;X
+660006;Head of Military Intelligence;Clive O. Butler;1933;1964;1999;ML;Logistics Specialist;Medium;M551006;X
+660007;Chief of Staff;Clive O. Butler;1933;1964;1999;ML;School of Psychology;Medium;M551006;X
+660008;Chief of Army;Sir Charles Arden-Clarke;1933;1964;1999;ML;Elastic Defence Doctrine;Medium;M551008;X
+660009;Chief of Navy;Douglas Randall-Scott;1933;1964;1999;ML;Power Projection Doctrine;Medium;M551009;X
+660010;Chief of Air Force;Sir Charles Arden-Clarke;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M551008;X
+660011;Head of State;H.H. Awedobo IX.;1933;1964;1999;PA;Popular Figurehead;High;M551011;X
+660012;Head of State;Sir Charles Arden-Clarke;1933;1964;1999;SL;Resigned Generalissimo;High;M551012;X
+660013;Head of State;Kwame Nkrumah;1933;1964;1999;LWR;Barking Buffoon;High;M551013;X
+660014;Head of Government;Hendrik Muller;1933;1964;1999;PA;Corporate Suit;High;M551014;X
+660015;Head of Government;Kwame Nkrumah;1933;1964;1999;SL;Naive Optimist;High;M551015;X
+660016;Head of Government;Josiah Akiba;1933;1964;1999;LWR;Happy Amateur;High;M551016;X
+660017;Foreign Minister;Frederick Isaac Dolphin;1933;1964;1999;PA;General Staffer;High;M551017;X
+660018;Foreign Minister;Harry Nkiwe;1933;1964;1999;SL;Ideological Crusader;High;M551018;X
+660019;Foreign Minister;Mauricius Offroye;1933;1964;1999;LWR;Biased Intellectual;High;M551019;X
+660020;Minister of Armament;Patrick McIlhaney;1933;1964;1999;PA;Battle Fleet Proponent;Medium;M551020;X
+660021;Minister of Armament;Isaac Julianson;1933;1964;1999;SL;Tank Proponent;Medium;M551021;X
+660022;Minister of Armament;Duncan J. O'Leary;1933;1964;1999;LWR;Administrative Genius;Medium;M551022;X
+660023;Minister of Security;Judah Epson;1933;1964;1999;PA;Prince of Terror;Medium;M551023;X
+660024;Minister of Security;Neville London;1941;1964;1999;PA;Compassionate Gentleman;Medium;M551024;X
+660025;Minister of Security;Junior W.K. Hartley;1933;1964;1999;SL;Crime Fighter;Medium;M551025;X
+660026;Minister of Security;Daniel Kwuma;1933;1964;1999;LWR;Silent Lawyer;Medium;M551026;X
+660027;Head of Military Intelligence;Judah Epson;1933;1964;1999;PA;Dismal Enigma;Medium;M551023;X
+660028;Head of Military Intelligence;T.R. Hatton;1933;1964;1999;SL;Industrial Specialist;Medium;M551028;X
+660029;Head of Military Intelligence;Modimba Awanka;1933;1964;1999;LWR;Political Specialist;Medium;M551029;X
+660030;Chief of Staff;Frederick Isaac Dolphin;1933;1964;1999;PA;School of Manoeuvre;Medium;M551017;X
+660031;Chief of Staff;Abel Ocran;1933;1964;1999;SL;School of Fire Support;Medium;M551031;X
+660032;Chief of Staff;Ignatius Acheampong;1933;1964;1999;LWR;School of Defence;Medium;M551032;X
+660033;Chief of Army;Clive O. Butler;1933;1964;1999;PA;Decisive Battle Doctrine;Medium;M551006;X
+660034;Chief of Army;Ignatius Acheampong;1933;1964;1999;SL;Static Defence Doctrine;Medium;M551032;X
+660035;Chief of Army;Abel Ocran;1933;1964;1999;LWR;Static Defence Doctrine;Medium;M551031;X
+660036;Chief of Navy;Frederick Isaac Dolphin;1933;1964;1999;PA;Base Control Doctrine;Medium;M551017;X
+660037;Chief of Navy;Obigjo Amedume;1933;1964;1999;SL;Open Seas Doctrine;Medium;M551037;X
+660038;Chief of Navy;Moses Kwanikwa;1933;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M551038;X
+660039;Chief of Air Force;Clive O. Butler;1933;1964;1999;PA;Carpet Bombing Doctrine;Medium;M551006;X
+660040;Chief of Air Force;Obigjo Amedume;1933;1964;1999;SL;Naval Aviation Doctrine;Medium;M551037;X
+660041;Chief of Air Force;Junior W.K. Hartley;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M551025;X

@@ -1,0 +1,50 @@
+MAL;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+695001;Head of State;Marcel de Coppet;1933;1964;1999;SL;Popular Figurehead;High;M538014;X
+695002;Head of Government;Oswald Durand;1933;1964;1999;SL;Ambitious Union Boss;High;M533026;X
+695003;Foreign Minister;Ferdinand J.L. Rougier;1933;1964;1999;SL;Iron Fisted Brute;High;M539003;X
+695004;Minister of Armament;Pierre Boisson;1933;1964;1999;SL;Theoretical Scientist;Medium;M534010;X
+695005;Minister of Security;Martin Cayla;1933;1964;1999;SL;Compassionate Gentleman;Medium;M539005;X
+695006;Head of Military Intelligence;Christian Laigret;1933;1964;1999;SL;Logistics Specialist;Medium;M539006;X
+695007;Chief of Staff;Pierre Charles Cournarie;1933;1964;1999;SL;School of Fire Support;Medium;M534004;X
+695008;Chief of Army;Jean-Louis Beyries;1933;1964;1999;SL;Guns and Butter Doctrine;Medium;M539008;X
+695009;Chief of Navy;Pierre Ponchardier;1933;1964;1999;SL;Open Seas Doctrine;Medium;M539009;X
+695010;Chief of Air Force;Henri Tourtet;1933;1964;1999;SL;Vertical Envelopment Doctrine;Medium;M539010;X
+695011;Head of State;Leon Cayla;1938;1964;1999;SL;Resigned Generalissimo;High;M538001;X
+695012;Head of State;Pierre Boisson;1940;1964;1999;SL;Powerhungry Demagogue;High;M534010;X
+695013;Head of State;Pierre Charles Cournarie;1943;1964;1999;SL;Insignificant Layman;High;M534004;X
+695014;Head of State;René V.M. Barthes;1946;1964;1999;SL;Pig-headed Isolationist;High;M539014;X
+695015;Head of State;Martin Cayla;1933;1964;1999;PA;Benevolent Gentleman;High;M539005;X
+695016;Head of State;Leopold Sedar Senghor;1933;1964;1999;LWR;Die-hard Reformer;High;M539016;X
+695017;Head of Government;Jean-Louis Beyries;1938;1964;1999;SL;Naive Optimist;High;M539008;X
+695018;Head of Government;Christian Laigret;1944;1964;1999;SL;Political Protege;High;M539006;X
+695019;Head of Government;Henry de Mauduit;1945;1964;1999;SL;Corporate Suit;High;M533025;X
+695020;Head of Government;Ferdinand J.L. Rougier;1933;1964;1999;PA;Backroom Backstabber;High;M539003;X
+695021;Head of Government;Moktar Ould Daddah;1933;1964;1999;LWR;Silent Workhorse;High;M539021;X
+695022;Foreign Minister;Jean Desanti;1938;1964;1999;SL;Biased Intellectual;High;M539022;X
+695023;Foreign Minister;Auguste Calvel;1942;1964;1999;SL;Apologetic Clerk;High;M539023;X
+695024;Foreign Minister;Jean-Louis Beyries;1933;1964;1999;PA;General Staffer;High;M539008;X
+695025;Foreign Minister;Modibo Keita;1933;1964;1999;LWR;Apologetic Clerk;High;M539025;X
+695026;Minister of Armament;Maurice Guillaudot;1939;1964;1999;SL;Tank Proponent;Medium;M539026;X
+695027;Minister of Armament;Leopold Sedar Senghor;1943;1964;1999;SL;Administrative Genius;Medium;M539016;X
+695028;Minister of Armament;Christian Laigret;1933;1964;1999;PA;Air Superiority Proponent;Medium;M539006;X
+695029;Minister of Armament;Mamadou Dia;1933;1964;1999;LWR;Battle Fleet Proponent;Medium;M539029;X
+695030;Minister of Security;Jean Clouet des Pesruches;1942;1964;1999;SL;Prince of Terror;Medium;M539030;X
+695031;Minister of Security;Paul Ribeyre;1945;1964;1999;SL;Efficient Sociopath;Medium;M539031;X
+695032;Minister of Security;Oswald Durand;1933;1964;1999;PA;Back Stabber;Medium;M533026;X
+695033;Minister of Security;Fily Dabo Sissoko;1943;1964;1999;PA;Crime Fighter;Medium;M539033;X
+695034;Minister of Security;Mamadou Konaté;1933;1964;1999;LWR;Prince of Terror;Medium;M539034;X
+695035;Head of Military Intelligence;René V.M. Barthes;1943;1964;1999;SL;Political Specialist;Medium;M539014;X
+695036;Head of Military Intelligence;Martin Cayla;1933;1964;1999;PA;Dismal Enigma;Medium;M539005;X
+695037;Head of Military Intelligence;Aoua Keita;1933;1964;1999;LWR;Industrial Specialist;Medium;M539037;X
+695038;Chief of Staff;Paul Moguez;1943;1964;1999;SL;School of Psychology;Medium;M539038;X
+695039;Chief of Staff;Leon Cayla;1933;1964;1999;PA;School of Defence;Medium;M538001;X
+695040;Chief of Staff;Abdallah Soumare;1933;1964;1999;LWR;School of Fire Support;Medium;M539040;X
+695041;Chief of Army;Aimé Teisseire;1942;1964;1999;SL;Decisive Battle Doctrine;Medium;M539041;X
+695042;Chief of Army;Henri Verdier;1933;1964;1999;PA;Static Defence Doctrine;Medium;M539042;X
+695043;Chief of Army;Henri Rol-Tanguy;1933;1964;1999;LWR;Decisive Battle Doctrine;Medium;M539043;X
+695044;Chief of Navy;Jean Desanti;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M539022;X
+695045;Chief of Navy;Ousmane Ibrahim Sall;1933;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M539045;X
+695046;Chief of Air Force;Yves Mourier;1942;1964;1999;SL;Army Aviation Doctrine;Medium;M539046;X
+695047;Chief of Air Force;Auguste Calvel;1933;1964;1999;PA;Naval Aviation Doctrine;Medium;M539023;X
+695048;Chief of Air Force;Oumar Ousseynou;1933;1964;1999;LWR;Air Superiority Doctrine;Medium;M539048;X

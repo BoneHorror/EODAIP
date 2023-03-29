@@ -1,0 +1,49 @@
+LIB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+380001;Head of State;Edwin J. Barclay;1930;1964;1999;SC;Barking Buffoon;High;M69001;X
+380002;Head of Government;Edwin J. Barclay;1930;1964;1999;SC;Happy Amateur;High;M69001;X
+380003;Foreign Minister;Clarence L. Simpson;1933;1964;1999;SC;Ideological Crusader;Medium;M69003;X
+380004;Minister of Armament;Frederic K. Nielsen;1933;1964;1999;SC;Infantry Proponent;Medium;M69004;X
+380005;Minister of Security;Henry R. Grimes;1933;1964;1999;SC;Crooked Kleptocrat;Medium;M69005;X
+380006;Head of Military Intelligence;Henry M. Robinson;1933;1964;1999;SC;Industrial Specialist;Medium;M69006;X
+380007;Chief of Staff;Benjamin O. Davis;1933;1964;1999;SC;School of Mass Combat;Medium;M69007;X
+380008;Chief of Army;Iver Virgin;1933;1964;1999;SC;Guns and Butter Doctrine;Medium;M69008;X
+380009;Chief of Navy;Reginald Brandon;1933;1964;1999;SC;Open Seas Doctrine;Medium;M69009;X
+380010;Chief of Air Force;Won Loy Chan;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M69010;X
+380011;Head of State;William S. Tubman;1944;1964;1999;SC;Ruthless Powermonger;High;M69032;X
+380012;Head of State;Albert Porte;1933;1964;1999;SL;Benevolent Gentleman;High;M69033;X
+380013;Head of State;Arthur Sweetser;1944;1964;1999;SL;Insignificant Layman;High;M69034;X
+380014;Head of Government;William S. Tubman;1944;1964;1999;SC;Silent Workhorse;High;M69032;X
+380015;Head of Government;Albert Porte;1933;1964;1999;SL;Ambitious Union Boss;High;M69033;X
+380016;Head of Government;Arthur Sweetser;1944;1964;1999;SL;Corporate Suit;High;M69034;X
+380017;Foreign Minister;Gabriel L. Dennis;1944;1964;1999;SC;Iron Fisted Brute;Medium;M69040;X
+380018;Foreign Minister;Albert Porte;1933;1964;1999;SL;Great Compromiser;Medium;M69033;X
+380019;Foreign Minister;Mac DeShield;1944;1964;1999;SL;General Staffer;Medium;M69042;X
+380020;Foreign Minister;Henry R. Grimes;1946;1964;1999;SL;Biased Intellectual;Medium;M69005;X
+380021;Minister of Armament;William S. Tubman;1940;1964;1999;SC;Corrupt Kleptocrat;Medium;M69032;X
+380022;Minister of Armament;Cornelius van Oudkarspel;1942;1964;1999;SC;Administrative Genius;Medium;M69046;X
+380023;Minister of Armament;Momolo Duhuty;1944;1964;1999;SC;laissez-faire capitalist;Medium;M69047;X
+380024;Minister of Armament;Mac DeShield;1933;1964;1999;SL;Corrupt Kleptocrat;Medium;M69042;X
+380025;Minister of Armament;Arthur Sweetser;1940;1964;1999;SL;Tank Proponent;Medium;M69034;X
+380026;Minister of Armament;Henry M. Robinson;1944;1964;1999;SL;Air to Sea Proponent;Medium;M69006;X
+380027;Minister of Security;Fretus Africanus Russell;1937;1964;1999;SC;Efficient Sociopath;Medium;M69052;X
+380028;Minister of Security;Key Pittman;1938;1964;1999;SC;Silent Lawyer;Medium;M69053;X
+380029;Minister of Security;Benjamin B. Wallace;1940;1964;1999;SC;Man of the People;Medium;M69054;X
+380030;Minister of Security;Edwin J. Barclay;1941;1964;1999;SC;Back Stabber;Medium;M69001;X
+380031;Minister of Security;Ralph W. Morrison;1944;1964;1999;SC;Crime Fighter;Medium;M69056;X
+380032;Minister of Security;Cornelius van Oudkarspel;1946;1964;1999;SC;Compassionate Gentleman;Medium;M69046;X
+380033;Minister of Security;Key Pittman;1933;1964;1999;SL;Silent Lawyer;Medium;M69053;X
+380034;Minister of Security;Elliott Thurston;1940;1964;1999;SL;Man of the People;Medium;M69059;X
+380035;Minister of Security;Fretus Africanus Russell;1944;1964;1999;SL;Efficient Sociopath;Medium;M69052;X
+380036;Head of Military Intelligence;Elliott Thurston;1940;1964;1999;SC;Political Specialist;Medium;M69059;X
+380037;Head of Military Intelligence;Benjamin O'Davis;1942;1964;1999;SC;Logistics Specialist;Medium;M69007;X
+380038;Head of Military Intelligence;William Tolbert;1946;1964;1999;SC;Technical Specialist;Medium;M69064;X
+380039;Head of Military Intelligence;Cornelius van Oudkarspel;1933;1964;1999;SL;Dismal Enigma;Medium;M69046;X
+380040;Head of Military Intelligence;Benjamin O'Davis;1942;1964;1999;SL;Logistics Specialist;Medium;M69007;X
+380041;Head of Military Intelligence;Frederic E. Murphy;1946;1964;1999;SL;Technical Specialist;Medium;M69067;X
+380042;Chief of Army;Benjamin O. Davis;1942;1964;1999;SC;Armoured Spearhead Doctrine;Medium;M69007;X
+380043;Chief of Army;John  R. Fox;1933;1964;1999;SL;Elastic Defence Doctrine;Medium;M69072;X
+380044;Head of Government;Daniel Howard;1912;1933;1999;SL;Corporate Suit;Medium;9812;X
+380045;Head of Government;Charles King;1920;1933;1999;SL;Silent Workhorse;Medium;9811;X
+380046;Head of State;Daniel Howard;1912;1933;1999;SL;Benevolent Gentleman;Medium;9812;X
+380047;Head of State;Charles King;1920;1933;1999;SL;Weary Stiffneck;Medium;9811;X

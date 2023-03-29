@@ -1,0 +1,198 @@
+
+################
+# Concentrate on upgrading while at peace
+#############################################
+event = {
+	id = 3118009
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = UPGPeace }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_Peace.ai" }
+		command = { type = local_setflag which = UPGPeace }
+	}
+}
+event = {
+	id = 3118010
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = UPGPeace
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_War.ai" }
+		command = { type = local_clrflag which = UPGPeace }
+	}
+}
+################
+# Guangxi Clique allies with China AI vs Japan
+#############################################
+event = {
+	id = 3118011
+	random = no 
+	country = CGX
+	
+	trigger = {
+		ai = yes
+		local_flag = CGXInvadeCHI
+		NOT = { war = { country = CHI country = CGX } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CGX_CHI_Ally.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = local_clrflag which = CGXInvadeCHI }
+		command = { type = relation which = CHI value = 100 }
+		command = { type = relation which = JAP value = -50 }
+	}
+}
+################
+# Attack Japan controls
+#	CGXAttackJAP		= Flag turned on means they are free to attack at will
+#############################################
+event = {
+	id = 3118012
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CGXAttackJAP }
+		war = { country = JAP }
+		OR = {
+			lost_national = { country = CHI value = 50 }
+			lost_national = { country = CGX value = 1 }
+		}
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CGX_Attack_JAP.ai" }
+		command = { type = local_setflag which = CGXAttackJAP }
+	}
+}
+event = {
+	id = 3118013
+	random = no
+	country = CGX
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		local_flag = CGXAttackJAP
+		NOT = { war = { country = JAP } }
+		NOT = { lost_national = { country = CHI value = 50 } }
+		NOT = { lost_national = { country = CGX value = 1 } }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/CGX_Defend_JAP.ai" }
+		command = { type = local_clrflag which = CGXAttackJAP }
+	}
+}
+################
+# Guangxi Clique Backs off from Japan AI
+#############################################
+event = {
+	id = 3118014
+	random = no 
+	country = CGX
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+		OR = {
+			event = 3011002
+			event = 2011025
+			lost_national = { country = CHI value = 35 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/WAR_Backoff.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Guangxi Clique turns ferocity on
+#############################################
+event = {
+	id = 3118015
+	random = no 
+	country = CGX
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+		alliance = { country = CHI }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Ferocity_Yes.ai" }
+	}
+}

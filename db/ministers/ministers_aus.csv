@@ -1,0 +1,174 @@
+AUS;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+115001;Head of State;Wilhelm Miklas;1933;1964;1999;FA;Weary Stiffneck;High;8141;X
+115002;Head of Government;Kurt Schuschnigg;1933;1964;1999;FA;Silent Workhorse;High;8594;X
+115003;Foreign Minister;Egon Berger-Waldenegg;1933;1964;1999;FA;Apologetic Clerk;High;8596;X
+115004;Minister of Armament;Julius Raab;1933;1964;1999;FA;Resource Industrialist;Medium;8597;X
+115005;Minister of Security;Eduard Baar-Baarenfels;1933;1964;1999;FA;Man of the People;High;8623;X
+115006;Head of Military Intelligence;Wilhelm Gebauer;1933;1964;1999;FA;Logistics Specialist;Medium;8626;X
+115007;Chief of Staff;Alfred von Jansa;1933;1964;1999;FA;School of Defence;Medium;M23007;X
+115008;Chief of Army;Wilhelm Zehner;1933;1964;1999;FA;Elastic Defence Doctrine;High;8627;X
+115009;Chief of Navy;Paul von Hegedüs;1933;1964;1999;FA;Decisive Naval Battle Doctrine;High;M23009;X
+115010;Chief of Air Force;Alexander Löhr;1933;1964;1999;NS;Army Aviation Doctrine;Medium;8628;X
+115011;Head of State;Otto I;1933;1964;1999;PA;Autocratic Charmer;High;M23041;X
+115012;Head of State;Josef Bürckel;1938;1964;1999;FA;Insignificant Layman;High;M23042;X
+115013;Head of State;Arthur Seyss-Inquart;1938;1964;1999;NS;Die-hard Reformer;High;M23011;X
+115014;Head of State;Karl Renner;1938;1964;1999;SD;Benevolent Gentleman;High;M23021;X
+115015;Head of State;Leopold Figl;1945;1964;1999;SC;Pig-headed Isolationist;High;M23045;X
+115016;Head of State;Otto Bauer;1938;1964;1999;LE;Insignificant Layman;High;M23031;X
+115017;Head of State;Josef Teufl;1945;1964;1999;ST;Barking Buffoon;High;M23047;X
+115018;Head of Government;O. Löwenfels-Aarengau;1945;1964;1999;PA;Smiling Oilman;High;M23048;X
+115019;Head of Government;Albert Mendsdorff-Pouilly;1938;1964;1999;FA;Happy Amateur;High;M23049;X
+115020;Head of Government;Edmund Glaise-Horstenau;1938;1964;1999;NS;Old General;High;M23050;X
+115021;Head of Government;Wilhelm Wolff;1942;1964;1999;NS;Flamboyant Tough Guy;High;M23013;X
+115022;Head of Government;Ludwig Hülgerth;1938;1964;1999;SC;Corporate Suit;High;M23052;X
+115023;Head of Government;Adolf Schärf;1945;1964;1999;SD;Naive Optimist;High;M23022;X
+115024;Head of Government;Willi Frank;1938;1964;1999;LE;Happy Amateur;High;M23035;X
+115025;Head of Government;Josef Teufl;1945;1964;1999;ST;Backroom Backstabber;High;M23047;X
+115026;Foreign Minister;O. Löwenfels-Aarengau;1945;1964;1999;PA;General Staffer;High;M23048;X
+115027;Foreign Minister;Guido Schmidt;1933;1964;1999;FA;The Cloak N Dagger Schemer;High;M23057;X
+115028;Foreign Minister;Eduard Baar-Baarenfels;1938;1964;1999;FA;Iron Fisted Brute;High;8623;X
+115029;Foreign Minister;Albert Mendsdorff-Pouilly;1939;1964;1999;FA;Apologetic Clerk;Medium;M23049;X
+115030;Foreign Minister;Wilhelm Wolff;1938;1964;1999;NS;Ideological Crusader;High;M23013;X
+115031;Foreign Minister;Edmund Glaise-Horstenau;1942;1964;1999;NS;General Staffer;Medium;M23061;X
+115032;Foreign Minister;Karl Gruber;1938;1964;1999;SC;Biased Intellectual;Low;M23023;X
+115033;Foreign Minister;Leopold Figl;1945;1964;1999;ML;Great Compromiser;Medium;M23045;X
+115034;Foreign Minister;Adolf Schärf;1945;1964;1999;ML;Biased Intellectual;Medium;M23022;X
+115035;Foreign Minister;Alfred Klahr;1938;1964;1999;LE;Ideological Crusader;High;M23033;X
+115036;Foreign Minister;Willi Frank;1945;1964;1999;ST;Iron Fisted Brute;Medium;M23035;X
+115037;Minister of Armament;T. Winkler-Kreuth-Mautner;1945;1964;1999;PA;laissez-faire capitalist;High;M23067;X
+115038;Minister of Armament;Albert Mendsdorff-Pouilly;1946;1964;1999;PA;Administrative Genius;Medium;M23049;X
+115039;Minister of Armament;Josef Dobretsberger;1933;1964;1999;FA;laissez-faire capitalist;High;M23069;X
+115040;Minister of Armament;Paul von Hegedüs;1938;1964;1999;FA;Battle Fleet Proponent;High;M23009;X
+115041;Minister of Armament;Rudolf Neumayr;1938;1964;1999;NS;Resource Industrialist;Medium;M23014;X
+115042;Minister of Armament;Hans Fischböck;1942;1964;1999;NS;Military Entrepreneur;High;M23072;X
+115043;Minister of Armament;Alfred Maleta;1944;1964;1999;NS;Tank Proponent;Medium;M23073;X
+115044;Minister of Armament;Eduard Heinl;1938;1964;1999;ML;Theoretical Scientist;Medium;M23024;X
+115045;Minister of Armament;Karl Gruber;1942;1964;1999;ML;Air Superiority Proponent;Low;M23023;X
+115046;Minister of Armament;Karl Renner;1945;1964;1999;SC;Strategic Air Proponent;Low;M23021;X
+115047;Minister of Armament;Karl Tuppy;1945;1964;1999;SD;Corrupt Kleptocrat;Low;M23077;X
+115048;Minister of Armament;Fritz Stöckinger;1946;1964;1999;SD;Air to Ground Proponent;High;M23078;X
+115049;Minister of Armament;Ludwig Huelgerth;1946;1964;1999;SD;Air to Sea Proponent;Medium;M23052;X
+115050;Minister of Armament;Robert Winterstein;1938;1964;1999;LE;Submarine Proponent;Medium;M23025;X
+115051;Minister of Armament;Erwin Puschmann;1945;1964;1999;ST;Infantry Proponent;Medium;M23034;X
+115052;Minister of Security;W. Ehrenburg von Lüttitz;1945;1964;1999;PA;Efficient Sociopath;High;M23082;X
+115053;Minister of Security;Kurt Schuschnigg;1937;1964;1999;FA;Compassionate Gentleman;High;8594;X
+115054;Minister of Security;Constantin Dumba;1938;1964;1999;FA;Man of the People;Medium;M23084;X
+115055;Minister of Security;Arthur Seyss-Inquart;1938;1964;1999;NS;Silent Lawyer;High;M23011;X
+115056;Minister of Security;Hanns Rauter;1942;1964;1999;NS;Man of the People;High;M23086;X
+115057;Minister of Security;Edmund Glaise-Horstenau;1944;1964;1999;NS;Prince of Terror;Medium;M23050;X
+115058;Minister of Security;Robert Winterstein;1938;1964;1999;SC;Crooked Kleptocrat;Medium;M23025;X
+115059;Minister of Security;Karl Tuppy;1945;1964;1999;SC;Efficient Sociopath;Low;M23077;X
+115060;Minister of Security;Franz Sebek;1945;1964;1999;SD;Compassionate Gentleman;High;M23036;X
+115061;Minister of Security;Otto Bauer;1938;1964;1999;LE;Back Stabber;Very Low;M23031;X
+115062;Minister of Security;Willi Frank;1945;1964;1999;ST;Crime Fighter;Medium;M23035;X
+115063;Head of Military Intelligence;Kalmán Szell;1945;1964;1999;PA;Political Specialist;Medium;M23093;X
+115064;Head of Military Intelligence;Constantin Dumba;1933;1964;1999;FA;Naval Intelligence Specialist;Medium;M23084;X
+115065;Head of Military Intelligence;Karl Eglseer;1938;1964;1999;FA;Logistics Specialist;High;M23095;X
+115066;Head of Military Intelligence;Wilhelm Wolff;1938;1964;1999;NS;Technical Specialist;High;M23013;X
+115067;Head of Military Intelligence;Alexander Löhr;1942;1964;1999;NS;Dismal Enigma;Medium;8628;X
+115068;Head of Military Intelligence;Robert Winterstein;1938;1964;1999;SC;Technical Specialist;High;M23025;X
+115069;Head of Military Intelligence;Julius Raab;1945;1964;1999;SC;Industrial Specialist;Medium;8597;X
+115070;Head of Military Intelligence;Franz Sebek;1945;1964;1999;SD;Political Specialist;High;M23036;X
+115071;Head of Military Intelligence;Richard Bernaschek;1945;1964;1999;ST;Technical Specialist;High;M23038;X
+115072;Chief of Staff;O. Meixner von Zweienstamm;1945;1964;1999;PA;School of Defence;Medium;M23103;X
+115073;Chief of Staff;Walter Ernst;1933;1964;1999;FA;School of Defence;High;M23104;X
+115074;Chief of Staff;Rudolf von Brudermann;1941;1964;1999;FA;School of Manoeuvre;High;M23105;X
+115075;Chief of Staff;Emil Hickmann;1938;1964;1999;NS;School of Manoeuvre;High;M23017;X
+115076;Chief of Staff;Alfred Hubicki;1940;1964;1999;NS;School of Psychology;Medium;M23107;X
+115077;Chief of Staff;Eugen Beyer;1942;1964;1999;NS;School of Fire Support;Medium;M23018;X
+115078;Chief of Staff;Wilhelm Zehner;1938;1964;1999;SC;School of Mass Combat;High;8627;X
+115079;Chief of Staff;Eric von Klopfenburg;1945;1964;1999;SC;School of Defence;High;M23039;X
+115080;Chief of Staff;Adolf Schärf;1945;1964;1999;SD;School of Fire Support;Medium;M23022;X
+115081;Chief of Staff;Ferdinand Strasser;1938;1964;1999;LE;School of Manoeuvre;High;M23037;X
+115082;Chief of Army;Eric von Klopfenburg;1945;1964;1999;PA;Static Defence Doctrine;High;M23039;X
+115083;Chief of Army;O. Meixner von Zweienstamm;1938;1964;1999;FA;Guns and Butter Doctrine;Medium;M23103;X
+115084;Chief of Army;Richard Martinek;1941;1964;1999;FA;Elastic Defence Doctrine;Medium;M23116;X
+115085;Chief of Army;Eugen Beyer;1938;1964;1999;NS;Elastic Defence Doctrine;High;M23018;X
+115086;Chief of Army;Lothar Rendulic;1942;1964;1999;NS;Armoured Spearhead Doctrine;Medium;M23118;X
+115087;Chief of Army;Heinrich Gleissner;1938;1964;1999;SC;Decisive Battle Doctrine;Very Low;M23028;X
+115088;Chief of Army;Richard Bernaschek;1938;1964;1999;LE;Static Defence Doctrine;Medium;M23038;X
+115089;Chief of Navy;Otto I von Habsburg;1945;1964;1999;PA;Indirect Approach Doctrine;Very High;M23041;X
+115090;Chief of Navy;Ignaz Seipel;1938;1964;1999;FA;Power Projection Doctrine;High;M23124;X
+115091;Chief of Navy;Emil Hickmann;1938;1964;1999;NS;Open Seas Doctrine;Low;M23017;X
+115092;Chief of Navy;Robert Winterstein;1938;1964;1999;SC;Indirect Approach Doctrine;Medium;M23025;X
+115093;Chief of Navy;Eric von Klopfenburg;1938;1964;1999;LE;Open Seas Doctrine;High;M23039;X
+115094;Chief of Navy;Josef Teufl;1945;1964;1999;ST;Base Control Doctrine;Medium;M23047;X
+115095;Chief of Air Force;W. Ehrenburg von Lüttitz;1945;1964;1999;PA;Army Aviation Doctrine;High;M23082;X
+115096;Chief of Air Force;Otto Schöbel;1938;1964;1999;FA;Vertical Envelopment Doctrine;High;M23030;X
+115097;Chief of Air Force;Josef Bürckel;1942;1964;1999;NS;Carpet Bombing Doctrine;High;M23042;X
+115098;Chief of Air Force;Julius Yllam;1938;1964;1999;SC;Air Superiority Doctrine;Low;8776;X
+115099;Chief of Air Force;Egon Berger-Waldenegg;1942;1964;1999;SC;Carpet Bombing Doctrine;High;8596;X
+115100;Head of Military Intelligence;Kurt Schuschnigg;1937;1964;1999;FA;Political Specialist;Undying;8594;X
+115101;Chief of Staff;Kurt Schuschnigg;1933;1964;1999;FA;School of Fire Support;Undying;8594;X
+115102;Head of State;Alfred Hubicki;1945;1964;1999;NS;Stern Imperialist;High;M23107;X
+115103;Chief of Air Force;Artur Breycha-Vauthier;1942;1964;1999;LE;Naval Aviation Doctrine;Low;M23136;X
+115104;Head of State;Karl Renner;1938;1964;1999;SC;Benevolent Gentleman;High;M23021;X
+115105;Head of State;Theodor Körner;1951;1964;1999;SC;Weary Stiffneck;High;M23144;X
+115106;Head of State;Theodor Körner;1951;1964;1999;SD;Weary Stiffneck;High;M23144;X
+115107;Head of Government;Leopold Figl;1945;1964;1999;SC;Happy Amateur;High;M23045;X
+115108;Head of Government;Julius Raab;1951;1964;1999;SC;Corporate Suit;Medium;8597;X
+115109;Minister of Armament;Ferdinand Graf;1945;1964;1999;SC;laissez-faire capitalist;Medium;M23148;X
+115110;Minister of Security;Josef Gerö;1945;1964;1999;SC;Silent Lawyer;Low;M23149;X
+115111;Minister of Security;Otto Tschabeck;1949;1964;1999;SC;Man of the People;Low;M23150;X
+115112;Head of Military Intelligence;Oskar Helmer;1945;1964;1999;ML;Dismal Enigma;High;M23151;X
+115113;Foreign Minister;Adolf Schärf;1945;1964;1999;SD;Biased Intellectual;Very High;M23022;X
+115114;Foreign Minister;Viktor Adler;1914;1933;1999;SD;Great Compromiser;High;9853;X
+115115;Foreign Minister;Otto Bauer;1918;1933;1999;SD;Great Compromiser;High;3692;X
+115116;Foreign Minister;Karl Renner;1919;1933;1999;SD;Ideological Crusader;High;3693;X
+115117;Foreign Minister;Michael Mayr;1920;1933;1999;ML;Ideological Crusader;High;3694;X
+115118;Foreign Minister;Johann Schober;1921;1933;1999;SL;Great Compromiser;High;3695;X
+115119;Foreign Minister;Walter Breisky;1922;1933;1999;SL;Biased Intellectual;High;3696;X
+115120;Foreign Minister;Leopold Hennet;1922;1933;1999;SL;Great Compromiser;High;unknownminister;X
+115121;Foreign Minister;Alfred Grünberger;1922;1933;1999;ML;Great Compromiser;High;3697;X
+115122;Foreign Minister;The Bundeskanzler;1923;1933;1999;SL;ideological crusader;High;3698;X
+115123;Head of Government;Karl Renner;1916;1933;1999;SD;Silent Workhorse;High;3693;X
+115124;Head of Government;Michael Mayr;1920;1933;1999;ML;Naive Optimist;High;3694;X
+115125;Head of Government;Johann Schober;1921;1933;1999;SL;Political Protege;High;3695;X
+115126;Head of Government;Walter Breisky;1922;1933;1999;SL;Happy Amateur;High;3696;X
+115127;Head of Government;Ignaz Seipel;1922;1933;1999;ML;Happy Amateur;High;M23124;X
+115128;Head of Government;Rudolf Ramek;1924;1933;1999;ML;Naive Optimist;High;3699;X
+115129;Head of State;Directory of the Council of State;1899;1964;1999;SL;popular figurehead;High;3700;X
+115130;Head of State;Karl Seitz;1916;1933;1999;SD;Insignificant Layman;High;3701;X
+115131;Head of State;Michael Hainisch;1919;1933;1999;ML;Insignificant Layman;High;3702;X
+115132;Minister of Armament;Otto Steinwender;1914;1933;1999;SD;Resource Industrialist;Medium;3703;X
+115133;Minister of Armament;Josef Schumpeter;1919;1933;1999;SD;Keynesian economy;Medium;3704;X
+115134;Minister of Armament;Richard Reisch;1919;1933;1999;SD;Resource Industrialist;Medium;unknownminister;X
+115135;Minister of Armament;Ferdinand Grimm;1920;1933;1999;ML;Administrative Genius;Medium;unknownminister;X
+115136;Minister of Armament;Alfred Gürtler;1921;1933;1999;SL;Administrative Genius;Medium;3705;X
+115137;Minister of Armament;Johann Schober;1922;1933;1999;SL;Resource Industrialist;Medium;3695;X
+115138;Minister of Armament;August Ségur;1922;1933;1999;SL;Resource Industrialist;Medium;3706;X
+115139;Minister of Armament;Viktor Kienböck;1922;1933;1999;SL;Administrative Genius;Medium;3707;X
+115140;Minister of Armament;Jakob Ahrer;1922;1933;1999;ML;Administrative Genius;Medium;unknownminister;X
+115141;Minister of Security;Heinrich Mataja;1914;1933;1999;SD;Compassionate Gentleman;High;3708;X
+115142;Minister of Security;Karl Renner;1919;1933;1999;SD;Man of the People;High;3693;X
+115143;Minister of Security;Matthias Eldersch;1919;1933;1999;SD;Silent Lawyer;High;3709;X
+115144;Minister of Security;Walter Breisky;1916;1933;1999;SD;Man of the People;High;3696;X
+115145;Minister of Security;Egon Glanz;1920;1933;1999;ML;Silent Lawyer;Medium;unknownminister;X
+115146;Minister of Security;Leopold Waber;1921;1933;1999;SL;Man of the People;Medium;3710;X
+115147;Minister of Security;Johann Schober;1922;1933;1999;SL;Compassionate Gentleman;Medium;3695;X
+115148;Minister of Security;Walter Breisky;1922;1933;1999;SL;Silent Lawyer;Medium;3696;X
+115149;Minister of Security;Felix Frank;1922;1933;1999;SL;Compassionate Gentleman;Medium;3711;X
+115150;Head of Government;Engelbert Dolfuss;1932;1963;1999;FA;Flamboyant Tough Guy;High;8292;x
+115151;Head of Government;Ernst Streeruwitz;1929;1933;1999;ML;Naive Optimist;Medium;unknownminister;X
+115152;Head of Government;Carl Vaugoin;1930;1933;1999;ML;Backroom Backstabber;Medium;unknownminister;X
+115153;Head of Government;Otto Ender;1930;1933;1999;ML;Political Protege;Medium;unknownminister;X
+115154;Head of Government;Karl Buresch;1931;1933;1999;ML;Flamboyant Tough Guy;Medium;unknownminister;X
+115155;Foreign Minister;Heinrich Mataja;1924;1933;1999;SD;Great Compromiser;High;3708;X
+115156;Foreign Minister;Rudolf Ramek;1926;1933;1999;ML;Great Compromiser;High;3699;X
+115157;Foreign Minister;Ignaz Seipel;1926;1933;1999;ML;Ideological Crusader;High;M23124;X
+115158;Foreign Minister;Ernst Steeruwitz;1929;1933;1999;ML;Apologetic Clerk;Medium;unknownminister;X
+115159;Foreign Minister;Karl Buresch;1932;1933;1999;ML;Iron Fisted Brute;Medium;unknownminister;X
+115160;Foreign Minister;Engelbert Dollfuss;1934;1964;1999;FA;Ideological Crusader;High;8292;X
+115161;Minister of Armament;Josef Kollmann;1926;1933;1999;ML;Laissez-Faire Capitalist;Medium;unknownminister;X
+115162;Minister of Armament;Johann Josef Mittelberger;1929;1933;1999;ML;Resource Industrialist;Medium;unknownminister;X
+115163;Minister of Armament;Otto Juch;1929;1933;1999;ML;Resource Industrialist;Medium;unknownminister;X
+115164;Minister of Armament;Josef Redlich;1931;1933;1999;SL;Administrative Genius;Medium;unknownminister;X
+115165;Minister of Armament;Emanuel Weidenhoffer;1931;1933;1999;ML;Laissez-Faire Capitalist;Medium;unknownminister;X
+115166;Minister of Security;Ignaz Seipel;1923;1933;1999;ML;Crime Fighter;High;M23124;X
+115167;Minister of Security;Rudolf Ramek;1924;1933;1999;ML;Compassionate Gentleman;High;3699;X
+115168;Minister of Security;Ernst Steeruwitz;1929;1933;1999;ML;Silent Lawyer;Medium;unknownminister;X
+115169;Minister of Security;Vinzenz Schumy;1929;1933;1999;ML;Silent Lawyer;Medium;unknownminister;X
+115170;Minister of Security;Ernst Rüdiger Starhemberg;1930;1933;1999;ML;Man of the People;Medium;unknownminister;X
+115171;Minister of Security;Otto Ender;1931;1964;1999;ML;Silent Lawyer;Medium;unknownminister;X
+115172;Minister of Security;Franz Bachinger;1932;1964;1999;ML;Crime Fighter;Medium;unknownminister;X

@@ -1,0 +1,46 @@
+# England Standard Build by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+   	infantry   			= 5
+	d_05				= 1
+	cavalry 			= 2
+   	motorized   		= 8 
+	mechanized 			= 2
+	light_armor 		= 0
+	armor 				= 5
+   	paratrooper     	= 2 
+   	marine    			= 3 
+	bergsjaeger 		= 0
+   	garrison  			= 1 
+    hq 					= 3
+	militia 			= 3
+#						43 %
+   	interceptor   		= 6 
+	multi_role   		= 5 
+	cas 				= 0
+   	strategic_bomber 	= 4 
+   	tactical_bomber 	= 5 
+   	naval_bomber   		= 3 
+   	transport_plane   	= 1 
+	flying_bomb 		= 0
+	flying_rocket 		= 0
+#						21 %
+	battleship 			= 4
+   	carrier   			= 10 
+   	light_carrier  		= 2
+   	escort_carrier  	= 2 
+   	destroyer   		= 8 
+	light_cruiser 		= 8
+   	heavy_cruiser   	= 4 
+	battlecruiser 		= 1
+	submarine 			= 2
+	nuclear_submarine 	= 0
+	transports 			= 0
+#						36 %
+}

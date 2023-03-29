@@ -1,0 +1,9 @@
+# Soviet war with Germany Handicap AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+   	enemy_handicap = { GER = 400 ROM = 400 } 
+	passivity = { GER = 90 ROM = 90 FIN = 60 } # %
+} 

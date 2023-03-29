@@ -1,0 +1,39 @@
+# Finland concentrates on defending Homeland by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+#reinforcement = 1.0
+
+construction = { 
+	land_fort =  no
+}
+
+military = {
+	infantry 		= 60
+	d_07			= 20
+	cavalry 		= 0
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 0
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 10
+	garrison		= 0
+    hq 				= 3
+	militia 		= 7
+#				100 %
+	interceptor 	= 0
+	multi_role 		= 0
+	cas 			= 0
+	strategic_bomber = 0
+	tactical_bomber = 0
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				0 %
+
+
+}

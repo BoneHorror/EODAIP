@@ -1,0 +1,145 @@
+# China prepares front against Japan - Nekron
+
+target = { 
+	1310 = 45 # Changde
+	1337 = 30 # Nanjing
+	1297 = 45 # Chengdu
+	1252 = 20 # Taiyuyan
+	1328 = 20 # Qingdao
+} 
+exp_force_ratio = 0.05
+max_redeploying = 0.0
+max_garrison_prop = 0.50 # 0.60
+min_garrison_prop = 0.40 # 0.40
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# PRIORITIES:
+	beach		= 60
+	capital		= 50	# Our capital
+	reserves 		= 80	# bonus for provinces just behind a frontline.
+
+	# Borders with specific countries
+	country_priorities = {
+		CHC = 5
+		JAP = 100
+		CSX = 5
+		CGX = 5
+		CYN = 5
+		U02 = -1
+		TIB = -1
+		MAN = 90
+		MEN = 90
+		SOV = 5
+	}
+	# PRIORITIES:
+	province_priorities = {	
+		1343 = 60 #Huainan
+		1340 = 60 #Hefei
+		1342 = 60 #Xuanzhou
+		1312 = 60 #Hengyang
+		1252 = 60 #Taiyuyan
+		1310 = 60 #Changde
+		1241 = 50 
+		1328 = 50 
+		1333 = 50 
+		1334 = 50 
+		1338 = 50 
+		1358 = 50 
+		1367 = 50 
+		1369 = 50 
+		1331 = -1
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+	reserve_prop		= 0.7
+	province_priorities = { 1241 = 1.5 1328 = 1.5 1333 = 1.5 1334 = 1.5 1338 = 1.5 1358 = 1.5 1367 = 1.5 1369 = 1.5	}
+} 
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.01 
+
+	AA_batteries = no
+	max_AA_level = 3
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = yes
+	max_air_base = 3
+	air_base_provs = {
+    	1310 # Changde
+	}
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 1
+	fort_provs	= { }
+	fort_borders = { } 
+
+	ic_at_war = no 
+	force_ic_until = 1935
+	ic_end_year = 1935
+	IC_provs = { } 
+}
+
+military = { 
+	relative_build_scheme 	= yes
+	max_batch_peace 		= 270 
+	max_batch_war 			= 270 
+	max_batch_home_front 	= 270
+	extra_convoys_war 		= 0.0003 
+	extra_convoys_peace 	= 0.0000 
+
+
+	#### Divisions etc...
+	infantry 		= 28	#30
+	cavalry 		= 5		#5
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 	= 4
+	armor 			= 0
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 10 	#10
+	garrison		= 0
+    hq 				= 3 	#3
+	militia 		= 40	#37
+#			95	#90 %
+	interceptor 	= 6	#10
+	multi_role 		= 0
+	cas 			= 0
+	strategic_bomber = 0
+	tactical_bomber = 3	#5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#			4	#10 %
+	battleship 		= 0
+	carrier 		= 0
+	destroyer 		= 0
+	light_cruiser 	= 1
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	transports 		= 0
+#				1 %
+}

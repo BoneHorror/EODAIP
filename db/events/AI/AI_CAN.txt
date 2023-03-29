@@ -1,0 +1,145 @@
+####################################
+# Canada AI 
+####################################
+
+################
+# Canada Load D-Day AI
+#############################################
+event = {
+	id = 3045013
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		alliance = { country = USA }
+		OR = {
+			event = 3049005 # USA Loaded D-Day
+			region = { region = "Germany" country = -3 value = 1 }
+			region = { region = "Benelux" country = -3 value = 1 }
+			region = { region = "Denmark" country = -3 value = 1 }
+			region = { region = "France" country = -3 value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CAN_Dday.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Canada Air AI
+#############################################
+event = {
+	id = 3045014
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CANGroundAir }
+		lost_national = { country = CAN value = 1 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = CANGroundAir }
+		command = { type = local_clrflag which = CANStrategicAir }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+event = {
+	id = 3045015
+	random = no 
+	country = CAN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CANStrategicAir }
+		NOT = { lost_national = { country = CAN value = 1 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = CANGroundAir }
+		command = { type = local_setflag which = CANStrategicAir }
+		command = { type = ai which = "Air_Strategic.ai" }
+	}
+}
+################
+# Shift Production
+#############################################
+event = {
+	id = 3045016
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = ENG
+			atwar = FRA
+			atwar = USA
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}
+################
+# War AI help UK
+#############################################
+event = {
+	id = 3045017
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		alliance = { country = ENG }
+		}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CAN_atwar.ai" }
+		command = { type = industrial_modifier which = total value = 10.0 }	
+	}
+}

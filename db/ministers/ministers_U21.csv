@@ -1,0 +1,49 @@
+U21;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+920001;Head of Government;Axel Pehrsson-Bramstorp;1933;1964;1999;LWR;Happy Amateur;High;M7002;X
+920002;Foreign Minister;Karl G. Westman;1933;1964;1999;LWR;Apologetic Clerk;Very High;M7003;X
+920003;Minister of Armament;Vilmar Ljungdahl;1933;1964;1999;LWR;Tank Proponent;Very High;M7004;X
+920004;Minister of Security;Thorwald Bergquist;1933;1964;1999;LWR;Compassionate Gentleman;Very High;M7005;X
+920005;Head of State;Sven Linderot;1933;1964;1999;ST;Insignificant Layman;High;M7021;X
+920006;Head of Government;Sven Linderot;1933;1964;1999;ST;Happy Amateur;High;M7021;X
+920007;Foreign Minister;Hugo Sellén;1933;1964;1999;ST;Ideological Crusader;Very High;M7023;X
+920008;Minister of Armament;Hilding Hagberg;1933;1964;1999;ST;Resource Industrialist;Very High;M7024;X
+920009;Minister of Security;Karl Kilbom;1933;1964;1999;ST;Crime Fighter;High;M7025;X
+920010;Head of Military Intelligence;C.H. Hermansson;1933;1964;1999;ST;Naval Intelligence Specialist;High;M7026;X
+920011;Chief of Staff;Gunnar Johansson;1933;1964;1999;ST;School of Mass Combat;Very High;unknownminister;X
+920012;Chief of Army;Axel Pettersson;1933;1964;1999;ST;Decisive Battle Doctrine;Very High;unknownminister;X
+920013;Chief of Navy;Per M. Eriksson;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Very High;unknownminister;X
+920014;Chief of Air Force;Krister Reuterswärd;1933;1964;1999;LE;Army Aviation Doctrine;Low;unknownminister;X
+920015;Head of State;Gustav V;1933;1964;1999;LWR;Pig-headed Isolationist;High;M7001;X
+920016;Head of Government;Per Albin Hansson;1933;1964;1999;LWR;Ambitious Union Boss;High;M7033;X
+920017;Head of Government;Tage Erlander;1933;1964;1999;LWR;Political Protege;High;M7034;X
+920018;Head of Government;Axel Pehrsson-Bramstorp;1933;1964;1999;LWR;Happy Amateur;High;M7002;X
+920019;Head of Government;Bertil Ohlin;1933;1964;1999;LWR;Corporate Suit;High;M7037;X
+920020;Foreign Minister;Richard Sandler;1933;1964;1999;LWR;Biased Intellectual;Low;M7038;X
+920021;Foreign Minister;Östen Undén;1933;1964;1999;LWR;Great Compromiser;High;M7040;X
+920022;Foreign Minister;Per Edvin Sköld;1933;1964;1999;LWR;Ideological Crusader;Medium;M7041;X
+920023;Foreign Minister;Vilhelm Göran Lundvik;1933;1964;1999;LWR;Biased Intellectual;High;M7042;X
+920024;Foreign Minister;R. Reson Sohlmann;1933;1964;1999;LWR;Iron Fisted Brute;High;M7043;X
+920025;Foreign Minister;Per E.G. Insulander;1933;1964;1999;LWR;General Staffer;High;M7044;X
+920026;Foreign Minister;Axel Pehrsson-Bramstorp;1933;1964;1999;LWR;The Cloak N Dagger Schemer;Very High;M7002;X
+920027;Minister of Armament;Ernst Wigforss;1933;1964;1999;LWR;Resource Industrialist;Low;M7047;X
+920028;Minister of Armament;Gustav Möller;1933;1964;1999;LWR;laissez-faire capitalist;Medium;M7048;X
+920029;Minister of Armament;Erik Palmstierna;1933;1964;1999;LWR;Battle Fleet Proponent;Medium;M7050;X
+920030;Minister of Armament;Östen Undén;1933;1964;1999;LE;Infantry Proponent;Medium;M7054;X
+920031;Minister of Armament;Bertil Ohlin;1933;1964;1999;LWR;Military Entrepreneur;Medium;M7037;X
+920032;Minister of Security;Karl Schlyter;1933;1964;1999;LWR;Silent Lawyer;High;M7058;X
+920033;Minister of Security;Gustav Andersson-Rasjön;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M7059;X
+920034;Minister of Security;Axel T. Ädelsvärd;1933;1964;1999;LWR;Silent Lawyer;Very High;M7060;X
+920035;Minister of Security;Anders Lindstedt;1933;1964;1999;LWR;Compassionate Gentleman;Very High;M7061;X
+920036;Minister of Security;Richard J. Sandler;1933;1964;1999;LWR;Prince of Terror;Very High;M7038;X
+920037;Minister of Security;K.G. Westman;1933;1964;1999;LWR;Crime Fighter;Very High;M7003;X
+920038;Minister of Security;Arvid G. Richert;1933;1964;1999;LWR;Man of the People;Very High;M7066;X
+920039;Head of Military Intelligence;Åke Hammerskiöld;1933;1964;1999;LWR;Dismal Enigma;High;M7070;X
+920040;Chief of Army;Helge Jung;1933;1964;1999;LWR;Armoured Spearhead Doctrine;Medium;M7006;X
+920041;Chief of Army;Bengt Nordenskiöld;1933;1964;1999;LWR;Decisive Battle Doctrine;Low;M7070;X
+920042;Chief of Army;Axel Bredberg;1933;1964;1999;LWR;Static Defence Doctrine;High;M7075;X
+920043;Chief of Navy;Erik Palmstierna;1933;1964;1999;LWR;Base Control Doctrine;Medium;M7050;X
+920044;Chief of Navy;Helge Strömbäck;1933;1964;1999;LWR;Indirect Approach Doctrine;High;M7089;X
+920045;Chief of Air Force;Axel Ljungdahl;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Very High;M7092;X
+920046;Head of State;Gustav VI Adolf;1933;1964;1999;LWR;Benevolent Gentleman;High;M7093;X
+920047;Minister of Armament;Per Edvin Sköld;1933;1964;1999;LWR;Infantry Proponent;High;M7041;X

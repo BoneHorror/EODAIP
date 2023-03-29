@@ -1,0 +1,1019 @@
+#####################################
+# New Lend-Lease concept id : 80000
+#####################################
+# US Lend-Lease Act
+####################
+event = {
+	id = 2049004
+	random = no
+	country = USA
+	
+	decision = {  
+		event = 2049023 # The Arsenal of Democracy
+	}
+	
+	decision_trigger = {
+			OR = {
+				war = { country = USA country = GER }
+				AND = {
+					war = { country = ENG country = GER }
+					government = democratic
+				}
+			}
+	}
+	
+	trigger = {
+		event = 2049023 # The Arsenal of Democracy
+		random = 60
+		OR = {
+				war = { country = USA country = GER }
+				AND = {
+					war = { country = ENG country = GER }
+					government = democratic
+				}
+			}
+	}
+
+	name = 3700name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+	decision_picture = "decision_lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = 3700a
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = U01 value = 15 }
+		command = { type = relation which = CHI value = 15 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = GER value = -15 }
+		command = { type = relation which = ITA value = -15 }
+		command = { type = relation which = JAP value = -15 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = money value = -1000 } # added in EoD
+		command = { type = trigger which = 2049005 }
+	}
+}
+event = {
+	id = 2049005
+	random = no
+	country = USA
+
+	name = 80001name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { }
+	}
+}
+#########################################################################################
+# US Aid to UK : Nominal (resources), historical (free resources + ICs), gigantic (more)
+#########################################################################################
+event = {
+	id = 2049006
+	random = no
+	country = USA
+	persistent = yes
+
+	decision = {
+		war = { country = ENG country = GER }
+		NOT = { war = { country = ENG country = USA } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { flag = Atlantic_War_UK }
+		NOT = { OR = { flag = Lend_Lease_to_UK1 flag = Lend_Lease_to_UK2 flag = Lend_Lease_to_UK3 } }
+	}
+	decision_trigger = {
+		event = 2049005 # Lend-Lease Act passed
+		war = { country = ENG country = GER }
+		control = { province = 10 data = ENG }
+		control = { province = 13 data = ENG }
+		control = { province = 18 data = ENG }
+		control = { province = 24 data = ENG }
+		control = { province = 28 data = ENG }
+		control = { province = 29 data = ENG }
+	}
+	trigger = {
+		war = { country = ENG country = GER }
+		NOT = { war = { country = ENG country = USA } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { flag = Atlantic_War_UK }
+		NOT = { OR = { flag = Lend_Lease_to_UK1 flag = Lend_Lease_to_UK2 flag = Lend_Lease_to_UK3 } }
+		AND = {
+			control = { province = 10 data = ENG }
+			control = { province = 13 data = ENG }
+			control = { province = 18 data = ENG }
+			control = { province = 24 data = ENG }
+			control = { province = 28 data = ENG }
+			control = { province = 29 data = ENG }
+		}
+	}
+
+	name = 80002name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+	decision_picture = "decision_lend_lease_ENG"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action = {
+		name = "80002a"
+		ai_chance = 0
+		command = { type = metalpool value = -1000 }
+		command = { type = oilpool value = -1000 }
+		command = { type = supplies value = -1000 }
+		command = { type = rarematerialspool value = -1000 }	
+		command = { type = relation which = ENG value = 10 }
+		command = { type = trigger which = 2001016 }
+	}
+	action = {
+		name = "80002b"
+		ai_chance = 100
+		command = { type = construct which = ic where = 1832 value = -5 }
+		command = { type = construct which = ic where = 1805 value = -5 }
+		command = { type = supplies value = -4000 }
+		command = { type = trade which = USA where = ENG metal = -20 rare_materials = -20 oil = -20 supplies = -10 value = 1 } 
+		command = { type = relation which = ENG value = 30 }
+		command = { type = trigger which = 2001017 }
+	}
+	action = {
+		name = "80002c"
+		ai_chance = 0
+		command = { type = construct which = ic where = 1832 value = -5 }
+		command = { type = construct which = ic where = 1805 value = -5 }
+		command = { type = construct which = ic where = 1889 value = -5 }
+		command = { type = construct which = ic where = 1846 value = -5 }
+		command = { type = supplies value = -8000 }
+		command = { type = trade which = USA where = ENG metal = -50 rare_materials = -50 oil = -50 supplies = -20 value = 1 } 
+		command = { type = relation which = ENG value = 60 }
+		command = { type = trigger which = 2001018 }
+	}
+}
+event = {
+	id = 2001016
+	random = no
+	country = ENG
+	persistent = yes
+
+	name = 80002name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002a"
+		command = { type = metalpool value = 1000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = supplies value = 1000 }
+		command = { type = rarematerialspool value = 1000 }
+		command = { type = setflag which = Lend_Lease_to_UK1 }
+	}
+}
+event = {
+	id = 2001017
+	random = no
+	country = ENG
+	persistent = yes
+
+	name = 80002name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002b"
+		command = { type = construct which = ic where = 28 value = 5 }
+		command = { type = construct which = ic where = 24 value = 5 }
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+		command = { type = setflag which = Lend_Lease_to_UK2 }
+	}
+}
+event = {
+	id = 2001018
+	random = no
+	country = ENG
+	persistent = yes
+
+	name = 80002name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002c"
+		command = { type = construct which = ic where = 28 value = 5 }
+		command = { type = construct which = ic where = 24 value = 5 }
+		command = { type = construct which = ic where = 29 value = 5 }
+		command = { type = construct which = ic where = 18 value = 5 }
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+	  	command = { trigger = { ai = yes } type = add_division value = strategic_bomber where = escort } # added in EoD
+		command = { type = setflag which = Lend_Lease_to_UK3 }
+	}
+}
+#########################################################################################
+# US Aid to China : Nominal (resources), historical (free resources + ICs), gigantic (more)
+#########################################################################################
+
+event = {
+	id = 2049007
+	random = no
+	country = USA
+	persistent = yes
+
+	decision = {
+		war = { country = CHI country = JAP }
+		NOT = { war = { country = CHI country = USA } }
+		NOT = { war = { country = CHI country = ENG } }
+		NOT = { war = { country = CHI country = HOL } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { OR = { flag = Lend_Lease_to_CHI1 flag = Lend_Lease_to_CHI2 flag = Lend_Lease_to_CHI3 } }
+	}
+	decision_trigger = {
+		event = 2049005 # Lend-Lease Act passed
+		war = { country = CHI country = JAP }
+		OR = { control = { province = 1415 data = ENG } control = { province = 1415 data = USA } control = { province = 1415 data = U02 } } #Rankun #harbor
+		# Burma road is open
+		OR = { control = { province = 1442 data = ENG } control = { province = 1442 data = USA } control = { province = 1442 data = U02 } } #Imphal
+		OR = { control = { province = 1414 data = ENG } control = { province = 1414 data = USA } control = { province = 1414 data = U02 } } #Putao
+		OR = { control = { province = 1408 data = ENG } control = { province = 1408 data = USA } control = { province = 1408 data = U02 } } #Mrac Kri Na
+		OR = { control = { province = 1409 data = ENG } control = { province = 1409 data = USA } control = { province = 1409 data = U02 } } #La Hri
+		OR = { control = { province = 1389 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1389 data = CYN } } } #Baoshan
+		OR = { control = { province = 1385 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1385 data = CYN } } } #Dali
+		OR = { control = { province = 1390 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1390 data = CYN } } } #Kunming
+	}
+	trigger = {
+		war = { country = CHI country = JAP }
+		NOT = { war = { country = CHI country = USA } }
+		NOT = { war = { country = CHI country = ENG } }
+		NOT = { war = { country = CHI country = HOL } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { OR = { flag = Lend_Lease_to_CHI1 flag = Lend_Lease_to_CHI2 flag = Lend_Lease_to_CHI3 } }
+		OR = { control = { province = 1415 data = ENG } control = { province = 1415 data = USA } control = { province = 1415 data = U02 } } #Rankun #harbor
+		# Burma road is open
+		OR = { control = { province = 1442 data = ENG } control = { province = 1442 data = USA } control = { province = 1442 data = U02 } } #Imphal
+		OR = { control = { province = 1414 data = ENG } control = { province = 1414 data = USA } control = { province = 1414 data = U02 } } #Putao
+		OR = { control = { province = 1408 data = ENG } control = { province = 1408 data = USA } control = { province = 1408 data = U02 } } #Mrac Kri Na
+		OR = { control = { province = 1409 data = ENG } control = { province = 1409 data = USA } control = { province = 1409 data = U02 } } #La Hri
+		OR = { control = { province = 1389 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1389 data = CYN } } } #Baoshan
+		OR = { control = { province = 1385 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1385 data = CYN } } } #Dali
+		OR = { control = { province = 1390 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1390 data = CYN } } } #Kunming
+	}
+
+	name = 3706name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+	decision_picture = "decision_lend_lease_CHI"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action = {
+		name = "80002a"
+		ai_chance = 0
+		command = { type = metalpool value = -1000 }
+		command = { type = oilpool value = -1000 }
+		command = { type = supplies value = -1000 }
+		command = { type = rarematerialspool value = -1000 }
+		command = { type = relation which = CHI value = 10 }
+		command = { type = trigger which = 2012019 }
+	}
+	action = {
+		name = "80002b"
+		ai_chance = 100
+		command = { type = construct which = ic where = 1845 value = -5 }
+		command = { type = trade which = USA where = CHI metal = -10 rare_materials = -10 oil = -10 supplies = -5 value = 1 } 
+		command = { type = relation which = CHI value = 30 }
+		command = { type = trigger which = 2012020 }
+	}
+	action = {
+		name = "80002c"
+		ai_chance = 0
+		command = { type = construct which = ic where = 1845 value = -5 }
+		command = { type = construct which = ic where = 1825 value = -5 }
+		command = { type = trade which = USA where = CHI metal = -20 rare_materials = -20 oil = -20 supplies = -10 value = 1 } 
+		command = { type = relation which = CHI value = 60 }
+		command = { type = trigger which = 2012021 }
+	}
+}
+event = {
+	id = 2012019
+	random = no
+	country = CHI
+	persistent = yes
+
+	name = 3706name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002a"
+		command = { type = metalpool value = 1000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = supplies value = 1000 }
+		command = { type = rarematerialspool value = 1000 }
+		command = { type = setflag which = Lend_Lease_to_CHI1 }
+	}
+}
+
+
+event = {
+	id = 2012020
+	random = no
+	country = CHI
+	persistent = yes
+
+	name = 3706name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002b"
+		command = { type = construct which = ic where = 1390 value = 5 }
+		command = { type = setflag which = Lend_Lease_to_CHI2 }
+	}
+}
+event = {
+	id = 2012021
+	random = no
+	country = CHI
+	persistent = yes
+
+	name = 3706name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002c"
+		command = { type = construct which = ic where = 1390 value = 5 }
+		command = { type = construct which = ic where = 1413 value = 5 }
+		command = { type = setflag which = Lend_Lease_to_CHI3 }
+	}
+}
+
+#########################################################################################
+# US Aid to SOV : Nominal (resources), historical (free resources + ICs), gigantic (more)
+#########################################################################################
+event = {
+	id = 2049008
+	random = no
+	country = USA
+	persistent = yes
+
+	decision = {
+		war = { country = SOV country = GER }
+		NOT = { war = { country = SOV country = USA } }
+		NOT = { war = { country = SOV country = ENG } }
+		NOT = { war = { country = CHI country = SOV } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { OR = { flag = Lend_Lease_to_SOV1 flag = Lend_Lease_to_SOV2 flag = Lend_Lease_to_SOV3 } }
+	}
+	decision_trigger = {
+		event = 2049005 # Lend-Lease Act passed
+		war = { country = SOV country = GER }
+		OR = {
+			AND = {
+				control = { province = 542 data = SOV } # Archangelsk Road
+				control = { province = 543 data = SOV }
+				control = { province = 548 data = SOV }
+				control = { province = 556 data = SOV }
+				control = { province = 570 data = SOV }
+				control = { province = 572 data = SOV }
+			}
+			AND = {
+				control = { province = 535 data = SOV } # Murmansk Road
+				control = { province = 536 data = SOV }
+				control = { province = 537 data = SOV }
+				control = { province = 538 data = SOV }
+				control = { province = 547 data = SOV }
+				control = { province = 556 data = SOV }
+				control = { province = 570 data = SOV }
+				control = { province = 572 data = SOV }
+			}
+			AND = { 
+				control = { province = 713 data = SOV } # Iranian road
+				control = { province = 663 data = SOV }
+				OR = {
+					control = { province = 1083 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1083 data = PER } 
+					}
+				}
+				OR = {
+					control = { province = 1084 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1084 data = PER } 
+					}
+				}
+				OR = {
+					control = { province = 1087 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1087 data = PER } 
+						}
+				}
+			}
+			AND = {
+				OR = {
+					control = { province = 1744 data = USA } # Pacific road
+					control = { province = 688 data = USA }
+					control = { province = 689 data = USA }
+				}
+				control = { province = 2142 data = SOV }
+			}
+		}
+	}
+	trigger = {
+		war = { country = SOV country = GER }
+		NOT = { war = { country = SOV country = USA } }
+		NOT = { war = { country = SOV country = ENG } }
+		NOT = { war = { country = CHI country = SOV } }
+		event = 2049005 # Lend-Lease Act passed
+		NOT = { OR = { flag = Lend_Lease_to_SOV1 flag = Lend_Lease_to_SOV2 flag = Lend_Lease_to_SOV3 } }
+		OR = {
+			AND = {
+				control = { province = 542 data = SOV } # Archangelsk Road
+				control = { province = 543 data = SOV }
+				control = { province = 548 data = SOV }
+				control = { province = 556 data = SOV }
+				control = { province = 570 data = SOV }
+				control = { province = 572 data = SOV }
+			}
+			AND = {
+				control = { province = 535 data = SOV } # Murmansk Road
+				control = { province = 536 data = SOV }
+				control = { province = 537 data = SOV }
+				control = { province = 538 data = SOV }
+				control = { province = 547 data = SOV }
+				control = { province = 556 data = SOV }
+				control = { province = 570 data = SOV }
+				control = { province = 572 data = SOV }
+			}
+			AND = { 
+				control = { province = 713 data = SOV } # Iranian road
+				control = { province = 663 data = SOV }
+				OR = {
+					control = { province = 1083 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1083 data = PER } 
+					}
+				}
+				OR = {
+					control = { province = 1084 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1084 data = PER } 
+					}
+				}
+				OR = {
+					control = { province = 1087 data = ENG } 
+					AND = {
+						alliance = { country = PER  country = ENG }
+						control = { province = 1087 data = PER } 
+						}
+				}
+			}
+			AND = {
+				OR = {
+					control = { province = 1744 data = USA } # Pacific road
+					control = { province = 688 data = USA }
+					control = { province = 689 data = USA }
+				}
+				control = { province = 2142 data = SOV }
+			}
+		}
+	}
+
+	name = 80010name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+	decision_picture = "decision_lend_lease_SOV"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 8 # Check for trigger conditions every 8 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action_a = {
+		name = "80002a"
+		ai_chance = 0
+		command = { type = metalpool value = -1000 }
+		command = { type = oilpool value = -1000 }
+		command = { type = supplies value = -1000 }
+		command = { type = rarematerialspool value = -1000 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = trigger which = 2007012 }
+	}
+	action_b = {
+		name = "80002b"
+		ai_chance = 100
+		command = { type = trade which = USA where = SOV supplies = -15 value = 1 }
+		command = { type = supplies value = -1000 }
+		command = { type = extra_tc value = -50 }
+		command = { type = relation which = SOV value = 30 }
+		command = { type = trigger which = 2007013 }
+	}
+	action_c = {
+		name = "80002c"
+		ai_chance = 0
+		command = { type = trade which = USA where = SOV supplies = -30 value = 1 } 
+		command = { type = supplies value = -1000 }
+		command = { type = extra_tc value = -100 }
+		command = { type = relation which = SOV value = 60 }
+		command = { type = trigger which = 2007014 }
+	}
+}
+event = {
+	id = 2007012
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = 80010name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002a"
+		command = { type = metalpool value = 1000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = supplies value = 1000 }
+		command = { type = rarematerialspool value = 1000 }
+		command = { type = setflag which = Lend_Lease_to_SOV1 }
+	}
+}
+
+
+event = {
+	id = 2007013
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = 80010name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002b"
+		command = { type = extra_tc value = 50 }
+		command = { type = setflag which = Lend_Lease_to_SOV2 }
+	}
+}
+event = {
+	id = 2007014
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = 80010name
+	desc = 3700desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = "80002c"
+		command = { type = extra_tc value = 100 }
+		command = { type = setflag which = Lend_Lease_to_SOV3 }
+	}
+}
+
+#########################################################
+# UK no longer receives Lend-Lease aid (no more bases)
+#########################################################
+event = {
+	id = 2001019
+	random = no
+	country = ENG
+	persistent = yes
+
+	trigger = {
+		OR = {
+			flag = Lend_Lease_to_UK3
+			flag = Lend_Lease_to_UK2
+		}
+		OR = {
+			flag = Atlantic_War_UK
+			AND = {
+				NOT = { control = { province = 10 data = ENG } }
+				NOT = { control = { province = 13 data = ENG } }
+				NOT = { control = { province = 18 data = ENG } }
+				NOT = { control = { province = 24 data = ENG } }
+				NOT = { control = { province = 28 data = ENG } }
+				NOT = { control = { province = 29 data = ENG } }
+			}
+		}
+	}
+
+	name = 3714name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action = {
+		trigger = { flag = Lend_Lease_to_UK2 }
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 28 value = -5 }
+		command = { type = construct which = ic where = 24 value = -5 }
+		command = { type = end_trades which = USA where = ENG }
+		command = { type = trigger which = 2049009 }
+		command = { type = clrflag which = Lend_Lease_to_UK2 }
+	}
+	
+	action = {
+		trigger = { flag = Lend_Lease_to_UK3 }
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 28 value = -5 }
+		command = { type = construct which = ic where = 24 value = -5 }
+		command = { type = construct which = ic where = 29 value = -5 }
+		command = { type = construct which = ic where = 18 value = -5 }
+		command = { type = end_trades which = USA where = ENG }
+		command = { type = trigger which = 2049010 }
+		command = { type = clrflag which = Lend_Lease_to_UK3 }
+	}	
+}
+
+event = {
+	id = 2049009
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3714name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1832 value = 5 }
+		command = { type = construct which = ic where = 1805 value = 5 }
+	}
+}
+
+event = {
+	id = 2049010
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3714name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1832 value = 5 }
+		command = { type = construct which = ic where = 1805 value = 5 }
+		command = { type = construct which = ic where = 1889 value = 5 } 
+		command = { type = construct which = ic where = 1846 value = 5 }
+	}
+}
+
+#########################################################
+# CHI no longer receives Lend-Lease aid (no more bases)
+#########################################################
+event = {
+	id = 2012022
+	random = no
+	country = CHI
+	persistent = yes
+
+	trigger = {
+		OR = {
+			flag = Lend_Lease_to_CHI2
+			flag = Lend_Lease_to_CHI3
+		}
+		OR = { 
+			NOT = { war = { country = CHI country = JAP } }
+			war = { country = CHI country = USA }
+			war = { country = CHI country = ENG }
+			war = { country = CHI country = HOL }
+			#harbor
+			NOT = { OR = { control = { province = 1415 data = ENG } control = { province = 1415 data = USA } control = { province = 1415 data = U02 } } } #Rankun
+			#Burmaroad
+			 NOT = { OR = { control = { province = 1442 data = ENG } control = { province = 1442 data = USA } control = { province = 1442 data = U02 } } } #Imphal
+			 NOT = { OR = { control = { province = 1414 data = ENG } control = { province = 1414 data = USA } control = { province = 1414 data = U02 } } } #Putao
+			 NOT = { OR = { control = { province = 1408 data = ENG } control = { province = 1408 data = USA } control = { province = 1408 data = U02 } } } #Mrac Kri Na
+			 NOT = { OR = { control = { province = 1409 data = ENG } control = { province = 1409 data = USA } control = { province = 1409 data = U02 } } } #La Hri
+			 NOT = { OR = { control = { province = 1389 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1389 data = CYN } } } } #Baoshan
+			 NOT = { OR = { control = { province = 1385 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1385 data = CYN } } } } #Dali
+			 NOT = { OR = { control = { province = 1390 data = CHI } AND = { alliance = { country = CHI country = CYN } control = { province = 1390 data = CYN } } } } #Kunming
+		}
+	}
+
+	name = 3718name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	
+	action = {
+		trigger = { flag = Lend_Lease_to_CHI2 }
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1390 value = -5 }
+		command = { type = end_trades which = USA where = CHI }
+		command = { type = trigger which = 2049011 }
+		command = { type = clrflag which = Lend_Lease_to_CHI2 }
+	}
+	
+	action = {
+		trigger = { flag = Lend_Lease_to_CHI3 }
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1390 value = -5 }
+		command = { type = construct which = ic where = 1413 value = -5 }
+		command = { type = end_trades which = USA where = CHI }
+		command = { type = trigger which = 2049012 }
+		command = { type = clrflag which = Lend_Lease_to_CHI3 }
+	}	
+}
+event = {
+	id = 2049011
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3718name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1845 value = 5 }
+	}
+}
+
+event = {
+	id = 2049012
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3718name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = 1845 value = 5 }
+		command = { type = construct which = ic where = 1825 value = 5 }
+	}
+}
+
+#########################################################
+# SOV no longer receives Lend-Lease aid (no more bases)
+#########################################################
+event = {
+	id = 2007015
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+		OR = {
+			flag = Lend_Lease_to_SOV3
+			flag = Lend_Lease_to_SOV2
+		}
+		OR = {
+			NOT = { war = { country = SOV country = GER } }
+			war = { country = SOV country = USA }
+			war = { country = SOV country = ENG }
+			war = { country = CHI country = SOV }
+			AND = {
+				NOT = { control = { province = 542 data = SOV } } # Archangelsk Road
+				NOT = { control = { province = 535 data = SOV } } # Murmansk Road
+				NOT = { control = { province = 713 data = SOV } } # Iranian road
+				NOT = { control = { province = 2142 data = SOV } } # Pacific road
+			}
+		}
+	}
+
+	name = 3722name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action = {
+		trigger = { flag = Lend_Lease_to_SOV2 }
+		name = ACTION_NAME_OK
+		command = { type = end_trades which = USA where = SOV }
+		command = { type = extra_tc value = -50 }
+		command = { type = trigger which = 2049013 }
+		command = { type = clrflag which = Lend_Lease_to_SOV2 }
+	}
+
+		action = {
+		trigger = { flag = Lend_Lease_to_SOV3 }
+		name = ACTION_NAME_OK
+		command = { type = end_trades which = USA where = SOV }
+		command = { type = extra_tc value = -100 }
+		command = { type = trigger which = 2049014 }
+		command = { type = clrflag which = Lend_Lease_to_SOV3 }
+	}
+}
+event = {
+	id = 2049013
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3722name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = extra_tc value = 50 }
+	}
+}
+
+event = {
+	id = 2049014
+	random = no
+	country = USA
+	persistent = yes
+
+	name = 3722name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = extra_tc value = 100 }
+	}
+}
+
+########################
+# Atlantic War
+########################
+event = {
+	id = 2001021
+	random = no
+	country = ENG
+	persistent = yes
+
+	trigger = {
+		event = 2049005 # Lend-Lease passed
+		NOT = { convoypool = 100 }
+		NOT = { escortpool = 50 }
+		NOT = { flag = Atlantic_War_UK }
+	}
+
+	name = 80026name
+	desc = 80026desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action_a = {
+		name = "evt_80026a"
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = Atlantic_War_UK }
+	}
+}
+
+event = {
+	id = 2001022
+	random = no
+	country = ENG
+	persistent = yes
+
+	trigger = {
+		flag = Atlantic_War_UK
+		convoypool = 100
+	}
+
+	name = 80027name
+	desc = 80027desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action_a = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -5 }
+		command = { type = clrflag which = Atlantic_War_UK }
+	}
+}
+
+event = {
+	id = 2003074
+	random = no
+	country = GER
+
+	trigger = {
+		event = 2049006 # Lend-Lease to UK
+		war = { country = ENG country = GER }
+	}
+
+	name = 80028name
+	desc = 80028desc
+	style = 2
+	picture = "lend_lease"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 8 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { }
+	}
+}
+########################
+# Lend-Lease to Free France
+########################
+event = {
+	id = 2049015
+	random = no
+	country = USA
+
+	decision = {
+		event = 2049005 # Lend-Lease passed
+		exists = U01
+		war = { country = U01 country = GER }
+		control = { province = 907 data = U01 } # Brazzaville
+	}
+	decision_trigger = {
+		event = 2049005 # Lend-Lease passed
+		war = { country = U01 country = GER }
+		control = { province = 907 data = U01 } # Brazzaville
+	}
+	trigger = {
+		event = 2049005 # Lend-Lease passed
+		exists = U01
+		war = { country = U01 country = GER }
+		control = { province = 907 data = U01 } # Brazzaville
+	}
+
+	name = 80029name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+	decision_picture = "decision_lend_lease_FFL"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15 # Check for trigger conditions every 15 days
+	deathdate = { day = 29 month = june year = 1999 }
+	action = {
+		name = 80002b
+		command = { type = construct which = ic where = 1924 value = -5 }
+		command = { type = construct which = ic where = 1887 value = -5 }
+		command = { type = trade which = USA where = U01 metal = -5 rare_materials = -5 oil = -5 supplies = -5 value = 1 } 
+		command = { type = relation which = U01 value = 30 }
+		command = { type = trigger which = 2184002 }
+	}
+}
+
+event = {
+	id = 2184002
+	random = no
+	country = U01
+
+	name = 80029name
+	desc = 80001desc
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = free_ic value = 10 }
+	}
+}

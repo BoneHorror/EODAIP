@@ -1,0 +1,59 @@
+AZB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+460001;Head of State;Nizham Narimanov;1933;1964;1999;LWR;Stern Imperialist;High;M516001;X
+460002;Head of Government;Faraz Guzeinov;1933;1964;1999;LWR;Backroom Backstabber;High;M516002;X
+460003;Foreign Minister;Suleyman Rustam;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M516003;X
+460004;Minister of Armament;Ilyas Afandiev;1933;1964;1999;LWR;Theoretical Scientist;Medium;M516004;X
+460005;Minister of Security;Arash Bulbul;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M516005;X
+460006;Head of Military Intelligence;Rasul Reza;1933;1964;1999;LWR;Industrial Specialist;Medium;M516006;X
+460007;Chief of Staff;Mahmud Nuri Berköz;1933;1964;1999;LWR;School of Mass Combat;Medium;M516007;X
+460008;Chief of Army;Khalil Mamedov;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M516008;X
+460009;Chief of Navy;Kambiz Krasnoshapka;1933;1964;1999;LWR;Open Seas Doctrine;High;M516009;X
+460010;Chief of Air Force;Gurgen Voskan Kamalyan;1933;1964;1999;LWR;Air Superiority Doctrine;Medium;M516010;X
+460011;Head of State;Rajib Kulbenzhian;1933;1964;1999;ML;Barking Buffoon;High;M516011;X
+460012;Head of Government;Suleyman Rustam;1933;1964;1999;SD;Smiling Oilman;High;M516003;X
+460013;Head of Government;Arash Bulbul;1933;1964;1999;ML;Flamboyant Tough Guy;Medium;M516005;X
+460014;Foreign Minister;Khaslatam Narimanov;1933;1964;1999;LWR;General Staffer;High;M516014;X
+460015;Foreign Minister;Mammad Amin Rasulzade;1933;1964;1999;LWR;Biased Intellectual;High;M516015;X
+460016;Foreign Minister;Arash Bulbul;1933;1964;1999;SD;Great Compromiser;Medium;M516005;X
+460017;Foreign Minister;Mahammad Rahman;1933;1964;1999;ML;Iron Fisted Brute;Medium;M516017;X
+460018;Minister of Armament;Mehdi Husein;1933;1964;1999;LWR;Tank Proponent;Medium;M516018;X
+460019;Minister of Armament;dr. Mahmood Ghasbalatam;1933;1964;1999;LWR;laissez-faire capitalist;Medium;M516019;X
+460020;Minister of Armament;Amin Aziz;1933;1964;1999;LWR;Infantry Proponent;Medium;M516020;X
+460021;Minister of Armament;Rajib Kulbenzhian;1933;1964;1999;SD;Corrupt Kleptocrat;High;M516011;X
+460022;Minister of Armament;Ismayl Shikhali;1933;1964;1999;ML;Military Entrepreneur;High;M516022;X
+460023;Minister of Security;Nigar Rafibelyi;1933;1964;1999;LWR;Crime Fighter;Medium;M516023;X
+460024;Minister of Security;Sabat Rahman;1933;1964;1999;LWR;Silent Lawyer;Medium;M516024;X
+460025;Minister of Security;Rasul Reza;1933;1964;1999;SD;Man of the People;Medium;M516006;X
+460026;Minister of Security;Mirza Ibrahimov;1933;1964;1999;ML;Back Stabber;Medium;M516026;X
+460027;Head of Military Intelligence;Nariman Narimanov;1933;1964;1999;LWR;Naval Intelligence Specialist;Medium;M516027;X
+460028;Head of Military Intelligence;Soultanov Khosrov Ebk;1933;1964;1999;SD;Logistics Specialist;Medium;M516028;X
+460029;Head of Military Intelligence;Rahmud Azizbayob;1933;1964;1999;ML;Dismal Enigma;Medium;M516029;X
+460030;Chief of Staff;Samed Bey Mehmandarov;1933;1964;1999;SD;School of Defence;Medium;M516030;X
+460031;Chief of Staff;Khalil Mamedov;1933;1964;1999;ML;School of Fire Support;Medium;M516008;X
+460032;Chief of Army;Mahmud Nuri Berköz;1933;1964;1999;SD;Elastic Defence Doctrine;Medium;M516007;X
+460033;Chief of Army;Soureb Hakop Gasparyan;1933;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M516033;X
+460034;Chief of Navy;Samed Bey Mehmandarov;1933;1964;1999;SD;Base Control Doctrine;High;M516030;X
+460035;Chief of Navy;Ysmail Makhov;1933;1964;1999;ML;Indirect Approach Doctrine;High;M516035;X
+460036;Chief of Air Force;Kambiz Krasnoshapka;1933;1964;1999;SD;Naval Aviation Doctrine;High;M516009;X
+460037;Chief of Air Force;Andronik Abram Kazaryan;1933;1964;1999;ML;Army Aviation Doctrine;High;M516037;X
+460038;Chief of Army;Mirza Husseynov;1920;1933;1999;LE;static defence doctrine;Medium;5949;X
+460039;Chief of Army;Narim Narimanov;1920;1933;1999;LE;decisive battle doctrine;Medium;5950;X
+460040;Chief of Staff;Mirza Husseynov;1920;1933;1999;LE;school of defence;Medium;5949;X
+460041;Chief of Staff;Narim Narimanov;1920;1933;1999;LE;school of psychology;Medium;5950;X
+460042;Foreign Minister;Alimardanbey Topchubashov;1918;1933;1999;SL;biased intellectual;Medium;5951;X
+460043;Head of Government;Fath Ali Khan Khoiski;1914;1933;1999;ML;Happy Amateur;Medium;5952;X
+460044;Head of Government;Nasibbey Yusifbeyli;1919;1933;1999;ML;Happy Amateur;Medium;5953;X
+460045;Head of Government;Mirza Husseynov;1920;1933;1999;ST;Backroom Backstabber;Medium;5949;X
+460046;Head of Government;Narim Narimanov;1921;1933;1999;ST;Political Protege;Medium;5950;X
+460047;Head of Government;Mukhtar Hajiyev;1921;1933;1999;ST;Flamboyant Tough Guy;Medium;unknownminister;X
+460048;Head of Government;Samad Aliyev;1922;1933;1999;ST;Backroom Backstabber;Medium;5954;X
+460049;Head of State;Memmed Resulzade;1914;1933;1999;ML;Insignificant Layman;Medium;5955;X
+460050;Head of State;Alimardanbey Topchubashov;1918;1933;1999;ML;Insignificant Layman;Medium;5951;X
+460051;Head of State;Mirza Husseynov;1920;1933;1999;ST;Popular Figurehead;Medium;5949;X
+460052;Head of State;Narim Narimanov;1921;1933;1999;ST;Ruthless Powermonger;Medium;5950;X
+460053;Head of State;Mukhtar Hajiyev;1921;1933;1999;ST;Stern Imperialist;Medium;unknownminister;X
+460054;Head of State;Samad Aliyev;1922;1933;1999;ST;Weary Stiffneck;Medium;5954;X
+460055;Minister of Security;Amir Aslan Khan Khoiski;1914;1933;1999;SL;efficient sociopath;Medium;unknownminister;X
+460056;Minister of Security;Narim Narimanov;1921;1933;1999;LE;crime fighter;Medium;5950;X
+460057;Minister of Security;Gazanfar Musabekov;1922;1933;1999;LE;Secret police chief;Medium;5956;X

@@ -1,0 +1,231 @@
+OTT;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+720001;Head of State;Abdul Hamid II;1933;1964;1999;PA;Pig-headed Isolationist;High;M549001;X
+720002;Head of Government;Abdulhamid Talaat Pasha;1933;1964;1999;PA;Political Protege;High;M549002;X
+720003;Foreign Minister;Said Halim;1933;1964;1999;PA;Great Compromiser;Very High;2902;X
+720004;Minister of Armament;Kedir Enver Pasha;1933;1964;1999;PA;Corrupt Kleptocrat;Medium;M549004;X
+720005;Minister of Security;Haslim Nazim Pasha;1933;1964;1999;PA;Back Stabber;Medium;M549005;X
+720006;Head of Military Intelligence;Kadir Moncef Bey;1933;1964;1999;PA;Logistics Specialist;Medium;M549006;X
+720007;Chief of Staff;Cahit Vedat Pasha;1933;1964;1999;PA;School of Fire Support;Medium;M549007;X
+720008;Chief of Army;Mustapha Kemal Pasha;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M549008;X
+720009;Chief of Navy;Huseyn Rauf;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M549009;X
+720010;Chief of Air Force;Kedir Enver Pasha;1933;1964;1999;PA;Vertical Envelopment Doctrine;Medium;M549010;X
+720011;Head of State;Muhammed VI Khan;1933;1964;1999;SC;Weary Stiffneck;High;M549011;X
+720012;Head of State;Ahmad Nikhad;1933;1964;1999;ML;Autocratic Charmer;High;M549012;X
+720013;Head of State;Osman Fuad;1933;1964;1999;SD;Die-hard Reformer;High;M549013;X
+720014;Head of Government;Hussein Avni Pasha;1933;1964;1999;SC;Old General;High;M549014;X
+720015;Head of Government;Refik Semir Bey;1933;1964;1999;ML;Smiling Oilman;High;M549015;X
+720016;Head of Government;Ahmed Tsirri Bey;1933;1964;1999;SD;Corporate Suit;High;M549016;X
+720017;Foreign Minister;Omar Lattas Pasha;1940;1964;1999;PA;General Staffer;High;M549017;X
+720018;Foreign Minister;Abdul Majid Khan;1941;1964;1999;PA;Apologetic Clerk;High;M549018;X
+720019;Foreign Minister;Mehmed Namid Kemal Bey;1933;1964;1999;SC;Biased Intellectual;High;M549019;X
+720020;Foreign Minister;Basir Rami Bey;1933;1964;1999;ML;Iron Fisted Brute;High;M549020;X
+720021;Foreign Minister;Gaafar Wali Pasha;1933;1964;1999;SD;Great Compromiser;High;M549021;X
+720022;Foreign Minister;Ali Visab;1943;1964;1999;SD;Ideological Crusader;High;M549022;X
+720023;Minister of Armament;Ali Emin Pasha;1942;1964;1999;PA;Theoretical Scientist;Medium;M549023;X
+720024;Minister of Armament;Hussein Kamil;1933;1964;1999;SC;Air to Ground Proponent;Medium;M549024;X
+720025;Minister of Armament;Erkan Djavid Pasha;1939;1964;1999;SC;Administrative Genius;Medium;M549025;X
+720026;Minister of Armament;Yussef Hamid Bey;1933;1964;1999;ML;Military Entrepreneur;Medium;M549026;X
+720027;Minister of Armament;Ibrahim Shinassi;1933;1964;1999;SD;Submarine Proponent;Medium;M549027;X
+720028;Minister of Armament;Udi Cemil Bey;1941;1964;1999;SD;Infantry Proponent;Medium;M549028;X
+720029;Minister of Security;Ramazan Dogramaci;1941;1964;1999;PA;Efficient Sociopath;Medium;M549029;X
+720030;Minister of Security;Eskibaskan Dahmet Bey;1933;1964;1999;SC;Prince of Terror;Medium;M549030;X
+720031;Minister of Security;Hurpit Gelik;1941;1964;1999;SC;Silent Lawyer;Medium;M549031;X
+720032;Minister of Security;Arif Dajani Pasha;1933;1964;1999;ML;Crime Fighter;Medium;M549032;X
+720033;Minister of Security;Omer Sevki Bey;1933;1964;1999;SD;Compassionate Gentleman;Medium;M549033;X
+720034;Head of Military Intelligence;Hamit Sahap Bey;1933;1964;1999;SC;Technical Specialist;Medium;M549034;X
+720035;Head of Military Intelligence;Oktan Halis;1933;1964;1999;ML;Naval Intelligence Specialist;Medium;M549035;X
+720036;Head of Military Intelligence;Mohammed Serageddin Pasha;1933;1964;1999;SD;Dismal Enigma;Medium;M549036;X
+720037;Chief of Staff;Ismet Inönu Pasha;1941;1964;1999;PA;School of Defence;Medium;M549037;X
+720038;Chief of Staff;Topal Osman;1933;1964;1999;SC;School of Psychology;Medium;M549038;X
+720039;Chief of Staff;Mehmed Kiamil Pasha;1933;1964;1999;ML;School of Mass Combat;Medium;M549039;X
+720040;Chief of Staff;Osman Fuad;1933;1964;1999;SD;School of Manoeuvre;Medium;M549013;X
+720041;Chief of Army;Hussein Avni Pasha;1933;1964;1999;SC;Static Defence Doctrine;Medium;M549014;X
+720042;Chief of Army;Ekmelledin Ülkü;1933;1964;1999;ML;Decisive Battle Doctrine;Medium;M549042;X
+720043;Chief of Army;Fevsi Tülin;1933;1964;1999;SD;Armoured Spearhead Doctrine;Medium;M549043;X
+720044;Chief of Navy;Abdul Hamid Zia Pasha;1933;1964;1999;SC;Decisive Naval Battle Doctrine;Medium;M549044;X
+720045;Chief of Navy;Ahmad Nikhad;1933;1964;1999;ML;Base Control Doctrine;Medium;M549012;X
+720046;Chief of Navy;Hamit Perikanovlu;1933;1964;1999;SD;Power Projection Doctrine;Medium;M549046;X
+720047;Chief of Air Force;Muhammed VI Khan;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M549011;X
+720048;Chief of Air Force;Deniz Uche;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M549048;X
+720049;Chief of Air Force;Meshut Serif Pasha;1933;1964;1999;SD;Carpet Bombing Doctrine;Medium;M549049;X
+720050;Head of State;Abdülhamid II;1908;1918;1999;PA;autocratic charmer;Medium;1657;X
+720051;Head of State;Mehmed V;1908;1919;1999;SC;weary stiffneck;Medium;2917;X
+720052;Head of State;Mehmed VI;1908;1926;1999;SC;insignificant layman;Medium;3779;X
+720053;Head of State;Abdülmecid II;1908;1944;1999;SC;popular figurehead;Medium;2545;X
+720054;Head of Government;Avlonyali Mehmed Ferid;1908;1914;1999;PA;political protege;Medium;2555;X
+720055;Head of Government;Mehmed Said;1908;1914;1999;SC;flamboyant tough guy;Medium;3771;X
+720056;Head of Government;Hüseyin Hilmi;1908;1922;1999;SC;backroom backstabber;Medium;3757;X
+720057;Head of Government;Ahmed Tevfik Okday;1908;1936;1999;SC;silent workhorse;Medium;2549;X
+720058;Head of Government;Ibrahim Hakki;1908;1918;1999;SC;smiling oilman;Medium;3761;X
+720059;Head of Government;Ahmed Muhtar;1908;1919;1999;SC;naive optimist;Medium;2551;X
+720060;Head of Government;Kibrisli Mehmed Kamil;1908;1913;1999;SC;corporate suit;Medium;3764;X
+720061;Head of Government;Mahmud Shevket;1908;1913;1999;SC;smiling oilman;Medium;3767;X
+720062;Head of Government;Said Halim;1908;1921;1999;SC;silent workhorse;Medium;2902;X
+720063;Head of Government;Mehmed Talat;1908;1921;1999;SC;happy amateur;Medium;3773;X
+720064;Head of Government;Ahmed Izzet;1908;1937;1999;SC;backroom backstabber;Medium;2550;X
+720065;Head of Government;Damat Mehmed Ferit;1908;1923;1999;SC;ambitious union boss;Medium;2556;X
+720066;Head of Government;Düztaban Ali Riza;1908;1932;1999;SC;flamboyant tough guy;Medium;2558;X
+720067;Head of Government;Salih Hulusi Kezrak;1908;1939;1999;SC;political protege;Medium;7753;X
+720068;Foreign Minister;Ahmed Tevfik Okday;1908;1936;1999;PA;iron fisted brute;Medium;2549;X
+720069;Foreign Minister;Mehmed Rifat;1908;1925;1999;SC;general staffer;Medium;unknownminister;X
+720070;Foreign Minister;Ibrahim Hakki;1908;1918;1999;SC;ideological crusader;Medium;3761;X
+720071;Foreign Minister;Mustafa Asim Turgut;1908;1937;1999;SC;great compromiser;Medium;unknownminister;X
+720072;Foreign Minister;Gabriel Noradunkyan;1908;1936;1999;SC;apologetic clerk;Medium;3754;X
+720073;Foreign Minister;Said Halim;1908;1921;1999;SC;biased intellectual;Medium;2902;X
+720074;Foreign Minister;Halil;1908;1936;1999;SC;the cloak n dagger schemer;Medium;3755;X
+720075;Foreign Minister;Ahmed Nesimi Sayman;1908;1958;1999;SC;iron fisted brute;Medium;unknownminister;X
+720076;Foreign Minister;Menemenlizade Mehmed Nabi;1918;1924;1999;SC;general staffer;Medium;3997;X
+720077;Foreign Minister;Mustafa Reshit;1918;1924;1999;SC;ideological crusader;Medium;442;X
+720078;Foreign Minister;Yusuf Franko;1918;1933;1999;SC;great compromiser;Medium;8709;X
+720079;Foreign Minister;Damat Mehmed Ferit;1920;1923;1999;SC;apologetic clerk;Medium;2556;X
+720080;Foreign Minister;Abdüllatif Safa;1920;1940;1999;SC;biased intellectual;Medium;unknownminister;X
+720081;Foreign Minister;Ahmed Izzet;1920;1937;1999;SC;the cloak n dagger schemer;Medium;2550;X
+720082;Minister of Armament;Ömer Rüshtü;1908;1922;1999;SC;infantry proponent;Medium;8720;X
+720083;Minister of Armament;Recep;1908;1925;1999;SC;tank proponent;Medium;unknownminister;X
+720084;Minister of Armament;Düztaban Ali Riza;1908;1932;1999;SC;military entrepreneur;Medium;2558;X
+720085;Minister of Armament;Nazim;1908;1913;1999;SC;air to ground proponent;Medium;443;X
+720086;Minister of Armament;Ibrahim Edhem;1908;1922;1999;SC;air to sea proponent;Medium;unknownminister;X
+720087;Minister of Armament;Salih Hulusi Kezrak;1908;1939;1999;SC;air superiority proponent;Medium;7753;X
+720088;Minister of Armament;Mahmud Shevket;1908;1913;1999;SC;strategic air proponent;Medium;3767;X
+720089;Minister of Armament;Hurshit;1908;1922;1999;SC;infantry proponent;Medium;unknownminister;X
+720090;Minister of Armament;Ahmed Izzet;1908;1937;1999;SC;air to ground proponent;Medium;2550;X
+720091;Minister of Armament;Djürüksulu Mahmud ;1908;1936;1999;SC;air to sea proponent;Medium;2557;X
+720092;Minister of Armament;Ismail Enver;1908;1922;1999;PA;air superiority proponent;Medium;3763;X
+720093;Minister of Armament;Kölemen Abdullah;1908;1937;1999;SC;infantry proponent;Medium;3765;X
+720094;Minister of Armament;Ismail Cevat Djobanli;1908;1938;1999;SC;tank proponent;Medium;3762;X
+720095;Minister of Armament;Ömer Yaver;1919;1931;1999;SC;military entrepreneur;Medium;unknownminister;X
+720096;Minister of Armament;Damat Ferid;1919;1923;1999;SC;air to ground proponent;Medium;unknownminister;X
+720097;Minister of Armament;Abuk Ahmed;1919;1923;1999;SC;air to sea proponent;Medium;unknownminister;X
+720098;Minister of Armament;Mehmed Shakir;1919;1919;1999;SC;air superiority proponent;Medium;3777;X
+720099;Minister of Armament;Shevket Turgut;1919;1924;1999;SC;strategic air proponent;Medium;8148;X
+720100;Minister of Armament;Nazim;1919;1936;1999;SC;tank proponent;Medium;unknownminister;X
+720101;Minister of Armament;Süleyman Shefik;1919;1936;1999;SC;military entrepreneur;Medium;8693;X
+720102;Minister of Armament;Mersinli Mehmed Cemal ;1919;1941;1999;SC;air to ground proponent;Medium;unknownminister;X
+720103;Minister of Armament;Fevzi Djakmak;1920;1950;1999;SC;air superiority proponent;Medium;2561;X
+720104;Minister of Armament;Hüseyin Hüsnü;1920;1936;1999;SC;infantry proponent;Medium;3759;X
+720105;Minister of Armament;Ziya Kutnak;1920;1940;1999;SC;tank proponent;Medium;8717;X
+720106;Minister of Armament;Mehmed Celaleddin;1908;1933;1999;PA;battle fleet proponent;Medium;unknownminister;X
+720107;Minister of Armament;Hasan Rami;1908;1923;1999;PA;submarine proponent;Medium;3756;X
+720108;Minister of Armament;Alizoti Ibrahim Halil;1908;1923;1999;SC;battle fleet proponent;Medium;unknownminister;X
+720109;Minister of Armament;Arif Hikmet;1908;1915;1999;SC;submarine proponent;Medium;unknownminister;X
+720110;Minister of Armament;Hüseyin Hüsnü;1908;1926;1999;SC;battle fleet proponent;Medium;3759;X
+720111;Minister of Armament;Ali Riza;1908;1932;1999;SC;submarine proponent;Medium;unknownminister;X
+720112;Minister of Armament;Emin;1908;1933;1999;SC;battle fleet proponent;Medium;unknownminister;X
+720113;Minister of Armament;Salih Hulusi Kezrak;1908;1939;1999;SC;submarine proponent;Medium;7753;X
+720114;Minister of Armament;Mahmut Muhtar;1908;1935;1999;SC;battle fleet proponent;Medium;3768;X
+720115;Minister of Armament;Hurshid;1908;1934;1999;SC;submarine proponent;Medium;unknownminister;X
+720116;Minister of Armament;Djürüksulu Mahmud ;1908;1933;1999;SC;battle fleet proponent;Medium;2557;X
+720117;Minister of Armament;Ahmed Cemal;1908;1922;1999;PA;submarine proponent;Medium;2548;X
+720118;Minister of Armament;Hüseyin Rauf;1908;1964;1999;SC;submarine proponent;Medium;3760;X
+720119;Minister of Armament;Ali Riza;1908;1932;1999;SC;battle fleet proponent;Medium;unknownminister;X
+720120;Minister of Armament;Mehmed Shakir;1908;1933;1999;SC;submarine proponent;Medium;3777;X
+720121;Minister of Armament;Ahmed Avni ;1908;1935;1999;SC;battle fleet proponent;Medium;2547;X
+720122;Minister of Armament;Mehmed Esat Bülkat;1908;1952;1999;SC;submarine proponent;Medium;3776;X
+720123;Minister of Armament;Kara Mehmed Said ;1908;1940;1999;SC;battle fleet proponent;Medium;unknownminister;X
+720124;Minister of Armament;Djakaci Ahmed Hamdi ;1908;1940;1999;SC;submarine proponent;Medium;unknownminister;X
+720125;Minister of Armament;Mehmed Ziya;1908;1930;1999;PA;administrative genius;Medium;unknownminister;X
+720126;Minister of Armament;Mehmed Ragib;1908;1909;1999;PA;laissez-faire capitalist;Medium;unknownminister;X
+720127;Minister of Armament;Mehmed Rifat;1908;1925;1999;SC;corrupt kleptocrat;Medium;unknownminister;X
+720128;Minister of Armament;Osman Nuri Bey;1908;1912;1999;SC;resource industrialist;Medium;unknownminister;X
+720129;Minister of Armament;Mehmed Djavid;1908;1926;1999;SC;theoretical scientist;Medium;3775;X
+720130;Minister of Armament;Mustafa Nail;1908;1922;1999;SC;Oil baron;Medium;unknownminister;X
+720131;Minister of Armament;Abdurrahman Vefik;1908;1956;1999;SC;Steel magnate;Medium;2546;X
+720132;Minister of Armament;Mehmed Talat;1908;1921;1999;PA;Industrial chemist;Medium;3773;X
+720133;Minister of Armament;Mehmed Ata;1908;1919;1999;SC;Planned economy proponent;Medium;unknownminister;X
+720134;Minister of Armament;Mehmed Tevfik Biren;1908;1956;1999;SC;Keynesian economy;Medium;3778;X
+720135;Minister of Armament;Faik Nüzhet;1908;1944;1999;SC;Reformer;Medium;unknownminister;X
+720136;Minister of Armament;Ahmed Reshit Rey;1908;1956;1999;SC;Construction magnate;Medium;unknownminister;X
+720137;Minister of Armament;Mehmed Nazif;1908;1930;1999;SC;Balanced budget economy;Medium;3770;X
+720138;Minister of Armament;Rashid;1908;1930;1999;SC;Mixed economy;Medium;unknownminister;X
+720139;Minister of Armament;Hüseyin Sabri;1908;1920;1999;SC;administrative genius;Medium;unknownminister;X
+720140;Minister of Armament;Abdullah Lami;1908;1936;1999;SC;laissez-faire capitalist;Medium;unknownminister;X
+720141;Minister of Security;Mehmed Faik Memduh;1908;1923;1999;PA;back stabber;Medium;unknownminister;X
+720142;Minister of Security;Akif Halil;1908;1909;1999;SC;compassionate gentleman;Medium;unknownminister;X
+720143;Minister of Security;Reshid Akif ;1908;1920;1999;SC;man of the people;Medium;6929;X
+720144;Minister of Security;Ibrahim Hakki ;1908;1918;1999;SC;prince of terror;Medium;3761;X
+720145;Minister of Security;Hüseyin Hilmi;1908;1923;1999;SC;crime fighter;Medium;3757;X
+720146;Minister of Security;Avlonyali Mehmed Ferid;1908;1914;1999;SC;silent lawyer;Medium;2555;X
+720147;Minister of Security;Mehmed Talat;1908;1921;1999;PA;back stabber;Medium;3773;X
+720148;Minister of Security;Halil ;1908;1925;1999;SC;efficient sociopath;Medium;3755;X
+720149;Minister of Security;Mehmed Celal;1908;1926;1999;SC;crooked kleptocrat;Medium;3769;X
+720150;Minister of Security;Haci Mehmed Adil;1908;1930;1999;SC;Media magnate;Medium;unknownminister;X
+720151;Minister of Security;Mehmed Ziya;1908;1930;1999;SC;Health and safety;Medium;unknownminister;X
+720152;Minister of Security;Ali Danish;1908;1930;1999;SC;Secret police chief;Medium;unknownminister;X
+720153;Minister of Security;Avlonyali Mehmed Ferid;1908;1914;1999;SC;compassionate gentleman;Medium;2555;X
+720154;Minister of Security;Ahmed Reshit Rey;1908;1956;1999;SC;man of the people;Medium;unknownminister;X
+720155;Minister of Security;Mustafa Arif Deymer;1908;1954;1999;SC;prince of terror;Medium;441;X
+720156;Minister of Security;Ali Fethi Okyar;1908;1943;1999;SC;crime fighter;Medium;2552;X
+720157;Minister of Security;Ismail;1908;1930;1999;SC;silent lawyer;Medium;unknownminister;X
+720158;Minister of Security;Ahmed Izzet;1918;1936;1999;SC;back stabber;Medium;2550;X
+720159;Minister of Security;Cemal Keshmir;1918;1949;1999;SC;efficient sociopath;Medium;unknownminister;X
+720160;Minister of Security;Mehmed Ali;1918;1939;1999;SC;crooked kleptocrat;Medium;3774;X
+720161;Minister of Security;Ali Kemal;1918;1922;1999;SC;Media magnate;Medium;2554;X
+720162;Minister of Security;Haci Adil;1918;1924;1999;SC;Health and safety;Medium;unknownminister;X
+720163;Minister of Security;Mehmed Sherif;1918;1951;1999;SC;Secret police chief;Medium;3772;X
+720164;Minister of Security;Ebubekir Hazim Tepeyran;1908;1947;1999;SC;compassionate gentleman;Medium;2559;X
+720165;Minister of Security;Reshid Mümtaz;1908;1921;1999;SC;man of the people;Medium;unknownminister;X
+720166;Minister of Security;Sherif Mehmed Rauf;1908;1923;1999;SC;prince of terror;Medium;unknownminister;X
+720167;Minister of Security;Ali Riza ;1908;1932;1999;SC;crime fighter;Medium;unknownminister;X
+720168;Minister of Security;Salih Hulusi Kezrak;1908;1939;1999;SC;silent lawyer;Medium;7753;X
+720169;Head of Military intelligence;Süleyman Askeri;1908;1915;1999;SC;industrial specialist;Medium;8688;X
+720170;Head of Military intelligence;Eshref Sencer Kushdjubashi;1908;1964;1999;SC;political specialist;Medium;2560;X
+720171;Head of Military intelligence;Ali Bashhampa;1908;1933;1999;SC;dismal enigma;Medium;unknownminister;X
+720172;Head of Military intelligence;Hüsamettin Ertürk;1908;1933;1999;SC;naval intelligence specialist;Medium;unknownminister;X
+720173;Head of Military intelligence;Galatali Shevket;1908;1933;1999;SC;technical specialist;Medium;unknownminister;X
+720174;Head of Military intelligence;Mahmud Celal;1908;1986;1999;SC;logistics specialist;Medium;3766;X
+720175;Head of Military intelligence;Ahmed Cemal;1908;1922;1999;PA;industrial specialist;Medium;2548;X
+720176;Chief of Staff;Ahmed Izzet;1908;1937;1999;SC;school of fire support;Medium;2550;X
+720177;Chief of Staff;Ismail Enver;1908;1922;1999;PA;school of manoeuvre;Medium;3763;X
+720178;Chief of Staff;Ismail Cevat Djobanli;1908;1938;1999;SC;school of defence;Medium;3762;X
+720179;Chief of Staff;Fevzi Djakmak;1908;1950;1999;SC;school of psychology;Medium;2561;X
+720180;Chief of Staff;Hadi Abdülhadi;1908;1932;1999;SC;school of mass combat;Medium;unknownminister;X
+720181;Chief of Staff;Ali Fuad Cebesoy;1908;1968;1999;SC;commando doctrine staff;Medium;2553;X
+720182;Chief of Staff;Shevket Turgut;1908;1924;1999;SC;school of fire support;Medium;8148;X
+720183;Chief of Staff;Nazif;1908;1940;1999;SC;school of manoeuvre;Medium;unknownminister;X
+720184;Chief of Army;Ömer Rüshtü;1908;1922;1999;SC;guns and butter doctrine;Medium;8720;X
+720185;Chief of Army;Recep;1908;1925;1999;SC;armoured spearhead doctrine;Medium;unknownminister;X
+720186;Chief of Army;Düztaban Ali Riza;1908;1932;1999;SC;decisive battle doctrine;Medium;2558;X
+720187;Chief of Army;Nazim;1908;1913;1999;SC;static defence doctrine;Medium;unknownminister;X
+720188;Chief of Army;Ibrahim Edhem;1908;1922;1999;SC;elastic defence doctrine;Medium;unknownminister;X
+720189;Chief of Army;Salih Hulusi Kezrak;1908;1939;1999;SC;commando doctrine army;Medium;7753;X
+720190;Chief of Army;Mahmud Shevket;1908;1913;1999;SC;Doctrine of autonomy;Medium;3767;X
+720191;Chief of Army;Hurshit;1908;1922;1999;SC;guns and butter doctrine;Medium;unknownminister;X
+720192;Chief of Army;Ahmed Izzet;1908;1937;1999;SC;armoured spearhead doctrine;Medium;2550;X
+720193;Chief of Army;Djürüksulu Mahmud ;1908;1936;1999;SC;decisive battle doctrine;Medium;2557;X
+720194;Chief of Army;Ismail Enver;1908;1922;1999;PA;static defence doctrine;Medium;3763;X
+720195;Chief of Army;Kölemen Abdullah;1908;1937;1999;SC;elastic defence doctrine;Medium;3765;X
+720196;Chief of Army;Ismail Cevat Djobanli;1908;1938;1999;SC;commando doctrine army;Medium;3762;X
+720197;Chief of Army;Ömer Yaver;1919;1931;1999;SC;Doctrine of autonomy;Medium;unknownminister;X
+720198;Chief of Army;Damat Ferid;1919;1923;1999;SC;guns and butter doctrine;Medium;unknownminister;X
+720199;Chief of Army;Abuk Ahmed;1919;1923;1999;SC;armoured spearhead doctrine;Medium;unknownminister;X
+720200;Chief of Army;Mehmed Shakir;1919;1919;1999;SC;decisive battle doctrine;Medium;3777;X
+720201;Chief of Army;Shevket Turgut;1919;1924;1999;SC;static defence doctrine;Medium;8148;X
+720202;Chief of Army;Nazim;1919;1936;1999;SC;elastic defence doctrine;Medium;unknownminister;X
+720203;Chief of Army;Süleyman Shefik;1919;1936;1999;SC;commando doctrine army;Medium;8693;X
+720204;Chief of Army;Mersinli Mehmed Cemal ;1919;1941;1999;SC;Doctrine of autonomy;Medium;unknownminister;X
+720205;Chief of Army;Fevzi Djakmak;1920;1950;1999;SC;guns and butter doctrine;Medium;2561;X
+720206;Chief of Army;Hüseyin Hüsnü;1920;1936;1999;SC;armoured spearhead doctrine;Medium;3759;X
+720207;Chief of Army;Ziya Kutnak;1920;1940;1999;SC;decisive battle doctrine;Medium;8717;X
+720208;Chief of Navy;Hasan Rami ;1908;1928;1999;SC;base control doctrine;Medium;3756;X
+720209;Chief of Navy;Tahir Cibalili Mehmed;1908;1933;1999;SC;open seas doctrine;Medium;unknownminister;X
+720210;Chief of Navy;Sermet Fazil;1908;1933;1999;SC;decisive naval battle doctrine;Medium;unknownminister;X
+720211;Chief of Navy;Selanikli Ramiz Numan ;1908;1933;1999;SC;power projection doctrine;Medium;unknownminister;X
+720212;Chief of Navy;Arif Ahmed;1908;1933;1999;SC;indirect approach doctrine;Medium;unknownminister;X
+720213;Chief of Navy;Hamdi Tevfik;1908;1933;1999;SC;base control doctrine;Medium;unknownminister;X
+720214;Chief of Navy;Hasan Fuat Kayacan;1908;1933;1999;SC;open seas doctrine;Medium;unknownminister;X
+720215;Chief of Air Force;Süreyya Ilmen;1911;1933;1999;SC;air superiority doctrine;Medium;8701;X
+720216;Chief of Air Force;Shakir Fevzi;1914;1933;1999;SC;army aviation doctrine;Medium;7754;X
+720217;Minister of Armament;Waldemar Pieper;1914;1933;1999;PA;ger_mil_m1;Medium;unknownminister;X
+720218;Minister of Armament;Heinrich August Meißner;1914;1933;1999;PA;ger_mil_m2;Medium;9162;X
+720219;Minister of Armament;Guido von Usedom;1914;1925;1999;PA;ger_mil_m11;Medium;9147;X
+720220;Head of Military intelligence;Sievert;1914;1933;1999;PA;ger_mil_m9;Medium;unknownminister;X
+720221;Head of Military intelligence;Etienne Perrinet von Thauvenay;1914;1933;1999;PA;ger_mil_m10;Medium;9168;X
+720222;Chief of Staff;Friedrich Bronsart von Schellendorf;1914;1933;1999;PA;ger_mil_m3;Medium;9145;X
+720223;Chief of Staff;Hans von Seeckt;1914;1933;1999;PA;ger_mil_m4;Medium;1346;X
+720224;Chief of Navy;Wilhelm Souchon;1914;1933;1999;PA;ger_mil_m5;Medium;9160;X
+720225;Chief of Navy;Hubert von Rebeur-Paschwitz;1914;1933;1999;PA;ger_mil_m6;Medium;9151;X
+720226;Chief of Air Force;Erich Serno;1914;1933;1999;PA;ger_mil_m7;Medium;9144;X
+720227;Chief of Air Force;Konrad Goltz;1914;1933;1999;PA;ger_mil_m8;Medium;unknownminister;X
+720228;Chief of Navy;Arthur Henry Limpus;1914;1933;1999;SC;brit_nav_mis;Medium;9167;X
+720229;Head of Military intelligence;Bahaddin Shakir;1911;1922;1999;SC;industrial specialist;Medium;2345;X
+720230;Head of Military intelligence;Midhat Shükrü Bleda;1908;1956;1999;PA;technical specialist;Medium;2346;X

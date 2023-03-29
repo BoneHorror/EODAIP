@@ -1,0 +1,144 @@
+# 0 - Early Nuclear Attack Submarine (1954) - USS Skate/November-class/Dreadnought (S101)-class
+model = {
+	cost						= 1.5
+	buildtime					= 886
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.08
+	maxspeed					= 25
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 14
+	airdefence					= 8
+	seaattack					= 4
+	convoyattack				= 6
+	subattack					= 4
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 84 }
+}
+
+# 1 - Basic Nuclear Attack Submarine (1957) - Permit-class/November K-27-class/Valiant-class
+model = {
+	cost						= 1.75
+	buildtime					= 1163
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.1
+	maxspeed					= 27
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 13
+	airdefence					= 8
+	seaattack					= 4
+	convoyattack				= 7
+	subattack					= 5
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 100 }
+}
+
+# 2 - Improved Nuclear Fast Attack Submarine (1963) -Sturgeon-class/Victor-class/Type XXX
+model = {
+	cost						= 2
+	buildtime					= 1300
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.1
+	maxspeed					= 29
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 12
+	airdefence					= 8
+	seaattack					= 9
+	convoyattack				= 14
+	subattack					= 6
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 109 }
+}
+
+# 3 - Advanced Nuclear Fast Attack Submarine (1972) -Los Angeles class Flight I/Alfa-class/Trafalgar-class/Rubis-class
+model = {
+	cost						= 2.25
+	buildtime					= 1300
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.13
+	maxspeed					= 29
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 10
+	airdefence					= 9
+	seaattack					= 12
+	convoyattack				= 16
+	subattack					= 8
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 130 }
+}
+
+# 4 - Modern Nuclear Fast Attack Submarine (1981) -Los Angeles class Flight II/Sierra-class
+model = {
+	cost						= 2.5
+	buildtime					= 1000
+	defaultorganisation			= 10
+	morale						= 30
+	manpower					= 0.11
+	maxspeed					= 32
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility					= 0.1
+	seadefence					= 9
+	airdefence					= 10
+	seaattack					= 14
+	convoyattack				= 17
+	subattack					= 9
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	range						= 40000
+	supplyconsumption			= 0.95
+	fuelconsumption				= 0
+	distance					= 0.2
+	reinforce_time				= 0.2
+	reinforce_cost				= 0.3	
+	equipment = { nuclear_submarine = 1 manpower = 110 }
+}

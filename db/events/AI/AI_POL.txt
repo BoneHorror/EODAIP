@@ -1,0 +1,244 @@
+####################################
+# Poland AI events 
+####################################
+
+################
+# Shift Production
+#############################################
+event = {
+	id = 3013009
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = SOV
+			year = 1937
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}
+################
+# Shift Upgrading
+#############################################
+event = {
+	id = 3013010
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			year = 1938
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/POL_Upg_War.ai" }
+	}
+}
+
+################
+# Poland joins the Axis
+#############################################
+event = {
+	id = 3013013
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/POL_Axis.ai" }
+	}
+}
+
+################
+# Greece joins the Axis
+#############################################
+event = {
+	id = 3013014
+	random = no 
+	country = GRE
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/GRE_Axis_Ally.ai" } #Replace with GRE-Specific AI!
+	}
+}
+################
+# POL Build Queue to force building units before WW2
+#############################################
+event = {
+	id = 3013015
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		manpower = 90
+		OR = {
+			atwar = yes
+			year = 1939
+			random = 40
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1938 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		command = { type = manpowerpool value = 180 }
+		command = { type = build_division which = infantry value = artillery when = 3 }
+		command = { type = build_division which = infantry value = engineer when = 2 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = militia when = 2 }
+		command = { trigger = { random = 50 } type = build_division which = cavalry when = 2 }
+		command = { trigger = { random = 50 } type = build_division which = hq }
+		command = { type = ai which = "switch/Reinforcement_Boost_Up.ai" }
+		command = { type = local_setflag which = noreinf }
+	}
+}
+
+###################CZE queues some units at random to potentially prepare against GER
+#############################################
+event = {
+	id = 3013016
+	random = no 
+	country = CZE
+	
+	trigger = {
+		ai = yes
+		manpower = 140
+		difficulty = 1 #Don't do this on Very Strong Axis to not risk GER screwing up
+		NOT = { ispuppet = CZE }
+		OR = {
+			event = 2003010 #GER  Anschluss of Austria Proclaimed
+			year = 1938
+			random = 20
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		command = { trigger = { random = 60 } type = build_division which = infantry value = artillery when = 3 }
+		command = { trigger = { random = 45 } type = build_division which = infantry value = engineer when = 2 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = militia when = 2 }
+		command = { trigger = { random = 30 } type = build_division which = bergsjaeger when = 2 }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = hq }
+		command = { type = ai which = "switch/Reinforcement_Boost_Up.ai" }
+		command = { type = local_setflag which = noreinf }
+		command = { type = construct which = land_fort where = 205 value = 2 } #Karlovy Vary
+		command = { type = construct which = land_fort where = 197 value = 2 } #Znojmo
+		command = { type = construct which = land_fort where = 200 value = 2 } #Liberec
+		command = { type = construct which = land_fort where = 206 value = 3 } #Opava
+		command = { type = construct which = land_fort where = 203 value = 1 } #Tesin
+		command = { type = construct which = land_fort where = 204 value = 2 } #Prachatice
+	}
+}
+###################CZE queues some units at random to potentially prepare against GER
+#############################################
+event = {
+	id = 3013017
+	random = no 
+	country = CZE
+	
+	trigger = {
+		ai = yes
+		OR = {
+			event = 2003010 #GER  Anschluss of Austria Proclaimed
+			year = 1938
+			random = 20
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		command = { type = manpowerpool value = 210 }
+	}
+}
+
+################
+# Poland joins the Axis
+#############################################
+event = {
+	id = 3013018
+	random = no 
+	country = POL
+	
+	trigger = {
+		ai = yes
+		war = { country = POL country = SOV }
+		war = { country = POL country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = { 
+		command = { trigger = { NOT = { dissent = 20 } } type = dissent value = 10 }
+		command = { type = max_organization which = land value = -5 }
+		command = { type = morale which = land value = -10 } #Polish army shatters when backstabbed
+	}
+}

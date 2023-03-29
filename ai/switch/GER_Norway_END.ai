@@ -1,0 +1,70 @@
+# German End of Norway Invasion AI File - Limited to only target France, blocked from ever changing Sealion - Also tries to target Bordeaux/La Rochelle for Paratroop drop - Nekron
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.4	#Relative modifier. (lower = specific targets much more important.)
+	random			= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.2	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 0.1	#higher = avoid long distance.
+	max_distance    = 25.0 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 18.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 5.0	#higher = much more vary of troops in province. #Don't launch paratroops if France has a strong beach def
+	adjacentenemy 	= 1.0	#higher = much more vary of troops nearby
+	air_base		= 3.5 
+    naval_base 		= 1.2
+    air_support 	= 20.0 
+    redirect 		= priority
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+	}
+	target = { 
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 4000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 5000	 #Antwerpen
+		49   = 3000  #Calais
+		51   = 3000  #Dunkerque
+		53   = 3000  #Dieppe
+		46   = 3000  #Bayeux
+		44   = 3000  #Caen
+		37   = 3000  #Brest
+		39   = 1000  #Lorient
+		69   = 7000  #Le Rochelle
+		68   = 8000  #Bordeaux
+
+		#Norway
+		491	= 5000	#Alesund
+		485	= 5000	#Kristiansand
+		483	= 6000	#Oslo
+		493	= 5000	#Trondheim
+		495	= 7800	#Narvik
+		
+		#Sweden
+     	2153 = 1000 # Goterborg 
+     	2152 = 1000 # Malmo 
+     	2159 = 1000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 1000 # Gavle 
+     	2166 = 1000 # Lulea 
+
+		#Finland
+		525 = 1000 # Helsinki
+		524 = 1000 # Turku
+		521 = 1000 # Vaasa
+		516 = 2000 # Tornio
+		531 = 2000 # Viipuri
+		530 = 2000 # Terijoki
+	}
+} 

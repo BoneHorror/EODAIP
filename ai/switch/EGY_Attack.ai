@@ -1,0 +1,25 @@
+# Egypt on the move against the fascists
+  
+ exp_force_ratio = 0.5 
+ exp_force_ratios = { 
+   ENG = 1.0 
+ }  
+  
+ ################################### 
+ # Ground Combat, Leaders and Garrisons 
+ ################################### 
+ garrison = { 
+   country_priorities = { 
+     GER = 100 
+     ITA = 50 
+   } 
+   province_priorities = { 
+     787 = 30 # Cairo
+     789 = 30 # Alexandria
+   } 
+ } 
+ front = {  
+   recklessness     = 2 # 0-3 
+   distrib_vs_ai     = offensive 
+   distrib_vs_human   = offensive 
+ } 

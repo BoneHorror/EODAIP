@@ -1,0 +1,37 @@
+CON;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+595001;Head of State;Mutara III Rudahigwa;1933;1964;1999;ML;Autocratic Charmer;High;M574001;X
+595002;Head of Government;Pierre Ryckmans;1933;1964;1999;ML;Silent Workhorse;High;M574002;X
+595003;Foreign Minister;Eugene Jongers;1933;1964;1999;ML;Apologetic Clerk;High;M574003;X
+595004;Minister of Armament;Baron Gerard Silvercruys;1933;1964;1999;ML;Administrative Genius;Medium;M574004;X
+595005;Minister of Security;Willem Deruycke;1933;1964;1999;ML;Crime Fighter;Medium;M574005;X
+595006;Head of Military Intelligence;Thierry de Vlaminge;1933;1964;1999;ML;Logistics Specialist;Medium;M574006;X
+595007;Chief of Staff;Thierry de Vlaminge;1933;1964;1999;ML;School of Psychology;Medium;M574006;X
+595008;Chief of Army;Paul van Reynden;1933;1964;1999;ML;Elastic Defence Doctrine;Medium;M574008;X
+595009;Chief of Navy;Paul van Reynden;1933;1964;1999;ML;Base Control Doctrine;Medium;M574008;X
+595010;Chief of Air Force;Pierre P. Pascal;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M574010;X
+595011;Head of State;Mwambutsa IV Bangiricenge;1933;1964;1999;PA;Benevolent Gentleman;High;M574011;X
+595012;Head of State;Josephe Kasavubu;1933;1964;1999;LWR;Ruthless Powermonger;High;M574012;X
+595013;Head of Government;Hendrik J. Elias;1933;1964;1999;PA;Naive Optimist;High;M15039;X
+595014;Head of Government;Patrice Lumumba;1933;1964;1999;LWR;Ambitious Union Boss;High;M574014;X
+595015;Foreign Minister;Paul Ouwerx;1933;1964;1999;PA;Biased Intellectual;High;M15075;X
+595016;Foreign Minister;Moishe Tshombe;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M574016;X
+595017;Foreign Minister;Antoine Gizenga;1942;1964;1999;LWR;Ideological Crusader;High;M574017;X
+595018;Minister of Armament;Henry M. Flagler;1933;1964;1999;PA;laissez-faire capitalist;Medium;M574018;X
+595019;Minister of Armament;Gregorie Kayibanda;1933;1964;1999;LWR;Corrupt Kleptocrat;Medium;M574019;X
+595020;Minister of Armament;Josephe Bamina;1943;1964;1999;LWR;Air to Ground Proponent;Medium;M574020;X
+595021;Minister of Security;Albin Nyamoya;1933;1964;1999;PA;Crooked Kleptocrat;Medium;M574021;X
+595022;Minister of Security;Michel Micombero;1944;1964;1999;PA;Back Stabber;Medium;M574022;X
+595023;Minister of Security;Charles Ndizeye;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M574023;X
+595024;Head of Military Intelligence;Antoine Lapierre;1933;1964;1999;PA;Dismal Enigma;Medium;M574024;X
+595025;Head of Military Intelligence;Andre Muhirwa;1933;1964;1999;LWR;Industrial Specialist;Medium;M574025;X
+595026;Chief of Staff;Gaston Renondeau;1933;1964;1999;PA;School of Defence;Medium;M574026;X
+595027;Chief of Staff;Josephe Kasavubu;1933;1964;1999;LWR;School of Manoeuvre;Medium;M574027;X
+595028;Chief of Army;Raul Defraiteur;1942;1964;1999;ML;Armoured Spearhead Doctrine;Medium;M574028;X
+595029;Chief of Army;Mathieu LeMagnen;1933;1964;1999;PA;Static Defence Doctrine;Medium;M574029;X
+595030;Chief of Army;Joseph D. Mobutu;1933;1964;1999;LWR;Guns and Butter Doctrine;Medium;M574030;X
+595031;Chief of Navy;Gerrit Berghen;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M574031;X
+595032;Chief of Navy;Dominique Mbonyumutwa;1943;1964;1999;PA;Power Projection Doctrine;Medium;M574032;X
+595033;Chief of Navy;Jean Pierre Raffage;1933;1964;1999;LWR;Open Seas Doctrine;Medium;M574033;X
+595034;Chief of Air Force;Gerrit Berghen;1933;1964;1999;PA;Naval Aviation Doctrine;Medium;M574031;X
+595035;Chief of Air Force;Louis Rwagasore;1933;1964;1999;LWR;Carpet Bombing Doctrine;Medium;M574035;X

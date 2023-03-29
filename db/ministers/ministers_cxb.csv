@@ -1,0 +1,37 @@
+CXB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+610001;Head of State;Ma Hongkui;1923;1949;1949;PA;Barking Buffoon;High;947;X
+610002;Head of Government;Ma Hongkui;1923;1949;1949;PA;Old Airmarshal;High;947;X
+610003;Foreign Minister;Fang Jing;1933;1964;1964;PA;Great Compromiser;High;L50075;X
+610004;Minister of Armament;Zi Shen;1933;1964;1964;PA;Corrupt Kleptocrat;Medium;M504004;X
+610005;Minister of Security;Li Shiqun;1932;1944;1944;PA;Prince of Terror;Low;9433;X
+610006;Head of Military Intelligence;Ma Hongbin;1919;1947;1947;PA;Political Specialist;Medium;9454;X
+610007;Chief of Staff;Ma Buqing;1933;1964;1964;PA;School of Defence;Medium;M504007;X
+610008;Chief of Army;Ma Buqing;1933;1964;1964;PA;Guns and Butter Doctrine;Medium;M504007;X
+610009;Chief of Navy;Ma Bufang;1933;1964;1964;PA;Indirect Approach Doctrine;Medium;M504009;X
+610010;Chief of Air Force;Ma Bufang;1933;1964;1964;PA;Army Aviation Doctrine;Medium;M504009;X
+610011;Head of Military Intelligence;Li Shiqun;1932;1944;1944;FA;Double Agent;Low;9433;X
+610100;Head of State;Ma Anliang;1912;1919;1919;FA;Stern Imperialist;High;9450;X
+610101;Head of Government;Ma Anliang;1912;1919;1919;FA;Old General;High;9450;X
+610102;Foreign Minister;Ma Anliang;1912;1919;1919;FA;The Cloak N Dagger Schemer;High;9450;X
+610103;Minister of Armament;Ma Fuxiang;1912;1932;1932;PA;Military Entrepreneur;Medium;9451;X
+610104;Minister of Security;Ma Anliang;1912;1919;1919;FA;Efficient Sociopath;Medium;9450;X
+610105;Head of Military Intelligence;Ma Qi;1912;1931;1931;PA;Dismal Enigma;Medium;9452;X
+610106;Chief of Staff;Ma Fushou;1912;1936;1936;PA;School of Psychology;High;9453;X
+610107;Chief of Army;Ma Fuxiang;1912;1932;1932;PA;Decisive Battle Doctrine;Medium;9451;X
+610108;Chief of Navy;Ma Fuxiang;1912;1931;1931;PA;Open Seas Doctrine;Medium;9451;X
+610109;Chief of Air Force;Ma Fushou;1912;1936;1936;PA;Army Aviation Doctrine;Medium;9453;X
+610110;Head of State;Ma Fuxiang;1919;1931;1931;PA;Resigned Generalissimo;High;9451;X
+610111;Head of Government;Lu Hongtao;1919;1933;1933;PA;Old General;High;9455;X
+610112;Foreign Minister;Ma Fuxiang;1919;1931;1931;PA;General Staffer;High;9451;X
+610113;Minister of Armament;Ma Hongbin;1919;1947;1947;PA;Resource Industrialist;Medium;9454;X
+610114;Minister of Security;Lu Hongtao;1919;1933;1933;PA;Man of the People;Medium;9455;X
+610115;Chief of Staff;Ma Hongbin;1919;1947;1947;PA;School of Manoeuvre;High;9454;X
+610116;Chief of Army;Ma Hongbin;1919;1947;1947;PA;Static Defence Doctrine;High;9454;X
+610117;Chief of Navy;Ma Hongbin;1919;1947;1947;PA;Decisive Naval Battle Doctrine;High;9454;X
+610118;Chief of Staff;Ma Qi;1915;1933;1933;PA;School of Mass Combat;Medium;9452;X
+610119;Head of State;Ma Lin;1928;1938;1938;PA;Autocratic Charmer;High;9456;X
+610120;Head of Government;Ma Hongbin;1928;1947;1947;PA;Silent Workhorse;High;9454;X
+610121;Minister of Security;Ma Hongkui;1923;1949;1949;PA;Prince of Terror;Medium;947;X
+610122;Chief of Staff;Ma Hongkui;1923;1949;1949;PA;School of Defence;Medium;947;X
+610123;Chief of Army;Ma Hongkui;1923;1949;1949;PA;Guns and Butter Doctrine;Medium;947;X

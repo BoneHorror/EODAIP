@@ -1,0 +1,200 @@
+SWE;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+40001;Head of State;Gustav V;1933;1964;1999;SC;Pig-headed Isolationist;High;M7001;X
+40002;Head of Government;Axel Pehrsson-Bramstorp;1933;1964;1999;SL;Happy Amateur;High;M7002;X
+40003;Foreign Minister;Karl G. Westman;1933;1964;1999;SL;Apologetic Clerk;Very High;M7003;X
+40004;Minister of Armament;Vilmar Ljungdahl;1933;1964;1999;SL;Tank Proponent;Very High;M7004;X
+40005;Minister of Security;Thorwald Bergquist;1933;1964;1999;SL;Compassionate Gentleman;Very High;M7005;X
+40006;Head of Military Intelligence;Carlos Adlercreutz;1933;1964;1999;SC;Political Specialist;High;M7068;X
+40007;Chief of Staff;Oscar Nygren;1933;1964;1999;SC;School of Defence;Medium;M7007;X
+40008;Chief of Army;Oscar Nygren;1933;1964;1999;SC;Guns and Butter Doctrine;Medium;M7007;X
+40009;Chief of Navy;Charles de Champs;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Very Low;M7009;X
+40010;Chief of Air Force;Torsten Friis;1933;1964;1999;ML;Army Aviation Doctrine;Very High;M7010;X
+40011;Head of State;Gustav V;1933;1964;1999;SD;Pig-headed Isolationist;High;M7001;X
+40012;Head of Government;Per Albin Hansson;1932;1964;1999;SD;Ambitious Union Boss;High;M7033;X
+40013;Head of Government;Tage Erlander;1946;1964;1999;SD;Political Protege;High;M7034;X
+40014;Head of Government;Gösta Bagge;1942;1964;1999;ML;Smiling Oilman;High;M7035;X
+40015;Head of Government;Axel Pehrsson-Bramstorp;1938;1964;1999;SL;Happy Amateur;High;M7002;X
+40016;Head of Government;Bertil Ohlin;1945;1964;1999;SL;Corporate Suit;High;M7037;X
+40017;Foreign Minister;Richard Sandler;1933;1964;1999;SD;Biased Intellectual;Low;M7038;X
+40018;Foreign Minister;Christian Günther;1940;1964;1999;SC;Apologetic Clerk;High;M7039;X
+40019;Foreign Minister;Östen Undén;1945;1964;1999;SD;Great Compromiser;High;M7040;X
+40020;Foreign Minister;Per Edvin Sköld;1933;1964;1999;SD;Ideological Crusader;Medium;M7041;X
+40021;Foreign Minister;Vilhelm Göran Lundvik;1937;1964;1999;SL;Biased Intellectual;High;M7042;X
+40022;Foreign Minister;R. Reson Sohlmann;1938;1964;1999;SL;Iron Fisted Brute;High;M7043;X
+40023;Foreign Minister;Per E.G. Insulander;1939;1964;1999;SL;General Staffer;High;M7044;X
+40024;Foreign Minister;Georg Andrén;1945;1964;1999;SC;Ideological Crusader;High;M7045;X
+40025;Foreign Minister;Axel Pehrsson-Bramstorp;1940;1964;1999;SL;The Cloak N Dagger Schemer;Very High;M7002;X
+40026;Minister of Armament;Ernst Wigforss;1933;1964;1999;SD;Resource Industrialist;Low;M7047;X
+40027;Minister of Armament;Gustav Möller;1933;1964;1999;SD;laissez-faire capitalist;Medium;M7048;X
+40028;Minister of Armament;Gustav Cassel;1937;1964;1999;ML;Administrative Genius;Medium;M7049;X
+40029;Minister of Armament;Erik Palmstierna;1937;1964;1999;SD;Battle Fleet Proponent;Medium;M7050;X
+40030;Minister of Armament;Ernst Trygger;1938;1964;1999;ML;Theoretical Scientist;Medium;M7051;X
+40031;Minister of Armament;Erik Einar Ekstrand;1939;1964;1999;ML;Submarine Proponent;Medium;M7052;X
+40032;Minister of Armament;Gösta Bagge;1940;1964;1999;ML;Resource Industrialist;Medium;M7035;X
+40033;Minister of Armament;Östen Undén;1941;1964;1999;LWR;Infantry Proponent;Medium;M7054;X
+40034;Minister of Armament;Bertil Ohlin;1944;1964;1999;SL;Military Entrepreneur;Medium;M7037;X
+40035;Minister of Armament;Martin Skoglund;1940;1964;1999;ML;laissez-faire capitalist;High;M7056;X
+40036;Minister of Armament;Fritjof Domö;1945;1964;1999;ML;Administrative Genius;High;M7057;X
+40037;Minister of Security;Karl Schlyter;1933;1964;1999;SD;Silent Lawyer;High;M7058;X
+40038;Minister of Security;Gustav Andersson-Rasjön;1940;1964;1999;SL;Compassionate Gentleman;Medium;M7059;X
+40039;Minister of Security;Axel T. Ädelsvärd;1933;1964;1999;SL;Silent Lawyer;Very High;M7060;X
+40040;Minister of Security;Anders Lindstedt;1937;1964;1999;SD;Compassionate Gentleman;Very High;M7061;X
+40041;Minister of Security;Peter G.A. Wijkman;1938;1964;1999;ML;Back Stabber;Very High;M7063;X
+40042;Minister of Security;Richard J. Sandler;1939;1964;1999;SD;Prince of Terror;Very High;M7038;X
+40043;Minister of Security;K.G. Westman;1940;1964;1999;SL;Crime Fighter;Very High;M7003;X
+40044;Minister of Security;Arvid G. Richert;1940;1964;1999;SD;Man of the People;Very High;M7066;X
+40045;Head of Military Intelligence;Helge Jung;1942;1964;1999;SC;Political Specialist;Low;M7006;X
+40046;Head of Military Intelligence;Erik Palmstierna;1939;1964;1999;SC;Naval Intelligence Specialist;Medium;M7050;X
+40047;Head of Military Intelligence;Åke Hammerskiöld;1941;1964;1999;SL;Dismal Enigma;High;M7070;X
+40048;Chief of Staff;Olof Thörnell;1937;1964;1999;SC;School of Fire Support;Very High;M7072;X
+40049;Chief of Staff;Axel Rappe;1940;1964;1999;SC;school of manoeuvre;Low;M7073;X
+40050;Chief of Staff;Samuel Åkerhielm;1941;1964;1999;ML;School of Mass Combat;Medium;M7074;X
+40051;Chief of Staff;Axel Bredberg;1942;1964;1999;ML;School of Psychology;High;M7075;X
+40052;Chief of Staff;Carl August Ehrensvärd;1944;1964;1999;SC;School of Manoeuvre;Medium;M7076;X
+40053;Chief of Staff;Nils Swedlund;1946;1964;1999;ML;School of Psychology;Very High;M7077;X
+40054;Chief of Army;Per Sylvan;1937;1964;1999;SC;Static Defence Doctrine;Medium;M7079;X
+40055;Chief of Army;Olof Thörnell;1940;1964;1999;SC;Guns and Butter Doctrine;Very High;M7072;X
+40056;Chief of Army;Helge Jung;1943;1964;1999;SD;Armoured Spearhead Doctrine;Medium;M7006;X
+40057;Chief of Army;Archibald Douglas;1943;1964;1999;PA;Decisive Battle Doctrine;Medium;M7017;X
+40058;Chief of Army;Axel Rappe;1943;1964;1999;SC;Elastic Defence Doctrine;Very Low;M7073;X
+40059;Chief of Army;Bengt Nordenskiöld;1943;1964;1999;SD;Decisive Battle Doctrine;Low;M7070;X
+40060;Chief of Army;Axel Bredberg;1943;1964;1999;SL;Static Defence Doctrine;High;M7075;X
+40061;Chief of Navy;Erik Palmstierna;1933;1964;1999;SD;Base Control Doctrine;Medium;M7050;X
+40062;Chief of Navy;Gösta Ehrensvärd;1942;1964;1999;ML;Decisive Naval Battle Doctrine;Medium;M7087;X
+40063;Chief of Navy;Fabian Tamm;1944;1964;1999;SC;Open Seas Doctrine;High;M7088;X
+40064;Chief of Navy;Helge Strömbäck;1945;1964;1999;SL;Indirect Approach Doctrine;High;M7089;X
+40065;Chief of Air Force;Bengt Nordenskiöld;1942;1964;1999;ML;Air Superiority Doctrine;High;M7070;X
+40066;Chief of Air Force;Axel Ljungdahl;1944;1964;1999;SL;Vertical Envelopment Doctrine;Very High;M7092;X
+40067;Head of State;Martin Ekström;1933;1964;1999;NS;Powerhungry Demagogue;High;M7011;X
+40068;Head of Government;Martin Ekström;1933;1964;1999;NS;Naive Optimist;High;M7011;X
+40069;Foreign Minister;Erik von Rosen;1933;1964;1999;NS;Ideological Crusader;Very High;M7013;X
+40070;Minister of Armament;Arthur Lindén;1933;1964;1999;NS;Laissez-Faire Capitalist;Medium;M7014;X
+40071;Minister of Security;Sven Hedín;1933;1964;1999;FA;Back Stabber;Very High;M7015;X
+40072;Head of Military Intelligence;Hermann Nilsson-Ehle;1933;1964;1999;NS;Technical Specialist;Very High;M7016;X
+40073;Chief of Staff;Archibald Douglas;1933;1964;1999;NS;School of Manoeuvre;High;M7017;X
+40074;Chief of Army;Martin Ekström;1933;1964;1999;NS;Decisive Battle Doctrine;Very High;M7011;X
+40075;Chief of Navy;Charles de Champs;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Very High;M7009;X
+40076;Chief of Air Force;Axel Gyllenkrok;1933;1964;1999;PA;Army Aviation Doctrine;Low;M7020;X
+40077;Head of State;Sven Linderot;1933;1964;1999;ST;Insignificant Layman;High;M7021;X
+40078;Head of Government;Sven Linderot;1933;1964;1999;ST;Happy Amateur;High;M7021;X
+40079;Foreign Minister;Hugo Sellén;1933;1964;1999;ST;Ideological Crusader;Very High;M7023;X
+40080;Minister of Armament;Hilding Hagberg;1933;1964;1999;ST;Resource Industrialist;Very High;M7024;X
+40081;Minister of Security;Karl Kilbom;1933;1964;1999;LE;Crime Fighter;High;M7025;X
+40082;Head of Military Intelligence;C.H. Hermansson;1933;1964;1999;ST;Naval Intelligence Specialist;High;M7026;X
+40083;Chief of Staff;Gunnar Johansson;1933;1964;1999;ST;School of Mass Combat;Very High;unknownminister;X
+40084;Chief of Army;Axel Pettersson;1933;1964;1999;ST;Decisive Battle Doctrine;Very High;unknownminister;X
+40085;Chief of Navy;Per M. Eriksson;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Very High;unknownminister;X
+40086;Chief of Air Force;Krister Reuterswärd;1933;1964;1999;LWR;Army Aviation Doctrine;Low;unknownminister;X
+40087;Head of State;Gustav VI Adolf;1950;1964;1999;SD;Benevolent Gentleman;High;M7093;X
+40088;Minister of Armament;Per Edvin Sköld;1949;1964;1999;SD;Infantry Proponent;High;M7041;X
+40089;Head of State;Gustav VI Adolf;1950;1964;1999;ML;Benevolent Gentleman;High;M7093;X
+40090;Chief of Army;Carsten Warberg;1900;1911;1911;SC;static defence doctrine;High;9269;X
+40091;Chief of Army;Oscar II;1900;1907;1999;SC;static defence doctrine;High;3308;X
+40092;Chief of Army;Axel Rappe;1900;1933;1999;SC;static defence doctrine;High;3309;X
+40093;Chief of Army;Knut Gillis Bildt;1905;1933;1999;SC;Decisive Battle Doctrine;High;3310;X
+40094;Chief of Army;Gustaf V;1907;1933;1999;ML;static defence doctrine;High;3311;X
+40095;Chief of Army;Anton Nilsson;1914;1933;1999;ST;Guns and Butter Doctrine;High;3312;X
+40096;Chief of Army;Axel Rappe;1915;1933;1999;PA;Guns and Butter Doctrine;Very High;3309;X
+40097;Chief of Army;Lars Tingsten;1916;1933;1999;SL;Decisive Battle Doctrine;High;3313;X
+40098;Chief of Army;Lars Tingsten;1919;1933;1999;SC;Decisive Battle Doctrine;High;3313;X
+40099;Chief of Army;Carl Gustaf Hammarskjöld;1922;1933;1999;SC;Static Defence Doctrine;High;3314;X
+40100;Chief of Navy;Theodor Carl Adam Sandström;1907;1933;1999;SC;Decisive Naval Battle Doctrine;High;unknownminister;X
+40101;Chief of Navy;Sten Ankarcrona;1911;1933;1999;ML;Decisive Naval Battle Doctrine;High;unknownminister;X
+40102;Chief of Navy;Ludvig Sidner;1914;1933;1999;SL;Indirect Approach Doctrine;High;3315;X
+40103;Chief of Navy;Henning von Krusenstjerna;1916;1933;1999;SL;Open Seas Doctrine;High;3316;X
+40104;Chief of Staff;Axel Rappe;1900;1933;1999;SC;School of Psychology;High;3309;X
+40105;Chief of Staff;Carsten Warberg;1900;1911;1911;SC;School of Defence;High;9296;X
+40106;Chief of Staff;Knut Gillis Bildt;1905;1933;1999;SC;School of Manoeuvre;High;3310;X
+40107;Chief of Staff;Axel Rappe;1914;1933;1999;PA;School of Psychology;Very High;3309;X
+40108;Chief of Staff;Anton Nilsson;1914;1933;1999;ST;School of Mass Combat;High;3312;X
+40109;Chief of Staff;Lars Tingsten;1919;1933;1999;SC;School of Psychology;High;3313;X
+40110;Chief of Staff;Carl Gustaf Hammarskjöld;1922;1933;1999;SC;School of Mass Combat;High;3314;X
+40111;Foreign Minister;Ludvig Douglas;1900;1933;1999;ML;Biased Intellectual;High;3317;X
+40112;Foreign Minister;Alfred Lagerheim;1900;1933;1999;SC;Great Compromiser;High;3318;X
+40113;Foreign Minister;August Gyldenstolpe;1904;1933;1999;ML;Apologetic clerk;High;3319;X
+40114;Foreign Minister;Eric Trolle;1905;1933;1999;SL;Great Compromiser;High;3320;X
+40115;Foreign Minister;Fredrik Wachtmeister;1905;1933;1999;SC;Biased Intellectual;High;3321;X
+40116;Foreign Minister;Victoria;1907;1933;1999;PA;Ideological Crusader;High;3322;X
+40117;Foreign Minister;Arvid Taube;1909;1933;1999;ML;Ideological Crusader;High;unknownminister;X
+40118;Foreign Minister;Albert Ehrensvärd jr;1911;1933;1999;SL;Ideological Crusader;High;3323;X
+40119;Foreign Minister;Ture Nerman;1914;1933;1999;ST;Ideological Crusader;Very High;3324;X
+40120;Foreign Minister;Knut Wallenberg;1914;1933;1999;SC;Ideological Crusader;High;3325;X
+40121;Foreign Minister;Arvid Lindman;1917;1933;1999;ML;Ideological Crusader;High;3326;X
+40122;Foreign Minister;Johannes Hellner;1917;1933;1999;SL;Ideological Crusader;High;3327;X
+40123;Foreign Minister;Erik Palmstierna;1920;1933;1999;SD;Ideological Crusader;High;3328;X
+40124;Foreign Minister;Herman Wrangel;1920;1933;1999;ML;Ideological Crusader;High;3329;X
+40125;Foreign Minister;Östen Undén;1920;1933;1999;SD;Apologetic Clerk;High;3330;X
+40126;Foreign Minister;Hjalmar Branting;1921;1933;1999;SD;Apologetic Clerk;High;3331;X
+40127;Foreign Minister;Carl Hederstierna;1923;1933;1999;ML;Ideological Crusader;High;3332;X
+40128;Foreign Minister;Erik Marks von Württemberg;1923;1933;1999;ML;Biased Intellectual;High;3987;X
+40129;Foreign Minister;Eliel Löfgren;1926;1933;1999;SL;BIASED INTELLECTUAL;High;3333;X
+40130;Head of Government;Erik Gustav Boström;1900;1933;1999;SC;Flamboyant Tough Guy;High;3334;X
+40131;Head of Government;Fredrik von Otter;1900;1933;1999;ML;Old Admiral;High;3335;X
+40132;Head of Government;Johan Ramstedt;1905;1933;1999;ML;Corporate Suit;High;3336;X
+40133;Head of Government;Christian Lundeberg;1905;1933;1999;SC;Corporate Suit;High;3337;X
+40134;Head of Government;Arvid Lindman;1906;1933;1999;SC;Old Admiral;High;3326;X
+40135;Head of Government;Victoria;1907;1933;1999;PA;Silent Workhorse;High;3322;X
+40136;Head of Government;Hjalmar Branting;1907;1933;1999;SD;Ambitious Union Boss;High;3331;X
+40137;Head of Government;Karl Staaff;1911;1933;1999;SL;Naive Optimist;High;3338;X
+40138;Head of Government;Hjalmar Hammarskjöld;1914;1933;1999;ML;Political Protege;High;3339;X
+40139;Head of Government;Carl Swartz;1917;1933;1999;SC;Corporate Suit;High;3340;X
+40140;Head of Government;Nils Edén;1917;1933;1999;SL;Flamboyant Tough Guy;High;3341;X
+40141;Head of Government;Louis de Geer;1920;1933;1999;SL;Political Protege;High;3342;X
+40142;Head of Government;Oscar von Sydow;1921;1933;1999;ML;Flamboyant Tough Guy;High;3343;X
+40143;Head of Government;Carl Gustaf Ekman;1922;1933;1999;SL;Backroom Backstabber;High;3344;X
+40144;Head of Government;Ernst Trygger;1923;1933;1999;SC;Happy Amateur;High;3345;X
+40145;Head of Military Intelligence;Carsten Warberg;1900;1911;1911;SC;Logistics Specialist;High;9269;X
+40146;Head of Military Intelligence;Axel Rappe;1900;1933;1999;SC;Logistics Specialist;High;3309;X
+40147;Head of Military Intelligence;Knut Gillis Bildt;1905;1933;1999;SC;Logistics Specialist;High;3310;X
+40148;Head of Military Intelligence;Otto Grimlund;1914;1933;1999;ST;Dismal Enigma;High;3346;X
+40149;Head of Military Intelligence;Sven Hedin;1915;1933;1999;PA;Dismal Enigma;High;3347;X
+40150;Head of Military Intelligence;Lars Tingsten;1919;1933;1999;SC;Logistics Specialist;High;3313;X
+40151;Head of Military Intelligence;Carlos Adlercreutz;1920;1933;1999;ML;Political Specialist;High;3348;X
+40152;Head of Military Intelligence;Carl Gustaf Hammarskjöld;1922;1933;1999;SC;Logistics Specialist;High;3314;X
+40153;Head of State;Oscar II;1900;1907;1999;ML;Benevolent Gentleman;High;3308;X
+40154;Head of State;Oscar II;1900;1907;1999;PA;Benevolent Gentleman;High;3308;X
+40155;Head of State;Oscar II;1900;1907;1999;SC;Benevolent Gentleman;High;3308;X
+40156;Head of State;Gustaf V;1907;1933;1999;SC;Popular Figurehead;High;3311;X
+40157;Head of State;Gustaf V;1907;1933;1999;ML;Popular Figurehead;High;3311;X
+40158;Head of State;Gustaf V;1907;1933;1999;PA;Popular Figurehead;High;3311;X
+40159;Head of State;Zeth Höglund;1914;1933;1999;ST;Die-hard Reformer;High;3349;X
+40160;Minister of Armament;Fredrik Wachtmeister;1900;1933;1999;SC;Resource Industrialist;High;3321;X
+40161;Minister of Armament;Ernst Meyer;1902;1933;1999;SL;Laissez-Faire Capitalist;High;unknownminister;X
+40162;Minister of Armament;Elof Biesèrt;1905;1933;1999;SL;Resource Industrialist;High;unknownminister;X
+40163;Minister of Armament;Carl Swartz;1906;1933;1999;SC;Resource Industrialist;High;3340;X
+40164;Minister of Armament;Theodor Adelswärd;1911;1933;1999;SL;Resource Industrialist;High;3350;X
+40165;Minister of Armament;Karl Kilbom;1914;1933;1999;ST;Battle Fleet proponent;High;3315;X
+40166;Minister of Armament;Axel Vennersten;1914;1933;1999;ML;Administrative Genius;High;3351;X
+40167;Minister of Armament;Ernst Trygger;1915;1933;1999;PA;Laissez-Faire Capitalist;High;3345;X
+40168;Minister of Armament;Per Albin Hansson;1917;1933;1999;SD;military entrepreneur;High;3352;X
+40169;Minister of Armament;Conrad Carleson;1917;1933;1999;SC;Laissez-Faire Capitalist;High;3988;X
+40170;Minister of Armament;Hjalmar Branting;1917;1933;1999;SD;Resource Industrialist;High;3331;X
+40171;Minister of Armament;Fredrik Thorsson;1918;1933;1999;SD;Resource Industrialist;High;3353;X
+40172;Minister of Armament;Rickard Sandler;1920;1933;1999;SD;Resource Industrialist;High;3354;X
+40173;Minister of Armament;Henric Tamm;1920;1933;1999;ML;Administrative Genius;High;unknownminister;X
+40174;Minister of Armament;Jacob Beskow;1921;1933;1999;ML;Resource Industrialist;High;3355;X
+40175;Minister of Armament;Jakob Beskow;1921;1933;1999;SC;Resource Industrialist;High;3355;X
+40176;Minister of Armament;Carl Gustaf Ekman;1922;1933;1999;SL;Laissez-Faire Capitalist;High;3344;X
+40177;Minister of Security;Ludvig Annerstedt;1900;1933;1999;SL;Crime Fighter;High;unknownminister;X
+40178;Minister of Security;Hjalmar Hammarskjöld;1901;1933;1999;ML;Crime Fighter;High;3339;X
+40179;Minister of Security;Ossian Berger;1902;1933;1999;SC;Compassionate Gentleman;High;3356;X
+40180;Minister of Security;Gustaf Berg;1905;1933;1999;SC;Compassionate Gentleman;High;unknownminister;X
+40181;Minister of Security;Karl Staaff;1905;1933;1999;SL;Man of the People;High;3338;X
+40182;Minister of Security;Albert Petersson;1906;1933;1999;ML;Silent Lawyer;High;3357;X
+40183;Minister of Security;Gustaf Sandström;1909;1933;1999;SL;Crime Fighter;High;3358;X
+40184;Minister of Security;Gustaf Sandström;1911;1933;1999;SL;Crime Fighter;High;3358;X
+40185;Minister of Security;Carl Lindhagen;1914;1933;1999;ST;Back Stabber;High;3359;X
+40186;Minister of Security;Berndt Hasselrot;1914;1933;1999;ML;Silent Lawyer;High;3360;X
+40187;Minister of Security;Steno Stenberg;1914;1933;1999;ML;Silent Lawyer;High;3989;X
+40188;Minister of Security;Sven Hedin;1915;1933;1999;PA;Man of the People;High;3347;X
+40189;Minister of Security;Eliel Löfgren;1917;1933;1999;SL;Silent Lawyer;High;3333;X
+40190;Minister of Security;Östen Undén;1920;1933;1999;SD;Crime Fighter;High;3330;X
+40191;Minister of Security;Birger Ekeberg;1920;1933;1999;ML;Silent Lawyer;High;3361;X
+40192;Minister of Security;Assar Åkerman;1920;1933;1999;SD;Silent Lawyer;High;3362;X
+40193;Minister of Security;Torsten Nothin;1924;1933;1999;SD;Silent Lawyer;High;3363;X
+40194;Minister of Security;Johan Thyrén;1924;1933;1999;SL;Compassionate Gentleman;High;3364;X
+40195;Chief of Air Force;Torsten Rapp;1948;1964;1999;SD;Air Superiority Doctrine;High;6019;x
+40196;Chief of Army;Nils Swedlund;1950;1964;1999;ML;Armoured Spearhead Doctrine;High;6020;x 
+40197;Minister of Security;Birger Furugård;1933;1964;1999;NS;Back Stabber;Medium;6021;x
+40198;Foreign Minister;Birger Furugård;1933;1964;1999;NS;Apologetic Clerk;Medium;6021;x

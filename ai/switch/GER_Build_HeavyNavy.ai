@@ -1,0 +1,105 @@
+# German Build Standard AI file by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 0
+	d_01		= 6
+	cavalry 		= 0
+	motorized 		= 1
+	d_02			= 3
+	mechanized 		= 2
+	d_03		= 4
+	light_armor 	= 0
+	armor 			= 5
+	d_04		= 2
+	paratrooper 	= 1
+	marine 			= 5
+	bergsjaeger 	= 1
+	garrison		= 0
+    hq 				= 2
+	militia 		= 0
+#				46 %
+	interceptor 	= 6
+	rocket_interceptor = 1
+	d_20			= 0
+	multi_role 		= 5
+	cas 			= 2
+	strategic_bomber = 6
+	tactical_bomber = 2
+	naval_bomber 	= 4
+	transport_plane = 1
+	flying_bomb 	= 1
+	flying_rocket 	= 2
+#				16 %
+	battleship 		= 3
+	carrier 		= 4
+	light_carrier	= 1
+	escort_carrier	= 2
+	destroyer 		= 5
+	light_cruiser 	= 5
+	heavy_cruiser 	= 3
+	battlecruiser 	= 3
+	submarine 		= 7
+	nuclear_submarine = 4
+	transports 		= 1
+#				38 %
+}
+construction = { 
+	max_factor = 0.15 
+
+	AA_batteries = atwar
+
+	coastal_fort = atwar
+	max_coastal_level = 5
+	coastal_fort_provs = {
+		152   #Kiel
+		147   #Wilhelmshaven
+		122   #Amsterdam
+		125   #Rotterdam
+		114   #Brugge
+		51   #Dunkerque
+		49   #Calais
+		53   #Dieppe
+		46   #Bayeux
+		44   #Caen
+		37   #Brest
+		39   #Lorient
+		69   #La Rochelle
+		68  #Bordeaux
+	} 
+
+	radar_station = atwar
+	max_radar = 8
+	radar_provs = {
+		145  #Essen
+		137  #Kassel
+		147  #Wilhemshafen
+		163  #Berlin
+		134  #Stutgart
+		116  #Brussels
+		122  #Amsterdam
+		52  #Lille
+		55  #Paris
+		2137 #StVin
+		1778 #Guantanamo
+	} 
+
+   	ic_at_war = yes 
+	force_ic_until = 1951
+	ic_end_year = 1959
+	IC_provs = {
+		127   #Saarburken
+		179  #Munchen
+		163  #Berlin
+		131   #Cologne
+		134  #Stuttgart
+		146   #Hannover
+		173  #Dresden
+	} 
+}

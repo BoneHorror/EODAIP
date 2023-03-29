@@ -1,0 +1,382 @@
+# Germany Puppet AI
+
+liberate = { CRO RSI SLO SPA POR BUL HUN ROM FIN SER MTN SIB PRI TRA TAN IND PAK PER BUR NEP BHU MON SIA SCO VIE IRQ EGY SYR TUR KOR CHI U40 U41 U42 U43 U48 U73 } # SCA
+combat = {
+	USA = 100
+	SOV = 100
+	ENG = 100
+	CHC = 100
+	CAN = 100
+}
+war = 5
+exp_force_ratio = 0.37 
+exp_force_ratios = { ITA = 0.1 GER = 0.5 IRE = 0.05 U43 = 0.15 U41 = 0.05 U42 = 0.05 U40 = 0.1 } 
+target = { 
+ 25 = 80 # Norwich
+ 23 = 50 # Plymouth
+ 29 = 30 # London
+ 1 = 50 # Reykjavik
+ 12 = 50 # Edinburgh
+ 2132 = 50 # Halifax
+ 1953 = 40 # Miami
+ 889 = 45 # Panama
+ 1793 = 40 # New York
+ 1778 = 50 # Guantanamo Bay
+ 2137 = 90 # St Johns
+ 1779 = 60 # The Bermudas
+ 900 = 40 # Suez
+ 348 = 60 # Gibraltar
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+     		FRA = -1 
+		SWE = -1
+		FIN = -1
+		ITA = 5
+		SCH = 10
+		AUS = -1
+		TUR = 15
+		SPR = -1
+		SPA = -1
+		SOV = 70
+		ENG = 50
+		USA = 70
+		U01 = 40
+		U02 = 50
+		CAN = 50
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 15.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.2	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 1.0	#higher = avoid long distance.
+	max_distance    = 150 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 80.0	# How far should the staging area be from the target invasion point	
+	pocket			= 0.5	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.2	#prioritise taking pure islands.
+	enemy			= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.6	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 0.1
+    air_support 	= 1.0 
+    redirect 		= home
+	ignore			= yes
+	help_allies 	= yes	#[yes/no]
+    province_priorities = no #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+		122 #Amsterdam
+		125 #Rotterdam
+		114 #Bruges
+		115 #Antwerpen
+		51  #Dunkerque	
+		43  #Cherbourg
+		37	#Brest
+		377	#Athens
+		429 #Malta
+		1
+		1778
+		1771
+		2137
+	}
+	target = { 
+		#England
+		22	= 800  #Cardif
+		26  = 800  #Dover
+		25  = 800  #Norwich
+		27  = 800  #Portsmouth
+		23  = 800  #Plymouth
+		36  = 600  #Belfast
+		17  = 600  #Manchester
+		12  = 600  #Edinburgh
+		11  = 600  #Glasgow
+		1   = 600
+		2131	= 600
+		1953	= 600
+		1773	= 900
+		1778	= 800
+		476     = 800
+		2086	= 800
+		2087	= 800
+		1995	= 800
+		2137	= 800
+
+		# Atlantic Wall
+		122  = 100  #Amsterdam
+		125  = 100  #Rotterdam
+		114  = 100  #Bruges
+		115	 = 100	 #Antwerpen
+		49   = 100  #Calais
+		51   = 100  #Dunkerque
+		53   = 100  #Dieppe
+		46   = 100  #Bayeux
+		44   = 100  #Caen
+		37   = 100  #Brest
+		39   = 100  #Lorient
+		69   = 100  #Le Rochelle
+		68   = 100  #Bordeaux
+
+		#Norway
+		491	= 200	#Alesund
+		485	= 200	#Kristiansand
+		483	= 400	#Oslo
+		493	= 200	#Trondheim
+		495	= 400	#Narvik
+		
+		#Sweden
+     	2153 = 200 # Goterborg 
+     	2152 = 200 # Malmo 
+     	2159 = 800 # Stockholm 
+		2158 = 100 # Uppsala
+     	2162 = 20 # Gavle 
+     	2166 = 20 # Lulea 
+
+		#Finland
+		525 = 300 # Helsinki
+		524 = 200 # Turku
+		521 = 100 # Vaasa
+		516 = 200 # Tornio
+		531 = 400 # Viipuri
+		530 = 200 # Terijoki
+		
+		#Denmark
+		294 = 600 # Copenhagen
+		219 = 200 # Odense
+		
+		#Baltics
+		270 = 200 # Tallin
+		275 = 200 # Kuressaare
+		
+		264 = 20 # Riga
+		269 = 20 # Jelgava
+		
+		184 = 400 # Koenigsberg
+		181 = 10 # Danzig
+		226 = 10 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+		553 = 400
+
+		#Mediter.
+		382 = 500 #Irakleio
+		388 = 500 #Nikosia
+		429 = 850 #Malta
+		434 = 1000 #Cagliari
+		789 = 500 #Alexandria		
+	}
+}
+admiral = { 
+
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+		
+		#England/France border Sea Areas
+		"Bay of Biscay"
+		"Cape Finisterre"
+		
+		#Spanish Coase (Atlantic Side)
+		"Portugese Coast"
+		"Cap St Vincent"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#Canada East Coast
+		"Hudson Bay"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+		
+		#North Atlantic
+		"North Atlantic"
+		"Western Approaches"
+		"The Seamounts"
+		"Azores"
+		
+		#Central Atlantic
+		"Guiana Basin"
+		"South-Central Mid-Atlantic Ridge"
+		"Cap Verde"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Caribbean Sea and Guilf of Mexico
+		"West Gulf of Mexico"
+		"East Gulf of Mexico" 
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		#North Indian Ocean (Persian Gulf)
+		"Persian Gulf"
+		"North Arabian Sea"
+		"South Arabian Sea" 
+		"Coast of Ceylon"
+		
+		#Central/South Indian Ocean
+		"Mascarene Plateau"
+		"Mid-Indian Ridge" 
+		"Ninetyeast Ridge" 
+		"Southeast Indian Ocean"
+		"Southwest Indian Ocean" 
+		
+		#Bay of Bengal & West Indonesia
+		"East Bay of Bengal"
+		"West Bay of Bengal"
+		"Malacca Strait"
+		"Java Ridge"
+		"Java Trench"
+		
+		#Indo-China, Borneo, Phillipenes
+		"Gulf of Siam"
+		"Coast of Indochina"
+		"Spratly Sea"
+		"Coast of Brunei"
+		"Flores Sea"
+		"Sulu Sea"
+		"Celebes Sea"
+		"Luzon Strait"
+		
+		#China Coast
+		"Taiwan Strait"
+		"Yellow Sea"
+		
+		#Japanese Coast
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk" 
+		
+		#Mariana Basin, Phillipenes
+		"Philipine Trench"
+		"Central Philippine Sea"
+		"Mariana Trench"
+		"East Mariana Basin"
+		"Mid-Pacific Mountains"
+		"North Bismarck Sea"
+		
+		#New Guinea, East/North Australia and New Zealan
+		"Coast of New Guinea"
+		"Molucca Sea"
+		"Banda Sea"
+		"Arafura Sea"
+		"South Bismarck Sea"
+		"Solomon Sea"
+		"West Coral Sea"
+		"East Coral Sea" 
+		"North Tasman Sea"
+		"South Tasman Sea" 
+		"East Cost of New Zealand"
+		
+		# South and West Australia
+		"Timor Sea"
+		"West Coast of Australia"
+		"East Great Australian Bight"
+		"West Great Australian Bight" 
+		
+		#North Pacific
+		"Coast of Kamchatka"
+		"East Bering Sea"
+		"West Bering Sea" 
+		"Aleutians"
+		"Northwest Pacific Basin"
+		"North Northeast Pacific Basin"
+		
+		#Central Pacific
+		"Hawaiian Rise"
+		"North East Pacific Ocean"
+		"Marshalls Sea"
+		"South East Pacific Ocean"
+		"Marianas"
+		"Western Solomons"
+		"Eastern Solomons"
+		"Carolines"
+		
+		#South Pacific
+		"Gilberts"
+		"Line Islands"
+		"Fiji Basin"
+		"Southwest Pacific Basin"
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+		
+		# USA West Coast
+		"Gulf of Alaska"
+		"West Coast of the United States"
+		
+		#West Coast of Mexico
+		"West Coast of Mexico"
+		"West Coast of Central America"
+	}
+}

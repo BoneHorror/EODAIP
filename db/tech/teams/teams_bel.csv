@@ -1,0 +1,22 @@
+BEL;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+70001;Cockerill;100033;6;1825;1955;naval_engineering;technical_efficiency;general_equipment;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70002;Avions Fairey;T701;6;1930;1960;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70003;Fabrique Nationale de Herstal;100034;5;1889;2000;mechanics;general_equipment;artillery;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70004;Gevaert & Co;T703;6;1894;2000;chemistry;general_equipment;industrial_engineering;management;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70005;Renard Constructions Aéronautiques;T704;4;1923;1945;aeronautics;avionics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70006;Renault;T705;5;1925;2000;mechanics;industrial_engineering;management;munitions;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70007;Solvay;T706;7;1863;2000;chemistry;industrial_engineering;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70008;Vickers-Armstrong;T707;5;1867;1977;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70009;Jean-Baptiste Piron;T708;5;1939;1957;small_unit_tactics;decentralized_execution;combined_arms_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70010;Jules Iserentant;T709;3;1930;1970;fighter_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70011;Victor Strydonck de Burkel;T710;4;1930;1960;small_unit_tactics;centralized_execution;individual_courage;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70012;Fonderie Royale de Canons;T711;5;1900;2000;artillery;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70013;Forges de Clabecq;T712;6;1888;1997;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70014;La Brugeoise;T713;5;1900;2000;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70015;Union Miniere;T714;7;1822;1989;industrial_engineering;management;chemistry;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70016;King Albert I;100035;6;1909;1934;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70017;Jules Joseph Pire;100603;4;1942;1951;centralized_execution;large_unit_tactics;training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70100;Studiecentrum voor Kernenergie;T70100;3;1945;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70101;Instituut voor Ruimte-aeronomie;T70101;4;1945;2000;rocketry;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+70102;Para-Commando;T70102;3;1942;2000;small_unit_tactics;airborne_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+700000;Sûreté de l'État;T700000;4;1933;2013;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

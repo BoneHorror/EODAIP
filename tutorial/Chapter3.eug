@@ -1,0 +1,125 @@
+name = "CHAPTER2_NAME"
+panel = "scenarios/data/scenario_winterwar.bmp"
+
+header = {
+	tutorial = yes
+	tutorialfile = "Tutorial/Chapter3.csv"
+	name = "Tutorial Chapter 2"
+	startyear = 1939
+	endyear = 1947
+
+	selectable = { GER }
+
+	GER = {
+	}
+
+}
+globaldata = {
+	dormant_leaders = YES
+	rules = {
+		diplomacy = no
+		production = yes
+		technology = no
+	}
+    startdate = {
+        year = 1939
+        month = november
+		day = 29
+        }
+
+    }
+
+
+
+# Countries
+
+# Countries
+
+include = "scenarios/1936/china yunan.inc"
+include = "scenarios/1936/china guangxi.inc"
+include = "scenarios/1936/china xibei.inc"
+include = "scenarios/1936/china shanxi.inc"
+include = "scenarios/1936/hebei autonomous.inc"
+
+include = "scenarios/1936/germany.inc"
+include = "scenarios/1936/holland.inc"
+include = "scenarios/1936/belgium.inc"
+include = "scenarios/1936/denmark.inc"
+include = "scenarios/1936/united kingdom.inc"
+include = "scenarios/1936/ireland.inc"
+include = "scenarios/1936/france.inc"
+include = "scenarios/1936/poland.inc"
+include = "scenarios/1936/italy.inc"
+include = "scenarios/1936/switzerland.inc"
+include = "scenarios/1936/austria.inc"
+include = "scenarios/1936/czechoslovakia.inc"
+include = "scenarios/1936/spain.inc"
+include = "scenarios/1936/portugal.inc"
+include = "scenarios/1936/sweden.inc"
+include = "scenarios/1936/norway.inc"
+include = "scenarios/1936/finland.inc"
+include = "scenarios/1936/estonia.inc"
+include = "scenarios/1936/lithuania.inc"
+include = "scenarios/1936/latvia.inc"
+include = "scenarios/1936/hungary.inc"
+include = "scenarios/1936/romania.inc"
+include = "scenarios/1936/yugoslavia.inc"
+include = "scenarios/1936/greece.inc"
+include = "scenarios/1936/bulgaria.inc"
+include = "scenarios/1936/turkey.inc"
+include = "scenarios/1936/soviet union.inc"
+include = "scenarios/1936/japan.inc"
+include = "scenarios/1936/china nationalist.inc"
+include = "scenarios/1936/china communist.inc"
+include = "scenarios/1936/usa.inc"
+include = "scenarios/1936/canada.inc"
+include = "scenarios/1936/mexico.inc"
+include = "scenarios/1936/cuba.inc"
+include = "scenarios/1936/brasil.inc"
+include = "scenarios/1936/argentina.inc"
+include = "scenarios/1936/uruguay.inc"
+include = "scenarios/1936/columbia.inc"
+include = "scenarios/1936/peru.inc"
+include = "scenarios/1936/chile.inc"
+include = "scenarios/1936/bolivia.inc"
+include = "scenarios/1936/ecuador.inc"
+include = "scenarios/1936/paraguay.inc"
+include = "scenarios/1936/abyssinia.inc"
+include = "scenarios/1936/south africa.inc"
+include = "scenarios/1936/australia.inc"
+include = "scenarios/1936/newzealand.inc"
+include = "scenarios/1936/siam.inc"
+include = "scenarios/1936/persia.inc"
+include = "scenarios/1936/venezuela.inc"
+include = "scenarios/1936/saudi arabia.inc"
+include = "scenarios/1936/mongolia.inc"
+include = "scenarios/1936/philippines.inc"
+include = "scenarios/1936/dominican republic.inc"
+include = "scenarios/1936/guatemala.inc"
+include = "scenarios/1936/costa rica.inc"
+include = "scenarios/1936/nicaragua.inc"
+include = "scenarios/1936/afghanistan.inc"
+include = "scenarios/1936/albania.inc"
+include = "scenarios/1936/manchuko.inc"
+include = "scenarios/1936/luxemburg.inc"
+include = "scenarios/1936/liberia.inc"
+include = "scenarios/1936/yemen.inc"
+include = "scenarios/1936/oman.inc"
+include = "scenarios/1936/tannu tuva.inc"
+include = "scenarios/1936/panama.inc"
+include = "scenarios/1936/haiti.inc"
+include = "scenarios/1936/san salvador.inc"
+include = "scenarios/1936/honduras.inc"
+include = "scenarios/1936/iraq.inc"
+include = "scenarios/1936/bhutan.inc"
+include = "scenarios/1936/nepal.inc"
+include = "scenarios/1936/tibet.inc"
+include = "scenarios/1936/china sinkiang.inc"
+include = "scenarios/1936/british raj.inc"
+include = "scenarios/1936/indochinese union.inc"
+include = "scenarios/1936/mandate syria and lebanon.inc"
+include = "scenarios/1936/egypt.inc"
+include = "scenarios/1936/danzig.inc"
+include = "scenarios/1936/netherlands east indies.inc"
+
+include = "scenarios/1936/bases.inc"

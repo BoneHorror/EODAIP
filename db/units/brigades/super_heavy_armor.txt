@@ -1,0 +1,65 @@
+# BRIG_MODEL_35_
+
+# 0 - WW1 super heavy (1917)
+model = {
+	cost				= 8
+	buildtime			= 180
+	manpower			= 3
+	defensiveness 		= 0
+	toughness			= 0
+	maxspeed			= 0
+	softness			= -5
+	hardattack			= 2
+	softattack			= 4
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 3
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	medium_armor		= 0		# Upgrade to 1924 Medium Armor Brigade
+	upgrade_time_boost 	= no 	# Do not reduce upgrade time on obsolete models 
+	speed_cap			= 5
+	equipment = { manpower = 3000 heavy_armor = 54 }
+}
+
+# 1 - WW2 Super heavy (1944)
+model = {
+	cost 				= 10
+	buildtime	 		= 180
+	manpower 			= 2
+	defensiveness 		= -5
+	toughness 			= -5
+	maxspeed 			= 0
+	softness			= -10
+	defaultorganisation = 10
+	hardattack			= 10
+	softattack			= 7
+	supplyconsumption 	= 4.6
+	fuelconsumption		= 4
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 9
+	b_07 = 0
+	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
+}
+
+# 2 - Improved Super-Heavy Tank (1959) Object 279
+model = {
+	cost 				= 10
+	buildtime	 		= 180
+	manpower 			= 2
+	defensiveness 		= -6
+	toughness 			= -6
+	maxspeed 			= 0
+	softness			= -10
+	defaultorganisation = 10
+	hardattack			= 12
+	softattack			= 9
+	supplyconsumption 	= 5
+	fuelconsumption		= 4.5
+	upgrade_time_factor = 0.8
+	upgrade_cost_factor = 0.6
+	speed_cap			= 9
+	medium_armor = 10
+	b_07 = 1
+	equipment = { manpower = 2500 medium_armor = 84 heavy_armor = 4 }
+}

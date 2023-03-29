@@ -1,0 +1,31 @@
+U18;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+905001;Head of State;Paul Medinger;1933;1964;1999;ST;Pig-headed Isolationist;High;M66021;X
+905002;Head of State;Martin Karp;1933;1964;1999;LE;Die-hard Reformer;High;M66024;X
+905003;Head of Government;René Blum;1933;1964;1999;LWR;Ambitious Union Boss;High;M66039;X
+905004;Head of Government;Paul Medinger;1933;1964;1999;ST;Ambitious Union Boss;High;M66021;X
+905005;Head of Government;Martin Karp;1933;1964;1999;LE;Corporate Suit;High;M66024;X
+905006;Foreign Minister;Pierre Krier;1933;1964;1999;LWR;Apologetic Clerk;High;M66045;X
+905007;Foreign Minister;René Blum;1933;1964;1999;LWR;Iron Fisted Brute;High;M66039;X
+905008;Foreign Minister;Paul Medinger;1933;1964;1999;ST;Biased Intellectual;Medium;M66021;X
+905009;Foreign Minister;Francois Schammel;1933;1964;1999;LE;General Staffer;Very High;M66050;X
+905010;Minister of Armament;Pierre Krier;1933;1964;1999;LWR;Resource Industrialist;High;M66045;X
+905011;Minister of Armament;Alex Federspiel;1933;1964;1999;LWR;Infantry Proponent;Medium;M66055;X
+905012;Minister of Armament;Martin Karp;1933;1964;1999;ST;Infantry Proponent;Medium;M66024;X
+905013;Minister of Armament;Jean Pierre Kauder;1933;1964;1999;LE;Military Entrepreneur;Medium;M66025;X
+905014;Minister of Security;René Blum;1933;1964;1999;LWR;Crime Fighter;Very High;M66039;X
+905015;Minister of Security;Joseph Goedert;1933;1964;1999;LWR;Compassionate Gentleman;Medium;M66066;X
+905016;Minister of Security;Jean Pierre Kauder;1933;1964;1999;ST;Man of the People;Medium;M66025;X
+905017;Minister of Security;Michel Hansen;1933;1964;1999;LE;Efficient Sociopath;High;M66070;X
+905018;Head of Military Intelligence;Joseph Tockert;1933;1964;1999;LWR;Technical Specialist;Very High;M66073;X
+905019;Head of Military Intelligence;Francois Schammel;1933;1964;1999;LWR;Logistics Specialist;Very High;M66050;X
+905020;Head of Military Intelligence;Charles Becker;1933;1964;1999;LWR;Political Specialist;Very High;M66075;X
+905021;Head of Military Intelligence;Jean Pierre Kauder;1933;1964;1999;ST;Industrial Specialist;Medium;M66025;X
+905022;Head of Military Intelligence;Max Weckering;1933;1964;1999;LE;Dismal Enigma;Low;M66080;X
+905023;Chief of Staff;Alex Federspiel;1933;1964;1999;LWR;School of Fire Support;Medium;M66055;X
+905024;Chief of Staff;Francois Schammel;1933;1964;1999;LWR;School of Mass Combat;Very High;M66050;X
+905025;Chief of Staff;Martin Karp;1933;1964;1999;ST;School of Mass Combat;Medium;M66024;X
+905026;Chief of Army;Martin Karp;1933;1964;1999;ST;Elastic Defence Doctrine;Medium;M66024;X
+905027;Chief of Navy;Paul Medinger;1933;1964;1999;ST;Base Control Doctrine;Medium;M66021;X
+905028;Chief of Air Force;Jean Marc Steffen;1933;1964;1999;LE;Vertical Envelopment Doctrine;Medium;M66030;X
+905029;Minister of Security;Eugene Schaus;1933;1964;1999;LWR;Man of the People;Medium;M66114;X

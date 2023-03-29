@@ -1,0 +1,554 @@
+### 8300060 --- Establish a professional military (triggers 8300102)
+### 8300061 --- Prolong Terms of Service (triggers 8300103, 8300104, 8300105, 8300106
+### 8300081 USA Propose Terms of Service Bill (triggers 8300053, 8300054)
+### 8300062 --- Enact Partial Mobilization (triggers 8300107)
+### 8300063 --- Enact General Mobilization (triggers 8300108)
+### 8300064 --- Further Extend Mobilization (triggers 8300109, 8300110)
+### 1350005 --- End Mobilization (triggers 8300111, 8300112)
+### 13500052 SCH End Mobilization (triggers 8300112)
+##############################################  
+### When you add a new TAG, you should add it to the following events: 8300060 8300061 8300062 8300063 8300064 1350005
+### Also, you should add it to the following events of DHFull\db\events\AI\AI_mobi.txt: 
+### - 150000 150001 150004 1303111 130003 150024 150025
+### - one between 150002 and 150003 (NOT BOTH!)
+##############################################  
+event = {  #Establish a professional military
+ 
+	id = 8300060
+	random = no
+	persistent = yes
+
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }
+	
+	decision = {
+			atwar = no
+			policy = { type = professional_army value = 1 } 
+			NOT = { policy = { type = professional_army value = 2 }}
+	}
+
+	decision_trigger = { 
+		supplies = 100
+	}
+
+	trigger = {
+			ai = no
+			policy = { type = professional_army value = 1 } 
+			NOT = { policy = { type = professional_army value = 2 }}
+		}
+   
+	name = "MOB2name"
+	desc = "8300060desc" 
+	decision_desc = "DEC_8300060_DESC"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { #Establish a professional military
+		
+		name = "MOB2name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300102}
+	}
+	
+}
+
+event = {  #Prolong Conscription
+ 
+	id = 8300061
+	random = no
+	persistent = yes
+	
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }
+
+	decision = {
+			atwar = no
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 6 }}
+			OR = {
+				NOT = { country = USA }
+				NOT = { government = democratic }
+				}
+			}
+
+	decision_trigger = { 
+		supplies = 200
+		OR = {
+			AND = {
+				government = democratic
+				policy = { type = interventionism value = 3 }
+				NOT = { dissent = 5 }
+				}
+			AND = {
+				NOT = { government = democratic }
+				NOT = { dissent = 8 }
+				}
+			}
+		}
+	
+
+	trigger = {
+		ai = no
+		supplies = 100
+		atwar = no
+		policy = { type = professional_army value = 2 } 
+		NOT = { policy = { type = professional_army value = 6 }}
+		NOT = { manpower = 200 }
+		}
+   
+	name = "8300061name"
+	desc = "8300061desc" 
+	decision_desc = "DEC_8300061_DESC"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { #Enact Selective Conscription
+		trigger = {
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 3 }}
+			}
+		
+		name = "MOB3name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300103}
+	}
+	
+	action = { #Enact One Year Conscription
+			trigger = {
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 4 }}
+			}
+		
+		name = "MOB4name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300104}
+	}
+	
+	action = { #Enact Two Year Conscription
+			trigger = {
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 5 }}
+			}
+		
+		name = "MOB5name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300105}
+	}
+	
+	action = { #Enact Three Year Conscription
+			trigger = {
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 6 }}
+			}
+	
+		name = "MOB6name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300106}
+	}
+
+}
+
+event = {  #Prolong Conscription through congress for democratic usa
+ 
+	id = 8300081
+	random = no
+	persistent = yes
+	country = USA
+
+	decision = {
+			government = democratic
+			atwar = no
+			policy = { type = professional_army value = 2 } 
+			NOT = { policy = { type = professional_army value = 6 }}
+			NOT = { local_flag = incon1 } 
+			NOT = { local_flag = incon2 } 
+			}
+
+	decision_trigger = { 
+		supplies = 200
+		OR = {
+			AND = {
+				government = democratic
+				policy = { type = interventionism value = 2 }
+				NOT = { dissent = 5 }
+				}
+			AND = {
+				NOT = { government = democratic }
+				NOT = { dissent = 8 }
+				}
+			}
+		}
+	
+
+	trigger = {
+		ai = no
+		government = democratic
+		supplies = 100
+		atwar = no
+		policy = { type = professional_army value = 2 } 
+		NOT = { policy = { type = professional_army value = 6 }}
+		NOT = { manpower = 200 }
+		}
+   
+	name = "8300081name"
+	desc = "8300081desc" 
+	decision_desc = "DEC_8300061_DESC"
+	
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { #Enact Selective Conscription
+		trigger = {	
+		policy = { type = professional_army value = 2 } 
+		NOT = { policy = { type = professional_army value = 3 }}
+		}
+		
+		name = "MOB3name"
+		ai_chance = 100
+		command = { type = local_setflag which = incon1 }
+		command = { type = event which = 8300053 where = -1 when = 60 }
+	}
+
+	action = { #call in more conscripts
+		trigger = {	
+		policy = { type = professional_army value = 3 } 
+		NOT = { policy = { type = professional_army value = 6 }}
+		}
+		
+		name = "MOBUSact"
+		ai_chance = 100
+		command = { type = local_setflag which = incon2 }
+		command = { type = event which = 8300054 where = -1 when = 60 }
+	}
+}
+
+event = {  #partial mob for all nations
+ 
+	id = 8300062
+	random = no
+	persistent = yes
+	
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }
+	
+	decision = {
+		NOT = { local_flag = demob }
+		policy = { type = professional_army value = 2 } 
+		NOT = { policy = { type = professional_army value = 7 }	}
+	}
+
+	decision_trigger = { 
+		supplies = 450
+		OR = {
+			atwar = yes
+			AND = { 
+				NOT = { government = democratic }
+				NOT = { dissent = 5}
+			}
+			AND = {
+				event = 2003011
+				NOT = { dissent = 5}
+				OR = {
+					country = JAP
+					continent = Europe
+					}
+			}
+		}
+	}
+
+	trigger = {
+		ai = no
+		NOT = { local_flag = demob }
+		supplies = 500
+		NOT = { dissent = 5}
+		OR = {
+			atwar = yes
+			NOT = { government = democratic }
+			AND = {
+				event = 2003011
+				OR = {
+					country = JAP
+					continent = Europe
+					}
+			}
+		}
+		NOT = { manpower = 70 }
+	}
+   
+	name = "MOB7name"
+	desc = "8300062desc" 
+	decision_desc = "DEC_8300062_DESC"
+	
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action = { #Enact Partial Mobilisation
+		
+		name = "MOB7name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300107}
+		}
+	
+}
+
+event = {  #general mob for all nations
+ 
+	id = 8300063
+	random = no
+	persistent = yes
+	
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }
+
+	decision = {
+		NOT = { local_flag = demob }
+		NOT = { policy = { type = professional_army value = 8 }}
+		OR = {
+			atwar = yes
+			policy = { type = professional_army value = 7 } 
+		}
+	}
+
+	decision_trigger = { 
+		supplies = 700
+		atwar = yes
+	}
+
+	trigger = {
+		ai = no
+		NOT = { local_flag = demob }
+		NOT = { manpower = 70 }
+		supplies = 400
+		policy = { type = professional_army value = 7 } 
+		NOT = { policy = { type = professional_army value = 8 }	}
+		atwar = yes
+		}
+   
+	name = "MOB8name"
+	desc = "8300063desc" 
+	decision_desc = "DEC_8300063_DESC"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { #Enact General Mobilisation
+		
+		name = "MOB8name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300108}
+	}
+	
+}
+
+event = {  #total mob for all nations
+ 
+	id = 8300064
+	random = no
+	persistent = yes
+
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }	
+	
+	decision = {
+			atwar = yes
+			policy = { type = professional_army value = 8 }
+			NOT = { policy = { type = professional_army value = 10 }	}
+	}
+
+	decision_trigger = { 
+		supplies = 500
+		NOT = { manpower = 80 }
+	}
+
+	trigger = {
+		ai = no
+		NOT = { manpower = 70 }
+		supplies = 400
+		policy = { type = professional_army value = 8 } 
+		NOT = { policy = { type = professional_army value = 10 }	}
+		atwar = yes
+	}
+   
+	name = "8300064name"
+	desc = "8300064desc" 
+	decision_desc = "DEC_8300064_DESC"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = { #Enact Extended Mobilisation
+		trigger = {	
+		policy = { type = professional_army value = 8 } 
+		NOT = { policy = { type = professional_army value = 9 }}
+		}
+		
+		name = "MOB9name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300109}
+	}
+	
+	action = { #Enact Total Mobilisation
+		trigger = {	
+		policy = { type = professional_army value = 9 } 
+		NOT = { policy = { type = professional_army value = 10 }}
+		}
+		
+		name = "MOB10name"
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300110}
+	}
+	
+}
+
+########################## Demobilisation ##################
+
+event = { #general demob
+ 
+	id = 1350005
+	random = no
+	persistent = yes
+	TAG = { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U57 U58 U59 U60 U62 U67 U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 UCH UER UGS UPE UTC }
+
+	decision = {
+		NOT = { local_flag = demob }
+		OR = {
+			local_flag = MOB9
+			AND = {
+				atwar = no
+				local_flag = MOB7
+			}
+		}
+	}
+
+	decision_trigger = { 
+		OR = {
+			#local_flag = MOB9
+			AND = {
+				atwar = no
+				local_flag = MOB7
+			}
+		}
+	}
+
+	trigger = {
+		atwar = no
+		local_flag = MOB7
+		NOT = { local_flag = demob }
+		NOT = { local_flag = do_not_demob } #for AI countries only
+	}
+   
+	name = "1350005name"
+	desc = "1350000desc" 
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = {
+		name = "1350000text7" #End Partial Mobilisation -> go to 3 Years Conscr
+		trigger = { local_flag = MOB7 }
+		ai_chance = 100
+		command = { type = trigger which = 8300111 }
+	}
+	action = {
+		name = "1350000text8" #End General Mobilisation -> go to Partial Mob
+		trigger = { local_flag = MOB8 }
+		ai_chance = 0	
+		command = { type = trigger which = 8300112 }
+	}
+}
+
+event = { #Swiss demob
+ 
+	id = 13500052
+	random = no
+	persistent = yes
+	country = SCH
+
+	decision = {
+			NOT = { local_flag = demob }
+			OR = {
+				#local_flag = MOB9
+				AND = {
+					atwar = no
+					local_flag = MOB8
+					}
+				}
+	}
+
+	decision_trigger = { 
+			OR = {
+				local_flag = MOB9
+				AND = {
+					atwar = no
+					local_flag = MOB7
+					}
+				}
+	}
+
+	trigger = {
+		atwar = no
+		local_flag = MOB8
+		}
+   
+	name = "1350005name"
+	desc = "1350000desc" 
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_german_total_war"
+	
+	date = { day = 0 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action = {
+		name = "1350000text8"
+		trigger = { local_flag = MOB8 }
+		ai_chance = 100
+		
+		command = { type = trigger which = 8300112}
+	}
+}
+

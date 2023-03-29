@@ -1,0 +1,24 @@
+U74;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+1185001;Mingsong Dock and Engineering Works;100779;1;1865;1999;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185002;Hanyang Arsenal;100770;2;1894;1945;munitions;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185003;Zhong Xing Coal Company;100771;2;1878;1939;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185004;Zhong Xing Coal Company;100771;4;1939;1999;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185005;Jiangnan Dock and Engineering Works;100772;2;1905;1999;naval_artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185006;Jiangnan Arsenal;100773;4;1865;1999;training;mechanics;munitions;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185007;Chang'an Factory;T1015;3;1862;1999;artillery;mechanics;general_equipment;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185008;Yong Li Chemical Industries;100774;4;1934;1949;industrial_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185009;Nanjing Chemical Group;100774;6;1949;1999;industrial_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185010;Dagu Shipyard;T8804;2;1880;1999;naval_engineering;naval_artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185011;Tianjin Belgian Tram & Electric Co.;T8807;3;1906;1933;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185012;Tianjin Belgian Tram & Electric Co.;T8807;4;1933;1976;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185013;Zhili Industrial Bureau;T8808;1;1904;1921;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185014;Zhili Industrial Bureau;T8808;2;1921;1928;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185015;Tianjin Industrial Bureau;T8808;3;1928;1999;industrial_engineering;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185016;Yuan Shikai;100060;2;1885;1934;small_unit_tactics;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185017;Zhili Army Primary School;100718;1;1905;1926;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185018;Shanxi Research Academy;100759;1;1902;1918;mathematics;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185019;National Shanxi Academy;100759;2;1918;1931;mathematics;chemistry;technical_efficiency;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185020;Shanxi University;100759;3;1931;1999;mathematics;chemistry;management;technical_efficiency;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185021;Beiyang Armament Institute;100760;2;1903;1999;training;small_unit_tactics;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185022;Baoding Military Academy;T8803;3;1912;1999;training;large_unit_tactics;centralized_execution;individual_courage;decentralized_execution;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1185023;Taiyuan Arsenal;T8801;3;1912;1999;artillery;general_equipment;training;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

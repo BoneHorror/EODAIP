@@ -1,0 +1,44 @@
+# England Land Prio Build by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 44
+	cavalry 		= 0
+	motorized 		= 10
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 8
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 4
+	garrison		= 0
+    hq	 			= 5
+	militia 		= 0
+#				78 %
+	interceptor 	= 10
+	multi_role 		= 2
+	cas 			= 5
+	strategic_bomber = 1
+	tactical_bomber = 7
+	naval_bomber 	= 2
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				22 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 1
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 1
+#				0 %
+}

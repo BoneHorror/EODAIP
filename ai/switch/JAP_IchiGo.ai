@@ -1,0 +1,173 @@
+# Japan Final Push vs China AI File by Nekron
+
+target = { 
+	1310 = 45 # Changde
+	1337 = 50 # Nanjing
+	1297 = 45 # Chengdu
+	1432 = 30 # Singapore
+	1565 = 30 # Manila
+} 
+max_front_ratio = 1.4
+max_front_ratios = {
+	CHI = 2.0
+	CHC = 2.5
+	PHI = 3.0
+	U05 = 3.0
+	U02 = 2.5
+	U01 = 2.5
+	USA = 2.0
+}
+max_garrison_prop = 0.15
+min_garrison_prop = 0.08
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	CHI = 180
+	CSX = 150
+	SIK = 1
+	CXB = 1
+	CYN = 10
+	CGX = 150
+	CHC = 120
+}
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	max_batch_peace 		= 520 
+	max_batch_war 			= 520 
+	max_batch_home_front 	= 250
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.3
+	overseas_multiplier = 1.2
+	home_peace_cap 		= 10
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 1.5
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 5
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 40
+		CSX = 10
+		SIK = 10
+		CXB = 10
+		CYN = 10
+		CGX = 10
+		CHC = 10
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 10
+		POR = -1
+		ENG = 30
+		FRA = 10
+		U05 = 10
+		USA = 30
+		AST = 10
+		NZL = 10
+		U02 = 10
+	}
+	province_priorities = {
+	1338 = 30 #Shanghai
+	1563 = 10 #Okinawa
+	1361 = 10 #Taipei
+	1432 = 10 #Singapore
+	1247 = 10 #Beijing
+	}
+	area_multiplier = {
+		1672  = 1.0  #Marcus Island
+		1684  = 1.0  #Rota
+		1562  = 1.0  #Anami
+		1234  = 1.0  #Jeju
+		1662  = 1.0  #Bonin Island
+		1423  = 1.1  #Siam
+		1415  = 1.2  #Rangoon - Burma
+		#1417  = 1.2  #Peh Kou - Burma
+		#1419  = 1.2  #Pu Sim - Burma
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.15
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.05
+	withdraw_odds		= 0.6
+
+	province_priorities = {
+	1338 = 1.30 #Shanghai
+	1563 = 1.10 #Okinawa
+	1361 = 1.10 #Taipei
+	1432 = 1.10 #Singapore
+	1247 = 1.10 #Beijing
+	}
+   	enemy_handicap = { } 
+    passivity = {
+		SOV = 20
+		MON = 30
+		U02 = 50
+		CHC = 0
+		CYN = 0
+		CXB = 10
+		CSX = 20
+		CHI = 0
+	}  
+} 
+####################################
+## Invasions and Naval
+####################################
+#admiral = { 
+#	min_org		= 80	# NEW: Percent of org gained back before the unit can leave port
+#	min_dmg		= 68    # NEW: Percent of dmg gained back before the unit can leave port
+#	return_org 	= 50 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+#	return_dmg 	= 60 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+#
+#	target = {
+#		2516  = 200
+#		2517  = 200
+#		2518  = 200
+#		2514  = 150
+#		2515  = 100
+#		2524  = 100
+#		2523  = 100
+#	} 
+#	core = {
+#		2489
+#		2490
+#		2491
+#		2492
+#		2494
+#		2497
+#		2498
+#		2499
+#		2501
+#		2512
+#	} 
+#}

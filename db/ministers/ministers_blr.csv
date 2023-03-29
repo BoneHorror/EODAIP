@@ -1,0 +1,93 @@
+BLR;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+470001;Head of State;Aleksandr G. Chervyakov;1933;1964;1999;LE;Autocratic Charmer;High;M517001;X
+470002;Head of Government;Aleksiy A. Volkov;1933;1964;1999;LE;Naive Optimist;High;M517002;X
+470003;Foreign Minister;Nikolay I. Gusarov;1933;1964;1999;LE;Great Compromiser;High;M517003;X
+470004;Minister of Armament;Aleksander Osatkin-Vladimirsky;1933;1964;1999;LE;Infantry Proponent;Medium;M517004;X
+470005;Minister of Security;Yurij B. Gamarnik;1933;1964;1999;LE;Prince of Terror;Medium;M517005;X
+470006;Head of Military Intelligence;Yazip Losik;1933;1964;1999;LE;Naval Intelligence Specialist;Medium;M517006;X
+470007;Chief of Staff;Serafim Pokrovski;1933;1964;1999;LE;School of Psychology;Medium;M517007;X
+470008;Chief of Army;Pavel Ponomarenko;1933;1964;1999;LE;Armoured Spearhead Doctrine;Medium;M517008;X
+470009;Chief of Navy;Valerik Lesik;1933;1964;1999;LE;Indirect Approach Doctrine;Medium;M517009;X
+470010;Chief of Air Force;Vladimir I. Cheryakov;1933;1964;1999;LE;Carpet Bombing Doctrine;Medium;M517010;X
+470011;Head of State;Yazip Losik;1933;1964;1999;SD;Weary Stiffneck;High;M517006;X
+470012;Head of State;Radion Survilla;1933;1964;1999;SC;Stern Imperialist;High;M517012;X
+470013;Head of State;Pyotr Krecheuski;1933;1964;1999;NS;Autocratic Charmer;High;M517013;X
+470014;Head of Government;Pyotr Krecheuski;1933;1964;1999;SD;Happy Amateur;High;M517013;X
+470015;Head of Government;Venedict Bobkovski;1933;1964;1999;SC;Political Protege;High;M517015;X
+470016;Head of Government;Vasil Zacharka;1933;1964;1999;NS;Corporate Suit;High;M517016;X
+470017;Foreign Minister;Karl Lander;1933;1964;1999;LE;Ideological Crusader;High;M517017;X
+470018;Foreign Minister;Panteleimon Rozhnovsky;1933;1964;1999;SD;Apologetic Clerk;High;M517018;X
+470019;Foreign Minister;Pyotr A. Krechevsky;1933;1964;1999;SD;Ideological Crusader;High;M517019;X
+470020;Foreign Minister;Vasil Zacharka;1933;1964;1999;SC;Great Compromiser;High;M517016;X
+470021;Foreign Minister;Veniamin Novitski;1933;1964;1999;SC;Apologetic Clerk;High;M517021;X
+470022;Foreign Minister;Iuri Shurevich;1933;1964;1999;NS;Biased Intellectual;High;M517022;X
+470023;Foreign Minister;Wilhelm Kube;1933;1964;1999;NS;The Cloak N Dagger Schemer;High;M517023;X
+470024;Minister of Armament;Vasiliy F. Sharangovich;1933;1964;1999;LE;Resource Industrialist;Medium;M517024;X
+470025;Minister of Armament;Mikhail Bonch-Bruevich;1933;1964;1999;SD;Tank Proponent;Medium;M517025;X
+470026;Minister of Armament;Mikola Abramchyk;1933;1964;1999;SC;Theoretical Scientist;Medium;M517026;X
+470027;Minister of Armament;Radion Survilla;1933;1964;1999;NS;laissez-faire capitalist;Medium;M517012;X
+470028;Minister of Armament;Karl Lander;1933;1964;1999;NS;Military Entrepreneur;Medium;M517017;X
+470029;Minister of Security;Aleksandr I. Krivitsky;1933;1964;1999;LE;Compassionate Gentleman;Medium;M517029;X
+470030;Minister of Security;Nikolay F. Gikalo;1933;1964;1999;LE;Back Stabber;Medium;M517030;X
+470031;Minister of Security;Mikhail Bonch-Bruevich;1933;1964;1999;LE;Man of the People;Medium;M517025;X
+470032;Minister of Security;Aleksander Osatkin-Vladimirsky;1933;1964;1999;SD;Crime Fighter;Medium;M517004;X
+470033;Minister of Security;Larysa Hienijush;1933;1964;1999;SC;Efficient Sociopath;Medium;M517033;X
+470034;Minister of Security;Curt von Gottberg;1933;1964;1999;NS;Prince of Terror;Medium;M517034;X
+470035;Minister of Security;Constantine Voskoboinikov;1933;1964;1999;NS;Silent Lawyer;Medium;M517035;X
+470036;Head of Military Intelligence;Panteleion Ponomarenko;1933;1964;1999;LE;Industrial Specialist;Medium;M517036;X
+470037;Head of Military Intelligence;Aleksandr I. Krivitsky;1933;1964;1999;SD;Political Specialist;Medium;M517029;X
+470038;Head of Military Intelligence;Karl Lander;1933;1964;1999;SD;Dismal Enigma;Medium;M517017;X
+470039;Head of Military Intelligence;Iuri Shurevich;1933;1964;1999;SC;Technical Specialist;Medium;M517022;X
+470040;Head of Military Intelligence;Mikhail Bonch-Bruevich;1933;1964;1999;NS;Technical Specialist;Medium;M517025;X
+470041;Head of Military Intelligence;Yurij B. Gamarnik;1933;1964;1999;NS;Political Specialist;Medium;M517005;X
+470042;Head of Military Intelligence;Walter Darré;1933;1964;1999;NS;Logistics Specialist;Medium;M517042;X
+470043;Chief of Staff;Vladimir I. Cheryakov;1933;1964;1999;SD;School of Fire Support;Medium;M517010;X
+470044;Chief of Staff;Yurij B. Gamarnik;1933;1964;1999;SC;School of Psychology;Medium;M517005;X
+470045;Chief of Staff;Vassilyi Suerata;1933;1964;1999;NS;School of Defence;Medium;M517045;X
+470046;Chief of Army;Serafim Pokrovski;1933;1964;1999;SD;Static Defence Doctrine;Medium;M517007;X
+470047;Chief of Army;Jozef Dowbor-Musnicki;1933;1964;1999;SC;Decisive Battle Doctrine;Medium;M517047;X
+470048;Chief of Army;Bronislav Kaminski;1933;1964;1999;NS;Guns and Butter Doctrine;Medium;M517048;X
+470049;Chief of Navy;Aleksandr Iziumov;1933;1964;1999;SD;Base Control Doctrine;Medium;M517049;X
+470050;Chief of Navy;Friedrich Wilhelm Kurzr;1933;1964;1999;SC;Open Seas Doctrine;Medium;M517050;X
+470051;Chief of Navy;Erhard Märtens;1933;1964;1999;NS;Base Control Doctrine;Medium;M517051;X
+470052;Chief of Air Force;Nikolay F. Gikalo;1933;1964;1999;SD;Army Aviation Doctrine;Medium;M517030;X
+470053;Chief of Air Force;Aleksandr Iziumov;1933;1964;1999;SC;Vertical Envelopment Doctrine;Medium;M517049;X
+470054;Chief of Air Force;Hans Baur;1933;1964;1999;NS;Air Superiority Doctrine;Medium;M517054;X
+470055;Chief of Army;Anton Sokól-Kutylowski;1920;1933;1999;LE;Armoured Spearhead Doctrine;Medium;unknownminister;X
+470056;Chief of Army;Stanislaw Bulak-Balachowicz;1914;1941;1959;PA;Armoured Spearhead Doctrine;Medium;5960;X
+470057;Chief of Staff;Kanstantyn Jezawitaw;1914;1933;1999;ML;School of Psychology;Medium;unknownminister;X
+470058;Chief of Staff;Anton Sokól-Kutylowski;1920;1933;1999;LE;School of Psychology;Medium;unknownminister;X
+470059;Chief of Staff;Wasyl Zacharka;1918;1933;1999;ML;School of Psychology;Medium;6948;X
+470060;Chief of Staff;Lavon Zajac;1918;1933;1999;ML;School of Psychology;Medium;unknownminister;X
+470061;Chief of Staff;Stanislaw Bulak-Balachowicz;1914;1941;1959;PA;School of Psychology;Medium;5960;X
+470062;Foreign Minister;Anton Luckiewicz;1914;1943;1970;ML;Great Compromiser;High;9267;X
+470063;Foreign Minister;Jan Makreje;1918;1933;1999;ML;Great Compromiser;High;unknownminister;X
+470064;Foreign Minister;A. Ladnou;1919;1933;1999;ML;Great Compromiser;High;unknownminister;X
+470065;Head of Government;Anton Luckiewicz;1914;1943;1970;ML;Naive Optimist;High;9267;X
+470066;Head of Government;Zmicier Zylunowicz;1917;1933;1999;ST;Naive Optimist;High;unknownminister;X
+470067;Head of Government;Waclaw Lastouski;1917;1933;1999;ML;Naive Optimist;High;5961;X
+470068;Head of Government;Wiaczaslau Adamowicz;1919;1933;1999;PA;Naive Optimist;High;unknownminister;X
+470069;Head of State;Jazep Losik;1914;1933;1999;ML;Autocratic Charmer;High;5962;X
+470070;Head of State;Piotr Kreczeuski;1919;1929;1929;ML;Autocratic Charmer;High;5963;X
+470071;Head of State;Jan Sierada;1914;1944;1965;ML;Autocratic Charmer;High;5964;X
+470072;Head of State;Stanislaw Bulak-Balachowicz;1919;1941;1959;ML;Autocratic Charmer;High;5960;X
+470073;Minister of Armament;Wasyl Zacharka;1914;1933;1999;ML;Infantry Proponent;Medium;6948;X
+470074;Minister of Armament;E. Bialewicz;1919;1933;1999;ML;Infantry Proponent;Medium;unknownminister;X
+470075;Minister of Security;Alaksandar Cwikiewicz;1914;1933;1999;ML;Prince of Terror;Medium;unknownminister;X
+470076;Minister of Security;Pawel Aleksiuk;1919;1933;1999;ML;Prince of Terror;Medium;unknownminister;X
+470077;Minister of Security;Alaksandar Cwikiewicz;1918;1933;1999;ML;Prince of Terror;Medium;unknownminister;X
+470078;Minister of Security;Tamas Hryb;1919;1933;1999;ML;Prince of Terror;Medium;unknownminister;X
+470079;Head of State;Jazep Waronka;1918;1964;1999;ML;Autocratic Charmer;High;9268;X
+470080;Chief of Army;Cyprian Kondratowicz;1920;1964;1999;PA;Armoured Spearhead Doctrine;High;unknownminister;X
+470081;Foreign Minister;Jazep Waronka;1914;1953;1953;PA;ideological crusader;High;9268;X
+470082;Minister of Armament;Jan Sierada;1914;1944;1944;PA;Planned economy proponent;High;5964;X
+470083;Minister of Armament;Kanstantzin Barisavich Yezavitaw;1914;1947;1947;PA;infantry proponent;High;9270;X
+470084;Minister of Security;Yafim Yafimavich Byalyevich;1914;1943;1974;PA;silent lawyer;High;unknownminister;X
+470085;Minister of Security;Pyotra Krechewski;1918;1929;1929;PA;crime fighter;High;5963;X
+470086;Head of Military Intelligence;Kanstantzin Barisavich Yezavitaw;1914;1947;1947;PA;logistics specialist;High;9270;X
+470087;Chief of Staff;Kanstantzin Barisavich Yezavitaw;1914;1947;1947;PA;school of defence;High;9270;X
+470088;Chief of Army;Guasan Kanapatzki;1914;1954;1954;PA;decisive battle doctrine;High;9271;X
+470089;Head of State;Henry I of Prussia;1914;1930;1930;PA;autocratic charmer;High;9272;X
+470090;Head of State;Waldemar I of Prussia;1929;1932;1946;PA;insignificant layman;High;9273;X
+470091;Head of State;Sigismund I of Prussia;1944;1979;1979;PA;ruthless powermonger;High;9274;X

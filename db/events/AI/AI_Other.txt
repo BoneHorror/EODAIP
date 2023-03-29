@@ -1,0 +1,1238 @@
+####################################
+# Other Minors 
+####################################
+################
+# Slovakia sends exp forces to Germany
+#############################################
+event = {
+	id = 3057002
+	random = no 
+	country = SLO
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		OR = {
+			ai = GER
+			event = 3003013
+			AND = {
+				war = { country = GER country = SOV }
+				war = { country = SOV }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Greece at war
+#############################################
+event = {
+	id = 3019002
+	random = no 
+	country = GRE
+	
+	trigger = {
+		ai = yes
+		war = { country = ITA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/GRE_Italy.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Yugoslavia exp forces to Germany
+#############################################
+event = {
+	id = 3021008
+	random = no 
+	country = YUG
+	
+	trigger = {
+		ai = yes
+		war = { country = SOV }
+		alliance = { country = GER }
+		war = { country = GER country = SOV }
+		}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+
+################
+# Bulgaria joins Germany because of Balkan Campaign
+#############################################
+event = {
+	id = 3020013
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		atwar = no
+		war = { country = GER country = YUG }
+		NOT = { alliance = { country = SOV } }
+		NOT = { alliance = { country = ENG } }
+		NOT = { alliance = { country = ITA } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = TUR } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = alliance which = GER when = 1 }
+	}
+}
+
+################
+# Partition of Yugoslavia AI only events
+#############################################
+event = {
+	id = 3023015
+	random = no 
+	country = ROM
+	trigger = {
+		ai = yes
+		ai = GER
+		event = 3003011
+		alliance = { country = GER }
+		NOT = { exists = YUG }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = secedearea which = GER value = "East Serbia" }
+		command = { type = secedearea which = GER value = "Central Serbia" }
+		command = { type = secedearea which = GER value = "Croatia" }
+		command = { type = secedearea which = GER value = "Bosnia" }
+	}
+}
+################
+# Partition of Yugoslavia AI only events
+#############################################
+event = {
+	id = 3020014
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		event = 3003011
+		alliance = { country = GER }
+		NOT = { exists = YUG }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = secedearea which = GER value = "Central Serbia" }
+		command = { type = secedearea which = GER value = "Croatia" }
+		command = { type = secedearea which = GER value = "Bosnia" }
+		command = { type = secedeprovince which = GER value = 329 } # Pristina - Balkan
+		command = { type = secedeprovince which = GER value = 332 } # Cetinje - Balkan
+		command = { type = secedeprovince which = GER value = 330 } # Nis - Balkan
+		command = { type = secedeprovince which = GER value = 335 } # Prijepolje - Balkan
+		command = { type = secedeprovince which = GER value = 327 } # Krusevac - Balkan
+	}
+}
+################
+# Partition of Yugoslavia AI only events
+#############################################
+event = {
+	id = 3006037
+	random = no 
+	country = ITA
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		event = 3003011
+		alliance = { country = GER }
+		NOT = { exists = YUG }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = secedearea which = GER value = "Central Serbia" }
+		command = { type = secedeprovince which = GER value = 349 } # Ljubljana - Balkan
+		command = { type = secedeprovince which = GER value = 346 } # Maribor - Balkan
+		command = { type = secedeprovince which = GER value = 345 } # Bjelovar - Balkan
+		command = { type = secedeprovince which = GER value = 344 } # Osijek - Balkan
+		command = { type = secedeprovince which = GER value = 352 } # Zagreb - Balkan
+		command = { type = secedeprovince which = GER value = 353 } # Banja Luka - Balkan
+		command = { type = secedeprovince which = GER value = 355 } # Sarajevo - Balkan
+		command = { type = secedeprovince which = GER value = 354 } # Tuzla - Balkan
+		command = { type = secedeprovince which = GER value = 330 } # Nis - Balkan
+		command = { type = secedeprovince which = GER value = 387 } # Gazimagusa - Anatolia
+		command = { type = secedeprovince which = GER value = 329 } # Pristina - Balkan
+		command = { type = secedeprovince which = GER value = 333 } # Skoplje - Balkan
+		command = { type = secedeprovince which = GER value = 328 } # Kumanovo - Balkan
+		command = { type = secedeprovince which = GER value = 331 } # Pirot - Balkan
+		command = { type = secedeprovince which = GER value = 334 } # Tetovo - Balkan
+		command = { type = secedeprovince which = GER value = 335 } # Prijepolje - Balkan
+		command = { type = secedeprovince which = GER value = 327 } # Krusevac - Balkan
+		
+	}
+}
+################
+# Partition of Yugoslavia AI only events Partisans come back
+#############################################
+event = {
+	id = 3003070
+	random = no 
+	country = GER
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	action_a = {
+		command = { type = province_revoltrisk which = 349 value = 15 }
+		command = { type = province_revoltrisk which = 346 value = 15 }
+		command = { type = province_revoltrisk which = 345 value = 15 }
+		command = { type = province_revoltrisk which = 344 value = 15 }
+		command = { type = province_revoltrisk which = 338 value = 15 }
+		command = { type = province_revoltrisk which = 352 value = 15 }
+		command = { type = province_revoltrisk which = 469 value = 15 }
+		command = { type = province_revoltrisk which = 353 value = 15 }
+		command = { type = province_revoltrisk which = 350 value = 15 }
+		command = { type = province_revoltrisk which = 355 value = 15 }
+		command = { type = province_revoltrisk which = 354 value = 15 }
+		command = { type = province_revoltrisk which = 356 value = 15 }
+		command = { type = province_revoltrisk which = 343 value = 15 }
+		command = { type = province_revoltrisk which = 332 value = 15 }
+		command = { type = province_revoltrisk which = 330 value = 15 }
+		command = { type = province_revoltrisk which = 342 value = 15 }
+		command = { type = province_revoltrisk which = 387 value = 15 }
+		command = { type = province_revoltrisk which = 329 value = 15 }
+		command = { type = province_revoltrisk which = 341 value = 15 }
+		command = { type = province_revoltrisk which = 336 value = 15 }
+		command = { type = province_revoltrisk which = 333 value = 15 }
+		command = { type = province_revoltrisk which = 328 value = 15 }
+		command = { type = province_revoltrisk which = 335 value = 15 }
+		command = { type = province_revoltrisk which = 327 value = 15 }
+		command = { type = province_revoltrisk which = 331 value = 15 }
+		command = { type = province_revoltrisk which = 334 value = 15 }
+	}
+}
+################
+# Yugoslavia loads Baklans AI
+#############################################
+event = {
+	id = 3021009
+	random = no 
+	country = YUG
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		war = { country = ITA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/YUG_Balklans.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Partition of Greece AI only events
+#############################################
+event = {
+	id = 3020015
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = ITA
+		event = 3003011
+		alliance = { country = ITA }
+		NOT = { exists = GRE }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = secedeprovince which = ITA value = 367 } # Ioannina - Balkan
+		command = { type = secedeprovince which = ITA value = 371 } # Kerkyra - Balkan
+		command = { type = secedeprovince which = ITA value = 372 } # Patra - Balkan
+		command = { type = secedeprovince which = ITA value = 373 } # Korinthos - Balkan
+		command = { type = secedeprovince which = ITA value = 382 } # Irakleio - Balkan
+		command = { type = secedeprovince which = ITA value = 374 } # Halkida - Balkan
+		command = { type = secedeprovince which = ITA value = 377 } # Athina - Balkan
+		command = { type = secedeprovince which = ITA value = 368 } # Larissa - Balkan
+		command = { type = secedeprovince which = ITA value = 375 } # Levadhia - Balkan
+		command = { type = secedeprovince which = ITA value = 383 } # Mytilini - Balkan
+		command = { type = secedeprovince which = ITA value = 365 } # Thessaloniki - Balkan
+		command = { type = secedeprovince which = ITA value = 366 } # Kozani - Balkan
+		command = { type = secedeprovince which = ITA value = 369 } # Metsovo - Balkan
+		command = { type = secedeprovince which = ITA value = 380 } # Sitia - Balkan
+		command = { type = secedeprovince which = ITA value = 381 } # Ermoupoli - Balkan
+		command = { type = sleepevent which = 3020016 }
+	}
+}
+################
+# Partition of Greece AI only events
+#############################################
+event = {
+	id = 3020016
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		ai = ITA
+		event = 3003011
+		exists = GRE
+		alliance = { country = ITA }
+		NOT = { control = { province = 377 data = GRE } } # Athens
+		NOT = { control = { province = 371 data = GRE } }
+		NOT = { control = { province = 373 data = GRE } }
+		NOT = { control = { province = 372 data = GRE } }
+		NOT = { control = { province = 368 data = GRE } }
+		NOT = { control = { province = 375 data = GRE } }
+		NOT = { control = { province = 367 data = GRE } }
+		NOT = { control = { province = 366 data = GRE } }
+		NOT = { control = { province = 365 data = GRE } }
+		NOT = { control = { province = 364 data = GRE } }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = control which = ITA value = 367 }
+		command = { type = control which = ITA value = 371 }
+		command = { type = control which = ITA value = 372 }
+		command = { type = control which = ITA value = 373 }
+		command = { type = control which = ITA value = 382 }
+		command = { type = control which = ITA value = 374 }
+		command = { type = control which = ITA value = 377 }
+		command = { type = control which = ITA value = 368 }
+		command = { type = control which = ITA value = 375 }
+		command = { type = control which = ITA value = 383 }
+		command = { type = control which = ITA value = 365 }
+		command = { type = control which = ITA value = 366 }
+		command = { type = control which = ITA value = 369 }
+		command = { type = control which = ITA value = 380 }
+		command = { type = control which = ITA value = 381 }
+		command = { type = sleepevent which = 3020015 }
+	}
+}
+################
+# Partition of Greece AI only events
+#############################################
+event = {
+	id = 3003071
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		ai = ITA
+		ai = BUL
+		event = 3003011
+		alliance = { country = ITA }
+		NOT = { exists = GRE }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = secedeprovince which = ITA value = 367 } # Ioannina - Balkan
+		command = { type = secedeprovince which = ITA value = 371 } # Kerkyra - Balkan
+		command = { type = secedeprovince which = ITA value = 372 } # Patra - Balkan
+		command = { type = secedeprovince which = ITA value = 373 } # Korinthos - Balkan
+		command = { type = secedeprovince which = ITA value = 382 } # Irakleio - Balkan
+		command = { type = secedeprovince which = ITA value = 374 } # Halkida - Balkan
+		command = { type = secedeprovince which = ITA value = 377 } # Athina - Balkan
+		command = { type = secedeprovince which = ITA value = 368 } # Larissa - Balkan
+		command = { type = secedeprovince which = ITA value = 375 } # Levadhia - Balkan
+		command = { type = secedeprovince which = ITA value = 383 } # Mytilini - Balkan
+		command = { type = secedeprovince which = BUL value = 364 } # Kavala - Balkan
+		command = { type = secedeprovince which = ITA value = 365 } # Thessaloniki - Balkan
+		command = { type = secedeprovince which = BUL value = 370 } # Alexandroupoli - Balkan
+		command = { type = secedeprovince which = ITA value = 366 } # Kozani - Balkan
+		command = { type = secedeprovince which = ITA value = 369 } # Metsovo - Balkan
+		command = { type = secedeprovince which = ITA value = 380 } # Sitia - Balkan
+		command = { type = secedeprovince which = ITA value = 381 } # Ermoupoli - Balkan
+		command = { type = sleepevent which = 3003072 }
+	}
+}
+################
+# Partition of Greece AI only events
+#############################################
+event = {
+	id = 3003072
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		ai = ITA
+		ai = BUL
+		event = 3003011
+		alliance = { country = ITA }
+		exists = GRE
+		NOT = { control = { province = 377 data = GRE } } # Athens
+		NOT = { control = { province = 371 data = GRE } }
+		NOT = { control = { province = 373 data = GRE } }
+		NOT = { control = { province = 372 data = GRE } }
+		NOT = { control = { province = 368 data = GRE } }
+		NOT = { control = { province = 375 data = GRE } }
+		NOT = { control = { province = 367 data = GRE } }
+		NOT = { control = { province = 366 data = GRE } }
+		NOT = { control = { province = 365 data = GRE } }
+		NOT = { control = { province = 364 data = GRE } }
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = control which = ITA value = 367 }
+		command = { type = control which = ITA value = 371 }
+		command = { type = control which = ITA value = 372 }
+		command = { type = control which = ITA value = 373 }
+		command = { type = control which = ITA value = 382 }
+		command = { type = control which = ITA value = 374 }
+		command = { type = control which = ITA value = 377 }
+		command = { type = control which = ITA value = 368 }
+		command = { type = control which = ITA value = 375 }
+		command = { type = control which = ITA value = 383 }
+		command = { type = control which = BUL value = 364 }
+		command = { type = control which = ITA value = 365 }
+		command = { type = control which = BUL value = 370 }
+		command = { type = control which = ITA value = 366 }
+		command = { type = control which = ITA value = 369 }
+		command = { type = control which = ITA value = 380 }
+		command = { type = control which = ITA value = 381 }
+		command = { type = sleepevent which = 3003071 }
+	}
+}
+################
+# Partition of Greece AI only events Italy gets partisans
+#############################################
+event = {
+	id = 3006038
+	random = no 
+	country = ITA
+	
+	trigger = {
+		ai = yes
+		OR = {
+			event = 3020015
+			event = 3020016
+			event = 3003071
+			event = 3003072
+		}
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = province_revoltrisk  which = 392 value = 15 }
+		command = { type = province_revoltrisk  which = 393 value = 15 }
+		command = { type = province_revoltrisk  which = 394 value = 15 }
+		command = { type = province_revoltrisk  which = 395 value = 15 }
+		command = { type = province_revoltrisk  which = 396 value = 15 }
+		command = { type = province_revoltrisk  which = 400 value = 15 }
+		command = { type = province_revoltrisk  which = 401 value = 15 }
+		command = { type = province_revoltrisk  which = 402 value = 15 }
+		command = { type = province_revoltrisk  which = 403 value = 15 }
+		command = { type = province_revoltrisk  which = 405 value = 15 }
+		command = { type = province_revoltrisk  which = 410 value = 15 }
+		command = { type = province_revoltrisk  which = 411 value = 15 }
+		command = { type = province_revoltrisk  which = 412 value = 15 }
+		command = { type = province_revoltrisk  which = 563 value = 15 }
+		command = { type = province_revoltrisk  which = 653 value = 15 }
+		command = { type = province_revoltrisk  which = 2321 value = 15 }
+		command = { type = province_revoltrisk  which = 2319 value = 15 }
+	}
+}
+################
+# Yugoslavia turns Passive from fear with fall of Greece
+#############################################
+event = {
+	id = 3021010
+	random = no 
+	country = YUG
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER country = ITA }
+		NOT = { ispuppet = YUG }
+		NOT = { atwar = YUG }
+		control = { province = 55 data = GER } # Paris
+		OR = {
+			NOT = { exists = GRE }
+			AND = {
+				NOT = { control = { province = 377 data = GRE } } # Athens
+				NOT = { control = { province = 371 data = GRE } }
+				NOT = { control = { province = 373 data = GRE } }
+				NOT = { control = { province = 372 data = GRE } }
+				NOT = { control = { province = 368 data = GRE } }
+				NOT = { control = { province = 375 data = GRE } }
+				NOT = { control = { province = 367 data = GRE } }
+				NOT = { control = { province = 366 data = GRE } }
+				NOT = { control = { province = 365 data = GRE } }
+				NOT = { control = { province = 364 data = GRE } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/YUG_Neutrality.ai" }
+	}
+}
+################
+# Partition of Yugoslavia AI only events Partisans come back
+#############################################
+event = {
+	id = 3003073
+	random = no 
+	country = GER
+
+	trigger = {
+		ai = yes
+		OR = {
+			ai = HUN
+			ai = ROM
+			ai = BUL
+			ai = ITA
+		}
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = trigger which = 3003070 }
+		command = { type = province_revoltrisk which = 349 value = -50 }
+		command = { type = province_revoltrisk which = 346 value = -50 }
+		command = { type = province_revoltrisk which = 345 value = -50 }
+		command = { type = province_revoltrisk which = 344 value = -50 }
+		command = { type = province_revoltrisk which = 338 value = -50 }
+		command = { type = province_revoltrisk which = 352 value = -50 }
+		command = { type = province_revoltrisk which = 469 value = -50 }
+		command = { type = province_revoltrisk which = 353 value = -50 }
+		command = { type = province_revoltrisk which = 350 value = -50 }
+		command = { type = province_revoltrisk which = 355 value = -50 }
+		command = { type = province_revoltrisk which = 354 value = -50 }
+		command = { type = province_revoltrisk which = 356 value = -50 }
+		command = { type = province_revoltrisk which = 343 value = -50 }
+		command = { type = province_revoltrisk which = 332 value = -50 }
+		command = { type = province_revoltrisk which = 330 value = -50 }
+		command = { type = province_revoltrisk which = 342 value = -50 }
+		command = { type = province_revoltrisk which = 387 value = -50 }
+		command = { type = province_revoltrisk which = 329 value = -50 }
+		command = { type = province_revoltrisk which = 341 value = -50 }
+		command = { type = province_revoltrisk which = 336 value = -50 }
+		command = { type = province_revoltrisk which = 333 value = -50 }
+		command = { type = province_revoltrisk which = 328 value = -50 }
+		command = { type = province_revoltrisk which = 335 value = -50 }
+		command = { type = province_revoltrisk which = 327 value = -50 }
+		command = { type = province_revoltrisk which = 331 value = -50 }
+		command = { type = province_revoltrisk which = 334 value = -50 }		
+	}
+}
+################
+# Bulgaria takes advantage of Yugoslavias passiveness
+#############################################
+event = {
+	id = 3020017
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		OR = {
+			event = 3021010
+			AND = {
+				alliance = { country = GER country = ITA }
+				NOT = { ispuppet = YUG }
+				NOT = { atwar = YUG }
+				control = { province = 55 data = GER } # Paris
+				OR = {
+					NOT = { exists = GRE }
+					AND = {
+						NOT = { control = { province = 377 data = GRE } } # Athens
+						NOT = { control = { province = 371 data = GRE } }
+						NOT = { control = { province = 373 data = GRE } }
+						NOT = { control = { province = 372 data = GRE } }
+						NOT = { control = { province = 368 data = GRE } }
+						NOT = { control = { province = 375 data = GRE } }
+						NOT = { control = { province = 367 data = GRE } }
+						NOT = { control = { province = 366 data = GRE } }
+						NOT = { control = { province = 365 data = GRE } }
+						NOT = { control = { province = 364 data = GRE } }
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/BUL_Claims.ai" }
+	}
+}
+################
+# Bulgaria lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3020018
+	random = no 
+	country = BUL
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		OR = {
+			war = { country = GER country = YUG }
+			AND = {
+				war = { country = GER country = ROM }
+				NOT = { alliance = { country = SOV country = ROM } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+	}
+}
+################
+# Romania lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3023016
+	random = no 
+	country = ROM
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		OR = {
+			war = { country = GER country = HUN }
+			war = { country = GER country = SOV }
+			event = 2023003 # Claim Bessarabia
+			event = 2023005 # Vienna Diktat Denied by Germany
+			AND = {
+				owned = { province = 304 data = SOV }
+				owned = { province = 306 data = SOV }
+				owned = { province = 303 data = SOV }
+				owned = { province = 302 data = SOV }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+	}
+}
+################
+# Czechloslavakia joins the Axis
+#############################################
+event = {
+	id = 3025002
+	random = no 
+	country = CZE
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/CZE_Axis.ai" }
+	}
+}
+################
+# The Programers Republic
+#############################################
+event = {
+	id = 3190001
+	random = no 
+	country = U07
+	
+	name = "AI_EVENT"
+	style = 0	
+	
+	action_a = { 
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = ai which = "switch/U07.ai" }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = set_domestic which = freedom value = 1 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = interventionism value = 9 }
+     		command = { type = belligerence which = U07 value = 250 }
+      		command = { type = money value = 500000 }
+      		command = { type = manpowerpool value = 5000 }
+		command = { type = metalpool value = 500000 }
+		command = { type = oilpool value = 500000 }
+		command = { type = supplies value = 500000 }
+		command = { type = rarematerialspool value = 500000 }
+    	 	command = { type = set_domestic which = defense_lobby value = 9 }
+		command = { type = ground_def_eff value = 1.25 }
+    		command = { type = max_organization which = land value = 50 }
+		command = { type = morale which = land value = 50 }
+		command = { type = relative_manpower value = 10000 }
+		command = { type = industrial_modifier which = total value = 1000 }
+		command = { type = research_mod value = 1000 }
+		command = { type = construct which = ic where = 896 value = 100 }
+		command = { type = construct which = coastal_fort where = 896 value = 10 }
+		command = { type = construct which = land_fort where = 896 value = 10 }
+		command = { type = construct which = flak where = 896 value = 10 }
+		command = { type = construct which = air_base where = 896 value = 10 }
+		command = { type = construct which = naval_base where = 896 value = 10 }
+		command = { type = construct which = radar_station where = 896 value = 10 }
+		command = { type = construct which = infrastructure where = 896 value = 60 }
+		command = { type = construct which = rocket_test where = 896 value = 60 }
+		command = { trigger = { exists = GER } type = war which = GER }
+		command = { trigger = { exists = USA } type = war which = USA }
+		command = { trigger = { exists = ENG } type = war which = ENG }
+		command = { trigger = { exists = SOV } type = war which = SOV }
+		command = { trigger = { exists = JAP } type = war which = JAP }
+		command = { trigger = { exists = FRA } type = war which = FRA }
+		command = { trigger = { exists = POR } type = war which = POR }
+		command = { trigger = { exists = SPA } type = war which = SPA }
+		command = { trigger = { exists = SPR } type = war which = SPR }
+		command = { type = transport_pool which = U07 value = 1000 }
+		command = { type = escort_pool which = U07 value = 1000 }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = transport }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = carrier  }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = light_cruiser }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+		command = { type = add_division value = militia }
+	}
+}
+################
+# Sweden changes political stance
+#############################################
+event = {
+	id = 3009013
+	random = no 
+	country = SWE
+	
+	trigger = {
+		ai = yes
+		flag = anti_bolshevik_sweden
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 13 month = november year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Sweden joins Germany because of Winter War Campaign and GER DOW SOV
+#############################################
+event = {
+	id = 3009014
+	random = no 
+	country = SWE
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		flag = anti_bolshevik_sweden
+		war = { country = GER country = SOV }
+		NOT = { alliance = { country = SOV } }
+		NOT = { alliance = { country = ENG } }
+		NOT = { alliance = { country = ITA } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = TUR } }
+		atwar = no
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 13 month = november year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = alliance which = GER when = 1 }
+	}
+}
+################
+# Poland prepares for German invasion
+#############################################
+event = {
+	id = 3013012
+	random = no 
+	country = POL
+
+	trigger = {
+		ai = yes
+		NOT = { alliance = { country = GER country = POL } }
+		OR = {
+			war = { country = GER }
+			event = 2003015 # Annexation of CZE
+			event = 2003014 # CZE Refuses claim
+			event = 2003013 # CZE joins Axis
+			AND = {
+				event = 2003011 # Treaty of Munich
+				NOT = { event = 2025001  } # CZE response to Treaty of Munich
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = ai which = "switch/POL_Defense_GER.ai" }
+	}
+}
+################
+# Baltic States succumb to Soviet pressure
+#############################################
+event = {
+	id = 3029001
+	random = no 
+	persistent = yes
+	tag = { EST LIT LAT } 
+	
+	
+	trigger = {
+		ai = yes
+		NOT = { ispuppet = yes }
+		NOT = { local_flag = Balticclaims } 
+		event = 2003025 #The Molotov-Ribbentrop Pact - Historical Outcome
+		OR = {
+			war = { country = GER country = BEL }
+			war = { country = GER country = HOL }
+			war = { country = GER country = LUX }
+			control = { province = 55 data = GER } #Paris	
+			alliance = { country = GER country = FRA }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1940 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1942 }	
+
+	action_a = {
+		trigger = {
+			NOT = { country = LIT }
+		}
+		command = { type = ai which = "switch/Baltic_Claims.ai" }
+		command = { type = local_setflag which = Balticclaims }
+	}
+	action_b = {
+		trigger = {
+			country = LIT
+		}
+		command = { type = ai which = "switch/Baltic_Claims2.ai" }
+		command = { type = local_setflag which = Balticclaims }
+	}
+}
+
+############################
+# NEI joins the Allies
+############################
+event = {
+	id = 3009015
+	random = no	
+	country = U05
+	
+	trigger = {	
+		ai = yes
+		NOT = { ispuppet = U05 }
+		NOT = { alliance = { country = ENG } }
+		government = democratic
+		NOT = { ideology = { type = nazi country = ENG } }
+		OR = {
+			AND = {	
+				war = { country = ENG country = GER } 
+				war = { country = GER }
+			}
+			AND = {	
+				war = { country = ENG country = JAP } 
+				war = { country = JAP }
+			}
+			AND = {	
+				war = { country = ENG country = SOV } 
+				war = { country = SOV }
+			}
+		}
+	}
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+	name = "AI_EVENT"
+	
+	action_a = {
+		command = { type = alliance which = ENG when = 1 }
+	}
+}
+
+### RK Norwegen helper for stable fronts
+event = {
+	id = 3009016
+	random = no
+	country = U45
+
+	trigger = { 
+		ai = yes
+		ai = GER
+		alliance = { country = U45 country = GER }
+		event = { id = 9300496 } # GER  Quisling Coup
+	}
+
+	date = { day = 0 month = january year = 1939 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = 1000714name
+	desc = 1000714desc
+	style = 2
+	picture = "scandinavia"
+
+	action = {
+		name = 1000685a
+		command = { type = addcore which = 495 } #Narvik  
+		command = { type = addcore which = 494 } #Bodo
+		command = { type = addcore which = 493 } #Trondheim
+		command = { type = addcore which = 491 } #Alesund
+		command = { type = addcore which = 485 } #Kristiansand
+		command = { type = addcore which = 486 } #Honefoss
+		command = { type = addcore which = 488 } #Bergen
+		command = { type = addcore which = 217 } #Aalborg
+	}
+}

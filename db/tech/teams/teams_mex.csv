@@ -1,0 +1,28 @@
+MEX;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+170001;TNCA;T2200;4;1915;1947;aeronautics;avionics;bomber_design;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170002;COMESA;T2201;3;1900;2000;general_equipment;munitions;artillery;mechanics;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170003;PEMEX;T2202;4;1938;2000;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170004;Manuel Avila Camacho;T2203;5;1929;1946;large_unit_tactics;individual_courage;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170005;Compañía Metalúrgica Mexicana;T2204;5;1900;2000;industrial_engineering;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170006;Alberto Salinas Carranza;T2205;4;1933;2000;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170007;Enrique Estrada Reynoso;T2206;3;1910;1942;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170008;Gustavo Salinas Camina;T2207;4;1914;1964;fighter_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170009;Luis Hiram Toledo;T2209;2;1930;1943;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170011;National Autonomous University of Mexico;T2211;3;1910;2000;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170012;Manuel Mondragón;100409;4;1907;1952;general_equipment;artillery;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170013;Military Motor Service;100410;3;1905;2000;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170014;Arma de Aviacion Militar;100411;2;1915;2000;aeronautics;mechanics;aircraft_testing;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170015;Cemento Cruz Azul;100412;3;1900;2000;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170016;Álvaro Obregón;100413;7;1913;1928;centralized_execution;large_unit_tactics;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170017;Heroica Escuela Naval Militar;100414;2;1897;1971;large_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170018;Heroico Colegio Militar;100571;4;1890;2000;large_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170019;Victoriano Huerta;100416;3;1910;1916;centralized_execution;large_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170020;Emiliano Zapata ;100647;6;1910;1919;small_unit_tactics;infantry_focus;individual_courage;decentralized_execution;MANEUVER_TACTICS;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170021;Pancho Villa;100648;5;1910;1923;small_unit_tactics;infantry_focus;individual_courage;decentralized_execution;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170022;Universidad Nacional de Mexico;100580;5;1910;1964;mathematics;management;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170023;Fábrica Nacional de Armas;100572;3;1910;1964;industrial_engineering;chemistry;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170024;Juan Guillermo Villasana ;100573;3;1912;1930;aeronautics;avionics;bomber_design;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+170025;Alberto Salinas Carranza;100661;4;1915;1933;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1700250;Dirección Federal de Seguridad;T1700250;4;1947;1986;rt_user_2;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1700251;Dirección de Investigación y Seguridad Nacional;T1700250;5;1986;1989;rt_user_2;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1700252;Centro de Investigación y Seguridad Nacional;T1700252;6;1989;2000;rt_user_2;training;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

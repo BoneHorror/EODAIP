@@ -1,0 +1,505 @@
+####################################
+# Hungary AI events 
+####################################
+
+#############################################
+# Regular AI Events
+#	HUNAggressive	= Hungary is taking an offensive approach in the game to rebuild their empire
+#	HUNInvadeYUG	= Hungary is planning to invade Yugoslavia
+#	InvYugoslavia	= Prepare to invade Yugoslavia
+#############################################
+
+################
+# Hungary sends exp forces to Germany
+#############################################
+event = {
+	id = 3022012
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		alliance = { country = GER }
+		AND = {
+			war = { country = GER country = SOV }
+			war = { country = HUN country = SOV }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# Hungary takes advantage of Yugoslavias passiveness
+#############################################
+event = {
+	id = 3022014
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		NOT = { local_flag = HUNAggressive }
+		OR = {
+			event = 3021010
+			AND = {
+				alliance = { country = GER country = ITA }
+				NOT = { ispuppet = YUG }
+				NOT = { atwar = YUG }
+				control = { province = 55 data = GER } # Paris
+				OR = {
+					NOT = { exists = GRE }
+					AND = {
+						NOT = { area = { area = "Thrace" country = GRE value = 70 } }
+						NOT = { area = { area = "Attica" country = GRE value = 70 } }
+					}
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/HUN_Claims.ai" }
+	}
+}
+################
+# Hungary lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3022015
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		OR = {
+			event = 2023003 # Soviets claimed Bessarabia
+			event = 2023004 # Vienna Diktat
+			event = 2025003 # Germans gives Slovakia to Hungary
+			war = { country = GER country = YUG }
+			war = { country = GER country = SOV }
+			AND = {
+				war = { country = GER country = ROM }
+				NOT = { alliance = { country = SOV country = ROM } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+	}
+}
+################
+# Hungary becomes more aggressive
+#############################################
+event = {
+	id = 3022016
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { year = 1940 }
+		NOT = { atwar = GER }
+		owned = { province = 208 data = HUN }
+		owned = { province = 212 data = HUN }
+		owned = { province = 211 data = HUN }
+		owned = { province = 209 data = HUN }
+		owned = { province = 213 data = HUN }
+		owned = { province = 210 data = HUN }
+		owned = { province = 214 data = HUN }
+		owned = { province = 215 data = HUN }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = HUNAggressive }
+		command = { type = ai which = "switch/HUN_Aggressive.ai" }
+	}
+}
+################
+# Hungary invades Yugoslavia
+#############################################
+event = {
+	id = 3022017
+	random = no 
+	country = HUN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		exists = YUG
+		NOT = { local_flag = HUNInvadeYUG }
+		OR = {
+			AND = {
+				ai = yes
+				ai = GER
+				flag = InvYugoslavia
+				NOT = { war = { country = GER } }		
+				NOT = { war = { country = GER country = SOV } }
+				NOT = { war = { country = SOV } }
+			}
+			AND = {
+				atwar = no
+				NOT = { atwar = YUG }
+				OR = {
+					atwar = FRA
+					NOT = { guarantee = { country = FRA country = YUG } }
+				}
+				OR = {
+					atwar = ENG
+					NOT = { guarantee = { country = ENG country = YUG } }
+				}
+				OR = {
+					atwar = SOV
+					NOT = { guarantee = { country = SOV country = YUG } }
+				}
+				OR = {
+					atwar = TUR
+					NOT = { guarantee = { country = TUR country = YUG } }
+				}
+				OR = {
+					atwar = GER
+					NOT = { guarantee = { country = GER country = YUG } }
+				}
+				NOT = { alliance = { country = ITA country = YUG } }
+				NOT = { alliance = { country = GER country = YUG } }
+				NOT = { alliance = { country = ENG country = YUG } }
+				NOT = { alliance = { country = FRA country = YUG } }
+				NOT = { alliance = { country = SOV country = YUG } }
+				owned = { province = 341 data = YUG }
+				land_percentage = { country = YUG value = 0.9 }
+				local_flag = HUNAggressive
+				day = 2
+				NOT = { day = 3 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = local_setflag which = HUNInvadeYUG }
+		command = { type = ai which = "switch/HUN_Invade_YUG_Buildup.ai" }
+		command = { type = ai which = "switch/EXP_0.ai" }
+	}
+}
+event = {
+	id = 3022018
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			AND = {
+				local_flag = HUNInvadeYUG
+				NOT = { flag = InvYugoslavia }
+				NOT = { local_flag = HUNAggressive }
+			}
+			AND = {
+				local_flag = HUNAggressive
+				local_flag = HUNInvadeYUG
+				day = 1
+				NOT = { day = 2 }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = war which = YUG }
+		command = { type = local_clrflag which = HUNInvadeYUG }
+		command = { type = ai which = "switch/HUN_Invade_Release.ai" }
+		command = { type = ai which = "switch/EXP_50.ai" }
+		command = { type = sleepevent which = 3022017 }
+	}
+}
+################
+# Hungary invades Romania
+#############################################
+event = {
+	id = 3022019
+	random = no 
+	country = HUN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		exists = ROM
+		atwar = no
+		NOT = { atwar = ROM }
+		OR = {
+			atwar = FRA
+			NOT = { guarantee = { country = FRA country = ROM } }
+		}
+		OR = {
+			atwar = ENG
+			NOT = { guarantee = { country = ENG country = ROM } }
+		}
+		OR = {
+			atwar = SOV
+			NOT = { guarantee = { country = SOV country = ROM } }
+		}
+		OR = {
+			atwar = TUR
+			NOT = { guarantee = { country = TUR country = ROM } }
+		}
+		OR = {
+			atwar = GER
+			NOT = { guarantee = { country = GER country = ROM } }
+		}
+		OR = {
+			atwar = POL
+			NOT = { guarantee = { country = POL country = ROM } }		
+		}
+		OR = {
+			atwar = ITA
+			NOT = { guarantee = { country = ITA country = ROM } }
+		}
+		NOT = { alliance = { country = ITA country = YUG } }
+		NOT = { alliance = { country = GER country = YUG } }
+		NOT = { alliance = { country = ENG country = YUG } }
+		NOT = { alliance = { country = FRA country = YUG } }
+		NOT = { alliance = { country = SOV country = YUG } }
+		owned = { province = 292 data = ROM }
+		owned = { province = 293 data = ROM }
+		owned = { province = 296 data = ROM }
+		owned = { province = 288 data = ROM }
+		land_percentage = { country = ROM value = 0.9 }
+		local_flag = HUNAggressive
+		NOT = { local_flag = HUNInvadeYUG }
+		NOT = { local_flag = HUNInvadeROM }
+		day = 2
+		NOT = { day = 3 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = HUNInvadeROM }
+		command = { type = ai which = "switch/HUN_Invade_ROM_Buildup.ai" }
+	}
+}
+event = {
+	id = 3022020
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		local_flag = HUNAggressive
+		local_flag = HUNInvadeROM
+		day = 1
+		NOT = { day = 2 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = war which = ROM }
+		command = { type = local_clrflag which = HUNInvadeROM }
+		command = { type = ai which = "switch/HUN_Invade_Release.ai" }
+		command = { type = sleepevent which = 3022019 }
+	}
+}
+################
+# Hungary sends MORE exp forces to Germany
+#############################################
+event = {
+	id = 3022021
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		event = 3022012
+		alliance = { country = GER }
+		war = { country = GER country = SOV }
+		war = { country = SOV }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_80.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+
+#Hungary shift Garrisons to Soviet Border since yug is no threat.
+event = { 
+	id = 3022026
+	random = no 
+	country = HUN
+	
+	trigger = {
+		ai = yes
+		alliance = { country = GER }
+		OR = { 
+			NOT = { exists = YUG }
+			alliance = { country = YUG country = GER }
+			alliance = { country = YUG }
+			}
+		}
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }	
+		
+	action_a = {
+		command = { type = local_clrflag which = HUNInvadeROM }
+		command = { type = local_clrflag which = HUNInvadeYUG }
+		command = { type = ai which = "switch/HUN_Invade_Release.ai" }
+	}
+}
+#### Build queue towards 1939 for ROM/HUN Note - (...) 2027 used for ministers
+event = {
+	id = 3022028
+	random = no
+	country = HUN
+
+	trigger = {
+		ai = yes
+		manpower = 75
+		technology = 6900
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = HUN
+				alliance = { country = HUN country = SOV }
+				alliance = { country = HUN country = ENG }
+				alliance = { country = HUN country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { type = build_division which = armor }
+		command = { type = build_division which = hq value = anti_air }
+		command = { type = build_division which = interceptor }
+		command = { type = build_division which = cas }
+		command = { type = build_division which = strategic_bomber }
+		command = { type = build_division which = bergsjaeger }
+		command = { type = build_division which = infantry value = artillery when = 2 }
+		command = { type = build_division which = infantry }
+	}
+}
+event = {
+	id = 3022029
+	random = no
+	country = HUN
+
+	trigger = {
+		ai = yes
+		technology = 6900
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = HUN
+				alliance = { country = HUN country = SOV }
+				alliance = { country = HUN country = ENG }
+				alliance = { country = HUN country = USA }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = SOV } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = SOV } type = manpowerpool value = 100 }
+	}
+}

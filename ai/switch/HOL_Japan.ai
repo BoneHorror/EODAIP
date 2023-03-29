@@ -1,0 +1,18 @@
+# Netherlands West Indies
+
+construction = { 
+	max_factor = 0.00 
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.5
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 5
+
+	province_priorities = {
+		1647 = 15 #Batavia
+		1638 = 10 #Bengkoelen
+		1653 = 10 #Sorobaja
+		1659 = 10 #Manado
+	}
+}

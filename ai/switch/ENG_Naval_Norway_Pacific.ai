@@ -1,0 +1,52 @@
+# England avoids English channel port attacks and invades Norway
+
+admiral = { 
+target = { 
+		2671 = 300 #Protect Narvik
+		2689 = 300 #Protect Alesund
+		2559 = 200 #Borneo
+		2528 = 600 #Singapore
+	} 
+	core = {
+		#British coast
+     	2682 #Norwich
+     	2700 #North Channel
+     	
+		#Pacific
+		2540 #Above NEI - Risky but let's use for Pacific
+		2559 #Brunei
+		2528 #Singapore
+	
+		#Norwegia
+		2671 #Narvik
+		2689 #Alesund
+		
+		#Mediterranean
+		#2176 #Suez
+		2181 #Malta
+	}
+	ignore = {
+		"Southeast Northsea"
+		"kattegat"
+		"Bothnian Bay"
+		"northern baltic"
+		"southern baltic"
+
+		#Central Mediterranean
+		"Adriatic Sea"
+		"Tyrrhenian Sea"
+
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		
+		#England/France border Sea Areas
+		"English Channel"
+		"Bay of Biscay"
+	}
+}

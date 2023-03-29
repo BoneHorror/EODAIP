@@ -1,0 +1,171 @@
+# Italy Reset Garrison after Ethiopia AI File by Lothos
+
+desperation = 0.10 #Start spamming MIL once we lose 10% of our IC - basically whenever we're invaded
+  
+combat = { 
+	FRA = 80
+	ENG = 160
+	EGY = 80
+	GRE = 80 
+	USA = 50
+}
+target = { 
+	825 = 50 # Adis Adeba
+	429 = 50 # Malta
+	789 = 50 # Alexandria
+ 	87 = 60 # Nice 
+	900 = 40 # Suez
+}  
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+leader_ratio = {
+	land_general 		=0.07
+	land_lt_general 	=0.42
+
+	sea_admiral 		=0.9
+	sea_vice_admiral 	=0.35
+
+	air_marshal 		=0.03
+}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.70
+	overseas_multiplier = 0.90
+	home_peace_cap 		= 15
+	war_zone_odds 		= 1.5
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 40	# Beach level 2
+	capital			= 40	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 20
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 10
+		CSX = 10
+		SIK = 10
+		CXB = 10
+		CYN = 10
+		CGX = 10
+		CHC = 10
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 10
+		POR = -1
+		ENG = 30
+		GRE = 10
+		FRA = 10
+		U05 = 10
+		USA = 50
+		AST = 10
+		NZL = 10
+		U01 = 5
+		U02 = 10
+	}
+	ignore = {
+		#Greece
+		381 #Ermoupoli - AI stacks 40 divs there for no reason
+		
+		#Libya
+		773   #Al Jaghbun
+		754   #Aujila
+		774  #Calanslo
+		751   #Ghadames
+		755   #Sorno
+		770 
+		779 
+			
+		#Belgian Congo
+		904  #Stanleyville 
+		903  #Buta 
+		905  #Costermanville 
+		906  #Coquihatville 
+		898  #Abertville 
+		902  #Kindu-Port-Empain 
+		901  #Leopoldville 
+	}
+	province_priorities = {
+		434  = 10  #Sardinia
+		379  = 10  #Rhodes
+		
+		# North Africa
+		752  = 10 #Az Zawiyah
+		750  = 10 #Tripoli
+		761  = 10 #Benghazi
+		771  = 10 #Bardia
+		769  = 20 #Bir Hakeim
+		770  = 20 #Al Jaghbub
+	}
+	area_multiplier = {
+		#More priority for provinces threatened by Op Husky
+		431 = 1.2 #Messina - Sicily
+		425 = 1.2 #Reggio Calabria
+		421 = 1.1 #Neaples
+		
+		# North Africa
+		769  = 1.5 # Az Zawiyah - Magdalena
+		752  = 1.5 # Wadi al Hamim - Interior Libya
+		765  = 1.7 #Tobruk - Tobruk
+		
+		#Low Prio
+		921   = 0.1  #bad african desert
+		808   = 0.1	 #bad african desert
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 7
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.10
+	min_attack_odds		= 1.01
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.01
+	withdraw_odds		= 0.55
+	support_defense_prop 	= 0.3
+	province_priorities = {
+		425 = 1.50  #Reggio Calabra
+		431  = 1.30  #Messina
+		
+		# North Africa
+		752  = 1.20 #Az Zawiyah
+		750  = 1.20 #Tripoli
+		761  = 1.30 #Benghazi
+		771  = 1.20 #Bardia
+		769  = 1.20 #Bir Hakeim
+		770  = 1.20 #Al Jaghbub
+		765  = 1.30 #Tobruk
+	}
+   	enemy_handicap = { 
+	U01 = 30
+	ENG = 10
+	} 
+    passivity = {
+		SOV = 30
+		FRA = 50
+		AST = 50
+		ENG = 50
+		USA = 10
+		GRE = 10
+		U01 = 80
+	}  
+} 

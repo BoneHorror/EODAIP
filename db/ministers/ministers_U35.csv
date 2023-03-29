@@ -1,0 +1,134 @@
+U35;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+990001;Chief of Air Force;Ignacio Hidalgo de Cisneros;1933;1964;1999;LWR;Air Superiority Doctrine;High;M11030;X
+990002;Chief of Air Force;Pedro Fernández Checa;1938;1964;1999;ST;Army Aviation Doctrine;Medium;M11299;X
+990003;Chief of Air Force;Vicente Uribe Galdeano;1938;1964;1999;ST;Vertical Envelopment Doctrine;Medium;M11114;X
+990004;Chief of Air Force;Juan López Sánchez;1933;1964;1999;LE;Army Aviation Doctrine;Medium;M11119;X
+990005;Chief of Air Force;Juan Peiró Belis;1937;1964;1999;LE;Carpet Bombing Doctrine;Medium;M11123;X
+990006;Chief of Air Force;Ventura Gassol Rovíra;1939;1964;1999;LE;Vertical Envelopment Doctrine;Medium;M11326;X
+990007;Chief of Air Force;Mariano Vázquez Rodríguez;1943;1964;1999;LE;Air Superiority Doctrine;Very High;M11206;X
+990008;Chief of Air Force;Trifon Gómez San José;1937;1964;1999;LWR;Vertical Envelopment Doctrine;High;M11329;X
+990009;Chief of Air Force;Indalecio Prieto Tuero;1943;1964;1999;LWR;Army Aviation Doctrine;High;M11331;X
+990010;Chief of Army;Manuel Tagüeña Lacorte;1933;1964;1999;ST;Elastic Defence Doctrine;Very High;M11266;X
+990011;Chief of Army;Enrique Líster Forján;1937;1964;1999;ST;Decisive Battle Doctrine;Very High;M11028;X
+990012;Chief of Army;Juan Modesto Guilloto;1938;1964;1999;ST;Guns and Butter Doctrine;Very High;M11237;X
+990013;Chief of Army;Antonio Cordón García;1938;1964;1999;ST;Static Defence Doctrine;Very High;M11238;X
+990014;Chief of Army;Etelvino Vega Martínez;1939;1964;1999;ST;Armoured Spearhead Doctrine;Medium;M11116;X
+990015;Chief of Army;Cipriano Mera Sanz;1933;1964;1999;LE;Static Defence Doctrine;Medium;M11244;X
+990016;Chief of Army;Vicente Guarner Vivancos;1937;1964;1999;LE;Elastic Defence Doctrine;High;M11241;X
+990017;Chief of Army;Miguel García Vivancos;1938;1964;1999;LE;Armoured Spearhead Doctrine;High;M11242;X
+990018;Chief of Army;Francisco Ascaso Budría;1941;1964;1999;LE;Guns and Butter Doctrine;High;M11243;X
+990019;Chief of Army;Buenaventura Durruti Dumange;1943;1964;1999;LE;Decisive Battle Doctrine;Medium;M11245;X
+990020;Chief of Army;Juan Hernández Sarabia;1933;1964;1999;LWR;Guns and Butter Doctrine;High;7385;X
+990021;Chief of Army;Vicente Rojo Lluch;1937;1964;1999;LWR;Decisive Battle Doctrine;Very High;M11247;X
+990022;Chief of Army;Gustavo Durán Martínez;1938;1964;1999;LWR;Armoured Spearhead Doctrine;High;M11211;X
+990023;Chief of Army;Arturo Mena Roig;1940;1964;1999;LWR;Elastic Defence Doctrine;Very High;M11249;X
+990024;Chief of Army;Juan Perea Capulino;1940;1964;1999;LWR;Static Defence Doctrine;High;M11250;X
+990025;Chief of Navy;Vicente Uribe Galdeano;1933;1964;1999;ST;Base Control Doctrine;Medium;M11114;X
+990026;Chief of Navy;Pedro Fernández Checa;1938;1964;1999;ST;Decisive Naval Battle Doctrine;Medium;M11299;X
+990027;Chief of Navy;Francisco Galán Rodríguez;1938;1964;1999;ST;Open Seas Doctrine;Medium;M11029;X
+990028;Chief of Navy;Pedro Prado Mendizábal;1939;1964;1999;ST;Indirect Approach Doctrine;Medium;M11301;X
+990029;Chief of Navy;Juan Peiró Belis;1933;1964;1999;LE;Base Control Doctrine;Medium;M11123;X
+990030;Chief of Navy;Juan López Sánchez;1937;1964;1999;LE;Indirect Approach Doctrine;Medium;M11119;X
+990031;Chief of Navy;Bruno Alonso;1933;1964;1999;LWR;Base Control Doctrine;High;M11304;X
+990032;Chief of Navy;Joaquín Julio Maurín;1937;1964;1999;LWR;Power Projection Doctrine;High;M11305;X
+990033;Chief of Navy;Luís González Ubieta;1938;1964;1999;LWR;Indirect Approach Doctrine;High;M11306;X
+990034;Chief of Navy;Indalecio Prieto Tuero;1939;1964;1999;LWR;Open Seas Doctrine;High;M11307;X
+990035;Chief of Navy;Andres Saborit Colomer;1940;1964;1999;LWR;Decisive Naval Battle Doctrine;High;M11308;X
+990036;Chief of Staff;Frank Ryan;1933;1964;1999;ST;School of Mass Combat;Very High;M11234;X
+990037;Chief of Staff;Emilio Kléber;1937;1964;1999;ST;School of Defence;Very High;M11235;X
+990038;Chief of Staff;Enrique Líster Forján;1938;1964;1999;ST;School of Psychology;Very High;M11236;X
+990039;Chief of Staff;Juan Modesto Guilloto;1938;1964;1999;ST;School of Mass Combat;Very High;M11237;X
+990040;Chief of Staff;Antonio Cordón García;1938;1964;1999;ST;School of Defence;Very High;M11238;X
+990041;Chief of Staff;Manuel Tagüeña Lacorte;1939;1964;1999;ST;School of Manoeuvre;Very High;M11027;X
+990042;Chief of Staff;Francisco Galán Rodríguez;1939;1964;1999;ST;School of Fire Support;Very High;M11240;X
+990043;Chief of Staff;Vicente Guarner Vivancos;1933;1964;1999;LE;School of Fire Support;High;M11241;X
+990044;Chief of Staff;Miguel García Vivancos;1937;1964;1999;LE;School of Manoeuvre;High;M11242;X
+990045;Chief of Staff;Francisco Ascaso Budría;1938;1964;1999;LE;School of Mass Combat;High;M11243;X
+990046;Chief of Staff;Cipriano Mera Sanz;1941;1964;1999;LE;School of Psychology;Medium;M11244;X
+990047;Chief of Staff;Buenaventura Durruti Dumange;1943;1964;1999;LE;School of Defence;Medium;M11245;X
+990048;Chief of Staff;Gustavo Durán Martínez;1933;1964;1999;LWR;School of Psychology;High;M11211;X
+990049;Chief of Staff;Vicente Rojo Lluch;1937;1964;1999;LWR;School of Manoeuvre;Very High;M11247;X
+990050;Chief of Staff;Juan Hernández Sarabia;1938;1964;1999;LWR;School of Fire Support;High;7385;X
+990051;Chief of Staff;Arturo Mena Roig;1938;1964;1999;LWR;School of Mass Combat;Very High;M11249;X
+990052;Chief of Staff;Juan Perea Capulino;1939;1964;1999;LWR;School of Defence;High;M11250;X
+990053;Foreign Minister;Jesús Hernández y Tomás;1933;1964;1999;ST;Ideological Crusader;High;M11023;X
+990054;Foreign Minister;Dolores Ibáurri Gómez;1937;1964;1999;ST;Iron Fisted Brute;High;M11049;X
+990055;Foreign Minister;Margarita Nelken;1939;1964;1999;ST;Biased Intellectual;Medium;M11077;X
+990056;Foreign Minister;Julio Álvarez del Vayo;1940;1964;1999;ST;Ideological Crusader;High;M11078;X
+990057;Foreign Minister;Santiago Carrillo Solares;1944;1964;1999;ST;The Cloak N Dagger Schemer;Very High;M11059;X
+990058;Foreign Minister;Andreu Nin i Pérez;1933;1964;1999;LE;The Cloak N Dagger Schemer;High;M11080;X
+990059;Foreign Minister;Joaquin Maurín Juliá;1937;1964;1999;LE;Ideological Crusader;High;M11081;X
+990060;Foreign Minister;Eduardo de Guzmán;1938;1964;1999;LE;Great Compromiser;High;M11082;X
+990061;Foreign Minister;José Peirats;1939;1964;1999;LE;Apologetic Clerk;High;M11083;X
+990062;Foreign Minister;Diego Abad de Santillán;1940;1964;1999;LE;Biased Intellectual;High;M11084;X
+990063;Foreign Minister;Fernando de los Ríos Urruti;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M11085;X
+990064;Foreign Minister;Victoria Kent;1938;1964;1999;LWR;Great Compromiser;High;M11086;X
+990065;Foreign Minister;Julián Besteiro Fernández;1939;1964;1999;LWR;Apologetic Clerk;High;M11044;X
+990066;Foreign Minister;Alvaro de Albornoz Liminiana;1940;1964;1999;LWR;Biased Intellectual;Medium;M11045;X
+990067;Foreign Minister;Julio Álvarez del Vayo;1938;1964;1999;LWR;Ideological Crusader;High;M11078;X
+990068;Head of Government;José Díaz Ramos;1933;1964;1999;ST;Ambitious Union Boss;High;M11021;X
+990069;Head of Government;Santiago Carrillo Solares;1942;1964;1999;ST;Political Protege;High;M11059;X
+990070;Head of Government;Juan Negrín López;1937;1964;1999;LWR;Naive Optimist;High;8139;X
+990071;Head of Government;Joaquín Ascaso Budriá;1938;1964;1999;LE;Happy Amateur;High;M11061;X
+990072;Head of Government;Francisco Largo Caballero;1933;1964;1999;LWR;Smiling Oilman;High;M11039;X
+990073;Head of Government;Luis Jiménez de Asúa;1939;1964;1999;LWR;Ambitious Union Boss;High;M11063;X
+990074;Head of Military Intelligence;Rafael Videlia Rubio;1933;1964;1999;ST;Industrial Specialist;Medium;M11200;X
+990075;Head of Military Intelligence;Jesús Hernández y Tomás;1938;1964;1999;ST;Technical Specialist;High;M11023;X
+990076;Head of Military Intelligence;Santiago Carrillo Solares;1940;1964;1999;ST;Political Specialist;Medium;M11202;X
+990077;Head of Military Intelligence;Daniel Ortega Martínez;1941;1964;1999;ST;Logistics Specialist;High;M11203;X
+990078;Head of Military Intelligence;Juan Comorera y Soler;1945;1964;1999;ST;Dismal Enigma;Medium;M11204;X
+990079;Head of Military Intelligence;Federica Monsteny Mané;1933;1964;1999;LE;Technical Specialist;Medium;M11124;X
+990080;Head of Military Intelligence;Mariano Vázquez Rodríguez;1937;1964;1999;LE;Dismal Enigma;Very High;M11206;X
+990081;Head of Military Intelligence;Juan López Sánchez;1938;1964;1999;LE;Industrial Specialist;Medium;M11119;X
+990082;Head of Military Intelligence;Ángel Pestaña;1941;1964;1999;LE;Political Specialist;Low;M11208;X
+990083;Head of Military Intelligence;Julian Gorkin Gómez García;1943;1964;1999;LE;Naval Intelligence Specialist;Medium;M11209;X
+990084;Head of Military Intelligence;Ricardo Sanz García;1945;1964;1999;LE;Logistics Specialist;Medium;M11210;X
+990085;Head of Military Intelligence;Gustavo Durán Martínez;1933;1964;1999;LWR;Logistics Specialist;High;M11211;X
+990086;Head of Military Intelligence;Felix Gordón Ordás;1939;1964;1999;LWR;Industrial Specialist;High;M11132;X
+990087;Head of Military Intelligence;Juan Hernández Sarabia;1941;1964;1999;LWR;Technical Specialist;Medium;7385;X
+990088;Head of Military Intelligence;Alvaro de Albornoz Liminiana;1943;1964;1999;LWR;Dismal Enigma;Medium;M11038;X
+990089;Head of State;Álvaro de Albornoz Liminiana;1938;1964;1999;LWR;Powerhungry Demagogue;High;M11038;X
+990090;Head of State;Comité Central de la CNT-FAI;1938;1964;1999;LE;Insignificant Layman;High;M11040;X
+990091;Head of State;José Díaz Ramos;1939;1964;1999;ST;Barking Buffoon;High;M11021;X
+990092;Head of State;Julián Besteiro Fernández;1945;1964;1999;LWR;Insignificant Layman;High;M11044;X
+990093;Head of State;Juan Negrín López;1933;1964;1999;LWR;Die-hard Reformer;High;7998;X
+990094;Head of State;Dolores Ibáurri Gómez;1942;1964;1999;ST;Ruthless Powermonger;High;M11049;X
+990095;Minister of Armament;Vicente Uribe Galdeano;1933;1964;1999;ST;Administrative Genius;Very High;M11114;X
+990096;Minister of Armament;Juan Comorera y Soler;1938;1964;1999;ST;Resource Industrialist;Medium;M11026;X
+990097;Minister of Armament;Etelvino Vega Martínez;1939;1964;1999;ST;Tank Proponent;Medium;M11116;X
+990098;Minister of Armament;Enrique Castro Delgado;1941;1964;1999;ST;Infantry Proponent;High;M11024;X
+990099;Minister of Armament;Jesús Hernández y Tomás;1944;1964;1999;ST;Theoretical Scientist;High;M11118;X
+990100;Minister of Armament;Juan López Sánchez;1933;1964;1999;LE;Resource Industrialist;Medium;M11119;X
+990101;Minister of Armament;Ángel Pestaña;1937;1964;1999;LE;Air to Ground Proponent;High;M11120;X
+990102;Minister of Armament;Joaquin Maurín Juliá;1938;1964;1999;LE;Tank Proponent;High;M11081;X
+990103;Minister of Armament;Joaquín Ascaso Budriá;1939;1964;1999;LE;Military Entrepreneur;Very High;M11061;X
+990104;Minister of Armament;Juan Peiró Belis;1942;1964;1999;LE;Administrative Genius;Medium;M11123;X
+990105;Minister of Armament;Federica Monsteny Mané;1943;1964;1999;LE;Theoretical Scientist;Medium;M11124;X
+990106;Minister of Armament;Ricardo Sanz García;1944;1964;1999;LE;Infantry Proponent;Medium;M11125;X
+990107;Minister of Armament;Indalencio Prieto Tuero;1933;1964;1999;LWR;Military Entrepreneur;High;M11126;X
+990108;Minister of Armament;Belamino Tomás Álvarez;1938;1964;1999;LWR;Resource Industrialist;High;M11127;X
+990109;Minister of Armament;Fernando de los Ríos Urruti;1939;1964;1999;LWR;Strategic Air Proponent;High;M11128;X
+990110;Minister of Armament;Juan Negrín López;1940;1964;1999;LWR;Administrative Genius;High;7998;X
+990111;Minister of Armament;Francisco Largo Caballero;1941;1964;1999;LWR;Resource Industrialist;High;M11039;X
+990112;Minister of Armament;Felix Gordón Ordás;1943;1964;1999;LWR;laissez-faire capitalist;High;M11132;X
+990113;Minister of Armament;Todolfo Llopis Férrandiz;1944;1964;1999;LWR;Infantry Proponent;High;M11133;X
+990114;Minister of Security;Vicente Uribe Galdeano;1933;1964;1999;ST;Man of the People;Very High;M11114;X
+990115;Minister of Security;Dolores Ibáurri Gómez;1937;1964;1999;ST;Efficient Sociopath;High;M11162;X
+990116;Minister of Security;Valentín González González;1938;1964;1999;ST;Back Stabber;Medium;M11163;X
+990117;Minister of Security;Margarita Nelken;1938;1964;1999;ST;Compassionate Gentleman;Medium;M11077;X
+990118;Minister of Security;José Díaz Ramos;1939;1964;1999;ST;Man of the People;High;M11021;X
+990119;Minister of Security;Antonio Mije;1941;1964;1999;ST;Prince of Terror;Medium;M11166;X
+990120;Minister of Security;Joaquín Grimau García;1942;1964;1999;ST;Efficient Sociopath;High;M11167;X
+990121;Minister of Security;Santiago Carrillo Solares;1942;1964;1999;ST;Prince of Terror;Very High;M11059;X
+990122;Minister of Security;José Expósito Leiva;1933;1964;1999;LE;Silent Lawyer;Medium;M11169;X
+990123;Minister of Security;Melchor Rodríguez de Galdeano;1937;1964;1999;LE;Crime Fighter;High;M11170;X
+990124;Minister of Security;Andreu Nin i Pérez;1937;1964;1999;LE;Compassionate Gentleman;High;M11080;X
+990125;Minister of Security;Eduardo de Guzmán;1938;1964;1999;LE;Silent Lawyer;High;M11082;X
+990126;Minister of Security;Juan García Oliver;1942;1964;1999;LE;Man of the People;High;M11174;X
+990127;Minister of Security;Buenaventura Durruti Dumange;1945;1964;1999;LE;Prince of Terror;High;M11175;X
+990128;Minister of Security;Julián Zugazagoitia Mendieta;1933;1964;1999;LWR;Compassionate Gentleman;High;M11176;X
+990129;Minister of Security;Ángel Galarza y Gago;1933;1964;1999;LWR;Prince of Terror;High;M11177;X
+990130;Minister of Security;Antonio Ortega Gutiérrez;1937;1964;1999;LWR;Efficient Sociopath;High;M11178;X
+990131;Minister of Security;Ramon Gonzalez Peña;1938;1964;1999;LWR;Crime Fighter;Medium;M11179;X
+990132;Minister of Security;Victoria Kent;1940;1964;1999;LWR;Man of the People;High;M11086;X
+990133;Minister of Security;Wenceslao Carrillo Forjador;1941;1964;1999;LWR;Man of the People;Medium;M11181;X

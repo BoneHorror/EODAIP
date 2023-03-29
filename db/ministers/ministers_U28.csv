@@ -1,0 +1,39 @@
+U28;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+955001;Head of State;Omer Nishani;1933;1964;1999;ST;Resigned Generalissimo;High;M32032;X
+955002;Head of State;Sejfulla Malëshova;1945;1964;1999;ST;Popular Figurehead;High;M32050;X
+955003;Head of State;Enver Hoxha;1945;1964;1999;ST;Ruthless Powermonger;High;M32051;X
+955004;Head of Government;Omer Nishani;1933;1964;1999;ST;Silent Workhorse;High;M32032;X
+955005;Head of Government;Sejfulla Malëshova;1942;1964;1999;ST;Naive Optimist;High;M32050;X
+955006;Head of Government;Enver Hoxha;1944;1964;1999;ST;Local tyrant;High;M32051;X
+955007;Foreign Minister;Omer Nishani;1933;1964;1999;ST;Ideological Crusader;Undying;M32032;X
+955008;Foreign Minister;Hassan Shqabi;1942;1964;1999;ST;Iron Fisted Brute;High;M32077;X
+955009;Foreign Minister;Essad Pacha;1870;1964;1999;ST;Apologetic Clerk;Medium;M32036;X
+955010;Minister of Armament;Essad Pacha;1870;1964;1999;ST;Corrupt Kleptocrat;Medium;M32036;X
+955011;Minister of Armament;Enver Hoxha;1942;1964;1999;ST;Infantry Proponent;Very High;M32097;X
+955012;Minister of Armament;Nano Xhana;1943;1964;1999;ST;Air to Sea Proponent;Low;M32098;X
+955013;Minister of Armament;Sejfulla Malëshova;1944;1964;1999;ST;Submarine Proponent;Low;M32050;X
+955014;Minister of Security;Pandi Kristo;1933;1964;1999;ST;Prince of Terror;Medium;M32035;X
+955015;Minister of Security;Hassan Shqabi;1941;1964;1999;ST;Compassionate Gentleman;High;M32077;X
+955016;Minister of Security;Haxhi Lleshi;1942;1964;1999;ST;Efficient Sociopath;Medium;M32014;X
+955017;Minister of Security;Zuhdi Shabani;1943;1964;1999;ST;Crime Fighter;Low;M32121;X
+955018;Minister of Security;Aziz Sulejmani;1944;1964;1999;ST;Crooked Kleptocrat;Low;M32040;X
+955019;Minister of Security;Hajrë Fetahu;1945;1964;1999;ST;Man of the People;Very High;M32039;X
+955020;Head of Military Intelligence;Zuhdi Shabani;1933;1964;1999;ST;Political Specialist;Low;M32121;X
+955021;Head of Military Intelligence;Abaz Kupi;1942;1964;1999;ST;Industrial Specialist;Medium;M32129;X
+955022;Head of Military Intelligence;Jup Kazazi;1944;1964;1999;ST;Naval Intelligence Specialist;Low;M32015;X
+955023;Head of Military Intelligence;Nano Xhana;1945;1964;1999;ST;Logistics Specialist;Low;M32098;X
+955024;Chief of Staff;Mehmet Shehu;1933;1964;1999;ST;School of Mass Combat;Very High;M32017;X
+955025;Chief of Staff;Zuhdi Shabani;1942;1964;1999;ST;School of Manoeuvre;Low;M32121;X
+955026;Chief of Staff;Prenk Pervizi;1944;1964;1999;ST;School of Fire Support;Very High;M32156;X
+955027;Chief of Army;Mehmet Shehu;1933;1964;1999;ST;Guns and Butter Doctrine;Very High;M32017;X
+955028;Chief of Army;Hassan Shqabi;1942;1964;1999;ST;Decisive Battle Doctrine;High;M32077;X
+955029;Chief of Army;Prenk Pervizi;1944;1964;1999;ST;Elastic Defence Doctrine;Very High;M32156;X
+955030;Chief of Army;Aziz Sulejmani;1945;1964;1999;ST;Armoured Spearhead Doctrine;Low;M32040;X
+955031;Chief of Navy;Hajrë Fetahu;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Very High;M32039;X
+955032;Chief of Navy;Enver Hoxha;1942;1964;1999;ST;Open Seas Doctrine;Medium;M32034;X
+955033;Chief of Navy;Halil Nergutti;1944;1964;1999;ST;Power Projection Doctrine;Medium;M32109;X
+955034;Chief of Air Force;Aziz Sulejmani;1933;1964;1999;ST;Vertical Envelopment Doctrine;Low;M32040;X
+955035;Chief of Air Force;Enver Hoxha;1942;1964;1999;ST;Carpet Bombing Doctrine;Medium;M32034;X
+955036;Chief of Air Force;Hajrë Fetahu;1943;1964;1999;ST;Air Superiority Doctrine;Very High;M32039;X
+955037;Chief of Air Force;Prenk Pervizi;1944;1964;1999;ST;Naval Aviation Doctrine;Very High;M32156;X
+955038;Chief of Air Force;Zuhdi Shabani;1945;1964;1999;ST;Army Aviation Doctrine;Low;M32121;X

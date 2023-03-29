@@ -1,0 +1,23 @@
+combat = { 
+	U57 = 100 
+}
+resistance = {  
+	U57 = 3
+	USA = 1
+	GER = 2 
+	ITA = 1
+}
+befriend = { U59 = 100 }
+protect = { U59 = 100 }
+trade = {
+	favored = { U59 = 100 }
+}
+tech_sharing = {
+	favored = { U59 = 100 }
+}
+garrison = {
+	country_priorities = {
+		USA = 1 #to capture supplies
+		U57 = 50
+	}
+}

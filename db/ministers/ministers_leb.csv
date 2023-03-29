@@ -1,0 +1,82 @@
+LEB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+375001;Head of State;Emile Eddeh;1933;1964;1999;SL;Pig-headed Isolationist;High;M529001;X
+375002;Head of Government;Ayoub Thabet;1933;1964;1999;SL;Old General;High;M529002;X
+375003;Foreign Minister;Abdallah Aref al-Yafi;1940;1964;1999;SL;General Staffer;High;M529003;X
+375004;Minister of Armament;Alfred Nacchache;1933;1964;1999;SL;Air to Ground Proponent;Medium;M529004;X
+375005;Minister of Security;Khaled Chehab;1940;1964;1999;SL;Prince of Terror;Medium;M529005;X
+375006;Head of Military Intelligence;Kayreddin al-Ahdab;1933;1964;1999;SL;Technical Specialist;Medium;M529006;X
+375007;Chief of Staff;Adrien Peltier;1933;1964;1999;SL;School of Manoeuvre;Medium;M529007;X
+375008;Chief of Army;Alfred Cazaud;1933;1964;1999;SL;Decisive Battle Doctrine;Medium;M529008;X
+375009;Chief of Navy;Achille Peretti;1933;1964;1999;SL;Power Projection Doctrine;Medium;M529009;X
+375010;Chief of Air Force;Henri Soulat;1933;1964;1999;SL;Naval Aviation Doctrine;Medium;M529010;X
+375011;Head of State;Alfred Nacchache;1940;1964;1999;SC;Autocratic Charmer;High;M529004;X
+375012;Head of State;Saader al-Munla;1943;1964;1999;SL;Ruthless Powermonger;High;M529012;X
+375013;Head of State;Bachara al-Khoury;1933;1964;1999;SC;Barking Buffoon;High;M529013;X
+375014;Head of State;Charles Debbas;1933;1964;1999;PA;Die-hard Reformer;High;M529014;X
+375015;Head of Government;Kayreddin al-Ahdab;1937;1964;1999;SL;Naive Optimist;High;M529006;X
+375016;Head of Government;Khaled Chehab;1940;1964;1999;ML;Political Protege;High;M529005;X
+375017;Head of Government;Abdallah Aref al-Yafi;1938;1964;1999;ML;Old Admiral;High;M529003;X
+375018;Head of Government;Abdullah Bayum;1933;1964;1999;SL;Silent Workhorse;High;M529018;X
+375019;Head of Government;Alfred Nacchache;1941;1964;1999;SL;Ambitious Union Boss;High;M529004;X
+375020;Head of Government;Ahmed Daoud;1941;1964;1999;SL;Corporate Suit;High;M529020;X
+375021;Head of Government;Sami as-Solh;1942;1964;1999;SL;Happy Amateur;High;M529021;X
+375022;Head of Government;Petro Trad;1943;1964;1999;SL;Smiling Oilman;High;M529022;X
+375023;Head of Government;Riad as-Solh;1943;1964;1999;SC;Silent Workhorse;High;M529023;X
+375024;Head of Government;Abdul Hamid Karami;1945;1964;1999;SC;Flamboyant Tough Guy;High;M529024;X
+375025;Head of Government;Sami as-Solh;1945;1964;1999;SC;Corporate Suit;High;M529021;X
+375026;Head of Government;Saader al-Munla;1946;1964;1999;SC;Naive Optimist;High;M529012;X
+375027;Head of Government;Riad as-Solh;1946;1964;1999;SC;Backroom Backstabber;High;M529023;X
+375028;Head of Government;Habib Basha el-Saed;1933;1964;1999;PA;Political Protege;High;M529028;X
+375029;Foreign Minister;Abdelkrim al-Khattabi;1941;1964;1999;SL;The Cloak N Dagger Schemer;High;M529029;X
+375030;Foreign Minister;Sami as-Solh;1946;1964;1999;SL;Ideological Crusader;High;M529021;X
+375031;Foreign Minister;Abdullah Bayum;1933;1964;1999;SC;Apologetic Clerk;High;M529018;X
+375032;Foreign Minister;Jacques Baumel;1940;1964;1999;SC;Iron Fisted Brute;High;M529032;X
+375033;Foreign Minister;Majid Arslane;1944;1964;1999;SC;The Cloak N Dagger Schemer;High;M529033;X
+375034;Foreign Minister;Emile Eddeh;1933;1964;1999;PA;Ideological Crusader;High;M529001;X
+375035;Minister of Armament;Riad as-Solh;1940;1964;1999;SL;Administrative Genius;Medium;M529023;X
+375036;Minister of Armament;Rayan Kadi;1944;1964;1999;SL;Tank Proponent;Medium;M529036;X
+375037;Minister of Armament;Khaled Chehab;1940;1964;1999;SC;Corrupt Kleptocrat;Medium;M529005;X
+375038;Minister of Armament;Ahmed Daoud;1939;1964;1999;SC;Infantry Proponent;Medium;M529020;X
+375039;Minister of Armament;Nassim Majdalany;1945;1964;1999;SC;Resource Industrialist;Medium;M529039;X
+375040;Minister of Armament;Kayreddin al-Ahdab;1933;1964;1999;PA;laissez-faire capitalist;Medium;M529006;X
+375041;Minister of Security;Abdul Hamid Karami;1939;1964;1999;SL;Man of the People;Medium;M529024;X
+375042;Minister of Security;Nassim Majdalany;1944;1964;1999;SL;Compassionate Gentleman;Medium;M529039;X
+375043;Minister of Security;Kayreddin al-Ahdab;1933;1964;1999;SC;Crime Fighter;Medium;M529006;X
+375044;Minister of Security;Kamal Jumblatt;1940;1964;1999;SC;Back Stabber;Medium;M529044;X
+375045;Minister of Security;Slimane Naoufai;1945;1964;1999;SC;Efficient Sociopath;Medium;M529045;X
+375046;Minister of Security;Ayoub Thabet;1933;1964;1999;PA;Compassionate Gentleman;Medium;M529002;X
+375047;Head of Military Intelligence;Batriark al-Amoushi;1940;1964;1999;SL;Dismal Enigma;Medium;M529047;X
+375048;Head of Military Intelligence;Fadi Ibrahim;1945;1964;1999;SL;Political Specialist;Medium;M529048;X
+375049;Head of Military Intelligence;Ayoub Thabet;1933;1964;1999;SC;Industrial Specialist;Medium;M529002;X
+375050;Head of Military Intelligence;Slimane Naoufai;1943;1964;1999;SC;Logistics Specialist;Medium;M529045;X
+375051;Head of Military Intelligence;Saader al-Munla;1933;1964;1999;PA;Dismal Enigma;Medium;M529012;X
+375052;Chief of Staff;Antoine Harb;1944;1964;1999;SL;School of Mass Combat;Medium;M529052;X
+375053;Chief of Staff;Iskander Ghanem;1940;1964;1999;SC;School of Defence;Medium;M529053;X
+375054;Chief of Staff;Nicolas Rouminatzoff;1933;1964;1999;PA;School of Psychology;Medium;M529054;X
+375055;Chief of Army;Jamil Lahoud;1944;1964;1999;SL;Armoured Spearhead Doctrine;Medium;M529055;X
+375056;Chief of Army;Fouad Chehab;1940;1964;1999;SC;Guns and Butter Doctrine;Medium;M529056;X
+375057;Chief of Army;Rashrash Azzam;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M529057;X
+375058;Chief of Navy;Louis Finet;1941;1964;1999;SL;Indirect Approach Doctrine;Medium;M529058;X
+375059;Chief of Navy;Nabil Jad;1943;1964;1999;SC;Open Seas Doctrine;Medium;M529059;X
+375060;Chief of Navy;Abdallah Aref al-Yafi;1940;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M529003;X
+375061;Chief of Air Force;Slimane Naoufai;1944;1964;1999;SL;Air Superiority Doctrine;Medium;M529045;X
+375062;Chief of Air Force;Emile Boustany;1940;1964;1999;SC;Air Superiority Doctrine;Medium;M529062;X
+375063;Chief of Air Force;Petro Trad;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M529022;X
+375064;Head of Government;Henri Dentz;1933;1964;1999;PA;Old General;High;L24059;X
+375065;Head of Military Intelligence;Henri Dentz;1933;1964;1999;PA;Logistics Specialist;High;L24059;X
+375066;Chief of Staff;Henri Dentz;1933;1964;1999;PA;School of Defence;High;L24059;X
+375067;Foreign Minister;Hamid Faranjiyya;1938;1964;1999;PA;Iron Fisted Brute;Medium;M529067;X
+375068;Minister of Armament;Kamil Sham'un;1938;1964;1999;PA;laissez-faire capitalist;Medium;M529068;X
+375069;Head of Military Intelligence;Ahmad al-Husayni;1938;1964;1999;PA;Dismal Enigma;Medium;M529069;X
+375070;Head of State;Camille Chamoun;1952;1964;1999;SC;Powerhungry Demagogue;High;M529070;X
+375071;Head of Government;Hassan al-Oweini;1951;1964;1999;SC;Happy Amateur;High;M529071;X
+375072;Head of Government;Nazim al-Akkari;1952;1964;1999;SC;Smiling Oilman;High;M529072;X
+375073;Head of Government;Saeb Sallam;1952;1964;1999;ML;Naive Optimist;High;M529073;X
+375074;Foreign Minister;Fouad Chehab;1950;1964;1999;SC;General Staffer;High;M529056;X
+375075;Minister of Security;William Amine Hawi;1937;1964;1999;FA;Prince of Terror;High;8557;X
+375076;Chief of Staff;William Amine Hawi;1941;1964;1999;FA;School of Mass Combat;High;8557;X
+375077;Foreign Minister;Pierre Gemayel;1943;1964;1999;FA;Ideological Crusader;Medium;8558;X
+375078;Head of Government;Pierre Gemayel;1935;1964;1999;FA;Naive Optimist;High;8558;X
+375079;Foreign Minister;Charles Helou;1937;1964;1999;FA;Great Compromiser;High;8559;X
+375080;Head of State;Charles Helou;1958;1964;1999;PA;Autocratic Charmer;High;8559;X

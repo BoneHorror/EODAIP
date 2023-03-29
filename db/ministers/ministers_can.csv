@@ -1,0 +1,204 @@
+CAN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+220001;Head of State;Sir John Buchan;1933;1964;1999;ML;Benevolent Gentleman;High;M45001;X
+220002;Head of Government;Mackenzie King;1933;1964;1999;ML;Flamboyant Tough Guy;High;M45002;X
+220003;Foreign Minister;Mackenzie King;1933;1964;1999;ML;Great Compromiser;Undying;M45002;X
+220004;Minister of Armament;Ian A. Mackenzie;1933;1964;1999;ML;Administrative Genius;High;M45004;X
+220005;Minister of Security;Ernest Lapointe;1933;1964;1999;ML;Crime Fighter;Very High;M45005;X
+220006;Head of Military Intelligence;Henry Crerar;1933;1964;1999;ML;Technical Specialist;High;M45006;X
+220007;Chief of Staff;Ernest Ashton;1933;1964;1999;ML;School of Fire Support;Very High;M45007;X
+220008;Chief of Army;Ernest Ashton;1933;1964;1999;ML;Guns and Butter Doctrine;Very High;M45007;X
+220009;Chief of Navy;Percy Nelles;1933;1964;1999;ML;Open Seas Doctrine;Very High;M45009;X
+220010;Chief of Air Force;George Croil;1933;1964;1999;ML;Carpet Bombing Doctrine;Very High;M45010;X
+220011;Head of State;Adrien Arcand;1933;1964;1999;FA;Barking Buffoon;High;M45011;X
+220012;Head of State;Tim Buck;1933;1964;1999;ST;Insignificant Layman;High;M45021;X
+220013;Head of Government;R.B. Bennett;1933;1964;1999;SC;Silent Workhorse;High;M45036;X
+220014;Head of Government;Robert Manion;1940;1964;1999;SC;Naive Optimist;High;M45037;X
+220015;Head of Government;John Bracken;1944;1964;1999;SC;Smiling Oilman;High;M45038;X
+220016;Head of Government;Adrien Arcand;1933;1964;1999;FA;Happy Amateur;High;M45011;X
+220017;Head of Government;Tim Buck;1933;1964;1999;ST;Ambitious Union Boss;High;M45021;X
+220018;Foreign Minister;Louis St-Laurent;1946;1964;1999;ML;General Staffer;High;M45042;X
+220019;Foreign Minister;R.B. Bennett;1933;1964;1999;SC;Iron Fisted Brute;Undying;M45036;X
+220020;Foreign Minister;Newton Wesley Rowell;1938;1964;1999;SC;Ideological Crusader;High;M45044;X
+220021;Foreign Minister;Robert Manion;1940;1964;1999;SC;Apologetic Clerk;Undying;M45037;X
+220022;Foreign Minister;John Bracken;1944;1964;1999;SC;Biased Intellectual;Undying;M45038;X
+220023;Foreign Minister;Adrien Arcand;1933;1964;1999;FA;Ideological Crusader;Low;M45011;X
+220024;Foreign Minister;Andrew Greene Carnell;1944;1964;1999;PA;Iron Fisted Brute;Medium;M45016;X
+220025;Foreign Minister;Tim Buck;1933;1964;1999;ST;The Cloak N Dagger Schemer;Very Low;M45021;X
+220026;Foreign Minister;Armand Lavassieux;1942;1964;1999;LWR;Biased Intellectual;Medium;M45050;X
+220027;Foreign Minister;John Lethbridge;1945;1964;1999;LE;Ideological Crusader;Medium;M45028;X
+220028;Minister of Armament;James Ralston;1939;1964;1999;ML;Infantry Proponent;High;M45053;X
+220029;Minister of Armament;Douglas S. Abbott;1944;1964;1999;ML;Submarine Proponent;Very High;M45054;X
+220030;Minister of Armament;Raoul Dandurand;1933;1964;1999;ML;laissez-faire capitalist;Low;M45055;X
+220031;Minister of Armament;Arthur Meighen;1940;1964;1999;SC;Resource Industrialist;High;M45056;X
+220032;Minister of Armament;C.D. Howe;1940;1964;1999;SC;Administrative Genius;Very High;M45057;X
+220033;Minister of Armament;John Ross Taylor;1933;1964;1999;PA;Corrupt Kleptocrat;Very Low;M45014;X
+220034;Minister of Armament;Tasker Cook;1939;1964;1999;PA;Air to Ground Proponent;Medium;M45059;X
+220035;Minister of Armament;Charles J. Howlett;1942;1964;1999;PA;Infantry Proponent;Medium;M45060;X
+220036;Minister of Armament;René St. Pierre;1944;1964;1999;PA;Battle Fleet Proponent;Medium;M45061;X
+220037;Minister of Armament;Pierre Gagnon;1945;1964;1999;PA;Resource Industrialist;Medium;M45062;X
+220038;Minister of Armament;Matthew Popovich;1933;1964;1999;LWR;Tank Proponent;Low;M45024;X
+220039;Minister of Armament;William Kashtan;1938;1964;1999;LE;Resource Industrialist;Low;M45064;X
+220040;Minister of Armament;Robert M. Edwards;1941;1964;1999;LWR;Infantry Proponent;Medium;M45065;X
+220041;Minister of Armament;Bob Mann;1943;1964;1999;LE;Air Superiority Proponent;Medium;M45030;X
+220042;Minister of Security;George W. Stephens;1944;1964;1999;ML;Compassionate Gentleman;Medium;M45069;X
+220043;Minister of Security;Thomas A. Crerar;1933;1964;1999;ML;Man of the People;Very High;M45070;X
+220044;Minister of Security;Gordon Graydon;1940;1964;1999;SC;Silent Lawyer;High;M45071;X
+220045;Minister of Security;Louis St. Laurent;1941;1964;1999;ML;Crime Fighter;High;M45042;X
+220046;Minister of Security;John Diefenbaker;1944;1964;1999;SC;Man of the People;High;M45073;X
+220047;Minister of Security;Chuck Crate;1933;1964;1999;PA;Prince of Terror;Medium;M45015;X
+220048;Minister of Security;Pierre St. Pierre;1937;1964;1999;PA;Man of the People;Medium;M45075;X
+220049;Minister of Security;Thomas Adams;1941;1964;1999;PA;Compassionate Gentleman;Medium;M45076;X
+220050;Minister of Security;Pierre Gagnon;1942;1964;1999;PA;Crime Fighter;Medium;M45062;X
+220051;Minister of Security;Jean Couillard;1943;1964;1999;PA;Silent Lawyer;Medium;M45078;X
+220052;Minister of Security;William G. Adams;1945;1964;1999;PA;Back Stabber;Medium;M45079;X
+220053;Minister of Security;Tom McEwan;1933;1964;1999;LE;Crime Fighter;Medium;M45025;X
+220054;Minister of Security;Robert Blackhawk;1940;1964;1999;LWR;Man of the People;Medium;M45081;X
+220055;Minister of Security;Gino Verchiella;1941;1964;1999;LE;Efficient Sociopath;Medium;M45082;X
+220056;Minister of Security;Quentin Piggott;1943;1964;1999;LE;Compassionate Gentleman;Medium;M45083;X
+220057;Head of Military Intelligence;Herbert Brown Ames;1937;1964;1999;ML;Dismal Enigma;Very High;M45085;X
+220058;Head of Military Intelligence;Kenneth Stuart;1940;1964;1999;ML;Technical Specialist;Very High;M45086;X
+220059;Head of Military Intelligence;Ralph Gibson;1944;1964;1999;ML;Industrial Specialist;High;M45087;X
+220060;Head of Military Intelligence;Maurice Pope;1933;1964;1999;SC;Political Specialist;High;9758;X
+220061;Head of Military Intelligence;William G. Adams;1944;1964;1999;SC;Naval Intelligence Specialist;Medium;M45079;X
+220062;Head of Military Intelligence;Andrew Greene Carnell;1933;1964;1999;PA;Political Specialist;Medium;M45016;X
+220063;Head of Military Intelligence;Pierre Berton;1938;1964;1999;PA;Dismal Enigma;Medium;M45091;X
+220064;Head of Military Intelligence;René St. Pierre;1941;1964;1999;PA;Industrial Specialist;Medium;M45061;X
+220065;Head of Military Intelligence;Jean Couillard;1943;1964;1999;PA;Naval Intelligence Specialist;Medium;M45078;X
+220066;Head of Military Intelligence;Jacques Robert;1933;1964;1999;LE;Political Specialist;Medium;M45094;X
+220067;Head of Military Intelligence;John Lethbridge;1942;1964;1999;LE;Logistics Specialist;Medium;M45028;X
+220068;Head of Military Intelligence;Jacques Richard;1943;1964;1999;LE;Naval Intelligence Specialist;Medium;M45096;X
+220069;Head of Military Intelligence;William Dees;1945;1964;1999;LE;Technical Specialist;Medium;M45026;X
+220070;Chief of Staff;Thomas Anderson;1938;1944;1973;ML;School of Defence;High;M45099;X
+220071;Chief of Staff;Henry Crerar;1940;1964;1999;ML;School of Psychology;High;M45006;X
+220072;Chief of Staff;Kenneth Stuart;1933;1964;1999;SC;School of Mass Combat;Very High;M45086;X
+220073;Chief of Staff;John Murchie;1940;1964;1999;SC;School of Fire Support;High;M45102;X
+220074;Chief of Staff;Charles Foulkes;1944;1964;1999;SC;School of Manoeuvre;Very High;M45103;X
+220075;Chief of Staff;Frederick M.W. Harvey;1933;1964;1999;PA;School of Mass Combat;Medium;M45017;X
+220076;Chief of Staff;Robert M. Edwards;1933;1964;1999;LWR;School of Defence;Medium;M45065;X
+220077;Chief of Staff;Samuel Cino;1943;1964;1999;LE;School of Fire Support;Medium;M45027;X
+220078;Chief of Army;Thomas Anderson;1938;1944;1973;ML;Static Defence Doctrine;High;M45099;X
+220079;Chief of Army;;1940;1964;1999;ML;Armoured Spearhead Doctrine;High;M45006;X
+220080;Chief of Army;Kenneth Stuart;1933;1964;1999;SC;Decisive Battle Doctrine;Very High;M45086;X
+220081;Chief of Army;John Murchie;1940;1964;1999;SC;Armoured Spearhead Doctrine;High;M45102;X
+220082;Chief of Army;Charles Foulkes;1944;1964;1999;SC;Elastic Defence Doctrine;Very High;M45103;X
+220083;Chief of Army;Frederick M.W. Harvey;1944;1964;1999;PA;Guns and Butter Doctrine;Medium;M45017;X
+220084;Chief of Army;Jacques Robert;1933;1964;1999;LE;Static Defence Doctrine;Medium;M45094;X
+220085;Chief of Army;John Lethbridge;1942;1964;1999;LE;Elastic Defence Doctrine;Medium;M45028;X
+220086;Chief of Navy;Alasdair Murray;1933;1964;1999;PA;Base Control Doctrine;Medium;M45019;X
+220087;Chief of Navy;Jean Couillard;1938;1964;1999;PA;Indirect Approach Doctrine;Medium;M45078;X
+220088;Chief of Navy;John F. King;1933;1964;1999;LWR;Indirect Approach Doctrine;Medium;M45029;X
+220089;Chief of Navy;Jacques Richard;1939;1964;1999;LE;Power Projection Doctrine;Medium;M45096;X
+220090;Chief of Air Force;Joseph Roméo Vachon;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M45123;X
+220091;Chief of Air Force;P.W. Oland;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M45020;X
+220092;Chief of Air Force;Gino Verchiella;1933;1964;1999;LE;Air Superiority Doctrine;Medium;M45082;X
+220093;Chief of Air Force;Bob Mann;1943;1964;1999;LE;Army Aviation Doctrine;Medium;M45030;X
+220094;Head of State;Sir John Buchan;1933;1964;1999;SC;Benevolent Gentleman;High;M45001;X
+220095;Head of State;Sir Lyman Poore Duff;1940;1964;1999;SC;Popular Figurehead;High;M45129;X
+220096;Head of State;Sir Lyman Poore Duff;1940;1964;1999;ML;Popular Figurehead;High;M45129;X
+220097;Head of State;Augustus Earl of Athlone;1940;1964;1999;ML;Stern Imperialist;High;M45131;X
+220098;Head of State;Augustus Earl of Athlone;1940;1964;1999;SC;Stern Imperialist;High;M45131;X
+220099;Head of State;Harold Viscount of Tunis;1946;1964;1999;SC;Resigned Generalissimo;High;M45133;X
+220100;Head of State;Harold Viscount of Tunis;1946;1964;1999;ML;Resigned Generalissimo;High;M45133;X
+220101;Head of Government;Louis St-Laurent;1948;1964;1999;ML;Old General;High;M45042;X
+220102;Head of Government;Gordon Graydon;1948;1964;1999;SC;Silent Workhorse;High;M45071;X
+220103;Head of Government;J.L. Isley;1952;1964;1999;SC;Silent Workhorse;High;M45137;X
+220104;Foreign Minister;Lester B. Pearson;1948;1964;1999;ML;Ideological Crusader;High;M45138;X
+220105;Foreign Minister;Robert Stanfield;1948;1964;1999;SC;Biased Intellectual;High;M45139;X
+220106;Minister of Armament;Brooke Claxton;1948;1964;1999;ML;Air Superiority Proponent;High;M45140;X
+220107;Minister of Armament;Ralph Osbourne Campney;1948;1964;1999;SC;laissez-faire capitalist;High;M45141;X
+220108;Minister of Security;Stuart Sinclair Garson;1948;1964;1999;ML;Man of the People;Very High;M45142;X
+220109;Minister of Security;Edmond David Fulton;1948;1964;1999;SC;Compassionate Gentleman;Very High;M45143;X
+220110;Head of Military Intelligence;Walter Edward Harris;1948;1964;1999;ML;Dismal Enigma;Very High;M45144;X
+220111;Head of Military Intelligence;Bill Newson;1951;1964;1999;SC;Logistics Specialist;Very High;M45145;X
+220112;Head of State;Vincent Massey;1952;1964;1999;SC;Autocratic Charmer;High;M45146;X
+220113;Head of State;Vincent Massey;1952;1964;1999;ML;Autocratic Charmer;High;M45146;X
+220114;Head of State;George P. Vanier;1959;1964;1999;SC;Popular Figurehead;High;M45170;X
+220115;Head of State;George P. Vanier;1959;1964;1999;ML;Popular Figurehead;High;M45170;X
+220116;Head of Government;John Diefenbaker;1957;1964;1999;SC;Flamboyant Tough Guy;High;M45042;X
+220117;Head of Government;Lester B. Pearson;1963;1964;1999;ML;Backroom Backstabber;High;M45138;X
+220118;Foreign Minister;Howard Charles Green;1957;1964;1999;SC;Ideological Crusader;High;M45150;X
+220119;Foreign Minister;Paul Joseph Martin sr.;1963;1964;1999;ML;Great Compromiser;High;M45151;X
+220120;Minister of Armament;George Pearkes;1957;1964;1999;SC;Infantry Proponent;High;M45152;X
+220121;Minister of Armament;Doug Harkness;1960;1964;1999;SC;laissez-faire capitalist;High;M45153;X
+220122;Minister of Armament;Gordon M. Churchill;1963;1964;1999;SC;Strategic Air Proponent;High;M45154;X
+220123;Minister of Armament;Paul Hellyer;1963;1964;1999;ML;Military Entrepreneur;High;M45155;X
+220124;Minister of Security;Donald M. Fleming;1962;1964;1999;SC;Prince of Terror;Very High;M45156;X
+220125;Minister of Security;Lionel Chevrier;1963;1964;1999;ML;Crime Fighter;Very High;M45157;X
+220126;Head of Military Intelligence;Douglas C. Abbott;1949;1964;1999;ML;Political Specialist;High;M45158;X
+220127;Head of Military Intelligence;Donald M. Fleming;1957;1964;1999;SC;Dismal Enigma;High;M45156;X
+220128;Head of Military Intelligence;George Nowlan;1963;1964;1999;ML;Technical Specialist;High;M45160;X
+220129;Chief of Staff;Guy Simonds;1951;1964;1999;ML;School of Manoeuvre;High;L52065;X
+220130;Chief of Staff;Howard Graham;1955;1964;1999;ML;School of Fire Support;High;M45162;X
+220131;Chief of Staff;Geoffrey Walsh;1958;1964;1999;SC;School of Mass Combat;High;M45163;X
+220132;Chief of Army;Ralph Keefler;1952;1964;1999;ML;Guns and Butter Doctrine;High;L52030;X
+220133;Chief of Army;Edward Plow;1956;1964;1999;ML;Static Defence Doctrine;High;L52054;X
+220134;Chief of Army;Clarence Harpell;1961;1964;1999;SC;Elastic Defence Doctrine;High;M45166;X
+220135;Chief of Navy;Daniel Hanington;1957;1964;1999;SC;Open Seas Doctrine;Medium;M45167;X
+220136;Chief of Air Force;Lloyd Breadner;1928;1964;1999;ML;Army Aviation Doctrine;Medium;M45168;X
+220137;Chief of Air Force;Robert Leckie;1944;1964;1999;ML;Naval Aviation Doctrine;Medium;M45169;X
+220138;Chief of Air Force;William Bishop;1918;1933;1999;SC;Air Superiority Doctrine;Very High;2301;X
+220139;Chief of Army;James MacBrien;1918;1933;1999;SC;elastic defence doctrine;Very High;2302;X
+220140;Chief of Army;William Otter;1914;1933;1999;SC;Decisive Battle Doctrine;Very High;2303;X
+220141;Chief of Army;Willoughby Gwatkin;1914;1933;1999;SC;Static Defence Doctrine;Very High;unknownminister;X
+220142;Chief of Army;Herbert Thacker;1917;1933;1999;SC;Guns and Butter Doctrine;Very High;unknownminister;X
+220143;Chief of Navy;Louis-Philippe Brodeur;1914;1933;1999;SL;Open Seas Doctrine;Very High;2304;X
+220144;Chief of Navy;John Hazen;1914;1933;1999;SC;Decisive Naval Battle Doctrine;Very High;2305;X
+220145;Chief of Navy;Charles Kingsmill;1914;1933;1999;SC;decisive naval battle doctrine;Very High;2306;X
+220146;Chief of Staff;Frederick Borden;1914;1933;1999;SL;School of Mass Combat;Very High;2307;X
+220147;Chief of Staff;James Calder;1917;1933;1999;ML;School of Defence;Very High;2308;X
+220148;Chief of Staff;George Graham;1914;1933;1999;SL;School of Defence;Very High;2309;X
+220149;Chief of Staff;Hugh Guthrie;1914;1933;1999;SC;School of Fire Support;Very High;2310;X
+220150;Chief of Staff;Sam Hughes;1914;1933;1999;SC;School of Defence;Very High;2311;X
+220151;Chief of Staff;Albert Kemp;1914;1933;1999;SC;School of Mass Combat;Very High;2312;X
+220152;Chief of Staff;Sydney Mewburn;1914;1933;1999;SC;School of Defence;Very High;2313;X
+220153;Foreign Minister;Richard Bennett;1921;1933;1999;SC;Apologetic Clerk;Very High;2314;X
+220154;Foreign Minister;Robert Borden;1911;1933;1999;SC;Ideological Crusader;Very High;2315;X
+220155;Foreign Minister;Mackenzie King;1918;1933;1999;SL;Ideological Crusader;Very High;2316;X
+220156;Foreign Minister;Arthur Meighen;1914;1933;1999;SC;Apologetic Clerk;Very High;2317;X
+220157;Foreign Minister;Charles Murphy;1914;1933;1999;SL;Biased Intellectual;Very High;2318;X
+220158;Foreign Minister;William Roche;1914;1933;1999;SC;Iron Fisted Brute;Very High;2319;X
+220159;Head of Government;Richard Bennett;1921;1933;1999;SC;flamboyant tough guy;Very High;2314;X
+220160;Head of Government;Robert Borden;1911;1933;1999;SC;backroom backstabber;Very High;2315;X
+220161;Head of Government;Thomas Crerar;1917;1933;1999;ML;Political Protege;Very High;2320;X
+220162;Head of Government;Mackenzie King;1918;1933;1999;SL;Silent Workhorse;Very High;2316;X
+220163;Head of Government;Arthur Meighen;1914;1933;1999;SC;Silent Workhorse;Very High;2317;X
+220164;Head of Military Intelligence;Aylesworth Perry;1914;1933;1999;SC;Political Specialist;Very High;2321;X
+220165;Head of State;Prince Arthur;1911;1933;1999;ML;Stern Imperialist;Very High;2322;X
+220166;Minister of Armament;Thomas Crerar;1917;1933;1999;ML;laissez-faire capitalist;Very High;2320;X
+220167;Minister of Armament;Thomas Crothers;1914;1933;1999;SC;laissez-faire capitalist;Very High;2323;X
+220168;Minister of Armament;Henry Drayton;1919;1933;1999;SC;Military Entrepreneur;Very High;2324;X
+220169;Minister of Armament;William Fielding;1914;1933;1999;SC;Administrative Genius;Very High;2325;X
+220170;Minister of Armament;George Foster;1914;1933;1999;SC;Administrative Genius;Very High;2326;X
+220171;Minister of Armament;James Robb;1914;1933;1999;SL;Military Entrepreneur;Very High;2327;X
+220172;Minister of Armament;William White;1914;1933;1999;SC;Resource Industrialist;Very High;2328;X
+220173;Minister of Security;Allen Aylesworth;1914;1933;1999;SL;Silent Lawyer;Very High;2329;X
+220174;Minister of Security;Richard Bennett;1921;1933;1999;SC;Compassionate Gentleman;Very High;2314;X
+220175;Minister of Security;Charles Doherty;1914;1933;1999;SC;Compassionate Gentleman;Very High;2330;X
+220176;Minister of Security;Charles Fitzpatrick;1914;1933;1999;SL;Man of the People;Very High;2331;X
+220177;Minister of Security;Hugh Guthrie;1917;1934;1999;SC;Man of the People;Very High;2310;X
+220178;Minister of Security;Ernest Lapointe;1919;1933;1999;SL;Compassionate Gentleman;Very High;2332;X
+220179;Minister of Security;William Roche;1914;1933;1999;SC;Compassionate Gentleman;Very High;2319;X
+220180;Chief of Staff;Willoughby Gwatkin;1914;1933;1999;SC;School of Defence;Very High;unknownminister;X
+220181;Foreign Minister;Louis Coderre;1914;1933;1999;SC;Biased Intellectual;Very High;8017;X
+220182;Head of State;Sir Vere Ponsonby;1931;1935;1999;SC;Popular Figurehead;High;3288;X
+220183;Head of State;Sir Vere Ponsonby;1931;1935;1999;ML;Popular Figurehead;High;3288;X
+220184;Minister of Armament;Donald Matheson Sutherland;1931;1935;1999;SC;laissez-faire capitalist;High;3983;X
+220185;Minister of Armament;Grote Stirling;1924;1952;1999;SC;laissez-faire capitalist;Very High;3984;X
+220186;Chief of Staff;Andrew McNaughton;1922;1936;1967;SC;school of fire support;Very High;L52044;X
+220187;Chief of Army;Andrew McNaughton;1922;1946;1967;SC;decisive battle doctrine;Very High;L52044;X
+220188;Chief of Navy;Walter Hose;1921;1934;1934;ML;Open Seas Doctrine;Very High;9658;X
+220189;Chief of Air Force;James Lindsay Gordon;1922;1940;1941;ML;air superiority doctrine;Very High;9659;X
+220190;Chief of Navy;George Jones;1929;1946;1947;ML;Open Seas Doctrine;Very High;L52085;X
+220191;Head of Military Intelligence;Harold Halford Matthews;1928;1932;1941;ML;logistics specialist;High;9759;X
+220192;Head of Military Intelligence;John Edward Lyon;1941;1942;1999;ML;naval intelligence specialist;High;unknownminister;X
+220193;Chief of Air Force;Albert Cuffe;1932;1933;1933;ML;naval aviation doctrine;High;9760;X
+220194;Chief of Air Force;Wilfred Curtis;1947;1953;1953;ML;air superiority doctrine;High;9754;X
+220195;Chief of Air Force;Roy Slemon;1953;1957;1965;ML;army aviation doctrine;High;9755;X
+220196;Chief of Air Force;Hugh Lester Campbell;1957;1962;1963;ML;air superiority doctrine;High;9756;X
+220197;Chief of Air Force;Clarence Dunlap;1962;1964;1969;ML;army aviation doctrine;High;9757;X
+220198;Chief of Navy;Howard Reid;1946;1947;1948;ML;open seas doctrine;Very High;9761;X
+220199;Chief of Navy;Harold Grant;1947;1951;1952;ML;decisive naval battle doctrine;Very High;9762;X
+220200;Chief of Navy;Rollo Mainguy;1951;1956;1957;ML;open seas doctrine;Very High;9763;X
+220201;Chief of Navy;Harry Dewolf;1956;1960;1961;ML;decisive naval battle doctrine;Very High;L52084;X
+220202;Chief of Navy;Herbert Rayner;1960;1964;1965;ML;power projection doctrine;Very High;9764;X

@@ -1,0 +1,530 @@
+####################################
+# Minor AI Slider Events
+####################################
+################
+#	Free Market
+#############################################
+event = { # Free Market
+	id = 3000001
+	random = no
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR EST ETH FIN FLA GEO GRE GUA HOL HON HUN IDC INO ISR KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U01 U02 U03 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	
+	trigger = {
+		ai = yes
+		OR = {
+			AND = {
+				can_change_policy = { type = free_market value = 1 }
+				government = democratic
+				}
+			AND = {
+				can_change_policy = { type = free_market value = -1 }
+				OR = {
+					government = fascist
+					government = communist
+				} 
+				
+			}
+		}	
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		trigger = { government = democratic  }
+		command = { type = change_policy which = free_market value = 1 }
+	}
+	
+	action_b = {
+		trigger = { NOT = {  government = democratic } }
+		command = { type = change_policy which = free_market value = -1 }
+	}
+}
+
+################
+#	Open Society
+#############################################
+event = { # Open Society
+	id = 3000003
+	random = no
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR EST ETH FIN FLA GEO GRE GUA HOL HON HUN IDC INO ISR KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U01 U02 U03 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+
+		OR = {
+			AND = {
+				can_change_policy = { type = freedom value = 1 }
+				government = democratic
+				}
+			AND = {
+				can_change_policy = { type = freedom value = -1 }
+				OR = {
+					government = fascist
+					government = communist
+				} 
+				
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		trigger = { government = democratic  }
+		command = { type = change_policy which = freedom value = 1 }
+	}
+	
+	action_b = {
+		trigger = { NOT = {  government = democratic } }
+		command = { type = change_policy which = freedom value = -1 }
+	}
+}
+
+################
+#	Hawk Lobby
+#############################################
+event = { # Hawk Lobby
+	id = 3000005
+	random = no
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR EST ETH FIN FLA GEO GRE GUA HOL HON HUN IDC INO ISR KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U01 U02 U03 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	trigger = {
+		ai = yes
+		OR = {
+			AND = {
+				can_change_policy = { type = defense_lobby value = -1 }
+				government = democratic
+				}
+			AND = {
+				can_change_policy = { type = defense_lobby value = 1 }
+				OR = {
+					government = fascist
+					government = communist
+				} 
+				
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		trigger = { government = democratic  }
+		command = { type = change_policy which = defense_lobby value = -1 }
+	}
+	
+	action_b = {
+		trigger = { NOT = {  government = democratic } }
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+}
+
+################
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3000007
+	random = no
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR EST ETH FIN FLA GEO GRE GUA HOL HON HUN IDC INO ISR KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U01 U02 U03 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		can_change_policy = { type = interventionism value = 1 }
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+
+################
+#	Country specifics
+#############################################
+################
+# France AI Slider manipulation
+#
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3002015
+	random = no
+	country = FRA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		NOT = { domestic = { type = interventionism value = 9 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+#################
+#	Hawk Lobby
+#############################################
+event = { # Hawk Lobby
+	id = 3002017
+	random = no
+	country = FRA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = defense_lobby value = 1 }
+		NOT = { domestic = { type = defense_lobby value = 9 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+}
+################
+# USA AI Slider manipulation
+#
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3049032
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		NOT = { domestic = { type = interventionism value = 10 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+################
+#	Free Market
+#############################################
+event = { # Free Market
+	id = 3049034
+	random = no
+	TAG = { USA GER SOV JAP ENG } 
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = free_market value = 1 }
+		government = democratic
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = free_market value = 1 }
+	}
+}
+
+################
+#	Hawk Lobby
+#############################################
+event = { # Hawk Lobby
+	id = 3049035
+	random = no
+	TAG = { USA GER CHI ENG ITA JAP SOV }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = defense_lobby value = 1 }
+		OR = { #GER should prioritize moving the economic sliders
+			NOT = { country = GER }
+			NOT = { can_change_policy = { type = free_market value = -1 } }
+		}
+		OR = { 
+			atwar = yes
+			AND = {
+				NOT = { domestic = { type = defense_lobby value = 9 } }
+				OR = {
+					ideology = nazi
+					ideology = fascist
+					ideology = leninist
+					ideology = stalinist
+					}
+				}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = defense_lobby value = 1 }
+	}
+}
+################
+# Soviet AI Slider manipulation
+#
+#	Free Market
+#############################################
+event = { # Free Market
+	id = 3007036
+	random = no
+	TAG = { SOV JAP ENG GER }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = free_market value = -1 }
+		OR = {
+			government = fascist
+			government = communist
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = free_market value = -1 }
+	}
+}
+
+################
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3007041
+	random = no
+	TAG = { SOV GER ENG ITA }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		OR = { #GER should prioritize moving the economic sliders
+			NOT = { country = GER }
+			NOT = { can_change_policy = { type = free_market value = -1 } }
+		}
+		OR = {
+			atwar = yes
+			AND = {
+				NOT = { domestic = { type = interventionism value = 9 } }
+				OR = {
+					ideology = nazi
+					ideology = fascist
+					ideology = leninist
+					ideology = stalinist
+				}
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+
+################
+# Japan AI Slider manipulation
+#
+################
+#	Open Society
+#############################################
+event = { # Open Society
+	id = 3011031
+	random = no
+	TAG = { JAP GER }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		can_change_policy = { type = freedom value = -1 }
+		OR = { #GER should prioritize moving the economic sliders
+			NOT = { country = GER }
+			NOT = { can_change_policy = { type = free_market value = -1 } }
+		}
+		AND = {
+			domestic = { type = freedom value = 1 }
+			OR = {
+				government = fascist
+				government = communist
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = freedom value = -1 }
+	}
+}
+event = { # Open Society
+	id = 3011032
+	random = no
+	TAG = { JAP GER }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		can_change_policy = { type = freedom value = 1 }
+		AND = {
+			NOT = { domestic = { type = freedom value = 10 } }
+			government = democratic
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = freedom value = 1 }
+	}
+}
+
+################
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3011037
+	random = no
+	country = JAP
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		OR = {
+			atwar = yes
+			AND = {
+				NOT = { domestic = { type = interventionism value = 9 } }
+				OR = { 
+					government = fascist
+					government = communist
+					}
+				}
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1910 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}
+
+################
+# CHina AI Slider manipulation
+#
+#	Interventionism
+#############################################
+event = { # Interventionism
+	id = 3012021
+	random = no
+	country = CHI
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		can_change_policy = { type = interventionism value = 1 }
+		OR = { 
+			atwar = yes
+			NOT = { domestic = { type = interventionism value = 9 } }
+			}
+		}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = change_policy which = interventionism value = 1 }
+	}
+}

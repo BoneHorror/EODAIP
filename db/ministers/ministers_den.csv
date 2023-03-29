@@ -1,0 +1,169 @@
+DEN;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+75001;Head of State;Christian X;1933;1964;1999;SD;Weary Stiffneck;High;M16001;X
+75002;Head of Government;Thorvald Stauning;1929;1964;1999;SD;Ambitious Union Boss;High;M16002;X
+75003;Foreign Minister;Peter Munch;1933;1964;1999;SL;Apologetic Clerk;Medium;9773;X
+75004;Minister of Armament;Alsing Andersen;1933;1964;1999;SD;laissez-faire capitalist;High;M16004;X
+75005;Minister of Security;Karl Kristian Steincke;1933;1964;1999;SD;Silent Lawyer;High;M16005;X
+75006;Head of Military Intelligence;Erik Mertz;1933;1964;1999;SL;Logistics Specialist;High;M16006;X
+75007;Chief of Staff;Wilhelm W. Prior;1933;1964;1999;SL;School of Defence;Medium;M16007;X
+75008;Chief of Army;Erik With;1933;1964;1999;SD;Static Defence Doctrine;High;2386;X
+75009;Chief of Navy;Hjalmar Rechnitzer;1933;1964;1999;SD;Indirect Approach Doctrine;High;M16009;X
+75010;Chief of Air Force;K.W. Essemann;1933;1964;1999;SL;Army Aviation Doctrine;Very High;M16010;X
+75011;Head of State;Christian X;1943;1964;1999;PA;Weary Stiffneck;High;M16001;X
+75012;Head of State;Fritz Clausen;1938;1964;1999;FA;Insignificant Layman;High;M16011;X
+75013;Head of State;Aksel Larsen;1938;1964;1999;ST;Powerhungry Demagogue;High;M16021;X
+75014;Head of Government;Vilhelm Buhl;1942;1964;1999;SD;Flamboyant Tough Guy;High;M16039;X
+75015;Head of Government;Erik Scavenius;1942;1964;1999;SL;Silent Workhorse;High;2387;X
+75016;Head of Government;Christmas Møller;1933;1964;1999;SC;Happy Amateur;High;M16041;X
+75017;Head of Government;Ole Bjørn Kraft;1942;1964;1999;SC;Smiling Oilman;High;2388;X
+75018;Head of Government;Knud Kristensen;1945;1964;1999;ML;Political Protege;High;M16043;X
+75019;Head of Government;Fritz Clausen;1938;1964;1999;NS;Naive Optimist;High;M16011;X
+75020;Head of Government;Otto Bovensiepen;1943;1964;1999;PA;Old General;High;M16045;X
+75021;Head of Government;Aksel Larsen;1938;1964;1999;ST;Backroom Backstabber;High;M16021;X
+75022;Foreign Minister;Erik Scavenius;1940;1964;1999;SL;Biased Intellectual;Very High;2387;X
+75023;Foreign Minister;Hans Hedtoft;1945;1964;1999;SD;Great Compromiser;Very High;2389;X
+75024;Foreign Minister;Ole Bjørn Kraft;1938;1964;1999;SC;Great Compromiser;Medium;2388;X
+75025;Foreign Minister;Otto Carl Mohr;1942;1964;1999;ML;Ideological Crusader;High;M16051;X
+75026;Foreign Minister;Christmas Møller;1945;1964;1999;SC;Biased Intellectual;Medium;M16041;X
+75027;Foreign Minister;Gustav Rasmussen;1945;1964;1999;ML;The Cloak N Dagger Schemer;Medium;M16053;X
+75028;Foreign Minister;Axel Christian Hartel;1938;1964;1999;NS;Ideological Crusader;Low;M16013;X
+75029;Foreign Minister;Albert Olsen;1938;1964;1999;LWR;General Staffer;High;M16023;X
+75030;Foreign Minister;Ib Nørlund;1945;1964;1999;ST;Iron Fisted Brute;High;M16056;X
+75031;Foreign Minister;Henrik Hauch;1943;1964;1999;PA;Apologetic Clerk;Low;M16057;X
+75032;Minister of Armament;Vilhelm Buhl;1940;1964;1999;SD;Battle Fleet Proponent;High;M16039;X
+75033;Minister of Armament;Hans Hedtoft;1942;1964;1999;SD;Resource Industrialist;Very High;2389;X
+75034;Minister of Armament;Gunnar Larsen;1942;1964;1999;SL;Administrative Genius;Very High;M16061;X
+75035;Minister of Armament;Viggo Kampmann;1953;1964;1999;SD;Administrative Genius;Very High;M16062;X
+75036;Minister of Armament;Søren Brorsen;1938;1964;1999;SC;Theoretical Scientist;High;M16063;X
+75037;Minister of Armament;Knud Kristensen;1941;1964;1999;ML;Infantry Proponent;High;M16043;X
+75038;Minister of Armament;Halfdan Henriksen;1942;1964;1999;ML;Air to Ground Proponent;High;M16065;X
+75039;Minister of Armament;Ole Bjørn Kraft;1945;1964;1999;SC;Resource Industrialist;Medium;2388;X
+75040;Minister of Armament;Christen Nielsen Hauge;1945;1964;1999;ML;laissez-faire capitalist;Medium;M16067;X
+75041;Minister of Armament;Jørgen Sehested;1938;1964;1999;NS;Infantry Proponent;High;M16014;X
+75042;Minister of Armament;C.V. Bramsnæs;1943;1964;1999;PA;laissez-faire capitalist;High;M16069;X
+75043;Minister of Armament;Alfred Jensen;1938;1964;1999;ST;Tank Proponent;High;M16024;X
+75044;Minister of Armament;Niels Bohr;1945;1964;1999;LWR;Theoretical Scientist;Very High;M16071;X
+75045;Minister of Security;Thorvald Stauning;1937;1964;1999;SD;Crime Fighter;Very High;M16002;X
+75046;Minister of Security;Peter Christian Schou;1940;1964;1999;SL;Back Stabber;High;M16074;X
+75047;Minister of Security;Eigil Thune Jacobsen;1941;1964;1999;SL;Compassionate Gentleman;High;M16076;X
+75048;Minister of Security;J.C. Jørgensen;1945;1964;1999;SL;Man of the People;High;M16077;X
+75049;Minister of Security;Harald Petersen;1938;1964;1999;SC;Crime Fighter;Very High;M16078;X
+75050;Minister of Security;Didrik G. Nyholm;1942;1964;1999;ML;Compassionate Gentleman;High;M16079;X
+75051;Minister of Security;Ivar Stamm;1945;1964;1999;ML;Crime Fighter;High;M16080;X
+75052;Minister of Security;Svend Asbjørn Holten;1946;1964;1999;SC;Prince of Terror;High;M16081;X
+75053;Minister of Security;Knud Bach;1938;1964;1999;NS;Prince of Terror;Very Low;M16015;X
+75054;Minister of Security;Otto Bovensiepen;1943;1964;1999;PA;Prince of Terror;Medium;M16045;X
+75055;Minister of Security;Arthur Dahl;1944;1964;1999;PA;Man of the People;Very High;M16084;X
+75056;Minister of Security;Børge Houmann;1938;1964;1999;LWR;Efficient Sociopath;High;M16025;X
+75057;Minister of Security;Knud Jespersen;1945;1964;1999;ST;Man of the People;High;M16086;X
+75058;Head of Military Intelligence;Laust Jensen Moltesen;1938;1964;1999;SL;Industrial Specialist;Very High;M16087;X
+75059;Head of Military Intelligence;Ejnar Wærum;1942;1964;1999;SD;Dismal Enigma;Very High;M16088;X
+75060;Head of Military Intelligence;Halvor Peitersen;1942;1964;1999;SL;Political Specialist;Very High;M16089;X
+75061;Head of Military Intelligence;H.M. Lunding;1945;1964;1999;SL;Logistics Specialist;High;M16090;X
+75062;Head of Military Intelligence;H.C. Hansen;1945;1964;1999;SD;Technical Specialist;Very High;M16091;X
+75063;Head of Military Intelligence;Niels Frederiksen;1938;1964;1999;ML;Political Specialist;High;M16092;X
+75064;Head of Military Intelligence;Axel Linvald;1942;1964;1999;ML;Dismal Enigma;High;M16093;X
+75065;Head of Military Intelligence;Poul Sommer;1938;1964;1999;NS;Dismal Enigma;High;M16016;X
+75066;Head of Military Intelligence;Georg Frederiksen;1943;1964;1999;PA;Industrial Specialist;High;M16096;X
+75067;Head of Military Intelligence;Eigil Larsen;1938;1964;1999;ST;Naval Intelligence Specialist;High;M16026;X
+75068;Head of Military Intelligence;Niels Bohr;1945;1964;1999;LWR;Technical Specialist;Very High;M16071;X
+75069;Chief of Staff;Hans A. Rolsted;1942;1964;1999;SD;School of Mass Combat;High;M16100;X
+75070;Chief of Staff;William Nebendahl;1942;1964;1999;SL;School of Manoeuvre;High;M16101;X
+75071;Chief of Staff;Vilhelm La Cour;1945;1964;1999;SD;School of Psychology;High;M16102;X
+75072;Chief of Staff;Ebbe Gørtz;1938;1964;1999;ML;School of Psychology;Very High;M16103;X
+75073;Chief of Staff;C.P. Kryssing;1938;1964;1999;NS;School of Fire Support;Medium;M16017;X
+75074;Chief of Staff;William Nebendahl;1944;1964;1999;PA;School of Manoeuvre;High;M16101;X
+75075;Chief of Staff;Svend Wagner;1938;1964;1999;LWR;School of Psychology;Low;M16027;X
+75076;Chief of Army;Wilhelm W. Prior;1939;1964;1999;SL;Elastic Defence Doctrine;Medium;M16007;X
+75077;Chief of Army;Christian X;1942;1964;1999;SD;Decisive Battle Doctrine;Low;M16001;X
+75078;Chief of Army;Peter Christian Schou;1945;1964;1999;SD;Guns and Butter Doctrine;High;M16074;X
+75079;Chief of Army;Ebbe Gørtz;1938;1964;1999;ML;Static Defence Doctrine;Very High;M16103;X
+75080;Chief of Army;Henrik Kauffmann;1945;1964;1999;SC;Guns and Butter Doctrine;Low;M16114;X
+75081;Chief of Army;F. von Schalburg;1938;1964;1999;NS;Guns and Butter Doctrine;Low;M16018;X
+75082;Chief of Army;Arthur Dahl;1943;1964;1999;PA;Guns and Butter Doctrine;Very High;M16084;X
+75083;Chief of Army;Børge Thing;1938;1964;1999;LWR;Elastic Defence Doctrine;High;M16028;X
+75084;Chief of Navy;Aage H. Vedel;1942;1964;1999;SL;Open Seas Doctrine;Very High;M16119;X
+75085;Chief of Navy;E.B. de Crèvecoeur;1943;1964;1999;SL;Power Projection Doctrine;High;M16120;X
+75086;Chief of Navy;Carl Hammerich;1938;1964;1999;ML;Decisive Naval Battle Doctrine;Very High;M16121;X
+75087;Chief of Navy;Hjalmar Rechnitzer;1938;1964;1999;PA;Indirect Approach Doctrine;High;M16009;X
+75088;Chief of Navy;Søren Brorsen;1943;1964;1999;PA;Open Seas Doctrine;High;M16063;X
+75089;Chief of Navy;Knud Jespersen;1945;1964;1999;ST;Power Projection Doctrine;High;M16086;X
+75090;Chief of Air Force;Jens Otto Krag;1942;1964;1999;SD;Vertical Envelopment Doctrine;Very High;M16128;X
+75091;Chief of Air Force;Kaj Birksted;1945;1964;1999;SD;Air Superiority Doctrine;Very High;M16129;X
+75092;Chief of Air Force;Svend Asbjørn Holten;1942;1964;1999;ML;Carpet Bombing Doctrine;High;M16081;X
+75093;Chief of Air Force;Fritz Clausen;1943;1964;1999;PA;Naval Aviation Doctrine;Very High;M16011;X
+75094;Chief of Air Force;Aksel Larsen;1938;1964;1999;ST;Air Superiority Doctrine;Very High;M16021;X
+75095;Head of State;Christian X;1933;1964;1999;ML;Weary Stiffneck;High;M16001;X
+75096;Head of State;Frederik IX;1947;1964;1999;SD;Autocratic Charmer;High;M16138;X
+75097;Head of State;Frederik IX;1947;1964;1999;ML;Autocratic Charmer;High;M16138;X
+75098;Head of State;Knud Bach;1945;1964;1999;FA;Pig-headed Isolationist;High;M16015;X
+75099;Head of Government;Knud Bach;1945;1964;1999;FA;Smiling Oilman;High;M16015;X
+75100;Chief of Air Force;Poul Sommer;1945;1964;1999;FA;Army Aviation Doctrine;Very Low;M16016;X
+75101;Head of Government;Hans Hedtoft;1947;1964;1999;SD;Happy Amateur;High;2389;X
+75102;Foreign Minister;Gustav Rasmussen;1947;1964;1999;SD;Biased Intellectual;Medium;M16053;X
+75103;Minister of Armament;H.C. Hansen;1947;1964;1999;SD;Submarine Proponent;High;M16091;X
+75104;Minister of Security;Alsing Andersen;1947;1964;1999;SD;Compassionate Gentleman;High;M16004;X
+75105;Head of Government;Erik Eriksen;1950;1964;1999;ML;Naive Optimist;High;M16147;X
+75106;Minister of Armament;Thorkild Kristensen;1950;1964;1999;ML;Administrative Genius;High;M16148;X
+75107;Minister of Security;Aksel Møller;1950;1964;1999;SC;Silent Lawyer;High;M16149;X
+75108;Foreign Minister;H.C. Hansen;1953;1964;1999;SD;Ideological Crusader;Medium;M16091;X
+75109;Minister of Armament;Johannes Kjærbøll;1953;1964;1999;SD;Military Entrepreneur;High;M16151;X
+75110;Chief of Navy;Otto Kofoed-Hansen;1914;1933;1999;SL;Decisive Naval Battle Doctrine;High;2390;X
+75111;Chief of Navy;Henri Wenck;1918;1933;1999;SL;Open Seas Doctrine;High;2391;X
+75112;Foreign Minister;Tage Reedtz-Thott;1914;1933;1999;SC;Great Compromiser;high;2392;X
+75113;Foreign Minister;Hannibal Sehested;1914;1933;1999;SC;Apologetic Clerk;high;2393;X
+75114;Foreign Minister;Johan Deuntzer;1914;1933;1999;SL;Biased Intellectual;high;2394;X
+75115;Foreign Minister;Frederik Raben-Levetzau;1914;1933;1999;SL;Apologetic Clerk;high;3739;X
+75116;Foreign Minister;Carl Ahlefeldt-Laurvig;1914;1933;1999;SL;Great Compromiser;high;2395;X
+75117;Foreign Minister;Erik Scavenius;1914;1933;1999;SL;Ideological Crusader;High;2396;X
+75118;Foreign Minister;Henri Konow;1920;1933;1999;SC;General Staffer;high;2397;X
+75119;Foreign Minister;O.C. Scavenius;1920;1933;1999;SC;Apologetic Clerk;high;unknownminister;X
+75120;Foreign Minister;Harald Scavenius;1920;1933;1999;SL;Apologetic Clerk;high;3740;X
+75121;Foreign Minister;Christian Cold;1922;1933;1999;SL;General Staffer;high;3741;X
+75122;Foreign Minister;Carl Moltke;1924;1933;1999;SL;Biased Intellectual;high;unknownminister;X
+75123;Head of Government;Tage Reedtz-Thott;1914;1933;1999;SC;Naive Optimist;high;2392;X
+75124;Head of Government;Hannibal Sehested;1914;1933;1999;SC;Happy Amateur;high;2393;X
+75125;Head of Government;Johan Deuntzer;1914;1933;1999;SL;Happy Amateur;high;2394;X
+75126;Head of Government;Jens Christensen;1914;1933;1999;SL;Flamboyant Tough Guy;high;2398;X
+75127;Head of Government;Niels Nergaard;1914;1933;1999;SL;Corporate Suit;high;2399;X
+75128;Head of Government;Carl Zahle;1913;1933;1999;SL;Ambitious Union Boss;high;2400;X
+75129;Head of Government;Ludvig Holstein-Ledreborg;1914;1933;1999;SL;Flamboyant Tough Guy;high;2401;X
+75130;Head of Government;Klaus Berntsen;1910;1933;1999;SL;Flamboyant Tough Guy;high;2402;X
+75131;Head of Government;Otto Liebe;1920;1933;1999;SC;Political Protege;high;2403;X
+75132;Head of Government;Michael Friis;1920;1933;1999;SC;Silent Workhorse;high;2404;X
+75133;Head of Government;Thorvald Stauning;1924;1929;1999;SD;Ambitious Union Boss;high;2405;X
+75134;Head of State;Christian X;1912;1933;1999;SL;benevolent gentleman;high;2406;X
+75135;Minister of Armament;Christian Lüttichau;1914;1933;1999;SC;Resource Industrialist;High;2407;X
+75136;Minister of Armament;Christopher Friedenreich Hage;1914;1933;1999;SL;Laissez-Faire Capitalist;High;2408;X
+75137;Minister of Armament;Vilhelm Lassen;1914;1933;1999;SL;Resource Industrialist;High;3742;X
+75138;Minister of Armament;Jens Christensen;1914;1933;1999;SL;Resource Industrialist;High;2398;X
+75139;Minister of Armament;Niels Nergaard;1914;1933;1999;SL;Laissez-Faire Capitalist;High;2399;X
+75140;Minister of Armament;Charles Brun;1914;1933;1999;SL;Resource Industrialist;High;3743;X
+75141;Minister of Armament;Edvard Brandes;1914;1933;1999;SL;Administrative Genius;Low;2409;X
+75142;Minister of Armament;Hans Hjerl Hansen;1920;1933;1999;SC;Laissez-Faire Capitalist;High;2410;X
+75143;Minister of Armament;A.M. Koefoed;1920;1933;1999;SC;Resource Industrialist;High;unknownminister;X
+75144;Minister of Armament;Carl Bramsnæs;1924;1933;1999;SD;Administrative Genius;High;M16069;X
+75145;Minister of Armament;Thorvald Stauning;1924;1933;1999;SD;Resource Industrialist;High;2405;X
+75146;Minister of Security;Carl Goos;1914;1933;1999;SC;Crime Fighter;High;2411;X
+75147;Minister of Security;Peter Alberti;1914;1933;1999;SL;Prince of Terror;High;2412;X
+75148;Minister of Security;Svend Høgsbro;1914;1933;1999;SL;Man of the People;High;3744;X
+75149;Minister of Security;Carl Zahle;1914;1933;1999;SL;Silent Lawyer;High;2400;X
+75150;Minister of Security;Fritz Bülow;1914;1933;1999;SL;Crime Fighter;High;unknownminister;X
+75151;Minister of Security;Otto Liebe;1920;1933;1999;SC;Crime Fighter;High;2403;X
+75152;Minister of Security;Kristian Sindballe;1920;1933;1999;SC;Silent Lawyer;High;2413;X
+75153;Minister of Security;Frederik Schrøder;1920;1933;1999;SC;Compassionate Gentleman;High;unknownminister;X
+75154;Minister of Security;Svenning Rytter;1920;1933;1999;SL;Crime Fighter;High;3745;X
+75155;Minister of Security;Karl Steincke;1924;1933;1999;SD;Man of the People;High;2414;X
+75156;Minister of Security;Ove Rode;1933;1964;1999;SD;Silent Lawyer;High;8029;X
+75157;Head of Military Intelligence;Valdemar Henrik Mensen;1913;1933;1999;SD;Political Specialist;High;unknownminister;X
+75158;Chief of Army;Christian X;1913;1933;1999;SD;Static Defence Doctrine;High;M16001;X
+75159;Minister of Armament;Peter Munch;1913;1920;1999;SD;Laissez-Faire Capitalist;High;9773;X
+75160;Chief of Staff;Palle Berthelsen;1912;1920;1921;SD;School of Defence;High;8030;X
+75161;Chief of Air Force;Christian X;1913;1933;1999;SD;Army Aviation Doctrine;Very High;M16001;X
+75162;Head of Military Intelligence;Anders Gjedde Nyholm;1911;1933;1999;SL;Logistics Specialist;Very High;8031;X
+75163;Chief of Air Force;Asger Grandjean;1925;1941;1949;SL;naval aviation doctrine;High;9774;X
+75164;Chief of Air Force;Johan Peter Koch;1914;1933;1999;SD;Air Superiority Doctrine;Very High;9867;X
+75165;Head of Military Intelligence;Anders Gjedde Nyholm;1911;1933;1999;SL;Logistics Specialist;Very High;8031;X
+75166;Chief of Staff;Vilhelm Gørtz;1909;1919;1919;SD;School of Fire Support;Very High;9856;X
+75167;Chief of Staff;August Tuxen;1911;1929;1929;SD;School of Psychology;Very High;9862;X

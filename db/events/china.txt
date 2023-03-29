@@ -1,0 +1,1185 @@
+### 2012001  CHI  The Nanjing Massacre
+### 2012002  CHI  The German mission recalled
+### 2012003  CHI  United Front Against Soviet aggression
+### 2012004  CHI/CHC  The Fading Sun
+### 2012005  CHI/CHC  China defeats Japan and Korea is freed
+### 2012006  CHI  China annexes Mongolia
+### 2118001  CGX  Concessions
+### 2122001  CSX  Concessions
+### 2123001  CXB  Concessions
+### 2012007  CHI  Transfer of industry to the interior
+### 2012008  CHI  Transfer of industry - Move Guangzhou
+### 2012009  CHI  Transfer of industry - Move Taiyuan
+### 2012010  CHI  Transfer of industry - Move Nanjing
+### 2012011  CHI  Transfer of industry - Move Jinan
+### 2012012  CHI  Transfer of industry - Move Zhengzhou
+### 2007002  SOV  Operation Zet - Assistance to China
+### 2012013  CHI  Operation Zet - Soviet assistance
+### 2012014  CHI  Huayuankow flooding
+### 2012015  CHI  The Xi'an Incident
+### 2012016  CHI  Forging the Unified Front
+### 2012029  CGX  The Liangguang Incident
+### 2012030  CHI  The Liangguang Incident
+### 2053004  CHC  The proclamation of the People's Republic of China
+#########################################################################
+#  The Nanjing Massacre
+#########################################################################
+event = {
+	id = 2012001
+	random = no
+	country = CHI
+	
+	# Triggered by JAP 2011007
+	
+	name = "EVT_4100_NAME"
+	desc = "EVT_4100_DESC"
+	style = 2
+	picture = "ccip_njm"
+	
+	action = {
+		name = ACTION_NAME_OK # Tragedy!
+		command = { trigger = { exists = CGX } type = relation which = CGX value = 15 }
+		command = { trigger = { exists = CSX } type = relation which = CSX value = 20 }
+		command = { type = dissent value = -30 } # National cementation
+		command = { type = capital which = 1299 } # Chongqing
+		command = { type = construct which = land_fort where = 1299 value = 4 }
+		command = { type = construct which = land_fort where = 1297 value = 2 }
+	}
+}
+##################################
+# Recall of German Mission
+##################################
+event = {
+	id = 2012002
+	random = no
+	country = CHI
+
+	#Triggered by GER 2003071A
+
+	name = "EVT_4103_NAME"
+	desc = "EVT_4103_DESC"
+  	style = 2
+  	picture = "ccip_wjw"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = 1 }
+		command = { type = sleepleader which = 55303 } #Von Falkenhausen
+		command = { type = sleepteam which = 55005 when = 1 } #Von Falkenhausen
+		command = { type = relation which = GER value = -40 }
+		command = { type = relation which = JAP value = -10 }
+		command = { type = relation which = MAN value = -50 }
+        command = { trigger = { event = 1330110050 } type = build_cost which = infantry when = on_upgrade where = relative value = 20 }
+        command = { trigger = { event = 1330110050 } type = build_cost which = artillery when = on_upgrade where = relative value = 20 }
+        command = { trigger = { event = 1330110050 } type = build_cost which = armored_car when = on_upgrade where = relative value = 20 }
+		command = { type = end_trades which = CHI where = GER }
+        }
+
+	}
+#############################################
+# Chinese alliance against the Soviets
+#############################################
+event = {
+	id = 2012003
+	country = CHI
+	random = no
+	decision = {
+		OR = {
+			war = { country = CHI country = SOV }
+			war = { country = CHC country = SOV }
+			war = { country = CSX country = SOV }
+			war = { country = CGX country = SOV }
+			war = { country = CXB country = SOV }
+			war = { country = CYN country = SOV }
+		}
+		NOT = { ispuppet = CHI }
+		OR = {
+			AND = { exists = CSX NOT = { puppet = { country = CSX country = SOV } } }
+			AND = { exists = CHC NOT = { puppet = { country = CHC country = SOV } } }
+			AND = { exists = CGX NOT = { puppet = { country = CGX country = SOV } } }
+			AND = { exists = CYN NOT = { puppet = { country = CYN country = SOV } } }
+			AND = { exists = CXB NOT = { puppet = { country = CXB country = SOV } } }
+		}
+		OR = {
+			NOT = { ispuppet = CSX }
+			puppet = { country = CSX country = CHI }
+			puppet = { country = CSX country = CHC }
+			puppet = { country = CSX country = CGX }
+			puppet = { country = CSX country = CYN }
+			puppet = { country = CSX country = CXB }
+		}
+		OR = {
+			NOT = { ispuppet = CHC }
+			puppet = { country = CHC country = CHI }
+			puppet = { country = CHC country = CSX }
+			puppet = { country = CHC country = CGX }
+			puppet = { country = CHC country = CYN }
+			puppet = { country = CHC country = CXB }
+		}
+		OR = {
+			NOT = { ispuppet = CGX }
+			puppet = { country = CGX country = CHI }
+			puppet = { country = CGX country = CSX }
+			puppet = { country = CGX country = CHC }
+			puppet = { country = CGX country = CYN }
+			puppet = { country = CGX country = CXB }
+		}
+		OR = {
+			NOT = { ispuppet = CYN }
+			puppet = { country = CYN country = CHI }
+			puppet = { country = CYN country = CSX }
+			puppet = { country = CYN country = CHC }
+			puppet = { country = CYN country = CGX }
+			puppet = { country = CYN country = CXB }
+		}
+		OR = {
+			NOT = { ispuppet = CXB }
+			puppet = { country = CXB country = CHI }
+			puppet = { country = CXB country = CSX }
+			puppet = { country = CXB country = CHC }
+			puppet = { country = CXB country = CGX }
+			puppet = { country = CXB country = CYN }
+		}
+		or = {
+			year = 1936
+			not = { event = 2181010 } # Xinjiang Intervention has not occured
+			and = {
+				event = 2181010
+				event = 2181011 # End of Xinjiang event chain
+			}
+		}
+		not = {
+			alliance = { country = CHI country = JAP }
+		}
+	}
+
+	decision_trigger = {
+		OR = {
+			war = { country = CHI country = SOV }
+			war = { country = CHC country = SOV }
+			war = { country = CSX country = SOV }
+			war = { country = CGX country = SOV }
+			war = { country = CXB country = SOV }
+			war = { country = CYN country = SOV }
+		}
+	}
+
+	trigger = {
+		OR = {
+			war = { country = CHI country = SOV }
+			war = { country = CHC country = SOV }
+			war = { country = CSX country = SOV }
+			war = { country = CGX country = SOV }
+			war = { country = CXB country = SOV }
+			war = { country = CYN country = SOV }
+		}
+		NOT = { ispuppet = CHI }
+		OR = {
+			AND = { exists = CSX NOT = { puppet = { country = CSX country = SOV } } }
+			AND = { exists = CHC NOT = { puppet = { country = CHC country = SOV } } }
+			AND = { exists = CGX NOT = { puppet = { country = CGX country = SOV } } }
+			AND = { exists = CYN NOT = { puppet = { country = CYN country = SOV } } }
+			AND = { exists = CXB NOT = { puppet = { country = CXB country = SOV } } }
+		}
+		not = {
+			and = {
+				or = {
+					participant = { country = CHC value = 3 }
+					alliance = { country = CHC country = SOV } 
+				}
+				or = {
+					participant = { country = CSX value = 3 }
+					alliance = { country = CSX country = SOV } 
+				}
+				or = {
+					participant = { country = CGX value = 3 }
+					alliance = { country = CGX country = SOV } 
+				}
+				or = {
+					participant = { country = CYN value = 3 }
+					alliance = { country = CYN country = SOV } 
+				}
+				or = {
+					participant = { country = CXB value = 3 }
+					alliance = { country = CXB country = SOV } 
+				}
+			}
+		}
+		or = {
+			year = 1936
+			not = { event = 2181010 } # Xinjiang Intervention has not occured
+			and = {
+				event = 2181010
+				event = 2181011 # End of Xinjiang event chain
+			}
+		}
+		not = {
+			alliance = { country = CHI country = JAP }
+		}
+	}
+	
+	name = "UFRONT_NAME"
+	desc = "UFRONT_DESC"
+	style = 2
+	picture = "ccip_peace"
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_YES"
+		ai_chance = 90
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = dissent value = -5 }
+		command = { trigger = { war = { country = CHC country = CHI } not = { participant = { country = CHC value = 3 } } not = { alliance = { country = CHC country = SOV } } } type = peace which = CHC value = 0 }
+		command = { trigger = { NOT = { puppet = { country = CHC country = SOV } } not = { participant = { country = CHC value = 3 } } not = { alliance = { country = CHC country = SOV } } } type = alliance which = CHC when = 1 }
+		command = { trigger = { NOT = { puppet = { country = CSX country = SOV } } not = { participant = { country = CSX value = 3 } } not = { alliance = { country = CSX country = SOV } } } type = alliance which = CSX when = 1 }
+		command = { trigger = { NOT = { puppet = { country = CGX country = SOV } } not = { participant = { country = CGX value = 3 } } not = { alliance = { country = CGX country = SOV } } } type = alliance which = CGX when = 1 }
+		command = { trigger = { NOT = { puppet = { country = CYN country = SOV } } not = { participant = { country = CYN value = 3 } } not = { alliance = { country = CYN country = SOV } } } type = alliance which = CYN when = 1 }
+		command = { trigger = { NOT = { puppet = { country = CXB country = SOV } } not = { participant = { country = CXB value = 3 } } not = { alliance = { country = CXB country = SOV } } } type = alliance which = CXB when = 1 }
+	}
+	action = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 10
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 5 }
+		command = { trigger = { NOT = { puppet = { country = CHC country = SOV } } not = { participant = { country = CHC value = 3 } } not = { alliance = { country = CHC country = SOV } } } type = relation which = CHC value = -10 }
+		command = { trigger = { NOT = { puppet = { country = CSX country = SOV } } not = { participant = { country = CSX value = 3 } } not = { alliance = { country = CSX country = SOV } } } type = relation which = CSX value = -15 }
+		command = { trigger = { NOT = { puppet = { country = CGX country = SOV } } not = { participant = { country = CGX value = 3 } } not = { alliance = { country = CGX country = SOV } } } type = relation which = CGX value = -10 }
+		command = { trigger = { NOT = { puppet = { country = CYN country = SOV } } not = { participant = { country = CYN value = 3 } } not = { alliance = { country = CYN country = SOV } } } type = relation which = CYN value = -10 }
+		command = { trigger = { NOT = { puppet = { country = CXB country = SOV } } not = { participant = { country = CXB value = 3 } } not = { alliance = { country = CXB country = SOV } } } type = relation which = CXB value = -10 }
+	}
+
+}
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+
+event = {
+	id = 2012004
+	random = no
+	tag = { CHI CHC }
+
+	name = "EVT_3823_NAME"
+	desc = "EVT_3823_DESC"
+	style = 2
+	picture = "news_paper"
+
+    
+	trigger = {
+		not = { ispuppet = JAP }
+		country = CHI
+		NOT = { ispuppet = yes }
+		war = { country = -1 country = JAP }
+		region = { region = "China" country = -1 value = 55 }
+		or = {
+			and = { # China or rebel controls one of these provinces.
+				or = {
+					control = { province = 1214 data = CHI } # Shenyang
+					control = { province = 1214 data = CHC } # Shenyang
+					control = { province = 1214 data = REB } # Shenyang
+				}
+				or = {
+					control = { province = 1199 data = CHI } # Harbin
+					control = { province = 1199 data = CHC } # Harbin
+					control = { province = 1199 data = REB } # Harbin
+				}
+				or = {
+					control = { province = 1221 data = CHI } # Pyongyang
+					control = { province = 1221 data = CHC } # Pyongyang
+					control = { province = 1221 data = REB } # Pyongyang
+					AND = {
+						control = { province = 1221 data = KOR } # Pyongyang
+						puppet = { country = KOR country = -1 }
+					}
+					AND = {
+						control = { province = 1221 data = PRK } # Pyongyang
+						puppet = { country = PRK country = -1 }
+					}
+
+				}
+				or = {
+					control = { province = 1228 data = CHI } # Seoul
+					control = { province = 1228 data = CHC } # Seoul
+					control = { province = 1228 data = REB } # Seoul
+					AND = {
+						control = { province = 1228 data = KOR } # Seoul
+						puppet = { country = KOR country = -1 }
+					}
+					AND = {
+						control = { province = 1228 data = PRK } # Seoul
+						puppet = { country = PRK country = -1 }
+					}
+
+				}
+				or = {
+					control = { province = 1231 data = CHI } # Busan
+					control = { province = 1231 data = CHC } # Busan
+					control = { province = 1231 data = REB } # Busan
+					AND = {
+						control = { province = 1231 data = KOR } # Busan
+						puppet = { country = KOR country = -1 }
+					}
+					AND = {
+						control = { province = 1231 data = PRK } # Busan
+						puppet = { country = PRK country = -1 }
+					}
+
+				}
+				or = {
+					control = { province = 1337 data = CHI } # Nanjing
+					control = { province = 1337 data = CHC } # Nanjing
+					control = { province = 1337 data = REB } # Nanjing
+				}
+				or = {
+					control = { province = 1247 data = CHI } # Beijing
+					control = { province = 1247 data = CHC } # Beijing
+					control = { province = 1247 data = REB } # Beijing
+				}
+			}
+			and = {
+				not = { region = { region = "China" country = JAP value = 10 } }
+				not = { region = { region = "Korea" country = JAP value = 5 } }
+				not = { exists = MAN }
+				not = { exists = MEN }
+				not = { region = { region = "China" country = U87 value = 5 } }
+				region = { region = "Korea" country = -3 value = 55 }
+				or = {
+					and = {
+						exists = MON
+						not = { region = { region = "China" country = SOV value = 10 } }
+					}
+					and = {	
+						not = { exists = MON }
+						not = { region = { region = "China" country = SOV value = 20 } } #In case Soviets annexed Mongolia
+					}
+				}
+				not = { region = { region = "China" country = USA value = 10 } }
+			}
+		}
+		random = 50
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = "EVT_3823_ACTA" #Humiliate the Japanese!
+		command = { type = dissent value = -20 }
+		command = { trigger = { country = CHI } type = setflag which = fs_kmt }
+		command = { trigger = { country = CHC } type = setflag which = fs_ccp }
+		command = { type = trigger which = 2011018 }
+		command = { trigger = { exists = U87 } type = inherit which = U87}
+	}
+
+	action = {
+		ai_chance = 0
+		name = "EVT_3823_ACTB" #We push for total victory!
+		command = { type = dissent value = 5 }
+		command = { type = sleepevent which = 2011018 }
+		command = { trigger = { exists = U87 } type = inherit which = U87}
+	}
+}
+#########################################################################
+#  Surrender events - Japan surrenders to China
+#########################################################################
+event = {
+	id = 2012005
+	random = no
+	tag = { CHC CHI }
+
+	name = "EVT_3825_NAME"
+	desc = "EVT_3825_DESC"
+	style = 2
+	picture = "ccip_fs"
+
+	#Triggered by JAP 2011018
+
+	action = {
+		name = "ACTION_NAME_HURRAH" #
+		command = { type = capital which = 1337 } #Move Capital back to Nanjing
+		command = { trigger = { exists = MAN } type = inherit which = MAN }
+		command = { trigger = { exists = MEN } type = inherit which = MEN }
+		#command = { trigger = { flag = KOR_FROM_JAP_TO_CHI } type = make_puppet which = KOR }
+		#command = { trigger = { flag = KOR_FROM_JAP_TO_CHI } type = clrflag which = KOR_FROM_JAP_TO_CHI }
+		command = { type = make_puppet which = KOR }	
+		command = { trigger = { exists = PRK or = { not = { ispuppet = KOR } puppet = { country = PRK country = JAP } } } type = make_puppet which = PRK }
+		command = { trigger = { exists = KOR or = { and = { country = CHI puppet = { country = KOR country = CHI } } and = { country = CHC puppet = { country = KOR country = CHC } } } } type = secederegion which = KOR value = "Korea" when = 1}
+		command = { trigger = { exists = PRK or = { and = { country = CHI puppet = { country = PRK country = CHI } } and = { country = CHC puppet = { country = PRK country = CHC } } } } type = secederegion which = PRK value = "Korea" when = 1}
+		command = { trigger = { puppet = { country = U03 country = JAP } } type = make_puppet which = U03 }
+		command = { trigger = { puppet = { country = U03 country = CHI } country = CHI } type = secederegion which = U03 value = Indochine } 
+		command = { trigger = { puppet = { country = U03 country = CHC } country = CHC } type = secederegion which = U03 value = Indochine } 
+		command = { trigger = { ai = yes country = CHI } type = ai which = "switch/CHI_Wins_JAP.ai" } #TODO: 1.05 Review AI
+	}
+}
+#########################################################################
+#  China annexes Mongolia
+#########################################################################
+
+event = {
+	id = 2012006
+	random = no
+	country = CHI
+
+	name = "EVT_3827_NAME"
+	desc = "EVT_3827_DESC"
+	style = 2
+	picture = "ccip_natarmy"
+
+	trigger = {
+		event = 2007033
+		exists = MON
+		alliance = { country = CHI country = GER }
+		alliance = { country = MON country = SOV }
+		NOT = {
+			alliance = { country = JAP country = GER }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_HURRAH" #
+		command = { type = inherit which = MON } 
+		command = { type = dissent value = -2 }
+	}
+}
+#######################################################################
+# Chinese Warlord Concession to Japan
+#######################################################################
+
+event = {
+	id = 2118001
+	random = no
+	country = CGX
+
+	name = "EVT_3822_NAME"
+	desc = "EVT_3822_DESC"
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		ai_chance = 100
+		name = "EVT_3822_ACTA" #We have little choice
+		command = { type = secedeprovince which = JAP value = 1369 } # Guangzhou - China
+		command = { type = secedeprovince which = JAP value = 1370 } # Lufeng - China
+	}
+}
+event = {
+	id = 2122001
+	random = no
+	country = CSX
+
+	name = "EVT_3822_NAME"
+	desc = "EVT_3829_DESC"
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		ai_chance = 100
+		name = "EVT_3822_ACTA" #We have little choice
+		command = { type = secedeprovince which = JAP value = 1249 } #Yangquan
+	}
+}
+event = {
+	id = 2123001
+	random = no
+	country = CXB
+
+	name = "EVT_3822_NAME"
+	desc = "EVT_3830_DESC"
+	style = 2
+	picture = "ccip_mukden"
+
+	action = {
+		ai_chance = 100
+		name = "EVT_3822_ACTA" #We have little choice
+		command = { type = secedeprovince which = JAP value = 1285 } # Yushu - China
+	}
+}
+#########################################################################
+#  Transfer of Chinese industry to the interior
+#########################################################################
+event = {
+	id = 2012007
+	random = no
+	country = CHI
+
+	name = EVT_86_NAME
+	desc = EVT_86_DESC
+  	style = 2
+  	picture = "news_paper"
+
+	decision = { war = { country = JAP country = CHI } }
+	decision_trigger = { war = { country = JAP country = CHI } }
+	trigger = { war = { country = JAP country = CHI } }
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+       	command = { type = domestic which = defense_lobby value = 1 }
+		command = { trigger = { ai = yes } type = add_prov_resource which = 1299 value = 7  where = metal }
+		command = { trigger = { ai = yes } type = add_prov_resource which = 1299 value = 14 where = energy }
+		command = { trigger = { ai = yes } type = add_prov_resource which = 1299 value = 3  where = rare_materials }
+	}
+
+}
+# Move Guangzhou (if CHI controled from CHI vs CGX war)
+###############
+event = {
+	id = 2012008
+	random = no
+	country = CHI
+
+	name = EVT_2012008_NAME
+	desc = EVT_86_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		atwar = yes
+		local_flag = CHIIndustry
+		control = { province = 1369 data = CHI }
+		control = { province = 1297 data = CHI }
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+        command = { type = construct which = ic where = 1369 value = -3 } # Guangzhou
+        command = { type = construct which = ic where = 1299 value = 3 }  # Chongqik
+	}
+}
+# Move Taiyuan if threatened
+###############
+event = {
+	id = 2012009
+	random = no
+	country = CHI
+
+	name = EVT_2012009_NAME
+	desc = EVT_86_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		atwar = yes
+		local_flag = CHIIndustry
+		control = { province = 1252 data = CHI } # Taiyuan
+		control = { province = 1264 data = CHI } # Lanzhou
+		OR = {
+			NOT = { control = { province = 1251 data = CHI } }
+			NOT = { control = { province = 1242 data = CHI } }
+			NOT = { control = { province = 1254 data = CHI } }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+        command = { type = construct which = ic where = 1252 value = -1 } # Taiyuan
+        command = { type = construct which = ic where = 1264 value = 1 }  # Lanzhou
+		command = { type = construct which = infrastructure where = 1264 value = 20 }  # Lanzhou
+	}
+}
+# Move Nanjing and Hangzhou
+###############
+event = {
+	id = 2012010
+	random = no
+	country = CHI
+
+	name = EVT_2012010_NAME
+	desc = EVT_86_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		atwar = yes
+		local_flag = CHIIndustry
+		control = { province = 1337 data = CHI } #Nanjing
+		control = { province = 1345 data = CHI } #Hangzhou
+		control = { province = 1297 data = CHI } #Chendgu
+		control = { province = 1307 data = CHI } #Huaihua
+		OR = {
+			NOT = { control = { province = 1338 data = CHI } }
+			NOT = { control = { province = 1346 data = CHI } }
+			NOT = { control = { province = 1348 data = CHI } }
+			NOT = { control = { province = 1336 data = CHI } }
+			NOT = { control = { province = 1340 data = CHI } }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+        command = { type = construct which = ic where = 1337 value = -3 } # Nanjing
+		command = { type = construct which = ic where = 1345 value = -1 } # Hangzhou
+        command = { type = construct which = ic where = 1299 value = 3 }  # Chongqik
+		command = { type = construct which = ic where = 1307 value = 1 }  # Huaihua
+		command = { type = construct which = infrastructure where = 1307 value = 20 }  # Huaihua
+	}
+}
+# Move Jinan
+###############
+event = {
+	id = 2012011
+	random = no
+	country = CHI
+
+	name = EVT_2012011_NAME
+	desc = EVT_86_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		atwar = yes
+		local_flag = CHIIndustry
+		control = { province = 1330 data = CHI } #Jinan
+		control = { province = 1297 data = CHI } #Chengdu
+		OR = {
+			NOT = { control = { province = 1249 data = CHI } } #wrong id yangquan?
+			NOT = { control = { province = 1331 data = CHI } }
+			NOT = { control = { province = 1332 data = CHI } }
+			NOT = { control = { province = 1339 data = CHI } }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+        command = { type = construct which = ic where = 1330 value = -1 } # Jinan
+        command = { type = construct which = ic where = 1297 value = 1 }  # Chengdu
+	}
+}
+# Move Zhengzhou
+###############
+event = {
+	id = 2012012
+	random = no
+	country = CHI
+
+	name = EVT_2012012_NAME
+	desc = EVT_86_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		atwar = yes
+		local_flag = CHIIndustry
+		control = { province = 1324 data = CHI } #Zhengzhou
+		control = { province = 1297 data = CHI } #Chengdu
+		OR = {
+			NOT = { control = { province = 1341 data = CHI } }
+			NOT = { control = { province = 1319 data = CHI } }
+			NOT = { control = { province = 1323 data = CHI } }
+			NOT = { control = { province = 1322 data = CHI } }
+			NOT = { control = { province = 1326 data = CHI } }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_86_ACTA
+		command = { type = local_setflag which = CHIIndustry }
+        command = { type = construct which = ic where = 1356 value = -1 } # Zhengzhou
+        command = { type = construct which = ic where = 1297 value = 1 }  # Chengdu
+	}
+}
+#########################################################################
+#  Operation Zet
+#########################################################################
+event = {
+	id = 2007002
+	random = no
+	country = SOV
+
+	name = EVT_82_NAME
+	desc = EVT_82_DESC
+	style = 2
+  	picture = "ccip_ccpsov"
+
+	decision = {
+		war = { country = CHI country = JAP }
+		NOT = { war = { country = CHI country = SOV } }
+	}
+	decision_trigger = {
+		war = { country = CHI country = JAP }
+		NOT = { war = { country = CHI country = SOV } }
+		supplies = 1000
+	}
+	trigger = {
+		war = { country = CHI country = JAP }
+		NOT = { war = { country = CHI country = SOV } }
+		random = 10
+	}
+
+	date = { day = 0 month = january year = 1937 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action = {
+		ai_chance = 100
+		name = EVT_82_ACTA
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = non_aggression which = CHI where = SOV }
+		command = { type = manpowerpool value = -5 }
+		command = { type = money value = -500 }
+		command = { type = supplies value = -1500 }
+		command = { type = oilpool value = -250 }
+		command = { type = trigger which = 2012013 }
+	}
+}
+
+
+event = {
+	id = 2012013
+	random = no
+	country = CHI
+
+	name = EVT_83_NAME
+	desc = EVT_83_DESC
+	style = 2
+  	picture = "ccip_ccpsov"
+
+	# Triggered by Soviet event 2007002
+
+	action = {
+		name = EVT_83_ACTA
+		command = { type = construct which = air_base where = 1297 value = 1 }
+		command = { type = add_corps which = "Op Zet Exp. Force 1" value = air where = 1297 }
+		command = { type = add_division which = "Interceptor Force" value = interceptor when = 7 }
+		command = { type = add_corps which = "Op Zet Exp. Force 2" value = air where = 1297 }
+		command = { type = add_division which = "Bomber Force" value = tactical_bomber when = 6 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = supplies value = 1500 }
+		command = { type = oilpool value = 250 }
+		command = { type = non_aggression which = SOV where = CHI }
+		command = { type = wakeleader which = 55375 } #Khryukin
+	   	command = { type = gain_tech which = 6310 }	#Large Front Doctrine
+	   	command = { trigger = { NOT = { technology = 5820 } } type = gain_tech which = 5820 }	#Mass Production
+	   	command = { trigger = { technology = 5820 NOT = { technology = 5050 } } type = gain_tech which = 5050 }	#Basic Machine Tools
+	}
+}
+#########################################################################
+#  Huayuankow (Chengchow) flooding
+#########################################################################
+event = {
+	id = 2012014
+	random = no
+	country = CHI
+
+	name = EVT_87_NAME
+	desc = EVT_87_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = JAP country = CHI }
+		control = { province = 1241 data = JAP }
+		NOT = {
+		   OR = {
+		      control = { province = 1323 data = CSX }
+		      control = { province = 1323 data = CHC }
+		      control = { province = 1323 data = CXB }
+		      control = { province = 1323 data = CGX }
+		      control = { province = 1323 data = CYN }
+		      control = { province = 1323 data = CHI }
+		   }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 90
+		name = EVT_87_ACTA
+		command = { type = construct which = ic where = 1324 value = -3 } # Zhengzhou, higher IC effect
+		command = { type = construct which = infrastructure where = 1324 value = -25 }
+		command = { type = construct which = ic where = 1325 value = -2 } # Nanyang
+		command = { type = construct which = infrastructure where = 1325 value = -15 } # lower infra effect here
+		command = { type = construct which = ic where = 1326 value = -2 } # Xinyang
+		command = { type = construct which = infrastructure where = 1326 value = -25 }
+		command = { type = dissent value = 2 } # the KMT is killing it's own people
+	}
+	action = {
+		ai_chance = 10
+		name = EVT_87_ACTB
+		command = { type = dissent value = 1 } # the KMT does NOT do enough to stop the Japanese
+	}
+}
+#########################################################################
+#  Xi'an Incident
+#########################################################################
+event = {
+	id = 2012015
+	random = no
+	country = CHI
+
+	name = EVT_90_NAME
+	desc = EVT_90_DESC
+	style = 2
+  	picture = "ccip_natoff"
+
+	trigger = {
+		war = { country = CHI country = CHC }
+		headofgovernment = 55002 # both Chiang Kai Shek
+		NOT = {
+			war = { country = CHI country = JAP }
+		}
+		random = 30
+	}
+
+	date = { day = 0 month = march year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = february year = 1937 }
+
+	action = {
+		name = EVT_90_ACTA
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = peace which = CHC value = 0 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = relation which = CHC value = 10 }
+		command = { type = relation which = CSX value = 20 }
+		command = { type = relation which = CGX value = 10 }
+		command = { type = relation which = CYN value = 5 }
+		command = { type = relation which = CXB value = 10 }
+		command = { type = relation which = SIK value = 15 }
+		command = { type = sleepleader which = 55012 } # Zhang Xueliang
+		command = { type = sleepleader which = 55338 } # Yang Hucheng
+		command = { type = sleepminister which = 55008 } # Zhang Xueliang 
+		command = { type = sleepminister which = 55069 } # Zhang Xueliang 
+	}
+	action = {
+		name = EVT_90_ACTB
+		ai_chance = 0
+		command = { type = dissent value = 10 } # loss of support (mainly Manchurian exiles)
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = freedom value = 2 }
+		command = { type = relation which = CHC value = -20 }
+		command = { type = relation which = CGX value = -5 }
+		command = { type = relation which = CSX value = -10 }
+		command = { type = relation which = CYN value = -5 }
+		command = { type = relation which = CXB value = -5 }
+		command = { type = relation which = SIK value = -5 }
+		command = { type = sleepleader which = 55012 } # Zhang Xueliang
+		command = { type = sleepleader which = 55338 } # Yang Hucheng
+		command = { type = sleepevent which = 2012016 } #Alt Unified Front
+		command = { type = sleepminister which = 55008 } # Zhang Xueliang 
+		command = { type = sleepminister which = 55069 } # Zhang Xueliang 
+	}
+	action = {
+		name = EVT_90_ACTC
+		ai_chance = 0
+		command = { type = dissent value = 15 } # anti-communist dissent
+		command = { type = peace which = CHC value = 0 }
+		command = { type = alliance which = CHC when = 1 }
+		command = { type = alliance which = CSX when = 1 }
+		command = { type = alliance which = CGX when = 1 }
+		command = { type = alliance which = CYN when = 1 }
+		command = { type = alliance which = CXB when = 1 }
+		command = { type = domestic which = democratic value = 2 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = domestic which = freedom value = 2 }
+		command = { type = sleepevent which = 2012016 } #Alt Unified Front
+	}
+
+}
+##################################
+# Unified front
+##################################
+event = {
+	id = 2012016
+	country = CHI
+	random = no
+
+	decision = {
+		OR = {
+			war = { country = CHI country = JAP }
+			war = { country = CHC country = JAP }
+			war = { country = CSX country = JAP }
+			war = { country = CGX country = JAP }
+			war = { country = CYN country = JAP }
+			war = { country = CXB country = JAP }
+		}
+		NOT = { alliance = { country = CHI country = JAP } }
+		NOT = { alliance = { country = CSX country = JAP } }
+		NOT = { alliance = { country = CHC country = JAP } }
+		NOT = { alliance = { country = CGX country = JAP } }
+		NOT = { alliance = { country = CYN country = JAP } }
+		NOT = { alliance = { country = CXB country = JAP } }
+
+	}
+	decision_trigger = {
+		OR = {
+			war = { country = CHI country = JAP }
+			war = { country = CHC country = JAP }
+			war = { country = CSX country = JAP }
+			war = { country = CGX country = JAP }
+			war = { country = CYN country = JAP }
+			war = { country = CXB country = JAP }
+		}
+		NOT = { alliance = { country = CHI country = JAP } }
+		NOT = { alliance = { country = CSX country = JAP } }
+		NOT = { alliance = { country = CHC country = JAP } }
+		NOT = { alliance = { country = CGX country = JAP } }
+		NOT = { alliance = { country = CYN country = JAP } }
+		NOT = { alliance = { country = CXB country = JAP } }
+
+	}
+	trigger = {
+		OR = {
+			war = { country = CHI country = JAP }
+			war = { country = CHC country = JAP }
+			war = { country = CSX country = JAP }
+			war = { country = CGX country = JAP }
+			war = { country = CYN country = JAP }
+			war = { country = CXB country = JAP }
+		}
+		NOT = { alliance = { country = CHI country = JAP } }
+		NOT = { alliance = { country = CSX country = JAP } }
+		NOT = { alliance = { country = CHC country = JAP } }
+		NOT = { alliance = { country = CGX country = JAP } }
+		NOT = { alliance = { country = CYN country = JAP } }
+		NOT = { alliance = { country = CXB country = JAP } }
+		NOT = { 
+			AND = { 
+				flag = JAP_NorthStrategy
+				war = { country = SOV country = JAP }
+			}
+		}
+	}
+
+	name = EVT_91_NAME
+	desc = EVT_91_DESC
+	style = 2
+  	picture = "Marco_Polo_bridge"
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action = {
+		name = EVT_91_ACTA
+		command = { type = domestic which = interventionism value = 1 }
+		#command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+		command = { trigger = { ai = yes } type = dissent value = -20 }
+		command = { type = peace which = CHC value = 0 }
+		command = { type = peace which = CYN value = 0 } # Just in case
+		command = { type = peace which = CXB value = 0 }
+		command = { type = peace which = CGX value = 0 }
+		command = { type = peace which = CSX value = 0 }
+		#command = { type = alliance which = CHC when = 1 }
+        command = { type = relation which = CHC value = 50 }
+        command = { type = relation which = CGX value = 50 }
+        command = { type = relation which = CYN value = 50 }
+        command = { type = relation which = CXB value = 50 }
+        command = { type = relation which = CSX value = 50 }
+		command = { trigger = { ai = yes } type = alliance which = CYN when = 1 }
+		command = { trigger = { ai = yes } type = alliance which = CXB when = 1 }
+		command = { trigger = { ai = yes } type = alliance which = CGX when = 1 }
+		command = { trigger = { ai = yes } type = alliance which = CSX when = 1 }
+		command = { trigger = { NOT = { ai = yes }} type = alliance which = CYN value = 1 }
+		#command = { trigger = { NOT = { ai = yes }} type = inherit which = CXB value = 1 } 
+		command = { trigger = { NOT = { ai = yes }} type = alliance which = CGX value = 1 } 
+		command = { trigger = { NOT = { ai = yes }} type = alliance which = CSX value = 1 } 
+        command = { type = trigger which = 1330110074 } #United Front Helper
+	}
+}
+#############################################
+# The Liangguang Incident
+#############################################
+event = {
+	id = 2012029
+	random = no
+	country = CGX
+
+	trigger = {
+		exists = CHI
+		random = 25
+		NOT = { war = { country = CHI country = CGX } }
+		NOT = { war = { country = CHI country = JAP } }
+		NOT = { alliance = { country = USA country = CGX } }
+		NOT = { alliance = { country = JAP country = CGX } }
+		NOT = { alliance = { country = ENG country = CGX } }
+		NOT = { alliance = { country = SOV country = CGX } }
+		OR = { #either Guangxi is not a puppet, or it is a puppet of CHI
+			NOT = { ispuppet = CGX }
+			puppet = { country = CGX country = CHI }
+		}
+		OR = { #either CHI is not a puppet, or it controls CGX as a puppet anyway
+			NOT = { ispuppet = CHI }
+			puppet = { country = CGX country = CHI }
+		}
+	}
+
+	name = EVT_27008_NAME
+	desc = EVT_27008_DESC
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 0 month = june year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_27008_A
+		ai_chance = 100
+		command = { type = free_ic value = 5 }
+		command = { type = secedeprovince which = CHI value = 1374 }#Pingxiang
+		command = { type = secedeprovince which = CHI value = 1365 }#Haikou
+		command = { type = secedeprovince which = CHI value = 1367 }#Naoming
+		command = { type = secedeprovince which = CHI value = 1373 }#Jiangmen
+		command = { type = secedeprovince which = CHI value = 1377 }#Yulin
+		command = { type = secedeprovince which = CHI value = 1368 }#Shaoguan
+		command = { type = secedeprovince which = CHI value = 1369 }#Guangzhou
+		command = { type = secedeprovince which = CHI value = 1370 }#Lufen
+		command = { type = secedeprovince which = CHI value = 1375 }#Shantou
+		command = { type = trigger which = 2012030 }#CHI The Liangguang Incident
+	}
+	action = {
+		name = EVT_27008_B
+		ai_chance = 0
+		command = { type = free_ic value = 14 }
+		command = { type = leave_alliance when = 1 }
+		command = { type = war which = CHI }
+	}
+}
+
+event = {
+	id = 2012030
+	random = no
+	country = CHI
+
+
+	name = EVT_27008_NAME
+	desc = EVT_27008_DESC
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = belligerence which = CHI value = 1 }
+		command = { trigger = { dissent = 20 } type = dissent value = 1 }
+		command = { trigger = { dissent = 10 NOT = { dissent = 20 } } type = dissent value = 3 }
+		command = { trigger = { NOT = { dissent = 10 } } type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 2053004
+	country = CHC
+
+	decision = {
+		region = { region = "China" country = CHC data = 1 value = 50 }
+		government = communist
+	}
+	decision_trigger = {
+		region = { region = "China" country = CHC data = 1 value = 80 }
+
+	}
+	trigger = {
+		region = { region = "China" country = CHC data = 1 value = 80 }
+		government = communist
+	}
+
+	name = EVT_2053004_NAME
+	desc = EVT_2053004_DESC
+	style = 2
+  	picture = "spread_revolution"
+  	decision_picture = "decision_spread_revolution"
+
+	date = { day = 0 month = january year = 1933 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_HURRAH
+		command = { type = name where = CHC which = CHC1949 }
+		command = { type = flag_ext where = CHC which = "_PRC" }
+		command = { trigger = { owned = { province = 1247 data = CHC } } type = capital which = 1247 }
+		command = { type = dissent value = -20 }
+		command = { type = sleepteam which = 260125 when = 1 }
+		command = { type = waketeam which = 260126 when = 1 } 
+		command = { type = waketeam which = 260127 when = 1 }
+		command = { type = waketeam which = 260128 when = 1 }
+		command = { type = waketeam which = 260129 when = 1 }
+		command = { type = waketeam which = 260131 when = 1 }
+		command = { type = waketeam which = 260132 when = 1 }
+		command = { type = waketeam which = 260027 when = 1 }
+		command = { type = waketeam which = 260028 when = 1 }
+		command = { type = waketeam which = 260029 when = 1 }
+		command = { type = waketeam which = 260007 when = 1 }
+		command = { type = waketeam which = 260008 when = 1 }
+		command = { type = waketeam which = 260009 when = 1 }
+		command = { type = waketeam which = 260010 when = 1 }
+		command = { type = waketeam which = 260011 when = 1 }
+		command = { type = waketeam which = 260012 when = 1 }
+		command = { type = waketeam which = 260013 when = 1 }
+		command = { type = waketeam which = 260019 when = 1 }
+		command = { type = waketeam which = 260020 when = 1 }
+		command = { type = waketeam which = 260021 when = 1 }
+		command = { type = waketeam which = 260023 when = 1 }
+		command = { type = waketeam which = 260024 when = 1 }
+		command = { type = waketeam which = 260134 when = 1 }
+		command = { type = waketeam which = 260135 when = 1 }
+		command = { type = waketeam which = 260137 when = 1 }
+		command = { type = waketeam which = 260138 when = 1 }
+		command = { type = waketeam which = 260140 when = 1 }
+		command = { type = waketeam which = 260142 when = 1 }
+		command = { type = waketeam which = 260143 when = 1 }
+		command = { type = waketeam which = 260144 when = 1 }
+		command = { type = waketeam which = 260145 when = 1 }
+		command = { type = waketeam which = 260146 when = 1 }
+		command = { type = waketeam which = 260147 when = 1 }
+		command = { type = waketeam which = 260148 when = 1 }
+	}
+}
+
+

@@ -1,0 +1,8 @@
+# Romania/Hungar/Slovakia EXP AI File Release by Lothos
+
+
+exp_force_ratio = 0.85 
+exp_force_ratios = {
+	GER = 1.0
+} 
+no_exp_forces_to = { HUN BUL YUG GRE SLO TUR JAP SIA MAN FRA }

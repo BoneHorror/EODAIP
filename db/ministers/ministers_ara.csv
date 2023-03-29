@@ -1,0 +1,55 @@
+ARA;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+560001;Head of State;Haj Amin al-Husseini;1933;1964;1999;NS;Powerhungry Demagogue;Very High;aramufti;X
+560002;Head of Government;Haj Amin al-Husseini;1933;1964;1999;NS;Flamboyant Tough Guy;Very High;aramufti;X
+560003;Foreign Minister;Ali Mahir Pasha;1933;1964;1999;SC;Great Compromiser;High;M512002;X
+560004;Minister of Armament;Muhammad Mahmoud Pasha;1933;1964;1999;SC;Resource Industrialist;High;M512017;X
+560005;Minister of Security;Romarcos Hanna Pasha;1933;1964;1999;SC;Crime Fighter;Medium;M512064;X
+560006;Head of Military Intelligence;Mohammed Hilmi Issa;1933;1964;1999;SC;Dismal Enigma;Medium;M512006;X
+560007;Chief of Staff;Hassan Sabry Pasha;1933;1964;1999;SC;School of Defence;Medium;M512007;X
+560008;Chief of Army;Mohammed Naguib;1933;1964;1999;SC;Decisive Battle Doctrine;High;M512088;X
+560009;Chief of Navy;Abdallah Ziwar Pasha;1933;1964;1999;SC;Indirect Approach Doctrine;Medium;M512009;X
+560010;Chief of Air Force;Abdelhamid Soliman;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M512048;X
+560011;Head of State;Emile Eddeh;1933;1964;1999;PA;Pig-headed Isolationist;High;M529001;X
+560012;Head of State;H.M. Abdullah I;1933;1964;1999;SD;Autocratic Charmer;High;M556001;X
+560013;Head of State;Muhammed Bey al-Abid;1933;1964;1999;LE;Stern Imperialist;High;M528001;X
+560014;Head of Government;Kayreddin al-Ahdab;1933;1964;1999;PA;Naive Optimist;High;M529006;X
+560015;Head of Government;Ismael Bey Gaspirali;1933;1964;1999;SD;Silent Workhorse;High;M556013;X
+560016;Head of Government;Shukri al-Kuwaitli;1933;1964;1999;LE;Backroom Backstabber;High;M528015;X
+560017;Foreign Minister;Abdallah Aref al-Yafi;1933;1964;1999;PA;General Staffer;High;M529003;X
+560018;Foreign Minister;Samir al-Rifai;1933;1964;1999;SD;Apologetic Clerk;High;M556003;X
+560019;Foreign Minister;Faris al-Khouri;1933;1964;1999;LE;The Cloak N Dagger Schemer;High;M528004;X
+560020;Minister of Armament;Kayreddin al-Ahdab;1933;1964;1999;PA;laissez-faire capitalist;Medium;M529006;X
+560021;Minister of Armament;Ahmad Qadri;1933;1964;1999;SD;Military Entrepreneur;Medium;M556017;X
+560022;Minister of Armament;Shaykh Abd al-Alim Selim;1933;1964;1999;LE;Administrative Genius;Medium;M528030;X
+560023;Minister of Security;Nassim Majdalany;1933;1964;1999;PA;Compassionate Gentleman;Medium;M529039;X
+560024;Minister of Security;Awni Abdul Hadi;1933;1964;1999;SD;Silent Lawyer;Medium;M556020;X
+560025;Minister of Security;Faris al-Khouri;1933;1964;1999;LE;Man of the People;Medium;M528004;X
+560026;Head of Military Intelligence;Kayreddin al-Ahdab;1933;1964;1999;PA;Technical Specialist;Medium;M529006;X
+560027;Head of Military Intelligence;Rustum Haidar;1933;1964;1999;SD;Political Specialist;Medium;M556025;X
+560028;Head of Military Intelligence;Shaykh Muhammed al-Gawzi;1933;1964;1999;LE;Industrial Specialist;Medium;M528024;X
+560029;Chief of Staff;Antoine Harb;1933;1964;1999;PA;School of Mass Combat;Medium;M529052;X
+560030;Chief of Staff;Haddad al-Wali;1933;1964;1999;SD;School of Psychology;Medium;M556028;X
+560031;Chief of Staff;Shaykh Muhammed al-Gawzi;1933;1964;1999;LE;School of Fire Support;Medium;M528024;X
+560032;Chief of Army;Jamil Lahoud;1933;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M529055;X
+560033;Chief of Army;Nair al-Jafaar;1933;1964;1999;SD;Guns and Butter Doctrine;Medium;M556031;X
+560034;Chief of Army;Adib al-Shishakli;1933;1964;1999;LE;Elastic Defence Doctrine;Medium;M528051;X
+560035;Chief of Navy;Nabil Jad;1933;1964;1999;PA;Open Seas Doctrine;Medium;M529059;X
+560036;Chief of Navy;Hibah abd-el Adir;1933;1964;1999;SD;Decisive Naval Battle Doctrine;Medium;M556034;X
+560037;Chief of Navy;Shaykh Muhammed al-Gawzi;1933;1964;1999;LE;Base Control Doctrine;Medium;M528024;X
+560038;Chief of Air Force;Slimane Naoufai;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M529045;X
+560039;Chief of Air Force;Sami al-Afiz;1933;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M556035;X
+560040;Chief of Air Force;Hussein al-Zaim;1933;1964;1999;LE;Carpet Bombing Doctrine;Medium;M528047;X
+560041;Chief of Staff;Fawzi al-Qawuqji;1947;1964;1999;PA;School of Defence;High;6097;x
+560042;Chief of Staff;Yasser Arafat;1961;1964;1999;LWR;School of Mass Combat;High;6096;x 
+560043;Chief of Staff;Aziz Ali al-Masri;1944;1964;1999;FA;School of Manoeuvre;High;6001;x
+560044;Foreign Minister;Aziz Ali al-Masri;1950;1964;1999;FA;General Staffer;High;6001;x 
+560045;Minister of Security;Sayyid Qutb;1952;1964;1999;PA;Silent Lawyer;High;6009;x
+560046;Foreign Minister;Salah Salem;1953;1964;1999;LWR;The Cloak N Dagger Schemer;Medium;6008;x
+560047;Minister of Security;Salah Nasr;1957;1964;1999;SD;Crime Fighter;High;6007;x
+560048;Chief of Staff;Oskar Munzel;1951;1964;1999;PA;School of Fire Support;High;5994;x
+560049;Chief of Army;Mohamed Hussein Tantawi;1957;1964;1999;SD;Armoured Spearhead Doctrine;Very High;6004;x
+560050;Head of Government;Gamal Abdel Nasser;1954;1964;1999;SD;Flamboyant Tough Guy;Very High;6003;x
+560051;Head of State;Gamal Abdel Nasser;1956;1964;1999;SD;Die-hard Reformer;Very High;6003;x
+560052;Chief of Staff;Hasan Salama;1946;1964;1999;ML;School of Defence;High;6095;x
+560053;Chief of Staff;Fawzi al-Qawuqji;1947;1964;1999;PA;School of Defence;High;6097;x

@@ -1,0 +1,19 @@
+# Hungary invasion of Yugoslavia AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	province_priorities = {
+		278  = 100
+		277  = 100
+		280  = 100
+		281  = 100
+	}
+	area_multiplier = {
+		278  = 8.0
+		277  = 8.0
+		280  = 8.0
+		281  = 8.0
+	}
+}

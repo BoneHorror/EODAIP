@@ -1,0 +1,55 @@
+# Basic AWACS Aircraft (1953) Avro Shackleton AEW.2/Boeing B-29 AEW/KJ-1 AEWC
+model = { 
+	cost 						= 10
+	buildtime	 				= 200
+	defaultorganisation 		= 0
+	morale						= 0
+	manpower					= 0.25
+	maxspeed					= -50
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 4
+	surfacedefence				= 1
+	airdefence					= 1
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= 3000
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 250
+	}
+}
+
+# Improved AWACS Aircraft (1977) Boeing E-3 Sentry/Beriev A-50/EL/M-2075/KJ-2000
+model = { 
+	cost 						= 15
+	buildtime	 				= 200
+	defaultorganisation 		= 0
+	morale						= 0
+	manpower					= 0.25
+	maxspeed					= -50
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 15
+	surfacedefence				= 1
+	airdefence					= 1
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= 3000
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 250
+	}
+}

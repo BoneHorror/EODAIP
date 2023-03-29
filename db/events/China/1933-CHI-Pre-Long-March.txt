@@ -1,0 +1,1008 @@
+#-Introduction Events------------------------------------
+# 1330110000 CHI End of the Third Encirclement Campaigns
+# 1330110001 CSX The Japanese Threat
+# 1330110013 CSX Fortifications Finished
+# 1330110002 CHC End of the Third Encirclement Campaigns
+# 1330110003 MAN Japanese Investment in Manchuria
+# 1330110004 CSX The Drug Problem
+# 1330110005 CSX CHC Women and Education
+#-Fourth Encirclement Campaign---------------------------
+# 1330110006 CHI Fourth Encirclement Campaigns
+# 1330110007 CHI Fourth Encirclement Campaigns (Forced)
+# 1330110008 CHC Fourth Encirclement Campaigns
+# 1330110009 CHI End of the Fourth Encirclement Campaigns
+# 1330110010 CHC Inherit Helper
+# 1330110011 CHC End of the Fourth Encirclement Campaigns
+#-Generic------------------------
+# 1330110012 *** Demobilization
+#-Fifth Encirclement Campaign----------------------------
+# 1330110014 CHI Fifth Encirclement Campaigns
+# 1330110015 CHI 19th Army Defects (Not in OOB)
+# 1330110016 CHC 19th Army Defects (60, 61, 78)
+# 1330110017 REB Helper Event (Disband Chahar Units if they exist)
+#-Ahistoric 19th Army Accepted---------------------------
+# 1330110018 CGX 19th Army Defects
+# 1330110019 CSX 19th Army Defects
+# 1330110020 CXB 19th Army Defects
+# 1330110021 CYN 19th Army Defects
+
+
+# 1330110000 End of the Third Encirclement Campaigns
+event = {
+	id = 1330110000
+	random = no
+	country = CHI
+	save_date = yes
+
+	trigger = {
+		local_flag = CHI_CHC_THIRD_ENCIRCLEMENT
+		or = {
+			random = 10
+			and = {
+				year = 1933
+				month = 0
+			}
+			not = { war = { country = CHI country = CHC } }
+		}
+	}
+	
+	name = EVT_1330110000_NAME
+	desc = EVT_1330110000_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 5 }
+		command = { trigger = { war = { country = CHI country = CHC } } type = peace which = CHC }
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = province_keypoints which = 1325 value = -1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = clrflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHI } flag = 1345VP } type = province_keypoints which = 1345 value = -1 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1345VP } type = clrflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHI } flag = 1344VP } type = province_keypoints which = 1344 value = -1 } #Anqing
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1344VP } type = clrflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHI } flag = 1352VP } type = province_keypoints which = 1352 value = -1 } #Nanchang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1352VP } type = clrflag which = 1352VP }
+		command = { type = trigger which = 1330110001 } #CSX The Japanese Threat
+		command = { type = trigger which = 1330110002 } #CHC End of the Third Encirclement Campaigns
+		command = { trigger = { year = 1933 month = 0 } type = trigger which = 1330110007 } #CHI Fourth Encirclement Campaigns (Forced)
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+	}
+}
+
+# 1330110001 CSX The Japanese Threat
+event = {
+	id = 1330110001
+	random = no
+	country = CSX
+
+	#Triggered
+	
+	name = EVT_1330110001_NAME
+	desc = EVT_1330110001_DESC
+
+	style = 2
+	picture = "ccip_taiyuan"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = relation which = CHC value = 5 }
+		command = { type = relation which = CHI value = -5 }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = event which = 1330110005 where = CSX when = 3 } #CSX Women and Education
+		command = { type = event which = 1330110005 where = CHC when = 3 } #CSX Women and Education
+		command = { type = event which = 1330110013 where = CSX when = 720 } #CSX Fortifications Finished
+	}
+}
+
+# 1330110013 CSX Fortifications Finished
+event = {
+	id = 1330110013
+	random = no
+	country = CSX
+
+	#Triggered
+
+	style = 2
+	picture = "ccip_taiyuan"
+
+	name = EVT_1330110013_NAME
+	desc = EVT_1330110013_DESC
+
+	action = {
+		trigger = {
+			or = {
+				control = { province = 1252 data = CSX } #Taiyuan
+				control = { province = 1251 data = CSX } #Datong
+				control = { province = 1250 data = CSX } #Lingqiu
+			}
+		}
+		name = ACTION_NAME_GREAT
+		command = { trigger = { control = { province = 1252 data = CSX } } type = construct which = land_fort where = 1252 value = 4 } #Taiyuan
+		command = { trigger = { control = { province = 1251 data = CSX } } type = construct which = land_fort where = 1251 value = 2 } #Datong
+		command = { trigger = { control = { province = 1250 data = CSX } } type = construct which = land_fort where = 1250 value = 2 } #Lingqiu
+	}
+}
+
+# 1330110002 End of the Third Encirclement Campaigns
+event = {
+	id = 1330110002
+	random = no
+	country = CHC
+
+	#Triggered
+	
+	name = EVT_1330110000_NAME
+	desc = EVT_1330110002_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1325VP } type = province_keypoints which = 1325 value = -1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1325VP } type = clrflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } flag = 1345VP } type = province_keypoints which = 1345 value = -1 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1345VP } type = clrflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } flag = 1344VP } type = province_keypoints which = 1344 value = -1 } #Anqing
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1344VP } type = clrflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } flag = 1352VP } type = province_keypoints which = 1352 value = -1 } #Nanchang
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1352VP } type = clrflag which = 1352VP }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHC when = 0 } #Demobilization
+		command = { }
+	}
+}
+
+# 1330110003 Japanese Investment in Manchuria
+event = {
+	id = 1330110003
+	random = no
+	country = MAN
+
+	trigger = {
+		puppet = { country = MAN country = JAP }
+	}
+	
+	name = EVT_1330110003_NAME
+	desc = EVT_1330110003_DESC
+	style = 2
+	picture = "ccip_poppy"
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+		command = { type = trigger which = 1330110004 } #CSX The Drug Problem
+	}
+}
+
+# 1330110004 CSX The Drug Problem
+event = {
+	id = 1330110004
+	random = no
+	country = CSX
+
+	#Triggered
+	
+	name = EVT_1330110004_NAME
+	desc = EVT_1330110004_DESC
+	style = 2
+	picture = "ccip_poppy"
+
+	action = {
+		ai_chance = 0
+		name = EVT_1330110004_ACTION1 #Let us not anger the Japanese
+		command = { type = dissent value = 20 }
+		command = { type = relation which = JAP value = 100 }
+		command = { type = relation which = MAN value = 100 }
+		command = { type = free_ic value = 6 }
+		command = { type = end_puppet }
+	}
+
+	action = {
+		ai_chance = 100
+		name = EVT_1330110004_ACTION2 #Execute the drug dealers (Historic)!
+		command = { type = dissent value = -10 }
+		command = { type = relation which = JAP value = -50 }
+		command = { type = relation which = MAN value = -50 }
+		command = { type = free_ic value = 4 }
+	}
+}
+
+# 1330110005 Women and Education
+event = {
+	id = 1330110005
+	random = no
+	persistent = yes
+	tag = { CSX CHC }
+
+	name = EVT_1330110005_NAME
+	desc = EVT_1330110005_DESC
+	style = 2
+	picture = "Women_Work"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 }
+		command = { type = manpowerpool value = 1.0 when = 1 }
+		command = { trigger = { country = CHC } type = relative_manpower value = 10 }
+		command = { trigger = { country = CSX } type = relative_manpower value = 2 }
+		command = { type = local_setflag which = women_work }
+	}
+}
+################################
+# Fourth Encirclement Campaign #
+################################
+
+# 1330110006 CHI Fourth Encirclement Campaigns
+event = {
+	id = 1330110006
+	random = no
+	country = CHI
+
+	decision = {
+		not = { local_flag = CHI_CHC_FOURTH_ENCIRCLEMENT }
+		local_flag = CHI_CHC_THIRD_ENCIRCLEMENT
+		exists = CHC
+		not = { alliance = { country = CHC country = CHI } }
+		not = { war = { country = CHI country = JAP } }
+		atwar = no
+		or = {
+			and = {
+				year = 1933
+				event = { id = 1330110000 days = 30 } #End of the Third Encirclement Campaigns
+			}
+			and = {
+				year = 1932
+				event = { id = 1330110000 days = 90 } #End of the Third Encirclement Campaigns
+			}
+			and = {
+				year = 1931
+				event = { id = 1330110000 days = 150 } #End of the Third Encirclement Campaigns
+			}
+		}
+	}
+
+	decision_trigger = {
+		supplies = 500
+		not = { dissent = 30 }
+	}
+
+	trigger = {
+		not = { local_flag = CHI_CHC_FOURTH_ENCIRCLEMENT }
+		local_flag = CHI_CHC_THIRD_ENCIRCLEMENT
+		exists = CHC
+		not = { alliance = { country = CHC country = CHI } }
+		not = { war = { country = CHI country = JAP } }
+		atwar = no
+		supplies = 500
+		not = { dissent = 30 }
+		or = {
+			and = {
+				year = 1933
+				event = { id = 1330110000 days = 30 } #End of the Third Encirclement Campaigns
+			}
+			and = {
+				year = 1932
+				event = { id = 1330110000 days = 90 } #End of the Third Encirclement Campaigns
+			}
+			and = {
+				year = 1931
+				event = { id = 1330110000 days = 150 } #End of the Third Encirclement Campaigns
+			}
+		}
+	}
+	
+	name = EVT_1330110006_NAME
+	desc = EVT_1330110006_DESC
+	style = 2
+	picture = "ccip_cw"
+	decision_picture = "decision_ccip_cna"
+
+	date = { day = 0 month = january year = 1931 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_WAR
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = supplies value = -50 }
+		command = { type = trigger which = 1330110008 } #CHC Fourth Encirclement Campaigns
+		command = { type = sleepevent which = 1330110007 } #CHI Fourth Encirclement Campaigns (Forced)
+		command = { type = local_setflag which = CHI_CHC_FOURTH_ENCIRCLEMENT }
+		command = { type = war which = CHC }
+	}
+}
+
+# 1330110007 CHI Fourth Encirclement Campaigns (Forced)
+event = {
+	id = 1330110007
+	random = no
+	country = CHI
+
+	#Triggered
+	
+	name = EVT_1330110006_NAME
+	desc = EVT_1330110006_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_WAR
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = supplies value = -500 }
+		command = { type = trigger which = 1330110008 } #CHC Fourth Encirclement Campaigns
+		command = { type = sleepevent which = 1330110006 } #CHI Fourth Encirclement Campaigns
+		command = { type = local_setflag which = CHI_CHC_FOURTH_ENCIRCLEMENT }
+		command = { type = war which = CHC }
+	}
+}
+# 1330110008 CHC Fourth Encirclement Campaigns
+event = {
+	id = 1330110008
+	random = no
+	country = CHC
+	save_date = yes
+
+	name = EVT_1330110006_NAME
+	desc = EVT_1330110008_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		command = { type = dissent value = -5 }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { control = { province = 1325 data = CHC } not = { flag = 1325VP } } type = province_keypoints which = 1325 value = 1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } } type = setflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } not = { flag = 1345VP } } type = province_keypoints which = 1345 value = 1 } #Hangzhou
+		command = { trigger = { control = { province = 1345 data = CHC } } type = setflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } not = { flag = 1344VP } } type = province_keypoints which = 1344 value = 1 } #Anqing
+		command = { trigger = { control = { province = 1344 data = CHC } } type = setflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } not = { flag = 1352VP } } type = province_keypoints which = 1352 value = 1 } #Nanchang
+		command = { trigger = { control = { province = 1352 data = CHC } } type = setflag which = 1352VP }
+		command = { type = free_ic value = 7 }
+	}
+}
+
+# 1330110009 CHI End of the Fourth Encirclement Campaigns
+event = {
+	id = 1330110009
+	random = no
+	country = CHI
+	one_action = yes
+
+	trigger = {
+		local_flag = CHI_CHC_FOURTH_ENCIRCLEMENT
+		or = {
+			random = 5
+			and = {
+				dissent = 15
+				random = 10
+			}
+			and = {
+				dissent = 30
+				random = 10
+			}
+			and = {
+				year = 1933
+				month = 4
+			}
+			not = { war = { country = CHC country = CHI } }
+		}
+		or = {
+			event = { id = 1330110008 days = 30 } #CHC Fourth Encirclement Campaigns
+			not = { war = { country = CHC country = CHI } }
+		}
+	}
+	
+	name = EVT_1330110009_NAME
+	desc = EVT_1330110009_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	date = { day = 0 month = january year = 1931 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					not = { exists = CHC }
+					not = { region = { region = "China" country = CHC data = 1 value = 2 } }
+					region = { region = "China" country = CHC data = 1 value = 10 }
+				}
+			}
+			or = {
+				and = {
+					not = { control = { province = 1344 data = CHC } } #Anqing
+					not = { control = { province = 1345 data = CHC } } #Hangzhou
+					not = { control = { province = 1358 data = CHC } } #Fuzhou
+					not = { control = { province = 1360 data = CHC } } #Xiamen
+				}
+				not = { war = { country = CHC country = CHI } }
+			}
+		}
+		name = EVT_1330110009_ACTION1 #Minor gains against the Communists
+		command = { trigger = { control = { province = 1344 data = CHI } } type = secedeprovince which = CHI value = 1344 when = 2 } #Anqing
+		command = { trigger = { control = { province = 1345 data = CHI } } type = secedeprovince which = CHI value = 1345 when = 2 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHI } } type = secedeprovince which = CHI value = 1322 when = 2 } #Luoyang
+		command = { trigger = { control = { province = 1325 data = CHI } } type = secedeprovince which = CHI value = 1324 when = 2 } #Zhengzhou
+		command = { trigger = { control = { province = 1325 data = CHI } } type = secedeprovince which = CHI value = 1325 when = 2 } #Nanyang
+		command = { trigger = { control = { province = 1352 data = CHI } } type = secedeprovince which = CHI value = 1352 when = 2 } #Nanchang
+		command = { type = secedeprovince which = CHI value = 1355 when = 2 } #Ji'an
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1325 value = -2 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1324 value = -2 } #Zhengzhou
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1322 value = -2 } #Luoyang
+		command = { trigger = { war = { country = CHI country = CHC } } type = peace which = CHC }
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = province_keypoints which = 1325 value = -1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = clrflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHI } flag = 1345VP } type = province_keypoints which = 1345 value = -1 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1345VP } type = clrflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHI } flag = 1344VP } type = province_keypoints which = 1344 value = -1 } #Anqing
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1344VP } type = clrflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHI } flag = 1352VP } type = province_keypoints which = 1352 value = -1 } #Nanchang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1352VP } type = clrflag which = 1352VP }
+		command = { type = trigger which = 1330110011 } #CHC End of the Fourth Encirclement Campaigns
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+
+	}
+
+	action = {
+		trigger = {
+			or = {
+				not = { exists = CHC }
+				not = { region = { region = "China" country = CHC data = 1 value = 2 } }
+			}
+		}
+		name = ACTION_NAME_VICTORY
+		command = { type = dissent value = -10 }
+		command = { trigger = { exists = CHC } type = inherit which = CHC value = 0 }
+		command = { trigger = { exists = CHC } type = trigger which = 1330110010 } #CHC Inherit Helper
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1325 value = -2 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1324 value = -2 } #Zhengzhou
+		command = { trigger = { control = { province = 1325 data = CHI } } type = construct which = land_fort where = 1322 value = -2 } #Luoyang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = province_keypoints which = 1325 value = -1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1325VP } type = clrflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHI } flag = 1345VP } type = province_keypoints which = 1345 value = -1 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1345VP } type = clrflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHI } flag = 1344VP } type = province_keypoints which = 1344 value = -1 } #Anqing
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1344VP } type = clrflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHI } flag = 1352VP } type = province_keypoints which = 1352 value = -1 } #Nanchang
+		command = { trigger = { control = { province = 1325 data = CHI } flag = 1352VP } type = clrflag which = 1352VP }
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					not = { exists = CHC }
+					not = { region = { region = "China" country = CHC data = 1 value = 2 } }
+				}
+			}
+			or = {
+				control = { province = 1344 data = CHC } #Anqing
+				control = { province = 1345 data = CHC } #Hangzhou
+				control = { province = 1358 data = CHC } #Fuzhou
+				control = { province = 1360 data = CHC } #Xiamen
+				region = { region = "China" country = CHC data = 1 value = 10 }
+			}
+		}
+		name = ACTION_NAME_DEFEAT
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { control = { province = 1344 data = CHC } } type = secedeprovince which = CHC value = 1350 when = 2 } #Anqing
+		command = { trigger = { control = { province = 1345 data = CHC } } type = secedeprovince which = CHC value = 1351 when = 2 } #Hangzhou
+		command = { trigger = { control = { province = 1358 data = CHC } } type = secedeprovince which = CHC value = 1358 when = 2 } #Fuzhou
+		command = { trigger = { control = { province = 1360 data = CHC } } type = secedeprovince which = CHC value = 1360 when = 2 } #Xiamen
+		command = { trigger = { war = { country = CHI country = CHC } } type = peace which = CHC }
+		command = { type = trigger which = 1330110011 } #CHC End of the Fourth Encirclement Campaigns
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHI when = 0 } #Demobilization
+	}
+}
+
+# 1330110010 CHC Inherit Helper
+event = {
+	id = 1330110010
+	random = no
+	country = CHC
+
+	name = EVT_1330110006_NAME
+	desc = EVT_1330110010_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_DEFEAT
+		command = { type = secederegion which = CHI value = "China" when = 1 }
+	}
+}
+
+# 1330110011 CHC End of the Fourth Encirclement Campaigns
+event = {
+	id = 1330110011
+	random = no
+	country = CHC
+	save_date = yes
+
+	name = EVT_1330110009_NAME
+	desc = EVT_1330110011_DESC
+	style = 2
+	picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1325VP } type = province_keypoints which = 1325 value = -1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1325VP } type = clrflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } flag = 1345VP } type = province_keypoints which = 1345 value = -1 } #Hangzhou
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1345VP } type = clrflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } flag = 1344VP } type = province_keypoints which = 1344 value = -1 } #Anqing
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1344VP } type = clrflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } flag = 1352VP } type = province_keypoints which = 1352 value = -1 } #Nanchang
+		command = { trigger = { control = { province = 1325 data = CHC } flag = 1352VP } type = clrflag which = 1352VP }
+		command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHC when = 0 } #Demobilization
+		command = { type = free_ic value = 4 }
+	}
+}
+
+###########
+# Generic #
+###########
+
+# 1330110012 *** Demobilization
+event = {
+	id = 1330110012
+	random = no
+	persistent = yes
+
+	#Triggered
+
+	name = EVT_1330110012_NAME
+	desc = EVT_1330110012_DESC
+	style = 2
+	picture = "ccip_mob"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = set_domestic which = professional_army value = 2 }
+		command = { trigger = { local_flag = MOB3 } type = manpowerpool value = -2.5 when = 1 }
+		command = { trigger = { local_flag = MOB4 } type = manpowerpool value = -4 when = 1 }		
+		command = { trigger = { local_flag = MOB5 } type = manpowerpool value = -4.5 when = 1 }		
+		command = { trigger = { local_flag = MOB6 } type = manpowerpool value = -5 when = 1 }
+		command = { trigger = { local_flag = MOB7 } type = manpowerpool value = -11.25 when = 1 }		
+		command = { trigger = { local_flag = MOB8 } type = manpowerpool value = -60 when = 1 }
+		command = { trigger = { local_flag = MOB9 } type = manpowerpool value = -25 when = 1 }
+		command = { trigger = { local_flag = MOB10 } type = manpowerpool value = -15 when = 1 }
+		command = { type = local_clrflag which = MOB3 }
+		command = { type = local_clrflag which = MOB4 }
+		command = { type = local_clrflag which = MOB5 }
+		command = { type = local_clrflag which = MOB6 }
+		command = { type = local_clrflag which = MOB7 }
+		command = { type = local_clrflag which = MOB8 }
+		command = { type = local_clrflag which = MOB9 }
+		command = { type = local_clrflag which = MOB10 }
+		command = { type = local_setflag which = RES } #Removing manpower from units not required because we never had reserves arrive in first place.
+		command = { trigger = { ai = no } type = dissent value = -5 }
+	}
+}
+
+###############################
+# Fifth Encirclement Campaign #
+###############################
+
+# 1330110014 Fifth Encirclement Campaigns
+event = {
+	id = 1330110014
+	random = no
+	country = CHI
+
+	name = EVT_1330110014_NAME
+	desc = EVT_1330110014_DESC
+
+	decision = {
+		or = {
+			not = { exists = UPE } #Occur after East Turkestan is gone.
+			ai = yes
+		}
+		not = { local_flag = CHI_CHC_FIFTH_ENCIRCLEMENT }
+		local_flag = CHI_CHC_FOURTH_ENCIRCLEMENT
+		exists = CHC
+		not = { alliance = { country = CHC country = CHI } }
+		not = { war = { country = CHI country = JAP } }
+		atwar = no
+		or = {
+			and = {
+				year = 1933
+				event = { id = 1330110011 days = 30 } # CHC End of the Fourth Encirclement Campaigns
+			}
+			and = {
+				year = 1932
+				event = { id = 1330110011 days = 90 } # CHC End of the Fourth Encirclement Campaigns
+			}
+			and = {
+				year = 1931
+				event = { id = 1330110011 days = 150 } # CHC End of the Fourth Encirclement Campaigns
+			}
+		}
+	}
+
+	decision_trigger = {
+		supplies = 1000
+		not = { dissent = 30 }
+		or = { # Require German Cooperation or tech
+            and = {
+                technology = 5830 # Industry 1925
+                technology = 1090 # Infantry 1931
+                technology = 2930 # Artillery
+                technology = 2880 # Armored Car
+            }
+            event = 1330110050 # CHI Sino-German Cooperation
+        }
+	}
+
+	trigger = {
+		not = { local_flag = CHI_CHC_FIFTH_ENCIRCLEMENT }
+		local_flag = CHI_CHC_FOURTH_ENCIRCLEMENT
+		exists = CHC
+		not = { alliance = { country = CHC country = CHI } }
+		not = { war = { country = CHI country = JAP } }
+		atwar = no
+		or = {
+			and = {
+				year = 1933
+				event = { id = 1330110011 days = 30 }
+			}
+			and = {
+				year = 1932
+				event = { id = 1330110011 days = 90 }
+			}
+			and = {
+				year = 1931
+				event = { id = 1330110011 days = 150 }
+			}
+		}
+		supplies = 500 #AI can't get that high
+		not = { dissent = 45 }
+	}
+
+	style = 2
+	picture = "ccip_cw"
+	decision_picture = "decision_ccip_cna"
+
+	date = { day = 0 month = january year = 1931 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = supplies value = -500 }
+		command = { trigger = { ai = no } type = supplies value = -500 }
+		command = { trigger = { ai = no } type = dissent value = 5 }
+		command = { trigger = { ai = yes dissent = 40 } type = dissent value = -2 }
+		command = { trigger = { ai = yes dissent = 30 } type = dissent value = -2 }
+		command = { trigger = { ai = yes dissent = 30 } type = dissent value = -2 }
+		command = { trigger = { ai = yes dissent = 20 } type = dissent value = -2 }
+		command = { trigger = { ai = yes dissent = 20 } type = dissent value = -2 }
+		command = { type = remove_units which = land where = REB when = 1 value = "Chahar" } #removes all Rebel units from Chahar area
+		command = { type = remove_units which = land where = REB when = 1 value = "Shanxi" } #removes all Rebel units from Shanxi area
+		command = { type = remove_units which = land where = REB when = 1 value = "Suiyuan_Ningxia" } #removes all Rebel units from Suiyuan-Ningxia area
+		command = { type = trigger which = 1330110015 } #CHI 19th Army Defects
+		command = { type = war which = CHC }
+		command = { type = local_setflag which = CHI_CHC_FIFTH_ENCIRCLEMENT }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+	}
+}
+
+# 1330110015 19th Army Defects (Not in OOB)
+event = {
+	id = 1330110015
+	random = no
+	country = CHI
+
+	#Triggered
+
+	name = EVT_1330110015_NAME
+	desc = EVT_1330110015_DESC
+	
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 1330110016 } #CHC 19th Army Defects
+	}
+}
+
+# 1330110016 19th Army Defects (60, 61, 78)
+event = {
+	id = 1330110016
+	random = no
+	country = CHC
+
+	#Triggered
+
+	name = EVT_1330110015_NAME
+	desc = EVT_1330110015_DESC
+	
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	action = {
+		#trigger = {
+		#	or = {
+		#		ai = no
+		#		headofstate = 260838
+		#	}
+		#}
+		name = EVT_1330110016_ACTION1 #They can't be trusted (Historic)
+		ai_chance = 100
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = sleepevent which = 1330110017 } #REB Helper Event (Disband Chahar Units if they exist)
+		command = { type = sleepevent which = 1330110018 } #CGX 19th Army Defects
+		command = { type = sleepevent which = 1330110019 } #CSX 19th Army Defects
+		command = { type = sleepevent which = 1330110020 } #CXB 19th Army Defects
+		command = { type = sleepevent which = 1330110021 } #CYN 19th Army Defects
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = supplies value = 1000 where = 1352 }
+		command = { trigger = { control = { province = 1344 data = CHC } } type = supplies value = 500 where = 1344 }
+		command = { trigger = { control = { province = 1345 data = CHC } } type = supplies value = 500 where = 1345 }
+		command = { trigger = { control = { province = 1325 data = CHC } not = { flag = 1325VP } } type = province_keypoints which = 1325 value = 1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } } type = setflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } not = { flag = 1345VP } } type = province_keypoints which = 1345 value = 1 } #Hangzhou
+		command = { trigger = { control = { province = 1345 data = CHC } } type = setflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } not = { flag = 1344VP } } type = province_keypoints which = 1344 value = 1 } #Anqing
+		command = { trigger = { control = { province = 1344 data = CHC } } type = setflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } not = { flag = 1352VP } } type = province_keypoints which = 1352 value = 1 } #Nanchang
+		command = { trigger = { control = { province = 1352 data = CHC } } type = setflag which = 1352VP }
+		command = { type = revolt which = 1358 when = 1 } #Fuzhou
+		command = { type = revolt which = 1360 when = 1 } #Xiamen
+		command = { type = revolt which = 1356 when = 1 } #Zhangzhou
+		command = { type = headofstate which = 260842 } #Qin Bangxian
+		command = { type = headofgovernment which = 260843 } #Qin Bangxian
+		command = { type = setflag which = 1330110016_HISTORICAL }
+	}
+
+	action = {
+		name = EVT_1330110016_ACTION2 #Accept any help we can get
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { type = sleepevent which = 1330110022 } #CHC The Long March
+		command = { type = sleepevent which = 1330110023 } #CHI 19th Army Surrenders
+		command = { type = trigger which = 1330110017 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = add_corps which = "19th Route Army" value = land where = 1352 } #Nanchang
+		command = { type = add_division which = "60th Division" value = infantry when = 6 where = artillery }
+		command = { type = add_division which = "61st Division" value = infantry when = 6 where = artillery }
+		command = { type = add_division which = "78th Division" value = infantry when = 6 where = artillery }
+		command = { type = add_corps which = "Chahar People's Anti-Japanese Army" value = land where = 1322 } #Nearest CHC territory in north, Chahar Anti-Japanese Army, would have sided with CHC.
+		command = { type = add_division which = "1st CPAJ Corps" value = infantry when = 6 }
+		command = { type = add_division which = "2nd CPAJ Corps" value = infantry when = 6 where = cavalry_brigade }
+		command = { type = add_division which = "6th Herald Corps" value = militia when = 4 }
+		command = { type = add_corps which = "Resisting Japan and Saving China Army" value = land where = 1322 }
+		command = { type = add_division which = "1st RJSC Corps" value = militia when = 4 where = cavalry_brigade }
+		command = { type = add_division which = "4th RJSC Corps" value = infantry when = 6}
+		command = { type = add_division which = "5th RJSC Corps" value = militia when = 4 }
+		command = { type = add_corps which = "Northeastern Loyal and Brave Army" value = land where = 1322 }
+		command = { type = add_division which = "Northeastern Loyal and Brave Army" value = cavalry when = 5 }
+		command = { type = add_corps which = "18th Corps" value = land where = 1322 }
+		command = { type = add_division which = "18th Corps" value = militia when = 4 }
+		command = { type = add_corps which = "Chahar Self-Defense Army" value = land where = 1322 }
+		command = { type = add_division which = "Chahar Self-Defense Army" value = militia when = 4 where = cavalry_brigade }
+		command = { type = supplies value = 1000 where = 1352 }
+		command = { trigger = { control = { province = 1344 data = CHC } } type = supplies value = 500 where = 1344 }
+		command = { trigger = { control = { province = 1345 data = CHC } } type = supplies value = 500 where = 1345 }
+		command = { trigger = { control = { province = 1325 data = CHC } not = { flag = 1325VP } } type = province_keypoints which = 1325 value = 1 } #Nanyang
+		command = { trigger = { control = { province = 1325 data = CHC } } type = setflag which = 1325VP }
+		command = { trigger = { control = { province = 1345 data = CHC } not = { flag = 1345VP } } type = province_keypoints which = 1345 value = 1 } #Hangzhou
+		command = { trigger = { control = { province = 1345 data = CHC } } type = setflag which = 1345VP }
+		command = { trigger = { control = { province = 1344 data = CHC } not = { flag = 1344VP } } type = province_keypoints which = 1344 value = 1 } #Anqing
+		command = { trigger = { control = { province = 1344 data = CHC } } type = setflag which = 1344VP }
+		command = { trigger = { control = { province = 1352 data = CHC } not = { flag = 1352VP } } type = province_keypoints which = 1352 value = 1 } #Nanchang
+		command = { trigger = { control = { province = 1352 data = CHC } } type = setflag which = 1352VP }
+		command = { trigger = { exists = CGX ai = CGX } type = inherit which = CGX value = 1 } # CGX supported the Fujian People's Government
+		command = { trigger = { exists = CGX } type = trigger which = 1330110018 } #CGX 19th Army Defects
+		command = { trigger = { exists = CSX } type = trigger which = 1330110019 } #CSX 19th Army Defects
+		command = { trigger = { exists = CXB } type = trigger which = 1330110020 } #CXB 19th Army Defects
+		command = { trigger = { exists = CYN } type = trigger which = 1330110021 } #CYN 19th Army Defects
+		command = { type = headofstate which = 260842 } #Qin Bangxian
+		command = { type = headofgovernment which = 260843 } #Qin Bangxian
+	}
+}
+
+# 1330110017 REB Helper Event (Disband Chahar Units if they exist)
+event = {
+	id = 1330110017
+	country = REB
+
+	name = AI_EVENT
+	style = 0
+
+	action = {
+		command = { type = remove_division which = "1st CPAJ Corps" value = REB }
+		command = { type = remove_division which = "2nd CPAJ Corps" value = REB }
+		command = { type = remove_division which = "6th Herald Corps" value = REB }
+		command = { type = remove_division which = "1st RJSC Corps" value = REB }
+		command = { type = remove_division which = "4th RJSC Corps" value = REB }
+		command = { type = remove_division which = "5th RJSC Corps" value = REB }
+		command = { type = remove_division which = "Northeastern Loyal and Brave Army" value = REB }
+		command = { type = remove_division which = "18th Corps" value = REB }
+		command = { type = remove_division which = "Chahar Self-Defense Army" value = REB }
+	}
+}
+################################
+# Ahistoric 19th Army Accepted #
+################################
+
+# 1330110018 19th Army Defects
+event = {
+	id = 1330110018
+	random = no
+	country = CGX
+
+	#Triggered
+
+	name = EVT_1330110018_NAME
+	desc = EVT_1330110018_DESC
+
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	action = {
+		name = ACTION_NAME_FIGHT
+		ai_chance = 100
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { ai = yes } type = secederegion which = CHC value = "China" when = 1 }
+		command = { type = leave_alliance when = 1 }
+		command = { type = alliance which = CHC when = 2 }
+		command = { type = dissent value = 10 } #Unhappiness with joining CHC
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = relation which = CHC value = 50 }
+		command = { type = relation which = CHI value = -50 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = {
+					war = { country = CHI country = CGX }
+				}
+			}
+		}
+		name = ACTION_NAME_NEUTRAL
+		ai_chance = 0
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+# 1330110019 19th Army Defects
+event = {
+	id = 1330110019
+	random = no
+	country = CSX
+
+	#Triggered
+
+	name = EVT_1330110018_NAME
+	desc = EVT_1330110019_DESC
+
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				and = {
+					not = { relation = { which = CHC value = 150 } }
+					relation = { which = CHI value = -50 }
+					not = { war = { country = CHI country = CSX } }
+				}
+			}
+		}
+		name = ACTION_NAME_FIGHT
+		ai_chance = 20
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { not = { war = { country = CHC country = CSX } } } type = war which = CHC }
+		command = { trigger = { not = { alliance = { country = CHI country = CSX } } } type = alliance which = CHI when = 2 }
+	}
+
+	action = {
+		name = ACTION_NAME_NEUTRAL
+		ai_chance = 80
+		command = { trigger = { alliance = { country = CHI country = CSX } } type = leave_alliance when = 1 }
+		command = { trigger = { war = { country = CHC country = CSX } } type = peace which = CHC }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+# 1330110020 19th Army Defects
+event = {
+	id = 1330110020
+	random = no
+	country = CXB
+
+	#Triggered
+
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	name = EVT_1330110018_NAME
+	desc = EVT_1330110020_DESC
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { war = { country = CHI country = CXB } }
+			}
+		}
+		name = ACTION_NAME_FIGHT
+		ai_chance = 100
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { not = { war = { country = CHC country = CXB } } } type = war which = CHC }
+		command = { trigger = { not = { alliance = { country = CHI country = CXB } } } type = alliance which = CHI when = 2 }
+	}
+
+	action = {
+		name = ACTION_NAME_NEUTRAL
+		ai_chance = 0
+		command = { trigger = { alliance = { country = CHI country = CXB } } type = leave_alliance when = 1 }
+		command = { trigger = { war = { country = CHC country = CXB } } type = peace which = CHC }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}
+
+# 1330110021 19th Army Defects
+event = {
+	id = 1330110021
+	random = no
+	country = CYN
+
+	#Triggered
+
+	picture = "ccip_fjsoviet"
+	style = 2
+
+	name = EVT_1330110018_NAME
+	desc = EVT_1330110020_DESC
+
+	action = {
+		trigger = {
+			or = {
+				ai = no
+				not = { war = { country = CHI country = CYN } }
+			}
+		}
+		name = ACTION_NAME_FIGHT
+		ai_chance = 20
+		command = { trigger = { ai = yes } type = ai which = "switch/ferocity_yes.ai" }
+		command = { trigger = { not = { war = { country = CHC country = CYN } } } type = war which = CHC }
+		command = { trigger = { not = { alliance = { country = CHI country = CYN } } } type = alliance which = CHI when = 2 }
+	}
+
+	action = {
+		name = ACTION_NAME_NEUTRAL
+		ai_chance = 80
+		command = { trigger = { alliance = { country = CHI country = CYN } } type = leave_alliance when = 1 }
+		command = { trigger = { war = { country = CHC country = CYN } } type = peace which = CHC }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}

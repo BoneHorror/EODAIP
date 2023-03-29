@@ -1,0 +1,31 @@
+CSA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+600001;Bell Aircraft Company;T10500;6;1940;2000;aeronautics;bomber_design;avionics;aircraft_testing;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600002;Duke University;T10501;6;1900;2000;mathematics;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600003;Embry-Riddle Aeronautical University;T10502;5;1930;2000;aeronautics;avionics;fighter_design;piloting;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600004;General Motors;T10503;7;1900;2000;mechanics;industrial_engineering;technical_efficiency;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600005;Gulf Oil Corporation;T10504;8;1900;2000;industrial_engineering;chemistry;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600006;Higgins Industries, Inc.;T105;7;1941;1946;general_equipment;naval_engineering;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600007;Langley Research Center;T10506;7;1930;2000;aeronautics;technical_efficiency;rocketry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600008;Newport News Shipbuilding;100069;7;1900;2000;naval_engineering;technical_efficiency;electronics;submarine_Design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600009;Norfolk Naval Yard;T112;9;1900;2000;naval_engineering;technical_efficiency;electronics;naval_artillery;carrier_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600010;Oak Ridge National Laboratory;T10509;6;1943;2000;nuclear_physics;nuclear_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600011;Redstone Arsenal;T10510;6;1942;2000;chemistry;artillery;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600012;Southern Railway;T10511;5;1900;2000;mechanics;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600013;Fort Benning;T10512;7;1900;2000;large_unit_tactics;individual_courage;infantry_focus;training;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600014;Marine Corps Base Quantico;T10513;8;1930;2000;small_unit_tactics;artillery;combined_arms_focus;training;marine_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600015;The Citadel;T10514;6;1900;2000;small_unit_tactics;decentralized_execution;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600016;Virginia Military Institute;T10515;8;1900;2000;small_unit_tactics;large_unit_tactics;centralized_execution;decentralized_execution;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600017;Norfolk Naval Bases;T10516;7;1900;2000;large_taskforce_tactics;submarine_tactics;carrier_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600018;Langley Field;T10517;7;1930;2000;centralized_execution;training;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600019;Naval Air Station Pensacola;T10518;5;1930;2000;aeronautics;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600020;Donald Bryan;100592;6;1945;1965;fighter_tactics;piloting;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600021;Robert Van de Graaff;100593;5;1935;1965;nuclear_physics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600022;Alfred Hoblitzelle Clifford;100594;6;1938;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600023;John Archibald Wheeler;100595;7;1938;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600024;Lucius D Clay;100596;7;1939;1950;centralized_execution;infantry_focus;large_unit_tactics;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600025;Raymond G. Davis;100597;6;1950;2000;centralized_execution;small_unit_tactics;infantry_focus;training;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600026;Van T. Barfoot;100598;5;1949;2000;small_unit_tactics;individual_courage;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600027;William Orlando Darby;100599;6;1943;2000;small_unit_tactics;decentralized_execution;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600028;NCR;100600;5;1942;1952;mathematics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600029;NCR;100601;6;1952;2000;mathematics;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+600030;TECO Energy;100602;6;1930;2000;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

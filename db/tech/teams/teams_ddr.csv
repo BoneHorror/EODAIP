@@ -1,0 +1,35 @@
+DDR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+625001;Eisenacher Motorenwerke;T7100;3;1900;1999;mechanics;industrial_engineering;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625013;AEG;100139;6;1999;1996;aeronautics;electronics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625014;Krupp;100126;9;1999;1999;industrial_engineering;mechanics;technical_efficiency;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625015;I.G. Farben;T3;9;1999;1999;chemistry;industrial_engineering;general_equipment;management;technical_efficiency;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625016;Siemens & Halske;100128;8;1999;1966;electronics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625002;Heinkel Flugzeugwerke;T2;7;1900;1999;bomber_design;aeronautics;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625003;Junkers;100078;7;1900;1999;bomber_design;aeronautics;munitions;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625028;Messerschmitt;T10;9;1999;1999;fighter_design;aeronautics;rocketry;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625029;Focke-Wulf;T26;8;1999;1999;fighter_design;aeronautics;avionics;aircraft_testing;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625030;Arado;100129;7;1999;1942;bomber_design;aeronautics;technical_efficiency;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625026;Luftschiffbau Zeppelin;100132;7;1999;2010;aeronautics;aircraft_testing;mechanics;chemistry;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625004;Leuna Werke;T7103;7;1900;1999;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625023;Volkswagen;T15;6;1999;1999;mechanics;vehicle_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625007;VEB Ernst Thälmann Suhl;T7106;6;1900;1999;general_equipment;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625019;Mauser Werke;100127;8;1999;1999;general_equipment;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625020;MAN;T8;8;1999;1999;mechanics;vehicle_engineering;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625027;Gothaer Waggonfabrik;100141;8;1999;1999;aeronautics;mechanics;electronics;chemistry;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625021;Opel;T11;7;1999;1999;mechanics;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625022;Rheinmetall;100004;7;1999;1999;artillery;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625005;Neptun Werft Rostock;T7104;5;1900;1999;naval_engineering;electronics;naval_artillery;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625024;Volksmarinewerft;T6;7;1999;1999;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625025;Blohm & Voss;T1;7;1999;1999;naval_engineering;naval_artillery;technical_efficiency;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625006;Rainer Stahel;T7105;4;1930;1999;small_unit_tactics;combined_arms_focus;training;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625032;Jäger Kampfschule;100130;7;1999;1999;Airborne_Training;Mountain_Training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625008;Gustav Hertz;T7107;7;1954;1999;nuclear_physics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625009;Ground Forces;T7108;5;1900;1999;large_unit_tactics;infantry_focus;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625010;People's Navy;T7109;4;1900;1999;naval_training;seamanship;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625011;Air Forces & Air Defence;T7110;4;1900;1999;centralized_execution;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625031;Adolf Galland;T18;5;1999;1999;fighter_tactics;piloting;fighter_design;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625012;Helmut Gröttrup;T7111;6;1955;1999;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625017;Werner Heisenberg;T16;7;1999;1976;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625018;Konrad Zuse;T5;7;1999;1999;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+625100;Nationale Volksarmee;T625100;5;1900;1999;training;small_unit_tactics;infantry_focus;large_unit_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+6251000;Ministerium für Staatssicherheit;T6251000;9;1945;2013;rt_user_2;training;individual_courage;centralized_execution;small_unit_tactics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;x

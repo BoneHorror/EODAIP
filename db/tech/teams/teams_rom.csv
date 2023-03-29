@@ -1,0 +1,25 @@
+ROM;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+110001;Steaua Romana Refineries;T2901;4;1897;2000;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110002;UDR Factories;T2902;4;1900;2000;mechanics;artillery;training;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110003;IAR;T2903;6;1925;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110004;Malaxa Works;T2904;5;1930;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110005;Uzinele Metalurgice CMC;T2906;4;1930;2000;artillery;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110006;MAN;T2907;6;1930;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110007;Emanoil Ionescu;T2908;6;1944;2000;bomber_tactics;combined_arms_focus;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110008;Gheorghe Jienescu;T2909;4;1923;1946;fighter_tactics;bomber_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110009;Horia Macellariu;T2910;3;1930;1946;submarine_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110010;Ion Antonescu;T2911;5;1916;1946;large_unit_tactics;centralized_execution;combined_arms_focus;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110011;Mihail Lascar;T2912;6;1939;1950;small_unit_tactics;decentralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110012;Henri Coanda;T2913;5;1930;2000;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110013;University of Bucharest;T2914;3;1864;2000;mechanics;chemistry;electronics;mathematics;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110014;Ministry of National Defence;T2915;4;1858;2000;large_unit_tactics;centralized_execution;small_taskforce_tactics;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110015;Vanatori de munte;T2916;3;1917;2000;mountain_training;small_unit_tactics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110016;Leonida Works;100429;3;1930;2000;mechanics;artillery;technical_efficiency;chemistry;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110017;Bucharest Army Arsenal;100430;3;1914;2000;mechanics;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110018;Constanta Shipyards;100431;3;1892;2000;naval_engineering;naval_artillery;submarine_design;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110019;SET;100432;4;1923;2000;aeronautics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110020;Nicolae Malaxa Factories;100433;5;1921;2000;industrial_engineering;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110021;Cerchez & Co;100434;3;1910;2000;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110022;Caile Ferate Romane;100435;2;1880;2000;general_equipment;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110023;Targoviste Army Arsenal;100436;4;1890;2000;general_equipment;artillery;training;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110024;Alexandru Averescu;100271;7;1894;1919;centralized_execution;small_unit_tactics;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

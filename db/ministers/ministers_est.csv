@@ -1,0 +1,79 @@
+EST;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+130001;Head of State;Konstantin Päts;1921;1964;1999;PA;Barking Buffoon;High;M26001;X
+130002;Head of Government;Konstantin Päts;1921;1964;1999;PA;Happy Amateur;High;M26001;X
+130003;Foreign Minister;Julius Seljamaa;1933;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M26003;X
+130004;Minister of Armament;Karl Selter;1933;1964;1999;PA;Administrative Genius;Medium;M26004;X
+130005;Minister of Security;Kaarel Eenpalu;1933;1964;1999;PA;Crime Fighter;Medium;M26005;X
+130006;Head of Military Intelligence;Kaarel Eenpalu;1933;1964;1999;PA;Technical Specialist;Medium;M26005;X
+130007;Chief of Staff;Nikolai Reek;1933;1964;1999;PA;School of Defence;Medium;M26007;X
+130008;Chief of Army;Johan Laidoner;1933;1964;1999;PA;Static Defence Doctrine;Medium;M26008;X
+130009;Chief of Navy;Voldemar Mere;1933;1964;1999;PA;Open Seas Doctrine;Medium;M26009;X
+130010;Chief of Air Force;Richard Tomberg;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M26010;X
+130011;Head of State;August Rei;1933;1964;1999;ML;Popular Figurehead;High;M26031;X
+130012;Head of State;Jüri Uluots;1940;1964;1999;ML;Die-hard Reformer;High;M26032;X
+130013;Head of State;Hjalmar Mäe;1933;1964;1999;FA;Insignificant Layman;High;M26011;X
+130014;Head of State;Karl Sigismund Litzmann;1941;1964;1999;NS;Resigned Generalissimo;High;M26035;X
+130015;Head of State;Johannes Vares-Barbaruse;1933;1964;1999;ST;Powerhungry Demagogue;High;M26021;X
+130016;Head of Government;Jüri Uluots;1933;1964;1999;ML;Smiling Oilman;High;M26032;X
+130017;Head of Government;Otto Tief;1940;1964;1999;ML;Happy Amateur;High;M26038;X
+130018;Head of Government;Kaarel Liidak;1944;1964;1999;ML;Political Protege;High;M26039;X
+130019;Head of Government;Kaarel Eenpalu;1938;1964;1999;PA;Ambitious Union Boss;High;M26005;X
+130020;Head of Government;Hjalmar Mäe;1933;1964;1999;NS;Flamboyant Tough Guy;High;M26011;X
+130021;Head of Government;Johannes Vares-Barbaruse;1933;1964;1999;ST;Silent Workhorse;High;M26021;X
+130022;Head of Government;Johannes Lauristin;1939;1964;1999;ST;Happy Amateur;High;M26044;X
+130023;Head of Government;Oskar Sepre;1940;1964;1999;ST;Silent Workhorse;High;M26044;X
+130024;Head of Government;Arnold Veimer;1944;1964;1999;ST;Naive Optimist;High;M26046;X
+130025;Foreign Minister;August Rei;1933;1964;1999;ML;Ideological Crusader;Medium;M26031;X
+130026;Foreign Minister;Ants Piip;1933;1964;1999;PA;Great Compromiser;Medium;M26048;X
+130027;Foreign Minister;Kaarel Liidak;1944;1964;1999;ML;Iron Fisted Brute;High;M26039;X
+130028;Foreign Minister;Friedrich Karl Akel;1933;1964;1999;PA;General Staffer;Medium;M26050;X
+130029;Foreign Minister;Karl Selter;1938;1964;1999;PA;Biased Intellectual;Medium;M26004;X
+130030;Foreign Minister;Hjalmar Mäe;1933;1964;1999;NS;Iron Fisted Brute;Medium;M26011;X
+130031;Foreign Minister;Johannes Lauristin;1933;1964;1999;ST;Apologetic Clerk;Medium;M26044;X
+130032;Foreign Minister;Nigol Andresen;1940;1964;1999;ST;Iron Fisted Brute;Medium;M26023;X
+130033;Foreign Minister;Hans Kruus;1944;1964;1999;ST;Ideological Crusader;Medium;M26055;X
+130034;Minister of Armament;Leo Sepp;1933;1964;1999;ML;Resource Industrialist;Medium;M26056;X
+130035;Minister of Armament;Hugo Pärtelpoeg;1944;1964;1999;ML;Laissez-Faire Capitalist;Medium;M26057;X
+130036;Minister of Armament;Otto Tief;1938;1964;1999;PA;Corrupt Kleptocrat;Low;M26038;X
+130037;Minister of Armament;Konstantin Päts;1939;1964;1999;PA;Administrative Genius;Very High;M26001;X
+130038;Minister of Armament;Alfred Vendt;1933;1964;1999;FA;Military Entrepreneur;Medium;M26014;X
+130039;Minister of Armament;Juhan Narma-Nihtig;1933;1964;1999;ST;Resource Industrialist;Medium;M26024;X
+130040;Minister of Armament;Paul Keerdo;1940;1964;1999;ST;Corrupt Kleptocrat;Medium;M26063;X
+130041;Minister of Armament;Nikolaus Pilankor;1944;1964;1999;ST;Military Entrepreneur;Medium;M26064;X
+130042;Minister of Security;Richard Veermaa;1933;1964;1999;ML;Silent Lawyer;Medium;M26065;X
+130043;Minister of Security;August Jürima;1939;1964;1999;ML;Crooked Kleptocrat;Medium;M26066;X
+130044;Minister of Security;Johannes Klesment;1944;1964;1999;ML;Compassionate Gentleman;Medium;M26067;X
+130045;Minister of Security;Julius Seljamaa;1938;1964;1999;PA;Prince of Terror;Medium;M26003;X
+130046;Minister of Security;Oskar Angelus;1933;1964;1999;NS;Prince of Terror;Medium;M26015;X
+130047;Minister of Security;Karl Sigismund Litzmann;1941;1964;1999;NS;Back Stabber;Low;M26035;X
+130048;Minister of Security;Andrei Murro;1933;1964;1999;ST;Man of the People;Medium;M26072;X
+130049;Minister of Security;Maksim Unt;1939;1964;1999;ST;Prince of Terror;Medium;M26025;X
+130050;Minister of Security;Boris Kumm;1940;1964;1999;ST;Efficient Sociopath;Medium;M26074;X
+130051;Minister of Security;Aleksander Rusev;1944;1964;1999;ST;Back Stabber;Medium;M26075;X
+130052;Head of Military Intelligence;Jüri Uluots;1933;1964;1999;ML;Industrial Specialist;Medium;M26032;X
+130053;Head of Military Intelligence;August Rei;1944;1964;1999;ML;Political Specialist;Medium;M26031;X
+130054;Head of Military Intelligence;Oskar Angelus;1933;1964;1999;NS;Logistics Specialist;Medium;M26015;X
+130055;Head of Military Intelligence;Oskar Sepre;1933;1964;1999;ST;Dismal Enigma;Medium;M26044;X
+130056;Head of Military Intelligence;Johannes Vares-Barbaruse;1940;1964;1999;ST;Political Specialist;Medium;M26021;X
+130057;Head of Military Intelligence;Arnold Veimer;1944;1964;1999;ST;Technical Specialist;Very High;M26046;X
+130058;Chief of Staff;Alexander Jaakson;1933;1964;1999;ML;School of Fire Support;Medium;M26083;X
+130059;Chief of Staff;Johan Holberg;1941;1964;1999;ML;School of Defence;Medium;M26084;X
+130060;Chief of Staff;Johannes Soodla;1933;1964;1999;NS;School of Psychology;Medium;M26017;X
+130061;Chief of Staff;Nikolay G. Karotamm;1933;1964;1999;ST;School of Mass Combat;Medium;M26027;X
+130062;Chief of Army;Richard Veermaa;1933;1964;1999;ML;Decisive Battle Doctrine;Medium;M26065;X
+130063;Chief of Army;Juhan Tuuling;1933;1964;1999;NS;Decisive Battle Doctrine;Medium;M26018;X
+130064;Chief of Army;Alfons Rebane;1941;1964;1999;NS;Armoured Spearhead Doctrine;Medium;M26092;X
+130065;Chief of Army;Nikolay G. Karotamm;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M26027;X
+130066;Chief of Navy;Alex Nirk;1933;1964;1999;ML;Power Projection Doctrine;Medium;M26094;X
+130067;Chief of Navy;Alfred Vendt;1933;1964;1999;FA;Indirect Approach Doctrine;Medium;M26014;X
+130068;Chief of Navy;Johannes Vares-Barbaruse;1933;1964;1999;ST;Power Projection Doctrine;Medium;M26021;X
+130069;Chief of Air Force;Leo Sepp;1933;1964;1999;ML;Carpet Bombing Doctrine;Medium;M26056;X
+130070;Chief of Air Force;Juhan Tuuling;1933;1964;1999;NS;Army Aviation Doctrine;Medium;M26018;X
+130071;Chief of Air Force;Oskar Eiriksson;1933;1964;1999;ST;Carpet Bombing Doctrine;Medium;M26030;X
+130072;Head of Government;Jüri Uluots;1939;1964;1999;PA;Smiling Oilman;High;M26032;X
+130073;Head of State;Boris Kumm;1946;1964;1999;ST;Pig-headed Isolationist;High;M26074;X
+130074;Chief of Navy;Oskar Eiriksson;1946;1964;1999;ST;Open Seas Doctrine;Medium;M26030;X
+130075;Chief of Army;Jaan Soots;1918;1942;1999;PA;static defence doctrine;High;6949;X
+130076;Head of State;Jaan Tõnisson;1927;1940;1999;SC;Benevolent Gentleman;High;5766;X
+130077;Head of Government;Jaan Tõnisson;1927;1940;1999;SC;Silent Workhorse;High;5766;X

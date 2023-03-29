@@ -1,0 +1,132 @@
+# France Offensive AI File by Lothos
+
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	overseas_multiplier 	= 0.1
+   	home_multiplier     	= 1.0 
+	home_peace_cap 		= 50
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 20	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		#Belgium
+		118 = 100 #Einhoven
+		117 = 100 #Hasselt
+		113 = 100 #Namur
+
+		# Africa
+		747  = 5  #Tunis
+		727  = -1  #Algiers
+		729  = -1  #Oran
+		717  = -1  #Casablanca
+		978  = -1  #Dakar
+		
+		# Middle East
+		1019  = -1  #Beirut
+		
+		# Asia
+		1393  = -1 #Hanoi
+		1399  = -1  #Saigon
+		}
+	area_multiplier = { 
+		51  = 1.5  #Dunkerque
+		52  = 1.5  #Lille
+		104  = 0.4  #Metz
+		99  = 1.5  #Reims 
+		
+		118 = 2.0 #Einhoven
+		117 = 2.0 #Hasselt
+		113 = 2.0 #Namur
+		}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human	= 2.5
+	base_attack_odds	= 1.1
+	min_attack_odds		= 1.01
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.3
+	withdraw_odds		= 0.6
+
+	largefort = 1.0 
+	smallfort = 1.0
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 1.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+
+	
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+
+       	enemy_handicap = { } 
+      	#passivity = { } 
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	target = {
+		#Norway
+		483  = 1500  #Oslo
+		485  = 500  #Kristiansan
+		491  = 500  #Bergen
+		493  = 500  #Trondheim
+
+		# Baltic States (in case of un-holy alliance)
+		269  = -1  #Gelgava
+		264  = -1  #Riga
+		270  = -1  #Tallinn
+		553  = -1  #Leningrad
+		531  = -1  #Vipurii
+
+		# German
+		184  = -1  #Konigsburg
+		181  = -1  #Danzig
+		158  = -1  #Setting
+		153  = 1000  #Rostock
+		152   = 500  #Kiel
+	
+		# Denmark
+		217   = 1000 #Arhus
+	}
+}

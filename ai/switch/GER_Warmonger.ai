@@ -1,0 +1,20 @@
+# Germany enables DOW because it's allied with Soviets
+
+combat = {
+	USA = 100
+	EST = 50
+	LIT = 50
+	TUR = 300
+	CHI = 50
+	PER = 1
+	ENG = 100
+	FRA = 100
+	YUG = 500
+	ITA = 25
+	SWE = 300
+	POL = 15
+	HUN = 10
+	SLO = 10
+	BUL = 10
+}
+war = 50

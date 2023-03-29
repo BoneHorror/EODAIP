@@ -1,0 +1,162 @@
+SCH;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+80001;Head of State;Albert Meyer;1933;1964;1999;ML;Ruthless Powermonger;High;M17001;X
+80002;Head of Government;Albert Meyer;1933;1964;1999;ML;Silent Workhorse;High;M17001;X
+80003;Foreign Minister;Giuseppe Motta;1933;1964;1999;SL;Apologetic Clerk;Very High;M17003;X
+80004;Minister of Armament;Albert Meyer;1933;1964;1999;ML;Laissez-Faire Capitalist;Very High;M17001;X
+80005;Minister of Security;Johannes Baumann;1933;1964;1999;ML;Compassionate Gentleman;Very High;M17005;X
+80006;Head of Military Intelligence;Roger Masson;1933;1964;1999;SL;Industrial Specialist;Very High;M17006;X
+80007;Chief of Staff;Jakob I. Huber;1933;1964;1999;SL;School of Fire Support;Very High;M17007;X
+80008;Chief of Army;Johann August Sutter;1933;1964;1999;ML;Static Defence Doctrine;Very High;M17008;X
+80009;Chief of Navy;Rene von Graffenried;1933;1964;1999;ML;Base Control Doctrine;Very High;M17009;X
+80010;Chief of Air Force;Oskar Bider;1933;1964;1999;ML;Air Superiority Doctrine;Very High;M17010;X
+80011;Head of State;Giuseppe Motta;1937;1964;1999;SL;Stern Imperialist;High;M17003;X
+80012;Head of State;Johannes Baumann;1938;1964;1999;ML;Resigned Generalissimo;High;M17005;X
+80013;Head of State;Philipp Etter;1939;1964;1999;SL;Autocratic Charmer;High;M17033;X
+80014;Head of State;Marcel Pilet-Golaz;1940;1964;1999;SD;Popular Figurehead;High;M17034;X
+80015;Head of State;Ernst Wetter;1941;1964;1999;ML;Powerhungry Demagogue;High;M17035;X
+80016;Head of State;Enrico Celio;1943;1964;1999;SD;Die-hard Reformer;High;M17037;X
+80017;Head of State;Walter Stampfli;1944;1964;1999;ML;Barking Buffoon;High;M17038;X
+80018;Head of State;Eduard von Steiger;1945;1964;1999;SC;Benevolent Gentleman;High;M17039;X
+80019;Head of State;Karl Kobelt;1946;1964;1999;ML;Pig-headed Isolationist;High;M17040;X
+80020;Head of Government;Giuseppe Motta;1937;1964;1999;SL;Silent Workhorse;High;M17003;X
+80021;Head of Government;Johannes Baumann;1938;1964;1999;ML;Ambitious Union Boss;High;M17005;X
+80022;Head of Government;Philipp Etter;1939;1964;1999;SL;Flamboyant Tough Guy;High;M17033;X
+80023;Head of Government;Marcel Pilet-Golaz;1940;1964;1999;SD;Political Protege;High;M17034;X
+80024;Head of Government;Ernst Wetter;1941;1964;1999;ML;Backroom Backstabber;High;M17035;X
+80025;Head of Government;Enrico Celio;1943;1964;1999;SD;Corporate Suit;High;M17037;X
+80026;Head of Government;Walter Stampfli;1944;1964;1999;ML;Naive Optimist;High;M17038;X
+80027;Head of Government;Eduard von Steiger;1945;1964;1999;SL;Smiling Oilman;High;M17039;X
+80028;Head of Government;Karl Kobelt;1946;1964;1999;ML;Happy Amateur;High;M17040;X
+80029;Foreign Minister;Marcel Pilet-Golaz;1940;1964;1999;ML;Great Compromiser;Medium;M17034;X
+80030;Foreign Minister;Max Petitpierre;1945;1964;1999;SL;Iron Fisted Brute;Very High;M17054;X
+80031;Foreign Minister;Rudolf Gelpke;1933;1964;1999;LE;Ideological Crusader;Medium;M17055;X
+80032;Foreign Minister;Paul Usteri;1937;1964;1999;ML;Ideological Crusader;High;M17056;X
+80033;Foreign Minister;Jakob I. Huber;1939;1964;1999;SL;General Staffer;High;M17007;X
+80034;Foreign Minister;Nicolas Lejeune;1940;1964;1999;SL;Apologetic Clerk;High;M17058;X
+80035;Foreign Minister;Otto Buess;1941;1964;1999;SD;Iron Fisted Brute;High;M17059;X
+80036;Foreign Minister;Karl Zeltner;1941;1964;1999;SL;The Cloak N Dagger Schemer;High;M17060;X
+80037;Foreign Minister;Justus Stöcklin;1938;1964;1999;ML;Great Compromiser;Very High;M17061;X
+80038;Foreign Minister;Enrico Celio;1942;1964;1999;SD;Ideological Crusader;High;M17037;X
+80039;Foreign Minister;Walter Stampfli;1943;1964;1999;ML;Iron Fisted Brute;High;M17038;X
+80040;Foreign Minister;Max Kauffmann;1944;1964;1999;SL;Biased Intellectual;High;M17064;X
+80041;Foreign Minister;Paul Manz;1945;1964;1999;SL;Great Compromiser;High;M17065;X
+80042;Minister of Armament;Friedrich Traugott-Wahlen;1940;1964;1999;ML;Resource Industrialist;Very High;M17066;X
+80043;Minister of Armament;Albert Einstein;1933;1964;1999;SL;Theoretical Scientist;Very High;M17067;X
+80044;Minister of Armament;Heinrich Handschein;1937;1964;1999;SL;laissez-faire capitalist;Very High;M17068;X
+80045;Minister of Armament;Jakob Mosimann;1937;1964;1999;SL;Military Entrepreneur;Very High;M17069;X
+80046;Minister of Armament;Jakob I. Huber;1938;1964;1999;SL;Infantry Proponent;High;M17007;X
+80047;Minister of Armament;Ernst Wetter;1939;1964;1999;ML;Resource Industrialist;Very High;M17035;X
+80048;Minister of Armament;Ernst Weber;1941;1964;1999;SL;Administrative Genius;Very High;M17072;X
+80049;Minister of Armament;Leonardo Castelli;1942;1964;1999;SL;Tank Proponent;High;M17073;X
+80050;Minister of Armament;Ernst Nobs;1944;1964;1999;SD;Resource Industrialist;Very High;M17074;X
+80051;Minister of Armament;Otto Gass;1938;1964;1999;SD;Air to Ground Proponent;Very High;M17075;X
+80052;Minister of Armament;John Gignoux;1942;1964;1999;ML;Resource Industrialist;Very High;M17076;X
+80053;Minister of Armament;Werner Jenni;1940;1964;1999;SD;Tank Proponent;Very High;M17077;X
+80054;Minister of Armament;Leo Schweizer;1944;1964;1999;SD;Administrative Genius;Very High;M17078;X
+80055;Minister of Armament;Rudolf Minger;1944;1964;1999;ML;Administrative Genius;Very High;M17079;X
+80056;Minister of Security;Clemens Stöckli;1944;1964;1999;ML;Silent Lawyer;Very High;M17080;X
+80057;Minister of Security;Ernst Lolliger;1944;1964;1999;SD;Man of the People;Very High;M17081;X
+80058;Minister of Security;Heinrich Rothmund;1940;1964;1999;ML;Crime Fighter;Very High;M17082;X
+80059;Minister of Security;Hans Leupin;1940;1964;1999;SD;Back Stabber;Very High;M17083;X
+80060;Minister of Security;Paul Frutig;1942;1964;1999;ML;Silent Lawyer;Very High;M17084;X
+80061;Minister of Security;Guido Miescher;1938;1964;1999;SD;Prince of Terror;Very High;M17085;X
+80062;Minister of Security;Heinrich Abbegg;1933;1964;1999;ST;Crime Fighter;Very High;M17086;X
+80063;Minister of Security;Gustave Adoor;1933;1964;1999;ML;Man of the People;Very High;M17087;X
+80064;Minister of Security;Felic Calonder;1933;1964;1999;SL;Back Stabber;Very High;M17088;X
+80065;Minister of Security;Edmond Schulthess;1938;1964;1999;SL;Prince of Terror;Very High;M17089;X
+80066;Minister of Security;Gonzague de Reynold;1937;1964;1999;SL;Compassionate Gentleman;Very High;M17090;X
+80067;Minister of Security;Hugo Gschwind;1939;1964;1999;SL;Crime Fighter;Very High;M17091;X
+80068;Minister of Security;Eduard von Steiger;1941;1964;1999;SL;Silent Lawyer;Very High;M17039;X
+80069;Minister of Security;Max Waibel;1942;1964;1999;SL;Efficient Sociopath;Very High;M17093;X
+80070;Minister of Security;Traugott Meyer;1943;1964;1999;SD;Man of the People;Medium;M17025;X
+80071;Head of Military Intelligence;Albert Einstein;1937;1964;1999;SL;Technical Specialist;Very High;M17067;X
+80072;Head of Military Intelligence;William Rappard;1938;1964;1999;ML;Industrial Specialist;Very High;M17096;X
+80073;Head of Military Intelligence;Gilles Le Pierre;1939;1964;1999;SL;Logistics Specialist;Very High;M17097;X
+80074;Head of Military Intelligence;Hans Konrad Sonderegger;1940;1964;1999;SD;Industrial Specialist;Very High;M17098;X
+80075;Head of Military Intelligence;Max Waibel;1943;1964;1999;SL;Dismal Enigma;Very High;M17093;X
+80076;Chief of Staff;Hans Max Huber;1937;1964;1999;ML;School of Psychology;Very High;M17100;X
+80077;Chief of Staff;Henri Guisan;1938;1964;1999;SL;School of Mass Combat;Very High;M17101;X
+80078;Chief of Staff;Paul Gürtler;1942;1964;1999;SD;School of Psychology;Very High;M17102;X
+80079;Chief of Army;Ernst Laur;1933;1964;1999;ML;Guns and Butter Doctrine;Very High;M17103;X
+80080;Chief of Army;Henri Guisan;1938;1964;1999;SL;Elastic Defence Doctrine;Very High;M17101;X
+80081;Chief of Army;Paul Rossy;1941;1964;1999;SD;Guns and Butter Doctrine;Very High;M17105;X
+80082;Chief of Navy;Hans Peter Bichsel-Sohn;1938;1964;1999;SL;Open Seas Doctrine;Very High;M17106;X
+80083;Chief of Air Force;J.D. de Montenach;1937;1964;1999;SD;Vertical Envelopment Doctrine;Very High;M17107;X
+80084;Chief of Air Force;Fritz Rihner;1938;1964;1999;SL;Army Aviation Doctrine;Very High;M17108;X
+80085;Chief of Air Force;Carl Burckhardt de Reynold;1941;1964;1999;ML;Vertical Envelopment Doctrine;Very High;M17109;X
+80086;Chief of Air Force;Etienne Primault;1944;1964;1999;SL;Air Superiority Doctrine;Very High;M17110;X
+80087;Head of State;Franz Burri;1933;1964;1999;FA;Insignificant Layman;High;M17011;X
+80088;Head of Government;Franz Burri;1933;1964;1999;FA;Old Admiral;High;M17011;X
+80089;Foreign Minister;Jacob Lorenz;1933;1964;1999;FA;Iron Fisted Brute;Medium;M17013;X
+80090;Minister of Armament;Hans Oehler;1933;1964;1999;FA;Military Entrepreneur;Medium;M17014;X
+80091;Minister of Security;Franz Burri;1933;1964;1999;FA;Crooked Kleptocrat;Medium;M17011;X
+80092;Head of Military Intelligence;Alfred Sarasin;1933;1964;1999;PA;Dismal Enigma;Medium;M17016;X
+80093;Chief of Staff;Eugen Bircher;1933;1964;1999;FA;School of Psychology;Medium;M17017;X
+80094;Chief of Army;Eugen Bircher;1933;1964;1999;FA;Guns and Butter Doctrine;Medium;M17017;X
+80095;Chief of Navy;Hans Oehler;1933;1964;1999;FA;Decisive Naval Battle Doctrine;Medium;M17014;X
+80096;Chief of Air Force;Alfred Sarasin;1933;1964;1999;FA;Naval Aviation Doctrine;Medium;M17016;X
+80097;Head of State;Josef Wiktor Widmann;1933;1964;1999;LWR;Weary Stiffneck;High;M17021;X
+80098;Head of Government;Josef Wiktor Widmann;1933;1964;1999;LWR;Ambitious Union Boss;High;M17021;X
+80099;Foreign Minister;Hermann Hessel-Lorenz;1933;1964;1999;LWR;The Cloak N Dagger Schemer;Medium;M17023;X
+80100;Minister of Armament;Emil Frey;1933;1964;1999;LWR;Infantry Proponent;Medium;M17024;X
+80101;Head of Military Intelligence;Theo Maier;1933;1964;1999;LWR;Technical Specialist;Medium;M17026;X
+80102;Chief of Staff;Traugott Meyer;1933;1964;1999;LWR;School of Fire Support;Medium;M17025;X
+80103;Chief of Army;Emil Frey;1933;1964;1999;LWR;Armoured Spearhead Doctrine;Medium;M17024;X
+80104;Chief of Navy;Hermann Hessel-Lorenz;1933;1964;1999;LWR;Indirect Approach Doctrine;Medium;M17023;X
+80105;Chief of Air Force;Josef Wiktor Widmann;1933;1964;1999;LWR;Naval Aviation Doctrine;Medium;M17021;X
+80106;Head of State;Ernst Nobs;1949;1964;1999;SD;Benevolent Gentleman;High;M17074;X
+80107;Head of State;Max Petitpierre;1950;1964;1999;SL;Popular Figurehead;High;M17054;X
+80108;Head of Government;Oskar Leimgruber;1944;1964;1999;SC;Smiling Oilman;High;M17113;X
+80109;Head of Government;Charles Oser;1951;1964;1999;SL;Corporate Suit;High;M17114;X
+80110;Minister of Armament;Karl Kobelt;1944;1964;1999;ML;Infantry Proponent;Very High;M17040;X
+80111;Minister of Security;Philipp Etter;1939;1964;1999;SL;Crime Fighter;Very High;M17033;X
+80112;Head of Government;Ernst Nobs;1949;1964;1999;SD;Happy Amateur;Very High;M17074;X
+80113;Head of Government;Max Petitpierre;1950;1964;1999;SL;Political Protege;Very High;M17054;X
+80114;Head of Government;Eduard von Steiger;1951;1964;1999;SC;Corporate Suit;Very High;M17039;X
+80115;Chief of Air Force;Albert Müller;1920;1933;1999;ML;Carpet Bombing Doctrine;Very High;3109;X
+80116;Chief of Air Force;Arnold Isler;1918;1933;1999;ML;Army Aviation Doctrine;Very High;3110;X
+80117;Chief of Air Force;Marc Schleppy;1916;1933;1999;ML;Air Superiority Doctrine;Very High;3111;X
+80118;Chief of Air Force;Theodor Real;1914;1933;1999;ML;Army Aviation Doctrine;Very High;3112;X
+80119;Chief of Air Force;Walter Scherrer;1917;1933;1999;ML;Air Superiority Doctrine;Very High;3113;X
+80120;Chief of Army;Alfred Audéoud;1914;1933;1999;ML;static defence doctrine;Very High;3114;X
+80121;Chief of Army;Alfred Audéoud;1914;1933;1999;PA;static defence doctrine;Very High;3114;X
+80122;Chief of Army;Louis-Henri Bornand;1917;1933;1999;ML;Guns and Butter Doctrine;Very High;3115;X
+80123;Chief of Army;Ulrich Wille;1914;1933;1999;ML;elastic defence doctrine;Very High;3116;X
+80124;Chief of Staff;Alfred Audéoud;1914;1933;1999;PA;school of defence;Very High;3114;X
+80125;Chief of Staff;Alfred Audéoud;1914;1933;1999;ML;school of defence;Very High;3114;X
+80126;Chief of Staff;Louis-Henri Bornand;1917;1933;1999;ML;School of Fire Support;Very High;3115;X
+80127;Chief of Staff;Ulrich Wille;1914;1933;1999;ML;School of Mass Combat;Very High;3116;X
+80128;Foreign Minister;Arthur Hoffmann;1914;1933;1999;SL;Apologetic Clerk;Very High;3117;X
+80129;Foreign Minister;Felix Louis Calonder;1918;1933;1999;SL;Apologetic Clerk;Very High;3118;X
+80130;Foreign Minister;Giuseppe Motta;1920;1933;1999;ML;Great Compromiser;Very High;3119;X
+80131;Foreign Minister;Gustave Ador;1917;1933;1999;SL;Great Compromiser;Very High;3120;X
+80132;Foreign Minister;Jules Humbert-Droz;1918;1933;1999;ST;Ideological Crusader;Very High;3121;X
+80133;Head of Government;Jules Humbert-Droz;1918;1933;1999;ST;Flamboyant Tough Guy;Very High;3121;X
+80134;Head of Government;Ulrich Wille;1914;1933;1999;PA;Old General;Very High;3116;X
+80135;Head of Military Intelligence;Leonie Kascher;1918;1933;1999;ST;Political Specialist;Very High;unknownminister;X
+80136;Head of Military Intelligence;Ulrich Wille;1914;1933;1999;PA;Logistics Specialist;Very High;3116;X
+80137;Head of State;Arthur Hoffmann;1914;1933;1999;SL;Weary Stiffneck;Very High;3117;X
+80138;Head of State;Camille Decoppet;1916;1933;1999;SL;Resigned Generalissimo;Very High;3122;X
+80139;Head of State;Edmund Schulthess;1917;1933;1999;SL;Benevolent Gentleman;Very High;3123;X
+80140;Head of State;Ernest Chuard;1924;1933;1999;SL;Stern Imperialist;Very High;3124;X
+80141;Head of State;Felix Louis Calonder;1918;1933;1999;SL;Die-Hard Reformer;Very High;3118;X
+80142;Head of State;Giuseppe Motta;1915;1933;1999;ML;Benevolent Gentleman;Very High;3119;X
+80143;Head of State;Gustave Ador;1919;1933;1999;SL;Popular Figurehead;Very High;3120;X
+80144;Head of State;Jules Humbert-Droz;1918;1933;1999;ST;Stern Imperialist;Very High;3121;X
+80145;Head of State;Karl Alfred Scheurer;1923;1933;1999;SL;Resigned Generalissimo;Very High;3125;X
+80146;Head of State;Robert Haab;1922;1933;1999;SL;Die-Hard Reformer;Very High;3126;X
+80147;Head of State;Ulrich Wille;1914;1933;1999;PA;Resigned Generalissimo;Very High;3116;X
+80148;Minister of Armament;Giuseppe Motta;1914;1933;1999;ML;Laissez-Faire Capitalist;Very High;3119;X
+80149;Minister of Armament;Jakob Herzog;1918;1933;1999;ST;Resource Industrialist;Very High;unknownminister;X
+80150;Minister of Armament;Jean-Marie Musy;1920;1933;1999;ML;Resource Industrialist;Very High;3127;X
+80151;Minister of Armament;Ulrich Wille;1914;1933;1999;PA;Infantry Proponent;Very High;3116;X
+80152;Minister of Security;Arthur Hoffmann;1914;1933;1999;SL;Silent Lawyer;Very High;3117;X
+80153;Minister of Security;Camille Decoppet;1914;1933;1999;SL;Silent Lawyer;Very High;3122;X
+80154;Minister of Security;Heinrich Häberlin;1920;1933;1999;SL;Crime Fighter;Very High;3128;X
+80155;Minister of Security;Walther Bringholf;1918;1933;1999;ST;Man of the People;Very High;unknownminister;X
+80156;Head of Government;Hans Schatzmann;1909;1923;1999;ML;Silent Workhorse;Very High;8032;X
+80157;Minister of Security;Eduard Müller ;1914;1919;1999;ML;Compassionate Gentleman;Very High;8033;X
+80158;Head of Military Intelligence;Camille Decoppet;1914;1919;1999;ML;Industrial Specialist;Very High;3122;X
+80159;Chief of Staff;Theophil Sprecher von Bernegg;1914;1919;1999;SL;School of Defence;Very High;8034;X
+80160;Chief of Navy;Ulrich Wille;1914;1933;1999;ML;Base Control Doctrine;Very High;3116;X

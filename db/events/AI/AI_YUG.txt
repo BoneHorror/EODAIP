@@ -1,0 +1,29 @@
+####################################
+# Yugoslavia AI events 
+####################################
+
+################
+# YUG joins Axis
+#############################################
+event = {
+	id = 3021006
+	random = no 
+	country = YUG
+	
+	trigger = {
+		alliance = { country = GER }
+		event = 2021002
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		command = { type = ai which = "switch/YUG_Axis.ai" }
+	}
+}

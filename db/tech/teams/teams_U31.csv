@@ -1,0 +1,11 @@
+U31;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+970001;Aero;T1100;6;1900;2000;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970002;Avia;T1101;5;1900;2000;aeronautics;aircraft_testing;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970003;Ceská Zbrojovka;T1102;5;1900;2000;mechanics;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970004;C-K-D;T1103;7;1900;2000;mechanics;training;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970005;Letov;T1104;4;1900;2000;aeronautics;general_equipment;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970006;Skoda;T1105;8;1900;2000;mechanics;industrial_engineering;management;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970007;Jaroslav Heyrovsky;T1109;6;1930;2000;mathematics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970008;Charles University Prague;T1110;5;1900;2000;mechanics;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970009;Ministry of Defence;100072;4;1900;2000;large_unit_tactics;centralized_execution;fighter_tactics;piloting;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+970010;Ludvik Svoboda;T4101;5;1945;2000;small_unit_tactics;decentralized_execution;combined_arms_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,251 @@
+ALB;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+285001;Head of State;Zog I;1933;1964;1999;PA;Insignificant Layman;High;2142;X
+285002;Head of Government;Midhat Frashëri;1933;1964;1999;PA;Corporate Suit;High;M32002;X
+285003;Foreign Minister;Fuat Aslam;1933;1964;1999;PA;Apologetic Clerk;Medium;M32003;X
+285004;Minister of Armament;Ruok Geraj;1933;1964;1999;PA;Corrupt Kleptocrat;Medium;M32004;X
+285005;Minister of Security;Jocelyn Percy;1933;1964;1999;PA;Prince of Terror;High;M32005;X
+285006;Head of Military Intelligence;Zog I;1933;1964;1999;PA;Logistics Specialist;Medium;M32006;X
+285007;Chief of Staff;Qemal Komani;1933;1964;1999;PA;School of Defence;Medium;M32007;X
+285008;Chief of Army;Stefkhi Shatun;1933;1964;1999;PA;Static Defence Doctrine;Medium;M32008;X
+285009;Chief of Navy;Quamar Pakazi;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M32009;X
+285010;Chief of Air Force;Jocelyn Percy;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M32005;X
+285011;Head of State;Tefik Mborja;1939;1964;1999;PA;Pig-headed Isolationist;High;M32021;X
+285012;Head of State;Ibrahim Bicaku;1942;1964;1999;PA;Stern Imperialist;High;M32042;X
+285013;Head of State;Fiqri Dine;1944;1964;1999;PA;Die-hard Reformer;High;M32043;X
+285014;Head of State;Fan Noli;1933;1964;1999;SL;Weary Stiffneck;High;M32011;X
+285015;Head of State;Llazar Fundua;1941;1964;1999;SD;Popular Figurehead;High;M32013;X
+285016;Head of State;Rexhep Mitrovica;1944;1964;1999;SC;Insignificant Layman;High;M32046;X
+285017;Head of State;Shefqet Vërlaci;1939;1964;1999;FA;Autocratic Charmer;High;M32047;X
+285018;Head of State;Eqrem Libohova;1942;1964;1999;FA;Powerhungry Demagogue;High;M32048;X
+285019;Head of State;Omer Nishani;1933;1964;1999;ST;Resigned Generalissimo;High;M32032;X
+285020;Head of State;Sejfulla Malëshova;1945;1964;1999;LE;Popular Figurehead;High;M32050;X
+285021;Head of State;Enver Hoxha;1936;1964;1999;ST;Ruthless Powermonger;High;M32051;X
+285022;Head of Government;Kostaq Kota;1939;1964;1999;PA;Smiling Oilman;High;M32052;X
+285023;Head of Government;Jup Kazazi;1941;1964;1999;PA;Happy Amateur;High;M32015;X
+285024;Head of Government;Mehdi Frashëri;1944;1964;1999;PA;Corporate Suit;High;M32054;X
+285025;Head of Government;Fan Noli;1939;1964;1999;SL;Naive Optimist;High;M32011;X
+285026;Head of Government;Xhafer Ypi;1941;1964;1999;SC;Political Protege;High;M32056;X
+285027;Head of Government;Mustafa Mërlika;1944;1964;1999;SL;Happy Amateur;High;M32057;X
+285028;Head of Government;Shefqet Vërlaci;1939;1964;1999;FA;Flamboyant Tough Guy;High;M32047;X
+285029;Head of Government;Eqrem Libohova;1942;1964;1999;FA;Corporate Suit;High;M32048;X
+285030;Head of Government;Omer Nishani;1933;1964;1999;ST;Silent Workhorse;High;M32032;X
+285031;Head of Government;Sejfulla Malëshova;1942;1964;1999;LE;Naive Optimist;High;M32050;X
+285032;Head of Government;Enver Hoxha;1936;1964;1999;ST;Local tyrant;High;M32051;X
+285033;Foreign Minister;Mehdi Frashëri;1939;1964;1999;PA;Apologetic Clerk;Medium;M32054;X
+285034;Foreign Minister;Fiqri Dine;1942;1964;1999;PA;Great Compromiser;Medium;M32043;X
+285035;Foreign Minister;Nazim Dedolli;1944;1964;1999;PA;Iron Fisted Brute;Medium;M32066;X
+285036;Foreign Minister;Llazar Fundua;1933;1964;1999;SD;Great Compromiser;High;M32013;X
+285037;Foreign Minister;Fan Noli;1940;1964;1999;SL;Ideological Crusader;Very Low;M32068;X
+285038;Foreign Minister;Ali Kelmendi;1927;1939;1999;ST;Iron Fisted Brute;Low;M32031;X
+285039;Foreign Minister;Rexhep Mitrovica;1943;1964;1999;SC;Apologetic Clerk;Medium;M32046;X
+285040;Foreign Minister;Shefqet Shkupi;1944;1964;1999;SL;Biased Intellectual;Medium;M32071;X
+285041;Foreign Minister;Tefik Mborja;1939;1964;1999;FA;The Cloak N Dagger Schemer;Medium;M32021;X
+285042;Foreign Minister;Hasan Begolli;1941;1964;1999;FA;Biased Intellectual;High;M32073;X
+285043;Foreign Minister;Kol Mirakaj;1942;1964;1999;FA;General Staffer;High;M32074;X
+285044;Foreign Minister;Nuhi Berisha;1943;1964;1999;FA;Iron Fisted Brute;High;M32075;X
+285045;Foreign Minister;Omer Nishani;1933;1964;1999;ST;Ideological Crusader;Undying;M32032;X
+285046;Foreign Minister;Hassan Shqabi;1942;1964;1999;ST;Iron Fisted Brute;High;M32077;X
+285048;Minister of Armament;Jocelyn Percy;1937;1964;1999;PA;Air to Ground Proponent;Medium;M32005;X
+285049;Minister of Armament;Quamar Pakazi;1939;1964;1999;PA;Submarine Proponent;Medium;M32009;X
+285050;Minister of Armament;Sthfphen Delvinë;1941;1964;1999;PA;Air to Sea Proponent;Medium;M32020;X
+285051;Minister of Armament;Ismael Ghaxa;1942;1964;1999;PA;Battle Fleet Proponent;Medium;M32029;X
+285052;Minister of Armament;Fiqri Dine;1943;1964;1999;PA;Corrupt Kleptocrat;Medium;M32043;X
+285053;Minister of Armament;Haxhi Lleshi;1933;1964;1999;SC;laissez-faire capitalist;Medium;M32014;X
+285054;Minister of Armament;Shefqet Shkupi;1940;1964;1999;SL;Battle Fleet Proponent;Medium;M32071;X
+285055;Minister of Armament;Rexhep Mitrovica;1941;1964;1999;SC;Air to Sea Proponent;Medium;M32046;X
+285056;Minister of Armament;Kostaq Kota;1942;1964;1999;SC;Strategic Air Proponent;Medium;M32052;X
+285057;Minister of Armament;Xhafer Ypi;1943;1964;1999;SC;Tank Proponent;Medium;M32056;X
+285058;Minister of Armament;Hajrë Dizdari;1944;1964;1999;SC;Military Entrepreneur;Medium;M32090;X
+285059;Minister of Armament;Xhelal Mitrovica;1945;1964;1999;SC;Infantry Proponent;Medium;M32091;X
+285060;Minister of Armament;Maliq Bushati;1939;1964;1999;FA;Corrupt Kleptocrat;High;M32024;X
+285061;Minister of Armament;Shefqet Vërlaci;1941;1964;1999;FA;laissez-faire capitalist;High;M32047;X
+285062;Minister of Armament;Omer Bikacu;1942;1964;1999;FA;Resource Industrialist;Medium;M32084;X
+285063;Minister of Armament;Eqrem Libohova;1943;1964;1999;FA;Tank Proponent;High;M32048;X
+285064;Minister of Armament;Essad Pacha;1964;1964;1999;ST;Corrupt Kleptocrat;Medium;M32036;X
+285065;Minister of Armament;Enver Hoxha;1936;1964;1999;ST;Infantry Proponent;Very High;M32097;X
+285066;Minister of Armament;Nano Xhana;1943;1964;1999;ST;Air to Sea Proponent;Low;M32098;X
+285067;Minister of Armament;Sejfulla Malëshova;1944;1964;1999;LE;Submarine Proponent;Low;M32050;X
+285068;Minister of Security;Midhat Frashëri;1940;1964;1999;PA;Compassionate Gentleman;Very High;M32002;X
+285069;Minister of Security;Omer Nishani;1941;1964;1999;PA;Back Stabber;Very High;M32032;X
+285070;Minister of Security;Ibrahim Bicaku;1943;1964;1999;PA;Prince of Terror;Medium;M32042;X
+285071;Minister of Security;Nazim Dedolli;1944;1964;1999;PA;Efficient Sociopath;Medium;M32066;X
+285072;Minister of Security;Kostaq Kota;1945;1964;1999;PA;Crime Fighter;High;M32052;X
+285073;Minister of Security;Nexhip Deva;1946;1964;1999;PA;Silent Lawyer;Medium;M32107;X
+285074;Minister of Security;Jup Kazazi;1933;1964;1999;SC;Crooked Kleptocrat;Low;M32015;X
+285075;Minister of Security;Halil Nergutti;1941;1964;1999;SL;Crime Fighter;Low;M32109;X
+285076;Minister of Security;Midhat Frashëri;1942;1964;1999;SC;Compassionate Gentleman;Very High;M32002;X
+285077;Minister of Security;Shefqet Shkupi;1943;1964;1999;SL;Man of the People;Medium;M32071;X
+285078;Minister of Security;Mustafa Mërlika;1944;1964;1999;SL;Back Stabber;Medium;M32057;X
+285079;Minister of Security;Xhelal Mitrovica;1946;1964;1999;SC;Crooked Kleptocrat;Medium;M32091;X
+285080;Minister of Security;Maliq Bushati;1939;1964;1999;FA;Crooked Kleptocrat;High;M32024;X
+285081;Minister of Security;Eqrem Libohova;1941;1964;1999;FA;Man of the People;High;M32048;X
+285082;Minister of Security;Kol Mirakaj;1942;1964;1999;FA;Crooked Kleptocrat;High;M32074;X
+285083;Minister of Security;Nuhi Berisha;1943;1964;1999;FA;Compassionate Gentleman;High;M32075;X
+285084;Minister of Security;Pandi Kristo;1939;1964;1999;ST;Prince of Terror;Medium;M32035;X
+285085;Minister of Security;Hassan Shqabi;1941;1964;1999;ST;Compassionate Gentleman;High;M32077;X
+285086;Minister of Security;Haxhi Lleshi;1942;1964;1999;ST;Efficient Sociopath;Medium;M32014;X
+285087;Minister of Security;Zuhdi Shabani;1943;1964;1999;ST;Crime Fighter;Low;M32121;X
+285088;Minister of Security;Aziz Sulejmani;1944;1964;1999;ST;Crooked Kleptocrat;Low;M32040;X
+285089;Minister of Security;Hajrë Fetahu;1945;1964;1999;ST;Man of the People;Very High;M32039;X
+285090;Head of Military Intelligence;Quamar Pakazi;1939;1964;1999;PA;Naval Intelligence Specialist;Medium;M32009;X
+285091;Head of Military Intelligence;Fuat Aslam;1942;1964;1999;PA;Logistics Specialist;Medium;M32003;X
+285092;Head of Military Intelligence;Ahmad Zhahir;1944;1964;1999;PA;Technical Specialist;Medium;M32127;X
+285093;Head of Military Intelligence;Xhafer Ypi;1941;1964;1999;SC;Logistics Specialist;Medium;M32056;X
+285094;Head of Military Intelligence;Rexhep Mitrovica;1942;1964;1999;SC;Political Specialist;Medium;M32046;X
+285095;Head of Military Intelligence;Hajrë Dizdari;1944;1964;1999;SC;Technical Specialist;Medium;M32090;X
+285096;Head of Military Intelligence;Xhelal Mitrovica;1945;1964;1999;SC;Dismal Enigma;Medium;M32091;X
+285097;Head of Military Intelligence;Qemal Komani;1939;1964;1999;FA;Dismal Enigma;Medium;M32007;X
+285098;Head of Military Intelligence;Maliq Bushati;1942;1964;1999;FA;Logistics Specialist;High;M32024;X
+285099;Head of Military Intelligence;Hasan Begolli;1943;1964;1999;FA;Political Specialist;High;M32073;X
+285100;Head of Military Intelligence;Nuhi Berisha;1944;1964;1999;FA;Industrial Specialist;High;M32075;X
+285101;Head of Military Intelligence;Essad Pacha;1964;1964;1999;ST;Dismal Enigma;Medium;M32036;X
+285102;Head of Military Intelligence;Zuhdi Shabani;1941;1964;1999;ST;Political Specialist;Low;M32121;X
+285103;Head of Military Intelligence;Abaz Kupi;1939;1964;1999;PA;Industrial Specialist;Medium;M32129;X
+285104;Head of Military Intelligence;Jup Kazazi;1944;1964;1999;ST;Naval Intelligence Specialist;Low;M32015;X
+285105;Head of Military Intelligence;Nano Xhana;1945;1964;1999;ST;Logistics Specialist;Low;M32098;X
+285106;Chief of Staff;Rexhep Mitrovica;1939;1964;1999;PA;School of Mass Combat;Medium;M32046;X
+285107;Chief of Staff;Nazim Dedolli;1942;1964;1999;PA;School of Fire Support;Medium;M32066;X
+285108;Chief of Staff;Hajrë Dizdari;1942;1964;1999;SC;School of Defence;Medium;M32090;X
+285109;Chief of Staff;Xhelal Mitrovica;1943;1964;1999;SC;School of Manoeuvre;Medium;M32091;X
+285110;Chief of Staff;Sokrat Agolli;1944;1964;1999;SC;School of Psychology;Medium;M32149;X
+285111;Chief of Staff;Shefqet Vërlaci;1940;1964;1999;FA;School of Psychology;High;M32047;X
+285112;Chief of Staff;Kol Mirakaj;1941;1964;1999;FA;School of Manoeuvre;High;M32074;X
+285113;Chief of Staff;Kristo Cajupi;1942;1964;1999;FA;School of Mass Combat;Medium;M32145;X
+285114;Chief of Staff;Mehmet Shehu;1939;1964;1999;ST;School of Mass Combat;Very High;M32017;X
+285115;Chief of Staff;Zuhdi Shabani;1942;1964;1999;ST;School of Manoeuvre;Low;M32121;X
+285116;Chief of Staff;Prenk Pervizi;1944;1964;1999;ST;School of Fire Support;Very High;M32156;X
+285117;Chief of Army;Selim Moishiou;1938;1964;1999;PA;Elastic Defence Doctrine;Medium;M32018;X
+285118;Chief of Army;Kristo Cajupi;1939;1964;1999;PA;Static Defence Doctrine;Medium;M32145;X
+285119;Chief of Army;Sokrat Agolli;1942;1964;1999;PA;Guns and Butter Doctrine;Medium;M32149;X
+285120;Chief of Army;Alexander Mori;1944;1964;1999;PA;Decisive Battle Doctrine;Medium;M32161;X
+285121;Chief of Army;Hajrë Dizdari;1942;1964;1999;SC;Decisive Battle Doctrine;Medium;M32090;X
+285122;Chief of Army;Xhelal Mitrovica;1944;1964;1999;SC;Guns and Butter Doctrine;Medium;M32091;X
+285123;Chief of Army;Mustafa Mërlika;1945;1964;1999;SL;Static Defence Doctrine;Medium;M32057;X
+285124;Chief of Army;Qemal Komani;1933;1964;1999;FA;Armoured Spearhead Doctrine;Medium;M32007;X
+285125;Chief of Army;Kol Mirakaj;1942;1964;1999;FA;Elastic Defence Doctrine;High;M32074;X
+285126;Chief of Army;Mehmet Shehu;1939;1964;1999;ST;Guns and Butter Doctrine;Very High;M32017;X
+285127;Chief of Army;Hassan Shqabi;1942;1964;1999;ST;Decisive Battle Doctrine;High;M32077;X
+285128;Chief of Army;Prenk Pervizi;1944;1964;1999;ST;Elastic Defence Doctrine;Very High;M32156;X
+285129;Chief of Army;Aziz Sulejmani;1945;1964;1999;ST;Armoured Spearhead Doctrine;Low;M32040;X
+285130;Chief of Navy;Rexhep Mitrovica;1940;1964;1999;PA;Indirect Approach Doctrine;Medium;M32046;X
+285131;Chief of Navy;Sthfphen Delvinë;1941;1964;1999;PA;Base Control Doctrine;Medium;M32020;X
+285132;Chief of Navy;Nazim Dedolli;1942;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M32066;X
+285133;Chief of Navy;Nexhip Deva;1944;1964;1999;PA;Power Projection Doctrine;Medium;M32107;X
+285134;Chief of Navy;Xhelal Mitrovica;1942;1964;1999;SC;Base Control Doctrine;Medium;M32091;X
+285135;Chief of Navy;Hajrë Dizdari;1944;1964;1999;SC;Decisive Naval Battle Doctrine;Medium;M32090;X
+285136;Chief of Navy;Ismael Ghaxa;1939;1964;1999;FA;Open Seas Doctrine;Medium;M32029;X
+285137;Chief of Navy;Hasan Begolli;1942;1964;1999;FA;Power Projection Doctrine;High;M32073;X
+285138;Chief of Navy;Hajrë Fetahu;1939;1964;1999;ST;Decisive Naval Battle Doctrine;Very High;M32039;X
+285139;Chief of Navy;Enver Hoxha;1936;1964;1999;ST;Open Seas Doctrine;Medium;M32034;X
+285140;Chief of Navy;Halil Nergutti;1944;1964;1999;ST;Power Projection Doctrine;Medium;M32109;X
+285141;Chief of Air Force;Fiqri Dine;1942;1964;1999;PA;Army Aviation Doctrine;Medium;M32043;X
+285142;Chief of Air Force;Nexhip Deva;1944;1964;1999;PA;Carpet Bombing Doctrine;Medium;M32107;X
+285143;Chief of Air Force;Ahmad Zhahir;1945;1964;1999;PA;Air Superiority Doctrine;Medium;M32127;X
+285144;Chief of Air Force;Xhelal Mitrovica;1942;1964;1999;SC;Air Superiority Doctrine;Medium;M32091;X
+285145;Chief of Air Force;Sokrat Agolli;1944;1964;1999;SC;Army Aviation Doctrine;Medium;M32149;X
+285146;Chief of Air Force;Sthfphen Delvinë;1939;1964;1999;FA;Naval Aviation Doctrine;Medium;M32020;X
+285147;Chief of Air Force;Eqrem Libohova;1940;1964;1999;FA;Carpet Bombing Doctrine;High;M32048;X
+285148;Chief of Air Force;Nuhi Berisha;1941;1964;1999;FA;Army Aviation Doctrine;High;M32075;X
+285149;Chief of Air Force;Hasan Begolli;1942;1964;1999;FA;Vertical Envelopment Doctrine;High;M32073;X
+285150;Chief of Air Force;Aziz Sulejmani;1939;1964;1999;ST;Vertical Envelopment Doctrine;Low;M32040;X
+285151;Chief of Air Force;Enver Hoxha;1936;1964;1999;ST;Carpet Bombing Doctrine;Medium;M32034;X
+285152;Chief of Air Force;Hajrë Fetahu;1943;1964;1999;ST;Air Superiority Doctrine;Very High;M32039;X
+285153;Chief of Air Force;Prenk Pervizi;1944;1964;1999;ST;Naval Aviation Doctrine;Very High;M32156;X
+285154;Chief of Air Force;Zuhdi Shabani;1945;1964;1999;ST;Army Aviation Doctrine;Low;M32121;X
+285155;Head of State;Ismail Qemali;1908;1919;1999;SC;Autocratic Charmer;Medium;8535;X
+285156;Head of State;Fejzi Alizoti;1908;1932;1999;SC;Weary Stiffneck;Medium;5929;X
+285157;Head of State;Turhan Përmeti;1908;1927;1999;SC;Ruthless Powermonger;Medium;2143;X
+285158;Head of State;Esat Toptani;1908;1932;1999;PA;Pig-headed Isolationist;Medium;2151;X
+285159;Head of State;Vidit I;1908;1932;1999;SC;Benevolent Gentleman;Medium;2152;X
+285160;Head of State;Prenk Bib Doda;1908;1920;1999;SC;Insignificant Layman;Medium;2144;X
+285161;Head of State;Esat Toptani;1908;1920;1999;SC;Powerhungry Demagogue;Medium;2151;X
+285162;Head of State;Kiril I;1914;1932;1999;PA;Weary Stiffneck;Medium;8537;X
+285163;Head of State;International Commission of Control;1908;1932;1999;SC;Weary Stiffneck;Medium;unknownminister;X
+285164;Head of State;Karl Wilhelm I;1908;1928;1999;SC;Ruthless Powermonger;Medium;8536;X
+285165;Head of State;Moritz I;1908;1920;1999;SC;Pig-headed Isolationist;Medium;8540;X
+285166;Head of State;Arthur I;1908;1932;1999;SC;Popular Figurehead;Medium;8532;X
+285167;Head of State;Burhan Eddin I;1908;1932;1999;PA;Die-hard Reformer;Medium;8533;X
+285168;Head of State;Abdülmecid I;1908;1932;1999;PA;Stern Imperialist;Medium;2155;X
+285169;Head of State;Fuad I;1908;1932;1999;PA;Barking Buffoon;Medium;2154;X
+285170;Head of State;Ahmed Izzet I;1908;1932;1999;PA;Autocratic Charmer;Medium;2153;X
+285171;Head of State;Sulejman Delvina;1908;1932;1999;SC;Stern Imperialist;Medium;2147;X
+285172;Head of State;Iliaz Vrioni;1908;1932;1999;SC;Barking Buffoon;Medium;5924;X
+285173;Head of State;Pandeli Evangjeli;1908;1932;1999;SC;Benevolent Gentleman;Medium;2145;X
+285174;Head of State;Xhafer Ypi;1908;1932;1999;SC;Autocratic Charmer;Medium;5926;X
+285175;Head of State;Ahmet Zogolli;1920;1932;1999;SC;Weary Stiffneck;Medium;2142;X
+285176;Head of State;Shefqet Vërlaci;1908;1932;1999;SC;Ruthless Powermonger;Medium;2150;X
+285177;Head of State;Fan Noli;1908;1932;1999;SC;Popular Figurehead;Medium;2146;X
+285178;Head of Government;Nikollë Kaçorri;1908;1917;1999;SC;Political Protege;Medium;8541;X
+285179;Head of Government;Ismail Qemali;1908;1919;1999;SC;Flamboyant Tough Guy;Medium;8535;X
+285180;Head of Government;Fejzi Alizoti;1908;1932;1999;SC;Happy Amateur;Medium;5929;X
+285181;Head of Government;Turhan Përmeti;1908;1927;1999;SC;Old General;Medium;2143;X
+285182;Head of Government;Esat Toptani;1908;1932;1999;PA;Smiling Oilman;Medium;2151;X
+285183;Head of Government;Sulejman Delvina;1908;1932;1999;SC;Naive Optimist;Medium;2147;X
+285184;Head of Government;Iliaz Vrioni;1908;1932;1999;SC;Corporate Suit;Medium;5924;X
+285185;Head of Government;Pandeli Evangjeli;1908;1932;1999;SC;Silent Workhorse;Medium;2145;X
+285186;Head of Government;Xhafer Ypi;1908;1932;1999;SC;Political Protege;Medium;5926;X
+285187;Head of Government;Ahmet Zogolli;1920;1932;1999;PA;Backroom Backstabber;Medium;2142;X
+285188;Head of Government;Shefqet Vërlaci;1908;1932;1999;SC;Happy Amateur;Medium;2150;X
+285189;Head of Government;Fan Noli;1908;1932;1999;SC;Ambitious Union Boss;Medium;2146;X
+285190;Head of Government;Haji Kamil;1908;1932;1999;PA;Backroom Backstabber;Medium;unknownminister;X
+285191;Foreign Minister;Ismail Qemali;1908;1919;1999;SC;Iron Fisted Brute;Medium;8535;X
+285192;Foreign Minister;Myfit Libohova;1911;1922;1999;SC;General Staffer;Medium;5928;X
+285193;Foreign Minister;Turhan Përmeti;1912;1916;1999;SC;Ideological Crusader;Medium;2143;X
+285194;Foreign Minister;Prenk Bib Doda;1912;1916;1999;SC;Iron Fisted Brute;Medium;2144;X
+285195;Foreign Minister;Mehmet Konica;1918;1922;1999;SC;General Staffer;Medium;5923;X
+285196;Foreign Minister;Iliaz Vrioni;1918;1927;1999;SC;Ideological Crusader;Medium;5924;X
+285197;Foreign Minister;Pandeli Evangjeli;1919;1926;1999;SC;Great Compromiser;Medium;2145;X
+285198;Foreign Minister;Fan Noli;1919;1923;1999;SC;Apologetic Clerk;Medium;2146;X
+285199;Foreign Minister;Xhafer Villa;1919;1923;1999;SC;Biased Intellectual;Medium;unknownminister;X
+285200;Foreign Minister;Xhafer Ypi;1919;1924;1999;SC;The Cloak N Dagger Schemer;Medium;5926;X
+285201;Foreign Minister;Sulejman Delvina;1922;1926;1999;SC;Iron Fisted Brute;Medium;2147;X
+285202;Minister of Armament;Abdi Toptani;1908;1916;1999;SC;Military Entrepreneur;Medium;unknownminister;X
+285203;Minister of Armament;Jorgij Cako;1912;1916;1999;SC;Laissez-Faire Capitalist;Medium;unknownminister;X
+285204;Minister of Armament;Mehdi Frashëri;1912;1916;1999;SC;Air Superiority Proponent;Medium;unknownminister;X
+285205;Minister of Armament;Gaqi Adhamidhi;1912;1916;1999;SC;Strategic Air Proponent;Medium;unknownminister;X
+285206;Minister of Armament;Filip Noga;1912;1916;1999;SC;Administrative Genius;Medium;unknownminister;X
+285207;Minister of Armament;Nexhat Como-Libohova;1912;1916;1999;SC;Submarine Proponent;Medium;unknownminister;X
+285208;Minister of Armament;Haxhi Isuf Banga;1913;1918;1999;SC;Corrupt Kleptocrat;Medium;unknownminister;X
+285209;Minister of Armament;Ndoc Çoba;1918;1922;1999;SC;Resource Industrialist;Medium;2156;X
+285210;Minister of Armament;Tef Curani;1919;1923;1999;SC;Battle Fleet Proponent;Medium;unknownminister;X
+285211;Minister of Armament;Ahmet Dakli;1919;1923;1999;SC;Air to Sea Proponent;Medium;unknownminister;X
+285212;Minister of Armament;Kole Thaci;1919;1923;1999;SC;Theoretical Scientist;Medium;unknownminister;X
+285213;Minister of Armament;Luigij Gurakuqi;1922;1926;1999;SC;Air to Ground Proponent;Medium;2157;X
+285214;Minister of Armament;Fejzi Alizoti;1914;1924;1999;PA;Infantry Proponent;Medium;5929;X
+285215;Minister of Security;Myfit Libohova;1908;1915;1999;SC;Compassionate Gentleman;Medium;5928;X
+285216;Minister of Security;Esat Toptani;1911;1916;1999;SC;Man of the People;Medium;2151;X
+285217;Minister of Security;Hasan Prishtina;1911;1915;1999;SC;Prince of Terror;Medium;5927;X
+285218;Minister of Security;Fejzi Alizoti;1911;1916;1999;SC;Crime Fighter;Medium;5929;X
+285219;Minister of Security;Aqif Elbasani;1912;1916;1999;SC;Silent Lawyer;Medium;5930;X
+285220;Minister of Security;Shahin Dino;1912;1918;1999;SC;Back Stabber;Medium;unknownminister;X
+285221;Minister of Security;Mehdi Frashëri;1916;1922;1999;SC;Efficient Sociopath;Medium;unknownminister;X
+285222;Minister of Security;Ahmet Zogolli;1918;1926;1999;PA;Prince of Terror;Medium;2142;X
+285223;Minister of Security;Fuat Dibra;1918;1923;1999;SC;Compassionate Gentleman;Medium;unknownminister;X
+285224;Minister of Security;Bajram Fejzi;1919;1923;1999;SC;Man of the People;Medium;unknownminister;X
+285225;Minister of Security;Sulejman Delvina;1919;1923;1999;SC;Prince of Terror;Medium;2147;X
+285226;Minister of Security;Raul Fico;1919;1923;1999;SC;Crime Fighter;Medium;unknownminister;X
+285227;Minister of Security;Shefqet Vërlaci;1922;1926;1999;SC;Silent Lawyer;Medium;2150;X
+285228;Minister of Security;Abdurraman Dibra;1922;1927;1999;SC;Back Stabber;Medium;unknownminister;X
+285229;Minister of Security;Rexhep Shala;1922;1926;1999;SC;Efficient Sociopath;Medium;unknownminister;X
+285230;Head of Military Intelligence;Lef Nosi;1908;1918;1999;SC;Dismal Enigma;Medium;8538;X
+285231;Head of Military Intelligence;Hasan Prishtina;1910;1918;1999;SC;Logistics Specialist;Medium;5927;X
+285232;Head of Military Intelligence;Idhomene Kosturi;1916;1924;1999;SC;Technical Specialist;Medium;unknownminister;X
+285233;Chief of Staff;Mehmet Derralla;1908;1916;1999;SC;School of Fire Support;Medium;8539;X
+285234;Chief of Staff;Esat Toptani;1912;1920;1999;PA;School of Manoeuvre;Medium;2151;X
+285235;Chief of Staff;Aqif Elbasani;1912;1916;1999;SC;School of Defence;Medium;5930;X
+285236;Chief of Staff;Jusuf Dibra;1912;1918;1999;SC;School of Psychology;Medium;unknownminister;X
+285237;Chief of Staff;Ali Riza Kolonja;1918;1922;1999;SC;School of Mass Combat;Medium;5925;X
+285238;Chief of Staff;Salahydin Shkoza;1919;1923;1999;SC;School of Fire Support;Medium;unknownminister;X
+285239;Chief of Staff;Jusuf Gjinali;1919;1923;1999;SC;School of Manoeuvre;Medium;unknownminister;X
+285240;Chief of Staff;Mustafa Maksuti;1919;1923;1999;SC;School of Defence;Medium;unknownminister;X
+285241;Chief of Staff;Ismail Haki Tatzati;1919;1923;1999;SC;School of Psychology;Medium;8534;X
+285242;Chief of Staff;Mustafa Aranitasi;1922;1926;1999;SC;School of Mass Combat;Medium;9660;X
+285243;Chief of Staff;Kasem Qafezezi;1922;1926;1999;SC;School of Psychology;Medium;unknownminister;X
+285244;Chief of Army;Ali Shefqeti;1908;1922;1999;SC;Guns and Butter Doctrine;Medium;8542;X
+285245;Chief of Army;Ali Riza Kolonja;1918;1923;1999;SC;Armoured Spearhead Doctrine;Medium;5925;X
+285246;Chief of Army;Xhavit Leskoviku;1919;1925;1999;SC;Decisive Battle Doctrine;Medium;unknownminister;X
+285247;Chief of Army;Bajram Fevziu;1921;1925;1999;SC;Static Defence Doctrine;Medium;unknownminister;X
+285248;Chief of Navy;Qazim Koculi;1908;1924;1999;SC;Base Control Doctrine;Medium;2148;X
+285249;Head of Government;Hasan Basri Bej Dukagjini;1914;1932;1999;PA;Happy Amateur;Medium;unknownminister;X
+285250;Chief of Staff;Gustav Mirdashi;1923;1945;1950;SC;school of defence;Medium;9715;X

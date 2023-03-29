@@ -1,0 +1,248 @@
+# China at war against Japan
+
+neutrality = 100.000 
+war = 10
+exp_force_ratio = 0.05
+strat_redeploy_threshold = 30
+max_redeploying = 0.00
+max_garrison_prop = 0.50 # 0.60
+min_garrison_prop = 0.30 # 0.40
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	JAP = 150
+}
+
+befriend = {
+	CSX = 100
+	SIK = 100
+	CXB = 100
+	CYN = 100
+}
+protect = {
+	CSX = 100
+	SIK = 100
+	CXB = 100
+	CYN = 100
+	CGX = 100
+}
+#target = { }
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	beach		= 80
+	capital		= 10	# Our capital
+	
+	# PRIORITIES:
+	province_priorities = {	
+		1343 = 40 #Huainan
+		1340 = 40 #Hefei
+		1342 = 40 #Xuanzhou
+		1312 = 50 #Hengyang
+		1252 = 50 #Taiyuyan
+		1310 = 50 #Changde
+		1241 = 30 
+		1328 = 30 
+		1333 = 30 
+		1334 = 30 
+		1338 = 30 
+		1358 = 30 
+		1367 = 30 
+		1369 = 30 
+		1331 = -1
+		}
+	# Borders with specific countries
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+	reserve_prop		= 0.45
+	province_priorities = { 1241 = 1.5 1328 = 1.5 1333 = 1.5 1334 = 1.5 1338 = 1.5 1358 = 1.5 1367 = 1.5 1369 = 1.5	}
+} 
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.01 
+
+	AA_batteries = no
+	max_AA_level = 3
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = yes
+	max_air_base = 3
+	air_base_provs = {
+    	1310 # Changde
+	}
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 1
+	fort_provs	= { }
+	fort_borders = { } 
+
+	ic_at_war = no 
+	force_ic_until = 1935
+	ic_end_year = 1935
+	IC_provs = { } 
+}
+
+military = { 
+	relative_build_scheme 	= yes
+	max_batch_peace 		= 600 
+	max_batch_war 			= 270 
+	max_batch_home_front 	= 270
+	extra_convoys_war 		= 0.0003 
+	extra_convoys_peace 	= 0.0000 
+
+
+	#### Divisions etc...
+	infantry 		= 28	#30
+	cavalry 		= 5		#5
+	motorized 		= 10
+	mechanized 		= 0
+	light_armor 	= 4
+	armor 			= 0
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 10 	#10
+	garrison		= 0
+    hq 				= 3 	#3
+	militia 		= 30	#37
+#			95	#90 %
+	interceptor 	= 5	#10
+	multi_role 		= 0
+	cas 			= 0
+	strategic_bomber = 0
+	tactical_bomber = 3	#5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#			4	#10 %
+	battleship 		= 0
+	carrier 		= 0
+	destroyer 		= 1
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	transports 		= 1
+#				1 %
+}
+
+technology = { 
+	endgoal = { } 
+	preference = {
+		# Regular Infantry
+		1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1150 13000 13010 13020
+
+		# Field Artillery
+		2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2950 2350
+
+		# Manpower Focus Human Wave Path (SOV)
+		6570 6300 6310 6320 6330 6340 6350 6360 6370 14060
+		
+		# Motorized Infantry
+		1396 1400 1410
+	} 
+	ignore = {		
+		# Airborne Infantry
+		1670 1680 1690 1700 1710 1720 1730 1740
+
+		# Marines
+		1560 1570 1580 1590 1600 1610 1620 1630 1640 1650 1660
+
+		# Mechanized Infantry
+		1470 1480 1490 1510 1520
+
+		#Medium armor brigades & Divisions techs
+		11000 2660 11010 2670
+
+		#Heavy armor brigades
+		2620 2100 2110 2120 2126 2127
+
+		#Super heavy armor brigade
+		2130
+
+		#Tank Destroyer
+		2170 2180 2850 2190 2200 2210 11020 11026
+
+		#Self-Propelled Artillery
+		2220 2230 2240 2250 11030 11040 2960 2966
+
+		# Rocket
+		2970 2370 2380 2390 
+
+		# SP-Rocket
+		2980 2260 2270 2280 11050 11060 2990
+
+		# Self-Propelled Anti-Air
+		22910 22920 22930 22940 22950 22960 
+
+		# Custom Equipment
+		5920 5930 5940 5950 5960 5970 5980 5990
+		
+		# Applied Assembly lines
+		5150 5160 5170
+
+		# Rocketry
+		5560 7550 7560 7570 7580 7590
+
+		# Nuclear
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Radar Warning
+		5410 5416 5417 5420 5426 5430 5440 5466 5450 5460 53030 5476 53070
+		
+		# Computers
+		5310 54010 54020 54030 5320 5330 5340
+
+		# Escort/Multirole Fighters
+		4040 4050 4070 4080 4100 4110
+		
+		# Close Air Support
+		4400 4170 4280 4450 4180 15120 15130 
+
+		# Naval Bomber
+		4700 4710 4190 4200 4210 15140 15150
+
+		# Strategic Bomber
+		4230 4240 4246 15160 15170 16030
+
+		# Air Transports
+		4270 15180 15190
+
+		#SEAPLANES
+		4740 4750 4760 4770 4780 4790 4850 4860
+
+		# Strategic Destruction - Flying Armada
+		9170 9180 9430 9440 9450 9460
+	}
+ 
+	armor 			= 2
+	infantry 		= 6
+	industry 		= 3
+	aircraft 		= 2
+	naval 			= 1
+	land_doctrines 	= 4
+	secret_weapons 	= 0
+	air_doctrines 	= 1
+	naval_doctrines = 0
+}  

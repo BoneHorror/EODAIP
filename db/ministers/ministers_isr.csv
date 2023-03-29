@@ -1,0 +1,56 @@
+ISR;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+675001;Head of State;Chaim Weizmann;1933;1964;1999;SL;Benevolent Gentleman;High;M559001;X
+675002;Head of Government;David Ben Gurion;1933;1964;1999;SL;Ambitious Union Boss;High;M559002;X
+675003;Foreign Minister;Moshe Sharett;1933;1964;1999;SL;Biased Intellectual;High;M559003;X
+675004;Minister of Armament;Levi Eshkol;1933;1964;1999;SL;Resource Industrialist;Medium;M559004;X
+675005;Minister of Security;Golda Meir;1933;1964;1999;SL;Man of the People;Medium;M559005;X
+675006;Head of Military Intelligence;Yigal Allon;1933;1964;1999;SL;Logistics Specialist;Medium;M559006;X
+675007;Chief of Staff;Yigael Yadin;1933;1964;1999;SL;School of Fire Support;Medium;M559007;X
+675008;Chief of Army;Yigal Allon;1933;1964;1999;SL;Guns and Butter Doctrine;Medium;M559008;X
+675009;Chief of Navy;Yedidia Ya'ari;1933;1964;1999;SL;Decisive Naval Battle Doctrine;Medium;M559009;X
+675010;Chief of Air Force;Haim Laskov;1933;1964;1999;SL;Army Aviation Doctrine;Medium;M559010;X
+675011;Head of State;Mashe Shaypira;1933;1964;1999;PA;Stern Imperialist;High;M559011;X
+675012;Head of State;Chaim Arlosoroff;1933;1964;1999;LE;Barking Buffoon;High;M559012;X
+675013;Head of Government;Daniel Auster;1933;1964;1999;PA;Backroom Backstabber;High;M559013;X
+675014;Head of Government;Dr. Abrahan Herschel;1933;1964;1999;LE;Naive Optimist;High;M559014;X
+675015;Foreign Minister;Zerach Warnaftig;1933;1964;1999;PA;Ideological Crusader;High;M559015;X
+675016;Foreign Minister;Pinhas Levon;1943;1964;1999;SL;Great Compromiser;High;M559016;X
+675017;Foreign Minister;Yitzhak Ben Zvi;1933;1964;1999;LE;Iron Fisted Brute;High;M559017;X
+675018;Foreign Minister;Yitzhak Tabenkin;1939;1964;1999;LE;The Cloak N Dagger Schemer;High;M559018;X
+675019;Minister of Armament;Vadia Yosef;1933;1964;1999;PA;Infantry Proponent;Medium;M559019;X
+675020;Minister of Armament;Mencahem Ussiskin;1937;1964;1999;PA;Strategic Air Proponent;Medium;M559020;X
+675021;Minister of Armament;Vatchagan Meltonian;1940;1964;1999;PA;laissez-faire capitalist;Medium;M559021;X
+675022;Minister of Armament;Kadish Luz;1940;1964;1999;SL;Battle Fleet Proponent;Medium;M559022;X
+675023;Minister of Armament;Yosef Sprinzak;1942;1964;1999;SL;Air Superiority Proponent;Medium;M559023;X
+675024;Minister of Armament;Eliezer Kaplan;1945;1964;1999;SL;Military Entrepreneur;Medium;M559024;X
+675025;Minister of Armament;Pavlos Levan;1933;1964;1999;LE;Tank Proponent;Medium;M559025;X
+675026;Minister of Security;Nahum Nir-Rafalkes;1933;1964;1999;PA;Back Stabber;Medium;M559026;X
+675027;Minister of Security;Menachem Baskind;1939;1964;1999;PA;Compassionate Gentleman;Medium;M559027;X
+675028;Minister of Security;Mencahem Begin;1940;1964;1999;PA;Efficient Sociopath;Medium;M559028;X
+675029;Minister of Security;Moshe Haim Shapira;1949;1964;1999;SL;Silent Lawyer;Medium;M559029;X
+675030;Minister of Security;Israel Rokach;1952;1964;1999;SD;Crime Fighter;Medium;M559030;X
+675031;Minister of Security;Moshe Katznelson;1941;1964;1999;LE;Prince of Terror;Medium;M559031;X
+675032;Head of Military Intelligence;Israel Bar-Yehuda;1933;1964;1999;PA;Political Specialist;Medium;M559032;X
+675033;Head of Military Intelligence;Menachem Mendel Lipschutz;1937;1964;1999;PA;Dismal Enigma;Medium;M559033;X
+675034;Head of Military Intelligence;Pinhas Sapir;1942;1964;1999;SL;Technical Specialist;Medium;M559034;X
+675035;Head of Military Intelligence;Yitzhak Grünbaum;1944;1964;1999;SL;Dismal Enigma;Medium;M559035;X
+675036;Head of Military Intelligence;Rerl Katznelson;1933;1964;1999;LE;Industrial Specialist;Medium;M559036;X
+675037;Head of Military Intelligence;Menachem Schneerson;1937;1964;1999;LE;Naval Intelligence Specialist;Medium;M559037;X
+675038;Chief of Staff;Roman Zakhari;1933;1964;1999;PA;School of Defence;Medium;M559038;X
+675039;Chief of Staff;Jiloshahaft Harkabi;1942;1964;1999;PA;School of Psychology;Medium;M559039;X
+675040;Chief of Staff;Richard Silverstein;1933;1964;1999;LE;School of Mass Combat;Medium;M559040;X
+675041;Chief of Army;Pinchas Rosengarten;1933;1964;1999;PA;Elastic Defence Doctrine;Medium;M559041;X
+675042;Chief of Army;Moshe Dayan;1944;1964;1999;SL;Armoured Spearhead Doctrine;Medium;M559042;X
+675043;Chief of Army;Amos Zoref;1933;1964;1999;LE;Decisive Battle Doctrine;Medium;M559043;X
+675044;Chief of Navy;Chaim Grunwald;1933;1964;1999;PA;Base Control Doctrine;Medium;M559044;X
+675045;Chief of Navy;Moshe Krelitz;1933;1964;1999;LE;Indirect Approach Doctrine;Medium;M559045;X
+675046;Chief of Air Force;Chris Magee;1933;1964;1999;PA;Army Aviation Doctrine;Medium;M559046;X
+675047;Chief of Air Force;Reuven Woolf;1933;1964;1999;LE;Air Superiority Doctrine;Medium;M559047;X
+675048;Head of State;Yitzhak Ben Zvi;1952;1964;1999;SL;Ruthless Powermonger;High;M559017;X
+675049;Minister of Security;Yitzhak Grünbaum;1948;1964;1999;SL;Prince of Terror;Medium;M559035;X
+675050;Head of Military Intelligence;Yosef Sprinzak;1948;1964;1999;SL;Industrial Specialist;Medium;M559023;X
+675051;Chief of Army;David Ben Gurion;1948;1964;1999;SL;Decisive Battle Doctrine;Medium;M559002;X
+675052;Chief of Staff;Ariel Sharon;1956;1964;1999;SC;School of Psychology;Very High;6067;x  
+675053;Chief of Staff;Avraham Yoffe;1955;1964;1999;PA;School of Mass Combat;High;6068;x
+675054;Chief of Staff;Avraham Yoffe;1955;1964;1999;SC;School of Mass Combat;High;6068;x

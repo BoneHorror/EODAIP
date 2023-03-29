@@ -1,0 +1,17 @@
+TUR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+45001;Golçuk Shipyards;T3500;4;1900;2000;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45002;Istanbul Valde Shipyard;T3501;5;1900;2000;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45003;KTF;T3502;4;1932;2000;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45004;MKEK;T3503;5;1900;2000;chemistry;mathematics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45005;THK;T3504;4;1925;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45006;Turkish Petroleum Company;T3505;3;1925;2000;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45007;Air War Academy;T3506;4;1900;2000;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45008;Erkan Gataly;T3507;3;1939;2000;bomber_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45009;Fevzi Cakmak;T3508;4;1900;1945;large_unit_tactics;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45010;Naval Academy;T3509;4;1900;2000;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45011;Mehmet Ali Üngen;T3510;5;1930;2000;centralized_execution;large_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45012;Mehmet Nuri Yamut;T3511;4;1930;1961;small_unit_tactics;centralized_execution;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45013;Istanbul Military Industries;T1103;4;1900;2000;artillery;mechanics;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+45014;Istanbul University;T3513;4;1900;2000;mechanics;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+450140;National Security Service;T450140;5;1926;1965;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+450141;National Intelligence Organization;T450140;6;1965;2000;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -1,0 +1,300 @@
+####################################
+# Finland AI events 
+####################################
+# Behavior Flags
+#	FINHomeland		= Defend homeland only and try not to go any further
+#	FINNormal		= FINHomeland
+################
+################
+# Homeland Defense
+#############################################
+event = { 
+	id = 3030010
+	random = no 
+	country = FIN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = FINHomeland }
+		war = { country = SOV }
+		NOT = {	lost_national = { country = FIN value = 2 } }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = FINHomeland }
+		command = { type = local_clrflag which = FINNormal }
+		command = { type = ai which = "switch/FIN_Homeland.ai" }
+	}
+}
+event = { 
+	id = 3030011
+	random = no 
+	country = FIN
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = FINNormal }
+		OR = {
+			NOT = { war = { country = SOV } }
+			lost_national = { country = FIN value = 2 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = FINHomeland }
+		command = { type = local_setflag which = FINNormal }
+		command = { type = ai which = "switch/FIN_Normal.ai" }
+	}
+}
+################
+# Finland joins Germany because of Winter War Campaign and GER DOW SOV
+#############################################
+event = {
+	id = 3030012
+	random = no 
+	country = FIN
+	
+	trigger = {
+		ai = yes
+		ai = GER
+		event = 2030001 # Winter War
+		atwar = no
+		war = { country = GER country = SOV }
+		infantry = { country = FIN value = 7 }
+		NOT = { alliance = { country = SOV } }
+		NOT = { alliance = { country = ENG } }
+		NOT = { alliance = { country = ITA } }
+		NOT = { alliance = { country = GER } }
+		NOT = { alliance = { country = TUR } }
+		NOT = { event = 2030022 } #FIN  The Moscow Armistice
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = alliance which = GER when = 1 }
+		command = { type = ai which = "switch/FIN_Russia.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = local_setflag which = FINHomeland }
+		command = { type = local_clrflag which = FINNormal }
+		command = { type = ai which = "switch/FIN_Homeland.ai" }
+		command = { trigger = { NOT = { local_flag = MOB8 } NOT = { local_flag = demob } } type = local_setflag which = do_not_demob }
+		command = { trigger = { NOT = { local_flag = MOB8 } NOT = { local_flag = demob } } type = trigger which = 8300108 } #General Mobilization
+		command = { trigger = { NOT = { local_flag = MOB8 } NOT = { local_flag = demob } } type = event which = 130309 where = FIN when = 360 }		
+	}
+}
+################
+# Finland lowers neutrality to join Axis
+#############################################
+event = {
+	id = 3030013
+	random = no 
+	country = FIN
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		event = 2007026 # Winter War
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/Neutrality_Change.ai" }
+		command = { type = local_setflag which = FINHomeland }
+		command = { type = local_clrflag which = FINNormal }
+		command = { type = ai which = "switch/FIN_Homeland.ai" }
+	}
+}
+################
+# Norway atwar AIs
+#############################################
+event = {
+	id = 3030019
+	random = no 
+	country = NOR
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = NOR }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/NOR_Allies.ai" }
+	}
+}
+event = {
+	id = 3030020
+	random = no 
+	country = NOR
+	
+	trigger = {
+		ai = yes
+		war = { country = ENG country = NOR }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = { 
+		command = { type = ai which = "switch/NOR_Axis.ai" }
+	}
+}
+
+#############FIN and NOR prepare some troops before war##################
+event = {
+	id = 3030021
+	random = no 
+	country = FIN
+	
+	trigger = {
+		ai = yes
+		manpower = 60
+		NOT = { difficulty = 4 } #Don't do this on Very Strong Allies
+		NOT = { ispuppet = FIN }
+		OR = {
+			year = 1939
+			random = 10
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = militia when = 2 }
+		command = { type = build_division which = bergsjaeger when = 1 }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = hq }
+		command = { type = ai which = "switch/Reinforcement_Boost_Up.ai" }
+		command = { type = local_setflag which = noreinf }
+		command = { type = construct which = land_fort where = 531 value = 1 } #FIN fort provinces
+		command = { type = construct which = land_fort where = 532 value = 1 } #FIN fort provinces
+	}
+}
+#############################################
+event = {
+	id = 3030022
+	random = no 
+	country = FIN
+	
+	trigger = {
+		ai = yes
+		OR = {
+			event = 2003010 #GER  Anschluss of Austria Proclaimed
+			year = 1938
+			random = 20
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { type = manpowerpool value = 60 }
+	}
+}
+event = {
+	id = 3030023
+	random = no 
+	country = NOR
+	
+	trigger = {
+		ai = yes
+		manpower = 60
+		difficulty = 1 #Don't do this on Very Strong Axis to not risk GER screwing up
+		NOT = { ispuppet = NOR }
+		OR = {
+			year = 1939
+			random = 10
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = hq }
+		command = { type = build_division which = bergsjaeger when = 1 }
+		command = { trigger = { NOT = { ai = ENG } } type = build_division which = militia when = 2 }
+		command = { type = ai which = "switch/Reinforcement_Boost_Up.ai" }
+		command = { type = local_setflag which = noreinf }
+		command = { type = construct which = coastal_fort where = 495 value = 1 } #Narvik
+		command = { type = construct which = coastal_fort where = 491 value = 1 } #Alesund
+	}
+}
+#############################################
+event = {
+	id = 3030024
+	random = no 
+	country = NOR
+	
+	trigger = {
+		ai = yes
+		OR = {
+			event = 2003010 #GER  Anschluss of Austria Proclaimed
+			year = 1938
+			random = 20
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = may year = 1937 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { type = manpowerpool value = 60 }
+	}
+}

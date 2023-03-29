@@ -1,0 +1,3034 @@
+# Minister record format:
+#
+# trait	- The name used for that minister personality in minister files.
+#	  Used to identify ministers personality on scenario start or on new country creation.
+#	  NOTE: Make sure there are no duplicates to avoid ambiguities!
+# id	- Used as identifier on save and load games. NOTE: Make sure there are no duplicates to avoid ambiguities!
+# name	- Localized name of that minister personality. Use string name or enter text directly in " "
+# desc	- Localized long description of that minister personality. Use string name or enter text directly in " "
+# position - position of the government. If position is missing (or = all) that personality can be used at any post. 
+#	  Could be one of following:
+#	  all(default) / ForeignMinister / ArmamentMinister / MinisterOfSecurity / MinisterOfIntelligence
+#         / ChiefOfStaff / ChiefOfArmy /ChiefOfAir / ChiefOfNavy / HeadOfState / HeadOfGovernment
+#	  / generic (used as default if no personality is found for a minister; Should be only one such entry)
+# value	- (optional) how valuable is a miniser with such personality. 
+#	  Used to help AI in chosing best assassination target and also best minister for the government (optional - misc.txt).
+# 	  Use integer numbers: -1 = never assassinate; 0 = autocalc the value; else use value
+#	  If no value is specified the engine will calculate it based on that trait's bonuses/penalties.
+#	  NOTE: You can see current calculated values in "savedebug.txt" after game start
+#	
+# command - bonus/penalty this trait gives
+#
+# Valid commands:
+#		
+# type	- command type. Could be any of these: 
+# 
+#	  research - Gives bonus to research time and cost. 
+#	 		which =	all (default ) / infantry / armor / naval / aircraft / industry / land_doctrines 
+#				/ secret_weapons / naval_doctrines / air_doctrines
+#			when = time (default ) / cost
+#			value = (-)x.xxxx - Negative values are bonuses, positive - penalties. 
+#
+#	  production - modifiers to production (sliders). 
+#			which = production ( default ) / consumer / supplies / reinforcement / upgrading
+#			when = national ( default) / non_national ; only for production!
+#			value = (-)x.xxxx - Positive values are bonuses for supplies, negative - for the rest.
+#
+#	  resource - modifiers to resource. Positive values are good
+#			which = all (default) / oil / energy / metal / rare_materials / money
+#			value = (-)x.xxxx - Positive values are bonuses, negative - penalties
+#
+#	  province - modifiers to province buildings production time and cost	 
+#			which = all (default) / ic / coastalfort / landfort / flak / infra / air_base 
+#				/ naval_base / radar_station / nuclear_reactor / rocket_test	
+#			when = all (default - means both cost and time bonus) / time / cost
+#			value = (-)x.xxxx - Negative values are bonuses, positive - penalties.
+#
+#	  unit - various bonuses to units
+#			Note: destroyer and transport build time and cost modifiers are also used for convoy escorts and transoprts.	
+#			which = all (default) / land / navy / air / infantry / cavalry / motorized / mechanized 
+#				/ light_armor / armor / paratrooper / marine / bergsjaeger / garrison / hq / militia 
+#				/ multi_role / interceptor / strategic_bomber / tactical_bomber / naval_bomber / cas 
+#				/ transport_plane / flying_bomb / flying_rocket / battleship /light_cruiser 
+#				/ heavy_cruiser / battlecruiser / destroyer (used also for convoy escorts) / carrier 
+#				/ escort_carrier / submarine / nuclear_submarine / transport (used also for convoy transports)
+#				/ light_carrier / rocket_interceptor
+#				/ d_rsv_33 / d_rsv_34 / d_rsv_35 / d_rsv_36 / d_rsv_37 / d_rsv_38 / d_rsv_39 / d_rsv_40
+#				/ d_01 / d_02 / d_03 / d_04 / d_05 / d_06 / d_07 / d_08 / d_09 / d_10 / d_11 / d_12 / d_13 / d_14 / d_15 / d_16
+#				/ d_17 / d_18 / d_19 / d_20 / d_21 / d_22 / d_23 / d_24 / d_25 / d_26 / d_27 / d_28 / d_29 / d_30 / d_31 / d_32
+#				/ d_33 / d_34 / d_35 / d_36 / d_37 / d_38 / d_39 / d_40 / d_41 / d_42 / d_43 / d_44 / d_45 / d_46 / d_47 / d_48
+#				/ d_49 / d_50 / d_51 / d_52 / d_53 / d_54 / d_55 / d_56 / d_57 / d_58 / d_59 / d_60 / d_61 / d_62 / d_63 / d_64
+#				/ d_65 / d_66 / d_67 / d_68 / d_69 / d_70 / d_71 / d_72 / d_73 / d_74 / d_75 / d_76 / d_77 / d_78 / d_79 / d_80
+#				/ d_81 / d_82 / d_83 / d_84 / d_85 / d_86 / d_87 / d_88 / d_89 / d_90 / d_91 / d_92 / d_93 / d_94 / d_95 / d_96
+#				/ d_97 / d_98 / d_99
+#			when = all (default - means both cost and time bonus) / time / cost / organisation / morale
+#				/ attack / defence / speed (only for land units, no "which")
+#			value = (-)x.xxxx - Negative values are bonuses for time and cost, positive - for the rest.
+#
+#	  extra - various bonuses to brigades
+#			which = all (default)/ land / navy / air / artillery / sp_artillery / cavalry_brigade
+#				/ sp_anti_air / medium_armor / tank_destroyer / light_armor_brigade / heavy_armor
+#				/ super_heavy_armor / armored_car / anti_air / police / engineer / cag / escort
+#				/ naval_asw / naval_anti_air_s / naval_radar_s / naval_fire_controll_s / naval_improved_hull_s
+#				/ naval_torpedoes_s / naval_anti_air_l / naval_radar_l / naval_fire_controll_l
+#				/ naval_improved_hull_l / naval_torpedoes_l 
+#				/ floatplane / light_cag / amph_armor / glider_armor / glider_artillery / super_heavy_artillery
+#				/ b_rsv_36 / b_rsv_37 / b_rsv_38 / b_rsv_39 / b_rsv_40
+#				/ b_01 / b_02 / b_03 / b_04 / b_05 / b_06 / b_07 / b_08 / b_09 / b_10 / b_11 / b_12 / b_13 / b_14 / b_15 / b_16
+#				/ b_17 / b_18 / b_19 / b_20 / b_21 / b_22 / b_23 / b_24 / b_25 / b_26 / b_27 / b_28 / b_29 / b_30 / b_31 / b_32
+#				/ b_33 / b_34 / b_35 / b_36 / b_37 / b_38 / b_39 / b_40 / b_41 / b_42 / b_43 / b_44 / b_45 / b_46 / b_47 / b_48
+#				/ b_49 / b_50 / b_51 / b_52 / b_53 / b_54 / b_55 / b_56 / b_57 / b_58 / b_59 / b_60 / b_61 / b_62 / b_63 / b_64
+#				/ b_65 / b_66 / b_67 / b_68 / b_69 / b_70 / b_71 / b_72 / b_73 / b_74 / b_75 / b_76 / b_77 / b_78 / b_79 / b_80
+#				/ b_81 / b_82 / b_83 / b_84 / b_85 / b_86 / b_87 / b_88 / b_89 / b_90 / b_91 / b_92 / b_93 / b_94 / b_95 / b_96
+#				/ b_97 / b_98 / b_99
+#			when = all (default - means both cost and time bonus) / time / cost / organisation / morale / attack / defence
+#			value = (-)x.xxxx - Negative values are bonuses for time and cost, positive - for the rest.
+#
+#	  diplomacy_chances - NOTE! format: value = X for all except assume_military_control!
+#			which = alliance (used for all alliance chances calculations) / influence_nation / ask_for_military_access 
+#				/ assume_military_control / demand_territory / offer_non_aggression / sue_for_peace 
+#				/ trade (used also for offer_trade_agreement)
+#			when = all (default) / weak_target (sender has at least twice target's province count)/ same_alignment 
+#				/ opposite_alignment / democracies / dictatorships / close_government_type ( +/- 2 positions away from our gov. type)
+#			value = X for all except assume_military_control
+#			value = (-)x.xxxx for assume_military_control only - used as modifier on sender's base IC in this mission chance calculation
+#				Positive values are bonuses, negative - penalties for all missions.
+#
+#	  diplomacy_cost - Modifiers on diplo missions cost.
+#			which = all (default) / declare_war / offer_alliance / bring_to_alliance / join_alliance 
+#				/ leave_alliance / ban_from_alliance / influence_nation / ask_for_military_access 
+#				/ cancel_military_access / revoke_military_access / assume_military_control 
+#				/ cancel_military_control / send_expeditionary_force / guarantee_independence 
+#				/ annex_nation / demand_territory / trade / offer_non_aggression / cancel_non_aggression 
+#				/ offer_trade_agreement / cancel_trade_agreement / cancel_peace_treaty 
+#				/ sue_for_peace / release_puppet / liberate_nation / dont_send_forces
+#			when = all (default - all except national) / weak_target / same_alignment / opposite_alignment 
+#				/ democracies / dictatorships / close_government_type ( +/- 2 positions avay from our gov. type)
+#				/ national (modifier on cost for missions against that country; higher is better)
+#			value = (-)x.xxxx - Negative values are bonuses for all except "national"
+#
+#	  intelligence_chances - These will be added to mission chances unmodified.
+#			which = all (default) / steal_blueprint / minister_assassination / smear_campaign 
+#				/ coup / sabotage_industry / nuclear_sabotage / found_partisans / massmedia / disrupt_techteam 
+#			when = non_national (default) / national (chances against that country; negative are bonuses)
+#			value = (-)X - Positive values are bonuses for "non_national", negative - for "national"
+#
+#	  intelligence_cost - Modifiers on intelligence missions cost.
+#			which = all (default) / steal_blueprint / minister_assassination / smear_campaign / coup 
+#			/ sabotage_industry / nuclear_sabotage / found_partisans / massmedia / disrupt_techteam
+#			when = non_national (default) / national (cost against that country; positive are bonuses)
+#			value = (-)x.xxxx - Negative values are bonuses for "non_national", positive - for "national"	
+#
+#	  intelligence_report - Intelligence reports accuracy. 
+#			which = all (default) / land (used also for air)/ navy (used also for convoys) / production (used also for research);
+#			value = (-)X - Valid values [ -10 to 10 ] (Decrease/Increase reports accuracy)
+#
+#	  intelligence_network - modifiers on intelligence network effectiveness and (when) and intelligence network cost/maintenance (which)
+#				NOTE: Use Only one at a time!!!
+#			which = all (default - overrides "when" in case no "when" is specified)/ increase_intelligence_founding 
+#				/ decrease_intelligence_founding / daily_maintenance
+#			     value = (-)x.xxxx - Negative values are bonuses	
+#			when = all (default) / national (counter intelligence) / non_national (foreign) ; 
+#			     value = X - Positive values are bonuses 
+#			     Note: Total sum for this modifier for all active ministers in a government is hard-coded to no more then 5
+#
+#	  leader_skill - modifier on leader skill combat bonus
+#			value = (-)x.xxxx - Positive values are bonuses
+#
+#	  dissent - modifier on country dissent reduction
+#			value = (-)x.xxxx - Negative values are bonuses
+#
+#	  tc_mod - modifier on transport capacity
+#			value = (-)x.xxxx - Positive values are bonuses
+#
+#	  detection -	modifier on detection NOTE! format: value = X for land and convoy (these 2 are additive modifiers)
+#			which = land ( used also for air units on the map) / navy / convoy
+#			value = X for land and convoy, value = x.xxxx for navy. Positive values are bonuses
+#
+#	  belligerence - modifiers on belligerence change and DoW requirement
+#			which = peace / war / declare_war
+#			value = (-)x.xxxx - Negative values are bonuses
+#
+#	  populationgrowth - modifiers on MP growth
+#			when = national (default) / non_national (foreign)
+#			value = (-)x.xxxx - Positive values are bonuses
+#
+#	  supply_consumption - modifiers on unit's supply consumption
+#			value = (-)x.xxxx - Negative values are bonuses
+#
+#	  stockpile - modifiers on stockpiles limit
+#			which = industry / supplies (used for oil too) / all (default)	
+#			when = war / peace / all (default)
+#			value = x.xxxx
+#
+# Value - modifier's value. Should be different from 0
+#
+
+### Generic minister personality ###
+	minister =  { 
+		trait		= "Generic"
+		id			= 0
+		name		= "NPERSONALITY_GENERIC"
+		desc		= "DPERSONALITY_GENERIC"
+		position	= generic # NOTE: DO NOT CHANGE!
+		value		= -1
+	}
+
+### Foreign Minister Section ###
+	minister =  { 
+		trait		= "biased intellectual"
+		id			= 1
+		name		= NPERSONALITY_BIASED_INTELLECTUAL
+		desc		= DPERSONALITY_BIASED_INTELLECTUAL
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = diplomacy_cost which = bring_to_alliance when = opposite_alignment value = -0.5000 }
+		command		= { type = diplomacy_cost which = join_alliance when = opposite_alignment value = -0.5000 }
+		command		= { type = diplomacy_cost which = offer_alliance when = opposite_alignment value = -0.5000 }
+		command		= { type = diplomacy_cost which = guarantee_independence when = opposite_alignment value = -0.5000 }
+		command		= { type = diplomacy_cost which = trade when = opposite_alignment value = -0.7500 }		
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = opposite_alignment value = -0.7500 }
+		command		= { type = diplomacy_cost which = sue_for_peace when = opposite_alignment value = -1.0000 }	
+	}
+
+	minister =  { 
+		trait		= "ideological crusader"
+		id			= 2
+		name		= NPERSONALITY_IDEOLOGICAL_CRUSADER
+		desc		= DPERSONALITY_IDEOLOGICAL_CRUSADER
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = diplomacy_cost which = influence_nation value = -0.3330 } 
+		command		= { type = diplomacy_cost which = trade when = same_alignment value = -0.7500 }
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = same_alignment value = -0.7500 }		
+	}
+	
+	minister =  { 
+		trait		= "apologetic clerk"
+		id			= 3
+		name		= NPERSONALITY_APOLOGETIC_CLERK
+		desc		= DPERSONALITY_APOLOGETIC_CLERK
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_cost which = influence_nation value = 0.3330 } 
+		command		= { type = diplomacy_cost which = cancel_military_access value = -1.0000 }
+		command		= { type = diplomacy_cost which = revoke_military_access value = -1.0000 }
+		command		= { type = diplomacy_cost which = sue_for_peace value = -1.0000 }		
+	}
+
+	minister =  { 
+		trait		= "iron fisted brute"
+		id			= 4
+		name		= NPERSONALITY_IRON_FISTED_BRUTE
+		desc		= DPERSONALITY_IRON_FISTED_BRUTE
+		position	= ForeignMinister
+		value		= 0
+		command		= { type = diplomacy_cost which = influence_nation value = -0.3330 } 
+		command		= { type = diplomacy_cost which = annex_nation value = 0.5000 }
+		command		= { type = diplomacy_cost which = demand_territory when = weak_target value = -0.3333 }
+	}
+
+	minister =  { 
+		trait		= "great compromiser"
+		id			= 5
+		name		= NPERSONALITY_GREAT_COMPROMISER
+		desc		= DPERSONALITY_GREAT_COMPROMISER
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_cost which = bring_to_alliance value = -0.5000  } 
+		command		= { type = diplomacy_cost which = join_alliance value = -0.5000  }
+		command		= { type = diplomacy_cost which = offer_alliance value = -0.5000  }
+		command		= { type = diplomacy_cost which = guarantee_independence value = -0.5000 }
+		command		= { type = diplomacy_cost which = leave_alliance value = -0.4000 }
+		command		= { type = diplomacy_cost which = ban_from_alliance value = -0.4000 }
+	}
+
+	minister =  { 
+		trait		= "general staffer"
+		id			= 6
+		name		= NPERSONALITY_GENERAL_STAFFER
+		desc		= DPERSONALITY_GENERAL_STAFFER
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_cost which = ask_for_military_access value = -0.5000 }
+		command		= { type = diplomacy_cost which = assume_military_control value = -0.3333 }
+	}
+
+	minister =  { 
+		trait		= "the cloak n dagger schemer"
+		id			= 7
+		name		= NPERSONALITY_THE_CLOAK_N_DAGGER_SCHEMER
+		desc		= DPERSONALITY_THE_CLOAK_N_DAGGER_SCHEMER
+		position	= ForeignMinister
+		value		= 0
+		command		= { type = diplomacy_chances which = influence_nation value = 10 } 
+		command		= { type = intelligence_chances which = coup value = 1 }
+	}
+
+### Minister of Armament Section ###
+	minister =  { 
+		trait		= "administrative genius"
+		id			= 8
+		name		= NPERSONALITY_ADMINISTRATIVE_GENIUS
+		desc		= DPERSONALITY_ADMINISTRATIVE_GENIUS
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "resource industrialist"
+		id			= 9
+		name		= NPERSONALITY_RESOURCE_INDUSTRIALIST
+		desc		= DPERSONALITY_RESOURCE_INDUSTRIALIST
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0250 }
+		command		= { type = resource which = energy value = 0.0250 }
+		command		= { type = resource which = metal value = 0.0250 }
+		command		= { type = resource which = rare_materials value = 0.0250 }
+		command		= { type = research which = industry value = -0.1000 } 
+	}
+
+	minister =  { 
+		trait		= "laissez-faire capitalist"
+		id			= 10
+		name		= NPERSONALITY_LAISSEZ_FAIRES_CAPITALIST
+		desc		= DPERSONALITY_LAISSEZ_FAIRES_CAPITALIST
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = consumer value = 0.1000 } 
+		command		= { type = resource which = money value = 0.0700 }
+		command		= { type = production which = production value = -0.0500 } 
+	}
+
+	minister =  { 
+		trait		= "theoretical scientist"
+		id			= 11
+		name		= NPERSONALITY_THEORETICAL_SCIENTIST
+		desc		= DPERSONALITY_THEORETICAL_SCIENTIST
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = secret_weapons value = -0.0800 }
+		command		= { type = research which = industry value = -0.0500 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "military entrepreneur"
+		id			= 12
+		name		= NPERSONALITY_MILITARY_ENTREPRENEUR
+		desc		= DPERSONALITY_MILITARY_ENTREPRENEUR
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = supplies value = 0.1000 } 
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "battle fleet proponent"
+		id			= 13
+		name		= NPERSONALITY_BATTLE_FLEET_PROPONENT
+		desc		= DPERSONALITY_BATTLE_FLEET_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = naval value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "submarine proponent"
+		id			= 14
+		name		= NPERSONALITY_SUBMARINE_PROPONENT
+		desc		= DPERSONALITY_SUBMARINE_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = unit which = submarine value = -0.1000 }
+		command		= { type = unit which = nuclear_submarine value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "tank proponent"
+		id			= 15
+		name		= NPERSONALITY_TANK_PROPONENT
+		desc		= DPERSONALITY_TANK_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = armor value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "infantry proponent"
+		id			= 16
+		name		= NPERSONALITY_INFANTRY_PROPONENT
+		desc		= DPERSONALITY_INFANTRY_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = infantry value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "air to ground proponent"
+		id			= 17
+		name		= NPERSONALITY_AIR_TO_GROUND_PROPONENT
+		desc		= DPERSONALITY_AIR_TO_GROUND_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = unit which = cas value = -0.0500 }
+		command		= { type = unit which = tactical_bomber value = -0.0500 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "air to sea proponent"
+		id			= 18
+		name		= NPERSONALITY_AIR_TO_SEA_PROPONENT
+		desc		= DPERSONALITY_AIR_TO_SEA_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = unit which = naval_bomber value = -0.0500 }
+		command		= { type = extra which = cag value = -0.0500 }
+		command		= { type = extra which = light_cag value = -0.0500 }
+		command		= { type = extra which = floatplane value = -0.0500 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+	minister =  { 
+		trait		= "strategic air proponent"
+		id			= 19
+		name		= NPERSONALITY_STRATEGIC_AIR_PROPONENT
+		desc		= DPERSONALITY_STRATEGIC_AIR_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = unit which = strategic_bomber value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+	}
+
+### Minister of security Section ###
+	minister =  { 
+		trait		= "silent lawyer"
+		id			= 20
+		name		= NPERSONALITY_SILENT_LAWYER
+		desc		= DPERSONALITY_SILENT_LAWYER
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = -0.0500 }
+	}
+
+	minister =  { 
+		trait		= "compassionate gentleman"
+		id			= 21
+		name		= NPERSONALITY_COMPASSIONATE_GENTLEMAN
+		desc		= DPERSONALITY_COMPASSIONATE_GENTLEMAN
+		position	= MinisterOfSecurity
+		command		= { type = production which = production when = non_national value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }
+		command		= { type = populationgrowth when = non_national value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "crime fighter"
+		id			= 22
+		name		= NPERSONALITY_CRIME_FIGHTER
+		desc		= DPERSONALITY_CRIME_FIGHTER
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = -0.1000 }
+		#command		= { type = production which = production value = -0.0100 }
+	}
+
+	minister =  { 
+		trait		= "prince of terror"
+		id			= 23
+		name		= NPERSONALITY_PRINCE_OF_TERROR
+		desc		= DPERSONALITY_PRINCE_OF_TERROR
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = production when = non_national value = 0.1000 }
+		command		= { type = resource which = energy value = 0.0300 }
+		command		= { type = resource which = metal value = 0.0300 }
+		command		= { type = resource which = rare_materials value = 0.0300 }
+		command		= { type = production which = consumer value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "back stabber"
+		id			= 24
+		name		= NPERSONALITY_BACK_STABBER
+		desc		= DPERSONALITY_BACK_STABBER
+		position	= MinisterOfSecurity
+		value		= -1
+		command		= { type = production which = consumer value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "man of the people"
+		id			= 25
+		name		= NPERSONALITY_MAN_OF_THE_PEOPLE
+		desc		= DPERSONALITY_MAN_OF_THE_PEOPLE
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = populationgrowth when = non_national value = 0.1000 }
+		command		= { type = populationgrowth value = 0.1000 }
+		command		= { type = resource which = money value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "efficient sociopath"
+		id			= 26
+		name		= NPERSONALITY_EFFICIENT_SOCIOPATH
+		desc		= DPERSONALITY_EFFICIENT_SOCIOPATH
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = production when = non_national value = 0.1000 }
+		command		= { type = resource which = energy value = 0.0300 }
+		command		= { type = resource which = metal value = 0.0300 }
+		command		= { type = resource which = rare_materials value = 0.0300 }
+		command		= { type = populationgrowth value = -0.1000 }
+	}
+
+### Head of Military Intelligence Section ###
+	minister =  { 
+		trait		= "technical specialist"
+		id			= 27
+		name		= NPERSONALITY_TECHNICAL_SPECIALIST
+		desc		= DPERSONALITY_TECHNICAL_SPECIALIST
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = research value = -0.0500 }
+		command		= { type = intelligence_chances which = steal_blueprint value = 2 }
+		command		= { type = intelligence_chances which = disrupt_techteam value = 2 }
+		command		= { type = intelligence_chances which = nuclear_sabotage value = 2 }
+	}
+
+	minister =  { 
+		trait		= "logistics specialist"
+		id			= 28
+		name		= NPERSONALITY_LOGISTICS_SPECIALIST
+		desc		= DPERSONALITY_LOGISTICS_SPECIALIST
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = detection which = land value = 30 }
+		command		= { type = intelligence_report which = land value = 2 }
+	}
+
+	minister =  { 
+		trait		= "political specialist"
+		id			= 29
+		name		= NPERSONALITY_POLITICAL_SPECIALIST
+		desc		= DPERSONALITY_POLITICAL_SPECIALIST
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = diplomacy_chances which = influence_nation value = 20 } 
+		command		= { type = intelligence_chances which = coup value = 2 }
+		command		= { type = intelligence_chances which = minister_assassination value = 2 }
+		command		= { type = intelligence_chances which = smear_campaign value = 2 }
+		command		= { type = intelligence_chances which = found_partisans value = 2 }
+		command		= { type = intelligence_chances which = massmedia value = 2 }
+	}
+
+	minister =  { 
+		trait		= "dismal enigma"
+		id			= 30
+		name		= NPERSONALITY_DISMAL_ENIGMA
+		desc		= DPERSONALITY_DISMAL_ENIGMA
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = intelligence_network when = all value = 5 }
+		command		= { type = intelligence_report which = production value = 1 }
+	}
+
+	minister =  { 
+		trait		= "industrial specialist"
+		id			= 31
+		name		= NPERSONALITY_INDUSTRIAL_SPECIALIST
+		desc		= DPERSONALITY_INDUSTRIAL_SPECIALIST
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = production which = production value = 0.0200 }
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }
+		command		= { type = intelligence_chances which = steal_blueprint value = 2 }
+		command		= { type = intelligence_chances which = sabotage_industry value = 2 }
+	}
+
+	minister =  { 
+		trait		= "naval intelligence specialist"
+		id			= 32
+		name		= NPERSONALITY_NAVAL_INTELLIGENCE_SPECIALIST
+		desc		= DPERSONALITY_NAVAL_INTELLIGENCE_SPECIALIST
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = detection which = navy value = 0.2000 }
+		command		= { type = detection which = convoy value = 2 }
+		command		= { type = intelligence_chances which = steal_blueprint value = 2 }
+		command		= { type = intelligence_chances which = disrupt_techteam value = 2 }
+		command		= { type = intelligence_report which = navy value = 2 }
+	}
+
+### Chief of staff Section ###
+	minister =  { 
+		trait		= "school of manoeuvre"
+		id			= 33
+		name		= NPERSONALITY_SCHOOL_OF_MANOEUVRE
+		desc		= DPERSONALITY_SCHOOL_OF_MANOEUVRE
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = unit when = speed value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "school of fire support"
+		id			= 34
+		name		= NPERSONALITY_SCHOOL_OF_FIRE_SUPPORT
+		desc		= DPERSONALITY_SCHOOL_OF_FIRE_SUPPORT
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = extra which = artillery value = -0.0600 }
+		command		= { type = extra which = super_heavy_artillery value = -0.0600 }
+		command		= { type = extra which = glider_artillery value = -0.0600 }
+		command		= { type = extra which = sp_artillery value = -0.0600 }	
+		command		= { type = extra which = light_armor_brigade value = -0.0600 }
+		command		= { type = extra which = medium_armor value = -0.0600 }
+		command		= { type = extra which = heavy_armor value = -0.0600 }
+		command		= { type = extra which = amph_armor value = -0.0600 }
+		command		= { type = extra which = glider_armor value = -0.0600 }
+		command		= { type = extra which = tank_destroyer value = -0.0600 }
+	}
+
+	minister =  { 
+		trait		= "school of mass combat"
+		id			= 35
+		name		= NPERSONALITY_SCHOOL_OF_MASS_COMBAT
+		desc		= DPERSONALITY_SCHOOL_OF_MASS_COMBAT
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = populationgrowth when = national value = 0.1500 }
+		command		= { type = unit when = organisation which = infantry value = 0.0300 }
+		command		= { type = unit when = organisation which = militia value = 0.0300 }
+		command		= { type = unit when = organisation which = garrison value = 0.0300 }
+		command		= { type = unit when = morale which = infantry value = 0.0300 }
+		command		= { type = unit when = morale which = militia value = 0.0300 }
+		command		= { type = unit when = morale which = garrison value = 0.0300 }
+		command		= { type = stockpile which = supplies value = 0.0300 }
+	}
+
+	minister =  { 
+		trait		= "school of psychology"
+		id			= 36
+		name		= NPERSONALITY_SCHOOL_OF_PSYCHOLOGY
+		desc		= DPERSONALITY_SCHOOL_OF_PSYCHOLOGY
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = unit when = morale value = 0.2000 }
+	}
+
+	minister =  { 
+		trait		= "school of defence"
+		id			= 37
+		name		= NPERSONALITY_SCHOOL_OF_DEFENCE
+		desc		= DPERSONALITY_SCHOOL_OF_DEFENCE
+		position	= ChiefOfStaff 
+		value		= 0
+		command		= { type = unit which = land when = defence value = 0.1000 }
+	}
+
+### Chief of Army Section ###
+	minister =  { 
+		trait		= "elastic defence doctrine"
+		id			= 38
+		name		= NPERSONALITY_ELASTIC_DEFENCE_DOCTRINE
+		desc		= DPERSONALITY_ELASTIC_DEFENCE_DOCTRINE
+		position	= ChiefOfArmy
+		value		= 0
+ 		command		= { type = unit which = motorized value = -0.0500 }
+		command		= { type = unit which = mechanized value = -0.0500 }
+		command		= { type = extra which = sp_artillery value = -0.0500 }
+		command		= { type = extra which = sp_anti_air value = -0.0500 }
+		command		= { type = extra which = tank_destroyer value = -0.0500 }
+		command		= { type = unit which = motorized when = defence value = 0.0500 }
+		command		= { type = unit which = mechanized when = defence value = 0.0500 }
+		command		= { type = extra which = sp_artillery when = defence value = 0.0500 } 
+		command		= { type = extra which = sp_anti_air when = defence value = 0.0500 } 
+		command		= { type = extra which = tank_destroyer when = defence value = 0.0500 } 
+	}
+
+	minister =  { 
+		trait		= "static defence doctrine"
+		id			= 39
+		name		= NPERSONALITY_STATIC_DEFENCE_DOCTRINE
+		desc		= DPERSONALITY_STATIC_DEFENCE_DOCTRINE
+		position	= ChiefOfArmy
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0500 }
+		command		= { type = extra which = artillery value = -0.0500 }
+		command		= { type = unit which = infantry when = defence value = 0.0500 }
+		command		= { type = extra which = artillery when = defence value = 0.0500 }
+		command		= { type = province which = landfort value = -0.2500 } 
+		command		= { type = province which = coastalfort value = -0.1000 } 
+	}
+
+	minister =  { 
+		trait		= "decisive battle doctrine"
+		id			= 40
+		name 		= NPERSONALITY_DECISIVE_BATTLE_DOCTRINE 
+		desc 		= DPERSONALITY_DECISIVE_BATTLE_DOCTRINE 
+		position	= ChiefOfArmy
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0300 }
+		command		= { type = extra which = artillery value = -0.0300 }
+		command		= { type = extra which = super_heavy_artillery value = -0.0300 }
+		command		= { type = extra which = engineer value = -0.0300 }
+		command		= { type = extra which = heavy_armor value = -0.0300 }
+		command		= { type = unit which = infantry when = attack value = 0.0300 }
+		command		= { type = extra which = artillery when = attack value = 0.0300 }
+		command		= { type = extra which = super_heavy_artillery when = attack value = 0.0300 }
+		command		= { type = extra which = engineer when = attack value = 0.0300 } 
+		command		= { type = extra which = heavy_armor when = attack value = 0.0300 }
+	}
+
+	minister =  { 
+		trait		= "armoured spearhead doctrine"
+		id			= 41
+		name		= NPERSONALITY_ARMOURED_SPEARHEAD_DOCTRINE
+		desc		= DPERSONALITY_ARMOURED_SPEARHEAD_DOCTRINE
+		position	= chiefofarmy
+		value		= 0
+		command		= { type = unit which = light_armor value = -0.0500 }
+		command		= { type = unit which = armor value = -0.0500 }
+		command		= { type = unit which = mechanized value = -0.0500 }
+		command		= { type = extra which = tank_destroyer value = -0.0500 }
+		command		= { type = extra which = sp_artillery value = -0.0500 }
+		command		= { type = extra which = sp_anti_air value = -0.0500 }
+		command		= { type = extra which = light_armor_brigade value = -0.0500 }
+		command		= { type = extra which = medium_armor value = -0.0500 }
+		command		= { type = extra which = heavy_armor value = -0.0500 }
+		command		= { type = extra which = amph_armor value = -0.0500 }
+		command		= { type = extra which = glider_armor value = -0.0500 }
+		command		= { type = unit which = light_armor when = attack value = 0.0500 }
+		command		= { type = unit which = armor when = attack value = 0.0500 }
+		command		= { type = unit which = mechanized when = attack value = 0.0500 }
+		command		= { type = extra which = tank_destroyer when = attack value = 0.0500 }
+		command		= { type = extra which = sp_artillery when = attack value = 0.0500 }
+		command		= { type = extra which = sp_anti_air when = attack value = 0.0500 }	
+		command		= { type = extra which = light_armor_brigade when = attack value = 0.0500 }
+		command		= { type = extra which = medium_armor when = attack value = 0.0500 }
+		command		= { type = extra which = heavy_armor when = attack value = 0.0500 }
+		command		= { type = extra which = amph_armor when = attack value = 0.0500 }
+		command		= { type = extra which = glider_armor when = attack value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "guns and butter doctrine"
+		id			= 42
+		name		= NPERSONALITY_GUNS_AND_BUTTER_DOCTRINE
+		desc		= DPERSONALITY_GUNS_AND_BUTTER_DOCTRINE
+		position	= chiefofarmy
+		value		= 0
+		command		= { type = supply_consumption value = -0.1500 }
+	}
+
+### Chief of navy Section ###
+	minister =  { 
+		trait		= "open seas doctrine"
+		id			= 43
+		name		= NPERSONALITY_OPEN_SEAS_DOCTRINE
+		desc		= DPERSONALITY_OPEN_SEAS_DOCTRINE
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = carrier when = attack value = 0.0500 }
+		command		= { type = unit which = carrier when = defence value = 0.0500 }
+		command		= { type = unit which = light_carrier when = attack value = 0.0500 }
+		command		= { type = unit which = light_carrier when = defence value = 0.0500 }
+		command		= { type = unit which = escort_carrier when = attack value = 0.0500 }
+		command		= { type = unit which = escort_carrier when = defence value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = destroyer when = attack value = 0.0500 }
+		command		= { type = unit which = destroyer when = defence value = 0.0500 }
+		command		= { type = unit which = transport when = attack value = 0.0500 }
+		command		= { type = unit which = transport when = defence value = 0.0500 }
+		command		= { type = unit which = submarine when = attack value = -0.1000 }
+		command		= { type = unit which = submarine when = defence value = -0.1000 }
+		command		= { type = unit which = nuclear_submarine when = attack value = -0.1000 }
+		command		= { type = unit which = nuclear_submarine when = defence value = -0.1000 }
+	}
+
+	minister =  { 
+		trait		= "decisive naval battle doctrine"
+		id			= 44
+		name		= NPERSONALITY_DECISIVE_BATTLE_DOCTRINE2
+		desc		= DPERSONALITY_DECISIVE_BATTLE_DOCTRINE2
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = battleship when = attack value = 0.0500 }
+		command		= { type = unit which = battleship when = defence value = 0.0500 }
+		command		= { type = unit which = battlecruiser when = attack value = 0.0500 }
+		command		= { type = unit which = battlecruiser when = defence value = 0.0500 }
+		command		= { type = unit which = heavy_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = heavy_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = carrier when = attack value = -0.1000 }
+		command		= { type = unit which = carrier when = defence value = -0.1000 }
+		command		= { type = unit which = light_carrier when = attack value = -0.1000 }
+		command		= { type = unit which = light_carrier when = defence value = -0.1000 }
+		command		= { type = unit which = escort_carrier when = attack value = -0.1000 }
+		command		= { type = unit which = escort_carrier when = defence value = -0.1000 }
+	}
+
+	minister =  { 
+		trait		= "power projection doctrine"
+		id			= 45
+		name		= NPERSONALITY_POWER_PROJECTION_DOCTRINE
+		desc		= DPERSONALITY_POWER_PROJECTION_DOCTRINE
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = battleship when = attack value = 0.0500 }
+		command		= { type = unit which = battleship when = defence value = 0.0500 }
+		command		= { type = unit which = heavy_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = heavy_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = carrier when = attack value = 0.1000 }
+		command		= { type = unit which = carrier when = defence value = 0.1000 }
+		command		= { type = unit which = light_carrier when = attack value = 0.1000 }
+		command		= { type = unit which = light_carrier when = defence value = 0.1000 }
+		command		= { type = unit which = escort_carrier when = attack value = 0.1000 }
+		command		= { type = unit which = escort_carrier when = defence value = 0.1000 }
+		command		= { type = unit which = destroyer value = 0.1000 }
+		command		= { type = unit which = transport value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "indirect approach doctrine"
+		id			= 46
+		name		= NPERSONALITY_INDIRECT_APPROACH_DOCTRINE
+		desc		= DPERSONALITY_INDIRECT_APPROACH_DOCTRINE
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = destroyer value = -0.0500 }
+		command		= { type = unit which = transport value = -0.0500 }
+		command		= { type = unit which = battlecruiser when = attack value = 0.1000 }
+		command		= { type = unit which = battlecruiser when = defence value = 0.1000 }
+		command		= { type = unit which = submarine when = attack value = 0.1000 }
+		command		= { type = unit which = submarine when = defence value = 0.1000 }
+		command		= { type = unit which = nuclear_submarine when = attack value = 0.1000 }
+		command		= { type = unit which = nuclear_submarine when = defence value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "base control doctrine"
+		id			= 47
+		name		= NPERSONALITY_BASE_CONTROL_DOCTRINE
+		desc		= DPERSONALITY_BASE_CONTROL_DOCTRINE
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = marine value = -0.1000 }
+		command		= { type = extra which = amph_armor value = -0.1000 }
+		command		= { type = unit which = transport value = -0.1000 }
+		command		= { type = unit which = destroyer value = -0.0500 }
+		command		= { type = unit which = heavy_cruiser value = 0.0500 }
+		command		= { type = unit which = light_cruiser value = 0.0500 }
+		command		= { type = unit which = battleship when = attack value = -0.1000 }
+		command		= { type = unit which = battleship when = defence value = -0.1000 }
+		command		= { type = unit which = battlecruiser when = attack value = -0.1000 }
+		command		= { type = unit which = battlecruiser when = defence value = -0.1000 }
+	}
+
+### Chief of air Section ###
+	minister =  { 
+		trait		= "air superiority doctrine"
+		id			= 48
+		name		= NPERSONALITY_AIR_SUPERIORITY_DOCTRINE
+		desc		= DPERSONALITY_AIR_SUPERIORITY_DOCTRINE
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = multi_role value = -0.0500 }
+		command		= { type = unit which = interceptor value = -0.0500 }
+		command		= { type = unit which = rocket_interceptor value = -0.0500 }
+		command		= { type = extra which = anti_air value = -0.0500 }
+		command		= { type = extra which = sp_anti_air value = -0.0500 }
+		command		= { type = unit which = multi_role when = attack value = 0.0500 }
+		command		= { type = unit which = multi_role when = defence value = 0.0500 }
+		command		= { type = unit which = interceptor when = attack value = 0.0500 }
+		command		= { type = unit which = interceptor when = defence value = 0.0500 }
+		command		= { type = unit which = rocket_interceptor when = attack value = 0.0500 }
+		command		= { type = unit which = rocket_interceptor when = defence value = 0.0500 }
+		command		= { type = unit which = strategic_bomber value = 0.1000 }
+		command		= { type = unit which = naval_bomber value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "naval aviation doctrine"
+		id			= 49
+		name		= NPERSONALITY_NAVAL_AVIATION_DOCTRINE
+		desc		= DPERSONALITY_NAVAL_AVIATION_DOCTRINE
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = carrier when = attack value = 0.0500 }
+		command		= { type = unit which = carrier when = defence value = 0.0500 }
+		command		= { type = unit which = light_carrier when = attack value = 0.0500 }
+		command		= { type = unit which = light_carrier when = defence value = 0.0500 }
+		command		= { type = unit which = escort_carrier when = attack value = 0.0500 }
+		command		= { type = unit which = escort_carrier when = defence value = 0.0500 }
+		command		= { type = unit which = naval_bomber when = attack value = 0.0500 }
+		command		= { type = unit which = naval_bomber when = defence value = 0.0500 }
+		command		= { type = unit which = naval_bomber value = -0.0500 }
+		command		= { type = extra which = cag value = -0.0500 }
+		command		= { type = extra which = light_cag value = -0.0500 }
+		command		= { type = extra which = floatplane value = -0.0500 }
+		command		= { type = unit which = strategic_bomber value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "army aviation doctrine"
+		id			= 50
+		name		= NPERSONALITY_ARMY_AVIATION_DOCTRINE
+		desc		= DPERSONALITY_ARMY_AVIATION_DOCTRINE
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = tactical_bomber value = -0.0500 }
+		command		= { type = unit which = cas value = -0.0500 }
+		command		= { type = unit which = tactical_bomber when = attack value = 0.0500 }
+		command		= { type = unit which = tactical_bomber when = defence value = 0.0500 }
+		command		= { type = unit which = cas when = attack value = 0.0500 }
+		command		= { type = unit which = cas when = defence value = 0.0500 }
+		command		= { type = unit which = strategic_bomber value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "carpet bombing doctrine"
+		id			= 51
+		name		= NPERSONALITY_CARPET_BOMBING_DOCTRINE
+		desc		= DPERSONALITY_CARPET_BOMBING_DOCTRINE
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = strategic_bomber value = -0.1000 }
+		command		= { type = extra which = escort value = -0.1000 }
+		command		= { type = unit which = strategic_bomber when = attack value = 0.1000 }
+		command		= { type = unit which = strategic_bomber when = defence value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "vertical envelopment doctrine"
+		id			= 52
+		name		= NPERSONALITY_VERTICAL_ENVELOPMENT_DOCTRINE
+		desc		= DPERSONALITY_VERTICAL_ENVELOPMENT_DOCTRINE
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = paratrooper value = -0.0500 }
+		command		= { type = unit which = transport_plane value = -0.0500 }
+		command		= { type = unit which = paratrooper when = attack value = 0.1000 }
+		command		= { type = unit which = paratrooper when = defence value = 0.0500 }
+	}
+
+### undistinguished suit ###
+	minister =  { 
+		trait		= "undistinguished suit"
+		id			= 53
+		name		= NPERSONALITY_UNDISTINGUISHED_SUIT
+		desc		= DPERSONALITY_UNDISTINGUISHED_SUIT
+		value		= -1
+	}
+
+### Minister of Armament Section ###
+	minister =  { 
+		trait		= "air superiority proponent"
+		id			= 54
+		name		= NPERSONALITY_AIR_SUPERIORITY_PROPONENT
+		desc		= DPERSONALITY_AIR_SUPERIORITY_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = research which = aircraft value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 }
+	}
+
+	minister =  { 
+		trait		= "corrupt kleptocrat"
+		id			= 55
+		name		= NPERSONALITY_CORRUPT_KLEPTOCRAT
+		desc		= DPERSONALITY_CORRUPT_KLEPTOCRAT
+		position	= ArmamentMinister
+		value		= -1
+		command		= { type = production which = production value = -0.0500 }
+		command		= { type = resource which = energy value = -0.0500 }
+		command		= { type = resource which = metal value = -0.0500 }
+		command		= { type = resource which = rare_materials value = -0.0500 }
+		command		= { type = production which = supplies value = -0.1000 }
+	}
+
+### Minister of security Section ###
+	minister =  { 
+		trait		= "crooked kleptocrat"
+		id			= 56
+		name		= NPERSONALITY_CROOKED_KLEPTOCRAT
+		desc		= DPERSONALITY_CROOKED_KLEPTOCRAT
+		position	= ministerofsecurity
+		value		= -1
+		command		= { type = production which = production value = -0.0300 }
+		command		= { type = resource which = energy value = -0.0300 }
+		command		= { type = resource which = metal value = -0.0300 }
+		command		= { type = resource which = rare_materials value = -0.0300 }
+	}
+
+### Head Of State Section ###
+	minister =  { 
+		trait		= "powerhungry demagogue"
+		id			= 57
+		name		= NPERSONALITY_POWER_HUNGRY_DEMAGOGUE
+		desc		= DPERSONALITY_POWER_HUNGRY_DEMAGOGUE
+		position	= HeadOfState
+		value		= 0
+		command		= { type = belligerence which = peace value = -0.5000 } 
+		command		= { type = belligerence which = war value = 0.2000 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 25 }
+	}	
+
+	minister =  { 
+		trait		= "barking buffoon"
+		id			= 58
+		name		= NPERSONALITY_BARKING_BUFFOON
+		desc		= DPERSONALITY_BARKING_BUFFOON
+		position	= HeadOfState
+		value		= 0
+		command		= { type = unit when = morale value = -0.0500 }
+		command		= { type = belligerence which = peace value = -0.4000 } 
+		command		= { type = diplomacy_chances which = alliance when = democracies value = 15 }
+	}
+
+	minister =  { 
+		trait		= "stern imperialist"
+		id			= 59
+		name		= NPERSONALITY_STERN_IMPERIALIST
+		desc		= DPERSONALITY_STERN_IMPERIALIST
+		position	= HeadOfState
+		value		= 0
+		command		= { type = production which = consumer value = -0.0500 }
+		command		= { type = unit value = -0.1000 }
+		command		= { type = dissent value = 0.2000 }
+	}
+
+	minister =  { 
+		trait		= "ruthless powermonger" 
+		id			= 60
+		name		= "NPERSONALITY_RUTHLESS_POWERMONGER" 
+		desc		= "DPERSONALITY_RUTHLESS_POWERMONGER" 
+		position	= HeadOfState
+		value		= 0
+		command		= { type = resource which = money value = -0.2500 }	
+		command		= { type = unit when = organisation value = -0.1000 }
+		command		= { type = unit which = infantry value = -0.2500 }
+		command		= { type = unit which = militia value = -0.2500 }
+		command		= { type = intelligence_chances which = coup when = national value = -4 }
+	}
+
+	minister =  { 
+		trait		= "autocratic charmer"
+		id			= 61
+		name		= NPERSONALITY_AUTOCRATIC_CHARMER
+		desc		= DPERSONALITY_AUTOCRATIC_CHARMER
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = production value = -0.1000 }
+		command		= { type = resource which = energy value = -0.1000 }
+		command		= { type = resource which = metal value = -0.1000 }
+		command		= { type = resource which = rare_materials value = -0.1000 }
+		command		= { type = production which = consumer value = -0.0500 } 
+	}
+
+	minister =  { 
+		trait		= "resigned generalissimo"
+		id			= 62
+		name		= NPERSONALITY_RESIGNED_GENERALISSIMO
+		desc		= DPERSONALITY_RESIGNED_GENERALISSIMO
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = -0.0500 }
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = production which = supplies value = 0.1000 } 
+		command		= { type = tc_mod value = 0.1500 } 
+	}
+
+	minister =  { 
+		trait		= "benevolent gentleman"
+		id			= 63
+		name		= NPERSONALITY_BENEVOLENT_GENTLEMAN
+		desc		= DPERSONALITY_BENEVOLENT_GENTLEMAN
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = consumer value = -0.0500 } 
+		command		= { type = belligerence which = declare_war value = 0.2000 } 
+	}
+
+	minister =  { 
+		trait		= "weary stiffneck"
+		id			= 64
+		name		= NPERSONALITY_WEARY_STIFF_NECK
+		desc		= DPERSONALITY_WEARY_STIFF_NECK
+		position	= HeadOfState
+		value		= 0
+		command		= { type = unit when = morale value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.1000 } 
+	}
+
+	minister =  { 
+		trait		= "insignificant layman"
+		id			= 65
+		name		= NPERSONALITY_INSIGNIFICANT_LAYMAN
+		desc		= DPERSONALITY_INSIGNIFICANT_LAYMAN
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = 0.0500 }
+		command		= { type = resource which = money value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "die-hard reformer"
+		id			= 66
+		name		= NPERSONALITY_DIE_HARD_REFORMER
+		desc		= DPERSONALITY_DIE_HARD_REFORMER
+		position	= HeadOfState
+		value		= 0
+		command		= { type = resource which = money value = -0.2500 }
+		command		= { type = production which = consumer value = -0.1000 } 
+		command		= { type = belligerence which = declare_war value = -0.1500 } 
+	}
+
+
+	minister =  { 
+		trait		= "pig-headed isolationist"
+		id			= 67
+		name		= NPERSONALITY_PIG_HEADED_ISOLATIONIST
+		desc		= DPERSONALITY_PIG_HEADED_ISOLATIONIST
+		position	= HeadOfState
+		value		= 0
+		command		= { type = resource which = money value = 0.2500 }
+		command		= { type = belligerence which = declare_war value = 0.3000 } 
+	}
+
+	minister =  { 
+		trait		= "popular figurehead"
+		id			= 68
+		name		= NPERSONALITY_POPULAR_FIGUREHEAD
+		desc		= DPERSONALITY_POPULAR_FIGUREHEAD
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = -0.5000 }
+		command		= { type = production which = consumer value = 0.1000 } 
+	}
+
+### Head Of government Section ###
+	minister =  { 
+		trait		= "silent workhorse"
+		id			= 69
+		name		= NPERSONALITY_SILENT_WORKHORSE
+		desc		= DPERSONALITY_SILENT_WORKHORSE
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.2000 }
+	}
+
+	minister =  { 
+		trait		= "naive optimist"
+		id			= 70
+		name		= NPERSONALITY_NAIVE_OPTIMIST
+		desc		= DPERSONALITY_NAIVE_OPTIMIST
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = consumer value = -0.1000 }
+		command		= { type = belligerence which = declare_war value = 0.1000 } 
+	}
+
+	minister =  { 
+		trait		= "flamboyant tough guy"
+		id			= 71
+		name		= NPERSONALITY_FLAMBOYANT_TOUGH_GUY
+		desc		= DPERSONALITY_FLAMBOYANT_TOUGH_GUY
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = diplomacy_chances which = alliance when = close_government_type value = 25 }
+ 		command		= { type = leader_skill value = -0.1000 } 
+		command		= { type = unit when = morale value = 0.0300 }
+	}
+
+	minister =  { 
+		trait		= "happy amateur"
+		id			= 72
+		name		= NPERSONALITY_HAPPY_AMATEUR
+		desc		= DPERSONALITY_HAPPY_AMATEUR
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = resource which = money value = -0.0500 }
+	}
+
+	minister =  { 
+		trait		= "backroom backstabber"
+		id			= 73
+		name		= NPERSONALITY_BACKROOM_BACKSTABBER
+		desc		= DPERSONALITY_BACKROOM_BACKSTABBER
+		position	= HeadOfGovernment
+		value		= -1
+		command		= { type = production which = production value = -0.0500 }
+		command		= { type = resource which = energy value = -0.0500 }
+		command		= { type = resource which = metal value = -0.0500 }
+		command		= { type = resource which = rare_materials value = -0.0500 }
+		command		= { type = intelligence_chances which = coup when = national value = -2 }
+	}
+
+	minister =  { 
+		trait		= "smiling oilman"
+		id			= 74
+		name		= NPERSONALITY_SMILING_OILMAN
+		desc		= DPERSONALITY_SMILING_OILMAN
+		position	= headofgovernment
+		value		= 0
+		command		= { type = resource which = oil value = 0.1000 } 
+		command		= { type = diplomacy_chances which = alliance value = -10 }
+	}
+
+	minister =  { 
+		trait		= "old general"
+		id			= 75
+		name		= NPERSONALITY_OLD_GENERAL
+		desc		= DPERSONALITY_OLD_GENERAL
+		position	= headofgovernment
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0500 }
+		command		= { type = unit which = bergsjaeger value = -0.0500 }
+		command		= { type = unit which = militia value = -0.0500 }
+		command		= { type = unit which = heavy_cruiser value = 0.0500 }
+		command		= { type = unit which = light_cruiser value = 0.0500 }
+		command		= { type = unit which = destroyer value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "old admiral"
+		id			= 76
+		name		= NPERSONALITY_OLD_ADMIRAL
+		desc		= DPERSONALITY_OLD_ADMIRAL
+		position	= headofgovernment
+		value		= 0
+		command		= { type = unit which = heavy_cruiser value = -0.0500 }
+		command		= { type = unit which = light_cruiser value = -0.0500 }
+		command		= { type = unit which = destroyer value = -0.0500 }
+		command		= { type = unit which = tactical_bomber value = 0.0500 }
+		command		= { type = extra which = escort value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "old airmarshal"
+		id			= 77
+		name		= NPERSONALITY_OLD_AIR_MARSHAL
+		desc		= DPERSONALITY_OLD_AIR_MARSHAL
+		position	= headofgovernment
+		value		= 0
+		command		= { type = unit which = tactical_bomber value = -0.0400 }
+		command		= { type = unit which = multi_role value = -0.0400 }
+		command		= { type = unit which = interceptor value = -0.0400 }
+		command		= { type = unit which = rocket_interceptor value = -0.0400 }
+		command		= { type = unit which = naval_bomber value = -0.0400 }
+		command		= { type = unit which = cas value = -0.0400 }
+		command		= { type = extra which = escort value = -0.0500 }
+		command		= { type = unit which = carrier value = 0.0500 }
+		command		= { type = unit which = light_carrier value = 0.0500 }
+		command		= { type = unit which = escort_carrier value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "political protege"
+		id			= 78
+		name		= NPERSONALITY_POLITICAL_PROTEGE
+		desc		= DPERSONALITY_POLITICAL_PROTEGE
+		position	= headofgovernment
+		value		= 0
+		command		= { type = production which = consumer value = 0.0300 } 
+		command		= { type = dissent value = -0.0500 }
+	}
+
+	minister =  { 
+		trait		= "ambitious union boss"
+		id			= 79
+		name		= NPERSONALITY_AMBITIOUS_UNION_BOSS
+		desc		= DPERSONALITY_AMBITIOUS_UNION_BOSS
+		position	= headofgovernment
+		value		= 0
+		command		= { type = production which = consumer value = -0.1500 } 
+		command		= { type = resource which = money value = -0.3000 }
+		command		= { type = dissent value = 0.0500 }
+	}
+
+	minister =  { 
+		trait		= "corporate suit"
+		id			= 80
+		name		= NPERSONALITY_CORPORATE_SUIT
+		desc		= DPERSONALITY_CORPORATE_SUIT
+		position	= headofgovernment
+		value		= 0
+		command		= { type = resource which = money value = 0.5000 }
+		command		= { type = dissent value = 0.1000 }
+		command		= { type = unit value = 0.0500 }
+	}
+
+#############################
+# New with Darkest Hour
+#############################
+
+	minister =  { 
+		trait		= "Paranoid megalomaniac" # Hitler
+		id			= 81
+		name		= NPERSONALITY_HITLER
+		desc		= DPERSONALITY_HITLER
+		position	= headofstate
+		value		= 0
+		command		= { type = production which = production when = non_national value = -0.1000 }
+		command		= { type = populationgrowth value = 0.1000 }
+		command		= { type = unit when = morale value = 0.1000 }
+		command		= { type = unit when = speed value = 0.1000 }
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 25 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = -15 }
+		command		= { type = diplomacy_chances which = influence_nation value = 10 }
+ 		command		= { type = leader_skill value = -0.0500 }
+		command		= { type = belligerence which = peace value = -0.4000 } 
+		command		= { type = belligerence which = war value = 0.2000 }
+		command		= { type = stockpile value = 0.1000 }
+	}
+	minister =  { 
+		trait		= "Paranoid megalomaniac2" # Stalin
+		id			= 82
+		name		= NPERSONALITY_STALIN
+		desc		= DPERSONALITY_STALIN
+		position	= headofstate
+		value		= 0
+		command		= { type = populationgrowth value = 0.2500 }
+		command		= { type = unit when = morale value = 0.2000 }
+		command		= { type = unit when = organisation value = -0.1000 }
+		command		= { type = unit value = -0.2000 } 
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+		command		= { type = production which = production when = non_national value = -0.2000 }
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 25 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = -15 }
+		command		= { type = diplomacy_chances which = influence_nation value = 10 }
+		command		= { type = intelligence_report which = land value = -2 }
+ 		command		= { type = leader_skill value = -0.0100 }
+		command		= { type = belligerence which = peace value = -0.2000 } 
+		command		= { type = belligerence which = war value = 0.1000 }
+		command		= { type = stockpile value = 0.1000 }
+	}
+	minister =  { 
+		trait		= "Bulldog" # Churchill
+		id			= 83
+		name		= NPERSONALITY_CHURCHILL
+		desc		= DPERSONALITY_CHURCHILL
+		position	= headofgovernment
+		value		= 0
+		command		= { type = unit when = morale value = 0.0500 }
+		command		= { type = unit when = organisation value = 0.0500 }
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = 25 }
+		command		= { type = production which = consumer value = -0.1000 }
+ 		command		= { type = leader_skill value = -0.1500 }
+		command		= { type = stockpile value = 0.1000 }
+		command		= { type = unit which = carrier when = attack value = -0.0250 }
+		command		= { type = unit which = carrier when = defence value = -0.0250 }
+		command		= { type = unit which = light_carrier when = attack value = -0.0250 }
+		command		= { type = unit which = light_carrier when = defence value = -0.0250 }
+		command		= { type = unit which = escort_carrier when = attack value = -0.0250 }
+		command		= { type = unit which = escort_carrier when = defence value = -0.0250 }
+		command		= { type = unit which = light_cruiser when = attack value = -0.0250 }
+		command		= { type = unit which = light_cruiser when = defence value = -0.0250 }
+		command		= { type = unit which = destroyer when = attack value = -0.0250 }
+		command		= { type = unit which = destroyer when = defence value = -0.0250 }
+		command		= { type = unit which = transport when = attack value = -0.0250 }
+		command		= { type = unit which = transport when = defence value = -0.0250}
+		command		= { type = unit which = submarine when = attack value = -0.1000 }
+		command		= { type = unit which = submarine when = defence value = -0.1000 }
+	}
+	minister =  { 
+		trait		= "Imperialist buffoon" # Mussolini
+		id			= 84
+		name		= NPERSONALITY_MUSSOLINI
+		desc		= DPERSONALITY_MUSSOLINI
+		position	= headofgovernment
+		value		= 0
+		command		= { type = dissent value = 0.0500 }
+		command		= { type = unit which = land when = organisation value = -0.1000 }
+		command		= { type = unit which = land when = morale value = 0.0500 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = 15 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 15 }
+		command		= { type = intelligence_chances which = coup value = -1 }
+	}
+	minister =  { 
+		trait		= "Democrat idealistic" # Roosevelt
+		id			= 85
+		name		= NPERSONALITY_ROOSEVELT
+		desc		= DPERSONALITY_ROOSEVELT
+		position	= headofstate
+		value		= 0
+ 		command		= { type = leader_skill value = -0.0500 }
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = consumer value = 0.1000 }
+		command		= { type = belligerence which = declare_war value = 0.2000 }
+		command		= { type = intelligence_chances which = smear_campaign value = 1 }
+		command		= { type = research which = industry value = -0.1000 }
+		command		= { type = research which = secret_weapons value = -0.1000 }
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = stockpile value = 0.500 }
+	}
+	minister =  { 
+		trait		= "Puppet emperor" # Hiro-Hito
+		id			= 86
+		name		= NPERSONALITY_HIROHITO
+		desc		= DPERSONALITY_HIROHITO
+		position	= headofstate
+		value		= 0
+		command		= { type = production which = production value = 0.1000 } 
+		command		= { type = resource which = energy value = 0.1000 }
+		command		= { type = resource which = metal value = 0.1000 }
+		command		= { type = resource which = rare_materials value = 0.1000 }
+ 		command		= { type = leader_skill value = 0.1000 }
+		command		= { type = dissent value = 0.1000 }
+		command		= { type = unit when = morale value = 0.1000 }
+		command		= { type = belligerence which = war value = 0.5000 }
+	}
+	minister =  { 
+		trait		= "Genius organizer" # Speer
+		id			= 87
+		name		= NPERSONALITY_SPEER
+		desc		= DPERSONALITY_SPEER
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0750 }
+		command		= { type = production which = consumer value = -0.1000 }
+		command		= { type = resource which = energy value = 0.1000 }
+		command		= { type = resource which = metal value = 0.1000 }
+		command		= { type = resource which = rare_materials value = 0.1000 }
+		command		= { type = production which = production when = non_national value = 0.0750 }
+		command		= { type = populationgrowth when = non_national value = 0.0750 }
+		command		= { type = dissent value = 0.1000 }
+		command		= { type = stockpile value = 0.1000 }
+
+
+	}
+	minister =  { 
+		trait		= "Local tyrant"
+		id			= 88
+		name		= NPERSONALITY_LOCAL_TYRANT
+		desc		= DPERSONALITY_LOCAL_TYRANT
+		position	= headofgovernment
+		value		= 0
+		command		= { type = resource which = money value = -0.5000 }
+		command		= { type = populationgrowth value = -0.0500 }
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.5000 }
+		command		= { type = unit which = infantry value = -0.1000 }
+		command		= { type = unit which = militia value = -0.1000 }
+		command		= { type = unit which = garrison value = -0.1000 }
+		command		= { type = dissent value = -0.0500 }
+	}
+
+	minister =  { 
+		trait		= "Local tyrant2"
+		id			= 89
+		name		= NPERSONALITY_LOCAL_TYRANT
+		desc		= DPERSONALITY_LOCAL_TYRANT
+		position	= headofstate
+		value		= 0
+		command		= { type = resource which = money value = -0.5000 }
+		command		= { type = populationgrowth value = -0.0500 }
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.5000 }
+		command		= { type = unit which = infantry value = -0.1000 }
+		command		= { type = unit which = militia value = -0.1000 }
+		command		= { type = unit which = garrison value = -0.1000 }
+		command		= { type = dissent value = -0.0500 }
+	}
+
+	minister =  { 
+		trait		= "Oil baron"
+		id			= 90
+		name		= NPERSONALITY_OIL_BARON
+		desc		= DPERSONALITY_OIL_BARON
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = oil value = 0.1000 } 
+		command		= { type = stockpile which = supplies value = 0.1000 }
+	}
+	minister =  { 
+		trait		= "Steel magnate"
+		id			= 91
+		name		= NPERSONALITY_STEEL_MAGNATE
+		desc		= DPERSONALITY_STEEL_MAGNATE
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = metal value = 0.1000 } 
+		command		= { type = stockpile which = industry value = 0.1000 }
+	}
+	minister =  { 
+		trait		= "Industrial chemist"
+		id			= 92
+		name		= NPERSONALITY_INDUSTRIAL_CHEMIST
+		desc		= DPERSONALITY_INDUSTRIAL_CHEMIST
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = rare_materials value = 0.1000 } 
+		command		= { type = stockpile which = industry value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "Media magnate"
+		id			= 93
+		name		= NPERSONALITY_MEDIA_MAGNATE
+		desc		= DPERSONALITY_MEDIA_MAGNATE
+		position	= ministerofsecurity
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = consumer value = -0.1000 }
+	}
+
+	minister =  { 
+		trait		= "Counterattack Genius" #Foch
+		id			= 94
+		name		= NPERSONALITY_FOCH
+		desc		= DPERSONALITY_FOCH
+		position	= chiefofstaff
+		value		= 0
+		command 	= { type = unit which = land when = defence value = 0.1000 }
+		command 	= { type = unit which = land when = attack value = 0.0500 }
+		command 	= { type = unit when = speed value = 0.1000 }
+	}
+
+	minister =  { 
+		trait		= "Logistics wizard" #Zhukov
+		id			= 95
+		name		= NPERSONALITY_HINDENBURG
+		desc		= DPERSONALITY_HINDENBURG
+		position	= chiefofstaff
+		value		= 0
+		command 	= { type = unit when = speed value = 0.1000 }
+		command 	= { type = tc_mod value = 0.2000 }
+		command 	= { type = production which = supplies value = 0.1000 } 
+		command 	= { type = leader_skill value = 0.1000 }
+	}
+	
+	minister =  { 
+		trait		= "Carrier enthusiast" #Kuznetsov
+		id			= 96
+		name		= NPERSONALITY_CADORNA
+		desc		= DPERSONALITY_CADORNA
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = battleship when = attack value = -0.1200 }
+		command		= { type = unit which = battleship when = defence value = -0.1200 }
+		command		= { type = unit which = battlecruiser when = attack value = -0.0500 }
+		command		= { type = unit which = battlecruiser when = defence value = -0.0500 }
+		command		= { type = unit which = heavy_cruiser when = attack value = -0.0500 }
+		command		= { type = unit which = heavy_cruiser when = defence value = -0.0500 }
+		command		= { type = unit which = light_cruiser when = attack value = 0.0500 }
+		command		= { type = unit which = light_cruiser when = defence value = 0.0500 }
+		command		= { type = unit which = carrier when = attack value = 0.1200 }
+		command		= { type = unit which = carrier when = defence value = 0.1200 }
+		command		= { type = unit which = light_carrier when = attack value = 0.1200 }
+		command		= { type = unit which = light_carrier when = defence value = 0.1200 }
+		command		= { type = unit which = escort_carrier when = attack value = 0.1200 }
+		command		= { type = unit which = escort_carrier when = defence value = 0.1200 }
+		command		= { type = unit which = destroyer when = attack value = 0.0500 }
+		command		= { type = unit which = destroyer when = defence value = 0.0500 }
+	}
+	
+	minister =  { 
+		trait		= "Guardian of Socialist justice" #Beria
+		id			= 97
+		name		= NPERSONALITY_BRUSILOV
+		desc		= DPERSONALITY_BRUSILOV
+		position	= headofgovernment
+		value		= 0
+		command 	= { type = research which = secret_weapons value = 0.1000 }
+		command		= { type = research which = aircraft value = 0.0500 }
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = diplomacy_cost value = -0.0500 }
+		command		= { type = intelligence_chances which = coup when = national value = 2 }
+	}
+	
+	minister =  { 
+		trait		= "Stubborn Disciplinarian" #Cadorna
+		id			= 98
+		name		= NPERSONALITY_WILHELM_II
+		desc		= DPERSONALITY_WILHELM_II
+		position	= chiefofstaff
+		value		= 0
+		command 	= { type = unit when = morale value = -0.2000 }
+		command 	= { type = leader_skill value = -0.1000 }
+		command 	= { type = unit which = land when = defence value = -0.1000 }
+		command 	= { type = unit which = land when = attack value = 0.0500 }
+		command 	= { type = extra which = artillery value = -0.0500 }
+		command 	= { type = extra which = artillery when = attack value = 0.0500 }
+	}
+	
+	minister =  { 
+		trait		= "Innovative Offensive General" #Brusilov
+		id			= 99
+		name		= NPERSONALITY_NICHOLAS_II
+		desc		= DPERSONALITY_NICHOLAS_II
+		position	= chiefofarmy
+		value		= 0
+		command 	= { type = unit which = land when = attack value = 0.1000 }
+		command 	= { type = unit which = land when = defence value = -0.0500 }
+		command 	= { type = extra which = artillery when = attack value = 0.1000 }
+		command 	= { type = unit which = cavalry when = attack value = -0.1500 }
+		command 	= { type = extra which = cavalry_brigade when = attack value = -0.1500 }
+		command 	= { type = intelligence_report which = land value = 1 }
+	}
+	
+	minister =  { 
+		trait		= "The Tiger" #Georges Clemenceau
+		id			= 100
+		name		= NPERSONALITY_CLEMENCEAU
+		desc		= DPERSONALITY_CLEMENCEAU
+		position	= headofgovernment
+		value		= 0
+		command 	= { type = production which = consumer value = -0.0500 }
+		command 	= { type = dissent value = -0.1000 }
+		command 	= { type = unit when = morale value = 0.2000 }
+		command 	= { type = supply_consumption value = 0.0500 }
+	}
+	
+	minister =  { 
+		trait		= "Weary Old Emperor" #Franz Joseph I
+		id			= 101
+		name		= NPERSONALITY_FRANZ_JOSEPH_I
+		desc		= DPERSONALITY_FRANZ_JOSEPH_I
+		position	= headofstate
+		value		= 0
+		command 	= { type = production which = consumer value = 0.0500 }
+		command 	= { type = dissent value = 0.0500 }
+		command 	= { type = unit when = organisation value = -0.1000 }
+		command 	= { type = unit when = morale value = -0.1000 }
+		command 	= { type = leader_skill value = -0.1000 }
+	}
+	
+	minister =  { 
+		trait		= "Democratic idealist" #Woodrow Wilson
+		id			= 102
+		name		= NPERSONALITY_WILSON
+		desc		= DPERSONALITY_WILSON
+		position	= headofstate
+		value		= 0
+		command 	= { type = production which = consumer value = -0.0500 }
+		command 	= { type = belligerence which = declare_war value = 0.3000 }
+		command 	= { type = resource which = money value = 0.1000 }
+		command 	= { type = production which = supplies value = 0.0500 }
+		command 	= { type = leader_skill value = 0.1000 }
+	}
+	
+	minister =  {
+		trait		= "Revolutionary Guerilla Fighter" #Emiliano Zapata
+		id			= 103
+		name		= NPERSONALITY_ZAPATA
+		desc		= DPERSONALITY_ZAPATA
+		position	= headofstate
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = populationgrowth value = 0.0500 }
+		command		= { type = leader_skill value = 0.0500 }
+		command		= { type = unit when = morale value = 0.1000 }
+		command		= { type = unit which = militia when = time value = -0.15000 }
+		command		= { type = unit which = cavalry when = attack value = -0.1500 }
+		command		= { type = belligerence which = declare_war value = 0.1000 }
+		command		= { type = diplomacy_chances which = alliance when = close_government_type value = 25 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = -15 }
+		command		= { type = unit which = land when = defence value = 0.0500 }
+	}
+   
+	minister =  {
+		trait		= "Revolutionary leader" #Emiliano Zapata
+		id			= 104
+		name		= NPERSONALITY_ZAPATA2
+		desc		= DPERSONALITY_ZAPATA2
+		position	= headofgovernment
+		value		= 0
+		command		= { type = production which = consumer value = -0.0500 }
+		command		= { type = resource which = money value = 0.0500 }
+		command		= { type = production which = supplies value = 0.1000 }
+		command		= { type = detection which = land value = 10 }
+		command		= { type = intelligence_report which = land value = 1 }
+		command		= { type = intelligence_report which = production value = 1 }
+		command		= { type = intelligence_chances which = steal_blueprint value = 1 }
+		command		= { type = intelligence_chances which = found_partisans value = 1 }
+	}
+
+	minister =  {
+		trait		= "Guerilla warfare doctrine" #Zapata Mao CheGuevara Muhtar Collins etc
+		id			= 105
+		name		= NPERSONALITY_GUERILLA_WARFARE_DOCTRINE
+		desc		= DPERSONALITY_GUERILLA_WARFARE_DOCTRINE
+		position	= ChiefOfArmy
+		value		= 0
+		command		= { type = unit which = cavalry value = -0.0500 }
+		command		= { type = unit which = militia value = -0.1000 }
+		command		= { type = extra which = engineer value = -0.0500 }
+		command		= { type = extra which = light_armor_brigade value = -0.0500 }
+		command		= { type = unit which = infantry value = 0.1000 }
+		command		= { type = unit which = garrison when = defence value = 0.0500 }
+		command		= { type = unit which = cavalry when = defence value = 0.0500 }
+		command		= { type = extra which = engineer when = defence value = 0.0500 }
+		command		= { type = extra which = light_armor_brigade when = defence value = 0.0500 }
+		command		= { type = unit when = morale value = 0.0500 }
+		command		= { type = unit when = speed value = 0.1000 }
+		command		= { type = province which = landfort value = -0.1000 }
+		command		= { type = province which = coastalfort value = -0.0500 }
+		command		= { type = province which = naval_base value = 0.1000 }
+		command		= { type = province which = radar_station value = 0.1000 }
+		command		= { type = supply_consumption value = -0.1000 }
+		command		= { type = stockpile value = -0.100 }
+	}
+	#new generic traits
+	minister =  { 
+		trait		= "Planned economy proponent"
+		id			= 106
+		name		= NPERSONALITY_PLANNED_ECONOMY_PROPONENT
+		desc		= DPERSONALITY_PLANNED_ECONOMY_PROPONENT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = consumer value = 0.1500 } 
+		command		= { type = province which = ic value = -0.1000 } 
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }		
+	}
+	minister =  { 
+		trait		= "Keynesian economy"
+		id			= 107
+		name		= NPERSONALITY_KEYNESIAN
+		desc		= DPERSONALITY_KEYNESIAN
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = -0.1500 }
+		command		= { type = production which = consumer value = -0.0500 } 
+		command		= { type = province which = ic value = -0.0500 } 
+		command		= { type = production which = production value = -0.0300 }
+		command		= { type = resource which = energy value = -0.0300 }
+		command		= { type = resource which = metal value = -0.0300 }
+		command		= { type = resource which = rare_materials value = -0.0300 }		
+	}
+	minister =  { 
+		trait		= "Reformer"
+		id			= 108
+		name		= NPERSONALITY_REFORMER
+		desc		= DPERSONALITY_REFORMER
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = upgrading value = -0.0700 }
+		command		= { type = production which = production value = -0.0100 }
+		command		= { type = resource which = energy value = -0.0100 }
+		command		= { type = resource which = metal value = -0.0100 }
+		command		= { type = resource which = rare_materials value = -0.0100 }		
+	}
+	minister =  { 
+		trait		= "Construction magnate"
+		id			= 109
+		name		= NPERSONALITY_CONSTRUCTION_MAGNATE
+		desc		= DPERSONALITY_CONSTRUCTION_MAGNATE
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = province which = infra value = -0.1500 }
+		command		= { type = province which = air_base value = -0.1500 }
+		command		= { type = province which = naval_base value = -0.1500 }	
+		command		= { type = province which = radar_station value = -0.1500 }
+	}
+	minister =  { 
+		trait		= "Balanced budget economy"
+		id			= 110
+		name		= NPERSONALITY_BUDGET
+		desc		= DPERSONALITY_BUDGET
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = 0.1500 }
+		command		= { type = production which = consumer value = 0.0500 } 
+		command		= { type = production which = production value = -0.0500 }
+		command		= { type = resource which = energy value = -0.0300 }
+		command		= { type = resource which = metal value = -0.0300 }
+		command		= { type = resource which = rare_materials value = -0.0300 }		
+	}
+	minister =  { 
+		trait		= "Mixed economy"
+		id			= 111
+		name		= NPERSONALITY_MIXED
+		desc		= DPERSONALITY_MIXED
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = consumer value = 0.0500 } 
+		command		= { type = province which = ic value = -0.0250 } 
+		command		= { type = production which = production value = 0.0250 }
+		command		= { type = resource which = energy value = 0.0250 }
+		command		= { type = resource which = metal value = 0.0250 }
+		command		= { type = resource which = rare_materials value = 0.0250 }		
+	}
+	minister =  { 
+		trait		= "Health and safety"
+		id			= 112
+		name		= NPERSONALITY_HEALTH
+		desc		= DPERSONALITY_HEALTH
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = -0.0500 } #Things last longer
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = production value = -0.0200 }
+		command		= { type = resource which = energy value = -0.0200 }
+		command		= { type = resource which = metal value = -0.0200 }
+		command		= { type = resource which = rare_materials value = -0.0200 }
+		command		= { type = populationgrowth value = 0.0200 }
+	}
+	minister =  { 
+		trait		= "Secret police chief"
+		id			= 113
+		name		= NPERSONALITY_POLICE
+		desc		= DPERSONALITY_POLICE
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = 0.0500 }
+		command		= { type = unit which = garrison value = -0.0500 }
+		command		= { type = extra which = police value = -0.0500 }
+		command		= { type = dissent value = -0.0750 }
+	}
+	minister =  { 
+		trait		= "commando doctrine staff"
+		id			= 114
+		name		= NPERSONALITY_COMMANDO_DOCTRINE
+		desc		= DPERSONALITY_COMMANDO_DOCTRINE_STAFF
+		position	= ChiefOfStaff 
+		value		= 0
+		command		= { type = unit when = organisation which = bergsjaeger value = 0.0500 }
+		command		= { type = unit when = organisation which = paratrooper value = 0.0500 }
+		command		= { type = unit when = organisation which = marine value = 0.0500 }
+		command		= { type = unit when = morale which = bergsjaeger value = 0.0300 }
+		command		= { type = unit when = morale which = paratrooper value = 0.0300 }
+		command		= { type = unit when = morale which = marine value = 0.0300 }
+	}
+	minister =  { 
+		trait		= "commando doctrine army"
+		id			= 115
+		name		= NPERSONALITY_COMMANDO_DOCTRINE
+		desc		= DPERSONALITY_COMMANDO_DOCTRINE_ARMY
+		position	= chiefofarmy
+		value		= 0
+		command		= { type = unit which = bergsjaeger value = -0.0500 }
+		command		= { type = unit which = paratrooper value = -0.0500 }		
+		command		= { type = unit which = marine value = -0.0500 }
+		command		= { type = extra which = engineer value = -0.0300 }
+		command		= { type = extra which = amph_armor value = -0.0300 }
+		command		= { type = extra which = glider_armor value = -0.0300 }
+		command		= { type = extra which = glider_artillery value = -0.0300 }
+		command		= { type = unit which = bergsjaeger when = attack value = 0.0500 }
+		command		= { type = unit which = paratrooper when = attack value = 0.0500 }
+		command		= { type = unit which = marine when = attack value = 0.0500 }
+		command		= { type = extra which = engineer when = attack value = 0.0300 }
+		command		= { type = extra which = amph_armor when = attack value = 0.0300 }
+		command		= { type = extra which = glider_armor when = attack value = 0.0300 }
+		command		= { type = extra which = glider_artillery when = attack value = 0.0300 }
+	}
+	minister =  { 
+		trait		= "Doctrine of autonomy"
+		id			= 116
+		name		= NPERSONALITY_AUTONOMY_DOCTRINE
+		desc		= DPERSONALITY_AUTONOMY_DOCTRINE
+		position	= ChiefOfArmy
+		value		= 0
+		command 	= { type = leader_skill value = 0.2000 }
+		command		= { type = unit when = morale value = 0.0700 }
+		
+	}
+	
+	minister =  { 
+		trait		= "Reichskommissar" 
+		id			= 117
+		name		= NPERSONALITY_REICHSKOMMISSAR
+		desc		= DPERSONALITY_REICHSKOMMISSAR
+		position	= headofstate
+		value		= 0
+		
+		command		= { type = production which = production value = 0.1000 }
+		command		= { type = resource which = energy value = 0.3000 }
+		command		= { type = resource which = metal value = 0.3000 }
+		command		= { type = resource which = rare_materials value = 0.3000 }
+		command		= { type = resource which = oil value = 0.3000 }
+		command		= { type = populationgrowth value = -0.1500 }
+		command		= { type = dissent value = 0.2500 }
+		#command		= { type = research which = infantry value = -0.1500 }
+		#command		= { type = research which = armor value = -0.1500 }
+		#command		= { type = research which = land_doctrines value = -0.2500 }
+		#command		= { type = research which = industry value = -0.2500 }
+		#command		= { type = research which = aircraft value = -0.2500 }
+		#command		= { type = research which = air_doctrines value = -0.2500 }
+		#command		= { type = research which = naval value = -0.2500 }
+		#command		= { type = research which = naval_doctrines value = -0.2500 }
+		#command		= { type = research which = secret_weapons value = -0.5000 }		
+	}
+
+	minister = {
+		trait 		= "Old Lawyer"
+		id			= 13307001
+		name		= NPERSONALITY_SILENT_LAWYER
+		desc		= DPERSONALITY_SILENT_LAWYER
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = consumer value = 0.1000 }
+		command		= { type = dissent value = -0.0100 }
+		command		= { type = resource which = money value = 0.0500 }
+		command		= { type = diplomacy_cost value = 0.0250 }
+		command		= { type = unit which = infantry value = 0.0500 }
+		command		= { type = unit which = militia value = 0.0500 }
+		command		= { type = unit which = garrison value = 0.0500 }
+	}
+	
+	#Special traits for ministers of German military mission to the Ottoman Empire
+	
+	minister =  { 
+		trait		= "ger_mil_m1"	#Waldemar Pieper
+		id			= 118
+		name		= NPERSONALITY_ger_mil_m1
+		desc		= DPERSONALITY_ger_mil_m1
+		position	= ArmamentMinister
+		value		= 0
+		
+		command		= { type = production which = supplies value = 0.2000 }		
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m2" #Heinrich August Meißner
+		id			= 119
+		name		= NPERSONALITY_ger_mil_m2
+		desc		= DPERSONALITY_ger_mil_m2
+		position	= ArmamentMinister
+		value		= 0
+		
+		command		= { type = province which = infra value = -0.3000 }		
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m3" #Friedrich Bronsart von Schellendorf
+		id			= 120
+		name		= NPERSONALITY_ger_mil_m3
+		desc		= DPERSONALITY_ger_mil_m3
+		position	= ChiefOfStaff
+		value		= 0
+		
+		command		= { type = unit when = organisation which = land value = 0.0600 }
+		command		= { type = unit when = morale which = land value = 0.0600 }
+		command		= { type = leader_skill value = 0.2000 }
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m4" #Hans von Seeckt
+		id			= 121
+		name		= NPERSONALITY_ger_mil_m4
+		desc		= DPERSONALITY_ger_mil_m4
+		position	= ChiefOfStaff
+		value		= 0
+		
+		command		= { type = unit when = organisation which = land value = 0.0600 }
+		command		= { type = unit when = morale which = land value = 0.0600 }
+		command		= { type = leader_skill value = 0.2000 }
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m5" #Wilhelm Souchon
+		id			= 122
+		name		= NPERSONALITY_ger_mil_m5
+		desc		= DPERSONALITY_ger_mil_m5
+		position	= ChiefOfNavy
+		value		= 0
+		
+		command		= { type = unit when = morale which = navy value = 0.1200 }	
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m6" #Hubert von Rebeur-Paschwitz
+		id			= 123
+		name		= NPERSONALITY_ger_mil_m6
+		desc		= DPERSONALITY_ger_mil_m6
+		position	= ChiefOfNavy
+		value		= 0
+		
+		command		= { type = unit when = organisation which = navy value = 0.1200 }
+
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m7" #Erich Serno
+		id			= 124
+		name		= NPERSONALITY_ger_mil_m7
+		desc		= DPERSONALITY_ger_mil_m7
+		position	= ChiefOfAir
+		value		= 0
+		
+		command		= { type = unit when = organisation which = air value = 0.0600 }
+		command		= { type = unit when = morale which = air value = 0.0600 }
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m8" #Konrad Goltz
+		id			= 125
+		name		= NPERSONALITY_ger_mil_m8
+		desc		= DPERSONALITY_ger_mil_m8
+		position	= ChiefOfAir
+		value		= 0
+		
+		command		= { type = unit when = organisation which = naval_bomber value = 0.1200 }
+		command		= { type = unit when = morale which = naval_bomber value = 0.1200 }	
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m9" #Sievert
+		id			= 126
+		name		= NPERSONALITY_ger_mil_m9
+		desc		= DPERSONALITY_ger_mil_m9
+		position	= MinisterOfIntelligence
+		value		= 0
+		
+		command		= { type = intelligence_chances which = found_partisans value = 4 }
+		command		= { type = dissent value = -0.2000 }	
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m10" #Etienne Perrinet von Thauvenay
+		id			= 127
+		name		= NPERSONALITY_ger_mil_m10
+		desc		= DPERSONALITY_ger_mil_m10
+		position	= MinisterOfIntelligence
+		value		= 0
+		
+		command		= { type = detection which = land value = 50 }
+		command		= { type = intelligence_report which = land value = 3 }		
+	}
+	
+	minister =  { 
+		trait		= "ger_mil_m11" #Guido von Usedom
+		id			= 128
+		name		= NPERSONALITY_ger_mil_m11
+		desc		= DPERSONALITY_ger_mil_m11
+		position	= ArmamentMinister
+		value		= 0	
+		
+		command		= { type = province which = landfort value = -0.5000 } 
+		command		= { type = province which = coastalfort value = -0.2000 } 
+	}
+	
+	minister =  { 
+		trait		= "brit_nav_mis" #Arthur Henry Limpus
+		id			= 129
+		name		= NPERSONALITY_brit_nav_mis
+		desc		= DPERSONALITY_brit_nav_mis
+		position	= ChiefOfNavy
+		value		= 0	
+		
+		command		= { type = unit when = organisation which = navy value = 0.0600 }
+		command		= { type = unit when = morale which = navy value = 0.0600 }
+	}
+	
+	###########################
+	#New unique traits DH 1.03#
+	###########################
+	
+	#Germany
+	minister = {
+		trait		= "SS Reichsfuhrer" #Heinrich Himmler
+		id 			= 130
+		name		= NPERSONALITY_HIMMLER
+		desc		= DPERSONALITY_HIMMLER
+		position	= ministerofsecurity
+		value		= 0
+		command		= { type = production which = production when = non_national value = 0.1200 }
+		command		= { type = resource which = energy value = 0.0350 }
+		command		= { type = resource which = metal value = 0.0350 }
+		command		= { type = resource which = rare_materials value = 0.0350 }		
+		command		= { type = production which = consumer value = 0.1500 }
+		command		= { type = unit which = garrison value = -0.0500 }
+		command		= { type = extra which = police value = -0.0500 }
+		command		= { type = dissent value = 0.0500 }
+	}
+	
+	minister = {
+		trait		= "Ruthless Organizer" #Wilhelm Frick
+		id			= 131
+		name		= NPERSONALITY_FRICK
+		desc		= DPERSONALITY_FRICK
+		position	= ministerofsecurity
+		value		= 0
+		command		= { type = production which = production when = non_national value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }		
+		command		= { type = populationgrowth value = 0.1000 }
+		command		= { type = production which = consumer value = 0.0500 }		
+		command		= { type = dissent value = 0.05000 }	
+	}
+
+	minister =  { 
+		trait		= "Brilliant Spymaster" #Wilhelm Canaris
+		id			= 132
+		name		= NPERSONALITY_CANARIS
+		desc		= DPERSONALITY_CANARIS
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = intelligence_network when = all value = 5 }
+		command		= { type = intelligence_report which = production value = 1 }
+		command		= { type = intelligence_report which = land value = 1 }		
+		command		= { type = detection which = land value = 10 }
+		command		= { type = dissent value = 0.07000 }	
+	}
+	
+	minister =  { 
+		trait		= "The Hangman" #Reinhard Heydrich - Minister Of Intelligence
+		id			= 133
+		name		= NPERSONALITY_HEYDRICH
+		desc		= DPERSONALITY_HEYDRICH
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = intelligence_network when = all value = 1 }
+		command		= { type = extra which = police when = organisation value = 0.300 }
+		command		= { type = extra which = police when = morale value = 0.0500 }
+		command		= { type = intelligence_chances which = massmedia value = 1 }
+		command		= { type = dissent value = 0.0500 }
+	}		
+	
+	minister =  { 
+		trait		= "respectable compromiser" #Constantin von Neurath
+		id			= 134
+		name		= NPERSONALITY_NEURATH
+		desc		= DPERSONALITY_NEURATH
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_chances which = influence_nation when = democracies value = 15 } 
+		command		= { type = diplomacy_chances which = influence_nation when = dictatorships value = 5 } 
+		command		= { type = diplomacy_cost which = bring_to_alliance value = -0.5000 } 
+		command		= { type = diplomacy_cost which = join_alliance value = -0.5000 }
+		command		= { type = diplomacy_cost which = offer_alliance value = -0.5000 }
+		command		= { type = diplomacy_cost which = guarantee_independence value = -0.5000 }
+		command		= { type = intelligence_chances when = national which = massmedia value = -1 }	
+	}	
+	
+	minister =  { 
+		trait		= "Salesman of Deception" #von ribbentrop
+		id			= 135
+		name		= NPERSONALITY_RIBBENTROP
+		desc		= DPERSONALITY_RIBBENTROP
+		position	= ForeignMinister
+		value		= 0
+		command		= { type = diplomacy_cost which = influence_nation value = -0.3330 } 
+		command		= { type = diplomacy_chances which = influence_nation when = dictatorships value = 5 } 
+		command		= { type = diplomacy_chances which = influence_nation when = weak_target value = 10 } 
+		command		= { type = diplomacy_cost which = annex_nation value = 0.5000 }
+		command		= { type = diplomacy_cost which = demand_territory when = weak_target value = -0.3333 }
+	}
+
+	minister =  { 
+		trait		= "The Iron Knight" #Hermann Göring Chief of hair
+		id			= 136
+		name		= NPERSONALITY_GOERING
+		desc		= DPERSONALITY_GOERING
+		position	= chiefofair
+		value		= 0
+		command		= { type = unit which = tactical_bomber value = -0.0250 }
+		command		= { type = unit which = cas value = -0.1000 }
+		command		= { type = unit which = tactical_bomber when = attack value = 0.0500 }
+		command		= { type = unit which = cas when = attack value = 0.1000 }
+		command		= { type = unit which = cas when = defence value = 0.1000 }
+		command		= { type = unit which = strategic_bomber value = 0.0750 }
+		command		= { type = unit which = interceptor value = 0.0500 }
+		command		= { type = unit which = multi_role value = 0.0500 }
+		command		= { type = province which = radar_station value = 0.0300 }
+		command		= { type = unit which = paratrooper value = -0.0500 }		#Some commando buffs - Goering was a proponent of paratrooper regiments
+		command		= { type = extra which = glider_armor when = attack value = 0.0300 }
+		command		= { type = extra which = glider_artillery when = attack value = 0.0300 }
+	}
+	minister =  { 
+		trait		= "The Brown Eminence" #Martin Bormann
+		id			= 137
+		name		= NPERSONALITY_BORMANN
+		desc		= DPERSONALITY_BORMANN
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = intelligence_chances which = found_partisans when = national value = 5 }
+		command     = { type = intelligence_chances which = sabotage_industry when = national value = -10 }
+		command     = { type = intelligence_chances which = minister_assassination when = national value = -20 }
+		command		= { type = dissent value = 0.2000 }
+		
+	}
+
+	minister =  {
+		trait		= "Master of Propaganda" # Goebbels
+		id			= 138
+		name		= NPERSONALITY_GOEBBELS
+		desc		= DPERSONALITY_GOEBBELS
+		position	= ministerofsecurity
+		value		= 0
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = unit which = militia value = -0.1500 }
+		command		= { type = research which = secret_weapons value = -0.0800 }
+	}
+		
+	minister =  { 
+		trait		= "Organization 'Todt'"
+		id			= 139
+		name		= NPERSONALITY_TODT
+		desc		= DPERSONALITY_TODT
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = province which = infra value = -0.1500 }
+		command		= { type = province which = landfort value = -0.1500 }	
+		command		= { type = province which = coastalfort value = -0.2500 }
+	}
+	
+	#UK
+	minister =  { 
+		trait		= "Guilty Man"	#Stanley Baldwin
+		id			= 140
+		name		= NPERSONALITY_BALDWIN
+		desc		= DPERSONALITY_BALDWIN
+		position	= HeadOfGovernment
+		value		= -1
+		command		= { type = production which = production value = 0.0200 }
+		command		= { type = resource which = energy value = 0.0200 }
+		command		= { type = resource which = metal value = 0.0200 }
+		command		= { type = resource which = rare_materials value = 0.0200 }			
+		command		= { type = production which = consumer value = 0.0500 }
+		command		= { type = dissent value = -0.2000 }
+	}
+	
+	minister =  { 
+		trait		= "Quex"	#Hugh Sinclair
+		id			= 141
+		name		= NPERSONALITY_SINCLAIR
+		desc		= DPERSONALITY_SINCLAIR
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = detection which = navy value = 0.1500 }
+		command		= { type = detection which = land value = 15 }
+		command		= { type = intelligence_report which = navy value = 1 }
+		command		= { type = intelligence_report which = land value = 1 }
+	}	
+	
+	minister =  { 
+		trait		= "The Pacifier"	#Arthur Neville Chamberlain prime minister
+		id			= 143
+		name		= NPERSONALITY_CHAMBERLAIN
+		desc		= DPERSONALITY_CHAMBERLAIN
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = consumer value = -0.1000 }
+		command		= { type = dissent value = -0.0100 }
+		command		= { type = belligerence which = declare_war value = 0.3000 } 
+		command		= { type = diplomacy_cost which = guarantee_independence value = -0.7500 }
+	}		
+	
+	minister =  { 
+		trait		= "The Appeaser"
+		id			= 144
+		name		= NPERSONALITY_HALIFAX
+		desc		= DPERSONALITY_HALIFAX
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_cost which = influence_nation value = 0.3330 } 
+		command		= { type = diplomacy_chances which = influence_nation when = dictatorships value = 10 }
+		command		= { type = diplomacy_cost which = sue_for_peace when = opposite_alignment value = -1.0000 }	
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = opposite_alignment value = -0.7500 }
+	}	
+	
+	#Italy
+	minister =  { 
+		trait		= "Fascist Crusader"	#Galeazzo Ciano
+		id			= 145
+		name		= NPERSONALITY_CIANO
+		desc		= DPERSONALITY_CIANO
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = diplomacy_chances which = influence_nation value = 10 } 
+		command		= { type = diplomacy_cost which = influence_nation when = same_alignment value = -0.3330 } 
+		command		= { type = diplomacy_cost which = trade when = same_alignment value = -0.7500 }
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = same_alignment value = -0.7500 }		
+		command		= { type = belligerence which = declare_war value = 0.1000 } 
+	}
+	
+	minister =  { 
+		trait		= "Autarkic Fascist"	#Benito Mussolini
+		id			= 146
+		name		= NPERSONALITY_AUTARKIC
+		desc		= DPERSONALITY_AUTARKIC
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0250 } 
+		command		= { type = resource which = metal value = 0.0300 } 
+		command		= { type = resource which = energy value = 0.0300 } 
+		command		= { type = resource which = rare_materials value = 0.03000 }
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = production which = consumer value = 0.1000 }
+	}	
+	
+	minister =	{
+		trait		= "Undersecretary of War"		#Alberto Pariani
+		id			= 147
+		name		= NPERSONALITY_PARIANI
+		desc		= DPERSONALITY_PARIANI
+		position	= ChiefOfArmy
+		value		= 0
+		command		= { type = unit when = organisation which = infantry value = 0.0300 }
+		command		= { type = unit when = organisation which = bergsjaeger value = 0.0600 }
+		command		= { type = unit when = morale which = infantry value = 0.0300 }
+		command		= { type = unit when = morale which = bergsjaeger value = 0.0600 }
+		command		= { type = unit which = infantry when = defence value = -0.0700 }
+		command		= { type = unit which = bergsjaeger when = defence value = -0.0700 }
+	}	
+	
+	minister =  { 
+		trait		= "Old School Admiral"		#Cavagnari
+		id			= 148
+		name		= NPERSONALITY_CAVAGNARI
+		desc		= DPERSONALITY_CAVAGNARI
+		position	= chiefofnavy
+		value		= 0
+		command		= { type = unit which = battleship when = attack value = 0.1200 }
+		command		= { type = unit which = battleship when = defence value = 0.1200 }
+		command		= { type = unit which = battlecruiser when = attack value = 0.1200 }
+		command		= { type = unit which = battlecruiser when = defence value = 0.1200 }
+		command		= { type = unit which = heavy_cruiser when = attack value = 0.1200 }
+		command		= { type = unit which = heavy_cruiser when = defence value = 0.1200 }
+		command		= { type = unit which = light_cruiser when = attack value = 0.1500 }
+		command		= { type = unit which = light_cruiser when = defence value = 0.1500 }
+		command		= { type = unit which = carrier when = attack value = -0.1000 }
+		command		= { type = unit which = carrier when = defence value = -0.1000 }
+		command		= { type = unit which = light_carrier when = attack value = -0.0700 }
+		command		= { type = unit which = light_carrier when = defence value = -0.0700 }
+		command		= { type = unit which = escort_carrier when = attack value = -0.0700 }
+		command		= { type = unit which = escort_carrier when = defence value = -0.0700 }
+		command		= { type = unit which = battleship value = -0.0500 }
+		command		= { type = unit which = carrier value = 0.0500 }
+		command		= { type = unit which = light_carrier value = 0.0500 }
+		command		= { type = unit which = escort_carrier value = 0.0500 }
+		command		= { type = extra which = naval_radar_l value = 0.1000 }
+		command		= { type = extra which = naval_radar_s value = 0.1000 }
+	}	
+
+	minister =  { 
+		trait		= "Aggressive Nationalist"	#Mussolini Foreign Minister
+		id			= 149
+		name		= NPERSONALITY_MUSSOLINI_FM
+		desc		= DPERSONALITY_MUSSOLINI_FM
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = belligerence which = declare_war value = -0.1000 } 
+		command		= { type = diplomacy_cost which = trade when = same_alignment value = -0.5000 }
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = same_alignment value = -0.5000 }		
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = democracies value = 0.7500 }	
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 15 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = 15 }
+	}
+
+	#USSR
+	minister =  { 				#Maxim Litvinov
+		trait		= "Persuader of Democracies"
+		id			= 150
+		name		= NPERSONALITY_LITVINOV
+		desc		= DPERSONALITY_LITVINOV
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = diplomacy_cost which = bring_to_alliance when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = join_alliance when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = offer_alliance when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = guarantee_independence when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = trade when = democracies value = -0.7500 }		
+		command		= { type = diplomacy_cost which = offer_trade_agreement when = democracies value = -0.7500 }
+		command		= { type = diplomacy_cost which = sue_for_peace when = democracies value = -1.0000 }	
+		command		= { type = diplomacy_cost which = offer_non_aggression when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = influence_nation when = democracies value = -0.5000 }	
+		command		= { type = diplomacy_chances which = influence_nation when = democracies value = 10 } 
+	}	
+	
+	minister =  { 				#Lazar M. Kaganovich
+		trait		= "Iron Lazar"
+		id			= 151
+		name		= NPERSONALITY_KAGANOVICH
+		desc		= DPERSONALITY_KAGANOVICH
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }
+		command		= { type = resource which = oil value = 0.0500 }
+		command		= { type = research which = industry value = -0.0500 } 
+		command		= { type = production which = consumer value = 0.1000 }
+		command		= { type = dissent value = 0.1000 }
+	}
+
+	minister =  { 					#Genrikh Yagoda
+		trait		= "Purged Purger"
+		id			= 152
+		name		= NPERSONALITY_YAGODA
+		desc		= DPERSONALITY_YAGODA
+		position	= MinisterOfSecurity
+		value		= -1
+		command		= { type = dissent value = -0.1000 }
+		command		= { type = production which = consumer value = 0.0250 }		
+	}
+
+	minister =  { 				#"Michail N. Tukhachevsky"
+		trait		= "Deep Battle Proponent"
+		id			= 153
+		name		= NPERSONALITY_DEEPBATTLEDOCTRINE
+		desc		= DPERSONALITY_DEEPBATTLEDOCTRINE
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = unit which = armor when = attack value = 0.0500 }
+		command		= { type = unit which = armor when = defence value = -0.0500 }
+		command		= { type = unit which = mechanized when = attack value = 0.0500 }
+		command		= { type = unit which = mechanized when = defence value = -0.0500 }
+		command		= { type = unit which = motorized when = attack value = 0.0500 }
+		command		= { type = unit which = motorized when = defence value = -0.0500 }
+		command		= { type = unit which = infantry when = attack value = 0.0250 }
+		command		= { type = unit which = infantry when = defence value = -0.0500 }
+		command		= { type = unit which = tactical_bomber when = attack value = 0.0250 }
+		command		= { type = unit which = tactical_bomber when = defence value = 0.0250 }
+	}
+	
+	minister =  { 						#Vyacheslav M. Molotov
+		trait		= "collectivizer"
+		id			= 154
+		name		= NPERSONALITY_MOLOTOV
+		desc		= DPERSONALITY_MOLOTOV
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = production which = production value = 0.0300 }
+		command		= { type = resource which = energy value = 0.0300 }
+		command		= { type = resource which = metal value = 0.0300 }
+		command		= { type = resource which = rare_materials value = 0.030 }
+		command		= { type = research which = industry value = -0.0250 } 
+		command		= { type = production which = consumer value = 0.1000 }
+		command		= { type = populationgrowth value = -0.1500 }
+	}	
+
+	#USA
+	minister =  { 
+		trait		= "Father of United Nations"		#Corder Hull
+		id			= 155
+		name		= NPERSONALITY_HULL
+		desc		= DPERSONALITY_HULL
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_chances which = influence_nation when = democracies value = 10 } 
+		command		= { type = diplomacy_cost which = bring_to_alliance when = democracies value = -0.5000 } 
+		command		= { type = diplomacy_cost which = join_alliance when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = offer_alliance when = democracies value = -0.5000 }
+		command		= { type = diplomacy_cost which = guarantee_independence value = -0.5000 }	
+	}	
+	
+	minister =  { 
+		trait		= "orthodox economist"		#Henry Morgenthau
+		id			= 156
+		name		= NPERSONALITY_MORGENTHAU
+		desc		= DPERSONALITY_MORGENTHAU
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0500 }
+		command		= { type = resource which = metal value = 0.0500 }
+		command		= { type = resource which = rare_materials value = 0.0500 }		
+		command		= { type = production which = consumer value = 0.0500 }
+		command		= { type = resource which = money value = -0.0500 }
+	}	
+	
+	minister =  { 
+		trait		= "Director of FBI"		#J. Edgar Hoover
+		id			= 157
+		name		= NPERSONALITY_HOOVER
+		desc		= DPERSONALITY_HOOVER
+		position	= MinisterOfSecurity
+		value		= 0
+		command		= { type = production which = consumer value = -0.1000 }
+		command		= { type = production which = production value = -0.0100 } 
+		command		= { type = dissent value = -0.2000 }
+	}	
+	
+	minister =  { 
+		trait		= "Cryptographer"		#William F. Friedman
+		id			= 158
+		name		= NPERSONALITY_FRIEDMAN
+		desc		= DPERSONALITY_FRIEDMAN
+		position	= MinisterOfIntelligence
+		value		= 0
+		command		= { type = intelligence_report which = land value = 1 }
+		command		= { type = intelligence_report which = navy value = 1 }
+		command		= { type = intelligence_report which = production value = 1 }
+	}	
+
+	minister =  { 					#Henry L. Stimson 
+		trait		= "Secretary of War"
+		id			= 159
+		name		= NPERSONALITY_STIMSON
+		desc		= DPERSONALITY_STIMSON
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = production which = supplies value = 0.1000 } 
+		command		= { type = populationgrowth when = national value = 0.0500 }
+		command		= { type = production which = production value = -0.0200 } 
+	}	
+	
+	minister =  { 						#Edward Stettinius
+		trait		= "Ambassador to UN"		
+		id			= 160
+		name		= NPERSONALITY_STETTINIUS
+		desc		= DPERSONALITY_STETTINIUS
+		position	= ForeignMinister 
+		value		= 0
+		command		= { type = diplomacy_chances which = influence_nation value = 10 } 
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 10 }
+		command		= { type = diplomacy_cost which = influence_nation when = dictatorships value = -0.2500 } 
+		command		= { type = diplomacy_cost which = offer_non_aggression when = dictatorships value = -0.3000 } 
+	}	
+	
+	minister =  { 					#Harold Ickes
+		trait		= "Secretary of the Interior"
+		id			= 161
+		name		= NPERSONALITY_ICKES
+		desc		= DPERSONALITY_ICKES
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = oil value = 0.1000 } 
+		command 	= { type = resource which = money value = -0.1000 }
+	}
+	
+	#France
+	minister =  { 						#Auriol
+		trait		= "Supporter of Devaluation"
+		id			= 162
+		name		= NPERSONALITY_AURIOL
+		desc		= DPERSONALITY_AURIOL
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = 0.2000 }
+		command 	= { type = production which = consumer value = -0.1000 }
+		command		= { type = production which = production value = -0.0300 }
+		command		= { type = dissent value = 0.1000 }
+	}
+	
+	minister =  { 
+		trait		= "Opposer of the far right"			#Marx Dormoy
+		id			= 163
+		name		= NPERSONALITY_DORMOY
+		desc		= DPERSONALITY_DORMOY
+		position	= MinisterOfSecurity
+		command 	= { type = production which = consumer value = 0.0500 }
+		command		= { type = populationgrowth value = -0.0200 }
+		command		= { type = dissent value = -0.0500 }
+	}	
+	
+	minister =  { 						#Maurice Gamelin
+		trait		= "Fortifications Supporter"
+		id			= 164
+		name		= NPERSONALITY_GAMELIN_COS
+		desc		= DPERSONALITY_GAMELIN_COS
+		position	= ChiefOfStaff
+		value		= 0
+		command		= { type = province which = landfort value = -0.2000 } 
+		command		= { type = province which = coastalfort value = -0.1500 }
+		command		= { type = unit when = speed value = -0.1000 }
+	}
+	
+		minister =  {  						#Maurice Gamelin
+		trait		= "Static Defense Supporter"
+		id			= 165
+		name		= NPERSONALITY_GAMELIN_COA
+		desc		= DPERSONALITY_GAMELIN_COA
+		position	= ChiefOfArmy
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0500 }
+		command		= { type = extra which = artillery value = -0.0500 }
+		command		= { type = unit which = light_armor value = 0.0500 }
+		command		= { type = unit which = armor value = 0.0500 }
+		command		= { type = unit which = motorized value = 0.0500 }
+	}
+	
+	minister =  { 						#Yvon Delbos
+		trait		= "Supporter of friendly relations"
+		id			= 166
+		name		= NPERSONALITY_DELBOS
+		desc		= DPERSONALITY_DELBOS
+		position	= ForeignMinister
+		value		= 0 
+		command		= { type = diplomacy_cost which = influence_nation when = democracies value = -0.3330 } 
+		command		= { type = diplomacy_chances which = influence_nation when = democracies value = 10 }
+		command		= { type = diplomacy_cost which = trade when = democracies value = -0.5000 }		
+		command		= { type = diplomacy_chances which = trade when = democracies value = 10 }
+		command		= { type = belligerence which = declare_war value = 0.1000 } 	
+	}
+	
+	minister =  { 						#Georges Bonnet - Armament Minister
+		trait		= "Opposer to military spending"
+		id			= 167
+		name		= NPERSONALITY_BONNET
+		desc		= DPERSONALITY_BONNET
+		position	= ArmamentMinister
+		value		= 0
+		command		= { type = resource which = money value = 0.1000 }
+		command 	= { type = production which = consumer value = -0.1500 }
+		command		= { type = production which = supplies value = -0.2000 }
+		command		= { type = stockpile which = supplies value = -0.2000 }
+		}
+	
+	#Japan
+	minister =  {  				#Tojo Hideki Prime Minister
+		trait		= "Razor"
+		id			= 168
+		name		= NPERSONALITY_HIDEKI
+		desc		= DPERSONALITY_HIDEKI
+		position	= HeadOfGovernment
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0500 }
+		command		= { type = unit which = bergsjaeger value = -0.0500 }
+		command		= { type = belligerence which = declare_war value = -0.2000 }
+		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 25 }
+		command		= { type = diplomacy_chances which = alliance when = democracies value = -15 }
+		command		= { type = stockpile which = supplies value = 0.0500 }
+		command		= { type = dissent value = -0.0500 }
+		command 	= { type = production which = consumer value = 0.0500 }
+	}
+
+	# U74 - GCE
+	minister =  {
+		trait		= "Yuan Shikai_1" #Yuan Shikai
+		id			= 169
+		name		= NPERSONALITY_YUAN_SHIKAI
+		desc		= DPERSONALITY_YUAN_SHIKAI
+		position	= HeadOfState
+		value		= 0
+		command     = { type = production which = production when = national value = -0.05 }
+		command     = { type = dissent value = 0.05 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+		command     = { type = unit which = infantry when = time value = -0.05 }
+		command     = { type = unit which = infantry when = cost value = -0.05 }
+		command     = { type = unit which = militia when = time value = 0.10 }
+		command     = { type = unit which = militia when = cost value = 0.10 }
+		command 	= { type = leader_skill value = -0.1000 }
+	}
+	
+	minister =  {
+		trait		= "Yuan Shikai_2" #Yuan Shikai
+		id			= 170
+		name		= NPERSONALITY_YUAN_SHIKAI
+		desc		= DPERSONALITY_YUAN_SHIKAI
+		position	= HeadOfGovernment
+		value		= 0
+		command     = { type = production which = production when = national value = -0.05 }
+		command     = { type = dissent value = 0.025 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+		command     = { type = unit which = infantry when = time value = -0.05 }
+		command     = { type = unit which = infantry when = cost value = -0.05 }
+		command     = { type = unit which = militia when = time value = 0.10 }
+		command     = { type = unit which = militia when = cost value = 0.10 }
+		command 	= { type = leader_skill value = -0.1000 }
+	}
+
+	# UCH - CGX
+	minister =  {
+		trait		= "Cen Chenxuan" #Cen Chenxuan
+		id			= 171
+		name		= NPERSONALITY_CEN_CHENXUAN
+		desc		= DPERSONALITY_CEN_CHENXUAN
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = 0.0500 }
+		command		= { type = resource which = money value = 0.0750 }
+		command 	= { type = leader_skill value = 0.0500 }
+	}
+
+	# CHI - NPA
+	minister =  {
+		trait		= "Cai E" #Cai E
+		id			= 172
+		name		= NPERSONALITY_CAI_E
+		desc		= DPERSONALITY_CAI_E
+		position	= HeadOfState
+		value		= 0
+		command     = { type = production which = production when = national value = 0.01 }
+		command     = { type = dissent value = -0.05 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+		command     = { type = unit which = infantry when = time value = 0.05 }
+		command     = { type = unit which = infantry when = cost value = 0.05 }
+		command     = { type = unit which = militia when = time value = -0.10 }
+		command     = { type = unit which = militia when = cost value = -0.10 }
+		command     = { type = supply_consumption value = -0.15 }
+		command     = { type = diplomacy_cost which = all when = all value = 0.1 }
+	}
+
+	# CHI - CPM
+	minister =  {
+		trait		= "Sun Zhongshan_1" #Sun Zhongshan
+		id			= 173
+		name		= NPERSONALITY_SUN_ZHONGSHAN
+		desc		= DPERSONALITY_SUN_ZHONGSHAN
+		position	= HeadOfState
+		value		= 0
+		command     = { type = dissent value = -0.025 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = unit which = all when = morale value = 0.10 }
+		command		= { type = resource which = money value = 0.0250 }
+		command		= { type = production which = consumer value = -0.1500 } 
+		command		= { type = belligerence which = declare_war value = -0.1500 }
+	}
+	
+	minister =  {
+		trait		= "Sun Zhongshan_2" #Sun Zhongshan
+		id			= 174
+		name		= NPERSONALITY_SUN_ZHONGSHAN
+		desc		= DPERSONALITY_SUN_ZHONGSHAN
+		position	= HeadOfGovernment
+		value		= 0
+		command     = { type = dissent value = -0.025 }
+		command		= { type = resource which = money value = 0.0250 }
+		command		= { type = production which = production value = 0.0500 }
+		command		= { type = resource which = energy value = 0.0700 }
+		command		= { type = resource which = metal value = 0.0700 }
+		command		= { type = resource which = rare_materials value = 0.0700 }
+		command		= { type = diplomacy_cost value = 0.2000 }
+	}
+	
+	# UCH - CFT Fengtian Clique
+	minister = {
+		trait		= "Wu_Peifu" #Wu Peifu
+		id			= 175
+		name		= NPERSONALITY_WU_PEIFU
+		desc		= DPERSONALITY_WU_PEIFU
+		position	= ChiefofArmy
+		value		= 0
+		command		= { type = unit which = infantry value = -0.0300 }
+		command		= { type = extra which = artillery value = -0.0300 }
+		command		= { type = unit which = infantry when = attack value = 0.0500 }
+		command		= { type = extra which = artillery when = attack value = 0.0500 }
+		command     = { type = unit which = militia when = time value = -0.05 }
+		command     = { type = unit which = militia when = cost value = -0.05 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = -10 }
+		command     = { type = diplomacy_chances which = trade when = all value = -10 }
+		command     = { type = diplomacy_cost which = all when = all value = 0.2 }
+	}
+
+	minister = {
+		trait		= "Cao_Kun" #Cao_Kun
+		id			= 176
+		name		= NPERSONALITY_CAO_KUN
+		desc		= DPERSONALITY_CAO_KUN
+		position	= HeadOfState
+		value		= 0
+		command		= { type = dissent value = 0.0200 }
+		command		= { type = resource which = money value = -0.1000 }
+		command		= { type = production which = supplies value = 0.2000 } 
+		command		= { type = tc_mod value = 0.0500 } 
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 10 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = all when = all value = -0.2 }
+		command     = { type = intelligence_chances which = coup when = national value = 0.05 }
+		command     = { type = intelligence_chances which = smear_campaign when = national value = 0.15 }
+	}
+
+##############NEW IN 1.04############################
+
+
+####### Country Specific #######
+	# CHI - NATCHI
+	minister =  {
+		trait		= "Jiang_Jieshi_1" #Jiang Jieshi Pre-Unification
+		id			= 177
+		name		= NPERSONALITY_JIANG_JIESHI_1
+		desc		= DPERSONALITY_JIANG_JIESHI_1
+		position	= HeadOfGovernment
+		value		= 0
+		command     = { type = production which = production when = national value = -0.05 }
+		command     = { type = resource which = money value = 0.2 }
+		command     = { type = dissent value = 0.25 }
+		command     = { type = unit which = all when = organisation value = 0.05 }
+		command     = { type = unit which = all when = morale value = -0.15 }
+		command     = { type = unit which = infantry when = time value = -0.05 }
+		command     = { type = unit which = infantry when = cost value = -0.05 }
+		command     = { type = unit which = militia when = time value = 0.10 }
+		command     = { type = unit which = militia when = cost value = 0.10 }
+		command     = { type = research which = armor when = time value = -0.05 }
+		command     = { type = supply_consumption value = -0.15 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 10 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = all when = all value = -0.1 }
+		command 	= { type = leader_skill value = -0.1000 }
+	}
+	
+	minister =  {
+		trait		= "Jiang_Jieshi_2" #Jiang Jieshi Victory
+		id			= 178
+		name		= NPERSONALITY_JIANG_JIESHI_2
+		desc		= DPERSONALITY_JIANG_JIESHI_2
+		position	= HeadOfGovernment
+		value		= 0
+		command     = { type = production which = production when = national value = 0.05 }
+		command     = { type = resource which = money value = 0.25 }
+		command     = { type = dissent value = 0.10 }
+		command     = { type = unit which = infantry when = time value = -0.05 }
+		command     = { type = unit which = infantry when = cost value = -0.05 }
+		command     = { type = unit which = militia when = time value = 0.10 }
+		command     = { type = unit which = militia when = cost value = 0.10 }
+		command     = { type = research which = land_doctrines when = time value = -0.05 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 5 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = all when = all value = -0.1 }
+	    command 	= { type = leader_skill value = -0.0500 }
+	}
+
+	minister =  {
+		trait		= "Jiang_Jieshi_3" #Jiang Jieshi Taiwan
+		id			= 179
+		name		= NPERSONALITY_JIANG_JIESHI_3
+		desc		= DPERSONALITY_JIANG_JIESHI_3
+		position	= HeadOfGovernment
+		value		= 0
+		command     = { type = production which = production when = national value = 0.07 }
+		command     = { type = resource which = money value = 0.25 }
+		command     = { type = dissent value = 0.05 }
+		command     = { type = unit which = all when = morale value = -0.10 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 5 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = all when = all value = -0.1 }
+		command 	= { type = leader_skill value = -0.0500 }
+	}
+	
+	minister = {
+		trait       = "Dai_Li_1" # Dai Li Pre-Unification
+		id          = 180
+		name        = NPERSONALITY_DAI_LI_1
+		desc        = DPERSONALITY_DAI_LI_1
+		position    = MinisterOfSecurity
+		value       = 0
+		command     = { type = dissent value = -0.15 }
+		command     = { type = production which = production when = national value = -0.01 }
+		command     = { type = intelligence_chances which = sabotage_industry when = national value = -5 }
+		command     = { type = intelligence_chances which = steal_blueprint when = national value = -15 }
+		command     = { type = intelligence_chances which = coup when = national value = -25 }
+	}
+
+	minister = {
+		trait       = "Dai_Li_2" # Dai Li Post-Unification
+		id          = 181
+		name        = NPERSONALITY_DAI_LI_2
+		desc        = DPERSONALITY_DAI_LI_2
+		position    = MinisterOfIntelligence
+		value       = 0
+		command     = { type = intelligence_report which = land value = 3 }
+		command     = { type = intelligence_network when = non_national value = 1 }
+		command     = { type = intelligence_network which = all value = -0.5 }
+		command     = { type = intelligence_chances which = minister_assassination when = national value = -30 }
+		command     = { type = intelligence_chances which = steal_blueprint when = non_national value = 5 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+	}
+
+	minister = {
+		trait       = "Mao_Zedong_1" # Mao HoS
+		id          = 182
+		name        = NPERSONALITY_MAO_ZEDONG_1
+		desc        = DPERSONALITY_MAO_ZEDONG_1
+		position    = HeadOfState
+		value       = 0
+		command     = { type = dissent value = -0.1 }
+		command     = { type = production which = production when = national value = -0.15 }
+		command     = { type = production which = supplies value = 0.1 }
+		command     = { type = resource which = all value = -0.1 }
+		command		= { type = province which = ic when = time value = -0.05 }
+		command		= { type = province which = ic when = cost value = 0.10 }
+		command		= { type = production which = consumer value = -0.1500 }
+		command     = { type = intelligence_chances which = smear_campaign when = national value = -20 }
+		command     = { type = intelligence_chances which = found_partisans when = national value = -20 }
+		command     = { type = intelligence_chances which = sabotage_industry when = national value = -20 }
+		command     = { type = intelligence_chances which = steal_blueprint when = national value = -20 }
+		command     = { type = intelligence_chances which = disrupt_techteam when = national value = -20 }
+		command     = { type = intelligence_chances which = coup when = national value = -50 }
+		command     = { type = intelligence_chances which = nuclear_sabotage when = national value = -50 }
+		command     = { type = intelligence_chances which = massmedia when = national value = 10 }
+		command     = { type = research which = all when = time value = 0.05 }
+		command     = { type = unit which = infantry when = morale value = 0.05 }
+		command     = { type = unit which = militia when = morale value = 0.05 }
+		command     = { type = unit which = cavalry when = morale value = 0.05 }
+		command     = { type = unit which = bergsjaeger when = morale value = 0.05 }
+		command 	= { type = leader_skill value = -0.0500 }
+		command     = { type = resource which = money value = -0.20 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = -5 }
+		command     = { type = diplomacy_chances which = alliance when = all value = -5 }
+		command     = { type = diplomacy_chances which = trade when = all value = 5 }
+		command     = { type = diplomacy_cost which = all when = all value = 0.1 }
+	}
+
+	minister = {
+		trait       = "Mao_Zedong_2" # Mao CoA
+		id          = 183
+		name        = NPERSONALITY_MAO_ZEDONG_2
+		desc        = DPERSONALITY_MAO_ZEDONG_2
+		position    = ChiefofArmy
+		value       = 0
+		command     = { type = supply_consumption value = -0.3 }
+		command     = { type = production which = production when = national value = 0.15 }
+		command     = { type = research which = infantry when = time value = -0.05 }
+		command     = { type = research which = industry when = time value = -0.05 }
+		command     = { type = research which = armor when = time value = 0.10 }
+		command     = { type = research which = aircraft when = time value = 0.20 }
+		command     = { type = research which = air_doctrines when = time value = 0.20 }
+		command     = { type = research which = naval when = time value = 0.30 }
+		command     = { type = research which = naval_doctrines when = time value = 0.30 }
+		command     = { type = unit when = speed value = 0.05 }
+		command     = { type = unit which = infantry when = morale value = 0.10 }
+		command     = { type = unit which = bergsjaeger when = morale value = 0.10 }
+		command     = { type = unit which = cavalry when = morale value = 0.10 }
+		command     = { type = unit which = militia when = morale value = 0.20 }
+		command     = { type = unit which = infantry when = defence value = 0.05 }
+		command     = { type = unit which = militia when = defence value = 0.05 }
+		command     = { type = unit which = cavalry when = defence value = 0.05 }
+		command     = { type = unit which = bergsjaeger when = defence value = 0.05 }
+		command     = { type = unit which = militia when = cost value = -0.35 }
+		command     = { type = unit which = infantry when = cost value = 0.05 }
+		command     = { type = unit which = cavalry when = cost value = 0.05 }
+		command     = { type = unit which = motorized when = cost value = 0.15 }
+		command     = { type = unit which = mechanized when = cost value = 0.15 }
+		command     = { type = unit which = armor when = cost value = 0.30 }
+		command     = { type = unit which = light_armor when = cost value = 0.30 }
+		command     = { type = extra which = light_armor_brigade when = cost value = 0.30 }
+		command     = { type = extra which = heavy_armor when = cost value = 0.30 }
+		command     = { type = extra which = medium_armor when = cost value = 0.30 }
+		command     = { type = extra which = super_heavy_armor when = cost value = 0.30 }
+		command     = { type = extra which = amph_armor when = cost value = 0.30 }
+		command     = { type = extra which = glider_armor when = cost value = 0.30 }
+		command     = { type = unit which = motorized when = organisation value = -0.05 }
+		command     = { type = unit which = mechanized when = organisation value = -0.05 }
+		command     = { type = unit which = armor when = organisation value = -0.05 }
+		command     = { type = unit which = light_armor when = organisation value = -0.05 }
+		command     = { type = intelligence_report which = land value = 2 }
+	}
+
+	minister = {
+		trait       = "Zhou_Enlai" # Zhou HoG
+		id          = 184
+		name        = NPERSONALITY_ZHOU_ENLAI
+		desc        = DPERSONALITY_ZHOU_ENLAI
+		position    = HeadOfGovernment
+		value       = 0
+		command     = { type = dissent value = -0.1 }
+		command     = { type = production which = production when = national value = 0.10 }
+		command		= { type = production which = consumer value = -0.0500 }
+		command     = { type = resource which = all value = 0.05 }
+		command     = { type = research which = all when = time value = -0.03 }
+		command 	= { type = leader_skill value = 0.025 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 10 }
+		command     = { type = diplomacy_chances which = alliance when = all value = 10 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+	}
+
+	minister = {
+		trait       = "Deng_Xiaoping" # Deng HoS (de facto)
+		id          = 185
+		name        = NPERSONALITY_DENG_XIAOPING
+		desc        = DPERSONALITY_DENG_XIAOPING
+		position    = HeadOfState
+		value       = 0
+		command     = { type = dissent value = 0.1 }
+		command     = { type = production which = production when = national value = 0.10 }
+		command     = { type = production which = supplies value = -0.1 }
+		command     = { type = resource which = all value = 0.15 }
+		command		= { type = province which = ic when = time value = -0.15 }
+		command		= { type = province which = ic when = cost value = -0.15 }
+		command		= { type = province which = infra when = cost value = -0.20 }
+		command		= { type = province which = infra when = time value = -0.20 }
+		command		= { type = production which = consumer value = 0.1500 }
+		command     = { type = intelligence_chances which = smear_campaign when = national value = -5 }
+		command     = { type = intelligence_chances which = found_partisans when = national value = 10 }
+		command     = { type = intelligence_chances which = coup when = national value = 10 }
+		command     = { type = intelligence_chances which = massmedia when = national value = -5 }
+		command     = { type = research which = all when = time value = -0.05 }
+		command     = { type = resource which = money value = 0.20 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 10 }
+		command     = { type = diplomacy_chances which = alliance when = all value = -20 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = trade when = all value = -0.05 }
+		command     = { type = diplomacy_cost which = influence_nation when = all value = -0.05 }
+		command     = { type = diplomacy_cost which = offer_alliance when = all value = 0.2 }
+		command     = { type = diplomacy_cost which = bring_to_alliance when = all value = 0.2 }
+		command     = { type = diplomacy_cost which = join_alliance when = all value = 0.2 }
+		command		= { type = production which = upgrading value = -0.0500 }
+	}
+
+		minister = {
+		trait       = "Yan_Xishan" # Yan HoS
+		id          = 186
+		name        = NPERSONALITY_YAN_XISHAN
+		desc        = DPERSONALITY_YAN_XISHAN
+		position    = HeadOfState
+		value       = 0
+		command     = { type = dissent value = -0.05 }
+		command     = { type = production which = production when = national value = 0.05 }
+		command     = { type = production which = supplies value = -0.05 }
+		command     = { type = resource which = all value = 0.15 }
+		command		= { type = province which = ic when = time value = -0.50 }
+		command		= { type = province which = ic when = cost value = 0.05 }
+		command		= { type = province which = infra when = cost value = 0.10 }
+		command		= { type = province which = infra when = time value = -0.30 }
+		command		= { type = production which = consumer value = -0.0500 }
+		command     = { type = resource which = money value = -0.10 }
+		command     = { type = diplomacy_chances which = influence_nation when = all value = 10 }
+		command     = { type = diplomacy_chances which = alliance when = all value = 10 }
+		command     = { type = diplomacy_chances which = trade when = all value = 10 }
+		command     = { type = diplomacy_cost which = trade when = all value = -0.05 }
+		command     = { type = diplomacy_cost which = influence_nation when = all value = -0.05 }
+		command     = { type = diplomacy_cost which = offer_alliance when = all value = -0.2 }
+		command     = { type = diplomacy_cost which = bring_to_alliance when = all value = -0.2 }
+		command     = { type = diplomacy_cost which = join_alliance when = all value = -0.2 }
+		command     = { type = unit which = all when = morale value = 0.05 }
+	}
+	
+####### Generic #######
+
+    minister =  {
+		trait		= "double agent" 
+		id			= 187
+		name		= NPERSONALITY_DOUBLE_AGENT
+		desc		= DPERSONALITY_DOUBLE_AGENT
+		position	= MinisterOfIntelligence
+		value		= 0
+	    command		= { type = intelligence_chances which = minister_assassination when = national value = 2 }
+		command		= { type = intelligence_chances which = smear_campaign when = national value = 2 }
+		command		= { type = intelligence_network when = all value = -5 }
+		command		= { type = intelligence_report which = production value = -1 }
+    }

@@ -1,0 +1,45 @@
+U13;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+880001;Head of State;Károly Peyer;1933;1964;1999;LWR;Insignificant Layman;High;M21045;X
+880002;Head of State;Zoltán Tildy;1933;1964;1999;ST;Autocratic Charmer;High;M21011;X
+880003;Head of State;Béla Zsedényi;1933;1964;1999;ST;Stern Imperialist;High;M21031;X
+880004;Head of State;Lászó Rajk;1933;1964;1999;ST;Autocratic Charmer;High;M21035;X
+880005;Head of State;Mátyás Rákosi;1933;1964;1999;ST;Powerhungry Demagogue;High;M21032;X
+880006;Head of Government;Arpád Szakasits;1933;1964;1999;LWR;Happy Amateur;High;M21061;X
+880007;Head of Government;László Rajk;1933;1964;1999;ST;Flamboyant Tough Guy;High;M21035;X
+880008;Head of Government;Mátyas Rákosi;1933;1964;1999;ST;Backroom Backstabber;High;M21032;X
+880009;Foreign Minister;Arpád Szakasits;1933;1964;1999;LWR;Biased Intellectual;High;M21061;X
+880010;Foreign Minister;Erik Molnár;1933;1964;1999;ST;Ideological Crusader;Medium;M21079;X
+880011;Foreign Minister;Matta Zalka;1933;1964;1999;ST;General Staffer;Medium;M21037;X
+880012;Foreign Minister;László Rajk;1933;1964;1999;ST;Iron Fisted Brute;Medium;M21035;X
+880013;Minister of Armament;Reszö Kastner;1933;1964;1999;LWR;Administrative Genius;Medium;M21089;X
+880014;Minister of Armament;Béla Zsedényi;1933;1964;1999;ST;Infantry Proponent;High;M21031;X
+880015;Minister of Armament;Ernö Gerö;1933;1964;1999;ST;Resource Industrialist;Medium;M21093;X
+880016;Minister of Armament;Zoltán Vas;1933;1964;1999;ST;Military Entrepreneur;Medium;M21034;X
+880017;Minister of Security;Jozsef Revay;1933;1964;1999;LWR;Crime Fighter;Medium;M21107;X
+880018;Minister of Security;Mihaly Farkas;1933;1964;1999;ST;Prince of Terror;Medium;M21110;X
+880019;Minister of Security;László Rajk;1933;1964;1999;ST;Crime Fighter;Medium;M21035;X
+880020;Minister of Security;Mátyás Rákosi;1933;1964;1999;ST;Crooked Kleptocrat;Very High;M21032;X
+880021;Minister of Security;Imre Nagy;1933;1964;1999;ST;Back Stabber;Medium;M21113;X
+880022;Minister of Security;Ferenc Erdei;1933;1964;1999;ST;Compassionate Gentleman;Medium;M21114;X
+880023;Head of Military Intelligence;Károly Peyer;1933;1964;1999;LWR;Industrial Specialist;Low;M21045;X
+880024;Head of Military Intelligence;Ernö Gerö;1933;1964;1999;ST;Logistics Specialist;Medium;M21093;X
+880025;Head of Military Intelligence;László Rajk;1933;1964;1999;ST;Political Specialist;Medium;M21035;X
+880026;Chief of Staff;Matta Zalka;1933;1964;1999;ST;School of Psychology;Medium;M21037;X
+880027;Chief of Army;Gabor Sziszkalatay;1933;1964;1999;LWR;commando doctrine army;Medium;M21136;X
+880028;Chief of Army;Nikolaj Berzin;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M21038;X
+880029;Chief of Navy;Reszö Kastner;1933;1964;1999;LWR;Base Control Doctrine;High;M21089;X
+880030;Chief of Navy;Kálmán Hardy;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Medium;M21039;X
+880031;Chief of Air Force;Edgar Keksz;1933;1964;1999;LWR;Air Superiority Doctrine;Medium;M21073;X
+880032;Chief of Air Force;Györghyi De Brody;1933;1964;1999;ST;Air Superiority Doctrine;Medium;M21040;X
+880033;Chief of Staff;Gabor Sziszkalatay;1933;1964;1999;ST;commando doctrine staff;Medium;M21136;X
+880034;Head of State;Arpád Szakasits;1933;1964;1999;ST;Insignificant Layman;High;M21061;X
+880035;Head of State;Sandor Ronai;1933;1964;1999;ST;Popular Figurehead;High;M21181;X
+880036;Head of State;Istvan Dobi;1933;1964;1999;ST;Autocratic Charmer;High;M21182;X
+880037;Head of Government;Lajos Dinnyes;1933;1964;1999;ST;Happy Amateur;High;M21183;X
+880038;Head of Government;Istvan Dobi;1933;1964;1999;ST;Ambitious Union Boss;High;M21182;X
+880039;Head of Government;Imre Nagy;1933;1964;1999;ST;Naive Optimist;High;M21113;X
+880040;Foreign Minister;Gyula Kallai;1933;1964;1999;ST;The Cloak N Dagger Schemer;Medium;M21186;X
+880041;Foreign Minister;Karoly Kiss;1933;1964;1999;ST;Apologetic Clerk;Medium;M21187;X
+880042;Minister of Armament;Imre Horvath;1933;1964;1999;ST;Theoretical Scientist;Medium;M21188;X
+880043;Minister of Security;Janos Kadar;1933;1964;1999;ST;Back Stabber;Very High;M21189;X

@@ -1,0 +1,14 @@
+NOR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+65001;Horten Naval Yard;100247;3;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65002;Kjeller Flyfabrikk;T2501;4;1912;2000;aeronautics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65003;Kongsberg;100248;4;1900;2000;general_equipment;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65004;Kvaerner;T2503;6;1853;2000;naval_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65005;Raufoss Ammunisjonsfabrikk;T2504;5;1896;2000;general_equipment;artillery;mechanics;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65006;Carl Gustav Fleischer;T2505;4;1930;1942;small_unit_tactics;decentralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65007;Royal Norwegian Airforce;T2506;3;1930;2000;bomber_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65008;Royal Norwegian Navy;T2507;3;1900;2000;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65009;Odd Hassel;T2508;5;1930;2000;management;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65010;Haerens Flyvemaskinfabrik;100249;4;1915;2000;aeronautics;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65011;Norsk Hydro;100250;6;1905;2000;industrial_engineering;mechanics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+65012;Kongsberg Vaabenfabrik;100251;4;1814;2000;general_equipment;artillery;training;chemistry;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+650120;Etterretningstjenesten;T650120;6;1942;2000;rt_user_2;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

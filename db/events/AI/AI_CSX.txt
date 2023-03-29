@@ -1,0 +1,31 @@
+
+#############################################
+# Regular AI Events
+#############################################
+
+################
+# Shanxi changes to defensive AI vs Japan
+#############################################
+event = {
+	id = 3122004
+	random = no 
+	country = CSX
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CSX_EXP_Change.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = free_ic value = 6 }
+	}
+}

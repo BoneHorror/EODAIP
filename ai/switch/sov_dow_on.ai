@@ -1,0 +1,12 @@
+# Soviet can DOW again (disabled in WIF to prevent early DOW against Germany)
+
+war = 15
+combat = {
+	EST = 200
+	LAT = 200
+	LIT = 200
+	FIN = 100
+	TUR = 50
+	JAP = 30
+	GER = 100
+}

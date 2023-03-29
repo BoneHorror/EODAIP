@@ -1,0 +1,97 @@
+# Italy vs Greece AI File by Lothos
+
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+max_front_ratios = { 
+   GRE = 2.0 
+   YUG = 1.5
+   ENG = 1.5
+   USA = 1.4
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	province_priorities = {
+		434  = 10  #Sardinia
+		379  = 10  #Rhodes
+		
+		# North Africa
+		752  = 10
+		750  = 10
+		761  = 10
+		771  = 10
+		769  = 20
+		770  = 20
+		
+		# Albania prep for Greece invasion
+		360  = 10
+	}
+	area_multiplier = {
+		# French Border
+		398  = 1.0  #Turin
+		396  = 1.0  #Genoa
+
+		# Yugoslavia Border
+		400  = 0.3
+
+		434  = 1.0  #Sardinia
+		379  = 1.0  #Rhodes
+
+		# North Africa
+		769  = 1.5
+		770  = 1.5
+		752  = 1.5
+		765  = 1.7 #Tobruk
+
+		# Albania prep for Greece invasion
+		360  = 5.0
+		
+		#Low prio
+		921   = 0.1  #shit african desert
+		808   = 0.1
+	}
+   	country_priorities = {  
+		FRA = -1  
+		FIN = -1 
+		SCH = -1 
+		ENG = 75 
+		GRE = 100
+		AUS = -1 
+		CZE = 25 
+		YUG = 50 
+		SOV = 40 
+		USA = 50
+		U01 = 5
+		U02 = 10
+ 	} 
+}
+front = { 
+	province_priorities = {
+		425 = 1.50  #Reggio Calabra
+		431  = 1.30  #Messina
+		
+		# North Africa
+		752  = 1.10 #Az Zawiyah
+		750  = 1.20 #Tripoli
+		761  = 1.30 #Benghazi
+		771  = 1.10 #Bardia
+		769  = 1.10 #Bir Hakeim
+		765  = 1.20 #Tobruk
+		# Albania prep for Greece invasion
+		360  = 1.30
+	}
+   	enemy_handicap = { 
+	U01 = 50
+	ENG = 30
+	} 
+    passivity = {
+		SOV = 30
+		FRA = 50
+		AST = 50
+		ENG = 50
+		USA = 10
+		GRE = 10
+		U01 = 80
+	}  
+} 

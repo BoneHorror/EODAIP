@@ -1,0 +1,31 @@
+FIN;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+145001;Valtion Lentokonetehdas;100664;5;1928;1951;aeronautics;fighter_design;aircraft_testing;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145002;Crichton;100108;5;1900;2000;naval_engineering;technical_efficiency;industrial_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145003;Kymmene;T1302;5;1930;2000;chemistry;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145004;Tikkakoski;100109;5;1930;2000;general_equipment;training;artillery;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145005;Valmet;T1304;4;1946;2000;aeronautics;bomber_design;avionics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145006;Carl Mannerheim;T1305;7;1908;1946;infantry_focus;individual_courage;small_unit_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145007;Richard Lorentz;T1306;4;1930;1964;decentralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145008;Vilho Nenonen;100113;6;1918;1947;artillery;training;electronics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145009;K. Lennart Oesch;T1308;5;1930;1978;combined_arms_focus;centralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145010;Väinö Valve;T1309;4;1919;1950;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145011;Artturi Virtanen;T1310;6;1920;1965;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145012;Rolf Herman Nevanlinna;100665;4;1930;1970;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145013;Aarne Lakomaa;100116;5;1944;2002;aeronautics;rocketry;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145014;Jaeger Training School;100383;3;1900;2000;individual_courage;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145015;Ilmailuvoimien Lentokonetehdas;100107;5;1921;1927;aeronautics;artillery;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145016;Finnish Army;100663;1;1890;2000;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145017;Suomen Gummitehdas Oy;100110;4;1898;2000;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145018;Fiskars;100111;4;1649;2000;industrial_engineering;mechanics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145019;Åström;100112;6;1908;2000;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145020;Merivoimien Tutkimuslaitos;100114;4;1917;2000;centralized_execution;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145021;Arne Somersalo;100115;4;1919;1946;centralized_execution;fighter_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+145022;Karl Fredrik Wilkama;100754;3;1918;1928;small_unit_tactics;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450000;Valtiollinen poliisi;T1450000;5;1937;1949;rt_user_2;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450001;Etsivä keskuspoliisi;T1450000;4;1919;1937;rt_user_2;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450002;Suojelupoliisi;T1450002;7;1949;2013;rt_user_2;individual_courage;training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450003;Erkki Laurila;T1450003;4;1955;1983;mathematics;nuclear_engineering;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450004;Lauri Pekuri;T1450004;5;1950;1968;centralized_execution;fighter_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450005;Mårten Brenner;T1450005;3;1966;1990;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450006;Lauri Sutela;T1450006;5;1974;1984;combined_arms_focus;decentralized_execution;small_unit_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1450007;Nokia;T1450007;7;1980;2013;chemistry;industrial_engineering;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

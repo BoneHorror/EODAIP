@@ -1,0 +1,35 @@
+HOL;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+15001;Artillerie Inrichtingen Hembrug;T2300;4;1890;2000;artillery;munitions;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15002;DAF;T2301;5;1900;2000;mechanics;munitions;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15003;Fokker;T2302;6;1919;2000;bomber_design;aeronautics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15004;HIH Siderius;T2303;5;1920;2000;mechanics;artillery;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15005;Koninklijke Maatschappij;T2304;4;1888;2000;naval_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15006;Koolhoven;T2305;5;1926;1956;aeronautics;fighter_design;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15007;NSM Amsterdam;T2306;6;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15008;Shell;T2307;7;1890;2000;industrial_engineering;chemistry;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15009;Wilton-Fijenoord;T2308;6;1929;2000;naval_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15010;Royal Netherland Army;T2309;4;1900;1940;infantry_focus;centralized_execution;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15011;Johannes Furstner;T2310;4;1930;1962;large_taskforce_tactics;naval_training;seamanship;small_taskforce_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15012;Royal Netherlands Air Force;T2311;4;1930;1940;fighter_tactics;centralized_execution;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15013;Petrus Best;T2312;3;1937;1951;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15014;Henri Winkelman;T2313;4;1931;1946;decentralized_execution;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15015;Philips;100157;7;1936;2000;electronics;mathematics;technical_efficiency;nuclear_physics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15016;Philips;100158;6;1891;1935;electronics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15017;Frits Zernike;T2316;6;1915;1966;electronics;chemistry;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15018;Spyker-Trompenburg;100395;4;1880;1929;aeronautics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15019;DSM;100159;5;1902;2000;mechanics;general_equipment;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15020;Rijkswerf Amsterdam;100160;6;1890;2000;naval_engineering;naval_artillery;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15021;Koninklijke Militaire Academie;100396;4;1890;2000;centralized_execution;small_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15022;Koninklijk Instituut voor de Marine;100397;4;1890;2000;small_taskforce_tactics;submarine_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15100;Korps Mariniers;T15100;5;1945;2000;marine_training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15101;Koninklijke Landmacht;T15101;6;1945;2000;training;combined_arms_focus;infantry_focus;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15102;Reactorcentrum Nederland;T15102;4;1945;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15103;National Air & Space Laboratory;T15103;5;1937;2000;rocketry;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15104;TU Delft;T15104;8;1890;2000;management;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15105;Akzo Nobel;T15105;6;1890;2000;chemistry;medicine;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+15106;Rotterdams Droogdok Maatschappij;T15106;6;1890;2000;naval_artillery;submarine_design;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+150220;Generale Staf sectie III;T150220;4;1913;1919;rt_user_2;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+150221;Centrale Inlichtingendienst;T150220;5;1919;1945;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+150222;Bureau Nationale Veiligheid;T150220;5;1945;1946;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+150223;Centrale Veiligheidsdienst;T150220;5;1946;1949;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+150224;Binnenlandse Veiligheidsdienst;T150220;7;1949;2002;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

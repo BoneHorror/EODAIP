@@ -1,0 +1,155 @@
+SOV;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+30001;Head of State;Mikhail I. Kalinin;1922;1964;1999;ST;Weary Stiffneck;High;3176;X
+30002;Head of State;Iosif V. Stalin;1930;1964;1999;ST;Paranoid megalomaniac2;High;3177;X
+30003;Foreign Minister;Maksim M. Litvinov;1930;1964;1999;ST;Persuader of Democracies;Medium;3178;X
+30004;Minister of Armament;Lazar M. Kaganovich;1930;1962;1999;ST;Iron Lazar;High;3179;X
+30005;Minister of Security;Genrikh G. Yagoda;1933;1939;1999;ST;Purged Purger;Low;3180;X
+30006;Head of Military Intelligence;Yan K. Berzin;1930;1964;1999;ST;Technical Specialist;Medium;3181;X
+30007;Chief of Staff;Mikhail N. Tukhatchevskiy;1933;1964;1999;LE;Deep Battle Proponent;Low;3182;X
+30008;Chief of Army;Kliment Y. Voroshilov;1933;1970;1999;ST;Guns and Butter Doctrine;Very High;3183;X
+30009;Chief of Navy;Vladimir M. Orlov;1930;1964;1999;LE;Indirect Approach Doctrine;Very Low;M4009;X
+30010;Chief of Air Force;Yakov I. Alksnis;1922;1939;1999;LE;Air Superiority Doctrine;High;3184;X
+30011;Head of State;Iosif V. Stalin;1933;1964;1999;ST;Ruthless Powermonger;Very High;3177;X
+30012;Head of State;Vyacheslav M. Molotov;1933;1964;1999;ST;Autocratic Charmer;High;3185;X
+30013;Head of State;Nikolay M. Shvernik;1946;1964;1999;ST;Insignificant Layman;High;3186;X
+30014;Head of State;Alexander F. Kerensky;1933;1964;1999;SL;Die-hard Reformer;High;3187;X
+30015;Head of State;Nikolai I. Yezhov;1933;1940;1999;PA;Barking Buffoon;High;3188;X
+30016;Head of Government;Vyacheslav M. Molotov;1930;1964;1999;ST;collectivizer;High;3185;X
+30017;Head of Government;Lavrentiy P. Beria;1938;1964;1999;ST;Guardian of Socialist justice;High;3189;X
+30018;Head of Government;Alexander F. Kerensky;1933;1964;1999;SL;Happy Amateur;High;3187;X
+30019;Head of Government;Nikolai I. Yezhov;1933;1940;1999;PA;Corporate Suit;High;3188;X
+30020;Foreign Minister;Andrey J. Vyshinsky;1933;1964;1999;ST;The Cloak N Dagger Schemer;Very High;3190;X
+30021;Foreign Minister;Vyacheslav M. Molotov;1938;1964;1999;ST;Iron Fisted Brute;High;3185;X
+30022;Foreign Minister;Ivan M. Maisky;1943;1964;1999;ST;Apologetic Clerk;High;3191;X
+30023;Minister of Armament;Georgiy D. Bazilevich;1938;1964;1999;ST;Infantry Proponent;High;M4036;X
+30024;Minister of Armament;Dimitry F. Ustinov;1941;1964;1999;ST;Theoretical Scientist;High;3192;X
+30025;Minister of Armament;Boris L. Vannikov;1942;1964;1999;ST;Military Entrepreneur;Very High;M4038;X
+30026;Minister of Security;Nikolai I. Yezhov;1933;1940;1999;ST;Secret police chief;Medium;3188;X
+30027;Minister of Security;Sergej Uritskiy;1937;1964;1999;ST;Crime Fighter;Medium;M4040;X
+30028;Minister of Security;Lavrentiy P. Beria;1938;1964;1999;ST;Secret police chief;Very High;3189;X
+30029;Minister of Security;Alexander G. Orlov;1938;1964;1999;ST;Silent Lawyer;Medium;M4042;X
+30030;Minister of Security;Sergiy G. Gendin;1938;1964;1999;ST;Efficient Sociopath;Medium;M4043;X
+30031;Minister of Security;Alexey P. Panfilov;1941;1964;1999;ST;Man of the People;Medium;M4044;X
+30032;Head of Military Intelligence;Nikolai I. Yezhov;1933;1940;1999;PA;Technical Specialist;Undying;3188;X
+30033;Head of Military Intelligence;Ivan I.Proskurov;1937;1964;1999;ST;Dismal Enigma;High;3193;X
+30034;Head of Military Intelligence;Filip I. Golikov;1940;1964;1999;ST;Political Specialist;Very High;3194;X
+30035;Head of Military Intelligence;Alexey P. Panfilov;1941;1964;1999;ST;Logistics Specialist;High;M4044;X
+30036;Head of Military Intelligence;Igor I. Ilichev;1942;1964;1999;ST;Industrial Specialist;Very High;M4049;X
+30037;Head of Military Intelligence;Fedor F. Kuznetsov;1945;1964;1999;ST;Technical Specialist;Very High;M4050;X
+30038;Chief of Staff;Boris M. Shaposhnikov;1937;1964;1999;ST;School of Mass Combat;Very High;3195;X
+30039;Chief of Staff;Kirill A. Meretskov;1940;1964;1999;ST;School of Psychology;High;3196;X
+30040;Chief of Staff;Georgiy K. Zhukov;1941;1964;1999;ST;Logistics wizard;Medium;3197;X
+30041;Chief of Staff;Alesandr M. Vasilevskiy;1942;1964;1999;ST;School of Defence;High;3198;X
+30042;Chief of Staff;Nikolay A. Bulganin;1944;1964;1999;ST;School of Mass Combat;Low;3199;X
+30043;Chief of Staff;Aleksei I. Antonov;1945;1964;1999;ST;School of Psychology;Very High;3200;X
+30044;Chief of Staff;Sergei M. Shtemenko;1946;1964;1999;ST;School of Manoeuvre;High;M4057;X
+30045;Chief of Army;Semen K. Timoshenko;1941;1964;1999;ST;Elastic Defence Doctrine;High;3201;X
+30046;Chief of Army;Iosif V. Stalin;1941;1964;1999;ST;Guns and Butter Doctrine;Undying;3177;X
+30047;Chief of Army;Rodion Y. Malinovsky;1943;1964;1999;ST;Armoured Spearhead Doctrine;High;1171;X
+30048;Chief of Navy;Mikhail V. Viktorov;1938;1964;1999;ST;Power Projection Doctrine;Very Low;M4061;X
+30049;Chief of Navy;Nikolai G. Kuznetsov;1939;1964;1999;ST;Carrier enthusiast;High;3202;X
+30050;Chief of Navy;Ivan. S. Isakov;1940;1964;1999;LE;Base Control Doctrine;Low;3203;X
+30051;Chief of Air Force;Aleksandr D. Loktionov;1937;1941;1999;ST;Army Aviation Doctrine;Low;3204;X
+30052;Chief of Air Force;Pavel V. Rychagov;1938;1964;1999;ST;Naval Aviation Doctrine;Medium;3205;X
+30053;Chief of Air Force;Yakov V. Smushkevich;1933;1942;1999;LE;Army Aviation Doctrine;Medium;3206;X
+30054;Chief of Air Force;Aleksandr E. Golovanov;1940;1964;1999;LE;Army Aviation Doctrine;High;3207;X
+30055;Chief of Air Force;Alexander A. Novikov;1942;1964;1999;ST;Air Superiority Doctrine;Very High;3208;X
+30056;Chief of Air Force;Y.V. Vladimiroch;1943;1964;1999;ST;Carpet Bombing Doctrine;Medium;M4069;X
+30058;Head of Government;Gregori N. Zhilenkov;1933;1964;1999;PA;Political Protege;High;3209;X
+30059;Foreign Minister;Fedor P. Bogatyrchuk;1933;1964;1999;PA;Great Compromiser;Low;3210;X
+30060;Minister of Armament;Anton Scheglov;1933;1964;1999;PA;Military Entrepreneur;Medium;M4014;X
+30061;Minister of Security;Vladimir Malyshkin;1933;1964;1999;PA;Back Stabber;Very High;M4015;X
+30062;Head of Military Intelligence;Mikhail A. Meandrov;1933;1964;1999;PA;Dismal Enigma;Very High;M4016;X
+30063;Chief of Staff;Fyodor Trikhin;1933;1964;1999;PA;School of Mass Combat;High;M4017;X
+30064;Chief of Army;Vitaly Maltsev;1933;1964;1999;PA;Decisive Battle Doctrine;Very High;M4018;X
+30065;Chief of Navy;P. Drozd;1933;1964;1999;PA;Power Projection Doctrine;High;M4019;X
+30066;Chief of Air Force;S.A. Chernykh;1933;1964;1999;PA;Army Aviation Doctrine;High;M4020;X
+30067;Foreign Minister;Dmitri P. Romanov;1933;1964;1999;SC;Biased Intellectual;Medium;3211;X
+30068;Minister of Armament;Vladimir M. Smirnov;1933;1964;1999;SL;laissez-faire capitalist;High;M4024;X
+30069;Minister of Security;Igor N. Troubetzkoy;1933;1964;1999;SC;Man of the People;Medium;M4025;X
+30070;Head of Military Intelligence;Igor N. Troubetzkoy;1933;1964;1999;SC;Technical Specialist;Medium;M4025;X
+30071;Chief of Staff;Konstantin K. Rokossovsky;1940;1964;1999;LWR;School of Manoeuvre;High;M4027;X
+30072;Chief of Army;Georgiy K. Zhukov;1933;1964;1999;PA;Decisive Battle Doctrine;Medium;3197;X
+30073;Chief of Navy;Nikolay G. Kuznetsov;1933;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;3202;X
+30074;Chief of Air Force;Pavel V. Rychagov;1933;1964;1999;PA;Army Aviation Doctrine;Medium;3205;X
+30075;Minister of Armament;Nikolay A. Bulganin;1953;1964;1999;ST;Planned economy proponent;High;3212;X
+30076;Minister of Armament;Iosif V. Stalin;1933;1964;1999;ST;Planned economy proponent;Very High;3177;X
+30077;Head of State;Kliment Y. Voroshilov;1953;1970;1999;ST;Resigned Generalissimo;High;3183;X
+30078;Head of Government;Nikita S. Khrushchev;1958;1964;1999;ST;Flamboyant Tough Guy;High;3213;X
+30079;Minister of Armament;Aleksandr Vasilevsky;1949;1964;1999;ST;Infantry Proponent;High;3214;X
+30080;Minister of Security;Sergey N. Kruglov;1953;1964;1999;ST;Secret police chief;Very High;3215;X
+30081;Head of Military Intelligence;Viktor S. Abakumov;1946;1964;1999;ST;Logistics Specialist;Very High;3216;X
+30082;Head of Military Intelligence;Semyon D. Ignatyev;1951;1964;1999;ST;Political Specialist;Very High;M4079;X
+30083;Head of Military Intelligence;Ivan A. Serov;1953;1964;1999;ST;Technical Specialist;Very High;3025;X
+30084;Head of State;Leonid I. Brezhnev;1960;1964;1999;ST;Stern Imperialist;High;3026;X
+30085;Head of Government;Georgy M. Malenkov;1953;1964;1999;ST;Political Protege;High;3027;X
+30086;Head of Government;Nikolay A. Bulganin;1955;1964;1999;ST;Old General;High;3212;X
+30087;Foreign Minister;Dmitriy T. Shepilov;1956;1964;1999;ST;Apologetic Clerk;Medium;3028;X
+30088;Foreign Minister;Andrey A. Gromyko;1957;1964;1999;ST;The Cloak N Dagger Schemer;Medium;3029;X
+30089;Minister of Armament;Georgiy K. Zhukov;1955;1964;1999;ST;Military Entrepreneur;High;3197;X
+30090;Minister of Armament;Rodion Y. Malinovsky;1959;1964;1999;ST;Tank Proponent;High;1171;X
+30091;Minister of Security;Nikolay Dudorov;1956;1964;1999;ST;Back Stabber;Very High;M4091;X
+30092;Head of Military Intelligence;Aleksandr N. Shelepin;1958;1964;1999;ST;Political Specialist;Very High;3030;X
+30093;Head of Military Intelligence;Vladimir Y. Semichastny;1961;1964;1999;ST;Dismal Enigma;Very High;M4093;X
+30094;Head of Government;Georgy M. Malenkov;1941;1964;1999;ST;Political Protege;High;3027;X
+30095;Head of State;Yakov Sverdlov;1914;1919;1999;LE;die-hard reformer;Medium;3219;X
+30096;Head of State;Mikhail Kalinin;1914;1932;1999;LE;weary stiffneck;Medium;5804;X
+30097;Head of Government;Vladimir Lenin;1914;1924;1999;LE;flamboyant tough guy;Medium;5801;X
+30098;Head of Government;Aleksey Rykov;1914;1932;1999;LE;corporate suit;Medium;5788;X
+30099;Foreign Minister;Leon Trotsky;1914;1932;1999;LE;ideological crusader;Medium;3036;X
+30100;Foreign Minister;Georgiy Chicherin;1914;1932;1999;LE;great compromiser;Medium;5791;X
+30101;Minister of Armament;Ivan Skvortsov-Stepanov;1914;1932;1999;ST;corrupt kleptocrat;Medium;5797;X
+30102;Minister of Armament;Feliks Dzerzhinsky;1914;1932;1999;LE;resource industrialist;Medium;5790;X
+30103;Minister of Armament;Isidore Gukovsky;1914;1921;1999;LE;theoretical scientist;Medium;5795;X
+30104;Minister of Armament;Nikolay Krestinsky;1914;1932;1999;LE;Planned economy proponent;Medium;3032;X
+30105;Minister of Armament;Grigory Sokolnikov;1920;1932;1999;LE;Reformer;Medium;5794;X
+30106;Minister of Armament;Pavel Dybenko;1914;1932;1999;LWR;battle fleet proponent;Medium;3033;X
+30107;Minister of Armament;Vladimir Antonov-Ovseyenko;1914;1932;1999;LE;infantry proponent;Medium;3038;X
+30108;Minister of Armament;Leon Trotsky;1914;1932;1999;LE;administrative genius;Medium;3036;X
+30109;Minister of Security;Aleksey Rykov;1914;1932;1999;LE;silent lawyer;Medium;5788;X
+30110;Minister of Security;Grigoriy Petrovsky;1914;1932;1999;LE;back stabber;Medium;5793;X
+30111;Minister of Security;Feliks Dzerzhinsky;1914;1932;1999;LE;prince of terror;Medium;5790;X
+30112;Minister of Security;Aleksandr Beloborodov;1914;1932;1999;LE;efficient sociopath;Medium;5772;X
+30113;Head of Military Intelligence;Feliks Dzerzhinsky;1914;1932;1999;LE;industrial specialist;Medium;5790;X
+30114;Minister of Armament;Grigory Ordzhonikidze;1914;1938;1999;ST;infantry proponent;Medium;5792;X
+30115;Head of Military Intelligence;Yakov Peters;1914;1932;1999;LE;dismal enigma;Medium;5919;X
+30116;Minister of Security;Vyacheslav Menzhinsky;1914;1934;1999;LE;efficient sociopath;Medium;3966;X
+30117;Head of Military Intelligence;Martin Latsis;1914;1932;1999;LE;technical specialist;Medium;5802;X
+30118;Head of Military Intelligence;Józef Unszlicht;1914;1932;1999;LE;logistics specialist;Medium;5798;X
+30119;Head of Military Intelligence;Moisey Uritsky;1914;1918;1999;LWR;political specialist;Medium;7932;X
+30120;Chief of Staff;Mikhail Bonch-Bruyevich;1914;1932;1999;LE;school of fire support;Medium;4168;X
+30121;Chief of Staff;Nikolay Rattel;1914;1932;1999;LE;school of manoeuvre;Medium;1189;X
+30122;Chief of Staff;Fedor Kostyaev;1914;1932;1999;LE;school of defence;Medium;4684;X
+30123;Chief of Staff;Pavel Lebedev;1914;1932;1999;LE;school of psychology;Medium;3034;X
+30124;Chief of Staff;Mikhail Frunze;1914;1932;1999;LE;school of mass combat;Medium;5803;X
+30125;Chief of Army;Nikolay Krylenko;1914;1932;1999;LE;elastic defence doctrine;Medium;3217;X
+30126;Chief of Army;Jukums Vacietis;1914;1932;1999;LE;commando doctrine army;Medium;5799;X
+30127;Chief of Army;Sergey Kamenev;1914;1932;1999;LE;guns and butter doctrine;Medium;3965;X
+30128;Chief of Navy;Pavel Dybenko;1914;1932;1999;LWR;base control doctrine;Medium;3033;X
+30129;Chief of Navy;Modest Ivanov;1914;1932;1999;LE;open seas doctrine;Medium;5805;X
+30130;Chief of Navy;Vasiliy Altfater;1914;1919;1999;LE;decisive naval battle doctrine;Medium;3037;X
+30131;Chief of Navy;Yevgeny Berens;1914;1932;1999;LE;power projection doctrine;Medium;8655;X
+30132;Chief of Navy;Aleksandr Nemits;1914;1932;1999;LE;indirect approach doctrine;Medium;5786;X
+30133;Chief of Navy;Eduard Pantserzhansky;1920;1932;1999;LE;base control doctrine;Medium;5789;X
+30134;Chief of Navy;Vyacheslav Zof;1920;1932;1999;LE;open seas doctrine;Medium;3218;X
+30135;Chief of Air Force;Konstantin Akashev;1914;1932;1999;LE;carpet bombing doctrine;Medium;8670;X
+30136;Chief of Air Force;Mikhail Solovov;1914;1932;1999;LE;naval aviation doctrine;Medium;8672;X
+30137;Chief of Air Force;Aleksandr Vorotnikov;1914;1932;1999;LE;air superiority doctrine;Medium;8673;X
+30138;Chief of Air Force;Andrey Sergeev;1914;1932;1999;LE;army aviation doctrine;Medium;8674;X
+30139;Chief of Air Force;Andrey Znamensky;1920;1932;1999;LE;vertical envelopment doctrine;Medium;8675;X
+30140;Chief of Air Force;Arkady Rosengolts;1920;1932;1999;LE;carpet bombing doctrine;Medium;8671;X
+30141;Chief of Air Force;Pyotr Baranov;1920;1932;1999;LE;naval aviation doctrine;Medium;3035;X
+30142;Head of Government;Nikolai Bukharin;1914;1932;1999;LWR;Political Protege;Medium;8656;X
+30143;Chief of Air Force;Pavel F. Zhigarev;1938;1959;1999;ST;Army Aviation Doctrine;Medium;L10512;X
+30144;Head of Government;Iosif V. Stalin;1933;1954;1999;ST;flamboyant tough guy;High;3177;X
+30145;Head of State;Leon Trotsky;1924;1932;1999;ST;Ruthless Powermonger;Very High;1189;X
+30146;Head of Government;Leon Trotsky;1924;1932;1999;ST;Backroom Backstabber;Very High;1189;X
+30147;Minister of Security;Maria Spiridonova;1916;1932;1970;LE;Health and safety;Medium;3543;X
+30148;Foreign Minister;Boris Kamkov;1916;1932;1971;LE;Ideological Crusader;Medium;3758;X
+30149;Minister of Armament;Boris Savinkov;1916;1932;1965;LE;Military Entrepreneur;Medium;4041;X
+30150;Chief of Army;Mikhail Artemyevich Muravyov;1916;1932;1956;LE;commando doctrine army;Medium;4324;X
+30151;Chief of Air Force;Konstantin Andreevich Vershinin;1946;1969;1975;LE;army aviation doctrine;High;L10503;X
+30152;Chief of Air Force;Pavel Stepanovich Kutakhov;1969;1984;1985;LE;Air Superiority Doctrine;High;L10478;X
+30153;Head of State;Lavrentiy P. Beria;1933;1964;1999;ST;die-hard reformer;High;3189;X
+30154;Chief of Staff;Kliment Y. Voroshilov;1933;1964;1999;LE;Deep Battle Proponent;Low;3183;X

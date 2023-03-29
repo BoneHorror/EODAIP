@@ -1,0 +1,177 @@
+
+################
+# Concetrate on upgrading while at peace
+#############################################
+event = {
+	id = 3123010
+	random = no
+	TAG = { CXB SIK CYN CSX }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = UPGPeace }
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_Peace.ai" }
+		command = { type = local_setflag which = UPGPeace }
+	}
+}
+event = {
+	id = 3123011
+	random = no
+	TAG = { CXB SIK CYN CSX }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = UPGPeace
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Upg_War.ai" }
+		command = { type = local_clrflag which = UPGPeace }
+	}
+}
+################
+# Xibei puts all his forces under Chinese control
+#############################################
+event = {
+	id = 3123012
+	random = no 
+	country = CXB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CXBAllEXPForces }
+		alliance = { country = CHI country = CXB }
+		OR = {
+			control = { province = 1260 data = JAP } # Yulin
+			lost_national = { country = CXB value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CXB_EXP_Change.ai" }
+		command = { type = local_setflag which = CXBAllEXPForces }
+		command = { type = local_clrflag which = CXBChinaFeeder1 }
+		command = { type = local_clrflag which = CXBChinaFeeder2 }
+		command = { type = local_clrflag which = CXBChinaFeeder3 }
+		command = { type = local_clrflag which = CXBChinaFeeder4 }
+		command = { type = local_clrflag which = CXBChinaFeeder5 }
+		command = { type = local_clrflag which = CXBChinaFeeder6 }
+		command = { type = local_clrflag which = CXBChinaFeeder7 }
+	}
+}
+event = {
+	id = 3123013
+	random = no 
+	country = CXB
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = CXBAllEXPForces
+		NOT = {
+			NOT = { alliance = { country = CHI } }
+			control = { province = 1260 data = JAP } # Yulin
+			lost_national = { country = CXB value = 1 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = CXBAllEXPForces }
+	}
+}
+################
+# Xibei garrisons against Japan invasion
+#############################################
+event = {
+	id = 3123014
+	random = no 
+	country = CXB
+	
+	trigger = {
+		ai = yes
+		war = { country = JAP }
+		alliance = { country = CHI }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CXB_Atwar_JAP.ai" }
+	}
+}
+################
+# Backs off from Japan AI
+#############################################
+event = {
+	id = 3123015
+	random = no 
+	TAG = { CXB CYN }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = CXBCYNWarBackoff }
+		war = { country = JAP }
+		OR = {
+			event = 3011002
+			event = 2011025
+			lost_national = { country = CHI value = 35 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/WAR_Backoff.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = local_setflag which = CXBCYNWarBackoff }
+	}
+}

@@ -1,0 +1,59 @@
+####################################
+# Majors
+####################################
+event = {
+	id = 3999001
+	random = no 
+	persistent = yes
+	TAG = { ENG FRA GER JAP USA ITA CHI SOV }
+	
+	trigger = {
+		ai = yes
+		year = 1944
+		month = 5
+		NOT = { local_flag = Major_NoIgnore }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1944 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		command = { type = ai which = "switch/Major_NoIgnore.ai" }
+		command = { type = local_setflag which = Major_NoIgnore }
+	}
+}
+
+
+
+####################################
+# Minors 
+####################################
+event = {
+	id = 3999002
+	random = no 
+	persistent = yes
+	TAG = { ARA ARG ARM AST AUS BEL BLR BOL BOS BRA BUL CAL CAN CGX CHL COL CRO CSA CSX CZE DDR DEN DFR EST ETH FIN FLA GEO GRE GUA HOL HON HUN IDC INO ISR KOR LAO LAT LIT MAN MEN MEX MON NIC NOR NZL OTT PAK PAR PER POL POR PRI PRK PRU QUE ROM RSI RUS SAR SCA SCO SER SIA SIB SIK SLO SLV SPA SPR SWE TEX TRA TUR UKR VEN VIC VIE WLL YUG U01 U02 U03 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U19 U20 U21 U22 U27 U28 U29 U30 U31 U32 U33 U34 U35 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U66 U67 U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		ai = yes
+		year = 1948
+		month = 5
+		NOT = { local_flag = Minor_NoIgnore }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1944 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_NoIgnore.ai" }
+		command = { type = local_setflag which = Minor_NoIgnore }
+	}
+}

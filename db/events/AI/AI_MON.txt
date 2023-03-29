@@ -1,0 +1,80 @@
+#############################################
+# Behavior Flags
+#	MONReleaseEXP		= Release EXP forces to the soviets
+################
+#  Release EXP forces to SOV for major conflict
+#############################################
+event = {
+	id = 3061001
+	random = no
+	country = MON
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		NOT = { local_flag = ReleaseEXP }
+		alliance = { country = SOV }
+		OR = {
+			AND = {
+				lost_national = { country = SOV value = 35 }
+				atwar = SOV
+			}
+			war = { country = SOV country = JAP }
+			war = { country = SOV country = CHI }
+		}
+		
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_EXP_Release.ai" }
+		command = { type = local_setflag which = ReleaseEXP }
+	}
+}
+event = {
+	id = 3061002
+	random = no
+	TAG = { MON TAN }
+	persistent = yes
+
+	trigger = {
+		ai = yes
+		local_flag = ReleaseEXP
+		alliance = { country = SOV }
+		NOT = {
+			AND = {
+				lost_national = { country = SOV value = 1 }
+				atwar = SOV
+			}
+			war = { country = SOV country = GER }
+			war = { country = SOV country = JAP }
+			war = { country = SOV country = ENG }
+			war = { country = SOV country = FRA }
+			war = { country = SOV country = USA }
+			war = { country = SOV country = ITA }
+			war = { country = SOV country = TUR }
+			war = { country = SOV country = CHI }
+		}
+		
+	}
+
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 0
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_EXP_Retrack.ai" }
+		command = { type = local_clrflag which = ReleaseEXP }
+	}
+}

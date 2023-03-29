@@ -1,0 +1,32 @@
+# Bulgaria invasion of Yugoslavia AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	country_priorities = {
+		GRE = 100
+		ITA = -1
+		ROM = -1
+		YUG = 100
+		HUN = -1
+		SOV = 10
+		SLO = -1
+		TUR = -1
+	}
+	province_priorities = {
+		318  = 100
+		321  = 100
+		320  = 100
+		324  = 100
+		377  = 100 # Greek beaches
+		372  = 100 # Greek beaches
+	}
+	area_multiplier = {
+		318  = 8.0
+		321  = 8.0
+		320  = 8.0
+		324  = 8.0
+		377  = 10.0 # Greek beaches
+	}
+}

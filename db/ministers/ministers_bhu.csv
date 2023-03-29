@@ -1,0 +1,67 @@
+BHU;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+330001;Head of State;Jigme Wangchuk;1926;1964;1999;PA;Ruthless Powermonger;High;M74001;X
+330002;Head of Government;Sonam Tobgay Dorji;1933;1964;1999;PA;Backroom Backstabber;High;M74002;X
+330003;Foreign Minister;Sonam Tobgay Dorji;1933;1964;1999;PA;Biased Intellectual;High;M74002;X
+330004;Minister of Armament;Ahmad Akhaz;1933;1964;1999;PA;Infantry Proponent;Medium;M74004;X
+330005;Minister of Security;Mang-pos Bhur-ba'i Rgyalpo;1933;1964;1999;PA;Man of the People;Medium;M74005;X
+330006;Head of Military Intelligence;Reginald B. Stevens;1933;1964;1999;PA;Dismal Enigma;Medium;M74006;X
+330007;Chief of Staff;Namgyal Bahadur;1933;1964;1999;PA;School of Manoeuvre;Medium;M74007;X
+330008;Chief of Army;Philip Toozey;1933;1964;1999;PA;Guns and Butter Doctrine;Medium;M74008;X
+330009;Chief of Navy;Tommy Gould;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M74009;X
+330010;Chief of Air Force;Nicky Barr;1933;1964;1999;PA;Air Superiority Doctrine;Medium;M74010;X
+330011;Foreign Minister;Sir Basil Gould;1937;1964;1999;PA;Iron Fisted Brute;High;M74011;X
+330012;Foreign Minister;Namgyal Bahadur;1938;1964;1999;PA;General Staffer;Medium;M74007;X
+330013;Foreign Minister;Mang-pos Bhur-ba'i Rgyalpo;1939;1964;1999;PA;Ideological Crusader;Medium;M74005;X
+330014;Foreign Minister;Ahmad Akhaz;1940;1964;1999;PA;The Cloak N Dagger Schemer;Medium;M74004;X
+330015;Foreign Minister;William Stevenson Meyer;1941;1964;1999;PA;Apologetic Clerk;Medium;M74015;X
+330016;Foreign Minister;Arthur John Hopkinson;1945;1964;1999;PA;Great Compromiser;High;M74016;X
+330017;Foreign Minister;Edward Cook;1945;1964;1999;PA;Biased Intellectual;High;M74017;X
+330018;Minister of Armament;William Stevenson Meyer;1937;1964;1999;PA;Resource Industrialist;Medium;M74015;X
+330019;Minister of Armament;Karma S. Bahadur;1938;1964;1999;PA;Military Entrepreneur;Medium;M74019;X
+330020;Minister of Armament;Sonam Tobgay Dorji;1939;1964;1999;PA;laissez-faire capitalist;Medium;M74002;X
+330021;Minister of Armament;Edward Cook;1939;1964;1999;PA;Administrative Genius;High;M74017;X
+330022;Minister of Armament;Nicky Barr;1940;1964;1999;PA;Air Superiority Proponent;Medium;M74010;X
+330023;Minister of Armament;Tommy Gould;1941;1964;1999;PA;Submarine Proponent;Medium;M74009;X
+330024;Minister of Armament;Jigme Wangchuk;1942;1964;1999;PA;Infantry Proponent;Medium;M74001;X
+330025;Minister of Armament;Bill Collett;1944;1964;1999;PA;Air to Ground Proponent;Medium;M74026;X
+330026;Minister of Armament;Namgyal Bahadur;1944;1964;1999;PA;Strategic Air Proponent;Medium;M74007;X
+330027;Minister of Armament;Arthur John Hopkinson;1944;1964;1999;PA;Theoretical Scientist;High;M74016;X
+330028;Minister of Armament;Sonam Pradukha;1945;1964;1999;PA;Tank Proponent;Medium;M74029;X
+330029;Minister of Security;Ahmad Akhaz;1939;1964;1999;PA;Prince of Terror;Medium;M74004;X
+330030;Minister of Security;sir Basil Gould;1940;1964;1999;PA;Silent Lawyer;High;M74011;X
+330031;Minister of Security;Sonam Tobgay Dorji;1940;1964;1999;PA;Man of the People;Medium;M74002;X
+330032;Minister of Security;Namgyal Bahadur;1942;1964;1999;PA;Compassionate Gentleman;Medium;M74007;X
+330033;Minister of Security;Karma S. Bahadur;1944;1964;1999;PA;Back Stabber;Medium;M74019;X
+330034;Minister of Security;Edward Cook;1944;1964;1999;PA;Efficient Sociopath;High;M74017;X
+330035;Minister of Security;William Stevenson Meyer;1945;1964;1999;PA;Crime Fighter;Medium;M74015;X
+330036;Head of Military Intelligence;Arthur John Hopkinson;1933;1964;1999;PA;Technical Specialist;High;M74016;X
+330037;Head of Military Intelligence;Edward Cook;1938;1964;1999;PA;Political Specialist;High;M74017;X
+330038;Head of Military Intelligence;Namgyal Bahadur;1941;1964;1999;PA;Industrial Specialist;Medium;M74007;X
+330039;Head of Military Intelligence;Henry Weedon-Gould;1943;1964;1999;PA;Logistics Specialist;Medium;M74040;X
+330040;Head of Military Intelligence;Karma S. Bahadur;1943;1964;1999;PA;Dismal Enigma;Medium;M74019;X
+330041;Head of Military Intelligence;Tommy Gould;1943;1964;1999;PA;Naval Intelligence Specialist;Medium;M74009;X
+330042;Chief of Staff;Philip Toozey;1939;1964;1999;PA;School of Defence;Medium;M74008;X
+330043;Chief of Staff;Tommy Gould;1943;1964;1999;PA;School of Psychology;Medium;M74009;X
+330044;Chief of Staff;Reginald B. Stevens;1941;1964;1999;PA;School of Manoeuvre;Medium;M74006;X
+330045;Chief of Staff;Henry Weedon-Gould;1942;1964;1999;PA;School of Mass Combat;Medium;M74040;X
+330046;Chief of Staff;Sonam Pradukha;1944;1964;1999;PA;School of Fire Support;Medium;M74029;X
+330047;Chief of Army;Jigme Wangchuk;1940;1964;1999;PA;Static Defence Doctrine;Medium;M74001;X
+330048;Chief of Army;Reginald B. Stevens;1943;1964;1999;PA;Decisive Battle Doctrine;Medium;M74006;X
+330049;Chief of Army;Sonam Pradukha;1945;1964;1999;PA;Armoured Spearhead Doctrine;Medium;M74029;X
+330050;Chief of Army;Henry Weedon-Gould;1945;1964;1999;PA;Guns and Butter Doctrine;Medium;M74040;X
+330051;Chief of Navy;Ahmad Akhaz;1944;1964;1999;PA;Decisive Naval Battle Doctrine;Medium;M74004;X
+330052;Chief of Air Force;Bill Collett;1943;1964;1999;PA;Army Aviation Doctrine;Medium;M74026;X
+330053;Chief of Air Force;Namgyal Bahadur;1945;1964;1999;PA;Carpet Bombing Doctrine;Medium;M74007;X
+330054;Head of State;Jigme Dorji Wangchuk;1952;1964;1999;PA;Weary Stiffneck;High;M74056;X
+330055;Head of Government;Jigme Palden Dorji;1952;1964;1999;PA;Corporate Suit;High;M74057;X
+330056;Chief of Army;Ugyen Wangchuk;1914;1933;1999;PA;Decisive Battle Doctrine;Very High;5957;X
+330057;Chief of Staff;Ugyen Wangchuk;1914;1933;1999;PA;School of Mass Combat;Very High;5957;X
+330058;Foreign Minister;Charles A. Bell;1914;1933;1999;PA;Great Compromiser;Very High;5958;X
+330059;Foreign Minister;John Bartley;1920;1933;1999;PA;Biased Intellectual;Very High;unknownminister;X
+330060;Foreign Minister;Frederick Bailey;1921;1933;1999;PA;Great Compromiser;Very High;5959;X
+330061;Head of Government;Raja Ugyen Dorji;1914;1917;1999;PA;Happy Amateur;High;9852;X
+330062;Head of Government;Raja Sonam Tobgay Dorji;1917;1933;1999;PA;Naive Optimist;High;9851;X
+330063;Head of State;Ugyen Wangchuk;1914;1933;1999;PA;Insignificant Layman;High;5957;X
+330064;Minister of Armament;Raja Ugyen Dorji;1914;1917;1999;PA;Administrative Genius;Very High;9852;X
+330065;Minister of Security;Raja Ugyen Dorji;1914;1917;1999;PA;Crime Fighter;Very High;9852;X

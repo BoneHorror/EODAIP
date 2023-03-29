@@ -1,0 +1,100 @@
+CHC;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+260800;Head of State;Chen Duxiu;1911;1933;1943;LWR;Die-hard Reformer;High;8618;X
+260801;Head of Government;Chen Duxiu;1911;1933;1943;LWR;Ambitious Union Boss;High;8618;X
+260802;Foreign Minister;Li Dazhao;1918;1924;1927;LWR;Ideological Crusader;High;3043;X
+260803;Minister of Security;Li Dazhao;1918;1924;1927;LWR;Man of the People;Medium;3043;X
+260804;Minister of Armament;Wang Jinmei;1920;1925;1925;LWR;Resource Industrialist;Medium;8619;X
+260805;Chief of Staff;He Long;1926;1961;1961;LWR;School of Manoeuvre;Medium;9219;X
+260806;Chief of Navy;He Long;1926;1961;1961;LWR;Open Seas Doctrine;Medium;9219;X
+260807;Chief of Army;Ye Ting;1927;1938;1947;LWR;Decisive Battle Doctrine;Medium;9220;X
+260808;Chief of Air Force;Ye Ting;1927;1938;1947;LWR;Carpet Bombing Doctrine;Medium;9220;X
+260809;Head of Military Intelligence;Deng Xiaoping;1924;1989;1994;LWR;Industrial Specialist;High;2338;X
+260810;Head of State;Deng Xiaoping;1924;1993;1994;LWR;Deng_Xiaoping;High;2338;X
+260811;Minister of Armament;Deng Xiaoping;1924;1989;1994;LWR;Mixed economy;High;2338;X
+260812;Chief of Staff;Deng Xiaoping;1924;1969;1970;LWR;school of manoeuvre;High;2338;X
+260813;Chief of Army;Deng Xiaoping;1924;1969;1970;LWR;Doctrine of autonomy;High;2338;X
+260814;Minister of Armament;Lin Boqu;1907;1960;1961;LWR;Military Entrepreneur;High;9226;X
+260815;Head of State;Lin Boqu;1907;1960;1961;LWR;Die-hard Reformer;High;9226;X
+260816;Head of Government;Lin Boqu;1907;1960;1961;LWR;Flamboyant Tough Guy;High;9226;X
+260817;Minister of Security;Lin Boqu;1907;1960;1961;LWR;Compassionate Gentleman;High;9226;X
+260818;Minister of Security;Xie Juezai;1925;1959;1960;LWR;Man of the People;Medium;9227;X
+260819;Head of Military Intelligence;Xie Juezai;1925;1959;1960;LWR;Political Specialist;Medium;9227;X
+260820;Chief of Staff;Xu Xiangqian;1927;1981;1982;LWR;School of Manoeuvre;Medium;M51044;X
+260821;Minister of Armament;Xu Xiangqian;1927;1981;1982;LWR;Reformer;Medium;M51044;X
+260822;Head of Military Intelligence;Peng Zhen;1923;1977;1977;LE;Industrial Specialist;High;M51055;X
+260823;Minister of Security;Shi Liang;1942;1975;1976;SD;Crime Fighter;Medium;M51058;X
+260824;Head of State;Zhang Guotao;1920;1936;1963;ST;Ruthless Powermonger;Medium;2337;X
+260825;Head of Government;Zhang Guotao;1920;1936;1963;ST;Ambitious Union Boss;Medium;2337;X
+260826;Foreign Minister;Zhang Guotao;1920;1936;1963;ST;Biased Intellectual;Medium;2337;X
+260827;Head of Military Intelligence;Zhang Guotao;1920;1936;1963;ST;Political Specialist;Medium;2337;X
+260828;Chief of Staff;Zhang Guotao;1920;1936;1963;ST;School of Mass Combat;Medium;2337;X
+260829;Chief of Army;Zhang Guotao;1920;1936;1963;ST;Guns and Butter Doctrine;Medium;2337;X
+260830;Chief of Navy;Zhang Guotao;1920;1936;1963;ST;Open Seas Doctrine;Medium;2337;X
+260831;Chief of Air Force;Zhang Guotao;1920;1936;1963;ST;Army Aviation Doctrine;Medium;2337;X
+260832;Head of State;Qu Qiubai;1923;1930;1964;ST;Barking Buffoon;High;8620;X
+260833;Foreign Minister;Qu Qiubai;1923;1930;1964;ST;The Cloak N Dagger Schemer;High;8620;X
+260834;Head of Government;Cai Hesen;1921;1931;1970;LE;Silent Workhorse;High;8621;X
+260835;Minister of Armament;Cai Hesen;1921;1931;1970;LE;Administrative Genius;Medium;8621;X
+260836;Head of State;Xiang Zhongfa;1928;1931;1946;LE;Barking Buffoon;Low;9221;X
+260837;Foreign Minister;Xiang Zhongfa;1928;1931;1946;LE;Biased Intellectual;Low;9221;X
+260838;Head of State;Wang Ming;1924;1970;1970;ST;Autocratic Charmer;Medium;9222;X
+260839;Head of Government;Wang Ming;1924;1970;1970;ST;Naive Optimist;Medium;9222;X
+260840;Minister of Armament;Qin Bangxian;1931;1935;1947;ST;Planned economy proponent;Low;9224;X
+260841;Minister of Security;Qin Bangxian;1931;1935;1947;ST;Prince of Terror;Low;9224;X
+260842;Head of State;Qin Bangxian;1931;1935;1947;ST;Autocratic Charmer;Low;9224;X
+260843;Head of Government;Qin Bangxian;1931;1935;1947;ST;Political Protege;Low;9224;X
+260844;Chief of Staff;Qin Bangxian;1931;1935;1947;ST;School of Mass Combat;Low;9224;X
+260845;Head of Military Intelligence;Otto Braun;1932;1935;1940;ST;Dismal Enigma;Medium;9225;X
+260846;Chief of Staff;Otto Braun;1932;1935;1940;ST;School of Psychology;Medium;9225;X
+260847;Chief of Army;Otto Braun;1932;1935;1940;ST;Decisive Battle Doctrine;Medium;9225;X
+260848;Head of State;Mao Zedong;1921;1977;1977;ST;Mao_Zedong_1;Undying;2334;X
+260849;Head of Government;Mao Zedong;1921;1977;1977;ST;old general;Undying;2334;X
+260850;Minister of Security;Mao Zedong;1921;1958;1958;ST;man of the people;Undying;2334;X
+260851;Chief of Army;Mao Zedong;1921;1958;1958;ST;Mao_Zedong_2;Undying;2334;X
+260852;Minister of Security;Li Lisan;1927;1931;1964;ST;Prince of Terror;Medium;8622;X
+260853;Head of Government;Li Lisan;1928;1931;1964;ST;ambitious union boss;Medium;8622;X
+260854;Chief of Staff;Li Lisan;1929;1931;1964;ST;School of Mass Combat;Medium;8622;X
+260855;Head of Military Intelligence;Zhou Enlai;1919;1976;1976;LWR;Dismal Enigma;Undying;8983;X
+260856;Minister of Security;Zhou Enlai;1919;1976;1976;LWR;Man of the People;Undying;2339;X
+260857;Minister of Armament;Zhou Enlai;1919;1976;1976;LWR;Resource Industrialist;Undying;2339;X
+260858;Head of Government;Zhou Enlai;1919;1976;1976;LWR;Zhou_Enlai;Undying;2339;X
+260859;Head of State;Zhou Enlai;1919;1976;1976;LWR;Benevolent Gentleman;Undying;2339;X
+260860;Chief of Staff;Zhou Enlai;1919;1976;1976;LWR;school of mass combat;Undying;8983;X
+260861;Foreign Minister;Zhou Enlai;1932;1976;1976;LWR;Great Compromiser;Undying;2339;X
+260862;Minister of Security;Wang Jiaxiang;1928;1959;1972;LE;Back Stabber;Medium;9223;X
+260863;Head of Military Intelligence;Wang Jiaxiang;1928;1959;1972;LE;Logistics Specialist;Medium;9223;X
+260864;Chief of Staff;Wang Jiaxiang;1928;1959;1972;LE;School of Fire Support;Medium;9223;X
+260865;Foreign Minister;Wang Jiaxiang;1928;1959;1972;LE;Apologetic Clerk;Medium;9223;X
+260866;Minister of Armament;Peng Dehuai;1926;1959;1964;LE;Reformer;High;2340;X
+260867;Chief of Army;Peng Dehuai;1926;1959;1964;LE;elastic defence doctrine;High;2340;X
+260868;Head of Military Intelligence;Li Kenong;1926;1959;1959;ST;Logistics Specialist;Medium;2335;X
+260869;Foreign Minister;Li Kenong;1926;1959;1959;ST;Great Compromiser;Medium;2335;X
+260870;Chief of Staff;Zhu De;1922;1951;1952;ST;School of Mass Combat;Medium;2336;X
+260871;Chief of Army;Zhu De;1922;1951;1952;ST;Guns and Butter Doctrine;Medium;2336;X
+260872;Chief of Navy;Ziao Jingguang;1924;1968;1969;ST;Open Seas Doctrine;Medium;9228;X
+260873;Chief of Staff;Ziao Jingguang;1924;1968;1969;ST;School of Psychology;Medium;9228;X
+260874;Chief of Air Force;Fang Ziyi;1930;1982;1983;ST;Army Aviation Doctrine;Medium;9229;X
+260875;Head of State;Ye Jianying;1927;1983;1984;LWR;Insignificant Layman;Medium;9230;X
+260876;Chief of Staff;Ye Jianying;1927;1978;1984;LWR;School of Manoeuvre;Medium;9230;X
+260877;Chief of Army;Ye Jianying;1927;1978;1984;LWR;Doctrine of autonomy;Medium;9230;X
+260878;Minister of Armament;Ye Jianying;1927;1978;1984;LWR;Mixed economy;Medium;9230;X
+260879;Chief of Staff;Chen Yi;1923;1966;1967;ST;School of Psychology;Medium;M51045;X
+260880;Chief of Army;Chen Yi;1923;1966;1967;ST;Armoured Spearhead Doctrine;Medium;M51045;X
+260881;Foreign Minister;Chen Yi;1923;1966;1967;ST;General Staffer;High;M51045;X
+260882;Chief of Army;Gao Gang;1926;1954;1954;ST;Elastic Defence Doctrine;Low;M51049;X
+260883;Minister of Armament;Gao Gang;1926;1954;1954;ST;Planned economy proponent;Medium;M51049;X
+260884;Minister of Security;Ren Bishi;1922;1950;1951;ST;Efficient Sociopath;Medium;9231;X
+260885;Minister of Armament;Lin Biao;1924;1971;1972;ST;Military Entrepreneur;High;9232;X
+260886;Head of State;Lin Biao;1924;1971;1972;ST;Barking Buffoon;High;9232;X
+260887;Head of Government;Lin Biao;1924;1971;1972;ST;Backroom Backstabber;High;9232;X
+260888;Chief of Army;Lin Biao;1924;1962;1963;ST;Armoured Spearhead Doctrine;High;9232;X
+260889;Minister of Security;Qian Ying;1931;1971;1972;ST;Silent Lawyer;Medium;9233;X
+260890;Head of Military Intelligence;Qian Ying;1931;1971;1972;ST;Political Specialist;Medium;9233;X
+260891;Minister of Security;Zeng Shan;1926;1974;1975;ST;Back Stabber;Medium;M51060;X
+260892;Head of Military Intelligence;Bo Yibo;1928;1983;1984;ST;Technical Specialist;Medium;9234;X
+260893;Head of Military Intelligence;Li Xiannian;1931;1974;1975;LE;Logistics Specialist;Medium;321;X
+260894;Head of State;Li Xiannian;1931;1988;1989;LE;Insignificant Layman;Medium;321;X
+260895;Chief of Army;Li Xiannian;1931;1974;1975;LE;Armoured Spearhead Doctrine;Medium;321;X
+260896;Chief of Navy;Jiang Xianyun;1925;1928;1968;LE;Decisive Naval Battle Doctrine;High;9440;X
+260897;Chief of Army;Chen Gang;1927;1962;1962;LE;Guns and Butter Doctrine;High;9441;X

@@ -1,0 +1,51 @@
+# German Spanis Invasion (Vichy Not Axis Controled) AI File by Lothos
+
+max_garrison_prop = 0.60
+min_garrison_prop = 0.50
+max_front_ratios = { }
+combat = {
+	SPR = 300
+	SPA = 300
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		VIC = -1
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		AUS = -1
+		HUN = -1
+		CZE = 75
+		POL = 75
+		YUG = 20
+		SPR = 100
+		SPA = 100
+		SOV = 5
+	}
+	province_priorities = {
+		# Spanish Border
+		79  = 100
+		67  = 100
+		
+		55  = 20  #Paris
+		52  = 20  #Lille
+		116  = 20  #Brussels
+		145  = 20  #Prague
+		104  = 20  #Metz
+		43  = 20  #Cherborg
+		42  = 20  #Avranches
+		69  = 10  #La Rochele
+		147  = 20  #Wilhelmshafen
+		148  = 20  #Bremen
+		150  = 20  #Groningen
+	}
+	area_multiplier = {
+		79  = 3.0
+		67  = 3.0
+	}
+}

@@ -1,0 +1,34 @@
+Action;Bool All;Num;Level;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data;Data
+StopTime;;;;;;;;#;;;;;;;;;;;;;;x
+PassiveAI;;;;;;;;#;;;;;;;;;;;;;;
+ShowMessage;;;;TUTORIAL_6_A1;352;222;;#;;;;;;;;;;;;;;x
+GameSpeed;;4;;;;;;#;;;;;;;;;;;;;;
+DarkScreen;;;-160;;;;;#;;;;;;;;;;;;;;x
+ScreenBox;;;;0;0;-1;-1;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A2;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A3;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A4;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A5;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A6;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+ClearScreen;;;;;;;;#;;;;;;;;;;;;;;
+DarkScreen;;;-160;;;;;#;;;;;;;;;;;;;;x
+ScreenBox;;;;0;0;250;-1;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A7;;;;#;;;;;;;;;;;;;;x
+WaitForEnter;;;;;;;;#;;;;;;;;;;;;;;x
+ClearScreen;;;;;;;;#;;;;;;;;;;;;;;
+DarkScreen;;;-160;;;;;#;;;;;;;;;;;;;;x
+ScreenBox;;;;0;0;-1;-1;#;;;;;;;;;;;;;;x
+AddBoxText;;;;TUTORIAL_6_A8;;;;#;;;;;;;;;;;;;;x
+StartTime;;;;;;;;#;;;;;;;;;;;;;;
+WeControl;;1364;;;;;;#;;;;;;;;;;;;;;
+AddBoxText;;;;TUTORIAL_6_A9;;;;#;;;;;;;;;;;;;;x
+WeControl;;1362;;;;;;#;;;;;;;;;;;;;;
+WeControl;;1364;;;;;;#;;;;;;;;;;;;;;
+ClearScreen;;;;;;;;#;;;;;;;;;;;;;;x
+ShowMessage;;;;TUTORIAL_6_A10;;;;#;;;;;;;;;;;;;;x
+EndTutorial;;;;;;;;#Clean up;;;;;;;;;;;;;;x

@@ -1,0 +1,57 @@
+# USA Homeland defense AI File by Lothos
+
+upgrading = 0.25
+#reinforcement = 0.30
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= yes
+	max_batch_peace 		= 680 
+	max_batch_war 			= 320 
+	max_batch_home_front 	= 180
+
+	#### Divisions etc...
+	infantry 		= 30
+	cavalry 		= 0
+	motorized 		= 8
+	mechanized 		= 8
+	light_armor 	= 0
+	armor 			= 8
+	paratrooper 	= 0
+	marine 			= 3
+	bergsjaeger 	= 0
+	garrison		= 3
+    hq 				= 4
+	militia 		= 0
+#				71 %
+	interceptor 	= 6
+	multi_role 		= 2
+	cas 			= 0
+	strategic_bomber = 3
+	tactical_bomber = 5
+	naval_bomber 	= 3
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				19 %
+	battleship 		= 0
+	carrier 		= 3
+	escort_carrier		= 0
+	destroyer 		= 5
+	light_cruiser 	= 3
+	heavy_cruiser 	= 1
+	battlecruiser 	= 0
+	submarine 		= 2
+	transports 		= 3
+#				10 %
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 		= 0.7
+	overseas_multiplier 	= 1.0
+}

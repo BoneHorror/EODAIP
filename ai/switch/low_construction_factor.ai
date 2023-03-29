@@ -1,0 +1,7 @@
+# England and Germany prepare for war after Munich agreements 
+  
+upgrading = 0.10 
+construction = { 
+	max_factor = 0.05 
+	AA_batteries = yes
+}

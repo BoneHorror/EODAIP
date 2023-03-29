@@ -1,0 +1,29 @@
+AST;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+225022;Victorian Railways;100813;6;1850;1983;mechanics;general_equipment;industrial_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225005;New South Wales State Railways;T504;6;1900;2000;mechanics;general_equipment;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225004;Ford Motors;T503;6;1912;2000;mechanics;industrial_engineering;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225015;CSIRO;T514;5;1910;2000;mathematics;electronics;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225027;Pre Federation Defence Establishments;100022;3;1850;1905;technical_efficiency;general_equipment;mechanics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225001;Army Inventions Directorate;T500;5;1900;2000;technical_efficiency;general_equipment;mechanics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225002;Chullora Tank Assembly Shops;T501;4;1900;2000;mechanics;munitions;artillery;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225020;Australian Army Factories;100015;5;1905;2000;technical_efficiency;general_equipment;mechanics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225006;Vickers-Armstrong Ltd.;T505;6;1908;1977;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225014;Cockatoo Island Shipyard;T513;4;1897;1991;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225023;Williamstown Dockyards;100018;3;1880;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225003;de Havilland;T502;6;1912;1964;bomber_design;aeronautics;avionics;munitions;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225024;Pt Cook Airbase;100019;4;1912;1985;aeronautics;fighter_tactics;piloting;technical_efficiency;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225026;Victorian Navy;100021;4;1850;1909;large_taskforce_tactics;naval_training;seamanship;centralized_execution;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225025;Australian Naval College;100020;5;1906;2000;large_taskforce_tactics;naval_training;seamanship;centralized_execution;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225008;Guy Royle;T507;5;1930;1945;submarine_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225009;John Collins;T508;6;1930;1955;large_taskforce_tactics;carrier_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225010;Ragnar Colvin;T509;4;1930;1954;small_taskforce_tactics;centralized_execution;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225016;Wilfred Harrington;T515;4;1954;1965;small_taskforce_tactics;centralized_execution;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225011;Richard Williams;T510;6;1918;1950;fighter_tactics;decentralized_execution;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225013;William Bostock;T512;5;1930;1958;bomber_tactics;training;centralized_execution;piloting;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225018;Sir Colin Thomas Hannah;T517;4;1959;1971;fighter_tactics;combined_arms_focus;centralized_execution;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225021;John Monash;100016;8;1915;1931;large_unit_tactics;centralized_execution;combined_arms_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225007;Dudley Lavarack;T506;6;1930;1957;small_unit_tactics;decentralized_execution;combined_arms_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225012;Thomas Blamey;T511;4;1938;1951;large_unit_tactics;centralized_execution;combined_arms_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225019;Horace R. Campbell;T13607;4;1945;1954;individual_courage;management;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225017;Sir Sydney Fairbairn Rowell;T516;6;1950;1968;small_unit_tactics;decentralized_execution;combined_arms_focus;individual_courage;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+2250001;ASIS;T2250001;6;1952;2013;individual_courage;rt_user_2;small_unit_tactics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

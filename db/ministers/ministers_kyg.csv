@@ -1,0 +1,61 @@
+KYG;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+490001;Head of State;Igor P. Donyak;1933;1964;1999;LE;Stern Imperialist;High;M521001;X
+490002;Head of Government;Nikolai Bogolyubhov;1933;1964;1999;LE;Corporate Suit;High;M521002;X
+490003;Foreign Minister;Maksim Ammosov;1933;1964;1999;LE;Ideological Crusader;High;M521003;X
+490004;Minister of Armament;Kalina Amankulova;1933;1964;1999;LE;Administrative Genius;Medium;M521004;X
+490005;Minister of Security;Turabej Kuletov;1933;1964;1999;LE;Man of the People;Medium;M521005;X
+490006;Head of Military Intelligence;Igor N. Barakhov;1933;1964;1999;LE;Political Specialist;Medium;M521006;X
+490007;Chief of Staff;Karun Dushebaev;1933;1964;1999;LE;School of Psychology;Medium;M521007;X
+490008;Chief of Army;Mikhail V. Frunze;1933;1964;1999;LE;Elastic Defence Doctrine;Medium;M521008;X
+490009;Chief of Navy;Egor Rall;1933;1964;1999;LE;Power Projection Doctrine;Medium;L10438;X
+490010;Chief of Air Force;Tryfil Sokolov;1933;1964;1999;LE;Air Superiority Doctrine;Medium;M521010;X
+490011;Head of State;Ivan F. Sokolov;1933;1964;1999;SD;Pig-headed Isolationist;High;M521011;X
+490012;Head of State;Baten Dzhumabayev;1933;1964;1999;ML;Autocratic Charmer;High;M521012;X
+490013;Head of State;Kazym Tynystanov;1933;1964;1999;PA;Ruthless Powermonger;High;M521013;X
+490014;Head of Government;Maksim Rebrov;1933;1964;1999;SD;Flamboyant Tough Guy;High;M521014;X
+490015;Head of Government;Andrej V. Sokolov;1933;1964;1999;ML;Happy Amateur;High;M521015;X
+490016;Head of Government;Zeki Validov;1933;1964;1999;PA;Smiling Oilman;High;M521016;X
+490017;Foreign Minister;Abdukadyr Urazbekov;1933;1964;1999;LE;General Staffer;High;M521017;X
+490018;Foreign Minister;Yosip Abdrokhmanov;1933;1964;1999;LE;Great Compromiser;High;M521018;X
+490019;Foreign Minister;Nachum Sokolov;1933;1964;1999;SD;Biased Intellectual;High;M521019;X
+490020;Foreign Minister;Gulzat Everstov;1933;1964;1999;SD;Apologetic Clerk;High;M521020;X
+490021;Foreign Minister;Nazira Dauletova;1933;1964;1999;ML;Apologetic Clerk;High;M521021;X
+490022;Foreign Minister;Mukhtar Dzhangalin;1933;1964;1999;PA;Great Compromiser;High;M521022;X
+490023;Foreign Minister;Vassil Dyankonov;1933;1964;1999;PA;Iron Fisted Brute;High;M521023;X
+490024;Minister of Armament;Abdulzhatir Jildizbek;1933;1964;1999;LE;Infantry Proponent;Medium;M521024;X
+490025;Minister of Armament;Sultankul Shamurzin;1933;1964;1999;LE;Air to Ground Proponent;Medium;M521025;X
+490026;Minister of Armament;Alik Bakytuul;1933;1964;1999;SD;Tank Proponent;Medium;M521026;X
+490027;Minister of Armament;Yurij Mitrpoliskiyi;1933;1964;1999;SD;Theoretical Scientist;Medium;M521027;X
+490028;Minister of Armament;Viktor Glushkov;1933;1964;1999;ML;Theoretical Scientist;Medium;M521028;X
+490029;Minister of Armament;Sultan Bakytbek;1933;1964;1999;ML;Air to Ground Proponent;Medium;M521029;X
+490030;Minister of Armament;Adilet Rustamov;1933;1964;1999;PA;Corrupt Kleptocrat;Medium;M521030;X
+490031;Minister of Security;Aleksiyi Vagov;1933;1964;1999;LE;Efficient Sociopath;Medium;M521031;X
+490032;Minister of Security;Bayali Isakaiev;1933;1964;1999;LE;Crime Fighter;Medium;M521032;X
+490033;Minister of Security;Boris Shapurchirnikov;1933;1964;1999;SD;Silent Lawyer;Medium;M521033;X
+490034;Minister of Security;Rozhira Tshugel;1933;1964;1999;SD;Back Stabber;Medium;M521034;X
+490035;Minister of Security;Jelena Shemeleva;1933;1964;1999;ML;Prince of Terror;Medium;M521035;X
+490036;Minister of Security;Murat Salikhov;1933;1964;1999;PA;Back Stabber;Medium;M521036;X
+490037;Minister of Security;Iban Pryadezhnikov;1933;1964;1999;PA;Prince of Terror;Medium;M521037;X
+490038;Head of Military Intelligence;Mikhail Us;1933;1964;1999;LE;Industrial Specialist;Medium;M521038;X
+490039;Head of Military Intelligence;Azamat Cholponbek;1933;1964;1999;SD;Logistics Specialist;Medium;M521039;X
+490040;Head of Military Intelligence;Ibrahim Validov;1933;1964;1999;ML;Technical Specialist;Medium;M521040;X
+490041;Head of Military Intelligence;Jyrgaluul Adilet;1933;1964;1999;ML;Logistics Specialist;Medium;M521041;X
+490042;Head of Military Intelligence;Maryam Tugambajeva;1933;1964;1999;PA;Political Specialist;Medium;M521042;X
+490043;Head of Military Intelligence;Aziz Mirul;1933;1964;1999;PA;Technical Specialist;Medium;M521043;X
+490044;Chief of Staff;Isamil Abuzyarov;1933;1964;1999;LE;School of Manoeuvre;Medium;M521044;X
+490045;Chief of Staff;Ivan Rednikov;1933;1964;1999;SD;School of Manoeuvre;Medium;M521045;X
+490046;Chief of Staff;Yagur Baranov;1933;1964;1999;ML;School of Mass Combat;Medium;M521046;X
+490047;Chief of Staff;Karl von Bardolff;1933;1964;1999;PA;School of Fire Support;Medium;M521047;X
+490048;Chief of Army;Malagoza Tahabayev;1933;1964;1999;LE;Static Defence Doctrine;Medium;M521048;X
+490049;Chief of Army;Baktit Goryashenko;1933;1964;1999;SD;Armoured Spearhead Doctrine;Medium;M521049;X
+490050;Chief of Army;Evgennij Sokolov;1933;1964;1999;ML;Elastic Defence Doctrine;Medium;M521050;X
+490051;Chief of Army;Uraz Dzshandosov;1933;1964;1999;PA;Decisive Battle Doctrine;Medium;M521051;X
+490052;Chief of Navy;Asmaly Toluboyev;1933;1964;1999;LE;Base Control Doctrine;Medium;M521052;X
+490053;Chief of Navy;Gilnara Popov;1933;1964;1999;SD;Decisive Naval Battle Doctrine;Medium;M521053;X
+490054;Chief of Navy;Kuban Bakuulbek;1933;1964;1999;ML;Base Control Doctrine;Medium;M521054;X
+490055;Chief of Navy;Mihai Dratsenko;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;L500120;X
+490056;Chief of Air Force;Mikhail Us;1933;1964;1999;LE;Naval Aviation Doctrine;Medium;M521038;X
+490057;Chief of Air Force;Mikhail V. Frunze;1933;1964;1999;SD;Vertical Envelopment Doctrine;Medium;M521008;X
+490058;Chief of Air Force;Pavel Shamaev;1933;1964;1999;ML;Army Aviation Doctrine;Medium;M521058;X
+490059;Chief of Air Force;Otto Langemeyer;1933;1964;1999;PA;Carpet Bombing Doctrine;Medium;M521059;X

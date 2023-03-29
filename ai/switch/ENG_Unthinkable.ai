@@ -1,0 +1,181 @@
+combat = {
+	SOV = 300
+}
+war = 5
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+     		FRA = -1 
+		SCH = -1
+		SPR = -1
+		SPA = -1
+		SOV = 100
+		USA = -1
+		YUG = 50
+	}
+	revolt_risk_mult	= 0.2
+	province_priorities = {
+		55  = 30  #Paris
+		52  = 30  #Lille
+		116  = 30  #Brussels
+		145  = 30  #Prague
+		104  = 30  #Metz
+		43  = 30  #Cherborg
+		42  = 30  #Avranches
+		69  = 30  #La Rochele
+		147  = 30  #Wilhelmshafen
+		148  = 30  #Bremen
+		150  = 30  #Groningen
+		338  = 30  #Belgrade
+	}
+	area_multiplier = { }
+}
+front = { 
+   	recklessness     = 2 # 0-3 
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+   	base_attack_odds   = 1.0 
+   	min_attack_odds   = 0.8  
+	max_attack_odds 	= 2.0 
+
+	province_priorities = {
+		55  = 2  #Paris
+		52  = 2  #Lille
+		116  = 1.5  #Brussels
+		145  = 1.5  #Prague
+		104  = 1.5  #Metz
+		43  = 1.2  #Cherborg
+		42  = 1.2  #Avranches
+		69  = 1.2  #La Rochele
+		147  = 1.2  #Wilhelmshafen
+		148  = 1.2  #Bremen
+		150  = 1.2  #Groningen
+		338  = 1.2  #Belgrade
+	}
+	
+    enemy_handicap = { } 
+    passivity = { } 
+}
+
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 25.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 20.0	#higher = avoid long distance.
+	max_distance    = 80.0 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 60.0	# How far should the staging area be from the target invasion point	
+	pocket			= 2.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.2	#prioritise taking pure islands.
+	enemy			= 0.8	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.6	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 0.1
+    air_support 	= 3.0 
+    redirect 		= nearest
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	218 #Friedrikshaven
+		152 #Kiel
+		122 #Amsterdam
+		125 #Rotterdam
+		114 #Bruges
+		115 #Antwerpen
+		51  #Dunkerque	
+		43  #Cherbourg
+		37	#Brest
+		377	#Athens
+		429 #Malta
+		264
+		495
+		184			
+	}
+	target = { 
+		#England
+		22	= 1000  #Cardif
+		26  = 2000  #Dover
+		25  = 1000  #Norwich
+		27  = 1000  #Portsmouth
+		23  = 1000  #Plymouth
+		36  = 1000  #Belfast
+		17  = 1000  #Manchester
+		12  = 1000  #Edinburgh
+		11  = 1000  #Glasgow
+		1   = 2000
+		535 = 4000
+		542 = 4000
+		530 = 6000
+		553 = 5000
+		641 = 3000
+		264 = 5000
+
+		# Atlantic Wall
+		122  = 1000  #Amsterdam
+		125  = 1000  #Rotterdam
+		114  = 1000  #Bruges
+		115	 = 1000	 #Antwerpen
+		49   = 1000  #Calais
+		51   = 1000  #Dunkerque
+		53   = 1000  #Dieppe
+		46   = 1000  #Bayeux
+		44   = 1000  #Caen
+		37   = 1000  #Brest
+		39   = 1000  #Lorient
+		69   = 1000  #Le Rochelle
+		68   = 1000  #Bordeaux
+
+		#Norway
+		491	= 2000	#Alesund
+		485	= 2000	#Kristiansand
+		483	= 2000	#Oslo
+		493	= 2000	#Trondheim
+		495	= 2000	#Narvik
+		
+		#Sweden
+     	2153 = 1000 # Goterborg 
+     	2152 = 1000 # Malmo 
+     	2159 = 1000 # Stockholm 
+		2158 = 1000 # Uppsala
+     	2162 = 1000 # Gavle 
+     	2166 = 1000 # Lulea 
+
+		#Finland
+		525 = 1000 # Helsinki
+		524 = 1000 # Turku
+		521 = 1000 # Vaasa
+		516 = 2000 # Tornio
+		531 = 2000 # Viipuri
+		
+		#Denmark
+		294 = 2000 # Copenhagen
+		219 = 1000 # Odense
+		
+		#Baltics
+		275 = 2000 # Kuressaare
+		
+		269 = 2000 # Jelgava
+		
+		184 = 4000 # Koenigsberg
+		181 = 100 # Danzig
+		226 = 100 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+
+		#Mediter.
+		382 = 2000 #Irakleio
+		388 = 2000 #Nikosia
+		429 = 2500 #Malta
+		789 = 2000 #Alexandria		
+		765 = 4000
+	}
+} 

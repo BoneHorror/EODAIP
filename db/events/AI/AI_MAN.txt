@@ -1,0 +1,74 @@
+####################################
+# Manchuria AI events 
+####################################
+################
+# Manchuria sends EXP forces to Japan
+#############################################
+#Most likely no need for these events - we're clogging up JAP's unit force %s with all of our militia/infantry, which prevents JAP from making their own stuff
+#event = {
+#	id = 3048009
+#	random = no 
+#	TAG = { MAN MEN }
+#	persistent = yes
+#	
+#	trigger = {
+#		ai = yes
+#		NOT = { local_flag = EXP80 }
+#		OR = {
+#			war = { country = JAP country = USA }
+#			AND = {
+#				NOT = { ai = CHI }
+#				war = { country = JAP country = CHI }
+#			}
+#		}
+#		alliance = { country = JAP }
+#		OR = {
+#			ai = SOV
+#			AND = {
+#				NOT = { ai = SOV }
+#				NOT = { war = { country = SOV } }
+#				OR = {
+#					war = { country = SOV country = GER }
+#					alliance = { country = SOV country = GER }
+#				}
+#			}
+#		}
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 15
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = ai which = "switch/EXP_80.ai" }
+#		command = { type = local_setflag which = EXP80 }
+#	}
+#}
+#event = {
+#	id = 3048010
+#	random = no 
+#	TAG = { MAN MEN }
+#	persistent = yes	
+#	
+#	trigger = {
+#		ai = yes
+#		NOT = { local_flag = EXP100 }
+#		war = { country = SOV }
+#		alliance = { country = JAP }
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 15
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = ai which = "switch/EXP_100.ai" }
+#		command = { type = local_setflag which = EXP100 }
+#	}
+#}

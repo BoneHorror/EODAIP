@@ -1,0 +1,90 @@
+U11;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+870001;Minister of Armament;Vincent Auriol;1933;1964;1999;LWR;Supporter of Devaluation;High;5901;X
+870002;Minister of Security;Marx Dormoy;1933;1964;1999;LWR;Opposer of the far right;Medium;M2005;X
+870003;Head of Military Intelligence;Joseph Paganon;1933;1964;1999;LWR;Political Specialist;Medium;M2006;X
+870004;Chief of Staff;Maurice Gamelin;1933;1964;1999;LWR;Fortifications Supporter;Very High;5902;X
+870005;Chief of Army;Maurice Gamelin;1933;1964;1999;LWR;Static Defense Supporter;Very High;5902;X
+870006;Chief of Air Force;Victor Denain;1933;1964;1999;LWR;Carpet Bombing Doctrine;Medium;M2010;X
+870007;Head of State;Vincent Auriol;1933;1964;1999;LWR;Autocratic Charmer;High;5901;X
+870008;Head of State;Daniel Mayer;1933;1964;1999;LWR;Weary Stiffneck;High;M2023;X
+870009;Head of State;Maurice Thorez;1933;1964;1999;ST;Powerhungry Demagogue;High;M2011;X
+870010;Head of Government;Leon Blum;1933;1964;1999;LWR;Naive Optimist;High;M2033;X
+870011;Head of Government;Felix Gouin;1933;1964;1999;LWR;Smiling Oilman;High;M2034;X
+870012;Head of Government;Paul Ramadier;1933;1964;1999;LWR;Ambitious Union Boss;High;M2035;X
+870013;Head of Government;Paul Reynaud;1933;1964;1999;LWR;Political Protege;High;M2038;X
+870014;Head of Government;Jacques Duclos;1933;1964;1999;ST;Backroom Backstabber;High;M2012;X
+870015;Head of Government;Marcel Cachin;1933;1964;1999;ST;Silent Workhorse;High;M2017;X
+870016;Foreign Minister;Joseph Paul Boncour;1933;1964;1999;LWR;Ideological Crusader;Medium;M2049;X
+870017;Foreign Minister;Pierre Comert;1933;1964;1999;LWR;The Cloak N Dagger Schemer;Medium;M2050;X
+870018;Foreign Minister;Leon Blum;1933;1964;1999;LWR;Apologetic Clerk;Very High;M2033;X
+870019;Foreign Minister;Yvon Delbos;1933;1964;1999;LWR;Supporter of friendly relations;Medium;M2048;X
+870020;Foreign Minister;Georges Bonnet;1933;1964;1999;LWR;Iron Fisted Brute;Medium;M2053;X
+870021;Foreign Minister;Paul Reynaud;1933;1964;1999;LWR;Ideological Crusader;Undying;M2038;X
+870022;Foreign Minister;Marcel Cachin;1933;1964;1999;ST;Biased Intellectual;Very High;M2017;X
+870023;Foreign Minister;Marcel Gitton;1933;1964;1999;ST;Apologetic Clerk;Medium;M2020;X
+870024;Foreign Minister;Laurent Casenove;1933;1964;1999;ST;Great Compromiser;Medium;M2064;X
+870025;Foreign Minister;Jacques Duclos;1933;1964;1999;ST;Ideological Crusader;Very High;M2012;X
+870026;Minister of Armament;Jean Louis Barthou;1933;1964;1999;LWR;Military Entrepreneur;Medium;M2069;X
+870027;Minister of Armament;Leon Jouhaux;1933;1964;1999;LWR;Strategic Air Proponent;Medium;M2070;X
+870028;Minister of Armament;Guy Mollet;1933;1964;1999;LWR;Keynesian economy;Medium;M2071;X
+870029;Minister of Armament;Andre Le Troquer;1933;1964;1999;LWR;Resource Industrialist;Medium;M2072;X
+870030;Minister of Armament;Raoul Dautry;1933;1964;1999;LWR;Theoretical Scientist;High;M2073;X
+870031;Minister of Armament;Louis Loucheur;1933;1964;1999;LWR;Construction magnate;Medium;M2074;X
+870032;Minister of Armament;Marcel Hoden;1933;1964;1999;LWR;Air Superiority Proponent;Medium;M2076;X
+870033;Minister of Armament;Georges Bonnet;1933;1964;1999;LWR;Opposer to military spending;Medium;M2053;X
+870034;Minister of Armament;George Levy;1933;1964;1999;ST;Administrative Genius;Medium;M2014;X
+870035;Minister of Armament;Laurent Casenove;1933;1964;1999;ST;Theoretical Scientist;Medium;M2064;X
+870036;Minister of Armament;Jean Jerome;1933;1964;1999;ST;laissez-faire capitalist;Medium;M2093;X
+870037;Minister of Armament;Benoit Frachon;1933;1964;1999;ST;Battle Fleet Proponent;Medium;M2094;X
+870038;Minister of Armament;Auguste Lecoeur;1933;1964;1999;ST;Military Entrepreneur;Medium;M2095;X
+870039;Minister of Armament;Daniel Renoult;1933;1964;1999;ST;Theoretical Scientist;Medium;M2096;X
+870040;Minister of Security;Pierre Auguste Chardigny;1933;1964;1999;LWR;Prince of Terror;Low;M2098;X
+870041;Minister of Security;Julien Luchaire;1933;1964;1999;LWR;Efficient Sociopath;Medium;M2099;X
+870042;Minister of Security;Adrien Tixier;1933;1964;1999;LWR;Health and safety;Very High;M2100;X
+870043;Minister of Security;Henri Bonnet;1933;1964;1999;LWR;Back Stabber;Medium;M2101;X
+870044;Minister of Security;Paul Ramadier;1933;1964;1999;LWR;Crime Fighter;High;M2035;X
+870045;Minister of Security;Jules Moch;1933;1964;1999;LWR;Man of the People;High;M2104;X
+870046;Minister of Security;Pierre Pene;1933;1964;1999;LWR;Silent Lawyer;Medium;M2105;X
+870047;Minister of Security;Arthur Fontaine;1933;1964;1999;LWR;Efficient Sociopath;Medium;M2106;X
+870048;Minister of Security;Henri Roy;1933;1964;1999;LWR;Man of the People;Medium;M2107;X
+870049;Minister of Security;Louis-Georges Mandel;1933;1964;1999;LWR;Crime Fighter;Low;M2108;X
+870050;Minister of Security;Jean Maillet;1933;1964;1999;LWR;Back Stabber;High;M2109;X
+870051;Minister of Security;Lucien Micol;1933;1964;1999;ST;Crime Fighter;High;M2015;X
+870052;Minister of Security;Claudine Chomat;1933;1964;1999;ST;Efficient Sociopath;Medium;M2118;X
+870053;Minister of Security;Henri Gourdeaux;1933;1964;1999;ST;Silent Lawyer;High;M2119;X
+870054;Minister of Security;Jean-Marie Clamamus;1933;1964;1999;ST;Man of the People;Medium;M2120;X
+870055;Minister of Security;Maurice Thorez;1933;1964;1999;ST;Prince of Terror;Very High;M2011;X
+870056;Head of Military Intelligence;Roger Salengro;1933;1964;1999;LWR;Industrial Specialist;Medium;M2123;X
+870057;Head of Military Intelligence;Felix Gouin;1933;1964;1999;LWR;Technical Specialist;Medium;M2034;X
+870058;Head of Military Intelligence;Daniel Mayer;1933;1964;1999;LWR;Logistics Specialist;Medium;M2023;X
+870059;Head of Military Intelligence;Andre Le Troquer;1933;1964;1999;LWR;Dismal Enigma;Medium;M2072;X
+870060;Head of Military Intelligence;Maurice Delage;1933;1964;1999;LWR;Technical Specialist;High;M2129;X
+870061;Head of Military Intelligence;Aime Lepercq;1933;1964;1999;LWR;Industrial Specialist;High;M2130;X
+870062;Head of Military Intelligence;Waldeck Rochet;1933;1964;1999;ST;Dismal Enigma;High;M2016;X
+870063;Head of Military Intelligence;Jean-Marie Clamamus;1933;1964;1999;ST;Industrial Specialist;Medium;M2120;X
+870064;Head of Military Intelligence;Henri Gourdeaux;1933;1964;1999;ST;Logistics Specialist;High;M2119;X
+870065;Head of Military Intelligence;Gustave Guehenneux;1933;1964;1999;ST;Technical Specialist;Medium;M2141;X
+870066;Chief of Staff;Marcel Cachin;1933;1964;1999;ST;School of Fire Support;Medium;M2017;X
+870067;Chief of Army;Pierre Auguste Chardigny;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M2098;X
+870068;Chief of Army;Andre Marty;1933;1964;1999;ST;Guns and Butter Doctrine;Medium;M2018;X
+870069;Chief of Army;Pierre Fabien;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M2167;X
+870070;Chief of Navy;Joseph Paul Boncour;1933;1964;1999;LWR;Base Control Doctrine;High;M2170;X
+870071;Chief of Navy;Jean Gout;1933;1964;1999;LWR;Power Projection Doctrine;High;M2171;X
+870072;Chief of Navy;Andre Marty;1933;1964;1999;ST;Indirect Approach Doctrine;Medium;M2018;X
+870073;Chief of Navy;Charles Tillon;1933;1964;1999;ST;Base Control Doctrine;High;M2180;X
+870074;Chief of Air Force;Pierre Cot;1933;1964;1999;LWR;Army Aviation Doctrine;Very High;M2184;X
+870075;Chief of Air Force;Joseph Vuillemin;1933;1964;1999;LWR;Air Superiority Doctrine;Very High;M2187;X
+870076;Chief of Air Force;Guy La Chambre;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M2188;X
+870077;Chief of Air Force;Marcel Gitton;1933;1964;1999;ST;Air Superiority Doctrine;Medium;M2020;X
+870078;Chief of Air Force;Charles Tillon;1933;1964;1999;ST;Army Aviation Doctrine;High;M2180;X
+870079;Head of Government;Louis-Georges Mandel;1933;1964;1999;LWR;Backroom Backstabber;Medium;M2108;X
+870080;Minister of Security;Yvon Delbos;1933;1964;1999;LWR;Silent Lawyer;High;M2048;X
+870081;Head of Government;Edgar Faure;1933;1964;1999;LWR;Backroom Backstabber;High;M2219;X
+870082;Head of Government;Rene Mayer;1933;1964;1999;LWR;Naive Optimist;High;M2221;X
+870083;Minister of Armament;Rene Mayer;1933;1964;1999;LWR;Tank Proponent;Medium;M2221;X
+870084;Minister of Armament;Paul Ramadier;1933;1964;1999;LWR;Resource Industrialist;Medium;M2035;X
+870085;Minister of Armament;Jules Moch;1933;1964;1999;LWR;Battle Fleet Proponent;Medium;M2104;X
+870086;Minister of Security;Charles Brune;1933;1964;1999;LWR;Silent Lawyer;Medium;M2229;X
+870087;Head of Military Intelligence;Rene Mayer;1933;1964;1999;LWR;Logistics Specialist;Medium;M2221;X
+870088;Head of Military Intelligence;Edgar Faure;1933;1964;1999;LWR;Dismal Enigma;Medium;M2219;X

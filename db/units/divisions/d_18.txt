@@ -1,0 +1,174 @@
+allowed_brigades = b_01
+# 0 - Early Corvette (1939) Flower-class/PA-class
+model = {
+	cost						= 0.3
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 36
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 8
+	visibility					= 10
+	seadefence					= 45
+	airdefence					= 15
+	seaattack					= 2
+	convoyattack				= 2
+	subattack					= 6
+	airattack					= 1
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 1000
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 850 }
+}
+
+# 1 - Basic Corvette (1943) Castle-class/Artillerist (122 & 122bis)-Class
+model = {
+	cost						= 0.3
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 1.1
+	maxspeed					= 37
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 8
+	visibility					= 10
+	seadefence					= 43
+	airdefence					= 15
+	seaattack					= 2
+	convoyattack				= 2
+	subattack					= 7
+	airattack					= 1
+	shorebombardment			= 1
+	transportcapability			= 0
+	range						= 1100
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 1120 }
+}
+
+# 2 - Improved Corvette (1958) Poti-class
+model = {
+	cost						= 0.4
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 37
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 2
+	subdetectioncapability		= 9
+	visibility					= 10
+	seadefence					= 42
+	airdefence					= 14
+	seaattack					= 3
+	convoyattack				= 3
+	subattack					= 9
+	airattack					= 2
+	shorebombardment			= 2
+	transportcapability			= 0
+	range						= 1400
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 800 }
+}
+
+# 3 - Developed Corvette (1966) Grisha-class
+model = {
+	cost						= 0.4
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.92
+	maxspeed					= 37
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 10
+	seadefence					= 40
+	airdefence					= 13
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 10
+	airattack					= 3
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 1600
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 920 }
+}
+
+# 4 - Advanced Corvette (1976) Pauk-class
+model = {
+	cost						= 0.4
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.4
+	maxspeed					= 37
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 4
+	subdetectioncapability		= 11
+	visibility					= 10
+	seadefence					= 40
+	airdefence					= 13
+	seaattack					= 4
+	convoyattack				= 4
+	subattack					= 11
+	airattack					= 3
+	shorebombardment			= 3
+	transportcapability			= 0
+	range						= 1700
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 410 }
+}
+
+# 5 - Modern Corvette (1985) Parchim-class
+model = {
+	cost						= 0.5
+	buildtime 					= 370
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 37
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 5
+	subdetectioncapability		= 13
+	visibility					= 10
+	seadefence					= 38
+	airdefence					= 12
+	seaattack					= 5
+	convoyattack				= 5
+	subattack					= 13
+	airattack					= 4
+	shorebombardment			= 4
+	transportcapability			= 0
+	range						= 1900
+	supplyconsumption			= 0.1
+	fuelconsumption				= 0.1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { destroyer = 10 manpower = 890 }
+}

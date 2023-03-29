@@ -1,0 +1,163 @@
+detachable = yes
+
+#0 - Special Forces Brigade '30
+model = {
+	cost				= 8
+	buildtime			= 190
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -1
+	softattack			= 6
+	hardattack			= 0
+	maxspeed			= 0
+	morale				= 2
+	supplyconsumption	= 0.08
+	fuelconsumption		= 0.09
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 horses = 128 }
+}
+
+# 1 - Special Forces Brigade '39
+model = { 
+	cost				= 8
+	buildtime			= 190
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -1
+	softattack			= 8
+	hardattack			= 1
+	maxspeed			= 0
+	morale				= 2
+	supplyconsumption	= 0.08
+	fuelconsumption		= 0.1
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 }
+}
+
+# 2 - Special Forces Brigade '41
+model = { 
+	cost				= 8
+	buildtime			= 190
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -1
+	softattack			= 9
+	hardattack			= 1
+	maxspeed			= 0
+	morale				= 2
+	supplyconsumption	= 0.08
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000}
+}
+
+# 3 - Special Forces Brigade '45
+model = { 
+	cost				= 8
+	buildtime			= 190
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -1
+	softattack			= 10
+	hardattack			= 1
+	maxspeed			= 0
+	morale				= 2
+	supplyconsumption	= 0.08
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 trucks = 30}
+}
+
+# 4 - Special Forces Brigade '51
+model = { 
+	cost				= 8
+	buildtime			= 190
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -1
+	softattack			= 12
+	hardattack			= 2
+	maxspeed			= 1
+	morale				= 2
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 trucks = 30}
+}
+
+# 5 - Special Forces Brigade '57
+model = { 
+	cost				= 8.5
+	buildtime			= 200
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -2
+	softattack			= 14
+	hardattack			= 3
+	maxspeed			= 1.5
+	morale				= 2
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 trucks = 30 helicopter = 10}
+}
+
+# 6 - Special Forces Brigade '63
+model = { 
+	cost				= 8.5
+	buildtime			= 200
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -2
+	softattack			= 15
+	hardattack			= 4
+	maxspeed			= 3
+	morale				= 4
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 trucks = 30 helicopter = 10}
+}
+
+# 7 - Special Forces Brigade '75
+model = { 
+	cost				= 9
+	buildtime			= 230
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -3
+	softattack			= 17
+	hardattack			= 5
+	maxspeed			= 4
+	morale				= 4
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 helicopter = 10}
+}
+
+# 8 - Special Forces Brigade '85
+model = { 
+	cost				= 9.5
+	buildtime			= 250
+	manpower			= 1
+	toughness			= 0
+	defensiveness		= -3
+	softattack			= 19
+	hardattack			= 7
+	maxspeed			= 6
+	morale				= 7
+	supplyconsumption	= 0.1
+	fuelconsumption		= 0
+	upgrade_time_factor	= 0.40
+	upgrade_cost_factor	= 0.42
+	equipment = { manpower = 1000 helicopter = 10}
+}

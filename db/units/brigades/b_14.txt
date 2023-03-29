@@ -1,0 +1,22 @@
+detachable = yes
+# 0 - Armored Box Launcher & Anti Ship Missiles (1984)
+model = {
+	cost 						= 1
+	buildtime					= 100
+	manpower 					= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence					= 0
+	seadefence					= 0
+	seaattack					= 30
+	convoyattack				= 30
+	subattack					= 0
+	airattack					= 0
+	shorebombardment			= 0
+	distance					= 0
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 		= 0.4
+	upgrade_cost_factor 		= 0.6
+}

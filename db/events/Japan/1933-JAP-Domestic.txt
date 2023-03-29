@@ -1,0 +1,117 @@
+### 1330120015  JAP  The Military Academy Incident
+### 1330120016  JAP  The Aizawa Incident
+### 1330120017  JAP  Kanji Ishiwara denounces the Kwantung Army
+### 1330120018  MAN  Kanji Ishiwara denounces the Kwantung Army
+
+# The Military Academy Incident (Japan)
+event = {
+	id = 1330120015
+	random = no
+	country = JAP
+
+	name = EVT_1330120015_NAME
+	desc = EVT_1330120015_DESC
+	style = 2
+  	picture = "news_paper"
+	trigger = {
+		atwar = no
+		NOT = {
+			ispuppet = JAP
+		}
+	}
+
+    date = { day = 20 month = november year = 1934 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+
+# The Aizawa Incident (Japan)
+event = {
+	id = 1330120016
+	random = no
+	country = JAP
+
+	name = EVT_1330120016_NAME
+	desc = EVT_1330120016_DESC
+
+	style = 2
+  	picture = "news_paper"
+
+	trigger = {
+		atwar = no
+		NOT = {
+			ispuppet = JAP
+		}
+	}
+
+    date = { day = 12 month = august year = 1935 }
+
+	action = {
+		name = EVT_1330120016_ACTION1
+		ai_chance = 70
+		command = { type = dissent value = 1 }
+		command = { type = domestic which = freedom value = 1 } #Toseiha preferred a legalistic approach
+	}
+
+	action = { #ahistorical pro-kodoha choice
+		name = EVT_1330120016_ACTION2
+		ai_chance = 30
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = freedom value = -1 } #Kodoha gains more influence, resulting in a shift toward military dictatorship
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = democratic value = -1 }
+	}
+
+}
+
+#Kanji Ishiwara denounces the Kwantung Army
+event = {
+	id = 1330120017
+	random = no
+	country = JAP
+
+	name = EVT_1330120017_NAME
+	desc = EVT_1330120017_DESC
+	style = 2
+  	picture = "news_paper"
+	trigger = {
+		puppet = { country = MAN country = JAP }
+		event = 1330110003
+	}
+
+	date = { day = 0 month = january year = 1937 } 
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 70
+		name = EVT_1330120017_ACTION1
+		command = { type = dissent value = 1 } #Ishiwara pointing out self-serving and corrupt Kwantung Army officers
+	}
+	action = {
+		ai_chance = 30
+		name = EVT_1330120017_ACTION2
+		command = { type = dissent value = 1 } #Unhappy war-profiteers and ultra-nationalists
+		command = { type = belligerence which = JAP value = -1 } #Manchuria being treated less crappy
+		command = { type = trigger which = 1330120018 }
+	}
+}
+
+event = {
+	id = 1330120018
+	random = no
+	country = MAN
+	
+	name = EVT_1330120017_NAME
+	desc = EVT_1330120017_DESC
+	style = 2
+	picture = "ccip_poppy"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -5 }
+	}
+}

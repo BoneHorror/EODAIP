@@ -1,0 +1,52 @@
+EAF;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+635001;Head of State;Sir Philip Euan Mitchell;1933;1964;1999;ML;Die-hard Reformer;High;M550001;X
+635002;Head of Government;Sir John Hathorn Hall;1933;1964;1999;ML;Flamboyant Tough Guy;High;M550002;X
+635003;Foreign Minister;Robert Brooke-Popham;1933;1964;1999;ML;General Staffer;High;L1051;X
+635004;Minister of Armament;Henry Monck-Mason Moore;1933;1964;1999;ML;Battle Fleet Proponent;Medium;M550004;X
+635005;Minister of Security;Sir Harold McMichael;1933;1964;1999;ML;Efficient Sociopath;Medium;M550005;X
+635006;Head of Military Intelligence;Mark Young;1933;1964;1999;ML;Industrial Specialist;Medium;M550006;X
+635007;Chief of Staff;Henry Dundas Stevenson;1933;1964;1999;ML;School of Defence;Medium;M550007;X
+635008;Chief of Army;Robert Brooke-Popham;1933;1964;1999;ML;Decisive Battle Doctrine;Medium;L1051;X
+635009;Chief of Navy;William Denis Battershill;1933;1964;1999;ML;Open Seas Doctrine;Medium;M550009;X
+635010;Chief of Air Force;Charles Farquharson Dundas;1933;1964;1999;ML;Air Superiority Doctrine;Medium;M550010;X
+635011;Head of State;H.R.H. Sayid Khalifa ibn Kharub;1933;1964;1999;PA;Powerhungry Demagogue;High;M550011;X
+635012;Head of State;H.R.H. Edward Mutesa II;1933;1964;1999;SD;Popular Figurehead;High;M550012;X
+635013;Head of State;Julius Nyerere;1933;1964;1999;LWR;Pig-headed Isolationist;High;M550013;X
+635014;Head of Government;Lord Josslyn Erroll;1933;1964;1999;PA;Naive Optimist;High;M1051;X
+635015;Head of Government;Jomo Kenyatta;1933;1964;1999;SD;Silent Workhorse;High;M550015;X
+635016;Head of Government;Apolo Milton Obote;1933;1964;1999;LWR;Happy Amateur;High;M550016;X
+635017;Foreign Minister;Pio Gama Pinto;1933;1964;1999;PA;Great Compromiser;High;M550017;X
+635018;Foreign Minister;Henry G. Pilling;1941;1964;1999;ML;Iron Fisted Brute;High;M550018;X
+635019;Foreign Minister;Keterne Yifru;1933;1964;1999;SD;Biased Intellectual;High;M550019;X
+635020;Foreign Minister;Joseph Murumbi;1933;1964;1999;LWR;The Cloak N Dagger Schemer;High;M550020;X
+635021;Minister of Armament;Alexius de Laszlo;1933;1964;1999;PA;Infantry Proponent;Medium;M550021;X
+635022;Minister of Armament;Chandrakanth Mehta;1942;1964;1999;PA;laissez-faire capitalist;Medium;M550022;X
+635023;Minister of Armament;Charles Farquharson Dundas;1940;1964;1999;ML;Air Superiority Proponent;Medium;M550010;X
+635024;Minister of Armament;Ronald Ngala;1933;1964;1999;SD;Tank Proponent;Medium;M550024;X
+635025;Minister of Armament;Nasirdas Mehta;1942;1964;1999;SD;Resource Industrialist;Medium;M550025;X
+635026;Minister of Armament;Dravi Kanaphathuya;1933;1964;1999;LWR;Theoretical Scientist;Medium;M550026;X
+635027;Minister of Security;Makhan Singh;1933;1964;1999;PA;Crooked Kleptocrat;Medium;M550027;X
+635028;Minister of Security;Ide DeLisle;1942;1964;1999;PA;Back Stabber;Medium;M550028;X
+635029;Minister of Security;Vincent Goncalves Glenday;1940;1964;1999;ML;Crime Fighter;Medium;M550029;X
+635030;Minister of Security;Benedicto Kiwanuka;1933;1964;1999;SD;Man of the People;Medium;M550030;X
+635031;Minister of Security;Dedan Kimathi;1933;1964;1999;LWR;Prince of Terror;Medium;M550031;X
+635032;Head of Military Intelligence;Charles Witherspoon;1933;1964;1999;PA;Logistics Specialist;Medium;M550032;X
+635033;Head of Military Intelligence;Tarcisius Ngagalekumtwa;1933;1964;1999;SD;Naval Intelligence Specialist;Medium;M550033;X
+635034;Head of Military Intelligence;Ernest Hemingway;1943;1964;1999;SD;Dismal Enigma;Medium;M550034;X
+635035;Head of Military Intelligence;Rashid Kawawa;1933;1964;1999;LWR;Technical Specialist;Medium;M550035;X
+635036;Chief of Staff;Richard Carver;1933;1964;1999;PA;School of Manoeuvre;Medium;L1069;X
+635037;Chief of Staff;Jeremy J. Pierson;1941;1964;1999;ML;School of Psychology;Medium;M550037;X
+635038;Chief of Staff;Edward Mutesa;1933;1964;1999;SD;School of Mass Combat;Medium;M550038;X
+635039;Chief of Staff;Henry Jumara;1933;1964;1999;LWR;School of Fire Support;Medium;M550039;X
+635040;Chief of Army;Peter Mills;1933;1964;1999;PA;Guns and Butter Doctrine;Medium;M550040;X
+635041;Chief of Army;Henry G. Pilling;1941;1964;1999;ML;Static Defence Doctrine;Medium;M550018;X
+635042;Chief of Army;Ongeri Bogita;1933;1964;1999;SD;Armoured Spearhead Doctrine;Medium;M550042;X
+635043;Chief of Army;Juma Datawi;1933;1964;1999;LWR;Elastic Defence Doctrine;Medium;M550043;X
+635044;Chief of Navy;Daudi Chawa;1933;1964;1999;PA;Indirect Approach Doctrine;Medium;M550044;X
+635045;Chief of Navy;Nashruddin Mehta;1933;1964;1999;SD;Power Projection Doctrine;Medium;M550045;X
+635046;Chief of Navy;Edward Montford;1933;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M550046;X
+635047;Chief of Air Force;Makhan Singh;1933;1964;1999;PA;Naval Aviation Doctrine;Medium;M550027;X
+635048;Chief of Air Force;James Howe-Dobson;1941;1964;1999;ML;Army Aviation Doctrine;Medium;M550048;X
+635049;Chief of Air Force;Nasirdas Mehta;1933;1964;1999;SD;Carpet Bombing Doctrine;Medium;M550025;X
+635050;Chief of Air Force;Edward Montford;1933;1964;1999;LWR;Vertical Envelopment Doctrine;Medium;M550046;X

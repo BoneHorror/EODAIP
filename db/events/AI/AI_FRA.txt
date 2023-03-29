@@ -1,0 +1,582 @@
+####################################
+# France 
+####################################
+# Air AI Flags
+#	FRAAirAIStrategic	= Stragegic Bombing is a priority
+#	FRAAirAIGround		= Ground support is a priority
+#	FRAAirAINaval		= Stragegic Bombing is a priority
+
+# Defense Flags
+#	FRASpanishFront		= SPR or SPA has allied with either the Axis or Comminterm
+
+# Homeland Defense Flags
+#	FRAHomeland			= Homeland under attack
+
+# Unit building AI
+#	FRABuildStandard	= Standard Building of units 
+#	FRABuildLand		= Priority Building land units
+
+################
+# Poland Invasion AI
+#############################################
+event = {
+	id = 3002001
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		event = 2003036 # Danzig or War AI
+		war = { country = POL country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = may year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_Poland.ai" }
+		command = { type = ai which = "Air_Strategic.ai" }
+	}
+}
+################
+# France Invasion AI
+#############################################
+event = {
+	id = 3002002
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		war = { country = BEL country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = may year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_Germany.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+		command = { type = sleepevent which = 3002005 }
+	}
+}
+################
+# Free France AI
+#############################################
+event = {
+	id = 3002003
+	random = no 
+	country = U01
+	
+	trigger = {
+		ai = yes
+		event = 2002004
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 1
+	deathdate = { day = 29 month = may year = 1944 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_Free.ai" }
+		command = { type = ai which = "Air_Supremecy.ai" }
+		command = { type = free_ic value = 12 }
+		command = { type = free_oil value = 5 }
+		command = { type = free_manpower value = 0.2 }
+	}
+}
+################
+# France loads possible war with Germany AI
+#############################################
+event = {
+	id = 3002004
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = GER
+			lost_national = { country = FRA value = 15 }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_GER_Atwar.ai" }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = interventionism value = 10 }
+	}
+}
+################
+# France goes on the offensive AI but protects Belgium Border
+#############################################
+event = {
+	id = 3002005
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		war = { country = GER }
+		OR = {
+			AND = {
+				month = 5 # June
+				NOT = {	month = 6 } # July
+				random = 20
+			}
+			AND = {
+				month = 6 # July
+				NOT = {	month = 7 } # August
+				random = 50
+			}
+			AND = {
+				month = 7 # August
+				NOT = {	month = 8 } # September
+				random = 2
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_Offensive.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# France loads EXP Force Ratio for war with SOV
+#############################################
+event = {
+	id = 3002006
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		war = { country = SOV }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/EXP_ALIvsSOV.ai" }
+		command = { type = ai which = "Air_Ground.ai" }
+	}
+}
+################
+# France guards the Spanish Border
+#############################################
+event = { 
+	id = 3002007
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = FRASpanishFront }
+		OR = {
+			alliance = { country = SPR country = SOV }
+			alliance = { country = SPA country = SOV }
+			alliance = { country = SPR country = GER }
+			alliance = { country = SPA country = GER }
+			alliance = { country = SPR country = ITA }
+			alliance = { country = SPA country = ITA }
+			control = { province = 437 data = ITA }
+			control = { province = 438 data = ITA }
+			control = { province = 439 data = ITA }
+			control = { province = 443 data = ITA }
+			control = { province = 446 data = ITA }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = FRASpanishFront }
+		command = { type = ai which = "switch/FRA_Defense_Spain.ai" }
+	}
+}
+################
+# France removes guards on the Spanish Border
+#############################################
+event = { 
+	id = 3002008
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = FRASpanishFront
+		NOT = {
+			alliance = { country = SPR country = SOV }
+			alliance = { country = SPA country = SOV }
+			alliance = { country = SPR country = GER }
+			alliance = { country = SPA country = GER }
+			alliance = { country = SPR country = ITA }
+			alliance = { country = SPA country = ITA }
+			control = { province = 437 data = ITA }
+			control = { province = 438 data = ITA }
+			control = { province = 439 data = ITA }
+			control = { province = 443 data = ITA }
+			control = { province = 446 data = ITA }
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = FRASpanishFront }
+		command = { type = ai which = "switch/FRA_Defense_Standard.ai" }
+	}
+}
+################
+# Unit building AI
+#	FRABuildStandard	= Standard Building of units 
+#	FRABuildLand		= Priority Building land units
+################
+# France loads Standard builds AI
+#############################################
+event = {
+	id = 3002009
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = FRABuildStandard }
+		NOT = {
+			NOT = { land_percentage = { country = GER value = 0.85 } }
+			AND = {
+				war = { country = SOV }
+				NOT = { land_percentage = { country = SOV value = 0.55 } }
+			}
+			AND = {
+				war = { country = USA }
+				NOT = { land_percentage = { country = USA value = 0.55 } }
+			}
+			AND = {
+				war = { country = ITA }
+				NOT = { land_percentage = { country = ITA value = 1.05 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = FRABuildStandard }
+		command = { type = local_clrflag which = FRABuildLand }
+		command = { type = ai which = "switch/FRA_Build_Standard.ai" }
+	}
+}
+################
+# France loads Land builds AI
+#############################################
+event = {
+	id = 3002010
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = FRABuildLand }
+		OR = {
+			NOT = { land_percentage = { country = GER value = 0.8 } }
+			AND = {
+				war = { country = SOV }
+				NOT = { land_percentage = { country = SOV value = 0.5 } }
+			}
+			AND = {
+				war = { country = USA }
+				NOT = { land_percentage = { country = USA value = 0.5 } }
+			}
+			AND = {
+				war = { country = ITA }
+				NOT = { land_percentage = { country = ITA value = 1.0 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = FRABuildStandard }
+		command = { type = local_setflag which = FRABuildLand }
+		command = { type = ai which = "switch/FRA_Build_Land.ai" }
+	}
+}
+################
+# Homeland Defense Flags
+#	FRAHomeland			= Homeland under attack
+################
+# France loads Homeland Defense AI
+#############################################
+event = {
+	id = 3002011
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes	
+		NOT = { local_flag = FRAHomeland }
+		OR = {
+			lost_national = { country = FRA value = 2 }
+			AND = {
+				OR = {
+					war = { country = BEL country = GER }
+					war = { country = BEL country = SOV }
+				}
+				NOT = { area = { area = "Flanders" country = BEL value = 10 } }
+				NOT = { area = { area = "Flanders" country = -3 value = 10 } }
+				NOT = { area = { area = "Wallonia" country = BEL value = 10 } }
+				NOT = { area = { area = "Wallonia" country = -3 value = 10 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = FRAHomeland }
+		command = { type = ai which = "switch/FRA_Homeland.ai" }
+	}
+}
+################
+# France Rescinds Homeland Defense AI
+#############################################
+event = {
+	id = 3002012
+	random = no 
+	country = FRA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = FRAHomeland
+		NOT = {
+			lost_national = { country = FRA value = 2 }
+			AND = {
+				OR = {
+					war = { country = BEL country = GER }
+					war = { country = BEL country = SOV }
+				}
+				NOT = { area = { area = "Flanders" country = BEL value = 10 } }
+				NOT = { area = { area = "Flanders" country = -3 value = 10 } }
+				NOT = { area = { area = "Wallonia" country = BEL value = 10 } }
+				NOT = { area = { area = "Wallonia" country = -3 value = 10 } }
+			}
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = FRAHomeland }
+		command = { type = ai which = "switch/FRA_Homeland_Rescind.ai" }
+	}
+}
+################
+# Poland Betrayal AI
+#############################################
+event = {
+	id = 3002013
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		war = { country = POL country = FRA }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1938 }
+	offset = 2
+	deathdate = { day = 29 month = may year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_Poland_Betrayal.ai" }
+		command = { type = ai which = "Air_Strategic.ai" }
+	}
+}
+################
+# France helps ENG with Southern Front
+#############################################
+event = {
+	id = 3002014
+	random = no 
+	country = FRA
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = FRA }
+		flag = AlliesSouth
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 2
+	deathdate = { day = 29 month = may year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/FRA_SouthernFront.ai" }
+		command = { type = ai which = "Air_Strategic.ai" }
+	}
+}
+#### Build queue towards 1939 for FRA NOTE: 2015 used by Hungary
+event = {
+	id = 3002016
+	random = no
+	country = FRA
+
+	trigger = {
+		ai = yes
+		manpower = 90
+		technology = 6900
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = FRA
+				alliance = { country = FRA country = SOV }
+				alliance = { country = FRA country = GER }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = armor }
+		command = { type = build_division which = armor }
+		command = { type = build_division which = hq value = anti_air }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = interceptor when = 2 }
+		command = { type = build_division which = strategic_bomber }
+		command = { trigger = { NOT = { ai = ITA } } type = build_division which = bergsjaeger }
+		command = { type = build_division which = bergsjaeger }
+		command = { trigger = { NOT = { ai = SOV } } type = build_division which = infantry value = artillery }
+		command = { type = build_division which = infantry value = artillery when = 3 }
+		command = { type = build_division which = infantry }
+	}
+}
+#### Manpower towards 1939 for FRA NOTE: 2017 used by AI_sliders
+event = {
+	id = 3002018
+	random = no
+	country = FRA
+
+	trigger = {
+		ai = yes
+		technology = 6900
+		OR = { 
+			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
+			event = 2003016 #  The End of Czechoslovakia - Czechs annexed
+			event = 2003018 #  The End of Czechoslovakia - Czechs wish a fight!
+			event = 2003019 #  The End of Czechoslovakia - Czecho-Slovakia partitioned
+			event = 2003020 #  The End of Czechoslovakia - Czechs fight!
+		}
+		NOT = {
+			OR = {
+				ispuppet = FRA
+				alliance = { country = FRA country = SOV }
+				alliance = { country = FRA country = GER }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1938 }
+	offset = 4
+	deathdate = { day = 29 month = july year = 1939 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = GER } } type = manpowerpool value = 200 }
+		command = { trigger = { ai = GER } type = manpowerpool value = 150 }
+	}
+}

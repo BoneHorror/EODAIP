@@ -1,0 +1,233 @@
+# MODEL_30_
+
+# 0 - Troopship (1914)
+model = {
+	cost						= 1
+	buildtime 					= 120
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 12
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 20
+	seadefence					= 38
+	airdefence					= 30
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 2000
+	supplyconsumption			= 0.3
+	fuelconsumption				= 1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 1 - Troopship (1925)
+model = {
+	cost						= 2
+	buildtime 					= 120
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 22
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 15
+	seadefence					= 34
+	airdefence					= 30
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 3000
+	supplyconsumption			= 0.3
+	fuelconsumption				= 1
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 2 - Troopship (1936)
+model = {
+	cost						= 2
+	buildtime 					= 120
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 24
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 13
+	seadefence					= 30
+	airdefence					= 28
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 4500
+	supplyconsumption			= 0.4
+	fuelconsumption				= 1.2
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 3 - Troopship (1941)
+model = {
+	cost						= 2
+	buildtime 					= 110
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 26
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 11
+	seadefence					= 28
+	airdefence					= 27
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 2
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 6000
+	supplyconsumption			= 0.4
+	fuelconsumption				= 1.2
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 4 - Troopship (1949)
+model = {
+	cost						= 1
+	buildtime 					= 110
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 27
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 10
+	seadefence					= 26
+	airdefence					= 26
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 2
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 8000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 1.4
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 5 - Troopship (1955)
+model = {
+	cost						= 1
+	buildtime 					= 110
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 28
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 9
+	seadefence					= 26
+	airdefence					= 25
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 2
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 40
+	range						= 10000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 1.5
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 6 - Troopship (1971) Algol-class/Gordon-class
+model = {
+	cost						= 4
+	buildtime 					= 1200
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 30
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 9
+	seadefence					= 25
+	airdefence					= 22
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 3
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 60
+	range						= 15000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 1.5
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}
+
+# 7 - Troopship (1995) Bob Hope-class
+model = {
+	cost						= 4.5
+	buildtime 					= 1250
+	defaultorganisation 		= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 45
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	visibility					= 8
+	seadefence					= 25
+	airdefence					= 20
+	seaattack					= 0
+	convoyattack				= 0
+	airattack					= 4
+	subattack					= 0
+	shorebombardment			= 0
+	transportcapability			= 80
+	range						= 20000
+	supplyconsumption			= 0.5
+	fuelconsumption				= 1.5
+	distance					= 0.1
+	reinforce_time				= 0.4
+	reinforce_cost				= 0.6	
+	equipment = { transport = 5 manpower = 500 }
+}

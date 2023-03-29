@@ -1,0 +1,1145 @@
+### 2006007  ITA  Spanish Civil War - Intervention
+### 2006008  ITA  Annexation of Albania
+### 2058001  ALB  Italian Ultimatum
+### 2006009  ITA  Annexation of Albania - Zog refuses
+### 2006010  ITA  Annexation of Albania - Zog accepts
+### 2006011  ITA  Corpo Truppe Volontarie returns home!
+### 2006024  ITA  Corpo Truppe Volontarie returns home!
+### 2006012  ITA  The Allies are about to lose the war!
+### 2006013  ITA  Democratic Italy
+### 2006014  ITA  The Italian regime collapses
+### 2003071  GER  The Italian regime collapses
+### 2007008  SOV  The Italian regime collapses
+### 2001015  ENG  The Italian regime collapses
+### 2049001  USA  The Italian regime collapses
+### 2002019  FRA  The Italian regime collapses
+### 2001014  ENG  The Italian regime collapses
+### 2006025  ITA  Announce claims on Greece
+### 2006030  ITA  Italian Army Reorganization
+
+#########################################################################
+#  Spanish Civil War - Intervention
+#########################################################################
+event = { 
+	id = 2006007
+	random = no
+	country = ITA
+	
+	decision = {
+		government = fascist
+		war = { country = SPA country = SPR }
+		event = 2052002 #SPA fascist nation
+		NOT = {
+			OR = {
+			war = { country = ITA country = SPA }
+			war = { country = ITA country = SOV }
+			war = { country = ITA country = ENG }
+			war = { country = ITA country = USA }
+			}
+		}
+	}
+	decision_trigger = { 		
+		manpower = 10
+		supplies = 1000 
+		money = 200 
+	}
+	trigger = {
+		government = fascist
+		war = { country = SPA country = SPR }
+		event = 2052002 #SPA fascist nation
+		NOT = {
+			OR = {
+			war = { country = ITA country = SPA }
+			war = { country = ITA country = SOV }
+			war = { country = ITA country = ENG }
+			war = { country = ITA country = USA }
+			}
+		}
+	}
+	
+	name = "EVT_2901_NAME"
+	desc = "EVT_2901_DESC"
+	style = 2
+	picture = "Corpo_truppe_Volontarie"
+
+	date = { day = 19 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		name = "ACTIONNAME2901A" # Send materiel and volunteers
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = SPA value = 20 }
+		command = { type = relation which = SPR value = -20 }
+		command = { type = relation which = FRA value = -5 }
+		command = { type = relation which = ENG value = -5 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = relation which = GER value = 5 }
+		command = { type = manpowerpool value = -30 }
+		command = { trigger = { ai = no } type = trade which = SPA where = ITA supplies = 20 when = 1080 value = 1 }
+		command = { type = money value = -200 }
+		command = { type = trigger which = 2008007 } #SPA
+		command = { type = belligerence which = ITA value = 1 }
+	}
+	action = { 
+		trigger = { 
+			ai = no 
+			supplies = 2000 
+			money = 400
+		}
+		name = 2023b
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = relation which = SPA value = 20 }
+		command = { type = relation which = SPR value = -20 }
+		command = { type = relation which = FRA value = -5 }
+		command = { type = relation which = ENG value = -5 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = relation which = GER value = 5 }
+		command = { type = manpowerpool value = -30 }
+		command = { type = trade which = SPA where = ITA supplies = 20 when = 1080 value = 1 }
+		command = { type = money value = -400 }
+		command = { type = trigger which = 2008007 } #SPA
+		command = { type = belligerence which = ITA value = 3 }
+		command = { type = military_control which = ITA where = SPA value = 1 }
+		command	= { type = local_setflag which = military_control }
+	}
+	
+	
+}
+#########################################################################
+#  Annexation of Albania
+#########################################################################
+event = { 
+	id = 2006008
+	random = no
+	country = ITA
+	
+	decision = {
+		OR = {
+			event = 2003015 # End of CZE
+			event = 2003013 # CZE joins Axis
+			}
+		exists = ALB
+		NOT = {    
+			#alliance = { country = ALB country = ITA }
+			war = { country = ALB country = ITA }
+		}
+	}
+	decision_trigger = { 
+		OR = {
+			event = 2003015 # End of CZE
+			event = 2003013 # CZE joins Axis
+		}
+		exists = ALB
+		NOT = {    
+			#alliance = { country = ALB country = ITA }
+			war = { country = ALB country = ITA }
+		}
+	}
+	trigger = {
+        #OR = { 
+		#	random = 6 
+		#	AND = { 
+		#		month = june 
+		#		year = 1939 
+		#		random = 50 
+		#	} 
+		#}
+		OR = {
+			event = 2003015 # End of CZE
+			event = 2003013 # CZE joins Axis
+		}
+		exists = ALB
+		NOT = {
+			OR = {
+				#alliance = { country = ALB country = ITA }
+				war = { country = ALB country = ITA }
+			}
+		}
+	}
+	
+	name = "EVT_2902_NAME"
+	desc = "EVT_2902_DESC"
+	style = 2
+	picture = "Mussolini"
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action= {
+		name = "ACTIONNAME2902A"
+		ai_chance = 100
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 2058001 } #Alb
+		command = { type = relation which = ALB value = -20 }
+		command = { type = relation which = YUG value = -5 }
+		command = { type = relation which = GRE value = -5 }
+		command = { type = addclaim which = 329 } #Pristina
+		command = { type = addclaim which = 334 } #Tetovo
+	}
+}
+#  Italian Ultimatum
+event = { 
+	id = 2058001
+	random = no
+	country = ALB
+	
+	# Triggered by ITA 2006008
+	
+	name = "EVT_3500_NAME"
+	desc = "EVT_3500_DESC"
+	style = 2
+	picture = "Mussolini"
+	
+	action_a = {
+		name = "ACTION_NAME_NEVER" # Never!
+		ai_chance = 98
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = trigger which = 2006009 }
+		command = { trigger = { ai = yes } type = demobilize which = land when = 0 where = 0 value = 0 } #Force ALB AI to remove all divisions
+		command = { trigger = { ai = yes } type = demobilize which = air when = 0 where = 0 value = 0 }
+		command = { trigger = { ai = yes } type = demobilize which = naval when = 0 where = 0 value = 0 }
+	}
+	action_b = {
+		name = "ACTIONNAME3500B" # Very well. (Game Over)
+		ai_chance = 2
+		command = { type = trigger which = 2006010 }
+	}
+}
+#  Annexation of Albania - Zog refuses
+event = { 
+	id = 2006009
+	random = no
+	country = ITA
+	
+	# Triggered by ALB 2058001
+
+	name = "EVT_2903_NAME"
+	desc = "EVT_2903_DESC"
+	style = 2
+	picture = "Mussolini"
+	
+	action_a = {
+		name = "ACTIONNAME2903A" # Declare War
+		ai_chance = 100
+		command = { type = war which = ALB }
+		command = { type = relation which = YUG value = -10 }
+		command = { type = relation which = GRE value = -10 }
+	}
+	action_b = {
+		name = "ACTIONNAME2903B" # We do not dare follow through
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+		command = { type = relation which = ALB value = 10 }
+		command = { type = removeclaim which = 329 } #Pristina
+		command = { type = removeclaim which = 334 } #Tetovo		
+	}
+}
+#  Annexation of Albania - Zog accepts
+event = { 
+	id = 2006010
+	random = no
+	country = ITA
+	
+	# Triggered by ALB 2058001
+
+	name = "EVT_2904_NAME"
+	desc = "EVT_2904_DESC"
+	style = 2
+	picture = "Mussolini"
+	
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = inherit which = ALB }
+		command = { type = dissent value = -5 }
+		command = { type = relation which = YUG value = -5 }
+		command = { type = relation which = GRE value = -10 }
+	}
+}
+##################################################  #######################
+#  Spanish Civil War ends - Corpo Truppe Volontarie returns home
+##################################################  #######################
+event = {
+	id = 2006011
+	random = no
+	country = ITA
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = fascist
+		event = 2008007					# ITA intervention happened
+		event = 2008008	# Spanish Civil War - Victory!!! i.e. 'Nationalists win event' has triggered
+		
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+			war = { country = ITA country = SPA }
+			war = { country = ITA country = SPR }
+			#war = { country = ITA country = SOV }
+			#war = { country = ITA country = ENG }
+			#war = { country = ITA country = USA }
+			}
+		}
+	}
+
+	name = "EVT_2905_NAME"
+	desc = "EVT_2905_DESC"
+	style = 2
+	picture = "Corpo_truppe_Volontarie" #
+
+	date = { day = 18 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_GREAT" # Great! 
+		command = { type = relation which = SPA value = 20 }		# Franco is pleased
+		command = { type = manpowerpool value = 20 }			# Heroes return home - after heavy casualties
+		command = { type = gain_tech which = 2330 } 			# Basic Field Artillery blueprints
+        	command = { type = gain_tech which = 4030 } 			# Basic Interceptor
+        	command = { type = end_trades which = ITA where = SPA } 	# to break the trade that gives free supplies to SPA		
+		command = { trigger = { year = 1939 } type = activate_division which = 23500 value = 1008 where = 421 when = 0 } #Naples (light armor)
+		command = { trigger = { NOT = { year = 1939 } } type = activate_division which = 1009 value = 91 where = 421 when = 0 } #Naples (motorized)
+		command	= { trigger = { local_flag = military_control } type = military_control which = ITA where = SPA }
+		command	= { trigger = { local_flag = military_control } type = local_clrflag which = military_control }
+	}
+}
+event = {
+	id = 2006024
+	random = no
+	country = ITA
+
+	trigger = {
+		# pre-requisites for event to trigger:
+		government = fascist
+		event = 2008007	# ITA intervention happened
+		event = 2052010	# Republican Spain wins the Civil War
+		
+		# conditions that prevent event:
+		NOT = {
+			OR = {
+			war = { country = ITA country = SPA }
+			war = { country = ITA country = SPR }
+			#war = { country = ITA country = SOV }
+			#war = { country = ITA country = ENG }
+			#war = { country = ITA country = USA }
+			}
+		}
+	}
+
+	name = "EVT_2905_NAME"
+	desc = "EVT_2905_DESC"
+	style = 2
+	picture = "Corpo_truppe_Volontarie" #
+
+	date = { day = 18 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "ACTION_NAME_OK" # Ok
+		command = { type = manpowerpool value = 5 }	# Soldiers return home - after very heavy casualties
+		command = { trigger = { ai = no} type = dissent value = 1 } 
+		command = { type = gain_tech which = 2330 } # Basic Field Artillery blueprints
+        command = { trigger = { exists = SPA } type = end_trades which = ITA where = SPA } # to break the trade that gives free supplies to SPA (just to be sure)		
+	}
+}
+
+###################################
+# Italy joins the Axis
+#####################################
+event = { 
+	id = 2006012
+	random = no 
+	country = ITA
+
+	decision = {
+		control = { province = 55 data = GER } # Paris
+		control = { province = 163 data = GER } # Berlin
+		headofgovernment = 25002 # Mussolini (FA)		
+		war = { country = GER country = ENG }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = GER country = USA } }
+		#NOT = { war = { country = ITA country = ENG } }
+		NOT = { war = { country = ITA country = GER } }
+		NOT = { alliance = { country = ITA country = SOV } }
+		NOT = { alliance = { country = ITA country = ENG } }
+		NOT = { alliance = { country = ITA country = GER } }
+	}
+	
+	decision_trigger = {
+		control = { province = 55 data = GER } # Paris
+		event = 2003008 # Italy has signed the Anti-Comintern pact
+	}
+	
+	trigger = {
+		control = { province = 55 data = GER } # Paris
+		event = 2003008 # Italy has signed the Anti-Comintern pact
+		control = { province = 163 data = GER } # Berlin
+		headofgovernment = 25002 # Mussolini (FA)		
+		war = { country = GER country = ENG }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = GER country = USA } }
+		#NOT = { war = { country = ITA country = ENG } }
+		NOT = { war = { country = ITA country = GER } }
+		NOT = { alliance = { country = ITA country = SOV } }
+		NOT = { alliance = { country = ITA country = ENG } }
+		NOT = { alliance = { country = ITA country = GER } }
+		OR = { 
+			ai = no
+			garrison = { country = ITA province = 396 type = land size = 1 area = 1 } # Genoa, North Italy Area
+		}
+	}
+	
+	date = { day = 1 month = january year = 1940 }		 
+	offset = 1
+	deathdate = { day = 29 month = september year = 1999 }	
+	
+	name = 459name
+	desc = 459desc
+  	style = 2
+  	picture = "Pact_of_Steel"
+	
+	action = {
+		name = 459a
+		command = { type = trigger which = 2003145 } #GER Italy 
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = relation which = GER value = 50 }
+	}
+}
+
+event = { 
+	id = 2003145
+	random = no 
+	country = GER
+	
+	name = EVT_2003145_NAME
+	desc = EVT_2003145_DESC
+  	style = 2
+  	picture = "Pact_of_Steel"
+	
+	action = {
+		ai_chance = 100
+		name = ACTION_NAME_ACCEPT
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = relation which = ITA value = 50 }
+	}
+	action = {
+		ai_chance = 0
+		name = ACTION_NAME_REFUSE
+		command = { type = dissent value = 5 } #we're betraying an alliance with someone who was going to help us in the war
+		command = { type = relation which = ITA value = -100 }
+	}
+}
+###########################################
+# Democratic Italy By CSABadass
+###########################################
+event = {
+	id = 2006013
+	random = no
+	country = ITA
+
+	name = "2906name"
+	desc = "2906desc"
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		alliance = { country = ITA country = ENG }
+		NOT = { government = { type = fascist country = ENG } }
+		NOT = { participant = { country = ENG value = 2 } } #UK is not in Axis
+		OR = { 
+			NOT = { government = democratic }
+			event = 9005001 #ENG Return provinces to Italy
+		}
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action_a = {
+		name = "elec_IVA"
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 25015 }
+		command = { type = headofgovernment which = 25029 }
+		command = { type = foreignminister which = 25041 }
+		command = { type = armamentminister which = 25063 }
+		command = { type = ministerofsecurity which = 25079 }
+		command = { type = ministerofintelligence which = 25092 }
+		command = { type = chiefofstaff which = 25105 }
+		command = { type = chiefofarmy which = 25113 }
+		command = { type = chiefofnavy which = 25121 }
+		command = { type = chiefofair which = 25129 }
+		}
+} 
+################################################################
+# Italy Surrenders (Germany, England, USA, Soviet Union, France)
+################################################################
+event = {
+	id = 2006014
+	random = no
+	country = ITA
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		lost_national = { country = ITA value = 40 }
+		OR = {
+			war = { country = ITA country = GER }
+			war = { country = ITA country = ENG }
+			war = { country = ITA country = USA }
+			war = { country = ITA country = SOV }
+			war = { country = ITA country = FRA }
+		}
+		OR = {
+			control = { province = 419 data = -2 } #Rome is controlled by Enemy
+			control = { province = 407 data = -2 } #Milan is controlled by Enemy
+			control = { province = 421 data = -2 } #Naples is controlled by Enemy
+		}	
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = flag_ext where = ITA which = _democratic }
+		
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 25021 } #Enrico de Nicola
+		command = { type = headofgovernment which = 25028 } #Alcide de Gasperi
+		command = { type = foreignminister which = 25039 } #Alcide De Gasperi
+		command = { type = armamentminister which = 25063 } #Luigi Einaudi
+		command = { type = ministerofsecurity which = 25076 } #Alcide De Gasperi
+		command = { type = ministerofintelligence which = 25012 } #Umberto Ricci
+		command = { type = chiefofstaff which = 25153 } #Pietro Badoglio
+		command = { type = chiefofarmy which = 25112 } #Vittorio Ambrosio
+		command = { type = chiefofnavy which = 25121 } #Raffaele De Courten
+		command = { type = chiefofair which = 25129 } #Pietro Piacentini
+		
+		### Removal of non-Italian cores and claims ###
+		command = { type = removeclaim which = 349 } # Ljubljana - Yugoslavia
+		command = { type = removecore which = 350 } # Split - Yugoslavia
+		command = { type = removecore which = 356 } # Mostar - Yugoslavia
+		command = { type = removecore which = 343 } # Dubrovnik - Yugoslavia
+		command = { type = removecore which = 332 } # Cetinje - Yugoslavia
+		command = { type = removeclaim which = 359 } # Tirana - Albania
+		command = { type = removeclaim which = 360 } # Korce - Albania
+		command = { type = removeclaim which = 361 } # Shkoder - Albania
+		command = { type = removeclaim which = 362 } # Vlore - Albania
+		command = { type = removecore which = 371 } # Kalymnos - Greece
+		command = { type = removecore which = 378 } # Kalymnos - Greece
+		command = { type = removecore which = 379 } # Rodos - Greece
+		command = { type = removecore which = 390 } # Lugano - Switzerland
+		command = { type = removecore which = 429 } # Malta
+		command = { type = removecore which = 87 } # Chambery - France
+		command = { type = removecore which = 91 } # Nice - France
+		command = { type = removecore which = 94 } # Corsica - France
+		#African colonies
+		command = { type = removeclaim which = 740 } # Kasserine - Tunisia
+		command = { type = removeclaim which = 741 } # Tataouine - Tunisia
+		command = { type = removeclaim which = 742 } # Medenine - Tunisia
+		command = { type = removeclaim which = 744 } # Gabes - Tunisia
+		command = { type = removeclaim which = 745 } # Sousse - Tunisia
+		command = { type = removeclaim which = 746 } # El Kef - Tunisia
+		command = { type = removeclaim which = 747 } # Tunis - Tunisia
+		command = { type = removeclaim which = 748 } # Bizerte - Tunisia
+		command = { type = removeclaim which = 749 } # Beja - Tunisia
+		command = { type = removeclaim which = 750 } # Tripoli - Libya
+		command = { type = removeclaim which = 751 } # Gharyan - Libya
+		command = { type = removeclaim which = 752 } # Az Zawiyah - Libya
+		command = { type = removeclaim which = 753 } # Ghadamis - Libya
+		command = { type = removeclaim which = 754 } # Maradah - Libya
+		command = { type = removeclaim which = 755 } # Houn - Libya
+		command = { type = removeclaim which = 756 } # Surt - Libya
+		command = { type = removeclaim which = 757 } # Misratah - Libya
+		command = { type = removeclaim which = 758 } # Bu Nujaym - Libya
+		command = { type = removeclaim which = 759 } # El Agheila - Libya
+		command = { type = removeclaim which = 760 } # Masus - Libya
+		command = { type = removeclaim which = 761 } # Benghazi - Libya
+		command = { type = removeclaim which = 762 } # Agedabia - Libya
+		command = { type = removeclaim which = 763 } # Qaminis - Libya
+		command = { type = removeclaim which = 764 } # Al Bayda - Libia
+		command = { type = removeclaim which = 765 } # Tobruk - Libia
+		command = { type = removeclaim which = 766 } # Al-Mukhaylá - Libya
+		command = { type = removeclaim which = 767 } # Gazala - Libia
+		command = { type = removeclaim which = 768 } # Darnah - Libya
+		command = { type = removeclaim which = 769 } # Bir al Hukayim - Libya
+		command = { type = removeclaim which = 770 } # Al-Jaghbub - Libya
+		command = { type = removeclaim which = 771 } # Al-Bardi - Libya
+		command = { type = removeclaim which = 772 } # Bir el Gubi - Libya
+		command = { type = removeclaim which = 773 } # Jalu - Libya
+		command = { type = removeclaim which = 774 } # Al Jawf - Libya
+		command = { type = removeclaim which = 775 } # Wadi al Hamim - Libya
+		command = { type = removeclaim which = 776 } # Sabha - Libya
+		command = { type = removeclaim which = 777 } # Ayn Ath Talab - Libya
+		command = { type = removeclaim which = 994 } # Madeira - Portugal
+		command = { type = removeclaim which = 815 } # Massawa - Ethiopia
+		command = { type = removeclaim which = 816 } # Assab - Ethiopia
+		command = { type = removeclaim which = 817 } # Asmaraa - Ethiopia
+		command = { type = removeclaim which = 818 } # Dire Dawa - Ethiopia
+		command = { type = removeclaim which = 819 } # Tendaho - Ethiopia
+		command = { type = removeclaim which = 820 } # Dessie - Ethiopia
+		command = { type = removeclaim which = 821 } # Adigrat - Ethiopia
+		command = { type = removeclaim which = 822 } # Debre Marqos - Ethiopia
+		command = { type = removeclaim which = 823 } # Gonder - Ethiopia
+		command = { type = removeclaim which = 824 } # Asosa - Ethiopia
+		command = { type = removeclaim which = 825 } # Addis Adeba - Ethiopia
+		command = { type = removeclaim which = 826 } # Goba - Ethiopia
+		command = { type = removeclaim which = 827 } # Gode - Ethiopia
+		command = { type = removeclaim which = 828 } # Harer - Ethiopia
+		command = { type = removeclaim which = 829 } # Jimma - Ethiopia
+		command = { type = removeclaim which = 830 } # Arba Minch - Ethiopia
+		command = { type = removeclaim which = 831 } # Awasa - Ethiopia
+		command = { type = removeclaim which = 832 } # Hargeysa - Horn of Africa
+		command = { type = removeclaim which = 833 } # Djibouti - Horn of Africa
+		command = { type = removeclaim which = 834 } # Gardo - Horn of Africa
+		command = { type = removeclaim which = 835 } # Galkacyo - Horn of Africa
+		command = { type = removeclaim which = 836 } # Muqdisho - Horn of Africa
+		command = { type = removeclaim which = 837 } # Bayahabo - Horn of Africa
+		command = { type = removeclaim which = 838 } # Kismaayo - Horn of Africa
+		
+		command = { type = sleepleader which = 25030 }
+		command = { type = sleepleader which = 25032 }
+		command = { type = sleepleader which = 25058 }
+		command = { type = sleepleader which = 25250 }
+		command = { type = sleepleader which = 25251 }
+		command = { type = sleepleader which = 25066 }
+		command = { type = sleepleader which = 25075 }
+		command = { type = sleepleader which = 25085 }
+		command = { type = sleepleader which = 25259 }
+		command = { type = sleepleader which = 25262 }
+		command = { type = sleepleader which = 25264 }
+		command = { type = sleepleader which = 25267 }
+		command = { type = sleepleader which = 25125 }
+		command = { type = sleepleader which = 25270 }
+		command = { type = sleepleader which = 25275 }
+		command = { type = sleepleader which = 25276 }
+		command = { type = sleepleader which = 25165 }
+		command = { type = sleepleader which = 25174 }
+		command = { type = sleepleader which = 25277 }
+		command = { type = sleepleader which = 25189 }
+		command = { type = sleepleader which = 25278 }
+		command = { type = sleepleader which = 25202 }
+		command = { type = sleepleader which = 25207 }
+		command = { type = sleepleader which = 25219 }
+		command = { type = sleepleader which = 25234 }
+		command = { type = sleepleader which = 25279 }
+		command = { type = sleepleader which = 25238 }
+
+		command = { type = sleepleader which = 25055 }
+		command = { type = sleepleader which = 25077 }
+		command = { type = sleepleader which = 25080 }
+		command = { type = sleepleader which = 25258 }
+
+		command = { type = sleepteam which = 25020 } #Rodolfo Graziani
+		
+		command = { type = sleepminister which = 25001 } #Vittorio Emanuele III
+		command = { type = sleepminister which = 25002 } #Benito Mussolini
+		command = { type = sleepminister which = 25003 } #Gian Galeazzo Ciano
+		command = { type = sleepminister which = 25005 } #Guido Buffarini-Guidi
+		command = { type = sleepminister which = 25025 } #Junio Borghese
+		
+		command = { type = strength which = militia when = 0 where = 0 org = 0 value = 0 } #remove all militia units
+				
+		command = { trigger = { 
+					NOT = { war = { country = ITA  country = GER } }
+					control = { province = 163 data = GER } #Berlin
+					OR = { #Germany is connected to Italy via Austria
+						control = { province = 189 data = GER } #Innsbruck
+						control = { province = 191 data = GER } #Klagenfurt 
+					} } type = trigger which = 2003071 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						control = { province = 419 data = GER } #Rome
+						AND = {
+							control = { province = 419 data = RSI } #Rome
+							alliance = { country = GER country = RSI }
+						}
+					}
+					OR = {
+						control = { province = 407 data = GER } #Milan
+						AND = {
+							control = { province = 407 data = RSI } #Milan
+							alliance = { country = GER country = RSI }
+						}
+					}
+				} type = secederegion which = GER value = "Italy"  when = 1 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						OR = {
+							control = { province = 419 data = GER } #Rome
+							AND = {
+								control = { province = 419 data = RSI } #Rome
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 407 data = GER } #Milan
+							AND = {
+								control = { province = 407 data = RSI } #Milan
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 421 data = GER } #Naples
+							AND = {
+								control = { province = 421 data = RSI } #Naples
+								alliance = { country = GER country = RSI }
+							}
+						}
+					}
+				} type = secederegion which = GER value = "Libya"  when = 1 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						OR = {
+							control = { province = 419 data = GER } #Rome
+							AND = {
+								control = { province = 419 data = RSI } #Rome
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 407 data = GER } #Milan
+							AND = {
+								control = { province = 407 data = RSI } #Milan
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 421 data = GER } #Naples
+							AND = {
+								control = { province = 421 data = RSI } #Naples
+								alliance = { country = GER country = RSI }
+							}
+						}
+					}
+				} type = secederegion which = GER value = "Ethiopia"  when = 1 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						OR = {
+							control = { province = 419 data = GER } #Rome
+							AND = {
+								control = { province = 419 data = RSI } #Rome
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 407 data = GER } #Milan
+							AND = {
+								control = { province = 407 data = RSI } #Milan
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 421 data = GER } #Naples
+							AND = {
+								control = { province = 421 data = RSI } #Naples
+								alliance = { country = GER country = RSI }
+							}
+						}
+					}
+				} type = secederegion which = GER value = "Balkan"  when = 1 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						OR = {
+							control = { province = 419 data = GER } #Rome
+							AND = {
+								control = { province = 419 data = RSI } #Rome
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 407 data = GER } #Milan
+							AND = {
+								control = { province = 407 data = RSI } #Milan
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 421 data = GER } #Naples
+							AND = {
+								control = { province = 421 data = RSI } #Naples
+								alliance = { country = GER country = RSI }
+							}
+						}
+					}
+				} type = secederegion which = GER value = "Horn of Africa"  when = 1 } #GER Italian regime collapses
+		command = { trigger = {
+					war = { country = ITA  country = GER }
+					control = { province = 163 data = GER } #Berlin
+					OR = {
+						OR = {
+							control = { province = 419 data = GER } #Rome
+							AND = {
+								control = { province = 419 data = RSI } #Rome
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 407 data = GER } #Milan
+							AND = {
+								control = { province = 407 data = RSI } #Milan
+								alliance = { country = GER country = RSI }
+							}
+						}
+						OR = {
+							control = { province = 421 data = GER } #Naples
+							AND = {
+								control = { province = 421 data = RSI } #Naples
+								alliance = { country = GER country = RSI }
+							}
+						}
+					}
+				} type = trigger which = 2003071 } #GER Italian regime collapses
+					
+		command = { trigger = {
+					exists = USA
+					war = { country = USA country = ITA }
+					OR = { #Germany cannot annex Italy
+						war = { country = ITA  country = GER }
+						control = { province = 163 data = -2 } #Berlin controlled by Enemy
+						AND = {
+							control = { province = 189 data = -2 } #Innsbruck
+							control = { province = 191 data = -2 } #Klagenfurt 
+						}
+					}
+					OR = {
+						control = { province = 419 data = USA } #Rome is controlled by Enemy
+						control = { province = 407 data = USA } #Milan is controlled by Enemy
+						control = { province = 421 data = USA } #Naples is controlled by Enemy
+					}
+					} type = trigger which = 2049001 } #USA Italian regime collapses	
+		command = { trigger = { 
+					exists = ENG
+					war = { country = ENG country = ITA }
+					OR = { #Germany cannot annex Italy
+						war = { country = ITA  country = GER }
+						control = { province = 163 data = -2 } #Berlin controlled by Enemy
+						AND = {
+							control = { province = 189 data = -2 } #Innsbruck
+							control = { province = 191 data = -2 } #Klagenfurt 
+						}
+					}
+					OR = {
+						control = { province = 419 data = ENG } #Rome is controlled by Enemy
+						control = { province = 407 data = ENG } #Milan is controlled by Enemy
+						control = { province = 421 data = ENG } #Naples is controlled by Enemy
+					}
+					} type = trigger which = 2001015 } #ENG Italian regime collapses					
+		command = { trigger = { 
+					exists = SOV
+					war = { country = SOV country = ITA }
+					OR = { #Germany cannot annex Italy
+						war = { country = ITA  country = GER }
+						control = { province = 163 data = -2 } #Berlin controlled by Enemy
+						AND = {
+							control = { province = 189 data = -2 } #Innsbruck
+							control = { province = 191 data = -2 } #Klagenfurt 
+						}
+					}
+					OR = {
+						control = { province = 419 data = SOV } #Rome is controlled by Enemy
+						control = { province = 407 data = SOV } #Milan is controlled by Enemy
+						control = { province = 421 data = SOV } #Naples is controlled by Enemy
+					}
+					} type = trigger which = 2007008 } #SOV Italian regime collapses					
+		command = { trigger = { 
+					exists = FRA
+					war = { country = FRA country = ITA }
+					OR = { #Germany cannot annex Italy
+						war = { country = ITA  country = GER }
+						control = { province = 163 data = -2 } #Berlin controlled by Enemy
+						AND = {
+							control = { province = 189 data = -2 } #Innsbruck
+							control = { province = 191 data = -2 } #Klagenfurt 
+						}
+					}
+					OR = {
+						control = { province = 419 data = FRA } #Rome is controlled by Enemy
+						control = { province = 407 data = FRA } #Milan is controlled by Enemy
+						control = { province = 421 data = FRA } #Naples is controlled by Enemy
+					}
+					} type = trigger which = 2002019 } #FRA Italian regime collapses
+		#command = { trigger = { ai = ITA } type = leave_alliance when = 0 }
+	}
+}
+
+event = {
+	id = 2003071
+	random = no
+	country = GER
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		trigger = { ai = ITA }
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -0.5 }
+		command = { type = addcore which = 401 } #Trento
+		command = { type = addcore which = 402 } #Bolzano
+		command = { type = addclaim which = 394 } #Belluno
+		command = { type = addclaim which = 405 } #Udine
+		command = { type = addclaim which = 404 } #Trieste
+		command = { type = addclaim which = 403 } #Capodistria
+		command = { type = addclaim which = 406 } #Pola
+		command = { type = inherit which = ITA }
+		command = { type = independence which = RSI value = 1 when = 0 }
+		command = { type = make_puppet which = RSI }
+		command = { type = alliance which = RSI when = 1 }
+		command = { type = trigger which = 1100080 } #RSI Independence Struggle
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } NOT = { alliance = { country = GER country = RSI } } }
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -0.5 }
+		command = { type = addcore which = 401 } #Trento
+		command = { type = addcore which = 402 } #Bolzano
+		command = { type = make_puppet which = ITA }
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = coup_nation which = ITA }
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } alliance = { country = GER country = RSI } }
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -0.5 }
+		command = { type = addcore which = 401 } #Trento
+		command = { type = addcore which = 402 } #Bolzano
+		command = { type = secederegion which = RSI value = "Italy" when = 1 }
+	}
+}
+event = {
+	id = 2007008
+	random = no
+	country = SOV
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		trigger = { ai = ITA }
+		name = ACTION_NAME_OK
+		command = { type = inherit which = ITA }
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } }
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = ITA }
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = coup_nation which = ITA }
+	}
+}
+event = {
+	id = 2001015
+	random = no
+	country = ENG
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		trigger = { ai = ITA }
+		name = ACTION_NAME_OK
+		command = { type = inherit which = ITA }
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } }
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = ITA }
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = coup_nation which = ITA }
+	}
+}
+event = {
+	id = 2049001
+	random = no
+	country = USA
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		trigger = { ai = ITA }
+		name = ACTION_NAME_OK
+		command = { type = inherit which = ITA }
+		command = { trigger = { alliance = { country = ENG country = USA } } type = trigger which = 2001014 } #ENG Italian regime collapses
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } }
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = ITA }
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = coup_nation which = ITA }
+	}
+}
+event = {
+	id = 2002019
+	random = no
+	country = FRA
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		trigger = { ai = ITA }
+		name = ACTION_NAME_OK
+		command = { type = inherit which = ITA }
+		command = { trigger = { alliance = { country = ENG country = FRA } } type = trigger which = 2001014 } #ENG Italian regime collapses
+	}
+	action = {
+		trigger = { NOT = { ai = ITA } }
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = ITA }
+		command = { type = alliance which = ITA when = 1 }
+		command = { type = coup_nation which = ITA }
+	}
+}
+
+event = {
+	id = 2001014
+	random = no
+	country = ENG
+
+	name = 36name
+	desc = EVT_36_DESC
+	style = 2
+  	picture = "news_paper"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = dissent value = -10 }
+	}
+}
+
+event = {
+	id = 2006025
+	random = no
+	country = ITA
+	style = 2
+
+	trigger = { 	
+		war = { country = ITA country = GRE } 
+		government = fascist
+	}
+	
+	name = "EVT_2003118_2006025_NAME" #Rise claims on Greece
+	desc = "EVT_2003118_2006025_DESC"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		ai_chance = 100
+		name = "ACTION_NAME_EXCELLENT" #Excellent
+		command = { type = addclaim which = 367 } #Ioannina
+		command = { type = addclaim which = 368 } #Larissa
+		command = { type = addclaim which = 369 } #Metsovo
+		command = { type = addclaim which = 376 } #Agrinion
+		command = { type = addclaim which = 375 } #Levadhia
+		command = { type = addclaim which = 372 } #Patra
+		command = { type = addclaim which = 373 } #Corinth
+		command = { type = addclaim which = 380 } #Sitia
+		command = { type = addclaim which = 374 } #Halkyda
+		command = { type = addclaim which = 381 } #Ermoupoli
+	}
+	action_b = {
+		ai_chance = 0
+		name = "ACTINUTILE" #No need
+		command = { }
+	}
+}
+#####################
+# Italian Army Reorganization
+################################
+event = {
+	id = 2006030
+	random = no
+	country = ITA
+	style = 2
+	picture = "Mussolini"
+	decision_picture = "decision_german_total_war"
+
+	decision = {
+		exists = SPA
+		headofgovernment = 25002 # Mussolini
+		
+	}
+
+	decision_trigger = {
+		event = 2006011 # Spanish Civil War ends - Corpo Truppe Volontarie returns home
+		control = { province = 825 data = -3 } # Addis Adeba
+		atwar = no
+	}
+
+	trigger = { 	
+		event = 2006011 # Spanish Civil War ends - Corpo Truppe Volontarie returns home
+		exists = SPA
+		headofgovernment = 25002
+		control = { province = 825 data = -3 } # Addis Adeba
+		atwar = no
+	}
+	
+	name = "EVT_2006030_NAME"
+	desc = "EVT_2006030_DESC"
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_EXCELLENT" #Excellent
+		command = { type = strength_cap which = infantry value = 70 }
+		command = { type = build_time which = infantry when = on_upgrade where = relative value = -15 }
+		command = { type = add_division value = infantry when = 9 } # which = "32a Divisione 'Marche'"
+		command = { type = add_division value = infantry when = 9 } # which = "33a Divisione 'Acqui'"
+		command = { type = add_division value = infantry when = 9 } # which = "36a Divisione 'Forli'"
+		command = { type = add_division value = infantry when = 9 } # which = "37a Divisione 'Modena'"
+		command = { type = add_division value = infantry when = 9 } # which = "38a Divisione 'Puglie'"
+		command = { type = add_division value = infantry when = 9 } # which = "41a Divisione 'Firenze'"
+		command = { type = add_division value = infantry when = 9 } # which = "44a Divisione 'Cremona'"
+		command = { type = add_division value = infantry when = 9 } # which = "47a Divisione 'Bari'"
+		command = { type = add_division value = infantry when = 9 } # which = "48a Divisione 'Taro'"
+		command = { type = add_division value = infantry when = 9 } # which = "49a Divisione 'Parma'"
+		command = { type = add_division value = infantry when = 9 } # which = "50a Divisione 'Regina'"
+		command = { type = add_division value = infantry when = 9 } # which = "51a Divisione 'Siena'"
+		command = { type = add_division value = infantry when = 9 } # which = "53a Divisione 'Arezzo'"
+		command = { type = add_division value = infantry when = 9 } # which = "54a Divisione 'Napoli'"
+		command = { type = add_division value = infantry when = 9 } # which = "55a Divisione 'Savona'"
+		command = { type = add_division value = infantry when = 9 } # which = "56a Divisione 'Casale'"
+		command = { type = add_division value = infantry when = 9 } # which = "57a Divisione 'Lombardia'"
+		command = { type = add_division value = infantry when = 9 } # which = "58a Divisione 'Legnano'"
+		command = { type = add_division value = infantry when = 9 } # which = "59a Divisione 'Cagliari'"
+	}
+}

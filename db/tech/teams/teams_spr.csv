@@ -1,0 +1,36 @@
+SPR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+255001;CASA;T3900;3;1930;2000;aeronautics;bomber_design;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255002;CROS, SA;T3101;2;1936;2000;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255003;Dr. Leret Ruiz;T3902;3;1930;1937;rocketry;mathematics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255004;Esperanza & Unceta;100106;4;1936;2000;artillery;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255005;Fábrica de Armas de Trubia;100319;4;1936;2000;mechanics;artillery;vehicle_engineering;technical_efficiency;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255006;José Miaja Menant;T3905;4;1930;1958;infantry_focus;large_unit_tactics;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255007;Unión Naval de Levante;T3906;4;1930;1937;mechanics;artillery;naval_artillery;naval_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255008;Enrique Líster Forján;T3907;4;1937;2000;infantry_focus;small_unit_tactics;training;individual_courage;mountain_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255009;Leocadio Mendiola Núñez;T3908;5;1930;1966;training;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255010;Vicente Rojo Lluch;T3909;5;1937;1966;infantry_focus;large_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255011;Hispano-Suiza;T3910;5;1936;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255012;Centro de Estudios Químicos;T3911;4;1930;2000;nuclear_physics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255013;SECN;T3912;5;1936;2000;naval_engineering;naval_artillery;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255014;Puig Adam;T3913;4;1930;1960;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255015;Buiza Palacios;T3914;3;1930;1937;naval_training;small_taskforce_tactics;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255016;González Ubieta;T3915;3;1937;2000;naval_training;large_taskforce_tactics;seamanship;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255017;Hidalgo de Cisneros;T3916;5;1936;1966;decentralized_execution;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255018;Compañía Española de Petróleos, SA;100323;4;1930;2000;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255019;Esperanza & Unceta;100452;4;1890;1935;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255020;Fábrica de Armas de Trubia;100319;4;1890;1935;mechanics;artillery;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255021;Hispano Suiza;100453;5;1904;1935;aeronautics;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255022;CROS, SA;100461;2;1890;1935;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255023;Instituto Químico de Sarriá;100454;4;1916;1935;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255024;Juan López Soler;100320;2;1890;1935;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255025;Leonardo Torres Quevedo;100462;6;1890;1935;mechanics;electronics;management;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255026;Juan de la Cierva;100501;7;1918;1935;aircraft_testing;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255027;SECN;100455;5;1890;1935;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255028;Echevarrieta y Larrinaga;100463;3;1890;1935;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255029;Valeriano Weyler;100464;4;1890;1935;decentralized_execution;infantry_focus;large_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255030;José Millán Astray;100456;5;1919;1935;individual_courage;small_unit_tactics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255031;Escuela Naval San Fernando;100457;5;1900;1935;naval_training;small_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255032;Juan Bautista Aznar-Cabañas;100465;3;1918;1935;large_taskforce_tactics;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255033;Cuatro Vientos;100458;4;1912;1935;training;fighter_tactics;piloting;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255034;Alfredo Kindelán y Duany;100466;3;1910;1935;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255035;Felipe Díaz Sandino;100610;4;1940;1953;training;piloting;decentralized_execution;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

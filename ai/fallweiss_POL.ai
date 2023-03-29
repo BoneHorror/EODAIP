@@ -1,0 +1,60 @@
+#
+# POL AI
+# 1939 Fall Wiess Battlescenario (by Copper)
+# 07/10
+#
+
+target = {
+	# Warsaw/Modlin
+	232 = 60
+	230 = 60
+
+	
+}
+
+strat_redeploy_threshold = 20
+
+max_front_ratio			= 3.0
+max_garrison_prop		= 0.3
+min_garrison_prop		= 0.2
+
+
+
+garrison = {
+	defend_overseas_beaches = no
+
+	# PRIORITIES:
+	beach			= 0	
+	capital			= 50	# Minimum - no need to worry...
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 0	# The next country targeted for attack by this AI
+
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		232 = 60 # Warsaw
+		230 = 60 # Modlin
+	}
+
+	key_point_prio_mult	= 1.5
+
+}
+
+front = {
+	recklessness 		= 	1 # 0-3
+	distrib_vs_ai 		= 	even
+	distrib_vs_human 	= 	even
+
+	enemy_reinf_days	=	6
+
+	reserve_prop		=	0.3
+	panic_ratio_vs_ai	=	1.5
+	panic_ratio_vs_human	=	1.0
+	base_attack_odds	=	2.5
+	min_attack_odds		=	2.0
+	max_attack_odds		=	3.5
+	reinforce_odds		=	0.8
+	withdraw_odds		=	0.5
+}

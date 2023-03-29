@@ -1,0 +1,13 @@
+# USA goes back to normal garrison ratio AI File by Lothos
+
+max_garrison_prop = 0.20
+min_garrison_prop = 0.10
+
+exp_force_ratio = 0.10 
+exp_force_ratios = { ENG = 1.0 } 
+
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 		= 0.1
+	overseas_multiplier 	= 1.0
+}

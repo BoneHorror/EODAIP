@@ -1,0 +1,11 @@
+# Bulgaria demands claims from Yugoslavia AI File by Lothos
+
+exp_force_ratio = 0.55
+exp_force_ratios = {
+	GER = 1.0
+} 
+demand_claims = {
+	YUG
+	GER
+	ITA ROM
+}

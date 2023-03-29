@@ -1,0 +1,9 @@
+# Germany changes front ratios when fighting France after BEL is down
+
+max_front_ratios = {
+	BEL = 1.5
+	HOL = 2.0
+	LUX = 1.5
+	NOR = 3.0
+	FRA = 1.2
+}

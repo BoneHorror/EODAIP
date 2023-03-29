@@ -1,0 +1,34 @@
+SCA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+755001;Absalon;T200;2;1900;2000;mechanics;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755002;Arne Beurling;T3200;6;1900;2000;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755003;Atlas A/S;T201;2;1900;2000;aeronautics;naval_engineering;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755004;Bofors AB;100280;7;1900;2000;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755005;Burmeister & Wain;100281;5;1900;2000;aeronautics;naval_engineering;mechanics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755006;F.L. Smidt;100282;5;1900;2000;mechanics;industrial_engineering;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755007;Götaverken;T3202;4;1900;2000;naval_engineering;naval_artillery;electronics;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755008;HF Vaerkstader;T205;2;1900;2000;aeronautics;aircraft_testing;general_equipment;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755009;Horten Naval Yard;100283;2;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755010;Husqvarna;100284;4;1900;2000;general_equipment;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755011;KaMeVe;T3205;4;1900;2000;mechanics;general_equipment;industrial_engineering;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755012;Karlskrona Naval Yard;T3204;5;1800;2000;naval_engineering;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755013;Kjeller Flyfabrikk;T2501;3;1920;2000;aeronautics;aircraft_testing;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755014;Kongsberg;100285;3;1900;2000;general_equipment;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755015;Kvaerner;T2503;5;1900;2000;naval_engineering;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755016;Landsverk AB;T3206;5;1872;2000;mechanics;technical_efficiency;general_equipment;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755017;LM Ericsson;100286;6;1900;2000;electronics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755018;Niels Bohr;T203;7;1930;1943;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755019;Odd Hassel;T2508;4;1930;2000;management;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755020;Raufoss Ammunisjonsfabrikk;T2504;4;1900;2000;general_equipment;artillery;mechanics;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755021;Riffelsyndikatet A/S;T206;3;1900;2000;mechanics;artillery;general_equipment;munitions;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755022;SAAB;T3208;5;1937;2000;aeronautics;fighter_design;technical_efficiency;rocketry;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755023;Sadolin & Holmblad A/S;T207;2;1900;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755024;Scania-Vabis;100287;5;1900;2000;industrial_engineering;mechanics;management;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755025;The Svedberg;T3213;5;1900;2000;nuclear_physics;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755026;Vølund;T208;3;1900;2000;mechanics;naval_engineering;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755027;Volvo;T3210;5;1927;2000;mechanics;industrial_engineering;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755028;Carl Hjalf;T32027;4;1930;2000;small_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755029;Helge Jung;T3212;4;1930;2000;combined_arms_focus;decentralized_execution;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755030;Bjørn Diesen;T2507;3;1930;2000;naval_training;seamanship;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755031;Bengt Nordenskiöld;T3211;4;1936;2000;bomber_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755032;Scania National Army;100481;3;1900;2000;large_unit_tactics;centralized_execution;infantry_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+755033;Scania Navy;100482;3;1900;2000;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

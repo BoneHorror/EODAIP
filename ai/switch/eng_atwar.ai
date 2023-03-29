@@ -1,0 +1,289 @@
+# England changes his production levels atwar
+# Temporary fixed for 0.30 beta needs rework when the map is finished, fixes limited to ignore provinces in greater europe regions (ewphoenix123)
+# Nerf England so it's closer to the phony war - Nekron
+
+max_garrison_prop = 0.47
+min_garrison_prop = 0.38
+
+upgrading = 0.30
+#reinforcement = 0.30
+desperation = 0.10 #Start spamming MIL once we lose 10% of our IC - basically whenever Islands are hit
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.10 
+
+	AA_batteries = no
+	max_AA_level = 10 
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		# England Coast
+		23 # Plymouth 
+		25 # Norwich 
+		26 # Dover 
+		27 # Portsmouth
+		
+		12 # Edinburg
+		22 # Cardif
+		
+		17 # Manchester 
+		11 # Glasgow
+		36 # Belfast
+		
+	} 
+
+	radar_station = yes
+	max_radar = 3 
+	radar_provs = {
+		26  #Dover
+		25  #Norwich
+		27  #Portsmouth
+		20  #Plymouth
+		18  #Shefield
+		5  # Scapa Flow
+		23  #Truro
+	} 
+
+	air_base = yes
+	max_air_base = 5 
+	air_base_provs = { } 
+
+	naval_base = atwar 
+	max_naval_base = 10 
+	naval_base_provs = { 
+	429 #Build up Malta
+	} 
+
+	land_fort = yes
+	max_land_level = 5
+	fort_provs	= { 
+		348 # Gibraltar
+		789  #Alexandria
+	}
+	fort_borders = { } 
+
+	ic_at_war = no
+	force_ic_until = 1938
+	ic_end_year = 1940
+	IC_provs  = { 4 5 6 7 11 13 36 35 } 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.6 # 1.4
+	overseas_multiplier = 0.2
+	home_peace_cap 		= 25#40
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 80	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 30	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	unstable_border		= 0		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		#BEL = -1
+		#HOL = -1
+		#LUX = -1
+		#GER = 100
+		#SPA = -1
+		#SPR = -1
+		ITA = 30
+		#ETH = -1
+		#SCH = -1
+		#FRA = -1
+		#CAN = -1
+		#AST = -1
+		#NZL = -1
+		#POR = -1
+		#CYN = -1
+		#TUR = -1
+		#SIK = -1
+		#TIB = -1
+		#AFG = -1
+		#PER = -1
+		#SAU = -1
+	}
+	province_priorities = {
+		#348 = 30 # Gibraltar
+		#429  = 30 # Malta 
+		#789 = 30 # Alexandria 
+		
+		# England Coast
+		#26 = 30 # Dover 
+		#25 = 30 # Norwich 
+		#27 = 30 # Portsmouth 
+		#23 = 30 # Plymouth 
+		#17 = 30 # Manchester
+		#24 = 30 # Liverpool 
+		#12 = 30 # Edimburg
+		#11 = 30 # Glasgow
+		#5 = 30 # Scap Flow
+		#36 = 30 # Belfast
+		20 = 10 # Exeter
+		
+  		#49 = 30 # Calais
+  		#51 = 30 # Dunkerque
+  		#52 = 30 # Lille
+
+  		#382 = 30 # Iraklion 
+	}
+	area_multiplier = {
+		#348 = 2.0 # Gibraltar
+		#429   = 2.0  #Malta
+		#789  = 1.5  #Alexandria
+
+		# England Coast
+		#26  = 2.0  #Dover
+		#25  = 2.0  #Norwich
+		#27  = 2.0  #Portsmouth
+		#20  = 2.0  #Plymouth
+		#17  = 2.0  #Blackpool
+		#18  = 2.0  #Sheifield
+		#24  = 2.0  #Liverpool
+		#19  = 2.0  #Bristol
+		#15  = 2.0  #Sunderland
+		#13  = 2.0  #Edinburgh
+		#10  = 2.0  #Dumfires
+		#5 = 2.0 # Scap Flow
+		#
+		#11  = 2.0  #Glasgow 
+		#23  = 2.0  #Truro
+		#16  = 2.0  #Lincoln
+		#12  = 2.0  #Edinborough
+		#21  = 2.0  #Swansea
+		#14  = 2.0  #Carlisle
+		#51 = 2.0 # Lille
+		921   = 0.1  #shit african desert
+		808   = 0.1
+
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion			= no
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 1.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 25.0  #About the distance from Japan to Batavia
+	max_staging_distance = 25	# How far should the staging area be from the target invasion point
+	distance			= 0.01	#higher = avoid long distance.
+	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.5	#prioritise taking pure islands.
+	enemy				= 0.2	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.3	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+   	naval_base 			= 1.0 
+   	air_support 		= 3.0 
+   	redirect 			= home
+	ignore				= no
+	province_priorities = yes
+	help_allies 		= no	#[yes/no]
+
+	staging_province = {
+		5	# Scapa flow
+		23	# Plymouth 
+		429 # Malta 
+		747 # Tunis 
+		348 # Gibraltar
+		382	#Crete	
+		17  #Manchester
+		900	#Suez
+		789	#Alexandria
+	}	
+
+	target = {
+		429 = 8000  #Malta
+
+		# North Africa
+		791	= 8000	#Port Said
+		789	= 1000  #Alexandra
+		717	= 1000	#Rabat
+		728	= 1000	#Oran
+		727	= 2000	#Algiers
+		748	= 2000	#Bizerte
+		747	= 3000	#Tunis
+		750	= 3000	#Tripoli
+		761	= 2000	#Benghazi
+		765	= 2000	#Tobruk
+
+		# Middle East
+		1019  = 500	#Beirut
+		1008  = 500 #Tel Aviv
+		1004  = 500 #El Arish	
+	
+		# Greece
+		382  = 1400  #Crete
+		372  = 1200  #Patras
+		377  = 1200  #Athens
+		370  = 600   #Alexandroupoli
+
+		# Yugoslavia/Albania
+		359  = 500  #Tirana
+		343  = 500  #Dubrovnik
+		
+		# Turkey
+		378  = 900  #Kalymnos
+		379  = 900  #Rhodes
+		388  = 900  #Nicosia
+		
+		#Spain
+		475	 = 3000	 #Palma de Mallorca
+		473	 = 3000	 #Cadiz
+		449  = 3000  #Vigo
+		441  = 3000  #Coruna
+		472  = 3000  #Huelva
+		463  = 2750  #Murcia
+		464  = 2750  #Valencia		
+		440  = 2750  #Barcelona
+		
+		#Portugal
+		995  = 3000  #Azores
+		477  = 3000  #Setubal
+		476  = 3000  #Lissabon
+		
+		#Netherlands East Indies
+		1639  = 1250  #Bagka Island
+		1647  = 1250  #Batavia		
+		1649  = 1250  #Semarang
+		1653  = 1250  #Soerabaja
+		1656  = 1250  #Madura
+		1636  = 1250  #Palembang
+		1635  = 1250  #Dumai
+		1642  = 1250  #Medan
+
+		#Borneo
+		1625  = 2500  #Mini
+		1624  = 2500  #Kuching
+		1631  = 2500  #Pontianak
+		1632  = 2500  #Balikpapan
+		1627  = 2500  #Tarakan
+
+		#Singapore
+		1436  = 2500  #Kota Bahru
+		1435  = 2500  #Alor Star
+		1432  = 2500  #Singapore
+
+		#Britain
+		1371  = 2250  #Hong Kong
+	}
+} 

@@ -1,0 +1,48 @@
+# Soviet build Land units AI File by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+	max_batch_peace 		= 680
+	max_batch_war 			= 360 
+	max_batch_home_front 	= 360
+
+	#### Divisions etc...
+	infantry 	= 20
+	cavalry 	= 2
+	motorized 	= 6
+	mechanized 	= 3
+	light_armor = 6
+	armor 		= 10
+	paratrooper = 1
+	marine 		= 0
+	bergsjaeger = 4
+	garrison	= 1
+    hq 			= 2
+	militia 	= 15
+#				87 %
+	interceptor 	= 8
+	multi_role 		= 3
+	cas 			= 4
+	strategic_bomber = 3
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 1
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				12 %
+	battleship 		= 1
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 1
+	light_cruiser 	= 1
+	heavy_cruiser 	= 1
+	battlecruiser 	= 0
+	submarine 		= 2
+	nuclear_submarine = 0
+	transports 		= 0
+#				0 %
+
+}

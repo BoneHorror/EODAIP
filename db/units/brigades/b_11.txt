@@ -1,0 +1,140 @@
+#BRIG_MODEL_51_
+# 0 Early Refuelling Aircraft (1948) Boeing KB-29/Tu-4TRZhK
+model = { 
+	cost 						= 9
+	buildtime	 				= 200
+	defaultorganisation 		= 1
+	morale						= 0
+	manpower					= 0.25
+	maxspeed					= -175
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	surfacedefence				= 5
+	airdefence					= 5
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= +1500
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 150
+	}
+}
+
+# 1 Basic Refuelling Aircraft (1956) Boeing KC-97 Stratotanker/
+model = { 
+	cost 						= 10
+	buildtime	 				= 200
+	defaultorganisation 		= 1
+	morale						= 0
+	manpower					= 0.15
+	maxspeed					= -175
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	surfacedefence				= 5
+	airdefence					= 5
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= +2000
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 150
+	}
+}
+
+# 2 Improved Refuelling Aircraft (1962) Lockheed Martin KC-130F Hercules/Antonov An-12BZ-1
+model = { 
+	cost 						= 14
+	buildtime	 				= 200
+	defaultorganisation 		= 1
+	morale						= 0
+	manpower					= 0.15
+	maxspeed					= -175
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	surfacedefence				= 5
+	airdefence					= 5
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= +2500
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 150
+	}
+}
+
+# 3 Advanced Refuelling Aircraft (1976) Boeing KC-135D Stratotanker/
+model = { 
+	cost 						= 15
+	buildtime	 				= 200
+	defaultorganisation 		= 2
+	morale						= 0
+	manpower					= 0.15
+	maxspeed					= -175
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	surfacedefence				= 5
+	airdefence					= 5
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= +3000
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 150
+	}
+}
+
+# 4 Modern Refuelling Aircraft (1980) McDonnell Douglas KC-10 Extender/Ilyushin Il-78
+model = { 
+	cost 						= 15
+	buildtime	 				= 200
+	defaultorganisation 		= 3
+	morale						= 0
+	manpower					= 0.15
+	maxspeed					= -175
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	surfacedefence				= 5
+	airdefence					= 5
+	airattack					= 0
+	strategicattack				= 0
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= +3500
+	supplyconsumption 			= 0.5
+	fuelconsumption				= 1
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 0.8
+	equipment = {
+		heavy_bomber = 25
+		manpower = 150
+	}
+}

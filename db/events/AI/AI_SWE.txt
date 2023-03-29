@@ -1,0 +1,37 @@
+####################################
+# Sweden AI events 
+####################################
+
+################
+# Shift Production
+#############################################
+event = {
+	id = 3009011
+	random = no 
+	country = SWE
+	
+	trigger = {
+		ai = yes
+		OR = {
+			atwar = yes
+			atwar = GER
+			atwar = SOV
+			atwar = FIN
+			atwar = NOR
+			NOT = { ai = NOR }
+			NOT = { ai = FIN }
+			year = 1940
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
+	}
+}

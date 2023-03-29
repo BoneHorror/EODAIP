@@ -1,0 +1,101 @@
+HON;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+355001;Head of State;Tiburcio Carias Andina;1933;1964;1999;PA;Popular Figurehead;High;M79001;X
+355002;Head of Government;Carlos Alberto Ucles;1933;1964;1999;PA;Silent Workhorse;High;M79002;X
+355003;Foreign Minister;Tiburcio Carias Andina;1933;1964;1999;PA;Iron Fisted Brute;Very High;M79001;X
+355004;Minister of Armament;Roberto Michelleti Bain;1933;1964;1999;SC;laissez-faire capitalist;Medium;M79004;X
+355005;Minister of Security;Carlos Alberto Ucles;1933;1964;1999;PA;Silent Lawyer;Medium;M79002;X
+355006;Head of Military Intelligence;Raimundo Stochler Garcia;1933;1964;1999;PA;Logistics Specialist;Medium;M79006;X
+355007;Chief of Staff;Tiburcio Carias Andina;1933;1964;1999;PA;School of Psychology;Very High;M79001;X
+355008;Chief of Army;Raimundo Stochler Garcia;1933;1964;1999;PA;Static Defence Doctrine;Medium;M79006;X
+355009;Chief of Navy;Carlos Vaupel Comeza;1933;1964;1999;SC;Indirect Approach Doctrine;Medium;M79009;X
+355010;Chief of Air Force;Gustavo Schmidt;1933;1964;1999;SC;Air Superiority Doctrine;Medium;M79010;X
+355011;Head of State;Tiburcio Carias Andina;1937;1964;1999;SC;Popular Figurehead;High;M79001;X
+355012;Head of State;José Zuñiga Huete;1937;1964;1999;SL;Barking Buffoon;High;M79032;X
+355013;Head of State;Juan B. Valladares;1939;1964;1999;SL;Insignificant Layman;High;M79011;X
+355014;Head of State;Raul Sanchez Banados;1937;1964;1999;LWR;Autocratic Charmer;High;M79021;X
+355015;Head of State;Orlando Rodriguez Jimino;1945;1964;1999;SD;Die-hard Reformer;High;M79036;X
+355016;Head of Government;Carlos Alberto Ucles;1937;1964;1999;SC;Silent Workhorse;High;M79002;X
+355017;Head of Government;Tiburcio Carias Andina;1941;1964;1999;SC;Old General;High;M79001;X
+355018;Head of Government;Abraham Williams Calderon;1943;1964;1999;SC;Political Protege;High;M79039;X
+355019;Head of Government;Juan Manuel Galvez;1945;1964;1999;SC;Old General;High;M79017;X
+355020;Head of Government;Juan B. Valladares;1937;1964;1999;SL;Smiling Oilman;High;M79011;X
+355021;Head of Government;Julio Lozano Díaz;1945;1964;1999;SL;Ambitious Union Boss;High;M79042;X
+355022;Head of Government;Hernan Fernandez Silva;1937;1964;1999;LWR;Silent Workhorse;High;M79043;X
+355023;Head of Government;Juan Codigo Ramirez;1941;1964;1999;LWR;Happy Amateur;High;M79022;X
+355024;Head of Government;Francisco S. Tapio Toro;1945;1964;1999;SD;Flamboyant Tough Guy;High;M79045;X
+355025;Foreign Minister;Laureano Laínez Espinoza;1937;1964;1999;SC;Great Compromiser;High;M79046;X
+355026;Foreign Minister;Julio Lozano Díaz;1937;1964;1999;SC;Ideological Crusader;High;M79042;X
+355027;Foreign Minister;Salvador Aguirre;1938;1964;1999;SC;The Cloak N Dagger Schemer;Medium;M79048;X
+355028;Foreign Minister;Silverio Laínez Villamin;1944;1964;1999;SC;Apologetic Clerk;Medium;M79049;X
+355029;Foreign Minister;Juan Manuel Galvez;1946;1964;1999;SC;General Staffer;Medium;M79017;X
+355030;Foreign Minister;Salvador Aguirre Osana;1937;1964;1999;SL;The Cloak N Dagger Schemer;High;M79051;X
+355031;Foreign Minister;Roberto Michelleti Bain;1945;1964;1999;SL;Great Compromiser;Medium;M79004;X
+355032;Foreign Minister;Jacinto Escudero Oycandadel;1937;1964;1999;LWR;Iron Fisted Brute;Medium;M79023;X
+355033;Foreign Minister;Hernan Fernandez Silva;1941;1964;1999;SD;Great Compromiser;Medium;M79043;X
+355034;Foreign Minister;Orlando Rodriguez Jimino;1945;1964;1999;SD;Ideological Crusader;High;M79036;X
+355035;Minister of Armament;Miguel A. Navarro;1937;1964;1999;SC;Infantry Proponent;Medium;M79056;X
+355036;Minister of Armament;Carlos Alberto Ucles;1939;1964;1999;SC;Military Entrepreneur;Medium;M79002;X
+355037;Minister of Armament;Rafael Alvarado Guerrero;1941;1964;1999;SC;Corrupt Kleptocrat;Medium;M79058;X
+355038;Minister of Armament;Didier Masson;1942;1964;1999;SC;Air Superiority Proponent;Medium;M79059;X
+355039;Minister of Armament;Fausto Davilá;1945;1964;1999;SC;Resource Industrialist;Medium;M79014;X
+355040;Minister of Armament;Roberto Ortíz Almendares;1946;1964;1999;SC;Administrative Genius;Medium;M79015;X
+355041;Minister of Armament;Juan Manuel Galvez;1947;1964;1999;SC;Theoretical Scientist;Medium;M79017;X
+355042;Minister of Armament;Roberto Michelleti Bain;1937;1964;1999;SL;Resource Industrialist;Medium;M79004;X
+355043;Minister of Armament;Oswaldo López Arellano;1939;1964;1999;SL;Battle Fleet Proponent;Medium;M79064;X
+355044;Minister of Armament;Juan B. Valladares;1941;1964;1999;SL;Tank Proponent;Low;M79011;X
+355045;Minister of Armament;dr. Ramon Villeda Morales;1945;1964;1999;SL;laissez-faire capitalist;Medium;M79066;X
+355046;Minister of Armament;Augustin Espinoza Reyes;1937;1964;1999;LWR;Administrative Genius;Medium;M79024;X
+355047;Minister of Armament;Misael Becker Villarroel;1941;1964;1999;SD;Military Entrepreneur;Medium;M79068;X
+355048;Minister of Armament;Carlos Molina Dejonje;1945;1964;1999;SD;Submarine Proponent;Medium;M79069;X
+355049;Minister of Armament;Jaime Herda Garcia;1946;1964;1999;SD;laissez-faire capitalist;Medium;M79070;X
+355050;Minister of Security;Miguel A. Navarro;1937;1964;1999;SC;Crooked Kleptocrat;Medium;M79056;X
+355051;Minister of Security;Rafael Alvarado Guerrero;1938;1964;1999;SC;Back Stabber;Medium;M79058;X
+355052;Minister of Security;Abraham Williams Calderon;1941;1964;1999;SC;Prince of Terror;Medium;M79039;X
+355053;Minister of Security;Roberto Ortíz Almendares;1937;1964;1999;SL;Compassionate Gentleman;Medium;M79015;X
+355054;Minister of Security;Juan Codigo Ramirez;1937;1964;1999;LWR;Prince of Terror;Medium;M79022;X
+355055;Minister of Security;Augustin Espinoza Reyes;1941;1964;1999;SD;Back Stabber;Medium;M79024;X
+355056;Minister of Security;Jaime Herda Garcia;1945;1964;1999;SD;Efficient Sociopath;Medium;M79070;X
+355057;Minister of Security;Carlos Molina Dejonje;1946;1964;1999;SD;Man of the People;Medium;M79069;X
+355058;Head of Military Intelligence;Roberto Ortíz Almendares;1937;1964;1999;SC;Dismal Enigma;Medium;M79015;X
+355059;Head of Military Intelligence;Tiburcio Carias Andina;1941;1964;1999;SC;Political Specialist;Medium;M79001;X
+355060;Head of Military Intelligence;José Zuñiga Huete;1937;1964;1999;SL;Naval Intelligence Specialist;High;M79032;X
+355061;Head of Military Intelligence;Julio Lozano Díaz;1941;1964;1999;SL;Dismal Enigma;High;M79042;X
+355062;Head of Military Intelligence;Hernan Fernandez Silva;1945;1964;1999;SL;Industrial Specialist;High;M79043;X
+355063;Head of Military Intelligence;Vicente Tapia Lobo;1937;1964;1999;LWR;Naval Intelligence Specialist;Medium;M79026;X
+355064;Head of Military Intelligence;Enrique Doll Rojas;1941;1964;1999;LWR;Technical Specialist;Medium;M79027;X
+355065;Head of Military Intelligence;Raul Sanchez Banados;1945;1964;1999;SD;Industrial Specialist;Medium;M79021;X
+355066;Chief of Staff;Raimundo Stochler Garcia;1941;1964;1999;SC;School of Defence;Very High;M79006;X
+355067;Chief of Staff;Oswaldo López Arellano;1937;1964;1999;SL;School of Manoeuvre;Medium;M79064;X
+355068;Chief of Staff;Enrique Ortiz Pinel;1945;1964;1999;SL;School of Fire Support;Medium;M79090;X
+355069;Chief of Staff;Enrique Doll Rojas;1937;1964;1999;LWR;School of Psychology;Medium;M79027;X
+355070;Chief of Staff;Vicente Tapia Lobo;1941;1964;1999;LWR;School of Manoeuvre;Medium;M79026;X
+355071;Chief of Army;Juan Manuel Galvez;1937;1964;1999;SC;Armoured Spearhead Doctrine;Medium;M79017;X
+355072;Chief of Army;José Zuñiga Huete;1937;1964;1999;SL;Decisive Battle Doctrine;High;M79032;X
+355073;Chief of Army;Enrique Ortiz Pinel;1941;1964;1999;SL;Armoured Spearhead Doctrine;Medium;M79090;X
+355074;Chief of Army;Enrique Doll Rojas;1937;1964;1999;LWR;Static Defence Doctrine;Medium;M79027;X
+355075;Chief of Army;Francisco S. Tapio Toro;1945;1964;1999;SD;Armoured Spearhead Doctrine;High;M79045;X
+355076;Chief of Navy;Oswaldo López Arellano;1937;1964;1999;SL;Decisive Naval Battle Doctrine;Medium;M79064;X
+355077;Chief of Navy;Vicente Tapia Lobo;1937;1964;1999;LWR;Decisive Naval Battle Doctrine;Medium;M79026;X
+355078;Chief of Air Force;Didier Masson;1937;1964;1999;SC;Air Superiority Doctrine;Medium;M79059;X
+355079;Chief of Air Force;Miguel Ángel Sevilla;1945;1964;1999;SD;Naval Aviation Doctrine;Medium;M79106;X
+355080;Chief of Navy;Francisco S. Tapio Toro;1945;1964;1999;SD;Base Control Doctrine;High;M79045;X
+355081;Foreign Minister;Antonio Bermúdez Meza;1933;1964;1999;PA;Ideological Crusader;High;M79108;X
+355082;Chief of Staff;Juan Manuel Galvez;1933;1964;1999;SC;School of Manoeuvre;Medium;M79017;X
+355083;Chief of Navy;Carlos Vaupel Comeza;1933;1964;1999;SC;Indirect Approach Doctrine;Medium;M79009;X
+355084;Chief of Navy;Carlos Vaupel Comeza;1933;1964;1999;LWR;Indirect Approach Doctrine;Medium;M79009;X
+355085;Head of State;Juan Manuel Galvez;1949;1964;1999;SC;Resigned Generalissimo;High;M79017;X
+355086;Head of Government;Hernan Fernandez Silva;1949;1964;1999;SC;Corporate Suit;High;M79043;X
+355087;Head of Government;Francisco Bertrand;1913;1933;1999;ML;Old General;Medium;2456;X
+355088;Head of Government;Rafael López Gutiérrez;1919;1933;1999;SL;Old General;Medium;unknownminister;X
+355089;Head of Government;Tiburcio Carías Andino;1924;1933;1999;ML;Old General;Medium;unknownminister;X
+355090;Head of State;Francisco Bertrand;1913;1933;1999;ML;Ruthless Powermonger;Medium;2456;X
+355091;Head of State;Rafael López Gutiérrez;1919;1933;1999;SL;Ruthless Powermonger;Medium;unknownminister;X
+355092;Head of State;Tiburcio Carías Andino;1924;1933;1999;ML;Barking Buffoon;Medium;unknownminister;X
+355093;Foreign Minister;Jesús Bendaña;1914;1933;1999;ML;Great Compromiser;High;unknownminister;X
+355094;Minister of Armament;Leopoldo Córdova;1914;1933;1999;ML;laissez-faire capitalist;Medium;unknownminister;X
+355095;Chief of Staff;Santiago Meza Calix;1914;1933;1999;ML;School of Defence;Very High;unknownminister;X
+355096;Chief of Navy;Santiago Meza Calix;1914;1933;1999;ML;Indirect Approach Doctrine;Medium;unknownminister;X
+355097;Chief of Army;Vicente Tosta Carrasco;1914;1933;1999;ML;Armoured Spearhead Doctrine;Medium;2454;X
+355098;Minister of Security;Salvador Aguirre;1914;1933;1999;ML;Crooked Kleptocrat;Medium;2455;X
+355099;Head of Military Intelligence;Vicente Tosta Carrasco;1914;1933;1999;ML;Dismal Enigma;Medium;2454;X
