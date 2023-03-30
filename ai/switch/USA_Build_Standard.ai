@@ -1,46 +1,48 @@
 # USA Standard Build by Nekron
 
+###Aim for 45-10-45% split w/ relative build
 ###################################
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
+military = { 
+	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-	infantry 		= 8
+   	infantry   		= 7
 	d_06			= 1 #Rangers
 	cavalry 		= 1
-   	motorized    	= 5 
-	mechanized 		= 6
-	light_armor 	= 2
+	motorized 		= 9
+	mechanized 		= 7
+	light_armor 	= 0
 	armor 			= 7
-  	paratrooper   	= 2 
+   	paratrooper     = 2 
 	marine 			= 7
-	bergsjaeger 	= 0
+	bergsjaeger 	= 1
 	garrison		= 0
-    hq 				= 2
+    hq	 			= 3
 	militia 		= 0
-#				44 %
-   	interceptor   	= 5 
-   	multi_role     	= 3 
-	cas 			= 0
-	strategic_bomber = 6
-	tactical_bomber = 5
-	naval_bomber 	= 3
-   	transport_plane = 1 
-	flying_bomb 	= 0
-	flying_rocket 	= 1
-#				23 %
-	battleship 		= 4
-   	carrier     	= 7 
-   	light_carrier  = 2
-   	escort_carrier  = 1 
-   	destroyer     	= 6 
-   	light_cruiser   = 6 
-   	heavy_cruiser   = 4 
-	battlecruiser 	= 0
-	submarine 		= 4
-	nuclear_submarine = 1
-	transports 		= 0
-#				33 %
+#				45 %
+   	interceptor   		= 1 
+   	multi_role   		= 2 
+	cas 				= 0
+	strategic_bomber 	= 2
+	tactical_bomber 	= 1
+	naval_bomber 		= 2
+   	transport_plane   	= 1 
+	flying_bomb 		= 0
+	flying_rocket 		= 1
+#				10 %
+	battleship 			= 2
+   	carrier     		= 5
+   	light_carrier  = 3
+	escort_carrier		= 1
+   	destroyer   		= 10 
+	light_cruiser 		= 7
+	heavy_cruiser 		= 6
+	battlecruiser 		= 0
+	submarine 			= 5
+	nuclear_submarine 	= 3
+	transports 			= 3 #Handled by Transport events
+#				45 %
 }
