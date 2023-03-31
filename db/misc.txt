@@ -82,7 +82,7 @@ economy = {
 # Reinforce to upgrade modifier. Values from 0.0 (divisions do not get extra upgrade progress on reinforcement) to 1.0 (1:1 ratio, 1% reinforce adds 1% to upgrade progress)
 	0.75 # 0.0 (WIF)
 # Added extra upgrade progress to units in supply. Added daily progress to all units in supply that can upgrade is equal to Cur_STR/(Max_STR * THIS). Added value is not affected by any other upgrade modifiers. Set to 0 to disable this functionality.
-    720 #0	
+    0 #0	
 # Nationalism starting value
 	5 #15
 # Nationalism per MP (added to stating value)
@@ -236,7 +236,7 @@ diplomacy = {
 	-1 #0
 # Force puppets to join their master's alliance (creating a new alliance if Master is not already in one). Check alliances each day. 0 - No
 	0 #0
-# Masters become masters of new puppet’s puppets too. 1 – Yes, 0 – No
+# Masters become masters of new puppetÂ’s puppets too. 1 Â– Yes, 0 Â– No
 	1 #0
 # Allow manual claims change in-game for players: 1 - Enabled, 0 - Disabled
 	1 #0
@@ -251,8 +251,8 @@ diplomacy = {
 # Used change TAG on coup logic. 0 - Compatibility mode (check only for regular_ID match), 1 - Darkest Hour mode (using coup = { } list in revolt.txt and apply extra validation checks)
 	1 #0
 # Filter used on available for release countries list based on regular_id and intrinsic_gov_type set in revolt.txt (applied to both players and AI). 
-# 0 (default) – only one country can be available (both settings are checked), 1 – regular_id setting is ignored, 
-# 2 – intrinsic_gov_type setting is ignored, 3 - regular_id and intrinsic_gov_type settings are ignored
+# 0 (default) Â– only one country can be available (both settings are checked), 1 Â– regular_id setting is ignored, 
+# 2 Â– intrinsic_gov_type setting is ignored, 3 - regular_id and intrinsic_gov_type settings are ignored
 	0 #0
 # Enable return of occupied provinces, owned by non-enemy countries. If the province is owned by neutral country, it will be returned only when not in a war zone. 0 - Disabled, 1 - Check every day, 2 - Check every other day and so on.
 	30 #0
@@ -558,9 +558,9 @@ combat = {
 	1.0 #1.0
 # AA to Air firing rules: 0 - fire only at passing enemy units on bombing missions, 1 - fire at all passing enemy units
 	1 #0
-# AA to Air night modifier. 1 – no change, 0 – no attack, 0.5 – 50% effectiveness and so on
+# AA to Air night modifier. 1 Â– no change, 0 Â– no attack, 0.5 Â– 50% effectiveness and so on
 	0.5 #1
-# AA to Air bonus from radars. [AA power * (1 + Radar size * Radar Efficiency * THIS)].  0 – no radar bonus 
+# AA to Air bonus from radars. [AA power * (1 + Radar size * Radar Efficiency * THIS)].  0 Â– no radar bonus 
   	0.5 #0
 # Nukes: STR damage to units modifier. [(0.2 + rand[0.0 to 1.0]) * THIS * Nuke Damage Power]. [multiplier]
 	0.5 #0.5
@@ -1103,7 +1103,7 @@ trade = {
 	50 #45
 # Cancel trade deals if effectiveness is below this value (0..100). Used by auto-trade
 	33 #33
-# Auto-trade (and AI) single resource trade deals (only at war when an ally badly needs a resource/oil/supplies and trade effectiveness is high enough). 0 - Disabled, 1…100 – Trade deal effectiveness threshold.
+# Auto-trade (and AI) single resource trade deals (only at war when an ally badly needs a resource/oil/supplies and trade effectiveness is high enough). 0 - Disabled, 1Â…100 Â– Trade deal effectiveness threshold.
 	35 #0
 }
 
@@ -1154,7 +1154,7 @@ ai = {
 	200 #200
 # Allow AI countries to leave alliance because of bad relations or too different government type compared to alliance leader (on top of all other leave alliance rules). 1 - Allowed, 0 - Disabled
     1 #1	
-# Use new AI release rules – all countries can release puppets even when at war. 1 – Yes, 0 – No
+# Use new AI release rules Â– all countries can release puppets even when at war. 1 Â– Yes, 0 Â– No
 	1 #0
 # AI events action selection rules:
 # 0-100 : Chance for the first valid action to be chosen. Remaining valid actions have equal chances. Used for events that do not have valid action with AI chance set, else AI chances are used
@@ -1162,13 +1162,13 @@ ai = {
 # -2 : Historical - First valid action is always selected. Used for events that do not have valid action with AI chance set, else AI chances are used
 # -3 : Forced historical - First valid action is always selected if there is no AI chances set for a valid action, else - (first) valid action with the highest AI chance set is selected
      85 #85
-# Force strategic redeployment if movement time is longer then X hours. Overrides default AI settings! -1 – Disable, Else time in hours
+# Force strategic redeployment if movement time is longer then X hours. Overrides default AI settings! -1 Â– Disable, Else time in hours
 	1440 #-1
 # Max. redeployment days for AI controlled units cheat. 0 or less - disable cheat, else - max. days that AI units will redeploy to any valid redeployment location
 	0 # 14 #0	
 # Use quick area check (Garrison AI) - could be inaccurate in some rare cases. 1 - Enabled, 0 - Disabled
 	1 # 0
-# AI masters get all provinces conquered by AI puppets. 1 – Yes, 0 – No (old rules)
+# AI masters get all provinces conquered by AI puppets. 1 Â– Yes, 0 Â– No (old rules)
 	1 #0
 # Allow release of a new country if any of its provinces are in a current war zone (land connected to enemy province) for the releasing AI country. 1 - Allow the release, 0 - Do not release countries in war zones
 	1 #1
@@ -1197,7 +1197,7 @@ mod = {
 	0 #0
 # Switched AI files logger (SwitchAI.txt): 0 - Disabled, 1 - Enabled.
 	1 #0
-# Use new auto-save file format: AutoSave_Country_Year_Month_Day.eug. 1 - Enabled, 0 – Disabled.
+# Use new auto-save file format: AutoSave_Country_Year_Month_Day.eug. 1 - Enabled, 0 Â– Disabled.
 	0 #0 
 # Load new AI settings on AI file switching to all clients in MP games. 1 - Enabled, 0 - Disabled.
 	1 #0
@@ -1205,7 +1205,7 @@ mod = {
 	14 #0
 # Merge and relocate provincial depots to the best province in the area. This is new and more intelligent but CPU demanding system. 0 - Disabled (use the old system).  Any positive integer is the number of days between areas analyzing using the new system.
 	5 #0
-# In-game losses logging (statistics). 0 - Disabled, 1 - Enabled (ships and convoys only), 2 - Log equipment losses too, 3 – Log equipment of captured units too, 4 – Log attrition losses too
+# In-game losses logging (statistics). 0 - Disabled, 1 - Enabled (ships and convoys only), 2 - Log equipment losses too, 3 Â– Log equipment of captured units too, 4 Â– Log attrition losses too
 	2 #0
 # Allow brigade attaching as long as the unit is in supply no matter on whom territory it is. 1 - Enabled, 0 - Disabled (default)
 	1 #0
@@ -1219,7 +1219,7 @@ mod = {
 	1 #0
 # Auto reply to events (players). 0 - Disabled, 1 - Enabled (using AI event action selection rules - see "ai" section)
 	0 #0
-# Force actions to show even if there are no valid commands as long as action trigger is valid (or there is no action trigger at all). Ignored for random and persistent events! 0 – Disabled, 1 – Enabled only for actions that have valid triggers, 2 – Enabled for actions without triggers too 
+# Force actions to show even if there are no valid commands as long as action trigger is valid (or there is no action trigger at all). Ignored for random and persistent events! 0 Â– Disabled, 1 Â– Enabled only for actions that have valid triggers, 2 Â– Enabled for actions without triggers too 
 	1 #0
 # Enable decisions for players. 0 - Disabled, 1 - Enabled
 	1 #0
@@ -1273,7 +1273,7 @@ mod = {
 	1 #0
 # Use speed to set garrison status (no move allowed) to land units. 0 - Use old rules (only garrison divisions cannot move), 1 - use unit model speed to determine if it can move (speed > 0) or not (speed = 0)
 	0 #0
-# Use old (pre DH 1.02) save-game format for divisions. NOT RECOMMENDED as newly introduced parameters won't be saved!!! 1 – Use old format, 0 – Use DH new format (less used space, higher precision of saved values)
+# Use old (pre DH 1.02) save-game format for divisions. NOT RECOMMENDED as newly introduced parameters won't be saved!!! 1 Â– Use old format, 0 Â– Use DH new format (less used space, higher precision of saved values)
 	0 #0
 # UI - Production panel UI style: 0 - use old style, 1 - switch to the new style (better utilization of the space, required when bigger unit pictures are used)
 	1 #0
@@ -1281,7 +1281,7 @@ mod = {
 	0 #0
 # UI - Enable pictures instead of icons for naval brigades in the production panel: 0 - use icons for naval brigades, 1 - use pictures for all brigade types
 	1 #0
-# Set buildings to be buildable only in provinces (from game map view). 0 – Disable, 1 - Enable (Ports, Air Bases, Nuclear Reactors, Rocket Test Sites), 2 - Enable ( 1 +  provincial AA and Radars)
+# Set buildings to be buildable only in provinces (from game map view). 0 Â– Disable, 1 - Enable (Ports, Air Bases, Nuclear Reactors, Rocket Test Sites), 2 - Enable ( 1 +  provincial AA and Radars)
 	0 #0
 # Unit modifiers statistics page - switch to new style when more then THIS unit types are used per group (land/navy/air)
 	15 #15
