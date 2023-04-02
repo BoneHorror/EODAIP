@@ -1,45 +1,47 @@
-# Soviet build standard units AI file by Lothos
+# Soviet build standard units AI file by Nekron
 
+#Force split ratio for relative:
+#69/9/22%
 ###################################
 # Construction and Tech Research
 ###################################
 
 military = { 
-	relative_build_scheme 	= no
+	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-	infantry 	= 15
-	cavalry 	= 2
-	motorized 	= 6
+	infantry 	= 29
+	cavalry 	= 4
+	motorized 	= 10
 	mechanized 	= 2
 	light_armor = 0
-	armor 		= 8
-	paratrooper = 1
+	armor 		= 7
+	paratrooper = 2
 	marine 		= 0
 	bergsjaeger = 1
 	garrison	= 1
     hq 			= 2
-	militia 	= 11
-#				87 %
-	interceptor 	= 7
+	militia 	= 9
+#				69 %
+	interceptor 	= 2
 	multi_role 		= 2
-	cas 			= 3
+	cas 			= 1
 	strategic_bomber = 1
-	tactical_bomber = 4
+	tactical_bomber = 2
 	naval_bomber 	= 0
 	transport_plane = 2
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				12 %
-	battleship 		= 5
+#				9 %
+	battleship 		= 3
 	carrier 		= 0
-	escort_carrier	= 2
-	destroyer 		= 7
-	light_cruiser 	= 6
-	heavy_cruiser 	= 3
+	escort_carrier	= 1
+	destroyer 		= 4
+	light_cruiser 	= 3
+	heavy_cruiser 	= 2
 	battlecruiser 	= 1
 	submarine 		= 5
 	nuclear_submarine = 1
-	transports 		= 2
-#				0 %
+	transports 		= 3
+#				22 %
 }
