@@ -1,5 +1,12 @@
 # German Low Countries Invasion AI File by Lothos
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = no
+  	GEREnglandMarker = no
+  	GERUSAMarker = no
+	GEREuropeanMarker = yes
+    }
 max_front_ratio = 1.0
 max_garrison_prop = 0.35
 min_garrison_prop = 0.15

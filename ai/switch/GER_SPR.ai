@@ -1,5 +1,12 @@
 # German Invasion of Spain AI 1936 AI File by Lothos
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = no
+  	GEREnglandMarker = yes
+  	GERUSAMarker = no
+	GEREuropeanMarker = yes
+    }
 ###################################
 # Diplomacy
 ###################################

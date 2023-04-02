@@ -1,5 +1,13 @@
 # German Sea Lion AI File by Lothos
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = no
+  	GEREnglandMarker = yes
+  	GERUSAMarker = no
+	GEREuropeanMarker = no
+    }
+	
 combat = {
 	ENG = 150
 	USA = 60

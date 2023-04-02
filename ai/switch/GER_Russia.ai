@@ -1,5 +1,13 @@
 # German operation Barbarosa Invasion AI File by Nekron
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = yes
+  	GEREnglandMarker = no
+  	GERUSAMarker = no
+	GEREuropeanMarker = no
+    }
+	
 max_front_ratio = 1.3 
 max_garrison_prop = 0.40 # 0.60
 min_garrison_prop = 0.25 # 0.40

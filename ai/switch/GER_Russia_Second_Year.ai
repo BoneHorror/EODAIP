@@ -1,5 +1,12 @@
 # German operation Barbarosa Invasion AI File by Nekron
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = yes
+  	GEREnglandMarker = no
+  	GERUSAMarker = no
+	GEREuropeanMarker = no
+    }
 desperation = 0.25 #Start spamming MIL once we lose 25% of our IC
 #Oil fields prio
 target = { 

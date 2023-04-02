@@ -1,5 +1,12 @@
 # German the Norway Invasion AI File by Lothos
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = no
+  	GEREnglandMarker = no
+  	GERUSAMarker = no
+	GEREuropeanMarker = yes
+    }
 max_front_ratios = {
 	BEL = 3.0
 	HOL = 3.0

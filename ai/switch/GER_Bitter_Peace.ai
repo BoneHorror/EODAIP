@@ -1,5 +1,12 @@
 # Germany after Bitter Peace with Soviet Union - prepare for US naval war but don't overextend our fleet + prepare nukes for ENG! - Nekron
 
+#Set some debug flags for reading what is our script goal
+flags = {
+  	GERRussiaMarker = no
+  	GEREnglandMarker = yes
+  	GERUSAMarker = no
+	GEREuropeanMarker = no
+    }
 liberate = { ARA CRO RSI SLO SPA SIK POR BUL SCA HUN ROM FIN SER MTN MEN MAN SIB PRI TRA TAN IND IRE PAK PER BUR NEP BHU MON SIA SAF SCO VIE IRQ EGY SYR TUR KOR CHI U40 U41 U42 U43 U48 U51 U73 } # SCA
 combat = {
 	SWE = 150
