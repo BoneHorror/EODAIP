@@ -1,13 +1,5 @@
 # German the Poland Invasion AI File by Lothos
 
-#Set some debug flags for reading what is our script goal
-flags = {
-  	GERRussiaMarker = no
-  	GEREnglandMarker = no
-  	GERUSAMarker = no
-	GEREuropeanMarker = yes
-    }
-	
 max_front_ratios = {
    FRA = 0.4  
    SCH = 0.01

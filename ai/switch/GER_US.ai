@@ -1,12 +1,5 @@
 # Germany goes after US by Nekron
 
-#Set some debug flags for reading what is our script goal
-flags = {
-  	GERRussiaMarker = no
-  	GEREnglandMarker = no
-  	GERUSAMarker = yes
-	GEREuropeanMarker = no
-    }
 liberate = { ARA CRO RSI SLO SPA POR BUL HUN ROM FIN SER MTN MEN MAN SIB SIK PRI TRA TAN IND PAK PER BUR NEP BHU MON SIA SCO SCA VIE IRQ EGY SYR TUR KOR CHI IRE U40 U41 U42 U43 U48 U73 } # SCA
 combat = {
 	USA = 200
