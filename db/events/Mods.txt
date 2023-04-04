@@ -12031,6 +12031,7 @@ event = {
 		command = { type = hard_attack which = armor value = -1 }
 		command = { type = soft_attack which = armor value = -3 }
 		command = { type = build_time which = armor when = on_upgrade where = relative value = -20 }
+		command = { type = build_cost which = armor when = on_upgrade where = relative value = -10 }
 		command = { trigger = { ai = no } type = supplies value = -500 }
 	}
 }
