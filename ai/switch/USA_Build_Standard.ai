@@ -9,11 +9,11 @@ military = {
 
 	#### Divisions etc...
    	infantry   		= 7
-	d_06			= 1 #Rangers
+	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 9
 	mechanized 		= 7
-	light_armor 	= 0
+	light_armor 	= 1
 	armor 			= 7
    	paratrooper     = 2 
 	marine 			= 7
@@ -21,7 +21,7 @@ military = {
 	garrison		= 0
     hq	 			= 3
 	militia 		= 0
-#				45 %
+#				47 %
    	interceptor   		= 1 
    	multi_role   		= 2 
 	cas 				= 0
@@ -36,12 +36,12 @@ military = {
    	carrier     		= 5
    	light_carrier  = 3
 	escort_carrier		= 1
-   	destroyer   		= 10 
+   	destroyer   		= 8 
 	light_cruiser 		= 7
 	heavy_cruiser 		= 6
 	battlecruiser 		= 0
 	submarine 			= 5
 	nuclear_submarine 	= 3
 	transports 			= 3 #Handled by Transport events
-#				45 %
+#				43 %
 }

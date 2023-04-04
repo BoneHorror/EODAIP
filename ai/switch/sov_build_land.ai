@@ -10,8 +10,8 @@ military = {
 	max_batch_home_front 	= 360
 
 	#### Divisions etc...
-	infantry 	= 29
-	cavalry 	= 4
+	infantry 	= 30
+	cavalry 	= 3
 	motorized 	= 10
 	mechanized 	= 2
 	light_armor = 4
@@ -27,12 +27,12 @@ military = {
 	multi_role 		= 2
 	cas 			= 1
 	strategic_bomber = 1
-	tactical_bomber = 2
+	tactical_bomber = 3
 	naval_bomber 	= 0
 	transport_plane = 2
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				9 %
+#				10 %
 	battleship 		= 1
 	carrier 		= 0
 	escort_carrier	= 1
@@ -42,6 +42,6 @@ military = {
 	battlecruiser 	= 1
 	submarine 		= 5
 	nuclear_submarine = 1
-	transports 		= 3
-#				18 %
+	transports 		= 2
+#				17 %
 }

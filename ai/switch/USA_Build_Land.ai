@@ -8,12 +8,12 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry   		= 9
-	d_06			= 1 #Rangers
+   	infantry   		= 10
+	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 10
 	mechanized 		= 7
-	light_armor 	= 0
+	light_armor 	= 2
 	armor 			= 8
    	paratrooper     = 2 
 	marine 			= 7
@@ -21,7 +21,7 @@ military = {
 	garrison		= 0
     hq	 			= 3
 	militia 		= 0
-#				45 %
+#				49 %
    	interceptor   		= 1 
    	multi_role   		= 2 
 	cas 				= 0
@@ -36,12 +36,12 @@ military = {
    	carrier     		= 4
    	light_carrier  = 2
 	escort_carrier		= 1
-   	destroyer   		= 8 
-	light_cruiser 		= 6
-	heavy_cruiser 		= 7
+   	destroyer   		= 7 
+	light_cruiser 		= 5
+	heavy_cruiser 		= 5
 	battlecruiser 		= 0
 	submarine 			= 5
 	nuclear_submarine 	= 3
 	transports 			= 3 #Handled by Transport events
-#				45 %
+#				41 %
 }
