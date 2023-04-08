@@ -1,16 +1,17 @@
-# Japan after Marco Polo event and before supremacy against CHI
+# Japan after Marco Polo event and before supremacy against CHI - Nekron
 
+#aim at 50/10/40 split
 ###################################
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
-	extra_convoys_war = 0.2500 
+	relative_build_scheme 	= yes
+	extra_convoys_war = 0.2750 
 
 	#### Divisions etc...
    	infantry     	= 20 
    	cavalry     	= 2 
-	motorized 		= 6
+	motorized 		= 5
 	mechanized 		= 6
 	light_armor 	= 4
 	armor 			= 1
@@ -18,29 +19,29 @@ military = {
    	marine       	= 7 
 	bergsjaeger 	= 1
    	garrison    	= 0 
-    hq         		= 3 
+    hq         		= 2 
 	militia 		= 0
- #        45 % 
-   	interceptor   	= 8 
-   	multi_role     	= 4 
+ #        50 % 
+   	interceptor   	= 3 
+   	multi_role     	= 1 
    	cas       		= 0 
-	strategic_bomber = 2
-   	tactical_bomber = 9 
-   	naval_bomber   	= 5 
+	strategic_bomber = 1
+   	tactical_bomber = 2 
+   	naval_bomber   	= 2 
 	transport_plane = 1
 	flying_bomb 	= 0
 	flying_rocket 	= 0
- #        35 % 
-	battleship 		= 2
-   	carrier     	= 4 
+ #        10 % 
+	battleship 		= 3
+   	carrier     	= 5 
 	light_carrier	= 2
 	escort_carrier	= 0
-   	destroyer     	= 3
-   	light_cruiser   = 2 
-	heavy_cruiser 	= 2
+   	destroyer     	= 9
+   	light_cruiser   = 6 
+	heavy_cruiser 	= 3
 	battlecruiser 	= 0
-	submarine 		= 3
+	submarine 		= 4
 	nuclear_submarine = 1
-	transports 		= 0
-#        			20 % 
+	transports 		= 7
+#        			40 % 
 }

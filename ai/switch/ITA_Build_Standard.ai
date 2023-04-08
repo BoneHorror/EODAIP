@@ -1,46 +1,45 @@
-# Italian Standard Build by Lothos
+# Italian Standard Build by Nekron
 
+#aim at 56/9/35 split
 ###################################
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
+	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-	infantry 		= 11
+	infantry 		= 23
 	cavalry 		= 0
-	motorized 		= 5
+	motorized 		= 9
 	mechanized 		= 2
-	light_armor 	= 0
-	armor 			= 3
+	light_armor 	= 5
+	armor 			= 4
 	paratrooper 	= 0
 	marine 			= 4
-	bergsjaeger 	= 5
+	bergsjaeger 	= 4
 	garrison		= 1
-    hq 				= 2
-	militia 		= 0
-#				37 %
-	interceptor 	= 6
-	multi_role 		= 4
+    hq	 			= 2
+	militia 		= 2
+#				56 %
+	interceptor 	= 3
+	multi_role 		= 1
 	cas 			= 0
-	strategic_bomber = 0
-	tactical_bomber = 6
-	naval_bomber 	= 7
+	strategic_bomber = 1
+	tactical_bomber = 2
+	naval_bomber 	= 2
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				15 %
+#				9 %
 	battleship 		= 5
 	carrier 		= 0
-   	light_carrier  = 2
 	escort_carrier	= 1
 	destroyer 		= 8
-	light_cruiser 	= 6
-	heavy_cruiser 	= 4
-	battlecruiser 	= 0
+	light_cruiser 	= 5
+	heavy_cruiser 	= 3
+	battlecruiser 	= 1
 	submarine 		= 5
-	nuclear_submarine = 0
-	transports 		= 13
-#				48 %
-
+	nuclear_submarine = 1
+	transports 		= 6
+#				35 %
 }

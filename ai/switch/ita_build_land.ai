@@ -1,44 +1,46 @@
-# Italian Land Prio Build by Lothos
+# Italian Land Prio Build by Nekron
 
+
+#aim at 62/9/29 split
 ###################################
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
+	relative_build_scheme 	= yes
 
 	#### Divisions etc...
 	infantry 		= 25
 	cavalry 		= 0
 	motorized 		= 10
 	mechanized 		= 2
-	light_armor 	= 2
+	light_armor 	= 5
 	armor 			= 5
 	paratrooper 	= 0
 	marine 			= 4
 	bergsjaeger 	= 5
 	garrison		= 1
-    hq	 			= 4
-	militia 		= 0
-#				70 %
-	interceptor 	= 7
-	multi_role 		= 3
+    hq	 			= 2
+	militia 		= 3
+#				62 %
+	interceptor 	= 3
+	multi_role 		= 1
 	cas 			= 0
-	strategic_bomber = 2
-	tactical_bomber = 4
-	naval_bomber 	= 6
+	strategic_bomber = 1
+	tactical_bomber = 2
+	naval_bomber 	= 2
 	transport_plane = 0
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				20 %
+#				9 %
 	battleship 		= 3
 	carrier 		= 0
 	escort_carrier	= 1
-	destroyer 		= 4
-	light_cruiser 	= 2
-	heavy_cruiser 	= 1
+	destroyer 		= 8
+	light_cruiser 	= 5
+	heavy_cruiser 	= 2
 	battlecruiser 	= 1
-	submarine 		= 2
+	submarine 		= 3
 	nuclear_submarine = 0
 	transports 		= 6
-#				10 %
+#				29 %
 }

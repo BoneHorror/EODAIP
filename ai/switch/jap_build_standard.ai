@@ -1,47 +1,47 @@
 # Japan Navy production by Nekron
 
+#aim at 45/10/45 split
 ###################################
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
-	extra_convoys_war = 0.300 
+	relative_build_scheme 	= yes
+	extra_convoys_war = 0.2750 
 
 	#### Divisions etc...
-   	infantry     	= 15 
-	cavalry 		= 0
-	motorized 		= 5
-	mechanized 		= 4
-	light_armor 	= 0
-	armor 			= 2
+   	infantry     	= 17 
+   	cavalry     	= 2 
+	motorized 		= 4
+	mechanized 		= 5
+	light_armor 	= 4
+	armor 			= 1
 	paratrooper 	= 2
-	marine 			= 5
+   	marine       	= 7 
 	bergsjaeger 	= 1
-   	garrison    	= 1 
-    hq 				= 1
+   	garrison    	= 0 
+    hq         		= 2 
 	militia 		= 0
-#				39 %
-	interceptor 	= 6
-	multi_role 		= 1
+ #        45 % 
+   	interceptor   	= 3 
+   	multi_role     	= 1 
    	cas       		= 0 
-	strategic_bomber = 4
-   	tactical_bomber = 7 
-	naval_bomber 	= 4
+	strategic_bomber = 1
+   	tactical_bomber = 2 
+   	naval_bomber   	= 2 
 	transport_plane = 1
 	flying_bomb 	= 0
-	flying_rocket 	= 1
-#				16 %
-   	battleship     	= 5 
-   	carrier     	= 5
-	light_carrier  = 3
-   	escort_carrier  = 2 
-   	destroyer     	= 7 
-   	light_cruiser   = 5 
-   	heavy_cruiser   = 3 
+	flying_rocket 	= 0
+ #        10 % 
+	battleship 		= 4
+   	carrier     	= 5 
+	light_carrier	= 2
+	escort_carrier	= 0
+   	destroyer     	= 10
+   	light_cruiser   = 6 
+	heavy_cruiser 	= 3
 	battlecruiser 	= 0
-	submarine 		= 5
+	submarine 		= 6
 	nuclear_submarine = 2
-	transports 		= 3
-#				45 %
-
+	transports 		= 7
+#        			45 % 
 }
