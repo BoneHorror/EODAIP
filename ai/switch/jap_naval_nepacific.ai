@@ -39,7 +39,7 @@ construction = {
 		1726  #Rabaul
 	}
 
-	radar_station = atwar
+	radar_station = no
 	max_radar = 4
 	radar_provs = {
 		1661  #Iwo Jima
