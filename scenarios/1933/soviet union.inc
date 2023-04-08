@@ -207,8 +207,8 @@ inventions = { 3000027 }
      defense_lobby     = 6 
      interventionism   = 2 
     } 
-	peacetime_ic_mod       = 0.70
-	wartime_ic_mod       = 0.75
+	peacetime_ic_mod       = 0.75
+	wartime_ic_mod       = 0.85
 	ic_modifier				= 0.95 # 
    headofstate            = {  type = 9 id = 30002  } # Stalin 
    headofgovernment       = {  type = 9 id = 30016  } # Molotov 

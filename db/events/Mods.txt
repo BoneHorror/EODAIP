@@ -8558,7 +8558,7 @@ event = {
 		command = { type = ground_def_eff value = -0.30 when = 1 } 
 		command = { type = max_organization which = land value = -5 }
 		command = { type = dissent value = 20 }
-		command = { type = event which = 9300274 where = -1 when = 30 }
+		command = { type = event which = 9300274 where = -1 when = 60 }
 	}
 }
 ########################
