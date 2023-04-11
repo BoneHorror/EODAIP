@@ -114,7 +114,7 @@ event = {
 	deathdate = { day = 1 month = january year = 1999 }
 
 	action = {
-	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
+	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 } #Very strong allies and SOV is at war with GER
 	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
 	  	command = { trigger = { difficulty = 4 ai = yes } type = add_division value = infantry when = 10 }
 	  	command = { trigger = { local_flag = Barbarossa_hard } type = add_division value = infantry when = 10 }
@@ -222,7 +222,10 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = { event = 9300273 war = { country = GER country = SOV } } # Stalin's Surprise
+	trigger = { 
+	event = { id = 9300273 days = 30 } # Stalin's Surprise
+	war = { country = GER country = SOV }
+	} 
 
 	name = 9300274name
 	desc = 9300274desc
@@ -235,24 +238,24 @@ event = {
 
 	action = { trigger = { NOT = { ai = GER } ai = yes }
 		name = ACTION_NAME_OK
-		command = { type = ground_def_eff value = 0.3 when = 1 } 
+		command = { type = ground_def_eff value = 0.35 when = 1 } 
 		command = { type = task_efficiency which = attack value = 0.5 } 
-		command = { type = max_organization which = land value = 5 }
-		command = { type = dissent value = -20 }
-		command = { trigger = { local_flag = Barbarossa_easy } type = wartime_ic_mod value = 20 }
-		command = { trigger = { local_flag = Barbarossa_normal } type = wartime_ic_mod value = 25 }
-		command = { trigger = { local_flag = Barbarossa_hard } type = wartime_ic_mod value = 40 }
-		command = { type = peacetime_ic_mod value = 30 } # Clear the starting penalty for post WWII play
+		command = { type = max_organization which = land value = 6 }
+		command = { type = dissent value = -10 }
+		command = { trigger = { local_flag = Barbarossa_easy } type = wartime_ic_mod value = 15 }
+		command = { trigger = { local_flag = Barbarossa_normal } type = wartime_ic_mod value = 20 }
+		command = { trigger = { local_flag = Barbarossa_hard } type = wartime_ic_mod value = 35 }
+		command = { type = peacetime_ic_mod value = 25 } # Clear the starting penalty for post WWII play
 		command = { type = songs which = StalinJuly1941.txt }
 	}
 	action = { trigger = { OR = { ai = GER ai = no } }
 		name = ACTION_NAME_OK
-		command = { type = ground_def_eff value = 0.25 when = 1 } 
+		command = { type = ground_def_eff value = 0.3 when = 1 } 
 		command = { type = task_efficiency which = attack value = 0.5 }
-		command = { type = max_organization which = land value = 5 }
+		command = { type = max_organization which = land value = 6 }
 		command = { type = dissent value = -15 }
-		command = { type = wartime_ic_mod value = 25 }
-		command = { type = peacetime_ic_mod value = 30 } # Clear the starting penalty for post WWII play
+		command = { type = wartime_ic_mod value = 20 }
+		command = { type = peacetime_ic_mod value = 25 } # Clear the starting penalty for post WWII play
 		command = { type = songs which = StalinJuly1941.txt }
 		command = { type = war which = LIT }
 		command = { type = war which = EST }

@@ -3402,6 +3402,9 @@ event = {
 		name = ACTION_NAME_GREAT
 	   	command = { trigger = { NOT = { technology = 2090 } } type = gain_tech which = 2090 } # ARM 1943
 	   	command = { trigger = { NOT = { technology = 2120 } } type = gain_tech which = 2120 } # H ARM 1943
+		command = { type = toughness which = armor value = -1 } #bonus
+		command = { type = toughness which = medium_armor value = -1 } #bonus
+		command = { type = hard_attack which = armor value = 2 } 
 	}
 }
 ####################
@@ -8540,7 +8543,8 @@ event = {
 	id = 9300273
 	random = no
 	country = SOV
-
+	save_date = yes
+	
 	trigger = { war = { country = GER country = SOV } } # event = 2003046 Barbarossa (Removed to force GPW speech event - Only problem: when USSR is the attacker, this will still fire)
    
 	name = 9300273name
@@ -8555,10 +8559,10 @@ event = {
 	action = {
 		name = ACTION_NAME_DAMN
 		command = { type = task_efficiency which = attack value = -0.5 }
-		command = { type = ground_def_eff value = -0.30 when = 1 } 
-		command = { type = max_organization which = land value = -5 }
+		command = { type = ground_def_eff value = -0.35 when = 1 } 
+		command = { type = max_organization which = land value = -6 }
 		command = { type = dissent value = 20 }
-		command = { type = event which = 9300274 where = -1 when = 60 }
+		#command = { type = event which = 9300274 where = -1 when = 30 } #Fires from save_date and date comparison
 	}
 }
 ########################
@@ -8774,8 +8778,16 @@ event = {
 	}	
 	
 	trigger = {
-		event = 9300225 # Deutsches Afrika-Korps
-		OR = { NOT = { technology = 5960 } NOT = { technology = 5970 } }
+		OR = {
+			AND = {
+				event = 9300225 # Deutsches Afrika-Korps
+				OR = { NOT = { technology = 5960 } NOT = { technology = 5970 } }
+			}
+			AND = {
+				ai = yes
+				event = 3003125 # AI Afrika Korps event
+				}
+			}
 		random = 50
 	}
 
@@ -8829,7 +8841,13 @@ event = {
 	}	
 	
 	trigger = {
-		event = 9300225 # Deutsches Afrika-Korps
+		OR = {
+			event = 9300225 # Deutsches Afrika-Korps
+			AND = {
+				ai = GER
+				event = 3003125 # AI Afrika Korps event
+				}
+			}
 		random = 30
 	}
 
@@ -13880,7 +13898,7 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -1000 }
-		command = { type = dissent value = 3 }
+		command = { type = dissent value = 10 }
 	}
 }
 ##################
@@ -13924,7 +13942,7 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -500 }
-		command = { type = dissent value = 6 }
+		command = { type = dissent value = 12 }
 	}
 }
 ##################
