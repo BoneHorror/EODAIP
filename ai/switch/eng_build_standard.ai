@@ -1,7 +1,7 @@
 # England Standard Build by Lothos
 
 #Force split ratio for relative:
-#43/11/46%
+#47/11/42%
 ###################################
 # Construction and Tech Research
 ###################################
@@ -9,7 +9,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry     		= 9
+   	infantry     		= 13
 	d_05			= 2
 	cavalry 			= 2
    	motorized     		= 5 
@@ -34,10 +34,10 @@ military = {
 	flying_rocket 		= 0
 #						11 %
 	battleship 			= 5
-   	carrier     		= 5 
+   	carrier     		= 4 
 	escort_carrier		= 1
-   	destroyer     		= 12 
-   	light_cruiser   	= 8 
+   	destroyer     		= 10 
+   	light_cruiser   	= 7 
 	heavy_cruiser 		= 5
 	battlecruiser 		= 1
 	submarine 			= 2

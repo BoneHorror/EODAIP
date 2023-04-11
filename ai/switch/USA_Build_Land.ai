@@ -1,6 +1,6 @@
 # USA Land Prio Build by Nekron
 
-###Aim for 49-11-40% split w/ relative build
+###Aim for 53-11-36% split w/ relative build
 ###################################
 # Construction and Tech Research
 ###################################
@@ -8,12 +8,12 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry   		= 10
-	d_06			= 2 #Rangers
+   	infantry   		= 12
+	d_06			= 3 #Rangers
 	cavalry 		= 1
 	motorized 		= 10
 	mechanized 		= 7
-	light_armor 	= 2
+	light_armor 	= 3
 	armor 			= 8
    	paratrooper     = 2 
 	marine 			= 7
@@ -36,12 +36,12 @@ military = {
    	carrier     		= 4
    	light_carrier  = 2
 	escort_carrier		= 1
-   	destroyer   		= 7 
+   	destroyer   		= 6 
 	light_cruiser 		= 5
-	heavy_cruiser 		= 5
+	heavy_cruiser 		= 4
 	battlecruiser 		= 0
-	submarine 			= 5
-	nuclear_submarine 	= 3
+	submarine 			= 4
+	nuclear_submarine 	= 2
 	transports 			= 3 #Handled by Transport events
 #				41 %
 }

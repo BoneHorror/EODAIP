@@ -1,7 +1,7 @@
 # England Land Prio Build by Lothos
 
 #Force split ratio for relative:
-#47/12/41%
+#51/12/37%
 ###################################
 # Construction and Tech Research
 ###################################
@@ -9,7 +9,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry     		= 10
+   	infantry     		= 14
 	d_05			= 3
 	cavalry 			= 2
    	motorized     		= 6 
@@ -34,10 +34,10 @@ military = {
 	flying_rocket 		= 0
 #						11 %
 	battleship 			= 4
-   	carrier     		= 4 
+   	carrier     		= 3 
 	escort_carrier		= 1
-   	destroyer     		= 11 
-   	light_cruiser   	= 7 
+   	destroyer     		= 9 
+   	light_cruiser   	= 6 
 	heavy_cruiser 		= 4
 	battlecruiser 		= 1
 	submarine 			= 2

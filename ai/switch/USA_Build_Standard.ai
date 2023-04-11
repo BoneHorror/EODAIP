@@ -1,6 +1,6 @@
 # USA Standard Build by Nekron
 
-###Aim for 45-10-45% split w/ relative build
+###Aim for 48-10-42% split w/ relative build
 ###################################
 # Construction and Tech Research
 ###################################
@@ -8,7 +8,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry   		= 7
+   	infantry   		= 10
 	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 9
@@ -36,9 +36,9 @@ military = {
    	carrier     		= 5
    	light_carrier  = 3
 	escort_carrier		= 1
-   	destroyer   		= 8 
-	light_cruiser 		= 7
-	heavy_cruiser 		= 6
+   	destroyer   		= 7 
+	light_cruiser 		= 6
+	heavy_cruiser 		= 5
 	battlecruiser 		= 0
 	submarine 			= 5
 	nuclear_submarine 	= 3
