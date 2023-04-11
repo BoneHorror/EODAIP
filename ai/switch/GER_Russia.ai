@@ -25,7 +25,7 @@ combat = {
 	LAT = 300
 }
 target = { 
-	572 = 50 # Moscow - Historical target
+	572 = 100 # Moscow - Historical target
 	553 = 70 # Leningrad - Historical target
 	617 = 70 # Kiev - Historical target
 	599 = 20 # Minsk 
@@ -266,11 +266,11 @@ country_priorities = {
 	}
 	area_multiplier = {
 		553    = 1.3  #Leningrad
-		573    = 1.4  #Moscow
+		573    = 1.5  #Moscow
 		731    = 1.2  #Baku
 		604	   = 1.3  #Kursk
 		639    = 1.2  #Crimea Breakthrough
-		633    = 1.6  #Stalingrad
+		633    = 1.3  #Stalingrad
 		1006   = 0.5  #Trash africa PoI
 		825    = 0.5	#Addis Adeba
 		1041	= 0.5  #Terrible area near Saudi Arabia
@@ -279,13 +279,13 @@ country_priorities = {
 }
 front = { 
    	recklessness     = 3 # 0-3 
-	distrib_vs_ai 		= even
-	distrib_vs_human 	= even
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= op_defensive
 
-   	base_attack_odds   = 1.1 
-   	min_attack_odds   = 1.01  
+   	base_attack_odds   = 1.01 
+   	min_attack_odds   = 1.0  
 	max_attack_odds 	= 2.0 
-	support_defense_prop 	= 0.4
+	support_defense_prop 	= 0.35
 
 	province_priorities = {
 		553    = 1.3  #Leningrad
