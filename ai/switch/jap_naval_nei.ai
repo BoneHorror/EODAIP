@@ -202,6 +202,9 @@ invasion = {
 		#Indonesia
 		1659  = 2000  #Menado
 		1657  = 2000  #Makassar
+		
+		#Burma
+		1415 = 6500 #Rangoon
 	} 
 } 
 admiral = { 
