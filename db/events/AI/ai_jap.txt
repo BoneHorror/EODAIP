@@ -2523,3 +2523,54 @@ event = {
 		command = { type = clrflag which = JAP_NorthStrategy }
 	}
 }
+###Cheat convoy income based on difficulty
+event = {
+	id = 4011071
+	random = no 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { convoypool = 500 }
+		NOT = { difficulty = 3 } #Neutral and Axis-favoured difficulties
+		NOT = { local_flag = JAPConvoys }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = 50 }
+		command = { type = local_setflag which = JAPConvoys }
+	}
+}
+event = {
+	id = 4011072
+	random = no 
+	country = JAP
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		convoypool = 500
+		NOT = { difficulty = 3 } #Neutral and Axis-favoured difficulties
+		local_flag = JAPConvoys
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = -50 }
+		command = { type = local_clrflag which = JAPConvoys }
+	}
+}
