@@ -346,6 +346,11 @@ invasion = {
 		11  = 8000  #Glasgow
 		1   = 1000	#Iceland
 		#2137 = 3000
+		
+		#Ireland in case AI choose this part of the event
+		34	= 8000 #Dublin
+		32	= 8000 #Galway
+		30	= 8000 #Waterford
 
 		# Atlantic Wall
 		122  = 1000  #Amsterdam
