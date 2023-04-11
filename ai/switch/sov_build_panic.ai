@@ -4,43 +4,45 @@
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= no
+	relative_build_scheme 	= yes
+	max_batch_peace 		= 360
+	max_batch_war 			= 240 
+	max_batch_home_front 	= 240
 
 	#### Divisions etc...
-	infantry 		= 17
-	cavalry 		= 0
-	motorized 		= 0
-	mechanized 		= 0
-	light_armor 	= 0
-	armor 			= 5
-	paratrooper 	= 0
-	marine 			= 0
-	bergsjaeger 	= 0
-	garrison		= 0
-    hq 				= 0
-	militia 		= 73
-#				96 %
+	infantry 	= 19
+	cavalry 	= 3
+	motorized 	= 10
+	mechanized 	= 2
+	light_armor = 4
+	armor 		= 0
+	paratrooper = 1
+	marine 		= 0
+	bergsjaeger = 1
+	garrison	= 1
+    hq 			= 2
+	militia 	= 32
+#				73 %
 	interceptor 	= 2
-	multi_role 		= 0
+	multi_role 		= 2
 	cas 			= 1
 	strategic_bomber = 1
-	tactical_bomber = 1
+	tactical_bomber = 3
 	naval_bomber 	= 0
-	transport_plane = 0
+	transport_plane = 2
 	flying_bomb 	= 0
 	flying_rocket 	= 0
-#				4 %
-	battleship 		= 0
+#				10 %
+	battleship 		= 1
 	carrier 		= 0
-	escort_carrier	= 0
-	destroyer 		= 0
-	light_cruiser 	= 0
-	heavy_cruiser 	= 0
-	battlecruiser 	= 0
-	submarine 		= 0
-	nuclear_submarine = 0
-	transports 		= 0
-#				0 %
-
+	escort_carrier	= 1
+	destroyer 		= 1
+	light_cruiser 	= 1
+	heavy_cruiser 	= 1
+	battlecruiser 	= 1
+	submarine 		= 5
+	nuclear_submarine = 1
+	transports 		= 2
+#				17 %
 }
 upgrading = 0.0
