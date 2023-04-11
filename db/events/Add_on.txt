@@ -13248,6 +13248,12 @@ event = {
 	action = {
 		ai_chance = 35
 		name = 1000475a # Divide and Conquer
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2100 where = 122 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2101 where = 125 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2102 where = 114 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2103 where = 115 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2113 where = 49 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2114 where = 51 when = 0 } #Activate GAR division to help AI defend beaches
 		command = { type = dissent value = 10 }
 		command = { type = construct which = ic where = 116 value = -3 } #Brussels
 		command = { type = construct which = ic where = -4 value = 2 }
@@ -13292,6 +13298,12 @@ event = {
 	action = {
 		ai_chance = 15
 		name = 1000475c # Create Flandern, Wallonia and Netherlands
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2100 where = 122 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2101 where = 125 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2102 where = 114 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2103 where = 115 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2113 where = 49 when = 0 } #Activate GAR division to help AI defend beaches
+		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2114 where = 51 when = 0 } #Activate GAR division to help AI defend beaches
 		command = { type = dissent value = -2 }
 		command = { type = independence which = FLA value = 1 }
 		command = { type = independence which = WLL value = 1 }
@@ -18223,7 +18235,7 @@ event = {
 		 command = { type = add_brigade value = artillery }
 	}
 }
-###### Transport training AI events (transports) #######
+###### Transport training AI events (AI transports training) #######
 event = {
 	id = 1100950
 	random = no
@@ -18233,9 +18245,25 @@ event = {
 	trigger = {
 		ai = yes
 		manpower = 125
+		navy = { size = 12 type = 1 where = 1 which = 1 } #Check if we have a non-transport/non-sub navy of at least 12 ships. Don't train otherwise because they will just die
 		OR = {
 			AND = {
-				NOT = { transport = { country = -1 value = 18 when = 1 } }
+				OR = {
+					AND = {
+						NOT = { transport = { country = -1 value = 24 when = 1 } }
+						OR = {
+						country = JAP
+						country = USA
+						}
+					}
+					AND = {
+						NOT = { transport = { country = -1 value = 16 when = 1 } }
+						AND = {
+							NOT = { country = USA }
+							NOT = { country = JAP }
+							}
+						}
+					}
 				atwar = yes
 				NOT = {
 					AND = {
@@ -18249,7 +18277,7 @@ event = {
 				atwar = yes
 				AND = {
 					country = GER
-					war = { country = GER country = SOV } #Don't want GER to get 18 TRA when atwar with SOV!
+					war = { country = GER country = SOV } #Don't want GER to get 16 TRA when atwar with SOV!
 				}
 			}
 		}
@@ -18963,6 +18991,76 @@ event = {
 				command = { type = build_time which = armor when = on_upgrade where = relative value = 5 } 
         } 
 } 
+
+########## GER and SOV Tank Development -
+########## German Tanks are large (comfortable to use -> higher org, morale) but generally bad vs armor early on and easy to penetrate. Soviets are generally tougher but have hard to use, cramped tanks. and bad AT capabilities for Lights. Ideally write event text for this
+########## Give GER some armor back in the "sloped armor" event
+
+event = { 
+        id = 1100967
+        random = no 
+		tag = { SOV }
+
+        trigger = { 
+                technology = 2030 # ARM 1936 
+        } 
+
+        name = EVT_1000554_NAME 
+        desc = EVT_1000554_DESC 
+        style = 2 
+        picture = "minor_tanks" 
+
+        date = { day = 1 month = january year = 1933 } 
+        offset = 20 
+        deathdate = { day = 29 month = december year = 1999 } 
+
+        action = {  
+                name = action_name_ok 
+                command = { type = hard_attack which = light_armor value = -1 } 
+				command = { type = hard_attack which = light_armor_brigade value = -1 } 
+                command = { type = toughness which = light_armor value = 1 } #Malus
+				command = { type = morale which = light_armor value = -2 }
+				command = { type = morale which = armor value = -3 }
+				command = { type = morale which = heavy_armor value = -3 }
+				command = { type = max_organization which = light_armor value = -2 }
+				command = { type = max_organization which = armor value = -3 }
+				command = { type = max_organization which = heavy_armor value = -3 }
+        } 
+} 
+
+event = { 
+        id = 1100968
+        random = no 
+		tag = { GER }
+
+        trigger = { 
+                technology = 2030 # ARM 1936 
+        } 
+
+        name = EVT_1000554_NAME 
+        desc = EVT_1000554_DESC 
+        style = 2 
+        picture = "minor_tanks" 
+
+        date = { day = 1 month = january year = 1933 } 
+        offset = 20 
+        deathdate = { day = 29 month = december year = 1999 } 
+
+        action = {  
+                name = action_name_ok 
+                command = { type = morale which = light_armor value = 2 }
+				command = { type = morale which = armor value = 5 }
+				command = { type = morale which = heavy_armor value = 3 }
+				command = { type = max_organization which = light_armor value = 2 }
+				command = { type = max_organization which = armor value = 3 }
+				command = { type = max_organization which = heavy_armor value = 3 }
+				command = { type = toughness which = armor value = 2 } #Malus
+				command = { type = toughness which = medium_armor value = 1 } #Malus
+				command = { type = hard_attack which = armor value = -2 } 
+				command = { type = supply_consumption which = armor value = 0.1 }
+        } 
+} 
+######################### Tank Development events done
 #########################
 # Operation Pike
 #########################
