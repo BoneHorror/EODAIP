@@ -1,4 +1,4 @@
-# USA Gear up 4 AI File by Lothos
+# USA attack Italy script
 
 combat = {
 	ITA = 170
@@ -49,6 +49,7 @@ front = {
   	enemy_handicap = { 
 	RSI = 25
 	GER = 10
+	JAP = 10
 	} 
    	passivity = {
 		RSI = 75 #We want to slow down Allied progression if ITA degenerates into RSI
@@ -81,7 +82,7 @@ invasion = {
 	coastal				= 0.05	#increase to avoid coastal forts more.
 	beach				= 0.05	#higher, avoid worst beaches.
 	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 12.0 # How far should the staging area be from the target invasion point
+	max_staging_distance = 18.0 # How far should the staging area be from the target invasion point
 	distance			= 0.5	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.

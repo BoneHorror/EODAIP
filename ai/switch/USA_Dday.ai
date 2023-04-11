@@ -65,13 +65,13 @@ front = {
 	recklessness 		= 1 # 0-3
 	distrib_vs_ai 		= offensive
 	distrib_vs_human 	= offensive
-	enemy_reinf_days	= 5
+	enemy_reinf_days	= 6
 	reserve_prop		= 0.2
 	panic_ratio_vs_ai	= 2.5
 	panic_ratio_vs_human	= 2.5
 	base_attack_odds	= 1.2
 	min_attack_odds		= 1.05
-	max_attack_odds		= 2.2
+	max_attack_odds		= 2.1
 	reinforce_odds		= 1.04
 	withdraw_odds		= 0.55
 	
@@ -106,7 +106,7 @@ invasion = {
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
 	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 10.0 # How far should the staging area be from the target invasion point
+	max_staging_distance = 18.0 # How far should the staging area be from the target invasion point
 	distance			= 5.0	#higher = avoid long distance.
 	pocket				= 2.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
