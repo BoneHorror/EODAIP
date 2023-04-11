@@ -362,15 +362,15 @@ combat = {
 # HQ Command Limit Factor (value * HQ Leader Command Limit)
 	2
 # Convoy protection factor  (higher, the more fearful convoy escorts are for raiders.)
-	1.0
+	1.5
 # Convoy escorts model in battles. 0 = use current researched DD model; -1 = use one level below current researched DD model and so on. Do not use fractions and numbers above 0!
-	-1 #-1
+	0 #-1
 # Convoy transports model in battles. 0 = use current researched TP model; -1 = use one level below current researched TP model and so on. Do not use fractions and numbers above 0!
-	-1 #-100(always use model 0)
+	0 #-100(always use model 0)
 # Chance for each added escort to convoy battles to be a CVE (when this unit type is activated for the country) instead of a DD. Valid values 0-100.
 	10 #0
 # CVE model in convoy battles. 0 = use current researched CVE model; -1 = use one level below current researched CVE model and so on. Do not use fractions and numbers above 0!
-    -1 #0
+    0 #0
 # Delay in hours after a combat ends before new orders can be given.	
 	24
 # Maximum sizes of air-stacks
@@ -663,7 +663,7 @@ combat = {
 # Night hours during summer - used in land unit speed calculations. Values: 0.0 (Disabled) to 24.0
 	9.0 #10.0 (WIF)
 # Recalculate land units arrival times when not in combat (for units not in "Sync. arrival time" mode). 0 - Disabled, 1 - recalculate each hour, 2 - recalculate once on 2 hours and so on.
-	4 #0
+	6 #0
 # "Synchronize arrival" time modifier - Players only! (Stack arrival time = slowest unit move time * THIS).
 	1.4 #1.0
 # "Synchronize arrival" time modifier - AI only! (Stack arrival time = slowest unit move time * THIS).
