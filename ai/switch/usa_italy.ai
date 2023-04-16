@@ -18,7 +18,7 @@ target = {
  1565 = 25 # Manila
  1607 = 15 # Port Moresby
 } 
-exp_force_ratio = 0.10 
+exp_force_ratio = 0.06 
 exp_force_ratios = { ENG = 0.6 U01 = 0.2 PHI = 0.2 } 
 no_exp_forces_to = { U02 }
 

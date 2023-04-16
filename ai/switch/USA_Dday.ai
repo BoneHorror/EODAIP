@@ -19,7 +19,7 @@ target = {
 max_garrison_prop = 0.04
 min_garrison_prop = 0.01
 
-exp_force_ratio = 0.10 
+exp_force_ratio = 0.06 
 exp_force_ratios = { ENG = 0.8 U01 = 0.1 PHI = 0.1 } 
 no_exp_forces_to = { U02 }
 
