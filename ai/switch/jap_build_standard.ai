@@ -11,14 +11,14 @@ military = {
 	#### Divisions etc...
    	infantry     	= 17 
    	cavalry     	= 2 
-	motorized 		= 4
+	motorized 		= 5
 	mechanized 		= 5
 	light_armor 	= 4
 	armor 			= 1
 	paratrooper 	= 2
    	marine       	= 7 
 	bergsjaeger 	= 1
-   	garrison    	= 0 
+   	garrison    	= 1 
     hq         		= 2 
 	militia 		= 0
  #        45 % 
@@ -33,10 +33,10 @@ military = {
 	flying_rocket 	= 0
  #        10 % 
 	battleship 		= 4
-   	carrier     	= 5 
+   	carrier     	= 4 
 	light_carrier	= 2
 	escort_carrier	= 0
-   	destroyer     	= 10
+   	destroyer     	= 9
    	light_cruiser   = 6 
 	heavy_cruiser 	= 3
 	battlecruiser 	= 0

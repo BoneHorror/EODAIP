@@ -18,7 +18,7 @@ military = {
 	paratrooper 	= 2
    	marine       	= 7 
 	bergsjaeger 	= 1
-   	garrison    	= 0 
+   	garrison    	= 1 
     hq         		= 2 
 	militia 		= 0
  #        50 % 
@@ -33,7 +33,7 @@ military = {
 	flying_rocket 	= 0
  #        10 % 
 	battleship 		= 3
-   	carrier     	= 5 
+   	carrier     	= 4 
 	light_carrier	= 2
 	escort_carrier	= 0
    	destroyer     	= 9

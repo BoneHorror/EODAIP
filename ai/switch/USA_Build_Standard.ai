@@ -8,7 +8,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry   		= 10
+   	infantry   		= 9
 	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 9
@@ -33,7 +33,7 @@ military = {
 	flying_rocket 		= 1
 #				10 %
 	battleship 			= 2
-   	carrier     		= 5
+   	carrier     		= 6
    	light_carrier  = 3
 	escort_carrier		= 1
    	destroyer   		= 7 

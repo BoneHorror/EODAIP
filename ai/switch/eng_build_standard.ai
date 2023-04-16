@@ -9,7 +9,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry     		= 13
+   	infantry     		= 11
 	d_05			= 2
 	cavalry 			= 2
    	motorized     		= 5 
@@ -35,12 +35,12 @@ military = {
 #						11 %
 	battleship 			= 5
    	carrier     		= 4 
-	escort_carrier		= 1
+	escort_carrier		= 2
    	destroyer     		= 10 
    	light_cruiser   	= 7 
 	heavy_cruiser 		= 5
 	battlecruiser 		= 1
-	submarine 			= 2
+	submarine 			= 3
 	nuclear_submarine 	= 0
    	transports     		= 6 
 #						46 %

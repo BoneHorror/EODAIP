@@ -9,7 +9,7 @@ military = {
 
 	#### Divisions etc...
    	infantry   		= 12
-	d_06			= 3 #Rangers
+	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 10
 	mechanized 		= 7
@@ -33,7 +33,7 @@ military = {
 	flying_rocket 		= 1
 #				10 %
 	battleship 			= 1
-   	carrier     		= 4
+   	carrier     		= 5
    	light_carrier  = 2
 	escort_carrier		= 1
    	destroyer   		= 6 
