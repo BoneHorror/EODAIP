@@ -3695,7 +3695,7 @@ event = {
 
 	action_a = {
 		command = { trigger = { not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land when = 229 where = 761 } # Benghazi
-		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = light_armor_brigade}
+		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = anti_air }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "15. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
 		#command = { trigger = { not = { difficulty = 4 } } type = add_division which = "21. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
 		#command = { trigger = { not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = armor when = 0 where = sp_artillery }

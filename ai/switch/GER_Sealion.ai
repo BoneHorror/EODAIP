@@ -12,12 +12,12 @@ target = {
  12 = 60 # Edinburgh
  495 = 20 # Narvik
 } 
-no_exp_forces_to = { ITA IRQ U49 U03 FRA U55 SPA POR }
+no_exp_forces_to = { IRQ U49 U03 FRA U55 SPA POR }
 max_front_ratios = { 
 	ENG = 5.0
 	}
 exp_force_ratio = 0.1 
-exp_force_ratios = { U45 = 0.1 IRE = 0.2 U73 = 0.4 RSI = 0.1 U44 = 0.2 } 
+exp_force_ratios = { U45 = 0.1 IRE = 0.2 U73 = 0.35 RSI = 0.1 U44 = 0.2 ITA = 0.05 } 
 max_front_ratio = 1.2 
 max_garrison_prop = 0.47
 min_garrison_prop = 0.20
