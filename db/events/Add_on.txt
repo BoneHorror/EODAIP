@@ -7154,11 +7154,17 @@ event = {
 	random = no
 	country = ENG
 	
-	trigger = { control = { province = 55 data = GER } ai = yes }
+	trigger = { 
+	ai = yes
+		OR = {
+		control = { province = 55 data = GER } 
+		war = { country = ENG country = ITA }
+		}
+	}
 	
 	date = { day = 2 month = january year = 1935 }
 	offset = 5
-	deathdate = { day = 29 month = december year = 1940 }
+	deathdate = { day = 29 month = december year = 1941 }
 
 
 	name = "AI_EVENT"
