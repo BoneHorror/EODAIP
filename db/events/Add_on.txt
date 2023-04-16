@@ -7183,17 +7183,17 @@ event = {
 		
 		#reinforce ports and canal area
 		command = { trigger = { NOT = { ai = ITA } } type = add_corps which = "Canal Reaction Force 4" value = land when = -1 where = 789 }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = armored_car when = 3 where = anti_air }
+		command = { trigger = { NOT = { ai = ITA } } type = add_division value = light_armor when = 3 where = anti_air }
 		command = { trigger = { NOT = { ai = ITA } } type = add_division value = motorized when = 0 where = medium_armor }
 		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
 
 		command = { type = add_corps which = "Canal Reaction Force 5" value = land when = -1 where = 900 }
-		command = { type = add_division value = armored_car when = 3 where = anti_air }
+		command = { type = add_division value = light_armor when = 2 where = anti_air }
 		command = { type = add_division value = motorized when = 0 where = medium_armor }
 		command = { type = add_division value = infantry when = 7  }
 	
 		command = { type = add_corps which = "Canal Reaction Force 6" value = land when = -1 where = 791 }
-		command = { type = add_division value = armored_car when = 3 where = anti_air }
+		command = { type = add_division value = light_armor when = 2 where = anti_air }
 		command = { type = add_division value = motorized when = 0 where = medium_armor }
 		command = { type = add_division value = infantry when = 7  }
 	
