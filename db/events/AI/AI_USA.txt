@@ -1851,10 +1851,11 @@ event = {
 	
 	trigger = {
 		ai = yes
-		manpower = 75
+		manpower = 120
 		exists = JAP
 		OR = { 
 			event = 1000370 #Fall of Paris / US Reaction
+			event = 9300351 #Prepare Sealion
 		}
 		NOT = {
 			OR = {
@@ -1881,18 +1882,19 @@ event = {
 		command = { trigger = { NOT = { ai = GER } } type = build_division which = armor value = engineer when = 2 }
 		command = { type = build_division which = armor value = engineer when = 2 }
 		command = { type = build_division which = armor value = engineer }
-		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 2 }
-		command = { type = build_division which = heavy_cruiser value = naval_fire_controll_s when = 2 }
+		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 4 }
+		command = { type = build_division which = heavy_cruiser value = naval_fire_controll_s when = 3 }
+		command = { type = build_division which = carrier value = cag when = 2 }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = carrier value = cag when = 1 }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = hq value = anti_air }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = naval_bomber }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = strategic_bomber }
-		command = { trigger = { NOT = { ai = GER } } type = build_division which = strategic_bomber }
+		command = { trigger = { NOT = { ai = GER } } type = build_division which = strategic_bomber when = 2 }
 		command = { type = build_division which = paratrooper cost = -1.0 when = 3 }
 		command = { type = build_division which = transport_plane cost = 1.0 when = 2 }
-		command = { type = build_division which = submarine value = naval_torpedoes_s }
-		command = { type = build_division which = submarine value = naval_torpedoes_s }
-		command = { type = build_division which = marine value = engineer when = 2 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 2 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 2 }
+		command = { type = build_division which = marine value = engineer when = 3 }
 		command = { trigger = { NOT = { ai = ITA } } type = build_division which = nuclear_submarine value = floatplane when = 2 }
 	}
 }
