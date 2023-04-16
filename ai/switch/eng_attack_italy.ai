@@ -100,7 +100,7 @@ invasion = {
         747 = 3000 #Tunis
         750 = 3000 #Tripoli
         761 = 2000 #Benghazi
-        765 = 2000 #Tobruk
+        765 = 8000 #Tobruk
 
         # Middle East
         1019 = 500 #Beirut
