@@ -81,11 +81,11 @@ invasion = {
         433 = 8000 #Syracuse
         434 = 4000 #Cagliari
         94 = 4000 #Corsica
-        422 = 8000 #Taranto
-        427 = 8000 #Salerno
-        416 = 8000 #Anzio
-        419 = 7000 #Rome
-        412 = 8000 #Ancona
+        422 = 7400 #Taranto
+        427 = 7400 #Salerno
+        416 = 7900 #Anzio
+        419 = 7400 #Rome
+        412 = 7400 #Ancona
         400 = 2000 #Venice
 
         429 = 8500 #Malta
