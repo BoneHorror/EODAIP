@@ -14,7 +14,7 @@ no_exp_forces_to = { JAP SIA MAN U49 U03 SPA POR FRA ITA }
   
    # PRIORITIES: 
    beach      = 20  # Beach level 2 
-   capital      = 80  # Our capital 
+   capital      = 100  # Our capital 
    human_border  = 0    # Ignored for allied human players 
    war_target    = 50  # The next country targeted for attack by this AI 
     
@@ -37,9 +37,9 @@ no_exp_forces_to = { JAP SIA MAN U49 U03 SPA POR FRA ITA }
  } 
  front = {  
    recklessness     = 0 # 0-3 
-   distrib_vs_ai     = defensive
-   distrib_vs_human   = defensive
-	reserve_prop		= 0.5
+   distrib_vs_ai     = op_defensive
+   distrib_vs_human   = op_defensive
+	reserve_prop		= 0.4
 	province_priorities = { 825 = 100	}
      passivity = { 
 	 ENG = 30
