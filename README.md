@@ -2,6 +2,7 @@
 EODAIP - an AI focused Darkest Hour Mod
 
 My Discord channel - https://discord.gg/jcKe3KYjRb (mainly about StarCraft)
+
 Thread on Darkest Hour forums - https://forum.paradoxplaza.com/forum/threads/eodaip-an-ai-focused-darkest-hour-mod.1519725/
 
 How to play:
