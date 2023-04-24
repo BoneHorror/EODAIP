@@ -154,7 +154,7 @@ garrison = {
 		
 		#Just in case we succeeded in Sealion
 		23 = 30 #Plymouth
-		34 = 30 #Dublin
+		34 = 40 #Dublin
 		36 = 20 #Belfast
 		29 = 20 #London
 		1 = 20 #Reykjavik

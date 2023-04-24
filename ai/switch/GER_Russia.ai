@@ -217,7 +217,7 @@ technology = {
 ###################################
 garrison = {
 	home_multiplier 	= 1.0
-	overseas_multiplier = 0.3
+	overseas_multiplier = 0.4
 	revolt_risk_mult	= 0.2
 	province_priorities = {
 		55  = 30  #Paris

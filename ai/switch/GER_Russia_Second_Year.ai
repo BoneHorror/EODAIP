@@ -17,6 +17,38 @@ target = {
 # Ground Combat, Leaders and Garrisons
 ###################################
 garrison = {
+	province_priorities = {
+		55  = 30  #Paris
+		52  = 30  #Lille
+		116  = 30  #Brussels
+		145  = 30  #Prague
+		104  = 30  #Metz
+		43  = 30  #Cherborg
+		42  = 30  #Avranches
+		69  = 30  #La Rochele
+		147  = 30  #Wilhelmshafen
+		148  = 30  #Bremen
+		150  = 30  #Groningen
+		338  = 30  #Belgrade
+		377 = 20 #Athens
+		
+		#Just in case we succeeded in Sealion
+		23 = 30 #Plymouth
+		34 = 30 #Dublin
+		36 = 20 #Belfast
+		29 = 20 #London
+		1 = 20 #Reykjavik
+		
+		486 = 30 # Heavy Water in Honefoss
+		
+		102	= 30 #Sedan - protect from DDay!
+		407	= 30 #N Italy - protect from Overlord!
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = -1 #Mytilini
+		381 = -1 #Ermoupoli
+		370 = -1 #Alexandropoli
+	}
 	area_multiplier = {
 		638  = 1.3 #Crimea as way to Baku
 		694  = 1.3 #Novorossiysk as a way to Baku
@@ -25,8 +57,8 @@ garrison = {
 		567  = 1.7 #Stalingrad
 		553    = 1.2  #Leningrad
 		573    = 1.2  #Moscow
-		102		= 1.2 #Sedan - protect from DDay!
-		407		= 1.2 #N Italy - protect from Overlord!
+		102		= 1.3 #Sedan - protect from DDay!
+		407		= 1.3 #N Italy - protect from Overlord!
 	}
 	country_priorities = {
      	FRA = -1 
@@ -39,8 +71,8 @@ garrison = {
 		SPR = 5
 		SPA = -1
 		SOV = 75
-		ENG = 80
-		USA = 80
+		ENG = 85
+		USA = 90
 		U01 = 50
 		U02 = 30
 	}
