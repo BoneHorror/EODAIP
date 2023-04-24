@@ -108,11 +108,11 @@ invasion = {
 	}
 	target = { 
 		#Norway
-		491	= 8000	#Alesund # 3x 8000 makes this a little less predictable - 100% Narvik was abusable by Players
-		485	= 8000	#Kristiansand
-		483	= 7000	#Oslo
-		493	= 7000	#Trondheim
-		495	= 8000	#Narvik
+		491	= 7400	#Alesund # 3x 8000 makes this a little less predictable - 100% Narvik was abusable by Players
+		485	= 7400	#Kristiansand
+		483	= 7200	#Oslo
+		493	= 7400	#Trondheim
+		495	= 7200	#Narvik
 		
 		#Sweden
 		2153 = 4000 # Goterborg 
