@@ -7289,7 +7289,7 @@ event = {
 		name = "ACTION_NAME_GOOD" 
 		ai_chance = 100
 		command = { type = manpowerpool value = 5 }
-		command = { type = gain_tech which = 6310 }		
+		command = { type = gain_tech which = 6310 }	#Large Front Doctrine
 	}
 }
 #########################################################################

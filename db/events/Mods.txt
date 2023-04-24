@@ -1864,7 +1864,11 @@ event = {
 
 	decision_trigger = { paratrooper = { value = 1 when = now } supplies = 500 }
 
-	trigger = { war = { country = GER country = BEL } control = { province = 108 data = BEL } building = { province = 108 type = land_fort value = 1 } }
+	trigger = { 
+		war = { country = GER country = BEL }
+		control = { province = 108 data = BEL }
+		building = { province = 108 type = land_fort value = 1 }
+	}
    
 	name = "9300043name"
 	desc = "9300043desc" 
