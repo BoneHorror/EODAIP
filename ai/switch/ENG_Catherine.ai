@@ -21,7 +21,7 @@ max_front_ratios = {
 	SPA = 2.0
 }
 
-exp_force_ratio = 0.0
+exp_force_ratio = 0.05
 exp_force_ratios = {
 	NOR = 1.0
 } 
