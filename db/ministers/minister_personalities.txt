@@ -1388,7 +1388,6 @@
 		value		= 0
  		command		= { type = leader_skill value = -0.0500 }
 		command		= { type = dissent value = -0.1000 }
-		command		= { type = production which = consumer value = 0.1000 }
 		command		= { type = belligerence which = declare_war value = 0.2000 }
 		command		= { type = intelligence_chances which = smear_campaign value = 1 }
 		command		= { type = research which = industry value = -0.1000 }
@@ -2462,7 +2461,6 @@
 		command		= { type = resource which = energy value = 0.0500 }
 		command		= { type = resource which = metal value = 0.0500 }
 		command		= { type = resource which = rare_materials value = 0.0500 }		
-		command		= { type = production which = consumer value = 0.0500 }
 		command		= { type = resource which = money value = -0.0500 }
 	}	
 	

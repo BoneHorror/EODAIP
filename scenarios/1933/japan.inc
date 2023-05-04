@@ -199,7 +199,7 @@ country = {
 		interventionism   = 8 
 	} 
 	peacetime_ic_mod       = 0.8 # +0.2 by 1 event pre-war
-	ic_modifier				= 1.05 #
+	ic_modifier				= 1.0 #
 	headofstate            = {  type = 9 id = 50001  } 
 	headofgovernment       = {  type = 9 id = 50323  } # Makoto Saito
 	foreignminister        = {  type = 9 id = 50259  } # Uchida Kosai

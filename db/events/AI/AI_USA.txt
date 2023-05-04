@@ -54,7 +54,7 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/USA_Gear_Up_1.ai" }
 		command = { type = carrier_level value = 2.0 }
-		command = { trigger = { ai = JAP } type = visibility which = transport value = -4 } #Visibility cheat for US AI vs JAP AI so that it doesn't suicide as many transports
+		command = { trigger = { ai = JAP difficulty = 2 } type = visibility which = transport value = -6 } #Visibility cheat for US AI vs JAP AI so that it doesn't suicide as many transports, not used on Strong Axis
 	}
 }
 ################
@@ -1792,7 +1792,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		manpower = 80
+		manpower = 100
 		exists = JAP
 		OR = { 
 			event = 2003013 #  The Treaty of Munich - Czechoslovakia joins the Axis
@@ -1825,11 +1825,12 @@ event = {
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = marine value = engineer }
 		command = { trigger = { NOT = { ai = GER } } type = build_division which = armor value = engineer }
 		command = { type = build_division which = motorized value = engineer when = 4 }
-		command = { type = build_division which = light_cruiser value = naval_fire_controll_s }
-		command = { type = build_division which = light_cruiser value = naval_fire_controll_s }
+		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 3 }
+		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 2 }
 		command = { type = build_division which = light_cruiser value = naval_fire_controll_s }
 		command = { type = build_division which = heavy_cruiser value = naval_fire_controll_s when = 2 }
-		command = { type = build_division which = carrier value = cag when = 1 }
+		command = { type = build_division which = battleship value = naval_fire_controll_l when = 2 }
+		command = { type = build_division which = carrier value = cag when = 2 }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = hq value = anti_air }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = naval_bomber }
 		command = { trigger = { NOT = { ai = JAP } } type = build_division which = strategic_bomber }
@@ -1837,9 +1838,10 @@ event = {
 		command = { trigger = { NOT = { ai = GER } } type = build_division which = strategic_bomber }
 		command = { trigger = { NOT = { ai = GER } } type = build_division which = motorized when = 2 }
 		command = { trigger = { NOT = { ai = GER } } type = build_division which = cavalry }
-		command = { type = build_division which = submarine value = naval_torpedoes_s }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 4 }
 		command = { type = build_division which = submarine value = naval_torpedoes_s }
 		command = { type = build_division which = marine value = engineer when = 2 }
+		command = { type = build_division which = transport when = 6 }
 		command = { trigger = { NOT = { ai = ITA } } type = build_division which = nuclear_submarine value = floatplane }
 	}
 }
@@ -2103,5 +2105,78 @@ event = {
 	action_a = {
 		ai_chance = 100
 		command = { type = war which = FRA }
+	}
+}
+
+###Build Queue for USA leading into 1938
+event = {
+	id = 3049063
+	random = no
+	country = USA
+	
+	trigger = {
+		ai = yes
+		manpower = 120
+		NOT = {
+			OR = {
+				ispuppet = USA
+				alliance = { country = USA country = SOV }
+				alliance = { country = USA country = GER }
+				alliance = { country = USA country = JAP }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 5 month = december year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { type = build_division which = light_cruiser value = naval_fire_controll_s when = 2 }
+		command = { type = build_division which = heavy_cruiser value = naval_fire_controll_s when = 2 }
+		command = { type = build_division which = carrier value = cag when = 2 }
+		command = { type = build_division which = battleship value = naval_fire_controll_l when = 2 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 3 }
+		command = { type = build_division which = submarine value = naval_torpedoes_s when = 2 }
+		command = { type = build_division which = nuclear_submarine value = floatplane when = 2 }
+	}
+}
+###Manpower for USA leading into 1938
+event = {
+	id = 3049064
+	random = no
+	country = USA
+	
+	trigger = {
+		ai = yes
+		NOT = {
+			OR = {
+				ispuppet = USA
+				alliance = { country = USA country = SOV }
+				alliance = { country = USA country = GER }
+				alliance = { country = USA country = JAP }
+			}
+		}
+		NOT = {
+			atwar = yes
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		command = { trigger = { NOT = { ai = JAP } } type = manpowerpool value = 120 }
+		command = { trigger = { ai = JAP } type = manpowerpool value = 100 }
 	}
 }
