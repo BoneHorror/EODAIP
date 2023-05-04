@@ -16,7 +16,7 @@ target = {
  1607 = 25 # Port Moresby
  1625 = 10 # Brunei
 } 
-max_garrison_prop = 0.04
+max_garrison_prop = 0.1
 min_garrison_prop = 0.01
 
 exp_force_ratio = 0.06 
@@ -387,13 +387,36 @@ invasion = {
 } 
 admiral = { 
 	target = { 
-	2485 = 200 #Hunt north philipines
-	2511 = 220 #Hunt s okinawa
-	2512 = 220 #Hunt n okinawa
-	2489 = 50 #Osaka Sea
+	2485 = 50 #Hunt north philipines
+	2511 = 80 #Hunt s okinawa
+	2512 = 80 #Hunt n okinawa
+	2489 = 30 #Osaka Sea
 	2694 = 80 #Hunt german navy near norway
-	2699 = 500 #Target for D-Day - South Channel
-	2697 = 500 #Target for D-Day - Rotterdam
+	2699 = 300 #Target for D-Day - South Channel
+	2697 = 300 #Target for D-Day - Rotterdam
 	} 
-
+	core = {	
+	2396 #Sea near Dutch Harbor
+	2637 #Pearl Harbor
+	2631 #Midway
+	2181 #Malta sea
+	2176 #Suez sea
+	2700 #English channel
+	} 
+	ignore = {
+		#Japanese Coast - try to avoid suiciding shit
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk"
+		
+		#Ignore home regions so that navy is not wasting oil for no reason
+		"Florida Strait"
+		"Central Carribean"
+		"East Gulf of Mexico"
+		"West Gulf of Mexico"
+		"Yucatan Strait"
+	}
 }
