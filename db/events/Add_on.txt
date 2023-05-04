@@ -6485,6 +6485,7 @@ event = {
 	id = 1000223
 	random = no
 	country = JAP
+	trigger = { NOT = { war = { country = GER country = JAP  } } }
 			
 	name = "EVT_NAME_1000223"
 	desc = "EVT_DESC_1000223"
@@ -13545,6 +13546,11 @@ event = {
 } 
 
 	decision_trigger = { supplies = 1000 }	
+	trigger = { 
+	NOT = { war = { country = GER country = ITA } } 
+	alliance = { country = GER country = ITA }
+	event = 2003071
+	}
 
 	name = "EVT_1000484_NAME"
 	desc = "EVT_1000484_DESC" 
@@ -13583,7 +13589,8 @@ event = {
 	random = no
 	country = GER
 
-	decision = { atwar = yes
+	decision = { 
+			atwar = yes
 		     region = { region = Poland country = -2 }
 		     control = { province = 284 data = -2 }
 	 	}
