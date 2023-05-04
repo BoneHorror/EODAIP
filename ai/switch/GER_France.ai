@@ -103,9 +103,9 @@ garrison = {
 	}
 }
 front = { 
-   	recklessness     = 2 # 0-3 
-  	distrib_vs_ai     = reactive
-   	distrib_vs_human   = reactive 
+   	recklessness     = 3 # 0-3 
+  	distrib_vs_ai     = offensive
+   	distrib_vs_human   = offensive 
 
 	enemy_reinf_days	= 6
 	reserve_prop		= 0.0
