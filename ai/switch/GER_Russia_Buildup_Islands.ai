@@ -121,6 +121,7 @@ garrison = {
 		SPR = -1
 		SPA = -1
 		SOV = 100
+		U44 = 80
 		ENG = 50
 		USA = 60
 		YUG = 50
