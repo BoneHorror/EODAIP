@@ -13,7 +13,7 @@ target = {
  1552 = 35 # Tokyo
 } 
 
-max_garrison_prop = 0.03
+max_garrison_prop = 0.12
 min_garrison_prop = 0.01
 
 exp_force_ratio = 0.08 

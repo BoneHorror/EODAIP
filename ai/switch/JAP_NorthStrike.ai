@@ -5,7 +5,7 @@ target = {
 	1142 = 30 #Novosibirsk
 	1138 = 30 #Omsk
 } 
-max_garrison_prop = 0.20
+max_garrison_prop = 0.30
 min_garrison_prop = 0.15
 
 ###################################

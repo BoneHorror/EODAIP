@@ -15,8 +15,8 @@ combat = {
 	SCH = 80
 }
 max_front_ratio = 2.0
-max_garrison_prop = 0.35
-min_garrison_prop = 0.05
+max_garrison_prop = 0.55
+min_garrison_prop = 0.15
 exp_force_ratio = 0.07 
 exp_force_ratios = { ITA = 0.2 U45 = 0.1 IRE = 0.2 U73 = 0.4 U43 = 0.1 } 
 max_front_ratios = { 

@@ -1,6 +1,9 @@
 # Soviet war with Allies by Nekron
 
+max_front_ratio = 1.5
 max_front_ratios = { }
+exp_force_ratio = 0.25
+exp_force_ratios = { GER = 0.7 MON = 0.1 ITA = 0.1 RSI = 0.1 } 
 liberate = { U10 U11 U12 U13 U14 U15 U17 U18 U19 U20 U21 U22 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 PRK MON CHC IND PER BUR BHU NEP PAK IRQ ISR }
 
 liberate_nation = { PRK }
