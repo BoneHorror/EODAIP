@@ -12,7 +12,7 @@ target = {
  12 = 60 # Edinburgh
  495 = 20 # Narvik
 } 
-no_exp_forces_to = { IRQ U03 FRA }
+no_exp_forces_to = { IRQ U03 FRA JAP SIA MAN MEN BUR PHI U87 }
 max_front_ratios = { 
 	ENG = 3.0
 	U01 = 1.2

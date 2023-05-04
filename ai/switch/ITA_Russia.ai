@@ -1,13 +1,13 @@
 # Italy vs Russia/Usa/France AI File by Lothos
 
-max_garrison_prop = 0.40
+max_garrison_prop = 0.45
 min_garrison_prop = 0.25
 exp_force_ratio = 0.20
 exp_force_ratios = {
 	GER = 1.0
 } 
 
-no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN U03 }
+no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN MEN U87 U03 BUR PHI }
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################

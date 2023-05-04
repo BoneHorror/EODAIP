@@ -9,7 +9,7 @@ max_front_ratios = {
    USA = 3.5
    TUR = 1.5
 } 
-no_exp_forces_to = { JAP SIA MAN U49 U03 SPA POR FRA }
+no_exp_forces_to = { JAP SIA MAN MEN U49 U03 SPA POR FRA BUR PHI U87 }
 war = 100
 exp_force_ratio = 0.07 
 exp_force_ratios = { ITA = 0.15 U45 = 0.1 FIN = 0.3 ROM = 0.1 U73 = 0.1 RSI = 0.15 U44 = 0.1 } 
@@ -258,6 +258,7 @@ country_priorities = {
 		TUR = 5
 		SPR = -1
 		SPA = -1
+		U44 = -1
 		SOV = 90
 		ENG = 100
 		USA = 100
