@@ -29,7 +29,7 @@ garrison = {
 	capital			= 20	# Keep prio high so that AI tries to put paras here
 	human_border		= 0	# Ignored for allied human players
 	war_target		= 50	# The next country targeted for attack by this AI
-	reserves 		= 0	# bonus for provinces just behind a frontline.
+	reserves 		= 10	# bonus for provinces just behind a frontline.
 	
 	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
@@ -49,8 +49,8 @@ garrison = {
 		YUG = 5
 		LIT = 3
 		HOL = 75
-		BEL = 100
-		LUX = 100
+		BEL = 90
+		LUX = 75
      	DEN = 30 
 		SOV = 1
 	}
@@ -68,7 +68,7 @@ garrison = {
 		158  = 0.1  #Stettin
 
 		#Belgium Dutch Border
-		131  = 1.2 #Overlaps with magi, focus on south
+		131  = 1.2 #Overlaps with magi, focus on northeast
 		141  = 5.0 #Netherlands
 		147 = 5.0 #Middle
 		
@@ -83,8 +83,8 @@ garrison = {
 	}
 }
 front = { 
-	distrib_vs_ai 		= even
-	distrib_vs_human 	= even
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
  
 	enemy_handicap = {
 		FRA = 100
