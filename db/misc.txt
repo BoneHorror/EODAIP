@@ -16,9 +16,9 @@ economy = {
 # Modifier on dissent reduction - higher this modifier is, longer it will take to reduce dissent.
 	8.0 # 8.0 # 4.0 (WIF)
 # Max Gearing Bonus ( never lower than value * build time )
-	0.65
+	0.48
 # Gearing Bonus Increment ( lessening of build time per successive build, down to Max Gearing Bonus )
-	0.05
+	0.08
 # IC Non-National Province Multiplier
 	0.33 # 0.2 #0.3333 (WIF)
 # IC Non-Owned (i.e. occupied) Province Multiplier (overrides Non-National where applicable)
@@ -364,13 +364,13 @@ combat = {
 # Convoy protection factor  (higher, the more fearful convoy escorts are for raiders.)
 	1.5
 # Convoy escorts model in battles. 0 = use current researched DD model; -1 = use one level below current researched DD model and so on. Do not use fractions and numbers above 0!
-	0 #-1
+	-1 #-1
 # Convoy transports model in battles. 0 = use current researched TP model; -1 = use one level below current researched TP model and so on. Do not use fractions and numbers above 0!
 	0 #-100(always use model 0)
 # Chance for each added escort to convoy battles to be a CVE (when this unit type is activated for the country) instead of a DD. Valid values 0-100.
 	10 #0
 # CVE model in convoy battles. 0 = use current researched CVE model; -1 = use one level below current researched CVE model and so on. Do not use fractions and numbers above 0!
-    0 #0
+    -1 #0
 # Delay in hours after a combat ends before new orders can be given.	
 	24
 # Maximum sizes of air-stacks
@@ -1234,17 +1234,17 @@ mod = {
 # Rebels ORG regain (including when in combat)
 	0.15 #0.2
 # Extra bonus for rebelling for every rebel controlled neighboring province
-	5 #0
-# Extra bonus for rebelling for occupied enemy provinces
 	10 #0
+# Extra bonus for rebelling for occupied enemy provinces
+	5 #0
 # Extra rebel bonus for mountain terrain
-	4 #0
+	6 #0
 # Extra rebel bonus for hill terrain
-	2 #0	
+	3 #0	
 # Extra rebel bonus for forest terrain
-	3 #0
+	5 #0
 # Extra rebel bonus for jungle terrain
-	4 #0	
+	5 #0	
 # Extra rebel bonus for swamp terrain
 	2 #0	
 # Extra rebel bonus for deserts
@@ -1252,9 +1252,9 @@ mod = {
 # Extra rebel bonus for plains terrain
 	0 #0	
 # Extra rebel bonus for urban provinces
-	2 #0
+	5 #0
 # Extra rebel bonus for provinces with Air or Naval bases
-	0 #0
+	-1 #0
 # Return rebellious province to the original owner after X months if there are no rebel armies into the province anymore.
 	12 #1000000 (never)
 # Use new minister files format and End years for ministers; All minister files should have End Year column (after "Pool"); Pool should use absolute year (1936 instead of 36): 0 - Disabled, 1 - Enabled
