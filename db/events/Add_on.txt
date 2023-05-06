@@ -10278,6 +10278,8 @@ event = {
 		ai_chance = 100
 		command = { type = relation which = GER value = -5 }
 		command = { type = relation which = ITA value = -5 }
+		command = { type = peacetime_ic_mod value = 8 }
+		command = { type = domestic which = defense_lobby value = 1 } # one step Hawk Lobby
 		command = { type = money value = 50 }	
 	}
 }

@@ -802,16 +802,17 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		ai_chance = 50
+		ai_chance = 90
 		name = 3724a
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = domestic which = defense_lobby value = 1 } # one step Hawk Lobby
+		command = { type = peacetime_ic_mod value = 6 }
 		command = { type = relation which = ENG value = 20 }
 		command = { type = relation which = GER value = -20 }
 		command = { type = manpowerpool value = 10 }
 	}
 	action = {
-		ai_chance = 50
+		ai_chance = 10
 		name = 3724b
 		command = { type = domestic which = interventionism value = -1 }
 	}
@@ -844,16 +845,17 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
-		ai_chance = 50
+		ai_chance = 90
 		name = 3724a
 		command = { type = domestic which = interventionism value = 1 }
-		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = domestic which = defense_lobby value = 1 } # one step Hawk Lobby
+		command = { type = peacetime_ic_mod value = 6 }
 		command = { type = relation which = ENG value = 20 }
 		command = { type = relation which = GER value = -20 }
 		command = { type = manpowerpool value = 10 }
 	}
 	action = {
-		ai_chance = 50
+		ai_chance = 10
 		name = 3724b
 		command = { type = domestic which = interventionism value = -1 }
 	}
