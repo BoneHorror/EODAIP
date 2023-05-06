@@ -2186,7 +2186,7 @@ event = {
 
 	action = {
 		trigger = { 
-                    intel_diff = { country = JAP country = USA value = 30 data = 3 }
+                    intel_diff = { country = JAP country = USA value = 10 data = 2 }
         }
 		name = "4063a"	# Nightmare!  All 8 BBs of Battleship Row, plus both nearby CV TFs.
         	ai_chance = 100
@@ -2220,8 +2220,8 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = JAP country = USA value = 15 data = 3 }
-                    NOT = { intel_diff = { country = JAP country = USA value = 30 data = 3 } }
+                    intel_diff = { country = JAP country = USA value = 3 data = 2 }
+                    NOT = { intel_diff = { country = JAP country = USA value = 10 data = 2 } }
                 }
             }
 		name = "4063b"   # Pretty Bad!  (6 BBs lost, 2 near-lost/refloated)
@@ -2250,8 +2250,8 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = JAP country = USA value = 0 data = 3 }
-                    NOT = { intel_diff = { country = JAP country = USA value = 15 data = 3 } }
+                    intel_diff = { country = JAP country = USA value = -5 data = 2 }
+                    NOT = { intel_diff = { country = JAP country = USA value = 3 data = 2 } }
                 }
             }
 		name = "4063c"   # Worse than historic  (4 BBs lost, 3 near-lost/refloated)
@@ -2280,8 +2280,8 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = JAP country = USA value = -10 data = 3 }
-                    NOT = { intel_diff = { country = JAP country = USA value = 0 data = 3 } }
+                    intel_diff = { country = JAP country = USA value = -10 data = 2 }
+                    NOT = { intel_diff = { country = JAP country = USA value = -5 data = 2 } }
                 }
             }
 		name = "4063d"   # Historic losses (2 BBs lost, 3 sunk but refloated)
@@ -2310,7 +2310,7 @@ event = {
 	}
 	action = {
 		trigger = {
-                    NOT = { intel_diff = { country = JAP country = USA value = -10 data = 3 } }
+                    NOT = { intel_diff = { country = JAP country = USA value = -10 data = 2 } }
             }
 		name = "4063e"   # Less than historic losses (1 BB lost, 1 sunk but refloated)
 		ai_chance = 100

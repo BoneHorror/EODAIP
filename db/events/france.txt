@@ -2379,7 +2379,7 @@ event = {
 	desc = "4062desc"
 
 	action = {
-		trigger = { intel_diff = { country = ENG country = FRA value = 18 data = 1 } }
+		trigger = { intel_diff = { country = ENG country = FRA value = 10 data = 2 } }
 		ai_chance = 100
 		name = "4063a" #Very heavy casualties
 		command = { type = remove_division which = 13500 value = 142 } # Bretagne
@@ -2400,8 +2400,8 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = ENG country = FRA value = 9 data = 1 }
-                    NOT = { intel_diff = { country = ENG country = FRA value = 18 data = 1 } }
+                    intel_diff = { country = ENG country = FRA value = 3 data = 2 }
+                    NOT = { intel_diff = { country = ENG country = FRA value = 10 data = 2 } }
                 }
             }
 		ai_chance = 100
@@ -2422,8 +2422,8 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = ENG country = FRA value = 1 data = 1 }
-                    NOT = { intel_diff = { country = ENG country = FRA value = 9 data = 1 } }
+                    intel_diff = { country = ENG country = FRA value = -2 data = 2 }
+                    NOT = { intel_diff = { country = ENG country = FRA value = 3 data = 2 } }
                 }
             }
 		ai_chance = 100
@@ -2442,14 +2442,14 @@ event = {
 	action = {
 		trigger = {
                 AND = {
-                    intel_diff = { country = ENG country = FRA value = -3 data = 1 }
-                    NOT = { intel_diff = { country = ENG country = FRA value = 1 data = 1 } }
+                    intel_diff = { country = ENG country = FRA value = -5 data = 2 }
+                    NOT = { intel_diff = { country = ENG country = FRA value = -2 data = 2 } }
                 }
             }
 		ai_chance = 100
 		name = "4063d" #Light casualties
 		command = { type = damage_division which = 13500 value = 142 where = 71 } # Bretagne
-		command = { type = damage_division which = 13500 value = 138 where = 50 } 
+		command = { type = damage_division which = 13500 value = 138 where = 50 } # Destroyer
 		command = { type = dissent value = 3 }
 		command = { type = domestic which = political_left value = -1 }
 		command = { type = set_relation which = ENG value = -50 }
@@ -2457,7 +2457,7 @@ event = {
 	} 
 	action = {
 		trigger = {
-                    NOT = { intel_diff = { country = ENG country = FRA value = -3 data = 1 } }
+                    NOT = { intel_diff = { country = ENG country = FRA value = -5 data = 2 } }
             }
 		ai_chance = 100
 		name = "4063e" #Very light casualties
