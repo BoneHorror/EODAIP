@@ -3,7 +3,7 @@
 # Nerf England so it's closer to the phony war - Nekron
 
 max_garrison_prop = 0.47
-min_garrison_prop = 0.38
+min_garrison_prop = 0.28
 
 upgrading = 0.30
 #reinforcement = 0.30
@@ -79,8 +79,8 @@ construction = {
 ###################################
 garrison = {
 	defend_overseas_beaches = yes
-	home_multiplier 	= 1.6 # 1.4
-	overseas_multiplier = 0.2
+	home_multiplier 	= 1.0 # 1.4
+	overseas_multiplier = 0.6
 	home_peace_cap 		= 25#40
 	war_zone_odds 		= 2.0
 	key_point_prio_mult	= 1.0
@@ -98,27 +98,27 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = {
-		#BEL = -1
-		#HOL = -1
-		#LUX = -1
-		#GER = 100
-		#SPA = -1
-		#SPR = -1
-		ITA = 30
-		#ETH = -1
-		#SCH = -1
-		#FRA = -1
-		#CAN = -1
-		#AST = -1
-		#NZL = -1
-		#POR = -1
-		#CYN = -1
-		#TUR = -1
-		#SIK = -1
-		#TIB = -1
-		#AFG = -1
-		#PER = -1
-		#SAU = -1
+		BEL = -1
+		HOL = -1
+		LUX = -1
+		GER = 100
+		SPA = -1
+		SPR = -1
+		ITA = 80
+		ETH = -1
+		SCH = -1
+		FRA = -1
+		CAN = -1
+		AST = -1
+		NZL = -1
+		POR = -1
+		CYN = -1
+		TUR = -1
+		SIK = -1
+		TIB = -1
+		AFG = -1
+		PER = -1
+		SAU = -1
 	}
 	province_priorities = {
 		#348 = 30 # Gibraltar
