@@ -1,11 +1,11 @@
 # German the Norway Invasion AI File by Lothos
 
 max_front_ratios = {
-	BEL = 3.0
-	HOL = 3.0
-	LUX = 4.0
+	BEL = 5.0
+	HOL = 5.0
+	LUX = 3.0
 	NOR = 3.0
-	FRA = 0.3
+	FRA = 0.1
 }
 target = { 
  483 = 100 # Oslo
@@ -69,8 +69,8 @@ front = {
 	province_priorities = {
 		#Maginot Line
 		127  = 0.25
-		132  = 0.05
-		130  = 0.05
+		132  = 0.01
+		130  = 0.01
 		
 		#Spearhead into ardennes
 		126	= 1.5

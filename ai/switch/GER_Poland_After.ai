@@ -2,7 +2,10 @@
 
 max_front_ratio = 1.1
 max_front_ratios = { 	# Override the default against specific countries. Ignored against humans.
-	FRA = 0.2 
+	FRA = 0.1 
+	BEL = 3.0
+	HOL = 3.0
+	LUX = 1.5
 	SOV = 0.1
 	DEN = 0.2
 	SCH = 0.01
@@ -68,7 +71,7 @@ garrison = {
 		158  = 0.1  #Stettin
 
 		#Belgium Dutch Border
-		131  = 1.2 #Overlaps with magi, focus on northeast
+		131  = 1.0 #Overlaps with magi, focus on northeast
 		141  = 5.0 #Netherlands
 		147 = 5.0 #Middle
 		

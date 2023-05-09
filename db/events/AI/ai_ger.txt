@@ -3703,3 +3703,44 @@ event = {
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
 	}
 }
+################
+# German Invasion AI Low Countries Done, go for France
+########################################
+event = {
+	id = 3003126
+	random = no
+	country = GER
+
+	trigger = {
+		ai = yes
+		government = fascist
+		OR = {
+			AND = {
+				war = { country = FRA }
+				NOT = {	war = { country = SOV } }
+				NOT = {	war = { country = POL } }
+				NOT = { event = 3003003 }
+			}
+			AND = {
+				event = 3003003
+				war = { country = FRA }
+				NOT = {	war = { country = SOV } }
+			}
+		}		
+		AND = {
+				control = { province = 116 data = GER } # Brussels
+				control = { province = 122 data = GER } # Amsterdam
+				}
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_France_2nd.ai" }
+	}
+}

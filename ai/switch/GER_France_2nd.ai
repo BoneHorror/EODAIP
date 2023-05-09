@@ -1,0 +1,12 @@
+# German France Invasion AI File by Nekron
+
+max_front_ratio = 1.0
+max_garrison_prop = 0.35
+min_garrison_prop = 0.15
+max_front_ratios = {
+	BEL = 4.0
+	HOL = 4.0
+	LUX = 4.0
+	NOR = 3.0
+	FRA = 1.2
+}
