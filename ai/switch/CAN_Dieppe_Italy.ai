@@ -1,0 +1,257 @@
+# CAN attack Italy and try to simulate the Dieppe raid script
+
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion			= yes
+ 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+	random				= 18.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.05	#increase to avoid coastal forts more.
+	beach				= 0.05	#higher, avoid worst beaches.
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 18.0 # How far should the staging area be from the target invasion point
+	distance			= 0.5	#higher = avoid long distance.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.6	#higher = much more vary of troops nearby
+	air_base			= 2.5 
+    naval_base 			= 1.5 
+    air_support 		= 15.0 
+    redirect 			= priority #Home wastes transport cycles on Pacific
+	ignore				= no
+	help_allies 		= no 	#[yes/no]
+        province_priorities = yes #Invade only provinces in target list with priority higher then 0
+
+	staging_province = {
+		717 #Rabat
+		728	#Oran
+		727	#Algiers
+		747	#Tunis
+		750	#Tripoli
+		761	#Benghazi
+		765	#Tobruk
+		348 #Gibraltar
+		429	#Malta	
+		1734 #Pearl Harbour
+		1673  #Wake
+		1795  	#New York 
+	}
+
+	target = {
+		#England
+		26  = 6000  #Dover
+		25  = 6000  #Norwich
+		27  = 6000  #Portsmouth
+		23  = 6000  #Plymouth
+		22  = 6000  #Cardif
+		36  = 6000  #Belfast
+		17  = 6000  #Manchester
+		12  = 6000  #Edinburgh
+		11  = 6000  #Glasgow
+
+		#Norway
+		491	= 30	#Alesund
+		485	= 30	#Kristiansand
+		483	= 80	#Oslo
+		493	= 10	#Trondheim
+		495	= 80	#Narvik
+		
+		#Germany
+		152 = 100   #Kiel
+		147	= 100	#Wilhelmshaven
+		153	= 100	#Rostock
+		158	= 100	#Stettin
+
+	
+		#France
+		49	= 900  #Calais
+		53	= 8000  #Dieppe
+		44	= 900  #Caen
+		37	= 800  #Brest
+		39	= 800  #Lorient
+		68  = 2000  #Bordeaux
+		69	= 900	#La Rochelle
+		46	= 800	#Bayeux
+		51	= 1800	#Dunkirk
+		82	= 800	#Montpellier
+		86	= 800	#Marseille
+	
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		430	= 5000  #Palermo
+		433	= 5000  #Syracuse
+		434	= 2000  #Cagliari
+		94	= 2000  #Corsica
+		422	= 5000  #Taranto
+		427	= 4000  #Salerno
+		416	= 4500  #Anzio
+		419	= 2000  #Rome
+		412	= 4000  #Ancona
+		400	= 2000  #Venice
+
+		429 = 8000  #Malta
+		#Spain
+		475	 = 3000	 #Palma de Mallorca
+		473	 = 3000	 #Cadiz
+		449  = 3000  #Vigo
+		441  = 3000  #Coruna
+		472  = 3000  #Huelva
+		463  = 2750  #Murcia
+		464  = 2750  #Valencia		
+		440  = 2750  #Barcelona
+		
+		#Portugal
+		995  = 3000  #Azores
+		477  = 3000  #Setubal
+		476  = 3000  #Lissabon
+
+		# North Africa
+		789	= 4000  #Alexandra
+		728	= 6000	#Oran
+		727	= 6000	#Algiers
+		748	= 2000	#Bizerte
+		747	= 5000	#Tunis
+		750	= 5000	#Tripoli
+		761	= 6000	#Benghazi
+		765	= 6000	#Tobruk
+		718 = 8000  #Casablanca
+		717 = 8000  #Rabat
+
+		# Middle East
+		1019  = 500	#Beirut
+		1008  = 500 #Tel Aviv
+		1004  = 500 #El Arish
+		#Asian Pacific
+		1661  = 5000	#	Iwo Jima
+		1662  = 400	#	Chichi Jima	
+		1672  = 5000	#	Minami Torishima	
+		1674  = 400	#	Bikini	
+		1675  = 800	#	Eniwetok	
+		1676  = 4000	#	Kwajalein	
+		1677  = 400	#	Majuro	
+		1679  = 2000	#	Abemama
+		1681  = 400	#	Wotje	
+		1682  = 2000	#	Nauru	
+		1683  = 3000	#	Guam	
+		1684  = 400	#	Rota
+		1685  = 800	#	Saipan
+		1686  = 400	#	Pagan	
+		1687  = 400	#	Funafuti	
+
+		#USA
+		1673  = 7750  #Wake Island
+		1734  = 8000  #Pearl Harbor
+		1736  = 7550  #Hawai
+		1738  = 6300  #Johnston
+		1739  = 7800  #Midway
+		1678  = 6500  #Majuro
+		1680  = 6150  #Tarawa
+		1874  = 8000  #Seattle
+
+
+		#New Zealand
+		1720  = 3000	#	Auckland
+		1721  = 3000	#	Wellington
+		1723  = 3000	#	Dunedin
+
+
+		#Australia
+		1694  = 2750	#	Collie
+		1696  = 2750	#	Katherine
+		1697  = 2750	#	Darwin
+		1704  = 2750	#	Brisbane
+		1708  = 2750	#	Melbourne
+		1709  = 2750	#	Geelong
+		1710  = 2750	#	Hobart
+		1711  = 2750	#	Port Lincoln
+		1713  = 2750	#	Robe
+
+
+		#Coral Sea
+		1587  = -1	#	Bougainville
+		1588  = -1	#	Santa Isabel
+		1589  = -1	#	New Georgia
+		1590  = -1	#	Lunga
+		1591  = -1	#	Malaita
+		1592  = -1	#	Nendo
+		1596  = -1	#	Hollandia
+		1600  = -1	#	Fak-Fak
+		1604  = -1	#	Popondetta
+		1607  = -1	#	Port Moresby
+		1608  = -1	#	Kiunga
+		1611  = -1	#	Male
+		1612  = -1	#	Karavatti
+		1613  = -1	#	West Island
+		1614  = -1	#	Christmas
+
+		#Ger Invasion Deterrence
+		1778  = 2500	#Guantanamo
+		2137  = 7500	#St John
+		
+		# USA Alaska
+		2150  = 4500  #Attu Island
+		2151  = 4500  #Dutch Harbor
+		2142  = 4500  #Anchorage
+	} 
+} 
+admiral = { 
+	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 7 	# ENG/USA default 3, JAP default 2 everyone else is 1
+
+	#Which provinces to use as bases..
+	base = {
+		1734 # Pearl harbour
+		1739 # Midway
+	    1889 # San Francisco 
+     	1795 # New York 
+		1432 # Singapore
+		1683 # Guam
+		747 # Tunis
+		750 # Tripoli
+		348 # Gibraltar
+		17 # Liverpool/Manchester 
+       	429 #Malta
+	}
+	target = {
+		2694 = 60 #Hunt german navy near norway
+		2693 = 60 #Hunt german navy near denmark
+		2179 = 400 #Hunt central mediterrean
+		2743 = 200 #Hunt near greece
+		2189 = 400 #Hunt near corsica
+		2485 = 100 #Hunt north philipines
+		2511 = 120 #Hunt s okinawa
+		2512 = 120 #Hunt n okinawa
+		2180 = 400 #Palermo - invasion screening
+	} 
+	core = {	
+	#2424 #Sea near st john's
+	2316 #Sea near florida
+	#2388 #Sea near portland
+	2396 #Sea near Dutch Harbor
+	2637 #Pearl Harbor
+	2631 #Midway
+	2556 #Philipines center
+	2181 #Malta sea
+	2176 #Suez sea
+	2700 #English channel
+	} 
+	ignore = {
+		#Japanese Coast - try to avoid suiciding shit
+		"Sea of Japan"
+		"Ryukyus"
+		"Coast of Japan"
+		"South Sea of Okhotsk"
+		"West Sea of Okhotsk" 
+		"East Sea of Okhotsk"
+		
+		#Ignore home regions so that navy is not wasting oil for no reason
+		"Florida Strait"
+		"Central Carribean"
+		"East Gulf of Mexico"
+		"West Gulf of Mexico"
+		"Yucatan Strait"
+	}
+}

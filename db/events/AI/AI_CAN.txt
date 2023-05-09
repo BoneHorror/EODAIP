@@ -143,3 +143,29 @@ event = {
 		command = { type = industrial_modifier which = total value = 10.0 }	
 	}
 }
+################
+# Allies prepare to invade Italy
+#############################################
+event = {
+	id = 3045018
+	random = no 
+	country = CAN
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		alliance = { country = ENG }
+		flag = InvadeItaly
+		}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/CAN_Dieppe_Italy.ai" }
+	}
+}
