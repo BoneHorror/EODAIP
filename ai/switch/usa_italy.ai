@@ -30,6 +30,18 @@ garrison = {
 	home_multiplier 	= 0.05
 	overseas_multiplier = 1.0
 	war_zone_odds 		= 2.0
+	
+	country_priorities = {
+		CAN = -1
+		MEX = -1
+		SCH = -1
+		GER = 60
+		JAP = 70
+		ITA = 80
+		RSI = 60
+		SOV = -1
+	}
+	
 }
 front = { 
 	recklessness 		= 1 # 0-3
@@ -52,8 +64,13 @@ front = {
 	JAP = 10
 	} 
    	passivity = {
-		RSI = 75 #We want to slow down Allied progression if ITA degenerates into RSI
+		RSI = 98 #We want to slow down Allied progression if ITA degenerates into RSI
 		GER = 50
+		ROM = 99
+		BUL = 99
+		HUN = 99
+		SER = 90
+		CRO = 90
 	} 
 	
 	province_priorities = { 
