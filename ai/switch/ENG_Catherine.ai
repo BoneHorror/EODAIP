@@ -27,11 +27,11 @@ exp_force_ratios = {
 } 
 garrison = {
 	defend_overseas_beaches = yes
-	home_multiplier 	= 1.6 # 1.4
+	home_multiplier 	= 1.4 # 1.6
 	overseas_multiplier = 0.7
 	home_peace_cap 		= 25#40
 	war_zone_odds 		= 2.0
-	key_point_prio_mult	= 2.0
+	key_point_prio_mult	= 1.0
 	province_priorities  = { 
 	497  = 100 #Tromso, North NOR
 	495  = 200 #Narvik

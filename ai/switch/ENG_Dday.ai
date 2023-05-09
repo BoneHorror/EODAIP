@@ -27,7 +27,7 @@ no_exp_forces_to = { }
 ###################################
 garrison = {
 	defend_overseas_beaches = yes
-	home_multiplier 	= 0.4
+	home_multiplier 	= 0.5
 	overseas_multiplier 	= 1.0
 	home_peace_cap 		= 2
 	war_zone_odds 		= 2.0
