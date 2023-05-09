@@ -1228,31 +1228,31 @@ event = {
 #    Communist China
 #############################################
 # event = {
-	# id = 3053009
-	# random = no 
-	# country = CHC
-	
-	# trigger = {
-		# ai = yes
-		# NOT = { alliance = { country = CHI } }
-		# OR = {
-			# attack = CHI
-			# flag = CHI_Aggresion_Asia
-		# }
-	# }
-
-	# name = "AI_EVENT"
-	# style = 0	
-	
-	# date = { day = 1 month = january year = 1933 }
-	# offset = 1
-	# deathdate = { day = 29 month = december year = 1963 }
-
-	# action_a = {
-		# command = { type = setflag which = CHI_Aggresion_Asia }
-		# command = { type = ai which = "switch/CHI_Aggression_Warlords.ai" }
-		# command = { type = ai which = "Air_Ground.ai" }
-	# }
+#	 id = 3053009
+#	 random = no 
+#	 country = CHC
+#	
+#	 trigger = {
+#		 ai = yes
+#		 NOT = { alliance = { country = CHI } }
+#		 OR = {
+#			 attack = CHI
+#			 flag = CHI_Aggresion_Asia
+#		 }
+#	 }
+#
+#	 name = "AI_EVENT"
+#	 style = 0	
+#	
+#	 date = { day = 1 month = january year = 1933 }
+#	 offset = 1
+#	 deathdate = { day = 29 month = december year = 1963 }
+#
+#	 action_a = {
+#		 command = { type = setflag which = CHI_Aggresion_Asia }
+#		 command = { type = ai which = "switch/CHI_Aggression_Warlords.ai" }
+#		 command = { type = ai which = "Air_Ground.ai" }
+#	 }
 # }
 ################
 #    Guangxi Clique
@@ -1541,5 +1541,29 @@ event = {
 		command = { type = build_division which = infantry value = artillery when = 2 cost = -6.0 }
 		command = { type = build_division which = militia when = 3 cost = -2.6 }
 		command = { type = build_division which = militia value = artillery when = 6 cost = -3.5 }
+	}
+}
+### China bad front vs CHC
+event = {
+	id = 3012050
+	random = no 
+	country = CHI
+	
+	trigger = {
+		ai = yes
+		war = { country = CHI country = CHC }
+		NOT = { war = { country = CHI country = JAP } }
+		year = 1941
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1941 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+	command = { type = ai which = "switch/CHI_Communist_Tired.ai" }	
 	}
 }

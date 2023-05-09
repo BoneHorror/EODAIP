@@ -1,0 +1,50 @@
+# China lazy front vs Communists - Nekron
+
+max_redeploying = 0.0
+max_garrison_prop = 0.50 # 0.60
+min_garrison_prop = 0.40 # 0.40
+max_front_ratios = { 	
+	CHC = 0.7 
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# PRIORITIES:
+	beach		= 60
+	capital		= 50	# Our capital
+	reserves 		= 80	# bonus for provinces just behind a frontline.
+
+	# Borders with specific countries
+	country_priorities = {
+		CHC = 100
+		JAP = 5
+		CSX = 5
+		CGX = 5
+		CYN = 5
+		U02 = -1
+		TIB = -1
+		MAN = -1
+		MEN = -1
+		SOV = 50
+	}
+	# PRIORITIES:
+	province_priorities = {	
+		1343 = 60 #Huainan
+		1340 = 60 #Hefei
+		1342 = 60 #Xuanzhou
+		1312 = 60 #Hengyang
+		1252 = 60 #Taiyuyan
+		1310 = 60 #Changde
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= op_defensive
+	reserve_prop		= 0.7
+	province_priorities = { }
+	passivity = {
+		CHC = 90
+	} 
+} 
