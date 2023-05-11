@@ -39,10 +39,10 @@ garrison = {
 		29 = 20 #London
 		1 = 20 #Reykjavik
 		
-		486 = 30 # Heavy Water in Honefoss
+		486 = 60 # Heavy Water in Honefoss
 		
-		102	= 30 #Sedan - protect from DDay!
-		407	= 30 #N Italy - protect from Overlord!
+		102	= 50 #Sedan - protect from DDay!
+		407	= 50 #N Italy - protect from Overlord!
 		
 		#Ignore terrible Balkan provinces where the AI stacks 40 divs
 		383 = -1 #Mytilini

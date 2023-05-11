@@ -163,6 +163,7 @@ garrison = {
 		486 = 30 # Heavy Water in Honefoss
 	}
 	area_multiplier = {
+	377 = 0.01  #Athens
 	}
 }
 ###################################
