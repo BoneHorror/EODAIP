@@ -2784,9 +2784,9 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 		command = { type = province_keypoints which = 125 value = 1 }
 	}
 }
@@ -2807,9 +2807,9 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 	}
 }
 event = {
@@ -2829,9 +2829,9 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 	}
 }
 event = {
@@ -2851,9 +2851,9 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 	}
 }
 event = {
@@ -2873,9 +2873,9 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 	}
 }
 event = {
@@ -2895,31 +2895,29 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = infantry }
-		command = { type = add_brigade value = artillery }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = garrison }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = infantry }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison }
-		command = { trigger = { NOT = { year = 1943 } } type = add_division value = infantry }
-		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia }
-		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia }
-		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia }
-		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia }
-		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia }
-		command = { trigger = { NOT = { year = 1942 } } type = add_brigade value = artillery }
-		command = { trigger = { NOT = { year = 1943 } } type = add_brigade value = artillery }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = infantry when = 3 where = anti_air }
+		command = { type = add_division value = garrison when = 3 }
+		command = { type = add_division value = garrison when = 3 }
+		command = { type = add_division value = garrison when = 3 }
+		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry when = 4 }
+		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry when = 4 }
+		command = { trigger = { NOT = { year = 1941 } } type = add_division value = garrison when = 3 }
+		command = { trigger = { NOT = { year = 1942 } } type = add_division value = infantry when = 4 where = artillery }
+		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison when = 3 }
+		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison when = 3 }
+		command = { trigger = { NOT = { year = 1943 } } type = add_division value = infantry when = 4 where = artillery }
+		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia when = 5 }
+		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia when = 5 }
+		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
+		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
+		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
 		command = { trigger = { NOT = { year = 1945 } } type = add_brigade value = artillery }
 		command = { type = manpowerpool value = 100 }
-		command = { type = province_keypoints which = 86 value = 1 }
+		command = { trigger = { control = { province = 86 data = RSI } } type = province_keypoints which = 86 value = 1 } #Nice
+		command = { trigger = { control = { province = 400 data = RSI } } type = province_keypoints which = 400 value = 1 } #Venice
 	}
 }
 event = {
@@ -2990,12 +2988,12 @@ event = {
 	deathdate = { day = 29 month = december year = 1944 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = garrison when = 2 }
+		command = { type = add_division value = garrison when = 2 }
 	}
 }
 event = {
@@ -3016,14 +3014,14 @@ event = {
 	deathdate = { day = 29 month = december year = 1944 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = garrison when = 2 }
+		command = { type = add_division value = garrison when = 2 }
 	}
 }
 event = {
@@ -3044,15 +3042,15 @@ event = {
 	deathdate = { day = 29 month = december year = 1944 }
 
 	action_a = {
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
-		command = { type = add_division value = garrison }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = garrison when = 3 }
+		command = { type = add_division value = garrison when = 3 }
+		command = { type = add_division value = garrison when = 3 }
 	}
 }
 event = {
@@ -3102,14 +3100,14 @@ event = {
 		name = "2003185a"
 		ai_chance = 100
 		command = { type = manpowerpool value = 100 }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = tank_destroyer }
@@ -3160,14 +3158,14 @@ event = {
 		name = "2003185a"
 		ai_chance = 100
 		command = { type = manpowerpool value = 100 }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = tank_destroyer }
@@ -3196,14 +3194,14 @@ event = {
 		name = "2003185a"
 		ai_chance = 100
 		command = { type = manpowerpool value = 100 }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = tank_destroyer }
@@ -3232,14 +3230,14 @@ event = {
 		name = "2003185a"
 		ai_chance = 100
 		command = { type = manpowerpool value = 100 }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
-		command = { type = add_division value = infantry }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
+		command = { type = add_division value = infantry when = 4 }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = artillery }
 		command = { type = add_brigade value = tank_destroyer }
