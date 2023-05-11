@@ -375,7 +375,14 @@ event = {
 	}
 	
 	trigger = {
-		control = { province = 55 data = GER } # Paris
+		OR = {
+			control = { province = 55 data = GER } # Paris
+			AND = {
+				control = { province = 116 data = GER } # Brussels
+				control = { province = 122 data = GER } # Amsterdam
+				land_percentage = { country = FRA value = 0.7 }
+				}
+			}
 		event = 2003008 # Italy has signed the Anti-Comintern pact
 		control = { province = 163 data = GER } # Berlin
 		headofgovernment = 25002 # Mussolini (FA)		
