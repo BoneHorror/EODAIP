@@ -3412,7 +3412,7 @@ event = {
 	}
 }
 ####################
-# Anglo-American Military Conference
+# Anglo-American Military Conference / Ask for US D-Day
 event = {
 	id = 9300087
 	random = no 
@@ -10588,27 +10588,27 @@ event = {
 
 	action = {	trigger = { losses = 1000000 not = { local_flag = 1M_losses } }
 		name = ACTION_NAME_DAMN
-		command = {  type = dissent value = 5 }
+		command = {  type = dissent value = 1 }
 		command = { type = local_setflag which = 1M_losses }
 	}
 	action = {	trigger = { losses = 2000000 not = { local_flag = 2M_losses } }
 		name = ACTION_NAME_DAMN
-		command = {  type = dissent value = 5 }
+		command = {  type = dissent value = 3 }
 		command = { type = local_setflag which = 2M_losses }
 	}
 	action = {	trigger = { losses = 3000000 not = { local_flag = 3M_losses } }
 		name = ACTION_NAME_DAMN
-		command = {  type = dissent value = 10 }
+		command = {  type = dissent value = 5 }
 		command = { type = local_setflag which = 3M_losses }
 	}
 	action = {	trigger = { losses = 4000000 not = { local_flag = 4M_losses } }
 		name = ACTION_NAME_DAMN
-		command = {  type = dissent value = 15 }
+		command = {  type = dissent value = 7 }
 		command = { type = local_setflag which = 4M_losses }
 	}
 	action = {	trigger = { losses = 5000000 not = { local_flag = 5M_losses } }
 		name = ACTION_NAME_DAMN
-		command = {  type = dissent value = 25 }
+		command = {  type = dissent value = 10 }
 		command = { type = local_setflag which = 5M_losses }
 	}
 }
@@ -11224,6 +11224,7 @@ event = {
 	action = {
 		name = ACTION_NAME_GREAT
 		command = { type = hard_attack which = infantry value = 0.5 }
+		command = { type = hard_attack which = militia value = 0.5 }
 		command = { trigger = { ai = no } type = supplies value = -500 }
 	}
 }
