@@ -871,7 +871,7 @@ mission = {
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
 # _MISSION_AIR_SUPPLY_
 	0 	# 0 = disabled by default, 1 = enabled by default
-	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
+	1.0	# Starting missions efficiency. Valid values: 0.05 to 10.0
 # _MISSION_AIRBORNE_ASSAULT_
 	0 	# 0 = disabled by default, 1 = enabled by default
 	0.35	# Starting missions efficiency. Valid values: 0.05 to 10.0
@@ -881,7 +881,7 @@ mission = {
 # _MISSION_AIR_SCRAMBLE_
 	0 	# 0 = disabled by default, 1 = enabled by default
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
-	0.0	# Modifier on detection ( This * mission_efficiency ). Higher it is, more often incoming enemy planes will be detected
+	0.1	# Modifier on detection ( This * mission_efficiency ). Higher it is, more often incoming enemy planes will be detected
 	2.0 #2.0# Min. Air attack for at least one plane in the wing required for this mission to be available
 # Naval Missions
 # _MISSION_CONVOY_RAIDING_
@@ -906,7 +906,7 @@ mission = {
 	1 	# 0 = disabled by default, 1 = enabled by default
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
 	3.0	# Fleet range modifier
-	1.0	# Chance to be detected (Chance * This / mission_efficiency). Lower the better
+	0.5	# Chance to be detected (Chance * This / mission_efficiency). Lower the better
 # _MISSION_NAVAL_COMBAT_PATROL_
 	1 	# 0 = disabled by default, 1 = enabled by default
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
@@ -998,7 +998,7 @@ country = {
 # Peacetime IC mod
 	0.8 #1.0 (WIF)
 # Wartime IC mod
-	0.9 #1.0 (WIF)
+	1.0 #1.0 (WIF)
 # Buildings production mod (applied to all buildings!)
 	1.0 #1.0
 # Convoys production mod
