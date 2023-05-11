@@ -164,6 +164,7 @@ event = {
 	random = no 
 	country = USA
 	persistent = yes
+	save_date = yes
 	
 	trigger = {
 		OR = {
@@ -1697,27 +1698,27 @@ event = {
 		OR = {
 			NOT = { local_flag = USADDay }
 			AND = {
-				NOT ={ war = { country = USA country = GER } }
+				NOT = { war = { country = USA country = GER } }
 				local_flag = USADDay
 				}
 			}
 		OR = {
-		control = { province = 1563 data = USA } #Southern Okinawa
-		naval_percentage = { country = JAP value = 1.2 }
-		AND = {
-			NOT = { war = { country = GER country = SOV } }
-			naval_percentage = { country = JAP value = 1.0 }
-			OR = {
-				NOT = { exists = ENG }
-				NOT = { exists = CHI }
-				NOT = { exists = AST }
-				puppet = { country = AST country = JAP }
-				control = { province = 29 data = -2 } # London
-				event = 2011014 # Chinese surrender 1
-				event = 2011017 # Chinese surrender 2
-				NOT = { war = { country = USA country = GER } }
-				}
-			}
+			control = { province = 1563 data = USA } #Southern Okinawa
+			naval_percentage = { country = JAP value = 1.2 }
+				AND = {
+					NOT = { war = { country = GER country = SOV } } #GER is hard to tackle because it's not atwar with SOV
+					naval_percentage = { country = JAP value = 1.0 }
+						OR = {
+							NOT = { exists = ENG }
+							NOT = { exists = CHI }
+							NOT = { exists = AST }
+							puppet = { country = AST country = JAP }
+							control = { province = 29 data = -2 } # London
+							event = 2011014 # Chinese surrender 1
+							event = 2011017 # Chinese surrender 2
+							NOT = { war = { country = USA country = GER } }
+							}
+					}
 		}	
 	}
 

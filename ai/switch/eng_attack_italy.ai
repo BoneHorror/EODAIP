@@ -23,12 +23,13 @@ front = {
        recklessness = 1 # 0-3
     distrib_vs_ai = offensive
     distrib_vs_human = offensive
+	enemy_handicap = { JAP = 30 RSI = 30 } 
 	passivity = {
 		JAP = 75
 		SIA = 90
 		SOV = 30
 		ITA = 0
-		RSI = 98
+		RSI = 99
 		ROM = 99
 		BUL = 99
 		HUN = 99
@@ -112,20 +113,20 @@ invasion = {
         1008 = 500 #Tel Aviv
         1004 = 500 #El Arish
     
-        # Greece
-        382 = 1400 #Crete
-        372 = 1200 #Patras
-        377 = 1200 #Athens
-        370 = 600 #Alexandroupoli
-
-        # Yugoslavia/Albania
-        359 = 500 #Tirana
-        343 = 500 #Dubrovnik
-        
-        # Turkey
-        378 = 900 #Kalymnos
-        379 = 900 #Rhodes
-        388 = 900 #Nicosia
+       ## Greece ###Let's not do Balkans unless specified in another script - need Balkans invasion support separately
+       #382 = 1400 #Crete
+       #372 = 1200 #Patras
+       #377 = 1200 #Athens
+       #370 = 600 #Alexandroupoli
+	   #
+       ## Yugoslavia/Albania
+       #359 = 500 #Tirana
+       #343 = 500 #Dubrovnik
+       #
+       ## Turkey
+       #378 = 900 #Kalymnos
+       #379 = 900 #Rhodes
+       #388 = 900 #Nicosia
 
         #Denmark
         217 = -1 #Arborg

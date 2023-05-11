@@ -69,6 +69,7 @@ front = {
 		49 = 1.4 # Calais
 		20 = 1.5 # Exeter
 	}
+	enemy_handicap = { JAP = 10 ITA = 0 } 
 	passivity = {
 		JAP = 30
 		SIA = 10
@@ -97,7 +98,7 @@ invasion = {
 	air_base			= 2.5 
     naval_base 			= 1.5 
     air_support 		= 20.0 
-    redirect 			= home
+    redirect 			= priority
 	ignore				= no
 	help_allies 		= yes 	#[yes/no]
     province_priorities = yes #Invade only provinces in target list with priority higher then 0

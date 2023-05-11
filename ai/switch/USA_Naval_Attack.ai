@@ -39,6 +39,17 @@ garrison = {
 	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
 	unstable_border		= 0	# Bordering countries at war with someone else get this
+	
+	country_priorities = {
+		CAN = -1
+		MEX = -1
+		SCH = -1
+		GER = 60
+		JAP = 100
+		ITA = 60
+		RSI = 60
+		SOV = -1
+	}
 
 }
 front = { 

@@ -27,10 +27,10 @@ no_exp_forces_to = { U02 }
 # Ground Combat, Leaders and Garrisons
 ###################################
 garrison = {
-	home_multiplier 	= 0.05
+	home_multiplier 	= 0.1
 	overseas_multiplier = 1.0
 	home_peace_cap 		= 10
-	war_zone_odds 		= 2.5
+	war_zone_odds 		= 2.0
 	key_point_prio_mult	= 1
 	revolt_risk_mult	= 0.3
 
@@ -43,22 +43,89 @@ garrison = {
 	claim_threat		= 0	# If we are neutral, countries with claims on us get this
 	unstable_border		= 0	# Bordering countries at war with someone else get this
 
+	# Borders with specific countries
+	country_priorities = {
+		CAN = -1
+		MEX = -1
+		SCH = -1
+		GER = 100
+		JAP = 60
+		ITA = 60
+		RSI = 60
+		SOV = -1
+	}
+	
 	ignore = {
-		218  #Arburg
-		217   #Arhus
-		216   #Kolding
-		124   #Leeweden
-		114   #Ghent
-		37   #Brest
-		39   #Lorient
-		57   #Nantes
-		68   #Cholet
-		67  #Mont-de-Marsan
-		80  #Perpignan
-		82  #Montpellier
-		89  #Marseille
-		86  #Toulon
-		87  #Nice
+	#South pacific trash that annihilates the AI
+		1725 #Kavieng
+		1724 #Manus
+		1587 #Bougainville
+		1588 #Santa Isabel
+		1589 #New Georgia
+		1591 #Malaita
+		1592 #Nendo
+		
+	2145 #Nome
+		2142 # Anchorage
+		
+		#Libya
+		773    #Al Jaghbun
+		754    #Aujila
+		774   #Calanslo
+		751    #Ghadames
+		755    #Sorno
+		
+		#Egypt/East Africa
+		800   #Siwa
+		789   #Qattara
+		801   #AinDalla
+		806   #El Atiun
+		808   #El Obeid
+		809   #Waw
+		807   #Malakal
+		805   #Omdurman
+		812   #Gallabal
+		811   #Kassala
+		843   #Marsabit
+
+		#Ethiopia
+		817   #Asmara
+		819   #Adwa
+		822   #Gonder
+		820   #Debre
+		829   #Gambela
+		830   #Jima
+		826   #Moyale
+		821   #Denakil
+		823   #Dese
+		818   #Diredawa
+		827   #Ogaden
+		837   #Bardera
+
+		#Belgian Congo
+		904   #Stanleyville
+		903   #Buta
+		905   #Costermanville
+		906   #Coquihatville
+		898   #Abertville
+		902   #Kindu-Port-Empain
+		901   #Leopoldville
+	#French provs? Not sure why would they be ignored anymore
+		#218  #Arburg
+		#217   #Arhus
+		#216   #Kolding
+		#124   #Leeweden
+		#114   #Ghent
+		#37   #Brest
+		#39   #Lorient
+		#57   #Nantes
+		#68   #Cholet
+		#67  #Mont-de-Marsan
+		#80  #Perpignan
+		#82  #Montpellier
+		#89  #Marseille
+		#86  #Toulon
+		#87  #Nice
 	}
 }
 front = { 
@@ -106,17 +173,17 @@ invasion = {
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
 	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 18.0 # How far should the staging area be from the target invasion point
+	max_staging_distance = 250.0 # How far should the staging area be from the target invasion point
 	distance			= 5.0	#higher = avoid long distance.
-	pocket				= 2.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
 	enemy				= 1.5	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
 	air_base			= 2.5 
     naval_base 			= 1.5 
-    air_support 		= 20.0 
+    air_support 		= 12.0 
     redirect 			= priority #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
-	ignore				= no
+	ignore				= yes
 	help_allies 		= no 	#[yes/no]
     province_priorities = yes #Invade only provinces in target list with priority higher then 0
       
@@ -169,9 +236,9 @@ invasion = {
 		#France
 		49	= 8000  #Calais
 		53	= 8000  #Dieppe
-		44	= 7000  #Caen
-		37	= 7000  #Brest
-		39	= 7000  #Lorient
+		44	= 7500  #Caen
+		37	= 7500  #Brest
+		39	= 7500  #Lorient
 		68  = 8000  #Bordeaux
 		69	= 8000	#La Rochelle
 		46	= 8000	#Bayeux
