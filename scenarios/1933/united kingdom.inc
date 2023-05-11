@@ -292,7 +292,7 @@ inventions = { 3000027 }
      defense_lobby     = 3 
      interventionism   = 5 
     } 
-	peacetime_ic_mod       = 0.5 # +0.6 from 6 events pre-war 
+	peacetime_ic_mod       = 0.55 # +0.6 from 6 events pre-war 
 	industrial_modifier	= 0.84 # 1929 crisis (1.09-0.15); Restored by events 2001090(Economic Recovery Policy) +5%, 2001091(Unemployment rate down to 10 percent) + 10%
    headofstate            = {  type = 9 id = 10001  } # George V
    headofgovernment       = {  type = 9 id = 10217  } # Ramsay MacDonald
