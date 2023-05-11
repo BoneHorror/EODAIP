@@ -8720,7 +8720,7 @@ event = {
 	} 
 	
 	date = { day = 0 month = january year = 1939 }
-	offset = 30
+	offset = 1
 	deathdate = { day = 29 month = december year = 1999 }
 
 	name = 1000912name
@@ -8738,6 +8738,9 @@ event = {
 		command = { type = set_domestic which = political_left value = 3 }
 		command = { type = set_domestic which = free_market value = 4 }
 		command = { type = manpowerpool value = 50 }
+		command = { trigger = { ai = IRE } type = add_division value = militia }
+		command = { trigger = { ai = IRE } type = add_division value = militia }
+		command = { trigger = { ai = IRE } type = add_division value = militia }
 	}
 }
 
