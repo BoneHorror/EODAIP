@@ -20,7 +20,7 @@ military = {
 	bergsjaeger 	= 1
    	garrison    	= 1 
     hq         		= 2 
-	militia 		= 0
+	militia 		= 1
  #        50 % 
    	interceptor   	= 3 
    	multi_role     	= 1 
@@ -32,8 +32,8 @@ military = {
 	flying_bomb 	= 0
 	flying_rocket 	= 0
  #        10 % 
-	battleship 		= 3
-   	carrier     	= 4 
+	battleship 		= 4
+   	carrier     	= 2 
 	light_carrier	= 2
 	escort_carrier	= 0
    	destroyer     	= 9

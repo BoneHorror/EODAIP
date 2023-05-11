@@ -31,10 +31,11 @@ min_garrison_prop = 0.30
 neutrality = 50.000 
 war = 35
 strat_redeploy_threshold = 25 
-exp_force_ratio = 0.05
-exp_force_ratios = {
-	SIA = 1.0
-} 
+#exp_force_ratio = 0.05
+#exp_force_ratios = {
+#	SIA = 1.0
+#} 
+#Other files do not reset this so it feels bad to change
 
 ###################################
 # Construction and Tech Research
