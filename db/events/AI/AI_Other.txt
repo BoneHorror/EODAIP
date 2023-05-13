@@ -1233,6 +1233,8 @@ event = {
 		command = { type = addcore which = 485 } #Kristiansand
 		command = { type = addcore which = 486 } #Honefoss
 		command = { type = addcore which = 488 } #Bergen
-		command = { type = addcore which = 217 } #Aalborg
+		command = { type = addcore which = 517 } #Petsamo
+		command = { type = addcore which = 534 } #Kola
+		command = { type = addcore which = 535 } #Murmansk
 	}
 }
