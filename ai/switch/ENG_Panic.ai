@@ -56,7 +56,14 @@ garrison = {
 	}
 }
 front = {
-province_priorities = {
+	enemy_handicap = { JAP = 30 ITA = 0 } 
+    passivity = {
+		JAP = 50
+		SIA = 90
+		SOV = 30
+		ITA = 0
+	}  
+	province_priorities = {
 		348 = 1.1 # Gibraltar
 		429  = 1.1 # Malta 
 		789 = 1 # Alexandria 

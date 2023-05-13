@@ -16,11 +16,11 @@ admiral = {
 	}
 	
 	target = { 
-		2682 = 1000 #Near Norwich
-		2683 = 300 #East coast
-		2698 = 400 #East Channel
-		2700 = 500 #North Channel
-		2709 = 100 #Near Plymouth
+		2682 = 140 #Near Norwich
+		2683 = 80 #East coast
+		2698 = 80 #East Channel
+		2700 = 120 #North Channel
+		2709 = 60 #Near Plymouth
 	} 
 	
 #	core = {
