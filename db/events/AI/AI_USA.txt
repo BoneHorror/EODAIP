@@ -985,6 +985,19 @@ event = {
 		NOT = { local_flag = USAInvadeUK }
 		control = { province = 348 data = -3 } # Gibraltar
 		control = { province = 900 data = -3 } # Suez
+		NOT = { region = { region = "Libya" country = -2 value = 10 } }
+		NOT = { region = { region = "Egypt" country = -2 value = 10 } }
+		NOT = { control = { province = 750 data = -2 } } # Tripoli
+		OR = {
+			NOT = { exists = FRA }
+			NOT = { war = { country = FRA } }
+			AND = {
+				war = { country = FRA }
+				NOT = {  region = {  region = "Algeria" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Tunisia" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Morocco" country = -2 value = 10 } }
+			}
+		}
 	}
 
 	name = "AI_EVENT"
