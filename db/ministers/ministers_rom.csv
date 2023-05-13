@@ -24,7 +24,7 @@ ROM;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 110022;Head of Government;Gheorghe Argeseanu;1939;1964;1999;SL;Silent Workhorse;High;M22044;X
 110023;Head of Government;Constantin Argetoianu;1939;1964;1999;SL;Political Protege;High;M22045;X
 110024;Head of Government;Ion Gigurtu;1940;1964;1999;SC;Corporate Suit;High;M22047;X
-110025;Head of Government;Ion Antonescu;1940;1964;1999;PA;Old General;High;M22007;X
+110025;Head of Government;Ion Antonescu;1940;1964;1999;PA;Smiling Oilman;High;M22007;X
 110026;Head of Government;Constantin Sanatescu;1944;1964;1999;PA;Old General;High;M22049;X
 110027;Head of Government;Nicolae Radescu;1944;1964;1999;SC;Happy Amateur;High;M22050;X
 110031;Head of Government;Iuliu Maniu;1928;1964;1999;SD;Naive Optimist;High;M22055;X
@@ -52,7 +52,7 @@ ROM;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 110051;Foreign Minister;Georges Oprescu;1938;1964;1999;SD;Biased Intellectual;Medium;M22086;X
 110047;Foreign Minister;Ana Pauker;1920;1933;1999;ST;Ideological Crusader;Very High;M22023;X
 110052;Minister of Armament;Virgil Madgearu;1938;1964;1999;SL;Balanced budget economy;Medium;M22087;X
-110053;Minister of Armament;Caius Brediceanu;1938;1964;1999;PA;laissez-faire capitalist;High;M22088;X
+110053;Minister of Armament;Caius Brediceanu;1938;1964;1999;SC;laissez-faire capitalist;High;M22088;X
 110055;Minister of Armament;Iuliu Maniu;1939;1964;1999;SC;Administrative Genius;Medium;M22055;X
 110056;Minister of Armament;Constantin Antoniade;1940;1964;1999;SL;laissez-faire capitalist;Low;M22092;X
 110057;Minister of Armament;Gheorghe Potopeanu;1940;1964;1999;PA;Military Entrepreneur;High;M22093;X
@@ -97,7 +97,7 @@ ROM;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 110096;Chief of Staff;Platon Chirnoaga;1933;1964;1999;NS;School of Psychology;High;M22132;X
 110097;Chief of Staff;Gheorghe Argeseanu;1940;1964;1999;NS;School of Fire Support;Medium;M22133;X
 110099;Chief of Army;Costin Ionascu;1938;1964;1999;SL;Static Defence Doctrine;High;M22135;X
-110100;Chief of Army;Gheorghe Mihail;1938;1964;1999;PA;Decisive Battle Doctrine;Medium;M22136;X
+110100;Chief of Army;Gheorghe Mihail;1938;1964;1999;SC;Decisive Battle Doctrine;Medium;M22136;X
 110101;Chief of Army;Gheorghe Tatarescu;1919;1964;1999;SC;Guns and Butter Doctrine;Medium;M22138;X
 110102;Chief of Army;Ilie Steflea;1940;1964;1999;FA;Guns and Butter Doctrine;High;M22139;X
 110103;Chief of Army;Constantin Sanatescu;1944;1964;1999;PA;Elastic Defence Doctrine;High;M22049;X
