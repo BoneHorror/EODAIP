@@ -704,6 +704,7 @@ event = { #POL ai - mobilisation partial
 	id = 130130
 	random = no
 	country = POL
+	save_date = yes
 
 	trigger = {
 		ai = yes
