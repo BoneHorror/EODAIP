@@ -1126,9 +1126,9 @@ ai = {
 # Do not start producing any new units when more then THIS percentage of the total IC is needed to supply existing units (0.0 to 1.0; 1.0 = 100%, disabled). Enabling this will encourage AI to build more IC when this ratio is exceeded.
 	0.45 #1.0
 # Military Strength to Total IC ratio during Peacetime for AI countries (do not build new units if above this ratio). Use -1.0 to disable this.
-	1.5 #-1.0 
+	3.0 #-1.0 
 # Military Strength to Total IC ratio during Wartime for AI countries (do not build new units if above this ratio). Use -1.0 to disable this.
-	3.0 #-1.0
+	-1 #-1.0
 # Military Strength to Total IC ratio for AI major countries (multiplied on the other).
 	2.5 #1.0
 # Do not use Offensive supply when supplies stockpile is below THIS * critical supply threshold.
