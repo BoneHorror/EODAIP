@@ -126,6 +126,7 @@ event = {
 	
 	trigger = {
 		ai = yes
+		NOT = { local_flag = ENGPanic }
 		OR = {
 			AND = {
 				random = 30
@@ -155,7 +156,7 @@ event = {
 	}
 }
 ################
-# England sends more troops to France since they are allive still
+# England sends more troops to France since they are alive still
 #############################################
 event = {
 	id = 3001004
@@ -294,6 +295,10 @@ event = {
 		NOT = { local_flag = ENGDDay }
 		alliance = { country = USA }
 		OR = {
+			land_percentage = { country = GER value = 0.6 }
+			year = 1944
+			}
+		OR = {
 			AND = {
 				year = 1944
 				lost_national = { country = GER value = 5 }
@@ -315,7 +320,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = january year = 1933 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 4
 	deathdate = { day = 29 month = december year = 1963 }
 
@@ -1849,13 +1854,13 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = GER }
+		war = { country = ENG country = GER }
 		NOT = { local_flag = ENGPanic }
 		OR = {
 			control = { province = 55 data = -2 } # Paris
 			AND = {
-				area = { area = "Flanders" country = GER }
-				area = { area = "Wallonia" country = GER }
+				area = { area = "Flanders" country = -2 }
+				area = { area = "Wallonia" country = -2 }
 			}
 			event = 2002004 # It Is Done - FRA
 		}
@@ -1870,6 +1875,7 @@ event = {
 			garrison = { country = -2 province = 2699  type = naval size = 20 area = 1 } #English Channel Area
 			garrison = { country = -2 province = 2683  type = naval size = 20 area = 1 } #East Approach to Isles
 			garrison = { country = -2 province = 2708  type = naval size = 20 area = 1 } #West or Ireland
+			lost_national = { country = ENG value = 7 }
 			}
 	}
 
@@ -1893,22 +1899,22 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = GER }
+		war = { country = ENG country = GER }
 		local_flag = ENGPanic 
 		NOT = {
-		lost_national = { country = ENG value = 2 }
-		OR = {
-			garrison = { country = -2 province = 125  type = land size = 18 area = 2 } #Rotterdam, Flanders Region
-			garrison = { country = -2 province = 43  type = land size = 14 area = 1 } #Cherbourg, Normandy Area
-			garrison = { country = -2 province = 37  type = land size = 14 area = 1 } #Brest, Brittany Area
-			garrison = { country = -2 province = 81  type = land size = 14 area = 1 } #Dunkirk, Pas de Calais
-			garrison = { country = -2 province = 147  type = land size = 20 area = 1 } #Wilhelmshaven, Hannover
-			garrison = { country = -2 province = 152  type = land size = 22 area = 1 } #Kiel, Holstein
-			garrison = { country = -2 province = 2699  type = naval size = 20 area = 1 } #English Channel Area
-			garrison = { country = -2 province = 2683  type = naval size = 20 area = 1 } #East Approach to Isles
-			garrison = { country = -2 province = 2708  type = naval size = 20 area = 1 } #West or Ireland
-			}
-		}	
+			lost_national = { country = ENG value = 2 }
+			OR = {
+				garrison = { country = -2 province = 125  type = land size = 18 area = 2 } #Rotterdam, Flanders Region
+				garrison = { country = -2 province = 43  type = land size = 14 area = 1 } #Cherbourg, Normandy Area
+				garrison = { country = -2 province = 37  type = land size = 14 area = 1 } #Brest, Brittany Area
+				garrison = { country = -2 province = 81  type = land size = 14 area = 1 } #Dunkirk, Pas de Calais
+				garrison = { country = -2 province = 147  type = land size = 20 area = 1 } #Wilhelmshaven, Hannover
+				garrison = { country = -2 province = 152  type = land size = 22 area = 1 } #Kiel, Holstein
+				garrison = { country = -2 province = 2699  type = naval size = 20 area = 1 } #English Channel Area
+				garrison = { country = -2 province = 2683  type = naval size = 20 area = 1 } #East Approach to Isles
+				garrison = { country = -2 province = 2708  type = naval size = 20 area = 1 } #West or Ireland
+				}
+			}	
 		
 	}
 
