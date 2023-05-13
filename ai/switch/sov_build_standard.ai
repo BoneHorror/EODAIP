@@ -15,13 +15,13 @@ military = {
 	motorized 	= 10
 	mechanized 	= 2
 	light_armor = 0
-	armor 		= 7
+	armor 		= 5
 	paratrooper = 2
 	marine 		= 0
 	bergsjaeger = 1
 	garrison	= 1
     hq 			= 2
-	militia 	= 9
+	militia 	= 11
 #				69 %
 	interceptor 	= 2
 	multi_role 		= 2
