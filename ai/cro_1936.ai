@@ -9,7 +9,7 @@ war = 0
 upgrading = 0.35
 reinforcement = 0.0
 strat_redeploy_threshold = 25
-exp_force_ratio = 0.950
+exp_force_ratio = 0.5
 exp_force_ratios = { } 
 no_exp_forces_to = { }
 use_offensive_supply = no
@@ -151,18 +151,18 @@ military = {
 
 
 	#### Divisions etc...
-	infantry 		= 50
+	infantry 		= 45
 	cavalry 		= 0
 	motorized 		= 0
 	mechanized 		= 0
-	light_armor 	= 0
+	light_armor 	= 5
 	armor 			= 0
 	paratrooper 	= 0
 	marine 			= 0
-	bergsjaeger 	= 50
+	bergsjaeger 	= 30
 	garrison		= 0
     hq 				= 0
-	militia 		= 0
+	militia 		= 20
 #				100 %
 	interceptor 	= 0
 	multi_role 		= 0
@@ -187,7 +187,7 @@ military = {
 #				0 %
 
 	#### Brigades
-	artillery 			= 35
+	artillery 			= 20
 	sp_artillery 		= 0
 	cavalry_brigade	= 0
 	sp_anti_air 	= 0
@@ -197,9 +197,9 @@ military = {
 	heavy_armor 		= 0
 	super_heavy_armor 	= 0
 	armored_car 		= 0
-	anti_air 			= 0
-	police 				= 0
-	engineer 			= 0
+	anti_air 			= 5
+	police 				= 5
+	engineer 			= 5
 
             cag = 100.000
 	    escort = 100.0000
