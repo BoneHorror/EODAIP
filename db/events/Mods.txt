@@ -2937,6 +2937,11 @@ event = {
 			NOT = { relation = { which = ROM value = 150 } }
 			NOT = { lost_national = { country = SOV value = 15 } }
 			}
+		AND = {
+			control = { province = 622 data = GER } #Three provinces onwards from Odessa - let's make sure ROM doesn't control too much, because if they do - this gives those provinces back to SOV...
+			control = { province = 615 data = GER } 
+			control = { province = 612 data = GER }
+		}
 	}
 
 	date = { day = 1 month = january year = 1939 }
@@ -3094,6 +3099,14 @@ event = {
 		OR = { 
 			carrier = { value = 1 when = now }
 			submarine = { value = 4 when = now }
+		}
+		OR = {
+			intel_diff = { country = GER country = ENG value = 3 data = 2 }
+			naval_percentage = { country = ENG value = 1.01}
+			AND = {
+				intel_diff = { country = GER country = ENG value = 0 data = 2 }
+				random = 2
+			}
 		}
 		war = { country = GER country = ENG }
 		event = 9300051 # Plan Z

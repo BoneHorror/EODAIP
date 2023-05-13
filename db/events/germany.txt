@@ -2157,8 +2157,8 @@ event = {
 		NOT = { event = 2007033 } # Bitter Peace
 		OR = { 
 			AND = {
-			random = 6
-			NOT = { land_percentage = { country = SOV value = 0.7 } } #Ground army not sufficiently big to go against SOV
+				random = 6
+				NOT = { land_percentage = { country = SOV value = 0.7 } } #Ground army not sufficiently big to go against SOV
 			}
 			NOT = { land_percentage = { country = SOV value = 0.55 } }
 			AND = { 
