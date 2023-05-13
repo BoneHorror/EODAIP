@@ -377,7 +377,7 @@ admiral = {
 	}
 	target = { 
 	#focus on bullying weak US Navy
-	2637 = 200	#pearl harbour bay
+	#targeted nerf so that Japan is worse at destroying Allied TPs#2637 = 200	#pearl harbour bay
 	2631 = 200	#threaten midway
 	2476 = 140  #Defend Iwo Jima
 	2396 = 50	#near dutch harbour

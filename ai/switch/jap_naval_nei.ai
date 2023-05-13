@@ -358,7 +358,7 @@ admiral = {
 	target = { 
 	2637 = 140	#pearl harbour bay
 	2558 = 80	#manila bay 
-	2528 = 200	#malaysia
+	#targeted nerf so that Japan is worse at destroying Allied TPs#2528 = 200	#malaysia
 	2559 = 200  #attack borneo
 	} 
 	core = { 

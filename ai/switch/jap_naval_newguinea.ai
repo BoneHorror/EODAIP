@@ -438,7 +438,7 @@ admiral = {
 		1676   #south pacific island
 	}
 	target = { 
-	2631 = 200	#threaten midway
+	#targeted nerf so that Japan is worse at destroying Allied TPs#2631 = 200	#threaten midway
 	2558 = 100	#manila bay 
 	2528 = 80	#malaysia
 	2476 = 140  #Defend Iwo Jima
