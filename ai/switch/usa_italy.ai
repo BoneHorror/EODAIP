@@ -27,9 +27,9 @@ no_exp_forces_to = { U02 }
 ###################################
 garrison = {
    	defend_overseas_beaches = yes 
-	home_multiplier 	= 0.05
-	overseas_multiplier = 1.0
-	war_zone_odds 		= 2.0
+	home_multiplier 	= 0.03
+	overseas_multiplier = 0.7
+	war_zone_odds 		= 2.2
 	
 	country_priorities = {
 		CAN = -1
@@ -393,7 +393,7 @@ admiral = {
 		1739 # Midway
 	    1889 # San Francisco 
      	1795 # New York 
-		1432 # Singapore
+		#1432 # Singapore
 		1683 # Guam
 		747 # Tunis
 		750 # Tripoli

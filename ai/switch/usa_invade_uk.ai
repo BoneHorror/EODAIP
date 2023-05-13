@@ -10,7 +10,8 @@ max_garrison_prop = 0.12
 min_garrison_prop = 0.01
 
 exp_force_ratio = 0.04 
-exp_force_ratios = { ENG = 0.5 U01 = 0.4 U02 = 0.1 } 
+exp_force_ratios = { ENG = 0.5 U01 = 0.4 FRA = 0.1 } 
+no_exp_forces_to = { U02 }
 
 ###################################
 # Ground Combat, Leaders and Garrisons
