@@ -2,3 +2,12 @@ U46;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 1045001;Organisation Todt;100560;4;1936;2000;industrial_engineering;general_equipment;management;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 1045002;Reichsschule der Niederlande;100568;2;1936;2000;training;management;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 1045003;Friedrich Christiansen;100569;3;1936;2000;training;centralized_execution;piloting;fighter_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045004;Artillerie Inrichtingen Hembrug;T2300;4;1890;2000;artillery;munitions;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045005;DAF;T2301;5;1900;2000;mechanics;munitions;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045007;Reactorcentrum Nederland;T15102;4;1945;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045008;National Air & Space Laboratory;T15103;5;1937;2000;rocketry;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045009;Centrale Veiligheidsdienst;T150220;5;1946;1949;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045010;Binnenlandse Veiligheidsdienst;T150220;7;1949;2002;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045011;Koninklijke Militaire Academie;100396;4;1890;2000;centralized_execution;small_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045012;Koninklijk Instituut voor de Marine;100397;4;1890;2000;small_taskforce_tactics;submarine_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1045013;Korps Mariniers;T15100;5;1945;2000;marine_training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

@@ -3,3 +3,12 @@ U41;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 1020002;Organisation Todt;100560;4;1936;2000;industrial_engineering;general_equipment;management;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 1020003;RMfdbO;100561;3;1936;2000;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 1020004;Karl Kitzinger;100563;3;1936;2000;training;infantry_focus;centralized_execution;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020005;Charkov Factory Design Bureau;T3702;7;1927;2000;mechanics;artillery;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020006;Chernomorsky Shipbuilding Yard;T14004;5;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020007;Kharkov Aviation Institute;T14005;6;1930;2000;aeronautics;management;technical_efficiency;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020008;Kiev University;T14006;3;1900;2000;management;chemistry;mechanics;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020009;Morozov Design Bureau;T14007;5;1928;2000;mechanics;artillery;technical_efficiency;general_equipment;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020010;Motor-Sich;T14008;5;1915;2000;mechanics;electronics;technical_efficiency;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020011;Kiev Military Academy;T10401;4;1900;2000;large_unit_tactics;combined_arms_focus;infantry_focus;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020012;Odessa State Maritime Academy;T14011;4;1944;2000;naval_training;seamanship;submarine_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+1020013;Charkov Air Command Center;T10402;4;1920;2000;centralized_execution;bomber_tactics;fighter_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
