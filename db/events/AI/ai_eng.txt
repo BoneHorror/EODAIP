@@ -127,6 +127,8 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = ENGPanic }
+		NOT = { local_flag = ENGInvadeItaly }
+		NOT = { local_flag = ENGDDay }
 		OR = {
 			AND = {
 				random = 30
@@ -331,42 +333,41 @@ event = {
 		command = { type = local_clrflag which = ENGInvadeNorway }
 	}
 }
-event = {
-	id = 3001009
-	random = no 
-	country = ENG
-	persistent = yes
-	
-	trigger = {
-		ai = yes
-		local_flag = ENGDDay
-		alliance = { country = USA }
-		NOT = {
-			AND = {
-				ai = USA
-				flag = DDay
-			}
-			
-			region = { region = "Germany" country = -3 value = 1 }
-			region = { region = "Benelux" country = -3 value = 1 }
-			region = { region = "Denmark" country = -3 value = 1 }
-			region = { region = "France" country = -3 value = 1 }
-		}
-	}
-
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 4
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/ENG_Attack.ai" }
-		command = { type = local_clrflag which = ENGDDay }
-	}
-}
-
+#event = {
+#	id = 3001009
+#	random = no 
+#	country = ENG
+#	persistent = yes
+#	
+#	trigger = {
+#		ai = yes
+#		local_flag = ENGDDay
+#		alliance = { country = USA }
+#		NOT = {
+#			AND = {
+#				ai = USA
+#				flag = DDay
+#			}
+#			region = { region = "Germany" country = -3 value = 1 }
+#			region = { region = "Benelux" country = -3 value = 1 }
+#			region = { region = "Denmark" country = -3 value = 1 }
+#			region = { region = "France" country = -3 value = 1 }
+#		}
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 4
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = ai which = "switch/ENG_Attack.ai" }
+#		command = { type = local_clrflag which = ENGDDay }
+#	}
+#}
+######Above event commented out - not sure what's the reasoning behind it
 ################
 # England Air AI Naval portion
 #############################################
@@ -1451,7 +1452,7 @@ event = {
 		command = { type = local_clrflag which = ENGDDay }
 	}
 }
-### Eng goes on attack in Libya?
+### Eng goes on attack in Libya if USA joined the war
 event = {
 	id = 3001026
 	random = no 
@@ -1460,8 +1461,9 @@ event = {
 	
 	trigger = {
 		ai = yes
-		local_flag = ENGInvadeItaly
-		
+		NOT = { local_flag = ENGInvadeItaly }
+		alliance = { country = USA }
+		war = { country = GER country = USA }
 		# Italian North Africa
 		OR = {
 			NOT = { war = { country = ITA } }
@@ -1484,7 +1486,6 @@ event = {
 
 	action_a = {
 		command = { type = ai which = "switch/ENG_Attack.ai" }
-		command = { type = local_clrflag which = ENGInvadeItaly }
 	}
 }
 ##################################################
