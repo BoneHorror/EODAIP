@@ -188,19 +188,19 @@ province = { id = 1551 ic = -1 }
 #province = { id = 1559 ic = -1 } 
 #province = { id = 1560 ic = -1 } 
 
-### Italy -5 IC
+#### Italy -5 IC
 
 province = { id = 396 ic = -1 } 
 province = { id = 398 ic = -1 } 
-province = { id = 400 ic = -1 } 
+#province = { id = 400 ic = -1 } 
 province = { id = 407 ic = -1 } 
 province = { id = 421 ic = -1 } 
 
-### China -4 IC
-province = { id = 1299 ic = -1 } #Chongqing 
-province = { id = 1308 ic = -1 } #Changsha
-province = { id = 1317 ic = -1 } #Wuhan
-province = { id = 1337 ic = -1 } #Nanjing
+#### China -4 IC
+#province = { id = 1299 ic = -1 } #Chongqing 
+#province = { id = 1308 ic = -1 } #Changsha
+#province = { id = 1317 ic = -1 } #Wuhan
+#province = { id = 1337 ic = -1 } #Nanjing
 
 ### Czechoslovakia
-province = { id = 197 landfort = -5 } #Znojmo
+province = { id = 197 landfort = -4 } #Znojmo
