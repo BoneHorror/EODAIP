@@ -2,11 +2,11 @@
 
 admiral = { 
 target = { 
-		2671 = 200 #Protect Narvik
-		2689 = 200 #Protect Alesund
-		2176 = 250 #Egypt
-		2181 = 600 #Malta
-		2180 = 500 #Palermo - invasion screening
+		2671 = 80 #Protect Narvik
+		2689 = 80 #Protect Alesund
+		2176 = 100 #Egypt
+		2181 = 200 #Malta
+		2180 = 170 #Palermo - invasion screening
 	} 
 	core = {
 		#British coast

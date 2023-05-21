@@ -2,24 +2,24 @@
 
 admiral = { 
 target = { 
-		2682 = 100 #Near Norwich
-		2709 = 50 #Near Plymouth
-		2698 = 200 #Channel East
-		2700 = 400 #Channel North
-		2559 = 100 #Borneo
-		2528 = 300 #Singapore
-		2176 = 200 #Egypt
-		2181 = 600 #Malta
-		2699 = 300 #Target for D-Day - South Channel
-		2697 = 200 #Target for D-Day - Rotterdam
+		2682 = 50 #Near Norwich
+		2709 = 30 #Near Plymouth
+		2698 = 60 #Channel East
+		2700 = 100 #Channel North
+		2559 = 50 #Borneo
+		2528 = 150 #Singapore
+		2176 = 100 #Egypt
+		2181 = 200 #Malta
+		2699 = 100 #Target for D-Day - South Channel
+		2697 = 100 #Target for D-Day - Rotterdam
 	} 
 	core = {
 		#British coast
-     	2683 #Scotland
+     	#2683 #Scotland
      	2682 #Norwich
      	2698 #Dover
      	2700 #North Channel
-     	2708 #Irish Sea
+     	#2708 #Irish Sea
 		
 		#### Gibraltar
 		2430 #Gibraltar

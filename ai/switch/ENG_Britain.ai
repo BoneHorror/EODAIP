@@ -2,7 +2,7 @@
 
 exp_force_ratio = 0.05
 exp_force_ratios = { } 
-no_exp_forces_to = { FRA }
+no_exp_forces_to = { FRA U02 }
 front = { enemy_handicap = { GER = 10 } }
 
 admiral = { 

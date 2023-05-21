@@ -16,8 +16,8 @@ target = {
  1607 = 25 # Port Moresby
  1625 = 10 # Brunei
 } 
-max_garrison_prop = 0.1
-min_garrison_prop = 0.01
+max_garrison_prop = 0.15
+min_garrison_prop = 0.02
 
 exp_force_ratio = 0.06 
 exp_force_ratios = { FRA = 0.8 U01 = 0.1 PHI = 0.1 } 
@@ -30,7 +30,7 @@ garrison = {
 	home_multiplier 	= 0.03
 	overseas_multiplier = 0.5
 	home_peace_cap 		= 10
-	war_zone_odds 		= 3.0
+	war_zone_odds 		= 1.6
 	key_point_prio_mult	= 1
 	revolt_risk_mult	= 0.3
 
@@ -137,7 +137,7 @@ front = {
 	panic_ratio_vs_ai	= 2.5
 	panic_ratio_vs_human	= 2.5
 	base_attack_odds	= 1.2
-	min_attack_odds		= 1.05
+	min_attack_odds		= 0.9
 	max_attack_odds		= 2.1
 	reinforce_odds		= 1.04
 	withdraw_odds		= 0.55
@@ -168,12 +168,12 @@ front = {
 ###################################
 invasion = { 
 	invasion			= yes
- 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+ 	base				= 0.05	#Relative modifier. (lower = specific targets much more important.)
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 250.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 80.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
+	max_staging_distance = 80.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
 	distance			= 5.0	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
@@ -466,21 +466,22 @@ admiral = {
        	429 #Malta
 	}
 	target = { 
-	2485 = 50 #Hunt north philipines
+	#2485 = 50 #Hunt north philipines
 	2511 = 80 #Hunt s okinawa
 	2512 = 80 #Hunt n okinawa
 	2489 = 30 #Osaka Sea
 	2694 = 80 #Hunt german navy near norway
-	2699 = 300 #Target for D-Day - South Channel
-	2697 = 300 #Target for D-Day - Rotterdam
+	2699 = 200 #Target for D-Day - South Channel
+	2697 = 200 #Target for D-Day - Rotterdam
 	} 
 	core = {	
-	2396 #Sea near Dutch Harbor
+	#2396 #Sea near Dutch Harbor
 	2637 #Pearl Harbor
 	2631 #Midway
 	2181 #Malta sea
 	2176 #Suez sea
 	2700 #English channel
+	2485 #North Philipines - we have to cover this or else we end up out of TPs.
 	} 
 	ignore = {
 		#Japanese Coast - try to avoid suiciding shit

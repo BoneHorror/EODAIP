@@ -48,7 +48,7 @@ garrison = {
 ###################################
 invasion = {
 		invasion = yes
-		base = 0.4 #Relative modifier. (lower = specific targets much more important.)
+		base = 0.2 #Relative modifier. (lower = specific targets much more important.)
 		random = 16.0 #How big a random range. (1.0 = 1%)
 		coastal = 0.1 #increase to avoid coastal forts more.
 		beach = 0.1 #higher, avoid worst beaches.

@@ -4,4 +4,4 @@ exp_force_ratio = 0.4
 exp_force_ratios = {
 	FRA = 1.0
 } 
-no_exp_forces_to = { U01 }
+no_exp_forces_to = { U01 U02 }

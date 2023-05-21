@@ -442,6 +442,7 @@ admiral = {
 	2558 = 100	#manila bay 
 	2528 = 80	#malaysia
 	2476 = 140  #Defend Iwo Jima
+	2587 = 70 #Melbourne - risky target so that Japan bleeds some navy
 	} 
 	core = { 
 		2492 #Tokyo Sea

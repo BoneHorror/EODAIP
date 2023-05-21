@@ -1690,7 +1690,7 @@ event = {
 		command = { type = alliance which = ENG when = 1 }
 		}
 	}
-### GO after JAP ###
+### Go after JAP ###
 event = {
 	id = 3049051
 	random = no
@@ -1701,8 +1701,14 @@ event = {
 		ai = yes
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USJap }
+		naval_percentage = { country = JAP value = 1.0 }
 		OR = {
 			NOT = { local_flag = USAItaly } #Prefer to wrap up invasion of Italy first.
+			AND = {
+				local_flag = USAItaly
+				NOT = { region = { region = Italy country = -3 data = 1 } }
+				year = 1943
+				}
 			AND = {
 				year = 1944
 				local_flag = USAItaly
@@ -1711,13 +1717,20 @@ event = {
 		OR = {
 			NOT = { local_flag = USADDay }
 			AND = {
+				local_flag = USADDay
+				NOT = { transport = { country = USA value = 20 when = 1 } }
+				}
+			AND = {
 				NOT = { war = { country = USA country = GER } }
 				local_flag = USADDay
 				}
 			}
 		OR = {
-			control = { province = 1563 data = USA } #Southern Okinawa
-			naval_percentage = { country = JAP value = 1.2 }
+			AND = {
+				control = { province = 1563 data = USA } #Southern Okinawa
+				naval_percentage = { country = JAP value = 1.15 }
+				}
+			naval_percentage = { country = JAP value = 1.3 }
 				AND = {
 					NOT = { war = { country = GER country = SOV } } #GER is hard to tackle because it's not atwar with SOV
 					naval_percentage = { country = JAP value = 1.0 }
@@ -1750,6 +1763,7 @@ event = {
 		command = { type = ai which = "switch/USA_Naval_Attack.ai" }
 	}
 } 
+###Clear US naval AI 
 event = {
 	id = 3049052
 	random = no
@@ -1760,7 +1774,7 @@ event = {
 		ai = yes
 		OR = {
 			NOT = { war = { country = USA country = JAP } }
-			NOT = { naval_percentage = { country = JAP value = 0.75 } }
+			NOT = { naval_percentage = { country = JAP value = 0.8 } }
 		}
 		local_flag = USJap	
 	}
@@ -1768,12 +1782,13 @@ event = {
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 1 month = january year = 1937 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 2
 	deathdate = { day = 29 month = december year = 1964 }
 
 	action_a = {
 		command = { type = local_clrflag which = USJap }
+		command = { type = ai which = "switch/USA_Gear_Up_4.ai" }
 	}
 }
 ### Liberate + ITA ALB GRE

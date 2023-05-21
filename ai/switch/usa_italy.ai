@@ -29,7 +29,7 @@ garrison = {
    	defend_overseas_beaches = yes 
 	home_multiplier 	= 0.03
 	overseas_multiplier = 0.7
-	war_zone_odds 		= 2.2
+	war_zone_odds 		= 1.3
 	
 	country_priorities = {
 		CAN = -1
@@ -53,7 +53,7 @@ front = {
 	panic_ratio_vs_ai	= 2.5
 	panic_ratio_vs_human	= 2.5
 	base_attack_odds	= 1.2
-   	min_attack_odds    = 1.01 
+   	min_attack_odds    = 0.9 
 	max_attack_odds		= 4.0
 	reinforce_odds		= 1.1
 	withdraw_odds		= 0.6
@@ -94,12 +94,12 @@ front = {
 ###################################
 invasion = {
 	invasion			= yes
- 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
 	random				= 18.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.05	#increase to avoid coastal forts more.
 	beach				= 0.05	#higher, avoid worst beaches.
-	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 18.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 80.0  #About the distance from Japan to Batavia
+	max_staging_distance = 80.0 # How far should the staging area be from the target invasion point
 	distance			= 0.5	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
@@ -109,7 +109,7 @@ invasion = {
     naval_base 			= 1.5 
     air_support 		= 15.0 
     redirect 			= priority #Home wastes transport cycles on Pacific
-	ignore				= no
+	ignore				= yes
 	help_allies 		= no 	#[yes/no]
         province_priorities = yes #Invade only provinces in target list with priority higher then 0
 
@@ -404,19 +404,19 @@ admiral = {
 	target = {
 		2694 = 60 #Hunt german navy near norway
 		2693 = 60 #Hunt german navy near denmark
-		2179 = 400 #Hunt central mediterrean
-		2743 = 200 #Hunt near greece
-		2189 = 400 #Hunt near corsica
+		2179 = 150 #Hunt central mediterrean
+		2743 = 100 #Hunt near greece
+		2189 = 150 #Hunt near corsica
 		2485 = 100 #Hunt north philipines
 		2511 = 120 #Hunt s okinawa
 		2512 = 120 #Hunt n okinawa
-		2180 = 400 #Palermo - invasion screening
+		2180 = 200 #Palermo - invasion screening
 	} 
 	core = {	
 	#2424 #Sea near st john's
-	2316 #Sea near florida
+	#2316 #Sea near florida
 	#2388 #Sea near portland
-	2396 #Sea near Dutch Harbor
+	#2396 #Sea near Dutch Harbor
 	2637 #Pearl Harbor
 	2631 #Midway
 	2556 #Philipines center

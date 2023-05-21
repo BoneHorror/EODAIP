@@ -20,7 +20,7 @@ exp_force_ratio = 0.2
 exp_force_ratios = {
 	USA = 1.0
 } 
-no_exp_forces_to = { }
+no_exp_forces_to = { U02 }
 
 ###################################
 # Ground Combat, Leaders and Garrisons
@@ -30,7 +30,7 @@ garrison = {
 	home_multiplier 	= 0.5
 	overseas_multiplier 	= 1.0
 	home_peace_cap 		= 2
-	war_zone_odds 		= 2.0
+	war_zone_odds 		= 1.5
 	key_point_prio_mult	= 0.3
 	revolt_risk_mult	= 0.3
 
@@ -84,7 +84,7 @@ front = {
 ###################################
 invasion = { 
 	invasion			= yes
- 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.

@@ -17,8 +17,8 @@ max_garrison_prop = 0.12
 min_garrison_prop = 0.01
 
 exp_force_ratio = 0.08 
-exp_force_ratios = { ENG = 0.7 U02 = 0.1 PHI = 0.2 } 
-no_exp_forces_to = { }
+exp_force_ratios = { ENG = 0.7 AST = 0.1 PHI = 0.2 } 
+no_exp_forces_to = { U02 }
 
 ###################################
 # Ground Combat, Leaders and Garrisons
@@ -27,7 +27,7 @@ garrison = {
 	home_multiplier 	= 0.07
 	overseas_multiplier = 0.5
 	home_peace_cap 		= 10
-	war_zone_odds 		= 2.5
+	war_zone_odds 		= 1.3
 	key_point_prio_mult	= 1
 	revolt_risk_mult	= 0.3
 
@@ -90,12 +90,12 @@ front = {
 ####Invasions
 invasion = { 
 	invasion			= yes
- 	base				= 0.5	#Relative modifier. (lower = specific targets much more important.)
+ 	base				= 0.2	#Relative modifier. (lower = specific targets much more important.)
 	random				= 22.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 250.0  #About the distance from Japan to Batavia
-	max_staging_distance = 100.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 80.0  #About the distance from Japan to Batavia
+	max_staging_distance = 80.0 # How far should the staging area be from the target invasion point
 	distance			= 0.2	#higher = avoid long distance.
 	pocket				= 2.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 1.0	#prioritise taking pure islands.
@@ -363,7 +363,7 @@ invasion = {
 } 
 admiral = { 
 	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 8		# ENG/USA default 3, JAP default 2 everyone else is 1
+	num_attack_fleets		= 6		# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {
@@ -371,7 +371,7 @@ admiral = {
 		1739 # Midway
 	    1889 # San Francisco 
 		1673 # Wake
-     	1795 # New York 
+     	#1795 # New York 
 		1399 # Saigon
 		1432 # Singapore
 		1565 # Manila
@@ -379,15 +379,15 @@ admiral = {
 		1661 #Iwo Jima
 	}
 	target = {
-	2492 = 120 #Tokyo sea
-	2489 = 350 #Osaka Sea
-	2515 = 200 #Taipei sea
-	2525 = 300 #Singapore
-	2529 = 400 #Indonesia south
-	2641 = 300 #Indonesia north
-	2485 = 200 #Hunt north philipines
-	2511 = 520 #Hunt s okinawa
-	2512 = 520 #Hunt n okinawa
+	2492 = 70 #Tokyo sea
+	2489 = 110 #Osaka Sea
+	2515 = 90 #Taipei sea
+	2525 = 100 #Singapore
+	2529 = 100 #Indonesia south
+	2641 = 100 #Indonesia north
+	2485 = 80 #Hunt north philipines
+	2511 = 220 #Hunt s okinawa
+	2512 = 220 #Hunt n okinawa
 	} 
 	core = {
 	2424 #Sea near st john's

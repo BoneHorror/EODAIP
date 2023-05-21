@@ -1415,6 +1415,14 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = ENGInvadeItaly }
+		OR = {
+			year = 1943
+			AND = {
+				year = 1942
+				random = 10
+				}
+			random = 3
+		}
 		NOT = {
 			AND = {
 				local_flag = ENGDDay

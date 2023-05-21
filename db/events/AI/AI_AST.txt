@@ -27,9 +27,9 @@ event = {
 
 	action_a = {
 		command = { type = ai which = "switch/AST_Change_Production.ai" }
-		command = { type = industrial_modifier which = total value = 10 }
-		command = { type = free_oil value = 2 }
+		command = { type = industrial_modifier which = ic value = 15 }
 		command = { type = manpowerpool value = 6.5 when = 1 }
+		command = { type = free_supplies value = 4 }
 		command = { trigger = { NOT = { ai = JAP } } type = free_manpower value = 0.05 }
 	}
 }
@@ -117,7 +117,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
-        	command = { trigger = { control = { province = 1710 data = AST } } type = activate_division which = 30001 value = 1001 where = 1710 when = 0 } # Tanzania
+		#command = { type = ai which = "switch/Minor_Gear_Up.ai" } #Not needed to disable IC prod when we already set time limits
+        command = { trigger = { control = { province = 1710 data = AST } } type = activate_division which = 30001 value = 1001 where = 1710 when = 0 } # Tanzania
 	}
 }

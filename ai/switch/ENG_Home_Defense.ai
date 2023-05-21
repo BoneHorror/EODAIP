@@ -15,7 +15,7 @@ exp_force_ratio = 0.05 # 0.4 # 0.05
 exp_force_ratios = {
 	FRA = 1.0 
 } 
-no_exp_forces_to = { NOR POL DEN CZE U01 }
+no_exp_forces_to = { NOR POL DEN CZE U01 U02 }
 evac_islands = no
 
 ###################################

@@ -435,6 +435,7 @@ admiral = {
 	2389 = 80	#next to san diego
 	2396 = 80	#near dutch harbour
 	#targeted nerf so that Japan is worse at destroying Allied TPs# 2558 = 120	#manila bay 
+	2628 = 50 #Ceylon - risky target so that Japan bleeds some navy
 	} 
 	core = { 
 		2492 #Tokyo Sea

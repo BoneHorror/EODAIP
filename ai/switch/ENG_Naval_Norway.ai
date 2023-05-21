@@ -2,8 +2,8 @@
 
 admiral = { 
 target = { 
-		2671 = 600 #Protect Narvik
-		2689 = 400 #Protect Alesund
+		2671 = 150 #Protect Narvik
+		2689 = 100 #Protect Alesund
 	} 
 	core = {
 		#British coast

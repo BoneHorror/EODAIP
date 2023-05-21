@@ -2,10 +2,10 @@
 
 admiral = { 
 target = { 
-		2671 = 300 #Protect Narvik
-		2689 = 300 #Protect Alesund
-		2559 = 200 #Borneo
-		2528 = 600 #Singapore
+		2671 = 90 #Protect Narvik
+		2689 = 90 #Protect Alesund
+		2559 = 100 #Borneo
+		2528 = 150 #Singapore
 	} 
 	core = {
 		#British coast
