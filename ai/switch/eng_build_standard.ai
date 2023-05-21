@@ -7,7 +7,7 @@
 ###################################
 military = { 
 	relative_build_scheme 	= yes
-	extra_convoys_war = 0.1625 
+	extra_convoys_war = 0.2625 
 	
 	#### Divisions etc...
    	infantry     		= 11
@@ -41,8 +41,8 @@ military = {
    	light_cruiser   	= 7 
 	heavy_cruiser 		= 5
 	battlecruiser 		= 1
-	submarine 			= 3
+	submarine 			= 2
 	nuclear_submarine 	= 0
-   	transports     		= 6 
+   	transports     		= 7 
 #						46 %
 }

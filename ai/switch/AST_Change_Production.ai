@@ -8,7 +8,7 @@ construction = {
 	max_factor = 0.05 
 
 
-	AA_batteries = atwar
+	AA_batteries = no
 	max_AA_level = 4
 	AA_provs = { 
 		1730 # Melbourne
@@ -24,14 +24,14 @@ construction = {
 	max_radar = 5 
 	radar_provs = { } 
 
-	air_base = yes
+	air_base = no
 	max_air_base = 4
 	air_base_provs = {
 		1696 # Townsville
 		1670 # Rabaul
 	} 
 
-	naval_base = yes
+	naval_base = no
 	max_naval_base = 10
 	naval_base_provs = {
 		1670 # Rabaul
@@ -56,29 +56,29 @@ military = {
 	max_batch_peace 		= 680 
 	max_batch_war 			= 360 
 	max_batch_home_front = 180
-        extra_convoys_war = 0.0600
+        extra_convoys_war = 0.1250
         extra_convoys_peace = 0.0500 
 
 
 	#### Divisions etc...
-	infantry 		= 25
+	infantry 		= 27
 	cavalry 		= 0
 	motorized 		= 0
 	mechanized 		= 0
 	light_armor 	= 0
-	armor 			= 2
+	armor 			= 3
 	paratrooper 	= 0
 	marine 			= 7
 	bergsjaeger 	= 0
 	garrison		= 0
-    hq 				= 5
+    hq 				= 4
 	militia 		= 1
 #				45 %
-	interceptor 	= 5
+	interceptor 	= 6
 	multi_role 		= 5
 	cas 			= 0
 	strategic_bomber = 0
-	tactical_bomber = 10
+	tactical_bomber = 8
 	naval_bomber 	= 5
 	transport_plane = 0
 	flying_bomb 	= 0
@@ -87,13 +87,13 @@ military = {
 	battleship 		= 0
 	carrier 		= 0
 	escort_carrier	= 0
-	destroyer 		= 11
-	light_cruiser 	= 9
-	heavy_cruiser 	= 8
-	battlecruiser 	= 0
+	destroyer 		= 10
+	light_cruiser 	= 8
+	heavy_cruiser 	= 7
+	battlecruiser 	= 4
 	submarine 		= 0
 	nuclear_submarine = 0
-	transports 		= 7
+	transports 		= 5
 #				30 %
 
 }

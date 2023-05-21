@@ -8,7 +8,7 @@ military = {
 	relative_build_scheme 	= yes
 
 	#### Divisions etc...
-   	infantry   		= 9
+   	infantry   		= 8
 	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 9
@@ -42,6 +42,6 @@ military = {
 	battlecruiser 		= 0
 	submarine 			= 5
 	nuclear_submarine 	= 3
-	transports 			= 3 #Handled by Transport events
+	transports 			= 4 #Handled by Transport events
 #				43 %
 }
