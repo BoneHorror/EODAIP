@@ -476,20 +476,20 @@ military = {
    	glider_armor		= 3 
    	glider_artillery	= 4 
 
-	cag = 80.000
-            light_cag = 90.000
+	cag = 100.000
+            light_cag = 100.000
 	    escort = 33.0000
 
-            naval_asw = 4.0000 
+            naval_asw = 8.0000 
             naval_anti_air_s = 4.0000 
             naval_radar_s = 2.0000 
-            naval_fire_controll_s = 3.0000 
-            naval_improved_hull_s = 3.0000 
-            naval_torpedoes_s = 5.0000 
+            naval_fire_controll_s = 5.0000 
+            naval_improved_hull_s = 10.0000 
+            naval_torpedoes_s = 10.0000 
             naval_anti_air_l = 3.0000 
-            naval_radar_l = 5.0000 
-            naval_fire_controll_l = 3.0000 
-            naval_improved_hull_l = 3.0000 
+            naval_radar_l = 8.0000 
+            naval_fire_controll_l = 10.0000 
+            naval_improved_hull_l = 15.0000 
             floatplane = 3.0000
 }
 
@@ -866,9 +866,9 @@ invasion = {
 } 
 admiral = { 
 	min_org		= 82	# NEW: Percent of org gained back before the unit can leave port
-	min_dmg		= 90    # NEW: Percent of dmg gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
 	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
-	return_dmg 	= 40 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+	return_dmg 	= 50 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
 	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
 	num_attack_fleets		= 7 	# ENG/USA default 3, JAP default 2 everyone else is 1
 

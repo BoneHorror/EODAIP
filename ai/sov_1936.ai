@@ -477,12 +477,12 @@ military = {
             naval_radar_s = 20.0000 
             naval_fire_controll_s = 20.0000 
             naval_improved_hull_s = 10.0000 
-            naval_torpedoes_s = 10.0000 
-            naval_anti_air_l = 0.0000 
+            naval_torpedoes_s = 20.0000 
+            naval_anti_air_l = 5.0000 
             naval_radar_l = 0.0000 
-            naval_fire_controll_l = 0.0000 
-            naval_improved_hull_l = 0.0000 
-            floatplane = 0.0000
+            naval_fire_controll_l = 5.0000 
+            naval_improved_hull_l = 10.0000 
+            floatplane = 2.0000
 }
 
 technology = { 
