@@ -343,6 +343,9 @@ technology = {
 		
 		# Heavy Cruiser
 		3230 3240 3250 3260 12020 3270 3280
+		
+		# Battlecruisers
+		3310 3320 3330 3340 3350 12030
 	} 
 	ignore 	= {
 		# Vehicle Assembly & Rocket Assembly
@@ -401,9 +404,6 @@ technology = {
 		
 		# Armoured Cars
 		2860 2870 2880 2020 2150 2160 2890 11110
-
-		# Battlecruisers
-		3310 3320 3330 3340 3350 12030
 
 		# Battleship
 		3410 3420 3430 3440 3450 3456 3460 3470 3480 12040 3490 12050
