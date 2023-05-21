@@ -256,7 +256,7 @@ inventions = { 3000027 }
      interventionism   = 5 
     } 
 	peacetime_ic_mod       = 0.3 # +0.8 from 6 events pre-war
-    industrial_modifier = 0.92 # 1929 crisis (1.12-0.1); Restored by events 2002076(Economic Recovery Policy) +2% and 2002077(Unemployment rate down to 10 percent) +8%
+    industrial_modifier = 0.82 # 1929 crisis (1.12-0.1); Restored by events 2002076(Economic Recovery Policy) +2% and 2002077(Unemployment rate down to 10 percent) +8%
    headofstate            = {  type = 9 id = 5001  } # Albert Lebrun
    headofgovernment       = {  type = 9 id = 5020  } # Edouard Daladier
    foreignminister        = {  type = 9 id = 5031  } # Joseph Paul Boncour
