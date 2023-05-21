@@ -2497,7 +2497,7 @@ event = {
 	action = {
 		name = "2011038a"
 		command = { type = dissent value = -2 }
-		command = { type = industrial_modifier which = total value = 2 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { trigger = { ai = no } type = money value = -500 }
 		command = { type = domestic which = free_market value = -1 }
 	
@@ -2527,7 +2527,7 @@ event = {
 	action = {
 		name = "2049092a"
 		command = { type = dissent value = -3 }
-		command = { type = industrial_modifier which = total value = 8 }
+		command = { type = industrial_modifier which = total value = 10 }
 	}
 }
 # Saar Plebiscite
