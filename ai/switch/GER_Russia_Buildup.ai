@@ -1,5 +1,12 @@
 # German operation Barbarosa Invasion AI File by Lothos
 
+max_front_ratio = 1.3 
+max_front_ratios = { 
+   SOV = 3.5 
+   ENG = 2.5
+   USA = 2.5
+   TUR = 1.5
+} 
 strat_redeploy_threshold = 20
 max_redeploying = 0.25
 ###################################

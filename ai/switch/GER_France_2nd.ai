@@ -2,7 +2,7 @@
 
 max_front_ratio = 1.0
 max_garrison_prop = 0.35
-min_garrison_prop = 0.15
+min_garrison_prop = 0.10
 max_front_ratios = {
 	BEL = 4.0
 	HOL = 4.0

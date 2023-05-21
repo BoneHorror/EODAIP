@@ -1,12 +1,12 @@
 # German Low Countries Invasion AI File by Lothos
 
 max_front_ratio = 1.0
-max_garrison_prop = 0.35
-min_garrison_prop = 0.05
+max_garrison_prop = 0.45
+min_garrison_prop = 0.30
 max_front_ratios = {
-	BEL = 10.0
-	HOL = 10.0
-	LUX = 8.0
+	BEL = 8.0
+	HOL = 8.0
+	LUX = 4.0
 	NOR = 3.0
 	FRA = 0.5
 }

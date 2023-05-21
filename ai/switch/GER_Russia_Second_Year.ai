@@ -85,8 +85,8 @@ front = {
 
 	enemy_reinf_days	= 6
 	reserve_prop		= 0.15
-	panic_ratio_vs_ai	= 2.0
-	panic_ratio_vs_human	= 2.0
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human	= 1.8
 	base_attack_odds	= 1.2
 	min_attack_odds		= 1.1
 	max_attack_odds		= 2.5
