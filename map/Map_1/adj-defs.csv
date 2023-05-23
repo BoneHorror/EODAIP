@@ -1,0 +1,1672 @@
+From;To;Type;Through;Comment
+4;6;Sea;2716;Stornoway : Inverness
+6;7;River;0;Inverness : Aberdeen
+6;8;River;0;Inverness : Fort William
+26;29;River;0;Dover : London
+27;28;River;0;Portsmouth : Oxford
+27;29;River;0;Portsmouth : London
+30;32;River;0;Waterford : Galway
+31;32;River;0;Cork : Galway
+32;34;River;0;Galway : Dublin
+40;57;River;0;Saint-Nazaire : Nantes
+44;45;River;0;Caen : Le Havre
+45;48;River;0;Le Havre : Evreux
+48;55;River;0;Evreux : Paris
+50;53;River;0;Amiens : Dieppe
+50;56;River;0;Amiens : Chateau Thierry
+52;114;River;0;Lille : Bruges
+54;55;River;0;Troyes : Paris
+54;56;River;0;Troyes : Chateau Thierry
+54;60;River;0;Troyes : Chartres
+54;66;River;0;Troyes : Orleans
+54;99;River;0;Troyes : Reims
+55;60;River;0;Paris : Chartres
+57;59;River;0;Nantes : Angers
+58;61;River;0;Le Mans : Tours
+58;65;River;0;Le Mans : Bourges
+59;62;River;0;Angers : Poitiers
+61;62;River;0;Tours : Poitiers
+62;73;River;0;Poitiers : Limoges
+63;65;River;0;Auxerre : Bourges
+63;72;River;0;Auxerre : Chateauroux
+63;74;River;0;Auxerre : Vichy
+63;95;River;0;Auxerre : Chaumont
+64;74;River;0;Le Creusot : Vichy
+64;88;River;0;Le Creusot : Bourg-en-Bresse
+65;66;River;0;Bourges : Orleans
+68;69;River;0;Bordeaux : La Rochelle
+68;70;River;0;Bordeaux : Angouleme
+68;75;River;0;Bordeaux : Perigueux
+71;78;River;0;Clermont-Ferrand : Saint-Etienne
+71;85;River;0;Clermont-Ferrand : Lyon
+74;85;River;0;Vichy : Lyon
+75;84;River;0;Perigueux : Agen
+77;84;River;0;Toulouse : Agen
+78;92;River;0;Saint-Etienne : Valence
+78;93;River;0;Saint-Etienne : Avignon
+80;83;River;0;Perpignan : Pau
+80;84;River;0;Perpignan : Agen
+82;89;River;0;Montpellier : Marseille
+82;93;River;0;Montpellier : Avignon
+85;88;River;0;Lyon : Bourg-en-Bresse
+86;93;River;0;Toulon : Avignon
+87;90;Impassable;0;Nice : Grenoble
+88;91;River;0;Bourg-en-Bresse : Chambery
+88;92;River;0;Bourg-en-Bresse : Valence
+89;93;River;0;Marseille : Avignon
+91;98;River;0;Chambery : Pontarlier
+96;100;River;0;Longwy : Verdun
+96;102;River;0;Longwy : Sedan
+96;104;River;0;Longwy : Metz
+102;111;River;0;Sedan : Arlon
+104;109;River;0;Metz : Luxembourg
+105;132;River;0;Colmar : Freiburg
+107;132;River;0;Strasbourg : Freiburg
+108;113;River;0;Liege : Namur
+109;127;River;0;Luxembourg : Saarbrucken
+109;128;River;0;Luxembourg : Trier
+111;112;River;0;Arlon : Mons
+111;113;River;0;Arlon : Namur
+114;115;River;0;Bruges : Antwerpen
+114;116;River;0;Bruges : Brussels
+115;123;River;0;Antwerpen : Middelburg
+117;121;River;0;Hasselt : Maastricht
+118;120;River;0;Eindhoven : Nijmegen
+118;121;River;0;Eindhoven : Maastricht
+118;123;River;0;Eindhoven : Middelburg
+119;120;River;0;Arnhem : Nijmegen
+119;147;River;0;Arnhem : Wilhelmshaven
+120;125;River;0;Nijmegen : Rotterdam
+124;147;River;0;Groningen : Wilhelmshaven
+128;129;River;0;Trier : Koblenz
+128;138;River;0;Trier : Frankfurt/Main
+128;143;River;0;Trier : Neuwied
+129;143;River;0;Koblenz : Neuwied
+130;136;River;0;Mainz : Karlsruhe
+130;138;River;0;Mainz : Frankfurt/Main
+130;139;River;0;Mainz : Darmstadt
+131;141;River;0;Cologne : Muenster
+131;142;River;0;Cologne : Duesseldorf
+132;389;River;0;Freiburg : Zurich
+133;134;River;0;Konstanz : Stuttgart
+133;135;River;0;Konstanz : Tubingen
+133;389;Impassable;0;Konstanz : Zurich
+134;180;River;0;Stuttgart : Wurzburg
+136;139;River;0;Karlsruhe : Darmstadt
+136;180;River;0;Karlsruhe : Wurzburg
+137;146;River;0;Kassel : Hannover
+137;171;River;0;Kassel : Erfurt
+138;144;Impassable;0;Frankfurt/Main : Bielefeld
+140;171;River;0;Fulda : Erfurt
+144;146;River;0;Bielefeld : Hannover
+146;147;River;0;Hannover : Wilhelmshaven
+147;148;River;0;Wilhelmshaven : Bremen
+149;153;River;0;Luneburg : Rostock
+149;154;River;0;Luneburg : Hamburg
+149;156;River;0;Luneburg : Neuruppin
+150;152;River;0;Flensburg : Kiel
+156;157;River;0;Neuruppin : Potsdam
+156;163;River;0;Neuruppin : Berlin
+156;169;River;0;Neuruppin : Magdeburg
+157;169;River;0;Potsdam : Magdeburg
+157;170;River;0;Potsdam : Leipzig
+158;159;River;0;Stettin : Meseritz
+158;160;River;0;Stettin : Frankfurt/Oder
+158;162;River;0;Stettin : Stralsund
+159;160;River;0;Meseritz : Frankfurt/Oder
+159;165;River;0;Meseritz : Liegnitz
+160;163;River;0;Frankfurt/Oder : Berlin
+164;165;River;0;Oppeln : Liegnitz
+164;166;River;0;Oppeln : Waldenburg
+164;167;River;0;Oppeln : Breslau
+165;172;River;0;Liegnitz : Cottbus
+166;168;River;0;Waldenburg : Gleiwitz
+166;221;Impassable;0;Waldenburg : Katowice
+169;170;River;0;Magdeburg : Leipzig
+170;171;River;0;Leipzig : Erfurt
+170;172;River;0;Leipzig : Cottbus
+171;180;River;0;Erfurt : Wurzburg
+172;173;River;0;Cottbus : Dresden
+175;176;River;0;Regensburg : Landshut
+177;178;River;0;Nuremberg : Augsburg
+177;179;River;0;Nuremberg : Munich
+177;180;River;0;Nuremberg : Wurzburg
+181;183;River;0;Danzig : Elbing
+182;261;River;0;Tilsit : Klaipeda
+183;226;River;0;Elbing : Gdynia
+184;261;Sea;2719;Koenigsberg : Klaipeda
+186;187;River;0;Freistadt : Linz
+186;193;River;0;Freistadt : Sankt Poelten
+187;193;River;0;Linz : Sankt Poelten
+188;208;River;0;Eisenstadt : Bratislava
+188;346;River;0;Eisenstadt : Maribor
+189;389;River;0;Innsbruck : Zurich
+190;346;River;0;Graz : Maribor
+191;346;River;0;Klagenfurt : Maribor
+193;194;River;0;Sankt Poelten : Hollabrunn
+194;195;River;0;Hollabrunn : Vienna
+194;208;River;0;Hollabrunn : Bratislava
+195;208;River;0;Vienna : Bratislava
+196;208;River;0;Brno : Bratislava
+196;212;River;0;Brno : Zilina
+199;200;River;0;Plzen : Liberec
+199;202;River;0;Plzen : Ceske Budejovice
+199;207;River;0;Plzen : Prague
+200;205;River;0;Liberec : Karlovy Vary
+209;281;River;0;Kosice : Debrecen
+210;278;River;0;Komarno : Szekesfehervar
+210;279;River;0;Komarno : Gyor
+213;296;River;0;Chust : Oradea
+215;281;River;0;Uzhorod : Debrecen
+215;296;River;0;Uzhorod : Oradea
+217;218;Sea;2694;Aalborg : Frederikshavn
+219;220;Sea;290;Odense : Arhus
+219;294;Sea;290;Odense : Copenhagen
+221;235;River;0;Katowice : Krakow
+222;225;River;0;Torun : Bydgoszcz
+222;226;River;0;Torun : Gdynia
+223;227;River;0;Lodz : Czestochowa
+223;234;River;0;Lodz : Radom
+224;225;River;0;Poznan : Bydgoszcz
+224;227;River;0;Poznan : Czestochowa
+227;231;River;0;Czestochowa : Wloclawek
+227;233;River;0;Czestochowa : Sosnowiec
+228;229;River;0;Siedlce : Ostroleka
+228;232;River;0;Siedlce : Warsaw
+228;234;River;0;Siedlce : Radom
+228;250;River;0;Siedlce : Lomza
+229;230;River;0;Ostroleka : Plock
+230;231;River;0;Plock : Wloclawek
+230;232;River;0;Plock : Warsaw
+232;234;River;0;Warsaw : Radom
+233;235;River;0;Sosnowiec : Krakow
+233;237;River;0;Sosnowiec : Tarnow
+234;237;River;0;Radom : Tarnow
+234;243;River;0;Radom : Lublin
+236;239;River;0;Nowy Sacz : Przemysl
+237;239;River;0;Tarnow : Przemysl
+237;243;River;0;Tarnow : Lublin
+238;240;River;0;Stanislawow : Tarnopol
+240;241;River;0;Tarnopol : Stryj
+240;300;River;0;Tarnopol : Cernauti
+240;302;River;0;Tarnopol : Hotin
+241;242;River;0;Stryj : Lwow
+245;246;River;0;Lutsk : Chelm
+246;247;River;0;Chelm : Brest-Litovsk
+246;250;River;0;Chelm : Lomza
+247;249;River;0;Brest-Litovsk : Sarny
+248;249;River;0;Pinsk : Sarny
+248;595;River;0;Pinsk : Mozyr
+250;254;River;0;Lomza : Bialystok
+251;255;River;0;Nowogrodek : Grodno
+251;256;River;0;Nowogrodek : Vilejka
+252;255;River;0;Suwalki : Grodno
+253;255;River;0;Wolkowysk : Grodno
+255;263;River;0;Grodno : Alytus
+257;266;River;0;Glebokie : Daugavpils
+257;593;River;0;Glebokie : Polotsk
+258;263;River;0;Wilno : Alytus
+259;263;River;0;Siauliai : Alytus
+262;263;River;0;Kaunas : Alytus
+264;267;River;0;Riga : Jekabpils
+264;269;River;0;Riga : Jelgava
+265;267;River;0;Valmiera : Jekabpils
+266;267;River;0;Daugavpils : Jekabpils
+271;275;Sea;2724;Parnu : Kuressaare
+272;273;River;0;Tartu : Voru
+274;550;River;0;Narva : Kingisepp
+274;552;River;0;Narva : Gdov
+276;345;River;0;Zalaegerszeg : Bjelovar
+276;346;River;0;Zalaegerszeg : Maribor
+277;280;River;0;Pecs : Szeged
+277;284;River;0;Pecs : Budapest
+277;344;River;0;Pecs : Osijek
+277;345;River;0;Pecs : Bjelovar
+278;282;River;0;Szekesfehervar : Miskolc
+278;284;River;0;Szekesfehervar : Budapest
+280;281;River;0;Szeged : Debrecen
+280;283;River;0;Szeged : Bekescsaba
+281;282;River;0;Debrecen : Miskolc
+281;283;River;0;Debrecen : Bekescsaba
+283;285;River;0;Bekescsaba : Timisoara
+283;336;Impassable;0;Bekescsaba : Petrovgrad
+285;286;River;0;Timisoara : Arad
+286;289;River;0;Arad : Alba Iulia
+286;295;River;0;Arad : Resita
+286;296;River;0;Arad : Oradea
+287;289;River;0;Turda : Alba Iulia
+287;291;River;0;Turda : Sibiu
+291;292;River;0;Sibiu : Bistrita
+291;309;River;0;Sibiu : Braila
+291;311;River;0;Sibiu : Ploesti
+292;293;River;0;Bistrita : Miercurea Ciuc
+293;299;River;0;Miercurea Ciuc : Bacau
+294;2152;Sea;290;Copenhagen : Malmo
+295;339;River;0;Resita : Bor
+297;299;River;0;Iasi : Bacau
+297;301;River;0;Iasi : Suceava
+297;303;River;0;Iasi : Balti
+297;305;River;0;Iasi : Cahul
+298;299;River;0;Galati : Bacau
+298;305;River;0;Galati : Cahul
+298;309;River;0;Galati : Braila
+298;310;River;0;Galati : Constantza
+302;618;River;0;Hotin : Kamenets-Podolsky
+303;619;River;0;Balti : Mogilev-Podolsky
+303;621;River;0;Balti : Tiraspol
+304;621;River;0;Chisinau : Tiraspol
+304;626;River;0;Chisinau : Odessa
+306;310;River;0;Ismail : Constantza
+306;313;River;0;Ismail : Sulina
+306;626;River;0;Ismail : Odessa
+307;314;River;0;Dobrich : Calarasi
+307;316;River;0;Dobrich : Bucharest
+308;315;River;0;Giurgiu : Craiova
+308;316;River;0;Giurgiu : Bucharest
+308;317;River;0;Giurgiu : Ruse
+308;323;River;0;Giurgiu : Pleven
+309;310;River;0;Braila : Constantza
+309;314;River;0;Braila : Calarasi
+310;313;River;0;Constantza : Sulina
+310;314;River;0;Constantza : Calarasi
+311;314;River;0;Ploesti : Calarasi
+311;315;River;0;Ploesti : Craiova
+312;318;River;0;Turnu Severin : Vidin
+312;339;River;0;Turnu Severin : Bor
+315;318;River;0;Craiova : Vidin
+315;323;River;0;Craiova : Pleven
+318;322;River;0;Vidin : Gabrovo
+318;323;River;0;Vidin : Pleven
+319;321;River;0;Haskovo : Sofia
+319;324;River;0;Haskovo : Plovdiv
+320;328;River;0;Gorna Dzhumaya : Kumanovo
+320;365;River;0;Gorna Dzhumaya : Thessaloniki
+324;370;River;0;Plovdiv : Alexandroupoli
+327;330;River;0;Krusevac : Nis
+327;331;River;0;Krusevac : Pirot
+327;335;River;0;Krusevac : Prijepolje
+327;338;River;0;Krusevac : Belgrade
+327;342;River;0;Krusevac : Uzice
+328;329;Impassable;0;Kumanovo : Pristina
+328;333;River;0;Kumanovo : Skopje
+329;331;River;0;Pristina : Pirot
+329;335;River;0;Pristina : Prijepolje
+333;360;Impassable;0;Skopje : Korce
+336;337;River;0;Petrovgrad : Ruma
+336;338;River;0;Petrovgrad : Belgrade
+336;339;River;0;Petrovgrad : Bor
+336;341;River;0;Petrovgrad : Novi Sad
+337;338;River;0;Ruma : Belgrade
+337;340;River;0;Ruma : Sabac
+337;341;River;0;Ruma : Novi Sad
+337;354;River;0;Ruma : Tuzla
+338;339;River;0;Belgrade : Bor
+338;340;River;0;Belgrade : Sabac
+340;354;River;0;Sabac : Tuzla
+341;344;River;0;Novi Sad : Osijek
+342;354;River;0;Uzice : Tuzla
+342;355;River;0;Uzice : Sarajevo
+344;353;River;0;Osijek : Banja Luka
+344;354;River;0;Osijek : Tuzla
+345;352;River;0;Bjelovar : Zagreb
+345;353;River;0;Bjelovar : Banja Luka
+346;349;River;0;Maribor : Ljubljana
+347;351;River;0;Karlovac : Knin
+347;357;River;0;Karlovac : Bihac
+347;358;River;0;Karlovac : Travnik
+348;473;River;0;Gibraltar : Cadiz
+352;353;River;0;Zagreb : Banja Luka
+352;357;River;0;Zagreb : Bihac
+353;354;River;0;Banja Luka : Tuzla
+354;358;River;0;Tuzla : Travnik
+360;371;Sea;2739;Korce : Kerkyra
+364;365;River;0;Kavala : Thessaloniki
+365;366;River;0;Thessaloniki : Kozani
+368;374;River;0;Larissa : Chalcis
+370;384;River;0;Alexandroupoli : Gallipoli
+370;385;River;0;Alexandroupoli : Adrianople
+371;376;Sea;2739;Kerkyra : Agrinion
+373;377;River;0;Corinth : Athens
+374;381;Impassable;0;Chalcis : Ermoupoli
+378;1079;Sea;2743;Kalymnos : Denizli
+379;380;Impassable;0;Rodos : Sitia
+383;1077;Sea;2742;Mytilene : Smyrna
+384;1078;Sea;397;Gallipoli : Bursa
+386;711;River;0;Kars : Yerevan
+389;390;River;0;Zurich : Lugano
+393;400;River;0;Brescia : Venice
+393;407;River;0;Brescia : Milan
+393;408;River;0;Brescia : Parma
+395;407;River;0;Bergamo : Milan
+396;398;Impassable;0;Genoa : Turin
+398;399;River;0;Turin : Alessandria
+398;407;River;0;Turin : Milan
+399;407;River;0;Alessandria : Milan
+400;411;River;0;Venice : Bologna
+407;408;River;0;Milan : Parma
+409;1076;River;0;Istanbul : Izmit
+411;412;River;0;Bologna : Ancona
+420;426;River;0;Foggia : Bari
+423;424;River;0;Campobasso : Potenza
+423;426;River;0;Campobasso : Bari
+425;431;Sea;2184;Reggio Calabria : Messina
+436;438;River;0;Tarragona : Huesca
+436;442;River;0;Tarragona : Zaragoza
+436;461;River;0;Tarragona : Castellon de la Plana
+438;439;River;0;Huesca : Lerida
+438;442;River;0;Huesca : Zaragoza
+442;446;River;0;Zaragoza : Pamplona
+442;461;Impassable;0;Zaragoza : Castellon de la Plana
+443;451;River;0;Bilbao : Burgos
+443;456;River;0;Bilbao : Soria
+446;456;River;0;Pamplona : Soria
+447;448;River;0;Salamanca : Leon
+447;481;River;0;Salamanca : Porto
+448;452;River;0;Leon : Segovia
+450;453;River;0;Plasencia : Caceres
+450;457;River;0;Plasencia : Toledo
+451;452;River;0;Burgos : Segovia
+453;458;River;0;Caceres : Badajoz
+453;482;River;0;Caceres : Covilha
+454;460;River;0;Tarancon : Madrid
+457;458;River;0;Toledo : Badajoz
+457;460;River;0;Toledo : Madrid
+457;468;River;0;Toledo : Ciudad Real
+458;480;River;0;Badajoz : Evora
+467;470;River;0;Cordoba : Granada
+467;474;River;0;Cordoba : Sevilla
+472;474;River;0;Huelva : Sevilla
+472;478;River;0;Huelva : Beja
+476;477;River;0;Lisbon : Setubal
+477;482;River;0;Setubal : Covilha
+479;481;River;0;Coimbra : Porto
+480;482;River;0;Evora : Covilha
+483;484;River;0;Oslo : Fredrikstad
+484;486;River;0;Fredrikstad : Honefoss
+484;492;River;0;Fredrikstad : Lillehammer
+489;492;River;0;Hamar : Lillehammer
+494;495;River;2671;Bodo : Narvik
+498;499;River;0;Pavlodar : Ekibastuz
+498;505;River;0;Pavlodar : Sar
+498;507;River;0;Pavlodar : Ust-Kamenogorsk
+498;1139;River;0;Pavlodar : Tara
+501;1115;River;0;Kokchetav : Kustanay
+502;503;River;0;Akmolinsk : Karaganda
+502;1116;River;0;Akmolinsk : Derzhavinsk
+504;506;River;0;Alma-Ata : Taldy-Kurgan
+505;506;River;0;Sar : Taldy-Kurgan
+505;507;River;0;Sar : Ust-Kamenogorsk
+511;2166;River;0;Enontekio : Lulea
+511;2167;River;0;Enontekio : Kiruna
+516;2166;River;0;Tornio : Lulea
+524;526;Sea;2727;Turku : Ahvenanmaa
+526;2159;Sea;2722;Ahvenanmaa : Stockholm
+539;556;River;0;Petrozavodsk : Vytegra
+539;557;River;0;Petrozavodsk : Tikhvin
+542;688;River;0;Arkhangelsk : Ukhta
+543;544;River;0;Totma : Kichmensky Gorodok
+543;548;River;0;Totma : Volodga
+544;545;River;0;Kichmensky Gorodok : Velsk
+544;688;River;0;Kichmensky Gorodok : Ukhta
+545;688;River;0;Velsk : Ukhta
+547;555;River;0;Kirillov : Cherepovets
+547;556;River;0;Kirillov : Vytegra
+548;554;River;0;Volodga : Kinry
+548;555;River;0;Volodga : Cherepovets
+550;553;River;0;Kingisepp : Leningrad
+551;553;River;0;Gatchina : Leningrad
+551;562;River;0;Gatchina : Kirishi
+553;557;Impassable;0;Leningrad : Tikhvin
+554;570;River;0;Kinry : Zagorsk
+554;676;River;0;Kinry : Rybinsk
+554;677;River;0;Kinry : Yaroslavl
+558;563;River;0;Rzhev : Torzhok
+558;568;River;0;Rzhev : Solnechnogorsk
+558;569;River;0;Rzhev : Tver
+558;577;River;0;Rzhev : Nelidovo
+560;562;River;0;Novgorod : Kirishi
+567;568;River;0;Serpukhov : Solnechnogorsk
+567;584;River;0;Serpukhov : Tula
+568;569;River;0;Solnechnogorsk : Tver
+569;570;River;0;Tver : Zagorsk
+570;572;River;0;Zagorsk : Moscow
+571;579;River;0;Orekhovo-Zuyevo : Ryazan
+571;678;River;0;Orekhovo-Zuyevo : Vladimir
+572;678;River;0;Moscow : Vladimir
+573;575;River;0;Velikiye Luki : Safonovo
+573;577;River;0;Velikiye Luki : Nelidovo
+573;589;River;0;Velikiye Luki : Smolensk
+574;575;River;0;Vyazma : Safonovo
+575;586;River;0;Safonovo : Roslavl
+576;584;River;0;Kaluga : Tula
+578;679;River;0;Sasovo : Murom
+579;583;River;0;Ryazan : Efremov
+579;679;River;0;Ryazan : Murom
+580;652;River;0;Yelets : Lipetsk
+580;654;River;0;Yelets : Voronezh
+581;582;River;0;Orel : Livny
+581;587;River;0;Orel : Klintsy
+581;588;River;0;Orel : Bryansk
+583;585;River;0;Efremov : Kozelsk
+586;588;River;0;Roslavl : Bryansk
+586;589;River;0;Roslavl : Smolensk
+587;588;River;0;Klintsy : Bryansk
+587;602;River;0;Klintsy : Zheleznogorsk
+590;593;River;0;Vitebsk : Polotsk
+590;600;River;0;Vitebsk : Mogilev
+591;599;River;0;Orsha : Minsk
+591;600;River;0;Orsha : Mogilev
+592;593;River;0;Borisov : Polotsk
+594;596;River;0;Bobruisk : Slutsk
+594;597;River;0;Bobruisk : Luban
+594;598;River;0;Bobruisk : Rechytsa
+594;599;River;0;Bobruisk : Minsk
+594;600;River;0;Bobruisk : Mogilev
+594;601;River;0;Bobruisk : Gomel
+595;597;River;0;Mozyr : Luban
+595;598;River;0;Mozyr : Rechytsa
+598;601;River;0;Rechytsa : Gomel
+598;607;River;0;Rechytsa : Chernigov
+598;609;River;0;Rechytsa : Korosten
+603;646;River;0;Belgorod : Ostrogozhsk
+605;607;River;0;Konotop : Chernigov
+607;608;River;0;Chernigov : Nezhin
+607;609;River;0;Chernigov : Korosten
+607;617;River;0;Chernigov : Kiev
+608;613;River;0;Nezhin : Cherkasy
+608;617;River;0;Nezhin : Kiev
+610;613;River;0;Kremenchug : Cherkasy
+610;628;River;0;Kremenchug : Kirovograd
+612;618;River;0;Vinnitsa : Kamenets-Podolsky
+612;619;River;0;Vinnitsa : Mogilev-Podolsky
+614;618;River;0;Proskurov : Kamenets-Podolsky
+615;619;River;0;Uman : Mogilev-Podolsky
+615;625;River;0;Uman : Ochakov
+622;623;River;0;Nikolayev : Melitopol
+622;624;River;0;Nikolayev : Kherson
+622;625;River;0;Nikolayev : Ochakov
+623;627;River;0;Melitopol : Krivoy Rog
+624;639;River;0;Kherson : Dzhankoy
+627;629;River;0;Krivoy Rog : Poltava
+627;630;River;0;Krivoy Rog : Zaporozhye
+627;632;River;0;Krivoy Rog : Dnepropetrovsk
+628;629;River;0;Kirovograd : Poltava
+633;634;River;0;Kupyansk : Voroshilovgrad
+633;635;River;0;Kupyansk : Bakhmut
+633;636;River;0;Kupyansk : Kharkov
+634;649;River;0;Voroshilovgrad : Kamensk-Shakhtinsky
+640;694;Sea;2733;Kerch : Novorossiysk
+642;655;River;0;Surovikino : Uryupinsk
+642;659;River;0;Surovikino : Kalach-on-Don
+642;662;River;0;Surovikino : Kotelnikovo
+643;644;River;0;Morozovsk : Rostov-on-Don
+644;645;River;0;Rostov-on-Don : Konstantinovsk
+644;649;River;0;Rostov-on-Don : Kamensk-Shakhtinsky
+644;692;River;0;Rostov-on-Don : Salsk
+644;697;River;0;Rostov-on-Don : Volgodonsk
+645;697;River;0;Konstantinovsk : Volgodonsk
+647;654;River;0;Stary Oskol : Voronezh
+648;653;River;0;Rossosh : Pavlovsk
+648;654;River;0;Rossosh : Voronezh
+649;653;River;0;Kamensk-Shakhtinsky : Pavlovsk
+649;655;River;0;Kamensk-Shakhtinsky : Uryupinsk
+656;664;River;0;Ulyanovsk : Naberezhnye Chelny
+656;667;River;0;Ulyanovsk : Tolyatti
+660;661;River;0;Volzhsky : Kamyshin
+660;662;River;0;Volzhsky : Kotelnikovo
+660;663;River;0;Volzhsky : Stalingrad
+660;669;River;0;Volzhsky : Saratov
+664;672;River;0;Naberezhnye Chelny : Kazan
+664;674;River;0;Naberezhnye Chelny : Zelenodolsk
+664;687;River;0;Naberezhnye Chelny : Perm
+664;1131;River;0;Naberezhnye Chelny : Ufa
+665;666;River;0;Volsk : Balakowo
+665;667;River;0;Volsk : Tolyatti
+666;669;River;0;Balakowo : Saratov
+667;668;River;0;Tolyatti : Kuybyshev
+671;687;River;0;Izhevsk : Perm
+671;1130;River;0;Izhevsk : Berezniki
+672;674;River;0;Kazan : Zelenodolsk
+672;687;River;0;Kazan : Perm
+673;675;River;0;Yoshkar-Ola : Cheboksary
+676;677;River;0;Rybinsk : Yaroslavl
+677;681;River;0;Yaroslavl : Kostroma
+678;679;River;0;Vladimir : Murom
+679;682;River;0;Murom : Ivanovo
+679;683;River;0;Murom : Arzamas
+680;682;River;0;Gorky : Ivanovo
+680;683;River;0;Gorky : Arzamas
+681;682;River;0;Kostroma : Ivanovo
+682;683;River;0;Ivanovo : Arzamas
+685;688;River;0;Syktyvkar : Ukhta
+686;689;River;0;Kudymkar : Solikamsk
+686;1130;River;0;Kudymkar : Berezniki
+688;1129;Impassable;0;Ukhta : Vorkuta
+690;1131;River;0;Sterlitamak : Ufa
+691;693;River;0;Krasnodar : Maykop
+691;694;River;0;Krasnodar : Novorossiysk
+691;695;River;0;Krasnodar : Sochi
+692;697;River;0;Salsk : Volgodonsk
+692;699;River;0;Salsk : Elista
+698;699;River;0;Voroshilovsk : Elista
+698;702;River;0;Voroshilovsk : Grozny
+698;703;River;0;Voroshilovsk : Vladikavkaz
+699;706;River;0;Elista : Astrakhan
+700;702;River;0;Khasavyurt : Grozny
+700;704;River;0;Khasavyurt : Makhachkala
+711;1082;River;0;Yerevan : Rezaiye
+711;1083;River;0;Yerevan : Tabriz
+712;1083;River;0;Stepanakert : Tabriz
+713;1081;River;0;Baku : Rast
+713;1083;River;0;Baku : Tabriz
+714;1082;River;0;Nakhchivan : Rezaiye
+714;1083;River;0;Nakhchivan : Tabriz
+716;724;River;0;Nador : Oujda
+718;722;River;0;Casablanca : Marrakech
+721;724;River;0;Fes : Oujda
+723;724;River;0;Khenifra : Oujda
+723;725;River;0;Khenifra : Ouarzazate
+723;726;River;0;Khenifra : Er Rachidia
+725;739;Impassable;0;Ouarzazate : Colomb Bechar
+727;728;River;0;Algiers : Oran
+727;730;River;0;Algiers : Orleansville
+730;732;River;0;Orleansville : Djelfa
+737;741;Impassable;0;Touggourt : Tataouine
+737;753;Impassable;0;Touggourt : Ghadamis
+737;776;Impassable;0;Touggourt : Sabha
+738;776;Impassable;0;Tamanrasset : Sabha
+739;984;Impassable;0;Colomb Bechar : Gao
+739;985;Impassable;0;Colomb Bechar : Tombouctou
+739;987;Impassable;0;Colomb Bechar : El Aiun
+739;989;Impassable;0;Colomb Bechar : Villa Bens
+740;741;Impassable;0;Kasserine : Tataouine
+746;749;River;0;El Kef : Beja
+747;748;River;0;Tunis : Bizerte
+747;749;River;0;Tunis : Beja
+751;758;Impassable;0;Gharyan : Bu Nujaym
+760;764;Impassable;0;Msus : Al Bayda
+766;775;Impassable;0;Al Mukhayla : Wadi al Hamim
+769;775;Impassable;0;Bir Hakeim : Wadi al Hamim
+773;777;Impassable;0;Jalu : Ayn Ath Talab
+774;801;Impassable;0;Al Jawf : El Farafra
+774;802;Impassable;0;Al Jawf : El Qasr
+774;804;Impassable;0;Al Jawf : Dunqula
+774;922;Impassable;0;Al Jawf : Faya
+775;777;Impassable;0;Wadi al Hamim : Ayn Ath Talab
+776;922;Impassable;0;Sabha : Faya
+776;946;Impassable;0;Sabha : Agadez
+777;779;Impassable;0;Ayn Ath Talab : Siwah
+777;801;Impassable;0;Ayn Ath Talab : El Farafra
+778;799;Impassable;0;Bir Fuad : Moghara
+779;801;Impassable;0;Siwah : El Farafra
+784;799;Impassable;0;Fuqa : Moghara
+785;799;Impassable;0;Matruh : Moghara
+786;790;River;0;Dimyat : Tanta
+787;788;River;0;Cairo : Giza
+787;790;River;0;Cairo : Tanta
+788;790;River;0;Giza : Tanta
+789;790;River;0;Alexandria : Tanta
+791;1006;Impassable;0;Port Said : Al Qantarah
+792;796;River;0;El Faiyum : El Ghardaqah
+792;798;Impassable;0;El Faiyum : El Kharga
+793;796;River;0;Miniah : El Ghardaqah
+794;795;River;0;Asyut : Aswan
+794;796;River;0;Asyut : El Ghardaqah
+794;797;River;0;Asyut : Luxor
+795;798;River;0;Aswan : El Kharga
+798;801;Impassable;0;El Kharga : El Farafra
+798;803;River;0;El Kharga : Wadi Halfa
+799;801;Impassable;0;Moghara : El Farafra
+801;802;Impassable;0;El Farafra : El Qasr
+802;804;Impassable;0;El Qasr : Dunqula
+803;804;River;0;Wadi Halfa : Dunqula
+803;805;River;0;Wadi Halfa : Omdurman
+804;922;Impassable;0;Dunqula : Faya
+805;810;River;0;Omdurman : Khartoum
+805;811;River;0;Omdurman : El Qadarif
+805;814;River;0;Omdurman : Kassala
+806;807;Impassable;0;El Obeid : Juba
+806;810;River;0;El Obeid : Khartoum
+806;812;River;0;El Obeid : Malakal
+807;809;River;0;Juba : Waw
+807;812;River;0;Juba : Malakal
+807;829;River;0;Juba : Jimma
+809;927;Impassable;0;Waw : Ouadda
+810;811;River;0;Khartoum : El Qadarif
+811;812;River;0;El Qadarif : Malakal
+811;814;River;0;El Qadarif : Kassala
+814;823;River;0;Kassala : Gonder
+817;823;River;0;Asmara : Gonder
+820;821;River;0;Dessie : Adigrat
+820;822;River;0;Dessie : Debre Marqos
+821;823;River;0;Adigrat : Gonder
+822;824;River;0;Debre Marqos : Asosa
+822;825;River;0;Debre Marqos : Addis Adeba
+826;827;River;0;Goba : Gode
+826;828;River;0;Goba : Harer
+826;830;River;0;Goba : Arba Minch
+835;837;River;0;Galkacyo : Baidoa
+836;837;River;0;Mogadishu : Baidoa
+836;838;River;0;Mogadishu : Kismayo
+837;838;River;0;Baidoa : Kismayo
+839;841;River;0;Garissa : Nairobi
+839;842;River;0;Garissa : Mombasa
+844;845;River;0;Kampala : Gulu
+844;903;Impassable;0;Kampala : Aba
+844;904;Impassable;0;Kampala : Stanleyville
+849;850;River;0;Mbeya : Dar es Salaam
+854;857;River;0;Nampula : Beira
+855;856;River;0;Lourenco Marques : Maxixe
+855;866;River;0;Lourenco Marques : Bulawayo
+855;872;Impassable;0;Lourenco Marques : Durban
+856;857;River;0;Maxixe : Beira
+856;867;River;0;Maxixe : Salisbury
+857;858;River;0;Beira : Ulongue
+858;863;River;0;Ulongue : Lusaka
+859;860;River;0;Livingstone : Kalabo
+859;863;River;0;Livingstone : Lusaka
+859;867;River;0;Livingstone : Salisbury
+859;868;River;0;Livingstone : Wankie
+859;885;River;0;Livingstone : Katima Mulilo
+860;862;River;0;Kalabo : Chingola
+861;865;River;0;Kasama : Chipata
+861;898;River;0;Kasama : Elisabethville
+862;863;River;0;Chingola : Lusaka
+862;887;Impassable;0;Chingola : Luena
+863;865;River;0;Lusaka : Chipata
+863;867;River;0;Lusaka : Salisbury
+866;867;River;0;Bulawayo : Salisbury
+866;873;River;0;Bulawayo : Pretoria
+869;873;River;0;Francistown : Pretoria
+869;876;River;0;Francistown : Johannesburg
+872;874;River;0;Durban : Maseru
+874;881;River;0;Maseru : Port Elizabeth
+875;879;River;0;Bloemfontein : De Aar
+875;881;River;0;Bloemfontein : Port Elizabeth
+878;879;River;0;Kimberley : De Aar
+879;883;River;0;De Aar : Luderitz
+885;886;River;0;Katima Mulilo : Tsumeb
+886;891;River;0;Tsumeb : Menongue
+888;891;River;0;Lubango : Menongue
+890;895;River;0;Henrique de Carvalho : Luanda
+890;897;River;0;Henrique de Carvalho : Kolwezi
+890;902;River;0;Henrique de Carvalho : Luluabourg
+892;895;River;0;Lobito : Luanda
+894;895;River;0;Matadi : Luanda
+894;899;River;0;Matadi : Leopoldville
+895;901;River;0;Luanda : Kikwit
+897;898;River;0;Kolwezi : Elisabethville
+898;902;River;0;Elisabethville : Luluabourg
+899;901;River;0;Leopoldville : Kikwit
+899;906;River;0;Leopoldville : Coquilhatville
+899;907;River;0;Leopoldville : Brazzaville
+901;902;River;0;Kikwit : Luluabourg
+901;906;River;0;Kikwit : Coquilhatville
+902;905;River;0;Luluabourg : Costermansville
+903;904;River;0;Aba : Stanleyville
+903;923;River;0;Aba : Bambari
+904;906;River;0;Stanleyville : Coquilhatville
+904;908;River;0;Stanleyville : Ouesso
+904;919;Impassable;0;Stanleyville : Bouar
+904;923;River;0;Stanleyville : Bambari
+904;926;River;0;Stanleyville : Bangui
+905;906;Impassable;0;Costermansville : Coquilhatville
+906;907;River;0;Coquilhatville : Brazzaville
+906;908;River;0;Coquilhatville : Ouesso
+909;911;River;0;Yaounde : Douala
+910;911;Impassable;0;Bertoua : Douala
+910;928;River;0;Bertoua : N'Gaoundere
+914;918;River;0;Franceville : Port Gentil
+915;918;River;0;Libreville : Port Gentil
+920;924;River;0;Fort Lamy : Moundou
+920;925;River;0;Fort Lamy : Maroua
+920;927;River;0;Fort Lamy : Ouadda
+924;927;Impassable;0;Moundou : Ouadda
+925;928;River;0;Maroua : N'Gaoundere
+930;935;River;0;Port Harcourt : Benin City
+931;934;River;0;Katsina-Ala : Oshogbo
+931;941;River;0;Katsina-Ala : Abuja
+932;937;River;0;Ibadan : Sokoto
+932;939;River;0;Ibadan : Kaduna
+932;944;River;0;Ibadan : Niamey
+934;939;River;0;Oshogbo : Kaduna
+934;941;Impassable;0;Oshogbo : Abuja
+936;938;River;0;Yola : Maiduguri
+936;941;River;0;Yola : Abuja
+938;940;River;0;Maiduguri : Kano
+938;943;River;0;Maiduguri : Zinder
+942;944;River;0;Say : Niamey
+942;974;Impassable;0;Say : Mopti
+944;949;River;0;Niamey : Natitingou
+945;957;River;0;Tenkodogo : Ouagadougou
+945;958;River;0;Tenkodogo : Tougan
+946;984;Impassable;0;Agadez : Gao
+952;953;River;0;Tamale : Wa
+952;954;River;0;Tamale : Kumasi
+952;955;River;0;Tamale : Ho
+953;954;River;0;Wa : Kumasi
+953;959;River;0;Wa : Bobo-Dioulasso
+953;961;River;0;Wa : Bouake
+954;955;River;0;Kumasi : Ho
+955;956;River;0;Ho : Accra
+957;959;River;0;Ouagadougou : Bobo-Dioulasso
+958;959;River;0;Tougan : Bobo-Dioulasso
+960;968;River;0;Yamoussoukro : Korhogo
+960;970;River;0;Yamoussoukro : San Pedro
+961;968;River;0;Bouake : Korhogo
+962;970;River;0;Abidjan : San Pedro
+964;965;Impassable;0;Freetown : Labe
+965;967;River;0;Labe : Kankan
+968;973;Impassable;0;Korhogo : Sikasso
+971;975;River;0;Nioro du Sahel : Kayes
+972;973;River;0;Segou : Sikasso
+972;974;River;0;Segou : Mopti
+972;976;River;0;Segou : Bamako
+974;976;Impassable;0;Mopti : Bamako
+974;984;River;0;Mopti : Gao
+974;985;River;0;Mopti : Tombouctou
+975;976;River;0;Kayes : Bamako
+975;977;River;0;Kayes : Tambacounda
+975;982;River;0;Kayes : Kiffa
+975;983;Impassable;0;Kayes : Saint-Louis
+977;979;River;0;Tambacounda : Banjul
+977;980;River;0;Tambacounda : Ziguinchor
+978;979;River;0;Dakar : Banjul
+981;983;River;0;Nouakchott : Saint-Louis
+982;983;River;0;Kiffa : Saint-Louis
+1004;1005;Impassable;0;El Arish : Sharm el Sheikh
+1010;1026;River;0;Eilat : Al Kerak
+1013;1020;River;0;Akko : Golan
+1013;1023;River;0;Akko : Irbid
+1014;1017;River;0;Deir ez Zor : Hims
+1014;1021;River;0;Deir ez Zor : Aleppo
+1014;1056;River;0;Deir ez Zor : Gaziantep
+1015;1027;River;0;El Qamisli : Arbil
+1015;1062;River;0;El Qamisli : Hakkari
+1017;1033;River;0;Hims : El Hillah
+1023;1172;River;0;Irbid : Jerusalem
+1026;1172;River;0;Al Kerak : Jerusalem
+1027;1029;River;0;Arbil : Mosul
+1027;1033;River;0;Arbil : El Hillah
+1027;1034;River;0;Arbil : Baghdad
+1027;1036;River;0;Arbil : Kirkuk
+1028;1032;River;0;Al Amarah : Basrah
+1028;1035;River;0;Al Amarah : Kut
+1028;1037;River;0;Al Amarah : An Nasiriyyah
+1030;1033;River;0;Karbala : El Hillah
+1030;1037;River;0;Karbala : An Nasiriyyah
+1031;1037;River;0;An Najaf : An Nasiriyyah
+1032;1037;River;0;Basrah : An Nasiriyyah
+1032;1089;River;0;Basrah : Ahvaz
+1033;1034;River;0;El Hillah : Baghdad
+1033;1035;River;0;El Hillah : Kut
+1034;1035;River;0;Baghdad : Kut
+1035;1036;River;0;Kut : Kirkuk
+1035;1037;River;0;Kut : An Nasiriyyah
+1047;1052;Impassable;0;El Hofuf : Masqat
+1051;1052;Impassable;0;El Mukalla : Masqat
+1056;1060;River;0;Gaziantep : Diyarbakir
+1059;1064;River;0;Sivas : Elazig
+1059;1072;River;0;Sivas : Kirikkale
+1060;1061;River;0;Diyarbakir : Malatya
+1060;1062;River;0;Diyarbakir : Hakkari
+1061;1064;River;0;Malatya : Elazig
+1063;1067;River;0;Erzurum : Trabzon
+1064;1066;River;0;Elazig : Samsun
+1064;1067;River;0;Elazig : Trabzon
+1065;1066;River;0;Karabuk : Samsun
+1065;1072;River;0;Karabuk : Kirikkale
+1068;1071;River;0;Zonguldak : Eskisehir
+1068;1076;River;0;Zonguldak : Izmit
+1068;1078;River;0;Zonguldak : Bursa
+1070;1162;River;0;Kachug : Irkutsk
+1070;1163;River;0;Kachug : Bodaybo
+1070;1166;River;0;Kachug : Cheremkhovo
+1071;1075;River;0;Eskisehir : Ankara
+1072;1073;River;0;Kirikkale : Kayseri
+1072;1074;River;0;Kirikkale : Konya
+1072;1075;River;0;Kirikkale : Ankara
+1097;1100;River;0;Ashkhabad : Bukhara
+1097;1102;River;0;Ashkhabad : Nukus
+1098;1099;River;0;Merv : Samarkand
+1098;1100;River;0;Merv : Bukhara
+1099;1103;River;0;Samarkand : Tashkent
+1099;1109;River;0;Samarkand : Chimkent
+1099;2168;River;0;Samarkand : Kondoz
+1101;1102;River;0;Zheleznodorozhny : Nukus
+1103;1105;River;0;Tashkent : Dushanbe
+1104;1279;Impassable;0;Khorugh : Kashgar
+1104;2170;River;0;Khorugh : Jalalabad
+1104;2173;River;0;Khorugh : Wakhan
+1105;2168;River;0;Dushanbe : Kondoz
+1105;2170;River;0;Dushanbe : Jalalabad
+1109;1112;River;0;Chimkent : Novokazalinsk
+1110;1112;River;0;Kzyl-Orda : Novokazalinsk
+1113;1114;River;0;Uralsk : Aktyubinsk
+1113;1118;River;0;Uralsk : Fort Alexandrovsky
+1114;1134;River;0;Aktyubinsk : Orenburg
+1120;1209;Impassable;0;Choibalsan : Wulanhaote
+1121;1277;Impassable;0;Bayankhongor : Qumul
+1122;1240;Impassable;0;Arvaikheer : Sili-yin Qota
+1128;1129;Impassable;0;Nizhny Tagil : Vorkuta
+1129;1153;Impassable;0;Vorkuta : Uray
+1133;1134;River;0;Orsk : Orenburg
+1135;1136;River;0;Tobolsk : Tyumen
+1135;1139;River;0;Tobolsk : Tara
+1135;1153;Impassable;0;Tobolsk : Uray
+1136;1139;River;0;Tyumen : Tara
+1138;1139;River;0;Omsk : Tara
+1140;1142;River;0;Barnaul : Novosibirsk
+1140;1143;River;0;Barnaul : Biysk
+1141;1142;River;0;Barabinsk : Novosibirsk
+1142;1149;River;0;Novosibirsk : Asino
+1147;1158;River;0;Abakan : Minusinsk
+1148;1149;River;0;Tomsk : Asino
+1148;1155;Impassable;0;Tomsk : Norilsk
+1150;1153;Impassable;0;Ostyako-Vogulsk : Uray
+1150;1154;River;0;Ostyako-Vogulsk : Surgut
+1152;1153;Impassable;0;Salekhard : Uray
+1152;1155;Impassable;0;Salekhard : Norilsk
+1153;1154;Impassable;0;Uray : Surgut
+1155;1156;Impassable;0;Norilsk : Krasnoyarsk
+1155;1157;Impassable;0;Norilsk : Kansk
+1155;1165;Impassable;0;Norilsk : Bratsk
+1155;1177;Impassable;0;Norilsk : Nyurba
+1156;1157;River;0;Krasnoyarsk : Kansk
+1156;1158;River;0;Krasnoyarsk : Minusinsk
+1162;1167;River;0;Irkutsk : Ulan-Ude
+1163;1164;River;0;Bodaybo : Ust-Kut
+1163;1179;River;0;Bodaybo : Yakutsk
+1164;1165;River;0;Ust-Kut : Bratsk
+1164;1166;River;0;Ust-Kut : Cheremkhovo
+1168;1200;River;0;Borzya : Huma
+1170;1171;River;0;Never : Ekimchan
+1170;1200;River;0;Never : Huma
+1171;1176;River;0;Ekimchan : Blagoveshchensk
+1171;1178;River;0;Ekimchan : Nezametny
+1174;1176;River;0;Kuybyshevka-Vostochnaya : Blagoveshchensk
+1174;1197;River;0;Kuybyshevka-Vostochnaya : Hegang
+1174;1201;River;0;Kuybyshevka-Vostochnaya : Heihe
+1175;1190;River;0;Birobidzhan : Khabarovsk
+1175;1197;River;0;Birobidzhan : Hegang
+1175;1202;River;0;Birobidzhan : Jiamusi
+1176;1200;River;0;Blagoveshchensk : Huma
+1176;1201;River;0;Blagoveshchensk : Heihe
+1177;1179;River;0;Nyurba : Yakutsk
+1177;1180;River;0;Nyurba : Verkhoyansk
+1178;1179;River;0;Nezametny : Yakutsk
+1178;1180;River;0;Nezametny : Verkhoyansk
+1179;1180;River;0;Yakutsk : Verkhoyansk
+1185;1187;River;0;Gavan : Sofiysk
+1185;1188;River;0;Gavan : Elban
+1185;1189;River;0;Gavan : Nikolayevsk-on-Amur
+1188;1190;River;0;Elban : Khabarovsk
+1190;1202;River;0;Khabarovsk : Jiamusi
+1190;1204;River;0;Khabarovsk : Jixi
+1191;1225;River;0;Vladivostok : Cheongjin
+1194;1204;River;0;Lesozavodsk : Jixi
+1196;1212;Impassable;0;Nikolsk-Ussuriysky : Yanji
+1197;1199;Impassable;0;Hegang : Harbin
+1197;1202;River;0;Hegang : Jiamusi
+1197;1205;River;0;Hegang : Mudanjiang
+1198;1200;River;0;Butehaqi : Huma
+1198;1201;River;0;Butehaqi : Heihe
+1198;1203;River;0;Butehaqi : Qiqihaer
+1199;1203;River;0;Harbin : Qiqihaer
+1199;1207;River;0;Harbin : Jilin
+1199;1208;River;0;Harbin : Changchun
+1199;1213;River;0;Harbin : Baicheng
+1200;1206;River;0;Huma : Haila'er
+1203;1213;River;0;Qiqihaer : Baicheng
+1207;1212;River;0;Jilin : Yanji
+1208;1218;River;0;Changchun : Panjin
+1210;1218;River;0;Tongliyao Hot : Panjin
+1211;1212;River;0;Hunjiang : Yanji
+1211;1226;River;0;Hunjiang : Ganggye
+1212;1225;River;0;Yanji : Cheongjin
+1212;1227;Impassable;0;Yanji : Hamheung
+1214;1215;River;0;Shenyang : Fushun
+1214;1217;River;0;Shenyang : Anshan
+1214;1218;River;0;Shenyang : Panjin
+1215;1224;River;0;Fushun : Sinuiju
+1215;1226;River;0;Fushun : Ganggye
+1217;1218;River;0;Anshan : Panjin
+1220;1224;River;0;Dandong : Sinuiju
+1222;1223;River;0;Sariwon : Wonsan
+1222;1228;River;0;Sariwon : Seoul
+1234;1603;Impassable;0;Buna : Mount Hagen
+1235;1237;River;0;Fuxin : Ulayanqada
+1238;1269;River;0;Huhehaote : Uqai
+1241;1243;River;0;Tianjin : Baoding
+1241;1244;River;0;Tianjin : Changzhou
+1242;1243;River;0;Shijazhuang : Baoding
+1242;1244;River;0;Shijazhuang : Changzhou
+1243;1244;Impassable;0;Baoding : Changzhou
+1243;1247;River;0;Baoding : Beijing
+1243;1249;River;0;Baoding : Yangquan
+1244;1323;River;0;Changzhou : Anyang
+1244;1329;River;0;Changzhou : Weifang
+1244;1330;River;0;Changzhou : Jinan
+1246;1250;River;0;Zhangyuan : Lingqiu
+1247;1250;River;0;Beijing : Lingqiu
+1249;1250;River;0;Yangquan : Lingqiu
+1250;1251;River;0;Lingqiu : Datong
+1251;1260;Impassable;0;Datong : Yulin
+1251;1269;Impassable;0;Datong : Uqai
+1252;1254;River;0;Taiyuan : Hequ
+1253;1254;River;0;Linfen : Hequ
+1253;1257;River;0;Linfen : Tongguan
+1253;1259;River;0;Linfen : Yan'an
+1253;1322;River;0;Linfen : Luoyang
+1254;1259;River;0;Hequ : Yan'an
+1254;1260;River;0;Hequ : Yulin
+1255;1256;River;0;Pingliang : Baoji
+1255;1257;River;0;Pingliang : Tongguan
+1255;1258;River;0;Pingliang : Xi'an
+1255;1259;River;0;Pingliang : Yan'an
+1255;1260;River;0;Pingliang : Yulin
+1256;1258;River;0;Baoji : Xi'an
+1256;1263;River;0;Baoji : Tianshoui
+1257;1259;River;0;Tongguan : Yan'an
+1258;1267;Impassable;0;Xi'an : Ankang
+1258;1314;River;0;Xi'an : Shiyan
+1261;1264;River;0;Longnan : Lanzhou
+1261;1267;River;0;Longnan : Ankang
+1262;1264;River;0;Linxia : Lanzhou
+1262;1284;River;0;Linxia : Xining
+1263;1264;River;0;Tianshoui : Lanzhou
+1264;1265;River;0;Lanzhou : Zhangye
+1264;1268;River;0;Lanzhou : Yinchuan
+1264;1284;River;0;Lanzhou : Xining
+1265;1284;River;0;Zhangye : Xining
+1267;1297;River;0;Ankang : Chengdu
+1268;1269;River;0;Yinchuan : Uqai
+1268;1271;River;0;Yinchuan : Wuzhong
+1269;1270;River;0;Uqai : Linhe
+1269;1272;Impassable;0;Uqai : Bayan Hot
+1273;1276;River;0;Aletai : Karamay
+1274;1279;River;0;Qarqan : Kashgar
+1275;1282;River;0;Aqsu : Hotan
+1277;1283;Impassable;0;Qumul : Ge'ermu
+1278;1287;Impassable;0;Sumdo : Gertse
+1279;1282;River;0;Kashgar : Hotan
+1281;1282;River;0;Urumqi : Hotan
+1283;1285;River;0;Ge'ermu : Yushu
+1283;1292;Impassable;0;Ge'ermu : Ya'an
+1283;1293;Impassable;0;Ge'ermu : Panzhihua
+1284;1292;River;0;Xining : Ya'an
+1285;1293;River;0;Yushu : Panzhihua
+1286;1288;River;0;Senge Khabab : Shigatse
+1287;1288;River;0;Gertse : Shigatse
+1287;1290;Impassable;0;Gertse : Riwoche
+1288;1289;River;0;Shigatse : Lhasa
+1288;1295;River;0;Shigatse : Nyingchi
+1289;1290;River;0;Lhasa : Riwoche
+1290;1294;River;0;Riwoche : Chamdo
+1290;1295;River;0;Riwoche : Nyingchi
+1290;1384;River;0;Riwoche : Luxi
+1290;1385;River;0;Riwoche : Dali
+1291;1293;River;0;Xichang : Panzhihua
+1291;1298;River;0;Xichang : Luzhou
+1291;1300;River;0;Xichang : Yibin
+1291;1390;River;0;Xichang : Kunming
+1292;1293;River;0;Ya'an : Panzhihua
+1292;1296;River;0;Ya'an : Guanxian
+1292;1297;River;0;Ya'an : Chengdu
+1292;1298;Impassable;0;Ya'an : Luzhou
+1293;1294;River;0;Panzhihua : Chamdo
+1293;1385;River;0;Panzhihua : Dali
+1293;1390;Impassable;0;Panzhihua : Kunming
+1297;1299;River;0;Chengdu : Chongqing
+1297;1302;River;0;Chengdu : Wanxian
+1298;1299;River;0;Luzhou : Chongqing
+1298;1300;River;0;Luzhou : Yibin
+1298;1304;River;0;Luzhou : Zunyi
+1299;1301;River;0;Chongqing : Fuling
+1299;1304;River;0;Chongqing : Zunyi
+1300;1303;River;0;Yibin : Anshun
+1300;1305;River;0;Yibin : Guiyang
+1301;1302;River;0;Fuling : Wanxian
+1301;1304;River;0;Fuling : Zunyi
+1301;1315;River;0;Fuling : Yichang
+1303;1381;River;0;Anshun : Bose
+1303;1388;Impassable;0;Anshun : Gejiu
+1304;1305;River;0;Zunyi : Guiyang
+1304;1307;River;0;Zunyi : Huaihua
+1305;1307;Impassable;0;Guiyang : Huaihua
+1305;1381;Impassable;0;Guiyang : Bose
+1306;1307;River;0;Kaili : Huaihua
+1306;1382;River;0;Kaili : Hechi
+1307;1309;River;0;Huaihua : Xiangtan
+1307;1312;River;0;Huaihua : Hengyang
+1308;1309;River;0;Changsha : Xiangtan
+1308;1310;Impassable;0;Changsha : Changde
+1308;1313;Impassable;0;Changsha : Shashi
+1309;1310;River;0;Xiangtan : Changde
+1309;1311;Impassable;0;Xiangtan : Chenzhou
+1310;1313;River;0;Changde : Shashi
+1310;1315;River;0;Changde : Yichang
+1311;1312;River;0;Chenzhou : Hengyang
+1312;1378;River;0;Hengyang : Guilin
+1313;1316;River;0;Shashi : Suizhou
+1313;1317;River;0;Shashi : Wuhan
+1313;1318;River;0;Shashi : Huangshi
+1314;1325;River;0;Shiyan : Nanyang
+1315;1316;River;0;Yichang : Suizhou
+1315;1325;Impassable;0;Yichang : Nanyang
+1316;1320;River;0;Suizhou : Xuchang
+1317;1318;River;0;Wuhan : Huangshi
+1318;1344;River;0;Huangshi : Anqing
+1319;1321;River;0;Kaifeng : Xinxiang
+1319;1327;River;0;Kaifeng : Heze
+1319;1341;River;0;Kaifeng : Fuyang
+1320;1322;River;0;Xuchang : Luoyang
+1320;1324;River;0;Xuchang : Zhengzhou
+1320;1326;River;0;Xuchang : Xinyang
+1321;1322;River;0;Xinxiang : Luoyang
+1321;1324;River;0;Xinxiang : Zhengzhou
+1321;1327;Impassable;0;Xinxiang : Heze
+1323;1327;River;0;Anyang : Heze
+1324;1341;River;0;Zhengzhou : Fuyang
+1326;1341;River;0;Xinyang : Fuyang
+1327;1330;River;0;Heze : Jinan
+1327;1332;River;0;Heze : Zaozhuang
+1327;1336;River;0;Heze : Xuzhou
+1332;1333;River;0;Zaozhuang : Huaiyin
+1332;1336;River;0;Zaozhuang : Xuzhou
+1333;1334;River;0;Huaiyin : Nantong
+1333;1335;River;0;Huaiyin : Yancheng
+1333;1336;River;0;Huaiyin : Xuzhou
+1333;1339;River;0;Huaiyin : Suzhou
+1334;1337;River;0;Nantong : Nanjing
+1334;1339;River;0;Nantong : Suzhou
+1334;1343;River;0;Nantong : Huainan
+1337;1338;River;0;Nanjing : Shanghai
+1337;1340;River;0;Nanjing : Hefei
+1337;1343;River;0;Nanjing : Huainan
+1338;1345;River;0;Shanghai : Hangzhou
+1339;1341;River;0;Suzhou : Fuyang
+1339;1343;River;0;Suzhou : Huainan
+1340;1341;Impassable;0;Hefei : Fuyang
+1340;1342;River;0;Hefei : Xuanzhou
+1341;1343;River;0;Fuyang : Huainan
+1342;1344;River;0;Xuanzhou : Anqing
+1342;1351;Impassable;0;Xuanzhou : Shangrao
+1344;1350;River;0;Anqing : Jingdezhen
+1344;1353;Impassable;0;Anqing : Jiujiang
+1345;1348;River;0;Hangzhou : Jinhua
+1346;1347;River;0;Ningbo : Wenzhou
+1347;1351;River;0;Wenzhou : Shangrao
+1348;1351;River;0;Jinhua : Shangrao
+1349;1354;River;0;Xingan : Ganzhou
+1349;1355;River;0;Xingan : Ji'an
+1349;1356;River;0;Xingan : Zhangzhou
+1350;1352;Impassable;0;Jingdezhen : Nanchang
+1350;1353;River;0;Jingdezhen : Jiujiang
+1352;1353;River;0;Nanchang : Jiujiang
+1352;1355;River;0;Nanchang : Ji'an
+1356;1360;River;0;Zhangzhou : Xiamen
+1357;1359;River;0;Nanping : Sanming
+1358;1359;River;0;Fuzhou : Sanming
+1358;1360;River;0;Fuzhou : Xiamen
+1365;1367;Sea;2524;Haikou : Naoming
+1368;1383;Impassable;0;Shaoguan : Wuzhou
+1369;1372;River;0;Guangzhou : Macao
+1369;1373;River;0;Guangzhou : Jiangmen
+1369;1377;River;0;Guangzhou : Yulin
+1374;1376;River;0;Pingxiang : Debao
+1374;1379;River;0;Pingxiang : Nanning
+1376;1379;River;0;Debao : Nanning
+1376;1381;River;0;Debao : Bose
+1377;1379;River;0;Yulin : Nanning
+1377;1383;River;0;Yulin : Wuzhou
+1379;1382;River;0;Nanning : Hechi
+1379;1383;River;0;Nanning : Wuzhou
+1380;1382;River;0;Liuzhou : Hechi
+1381;1382;River;0;Bose : Hechi
+1382;1383;River;0;Hechi : Wuzhou
+1384;1389;River;0;Luxi : Baoshan
+1385;1389;River;0;Dali : Baoshan
+1386;1387;River;0;Pu'er : Jinghong
+1386;1388;River;0;Pu'er : Gejiu
+1386;1389;River;0;Pu'er : Baoshan
+1386;1390;Impassable;0;Pu'er : Kunming
+1386;1395;Impassable;0;Pu'er : Hanoi
+1386;1413;Impassable;0;Pu'er : Kengtung
+1387;1409;River;0;Jinghong : Lashio
+1388;1393;River;0;Gejiu : Hoa Binh
+1389;1409;River;0;Baoshan : Lashio
+1391;1404;River;0;Muang Xaignabouli : Muang Xay
+1391;1405;River;0;Muang Xaignabouli : Vientiane
+1392;1393;River;0;Hai Phong : Hoa Binh
+1392;1395;River;0;Hai Phong : Hanoi
+1393;1395;River;0;Hoa Binh : Hanoi
+1394;1402;River;0;Pakxe : Battambang
+1394;1405;River;0;Pakxe : Vientiane
+1394;1422;River;0;Pakxe : Chon Buri
+1394;1427;River;0;Pakxe : Khon Kaen
+1395;1396;River;0;Hanoi : Dong Hoi
+1398;1400;River;0;Lumphat : Phnom Penh
+1398;1401;River;0;Lumphat : Siem Reap
+1398;1402;River;0;Lumphat : Battambang
+1399;1403;River;0;Saigon : Can Tho
+1400;1401;River;0;Phnom Penh : Siem Reap
+1404;1405;River;0;Muang Xay : Vientiane
+1404;1413;River;0;Muang Xay : Kengtung
+1404;1426;River;0;Muang Xay : Phitsanulok
+1405;1427;River;0;Vientiane : Khon Kaen
+1405;1428;River;0;Vientiane : Phetchabun
+1406;1407;River;0;Haka : Indaw
+1407;1409;River;0;Indaw : Lashio
+1407;1410;River;0;Indaw : Mandalay
+1407;1411;River;0;Indaw : Pakokdu
+1407;1442;River;0;Indaw : Imphal
+1408;1409;River;0;Myitkyina : Lashio
+1409;1413;River;0;Lashio : Kengtung
+1410;1411;River;0;Mandalay : Pakokdu
+1412;1413;River;0;Taunggyi : Kengtung
+1412;1425;River;0;Taunggyi : Chiang Mai
+1415;1419;River;0;Rangoon : Bassein
+1416;1417;River;0;Moulmein : Pegu
+1417;1419;River;0;Pegu : Bassein
+1422;1427;River;0;Chon Buri : Khon Kaen
+1423;1424;River;0;Bangkok : Nakhon Sawan
+1423;1426;River;0;Bangkok : Phitsanulok
+1423;1427;River;0;Bangkok : Khon Kaen
+1424;1426;River;0;Nakhon Sawan : Phitsanulok
+1425;1426;River;0;Chiang Mai : Phitsanulok
+1426;1428;River;0;Phitsanulok : Phetchabun
+1432;1437;River;0;Singapore : Johor Bahru
+1439;1443;River;0;Gauhati : Dhubri
+1439;1449;River;0;Gauhati : Rajshahi
+1440;1441;River;0;Aijal : Dibrugarh
+1440;1442;River;0;Aijal : Imphal
+1441;1443;River;0;Dibrugarh : Dhubri
+1442;1455;River;0;Imphal : Itanagar
+1444;1445;River;0;Khulna : Dhaka
+1444;1449;River;0;Khulna : Rajshahi
+1445;1449;River;0;Dhaka : Rajshahi
+1445;1450;River;0;Dhaka : Cattagram
+1446;1447;River;0;Siliguri : Calcutta
+1446;1476;River;0;Siliguri : Ranchi
+1447;1448;River;0;Calcutta : Kharagpur
+1447;1449;River;0;Calcutta : Rajshahi
+1451;1454;River;0;Dehradun : Simla
+1453;1454;River;0;Dharmasala : Simla
+1454;1535;River;0;Simla : Amritsar
+1455;1458;River;0;Itanagar : Mipi
+1459;1460;River;0;Delhi : Merath
+1460;1463;River;0;Merath : Chandigarh
+1460;1464;River;0;Merath : Bareli
+1460;1524;River;0;Merath : Jaypur
+1461;1462;River;0;Lucknow : Muzaffarpur
+1461;1466;River;0;Lucknow : Arrah
+1461;1467;River;0;Lucknow : Gorakhpur
+1461;1468;River;0;Lucknow : Cawnpore
+1462;1465;River;0;Muzaffarpur : Patna
+1462;1466;River;0;Muzaffarpur : Arrah
+1462;1476;River;0;Muzaffarpur : Ranchi
+1464;1467;River;0;Bareli : Gorakhpur
+1464;1468;River;0;Bareli : Cawnpore
+1465;1466;River;0;Patna : Arrah
+1466;1468;River;0;Arrah : Cawnpore
+1466;1469;River;0;Arrah : Raigarh
+1466;1476;River;0;Arrah : Ranchi
+1468;1483;River;0;Cawnpore : Rewa
+1468;1523;River;0;Cawnpore : Gwalior
+1468;1524;River;0;Cawnpore : Jaypur
+1469;1470;River;0;Raigarh : Balangir
+1469;1479;River;0;Raigarh : Jubbulpore
+1469;1483;River;0;Raigarh : Rewa
+1470;1473;River;0;Balangir : Kataka
+1470;1477;River;0;Balangir : Raipur
+1471;1473;River;0;Bhubanesbar : Kataka
+1472;1473;River;0;Jamshedpur : Kataka
+1473;1476;River;0;Kataka : Ranchi
+1474;1488;River;0;Jeypore : Warangal
+1475;1488;River;0;Bastar : Warangal
+1478;1480;River;0;Burhanpur : Bhopal
+1478;1481;River;0;Burhanpur : Indhur
+1479;1484;River;0;Jubbulpore : Chhindwara
+1480;1484;River;0;Bhopal : Chhindwara
+1481;1514;River;0;Indhur : Nasik
+1485;1488;River;0;Nagpur : Warangal
+1486;1489;River;0;Aurangabad : Nizamabad
+1486;1516;River;0;Aurangabad : Poona
+1487;1490;River;0;Hyderabad : Raichur
+1487;1508;River;0;Hyderabad : Solapur
+1487;1515;River;0;Hyderabad : Hubli
+1488;1492;River;0;Warangal : Adilabad
+1488;1493;River;0;Warangal : Vizagapatam
+1489;1492;River;0;Nizamabad : Adilabad
+1489;1508;River;0;Nizamabad : Solapur
+1490;1491;River;0;Raichur : Nalgonda
+1490;1501;River;0;Raichur : Anantapur
+1491;1496;River;0;Nalgonda : Gunturu
+1491;1501;River;0;Nalgonda : Anantapur
+1493;1498;River;0;Vizagapatam : Bezawada
+1496;1498;River;0;Gunturu : Bezawada
+1499;1500;River;0;Trichinopoly : Madras
+1499;1506;River;0;Trichinopoly : Salem
+1501;1515;River;0;Anantapur : Hubli
+1505;1506;River;0;Coimbatore : Salem
+1514;1521;River;0;Nasik : Baroda
+1520;1521;River;0;Surat : Baroda
+1523;1524;River;0;Gwalior : Jaypur
+1524;1528;River;0;Jaypur : Kotah
+1526;1528;River;0;Udaypur : Kotah
+1529;1534;River;0;Quetta : Rawalpindi
+1529;1536;River;0;Quetta : Bahawalnagar
+1530;1531;River;0;Lahore : Ludhiana
+1530;1534;River;0;Lahore : Rawalpindi
+1530;1536;River;0;Lahore : Bahawalnagar
+1531;1535;River;0;Ludhiana : Amritsar
+1532;1533;River;0;Nawabshah : Karachi
+1534;1535;River;0;Rawalpindi : Amritsar
+1534;1536;River;0;Rawalpindi : Bahawalnagar
+1534;1537;River;0;Rawalpindi : Peshawar
+1543;1544;Impassable;0;Shana : Kushiro
+1545;1547;Sea;2494;Sapporo : Akita
+1553;1559;Sea;2489;Osaka : Matsuyama
+1554;1560;Sea;2489;Hiroshima : Nagasaki
+1555;1559;Sea;2489;Kobe : Matsuyama
+1559;1560;Sea;2489;Matsuyama : Nagasaki
+1568;1575;Sea;2558;Legazpi : Samar
+1568;1576;Sea;2558;Legazpi : Panay
+1571;1572;Sea;2556;Mindoro : Palawan
+1571;1576;Sea;2558;Mindoro : Panay
+1573;1574;Sea;2557;Leyte : Cebu
+1573;1575;Sea;2558;Leyte : Samar
+1573;1578;Sea;2557;Leyte : Cagayan de Oro
+1574;1576;Sea;2558;Cebu : Panay
+1577;1580;Sea;2553;Jolo : Zamboanga
+1581;1583;Impassable;0;Efate : Malekula
+1581;1584;Impassable;0;Efate : Tanna
+1582;1583;Impassable;0;Espiritu Santo : Malekula
+1585;1586;Impassable;0;Ouvea : Nouvelle-Caledonie
+1587;1589;Impassable;0;Bougainville : New Georgia
+1588;1589;Impassable;0;Santa Isabel : New Georgia
+1588;1591;Impassable;0;Santa Isabel : Malaita
+1590;1591;Impassable;0;Lunga : Malaita
+1594;1595;Impassable;0;Wamena : Ansoes
+1594;1596;Impassable;0;Wamena : Hollandia
+1594;1610;Impassable;0;Wamena : Mendi
+1595;1601;Impassable;0;Ansoes : Wakia
+1596;1610;Impassable;0;Hollandia : Mendi
+1597;1608;River;0;Merauke : Kiunga
+1598;1608;River;0;Birab : Kiunga
+1598;1610;Impassable;0;Birab : Mendi
+1602;1603;Impassable;0;Lae : Mount Hagen
+1602;1605;River;0;Lae : Wewak
+1602;1610;Impassable;0;Lae : Mendi
+1603;1607;Impassable;0;Mount Hagen : Port Moresby
+1604;1607;Impassable;0;Popondetta : Port Moresby
+1605;1610;Impassable;0;Wewak : Mendi
+1606;1608;River;0;Daru : Kiunga
+1615;1616;Impassable;0;Flores : Koepang
+1615;1644;Impassable;0;Flores : Sumbawa
+1615;1645;Impassable;0;Flores : Waingapoe
+1621;1622;Impassable;0;Buru : Ceram
+1623;1624;Impassable;0;Longmerah : Kuching
+1623;1626;Impassable;0;Longmerah : Jesselton
+1623;1628;Impassable;0;Longmerah : Bakon
+1623;1632;River;0;Longmerah : Balikpapan
+1624;1628;Impassable;0;Kuching : Bakon
+1627;1632;River;0;Tarakan : Balikpapan
+1628;1629;Impassable;0;Bakon : Singkawang
+1628;1630;Impassable;0;Bakon : Sampit
+1629;1631;River;0;Singkawang : Poentianak
+1630;1632;River;0;Sampit : Balikpapan
+1630;1633;River;0;Sampit : Bandjarmasin
+1636;1639;Sea;2529;Palembang : Bangka
+1643;1644;Sea;2543;Bali : Sumbawa
+1643;1655;Sea;2543;Bali : Malang
+1678;1680;Impassable;0;Makin : Tarawa
+1679;1680;Impassable;0;Abemama : Tarawa
+1683;1684;Impassable;0;Guam : Rota
+1684;1685;Impassable;0;Rota : Saipan
+1708;1717;River;0;Melbourne : Wagga Wagga
+1709;1717;River;0;Geelong : Wagga Wagga
+1712;1713;River;0;Adelaide : Robe
+1713;1715;River;0;Robe : Port Augusta
+1721;1722;Sea;2585;Wellington : Christchurch
+1725;1726;Impassable;0;Kavieng : Rabaul
+1728;1729;Impassable;0;Suva : Labasa
+1731;1733;Impassable;0;Apia : Pago Pago
+1734;1737;Impassable;0;Pearl Harbor : Maui
+1736;1737;Impassable;0;Hawaii : Maui
+1752;1761;Sea;2347;St-Martin : Saba Island
+1752;1757;Impassable;0;Saba Island : Anguilla
+1752;1759;Impassable;0;St. Martin : Antigua & Barbadua
+1753;1767;Impassable;0;Dominica : Guadeloupe
+1753;1768;Impassable;0;Dominica : Martinique
+1754;1760;Impassable;0;Montserrat : Saint Kitts
+1754;1767;Impassable;0;Montserrat : Guadeloupe
+1754;1759;Impassable;0;Montserrat : Antigua & Barbadua
+1755;1770;Impassable;0;St.Vincent : St.Lucia
+1755;1764;Impassable;0;St.Vincent : Barbados
+1755;1763;Impassable;0;St.Vincent : St.Georges
+1756;1994;River;0;San Jose del Guaviare : Villavicencio
+1756;2008;River;0;San Jose del Guaviare : Iquitos
+1756;2012;River;0;San Jose del Guaviare : Requena
+1757;1766;Impassable;0;British Virgin Islands : Anguilla
+1758;1769;Impassable;0;Trinidad : Tobago
+1759;1767;Impassable;0;Antigua & Barbadua : Guadeloupe
+1759;1760;Impassable;0;Antigua & Barbadua : Saint Kitts
+1760;1761;Impassable;0;Saint Kitts : Saba Island
+1763;1769;Impassable;0;St.Georges : Tobago
+1764;1770;Impassable;0;Barbados : St.Lucia
+1765;1766;Impassable;0;Puerto Rico : British Virgin Islands
+1768;1770;Impassable;0;Martinique : St.Lucia
+1771;1772;Impassable;0;Bahamas : Turks & Caicos
+1774;1782;Impassable;0;Cayman Islands : Jamaica
+1787;1790;River;0;Concord : Burlington
+1788;1789;River;0;Hartford : Boston
+1788;1793;River;0;Hartford : Albany
+1788;1796;River;0;Hartford : Providence
+1788;1799;River;0;Hartford : Newburgh
+1790;1793;River;0;Burlington : Albany
+1790;1794;River;0;Burlington : Watertown
+1791;2109;River;0;Buffalo : Hamilton
+1794;2108;River;0;Watertown : Ottawa
+1795;1797;River;0;New York : Newark
+1795;1799;River;0;New York : Newburgh
+1798;1824;River;0;Warren : Erie
+1801;1802;River;0;Harrisburg : Altoona
+1801;1803;River;0;Harrisburg : Williamsport
+1801;1808;River;0;Harrisburg : Baltimore
+1802;1810;River;0;Altoona : Clarksburg
+1803;1804;River;0;Williamsport : Scranton
+1805;1808;River;0;Philadelphia : Baltimore
+1806;1821;River;0;Pittsburgh : Columbus
+1806;1824;River;0;Pittsburgh : Erie
+1808;1810;River;0;Baltimore : Clarksburg
+1808;1814;River;0;Baltimore : Arlington
+1809;1814;River;0;Washington : Arlington
+1811;1821;River;0;Huntington : Columbus
+1811;1823;River;0;Huntington : Cincinnati
+1812;1813;River;0;Norfolk : Richmond
+1813;1815;River;0;Richmond : Danville
+1815;1816;River;0;Danville : Charlottesville
+1816;1818;River;0;Charlottesville : Roanoke
+1819;1827;River;0;Louisville : Evansville
+1819;1831;River;0;Louisville : Belleville
+1819;1940;River;0;Louisville : Memphis
+1820;1823;River;0;Lexington : Cincinnati
+1820;1827;River;0;Lexington : Evansville
+1826;1828;River;0;Fort Wayne : Indianapolis
+1826;1832;River;0;Fort Wayne : Chicago
+1827;1831;River;0;Evansville : Belleville
+1828;1830;River;0;Indianapolis : Decatur
+1828;1831;River;0;Indianapolis : Belleville
+1829;1830;River;0;Peoria : Decatur
+1829;1835;River;0;Peoria : Saint Charles
+1829;1837;River;0;Peoria : Cedar Rapids
+1830;1832;River;0;Decatur : Chicago
+1830;1835;River;0;Decatur : Saint Charles
+1831;1833;River;0;Belleville : Saint Louis
+1831;1835;River;0;Belleville : Saint Charles
+1831;1940;River;0;Belleville : Memphis
+1833;1835;River;0;Saint Louis : Saint Charles
+1833;1940;River;0;Saint Louis : Memphis
+1834;1836;River;0;Saint Joseph : Springfield
+1834;1859;River;0;Saint Joseph : Nebraska City
+1834;1914;River;0;Saint Joseph : Kansas City
+1835;1836;River;0;Saint Charles : Springfield
+1837;1839;River;0;Cedar Rapids : Milwaukee
+1837;1840;River;0;Cedar Rapids : Eau Claire
+1838;1859;River;0;Des Moines : Nebraska City
+1838;1860;River;0;Des Moines : Omaha
+1839;1840;River;0;Milwaukee : Eau Claire
+1840;1841;River;0;Eau Claire : Green Bay
+1840;1846;River;0;Eau Claire : Rochester
+1841;1848;River;0;Green Bay : Superior
+1843;2129;River;0;Marquette : Sault Sainte Marie
+1845;2109;River;0;Detroit : Hamilton
+1846;1847;River;0;Rochester : Minneapolis
+1846;1850;River;0;Rochester : Saint Paul
+1847;1849;River;0;Minneapolis : Duluth
+1847;1850;River;0;Minneapolis : Saint Paul
+1847;1854;River;0;Minneapolis : Grand Forks
+1847;1857;River;0;Minneapolis : Sioux Falls
+1851;1867;River;0;Miles City : Glendive
+1851;1868;River;0;Miles City : Billings
+1852;1856;River;0;Minot : Bismarck
+1853;1856;River;0;Fort Peck : Bismarck
+1853;1867;River;0;Fort Peck : Glendive
+1855;1856;River;0;Fargo : Bismarck
+1856;1857;River;0;Bismarck : Sioux Falls
+1856;1867;River;0;Bismarck : Glendive
+1857;1860;River;0;Sioux Falls : Omaha
+1858;1859;River;0;Rapid City : Nebraska City
+1858;1907;River;0;Rapid City : Cheyenne
+1858;1908;River;0;Rapid City : Denver
+1859;1860;River;0;Nebraska City : Omaha
+1861;1875;River;0;Coeur d'Alene : Wenatchee
+1861;1876;River;0;Coeur d'Alene : Walla Walla
+1862;1863;River;0;Bozeman : Helena
+1862;1864;River;0;Bozeman : Great Falls
+1862;1870;River;0;Bozeman : Rexburg
+1864;1867;River;0;Great Falls : Glendive
+1866;1868;River;0;Casper : Billings
+1866;1907;River;0;Casper : Cheyenne
+1867;1868;River;0;Glendive : Billings
+1869;1870;River;0;Idaho Falls : Rexburg
+1869;1898;River;0;Idaho Falls : Rock Springs
+1870;1881;River;0;Rexburg : Twin Falls
+1871;1876;River;0;Boise : Walla Walla
+1871;1881;River;0;Boise : Twin Falls
+1872;1873;River;0;Spokane : Yakima
+1872;1875;River;0;Spokane : Wenatchee
+1872;1876;River;0;Spokane : Walla Walla
+1873;1876;River;0;Yakima : Walla Walla
+1873;1878;River;0;Yakima : Portland
+1873;1882;River;0;Yakima : Bend
+1877;1878;River;0;Tacoma : Portland
+1883;1888;River;0;Fresno : Sacramento
+1884;1885;River;0;Santa Rosa : Redding
+1884;1888;River;0;Santa Rosa : Sacramento
+1884;1889;River;0;Santa Rosa : San Francisco
+1885;1890;River;0;Redding : Eureka
+1886;1900;River;0;San Diego : Phoenix
+1886;1901;River;0;San Diego : Tucson
+1888;1889;River;0;Sacramento : San Francisco
+1892;1900;River;0;San Bernardino : Phoenix
+1893;1900;River;0;Las Vegas : Phoenix
+1896;1898;River;0;Salt Lake City : Rock Springs
+1897;1898;River;0;Grand Junction : Rock Springs
+1897;1899;River;0;Grand Junction : Saint George
+1898;1899;River;0;Rock Springs : Saint George
+1899;1900;River;0;Saint George : Phoenix
+1899;1902;River;0;Saint George : Flagstaff
+1900;1901;River;0;Phoenix : Tucson
+1901;1902;River;0;Tucson : Flagstaff
+1901;1905;River;0;Tucson : Roswell
+1901;1923;River;0;Tucson : El Paso
+1901;1981;River;0;Tucson : Tijuana
+1903;1905;River;0;Carlsbad : Roswell
+1904;1905;River;0;Albuquerque : Roswell
+1904;1906;River;0;Albuquerque : Santa Fe
+1904;1909;River;0;Albuquerque : Colorado Springs
+1905;1927;River;0;Roswell : Abilene
+1908;1909;River;0;Denver : Colorado Springs
+1908;1910;River;0;Denver : Wichita
+1910;1912;River;0;Wichita : Tulsa
+1910;1914;River;0;Wichita : Kansas City
+1911;1913;River;0;Lawton : Oklahoma City
+1911;1920;River;0;Lawton : Lubbock
+1911;1924;River;0;Lawton : Dallas
+1912;1913;River;0;Tulsa : Oklahoma City
+1912;1916;River;0;Tulsa : Ardmore
+1913;1916;River;0;Oklahoma City : Ardmore
+1915;1918;River;0;Jonesboro : Little Rock
+1915;1933;River;0;Jonesboro : Pine Bluff
+1915;1935;River;0;Jonesboro : Tupelo
+1915;1938;River;0;Jonesboro : Vicksburg
+1915;1940;River;0;Jonesboro : Memphis
+1916;1919;River;0;Ardmore : Tyler
+1916;1924;River;0;Ardmore : Dallas
+1917;1918;River;0;Fort Smith : Little Rock
+1918;1919;River;0;Little Rock : Tyler
+1918;1930;River;0;Little Rock : Shreveport
+1919;1925;River;0;Tyler : Austin
+1920;1921;River;0;Lubbock : Amarillo
+1922;1928;River;0;Corpus Christi : Houston
+1922;1967;River;0;Corpus Christi : Matamoros
+1922;1975;River;0;Corpus Christi : Monterrey
+1922;1976;River;0;Corpus Christi : Saltillo
+1923;1926;River;0;El Paso : San Antonio
+1923;1927;River;0;El Paso : Abilene
+1923;1976;River;0;El Paso : Saltillo
+1923;1977;River;0;El Paso : Ciudad Juarez
+1924;1925;River;0;Dallas : Austin
+1924;1927;River;0;Dallas : Abilene
+1925;1928;River;0;Austin : Houston
+1926;1976;River;0;San Antonio : Saltillo
+1929;1930;River;0;Monroe : Shreveport
+1929;1932;River;0;Monroe : Baton Rouge
+1929;1937;River;0;Monroe : Natchez
+1929;1938;River;0;Monroe : Vicksburg
+1930;1933;River;0;Shreveport : Pine Bluff
+1931;1932;River;0;New Orleans : Baton Rouge
+1931;1934;River;0;New Orleans : Lafayette
+1932;1937;River;0;Baton Rouge : Natchez
+1933;1938;River;0;Pine Bluff : Vicksburg
+1935;1943;River;0;Tupelo : Nashville
+1936;1947;River;0;Tuscaloosa : Montgomery
+1940;1943;River;0;Memphis : Nashville
+1941;1945;River;0;Chattanooga : Gadsden
+1941;1946;River;0;Chattanooga : Birmingham  Al
+1941;1955;River;0;Chattanooga : Atlanta
+1941;1964;River;0;Chattanooga : Asheville
+1942;1964;River;0;Knoxville : Asheville
+1944;1950;River;0;Mobile : Pensacola
+1946;1947;River;0;Birmingham  Al : Montgomery
+1947;1954;River;0;Montgomery : Macon
+1950;1951;River;0;Pensacola : Tallahassee
+1950;1954;River;0;Pensacola : Macon
+1955;1958;River;0;Atlanta : Greenville
+1956;1960;River;0;Savannah : Charleston
+1958;1959;River;0;Greenville : Augusta
+1959;1960;River;0;Augusta : Charleston
+1966;1968;River;0;Merida : Veracruz
+1971;1972;River;0;Morelia : Acapulco de Juarez
+1979;1981;River;0;Hermosillo : Tijuana
+1986;1987;River;0;Barranquilla : Medellin
+1986;1990;River;0;Barranquilla : Cucuta
+1987;1990;River;0;Medellin : Cucuta
+1987;1991;River;0;Medellin : Santa Fe de Bogota
+1987;2009;River;0;Medellin : Florencia
+1991;2009;Impassable;0;Santa Fe de Bogota : Florencia
+1992;1994;River;0;Ciudad Bolivar : Villavicencio
+1992;1995;River;0;Ciudad Bolivar : Maturin
+1992;1996;River;0;Ciudad Bolivar : Barinas
+1994;2009;River;0;Villavicencio : Florencia
+1997;1998;River;0;Georgetown : Bartica
+1997;1999;River;0;Georgetown : Paramaribo
+1999;2000;River;0;Paramaribo : Cayenne
+2001;2003;River;0;Manacapuru : Tefe
+2001;2005;River;0;Manacapuru : Manaus
+2003;2004;River;0;Tefe : Maraba
+2003;2005;River;0;Tefe : Manaus
+2003;2062;River;0;Tefe : Porto Velho
+2004;2005;River;0;Maraba : Manaus
+2004;2066;River;0;Maraba : Barreiras
+2004;2068;River;0;Maraba : Belem
+2005;2006;River;0;Manaus : Macapa
+2007;2009;River;0;Puyo : Florencia
+2008;2009;River;0;Iquitos : Florencia
+2008;2011;River;0;Iquitos : Pucallpa
+2008;2012;River;0;Iquitos : Requena
+2010;2011;River;0;Nauta : Pucallpa
+2010;2018;River;0;Nauta : Tarapoto
+2011;2012;River;0;Pucallpa : Requena
+2011;2013;River;0;Pucallpa : Puerto Maldonado
+2011;2018;River;0;Pucallpa : Tarapoto
+2014;2018;River;0;Trujillo : Tarapoto
+2014;2033;River;0;Trujillo : Jaen
+2015;2018;River;0;Cuzco : Tarapoto
+2018;2033;River;0;Tarapoto : Jaen
+2019;2062;River;0;Cobija : Porto Velho
+2019;2063;River;0;Cobija : Santa Cruz de la Sierra
+2020;2063;River;0;Nuestra Senora de La Paz : Santa Cruz de la Sierra
+2026;2046;River;0;Salta : Villa Hayes
+2027;2056;River;0;San Miguel de Tucuman : Resistencia
+2028;2029;River;0;Mendoza : San Juan
+2028;2034;River;0;Mendoza : Neuquen
+2028;2039;River;0;Mendoza : Viedma
+2028;2053;River;0;Mendoza : Mar del Plata
+2028;2054;River;0;Mendoza : Cordoba
+2039;2053;River;0;Viedma : Mar del Plata
+2046;2047;River;0;Villa Hayes : Nuestra Senora de la Asuncion
+2046;2056;River;0;Villa Hayes : Resistencia
+2046;2060;River;0;Villa Hayes : Campo Grande
+2047;2049;River;0;Nuestra Senora de la Asuncion : Corrientes
+2047;2056;River;0;Nuestra Senora de la Asuncion : Resistencia
+2047;2057;River;0;Nuestra Senora de la Asuncion : Curitiba
+2049;2050;River;0;Corrientes : Buenos Aires
+2049;2051;River;0;Corrientes : Salto
+2049;2052;River;0;Corrientes : Montevideo
+2049;2055;River;0;Corrientes : Rosario
+2049;2056;River;0;Corrientes : Resistencia
+2049;2058;River;0;Corrientes : Porto Alegre
+2051;2052;River;0;Salto : Montevideo
+2055;2056;River;0;Rosario : Resistencia
+2057;2060;River;0;Curitiba : Campo Grande
+2059;2060;River;0;Sao Paulo : Campo Grande
+2060;2064;River;0;Campo Grande : La Santisima Trinidad
+2061;2066;River;0;Cuiaba : Barreiras
+2061;2067;River;0;Cuiaba : Goiania
+2062;2063;River;0;Porto Velho : Santa Cruz de la Sierra
+2063;2064;River;0;Santa Cruz de la Sierra : La Santisima Trinidad
+2065;2069;River;0;Teresina : Sao Luis
+2066;2073;River;0;Barreiras : Salvador
+2067;2073;River;0;Goiania : Salvador
+2067;2076;River;0;Goiania : Belo Horizonte
+2071;2073;River;0;Recife : Salvador
+2080;2084;River;0;Managua : San Pedro Sula
+2081;2082;River;0;San Jose : Bluefields 
+2082;2083;River;0;Bluefields  : Puerto Limon
+2082;2084;River;0;Bluefields  : San Pedro Sula
+2084;2087;River;0;San Pedro Sula : Puerto Barrios
+2085;2087;River;0;Tegucigalpa : Puerto Barrios
+2089;2090;Sea;2388;Vancouver : Victoria
+2091;2092;River;0;Prince George : Jasper
+2092;2105;River;0;Jasper : Grande Prairie
+2093;2094;River;0;Telegraph Creek : Whitehorse
+2094;2095;River;0;Whitehorse : Fort Simpson
+2095;2096;River;0;Fort Simpson : Yellowknife
+2096;2099;River;0;Yellowknife : Fort Resolution
+2096;2102;River;0;Yellowknife : Prince Albert
+2096;2105;River;0;Yellowknife : Grande Prairie
+2099;2105;River;0;Fort Resolution : Grande Prairie
+2100;2102;River;0;Saskatoon : Prince Albert
+2100;2103;River;0;Saskatoon : Edmonton
+2100;2107;River;0;Saskatoon : Flin Flon
+2101;2103;River;0;Regina : Edmonton
+2102;2105;River;0;Prince Albert : Grande Prairie
+2103;2104;River;0;Edmonton : Calgary
+2103;2105;River;0;Edmonton : Grande Prairie
+2106;2107;River;0;Winnipeg : Flin Flon
+2107;2115;River;0;Flin Flon : Fort Severn
+2108;2118;River;0;Ottawa : Sherbrooke
+2117;2126;River;0;Quebec : Trois Rivieres
+2118;2119;River;0;Sherbrooke : Montreal
+2119;2126;Impassable;0;Montreal : Trois Rivieres
+2136;2137;Impassable;0;Goose Bay : St. John's
+2140;2145;River;0;Fairbanks : Nome
+2144;2145;River;0;Bethel : Nome
+2145;2146;River;0;Nome : Tanana
+2158;2162;River;0;Uppsala : Gaevle
+2160;2162;River;0;Oerebro : Gaevle
+2161;2162;River;0;Karlstad : Gaevle
+2161;2164;River;0;Karlstad : Oestersund
+2162;2163;River;0;Gaevle : Vilhelmina
+2162;2165;River;0;Gaevle : Umea
+2163;2164;River;0;Vilhelmina : Oestersund
+2163;2166;River;0;Vilhelmina : Lulea
+2163;2167;River;0;Vilhelmina : Kiruna
+2165;2166;River;0;Umea : Lulea
+2692;2696;Canal;152;Heligoland Bay : Bay of Mecklenburg
+#END;;;;
+-1;-1;;;
