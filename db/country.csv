@@ -32,7 +32,7 @@ CON;Yellow;ENG;FRA;;;;X
 COS;LightBrown;SPA;MIN;;;;X
 CRO;DarkGray;YUG;GER;;;;X
 CSA;UserColor5;USA;ENG;;;;X
-CSX;LightGreen;CHI;MIN;;;;X
+CSX;Green;CHI;MIN;;;;X
 CUB;UserColor6;CUB;USA;;;;X
 CXB;Brown;CHI;MIN;;;;X
 CYN;DarkBrown;CHI;MIN;;;;X
@@ -64,10 +64,10 @@ GUY;Brown;ENG;MIN;;;;X
 HAI;UserColor2;ENG;USA;;;;X
 HOL;LightYellow;HOL;MIN;;;;X
 HON;Green;SPA;MIN;;;;X
-HUN;Orange;HUN;HUN;;;;X
+HUN;DarkYellow;HUN;HUN;;;;X
 ICL;LightGray;ENG;MIN;;;;X
 IDC;LightBlue;ENG;MIN;;;;X
-IND;DarkRed;ENG;ENG;;;;X
+IND;Red;ENG;ENG;;;;X
 INO;LightBrown;ENG;MIN;;;;X
 IRE;LightGreen;IRE;ENG;;;;X
 IRQ;DarkBrown;TUR;ENG;;;;X
@@ -137,7 +137,7 @@ SIK;UserColor4;CHI;MIN;;;;X
 SLO;LightGreen;ENG;GER;;;;X
 SLV;LightBrown;ENG;MIN;;;;X
 SOM;UserColor1;ENG;MIN;;;;X
-SOV;UserColor3;SOV;SOV;;;;X
+SOV;DarkRed;SOV;SOV;;;;X
 SPA;DarkGray;SPA;GER;;;;X
 SPR;DarkYellow;SPA;SOV;;;;X
 SUD;DarkYellow;ENG;MIN;;;;X
