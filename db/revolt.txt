@@ -3078,9 +3078,9 @@ intrinsic_gov_type = nazi
  822 823 820 829 830 819 821 818 828 831 826 827 824 834 835 #Abyssinia
  813 803 804 805 814 811 810 806 808 809 812 807 #Somalia
  }
- country = { } # ITA
+ country = { ITA RSI ETH } # ITA - ETH so that revolts in AOI can result in re-establishment
  capital = 825 #Addis Abeba
- revolt = no 
+ revolt = yes 
  intrinsic_gov_type = fascist 
  } 
 

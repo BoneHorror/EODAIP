@@ -27,8 +27,9 @@ event = {
 
 	action_a = {
 		command = { type = ai which = "switch/AST_Change_Production.ai" }
-		command = { type = industrial_modifier which = ic value = 15 }
+		command = { type = industrial_modifier which = ic value = 20 }
 		command = { type = manpowerpool value = 6.5 when = 1 }
+		command = { type = free_ic value = 8 }
 		command = { type = free_supplies value = 4 }
 		command = { trigger = { NOT = { ai = JAP } } type = free_manpower value = 0.05 }
 	}
