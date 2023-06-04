@@ -79,8 +79,8 @@ garrison = {
 }
 
 front = { 
-	recklessness 		= 2 # 0-3
-	distrib_vs_ai 		= op_defensive
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= offensive
 	distrib_vs_human 	= op_defensive
 
 	enemy_reinf_days	= 6
@@ -97,13 +97,17 @@ front = {
 	province_priorities = {
 		553    = 1.2  #Leningrad
 		573    = 1.2  #Moscow
-		731    = 1.4  #Baku
+		731    = 2.0  #Baku
 		604	   = 1.2  #Kursk
 		639    = 1.3  #Crimea Breakthrough
 		633    = 1.5  #Stalingrad
+		627		= 1.2 #Krivoy Rog
+		631		= 1.2 #Mairupol
+		692		= 1.2 #Salsk
+		702		= 1.2 #Grozny
 	}
       	enemy_handicap = { } 
-      	passivity = { SOV = 5 } 
+      	passivity = { SOV = 0 } 
 }
 invasion = {
 	ignore			= yes

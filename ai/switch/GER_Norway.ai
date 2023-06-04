@@ -13,7 +13,7 @@ target = {
  496 = 30 # Trondheim
  495 = 100 # Narvik
 } 
-no_exp_forces_to = { ITA IRQ U49 U03 JAP MAN MEN BUR PHI U87 }
+no_exp_forces_to = { ITA IRQ U49 U03 JAP MAN MEN BUR PHI U87 U55 }
 garrison = {
 	home_multiplier 	= 1.0
 	overseas_multiplier 	= 1.0

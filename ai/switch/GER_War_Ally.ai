@@ -9,7 +9,7 @@ combat = {
 	CAN = 100
 }
 war = 5
-exp_force_ratio = 0.37 
+exp_force_ratio = 0.5 
 exp_force_ratios = { ITA = 0.1 GER = 0.5 IRE = 0.05 U43 = 0.15 U41 = 0.05 U42 = 0.05 U40 = 0.1 } 
 target = { 
  25 = 80 # Norwich

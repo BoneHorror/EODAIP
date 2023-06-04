@@ -123,7 +123,7 @@ garrison = {
 		SOV = 100
 		U44 = 80
 		ENG = 50
-		USA = 60
+		USA = 100
 		YUG = 50
 	}
 	province_priorities = {

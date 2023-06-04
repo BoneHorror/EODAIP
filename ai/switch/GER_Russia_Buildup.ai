@@ -129,8 +129,8 @@ garrison = {
 		SPA = -1
 		SOV = 100
 		U44 = 80
-		ENG = 50
-		USA = 60
+		ENG = 90
+		USA = 110
 		YUG = 50
 	}
 	province_priorities = {

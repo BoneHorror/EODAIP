@@ -1,7 +1,7 @@
 # German operation Barbarosa Invasion AI File by Nekron
 
 max_front_ratio = 1.3 
-max_garrison_prop = 0.40 # 0.60
+max_garrison_prop = 0.45 # 0.60
 min_garrison_prop = 0.25 # 0.40
 max_front_ratios = { 
    SOV = 3.5 
@@ -9,7 +9,7 @@ max_front_ratios = {
    USA = 2.5
    TUR = 1.5
 } 
-no_exp_forces_to = { JAP SIA MAN MEN U49 U03 SPA POR FRA BUR PHI U87 }
+no_exp_forces_to = { JAP SIA MAN MEN U49 U03 SPA POR FRA BUR PHI U87 U55 }
 war = 100
 exp_force_ratio = 0.07 
 exp_force_ratios = { ITA = 0.15 U45 = 0.1 FIN = 0.3 ROM = 0.1 U73 = 0.1 RSI = 0.15 U44 = 0.1 } 
@@ -261,7 +261,7 @@ country_priorities = {
 		U44 = -1
 		SOV = 90
 		ENG = 100
-		USA = 100
+		USA = 110
 		U01 = 50
 		U02 = 30
 	}
@@ -289,12 +289,12 @@ front = {
 	support_defense_prop 	= 0.35
 
 	province_priorities = {
-		553    = 1.3  #Leningrad
-		573    = 1.4  #Moscow
+		553    = 1.5  #Leningrad
+		573    = 1.8  #Moscow
 		731    = 1.1  #Baku
 		604	   = 1.3  #Kursk
 		639    = 1.2  #Crimea Breakthrough
-		633    = 1.2  #Stalingrad
+		633    = 1.1  #Stalingrad
 	}
 	
     enemy_handicap = { } 
@@ -308,7 +308,7 @@ invasion = {
 	coastal			= 0.1	#increase to avoid coastal forts more.
 	beach			= 0.1	#higher, avoid worst beaches.
 	distance		= 1.0	#higher = avoid long distance.
-	max_distance    = 34.0 # 34.0  #From Narvik to AA - 34 woulud be Hamburg to AA
+	max_distance    = 34.0 # 34.0  #From Narvik to AA - 34 would be Hamburg to AA
 	max_staging_distance = 13.0	# From Narvik to AA
 	pocket			= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island			= 0.1	#prioritise taking pure islands.

@@ -1,10 +1,10 @@
 # German operation Barbarosa Invasion AI File by Lothos
 # Temporary fixed for 0.30 beta needs rework when the map is finished, fixes limited to ignore provinces in greater europe regions (ewphoenix123)
 
-max_garrison_prop = 0.40 # 0.60
-min_garrison_prop = 0.20 # 0.40
-strat_redeploy_threshold = 40
-max_redeploying = 0.2
+max_garrison_prop = 0.50 # 0.60
+min_garrison_prop = 0.30 # 0.40
+strat_redeploy_threshold = 30
+max_redeploying = 0.25
 ###################################
 # Construction and Tech Research
 ###################################
