@@ -128,13 +128,13 @@ economy = {
 # Land Units - supply consumption modifier when in redeployment pool or not moving
 	0.8 #1.0
 # Land Units - supply consumption modifier when in combat 
-	2.1 #1.0
+	2.0 #1.0
 # Land Units - fuel consumption modifier when not moving
 	0.1 #0.25
 # Land Units - fuel consumption modifier when in combat or in bombardment
 	1.65 #1.0
 # Air Units - supply consumption modifier when in redeployment pool or at air base
-	0.35 #1.0
+	0.2 #1.0
 # Air Units - supply consumption modifier when in combat or in bombardment
 	2.0 #1.0
 # Air and Naval Units - fuel consumption modifier when at air base or port
@@ -711,7 +711,7 @@ combat = {
 # Land and Coastal forts damage modifier for every 100 STR points of attacking units, hourly applied.
 	0.00021 #0.00042
 # Max damage Land and Coastal forts could take per hour in combat.
-	0.003 # 0.002 #0.001 (WIF)
+	0.005 # 0.002 #0.001 (WIF)
 # Min. Softness for a land division, including added by brigades.
 	15.0	#0.0
 # Auto-retreat from combat when average ORG for own or controlled units drop below THIS
@@ -976,7 +976,7 @@ country = {
 # Industrial production efficiency
 	1.0 #1.0
 # Oil production efficiency
-    0.9 #1.0
+    0.8 #1.0
 # Metal production efficiency
     0.75 #1.0 - Decreased to keep resources valuable. note that _modifier (industrial_modifier, metal_modifier etc) lines in .inc scenario files overwrite this!
 # Energy production efficiency

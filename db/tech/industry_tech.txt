@@ -2440,7 +2440,7 @@ technology =
     component = { id = 5205 name = TECH_CMP_INDUSTRY_20_5_NAME type = industrial_engineering difficulty = 7 double_time = yes }
     required  = { 5190 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.25 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.12 }
     }
   }
   # Basic Oil Refining
@@ -2462,7 +2462,7 @@ technology =
     component = { id = 5215 name = TECH_CMP_INDUSTRY_21_5_NAME type = industrial_engineering difficulty = 8 double_time = yes }
     required  = { 5200 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.4 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.15 }
     }
   }
   # Early Basic Synthetic Oil Plant
@@ -2484,7 +2484,7 @@ technology =
     component = { id = 5225 name = TECH_CMP_INDUSTRY_22_5_NAME type = industrial_engineering difficulty = 9 double_time = yes }
     required  = { 5210 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.7 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.25 }
     }
   }
   # Basic Synthetic Oil Plant
@@ -2506,7 +2506,7 @@ technology =
     component = { id = 5235 name = TECH_CMP_INDUSTRY_23_5_NAME type = industrial_engineering difficulty = 10 double_time = yes }
     required  = { 5220 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 0.9 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.35 }
     }
   }
   # Early Synthetic Oil Plant
@@ -2528,7 +2528,7 @@ technology =
     component = { id = 5245 name = TECH_CMP_INDUSTRY_24_5_NAME type = industrial_engineering difficulty = 10 double_time = yes }
     required  = { 5230 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 1.1 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.5 }
     }
   }
   # Early Modern Synthetic Oil Plant
@@ -2550,7 +2550,7 @@ technology =
     component = { id = 53025 name = TECH_CMP_INDUSTRY_102_5_NAME type = industrial_engineering difficulty = 10 double_time = yes }
     required  = { 5240 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 1.2 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.7 }
     }
   }
   # Basic Modern Synthetic Oil Plant
@@ -2573,7 +2573,7 @@ technology =
     component = { id = 53195 name = TECH_CMP_INDUSTRY_136_5_NAME type = industrial_engineering difficulty = 15 }
     required  = { 53020 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 1.3 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 0.9 }
     }
   }
   # Early Modern Synthetic Oil Plant
@@ -2596,7 +2596,7 @@ technology =
     component = { id = 53205 name = TECH_CMP_INDUSTRY_137_5_NAME type = industrial_engineering difficulty = 20 }
     required  = { 53190 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 1.5 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 1.0 }
     }
   }
   # Basic Advanced Modern Synthetic Oil Plant
@@ -2619,7 +2619,7 @@ technology =
     component = { id = 53215 name = TECH_CMP_INDUSTRY_138_5_NAME type = industrial_engineering difficulty = 20 }
     required  = { 53200 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 1.8 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 1.1 }
     }
   }
   # Advanced Modern Synthetic Oil Plant
@@ -2642,7 +2642,7 @@ technology =
     component = { id = 53225 name = TECH_CMP_INDUSTRY_139_5_NAME type = industrial_engineering difficulty = 25 }
     required  = { 53210 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 2 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 1.5 }
     }
   }
   # Very Advanced Modern Synthetic Oil Plant
@@ -2665,7 +2665,7 @@ technology =
     component = { id = 53235 name = TECH_CMP_INDUSTRY_140_5_NAME type = industrial_engineering difficulty = 30 }
     required  = { 53220 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 2.5 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 2.0 }
     }
   }
   # Future Advanced Modern Synthetic Oil Plant
@@ -2688,7 +2688,7 @@ technology =
     component = { id = 53245 name = TECH_CMP_INDUSTRY_141_5_NAME type = industrial_engineering difficulty = 30 }
     required  = { 53220 }
     effects =
-    { command = { type = industrial_multiplier which = energy_to_oil value = 2.5 }
+    { command = { type = industrial_multiplier which = energy_to_oil value = 2.2 }
       command = { type = fuel_consumption which = land value = -1.5 }
       command = { type = fuel_consumption which = naval value = -0.5 }
       command = { type = fuel_consumption which = air value = -0.25 }
@@ -4187,7 +4187,7 @@ technology =
     required  = { 5070 }
     effects =
     { 
-	  command = { type = industrial_modifier which = oil value = 10 }
+	  command = { type = industrial_modifier which = oil value = 20 }
     }
   }
   # Advanced mining
