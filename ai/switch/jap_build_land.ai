@@ -9,18 +9,18 @@ military = {
 	extra_convoys_war = 0.2750 
 
 	#### Divisions etc...
-   	infantry     	= 21 
+   	infantry     	= 23 
    	cavalry     	= 2 
 	motorized 		= 5
 	mechanized 		= 6
 	light_armor 	= 4
 	armor 			= 1
-	paratrooper 	= 2
-   	marine       	= 7 
+	paratrooper 	= 1
+   	marine       	= 8 
 	bergsjaeger 	= 1
    	garrison    	= 1 
     hq         		= 2 
-	militia 		= 3
+	militia 		= 4
  #        50 % 
    	interceptor   	= 3 
    	multi_role     	= 1 
@@ -31,13 +31,14 @@ military = {
 	transport_plane = 1
 	flying_bomb 	= 0
 	flying_rocket 	= 0
+	d_09			= 1
  #        10 % 
 	battleship 		= 4
    	carrier     	= 2 
 	light_carrier	= 2
 	escort_carrier	= 0
-   	destroyer     	= 8
-   	light_cruiser   = 5 
+   	destroyer     	= 6
+   	light_cruiser   = 3 
 	heavy_cruiser 	= 2
 	battlecruiser 	= 0
 	submarine 		= 4

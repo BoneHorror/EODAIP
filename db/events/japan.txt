@@ -1833,7 +1833,7 @@ event = {
 		command = { type = add_division which = "Grand Han Righteous Army 1st Brigade" value = militia when = 4 where = -90 }
 		command = { type = add_division which = "Grand Han Righteous Army 2nd Brigade" value = militia when = 4 where = -90 }
 		#Resources:
-		command = { type = free_ic value = 9 }
+		command = { type = free_ic value = 4 }
 		command = { type = manpowerpool value = 4.5 when = 1 } 	# manpower
 		}
 	}
@@ -2404,6 +2404,31 @@ event = {
 					nuked = { country = JAP data = -1 where = 1560 } #Nagasaki
 					nuked = { country = JAP data = -1 where = 1561 } #Kagoshima
 				}
+			}
+			AND = {
+				NOT = { nuked = 3 } #We didn't nuke anyone else twice
+				nuked = -1 #We were nuked once
+				OR = { #at least one nuke over the Home Islands
+					nuked = { country = JAP data = -1 where = 1544 } #Kushiro
+					nuked = { country = JAP data = -1 where = 1545 } #Sapporo
+					nuked = { country = JAP data = -1 where = 1546 } #Shizuoka
+					nuked = { country = JAP data = -1 where = 1547 } #Akita
+					nuked = { country = JAP data = -1 where = 1548 } #Nagano
+					nuked = { country = JAP data = -1 where = 1549 } #Sendai
+					nuked = { country = JAP data = -1 where = 1550 } #Yokohama
+					nuked = { country = JAP data = -1 where = 1551 } #Niigata
+					nuked = { country = JAP data = -1 where = 1552 } #Tokyo
+					nuked = { country = JAP data = -1 where = 1553 } #Osaka
+					nuked = { country = JAP data = -1 where = 1554 } #Hiroshima
+					nuked = { country = JAP data = -1 where = 1555 } #Kobe
+					nuked = { country = JAP data = -1 where = 1556 } #Kanazawa
+					nuked = { country = JAP data = -1 where = 1557 } #Nagoya
+					nuked = { country = JAP data = -1 where = 1558 } #Kyoto
+					nuked = { country = JAP data = -1 where = 1559 } #Matsuyama
+					nuked = { country = JAP data = -1 where = 1560 } #Nagasaki
+					nuked = { country = JAP data = -1 where = 1561 } #Kagoshima
+				}
+				NOT = { exists = GER } #GER is done
 			}
 		 	lost_national = { country = JAP value = 60 }
 		 	NOT = {
