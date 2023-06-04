@@ -16,7 +16,7 @@ ITA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 25009;FIAT;T1808;5;1900;2000;mechanics;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25013;Lancia;100177;5;1906;2000;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25005;Ansaldo Navale;T1804;5;1900;2000;naval_engineering;technical_efficiency;naval_artillery;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-25006;Cantieri Navali Riuniti;T1805;6;1906;2000;naval_engineering;technical_efficiency;naval_artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+25006;Cantieri Navali Riuniti;T1805;6;1906;2000;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25007;Caproni;100174;5;1911;2000;aeronautics;aircraft_testing;munitions;bomber_design;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25026;Società Anonima Nieuport-Macchi;100181;5;1913;1920;aeronautics;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25011;Macchi;100176;7;1920;1950;aeronautics;fighter_design;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -26,7 +26,7 @@ ITA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 25012;Savoia-Marchetti;T1811;5;1922;1943;aeronautics;aircraft_testing;naval_artillery;bomber_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25047;Savoia-Marchetti;T1811;5;1951;1983;aeronautics;aircraft_testing;naval_artillery;bomber_design;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25014;Arturo Riccardi;T1813;4;1932;1966;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-25015;Domenico Cavagnari;T1814;4;1929;1946;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+25015;Domenico Cavagnari;T1814;4;1929;1946;large_taskforce_tactics;naval_training;seamanship;centralized_execution;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25031;Luigi Amedeo di Savoia-Aosta;100186;4;1910;1920;centralized_execution;large_taskforce_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25034;Luigi Rizzo;100189;6;1911;1933;naval_training;seamanship;small_taskforce_tactics;submarine_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25032;Paolo Thaon di Revel;100187;4;1913;1944;centralized_execution;small_taskforce_tactics;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -41,7 +41,7 @@ ITA;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 25029;Luigi Cadorna;100184;3;1910;1917;training;centralized_execution;infantry_focus;large_unit_tactics;static_defense_tactics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25018;Pietro Badoglio;T1817;4;1917;1945;training;centralized_execution;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25020;Rodolfo Graziani;T1819;3;1926;1955;training;combined_arms_focus;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-25025;Scuola Centrale di Alpinismo;100180;4;1900;2000;small_unit_tactics;mountain_training;airborne_training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+25025;Scuola Centrale di Alpinismo;100180;4;1900;2000;small_unit_tactics;mountain_training;airborne_training;artillery;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 250000;Società Idrovolanti Alta Italia;T250000;4;1915;1922;aeronautics;bomber_design;naval_artillery;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 2500001;SIM;T250001;6;1927;1949;rt_user_2;small_unit_tactics;training;individual_courage;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 2500002;SIFAR;T250002;7;1949;1965;rt_user_2;training;small_unit_tactics;individual_courage;mathematics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;x

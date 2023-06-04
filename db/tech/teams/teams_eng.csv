@@ -55,7 +55,7 @@ ENG;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 10053;Philip Fullard;100103;4;1917;1930;fighter_tactics;piloting;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 10054;John Fisher;100104;8;1890;1920;centralized_execution;large_taskforce_tactics;naval_training;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 10055;David Beatty;100105;6;1913;1960;centralized_execution;large_taskforce_tactics;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-10056;Royal Marines;100784;7;1755;1999;small_unit_tactics;marine_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+10056;Royal Marines;100784;7;1755;1999;small_unit_tactics;marine_training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 100057;Westland Aircraft;T100057;8;1950;1961;rt_user_1;aircraft_testing;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 100058;Westland Helicopters;T100058;8;1961;1999;rt_user_1;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 100059;Bristol Helicopter Division;T100059;7;1944;1999;rt_user_1;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

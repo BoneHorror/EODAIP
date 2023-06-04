@@ -10,7 +10,7 @@ GER;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 29;Daimler-Benz;Daim-B;7;1930;2000;mechanics;artillery;training;aeronautics;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 30;Skoda Works;Skoda;8;1999;2000;mechanics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 1;Blohm und Voss, Hamburg;T1;7;1900;2000;naval_engineering;naval_artillery;technical_efficiency;submarine_design;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-6;Kriegsmarinewerft, Wilhelmshaven;T6;8;1918;2000;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+6;Kriegsmarinewerft, Wilhelmshaven;T6;8;1918;2000;naval_engineering;technical_efficiency;naval_artillery;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 10;Messerschmitt A.G.;T10;8;1916;2000;fighter_design;aeronautics;rocketry;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 4;Junkers Flugzeug A.G.;100078;8;1914;2000;bomber_design;aeronautics;munitions;general_equipment;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 26;Focke-Wulf Flugzeugbau GmbH;T26;8;1923;2000;fighter_design;aeronautics;avionics;aircraft_testing;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -23,13 +23,13 @@ GER;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 19;Erich Raeder;T19;6;1922;1960;large_taskforce_tactics;naval_training;seamanship;centralized_execution;;small_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 25;Karl Dönitz;T25;8;1935;2000;submarine_tactics;submarine_design;seamanship;centralized_execution;naval_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 21;Ernst Udet;T21;7;1918;1954;combined_arms_focus;piloting;fighter_tactics;bomber_tactics;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-23;Hermann Göring;T23;4;1918;1960;bomber_tactics;piloting;airborne_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+23;Hermann Göring;T23;4;1918;1960;bomber_tactics;piloting;airborne_training;centralized_execution;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 24;Hugo Sperrle;T24;7;1938;2000;bomber_tactics;training;centralized_execution;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 18;Adolf Galland;T18;6;1942;2000;fighter_tactics;piloting;fighter_design;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 40;Kurt Student;100146;7;1937;2000;airborne_training;general_equipment;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 5;Konrad Zuse;T5;7;1935;2000;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 16;Werner Heisenberg;T16;7;1927;1976;nuclear_physics;nuclear_engineering;mathematics;rocketry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-8;MAN;T8;8;1900;2000;mechanics;vehicle_engineering;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+8;MAN;T8;8;1900;2000;mechanics;vehicle_engineering;artillery;munitions;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 11;Opel;T11;7;1900;2000;mechanics;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 12;Porsche;T12;9;1931;2000;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 15;Volkswagen;T15;6;1937;2000;mechanics;vehicle_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

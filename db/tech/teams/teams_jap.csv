@@ -50,8 +50,8 @@ JAP;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 50039;Oyama Iwao;100213;5;1897;1914;centralized_execution;large_unit_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 50043;Yamagata Aritomo;100216;5;1870;1920;centralized_execution;large_taskforce_tactics;infantry_focus;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 50016;Hisaichi Terauchi;T1915;6;1927;1959;large_unit_tactics;combined_arms_focus;training;individual_courage;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-50015;Hideki Tojo;T1914;5;1930;1954;large_unit_tactics;individual_courage;centralized_execution;training;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-50027;Tokubetsu Heigakkô;100205;6;1930;2000;small_unit_tactics;airborne_training;marine_training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50015;Hideki Tojo;T1914;5;1930;1954;large_unit_tactics;individual_courage;centralized_execution;training;bomber_tactics;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+50027;Tokubetsu Heigakkô;100205;6;1930;2000;small_unit_tactics;airborne_training;marine_training;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 50023;Ground Self-Defence Force;T1922;5;1954;2000;small_unit_tactics;combined_arms_focus;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 500000;Kempeitai;T500000;7;1881;1946;small_unit_tactics;rt_user_2;individual_courage;centralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 500001;Fuji Heavy Industries;T500001;8;1953;2000;rt_user_1;aeronautics;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

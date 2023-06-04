@@ -2,7 +2,7 @@ ROM;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 110001;Steaua Romana Refineries;T2901;4;1897;2000;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110002;UDR Factories;T2902;4;1900;2000;mechanics;artillery;training;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110003;IAR;T2903;6;1925;2000;aeronautics;fighter_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-110004;Malaxa Works;T2904;5;1930;2000;chemistry;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110004;Malaxa Works;T2904;5;1930;2000;chemistry;industrial_engineering;mechanics;electronics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110005;Uzinele Metalurgice CMC;T2906;4;1930;2000;artillery;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110006;MAN;T2907;6;1930;2000;industrial_engineering;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110007;Emanoil Ionescu;T2908;6;1944;2000;bomber_tactics;combined_arms_focus;fighter_tactics;training;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -16,7 +16,7 @@ ROM;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 110015;Vanatori de munte;T2916;3;1917;2000;mountain_training;small_unit_tactics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110016;Leonida Works;100429;3;1930;2000;mechanics;artillery;technical_efficiency;chemistry;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110017;Bucharest Army Arsenal;100430;3;1914;2000;mechanics;general_equipment;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-110018;Constanta Shipyards;100431;3;1892;2000;naval_engineering;naval_artillery;submarine_design;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+110018;Constanta Shipyards;100431;3;1892;2000;naval_engineering;naval_artillery;submarine_design;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110019;SET;100432;4;1923;2000;aeronautics;mechanics;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110020;Nicolae Malaxa Factories;100433;5;1921;2000;industrial_engineering;electronics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 110021;Cerchez & Co;100434;3;1910;2000;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

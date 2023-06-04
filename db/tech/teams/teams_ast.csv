@@ -4,9 +4,9 @@ AST;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 225004;Ford Motors;T503;6;1912;2000;mechanics;industrial_engineering;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225015;CSIRO;T514;5;1910;2000;mathematics;electronics;chemistry;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225027;Pre Federation Defence Establishments;100022;3;1850;1905;technical_efficiency;general_equipment;mechanics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-225001;Army Inventions Directorate;T500;5;1900;2000;technical_efficiency;general_equipment;mechanics;training;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225001;Army Inventions Directorate;T500;5;1900;2000;technical_efficiency;general_equipment;mechanics;training;marine_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225002;Chullora Tank Assembly Shops;T501;4;1900;2000;mechanics;munitions;artillery;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-225020;Australian Army Factories;100015;5;1905;2000;technical_efficiency;general_equipment;mechanics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+225020;Australian Army Factories;100015;5;1905;2000;technical_efficiency;general_equipment;mechanics;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225006;Vickers-Armstrong Ltd.;T505;6;1908;1977;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225014;Cockatoo Island Shipyard;T513;4;1897;1991;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 225023;Williamstown Dockyards;100018;3;1880;2000;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
