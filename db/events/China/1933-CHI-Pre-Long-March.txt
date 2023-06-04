@@ -202,7 +202,7 @@ event = {
 		command = { type = dissent value = 20 }
 		command = { type = relation which = JAP value = 100 }
 		command = { type = relation which = MAN value = 100 }
-		command = { type = free_ic value = 6 }
+		command = { type = free_ic value = 4 }
 		command = { type = end_puppet }
 	}
 
@@ -212,7 +212,7 @@ event = {
 		command = { type = dissent value = -10 }
 		command = { type = relation which = JAP value = -50 }
 		command = { type = relation which = MAN value = -50 }
-		command = { type = free_ic value = 4 }
+		command = { type = free_ic value = 2 }
 	}
 }
 

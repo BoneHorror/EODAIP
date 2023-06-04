@@ -371,7 +371,7 @@ event = {
 		name = ACTION_NAME_DAMN
 		command = { type = dissent value = 1 }
         command = { type = relation which = CHI value = -50 }
-		command = { type = free_ic value = 6 }
+		command = { type = free_ic value = 3 }
 	}	
 }
 

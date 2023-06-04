@@ -1071,7 +1071,7 @@ event = {
 	action = {
 		name = EVT_27008_A
 		ai_chance = 100
-		command = { type = free_ic value = 5 }
+		command = { type = free_ic value = 4 }
 		command = { type = secedeprovince which = CHI value = 1374 }#Pingxiang
 		command = { type = secedeprovince which = CHI value = 1365 }#Haikou
 		command = { type = secedeprovince which = CHI value = 1367 }#Naoming
@@ -1086,7 +1086,7 @@ event = {
 	action = {
 		name = EVT_27008_B
 		ai_chance = 0
-		command = { type = free_ic value = 14 }
+		command = { type = free_ic value = 10 }
 		command = { type = leave_alliance when = 1 }
 		command = { type = war which = CHI }
 	}
