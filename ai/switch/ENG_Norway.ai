@@ -83,7 +83,7 @@ invasion = {
 	random				= 25.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.1	#higher, avoid worst beaches.
-	max_distance   		= 150.0  #About the distance from Japan to Batavia
+	max_distance   		= 25.0  #About the distance from Japan to Batavia
 	max_staging_distance = 25	# How far should the staging area be from the target invasion point
 	distance			= 0.1	#higher = avoid long distance.
 	pocket				= 0.4	#prioritise pockets, ie provinces with no adjacent controlled by same.

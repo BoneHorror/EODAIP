@@ -75,8 +75,8 @@ front = {
 		SIA = 10
 		SOV = 0
 		ITA = 0
-		RSI = 0
-		GER = 0
+		RSI = 92
+		GER = 90
 	}  
 }
 ###################################
@@ -88,7 +88,7 @@ invasion = {
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 120.0  #About the distance from Japan to Batavia
+	max_distance  		= 30.0  #About the distance from Japan to Batavia
 	max_staging_distance = 30.0 # How far should the staging area be from the target invasion point
 	distance			= 1.0	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.

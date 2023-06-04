@@ -25,17 +25,17 @@ front = {
     distrib_vs_human = offensive
 	enemy_handicap = { JAP = 30 RSI = 30 } 
 	passivity = {
-		JAP = 75
+		JAP = 40
 		SIA = 90
 		SOV = 30
-		ITA = 0
+		ITA = 30
 		RSI = 99
 		ROM = 99
 		BUL = 99
 		HUN = 99
 		SER = 99
 		CRO = 99
-		GER = 90
+		GER = 97
 	}  
 }
 garrison = {
@@ -52,7 +52,7 @@ invasion = {
 		random = 16.0 #How big a random range. (1.0 = 1%)
 		coastal = 0.1 #increase to avoid coastal forts more.
 		beach = 0.1 #higher, avoid worst beaches.
-		max_distance = 250.0 #About the distance from Japan to Batavia
+		max_distance = 25.0 #About the distance from Japan to Batavia
 		max_staging_distance = 25.0 # How far should the staging area be from the target invasion point
 		distance = 0.2 #higher = avoid long distance.
 		pocket = 1.0 #prioritise pockets, ie provinces with no adjacent controlled by same.

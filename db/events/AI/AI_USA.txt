@@ -54,7 +54,10 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/USA_Gear_Up_1.ai" }
 		command = { type = carrier_level value = 2.0 }
-		command = { trigger = { ai = JAP difficulty = 2 } type = visibility which = transport value = -6 } #Visibility cheat for US AI vs JAP AI so that it doesn't suicide as many transports, not used on Strong Axis
+		command = { trigger = { ai = JAP difficulty = 2 } type = visibility which = transport value = -6 } #Transport cheat for US AI vs JAP AI so that it doesn't suicide as many transports, not used on Strong Axis
+		command = { trigger = { ai = JAP difficulty = 2 } type = speed which = transport value = 4 }
+		command = { trigger = { ai = JAP difficulty = 2 } type = naval_defense which = transport value = -3 } #bonus
+		command = { trigger = { ai = JAP difficulty = 2 } type = air_defense which = transport value = -1 } #bonus
 	}
 }
 ################
@@ -167,6 +170,11 @@ event = {
 	save_date = yes
 	
 	trigger = {
+	ai = yes
+		OR = {
+			war = { country = USA country = SOV }
+			war = { country = GER country = USA }
+			}
 		OR = {
 			AND = {
 				year = 1943
@@ -206,10 +214,14 @@ event = {
 				NOT = { war = { country = USA country = JAP } }
 				}
 		}
-		ai = yes
 		NOT = { control = { province = 29 data = -2 } } # London
 		NOT = { local_flag = USADDay }
-		#NOT = { local_flag = USJap } In hindsight I do want this to interrupt JAP, D-Daying GER is probably more important...
+		NOT = { 
+			AND = {
+			local_flag = USJap 
+			lost_national = { country = GER value = 80 }
+			}
+		} #In hindsight I do want this to interrupt JAP, D-Daying GER is probably more important...
 		war = { country = USA country = GER }
 		NOT = { local_flag = USADefense }
 		NOT = { local_flag = USAInvadeUK }
@@ -233,7 +245,7 @@ event = {
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = local_clrflag which = USJap }
 		command = { type = local_clrflag which = USInvadeUK }
-		command = { type = setflag  which = DDay }
+		command = { type = setflag which = DDay }
 		command = { type = ai which = "switch/USA_Dday.ai" }
 	}
 }
@@ -356,6 +368,7 @@ event = {
 		command = { type = local_clrflag which = USJap }
 		command = { type = local_clrflag which = USABuildStandard }
 		command = { type = local_clrflag which = USABuildLand }
+		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Homeland.ai" }
 	}
 }
@@ -978,6 +991,25 @@ event = {
 				NOT = { naval_percentage = { country = JAP value = 0.9 } }
 			}
 		}
+		OR = {
+			NOT = { local_flag = USATorch }
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = FRA }
+				region = { region = "Algeria" country = FRA }
+				alliance = { country = USA country = FRA }
+				}
+			}
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = U55 }
+				region = { region = "Algeria" country = U55 }
+				alliance = { country = USA country = U55 }
+				}
+			}
+		}
 		NOT = { local_flag = USAItaly }
 		NOT = { local_flag = USJap }
 		NOT = { local_flag = USADDay }
@@ -1011,7 +1043,9 @@ event = {
 		command = { type = local_setflag which = USAItaly }
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USATorch }
 		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Italy.ai" }
 	}
 }
@@ -1098,6 +1132,7 @@ event = {
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USJap }
+		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Invade_UK.ai" }
 	}
 }
@@ -1702,6 +1737,32 @@ event = {
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USJap }
 		naval_percentage = { country = JAP value = 1.0 }
+		NOT = {
+			control = { province = 1563 data = -3 } #Southern Okinawa
+			control = { province = 1734 data = -3 } #Pearl Harbour
+			control = { province = 1672 data = -3 } #Minami Toshima
+			control = { province = 1661 data = -3 } #Iwo Jima
+			control = { province = 1564 data = -3 } #Northern Okinawa
+			}
+		OR = {
+			NOT = { local_flag = USATorch }
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = FRA }
+				region = { region = "Algeria" country = FRA }
+				alliance = { country = USA country = FRA }
+				}
+			}
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = U55 }
+				region = { region = "Algeria" country = U55 }
+				alliance = { country = USA country = U55 }
+				}
+			}
+		}	
 		OR = {
 			NOT = { local_flag = USAItaly } #Prefer to wrap up invasion of Italy first.
 			AND = {
@@ -1758,8 +1819,111 @@ event = {
 	action_a = {
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USAItaly }
+		command = { type = local_clrflag which = USATorch }
 		command = { type = local_setflag which = USJap }
 		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = clrflag which = DDay }
+		command = { type = ai which = "switch/USA_Naval_Attack.ai" }
+	}
+} 
+### Go after JAP - we control outer islands###
+event = {
+	id = 3049067
+	random = no
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		war = { country = USA country = JAP }
+		NOT = { local_flag = USJap }
+		naval_percentage = { country = JAP value = 1.0 }
+		AND = {
+			control = { province = 1563 data = -3 } #Southern Okinawa
+			control = { province = 1734 data = -3 } #Pearl Harbour
+			control = { province = 1672 data = -3 } #Minami Toshima
+			control = { province = 1661 data = -3 } #Iwo Jima
+			control = { province = 1564 data = -3 } #Northern Okinawa
+			}
+		OR = {
+			NOT = { local_flag = USATorch }
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = FRA }
+				region = { region = "Algeria" country = FRA }
+				alliance = { country = USA country = FRA }
+				}
+			}
+			AND = {
+				local_flag = USATorch
+				NOT = {
+				region = { region = "Tunisia" country = U55 }
+				region = { region = "Algeria" country = U55 }
+				alliance = { country = USA country = U55 }
+				}
+			}
+		}	
+		OR = {
+			NOT = { local_flag = USAItaly } #Prefer to wrap up invasion of Italy first.
+			AND = {
+				local_flag = USAItaly
+				NOT = { region = { region = Italy country = -3 data = 1 } }
+				year = 1943
+				}
+			AND = {
+				year = 1944
+				local_flag = USAItaly
+				}
+			}
+		OR = {
+			NOT = { local_flag = USADDay }
+			AND = {
+				local_flag = USADDay
+				NOT = { transport = { country = USA value = 20 when = 1 } }
+				}
+			AND = {
+				NOT = { war = { country = USA country = GER } }
+				local_flag = USADDay
+				}
+			}
+		OR = {
+			AND = {
+				control = { province = 1563 data = USA } #Southern Okinawa
+				naval_percentage = { country = JAP value = 1.15 }
+				}
+			naval_percentage = { country = JAP value = 1.3 }
+				AND = {
+					NOT = { war = { country = GER country = SOV } } #GER is hard to tackle because it's not atwar with SOV
+					naval_percentage = { country = JAP value = 1.0 }
+						OR = {
+							NOT = { exists = ENG }
+							NOT = { exists = CHI }
+							NOT = { exists = AST }
+							puppet = { country = AST country = JAP }
+							control = { province = 29 data = -2 } # London
+							event = 2011014 # Chinese surrender 1
+							event = 2011017 # Chinese surrender 2
+							NOT = { war = { country = USA country = GER } }
+							}
+					}
+		}	
+	}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action_a = {
+		command = { type = local_clrflag which = USADDay }
+		command = { type = local_clrflag which = USAItaly }
+		command = { type = local_clrflag which = USATorch }
+		command = { type = local_setflag which = USJap }
+		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Naval_Attack.ai" }
 	}
 } 
@@ -2209,3 +2373,174 @@ event = {
 		command = { trigger = { ai = JAP } type = manpowerpool value = 100 }
 	}
 }
+
+################################### USA - DDay Claims so that the AI does not sabotage itself - Removed by an event in 1940s events file
+event = {
+	id = 3049065
+	random = no
+	country = USA
+	
+	trigger = {
+		ai = yes
+		local_flag = USADDay
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		# France
+		command = { type = addclaim which = 37 }
+		command = { type = addclaim which = 38 }
+		command = { type = addclaim which = 39 }
+		command = { type = addclaim which = 40 }
+		command = { type = addclaim which = 41 }
+		command = { type = addclaim which = 42 }
+		command = { type = addclaim which = 43 }
+		command = { type = addclaim which = 44 }
+		command = { type = addclaim which = 45 }
+		command = { type = addclaim which = 46 }
+		command = { type = addclaim which = 47 }
+		command = { type = addclaim which = 48 }
+		command = { type = addclaim which = 49 }
+		command = { type = addclaim which = 50 }
+		command = { type = addclaim which = 51 }
+		command = { type = addclaim which = 52 }
+		command = { type = addclaim which = 53 }
+		command = { type = addclaim which = 54 }
+		command = { type = addclaim which = 55 }
+		command = { type = addclaim which = 56 }
+		command = { type = addclaim which = 57 }
+		command = { type = addclaim which = 58 }
+		command = { type = addclaim which = 59 }
+		command = { type = addclaim which = 60 }
+		command = { type = addclaim which = 61 }
+		command = { type = addclaim which = 62 }
+		command = { type = addclaim which = 63 }
+		command = { type = addclaim which = 64 }
+		command = { type = addclaim which = 65 }
+		command = { type = addclaim which = 66 }
+		command = { type = addclaim which = 67 }
+		command = { type = addclaim which = 68 }
+		command = { type = addclaim which = 69 }
+		command = { type = addclaim which = 70 }
+		command = { type = addclaim which = 71 }
+		command = { type = addclaim which = 72 }
+		command = { type = addclaim which = 73 }
+		command = { type = addclaim which = 74 }
+		command = { type = addclaim which = 75 }
+		command = { type = addclaim which = 76 }
+		command = { type = addclaim which = 77 }
+		command = { type = addclaim which = 78 }
+		command = { type = addclaim which = 79 }
+		command = { type = addclaim which = 80 }
+		command = { type = addclaim which = 81 }
+		command = { type = addclaim which = 82 }
+		command = { type = addclaim which = 83 }
+		command = { type = addclaim which = 84 }
+		command = { type = addclaim which = 85 }
+		command = { type = addclaim which = 86 }
+		command = { type = addclaim which = 87 }
+		command = { type = addclaim which = 88 }
+		command = { type = addclaim which = 89 }
+		command = { type = addclaim which = 90 }
+		command = { type = addclaim which = 91 }
+		command = { type = addclaim which = 92 }
+		command = { type = addclaim which = 93 }
+		command = { type = addclaim which = 94 }
+		command = { type = addclaim which = 95 }
+		command = { type = addclaim which = 96 }
+		command = { type = addclaim which = 97 }
+		command = { type = addclaim which = 98 }
+		command = { type = addclaim which = 99 }
+		command = { type = addclaim which = 101 }
+		command = { type = addclaim which = 102 }
+		command = { type = addclaim which = 103 }
+		command = { type = addclaim which = 100 }
+		command = { type = addclaim which = 104 }
+		command = { type = addclaim which = 105 }
+		command = { type = addclaim which = 106 }
+		command = { type = addclaim which = 107 }
+		#Benelux
+		command = { type = addclaim which = 108 }
+		command = { type = addclaim which = 109 }
+		command = { type = addclaim which = 110 }
+		command = { type = addclaim which = 111 }
+		command = { type = addclaim which = 112 }
+		command = { type = addclaim which = 113 }
+		command = { type = addclaim which = 114 }
+		command = { type = addclaim which = 115 }
+		command = { type = addclaim which = 116 }
+		command = { type = addclaim which = 117 }
+		command = { type = addclaim which = 118 }
+		command = { type = addclaim which = 119 }
+		command = { type = addclaim which = 120 }
+		command = { type = addclaim which = 121 }
+		command = { type = addclaim which = 122 }
+		command = { type = addclaim which = 123 }
+		command = { type = addclaim which = 124 }
+		command = { type = addclaim which = 125 }
+	}
+}
+
+################################### USA - Japan Claims so that the AI does not sabotage itself - Removed by an event in 1940s events file
+event = {
+	id = 3049066
+	random = no
+	country = USA
+	
+	trigger = {
+		ai = yes
+		local_flag = USJap
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = december year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1939 }
+
+	action_a = {
+		# France
+		command = { type = addclaim which = 1581 }
+		command = { type = addclaim which = 1582 }
+		command = { type = addclaim which = 1583 }
+		command = { type = addclaim which = 1584 }
+		command = { type = addclaim which = 1586 }
+		# United Kingdom
+		command = { type = addclaim which = 1588 }
+		command = { type = addclaim which = 1589 }
+		command = { type = addclaim which = 1590 }
+		command = { type = addclaim which = 1591 }
+		command = { type = addclaim which = 1592 }
+		command = { type = addclaim which = 1593 }
+		command = { type = addclaim which = 1678 }
+		command = { type = addclaim which = 1679 }
+		command = { type = addclaim which = 1680 }
+		command = { type = addclaim which = 1682 }
+		command = { type = addclaim which = 1687 }
+		command = { type = addclaim which = 1750 }
+		#Australia
+		command = { type = addclaim which = 1234 }
+		command = { type = addclaim which = 1587 }
+		command = { type = addclaim which = 1602 }
+		command = { type = addclaim which = 1603 }
+		command = { type = addclaim which = 1604 }
+		command = { type = addclaim which = 1605 }
+		command = { type = addclaim which = 1606 }
+		command = { type = addclaim which = 1607 }
+		command = { type = addclaim which = 1608 }
+		command = { type = addclaim which = 1609 }
+		command = { type = addclaim which = 1610 }
+		command = { type = addclaim which = 1724 }
+		command = { type = addclaim which = 1725 }
+		command = { type = addclaim which = 1726 }
+		command = { type = addclaim which = 1727 }
+	}
+}
+

@@ -297,6 +297,18 @@ event = {
 		NOT = { local_flag = ENGDDay }
 		alliance = { country = USA }
 		OR = {
+			war = { country = ENG country = SOV }
+			war = { country = ENG country = GER }
+			}
+		OR = {
+			NOT = { exists = ITA }
+			AND = {
+				war = { country = ENG country = ITA }
+				lost_national = { country = ITA value = 30 }
+				}
+			alliance = { country = ITA }
+			}
+		OR = {
 			land_percentage = { country = GER value = 0.6 }
 			year = 1944
 			}
@@ -1424,12 +1436,19 @@ event = {
 			random = 3
 		}
 		NOT = {
-			AND = {
-				local_flag = ENGDDay
-				flag = DDay
+			OR = {
+				AND = {
+					local_flag = ENGDDay
+					flag = DDay
+					}
+				AND = {
+					local_flag = ENGDDay
+					NOT = { naval_percentage = { country = ITA value = 0.8 } }
 				}
+				NOT = { exists = ITA }
+			}
 		}
-		war = { country = ITA }
+		war = { country = ITA country = ENG }
 		NOT = { region = { region = "Libya" country = -2 value = 10 } }
 		NOT = { region = { region = "Egypt" country = -2 value = 10 } }
 		NOT = { control = { province = 750 data = -2 } } # Tripoli
@@ -1465,11 +1484,11 @@ event = {
 	id = 3001026
 	random = no 
 	country = ENG
-	persistent = yes
 	
 	trigger = {
 		ai = yes
 		NOT = { local_flag = ENGInvadeItaly }
+		NOT = { local_flag = ENGDDay }
 		alliance = { country = USA }
 		war = { country = GER country = USA }
 		# Italian North Africa
@@ -1683,7 +1702,7 @@ event = {
 
 	action = {
 		command = { type = ai which = "switch/ENG_Unthinkable.ai" }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = SOV }
+		command = { type = war which = SOV }
 		command = { type = local_setflag which = ENGUnthinkable }
 		command = { type = industrial_modifier which = total value = 8 }
 	}
@@ -1814,8 +1833,8 @@ event = {
 		ai_chance = 8 #8
 		command = { type = ai which = "switch/ENG_SouthernFront.ai" }
 		command = { type = setflag  which = AlliesSouth }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = GRE }
-		command = { trigger = { ai = yes } type = ai_prepare_war which = TUR }
+		command = { type = war which = GRE }
+		command = { type = war which = TUR }
 		command = { type = local_setflag which = ENGAgression }
 		command = { type = industrial_modifier which = total value = 4 }
 		command = { type = event which = 3001064 where = -1 when = 14 } #Declare wars
@@ -2219,8 +2238,8 @@ event = {
 	
 	trigger = {
 		ai = yes
-		region = { region = "Tunisia" country = ENG }
-		region = { region = "Algeria" country = ENG }
+		region = { region = "Tunisia" country = -3 }
+		region = { region = "Algeria" country = -3 }
 		war = { country = USA country = GER }
 		alliance = { country = ENG country = USA }
 	}
@@ -2299,3 +2318,66 @@ event = {
 		command = { type = ai which = "switch/ENG_Air_Ground.ai" }
 	}
 }
+
+
+
+##############add ITA claims - removed by an event in 1940s Events file
+event = {
+	id = 3001078
+	random = no 
+	country = ENG
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+		local_flag = ENGInvadeItaly
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1937 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1943 }
+
+	action_a = {
+		command = { type = addclaim which = 393 }
+		command = { type = addclaim which = 394 }
+		command = { type = addclaim which = 395 }
+		command = { type = addclaim which = 396 }
+		command = { type = addclaim which = 398 }
+		command = { type = addclaim which = 399 }
+		command = { type = addclaim which = 400 }
+		command = { type = addclaim which = 401 }
+		command = { type = addclaim which = 402 }
+		command = { type = addclaim which = 404 }
+		command = { type = addclaim which = 405 }
+		command = { type = addclaim which = 408 }
+		command = { type = addclaim which = 410 }
+		command = { type = addclaim which = 411 }
+		command = { type = addclaim which = 412 }
+		command = { type = addclaim which = 413 }
+		command = { type = addclaim which = 414 }
+		command = { type = addclaim which = 415 }
+		command = { type = addclaim which = 416 }
+		command = { type = addclaim which = 417 }
+		command = { type = addclaim which = 418 }
+		command = { type = addclaim which = 419 }
+		command = { type = addclaim which = 420 }
+		command = { type = addclaim which = 421 }
+		command = { type = addclaim which = 422 }
+		command = { type = addclaim which = 423 }
+		command = { type = addclaim which = 424 }
+		command = { type = addclaim which = 425 }
+		command = { type = addclaim which = 426 }
+		command = { type = addclaim which = 427 }
+		command = { type = addclaim which = 428 }
+		command = { type = addclaim which = 430 }
+		command = { type = addclaim which = 431 }
+		command = { type = addclaim which = 432 }
+		command = { type = addclaim which = 433 }
+		command = { type = addclaim which = 434 }
+		command = { type = addclaim which = 435 }
+	}
+}
+		

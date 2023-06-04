@@ -17,9 +17,9 @@ target = {
  1625 = 10 # Brunei
 } 
 max_garrison_prop = 0.15
-min_garrison_prop = 0.02
+min_garrison_prop = 0.03
 
-exp_force_ratio = 0.06 
+exp_force_ratio = 0.01 
 exp_force_ratios = { FRA = 0.8 U01 = 0.1 PHI = 0.1 } 
 no_exp_forces_to = { U02 ENG }
 
@@ -27,7 +27,7 @@ no_exp_forces_to = { U02 ENG }
 # Ground Combat, Leaders and Garrisons
 ###################################
 garrison = {
-	home_multiplier 	= 0.03
+	home_multiplier 	= 0.01
 	overseas_multiplier = 0.5
 	home_peace_cap 		= 10
 	war_zone_odds 		= 1.6
@@ -143,7 +143,9 @@ front = {
 	withdraw_odds		= 0.55
 	
       	enemy_handicap = { } 
-      	passivity = { } 
+      	passivity = {
+			RSI = 70
+			} 
 	
 	province_priorities = { 
 		55 = 1.70 # Paris
@@ -169,11 +171,11 @@ front = {
 invasion = { 
 	invasion			= yes
  	base				= 0.05	#Relative modifier. (lower = specific targets much more important.)
-	random				= 20.0	#How big a random range.  (1.0 = 1%)
+	random				= 10.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 80.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
-	max_staging_distance = 80.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
+	max_distance  		= 100.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
+	max_staging_distance = 100.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
 	distance			= 5.0	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
@@ -263,6 +265,10 @@ invasion = {
 		464  = 3750  #Valencia		
 		440  = 3750  #Barcelona
 		
+		#Med victory points
+		382	= 2000 #Crete
+		429 = 8000  #Malta
+		
 		#Portugal
 		995  = 4000  #Azores
 		477  = 4000  #Setubal
@@ -312,61 +318,6 @@ invasion = {
 		1711  = 2750	#	Port Lincoln
 		1713  = 2750	#	Robe
 
-
-		#Coral Sea
-		1587  = -1	#	Bougainville
-		1588  = -1	#	Santa Isabel
-		1589  = -1	#	New Georgia
-		1590  = -1	#	Lunga
-		1591  = -1	#	Malaita
-		1592  = -1	#	Nendo
-		1596  = -1	#	Hollandia
-		1600  = -1	#	Fak-Fak
-		1604  = -1	#	Popondetta
-		1607  = -1	#	Port Moresby
-		1608  = -1	#	Kiunga
-		1611  = -1	#	Male
-		1612  = -1	#	Karavatti
-		1613  = -1	#	West Island
-		1614  = -1	#	Christmas
-
-
-		#Carolinese
-		1724  = -1	#	Manus
-		1725  = -1	#	Kavieng
-		1726  = -1	#	Rabaul
-
-
-		#Indonesia
-		1615  = -1	#	Flores
-		1616  = -1	#	Koepang
-		1617  = -1	#	Dili
-		1618  = -1	#	Aru
-		1619  = -1	#	Yamdena
-		1620  = -1	#	Halmahera
-		1621  = -1	#	Buru
-		1622  = -1	#	Ceram
-		1624  = -1	#	Kuching
-		1625  = -1	#	Bandar Seri Begawan
-		1627  = -1	#	Tarakan
-		1631  = -1	#	Poentianak
-		1632  = -1	#	Balikpapan
-		1634  = -1	#	Pakan Baharoe
-		1635  = -1	#	Djambi
-		1636  = -1	#	Palembang
-		1639  = -1	#	Bangka
-		1642  = -1	#	Medan
-		1643  = -1	#	Bali
-		1644  = -1	#	Sumbawa
-		1645  = -1	#	Waingapoe
-		1647  = -1	#	Batavia
-		1649  = -1	#	Tjirebon
-		1653  = -1	#	Soerabaja
-		1656  = -1	#	Madura
-		1657  = -1	#	Makassar
-		1659  = -1	#	Manado
-		1670  = 150 #  Peleliu
-
 		#Philippines
 		1565  = 3000	#	Manila	Philippines
 		1566  = 3000	#	Cabanatuan	Philippines
@@ -386,20 +337,7 @@ invasion = {
 		1562  = 1500	#	Amami
 		1564  = 1500	#	Northern Okinawa
 		1667 = 2500 #Truk
-
-		#Indochina
-		1392  = 1000	#	Hai Phong
-		1395  = 1500	#	Hanoi
-		1399  = 1000	#	Saigon
-		1400  = 1000	#	Phnom Penh
-		1415  = 1000	#	Rangoon
-		1423  = 1000	#	Bangkok
-		1424  = 1000	#	Nakhon Sawan
-		1431  = 1000	#	Songhla
-		1432  = 2500	#	Singapore
-		1435  = 1000	#	Ipoh
-		1436  = 1000	#	Kuantan
-
+		
 		#China-Korea
 		1217  = -1	#	Anshan
 		1221  = -1	#	Pyeongyang
@@ -447,9 +385,6 @@ invasion = {
 		419	= -1  #Rome
 		412	= 6000  #Ancona
 		400	= 500  #Venice
-
-		429 = 8000  #Malta
-
 	}
 } 
 admiral = { 

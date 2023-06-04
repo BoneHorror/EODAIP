@@ -18,7 +18,7 @@ target = {
  1565 = 25 # Manila
  1607 = 15 # Port Moresby
 } 
-exp_force_ratio = 0.06 
+exp_force_ratio = 0.01 
 exp_force_ratios = { ENG = 0.6 U01 = 0.2 PHI = 0.2 } 
 no_exp_forces_to = { U02 }
 
@@ -27,7 +27,7 @@ no_exp_forces_to = { U02 }
 ###################################
 garrison = {
    	defend_overseas_beaches = yes 
-	home_multiplier 	= 0.03
+	home_multiplier 	= 0.01
 	overseas_multiplier = 0.7
 	war_zone_odds 		= 1.3
 	
@@ -64,8 +64,8 @@ front = {
 	JAP = 10
 	} 
    	passivity = {
-		RSI = 98 #We want to slow down Allied progression if ITA degenerates into RSI
-		GER = 50
+		RSI = 99 #We want to slow down Allied progression if ITA degenerates into RSI
+		GER = 97
 		ROM = 99
 		BUL = 99
 		HUN = 99
@@ -95,11 +95,11 @@ front = {
 invasion = {
 	invasion			= yes
  	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
-	random				= 18.0	#How big a random range.  (1.0 = 1%)
+	random				= 10.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.05	#increase to avoid coastal forts more.
 	beach				= 0.05	#higher, avoid worst beaches.
-	max_distance  		= 80.0  #About the distance from Japan to Batavia
-	max_staging_distance = 80.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 85.0  #About the distance from Japan to Batavia
+	max_staging_distance = 85.0 # How far should the staging area be from the target invasion point
 	distance			= 0.5	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
@@ -214,9 +214,9 @@ invasion = {
 		1008  = 500 #Tel Aviv
 		1004  = 500 #El Arish
 		#Asian Pacific
-		1661  = 5000	#	Iwo Jima
+		1661  = 4000	#	Iwo Jima
 		1662  = 400	#	Chichi Jima	
-		1672  = 5000	#	Minami Torishima	
+		1672  = 6000	#	Minami Torishima	
 		1674  = 400	#	Bikini	
 		1675  = 800	#	Eniwetok	
 		1676  = 4000	#	Kwajalein	
@@ -224,9 +224,9 @@ invasion = {
 		1679  = 2000	#	Abemama
 		1681  = 400	#	Wotje	
 		1682  = 2000	#	Nauru	
-		1683  = 3000	#	Guam	
+		1683  = 6000	#	Guam	
 		1684  = 400	#	Rota
-		1685  = 800	#	Saipan
+		1685  = 200	#	Saipan
 		1686  = 400	#	Pagan	
 		1687  = 400	#	Funafuti	
 
@@ -260,81 +260,27 @@ invasion = {
 
 
 		#Coral Sea
-		1587  = -1	#	Bougainville
-		1588  = -1	#	Santa Isabel
-		1589  = -1	#	New Georgia
-		1590  = -1	#	Lunga
-		1591  = -1	#	Malaita
-		1592  = -1	#	Nendo
-		1596  = -1	#	Hollandia
-		1600  = -1	#	Fak-Fak
-		1604  = -1	#	Popondetta
-		1607  = -1	#	Port Moresby
-		1608  = -1	#	Kiunga
-		1611  = -1	#	Male
-		1612  = -1	#	Karavatti
-		1613  = -1	#	West Island
-		1614  = -1	#	Christmas
+		1587  = 1500	#	Bougainville
+		1588  = 1500	#	Santa Isabel
+		1589  = 1500	#	New Georgia
+		1590  = 1500	#	Lunga
+		1591  = 1500	#	Malaita
+		1592  = 1500	#	Nendo
+		1596  = 1500	#	Hollandia
+		1600  = 1500	#	Fak-Fak
+		1604  = 1500	#	Popondetta
+		1607  = 1500	#	Port Moresby
+		1608  = 1500	#	Kiunga
+		1611  = 1500	#	Male
+		1612  = 1500	#	Karavatti
+		1613  = 1500	#	West Island
+		1614  = 1500	#	Christmas
 
 
 		#Carolinese
 		1724  = 160	#	Manus
 		1725  = 160	#	Kavieng
 		1726  = 160	#	Rabaul
-
-
-		#Indonesia
-		1615  = 95	#	Flores
-		1616  = 95	#	Koepang
-		1617  = 95	#	Dili
-		1618  = 95	#	Aru
-		1619  = 95	#	Yamdena
-		1620  = 95	#	Halmahera
-		1621  = 95	#	Buru
-		1622  = 95	#	Ceram
-		1624  = 95	#	Kuching
-		1625  = 95	#	Bandar Seri Begawan
-		1627  = 95	#	Tarakan
-		1631  = 95	#	Poentianak
-		1632  = 95	#	Balikpapan
-		1634  = 95	#	Pakan Baharoe
-		1635  = 95	#	Djambi
-		1636  = 95	#	Palembang
-		1639  = 95	#	Bangka
-		1642  = 95	#	Medan
-		1643  = 95	#	Bali
-		1644  = 95	#	Sumbawa
-		1645  = 95	#	Waingapoe
-		1647  = 95	#	Batavia
-		1649  = 95	#	Tjirebon
-		1653  = 95	#	Soerabaja
-		1656  = 95	#	Madura
-		1657  = 95	#	Makassar
-		1659  = 95	#	Manado
-		1670  = 150 #  Peleliu
-
-
-
-		#Philippines
-		1565  = 2000	#	Manila	Philippines
-		1566  = 2000	#	Cabanatuan	Philippines
-		1567  = 2000	#	Baguio	Philippines
-		1568  = 2500	#	Legazpi	Philippines
-		1571  = 2000	#	Mindoro	Philippines
-		1572  = 2000	#	Palawan	Philippines
-		1573  = 2000	#	Leyte	Philippines
-		1574  = 2000	#	Cebu	Philippines
-		1575  = 2000	#	Samar	Philippines
-		1576  = 2000	#	Panay	Philippines
-		1577  = 2000	#	Jolo	Philippines
-		1579  = 2000	#	Davao	Philippines
-
-
-		#RyuKyu Islands
-		1562  = 3500	#	Amami
-		1564  = 4500	#	Northern Okinawa
-		1667 = 2500 #Truk
-
 
 		#Indochina
 		1392  = 1000	#	Hai Phong
@@ -348,30 +294,12 @@ invasion = {
 		1432  = 2500	#	Singapore
 		1435  = 1000	#	Ipoh
 		1436  = 1000	#	Kuantan
-
-		#China-Korea
-		1217  = -1	#	Anshan
-		1221  = 300	#	Pyeongyang
-		1228  = 300	#	Seoul
-		1234  = -1	#	Buna
-		1241  = -1	#	Tianjin
-		1328  = -1	#	Qingdao
-		1333  = -1	#	Huaiyin
-		1334  = -1	#	Nantong
-		1338  = -1	#	Shanghai
-		1358  = -1	#	Fuzhou
-		1361  = -1	#	Gaoxiong
-		1362  = -1	#	Taipei
-		1367  = -1	#	Naoming
-		1369  = -1	#	Guangzhou
-		1371  = 1500	#	Hong Kong
-		1372  = 1000	#	Macao
-
+		
 		#Japan
 		1552  = -1	#	Tokyo
-		1554  = 500	#	Hiroshima
+		1554  = -1	#	Hiroshima
 		1559  = -1	#	Matsuyama
-		1561  = 500	#	Kagoshima
+		1561  = -1	#	Kagoshima
 		
 		#Ger Invasion Deterrence
 		1778  = 2500	#Guantanamo
@@ -384,21 +312,17 @@ invasion = {
 	} 
 } 
 admiral = { 
-	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 7 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 6 	# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {
 		1734 # Pearl harbour
 		1739 # Midway
 	    1889 # San Francisco 
-     	1795 # New York 
-		#1432 # Singapore
 		1683 # Guam
-		747 # Tunis
 		750 # Tripoli
 		348 # Gibraltar
-		17 # Liverpool/Manchester 
        	429 #Malta
 	}
 	target = {
@@ -413,10 +337,7 @@ admiral = {
 		2180 = 200 #Palermo - invasion screening
 	} 
 	core = {	
-	#2424 #Sea near st john's
-	#2316 #Sea near florida
-	#2388 #Sea near portland
-	#2396 #Sea near Dutch Harbor
+	2548 #Sea near Manado
 	2637 #Pearl Harbor
 	2631 #Midway
 	2556 #Philipines center

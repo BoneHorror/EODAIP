@@ -6,7 +6,8 @@
 ###################################
 military = { 
 	relative_build_scheme 	= yes
-
+	extra_convoys_war = 0.3300 
+	max_batch_war 		= 720 
 	#### Divisions etc...
    	infantry   		= 11
 	d_06			= 2 #Rangers
