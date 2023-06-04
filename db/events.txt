@@ -22,6 +22,7 @@ event = "db\events\USSR.txt"
 event = "db\events\Mobilization.txt"
 event = "db\events\Mobilization_events.txt"
 event = "db\events\Election_day.txt"
+event = "db\events\1940s_events.txt"
 
 # AI Events
 
