@@ -2375,6 +2375,7 @@ event = {
 
 	decision = { 
 		war = { country = SOV country = GER }
+		exists = FIN
 		NOT = {
 			alliance = { country = GER country = FIN }
 			war = { country = GER country = FIN }
@@ -2391,6 +2392,7 @@ event = {
 
 	trigger = { 
 		war = { country = SOV country = GER }
+		exists = FIN
 		random = 50
 		NOT = {
 			alliance = { country = GER country = FIN }
@@ -8135,12 +8137,14 @@ event = {
 	random = no
 	country = JAP
 
-	decision = { war = { country = JAP country = USA } not = { naval_percentage = { country = USA value = 0.5 } carrier = { value = 1 when = now } } }
+	decision = { war = { country = JAP country = USA } not = { naval_percentage = { country = USA value = 0.6 } carrier = { value = 1 when = now } } }
 
 	decision_trigger = { supplies = 1000 }
 
 	trigger = { 
-		war = { country = JAP country = USA } not = { naval_percentage = { country = USA value = 0.5 } carrier = { value = 1 when = now } } 
+		war = { country = JAP country = USA } 
+		not = { naval_percentage = { country = USA value = 0.7 } 
+		carrier = { value = 1 when = now } } 
 		random = 20
 	}
    
@@ -8577,7 +8581,8 @@ event = {
 		name = ACTION_NAME_DAMN
 		command = { type = task_efficiency which = attack value = -0.5 }
 		command = { type = ground_def_eff value = -0.35 when = 1 } 
-		command = { type = max_organization which = land value = -6 }
+		command = { trigger = { ai = GER } type = max_organization which = land value = -12 }
+		command = { trigger = { NOT = { ai = GER } } type = max_organization which = land value = -8 }
 		command = { type = dissent value = 20 }
 		#command = { type = event which = 9300274 where = -1 when = 30 } #Fires from save_date and date comparison
 	}
@@ -9281,6 +9286,7 @@ event = {
 	country = GER
 
 	trigger = {
+		NOT = { event = 2007033 } # The Bitter Peace 
 		OR = {
 			headofstate = 1 # Hitler
 			headofgovernment = 22 # Hitler
@@ -9300,7 +9306,7 @@ event = {
 	action = {
 		name = ACTION_NAME_DAMN
 		command = { type = dissent value = 2 }
-		#command = { type = research_sabotaged }
+		command = { type = research_sabotaged }
 	}
 }
 ###############
@@ -9375,10 +9381,11 @@ event = {
 	action = {
 		name = ACTION_NAME_GREAT
 		command = { type = money value = 100 }
+		command = { type = industrial_modifier which = ic value = 1 }
 	}
 }
 ###############
-# 'Kinder, K?che, Kirche'
+# 'Kinder, Kuche, Kirche'
 event = {
 	id = 9300297
 	random = no
@@ -9501,7 +9508,7 @@ event = {
 	action = {	
 		name = ACTION_NAME_GREAT
 		command = { type = hard_attack which = sp_artillery value = 1 }
-      		command = { type = build_time which = sp_artillery when = on_upgrade where = relative value = -10 }
+      	command = { type = build_time which = sp_artillery when = on_upgrade where = relative value = -10 }
 	   	command = { trigger = { NOT = { technology = 2220 } } type = gain_tech which = 2220 } # SP ART 1940
 		command = { trigger = { ai = no } type = money value = -100 }
 	}

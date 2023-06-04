@@ -4493,7 +4493,7 @@ event = {
 		trigger = {
 			control = { province = 194 data = -1 } #Hollabrun
 		}
-		command = { type = add_prov_resource which = 194 value = 5 where = oil } #Hollabrun
+		command = { type = add_prov_resource which = 194 value = 8 where = oil } #Hollabrun
 	}
 }
 
@@ -4575,7 +4575,7 @@ event = {
 		trigger = {
 			control = { province = 276 data = -1 } #Zalaegerszed
 		}
-		command = { type = add_prov_resource which = 276 value = 3 where = oil } #Zalaegerszed
+		command = { type = add_prov_resource which = 276 value = 7 where = oil } #Zalaegerszed
 	}
 }
 

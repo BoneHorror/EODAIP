@@ -2803,10 +2803,10 @@ event = {
 		}  
 		OR = { 
 			control = { province = 419 data = -2 } #Rome
-			AND = { #Libya Lost
-				control = { province = 750 data = -2 } #Tripoli
-				control = { province = 761 data = -2 } #Benghazi
-				control = { province = 765 data = -2 } #Tobruk
+			AND = {
+			region = { region = "Tunisia" country = -2 }
+			region = { region = "Algeria" country = -2 }
+			war = { country = USA country = GER }
 			}
 		}
 	}
@@ -2818,17 +2818,16 @@ event = {
 		}  
 		OR = { 
 			control = { province = 419 data = -2 } #Rome
-			AND = { #Libya Lost
-				control = { province = 750 data = -2 } #Tripoli
-				control = { province = 761 data = -2 } #Benghazi
-				control = { province = 765 data = -2 } #Tobruk
+			AND = {
+			region = { region = "Tunisia" country = -2 }
+			region = { region = "Algeria" country = -2 }
+			war = { country = USA country = GER }
 			}
 		}
 		war = { country = GER country = USA } 
 		war = { country = GER country = ENG } 
 		control = { province = 55 data = -1 }
 		NOT = { war = { country = GER country = FRA } }
-		NOT = { alliance = { country = FRA } }
 	}
 
 	date = { day = 0 month = january year = 1936 }
@@ -4368,7 +4367,10 @@ event = {
 	picture = "news_paper"
 
 	decision = {
+		OR = {
 		event = 2002004 # C'est Foutu ! (FRA)
+		NOT = { exists = FRA }
+		}
 	}
 	decision_trigger = {
 		region = { region = France country = -3 value = 20 }
@@ -4378,7 +4380,10 @@ event = {
 		} 
 	}
 	trigger = {
-		event = 2002004 # C'est Foutu ! (FRA)
+		OR = {
+			event = 2002004 # C'est Foutu ! (FRA)
+			NOT = { exists = FRA }
+		}
 		region = { region = France country = -3 value = 20 }
 		OR = {
 			owned = { province = 55 data = U01 }
@@ -4407,6 +4412,77 @@ event = {
 		command = { type = capital which = 55 } # Paris - France
 		command = { type = country which = FRA }
 		command = { type = flag_ext where = FRA which = "" } # Resets original string
+		command = { type = addcore which = 37 }
+		command = { type = addcore which = 38 }
+		command = { type = addcore which = 39 }
+		command = { type = addcore which = 40 }
+		command = { type = addcore which = 41 }
+		command = { type = addcore which = 42 }
+		command = { type = addcore which = 43 }
+		command = { type = addcore which = 44 }
+		command = { type = addcore which = 45 }
+		command = { type = addcore which = 46 }
+		command = { type = addcore which = 47 }
+		command = { type = addcore which = 48 }
+		command = { type = addcore which = 49 }
+		command = { type = addcore which = 50 }
+		command = { type = addcore which = 51 }
+		command = { type = addcore which = 52 }
+		command = { type = addcore which = 53 }
+		command = { type = addcore which = 54 }
+		command = { type = addcore which = 55 }
+		command = { type = addcore which = 56 }
+		command = { type = addcore which = 57 }
+		command = { type = addcore which = 58 }
+		command = { type = addcore which = 59 }
+		command = { type = addcore which = 60 }
+		command = { type = addcore which = 61 }
+		command = { type = addcore which = 62 }
+		command = { type = addcore which = 63 }
+		command = { type = addcore which = 64 }
+		command = { type = addcore which = 65 }
+		command = { type = addcore which = 66 }
+		command = { type = addcore which = 67 }
+		command = { type = addcore which = 68 }
+		command = { type = addcore which = 69 }
+		command = { type = addcore which = 70 }
+		command = { type = addcore which = 71 }
+		command = { type = addcore which = 72 }
+		command = { type = addcore which = 73 }
+		command = { type = addcore which = 74 }
+		command = { type = addcore which = 75 }
+		command = { type = addcore which = 76 }
+		command = { type = addcore which = 77 }
+		command = { type = addcore which = 78 }
+		command = { type = addcore which = 79 }
+		command = { type = addcore which = 80 }
+		command = { type = addcore which = 81 }
+		command = { type = addcore which = 82 }
+		command = { type = addcore which = 83 }
+		command = { type = addcore which = 84 }
+		command = { type = addcore which = 85 }
+		command = { type = addcore which = 86 }
+		command = { type = addcore which = 87 }
+		command = { type = addcore which = 88 }
+		command = { type = addcore which = 89 }
+		command = { type = addcore which = 90 }
+		command = { type = addcore which = 91 }
+		command = { type = addcore which = 92 }
+		command = { type = addcore which = 93 }
+		command = { type = addcore which = 94 }
+		command = { type = addcore which = 95 }
+		command = { type = addcore which = 96 }
+		command = { type = addcore which = 97 }
+		command = { type = addcore which = 98 }
+		command = { type = addcore which = 99 }
+		command = { type = addcore which = 101 }
+		command = { type = addcore which = 102 }
+		command = { type = addcore which = 103 }
+		command = { type = addcore which = 100 }
+		command = { type = addcore which = 104 }
+		command = { type = addcore which = 105 }
+		command = { type = addcore which = 106 }
+		command = { type = addcore which = 107 }
 		#tech teams
         command = { type = waketeam which = 5006 }
         command = { type = waketeam which = 5016 }
@@ -5812,7 +5888,7 @@ event = {
 			control = { province = 55 data = GER } # Paris 
 			control = { province = 55 data = U55 }
 			AND = {
-				control = { province = 55 data = U55 }
+				control = { province = 55 data = FRA }
 				NOT = { alliance = { country = USA country = FRA } }
 			}
 		}
@@ -5830,6 +5906,24 @@ event = {
 	action = {
 		name = ACTION_NAME_OK
 		command = { type = event which = 2015010 where = FRA when = 1 }
+		command = { type = war which = FRA }
+		command	= { trigger = { ai = yes } type = local_setflag which = USATorch }
+		command = { trigger = { ai = yes } type = local_clrflag which = USADDay }
+		command = { trigger = { ai = yes } type = local_clrflag which = USAItaly }
+		command = { trigger = { ai = yes } type = local_clrflag which = USJap }
+		command = { trigger = { ai = yes } type = local_clrflag which = USInvadeUK }
+		command = { trigger = { ai = yes } type = ai which = "switch/USA_Torch.ai" }
+		command = { trigger = { ai = yes } type = add_corps which = "Western Task Force" value = land where = 718 } # Casablanca
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_corps which = "Center Task Force" value = land where = 729 } # Tlemencen
+		command = { trigger = { ai = yes } type = add_division value = paratrooper when = 1 where = glider_artillery }
+		command = { trigger = { ai = yes } type = add_division value = paratrooper when = 1 where = glider_artillery }
+		command = { trigger = { ai = yes } type = add_corps which = "Eastern Task Force" value = land where = 727 } # Algiers
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = motorized when = 2 where = sp_artillery }
 	}
 }
 
@@ -5845,9 +5939,9 @@ event = {
 
 	action = {
 		name = ACTION_NAME_DAMN
-		command = { type = secederegion which = USA value = "Algeria" when = 1 } # Torch
-		command = { trigger = { region = { region = "Tunisia" country = FRA } } type = secederegion which = USA value = "Tunisia" when = 1 }
-		command = { trigger = { region = { region = "Morocco" country = FRA value = 70 } } type = secederegion which = USA value = "Morocco" when = 1 }
-		command = { type = dissent value = 5 }
+		#command = { type = secederegion which = USA value = "Algeria" when = 1 } # Torch
+		#command = { trigger = { region = { region = "Tunisia" country = FRA } } type = secederegion which = USA value = "Tunisia" when = 1 }
+		#command = { trigger = { region = { region = "Morocco" country = FRA value = 70 } } type = secederegion which = USA value = "Morocco" when = 1 }
+		command = { type = dissent value = 15 }
 	}
 }

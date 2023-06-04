@@ -611,12 +611,16 @@ event = {
 	trigger = {
 		event = 2049094 # Industrial production back to 1928 levels
 		atwar = no
-		OR = { random = 50 AND = { year = 1939 random = 80 } }
+		OR = { 
+			random = 50 
+			AND = { year = 1939 random = 80 }
+			AND = { year = 1940 random = 90 }
+			}
 		}
 
 	date = { day = 0 month = january year = 1933 }
 	offset = 15
-	deathdate = { day = 29 month = december year = 1963 }
+	deathdate = { day = 29 month = december year = 1940 }
 
 	name = "2049102name"
 	desc = "2049102desc"

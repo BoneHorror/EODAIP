@@ -4552,7 +4552,7 @@ event = {
   	picture = "news_paper"
 
 	action = {
-		ai_chance = 10
+		ai_chance = 50
 		name = 9a
 		command = { type = end_puppet }
 		command = { type = leave_alliance when = 1 }
@@ -4565,7 +4565,7 @@ event = {
 	}
 	
 	action = {
-		ai_chance = 80
+		ai_chance = 40
 		name = 9b
 		command = { type = relation which = ENG value = -30 }
 		command = { type = relation which = IRQ value = 30 }
@@ -4612,10 +4612,10 @@ event = {
 
 	trigger = {
 		exists = YUG
+		year = 1941
 		OR = {
 			flag = InvYugoslavia 		
 			random = 50 
-			AND = { year = 1940 month = december } 
 		}
 		event = 2003047 # German 1940 diplomatic offensive
 		event = 2003033 # Tripartite Pact

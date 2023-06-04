@@ -3112,7 +3112,7 @@ event = {
 #		ai_chance = 100
 #		name = 77002a
 #		command = { trigger = { ai = no } type = war which = GER }
-#		command = { trigger = { ai = yes } type = ai_prepare_war which = GER }
+#		command = { trigger = { ai = yes } type = war which = GER }
 #		command = { type = domestic which = interventionism value = 2 }
 #		#command = { type = dissent value = -10 }
 #	}
