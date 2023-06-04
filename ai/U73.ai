@@ -2,19 +2,19 @@
 
 switch = no # [yes/no]
 max_front_ratio = 1.2 
-max_garrison_prop = 0.30
-min_garrison_prop = 0.20
+max_garrison_prop = 0.50
+min_garrison_prop = 0.40
 neutrality = 80.000 
 war = 1
-reinforcement = 0.000 
+reinforcement = 0.100 
 upgrading = 0.3500 
 strat_redeploy_threshold = 50
 max_redeploying = 0.05
-exp_force_ratio = 0.05
+exp_force_ratio = 0.6
 exp_force_ratios = {
-	FRA = 1.0
+	GER = 1.0
 } 
-no_exp_forces_to = { NOR POL DEN CZE }
+no_exp_forces_to = { JAP MAN MEN }
 evac_islands = no
 
 ###################################
@@ -44,11 +44,9 @@ befriend = {
 }
 protect = { }
 target = {
-	#Japan 
-	1552 = 100 # Tokyo
+	1795 = 100 # New York
 	
-	#Germany
-	163 = 100 # Berlin
+	55 = 100 # Paris
 } 
 trade = {
 	cancel_deal_threshold = 2
@@ -157,7 +155,7 @@ spyprefs =
 		found_partisans		= 3
 		massmedia 			= 2
 		disrupt_techteam 	= 5
-		country 			= GER
+		country 			= USA
 	}
 	spyprefsdata = {
 		country_priorities	= 6
@@ -170,7 +168,7 @@ spyprefs =
 		found_partisans		= 4
 		massmedia 			= 2
 		disrupt_techteam 	= 5
-		country 			= ITA
+		country 			= CAN
 	}
 	spyprefsdata = {
 		country_priorities	= 4
@@ -196,7 +194,7 @@ spyprefs =
 		found_partisans		= 2
 		massmedia 			= 1
 		disrupt_techteam 	= 5
-		country 			= JAP
+		country 			= AST
 	}
 	spyprefsdata = {
 		country_priorities	= 3
@@ -209,7 +207,7 @@ spyprefs =
 		found_partisans		= 1
 		massmedia 			= 1
 		disrupt_techteam 	= 5
-		country 			= SPA
+		country 			= SPR
 	}
 	spyprefsdata = {
 		country_priorities	= 1
@@ -222,7 +220,7 @@ spyprefs =
 		found_partisans		= 0
 		massmedia 			= 1
 		disrupt_techteam 	= 5
-		country 			= HUN
+		country 			= U01
 	}
 }
 ###################################
