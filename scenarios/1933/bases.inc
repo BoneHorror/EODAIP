@@ -603,7 +603,7 @@ province = { id = 529   # Kouvola - South Finland - Finland
  } 
  
 province = { id = 531   # Viipuri - Karelia - Finland
-   landfort = 8 
+   landfort = 3 
    anti_air = 4 
    air_base = 1 
    coastalfort = 2 
@@ -2194,7 +2194,7 @@ province = { id = 348   # Gibraltar - West Andalucia - Spain
    anti_air = 6 
    air_base = { size = 4 current_size = 4 } 
    naval_base = { size = 10 current_size = 10 } 
-   landfort = 6 
+   landfort = 4 
  } 
  
 province = { id = 388   # Nicosia - Anatolian South Coast - Anatolia
