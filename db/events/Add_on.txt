@@ -18265,10 +18265,15 @@ event = {
 			AND = {
 				OR = {
 					AND = {
+						NOT = { transport = { country = -1 value = 30 when = 1 } }
+						OR = {
+						country = USA
+						}
+					}
+					AND = {
 						NOT = { transport = { country = -1 value = 24 when = 1 } }
 						OR = {
 						country = JAP
-						country = USA
 						}
 					}
 					AND = {
