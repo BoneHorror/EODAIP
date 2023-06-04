@@ -95,6 +95,77 @@ event = {
 		command = { type = free_ic value = 12 }
 		command = { type = free_oil value = 5 }
 		command = { type = free_manpower value = 0.2 }
+		command = { type = removecore which = 37 }
+		command = { type = removecore which = 38 }
+		command = { type = removecore which = 39 }
+		command = { type = removecore which = 40 }
+		command = { type = removecore which = 41 }
+		command = { type = removecore which = 42 }
+		command = { type = removecore which = 43 }
+		command = { type = removecore which = 44 }
+		command = { type = removecore which = 45 }
+		command = { type = removecore which = 46 }
+		command = { type = removecore which = 47 }
+		command = { type = removecore which = 48 }
+		command = { type = removecore which = 49 }
+		command = { type = removecore which = 50 }
+		command = { type = removecore which = 51 }
+		command = { type = removecore which = 52 }
+		command = { type = removecore which = 53 }
+		command = { type = removecore which = 54 }
+		command = { type = removecore which = 55 }
+		command = { type = removecore which = 56 }
+		command = { type = removecore which = 57 }
+		command = { type = removecore which = 58 }
+		command = { type = removecore which = 59 }
+		command = { type = removecore which = 60 }
+		command = { type = removecore which = 61 }
+		command = { type = removecore which = 62 }
+		command = { type = removecore which = 63 }
+		command = { type = removecore which = 64 }
+		command = { type = removecore which = 65 }
+		command = { type = removecore which = 66 }
+		command = { type = removecore which = 67 }
+		command = { type = removecore which = 68 }
+		command = { type = removecore which = 69 }
+		command = { type = removecore which = 70 }
+		command = { type = removecore which = 71 }
+		command = { type = removecore which = 72 }
+		command = { type = removecore which = 73 }
+		command = { type = removecore which = 74 }
+		command = { type = removecore which = 75 }
+		command = { type = removecore which = 76 }
+		command = { type = removecore which = 77 }
+		command = { type = removecore which = 78 }
+		command = { type = removecore which = 79 }
+		command = { type = removecore which = 80 }
+		command = { type = removecore which = 81 }
+		command = { type = removecore which = 82 }
+		command = { type = removecore which = 83 }
+		command = { type = removecore which = 84 }
+		command = { type = removecore which = 85 }
+		command = { type = removecore which = 86 }
+		command = { type = removecore which = 87 }
+		command = { type = removecore which = 88 }
+		command = { type = removecore which = 89 }
+		command = { type = removecore which = 90 }
+		command = { type = removecore which = 91 }
+		command = { type = removecore which = 92 }
+		command = { type = removecore which = 93 }
+		command = { type = removecore which = 94 }
+		command = { type = removecore which = 95 }
+		command = { type = removecore which = 96 }
+		command = { type = removecore which = 97 }
+		command = { type = removecore which = 98 }
+		command = { type = removecore which = 99 }
+		command = { type = removecore which = 101 }
+		command = { type = removecore which = 102 }
+		command = { type = removecore which = 103 }
+		command = { type = removecore which = 100 }
+		command = { type = removecore which = 104 }
+		command = { type = removecore which = 105 }
+		command = { type = removecore which = 106 }
+		command = { type = removecore which = 107 }
 	}
 }
 ################
