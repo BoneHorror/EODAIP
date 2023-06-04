@@ -20,7 +20,7 @@ air_marshal = {
 
 	# tolerance is the required kill:loss ration expected to do 
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
-	airsuperioritylosstolerance 	= 1.3
+	airsuperioritylosstolerance 	= 1.5
 	groundattacklosstolerance 		= 1.0
 	interdictionlosstolerance 		= 0.8
 	logisticalstrikelosstolerance 	= 0.7

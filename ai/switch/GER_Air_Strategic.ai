@@ -23,13 +23,13 @@ air_marshal = {
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
 	airsuperioritylosstolerance 	= 1.0
 	groundattacklosstolerance 		= 1.3
-	interdictionlosstolerance 		= 1.5
+	interdictionlosstolerance 		= 1.6
 	logisticalstrikelosstolerance 	= 0.5
 	runwaycrateringlosstolerance 	= 0.8
-	strategicstriketolerance 		= 2.0
-	installationstriketolerance 	= 1.0
-	navalstriketolerance 			= 1.2
-	portstriketolerance 			= 1.5
+	strategicstriketolerance 		= 2.2
+	installationstriketolerance 	= 1.2
+	navalstriketolerance 			= 1.1
+	portstriketolerance 			= 1.3
 	convoyraidtolerance				= 1.0
 
 	# efficency is a tweakable param to adjust according to how 
