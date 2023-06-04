@@ -358,34 +358,34 @@ military = {
 
 	#### Divisions etc...
    	infantry     = 35 
-	cavalry 		= 7
-	motorized 		= 0
+	cavalry 		= 3
+	motorized 		= 1
 	mechanized 		= 0
 	light_armor	 	= 0
 	armor 			= 0
 	paratrooper 	= 1
-   	marine       = 5 
+   	marine       = 6 
 	bergsjaeger		= 0
    	garrison    = 0 
     hq 				= 4
-	militia 		= 0
+	militia 		= 5
 #				0 %
    	interceptor    = 5 
    	multi_role     = 0 
 	cas 			= 0
 	strategic_bomber = 1
-   	tactical_bomber = 9 
+   	tactical_bomber = 7 
    	naval_bomber   = 2 
 	transport_plane = 1
 	flying_bomb 	= 0
 	flying_rocket 	= 0
 #				0 %
-	battleship 		= 5
-   	carrier     = 7 
+	battleship 		= 6
+   	carrier     = 3 
 	escort_carrier	= 0
 	destroyer 		= 5
-   	light_cruiser   = 4 
-	heavy_cruiser 	= 2
+   	light_cruiser   = 5 
+	heavy_cruiser 	= 3
 	battlecruiser 	= 0
 	submarine 		= 2
 	nuclear_submarine = 0
@@ -394,18 +394,18 @@ military = {
 
 	#### Brigades
 	artillery 			= 12
-	sp_artillery 		= 5
+	sp_artillery 		= 4
 	cavalry_brigade	= 1 
 	sp_anti_air 	= 3
 	medium_armor 			= 3
 	tank_destroyer 		= 1
 	light_armor_brigade = 7
-	heavy_armor 		= 0
-	super_heavy_armor 	= 1
-	armored_car 		= 8
+	heavy_armor 		= 1
+	super_heavy_armor 	= 0
+	armored_car 		= 10
 	anti_air 			= 8
-	police 				= 6
-	engineer 			= 18
+	police 				= 10
+	engineer 			= 12
 	amph_armor			= 8 
 
             cag = 100.000
@@ -419,9 +419,9 @@ military = {
             naval_improved_hull_s = 10.0000 
             naval_torpedoes_s = 25.0000 
             naval_anti_air_l = 10.0000 
-            naval_radar_l = 0.0000 
-            naval_fire_controll_l = 0.0000 
-            naval_improved_hull_l = 0.0000 
+            naval_radar_l = 1.0000 
+            naval_fire_controll_l = 5.0000 
+            naval_improved_hull_l = 5.0000 
             floatplane = 20.0000
 }
 technology = { 
