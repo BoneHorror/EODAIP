@@ -33,7 +33,7 @@ event = {
 	action_a = {
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -5 }
-		command = { type = relation which = SLO value = 5 }
+		command = { type = relation which = SLO value = -5 }
 		command = { type = relation which = GER value = 5 }
 	}
 }
@@ -375,6 +375,3 @@ event = {
 		command = { type = trigger which = 2023015 } #Romania victorious over Hungary
 	}
 }
-
-
-
