@@ -11545,6 +11545,11 @@ event = {
 		atwar = yes
 		technology = 1560 # Marines 1922
 		random = 20
+	OR = {
+		war = { country = GER country = SOV }
+		war = { country = GER country = USA }
+		war = { country = GER country = HOL }
+		}
 	}	
 
    	name = 9300356name	
