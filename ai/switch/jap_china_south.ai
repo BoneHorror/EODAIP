@@ -11,7 +11,7 @@ target = {
 invasion = { 
 	invasion			= yes
  	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
-	random				= 15.0	#How big a random range.  (1.0 = 1%)
+	random				= 100.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.1	#higher, avoid worst beaches.
 	max_distance   		= 80.0  #About the distance from Japan to Batavia
@@ -45,8 +45,8 @@ invasion = {
 		1338  = 6000  #Shanghai
 		1333  = 4000  #Nanton
 		1334  = 4000  #Lianyuang
-		1367  = 3500  #Zhanjiang
-		1358  = -1  #Fuzhou
+		1367  = 4500  #Maoming
+		1358  = 1500  #Fuzhou
 		1369  = 6000  #Guangzhou
 	} 
 } 

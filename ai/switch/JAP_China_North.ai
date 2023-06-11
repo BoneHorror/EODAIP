@@ -40,13 +40,13 @@ invasion = {
 		1228  = 4000  #Seoul
 		1221  = 4000  #Pyongyang
 		1217  = 4000  #Anshan
-		1241  = 4000  #Tianjin
-		1328  = 4000  #Qingdao
+		1241  = 6000  #Tianjin
+		1328  = 6000  #Qingdao
 		1338  = 3500  #Shanghai
-		1333  = 3000  #Nanton
-		1334  = 3500  #Lianyuang
+		1333  = 5000  #Huayin
+		1334  = 3500  #Nanjing
 		1358  = -1  #Fuzhou
 		1369  = -1  #Guangzhou
-		1367  = -1  #Zhanjiang
+		1367  = -1  #Maoming
 	} 
 } 

@@ -10,9 +10,9 @@ front = {
       	enemy_handicap = { }
       	passivity = {
 		CHI = 99
-		CXB = 99
-		CGX = 99
-		CYN = 99
+		CXB = 97
+		CGX = 97
+		CYN = 97
 		U02 = 50
 		CHC = 97
 	} 

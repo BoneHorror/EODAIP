@@ -38,16 +38,15 @@ invasion = {
 	}
 	target = {
 		1228  = 4000  #Seoul
-		1221  = 3000  #Pyongyang
-		1217  = 3000  #Anshan
-		1241  = 3000  #Tianjin
-		1328  = 3000  #Qingdao
-		1338  = 2500  #Shanghai
-		1333  = 2000  #Nanton
-		1334  = 2000  #Lianyuang
-		1367  = -1  #Zhanjiang
-		1358  = 1700  #Fuzhou
-		1369  = 1700  #Guangzhou
-
+		1221  = 4000  #Pyongyang
+		1217  = 4000  #Anshan
+		1241  = 4000  #Tianjin
+		1328  = 2000  #Qingdao
+		1338  = 6500  #Shanghai
+		1333  = 2000  #Huayin
+		1334  = 7500  #Nanjing
+		1358  = 6000  #Fuzhou
+		1369  = -1  #Guangzhou
+		1367  = -1  #Maoming
 	} 
 } 
