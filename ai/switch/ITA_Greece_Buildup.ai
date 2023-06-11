@@ -1,6 +1,6 @@
 # Italy vs Greece AI File by Lothos
 
-max_front_ratio = 1.0 
+max_front_ratio = 1.05 
 max_garrison_prop = 0.40
 min_garrison_prop = 0.30
 upgrading = 0.20

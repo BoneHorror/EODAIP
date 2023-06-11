@@ -3,10 +3,11 @@
 max_garrison_prop = 0.30
 min_garrison_prop = 0.20
 max_front_ratios = { 
-   GRE = 2.0 
-   YUG = 1.5
-   ENG = 1.5
+   GRE = 1.5 
+   YUG = 2.0
+   ENG = 1.0
    USA = 1.4
+   SOV = 2.0
 } 
 ###################################
 # Ground Combat, Leaders and Garrisons

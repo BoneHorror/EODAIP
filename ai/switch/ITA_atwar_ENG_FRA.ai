@@ -1,7 +1,13 @@
 # Italy Reset Garrison after Ethiopia AI File by Lothos
 
 desperation = 0.10 #Start spamming MIL once we lose 10% of our IC - basically whenever we're invaded
-  
+max_front_ratios = { 
+   GRE = 1.1 
+   YUG = 1.5
+   ENG = 1.0
+   USA = 1.2
+   SOV = 1.2
+} 
 combat = { 
 	FRA = 80
 	ENG = 160

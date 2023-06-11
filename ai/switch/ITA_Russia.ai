@@ -6,7 +6,13 @@ exp_force_ratio = 0.20
 exp_force_ratios = {
 	GER = 1.0
 } 
-
+max_front_ratios = { 
+   GRE = 1.5 
+   YUG = 2.0
+   ENG = 1.01
+   USA = 1.5
+   SOV = 2.0
+} 
 no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN MEN U87 U03 BUR PHI }
 ###################################
 # Ground Combat, Leaders and Garrisons

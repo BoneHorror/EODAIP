@@ -19,6 +19,7 @@ exp_force_ratios = {
 max_front_ratios = { 
    ENG = 2.0
    USA = 1.8
+   SOV = 2.0
 } 
 no_exp_forces_to = { FRA ROM HUN BUL FIN VIC JAP SIA MAN MEN U87 BUR PHI }
 ###################################
