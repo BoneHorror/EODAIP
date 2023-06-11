@@ -2574,3 +2574,31 @@ event = {
 		command = { type = local_clrflag which = JAPConvoys }
 	}
 }
+#################
+## Japan invades China from the south - debug 
+##############################################
+#event = {
+#	id = 21371009
+#	random = no 
+#	country = JAP
+#	persistent = yes
+#	
+#	trigger = {
+#		ai = yes
+#		NOT = { local_flag = ChinaSouth }
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 4
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = local_clrflag which = ChinaCenter }
+#		command = { type = local_setflag which = ChinaSouth }
+#		command = { type = local_clrflag which = ChinaNorth }
+#		command = { type = ai which = "switch/JAP_China_South.ai" }
+#	}
+#}
