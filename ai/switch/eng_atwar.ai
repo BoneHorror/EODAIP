@@ -8,7 +8,12 @@ min_garrison_prop = 0.28
 upgrading = 0.30
 #reinforcement = 0.30
 desperation = 0.10 #Start spamming MIL once we lose 10% of our IC - basically whenever Islands are hit
-
+max_front_ratios = { 
+	U45 = 1.1
+   ITA = 1.01
+   GER = 1.5
+   JAP = 1.1
+} 
 ###################################
 # Construction and Tech Research
 ###################################

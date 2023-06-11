@@ -16,6 +16,12 @@ target = {
  135 = 30 # Tubingen - stop the nukes!
  1432 = 20 # Singapore
 } 
+max_front_ratios = { 
+	U45 = 1.5
+   ITA = 1.5
+   GER = 2.0
+   JAP = 1.5
+} 
 exp_force_ratio = 0.2
 exp_force_ratios = {
 	USA = 1.0
@@ -88,7 +94,7 @@ invasion = {
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 30.0  #About the distance from Japan to Batavia
+	max_distance  		= 150.0  #About the distance from Japan to Batavia
 	max_staging_distance = 30.0 # How far should the staging area be from the target invasion point
 	distance			= 1.0	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
