@@ -988,7 +988,7 @@ event = {
 			AND = {
 				land_percentage = { country = ITA value = 0.6 }
 				naval_percentage = { country = ITA value = 1.0 }
-				NOT = { naval_percentage = { country = JAP value = 0.9 } }
+				NOT = { naval_percentage = { country = JAP value = 0.7 } }
 			}
 		}
 		OR = {
@@ -1110,7 +1110,7 @@ event = {
 		OR = {
 			AND = {
 				war = { country = USA country = JAP }
-				NOT = { naval_percentage = { country = JAP value = 2.0 } }
+				NOT = { naval_percentage = { country = JAP value = 1.5 } }
 				NOT = { # Not too heavily defended by enemy troops either
 					garrison = { country = -2 province = 29  type = land size = 30 area = 2 } #London, England Region 
 					garrison = { country = -2 province = 12  type = land size = 30 area = 2 } #Edinburgh, Scotland Region 				
@@ -1736,7 +1736,7 @@ event = {
 		ai = yes
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USJap }
-		naval_percentage = { country = JAP value = 1.0 }
+		naval_percentage = { country = JAP value = 0.7 }
 		NOT = {
 			control = { province = 1563 data = -3 } #Southern Okinawa
 			control = { province = 1734 data = -3 } #Pearl Harbour
@@ -1789,12 +1789,12 @@ event = {
 		OR = {
 			AND = {
 				control = { province = 1563 data = USA } #Southern Okinawa
-				naval_percentage = { country = JAP value = 1.15 }
+				naval_percentage = { country = JAP value = 1.0 }
 				}
-			naval_percentage = { country = JAP value = 1.3 }
+			naval_percentage = { country = JAP value = 1.05 }
 				AND = {
 					NOT = { war = { country = GER country = SOV } } #GER is hard to tackle because it's not atwar with SOV
-					naval_percentage = { country = JAP value = 1.0 }
+					naval_percentage = { country = JAP value = 0.75 }
 						OR = {
 							NOT = { exists = ENG }
 							NOT = { exists = CHI }
@@ -1837,7 +1837,7 @@ event = {
 		ai = yes
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USJap }
-		naval_percentage = { country = JAP value = 1.0 }
+		naval_percentage = { country = JAP value = 0.7 }
 		AND = {
 			control = { province = 1563 data = -3 } #Southern Okinawa
 			control = { province = 1734 data = -3 } #Pearl Harbour
@@ -1890,12 +1890,12 @@ event = {
 		OR = {
 			AND = {
 				control = { province = 1563 data = USA } #Southern Okinawa
-				naval_percentage = { country = JAP value = 1.15 }
+				naval_percentage = { country = JAP value = 1.0 }
 				}
-			naval_percentage = { country = JAP value = 1.3 }
+			naval_percentage = { country = JAP value = 1.05 }
 				AND = {
 					NOT = { war = { country = GER country = SOV } } #GER is hard to tackle because it's not atwar with SOV
-					naval_percentage = { country = JAP value = 1.0 }
+					naval_percentage = { country = JAP value = 0.85 }
 						OR = {
 							NOT = { exists = ENG }
 							NOT = { exists = CHI }
@@ -1938,7 +1938,7 @@ event = {
 		ai = yes
 		OR = {
 			NOT = { war = { country = USA country = JAP } }
-			NOT = { naval_percentage = { country = JAP value = 0.8 } }
+			NOT = { naval_percentage = { country = JAP value = 0.7 } }
 		}
 		local_flag = USJap	
 	}
