@@ -177,11 +177,11 @@ invasion = {
 	random				= 12.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 1.0	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	distance			= 0.07	#higher = avoid long distance.
+	distance			= 0.5	#higher = avoid long distance.
 	max_distance   		= 250.0 # 40.0
 	max_staging_distance = 50.0 # 500	# How far should the staging area be from the target invasion point
-	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
-	island				= 0.2	#prioritise taking pure islands.
+	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.0	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 0.8	#higher = much more vary of troops nearby
 	air_base			= 2.0

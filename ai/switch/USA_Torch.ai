@@ -144,17 +144,17 @@ invasion = {
 	random				= 12.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 1.0	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	distance			= 0.07	#higher = avoid long distance.
-	max_distance   		= 50.0 # 40.0
-	max_staging_distance = 50.0 # 500	# How far should the staging area be from the target invasion point
-	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
-	island				= 0.2	#prioritise taking pure islands.
+	distance			= 1.0	#higher = avoid long distance.
+	max_distance   		= 150.0 # 40.0
+	max_staging_distance = 100.0 # 500	# How far should the staging area be from the target invasion point
+	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.8	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 0.8	#higher = much more vary of troops nearby
 	air_base			= 2.0
     	naval_base 			= 1.5 
     	air_support 		= 5.0 
-    	redirect 			= home
+    	redirect 			= nearest
 	ignore				= no
 	help_allies 		= no
     province_priorities = yes #Invade only provinces in target list with priority higher then 0
@@ -252,21 +252,21 @@ invasion = {
 
 
 		#Coral Sea
-		1587  = -1	#	Bougainville
-		1588  = -1	#	Santa Isabel
-		1589  = -1	#	New Georgia
-		1590  = -1	#	Lunga
-		1591  = -1	#	Malaita
-		1592  = -1	#	Nendo
-		1596  = -1	#	Hollandia
-		1600  = -1	#	Fak-Fak
-		1604  = -1	#	Popondetta
-		1607  = -1	#	Port Moresby
-		1608  = -1	#	Kiunga
-		1611  = -1	#	Male
-		1612  = -1	#	Karavatti
-		1613  = -1	#	West Island
-		1614  = -1	#	Christmas
+		1587  = 500	#	Bougainville
+		1588  = 500	#	Santa Isabel
+		1589  = 500	#	New Georgia
+		1590  = 500	#	Lunga
+		1591  = 500	#	Malaita
+		1592  = 500	#	Nendo
+		1596  = 500	#	Hollandia
+		1600  = 500	#	Fak-Fak
+		1604  = 500	#	Popondetta
+		1607  = 500	#	Port Moresby
+		1608  = 500	#	Kiunga
+		1611  = 500	#	Male
+		1612  = 500	#	Karavatti
+		1613  = 500	#	West Island
+		1614  = 500	#	Christmas
 
 
 		#Carolinese
@@ -341,8 +341,8 @@ invasion = {
 
 		#China-Korea
 		1217  = -1	#	Anshan
-		1221  = 300	#	Pyeongyang
-		1228  = 300	#	Seoul
+		1221  = -1	#	Pyeongyang
+		1228  = -1	#	Seoul
 		1234  = -1	#	Buna
 		1241  = -1	#	Tianjin
 		1328  = -1	#	Qingdao
@@ -354,14 +354,14 @@ invasion = {
 		1362  = -1	#	Taipei
 		1367  = -1	#	Naoming
 		1369  = -1	#	Guangzhou
-		1371  = 1500	#	Hong Kong
-		1372  = 1000	#	Macao
+		1371  = -1	#	Hong Kong
+		1372  = -1	#	Macao
 
 		#Japan
 		1552  = -1	#	Tokyo
-		1554  = 3000	#	Hiroshima
+		1554  = -1		#	Hiroshima
 		1559  = -1	#	Matsuyama
-		1561  = 3000	#	Kagoshima
+		1561  = -1		#	Kagoshima
 
 		# ATLANTIC OCEAN
 		# -------------
@@ -394,7 +394,7 @@ invasion = {
 		#Greece
 		370  = -1	#	Alexandroupoli
 		372  = -1	#	Patra
-		377  = 15	#	Athens
+		377  = -1	#	Athens
 		378  = -1	#	Kalymnos
 		379  = -1	#	Rodos
 		381  = -1	#	Ermoupoli
@@ -420,19 +420,19 @@ invasion = {
 
 
 		# Middle East
-		1004  = 35	#	El Arish
-		1005  = 35	#	Sharm el Sheikh
-		1008  = 35	#	Tel Aviv
-		1019  = 35	#	Beirut
-		1032  = 35	#	Basrah
-		1038  = 35	#	Doha
-		1039  = 35	#	Abu Dhabi
-		1040  = 35	#	Dammam
-		1041  = 35	#	Kuwait
-		1043  = 35	#	Khasab
-		1048  = 35	#	Medina
-		1051  = 35	#	El Mukalla
-		1052  = 35	#	Masqat
+		1004  = -1	#	El Arish
+		1005  = -1	#	Sharm el Sheikh
+		1008  = -1	#	Tel Aviv
+		1019  = -1	#	Beirut
+		1032  = -1	#	Basrah
+		1038  = -1	#	Doha
+		1039  = -1	#	Abu Dhabi
+		1040  = -1	#	Dammam
+		1041  = -1	#	Kuwait
+		1043  = -1	#	Khasab
+		1048  = -1	#	Medina
+		1051  = -1	#	El Mukalla
+		1052  = -1	#	Masqat
 
 		#Norway
 		483  = -1	#	Oslo

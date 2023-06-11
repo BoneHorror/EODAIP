@@ -171,20 +171,20 @@ front = {
 invasion = { 
 	invasion			= yes
  	base				= 0.05	#Relative modifier. (lower = specific targets much more important.)
-	random				= 10.0	#How big a random range.  (1.0 = 1%)
+	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
 	max_distance  		= 100.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
 	max_staging_distance = 100.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
-	distance			= 5.0	#higher = avoid long distance.
-	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	distance			= 2.5	#higher = avoid long distance.
+	pocket				= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
-	enemy				= 1.5	#higher = much more vary of troops in province.
+	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
 	air_base			= 2.5 
     naval_base 			= 1.5 
-    air_support 		= 12.0 
-    redirect 			= priority #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
+    air_support 		= 4.0 
+    redirect 			= nearest #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
 	ignore				= yes
 	help_allies 		= no 	#[yes/no]
     province_priorities = yes #Invade only provinces in target list with priority higher then 0
@@ -410,7 +410,7 @@ admiral = {
 	2697 = 200 #Target for D-Day - Rotterdam
 	} 
 	core = {	
-	#2396 #Sea near Dutch Harbor
+	2475 #Sea near Guam
 	2637 #Pearl Harbor
 	2631 #Midway
 	2181 #Malta sea

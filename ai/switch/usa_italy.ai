@@ -95,7 +95,7 @@ front = {
 invasion = {
 	invasion			= yes
  	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
-	random				= 10.0	#How big a random range.  (1.0 = 1%)
+	random				= 16.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.05	#increase to avoid coastal forts more.
 	beach				= 0.05	#higher, avoid worst beaches.
 	max_distance  		= 85.0  #About the distance from Japan to Batavia
@@ -141,31 +141,31 @@ invasion = {
 		11  = 6000  #Glasgow
 
 		#Norway
-		491	= 30	#Alesund
-		485	= 30	#Kristiansand
-		483	= 80	#Oslo
-		493	= 10	#Trondheim
-		495	= 80	#Narvik
+		491	= -1	#Alesund
+		485	= -1	#Kristiansand
+		483	= -1	#Oslo
+		493	= -1	#Trondheim
+		495	= -1	#Narvik
 		
 		#Germany
-		152 = 100   #Kiel
-		147	= 100	#Wilhelmshaven
-		153	= 100	#Rostock
-		158	= 100	#Stettin
+		152 = -1   #Kiel
+		147	= -1	#Wilhelmshaven
+		153	= -1	#Rostock
+		158	= -1	#Stettin
 
 	
 		#France
-		49	= 900  #Calais
-		53	= 1800  #Dieppe
-		44	= 900  #Caen
-		37	= 800  #Brest
-		39	= 800  #Lorient
-		68  = 2000  #Bordeaux
-		69	= 900	#La Rochelle
-		46	= 800	#Bayeux
-		51	= 1800	#Dunkirk
-		82	= 800	#Montpellier
-		86	= 800	#Marseille
+		49	= -1  #Calais
+		53	= -10  #Dieppe
+		44	= -1  #Caen
+		37	= -1  #Brest
+		39	= -1  #Lorient
+		68  = -1  #Bordeaux
+		69	= -1	#La Rochelle
+		46	= -1	#Bayeux
+		51	= -1	#Dunkirk
+		82	= -1	#Montpellier
+		86	= -1	#Marseille
 	
 		# MEDITERRANEAN SEA
 		# -----------------
@@ -183,11 +183,11 @@ invasion = {
 
 		429 = 8000  #Malta
 		#Spain
-		475	 = 3000	 #Palma de Mallorca
-		473	 = 3000	 #Cadiz
-		449  = 3000  #Vigo
-		441  = 3000  #Coruna
-		472  = 3000  #Huelva
+		475	 = 4000	 #Palma de Mallorca
+		473	 = 4000	 #Cadiz
+		449  = 4000  #Vigo
+		441  = 4000  #Coruna
+		472  = 4000  #Huelva
 		463  = 2750  #Murcia
 		464  = 2750  #Valencia		
 		440  = 2750  #Barcelona
@@ -312,8 +312,8 @@ invasion = {
 	} 
 } 
 admiral = { 
-	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 6 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 4 	# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {

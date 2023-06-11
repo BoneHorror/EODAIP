@@ -91,12 +91,12 @@ front = {
 invasion = { 
 	invasion			= yes
  	base				= 0.2	#Relative modifier. (lower = specific targets much more important.)
-	random				= 4.0	#How big a random range.  (1.0 = 1%)
+	random				= 18.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
 	max_distance  		= 100.0  #About the distance from Japan to Batavia
 	max_staging_distance = 85.0 # How far should the staging area be from the target invasion point
-	distance			= 0.2	#higher = avoid long distance.
+	distance			= 2.0	#higher = avoid long distance.
 	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 1.0	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
