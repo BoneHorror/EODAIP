@@ -993,7 +993,10 @@ event = {
 		event = 3003009
 		NOT = {	lost_national = { country = GER value = 2 } }
 		war = { country = SOV }
-		control = { province = 55 data = GER } # Paris
+		OR = {
+			control = { province = 55 data = -3 } # Paris
+			event = 2001007 #Germany calls for general peace Treaty in Europe
+			}
 		OR = {
 			month = 10 # November
 			AND = {
@@ -3750,3 +3753,73 @@ event = {
 	}
 }
 
+################
+# Panic when Berlin is threatened! (and pull units from the eastern front)
+#############################################
+event = {
+	id = 3003128
+	random = no 
+	country = GER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { local_flag = GERPanicBerlin }
+		lost_national = { country = GER value = 5 }
+		incabinet = 1 # Hitler
+		war = { country = GER country = SOV }
+		war = { country = GER country = USA }
+		control = { province = 55 data = -2 } # Paris
+		OR = {
+			control = { province = 152 data = -2 } # Kiel
+			control = { province = 146 data = -2 } # Hannover
+			control = { province = 173 data = -2 } # Dresden
+			control = { province = 145 data = -2 } # Essen
+			control = { province = 134 data = -2 } # Stuttgart
+			control = { province = 160 data = -2 } # Frankfurt
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_DDay_Panic.ai" }
+		command = { type = local_setflag which = GERPanicBerlin }
+	}
+}
+event = {
+	id = 3003129
+	random = no 
+	country = GER
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = GERPanicBerlin
+		NOT = {
+			control = { province = 152 data = -2 } # Kiel
+			control = { province = 146 data = -2 } # Hannover
+			control = { province = 173 data = -2 } # Dresden
+			control = { province = 145 data = -2 } # Essen
+			control = { province = 134 data = -2 } # Stuttgart
+			control = { province = 160 data = -2 } # Frankfurt
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_Panic_Release.ai" }
+		command = { type = local_clrflag which = GERPanicBerlin }
+	}
+}

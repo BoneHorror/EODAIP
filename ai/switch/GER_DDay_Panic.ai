@@ -1,0 +1,37 @@
+# Ger panics during DDay
+
+max_garrison_prop = 0.45 # 0.60
+min_garrison_prop = 0.25 # 0.40
+strat_redeploy_threshold = 20
+max_redeploying = 0.4
+max_front_ratios = { 
+   SOV = 0.6 
+   ENG = 2.5
+   USA = 2.5
+   CAN = 2.5
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.4
+	panic_ratio_vs_human	= 1.4
+	base_attack_odds	= 1.05
+	min_attack_odds		= 1.01
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.0
+	withdraw_odds		= 0.65
+	support_defense_prop 	= 0.25
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 
+admiral = { 
+	target = { 2270 = 90 2276 = 90 2333 = 90 2685 = 90 2176 = 200 2232 = 200 } 
+}
