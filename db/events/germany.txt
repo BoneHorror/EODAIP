@@ -1419,9 +1419,9 @@ event = {
 		command = { type = chiefofair which = 280045 }
 		command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 } #remove all land units (so no units inherited from CZE)
 		command = { type = add_corps which = "Slovak Combat Group" value = land where = 208 } # Bratislava - Czechoslovakia
-        command = { type = add_division which = "1. Pesi divize 'Jánosík'" value = infantry when = 8 } #Anton Pulanich in sector Spišská Nová Ves - Prešov
+        command = { type = add_division which = "1. Pesi divize 'Jánosík'" value = infantry when = 8 where = artillery } #Anton Pulanich in sector Spišská Nová Ves - Prešov
         command = { type = add_division which = "2. Pesi divize 'Skultéty'" value = infantry when = 8 } #Alexander Cunderlík in sector Brezno – Poprad
-        command = { type = add_division which = "3. Pesi divize 'Rázus'" value = infantry when = 8 } #Augustín Malár in sector High Tatra
+        command = { type = add_division which = "3. Pesi divize 'Rázus'" value = bergsjaeger when = 9 where = artillery } #Augustín Malár in sector High Tatra
 		command = { type = manpowerpool value = 30 } # manpower
 		command = { trigger = { ai = yes } type = free_ic value = 4 }
 		command = { trigger = { ai = yes } type = free_oil value = 2 }
@@ -1525,10 +1525,10 @@ event = {
 		command = { type = leave_alliance when = 1 }
 		command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 } #remove all land units
 		
-		command = { type = secedeprovince which = HUN value = 213 } # Chust - Czechoslovakia
-		command = { type = secedeprovince which = HUN value = 210 } # Komárno - Czechoslovakia
-		command = { type = secedeprovince which = HUN value = 209 } # Kosice - Czechoslovakia
-		command = { type = secedeprovince which = HUN value = 215 } # Uzhorod - Czechoslovakia
+		#command = { type = secedeprovince which = HUN value = 213 } # Chust - Czechoslovakia
+		#command = { type = secedeprovince which = HUN value = 210 } # Komárno - Czechoslovakia
+		#command = { type = secedeprovince which = HUN value = 209 } # Kosice - Czechoslovakia
+		#command = { type = secedeprovince which = HUN value = 215 } # Uzhorod - Czechoslovakia
 		command = { type = independence which = SLO value = 1 }
 		command = { type = end_mastery which = SLO }
 
