@@ -583,7 +583,9 @@
 		desc		= DPERSONALITY_SCHOOL_OF_MANOEUVRE
 		position	= ChiefOfStaff
 		value		= 0
-		command		= { type = unit when = speed value = 0.1000 }
+		command		= { type = unit when = speed value = 0.0750 }
+		command		= { type = tc_mod value = 0.1000 } 
+		command		= { type = leader_skill value = 0.0300 } 
 	}
 
 	minister =  { 
@@ -599,10 +601,11 @@
 		command		= { type = extra which = sp_artillery value = -0.0600 }	
 		command		= { type = extra which = light_armor_brigade value = -0.0600 }
 		command		= { type = extra which = medium_armor value = -0.0600 }
-		command		= { type = extra which = heavy_armor value = -0.0600 }
 		command		= { type = extra which = amph_armor value = -0.0600 }
 		command		= { type = extra which = glider_armor value = -0.0600 }
 		command		= { type = extra which = tank_destroyer value = -0.0600 }
+		command		= { type = extra which = artillery when = attack value = 0.0300 }
+		command		= { type = extra which = sp_artillery when = attack value = 0.0300 }
 	}
 
 	minister =  { 
@@ -686,14 +689,14 @@
 		value		= 0
 		command		= { type = unit which = infantry value = -0.0300 }
 		command		= { type = extra which = artillery value = -0.0300 }
-		command		= { type = extra which = super_heavy_artillery value = -0.0300 }
+		command		= { type = extra which = super_heavy_artillery value = -0.0500 }
 		command		= { type = extra which = engineer value = -0.0300 }
-		command		= { type = extra which = heavy_armor value = -0.0300 }
+		command		= { type = extra which = heavy_armor value = -0.0500 }
 		command		= { type = unit which = infantry when = attack value = 0.0300 }
 		command		= { type = extra which = artillery when = attack value = 0.0300 }
-		command		= { type = extra which = super_heavy_artillery when = attack value = 0.0300 }
+		command		= { type = extra which = super_heavy_artillery when = attack value = 0.0500 }
 		command		= { type = extra which = engineer when = attack value = 0.0300 } 
-		command		= { type = extra which = heavy_armor when = attack value = 0.0300 }
+		command		= { type = extra which = heavy_armor when = attack value = 0.0500 }
 	}
 
 	minister =  { 
@@ -712,8 +715,6 @@
 		command		= { type = extra which = light_armor_brigade value = -0.0500 }
 		command		= { type = extra which = medium_armor value = -0.0500 }
 		command		= { type = extra which = heavy_armor value = -0.0500 }
-		command		= { type = extra which = amph_armor value = -0.0500 }
-		command		= { type = extra which = glider_armor value = -0.0500 }
 		command		= { type = unit which = light_armor when = attack value = 0.0500 }
 		command		= { type = unit which = armor when = attack value = 0.0500 }
 		command		= { type = unit which = mechanized when = attack value = 0.0500 }
@@ -723,8 +724,7 @@
 		command		= { type = extra which = light_armor_brigade when = attack value = 0.0500 }
 		command		= { type = extra which = medium_armor when = attack value = 0.0500 }
 		command		= { type = extra which = heavy_armor when = attack value = 0.0500 }
-		command		= { type = extra which = amph_armor when = attack value = 0.0500 }
-		command		= { type = extra which = glider_armor when = attack value = 0.0500 }
+		command		= { type = unit when = speed value = 0.0250 }
 	}
 
 	minister =  { 
@@ -734,7 +734,10 @@
 		desc		= DPERSONALITY_GUNS_AND_BUTTER_DOCTRINE
 		position	= chiefofarmy
 		value		= 0
-		command		= { type = supply_consumption value = -0.1500 }
+		command		= { type = unit which = infantry value = -0.0500 }
+		command		= { type = unit which = militia value = -0.0500 }
+		command		= { type = unit which = garrison value = -0.0500 }
+		command		= { type = supply_consumption value = -0.2000 }
 	}
 
 ### Chief of navy Section ###
@@ -1300,7 +1303,7 @@
 		command		= { type = production which = production when = non_national value = -0.1000 }
 		command		= { type = populationgrowth value = 0.1000 }
 		command		= { type = unit when = morale value = 0.1000 }
-		command		= { type = unit when = speed value = 0.1000 }
+		command		= { type = unit when = speed value = 0.0500 }
 		command		= { type = dissent value = -0.1000 }
 		command		= { type = diplomacy_chances which = alliance when = dictatorships value = 25 }
 		command		= { type = diplomacy_chances which = alliance when = democracies value = -15 }
@@ -1531,7 +1534,7 @@
 		desc		= DPERSONALITY_HINDENBURG
 		position	= chiefofstaff
 		value		= 0
-		command 	= { type = unit when = speed value = 0.1000 }
+		command 	= { type = unit when = speed value = 0.0750 }
 		command 	= { type = tc_mod value = 0.2000 }
 		command 	= { type = production which = supplies value = 0.1000 } 
 		command 	= { type = leader_skill value = 0.1000 }
@@ -1814,8 +1817,8 @@
 		position	= MinisterOfSecurity
 		value		= 0
 		command		= { type = production which = consumer value = 0.0500 }
-		command		= { type = unit which = garrison value = -0.0500 }
-		command		= { type = extra which = police value = -0.0500 }
+		command		= { type = unit which = garrison value = -0.0800 }
+		command		= { type = extra which = police value = -0.0800 }
 		command		= { type = dissent value = -0.0750 }
 	}
 	minister =  { 
