@@ -485,7 +485,12 @@ province = { id = 209   # Kosice - Slovakia - Czechoslovakia
 province = { id = 210   # Komarno - Slovakia - Czechoslovakia
    landfort = 2 
  } 
- 
+
+province = { id = 214   # Komarno - Airbase in Spišská Nová Ves
+   anti_air = 1 
+   air_base = { size = 2 current_size = 2 } 
+ } 
+
 province = { id = 215   # Uzhorod - Slovakia - Czechoslovakia
    landfort = 1 
  } 
