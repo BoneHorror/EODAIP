@@ -19454,3 +19454,199 @@ event = {
 	}
 }
 #2003204 used in Generalplan_Ost
+
+
+################Slovakia-Hungary tensions
+################ Event text TBD
+event = {
+	id = 2122017
+	random = no
+	country = HUN
+
+	trigger = {
+		exists = SLO
+		government = fascist
+		control = { province = 213 data = HUN } #Chust
+		NOT = { war = { country = HUN country = SLO } }
+		atwar = no
+	}
+   
+	name = "EVT_2003185_NAME" #Tensions with Slovakia
+	desc = "EVT_2003185_DESC"  #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		name = "2003185a" #We want more!
+		ai_chance = 100
+		command = { type = trigger which = 2122018 } # Slovakia reacts to Hungarian aggression
+	}
+	action_b = {
+		name = "2003185a" #Let it go
+		ai_chance = 0
+		command = { type = dissent value = 3 } # Kozma is not happy
+	}
+}
+event = { 
+	id = 2122018
+	random = no 
+	country = SLO
+
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+
+	action_a = {
+		name = "2003185a" #We have to concede...
+		ai_chance = 100
+		command = { type = trigger which = 2122019 } # Lose part of 214 - Presov
+		command = { type = construct which = infrastructure where = 214 value = -10 } # Presov
+		command = { type = add_prov_resource which = 214 value = -1 where = metal } # Presov	
+		command = { type = dissent value = 5 }
+	}
+	action_b = {
+		name = "2003185a" #Fight
+		ai_chance = 0
+		command = { type = trigger which = 2122021 } # GER temporarily ends mastery
+		command = { type = addclaim which = 282 where = SLO } # Miskolc
+		command = { type = addclaim which = 215 where = SLO } # Uzhorod
+		command = { type = addclaim which = 213 where = SLO } # Chust
+		command = { type = leave_alliance when = 1 }
+		command = { type = trigger which = 2122020 } # War
+	}
+}
+
+event = { 
+	id = 2122019
+	random = no 
+	country = HUN
+
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "2003185a" #Great
+		ai_chance = 100
+		command = { type = construct which = infrastructure where = 213 value = 20 } # Presov - important railway to Poland
+		command = { type = add_prov_resource which = 213 value = 1 where = metal } # Presov	
+		command = { type = dissent value = -3 }
+		command = { trigger = { event = 2122023 } type = construct which = ic where = 213 value = 1 } # Presov
+	}
+}
+event = { 
+	id = 2122020
+	random = no 
+	country = HUN
+	save_date = yes
+
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "2003185a" #Damn
+		ai_chance = 100
+		command = { type = war which = SLO }
+	}
+}
+event = { 
+	id = 2122021
+	random = no 
+	country = GER
+
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "2003185a" #Damn
+		ai_chance = 100
+		command = { type = end_mastery which = SLO } 
+	}
+}
+#Slovak Victory
+event = { 
+	id = 2122022
+	random = no 
+	country = HUN
+
+	trigger = {
+		war = { country = HUN country = SLO }
+		government = fascist
+		NOT = { lost_national = { country = SLO value = 1 } }
+		event = { id = 2122020 days = 20 }
+		OR = {
+			control = { province = 282 data = SLO }
+			control = { province = 284 data = SLO }
+			control = { province = 278 data = SLO }
+			control = { province = 279 data = SLO }
+			control = { province = 281 data = SLO }
+			event = { id = 2122020 days = 30 }
+			}
+	}
+	
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action = {
+		name = "2003185a" #Damn
+		ai_chance = 100
+		command = { type = peace which = SLO }
+		command = { type = secedeprovince which = SLO value = 213 } # Chust - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 209 } # Kosice - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 215 } # Uzhorod - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 282 } # Miskolc
+	}
+}
+#Slovak Defeat
+event = { 
+	id = 2122023
+	random = no 
+	country = SLO
+
+	trigger = {
+		war = { country = HUN country = SLO }
+		government = fascist
+		lost_national = { country = SLO value = 1 }
+		event = { id = 2122020 days = 5 }
+	}
+	
+	name = "4705name" #Tensions with Hungary
+	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action = {
+		name = "2003185a" #Damn
+		ai_chance = 100
+		command = { type = peace which = HUN }
+		command = { type = trigger which = 2122019 } # Lose part of 214 - Presov
+		command = { type = construct which = infrastructure where = 214 value = -20 } # Presov
+		command = { type = add_prov_resource which = 214 value = -1 where = metal } # Presov	
+		command = { type = dissent value = 15 }
+		command = { type = construct which = ic where = 213 value = -1 } # Presov
+	}
+}
+
+#Add cleanup where German regains Slov as puppet, also make sure GER doesn't DOW Hungary
+#Add - Slovak territorial gains in Poland (-1/manpower ic from Krakow, +1 to Slov border)
