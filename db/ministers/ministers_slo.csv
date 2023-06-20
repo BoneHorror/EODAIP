@@ -26,7 +26,7 @@ SLO;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 280024;Minister of Armament;Eduard Bass-Schmidt;1946;1964;1999;ML;laissez-faire capitalist;Medium;M31046;X
 280025;Minister of Armament;Jindrich Honzl;1946;1964;1999;ST;Military Entrepreneur;Medium;M31029;X
 280026;Minister of Security;Janko Jesensky;1938;1964;1999;FA;Compassionate Gentleman;Low;M31048;X
-280027;Minister of Security;Fritz Gejza;1939;1964;1999;FA;Compassionate Gentleman;Low;M31010;X
+280027;Minister of Security;Fritz Gejza;1939;1964;1999;FA;Secret Police Chief;Low;M31010;X
 280028;Minister of Security;Alexander Mach;1940;1964;1999;NS;Efficient Sociopath;Low;M31050;X
 280029;Minister of Security;Tido Gaspar;1941;1964;1999;FA;Prince of Terror;Medium;M31051;X
 280030;Minister of Security;Karol Sidor;1943;1964;1999;FA;Back Stabber;High;M31033;X
@@ -40,7 +40,7 @@ SLO;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Per
 280038;Chief of Staff;Gustav Malar;1938;1964;1999;FA;School of Fire Support;High;L70010;X
 280039;Chief of Staff;Otomar Kubala;1944;1964;1999;NS;School of Mass Combat;Medium;M31061;X
 280040;Chief of Army;Ferdinand Catlos;1938;1964;1999;FA;Guns and Butter Doctrine;Low;3175;X
-280041;Chief of Army;Jozef Snejdarek;1944;1964;1999;NS;Decisive Battle Doctrine;High;M31064;X
+280041;Chief of Army;Jozef Snejdarek;1944;1964;1999;NS;Static Defence Doctrine;High;M31064;X
 280042;Chief of Army;Emil Lendvay;1945;1964;1999;PA;Armoured Spearhead Doctrine;High;M31045;X
 280043;Chief of Navy;Jozef Turanec;1938;1964;1999;FA;Open Seas Doctrine;Medium;L70016;X
 280044;Chief of Navy;Vojtech Daubner;1945;1964;1999;PA;Indirect Approach Doctrine;Medium;M31068;X
