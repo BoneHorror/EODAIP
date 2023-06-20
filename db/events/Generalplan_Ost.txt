@@ -6051,7 +6051,10 @@ event = {
 
 	trigger = {
 		war = { country = GER country = SOV }
-		event = 2003046 #Operation Barbarossa (germany.txt)
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 	}
 
 	name = 1000702name

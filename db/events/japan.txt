@@ -2382,7 +2382,24 @@ event = {
 		}
 		OR = {
 			AND = {
-				NOT = { nuked = 2 } #We didn't nuke anyone else twice
+				OR = {
+					NOT = { nuked = 2 } #We didn't nuke anyone else twice
+					NOT = { naval_percentage = { country = USA value = 0.66 } }
+					OR = {
+						NOT = { control = { province = 1553 data = JAP } } #Osaka
+						NOT = { control = { province = 1558 data = JAP } } #Kyoto
+						NOT = { control = { province = 1557 data = JAP } } #Nagoya
+						NOT = { control = { province = 1552 data = JAP } } #Tokyo
+						NOT = { control = { province = 1561 data = JAP } } #Kagoshima
+						NOT = { control = { province = 1560 data = JAP } } #Nagasaki
+						NOT = { control = { province = 1559 data = JAP } } #Matsuyama
+						NOT = { control = { province = 1554 data = JAP } } #Hiroshima
+						NOT = { control = { province = 1556 data = JAP } } #Kanazawa
+						NOT = { control = { province = 1550 data = JAP } } #Yokohama
+						NOT = { control = { province = 1551 data = JAP } } #Niigata
+						NOT = { control = { province = 1549 data = JAP } } #Sendai
+						}
+					}
 				nuked = -2 #We were nuked twice
 				OR = { #at least one nuke over the Home Islands
 					nuked = { country = JAP data = -1 where = 1544 } #Kushiro
@@ -2406,7 +2423,10 @@ event = {
 				}
 			}
 			AND = {
-				NOT = { nuked = 3 } #We didn't nuke anyone else twice
+				OR = {
+					NOT = { nuked = 3 } #We didn't nuke anyone else thrice
+					NOT = { naval_percentage = { country = USA value = 0.7 } }
+					}
 				nuked = -1 #We were nuked once
 				OR = { #at least one nuke over the Home Islands
 					nuked = { country = JAP data = -1 where = 1544 } #Kushiro
@@ -2428,7 +2448,24 @@ event = {
 					nuked = { country = JAP data = -1 where = 1560 } #Nagasaki
 					nuked = { country = JAP data = -1 where = 1561 } #Kagoshima
 				}
-				NOT = { exists = GER } #GER is done
+				OR = {
+					NOT = { exists = GER } #GER is done
+					NOT = { naval_percentage = { country = USA value = 0.5 } }
+					OR = {
+						NOT = { control = { province = 1553 data = JAP } } #Osaka
+						NOT = { control = { province = 1558 data = JAP } } #Kyoto
+						NOT = { control = { province = 1557 data = JAP } } #Nagoya
+						NOT = { control = { province = 1552 data = JAP } } #Tokyo
+						NOT = { control = { province = 1561 data = JAP } } #Kagoshima
+						NOT = { control = { province = 1560 data = JAP } } #Nagasaki
+						NOT = { control = { province = 1559 data = JAP } } #Matsuyama
+						NOT = { control = { province = 1554 data = JAP } } #Hiroshima
+						NOT = { control = { province = 1556 data = JAP } } #Kanazawa
+						NOT = { control = { province = 1550 data = JAP } } #Yokohama
+						NOT = { control = { province = 1551 data = JAP } } #Niigata
+						NOT = { control = { province = 1549 data = JAP } } #Sendai
+						}
+					}
 			}
 		 	lost_national = { country = JAP value = 60 }
 		 	NOT = {

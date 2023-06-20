@@ -223,18 +223,22 @@ event = {
 	country = SOV
 
 	trigger = { 
-	OR = {
-		AND = {
-		event = { id = 9300273 days = 30 } # Stalin's Surprise
-		NOT = { ai = GER }
+		OR = {
+			AND = {
+			event = { id = 9300273 days = 30 } # Stalin's Surprise
+			NOT = { ai = GER }
+			}
+			AND = {
+			event = { id = 9300273 days = 45 } # Stalin's Surprise
+			ai = GER
+			}
+			AND = {
+				lost_national = { country = SOV value = 5 }
+				NOT = { event = 9300273 } # In case Stalin is not surprised at all and Germany started a super late war/SOV started the war
+			} 
 		}
-		AND = {
-		event = { id = 9300273 days = 45 } # Stalin's Surprise
-		ai = GER
-		}
+		war = { country = GER country = SOV }
 	}
-	war = { country = GER country = SOV }
-	} 
 
 	name = 9300274name
 	desc = 9300274desc
@@ -247,9 +251,9 @@ event = {
 
 	action = { trigger = { AND = { NOT = { ai = GER } ai = SOV } }
 		name = ACTION_NAME_OK
-		command = { type = ground_def_eff value = 0.35 when = 1 } 
-		command = { type = task_efficiency which = attack value = 0.5 } 
-		command = { type = max_organization which = land value = 8 }
+		command = { trigger = { flag = StalinSurprise } type = ground_def_eff value = 0.35 when = 1 } 
+		command = { trigger = { flag = StalinSurprise } type = task_efficiency which = attack value = 0.5 } 
+		command = { trigger = { flag = StalinSurprise } type = max_organization which = land value = 8 }
 		command = { type = dissent value = -15 }
 		command = { trigger = { local_flag = Barbarossa_easy } type = wartime_ic_mod value = 15 }
 		command = { trigger = { local_flag = Barbarossa_normal } type = wartime_ic_mod value = 20 }
@@ -260,9 +264,9 @@ event = {
 	}
 	action = { trigger = { AND = { ai = GER ai = SOV } }
 		name = ACTION_NAME_OK
-		command = { type = ground_def_eff value = 0.3 when = 1 } 
-		command = { type = task_efficiency which = attack value = 0.5 }
-		command = { type = max_organization which = land value = 12 }
+		command = { trigger = { flag = StalinSurprise } type = ground_def_eff value = 0.3 when = 1 } 
+		command = { trigger = { flag = StalinSurprise } type = task_efficiency which = attack value = 0.5 }
+		command = { trigger = { flag = StalinSurprise } type = max_organization which = land value = 12 }
 		command = { type = dissent value = -10 }
 		command = { type = wartime_ic_mod value = 15 }
 		command = { type = peacetime_ic_mod value = 25 } # Clear the starting penalty for post WWII play
@@ -271,9 +275,9 @@ event = {
 	}
 	action = { trigger = { OR = { AND = { ai = GER NOT = { ai = SOV } } AND = { NOT = { ai = GER } NOT = { ai = SOV } } } }
 		name = ACTION_NAME_OK
-		command = { type = ground_def_eff value = 0.33 when = 1 } 
-		command = { type = task_efficiency which = attack value = 0.5 }
-		command = { type = max_organization which = land value = 12 }
+		command = { trigger = { flag = StalinSurprise } type = ground_def_eff value = 0.33 when = 1 } 
+		command = { trigger = { flag = StalinSurprise } type = task_efficiency which = attack value = 0.5 }
+		command = { trigger = { flag = StalinSurprise } type = max_organization which = land value = 12 }
 		command = { type = dissent value = -10 }
 		command = { type = wartime_ic_mod value = 15 }
 		command = { type = peacetime_ic_mod value = 25 } # Clear the starting penalty for post WWII play
@@ -727,8 +731,9 @@ event = {
 	random = no
 	country = GER
 
-	trigger = { ai = yes
-		    NOT = { event = 2003046 }
+	trigger = { 
+	ai = yes
+	NOT = { event = 2003046 }
 		 }
 
 	name = "AI_EVENT"
@@ -945,10 +950,10 @@ event = {
 		#command = { type = add_division value = marine when = 0 }
 		#command = { type = add_division value = marine when = 0 }
 		
-		#command = { type = add_corps which = "Nippon Transport Flotilla No 3" value = naval when = -1 where = 1362 }
-		#command = { type = add_division which = "Nippon Trans 1" value = transport when = 3 }
-		#command = { type = add_division which = "Nippon Trans 2" value = transport when = 3 }
-		#command = { type = add_division which = "Nippon Trans 3" value = transport when = 3 }
+		command = { type = add_corps which = "Nippon Transport Flotilla No 3" value = naval when = -1 where = 1362 }
+		command = { type = add_division which = "Nippon Trans 1" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 2" value = transport when = 3 }
+		command = { type = add_division which = "Nippon Trans 3" value = transport when = 3 }
 
 		#command = { type = add_corps which = "China Force No 1" value = land when = -1 where = 1219 } #port arthur
 		#command = { type = add_division value = marine when = 0 }

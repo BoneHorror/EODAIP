@@ -623,7 +623,14 @@ event = {
 	id = 9300006
 	country = GER
 
-	trigger = { war = { country = GER country = SOV } not = { control = { province = 572 data = GER } } event = 2003046 } # Barbarossa
+	trigger = { 
+	war = { country = GER country = SOV } 
+	not = { control = { province = 572 data = GER } } 
+	OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
+	}
 
 	name = 9300006name
 	desc = 9300006desc 
@@ -636,26 +643,31 @@ event = {
 	
 	action = {
 		name = 9300006a # Take Moscow (Halder's Plan - Historical)
+		ai_chance = 60
 		command = { type = event which = 9300007 where = -1 when = 120 }
-		command = { type = local_setflag which = Barba_Moscow }
+		command = { type = local_setflag which = Barba_Moscow } #AI priorities should take this into account
 	}
 	action = {
 		name = 9300006b # Push South (Kiev, Sevastopol and Rostov)
+		ai_chance = 20
 		command = { type = event which = 9300007 where = -1 when = 120 }
 		command = { type = local_setflag which = Barba_South }
 	}
 	action = {
 		name = 9300006c # Push North (Minsk, Pskow and Leningrad)
+		ai_chance = 10
 		command = { type = event which = 9300007 where = -1 when = 120 }
 		command = { type = local_setflag which = Barba_North }
 	}
 	action = {
 		name = 9300006d # Push Through the Whole Front (Kiev, Smolensk and Gdov)
+		ai_chance = 10
 		command = { type = event which = 9300007 where = -1 when = 120 }
 		command = { type = local_setflag which = Barba_Even }
 	}
 	action = {
 		name = 9300002b # I don't feel confident
+		ai_chance = 0
 		command = { }
 	}
 }
@@ -8566,7 +8578,13 @@ event = {
 	country = SOV
 	save_date = yes
 	
-	trigger = { war = { country = GER country = SOV } } # event = 2003046 Barbarossa (Removed to force GPW speech event - Only problem: when USSR is the attacker, this will still fire)
+	trigger = { 
+	war = { country = GER country = SOV }
+	OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
+	}
    
 	name = 9300273name
 	desc = 9300273desc
@@ -8584,6 +8602,7 @@ event = {
 		command = { trigger = { ai = GER } type = max_organization which = land value = -12 }
 		command = { trigger = { NOT = { ai = GER } } type = max_organization which = land value = -8 }
 		command = { type = dissent value = 20 }
+		command = { type = setflag which = StalinSurprise }
 		#command = { type = event which = 9300274 where = -1 when = 30 } #Fires from save_date and date comparison
 	}
 }
@@ -8599,15 +8618,18 @@ event = {
 		war = { country = SOV country = GER }
 	}
 	decision_trigger = {
-		losses = { type = fighter value = 250 data = 1 }
-		NOT = { lost_national = { country = SOV value = 5 } }
+		losses = { type = fighter value = 250 data = 1 } #Germany inflicted at least 250 fighter losses
+		NOT = { lost_national = { country = SOV value = 10 } }
 		supplies = 1000
 	}
 	trigger = {
-		event = 2003046
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		war = { country = SOV country = GER }
 		losses = { type = fighter value = 250 data = 1 }
-		NOT = { lost_national = { country = SOV value = 5 } }
+		NOT = { lost_national = { country = SOV value = 10 } }
 	}
 
 	date = { day = 1 month = january year = 1933 }
@@ -8639,7 +8661,8 @@ event = {
 
 	action = {
 	trigger = {
-	NOT = { air_percentage = { country = GER value = 1.0 } }
+	NOT = { air_percentage = { country = GER value = 1.4 } }
+	event = 9300273 #Stalin's Suprise at Barbarossa
 	}
 		ai_chance = 100
 		name = 9300276a
@@ -8667,8 +8690,9 @@ event = {
 	action = {
 		trigger = {
 		AND = {
-		air_percentage = { country = GER value = 1.0 }
-		NOT = { air_percentage = { country = GER value = 2.0 } }
+		air_percentage = { country = GER value = 1.4 }
+		NOT = { air_percentage = { country = GER value = 2.2 } }
+		event = 9300273 #Stalin's Suprise at Barbarossa
 		}
 		}
 		ai_chance = 100
@@ -8688,7 +8712,73 @@ event = {
 	}
 	action = {
 trigger = {
-		air_percentage = { country = GER value = 2.0 }
+		air_percentage = { country = GER value = 2.2 }
+		event = 9300273 #Stalin's Suprise at Barbarossa
+		}
+		ai_chance = 100
+		name = 9300276c
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 9300278 }
+	}
+	action = {
+	trigger = {
+	NOT = { air_percentage = { country = GER value = 0.9 } }
+	NOT = { event = 9300273 } #Stalin's Suprise at Barbarossa
+	}
+		ai_chance = 100
+		name = 9300276a
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { trigger = { control = { province = 566 data = SOV } } type = construct which = air_base where = 566 value = -2 } #Pskov
+		command = { trigger = { control = { province = 600 data = SOV } } type = construct which = air_base where = 600 value = -2 } #Mogilev
+		command = { trigger = { control = { province = 604 data = SOV } } type = construct which = air_base where = 604 value = -1 } #Kursk
+		command = { trigger = { control = { province = 617 data = SOV } } type = construct which = air_base where = 617 value = -2 } #Kiev
+		command = { trigger = { control = { province = 626 data = SOV } } type = construct which = air_base where = 626 value = -1 } #Odessa
+		command = { trigger = { control = { province = 631 data = SOV } } type = construct which = air_base where = 631 value = -1 } #Dnepopetrovsk
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 9300277 }
+	}
+	action = {
+		trigger = {
+		AND = {
+		air_percentage = { country = GER value = 0.9 }
+		NOT = { air_percentage = { country = GER value = 1.2 } }
+		NOT = { event = 9300273 } #Stalin's Suprise at Barbarossa
+		}
+		}
+		ai_chance = 100
+		name = 9300276b
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { type = delete_unit which = -3 }
+		command = { trigger = { control = { province = 566 data = SOV } } type = construct which = air_base where = 566 value = -1 } #Pskov
+		command = { trigger = { control = { province = 600 data = SOV } } type = construct which = air_base where = 600 value = -1 } #Mogilev
+		command = { trigger = { control = { province = 617 data = SOV } } type = construct which = air_base where = 617 value = -1 } #Kiev
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 9300277 }
+	}
+	action = {
+trigger = {
+		air_percentage = { country = GER value = 1.2 }
+		NOT = { event = 9300273 } #Stalin's Suprise at Barbarossa
 		}
 		ai_chance = 100
 		name = 9300276c
@@ -11111,7 +11201,7 @@ event = {
 	}
 }
 ###############
-# Prepare Seelöwe
+# Prepare Seelöwe / Prepare Sealion
 event = {
 	id = 9300351
 	random = no
@@ -11124,7 +11214,12 @@ event = {
 			not = { war = { country = SOV } } 
 		} # Paris & London
 	decision_trigger = { supplies = 1000 }
-	trigger = { war = { country = ENG } control = { province = 55 data = -3 } control = { province = 29 data = -2 } not = { war = { country = SOV } } } # Paris & London
+	trigger = { 
+		war = { country = ENG } 
+		control = { province = 55 data = -3 } 
+		control = { province = 29 data = -2 } 
+		not = { war = { country = SOV } }
+	} # Paris & London
 
 	date = { year = 1933 month = january day = 1 }
 	offset = 15
@@ -11137,39 +11232,56 @@ event = {
 	decision_picture = "decision_Operation_Seelowe"
 
 	action = {
-		ai_chance = 35
+		ai_chance = 80
 		name = 9300351a # Air Superiority First
 	   	command = { trigger = { NOT = { technology = 9190 } } type = gain_tech which = 9190 } # First Strike Doctrine (1940)
 	   	command = { trigger = { NOT = { technology = 9240 } } type = gain_tech which = 9240 } # Formation Fighting Doctrine (1940)
 	   	command = { trigger = { NOT = { technology = 9260 } } type = gain_tech which = 9260 } # Recon Skirmisher Doctrine (1940)
-      		command = { type = task_efficiency which = naval_strike value = 0.2 }
-      		command = { type = task_efficiency which = convoy_air_raiding value = 0.2 }
+      		command = { type = task_efficiency which = naval_strike value = 0.1 }
+      		command = { type = task_efficiency which = air_superiority value = 0.1 }
+			command = { type = task_efficiency which = strategic_bombardment value = 0.05 }
 		command = { trigger = { ai = no } type = supplies value = -1000 }
+		command = { trigger = { ai = yes } type = build_time which = strategic_bomber when = on_upgrade where = relative value = -15 }
+		command = { trigger = { ai = yes } type = build_time which = multi_role when = on_upgrade where = relative value = -15 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { strategic_bomber = 8 } } type = add_division value = strategic_bomber when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { strategic_bomber = 8 } } type = add_division value = strategic_bomber when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { strategic_bomber = 8 } } type = add_division value = strategic_bomber when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { multi_role = 8 } } type = add_division value = multi_role when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { multi_role = 8 } } type = add_division value = multi_role when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { multi_role = 8 } } type = add_division value = multi_role when = 2 }
 	}
 	action = {
-		ai_chance = 50
+		ai_chance = 10
 		name = 9300351b # Prepare Landing
 	   	command = { trigger = { NOT = { technology = 82310 } } type = gain_tech which = 82310 } # Naval Invasion (1934)
 	   	command = { trigger = { NOT = { technology = 82320 } } type = gain_tech which = 82320 } # Naval Invasion (1938)
 	   	command = { trigger = { NOT = { technology = 1560 } } type = gain_tech which = 1560 } # Marines (1922)
 	   	command = { trigger = { NOT = { technology = 1580 } } type = gain_tech which = 1580 } # Marines (1925)
-	  	command = { type = task_efficiency which = amphibious_assault value = 0.15 }
+			command = { type = task_efficiency which = amphibious_assault value = 0.15 }
+			command = { type = task_efficiency which = naval_strike value = 0.15 }
 		command = { trigger = { ai = no } type = supplies value = -1000 }
 		command = { type = sleepevent which = 9300208 } # The Blitz
+		command = { trigger = { ai = yes } type = build_time which = transport when = on_upgrade where = relative value = -15 }
+		command = { trigger = { ai = yes } type = build_time which = marine when = on_upgrade where = relative value = -10 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { naval_bomber = 6 } } type = add_division value = strategic_bomber when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { naval_bomber = 6 } } type = add_division value = strategic_bomber when = 2 }
 	}
 	action = { trigger = { not = { war = { country = IRE } } }
-		ai_chance = 15
+		ai_chance = 10
 		name = 9300351c # Prepare Invasion of Ireland (Fall Green)
 		command = { type = war which = IRE }
 	   	command = { trigger = { NOT = { technology = 9190 } } type = gain_tech which = 9190 } # First Strike Doctrine (1940)
 	   	command = { trigger = { NOT = { technology = 9240 } } type = gain_tech which = 9240 } # Formation Fighting Doctrine (1940)
 	   	command = { trigger = { NOT = { technology = 82310 } } type = gain_tech which = 82310 } # Naval Invasion (1934)
 	   	command = { trigger = { NOT = { technology = 1560 } } type = gain_tech which = 1560 } # Marines (1922)
-      		command = { type = task_efficiency which = naval_strike value = 0.1 }
-      		command = { type = task_efficiency which = convoy_air_raiding value = 0.1 }
-	  	command = { type = task_efficiency which = amphibious_assault value = 0.1 }
+      		command = { type = task_efficiency which = convoy_air_raiding value = 0.2 }
+			command = { type = task_efficiency which = amphibious_assault value = 0.1 }
 		command = { trigger = { ai = no } type = supplies value = -1000 }
 		command = { type = sleepevent which = 9300208 } # The Blitz
+		command = { trigger = { ai = yes } type = build_time which = strategic_bomber when = on_upgrade where = relative value = -15 }
+		command = { trigger = { ai = yes } type = build_time which = marine when = on_upgrade where = relative value = -10 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { naval_bomber = 6 } } type = add_division value = strategic_bomber when = 2 }
+		command = { trigger = { ai = yes NOT = { difficulty = 2 } NOT = { multi_role = 8 } } type = add_division value = multi_role when = 2 }
 	}
 }
 ############################
@@ -12824,7 +12936,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
-		ai_chance = 75
+		ai_chance = 100 #100% because otherwise the AI is just kinda bad during Barbarossa =/
 		name = 9300451a # Divide and Conquer
 		command = { type = dissent value = 3 }
 		command = { type = construct which = ic where = 232 value = -3 } #Warsaw
@@ -12836,7 +12948,7 @@ event = {
 		command = { type = construct which = ic where = -4 value = 1 }
 	}
 	action = {
-		ai_chance = 25
+		ai_chance = 0
 		name = 9300451b # Setup Reichskommissariat
 		command = { type = dissent value = -2 }
 		command = { type = independence which = U44 value = 1 }
