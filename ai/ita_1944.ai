@@ -1,4 +1,4 @@
-# Italy 1936 AI File by Lothos
+# Italy released by allies AI file
 
 switch = no # [yes/no]
 max_front_ratio = 1.0 
@@ -12,59 +12,30 @@ strat_redeploy_threshold = 50
 max_redeploying = 0.05
 exp_force_ratio = 0.0
 exp_force_ratios = { } 
-no_exp_forces_to = { GER ROM HUN BUL FIN JAP SIA MAN FRA }
+no_exp_forces_to = { USA ENG U01 U02 GER ROM HUN BUL FIN JAP SIA MAN FRA }
 
 ###################################
 # Diplomacy
 ###################################
 combat = { 
-	ETH = 100 
-	USA = -200
-	CAN = -200
 }
 
 claim_acceptance = -69
 
 demand_claims = {
-	#YUG
 }
 liberate = { SCH SPA U66 }
 # Special resistance against "influence" by the listed nations. Value range = [0 - 10]  
 resistance = {  
-	ENG = 1
-	FRA = 1
-	SOV = 4
+	SOV = 6
 }
 befriend = {
-	ROM = 50
-	SLO = 50
-	BUL = 40 
-	HUN = 80 
-	SPA = 50
-	YUG = 50
-	GER = 100 
-	SWE = 10
-	FIN = 20
-	JAP = 20
-	POR = 10
-	TUR = 30
+	USA = 100
+	ENG = 100
 }
 protect = {
-	ROM = 80
-	BUL = 80 
-	HUN = 80 
-	SWE = 80
-	SCH = 80
-	AUS = 80
-	POL = 80
-	SLO = 80
-	NOR = 80
-	GER = 80
-	TUR = 80
 }
 target = { 
-	825 = 100 
- 	87 = 20 # Nice 
 }  
 trade = {
 	cancel_deal_threshold = 2
@@ -77,30 +48,17 @@ trade = {
 	money 		= -1
 
 	favored = {
-		ROM = 150
-		GER = 100
-		HUN = 80
-		YUG = 100
-		SPA = 80
-		BUL = 50
-		SWE = 100
+		USA = 150
+		ENG = 100
+		FRA = 80
 	}
 }
 tech_sharing = {
 	favored = {
-		ROM = 120
-		SLO = 80
-		BUL = 100
-		HUN = 100
-		SPA = 120
-		YUG = 50
-		GER = 150
-		SWE = 50
-		FIN = 120
-		JAP = 150
-		TUR = 100
+		USA = 100
+		ENG = 100
 	}
-	embargo = { }
+	embargo = { GER }
 	not = { }
 	prioritized = {
 		# Agriculture
@@ -171,32 +129,6 @@ spyprefs =
 		country 		= ITA
 	}
 	spyprefsdata = {
-		country_priorities	= 10 # 8
-		steal_blueprint 	= 10
-		minister_assassination          = 1
-		smear_campaign 		= 4
-		coup 				= 0
-		sabotage_industry 	= 5
-		nuclear_sabotage 	= 0
-		found_partisans		= 1
-		massmedia 			= 0
-		disrupt_techteam 	= 5
-		country 			= ENG
-	}
-	spyprefsdata = {
-		country_priorities	= 8
-		steal_blueprint 	= 10
-		minister_assassination          = 1
-		smear_campaign 		= 4
-		coup 				= 0
-		sabotage_industry 	= 5
-		nuclear_sabotage 	= 0
-		found_partisans		= 0
-		massmedia 			= 0
-		disrupt_techteam 	= 5
-		country 			= FRA
-	}
-	spyprefsdata = {
 		country_priorities	= 5
 		steal_blueprint 	= 10
 		minister_assassination          = 1
@@ -211,19 +143,6 @@ spyprefs =
 	}
 	spyprefsdata = {
 		country_priorities	= 4
-		steal_blueprint 	= 10
-		minister_assassination          = 1
-		smear_campaign 		= 4
-		coup 				= 0
-		sabotage_industry 	= 5
-		nuclear_sabotage 	= 0
-		found_partisans		= 0
-		massmedia 			= 0
-		disrupt_techteam 	= 5
-		country 			= USA
-	}
-	spyprefsdata = {
-		country_priorities	= 4
 		steal_blueprint 	= 1 # 10
 		minister_assassination          = 1
 		smear_campaign 		= 4
@@ -233,7 +152,7 @@ spyprefs =
 		found_partisans		= 1
 		massmedia 			= 0
 		disrupt_techteam 	= 5
-		country 			= SPR
+		country 			= GER
 	}
 }
 ###################################
@@ -299,16 +218,16 @@ military = {
 
 
 	#### Divisions etc...
-	infantry 		= 19
+	infantry 		= 0
 	cavalry 		= 0
-	motorized 		= 5
+	motorized 		= 4
 	mechanized 		= 0
 	light_armor 	= 0
 	armor 			= 8
 	paratrooper 	= 0
 	marine 			= 0
 	bergsjaeger 	= 12
-	garrison		= 3
+	garrison		= 23
     hq 				= 4
 	militia 		= 0
 #				47 %
@@ -492,56 +411,19 @@ garrison = {
 		ENG = 50
 		FRA = -1
 		AUS = -1
-		GER = -1
 		YUG = 30
 		SOV = 100
-		GRE = 100
+		GER = 100
 	}
 	province_priorities = {
-		# French Border
-		398  = 50  #Turin
-		396  = 50  #Genoa
-
-		434  = 10  #Sardinia
-		379  = 10  #Rhodes
-		
-		# North Africa
-		752  = 10
-		750  = 10
-		761  = 10
-		771  = 10
-		769  = 20
-		770  = 20
-
-     		825  = 50  # Addis Adeba 
-		
-		# Albania prep for Greece invasion
-		360  = 100
 	}
 	area_multiplier = {
-		# French Border
-		398  = 1.5  #Turin
-		396  = 1.5  #Genoa
-
-		# Yugoslavia Border
-		400  = 0.3
-
-		434  = 1.0  #Sardinia
-		379  = 1.0  #Rhodes
-
-		# North Africa
-		769  = 1.5
-		770  = 1.5
-		752  = 1.5
-
-		# Albania prep for Greece invasion
-		360  = 5.0
 	}
 }
 front = { 
-	recklessness 		= 3 # 0-3
-	distrib_vs_ai 		= offensive
-	distrib_vs_human 	= offensive
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
 
 	enemy_reinf_days	= 6
 	reserve_prop		= 0.1
