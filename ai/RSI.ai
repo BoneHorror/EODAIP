@@ -12,7 +12,7 @@ upgrading = 0.2500
 desperation = 0.10 #Start spamming MIL once we lose 10% of our IC - basically whenever we're invaded
 strat_redeploy_threshold = 50
 max_redeploying = 0.05
-exp_force_ratio = 0.3
+exp_force_ratio = 0.1
 exp_force_ratios = { GER = 1.0 } 
 no_exp_forces_to = { ROM HUN BUL FIN VIC JAP SIA MAN }
 
