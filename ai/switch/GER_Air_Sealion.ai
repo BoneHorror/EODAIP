@@ -4,12 +4,12 @@ air_marshal = {
 	min_mission_strength_org	= 0.6 #0.4 # 0.2
 	icxdayscostfactor 			= 7.0		# How to value true industrial cost when calculating expect causalties
 	manpowercostfactor			= 70.0		# How to value manpower cost when calculating expect causalties
-	destructionriskthreashold 	= 0.3		# when to fear a divisiopn might be destroyed
+	destructionriskthreashold 	= 0.5		# when to fear a divisiopn might be destroyed
 
 	# desirability is a multiplier used when calcualting the mission desirability
-	airsuperioritydesirability 		= 25.0
+	airsuperioritydesirability 		= 28.0
 	groundattackdesirability 		= 5.0
-	inderdictiondesirability 		= 5.0
+	inderdictiondesirability 		= 2.0
 	logisticalstrikedesirability 	= 1.0
 	runwaycrateringdesirability 	= 5.0
 	strategicstrikedesirability 	= 50.0
@@ -20,7 +20,7 @@ air_marshal = {
 
 	# tolerance is the required kill:loss ration expected to do 
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
-	airsuperioritylosstolerance 	= 1.5
+	airsuperioritylosstolerance 	= 1.6
 	groundattacklosstolerance 		= 1.0
 	interdictionlosstolerance 		= 0.8
 	logisticalstrikelosstolerance 	= 0.7
