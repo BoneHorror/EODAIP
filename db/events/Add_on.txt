@@ -14743,10 +14743,14 @@ event = {
 	
 	trigger = {
 		exists = TUR
+		random = 3
 		control = { province = 55 data = -3 } # Paris
-		control = { province = 232 data = -3 } # Warzaw
+		control = { province = 232 data = -3 } # Warsaw
 		control = { province = 163 data = -3 } # Berlin
-		event = 2003046 #Operation Barbarossa has launched
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		region = { region = Germany country = -3 data = 1 } 
 		region = { region = Benelux country = -3 data = 1 }
 		region = { region = Italy country = -3 data = 1 }
@@ -17170,10 +17174,14 @@ event = {
 	random = no
 	country = GER
 
-	trigger = { 	ai = no 
+	trigger = { 	
+			#ai = no 
 			war = { country = GER country = SOV }
 			control = { province = 622 data = -3 } # Nikolaev
-			event = 2003046 # Barbarossa happened
+			OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 			technology = 3480 # Semi-Modern Battleship (1939)
 		 } 
 
@@ -17188,14 +17196,14 @@ event = {
 	
 	action = {
 		name = "1100002a"
-		ai_chance = 100
+		ai_chance = 80
 		command = { type = metalpool value = 2000 }
 		command = { type = rarematerialspool value = 500 }
 		command = { type = trigger which = 1100003 }
 	}
 	action = {
 		name = "1100002b"
-		ai_chance = 0
+		ai_chance = 20
 		command = { type = build_division which = battleship when = 1 cost = 5.5 where = 1600 }
 		command = { type = trigger which = 1100003 }
 	}
@@ -17213,7 +17221,7 @@ event = {
 	action = {
 		name = "1000516a"
 		ai_chance = 100
-		command = {  trigger = { ai = no } type = dissent value = 2 }	
+		command = { type = dissent value = 2 }	
 	}
 }
 #####################
@@ -17293,7 +17301,10 @@ event = {
 	trigger = { 
 		losses = { type = medium_armor value = 800 data = 1 }
 		war = { country = SOV country = GER }
-		event = 2003046 # Barbarossa happened
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		random = 40
 	}
 
@@ -17324,7 +17335,10 @@ event = {
 
 	trigger = { 
 		war = { country = SOV country = GER }
-		event = 2003046 # Barbarossa happened
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 	}
 
    	name = EVT_NAME_1100007	
@@ -17351,10 +17365,14 @@ event = {
 	random = no
 	country = GER
 
-	trigger = { 	war = { country = GER country = SOV }
+	trigger = { 	
+			war = { country = GER country = SOV }
 			control = { province = 550 data = 1 } # next to Leningrad
 			control = { province = 551 data = 1 }
-			event = 2003046 # Barbarossa happened
+			OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		 } 
    	name = EVT_NAME_1100008	
 	desc = EVT_DESC_1100008
@@ -17399,13 +17417,17 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = { 	war = { country = GER country = SOV }
+	trigger = { 	
+			war = { country = GER country = SOV }
 			control = { province = 550 data = -1 } # provinces around Leningrad controlled by enemy
 			control = { province = 551 data = -1 }
  			control = { province = 530 data = -1 }
 			control = { province = 557 data = 1 } # Tikhvin controlled by SOV
 			control = { province = 553 data = SOV } # Leningrad controlled by USSR
-			event = 2003046 # Barbarossa happened
+			OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 			
 		 } 
 
@@ -17560,7 +17582,10 @@ event = {
 
 	trigger = { 
 		event = 2003090 # Werner von Fritsch forced into retirement
-		event = 2003046 # Barbarossa
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		event = 9300048 # General Winter
 		NOT = { control = { province = 572 data = -3 } } # Moscow not controlled by GER
 		incabinet = 146 #	von brauchitsch		
@@ -17926,7 +17951,10 @@ event = {
 	country = SOV
 
 	trigger = { 
-		event = 2003046 # Barbarossa
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		war = { country = SOV }		
 		random = 40
 	}
@@ -17955,7 +17983,10 @@ event = {
 	country = SOV
 
 	trigger = {
-		event = 2003046 # Barbarossa
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		war = { country = SOV }		
 		random = 40
 	}
@@ -18139,7 +18170,10 @@ event = {
 	country = GER
 
 	trigger = { 
-		event = 2003046 # Barbarossa
+		OR = {
+			event = 2003046 #Barbarossa Player event
+			event = 3003009 #AI Invade Russia event
+			}
 		technology = 2170 # Early Tank Destroyer
 		OR = { 		event = 1100038 # Minsk Byalistock
 					event = 1100039 # Smolensk
@@ -19469,6 +19503,8 @@ event = {
 		control = { province = 213 data = HUN } #Chust
 		NOT = { war = { country = HUN country = SLO } }
 		atwar = no
+		month = 2 #March
+		day = 10 #11
 	}
    
 	name = "EVT_2003185_NAME" #Tensions with Slovakia
