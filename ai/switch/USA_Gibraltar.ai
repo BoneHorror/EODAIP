@@ -1,13 +1,14 @@
-# USA attack Italy script
+# USA try to retake Gibraltar and outer Jap islands - Nekron
 
 combat = {
 	ITA = 170
 	GER = 130
+	JAP = 200
 }
 target = { 
- 430 = 70 # Palermo
- 425 = 60 # Calabria
- 419 = 30 # Rome
+ 430 = 30 # Palermo
+ 425 = 30 # Calabria
+ 348 = 80 # Gibraltar
  422 = 45 # Taranto
  761 = 30 # Benghazi
  750 = 30 # Tripoli
@@ -18,14 +19,16 @@ target = {
  1565 = 25 # Manila
  1607 = 15 # Port Moresby
 } 
-max_front_ratio = 1.2 
+max_front_ratio = 1.3 
 max_front_ratios = {
 	JAP = 1.3 #1.2
-	GER = 1.2 #1.2
-	SOV = 1.2 #1.2
+	GER = 2.0 #1.2
+	SOV = 1.5 #1.2
 	ITA = 1.15 #1.2
 	MAN = 1.2 #1.2
 	RSI = 1.1 #1.2
+	SPA = 2.0
+	POR = 2.0
 }
 exp_force_ratio = 0.01 
 exp_force_ratios = { ENG = 0.6 U01 = 0.2 PHI = 0.2 } 
@@ -69,8 +72,6 @@ front = {
 
   	enemy_handicap = { 
 	RSI = 25
-	GER = 10
-	JAP = 10
 	} 
    	passivity = {
 		RSI = 99 #We want to slow down Allied progression if ITA degenerates into RSI
@@ -107,17 +108,17 @@ invasion = {
 	random				= 16.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.05	#increase to avoid coastal forts more.
 	beach				= 0.05	#higher, avoid worst beaches.
-	max_distance  		= 85.0  #About the distance from Japan to Batavia
-	max_staging_distance = 85.0 # How far should the staging area be from the target invasion point
-	distance			= 0.5	#higher = avoid long distance.
+	max_distance  		= 150.0  #About the distance from Japan to Batavia
+	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
+	distance			= 0.3	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 0.6	#higher = much more vary of troops nearby
 	air_base			= 2.5 
     naval_base 			= 1.5 
-    air_support 		= 15.0 
-    redirect 			= priority #Home wastes transport cycles on Pacific
+    air_support 		= 8.0 
+    redirect 			= nearest #Home wastes transport cycles on Pacific
 	ignore				= yes
 	help_allies 		= no 	#[yes/no]
         province_priorities = yes #Invade only provinces in target list with priority higher then 0
@@ -138,17 +139,6 @@ invasion = {
 	}
 
 	target = {
-		#England
-		26  = 6000  #Dover
-		25  = 6000  #Norwich
-		27  = 6000  #Portsmouth
-		23  = 6000  #Plymouth
-		22  = 6000  #Cardif
-		36  = 6000  #Belfast
-		17  = 6000  #Manchester
-		12  = 6000  #Edinburgh
-		11  = 6000  #Glasgow
-
 		#Norway
 		491	= -1	#Alesund
 		485	= -1	#Kristiansand
@@ -182,29 +172,29 @@ invasion = {
 		430	= 8000  #Palermo
 		433	= 8000  #Syracuse
 		434	= 4000  #Cagliari
-		94	= 4000  #Corsica
-		422	= 8000  #Taranto
-		427	= 7000  #Salerno
-		416	= 7000  #Anzio
-		419	= 4000  #Rome
-		412	= 7000  #Ancona
-		400	= 4000  #Venice
+		94	= -1  #Corsica
+		422	= -1  #Taranto
+		427	= -1  #Salerno
+		416	= -1  #Anzio
+		419	= -1  #Rome
+		412	= -1  #Ancona
+		400	= -1  #Venice
 
 		429 = 8000  #Malta
 		#Spain
 		475	 = 4000	 #Palma de Mallorca
-		473	 = 4000	 #Cadiz
+		473	 = 8000	 #Cadiz
 		449  = 4000  #Vigo
 		441  = 4000  #Coruna
-		472  = 4000  #Huelva
+		472  = 8000  #Huelva
 		463  = 2750  #Murcia
 		464  = 2750  #Valencia		
 		440  = 2750  #Barcelona
 		
 		#Portugal
 		995  = 3000  #Azores
-		477  = 3000  #Setubal
-		476  = 3000  #Lissabon
+		477  = 8000  #Setubal
+		476  = 8000  #Lissabon
 
 		# North Africa
 		789	= 4000  #Alexandra
@@ -223,19 +213,19 @@ invasion = {
 		1008  = 500 #Tel Aviv
 		1004  = 500 #El Arish
 		#Asian Pacific
-		1661  = 4000	#	Iwo Jima
+		1661  = 7000	#	Iwo Jima
 		1662  = 400	#	Chichi Jima	
-		1672  = 6000	#	Minami Torishima	
-		1674  = 400	#	Bikini	
+		1672  = 7500	#	Minami Torishima	
+		1674  = 4-00	#	Bikini	
 		1675  = 800	#	Eniwetok	
 		1676  = 4000	#	Kwajalein	
 		1677  = 400	#	Majuro	
 		1679  = 2000	#	Abemama
 		1681  = 400	#	Wotje	
 		1682  = 2000	#	Nauru	
-		1683  = 6000	#	Guam	
-		1684  = 400	#	Rota
-		1685  = 200	#	Saipan
+		1683  = 7500	#	Guam	
+		1684  = 1500	#	Rota
+		1685  = 1500	#	Saipan
 		1686  = 400	#	Pagan	
 		1687  = 400	#	Funafuti	
 
@@ -329,28 +319,26 @@ admiral = {
 		1734 # Pearl harbour
 		1739 # Midway
 	    1889 # San Francisco 
-		1683 # Guam
-		750 # Tripoli
-		348 # Gibraltar
+		1673 # Wake
+		1795 # New York
+		23 #Plymouth
        	429 #Malta
 	}
 	target = {
 		2694 = 60 #Hunt german navy near norway
 		2693 = 60 #Hunt german navy near denmark
-		2179 = 150 #Hunt central mediterrean
-		2743 = 100 #Hunt near greece
-		2189 = 150 #Hunt near corsica
-		2485 = 100 #Hunt north philipines
 		2511 = 120 #Hunt s okinawa
 		2512 = 120 #Hunt n okinawa
-		2180 = 200 #Palermo - invasion screening
+		2278 = 200 #Cadiz - invasion screening
+		2283 = 180 #Setubal - invasion screening
 	} 
 	core = {	
 	2548 #Sea near Manado
 	2637 #Pearl Harbor
 	2631 #Midway
-	2556 #Philipines center
-	2181 #Malta sea
+	2511 #Sea near Okinawa
+	2512 #Sea near Okinawa
+	2278 #Cadiz sea
 	2176 #Suez sea
 	2700 #English channel
 	} 

@@ -11,6 +11,16 @@ target = {
  1232 = 40 # Busan
 } 
 
+max_front_ratio = 1.2 
+max_front_ratios = {
+	JAP = 1.5 #1.2
+	GER = 1.1 #1.2
+	SOV = 1.2 #1.2
+	ITA = 1.15 #1.2
+	MAN = 1.4 #1.2
+	RSI = 1.1 #1.2
+}
+
 max_garrison_prop = 0.15
 min_garrison_prop = 0.02
 
@@ -89,10 +99,10 @@ invasion = {
 	random				= 18.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 100.0  #About the distance from Japan to Batavia
-	max_staging_distance = 100.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 200.0  #About the distance from Japan to Batavia
+	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
 	distance			= 1.5	#higher = avoid long distance.
-	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 2.0	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby

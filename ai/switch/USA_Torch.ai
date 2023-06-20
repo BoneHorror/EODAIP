@@ -13,6 +13,16 @@ target = {
  1625 = 5 # Brunei
  718 = 30 # Casablanca
 } 
+max_front_ratio = 1.2 
+max_front_ratios = {
+	JAP = 1.4 #1.2
+	GER = 1.15 #1.2
+	SOV = 1.2 #1.2
+	ITA = 1.2 #1.2
+	MAN = 1.4 #1.2
+	RSI = 1.2 #1.2
+	FRA = 3.0
+}
 exp_force_ratio = 0.01 
 exp_force_ratios = { ENG = 0.7 U01 = 0.1 PHI = 0.2 } 
 no_exp_forces_to = { U02 }

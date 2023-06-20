@@ -20,6 +20,15 @@ target = {
  1607 = 5 # Port Moresby
  1625 = 5 # Brunei
 } 
+max_front_ratio = 1.2 
+max_front_ratios = {
+	JAP = 1.2 #1.2
+	GER = 1.2 #1.2
+	SOV = 1.2 #1.2
+	ITA = 1.2 #1.2
+	MAN = 1.2 #1.2
+	RSI = 1.2 #1.2
+}
 exp_force_ratio = 0.07 
 exp_force_ratios = { ENG = 0.7 U01 = 0.1 PHI = 0.2 } 
 no_exp_forces_to = { U02 }
@@ -187,7 +196,7 @@ invasion = {
 	air_base			= 2.0
     	naval_base 			= 1.5 
     	air_support 		= 12.0 
-    	redirect 			= home
+    	redirect 			= nearest
 	ignore				= no
 	help_allies 		= no
     province_priorities = yes #Invade only provinces in target list with priority higher then 0

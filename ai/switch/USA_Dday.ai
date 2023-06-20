@@ -16,6 +16,15 @@ target = {
  1607 = 25 # Port Moresby
  1625 = 10 # Brunei
 } 
+max_front_ratio = 1.25 
+max_front_ratios = {
+	JAP = 1.2 #1.2
+	GER = 1.5 #1.2
+	SOV = 1.5 #1.2
+	ITA = 1.2 #1.2
+	MAN = 1.2 #1.2
+	RSI = 1.2 #1.2
+}
 max_garrison_prop = 0.15
 min_garrison_prop = 0.03
 
@@ -174,8 +183,8 @@ invasion = {
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 100.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
-	max_staging_distance = 100.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
+	max_distance  		= 30.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
+	max_staging_distance = 25.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
 	distance			= 2.5	#higher = avoid long distance.
 	pocket				= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.

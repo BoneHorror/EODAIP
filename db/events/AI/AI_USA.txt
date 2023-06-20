@@ -167,14 +167,25 @@ event = {
 	random = no 
 	country = USA
 	persistent = yes
-	save_date = yes
+	#save_date = yes
 	
 	trigger = {
 	ai = yes
+	army = 50
 		OR = {
 			war = { country = USA country = SOV }
 			war = { country = GER country = USA }
 			}
+		OR = {
+			war = { country = GER country = SOV }
+		AND = {
+			exists = ENG
+			army = 70
+			war = { country = USA country = JAP }
+			control = { province = 1661 data = -3 } #Iwo Jima
+		}
+			NOT = { war = { country = USA country = JAP } }
+		}
 		OR = {
 			AND = {
 				year = 1943
@@ -216,9 +227,10 @@ event = {
 		}
 		NOT = { control = { province = 29 data = -2 } } # London
 		NOT = { local_flag = USADDay }
+		NOT = { local_flag = USAGibraltar }
 		NOT = { 
 			AND = {
-			local_flag = USJap 
+			local_flag = USAJap 
 			lost_national = { country = GER value = 80 }
 			}
 		} #In hindsight I do want this to interrupt JAP, D-Daying GER is probably more important...
@@ -242,15 +254,16 @@ event = {
 
 	action_a = {
 		command = { type = local_setflag which = USADDay }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USAItaly }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
 		command = { type = local_clrflag which = USInvadeUK }
 		command = { type = setflag which = DDay }
 		command = { type = ai which = "switch/USA_Dday.ai" }
 	}
 }
 ################
-# D-Day successful or ITA invasion may be more important, go back to normal AI
+# D-Day successful or ITA invasion may be more important or SOV lost and we want to focus on Japan, go back to normal AI
 #############################################
 event = {
 	id = 3049006
@@ -261,26 +274,34 @@ event = {
 	trigger = {
 		ai = yes
 		local_flag = USADDay
-		NOT = { local_flag = USADefense }
-		NOT = { local_flag = USAInvadeUK }
-		NOT = { local_flag = USJap }
-		NOT = { local_flag = USAItaly }
-		exists = ENG
-		control = { province = 29 data = ENG } # London
-		control = { province = 23 data = ENG } # Plymouth
 		OR = {
-			NOT = { war = { country = USA country = GER } } #War is over :D
+			AND = {
+				NOT = { war = { country = USA country = GER } } #War is over :D
+				NOT = { war = { country = USA country = SOV } } 
+			}
 			AND = {
 				NOT = { region = { region = "France" country = -3 value = 1 } }
 				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
 				flag = InvadeItaly
-				event = { id = 3049005 days = 150 } #D-day started sometime ago, to avoid ping-ponging
+				NOT = { 
+					AND = {
+						lost_national = { country = GER value = 10 } #GER is losing ground to Soviets
+						war = { country = GER country = SOV }
+						}
+					}
 				}
 			AND = {
 				region = { region = "France" country = -3 value = 30 }
 				region = { region = "Benelux" country = -3 value = 35 }
-				lost_national = { country = GER value = 50 }
+				lost_national = { country = GER value = 67 }
 				war = { country = USA country = JAP } #Still at war with JAP and GER is falling apart, shift focus to Japanese Mainland
+				}
+			AND = {
+				NOT = { region = { region = "France" country = -3 value = 1 } }
+				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
+				NOT = { war = { country = GER country = SOV } } #Soviets are out of the war somehow
+				war = { country = USA country = JAP }
+				#event = { id = 3049005 days = 150 } #D-day started sometime ago, to avoid ping-ponging
 				}
 			}
 	}
@@ -294,7 +315,8 @@ event = {
 
 	action_a = {
 		command = { type = local_clrflag which = USADDay }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USAInvadeUK }
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = clrflag which = DDay }
@@ -365,7 +387,8 @@ event = {
 		command = { type = local_clrflag which = USAInvadeUK }
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USAItaly }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USABuildStandard }
 		command = { type = local_clrflag which = USABuildLand }
 		command = { type = clrflag which = DDay }
@@ -983,6 +1006,11 @@ event = {
 	
 	trigger = {
 		ai = yes
+		war = { country = USA country = GER }
+		OR = {
+			war = { country = USA country = ITA }
+			war = { country = USA country = RSI }
+			}
 		OR = {
 			flag = InvadeItaly
 			AND = {
@@ -1011,7 +1039,8 @@ event = {
 			}
 		}
 		NOT = { local_flag = USAItaly }
-		NOT = { local_flag = USJap }
+		NOT = { local_flag = USAGibraltar }
+		NOT = { local_flag = USAJap }
 		NOT = { local_flag = USADDay }
 		NOT = { local_flag = USADefense }
 		NOT = { local_flag = USAInvadeUK }
@@ -1042,7 +1071,8 @@ event = {
 	action_a = {
 		command = { type = local_setflag which = USAItaly }
 		command = { type = local_clrflag which = USADDay }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USATorch }
 		command = { type = local_clrflag which = USInvadeUK }
 		command = { type = clrflag which = DDay }
@@ -1062,10 +1092,15 @@ event = {
 		ai = yes
 		local_flag = USAItaly
 		NOT = { war = { country = USA country = ITA } }
+		NOT = { war = { country = USA country = RSI } }
 		OR = {
 			local_flag = USADDay
 			local_flag = USADefense
 			local_flag = USAInvadeUK
+			AND = {
+				naval_percentage = { country = JAP value = 0.7 }
+				war = { country = USA country = JAP }
+				}
 		}
 	}
 
@@ -1094,7 +1129,7 @@ event = {
 		atwar = yes		
 		NOT = { local_flag = USAInvadeUK }
 		NOT = { local_flag = USADefense }
-		NOT = { local_flag = USJap }
+		NOT = { local_flag = USAJap }
 		OR = {	# At least one province in GB is controlled by an enemy
 			region = { region = "England" country = -2 value = 1 } 
 			region = { region = "Scotland" country = -2 value = 1 }
@@ -1131,7 +1166,8 @@ event = {
 		command = { type = local_setflag which = USAInvadeUK }
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = local_clrflag which = USADDay }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Invade_UK.ai" }
 	}
@@ -1165,9 +1201,10 @@ event = {
 
 	action_a = {
 		command = { type = local_clrflag which = USADDay }
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
 		command = { type = local_clrflag which = USAInvadeUK }
 		command = { type = local_clrflag which = USAItaly }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = ai which = "switch/USA_Gear_Up_4.ai" }
 		command = { type = ai which = "switch/USA_Garrison.ai" }
 	}
@@ -1725,7 +1762,7 @@ event = {
 		command = { type = alliance which = ENG when = 1 }
 		}
 	}
-### Go after JAP ###
+###################### Go after JAP AI
 event = {
 	id = 3049051
 	random = no
@@ -1735,14 +1772,16 @@ event = {
 	trigger = {
 		ai = yes
 		war = { country = USA country = JAP }
-		NOT = { local_flag = USJap }
+		NOT = { local_flag = USAJap }
 		naval_percentage = { country = JAP value = 0.7 }
 		NOT = {
-			control = { province = 1563 data = -3 } #Southern Okinawa
-			control = { province = 1734 data = -3 } #Pearl Harbour
-			control = { province = 1672 data = -3 } #Minami Toshima
-			control = { province = 1661 data = -3 } #Iwo Jima
-			control = { province = 1564 data = -3 } #Northern Okinawa
+			AND = {
+				control = { province = 1563 data = -3 } #Southern Okinawa
+				control = { province = 1734 data = -3 } #Pearl Harbour
+				control = { province = 1672 data = -3 } #Minami Toshima
+				control = { province = 1661 data = -3 } #Iwo Jima
+				control = { province = 1564 data = -3 } #Northern Okinawa
+				}
 			}
 		OR = {
 			NOT = { local_flag = USATorch }
@@ -1761,10 +1800,14 @@ event = {
 				region = { region = "Algeria" country = U55 }
 				alliance = { country = USA country = U55 }
 				}
+			AND = {
+				local_flag = USATorch
+				year = 1944 #Failsafe
+				}
 			}
 		}	
 		OR = {
-			NOT = { local_flag = USAItaly } #Prefer to wrap up invasion of Italy first.
+			NOT = { local_flag = USAItaly } #Prefer to wrap up invasion of Italy first if it's early into the war
 			AND = {
 				local_flag = USAItaly
 				NOT = { region = { region = Italy country = -3 data = 1 } }
@@ -1780,11 +1823,13 @@ event = {
 			AND = {
 				local_flag = USADDay
 				NOT = { transport = { country = USA value = 20 when = 1 } }
+				NOT = { army = 50 }
 				}
-			AND = {
-				NOT = { war = { country = USA country = GER } }
-				local_flag = USADDay
-				}
+			#AND = {
+			#	NOT = { war = { country = USA country = GER } }
+			#	NOT = { war = { country = USA country = SOV } }
+			#	local_flag = USADDay
+			#	}
 			}
 		OR = {
 			AND = {
@@ -1820,13 +1865,14 @@ event = {
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = local_clrflag which = USATorch }
-		command = { type = local_setflag which = USJap }
+		command = { type = local_setflag which = USAJap }
 		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = clrflag which = DDay }
 		command = { type = ai which = "switch/USA_Naval_Attack.ai" }
 	}
 } 
-### Go after JAP - we control outer islands###
+################# Go after JAP - we control outer islands
 event = {
 	id = 3049067
 	random = no
@@ -1836,7 +1882,7 @@ event = {
 	trigger = {
 		ai = yes
 		war = { country = USA country = JAP }
-		NOT = { local_flag = USJap }
+		NOT = { local_flag = USAJap }
 		naval_percentage = { country = JAP value = 0.7 }
 		AND = {
 			control = { province = 1563 data = -3 } #Southern Okinawa
@@ -1921,10 +1967,11 @@ event = {
 		command = { type = local_clrflag which = USADDay }
 		command = { type = local_clrflag which = USAItaly }
 		command = { type = local_clrflag which = USATorch }
-		command = { type = local_setflag which = USJap }
+		command = { type = local_setflag which = USAJap }
 		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = clrflag which = DDay }
-		command = { type = ai which = "switch/USA_Naval_Attack.ai" }
+		command = { type = ai which = "switch/USA_Naval_Heart.ai" }
 	}
 } 
 ###Clear US naval AI 
@@ -1940,7 +1987,7 @@ event = {
 			NOT = { war = { country = USA country = JAP } }
 			NOT = { naval_percentage = { country = JAP value = 0.7 } }
 		}
-		local_flag = USJap	
+		local_flag = USAJap	
 	}
 
 	name = "AI_EVENT"
@@ -1951,7 +1998,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1964 }
 
 	action_a = {
-		command = { type = local_clrflag which = USJap }
+		command = { type = local_clrflag which = USAJap }
 		command = { type = ai which = "switch/USA_Gear_Up_4.ai" }
 	}
 }
@@ -2495,7 +2542,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		local_flag = USJap
+		local_flag = USAJap
 	}
 
 	name = "AI_EVENT"
@@ -2543,4 +2590,134 @@ event = {
 		command = { type = addclaim which = 1727 }
 	}
 }
+################
+# USA Loads invasion of Gibraltar AI
+#############################################
+event = {
+	id = 3049068
+	random = no 
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = USA country = GER }
+			war = { country = USA country = SOV }
+			}
+		control = { province = 348 data = -2 } # Gibraltar
+		NOT = { local_flag = USAJap }
+		NOT = { local_flag = USAGibraltar }
+		NOT = { local_flag = USADefense }
+		NOT = { local_flag = USAInvadeUK }
+		OR = {
+			NOT = { exists = FRA }
+			NOT = { war = { country = FRA } }
+			AND = {
+				war = { country = FRA }
+				NOT = {  region = {  region = "Algeria" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Tunisia" country = -2 value = 10 } }
+				NOT = {  region = {  region = "Morocco" country = -2 value = 10 } }
+			}
+		}
+	}
 
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_setflag which = USAGibraltar }
+		command = { type = local_clrflag which = USAItaly }
+		command = { type = local_clrflag which = USADDay }
+		command = { type = local_clrflag which = USAJap }
+		command = { type = local_clrflag which = USATorch }
+		command = { type = local_clrflag which = USInvadeUK }
+		command = { type = clrflag which = DDay }
+		command = { type = ai which = "switch/USA_Gibraltar.ai" }
+	}
+}
+################
+# USA unloads invasion of Gibraltar AI
+#############################################
+event = {
+	id = 3049069
+	random = no 
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		local_flag = USAGibraltar
+		control = { province = 348 data = -3 } # Gibraltar back to friendly
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = local_clrflag which = USAGibraltar }
+	}
+}
+################### Convoy cheat
+###Cheat convoy income based on difficulty
+event = {
+	id = 3049070
+	random = no 
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { convoypool = 500 }
+		difficulty = 2 #Neutral and Ally-favoured difficulties
+		NOT = { local_flag = USAConvoys }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = 20 }
+		command = { type = convoy_prod_mod which = transports value = 30 }
+		command = { type = local_setflag which = USAConvoys }
+	}
+}
+event = {
+	id = 3049071
+	random = no 
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		convoypool = 500
+		difficulty = 2 #Neutral and Ally-favoured difficulties
+		local_flag = USAConvoys
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = -20 }
+		command = { type = convoy_prod_mod which = transports value = -30 }
+		command = { type = local_clrflag which = USAConvoys }
+	}
+}
+		

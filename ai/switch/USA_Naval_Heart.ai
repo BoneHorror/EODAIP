@@ -12,7 +12,15 @@ target = {
  1232 = 40 # Busan
  1552 = 35 # Tokyo
 } 
-
+max_front_ratio = 1.2 
+max_front_ratios = {
+	JAP = 2.0 #1.2
+	GER = 1.5 #1.2
+	SOV = 1.2 #1.2
+	ITA = 1.2 #1.2
+	MAN = 1.4 #1.2
+	RSI = 1.15 #1.2
+}
 max_garrison_prop = 0.15
 min_garrison_prop = 0.02
 
