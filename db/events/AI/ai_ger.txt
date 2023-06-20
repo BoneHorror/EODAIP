@@ -461,15 +461,19 @@ event = {
 					control = { province = 55 data = -3 } # Paris
 					event = 2001007 #Germany calls for general peace Treaty in Europe
 					}
-		NOT = { war = { country = SOV } }
-		NOT = { war = { country = SPA } }
-		NOT = { war = { country = SPR } }
-		NOT = { war = { country = YUG } }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = GER country = SPA } }
+		NOT = { war = { country = GER country = SPR } }
+		NOT = { war = { country = GER country = YUG } }
 		
-	 	garrison = { country = -3 province = 232  type = land size = 14 area = 1 } # Warsaw
-	 	garrison = { country = -3 province = 243  type = land size = 14 area = 1 } # Lublin
-		garrison = { country = -3 province = 184  type = land size = 9 area = 1 } # Koenigsberg
-		
+		OR = {
+			AND = {
+				garrison = { country = -3 province = 232  type = land size = 14 area = 1 } # Warsaw
+				garrison = { country = -3 province = 243  type = land size = 14 area = 1 } # Lublin
+				garrison = { country = -3 province = 184  type = land size = 9 area = 1 } # Koenigsberg
+			}
+			garrison = { country = -3 province = 184  type = land size = 21 area = 1 } # Koenigsberg - In case of GG Polen puppet
+		}
 		NOT = { control = { province = 377 data = -2 } } # Athens
 		
 		OR = {
@@ -492,6 +496,7 @@ event = {
 		command = { type = ai which = "switch/GER_Russia.ai" }
 		command = { type = local_clrflag which = GERInvadeRussia }
 		command = { type = local_clrflag which = GERStandardFront }
+		command = { type = local_setflag which = GERSOVStrat }
 		command = { type = war which = SOV }
 		command = { trigger = { control = { province = 68 data = GER } } type = activate_division which = 14500 value = 2027 where = 68 when = 0 }
 		command = { trigger = { control = { province = 69 data = GER } } type = activate_division which = 14500 value = 2028 where = 69 when = 0 }
@@ -675,7 +680,7 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/GER_Russia_Buildup.ai" }
 		command = { type = local_setflag which = GERInvadeRussia }
-		command = { type = ai_prepare_war which = SOV }
+		#command = { type = ai_prepare_war which = SOV }
 	}
 }
 ################
@@ -2886,20 +2891,20 @@ event = {
 		command = { type = add_division value = garrison when = 3 }
 		command = { type = add_division value = garrison when = 3 }
 		command = { type = add_division value = garrison when = 3 }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry when = 4 }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = infantry when = 4 }
-		command = { trigger = { NOT = { year = 1941 } } type = add_division value = garrison when = 3 }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = infantry when = 4 where = artillery }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison when = 3 }
-		command = { trigger = { NOT = { year = 1942 } } type = add_division value = garrison when = 3 }
-		command = { trigger = { NOT = { year = 1943 } } type = add_division value = infantry when = 4 where = artillery }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1941 } } } type = add_division value = infantry when = 4 where = police }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1941 } } } type = add_division value = infantry when = 4 where = police }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1941 } } } type = add_division value = garrison when = 3 where = anti_air }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1942 } } } type = add_division value = infantry when = 4 where = artillery }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1942 } } } type = add_division value = garrison when = 3 where = anti_air }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1942 } } } type = add_division value = garrison when = 3 where = police }
+		command = { trigger = { OR = { NOT = { ai = ENG } NOT = { ai = USA } NOT = { year = 1943 } } } type = add_division value = infantry when = 4 where = artillery }
+		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia when = 5 where = artillery }
 		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia when = 5 }
-		command = { trigger = { NOT = { year = 1943 } } type = add_division value = militia when = 5 }
-		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
-		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
+		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 where = police }
+		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 where = police }
 		command = { trigger = { NOT = { year = 1944 } } type = add_division value = militia when = 6 }
 		command = { trigger = { NOT = { year = 1945 } } type = add_brigade value = artillery }
-		command = { type = manpowerpool value = 100 }
+		command = { type = manpowerpool value = 120 }
 		command = { trigger = { control = { province = 86 data = RSI } } type = province_keypoints which = 86 value = 1 } #Nice
 		command = { trigger = { control = { province = 400 data = RSI } } type = province_keypoints which = 400 value = 1 } #Venice
 	}
@@ -2953,7 +2958,7 @@ event = {
 		command = { type = ai which = "switch/GER_Pol_Iron_Pact.ai" }
 	}
 }
-# German helper against allied invasions
+# German "Volkstrum" helper against allied invasions
 event = {
 	id = 3003102
 	random = no 
@@ -2972,12 +2977,13 @@ event = {
 	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = {
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
+		command = { type = manpowerpool value = 120 }
+		command = { type = add_division value = militia when = 4 where = artillery }
+		command = { type = add_division value = militia when = 4 where = artillery }
+		command = { type = add_division value = militia when = 4 where = artillery }
 		command = { type = add_division value = d_01 when = 4 }
-		command = { type = add_division value = garrison when = 2 }
-		command = { type = add_division value = garrison when = 2 }
+		command = { type = add_division value = garrison when = 2 where = anti_air }
+		command = { type = add_division value = garrison when = 2 where = anti_air }
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = militia when = 3 cost = -3.0 } #Queue 9 divs on neutral and Axis-favoured difficulties
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = militia when = 3 cost = -3.0 }
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_01 when = 3 cost = -3.0 }
@@ -3001,14 +3007,15 @@ event = {
 	deathdate = { day = 29 month = december year = 1944 }
 
 	action_a = {
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = garrison when = 2 }
-		command = { type = add_division value = garrison when = 2 }
+		command = { type = manpowerpool value = 120 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = anti_air }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = medium_armor }
 	}
 }
 event = {
@@ -3029,15 +3036,16 @@ event = {
 	deathdate = { day = 29 month = december year = 1944 }
 
 	action_a = {
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = militia when = 4 }
-		command = { type = add_division value = garrison when = 3 }
-		command = { type = add_division value = garrison when = 3 }
-		command = { type = add_division value = garrison when = 3 }
+		command = { type = manpowerpool value = 120 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = anti_air }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = artillery }
+		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = medium_armor }
 	}
 }
 event = {
@@ -3049,8 +3057,12 @@ event = {
 		ai = yes	
 		NOT = { exists = SOV }
 		OR = {
-		exists = LAT
-		exists = LIT
+			exists = LAT
+			exists = LIT
+		}
+		NOT = {
+			alliance = { country = LIT }
+			alliance = { country = LAT }
 		}
 	}
 
@@ -3414,60 +3426,6 @@ event = {
 #		command = { type = add_division value = paratrooper }
 #		command = { type = add_division value = transport_plane }
 #		command = { type = add_division value = transport_plane }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
-#		command = { type = add_division value = light_armor where = light_armor_brigade }
 #		command = { type = free_ic value = 200 }
 #		command = { type = dissent value = -100 }
 #	}
@@ -3485,6 +3443,7 @@ event = {
 	lost_national = { country = GER value = 20 }
 	atwar = yes
 	ai = yes
+	manpower = 100
 	}
    
 	name = "AI_EVENT"
@@ -3665,6 +3624,12 @@ event = {
 	trigger = {
 		ai = yes
 		war = { country = GER country = ENG }
+		NOT = {
+			OR = {
+				war = { country = GER country = SOV }
+				local_flag = GERInvadeRussia
+			}
+		}
 		alliance = { country = GER country = ITA }
 		control = { province = 377 data = GER } # Athens
 		technology = 2220 #Early SPA
@@ -3686,6 +3651,8 @@ event = {
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = light_armor when = 2 where = armored_car }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "112. Leichte-Division" value = motorized when = 1 where = sp_artillery }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { type = ai which = "switch/GER_AfrikaKorps.ai" }
+		command = { type = event which = 3003130 where = GER when = 21 } #Reload no-overseas reinforcements to block ITA after Afrika Korps is assigned
 	}
 }
 ################
@@ -3821,5 +3788,52 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/GER_Panic_Release.ai" }
 		command = { type = local_clrflag which = GERPanicBerlin }
+	}
+}
+event = {
+	id = 3003130
+	random = no 
+	country = GER
+	
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_AfrikaKorps_Reload.ai" }
+	}
+}
+####################Decide strategy against Soviets
+event = {
+	id = 3003131
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		local_flag = GERSOVStrat
+		OR = { #Set by 9300006
+			local_flag = Barba_North
+			local_flag = Barba_South
+			local_flag = Barba_Even
+			local_flag = Barba_Moscow
+			}
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { trigger = { local_flag = Barba_North } type = ai which = "switch/GER_SOV_North.ai" }
+		command = { trigger = { local_flag = Barba_South } type = ai which = "switch/GER_SOV_South.ai" }
+		command = { trigger = { local_flag = Barba_Even } type = ai which = "switch/GER_SOV_Even.ai" }
+		command = { trigger = { local_flag = Barba_Moscow } type = ai which = "switch/GER_SOV_Moscow.ai" }
 	}
 }

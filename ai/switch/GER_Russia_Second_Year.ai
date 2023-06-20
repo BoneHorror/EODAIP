@@ -110,6 +110,6 @@ front = {
       	passivity = { SOV = 0 } 
 }
 invasion = {
-	ignore			= yes
-	help_allies 	= yes
+	ignore			= no
+	help_allies 	= no
 	}

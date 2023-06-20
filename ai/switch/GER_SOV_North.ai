@@ -1,0 +1,51 @@
+# German operation Barbarosa specific strategy AI File by Nekron
+
+strat_redeploy_threshold = 25
+max_redeploying = 0.15
+###################################
+# Diplomacy
+###################################
+target = { 
+	572 = 50 # Moscow - Moscow
+	553 = 100 # Leningrad - North
+	599 = 90 # Minsk - North
+	566 = 80 # Pskov - North
+	617 = 10 # Kiev - South, Even
+	641 = 10 # Sevastopol - South
+	644 = 10 # Rostov - South
+	589 = 10 # Smolensk - Even
+	552 = 10 # Gdov - Even
+	663 = 10 # Stalingrad - 2nd year setup 
+	713 = 10 # Baku - 2nd year setup
+} 
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	area_multiplier = {
+		553    = 1.3  #Leningrad - North
+		566		= 1.3 #Pskov - North
+		573    = 1.2  #Moscow - Moscow
+		731    = 1.1  #Baku - 2nd year
+		604	   = 1.1  #Kursk - 2nd year
+		639    = 1.1  #Crimea Breakthrough - South
+		644		= 1.1 #Rostov - South
+		617 = 1.1 #Kiev - even
+		589 = 1.1 #Smolensk - even
+		633    = 1.1  #Stalingrad - 2nd year
+		1006   = 0.5  #Trash africa PoI
+		825    = 0.5	#Addis Adeba
+		1041	= 0.5  #Terrible area near Saudi Arabia
+		1026	= 0.5 #Al Kerak - Transjordan
+	}
+}
+front = { 
+	province_priorities = {
+		550 = 1.4 #North - province near Leningrad
+		551 = 1.3 #North - province near Leningrad
+		564 = 1.2 #North - province near Pskov
+		273 = 1.2 #North - province near Pskov
+		256 = 1.3 #North - province near Minsk
+		596 = 1.2 #North - province near Minsk
+	}
+}

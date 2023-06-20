@@ -6,7 +6,7 @@
 
 military = { 
 	relative_build_scheme 	= no
-
+	max_batch_war 		= 540 
 	#### Divisions etc...
 	infantry 		= 10 #33
 	d_01		= 5
