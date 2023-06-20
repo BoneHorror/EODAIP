@@ -778,250 +778,82 @@ event = {
 	}
 }
 ################
-# The Programers Republic
+# The Programers Republic --- I think this is supposed to be a better "aliens" event  but it's not hooked up...
 #############################################
-event = {
-	id = 3190001
-	random = no 
-	country = U07
-	
-	name = "AI_EVENT"
-	style = 0	
-	
-	action_a = { 
-		command = { type = end_puppet }
-		command = { type = leave_alliance when = 1 }
-		command = { type = ai which = "switch/U07.ai" }
-		command = { type = set_domestic which = political_left value = 3 }
-		command = { type = set_domestic which = freedom value = 1 }
-		command = { type = set_domestic which = democratic value = 3 }
-		command = { type = set_domestic which = interventionism value = 9 }
-     		command = { type = belligerence which = U07 value = 250 }
-      		command = { type = money value = 500000 }
-      		command = { type = manpowerpool value = 5000 }
-		command = { type = metalpool value = 500000 }
-		command = { type = oilpool value = 500000 }
-		command = { type = supplies value = 500000 }
-		command = { type = rarematerialspool value = 500000 }
-    	 	command = { type = set_domestic which = defense_lobby value = 9 }
-		command = { type = ground_def_eff value = 1.25 }
-    		command = { type = max_organization which = land value = 50 }
-		command = { type = morale which = land value = 50 }
-		command = { type = relative_manpower value = 10000 }
-		command = { type = industrial_modifier which = total value = 1000 }
-		command = { type = research_mod value = 1000 }
-		command = { type = construct which = ic where = 896 value = 100 }
-		command = { type = construct which = coastal_fort where = 896 value = 10 }
-		command = { type = construct which = land_fort where = 896 value = 10 }
-		command = { type = construct which = flak where = 896 value = 10 }
-		command = { type = construct which = air_base where = 896 value = 10 }
-		command = { type = construct which = naval_base where = 896 value = 10 }
-		command = { type = construct which = radar_station where = 896 value = 10 }
-		command = { type = construct which = infrastructure where = 896 value = 60 }
-		command = { type = construct which = rocket_test where = 896 value = 60 }
-		command = { trigger = { exists = GER } type = war which = GER }
-		command = { trigger = { exists = USA } type = war which = USA }
-		command = { trigger = { exists = ENG } type = war which = ENG }
-		command = { trigger = { exists = SOV } type = war which = SOV }
-		command = { trigger = { exists = JAP } type = war which = JAP }
-		command = { trigger = { exists = FRA } type = war which = FRA }
-		command = { trigger = { exists = POR } type = war which = POR }
-		command = { trigger = { exists = SPA } type = war which = SPA }
-		command = { trigger = { exists = SPR } type = war which = SPR }
-		command = { type = transport_pool which = U07 value = 1000 }
-		command = { type = escort_pool which = U07 value = 1000 }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = transport }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = carrier  }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = light_cruiser }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-		command = { type = add_division value = militia }
-	}
-}
+#event = {
+#	id = 3190001
+#	random = no 
+#	country = U07 #U07
+#	
+#	trigger = {
+#		ai = yes
+#	}
+#	
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 13 month = november year = 1933 }
+#	offset = 3
+#	deathdate = { day = 29 month = december year = 1963 }
+#	
+#	action_a = { 
+#		command = { type = end_puppet }
+#		command = { type = leave_alliance when = 1 }
+#		command = { type = ai which = "switch/U07.ai" }
+#		command = { type = set_domestic which = political_left value = 3 }
+#		command = { type = set_domestic which = freedom value = 1 }
+#		command = { type = set_domestic which = democratic value = 3 }
+#		command = { type = set_domestic which = interventionism value = 9 }
+#     		command = { type = belligerence which = U07 value = 250 }
+#      		command = { type = money value = 500000 }
+#      		command = { type = manpowerpool value = 5000 }
+#		command = { type = metalpool value = 500000 }
+#		command = { type = oilpool value = 500000 }
+#		command = { type = supplies value = 500000 }
+#		command = { type = rarematerialspool value = 500000 }
+#    	 	command = { type = set_domestic which = defense_lobby value = 9 }
+#		command = { type = ground_def_eff value = 1.25 }
+#    		command = { type = max_organization which = land value = 50 }
+#		command = { type = morale which = land value = 50 }
+#		command = { type = relative_manpower value = 10000 }
+#		command = { type = industrial_modifier which = total value = 1000 }
+#		command = { type = research_mod value = 1000 }
+#		command = { type = construct which = ic where = -1 value = 100 }
+#		command = { type = construct which = coastal_fort where = -1 value = 10 }
+#		command = { type = construct which = land_fort where = -1 value = 10 }
+#		command = { type = construct which = flak where = -1 value = 10 }
+#		command = { type = construct which = air_base where = -1 value = 10 }
+#		command = { type = construct which = naval_base where = -1 value = 10 }
+#		command = { type = construct which = radar_station where = -1 value = 10 }
+#		command = { type = construct which = infrastructure where = -1 value = 60 }
+#		command = { type = construct which = rocket_test where = -1 value = 60 }
+#		command = { trigger = { exists = GER } type = war which = GER }
+#		command = { trigger = { exists = USA } type = war which = USA }
+#		command = { trigger = { exists = ENG } type = war which = ENG }
+#		command = { trigger = { exists = SOV } type = war which = SOV }
+#		command = { trigger = { exists = JAP } type = war which = JAP }
+#		command = { trigger = { exists = FRA } type = war which = FRA }
+#		command = { trigger = { exists = POR } type = war which = POR }
+#		command = { trigger = { exists = SPA } type = war which = SPA }
+#		command = { trigger = { exists = SPR } type = war which = SPR }
+#		command = { type = transport_pool which = U07 value = 1000 }
+#		command = { type = escort_pool which = U07 value = 1000 }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#		command = { type = add_division value = transport }
+#	}
+#}
 ################
 # Sweden changes political stance
 #############################################
