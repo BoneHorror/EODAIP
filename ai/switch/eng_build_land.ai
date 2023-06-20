@@ -7,6 +7,7 @@
 ###################################
 military = { 
 	relative_build_scheme 	= yes
+	max_batch_war 		= 540
 	extra_convoys_war = 0.2550 
 
 	#### Divisions etc...
