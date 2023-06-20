@@ -95,10 +95,10 @@ globaldata =
   }
   queued_events = { 
     event = { tag = CHI  id = 1330110051 hour = 24 } # Defense of Nanjing
-    event = { tag = CHI  id = 1330110043 hour = 0 } # Nanjing Decade
+    event = { tag = CHI  id = 1330110043 hour = 1 } # Nanjing Decade
     event = { tag = JAP  id = 1330120019 hour = 72 } # North Strike
-    event = { tag = JAP  id = 1330110046 hour = 0 } # Japan Start Event
-    event = { tag = MAN  id = 1330120008 hour = 0 } # Anti-Partisan Stuff
+    event = { tag = JAP  id = 1330110046 hour = 1 } # Japan Start Event
+    event = { tag = MAN  id = 1330120008 hour = 1 } # Anti-Partisan Stuff
     event = { tag = CHI  id = 1330110048 hour = 48 } # Wang Jingwei Flavor
   }
   dormant_leaders = { 
