@@ -61,7 +61,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = local_clrflag which = BELDDay }
+		command = { type = local_clrflag which = HOLDDay }
 		command = { type = ai which = "switch/Minor_DDay_Retrack.ai" }
 	}
 }
