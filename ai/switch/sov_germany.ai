@@ -16,7 +16,7 @@ max_front_ratio = 1.5
 max_front_ratios = {
 	FIN = 0.08 # 0.08
 	ROM = 1.0 # 1.0
-	GER = 3.0
+	GER = 2.0
 	ITA = 2.0
 	JAP = 1.2
 }

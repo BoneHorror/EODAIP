@@ -5,7 +5,15 @@ target = {
 	1219 = 40 # Port Arthur
 	1552 = 10 # Tokyo
 	}
-max_front_ratios = { }
+max_front_ratio = 1.5 
+max_front_ratios = {
+	FIN = 0.08 # 0.08
+	ROM = 1.0 # 1.0
+	GER = 1.5
+	ITA = 1.2
+	JAP = 1.15
+	MAN = 1.1
+}
 
 combat = {
 	JAP = 300
