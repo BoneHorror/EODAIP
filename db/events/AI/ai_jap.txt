@@ -2546,6 +2546,7 @@ event = {
 
 	action_a = {
 		command = { type = free_supplies value = 50 }
+		command = { type = convoy_prod_mod which = transports value = 25 }
 		command = { type = local_setflag which = JAPConvoys }
 	}
 }
@@ -2571,6 +2572,7 @@ event = {
 
 	action_a = {
 		command = { type = free_supplies value = -50 }
+		command = { type = convoy_prod_mod which = transports value = -25 }
 		command = { type = local_clrflag which = JAPConvoys }
 	}
 }

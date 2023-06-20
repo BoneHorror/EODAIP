@@ -2380,4 +2380,58 @@ event = {
 		command = { type = addclaim which = 435 }
 	}
 }
+################### Convoy cheat
+###Cheat convoy income based on difficulty
+event = {
+	id = 3001079
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { convoypool = 400 }
+		difficulty = 2 #Neutral and Ally-favoured difficulties
+		NOT = { local_flag = ENGConvoys }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = 25 }
+		command = { type = convoy_prod_mod which = transports value = 50 }
+		command = { type = local_setflag which = ENGConvoys }
+	}
+}
+event = {
+	id = 3001080
+	random = no 
+	country = ENG
+	persistent = yes
+	
+	trigger = {
+		ai = yes
+		convoypool = 400
+		difficulty = 2 #Neutral and Ally-favoured difficulties
+		local_flag = ENGConvoys
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = november year = 1936 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action_a = {
+		command = { type = free_supplies value = -25 }
+		command = { type = convoy_prod_mod which = transports value = -50 }
+		command = { type = local_clrflag which = ENGConvoys }
+	}
+}
 		
