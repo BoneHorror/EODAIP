@@ -1755,7 +1755,7 @@ event = {
 	trigger = {
 		ai = yes
 		atwar = yes
-		paratrooper = { country = -1 value = 2 } #Giving it back earlier borks Norway invasion
+		paratrooper = { country = -1 value = 2 } 
 	} 
    
 	name = "AI_EVENT"
@@ -1768,5 +1768,64 @@ event = {
 	action_a = {
 		ai_chance = 100
 		command = { type = add_division value = transport_plane when = 2 }
+	}
+}
+############ More aggressive AI during DDay ############
+event = {
+	id = 3007055
+	random = no
+	country = SOV
+
+	trigger = {
+		ai = yes
+		flag = DDay
+		AND = {
+			OR = {
+				garrison = { country = USA province = 125  type = land size = 7 area = 2 } #Rotterdam, Flanders Region
+				garrison = { country = USA province = 43  type = land size = 5 area = 1 } #Cherbourg, Normandy Area
+				garrison = { country = USA province = 37  type = land size = 5 area = 1 } #Brest, Brittany Area
+				garrison = { country = USA province = 81  type = land size = 5 area = 1 } #Dunkirk, Pas de Calais
+				garrison = { country = USA province = 147  type = land size = 6 area = 1 } #Wilhelmshaven, Hannover
+				garrison = { country = USA province = 152  type = land size = 6 area = 1 } #Kiel, Holstein
+				garrison = { country = U01 province = 125  type = land size = 7 area = 2 } #Rotterdam, Flanders Region
+				garrison = { country = U01 province = 43  type = land size = 5 area = 1 } #Cherbourg, Normandy Area
+				garrison = { country = U01 province = 37  type = land size = 5 area = 1 } #Brest, Brittany Area
+				garrison = { country = U01 province = 81  type = land size = 5 area = 1 } #Dunkirk, Pas de Calais
+				garrison = { country = U01 province = 147  type = land size = 6 area = 1 } #Wilhelmshaven, Hannover
+				garrison = { country = U01 province = 152  type = land size = 6 area = 1 } #Kiel, Holstein
+				garrison = { country = ENG province = 125  type = land size = 7 area = 2 } #Rotterdam, Flanders Region
+				garrison = { country = ENG province = 43  type = land size = 5 area = 1 } #Cherbourg, Normandy Area
+				garrison = { country = ENG province = 37  type = land size = 5 area = 1 } #Brest, Brittany Area
+				garrison = { country = ENG province = 81  type = land size = 5 area = 1 } #Dunkirk, Pas de Calais
+				garrison = { country = ENG province = 147  type = land size = 6 area = 1 } #Wilhelmshaven, Hannover
+				garrison = { country = ENG province = 152  type = land size = 6 area = 1 } #Kiel, Holstein
+				region = { region = "Germany" country = USA data = 1 value = 15 } #Enemy invaded Germany
+				region = { region = "Germany" country = ENG data = 1 value = 15 }
+				}
+			OR = {
+				region = { region = "Benelux" country = USA value = 3 }
+				region = { region = "Denmark" country = USA value = 3 }
+				region = { region = "France" country = USA value = 3 }
+				region = { region = "Benelux" country = ENG value = 3 }
+				region = { region = "Denmark" country = ENG value = 3 }
+				region = { region = "France" country = ENG value = 5 }
+				region = { region = "Benelux" country = U01 value = 3 }
+				region = { region = "Denmark" country = U01 value = 3 }
+				region = { region = "France" country = U01 value = 5 }
+			}	
+		}
+		war = { country = GER country = ENG }
+	} 
+   
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = march year = 1941 }
+	offset = 5
+	deathdate = { day = 29 month = march year = 1943 }
+
+	action_a = {
+		ai_chance = 100
+		command = { type = ai which = "switch/SOV_DDay_Aggression.ai" }
 	}
 }

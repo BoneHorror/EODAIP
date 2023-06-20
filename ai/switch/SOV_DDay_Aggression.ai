@@ -1,0 +1,118 @@
+# Soviet Second Year war with Germany AI File by Lothos
+max_front_ratio = 1.8 
+max_front_ratios = {
+	FIN = 1.0 # 0.08
+	ROM = 1.0 # 1.0
+	GER = 3.0
+	ITA = 2.0
+	JAP = 1.2
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.3
+	panic_ratio_vs_ai	= 3.0
+	panic_ratio_vs_human = 3.0
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.05
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.7
+	passivity = {
+	} 
+} 
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 10.0	#higher = avoid long distance.
+	max_distance    = 34.0 # 25.0  #About the distance from Rostock to Narvik
+	max_staging_distance = 34.0	# How far should the staging area be from the target invasion point	
+	pocket			= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 1.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 1.1	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+    naval_base 		= 0.1
+    air_support 	= 10.0 
+    redirect 		= priority
+	ignore			= yes
+	help_allies 	= no	#[yes/no]
+    province_priorities = yes #Invade only provinces in target list with priority higher then 0
+	
+	staging_province = {
+      	641 #Sevastopol
+		708 #Kutaisi
+		553 #Leningrad
+		542 #Archangelsk
+		535 #Murmansk
+	}
+	target = { 
+		#England
+		22	= 5  #Cardif
+		26  = 5  #Dover
+		25  = 5  #Norwich
+		27  = 5  #Portsmouth
+		23  = 5  #Plymouth
+		36  = 5  #Belfast
+		17  = 5  #Manchester
+		12  = 5  #Edinburgh
+		11  = 5  #Glasgow
+		
+		#Soviets
+		535 = 2000 	#Murmansk
+		542 = 2000	#Archangelsk
+		530 = 2000	#Terijoki
+		553 = 2000	#Leningrad
+		641 = 500	#Sevastopol
+		264 = 4000	#Riga
+
+		#Norway
+		491	= 4000	#Alesund
+		485	= 4000	#Kristiansand
+		483	= 4000	#Oslo
+		493	= 4000	#Trondheim
+		495	= 4000	#Narvik
+		
+		#Sweden
+     	2153 = 2000 # Goterborg 
+     	2152 = 2000 # Malmo 
+     	2159 = 2000 # Stockholm 
+		2158 = 2000 # Uppsala
+     	2162 = 2000 # Gavle 
+     	2166 = 2000 # Lulea 
+
+		#Finland
+		525 = 2000 # Helsinki
+		524 = 2000 # Turku
+		521 = 2000 # Vaasa
+		516 = 4000 # Tornio
+		531 = 4000 # Viipuri
+		
+		#Denmark
+		294 = 2000 # Copenhagen
+		219 = 1000 # Odense
+		
+		#Baltics
+		184 = 2000 # Koenigsberg
+		181 = 500 # Danzig
+		226 = 500 # Gdynia
+		
+		158 = 100 # Stettin
+		153 = 100 # Rostock
+		152 = 100 # Kiel
+		
+		#Romania
+		310 = 1500 #Constanza
+		307 = 1500 #Dobrich
+		626 = 4000 #Odessa
+	}
+} 
