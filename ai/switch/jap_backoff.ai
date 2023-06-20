@@ -4,7 +4,8 @@ max_garrison_prop = 0.70
 min_garrison_prop = 0.50
 
 max_front_ratios = { 	
-	CHI = 0.55 
+	CHI = 0.7 
+	CHC = 0.9
 }
 ###################################
 # Ground Combat, Leaders and Garrisons

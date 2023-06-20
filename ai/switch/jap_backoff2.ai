@@ -1,7 +1,8 @@
 # Japan Backoff China AI File by Lothos
 
 max_front_ratios = { 	
-	CHI = 0.5 
+	CHI = 0.7
+	CHC = 0.7
 }
 ###################################
 # Ground Combat, Leaders and Garrisons
