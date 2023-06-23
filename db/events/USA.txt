@@ -2963,7 +2963,10 @@ event = {
 		NOT = { event = 1000727 } #Germany has not used "The Final Battle" decision to declare war on USA
 		NOT = { war = { country = ENG country = GER } }
 		NOT = { war = { country = ENG country = SOV } }
-		NOT = { alliance = { country = JAP country = GER } }
+		OR = {
+			NOT = { alliance = { country = JAP country = GER } }
+			naval_percentage = { country = JAP value = 1.33 }
+			}
 		war = { country = USA country = GER }
 	}
 
@@ -3083,45 +3086,47 @@ event = {
 	}
 }	
 
-####### A war for revenge
-#event = {
-#	id = 2049054
-#	random = no
-#	country = USA
-#
-#	name = 77002name
-#	desc = 77002desc
-#	style = 2
-#	picture = "news_paper"
-#
-#	trigger = {
-#		event = 2003076
-#		NOT = { 
-#			ispuppet = USA
-#			alliance = { country = USA country = GER }
-#			war = { country = USA country = GER }
-#			non_aggression = { country = USA country = GER } 
-#		}
-#	}
-#
-#	date = { day = 0 month = january year = 1936 }
-#	offset = 15
-#	deathdate = { day = 29 month = december year = 1963 }
-#
-#	action = {
-#		ai_chance = 100
-#		name = 77002a
-#		command = { trigger = { ai = no } type = war which = GER }
-#		command = { trigger = { ai = yes } type = war which = GER }
-#		command = { type = domestic which = interventionism value = 2 }
-#		#command = { type = dissent value = -10 }
-#	}
-#	action = {
-#		ai_chance = 0
-#		name = ACTINUTILE
-#		command = { }
-#	}
-#}	
+###### A war for revenge
+event = {
+	id = 2049054
+	random = no
+	country = USA
+
+	name = 77002name
+	desc = 77002desc
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		event = 2003076
+		naval_percentage = { country = GER value = 2.0 }
+		land_percentage = { country = GER value = 1.1 }
+		NOT = { 
+			ispuppet = USA
+			alliance = { country = USA country = GER }
+			war = { country = USA country = GER }
+			non_aggression = { country = USA country = GER } 
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		ai_chance = 100
+		name = 77002a
+		command = { trigger = { ai = no } type = war which = GER }
+		command = { trigger = { ai = yes } type = war which = GER }
+		command = { type = domestic which = interventionism value = 2 }
+		#command = { type = dissent value = -10 }
+	}
+	action = {
+		ai_chance = 0
+		name = ACTINUTILE
+		command = { }
+	}
+}	
 
 event = { #start construction of dutch harbor naval base
 	id = 2049084
