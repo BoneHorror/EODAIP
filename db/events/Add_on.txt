@@ -1059,6 +1059,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1044 } atwar = yes }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1044 } atwar = yes supplies = 800 }
 
 	date = { day = 29 month = october year = 1939 }
 	offset = 1
@@ -1087,9 +1088,9 @@ event = {
 	country = GER
 
 	decision = { control = { province = 163 data = GER } }
-
 	decision_trigger = { supplies = 800 }
-
+	trigger = { control = { province = 163 data = GER } atwar = yes supplies = 800 }
+	
 	name = "EVT_1000012_NAME"
 	desc = "EVT_1000012_DESC"
 	style = 2
@@ -1122,7 +1123,8 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1046 } }
 	decision_trigger = { supplies = 800 }
-
+	trigger = { division_exists = { type = 14500 id = 1046 } supplies = 800 }
+	
 	name = "EVT_1000012_NAME"
 	desc = "EVT_1000013_DESC"
 	style = 2
@@ -1158,6 +1160,8 @@ event = {
 
 	decision_trigger = { supplies = 800 }
 
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
+	
 	name = "EVT_1000014_NAME"
 	desc = "EVT_1000014_DESC"
 	style = 2
@@ -1191,6 +1195,8 @@ event = {
 	decision = { division_exists = { type = 14500 id = 1048 } }
 
 	decision_trigger = { supplies = 800 }
+	
+	trigger = { division_exists = { type = 14500 id = 1048 } supplies = 800 }
 
 	name = "EVT_1000014_NAME"
 	desc = "EVT_1000015_DESC"
@@ -1224,6 +1230,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000016_NAME"
 	desc = "EVT_1000016_DESC"
@@ -1257,6 +1264,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1050 } }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1050 } supplies = 800 }
 
 	name = "EVT_1000016_NAME"
 	desc = "EVT_1000017_DESC"
@@ -1291,6 +1299,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1051 } }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1051 } supplies = 800 }
 
 	name = "EVT_1000016_NAME"
 	desc = "EVT_1000018_DESC"
@@ -1324,6 +1333,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000019_NAME"
 	desc = "EVT_1000019_DESC"
@@ -1357,6 +1367,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1053 } }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1053 } supplies = 800 }
 
 	name = "EVT_1000019_NAME"
 	desc = "EVT_1000020_DESC"
@@ -1390,6 +1401,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000021_NAME"
 	desc = "EVT_1000021_DESC"
@@ -1423,6 +1435,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1055 } }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1055 } supplies = 800 }
 
 	name = "EVT_1000021_NAME"
 	desc = "EVT_1000022_DESC"
@@ -1456,6 +1469,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000023_NAME"
 	desc = "EVT_1000023_DESC"
@@ -1489,6 +1503,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000024_NAME"
 	desc = "EVT_1000024_DESC"
@@ -1522,6 +1537,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000025_NAME"
 	desc = "EVT_1000025_DESC"
@@ -1555,6 +1571,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000026_NAME"
 	desc = "EVT_1000026_DESC"
@@ -1588,6 +1605,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000027_NAME"
 	desc = "EVT_1000027_DESC"
@@ -1621,6 +1639,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000028_NAME"
 	desc = "EVT_1000028_DESC"
@@ -1654,6 +1673,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000029_NAME"
 	desc = "EVT_1000029_DESC"
@@ -1687,6 +1707,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000030_NAME"
 	desc = "EVT_1000030_DESC"
@@ -1720,6 +1741,7 @@ event = {
 
 	decision = { division_exists = { type = 14500 id = 1064 } }
 	decision_trigger = { supplies = 800 }
+	trigger = { division_exists = { type = 14500 id = 1064 } supplies = 800 }
 
 	name = "EVT_1000030_NAME"
 	desc = "EVT_1000031_DESC"
@@ -1753,6 +1775,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000032_NAME"
 	desc = "EVT_1000032_DESC"
@@ -1851,6 +1874,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } exists = CRO }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000035_NAME"
 	desc = "EVT_1000035_DESC"
@@ -1884,6 +1908,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000036_NAME"
 	desc = "EVT_1000036_DESC"
@@ -1917,6 +1942,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000037_NAME"
 	desc = "EVT_1000037_DESC"
@@ -1950,6 +1976,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000038_NAME"
 	desc = "EVT_1000038_DESC"
@@ -1983,6 +2010,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000039_NAME"
 	desc = "EVT_1000039_DESC"
@@ -2016,6 +2044,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000040_NAME"
 	desc = "EVT_1000040_DESC"
@@ -2049,6 +2078,7 @@ event = {
 
 	decision = { control = { province = 163 data = GER } }
 	decision_trigger = { supplies = 800 }
+	trigger = { control = { province = 163 data = GER } supplies = 800 }
 
 	name = "EVT_1000041_NAME"
 	desc = "EVT_1000041_DESC"
@@ -2142,7 +2172,7 @@ event = {
 			control = { province = 815 data = U49 } # Massawa
 			control = { province = 816 data = U49 } # Assab
 		}
-		manpower = 25
+		manpower = 30
 		supplies = 800
 		convoypool = 30
 	}
@@ -2156,7 +2186,7 @@ event = {
 
 	action = {
 		name = "ACTION_NAME_YES" #Yes
-		command = { type = manpowerpool value = -90 }
+		command = { type = manpowerpool value = -30 }
 		command = { type = supplies value = -800 }
 		command = { type = transport_pool which = -1 value = -30 }
 		command = { type = trigger which = 1000044 }
@@ -2174,8 +2204,10 @@ event = {
 
 	action_a = {
 		name = "ACTION_NAME_EXCELLENT" #Excellent
-		command = { type = manpowerpool value = 90 }
-		command = { type = add_division value = militia }
+		command = { type = manpowerpool value = 75 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
 		command = { type = supplies value = 800 }
 		command = { type = transport_pool which = -1 value = 30 }
 		}
@@ -17734,7 +17766,9 @@ event = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
 		command = { type = dissent value = -2 }
-		command = { trigger = { not = { ai = GER } } type = trigger which = 1100021 }
+		command = { type = free_oil value = 51 } #Restore penalties from Fall of Stalingrad event
+		command = { type = industrial_modifier which = ic value = 10 }
+		command = { type = trigger which = 1100021 }
 	}
 }
 event = {
@@ -17750,7 +17784,7 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -500 }
-		command = { type = dissent value = 3 }
+		command = { type = dissent value = 8 }
 	}
 }
 
@@ -17781,8 +17815,9 @@ event = {
 	action = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
+		command = { type = oilpool value = 500 }
 		command = { type = dissent value = -2 }
-		command = { trigger = { not = { ai = GER } } type = trigger which = 1100023 }
+		command = { type = trigger which = 1100023 }
 	}
 }
 event = {
@@ -17798,7 +17833,8 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -500 }
-		command = { type = dissent value = 3 }
+		command = { type = oilpool value = -2000 }
+		command = { type = dissent value = 8 }
 	}
 }
 ##################
@@ -17829,7 +17865,7 @@ event = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
 		command = { type = dissent value = -2 }
-		command = { trigger = { not = { ai = GER } } type = trigger which = 1100025 }
+		command = { type = trigger which = 1100025 }
 	}
 }
 event = {
@@ -17876,7 +17912,7 @@ event = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
 		command = { type = dissent value = -2 }
-		command = { trigger = { not = { ai = GER } } type = trigger which = 1100027 }
+		command = { type = trigger which = 1100027 }
 	}
 }
 event = {
@@ -17906,7 +17942,7 @@ event = {
 
 	trigger = { 
 	control = { province = 247 } # Sevastopol
-	war = { country = SOV }
+	war = { country = GER }
 	event = 9300494 # Fall of Brest-Litovsk
 	}
    
@@ -17923,7 +17959,7 @@ event = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
 		command = { type = dissent value = -2 }
-		command = { trigger = { not = { ai = GER } } type = trigger which = 1100029 }
+		command = { type = trigger which = 1100029 }
 	}
 }
 event = {
@@ -19175,7 +19211,7 @@ event = {
 	action_a = {
 	name = "ACTION_NAME_DAMN"	
 	command = { type = add_prov_resource which = 702 value = -18 where = oil } #  Caucasus	
-	command = { type = add_prov_resource which = 713 value = -32 where = oil } #  Baku
+	command = { type = add_prov_resource which = 713 value = -51 where = oil } #  Baku
 	command = { type = dissent value = 33 }
 	command = { type = free_supplies value = -30 }
 	command = { type = free_oil value = -20 }
