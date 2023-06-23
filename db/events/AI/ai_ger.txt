@@ -239,7 +239,7 @@ event = {
 	}
 }
 ################
-# German Invasion AI Low Countries German Invasion if early war
+# German Invasion AI Low Countries German Invasion
 ########################################
 event = {
 	id = 3003005
@@ -266,6 +266,7 @@ event = {
 		OR = {
 			alliance = { country = SPA }
 			alliance = { country = SPR }
+			land_percentage = { country = FRA value = 1.5 }
 			AND = {
 				month = 4 # May
 				NOT = { month = 7 } # August
@@ -2297,7 +2298,8 @@ event = {
 		command = { type = local_setflag which = GERBuildStandard }
 		command = { type = local_clrflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildNavy }
-		command = { type = ai which = "switch/GER_Build_Standard.ai" }
+		command = { trigger = { year = 1941 } type = ai which = "switch/GER_Build_Standard.ai" }
+		command = { trigger = { NOT = { year = 1941 } } type = ai which = "switch/GER_Build_Standard_Early.ai" }
 	}
 }
 ################
@@ -2374,7 +2376,8 @@ event = {
 		command = { type = local_clrflag which = GERBuildStandard }
 		command = { type = local_setflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildNavy }
-		command = { type = ai which = "switch/GER_Build_Land.ai" }
+		command = { trigger = { NOT = { year = 1941 } } type = ai which = "switch/GER_Build_Land_Early.ai" }
+		command = { trigger = { year = 1941 } type = ai which = "switch/GER_Build_Land.ai" }
 	}
 }
 ################

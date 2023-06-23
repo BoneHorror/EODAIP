@@ -1,0 +1,51 @@
+# German Build Land - Early into the war, special SS divs and rockets not available yet
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+	max_batch_war 		= 640 
+	#### Divisions etc...
+   	infantry     	= 12
+	d_01		= 0
+	cavalry 		= 0
+	motorized 		= 12
+	d_02			= 0
+	mechanized 		= 0
+	d_03		= 0
+	light_armor 	= 10
+   	armor       	= 7
+	d_04		= 0
+	paratrooper 	= 0
+	marine 			= 1
+	bergsjaeger 	= 3
+   	garrison    	= 1 
+    hq 				= 2
+	militia 		= 3
+	d_08			= 0
+#				80 %
+	interceptor 	= 10
+	rocket_interceptor = 0
+	multi_role 		= 8
+	cas 			= 8
+	strategic_bomber = 7 #prepare for Battle of Britain
+	tactical_bomber = 1
+	naval_bomber 	= 1
+	transport_plane = 1
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				14 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 1
+	light_cruiser 	= 1
+	heavy_cruiser 	= 0
+	battlecruiser 	= 2
+	submarine 		= 7
+	nuclear_submarine = 2
+	transports 		= 0 #Handled by forced transport event training
+#				6 %
+}
