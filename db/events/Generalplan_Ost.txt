@@ -9011,6 +9011,7 @@ event = {
 		ai = yes
 		NOT = { ai = GER }
 		war = { country = GER country = ENG }
+		difficulty = 3 #Strong or Very Strong Alies
 		OR = { 	
 				control = { province = 11 data = GER } #Check if GER has landed on any beach provinces on British home islands
 				control = { province = 12 data = GER }	
