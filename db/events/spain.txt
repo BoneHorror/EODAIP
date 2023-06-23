@@ -90,6 +90,7 @@ event = {
 	date = { day = 16 month = july year = 1936 }
 
 	action_a = {
+		ai_chance = 100
 		name = ACTION_NAME_OK # En la Defensa de la Democracia!
 		command = { type = set_domestic which = democratic value = 7 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -155,6 +156,74 @@ event = {
 		command = { type = name where = SPR which = SPRCIVILWAR }
 		command = { type = trigger which = 2052009 } #SPR Loss of Colonies
 		command = { type = event which = 2052013 where = SPR when = 1 } #SPR To the defence of Democracy
+	}
+	action_b = {
+		ai_chance = 0
+		name = "ACTIONNAME2801A" # Why support anarchist rabble?
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = country which = SPA } #Tag switch to Free France
+	
+		command = { type = add_division value = militia when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = headofstate which = 255011 } #Azaña
+		command = { type = headofgovernment which = 255028 } #Largo Caballero
+		command = { type = foreignminister which = 255061 } #Barcia Trelles
+		command = { type = armamentminister which = 255104 } #Giner de los Rios
+		command = { type = ministerofsecurity which = 255145 } #Azcarate
+		command = { type = ministerofintelligence which = 255171 } #Balboa
+		command = { type = chiefofstaff which = 255007 } #Miaja
+		command = { type = chiefofarmy which = 255232 } #Miaja
+		command = { type = chiefofnavy which = 255248 } #Giral
+		command = { type = chiefofair which = 255255 } #Hidalgo de Cisneros
+
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = FRA value = -10 }
+		command = { type = relation which = SOV value = -5 }
+		command = { type = relation which = USA value = -5 }
+		command = { type = relation which = GER value = 15 }
+		command = { type = relation which = ITA value = 10 }
+		command = { type = relation which = POR value = 10 }
+		command = { type = dissent value = 12 }
+
+		#added victory points for the civil war
+		command = { type = province_keypoints which = 436 value = 1 } # Tarragona
+		command = { type = province_keypoints which = 437 value = 1 } # Gerona
+		command = { type = province_keypoints which = 438 value = 1 } # Huesca
+		command = { type = province_keypoints which = 439 value = 1 } # Lerida
+		command = { type = province_keypoints which = 442 value = 1 } # Zaragoza
+		command = { type = province_keypoints which = 443 value = 1 } # Bilbao
+		command = { type = province_keypoints which = 444 value = 1 } # Oviedo
+		command = { type = province_keypoints which = 445 value = 1 } # Santander
+		command = { type = province_keypoints which = 446 value = 1 } # Pamplona
+		command = { type = province_keypoints which = 447 value = 1 } # Salamanca
+		command = { type = province_keypoints which = 448 value = 1 } # Leon
+		command = { type = province_keypoints which = 449 value = 1 } # Vigo
+		command = { type = province_keypoints which = 450 value = 1 } # Plasencia
+		command = { type = province_keypoints which = 451 value = 1 } # Burgos
+		command = { type = province_keypoints which = 452 value = 1 } # Segovia
+		command = { type = province_keypoints which = 453 value = 1 } # Caceres
+		command = { type = province_keypoints which = 454 value = 1 } # Tarancon
+		command = { type = province_keypoints which = 455 value = 1 } # Guadalajara
+		command = { type = province_keypoints which = 456 value = 1 } # Soria
+		command = { type = province_keypoints which = 457 value = 1 } # Toledo
+		command = { type = province_keypoints which = 458 value = 1 } # Badajoz
+		command = { type = province_keypoints which = 459 value = 1 } # Teruel
+		command = { type = province_keypoints which = 461 value = 1 } # Castellon de la Plana		
+		command = { type = province_keypoints which = 462 value = 1 } # Alicante
+		command = { type = province_keypoints which = 463 value = 1 } # Murcia
+		command = { type = province_keypoints which = 465 value = 1 } # Albacete
+		command = { type = province_keypoints which = 466 value = 1 } # Jaen
+		command = { type = province_keypoints which = 467 value = 1 } # Cordoba
+		command = { type = province_keypoints which = 468 value = 1 } # Ciudad Real		
+		command = { type = province_keypoints which = 470 value = 1 } # Granada 
+		command = { type = province_keypoints which = 471 value = 1 } # Malaga 
+		command = { type = province_keypoints which = 472 value = 1 } # Huelva
+		command = { type = province_keypoints which = 473 value = 1 } # Cadiz 
+		#no new VPs in 440 (Barcelona), 441 (Coruna), 460 (Madrid), 464 (Valencia) and 474 (Sevilla) because already present
+		#no VP in 469 (Almeria) as a choice for MultiPlayer reasons
+		command = { type = civil_war which = SPR }
+		command	= { type = local_setflag which = SPA_events }
 	}
 }
 
@@ -815,6 +884,36 @@ event = {
 		command = { type = add_corps which = "Franco and Staff" value = land where = 460 }
 
 		command = { type = add_division which = "Franco and Staff" value = d_10 when = 0 }
+	}
+
+}
+#########################################################################
+#  Spanish Civil War - trigger events in case Player is SPA
+#########################################################################
+event = {
+	id = 2008015
+	random = no
+	country = SPA
+
+	trigger = {
+		local_flag = SPA_events
+	}
+
+	name = "EVT_3100_NAME"
+	desc = "EVT_3100_DESC"
+	style = 2
+	picture = "scw"
+	
+	
+	date = { day = 18 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = trigger which = 2052009 } #SPR Loss of Colonies
+		command = { type = event which = 2052013 where = SPR when = 1 } #SPR To the defence of Democracy
 	}
 
 }
