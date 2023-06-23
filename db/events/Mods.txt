@@ -14067,6 +14067,7 @@ event = {
 	action = {
 		name = action_name_great
 		command = { type = supplies value = 500 }
+		command = { type = oilpool value = 500 } #Capture some SOV Oil shipments on Volga
 		command = { type = dissent value = -2 }
 		command = { type = trigger which = 9300487 }
 	}
@@ -14084,7 +14085,10 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -500 }
-		command = { type = dissent value = 12 }
+		command = { type = free_oil value = -51 } #Soviets cut off from Baku Oil / Ural factories 
+		command = { type = industrial_modifier which = ic value = -10 }
+		#command = { type = local_setflag which = StalingradFell } #Probably not needed since Liberation of Stalingrad is only after this event 
+		command = { type = dissent value = 10 }
 	}
 }
 ##################
