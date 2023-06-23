@@ -296,7 +296,7 @@ event = {
 
 # ID series:
 ########################################
-# It is done!
+# It is done! / C'est Foutu!
 ########################################
 event = {
 	id = 2002004
@@ -406,7 +406,7 @@ event = {
 	picture = "Petain"
 
 	action = {
-        ai_chance = 0
+        ai_chance = 15
 		name = "4053a" # Let us claim Paris and the north
 		command = { type = setflag which = Rethondes1 } # North coast + Paris
 		command = { type = addclaim which = 37 } #Brest 
@@ -442,7 +442,7 @@ event = {
 		command = { type = dissent value = 5 }
     } 
 	action = {
-        ai_chance = 100
+        ai_chance = 80
 		name = "4053b" # Let us claim a historical partition
 		command = { type = setflag which = Rethondes2 } # North coast + Paris + Loire + Atlantic Coast
 		command = { type = addclaim which = 37 } #Brest 
@@ -492,7 +492,7 @@ event = {
 		command = { type = dissent value = -1 }
     } 
 	action = {
-        ai_chance = 0
+        ai_chance = 5
 		name = "4053c" # Let us claim all metropolis
 		command = { type = setflag which = Rethondes3 }
 		command = { type = addclaim which = 37 } #Brest 
@@ -608,28 +608,30 @@ event = {
         command = { trigger = { control = { province = 104 data = GER } } type = secedeprovince which = GER value = 104 } # Metz - France
         command = { trigger = { control = { province = 105 data = GER } } type = secedeprovince which = GER value = 105 } # Colmar - France
 		command = { type = clrflag which = Rethondes1 }
+		command = { type = country which = U01 } #Tag switch to Free France
     }
 	action = {
         trigger = { flag = Rethondes2 }
-        ai_chance = 100
+        ai_chance = 80
 		name = "4054a" # France refuses the union
 		command = { type = trigger which = 2003002 } #The armistice of Rethondes
     } 
 	action = {
         trigger = { flag = Rethondes2 }
-        ai_chance = 0
+        ai_chance = 5
 		name = "4054b" # France accepts the union
 		command = { type = trigger which = 2001002 } #French-British union
     } 
 	action = {
         trigger = { flag = Rethondes2 }
-        ai_chance = 0
+        ai_chance = 15
 		name = "4054c" # France fights on
 		command = { type = capital which = 727 } # Alger - Algeria
         command = { trigger = { control = { province = 107 data = GER } } type = secedeprovince which = GER value = 107 } # Strasbourg - France
         command = { trigger = { control = { province = 104 data = GER } } type = secedeprovince which = GER value = 104 } # Metz - France
         command = { trigger = { control = { province = 105 data = GER } } type = secedeprovince which = GER value = 105 } # Colmar - France
 		command = { type = clrflag which = Rethondes2 }
+		command = { type = country which = U01 } #Tag switch to Free France
     } 
 	action = {
         trigger = { flag = Rethondes3 }
@@ -652,6 +654,7 @@ event = {
         command = { trigger = { control = { province = 104 data = GER } } type = secedeprovince which = GER value = 104 } # Metz - France
         command = { trigger = { control = { province = 105 data = GER } } type = secedeprovince which = GER value = 105 } # Colmar - France
 		command = { type = clrflag which = Rethondes3 }
+		command = { type = country which = U01 } #Tag switch to Free France
     } 
 }
 ##########################

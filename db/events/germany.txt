@@ -1525,8 +1525,8 @@ event = {
 		command = { type = leave_alliance when = 1 }
 		command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 } #remove all land units
 		
-		#command = { type = secedeprovince which = HUN value = 213 } # Chust - Czechoslovakia
-		#command = { type = secedeprovince which = HUN value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = HUN value = 213 } # Chust - Czechoslovakia
+		#command = { type = secedeprovince which = HUN value = 210 } # Komárno - Czechoslovakia - Given by Second Vienna Award already!
 		#command = { type = secedeprovince which = HUN value = 209 } # Kosice - Czechoslovakia
 		#command = { type = secedeprovince which = HUN value = 215 } # Uzhorod - Czechoslovakia
 		command = { type = independence which = SLO value = 1 }
@@ -3219,7 +3219,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes1 } #Germany has Northern France
 		name = "2003048a" #Propose North of France and an end to war reparations
-		ai_chance = 10
+		ai_chance = 0
 		command = { type = setflag which = Montoire_north_endrep }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes1 }
@@ -3228,7 +3228,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes1 } #Germany has Northern France
 		name = "2003048b" #Propose North of France
-		ai_chance = 55
+		ai_chance = 0
 		command = { type = setflag which = Montoire_north }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes1 }
@@ -3237,7 +3237,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes2 } #Germany has Northern France and Atlantic Coast
 		name = "2003048c" #Propose North and Atlantic Coasts and an end to war reparations
-		ai_chance = 10
+		ai_chance = 0
 		command = { type = setflag which = Montoire_north_atlantic_endrep }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes2 }
@@ -3246,7 +3246,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes2 } #Germany has Northern France and Atlantic Coast
 		name = "2003048d" #Propose North of France and Atlantic Coast
-		ai_chance = 15
+		ai_chance = 0
 		command = { type = setflag which = Montoire_north_atlantic }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes2 }
@@ -3255,7 +3255,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes2 } #Germany has Northern France and Atlantic Coast
 		name = "2003048e" #Propose Atlantic Coast
-		ai_chance = 40
+		ai_chance = 65
 		command = { type = setflag which = Montoire_atlantic }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes2 }
@@ -3264,7 +3264,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes3 } #Germany has Metropolitan France
 		name = "2003048f" #Propose Metropolitan France and an end to war reparations
-		ai_chance = 10
+		ai_chance = 0
 		command = { type = setflag which = Montoire_metropolitan_endrep }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes3 }
@@ -3273,7 +3273,7 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes3 } #Germany has Metropolitan France
 		name = "2003048g" #Propose Metropolitan France
-		ai_chance = 25
+		ai_chance = 0
 		command = { type = setflag which = Montoire_metropolitan }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes3 }
@@ -3282,13 +3282,25 @@ event = {
 	action = { 
 		trigger = { flag = Rethondes3 } #Germany has Metropolitan France
 		name = "2003048h" #Propose Metropolitan without the North Coast
-		ai_chance = 30
+		ai_chance = 65
 		command = { type = setflag which = Montoire_metropolitan_no_north }
 		command = { type = trigger which = 2002016 }
 		command = { type = clrflag which = Rethondes3 }
 	}
+
+	action = { 
+		trigger = { flag = Rethondes1 } #Germany has Northern France
+		name = "2003048i" #Just propose an alliance
+		ai_chance = 100
+		command = { type = setflag which = Montoire_alliance_soft }
+		command = { type = trigger which = 2002016 }
+		command = { trigger = { flag = Rethondes1 } type = clrflag which = Rethondes1 }
+		command = { trigger = { flag = Rethondes2 } type = clrflag which = Rethondes2 }
+		command = { trigger = { flag = Rethondes3 } type = clrflag which = Rethondes3 }
+	}
 	
 	action = { 
+		trigger = { NOT = { flag = Rethondes1 } } #All other cases
 		name = "2003048i" #Just propose an alliance
 		ai_chance = 30
 		command = { type = setflag which = Montoire_alliance }
@@ -3299,6 +3311,14 @@ event = {
 	}
 	
 	action = {	
+		trigger = { flag = Rethondes1 } #Germany has Northern France
+		name = "ACTINUTILE" #No need
+		ai_chance = 0
+		command = { }
+	}
+	
+	action = {	
+		trigger = { NOT = { flag = Rethondes1 } } #All other cases
 		name = "ACTINUTILE" #No need
 		ai_chance = 5
 		command = { }
@@ -3379,6 +3399,22 @@ event = {
 	action = {
 		trigger = { flag = Montoire_alliance }
 		ai_chance = 95
+		name = "4704b"
+		command = { type = trigger which = 2003050 }
+	}
+	action = {
+		trigger = { flag = Montoire_alliance_soft }
+		ai_chance = 75
+		name = "4704a"
+		command = { type = sleepevent which = 1000510 } #Disable Fate of France decision (Edge of Darkness)
+		command = { type = access which = GER }
+		command = { type = country which = U55 } #Tag switch to French State if France accepts the alliance during the Montoire meeting (Edge of Darkness mod)	
+		command = { type = trigger which = 2003049 } 		
+	} 
+	
+	action = {
+		trigger = { flag = Montoire_alliance_soft }
+		ai_chance = 25
 		name = "4704b"
 		command = { type = trigger which = 2003050 }
 	} 
@@ -5936,19 +5972,26 @@ event = {
 			AND = {
 				random = 10 
 				transport_plane = { country = -1 value = 1 }
+				transport = { country = GER value = 3 }
 				}
 			AND = {
 				random = 40 
 				transport_plane = { country = -1 value = 3 }
+				transport = { country = GER value = 5 }
 				}
 			AND = { 
 				year = 1940 
 				month = 3
 				random = 50 
-			} 
+			}
+			AND = {
+				naval_percentage = { country = ENG value = 0.8 }
+				land_percentage = { country = FRA value = 1.1 }
+				transport = { country = GER value = 4 } 
+				}
 		}
 		OR = {
-			event = { id = 2003036 days = 120 }
+			event = { id = 2003036 days = 90 }
 			alliance = { country = GER country = POL }
 		}
 		OR = {
