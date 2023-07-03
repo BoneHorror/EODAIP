@@ -2194,7 +2194,7 @@ event = {
 			local_flag = GERInvadeSpain
 		}
 		day = 1
-		NOT = { day = 2 }
+		NOT = { day = 10 }
 		NOT = { war = { country = SOV } }
 		OR = {
 			war = { country = SPR }
@@ -3419,18 +3419,27 @@ event = {
 #		ai_chance = 100
 #		#command = { type = local_setflag which = TestFired }
 #		#command = { type = ai which = "switch/ENG_Air_Naval.ai" }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = transport_plane }
-#		command = { type = add_division value = transport_plane }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = paratrooper }
-#		command = { type = add_division value = transport_plane }
-#		command = { type = add_division value = transport_plane }
-#		command = { type = free_ic value = 200 }
-#		command = { type = dissent value = -100 }
+#		command = { type = add_division value = strategic_bomber when = 4 }
+#		command = { type = add_division value = strategic_bomber when = 4 }
+#		command = { type = add_division value = strategic_bomber when = 4 }
+#		command = { type = add_division value = strategic_bomber when = 4 }
+#		command = { type = add_division value = strategic_bomber when = 4 }
+#		command = { type = add_division value = interceptor when = 4 }
+#		command = { type = add_division value = interceptor when = 4 }
+#		command = { type = add_division value = interceptor when = 4 }
+#		command = { type = add_division value = interceptor when = 4 }
+#		command = { type = add_division value = interceptor when = 4 }
+#		#command = { type = add_division value = paratrooper }
+#		#command = { type = add_division value = paratrooper }
+#		#command = { type = add_division value = transport_plane }
+#		#command = { type = add_division value = transport_plane }
+#		#command = { type = add_division value = paratrooper }
+#		#command = { type = add_division value = paratrooper }
+#		#command = { type = add_division value = paratrooper }
+#		#command = { type = add_division value = transport_plane }
+#		#command = { type = add_division value = transport_plane }
+#		#command = { type = free_ic value = 200 }
+#		#command = { type = dissent value = -100 }
 #	}
 #}
 
@@ -3622,7 +3631,7 @@ event = {
 event = {
 	id = 3003125
 	random = no 
-	country = GER
+	country = ITA #GER - GER would require setting ITA as a valid reinforcements target which can destroy GER's chances for Barbarossa
 	
 	trigger = {
 		ai = yes
@@ -3647,15 +3656,15 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { trigger = { not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land when = 229 where = 761 } # Benghazi
+		command = { trigger = { not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land where = 761 } # Benghazi / When - 229 normally would be Rommel, but if it's given to ITA...
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = anti_air }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "15. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "21. Panzer-Division" value = light_armor when = 2 where = engineer }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = light_armor when = 2 where = armored_car }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "112. Leichte-Division" value = motorized when = 1 where = sp_artillery }
 		command = { trigger = { not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
-		command = { type = ai which = "switch/GER_AfrikaKorps.ai" }
-		command = { type = event which = 3003130 where = GER when = 21 } #Reload no-overseas reinforcements to block ITA after Afrika Korps is assigned
+		#command = { type = ai which = "switch/GER_AfrikaKorps.ai" } #Not needed if this is used as ITA
+		#command = { type = event which = 3003130 where = GER when = 21 } #Reload no-overseas reinforcements to block ITA after Afrika Korps is assigned
 	}
 }
 ################
@@ -3793,22 +3802,22 @@ event = {
 		command = { type = local_clrflag which = GERPanicBerlin }
 	}
 }
-event = {
-	id = 3003130
-	random = no 
-	country = GER
-	
-	name = "AI_EVENT"
-	style = 0	
-	
-	date = { day = 1 month = january year = 1933 }
-	offset = 6
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = ai which = "switch/GER_AfrikaKorps_Reload.ai" }
-	}
-}
+#event = {
+#	id = 3003130
+#	random = no 
+#	country = GER
+#	
+#	name = "AI_EVENT"
+#	style = 0	
+#	
+#	date = { day = 1 month = january year = 1933 }
+#	offset = 6
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = ai which = "switch/GER_AfrikaKorps_Reload.ai" }
+#	}
+#}
 ####################Decide strategy against Soviets
 event = {
 	id = 3003131
