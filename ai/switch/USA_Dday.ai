@@ -30,7 +30,7 @@ min_garrison_prop = 0.03
 
 exp_force_ratio = 0.01 
 exp_force_ratios = { FRA = 0.8 U01 = 0.1 PHI = 0.1 } 
-no_exp_forces_to = { U02 ENG }
+no_exp_forces_to = { U02 ENG BRA MEX U05 ITA }
 
 ###################################
 # Ground Combat, Leaders and Garrisons
@@ -328,18 +328,18 @@ invasion = {
 		1713  = 2750	#	Robe
 
 		#Philippines
-		1565  = 3000	#	Manila	Philippines
-		1566  = 3000	#	Cabanatuan	Philippines
-		1567  = 3000	#	Baguio	Philippines
-		1568  = 3500	#	Legazpi	Philippines
-		1571  = 3000	#	Mindoro	Philippines
-		1572  = 3000	#	Palawan	Philippines
-		1573  = 3000	#	Leyte	Philippines
-		1574  = 3000	#	Cebu	Philippines
-		1575  = 3000	#	Samar	Philippines
-		1576  = 3000	#	Panay	Philippines
-		1577  = 3000	#	Jolo	Philippines
-		1579  = 3000	#	Davao	Philippines
+		#1565  = 3000	#	Manila	Philippines
+		#1566  = 3000	#	Cabanatuan	Philippines
+		#1567  = 3000	#	Baguio	Philippines
+		#1568  = 3500	#	Legazpi	Philippines
+		#1571  = 3000	#	Mindoro	Philippines
+		#1572  = 3000	#	Palawan	Philippines
+		#1573  = 3000	#	Leyte	Philippines
+		#1574  = 3000	#	Cebu	Philippines
+		#1575  = 3000	#	Samar	Philippines
+		#1576  = 3000	#	Panay	Philippines
+		#1577  = 3000	#	Jolo	Philippines
+		#1579  = 3000	#	Davao	Philippines
 
 
 		#RyuKyu Islands
@@ -425,7 +425,7 @@ admiral = {
 	2181 #Malta sea
 	2176 #Suez sea
 	2700 #English channel
-	2485 #North Philipines - we have to cover this or else we end up out of TPs.
+	#2485 #North Philipines - we have to cover this or else we end up out of TPs.
 	} 
 	ignore = {
 		#Japanese Coast - try to avoid suiciding shit
