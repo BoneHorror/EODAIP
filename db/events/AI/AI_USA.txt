@@ -1745,10 +1745,11 @@ event = {
 			AND = {	
 				war = { country = ENG country = GER } 
 				lost_national = { country = ENG value = 15 }
+				region = { region = "England" country = GER value = 1 } #So that it does not trigger due to ENG-FRA union
 			}
 			AND = {	
 				war = { country = ENG country = JAP } 
-				exists = U05
+				exists = U05 #Dutch East Indies
 				lost_national = { country = U05 value = 50 }
 			}
 		}
