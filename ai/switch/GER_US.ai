@@ -19,6 +19,7 @@ max_garrison_prop = 0.55
 min_garrison_prop = 0.15
 exp_force_ratio = 0.07 
 exp_force_ratios = { ITA = 0.2 U45 = 0.1 IRE = 0.2 U73 = 0.4 U43 = 0.1 } 
+no_exp_forces_to = { JAP SIA MAN MEN BUR PHI U49 U03 FRA U87 U55 }
 max_front_ratios = { 
 	USA = 9.0
 	SPA = 6.0

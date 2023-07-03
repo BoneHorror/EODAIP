@@ -7,7 +7,7 @@ max_front_ratios = {
    USA = 2.5
    TUR = 1.5
 } 
-no_exp_forces_to = { JAP SIA MAN MEN U49 U03 SPA POR FRA BUR PHI U87 U55 ITA }
+no_exp_forces_to = { JAP SIA MAN MEN U49 U03 U04 SYR SPA POR FRA BUR PHI U87 U55 ITA }
 strat_redeploy_threshold = 20
 max_redeploying = 0.25
 ###################################

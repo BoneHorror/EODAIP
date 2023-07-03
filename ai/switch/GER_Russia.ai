@@ -9,7 +9,7 @@ max_front_ratios = {
    USA = 2.5
    TUR = 1.5
 } 
-no_exp_forces_to = { JAP SIA MAN MEN U49 U03 SPA POR FRA BUR PHI U87 U55 ITA }
+no_exp_forces_to = { JAP SIA MAN MEN U49 U03 U04 SYR SPA POR FRA BUR PHI U87 U55 ITA }
 war = 100
 exp_force_ratio = 0.07 
 exp_force_ratios = { ITA = 0.15 U45 = 0.1 FIN = 0.3 ROM = 0.1 U73 = 0.1 RSI = 0.15 U44 = 0.1 } 
