@@ -1321,7 +1321,9 @@ event = {
 		name = EVT_88_ACTA
 		command = { type = construct which = ic where = 627 value = -2 } # Krivij rig
 		command = { type = construct which = ic where = 632 value = -2 } # Dnepro-Petrovsk
-		command = { type = construct which = infrastructure where = 627 value = -25 }
+		command = { trigger = { building = { province = 627 type = infrastructure value = 0.3 when = now NOT = { building = { province = 627 type = infrastructure value = 0.5 when = now } } type = construct which = infrastructure where = 627 value = -20 }
+		command = { trigger = { building = { province = 627 type = infrastructure value = 0.5 when = now NOT = { building = { province = 627 type = infrastructure value = 0.7 when = now } } type = construct which = infrastructure where = 627 value = -30 }
+		command = { trigger = { building = { province = 627 type = infrastructure value = 0.7 when = now } type = construct which = infrastructure where = 627 value = -50 }
 		command = { type = dissent value = 1 }
 	}
 }
