@@ -53,15 +53,15 @@ garrison = {
 ###################################
 invasion = {
 		invasion = yes
-		base = 0.2 #Relative modifier. (lower = specific targets much more important.)
+		base = 0.4 #Relative modifier. (lower = specific targets much more important.)
 		random = 16.0 #How big a random range. (1.0 = 1%)
-		coastal = 0.2 #increase to avoid coastal forts more.
+		coastal = 0.1 #increase to avoid coastal forts more.
 		beach = 0.1 #higher, avoid worst beaches.
-		max_distance = 120.0 #About the distance from Japan to Batavia
+		max_distance = 80.0 #About the distance from Japan to Batavia
 		max_staging_distance = 25.0 # How far should the staging area be from the target invasion point
 		distance = 1.0 #higher = avoid long distance.
 		pocket = 1.0 #prioritise pockets, ie provinces with no adjacent controlled by same.
-		island = 0.2 #prioritise taking pure islands.
+		island = 0.1 #prioritise taking pure islands.
 		enemy = 1.0 #higher = much more vary of troops in province.
 		adjacentenemy = 0.5 #higher = much more vary of troops nearby
 		air_base = 2.5
@@ -224,23 +224,17 @@ admiral = {
 		1517 # Bombay 
 		1432 # Singapore 
 		1707 # Canberra
-        717 #Rabat
-        728 #Oran
         727 #Algiers
-        748 #Bizerte
-        747 #Tunis
-        750 #Tripoli
-        761 #Benghazi
         765 #Tobruk
         429 #Malta
 	}
 	target = { 
-	2186 = 250 # Sea Zones that need protected transports NEW TECH EDIT - This is pretty much temporary until some kind of ENG_Naval kicks in, to remove if everything looks good
-	2184 = 400
-	2180 = 400
-	2528 = 350
-	2476 = 350
-	2558 = 150
+	2186 = 150 # Sea Zones that need protected transports NEW TECH EDIT - This is pretty much temporary until some kind of ENG_Naval kicks in, to remove if everything looks good
+	2184 = 90
+	2180 = 90
+	2528 = 150
+	2476 = 150
+	2558 = 70
 	} 
 
 }
