@@ -283,12 +283,8 @@ event = {
 				NOT = { region = { region = "France" country = -3 value = 1 } }
 				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
 				flag = InvadeItaly
-				NOT = { 
-					AND = {
-						lost_national = { country = GER value = 10 } #GER is losing ground to Soviets
-						war = { country = GER country = SOV }
-						}
-					}
+				NOT = { land_percentage = { country = GER value = 0.33 }
+				NOT = { war = { country = GER country = SOV } }
 				}
 			AND = {
 				region = { region = "France" country = -3 value = 30 }
@@ -301,7 +297,7 @@ event = {
 				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
 				NOT = { war = { country = GER country = SOV } } #Soviets are out of the war somehow
 				war = { country = USA country = JAP }
-				#event = { id = 3049005 days = 150 } #D-day started sometime ago, to avoid ping-ponging
+				NOT = { flag = InvadeItaly }
 				}
 			}
 	}
@@ -318,9 +314,11 @@ event = {
 		command = { type = local_clrflag which = USAJap }
 		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USAInvadeUK }
-		command = { type = local_clrflag which = USAItaly }
+		command = { trigger = { flag = InvadeItaly } type = local_setflag which = USAItaly }
+		command = { trigger = { NOT = { flag = InvadeItaly } } type = local_clrflag which = USAItaly }
 		command = { type = clrflag which = DDay }
-		command = { type = ai which = "switch/USA_Gear_Up_4.ai" }
+		command = { trigger = { flag = InvadeItaly } type = ai which = "switch/USA_Italy.ai" }
+		command = { trigger = { NOT = { flag = InvadeItaly } } type = ai which = "switch/USA_Gear_Up_4.ai" }
 	}
 }
 ################
@@ -1989,6 +1987,9 @@ event = {
 			NOT = { naval_percentage = { country = JAP value = 0.7 } }
 		}
 		local_flag = USAJap	
+		NOT = { local_flag = USADDay }
+		NOT = { local_flag = USAItaly }
+		NOT = { local_flag = USAInvadeUK }
 	}
 
 	name = "AI_EVENT"
