@@ -10,6 +10,9 @@ target = {
 		2697 = 90 #Target for D-Day - Rotterdam
 	} 
 	core = {
+		#British Convoys from Plymouth
+		2709 #Plymouth coast
+		
 		#British coast
      	2683 #Scotland
      	2682 #Norwich

@@ -9,6 +9,9 @@ target = {
 		2180 = 170 #Palermo - invasion screening
 	} 
 	core = {
+		#British Convoys from Plymouth
+		2709 #Plymouth coast
+		
 		#British coast
      	2682 #Norwich
      	2700 #North Channel
