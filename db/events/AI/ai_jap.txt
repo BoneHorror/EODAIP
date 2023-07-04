@@ -2319,7 +2319,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1937 }
 
 	action_a = {
-		command = { trigger = { not = { difficulty = 4 } } type = industrial_modifier which = ic value = 10 }
+		command = { trigger = { not = { difficulty = 4 } } type = industrial_modifier which = ic value = 5 }
 		command = { trigger = { not = { difficulty = 4 } } type = free_oil value = 5 }
 		command = { trigger = { NOT = { ai = SOV } } type = manpowerpool value = 400 }
 		command = { trigger = { ai = SOV } type = manpowerpool value = 250 }
