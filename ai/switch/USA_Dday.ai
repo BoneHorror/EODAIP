@@ -183,8 +183,8 @@ invasion = {
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 25.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
-	max_staging_distance = 25.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
+	max_distance  		= 100.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
+	max_staging_distance = 100.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
 	distance			= 2.5	#higher = avoid long distance.
 	pocket				= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
