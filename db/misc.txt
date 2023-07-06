@@ -362,7 +362,7 @@ combat = {
 # HQ Command Limit Factor (value * HQ Leader Command Limit)
 	2
 # Convoy protection factor  (higher, the more fearful convoy escorts are for raiders.)
-	4.5 # 1.5 default, 1.0 in TRP
+	1.5 # 1.5 default, 1.0 in TRP
 # Convoy escorts model in battles. 0 = use current researched DD model; -1 = use one level below current researched DD model and so on. Do not use fractions and numbers above 0!
 	-1 #-1
 # Convoy transports model in battles. 0 = use current researched TP model; -1 = use one level below current researched TP model and so on. Do not use fractions and numbers above 0!
