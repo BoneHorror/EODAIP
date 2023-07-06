@@ -321,8 +321,8 @@ invasion = {
 	} 
 } 
 admiral = { 
-	min_core_attack_fleets  = 2		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 4 	# ENG/USA default 3, JAP default 2 everyone else is 1
+	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 9 	# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {
