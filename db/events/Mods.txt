@@ -3456,6 +3456,7 @@ event = {
 		}
 	decision_trigger = { 
 		land_percentage = { country = GER value = 0.35 }
+		NOT = { flag = DDay }
 	}
 	trigger = {
 		OR = {
@@ -3464,6 +3465,7 @@ event = {
 			random = 10
 			}
 		year = 1945
+		NOT = { flag = DDay }
 		}
 	}
 
@@ -3538,11 +3540,13 @@ event = {
 	}
 	decision_trigger = {
 		land_percentage = { country = GER value = 1.0 }
+		NOT = { flag = DDay }
 	}
 	trigger = { 
 		year = 1944
 		NOT = { lost_national = { country = SOV value = 25 } }
 		ai = USA
+		NOT = { flag = DDay }
 	}
 
 	name = 9300088name
@@ -12918,7 +12922,7 @@ event = {
 	country = GER
 
 	trigger = { 
-		#event = 9300003 # Polish Gamble
+		event = 9300003 # Polish Gamble
 		event = 2003029 #Molotov-Ribbentrop pact to give Soviets their share of Poland
 		control = { province = 232 data = GER } # Warsaw
 		control = { province = 235 data = GER } # Krakow
@@ -12966,7 +12970,7 @@ event = {
 	trigger = { 
 		event = 9300006 # Russian Gamble
 		control = { province = 617 data = GER } # Kiev
-		region = { region = Ukraine }
+		region = { region = Ukraine value = 75 }
 		NOT = { exists = U41 } 
 		NOT = { exists = UKR } 
 	}
@@ -13011,8 +13015,8 @@ event = {
 		control = { province = 264 data = GER } # Riga
 		control = { province = 262 data = GER } # Kaunas
 		control = { province = 599 data = GER } # Minsk
-		region = { region = "Baltic States" }
-		region = { region = Belarus }
+		region = { region = "Baltic States" value = 75 }
+		region = { region = Belarus value = 75 }
 		NOT = { exists = U40 } 
 		NOT = { exists = LAT }
 		NOT = { exists = EST } 
