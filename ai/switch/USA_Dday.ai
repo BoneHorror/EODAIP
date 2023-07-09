@@ -420,12 +420,12 @@ admiral = {
 	} 
 	core = {	
 	2475 #Sea near Guam
+	2476 #Iwo Jima
 	2637 #Pearl Harbor
 	2631 #Midway
-	2181 #Malta sea
+	2180 #Italy invasion - Sicily
 	2176 #Suez sea
 	2700 #English channel
-	#2485 #North Philipines - we have to cover this or else we end up out of TPs.
 	} 
 	ignore = {
 		#Japanese Coast - try to avoid suiciding shit
