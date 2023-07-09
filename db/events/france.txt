@@ -574,6 +574,7 @@ event = {
 	random = no
 	country = FRA
 	style = 2
+	save_date = yes
 
 	name = "4054name" # French decision
 	desc = "4054desc" # France must now decide if it accepts the union with Great Britain or if it submits to German demands.
@@ -612,7 +613,7 @@ event = {
     }
 	action = {
         trigger = { flag = Rethondes2 }
-        ai_chance = 80
+        ai_chance = 85
 		name = "4054a" # France refuses the union
 		command = { type = trigger which = 2003002 } #The armistice of Rethondes
     } 
@@ -624,7 +625,7 @@ event = {
     } 
 	action = {
         trigger = { flag = Rethondes2 }
-        ai_chance = 15
+        ai_chance = 10
 		name = "4054c" # France fights on
 		command = { type = capital which = 727 } # Alger - Algeria
         command = { trigger = { control = { province = 107 data = GER } } type = secedeprovince which = GER value = 107 } # Strasbourg - France
@@ -4357,7 +4358,7 @@ event = {
 }
 
 ##################################################################################
-# 2184001 - FRANCE RETURNS ITS CAPITAL TO PARIS AFTER GERMANY HAS BEEN DEFEATED
+# 2184001 - FRANCE RETURNS ITS CAPITAL TO PARIS AFTER GERMANY HAS BEEN DEFEATED / Liberation of France
 ##################################################################################
 event = {
 	id = 2184001
@@ -4378,11 +4379,19 @@ event = {
 	decision_trigger = {
 		region = { region = France country = -3 value = 20 }
 		OR = {
+			event = { id = 2002006 days = 120 } # French decision taken at least sometime ago
+			year = 1942
+		}
+		OR = {
 			owned = { province = 55 data = U01 }
 	      	control = { province = 55 data = -3 }
 		} 
 	}
 	trigger = {
+		OR = {
+		event = { id = 2002006 days = 120 } # French decision taken at least sometime ago
+		year = 1942
+		}
 		OR = {
 			event = 2002004 # C'est Foutu ! (FRA)
 			NOT = { exists = FRA }

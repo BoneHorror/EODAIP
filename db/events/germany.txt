@@ -1198,11 +1198,13 @@ event = {
 				war = { country = CZE country = GER }
 			}
 		}
+		OR = {
 		garrison = { country = GER province = 197 size = 1 }
 		garrison = { country = GER province = 205 size = 1 }
 		garrison = { country = GER province = 200 size = 1 }
 		garrison = { country = GER province = 206 size = 1 }
 		garrison = { country = GER province = 204 size = 1 }
+		}
 	}
 
 	name = "EVT_2040_NAME"
@@ -1558,6 +1560,29 @@ event = {
 		command = { type = trigger which = 2001008 } #ENG
 		command = { type = trigger which = 2023001 } #ROM
 		command = { trigger = { ai = yes NOT = { local_flag = MOB7 } NOT = { local_flag = demob } } type = trigger which = 8300107 } 
+	}
+	
+	action_c = {
+		trigger = { 
+					ai = no
+		}
+		name = "ACTIONNAME2200B" # Join the Axis
+
+		command = { type = leave_alliance when = 1 }
+		command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 } #remove all land units
+		command = { type = strength which = air when = 0 where = 0 org = 0 value = 0 } #remove all air units
+		command = { type = secedeprovince which = HUN value = 213 } # Chust - Czechoslovakia
+		command = { type = country which = SLO } #Tag switch to Slovakia
+		command = { type = secedeprovince which = GER value = 198 } # Hradec Králové - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 207 } # Praha - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 199 } # Plzen - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 196 } # Brno - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 201 } # Ostrava - Czechoslovakia
+		command = { type = secedeprovince which = GER value = 202 } # Ceské Budejovice - Czechoslovakia
+		
+		command = { type = trigger which = 2003016 } # GER
+		command = { trigger = { manpower = 350 } type = manpowerpool value = -260 } #Lose Czech manpower
+		command = { trigger = { NOT = { manpower = 350 } manpower = 80 } type = manpowerpool value = -70 } #Lose Czech manpower
 	}
 }
 
@@ -3921,13 +3946,14 @@ event = {
 	} 
 	
 	action = {
-		trigger = { flag = Montoire_alliance }
+		trigger = { OR = { flag = Montoire_alliance flag = Montoire_alliance_soft } }
 		name = "4705a"
 		command = { type = alliance which = U55 when = 0 }
 		command = { type = make_puppet which = U55 }
 		command = { type = dissent value = -6 }	
 		command = { type = relation which = U55 value = 30 }
 		command = { type = clrflag which = Montoire_alliance }
+		command = { type = clrflag which = Montoire_alliance_soft }
 		command = { type = event which = 1000730 where = U55 when = 1 } #Fire "Une Europe Allemande" event in Generalplan_Ost.txt (Edge of Darkness)
 	} 
 }
@@ -3974,9 +4000,16 @@ event = {
 		trigger = { flag = Montoire_alliance }
 		name = "4706a"
 		command = { type = relation which = FRA value = -25 }
-		command = { type = dissent value = 3 }
+		command = { type = dissent value = 2 }
 		command = { type = clrflag which = Montoire_alliance }
 	} 
+	action = {
+		trigger = { flag = Montoire_alliance_soft }
+		name = "4706a"
+		command = { type = relation which = FRA value = -50 }
+		command = { type = dissent value = 5 }
+		command = { type = clrflag which = Montoire_alliance_soft }
+	}
 }
 ################ Hendaya with Franco
 event = { 
@@ -4072,16 +4105,16 @@ event = {
 	}
 	
 	action = { 
-		ai_chance = 35
+		ai_chance = 40
 		name = "4707c"
 		command = { type = add_division which = "250. Infanterie Division 'Azul'" value = infantry when = 9 }
 		command = { type = trigger which = 2008014 }
 	}
 	
 	action = {	
-		trigger = { exists = FRA NOT = { war = { country = FRA country = GER } } }
-		ai_chance = 15
-		name = "4707d"
+		trigger = { exists = FRA control = { province = 72 data = FRA } NOT = { war = { country = FRA country = GER } } }
+		ai_chance = 10
+		name = "4707d" # Global peace treaty in Europe
 		command = { type = trigger which = 2001007 }
 		command = { type = trigger which = 2008003 }
 	}
@@ -4225,7 +4258,7 @@ event = {
 # Global peace treaty in Europe
 #################################
 event = { 
-	id = 2001007
+	id = 2001007 # Global peace treaty in Europe
 	random = no 
 	country = ENG
 	one_action = yes
