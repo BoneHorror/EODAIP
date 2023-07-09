@@ -485,7 +485,7 @@ invasion = {
 	}
 }
 admiral = { 
-	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	min_core_attack_fleets  = 4		# Minimum amount of attack fleets to defend CORE provinces (default 0)
 	num_attack_fleets		= 12 	# ENG/USA default 3, JAP default 2 everyone else is 1
 	ignore = {
 		#Baltic Area
