@@ -162,7 +162,7 @@ event = {
 		name = "ACTIONNAME2801A" # Why support anarchist rabble?
 		command = { type = set_domestic which = democratic value = 3 }
 		command = { type = set_domestic which = political_left value = 4 }
-		command = { type = country which = SPA } #Tag switch to Free France
+		command = { type = country which = SPA } #Tag switch to Nat Spain
 	
 		command = { type = add_division value = militia when = 5 }
 		command = { type = add_division value = militia when = 5 }
