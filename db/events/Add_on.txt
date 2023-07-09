@@ -17784,6 +17784,7 @@ event = {
 	action = {
 		name = action_name_damn
 		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -1000 }
 		command = { type = dissent value = 8 }
 	}
 }
@@ -19525,9 +19526,7 @@ event = {
 }
 #2003204 used in Generalplan_Ost
 
-
 ################Slovakia-Hungary tensions
-################ Event text TBD
 event = {
 	id = 2122017
 	random = no
@@ -19543,8 +19542,8 @@ event = {
 		day = 10 #11
 	}
    
-	name = "EVT_2003185_NAME" #Tensions with Slovakia
-	desc = "EVT_2003185_DESC"  #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_title" #Little War
+	desc = "EODAIP_SLO-HUN_1"  #Describe lead-up to SLO-HUN war
 	style = 2
 	picture = "news_paper"
 	
@@ -19553,12 +19552,12 @@ event = {
 	deathdate = { day = 29 month = december year = 1942 }
 
 	action_a = {
-		name = "2003185a" #We want more!
+		name = "EODAIP_SLO-HUN_2" #We want more!
 		ai_chance = 100
 		command = { type = trigger which = 2122018 } # Slovakia reacts to Hungarian aggression
 	}
 	action_b = {
-		name = "2003185a" #Let it go
+		name = "1000713c" #Let it go
 		ai_chance = 0
 		command = { type = dissent value = 3 } # Kozma is not happy
 	}
@@ -19568,13 +19567,13 @@ event = {
 	random = no 
 	country = SLO
 
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_title" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_1" #Describe lead-up to SLO-HUN war
 	style = 2
 	picture = "news_paper"
 
 	action_a = {
-		name = "2003185a" #We have to concede...
+		name = "EODAIP_SLO-HUN_3" #Give up our land
 		ai_chance = 100
 		command = { type = trigger which = 2122019 } # Lose part of 214 - Presov
 		command = { type = construct which = infrastructure where = 214 value = -10 } # Presov
@@ -19582,7 +19581,7 @@ event = {
 		command = { type = dissent value = 5 }
 	}
 	action_b = {
-		name = "2003185a" #Fight
+		name = "1000940a" #Fight!
 		ai_chance = 0
 		command = { type = trigger which = 2122021 } # GER temporarily ends mastery
 		command = { type = addclaim which = 282 where = SLO } # Miskolc
@@ -19598,13 +19597,13 @@ event = {
 	random = no 
 	country = HUN
 
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_title" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_4" #Describe lead-up to SLO-HUN war
 	style = 2
 	picture = "news_paper"
 
 	action = {
-		name = "2003185a" #Great
+		name = "ACTION_NAME_GREAT" #Great
 		ai_chance = 100
 		command = { type = construct which = infrastructure where = 213 value = 20 } # Presov - important railway to Poland
 		command = { type = add_prov_resource which = 213 value = 1 where = metal } # Presov	
@@ -19618,13 +19617,13 @@ event = {
 	country = HUN
 	save_date = yes
 
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_title" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_6" #Escalation
 	style = 2
 	picture = "news_paper"
 
 	action = {
-		name = "2003185a" #Damn
+		name = "ACTION_NAME_DAMN" #Damn
 		ai_chance = 100
 		command = { type = war which = SLO }
 	}
@@ -19634,15 +19633,17 @@ event = {
 	random = no 
 	country = GER
 
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_title" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_5" #GER Flavour and temp remove SLO as puppet
 	style = 2
 	picture = "news_paper"
 
 	action = {
-		name = "2003185a" #Damn
+		name = "ACTION_NAME_OK" #Damn
 		ai_chance = 100
 		command = { type = end_mastery which = SLO } 
+		command = { type = set_relation which = SLO value = -50 }
+		command = { trigger = { ai = GER } type = non_aggression which = GER where = HUN }
 	}
 }
 #Slovak Victory
@@ -19653,21 +19654,22 @@ event = {
 
 	trigger = {
 		war = { country = HUN country = SLO }
+		NOT = { event = 2122023 }
+		NOT = { event = 2122024 }
 		government = fascist
 		NOT = { lost_national = { country = SLO value = 1 } }
-		event = { id = 2122020 days = 20 }
+		event = { id = 2122020 days = 15 }
 		OR = {
 			control = { province = 282 data = SLO }
 			control = { province = 284 data = SLO }
 			control = { province = 278 data = SLO }
 			control = { province = 279 data = SLO }
 			control = { province = 281 data = SLO }
-			event = { id = 2122020 days = 30 }
 			}
 	}
 	
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_outcome" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_7" #Defeat
 	style = 2
 	picture = "news_paper"
 	
@@ -19676,7 +19678,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1942 }
 
 	action = {
-		name = "2003185a" #Damn
+		name = "ACTION_NAME_DAMN" #Damn
 		ai_chance = 100
 		command = { type = peace which = SLO }
 		command = { type = secedeprovince which = SLO value = 213 } # Chust - Czechoslovakia
@@ -19684,6 +19686,8 @@ event = {
 		command = { type = secedeprovince which = SLO value = 209 } # Kosice - Czechoslovakia
 		command = { type = secedeprovince which = SLO value = 215 } # Uzhorod - Czechoslovakia
 		command = { type = secedeprovince which = SLO value = 282 } # Miskolc
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 2122025 }
 	}
 }
 #Slovak Defeat
@@ -19694,13 +19698,15 @@ event = {
 
 	trigger = {
 		war = { country = HUN country = SLO }
+		NOT = { event = 2122022 }
+		NOT = { event = 2122024 }
 		government = fascist
 		lost_national = { country = SLO value = 1 }
 		event = { id = 2122020 days = 5 }
 	}
 	
-	name = "4705name" #Tensions with Hungary
-	desc = "2003048desc" #Describe lead-up to SLO-HUN war
+	name = "EODAIP_SLO-HUN_outcome" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_7" #Defeat
 	style = 2
 	picture = "news_paper"
 	
@@ -19709,7 +19715,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1942 }
 
 	action = {
-		name = "2003185a" #Damn
+		name = "ACTION_NAME_DAMN" #Damn
 		ai_chance = 100
 		command = { type = peace which = HUN }
 		command = { type = trigger which = 2122019 } # Lose part of 214 - Presov
@@ -19717,8 +19723,69 @@ event = {
 		command = { type = add_prov_resource which = 214 value = -1 where = metal } # Presov	
 		command = { type = dissent value = 15 }
 		command = { type = construct which = ic where = 213 value = -1 } # Presov
+		command = { type = trigger which = 2122025 }
+	}
+}
+#Slovak tactical victory - Hungary fails to make any gains
+event = { 
+	id = 2122024
+	random = no 
+	country = HUN
+
+	trigger = {
+		war = { country = HUN country = SLO }
+		NOT = { event = 2122023 }
+		NOT = { event = 2122022 }
+		government = fascist
+		NOT = { lost_national = { country = SLO value = 1 } }
+		losses = 1500
+		event = { id = 2122020 days = 30 }
+	}
+	
+	name = "EODAIP_SLO-HUN_outcome" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_8" #Stalemate
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 0 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action_a = {
+		name = "ACTION_NAME_DAMN" #Damn
+		ai_chance = 99
+		command = { type = peace which = SLO }
+		command = { type = secedeprovince which = SLO value = 213 } # Chust - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 210 } # Komárno - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 209 } # Kosice - Czechoslovakia
+		command = { type = secedeprovince which = SLO value = 215 } # Uzhorod - Czechoslovakia
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 2122025 }
+	}
+	action_b = {
+		name = "ACTIONNAME3601A" #Then it is War
+		ai_chance = 1
+		command = { type = war which = GER }
+		command = { type = trigger which = 2122025 }
+	}
+}
+####GER - Clean-up, re-take SLO as puppet
+event = { 
+	id = 2122025
+	random = no 
+	country = GER
+
+	name = "EODAIP_SLO-HUN_outcome" #Tensions with Hungary
+	desc = "EODAIP_SLO-HUN_5" #GER Flavour and temp remove SLO as puppet
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		command = { type = make_puppet which = SLO }
+		command = { type = set_relation which = SLO value = 180 }
 	}
 }
 
-#Add cleanup where German regains Slov as puppet, also make sure GER doesn't DOW Hungary
 #Add - Slovak territorial gains in Poland (-1/manpower ic from Krakow, +1 to Slov border)
