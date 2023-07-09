@@ -3498,13 +3498,21 @@ event = {
 	picture = "spread_revolution"
 
 	date = { day = 0 month = january year = 1945 }
-	offset = 151
+	offset = 35
 	deathdate = { day = 29 month = december year = 1963 }
 	
 	action = {
 		trigger = {
-			exists = U32
-			puppet = { country = U32 country = SOV }
+			OR = { 
+				AND = {
+					exists = POL
+					puppet = { country = POL country = SOV }
+					}
+				AND = {
+					exists = U32
+					puppet = { country = U32 country = SOV }
+					}
+				}
 			OR = { 
 				control = { province = 254 data = -1 } # Bialystok - Poland
 				control = { province = 250 data = -1 } # Lomza - Poland
@@ -3543,6 +3551,11 @@ event = {
 	action = {
 		trigger = {
 			NOT = { exists = U32 }
+			OR = {
+				NOT = { exists = POL }
+				alliance = { country = POL country = USA }
+				alliance = { country = POL country = GER }
+				}
 			control = { province = 232 data = -1 } # Warsaw - Poland
 			OR = { 
 				control = { province = 254 data = -1 } # Bialystok - Poland
