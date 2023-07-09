@@ -76,7 +76,7 @@ event = {
 		}
 		AND = {
 			NOT = {
-				war = { country = SOV }
+				war = { country = GER country = SOV }
 			}
 			NOT = { war = { country = USA } }
 			}
@@ -117,7 +117,7 @@ event = {
 				war = { country = FIN }
 			}
 			AND = {
-				war = { country = SOV }
+				war = { country = GER country = SOV }
 				NOT = { land_percentage = { country = SOV value = 0.8 } }
 				NOT = { lost_national = { country = SOV value = 10 } }
 			}
@@ -196,7 +196,7 @@ event = {
 				event = { id = 2003036 days = 365 } #Danzig or War
 				}
 			}
-		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER country = SOV } }
 		NOT = { war = { country = BEL } }
 		NOT = { war = { country = HUN } }
 		AND = {
@@ -253,14 +253,14 @@ event = {
 		OR = {
 			AND = {
 				war = { country = FRA }
-				NOT = {	war = { country = SOV } }
+				NOT = {	war = { country = GER country = SOV } }
 				NOT = {	war = { country = POL } }
 				NOT = { event = 3003003 }
 			}
 			AND = {
 				event = 3003003
 				war = { country = FRA }
-				NOT = {	war = { country = SOV } }
+				NOT = {	war = { country = GER country = SOV } }
 			}
 		}		
 		OR = {
@@ -382,7 +382,7 @@ event = {
 					control = { province = 55 data = -3 } # Paris
 					event = 2001007 #Germany calls for general peace Treaty in Europe
 					}
-				NOT = { war = { country = SOV } }
+				NOT = { war = { country = GER country = SOV } }
 				NOT = { war = { country = SPA } }
 				NOT = { war = { country = SPR } }
 				OR = {
@@ -546,7 +546,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 	}
 
 	name = "AI_EVENT"
@@ -579,7 +579,7 @@ event = {
 					control = { province = 55 data = -3 } # Paris
 					event = 2001007 #Germany calls for general peace Treaty in Europe
 					}
-		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER country = SOV } }
 		NOT = { war = { country = CZE } }
 		NOT = { war = { country = POL } }
 		ai = yes
@@ -608,7 +608,7 @@ event = {
 	trigger = {
 		ai = yes
 		atwar = GER
-		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER country = SOV } }
 	}
 
 	name = "AI_EVENT"
@@ -649,7 +649,7 @@ event = {
 		NOT = { local_flag = GERInvadePoland }
 		NOT = { local_flag = GERInvadeSpain }
 		NOT = { local_flag = GERInvadeEngland }
-		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER country = SOV } }
 		NOT = { war = { country = SPA } }
 		NOT = { war = { country = SPR } }
 		NOT = { war = { country = POL } }
@@ -768,7 +768,7 @@ event = {
 		ai = yes
 		random = 30
 		war = { country = USA }
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 	}
 
 	name = "AI_EVENT"
@@ -864,7 +864,7 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { local_flag = GERBalticGarrison }
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 		control = { province = 152 data = GER } # Kiel
 		OR = {
 			alliance = { country = DEN }
@@ -914,7 +914,7 @@ event = {
 					}
 		war = { country = ENG }
 		exists = ENG
-		NOT = { war = { country = SOV } }	
+		NOT = { war = { country = GER country = SOV } }	
 		NOT = { war = { country = FRA } }
 		NOT = { alliance = { country = SOV } }
 	}
@@ -959,7 +959,7 @@ event = {
 					}
 		war = { country = ENG }
 		exists = ENG
-		NOT = { war = { country = SOV } }	
+		NOT = { war = { country = GER country = SOV } }	
 		NOT = { war = { country = FRA } }
 	}
 
@@ -996,9 +996,9 @@ event = {
 	
 	trigger = {
 		ai = yes
-		event = 3003009
+		event = 3003009 #AI Event - atk Soviets
 		NOT = {	lost_national = { country = GER value = 2 } }
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 		OR = {
 			control = { province = 55 data = -3 } # Paris
 			event = 2001007 #Germany calls for general peace Treaty in Europe
@@ -1033,9 +1033,9 @@ event = {
 	
 	trigger = {
 		ai = yes
-		event = 3003021
-		#war = { country = SOV } #Let's try disabling this
-		NOT = { war = { country = USA } }
+		event = 3003021 # Germany goes on the defensive in first Winter against Russia
+		war = { country = GER country = SOV }
+		#NOT = { war = { country = USA } }
 		month = 3 # April
 		NOT = { month = 7 } # August
 	}
@@ -1071,7 +1071,7 @@ event = {
 		NOT = { war = { country = POL } }
 		NOT = { war = { country = AUS } }
 		NOT = { war = { country = CZE } }
-		NOT = { war = { country = SOV } }		
+		NOT = { war = { country = GER country = SOV } }		
 		OR = {
 			local_flag = GERInvadeRussia
 			event = 2003015 # Annexation of CZE
@@ -2195,7 +2195,7 @@ event = {
 		}
 		day = 1
 		NOT = { day = 10 }
-		NOT = { war = { country = SOV } }
+		NOT = { war = { country = GER country = SOV } }
 		OR = {
 			war = { country = SPR }
 			AND = {
@@ -2272,7 +2272,7 @@ event = {
 			AND = {
 				atwar = yes
 				NOT = { local_flag = GERInvadeRussia }
-				NOT = { war = { country = SOV } }
+				NOT = { war = { country = GER country = SOV } }
 				NOT = { local_flag = GERInvadeSpain }
 				NOT = { local_flag = GERInvadeEngland }
 				NOT = { local_flag = GERInvadeUS }
@@ -2544,7 +2544,7 @@ event = {
 		ai = yes
 		ai = HUN
 		alliance = { country = HUN }
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 	}
 
 	name = "AI_EVENT"
@@ -2567,7 +2567,7 @@ event = {
 		ai = yes
 		ai = ROM
 		alliance = { country = ROM }
-		war = { country = SOV }
+		war = { country = GER country = SOV }
 	}
 
 	name = "AI_EVENT"
@@ -2689,7 +2689,7 @@ event = {
 		war = { country = USA }
 		OR = {
 			AND = {
-				NOT = { war = { country = SOV } }	
+				NOT = { war = { country = GER country = SOV } }	
 				control = { province = 572 data = -3 } # Moscow
 				}
 			NOT = { exists = SOV }
@@ -2731,7 +2731,7 @@ event = {
 			control = { province = 55 data = -3 } # Paris
 			event = 2001007 #Germany calls for general peace Treaty in Europe
 			}
-		NOT = { war = { country = SOV } }	
+		NOT = { war = { country = GER country = SOV } }	
 		control = { province = 572 data = SOV } # Moscow
 	}
 
@@ -3681,14 +3681,14 @@ event = {
 		OR = {
 			AND = {
 				war = { country = FRA }
-				NOT = {	war = { country = SOV } }
+				NOT = {	war = { country = GER country = SOV } }
 				NOT = {	war = { country = POL } }
 				NOT = { event = 3003003 }
 			}
 			AND = {
 				event = 3003003
 				war = { country = FRA }
-				NOT = {	war = { country = SOV } }
+				NOT = {	war = { country = GER country = SOV } }
 			}
 		}		
 		AND = {
@@ -3847,5 +3847,58 @@ event = {
 		command = { trigger = { local_flag = Barba_South } type = ai which = "switch/GER_SOV_South.ai" }
 		command = { trigger = { local_flag = Barba_Even } type = ai which = "switch/GER_SOV_Even.ai" }
 		command = { trigger = { local_flag = Barba_Moscow } type = ai which = "switch/GER_SOV_Moscow.ai" }
+	}
+}
+################
+# Germany goes for a greedy offensive if it failed to acquire Caucasus by 1943
+#############################################
+event = {
+	id = 3003132
+	random = no 
+	country = GER
+	save_date = yes
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = SOV }
+		month = 4 # May
+		NOT = { month = 6 } # July
+		control = { province = 713 data = SOV } #Baku
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1943 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_Russia_Desperate_Offensive.ai" }
+	}
+}
+################
+# Germany goes back on the offensive second year
+#############################################
+event = {
+	id = 3003133
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = SOV }
+		event = { id = 3003132 days = 30 }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = ai which = "switch/GER_Russia_Desperate_Rescind.ai" }
 	}
 }
