@@ -8,5 +8,10 @@ max_front_ratios = {
 	HOL = 4.0
 	LUX = 4.0
 	NOR = 3.0
-	FRA = 1.2
+	FRA = 1.5
 }
+front = { 
+	recklessness     = 3 # 0-3 
+  	distrib_vs_ai     = offensive
+   	distrib_vs_human   = offensive
+	}
