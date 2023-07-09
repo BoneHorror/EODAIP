@@ -2395,6 +2395,7 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { convoypool = 400 }
+		NOT = { region = { region = "England" country = -2 value = 1 } }
 		difficulty = 2 #Neutral and Ally-favoured difficulties
 		NOT = { local_flag = ENGConvoys }
 	}
@@ -2408,7 +2409,7 @@ event = {
 
 	action_a = {
 		command = { type = free_supplies value = 25 }
-		command = { type = convoy_prod_mod which = transports value = 50 }
+		command = { type = convoy_prod_mod which = transports value = 40 }
 		command = { type = local_setflag which = ENGConvoys }
 	}
 }
@@ -2420,8 +2421,11 @@ event = {
 	
 	trigger = {
 		ai = yes
-		convoypool = 400
-		difficulty = 2 #Neutral and Ally-favoured difficulties
+		OR = {
+			convoypool = 400
+			region = { region = "England" country = -2 value = 1 } 
+			}
+		#difficulty = 2 #Neutral and Ally-favoured difficulties
 		local_flag = ENGConvoys
 	}
 
@@ -2434,7 +2438,7 @@ event = {
 
 	action_a = {
 		command = { type = free_supplies value = -25 }
-		command = { type = convoy_prod_mod which = transports value = -50 }
+		command = { type = convoy_prod_mod which = transports value = -40 }
 		command = { type = local_clrflag which = ENGConvoys }
 	}
 }

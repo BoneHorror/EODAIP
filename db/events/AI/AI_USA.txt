@@ -283,7 +283,7 @@ event = {
 				NOT = { region = { region = "France" country = -3 value = 1 } }
 				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
 				flag = InvadeItaly
-				NOT = { land_percentage = { country = GER value = 0.33 }
+				NOT = { land_percentage = { country = GER value = 0.33 } }
 				NOT = { war = { country = GER country = SOV } }
 				}
 			AND = {
@@ -1772,6 +1772,7 @@ event = {
 		ai = yes
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USAJap }
+		NOT = { local_flag = USAGibraltar }
 		naval_percentage = { country = JAP value = 0.7 }
 		NOT = {
 			AND = {
@@ -1882,6 +1883,7 @@ event = {
 		ai = yes
 		war = { country = USA country = JAP }
 		NOT = { local_flag = USAJap }
+		NOT = { local_flag = USAGibraltar }
 		naval_percentage = { country = JAP value = 0.7 }
 		AND = {
 			control = { province = 1563 data = -3 } #Southern Okinawa
@@ -2722,4 +2724,40 @@ event = {
 		command = { type = local_clrflag which = USAConvoys }
 	}
 }
-		
+########### USA AI DDay helper cheat if it's not going well 
+event = {
+	id = 3049072
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+		war = { country = USA country = GER }
+		OR = {
+			AND = {
+				NOT = { region = { region = "France" country = -3 value = 30 } }
+				NOT = { region = { region = "Benelux" country = -3 value = 35 } }
+			}
+			NOT = { region = { region = Italy country = -3 value = 50 } }
+		}
+	}
+
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1944 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action_a = {
+		command = { trigger = { NOT = { transport = { country = -1 value = 25 when = 1 } } } type = build_division which = transport cost = -1.0 when = 6 }
+		command = { trigger = { NOT = { transport = { country = -1 value = 40 when = 1 } } } type = build_division which = transport cost = -1.0 when = 4 }
+		command = { trigger = { difficulty = 2 } type = naval_defense which = transport value = -3 } #bonus
+		command = { trigger = { difficulty = 2 } type = air_defense which = transport value = -1 } #bonus
+		command = { trigger = { difficulty = 3 } type = visibility which = destroyer value = -2 }
+		command = { trigger = { difficulty = 3 } type = visibility which = carrier value = -1 }
+		command = { trigger = { NOT = { control = { province = 1661 data = USA } } } type = task_efficiency which = amphibious_assault value = 0.2 }
+		command = { trigger = { control = { province = 1661 data = USA } } type = task_efficiency which = amphibious_assault value = 0.1 }
+	}
+}
