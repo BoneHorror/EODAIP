@@ -12,12 +12,12 @@ air_marshal = {
 	groundattackdesirability 	= 30.0
 	inderdictiondesirability 	= 10.0
 	logisticalstrikedesirability 	= 20.0
-	runwaycrateringdesirability 	= 15.0
+	runwaycrateringdesirability 	= 10.0
 	strategicstrikedesirability 	= 10.0
-	installationstrikedesirability 	= 5.0
+	installationstrikedesirability 	= 7.0
 	navalstrikedesirability 	= 3.0
 	portstrikedesirability 		= 0.0
-	convoyraiddesirability		= 2.0
+	convoyraiddesirability		= 5.0
 
 	# tolerance is the required kill:loss ration expected to do 
 	#    mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
