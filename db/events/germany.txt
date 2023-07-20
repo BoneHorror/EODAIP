@@ -2183,7 +2183,7 @@ event = {
 		OR = { 
 			AND = {
 				random = 6
-				NOT = { land_percentage = { country = SOV value = 0.7 } } #Ground army not sufficiently big to go against SOV
+				NOT = { land_percentage = { country = SOV value = 0.67 } } #Ground army not sufficiently big to go against SOV
 			}
 			NOT = { land_percentage = { country = SOV value = 0.55 } }
 			AND = { 
@@ -8196,3 +8196,8 @@ event = {
 		command = { type = relation which = FRA value = 30 }
 	} 
 }
+
+#### Event ideas -
+#### London gun - build it via decision, random chance to damage london afterwards
+#### Mainstein's Plan - Tank bonus for forests and hills, lasts ~10 days when DOWing Netherlands and Belgium
+#### Goering's Ambition - Land unit malus & slight dive bomber buff for ~10 days when entering France and reaching coast
