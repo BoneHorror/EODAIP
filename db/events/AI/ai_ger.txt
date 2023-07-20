@@ -3992,5 +3992,6 @@ event = {
 		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
 		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
 		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { local_flag = GERPanicBerlin } } type = ai which = "switch/GER_Partial_Panic.ai" }
 	}
 }
