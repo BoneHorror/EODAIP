@@ -75,15 +75,23 @@ front = {
 # Invasions and Naval
 ###################################
 admiral = {
-	min_core_attack_fleets  = 3
 	ignore = {
 	}
+	core = {
+		#Norwegia
+		2671 #Narvik
+		2689 #Alesund
+		
+		#Denmark
+		290 #Copenhagen
+		2694 #North of Denmark
+	}
 	target = { 
-	290 = 900 #Copenhagen Sea
-	2695 = 1000 #North of DEN
-	2694 = 1000 #North of DEN
-	2671 = 500 #Protect Narvik
-	2689 = 300 #Protect Alesund
+	290 = 120 #Copenhagen Sea
+	2695 = 110 #North of DEN
+	2694 = 110 #North of DEN
+	2671 = 60 #Protect Narvik
+	2689 = 50 #Protect Alesund
 	} 
 }
 
