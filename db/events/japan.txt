@@ -1657,9 +1657,9 @@ event = {
 		
 		#sleep various events
 		command = { type = sleepevent which = 1330120020 } #No Zhenbao incident
-        command = { type = sleepevent which = 1330030000 } #Sue for Peace with the Japanese
+        #command = { type = sleepevent which = 1330030000 } #Sue for Peace with the Japanese
         command = { type = sleepevent which = 1330030001 } #The Treaty of Xinjiang
-        command = { type = sleepevent which = 1330120021 } #Stalin sues for Peace
+        #command = { type = sleepevent which = 1330120021 } #Stalin sues for Peace #Don't sleep this or the "sue for peace" event - in case there is a CHI-SOV war we joined, these events are already filtered for
         command = { type = sleepevent which = 1330120022 } #The Treaty of Xinjiang
         command = { type = sleepevent which = 1330120023 } #The Soviets are about to lose the war!
         command = { type = sleepevent which = 1330120024 } #The Russian Fascist Party

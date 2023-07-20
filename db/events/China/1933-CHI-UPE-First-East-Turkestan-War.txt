@@ -543,7 +543,7 @@ event = {
 		command = { type = trigger which = 2181010 } #CHC Sino-Soviet War
 		command = { type = trigger which = 2181013 } #JAP Sino-Soviet War Intervention
 		command = { trigger = { exists = GER } type = trigger which = 2181019 } #GER Sino-Soviet War Intervention
-		command = { type = event which = 2181011 where = CHI when = 120 } #Roughly historical timeline
+		command = { type = event which = 2181011 where = SOV when = 120 } #Roughly historical timeline
 	}
 	action = {
 		trigger = { flag = JAP_NorthStrategy }
@@ -559,7 +559,7 @@ event = {
 		command = { type = trigger which = 2181010 } #CHC Sino-Soviet War
 		command = { type = trigger which = 2181013 } #JAP Sino-Soviet War Intervention
 		command = { trigger = { exists = GER } type = trigger which = 2181019 } #GER Sino-Soviet War Intervention
-		command = { type = event which = 2181011 where = CHI when = 120 } #Roughly historical timeline
+		command = { type = event which = 2181011 where = SOV when = 120 } #Roughly historical timeline
 	}
 
 	action = {
@@ -1205,6 +1205,7 @@ event = {
 		ai_chance = 90
 		command = { type = event which = 2181016 where = CHI when = 0 } #MAN CHI Helper Event
 		command = { type = free_ic value = 5 }
+		command = { type = secederegion which = CHI value = "China" when = 1 }
 		command = { type = sleepevent which = 2181017 } #CHC Communist Revolt in Manchuria
 	}
 
