@@ -14741,6 +14741,7 @@ event = {
 		command = { type = morale which = land value = 1 }
 		command = { type = morale which = air value = 1 }
 		command = { type = morale which = naval value = 1 }
+		command = { type = night_move which = land value = 2 }
 	} 
 }
 ##############################################################################
@@ -14754,7 +14755,7 @@ event = {
 	decision = {
 		exists = TUR
 		control = { province = 55 data = -3 } # Paris
-		control = { province = 232 data = -3 } # Warzaw
+		control = { province = 232 data = -3 } # Warsaw
 		control = { province = 163 data = -3 } # Berlin
 		event = 2003046 #Operation Barbarossa has launched
 		region = { region = Germany country = -3 data = 1 } 
@@ -14787,7 +14788,7 @@ event = {
 		region = { region = Benelux country = -3 data = 1 }
 		region = { region = Italy country = -3 data = 1 }
 		NOT = { non_aggression = { country = GER country = TUR } } 
-		region = { region = Kaukasus country = -3 data = 1 } #Germany or allies do NOT control Caucasus region
+		NOT = { region = { region = Kaukasus country = -3 data = 1 } } #Germany or allies do NOT control Caucasus region #Value = 100 is implied; this SHOULD have the NOT clause, for some reason it did not have one
 		NOT = {
 			war = { country = GER country = TUR }
 			alliance = { country = GER country = TUR }
@@ -14808,7 +14809,7 @@ event = {
 	
 	action = {
 		name = "1000526a"
-		ai_chance = 10
+		ai_chance = 40 #High odds bcause the random chance above already makes this rare
 		command = { type = dissent value = 5 }
 		command = { type = war which = TUR }
 		command = { type = addclaim which = 409 }
@@ -14819,7 +14820,7 @@ event = {
 	}
 	action = {
 		name = "1000526b"
-		ai_chance = 90
+		ai_chance = 60
 		command = { }
 	}
 }
