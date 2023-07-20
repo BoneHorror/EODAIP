@@ -2969,6 +2969,7 @@ event = {
 	
 	trigger = {
 		ai = yes	
+		war = { country = GER country = USA }
 		lost_national = { country = GER value = 15 }
 	}
 
@@ -2977,7 +2978,7 @@ event = {
 	
 	date = { day = 1 month = january year = 1939 }
 	offset = 2
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1946 }
 
 	action_a = {
 		command = { type = manpowerpool value = 120 }
@@ -2990,6 +2991,10 @@ event = {
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = militia when = 3 cost = -3.0 } #Queue 9 divs on neutral and Axis-favoured difficulties
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = militia when = 3 cost = -3.0 }
 		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_01 when = 3 cost = -3.0 }
+		command = { trigger = { not = { year = 1945 } } type = manpowerpool value = 120 }
+		command = { trigger = { not = { year = 1944 } } type = build_division which = militia when = 3 cost = -3.0 } #Queue 9 divs if DDay is early
+		command = { trigger = { not = { year = 1944 } } type = build_division which = militia when = 3 cost = -3.0 }
+		command = { trigger = { not = { year = 1945 } } type = build_division which = d_01 when = 3 cost = -3.0 }
 	}
 }
 event = {
@@ -2998,7 +3003,8 @@ event = {
 	country = GER
 	
 	trigger = {
-		ai = yes	
+		ai = yes
+		war = { country = GER country = USA }
 		lost_national = { country = GER value = 25 }
 	}
 
@@ -3007,16 +3013,16 @@ event = {
 	
 	date = { day = 1 month = january year = 1939 }
 	offset = 2
-	deathdate = { day = 29 month = december year = 1944 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = {
 		command = { type = manpowerpool value = 120 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1944 } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1944 } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1945 } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = anti_air }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = medium_armor }
 	}
@@ -3027,7 +3033,8 @@ event = {
 	country = GER
 	
 	trigger = {
-		ai = yes	
+		ai = yes
+		war = { country = GER country = USA }
 		lost_national = { country = GER value = 35 }
 	}
 
@@ -3036,16 +3043,16 @@ event = {
 	
 	date = { day = 1 month = january year = 1939 }
 	offset = 2
-	deathdate = { day = 29 month = december year = 1944 }
+	deathdate = { day = 29 month = december year = 1945 }
 
 	action_a = {
 		command = { type = manpowerpool value = 120 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
-		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1944 } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1945 } } type = add_division value = militia when = 5 }
+		command = { trigger = { not = { year = 1945 } } type = add_division value = militia when = 5 }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = anti_air }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = artillery }
 		command = { trigger = { OR = { not = { difficulty = 3 } NOT = { ai = ENG } NOT = { ai = USA } } } type = add_division value = garrison when = 5 where = medium_armor }
@@ -3900,5 +3907,90 @@ event = {
 
 	action_a = {
 		command = { type = ai which = "switch/GER_Russia_Desperate_Rescind.ai" }
+	}
+}
+############ Demobilize and re-mobilize some divisions to move them closer to the front if invaded by USA
+event = {
+	id = 3003134
+	random = no
+	country = GER
+
+	trigger = {
+	atwar = yes
+	ai = yes
+	OR = {
+		lost_national = { country = GER value = 15 }
+		local_flag = GERPanicBerlin
+	}
+	war = { country = GER country = USA }
+	OR = {
+		region = { region = "Germany" country = USA data = 1 value = 5 }
+		region = { region = "Germany" country = ENG data = 1 value = 5 }
+		region = { region = "Germany" country = CAN data = 1 value = 5 }
+		local_flag = GERPanicBerlin
+		}
+	infantry = { country = -1 value = 30 }
+	armor = { country = -1 value = 8 }
+	motorized = { country = -1 value = 8 }
+	}
+   
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 0 month = january year = 1943 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action_a = {
+		ai_chance = 100
+		command = { type = demobilize which = infantry when = 0 where = 0 value = -15 } #When 0 - Scrap obsolete units first, Where 0 - return MP when disbanded, values below 0 - how many units to disband
+		command = { type = demobilize which = armor when = 0 where = 0 value = -4 }
+		command = { type = demobilize which = motorized when = 0 where = 0 value = -4 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_01 when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_01 when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_01 value = police when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = police when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = police when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = police when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = artillery when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = anti_air when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = anti_air when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry value = anti_air when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = armor when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = armor value = engineer when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_04 value = armored_car when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = armor value = tank_destroyer when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = d_02 when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = motorized value = sp_artillery when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { not = { difficulty = 3 } } type = build_division which = motorized value = sp_artillery when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = infantry when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = armor when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = armor when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = armor when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = armor when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
+		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
 	}
 }
