@@ -19,7 +19,7 @@ SPR;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;
 255018;Compañía Española de Petróleos, SA;100323;4;1930;2000;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 255019;Esperanza & Unceta;100452;4;1890;1935;artillery;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 255020;Fábrica de Armas de Trubia;100319;4;1890;1935;mechanics;artillery;general_equipment;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-255021;Hispano Suiza;100453;5;1904;1935;aeronautics;mechanics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+255021;Hispano Suiza;100453;5;1904;1935;aeronautics;mechanics;electronics;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 255022;CROS, SA;100461;2;1890;1935;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 255023;Instituto Químico de Sarriá;100454;4;1916;1935;chemistry;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 255024;Juan López Soler;100320;2;1890;1935;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
