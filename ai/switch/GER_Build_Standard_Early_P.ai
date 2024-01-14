@@ -1,0 +1,50 @@
+# German Build Standard - Early into the war, special SS divs and rockets not available yet
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+	max_batch_war 		= 640 
+	#### Divisions etc...
+	infantry 		= 15 #33
+	d_01		= 0
+	cavalry 		= 0
+	motorized 		= 10
+	d_02			= 0
+	mechanized 		= 0 #4
+	d_03		= 0
+	light_armor 	= 8
+   	armor       	= 8 #10 
+	d_04		= 0
+	paratrooper 	= 1
+	marine 			= 1
+	bergsjaeger 	= 1
+   	garrison    	= 1 
+    hq 				= 3 #4
+	militia 		= 0
+#				62 %
+	interceptor 	= 5
+	rocket_interceptor = 1
+	multi_role 		= 6
+	cas 			= 7
+	strategic_bomber = 3
+	tactical_bomber = 3
+	naval_bomber 	= 2
+	transport_plane = 1
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				17 %
+	battleship 		= 1
+	carrier 		= 1
+	escort_carrier	= 2
+	destroyer 		= 3
+	light_cruiser 	= 3
+	heavy_cruiser 	= 1
+	battlecruiser 	= 2
+	submarine 		= 6
+	nuclear_submarine = 2
+	transports 		= 3
+#				21 %
+}

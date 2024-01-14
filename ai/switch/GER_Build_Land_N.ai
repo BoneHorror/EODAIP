@@ -1,0 +1,51 @@
+# German Build Standard AI file by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+	max_batch_war 		= 480 
+	#### Divisions etc...
+   	infantry     	= 5
+	d_01		= 3
+	cavalry 		= 0
+	motorized 		= 10
+	d_02			= 4
+	mechanized 		= 3
+	d_03		= 3
+	light_armor 	= 3
+   	armor       	= 11
+	d_04		= 3
+	paratrooper 	= 0
+	marine 			= 5
+	bergsjaeger 	= 2
+   	garrison    	= 1 
+    hq 				= 2
+	militia 		= 0
+	d_08			= 7
+#				80 %
+	interceptor 	= 7
+	rocket_interceptor = 1
+	multi_role 		= 4
+	cas 			= 8
+	strategic_bomber = 3
+	tactical_bomber = 1
+	naval_bomber 	= 2
+	transport_plane = 1
+	flying_bomb 	= 1
+	flying_rocket 	= 1
+#				14 %
+	battleship 		= 1
+	carrier 		= 1
+	escort_carrier	= 0
+	destroyer 		= 0
+	light_cruiser 	= 0
+	heavy_cruiser 	= 1
+	battlecruiser 	= 2
+	submarine 		= 3
+	nuclear_submarine = 1
+	transports 		= 0 #Handled by forced transport event training
+#				6 %
+}

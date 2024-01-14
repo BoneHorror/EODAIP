@@ -2298,8 +2298,12 @@ event = {
 		command = { type = local_setflag which = GERBuildStandard }
 		command = { type = local_clrflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildNavy }
-		command = { trigger = { year = 1941 } type = ai which = "switch/GER_Build_Standard.ai" }
-		command = { trigger = { NOT = { year = 1941 } } type = ai which = "switch/GER_Build_Standard_Early.ai" }
+		command = { trigger = { year = 1941 local_flag = GERAIPanzers } type = ai which = "switch/GER_Build_Standard_P.ai" }
+		command = { trigger = { year = 1941 NOT = { local_flag = GERAIPanzers } } type = ai which = "switch/GER_Build_Standard.ai" }
+		command = { trigger = { NOT = { year = 1941 local_flag = GERAIPanzers } } type = ai which = "switch/GER_Build_Standard_Early_P.ai" }
+		command = { trigger = { NOT = { year = 1941 } local_flag = GERAIAir } type = ai which = "switch/GER_Build_Standard_Early_A.ai" }
+		command = { trigger = { NOT = { year = 1941 } local_flag = GERAINaval } type = ai which = "switch/GER_Build_Standard_Early_N.ai" }
+		command = { trigger = { NOT = { year = 1941 } local_flag = GERAIIndustry } type = ai which = "switch/GER_Build_Standard_Early.ai" }
 	}
 }
 ################
@@ -2376,8 +2380,11 @@ event = {
 		command = { type = local_clrflag which = GERBuildStandard }
 		command = { type = local_setflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildNavy }
-		command = { trigger = { NOT = { year = 1941 } } type = ai which = "switch/GER_Build_Land_Early.ai" }
-		command = { trigger = { year = 1941 } type = ai which = "switch/GER_Build_Land.ai" }
+		command = { trigger = { NOT = { year = 1941 } NOT = { local_flag = GERAIAir } } type = ai which = "switch/GER_Build_Land_Early.ai" }
+		command = { trigger = { NOT = { year = 1941 } local_flag = GERAIAir } type = ai which = "switch/GER_Build_Land_Early_A.ai" }
+		command = { trigger = { year = 1941 OR = { local_flag = GERAIPanzers local_flag = GERAIIndustry } } type = ai which = "switch/GER_Build_Land.ai" }
+		command = { trigger = { year = 1941 local_flag = GERAIAir } type = ai which = "switch/GER_Build_Land_A.ai" }
+		command = { trigger = { year = 1941 local_flag = GERAINaval } type = ai which = "switch/GER_Build_Land_N.ai" }
 	}
 }
 ################
@@ -2447,7 +2454,8 @@ event = {
 		command = { type = local_clrflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildHeavyNavy }
 		command = { type = local_setflag which = GERBuildNavy }
-		command = { type = ai which = "switch/GER_Build_Navy.ai" }
+		command = { trigger = { NOT = { local_flag = GERAIAir } } type = ai which = "switch/GER_Build_Navy.ai" }
+		command = { trigger = { local_flag = GERAIAir } type = ai which = "switch/GER_Build_Navy_A.ai" }
 	}
 }
 event = { 
@@ -2501,7 +2509,8 @@ event = {
 		command = { type = local_clrflag which = GERBuildLand }
 		command = { type = local_clrflag which = GERBuildNavy }
 		command = { type = local_setflag which = GERBuildHeavyNavy }
-		command = { type = ai which = "switch/GER_Build_HeavyNavy.ai" }
+		command = { trigger = { NOT = { local_flag = GERAIAir } } type = ai which = "switch/GER_Build_HeavyNavy.ai" }
+		command = { trigger = { local_flag = GERAIAir } type = ai which = "switch/GER_Build_HeavyNavy_A.ai" }
 	}
 }
 ################
@@ -2529,7 +2538,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1939 }
 
 	action_a = {
-		command = { type = ai which = "switch/GER_Build_Fort.ai" }
+		command = { type = ai which = "switch/GER_Fortify.ai" }
 	}
 }
 ################
@@ -2710,7 +2719,7 @@ event = {
 		command = { type = local_clrflag which = GERBitter }
 		command = { type = ai which = "switch/GER_US.ai" }
 		command = { type = ai which = "switch/GER_Sealion_research.ai" }
-		#####command = { type = ai which = "switch/GER_Build_Navy.ai" } ###Just a reminder that we should never ask to _build_ without editing flags 
+		#####command = { type = ai which = "switch/GER_Build_Navy.ai" } ###Just a reminder that we should never ask to _Build_ without editing flags 
 		command = { type = ai which = "switch/GER_Air_Sealion.ai" }	
 	}
 }
@@ -3993,5 +4002,40 @@ event = {
 		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
 		command = { trigger = { difficulty = 3 } type = build_division which = motorized when = 1 cost = -0.1 where = 2 }
 		command = { trigger = { not = { local_flag = GERPanicBerlin } } type = ai which = "switch/GER_Partial_Panic.ai" }
+	}
+}
+################ On very strong Axis, make it harder to get rid of Germany that won Sealion
+event = {
+	id = 3003135
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		not = { difficulty = 1 }
+		war = { country = GER country = SOV }
+		control = { province = 26 data = GER } #Dover
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = free_ic value = 15 }
+		command = { type = manpowerpool value = 150 }
+		command = { type = dissent value = -35 }
+		command = { type = addcore which = 23 } #Plymouth 
+		command = { type = addcore which = 20 } # 
+		command = { type = addcore which = 27 } # 
+		command = { type = addcore which = 26 } #Dover
+		command = { type = province_keypoints which = 23 value = 1 }
+		command = { type = add_prov_resource which = 20 value = 41 where = energy }
+		command = { type = province_keypoints which = 26 value = 1 }
+		command = { type = add_prov_resource which = 26 value = 11 where = rare_materials }
+		command = { type = add_prov_resource which = 26 value = 20 where = metal }
 	}
 }

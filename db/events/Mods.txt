@@ -476,6 +476,8 @@ event = {
 	   	command = { trigger = { NOT = { technology = 5210 } } type = gain_tech which = 5210 } # Oil Refining 1940
 		command = { type = domestic which = free_market value = -1 } # Autarky
 		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { trigger = { ai = yes } type = local_setflag which = GERAIIndustry }
+		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 	action = {
 		ai_chance = 40
@@ -488,19 +490,22 @@ event = {
 	   	command = { trigger = { NOT = { technology = 2050 } } type = gain_tech which = 2050 } # L ARM 1939
 	   	command = { trigger = { NOT = { technology = 2070 } } type = gain_tech which = 2070 } # ARM 1939
 		command = { trigger = { ai = no } type = money value = -2000 }
+		command = { trigger = { ai = yes } type = local_setflag which = GERAIPanzers }
+		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 	action = {
 		ai_chance = 20
 		name = "9300001c"
       		command = { type = build_time which = air when = on_upgrade where = relative value = -10 }
+			command = { type = build_time which = paratrooper when = on_upgrade where = relative value = -5 }
 	   	command = { trigger = { NOT = { technology = 4400 } } type = gain_tech which = 4400 } # CAS 1934
 	   	command = { trigger = { NOT = { technology = 4170 } } type = gain_tech which = 4170 } # CAS 1937
 	   	command = { trigger = { NOT = { technology = 4280 } } type = gain_tech which = 4280 } # CAS 1940
 	   	command = { trigger = { NOT = { technology = 4140 } } type = gain_tech which = 4140 } # TAC 1938
-	   	# command = { trigger = { NOT = { technology = 4150 } } type = gain_tech which = 4150 } # TAC 1940
 	   	command = { trigger = { NOT = { technology = 1670 } } type = gain_tech which = 1670 } # Airborne 1938
-		# command = { type = event which = 9300075 where = -1 when = 90 }
 		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { trigger = { ai = yes } type = local_setflag which = GERAIAir }
+		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 	action = {
 		ai_chance = 10
@@ -511,6 +516,8 @@ event = {
 	   	command = { trigger = { NOT = { technology = 3260 } } type = gain_tech which = 3260 } # CA 1934
 	   	command = { trigger = { NOT = { technology = 3340 } } type = gain_tech which = 3340 } # BC 1934
 		command = { trigger = { ai = no } type = money value = -1000 }
+		command = { trigger = { ai = yes } type = local_setflag which = GERAINaval }
+		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 }
 
