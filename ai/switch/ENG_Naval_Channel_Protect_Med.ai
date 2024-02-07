@@ -8,7 +8,7 @@ target = {
 		2700 = 150 #Channel North
 		2176 = 100 #Egypt
 		2181 = 200 #Malta
-		2180 = 200 #Palermo - invasion screening
+		2180 = 400 #Palermo - invasion screening
 		2699 = 100 #Target for D-Day - South Channel
 		2697 = 100 #Target for D-Day - Rotterdam
 	} 

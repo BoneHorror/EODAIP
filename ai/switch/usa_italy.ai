@@ -337,19 +337,18 @@ admiral = {
 	target = {
 		2694 = 60 #Hunt german navy near norway
 		2693 = 60 #Hunt german navy near denmark
-		2179 = 150 #Hunt central mediterrean
+		2179 = 350 #Hunt central mediterrean
 		2743 = 100 #Hunt near greece
-		2189 = 150 #Hunt near corsica
+		2189 = 250 #Hunt near corsica
 		2485 = 100 #Hunt north philipines
 		2511 = 120 #Hunt s okinawa
 		2512 = 120 #Hunt n okinawa
-		2180 = 200 #Palermo - invasion screening
+		2180 = 400 #Palermo - invasion screening
 	} 
 	core = {	
 	2548 #Sea near Manado
 	2637 #Pearl Harbor
 	2631 #Midway
-	2556 #Philipines center
 	2181 #Malta sea
 	2176 #Suez sea
 	2700 #English channel
