@@ -88,7 +88,8 @@ garrison = {
 front = { 
 	distrib_vs_ai 		= offensive
 	distrib_vs_human 	= offensive
- 
+	panic_ratio_vs_ai	= 0.8
+	panic_ratio_vs_human= 1.5
 	enemy_handicap = {
 		FRA = 100
 		BEL = 300
