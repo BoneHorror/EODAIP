@@ -478,6 +478,9 @@ event = {
 		command = { trigger = { ai = no } type = money value = -1000 }
 		command = { trigger = { ai = yes } type = local_setflag which = GERAIIndustry }
 		command = { trigger = { ai = yes } type = money value = -100 }
+		command = { trigger = { ai = yes } type = add_brigade value = super_heavy_artillery }
+		command = { trigger = { ai = yes } type = add_brigade value = super_heavy_artillery }
+		command = { trigger = { ai = yes } type = fort_attack which = super_heavy_artillery value = 6 }
 	}
 	action = {
 		ai_chance = 40
