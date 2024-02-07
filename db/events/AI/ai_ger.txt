@@ -231,7 +231,10 @@ event = {
 	deathdate = { day = 29 month = december year = 1948 }
 
 	action_a = {
-		command = { type = ai which = "switch/GER_Poland_After.ai" }
+		command = { trigger = { NOT = { local_flag = GERAIIndustry } } type = ai which = "switch/GER_Poland_After.ai" }
+		command = { trigger = { AND = { land_percentage = { country = FRA value = 1.2 } land_percentage = { country = ITA value = 1.65 } NOT = { alliance = { country = GER country = ITA } } local_flag = GERAIIndustry } } type = ai which = "switch/GER_Force_Maginot.ai" }
+		command = { trigger = { AND = { land_percentage = { country = FRA value = 1.2 } land_percentage = { country = ITA value = 1.65 } NOT = { alliance = { country = GER country = ITA } } local_flag = GERAIIndustry } } type = ai_prepare_war which = ITA }
+		command = { trigger = { OR = { NOT = { land_percentage = { country = FRA value = 1.2 } } NOT = { land_percentage = { country = ITA value = 1.65 } } alliance = { country = GER country = ITA } } local_flag = GERAIIndustry } type = ai which = "switch/GER_Poland_After.ai" }
 		command = { type = local_clrflag which = GERAirPoland }
 		command = { type = local_setflag which = GERLowCountriesPrepare }
 		command = { type = local_clrflag which = GERBalticGarrison }
@@ -3652,6 +3655,7 @@ event = {
 	trigger = {
 		ai = yes
 		war = { country = GER country = ENG }
+		NOT = { event = 2003071 }
 		NOT = {
 			OR = {
 				war = { country = GER country = SOV }
