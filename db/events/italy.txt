@@ -918,6 +918,17 @@ event = {
 		command = { type = make_puppet which = RSI }
 		command = { type = alliance which = RSI when = 1 }
 		command = { type = trigger which = 1100080 } #RSI Independence Struggle
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land where = 761 when = 229 } # Benghazi
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = anti_air }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "15. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "21. Panzer-Division" value = light_armor when = 2 where = engineer }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = light_armor when = 2 where = armored_car }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "112. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
 	}
 	action = {
 		trigger = { NOT = { ai = ITA } NOT = { alliance = { country = GER country = RSI } } }
@@ -928,6 +939,17 @@ event = {
 		command = { type = make_puppet which = ITA }
 		command = { type = alliance which = ITA when = 1 }
 		command = { type = coup_nation which = ITA }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land where = 761 when = 229 } # Benghazi
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = anti_air }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "15. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "21. Panzer-Division" value = light_armor when = 2 where = engineer }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = light_armor when = 2 where = armored_car }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "112. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
 	}
 	action = {
 		trigger = { NOT = { ai = ITA } alliance = { country = GER country = RSI } }
@@ -936,6 +958,17 @@ event = {
 		command = { type = addcore which = 401 } #Trento
 		command = { type = addcore which = 402 } #Bolzano
 		command = { type = secederegion which = RSI value = "Italy" when = 1 }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_corps which = "Deutsches Afrika-Korps" value = land where = 761 when = 229 } # Benghazi
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "Panzerarmee Afrika HQ" value =  hq when = 3 where = anti_air }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "15. Panzer-Division" value = armor when = 0 where = light_armor_brigade }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "21. Panzer-Division" value = light_armor when = 2 where = engineer }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "5. Panzer-Division" value = light_armor when = 2 where = armored_car }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "112. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes not = { difficulty = 4 } } type = add_division which = "164. Leichte-Division" value = motorized when = 1 where = sp_artillery }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
+		command = { trigger = { ai = yes } type = add_division value = transport }
 	}
 }
 event = {
