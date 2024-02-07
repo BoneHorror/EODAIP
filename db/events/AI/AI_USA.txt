@@ -182,6 +182,7 @@ event = {
 			exists = ENG
 			army = 70
 			war = { country = USA country = JAP }
+			NOT = { lost_national = { country = GER value = 90 } }
 			control = { province = 1661 data = -3 } #Iwo Jima
 		}
 			NOT = { war = { country = USA country = JAP } }
@@ -283,6 +284,10 @@ event = {
 				NOT = { region = { region = "France" country = -3 value = 1 } }
 				NOT = { region = { region = "Benelux" country = -3 value = 1 } }
 				flag = InvadeItaly
+				OR = {
+					war = { country = USA country = ITA }
+					war = { country = USA country = RSI }
+					}
 				NOT = { land_percentage = { country = GER value = 0.33 } }
 				NOT = { war = { country = GER country = SOV } }
 				}
@@ -314,11 +319,11 @@ event = {
 		command = { type = local_clrflag which = USAJap }
 		command = { type = local_clrflag which = USAGibraltar }
 		command = { type = local_clrflag which = USAInvadeUK }
-		command = { trigger = { flag = InvadeItaly } type = local_setflag which = USAItaly }
-		command = { trigger = { NOT = { flag = InvadeItaly } } type = local_clrflag which = USAItaly }
+		command = { trigger = { flag = InvadeItaly OR = { war = { country = USA country = ITA } war = { country = USA country = RSI } } } type = local_setflag which = USAItaly }
+		command = { trigger = { flag = InvadeItaly OR = { war = { country = USA country = ITA } war = { country = USA country = RSI } } } type = ai which = "switch/USA_Italy.ai" }
+		command = { trigger = { OR = { NOT = {  } NOT = { flag = InvadeItaly } } } type = local_clrflag which = USAItaly }
+		command = { trigger = { OR = { NOT = {  } NOT = { flag = InvadeItaly } } } type = ai which = "switch/USA_Gear_Up_4.ai" }
 		command = { type = clrflag which = DDay }
-		command = { trigger = { flag = InvadeItaly } type = ai which = "switch/USA_Italy.ai" }
-		command = { trigger = { NOT = { flag = InvadeItaly } } type = ai which = "switch/USA_Gear_Up_4.ai" }
 	}
 }
 ################
