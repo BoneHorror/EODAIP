@@ -206,7 +206,10 @@ invasion = {
 		1436  = 2500  #Kota Bahru
 		1435  = 2500  #Alor Star
 		1432  = 2500  #Singapore
-
+		
+		#Burma
+		1415 = 7500 #Rangoon
+		
 		#China
 		1241  = 2500  #Tianjin
 		1328  = 2500  #Qingdao
