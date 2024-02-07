@@ -48,13 +48,8 @@ event = {
         command = { type = setflag which = LONG_MARCH_CHC when = 0 value = 129 } #set initial strenght of Communist forces to 129 000
         #flag LONG_MARCH_FATIGUE not set so that initial fatigue of Communist forces is 0
         command = { type = event which = 1330110023 where = CHI when = 0 } # 19th Army Surrenders
-		#if either CHI or CHC is human, let them play the Long March minigame
-        command = { trigger = { OR = { NOT = { ai = CHI } NOT = {  ai = CHC } } } type = event which = 1330110064 where = CHC when = 7 } #The Long March
-        command = { trigger = { OR = { NOT = { ai = CHI } NOT = {  ai = CHC } } } type = event which = 1330110070 where = CHC when = 30 } # Leadership Change
-		#if both CHI and CHC are AI, let them go directly to the CHC retreat (to avoid higher chances of ahistorical problems)
-        command = { trigger = { ai = CHI ai = CHC } type = event which = 1330110069 where = CHC when = 7 } #CHC Retreat to Shaanxi
-        command = { trigger = { ai = CHI ai = CHC } type = event which = 1330110070 where = CHC when = 3 } #CHC Leadership Change
-        command = { trigger = { ai = CHI ai = CHC } type = event which = 1330110072 where = CHC when = 3 } #CHC Zhang Guotao Leaves
+        command = { type = event which = 1330110064 where = CHC when = 7 } #The Long March
+        command = { type = event which = 1330110070 where = CHC when = 30 } # Leadership Change
         command = { type = peace which = CHI value = 1 }
         command = { trigger = { policy = { type = professional_army value = 3 } } type = event which = 1330110012 where = CHC when = 0 } #Demobilization
         command = { type = event which = 1330110012 where = CHI when = 0 } #Demobilization
