@@ -4555,6 +4555,8 @@ event = {
 			random = 1 
 			AND = { year = 1941 random = 5 } 
 			AND = { year = 1942 random = 15 } 
+			area = { area = "Palestine" country = ITA value = 50 }
+			area = { area = "Palestine" country = GER value = 50 }
 		}		
 	}
 
