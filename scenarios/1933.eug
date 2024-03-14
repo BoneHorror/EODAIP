@@ -696,6 +696,8 @@ event      = "db\events\AI\AI_PHI.txt"
 event 	   = "db\events\DayofDecision.txt"
 event 	   = "db\events\Gameplay.txt"
 
+event 	   = "db\events\China\1928-CHI-Nanjing-Decade.txt"
+event 	   = "db\events\China\1928-UCH-Unification.txt"
 event 	   = "db\events\China\1933-CHI-Pre-Long-March.txt"
 event 	   = "db\events\China\1933-CHI-UPE-First-East-Turkestan-War.txt"
 event 	   = "db\events\China\1933-CHC-Early-Republic.txt"
