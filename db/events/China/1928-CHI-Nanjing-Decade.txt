@@ -1,0 +1,572 @@
+#-Nanjing Decade---------------
+# 1330110051 CHI Defending Nanjing
+# 1330110052 CHI Defending Nanjing
+# 1330110043 CHI Nanjing Decade (10 Year Plan)
+# 1330110044 End of the Nanjing Decade
+# 1330110045 End of the Second Nanjing Decade
+# 1330110046 JAP The Changing Geopolitical Situation
+# 1330110047 CHI Communist Agitation
+#-Sino-Axis Cooperation--------
+# 1330110048 CHI Wang Jingwei becomes Fascist
+# 1330110049 GER Sino-German Cooperation
+# 1330110050 CHI Sino-German Cooperation
+
+# Defense of Nanjing
+event = {
+	id = 1330110051
+	random = no
+	country = CHI
+
+	#Triggered
+
+	name = EVT_1330110051_NAME #Defending Nanjing
+	desc = EVT_1330110051_DESC #With the Japanese occupation of Shanghai in the 1-28 incident, urgent measures were put in place to defend the nation's capital. In 1933, three military zones, Nanjing, Nanjing-Hangzhou, and Nanjing-Shanghai, had been established to coordinate defenses in the Yangtze Delta. In 1934, with German assistance, the construction of the so-called 'Chinese Hindenburg Line' began, with a series of fortifications to facilitate defense in depth. Two such lines, the Wufu Line between Suzhou and Fushan, and the Xicheng Line between Wuxi and Jiangyin, were built to protect the road to Nanjing, in case Shanghai should fall into enemy hands. In spring 1937, just barely months before the beginning of the Second Sino-Japanese War, the two defensive lines were finally completed. However, the necessary training of personnel to man these positions and coordinate the defense had not yet been completed when the war broke out.
+
+	picture = "ccip_nanjing_map"
+	style = 2
+
+	action = {
+		name = EVT_1330110051_ACTION1 #Carry ahead with the fortifications
+		command = { type = dissent value = -1 }
+		command = { trigger = { not = { year = 1933 } } type = event which = 1330110052 where = CHI when = 2160 } #CHI Defending Nanjing in 6 years
+		command = { trigger = { year = 1933 } type = event which = 1330110052 where = CHI when = 1440 } #CHI Defending Nanjing in 4 years
+	}
+
+	action = {
+		trigger = {
+			money = 100
+		}
+		name = EVT_1330110051_ACTION2 #Rush construction
+		command = { type = dissent value = -1 }
+		command = { type = money value = -100 }
+		command = { trigger = { not = { year = 1933 } } type = event which = 1330110052 where = CHI when = 1440 } #CHI Defending Nanjing in 4 years
+		command = { trigger = { year = 1933 } type = event which = 1330110052 where = CHI when = 720 } #CHI Defending Nanjing in 2 years
+	}
+
+	action = {
+		name = EVT_1330110051_ACTION3 #Invest in more troops instead
+		command = { type = local_setflag which = 1330110052_ARMY }
+		command = { type = event which = 1330110052 where = CHI when = 360 } #CHI Defending Nanjing in 1 year
+	}
+}
+
+event = {
+	id = 1330110052
+	random = no
+	country = CHI
+	persistent = yes
+
+	#Triggered
+
+	picture = "ccip_nanjing_map"
+	style = 2
+
+	name = EVT_1330110051_NAME #Defending Nanjing
+	desc = EVT_1330110052_DESC #Preparations for the defense of Nanjing from Japanese forces in Shanghai are ready. Depending on our previous choices, this may be fortifications or additional garrison forces.
+
+	action = {
+		trigger = {
+			not = { local_flag = 1330110052_ARMY }
+			control = { province = 1337 data = CHI  }
+		}
+		name = EVT_1330110052_ACTION1
+		command = { trigger = { control = { province = 1337 data = CHI } } type = construct which = land_fort where = 1337 value = 2 } #Nanjing
+		command = { trigger = { control = { province = 1345 data = CHI } } type = construct which = land_fort where = 1345 value = 2 } #Hangzhou
+		command = { trigger = { control = { province = 1334 data = CHI } } type = construct which = land_fort where = 1334 value = 2 } #Nantong
+		command = { trigger = { not = { local_flag = 1330110052 } } type = event which = 1330110052 when = 360 where = CHI } # Add 2 more forts after 1 year of training
+		command = { type = local_setflag which = 1330110052 }
+	}
+
+	action = {
+		trigger = {
+			local_flag = 1330110052_ARMY
+		}
+		name = EVT_1330110052_ACTION2
+		command = { type = add_division which = "Capital Defense Force" value = infantry when = 8 where = artillery }
+		command = { type = add_division which = "Capital Defense Force" value = infantry when = 8 where = artillery }
+		command = { type = add_division which = "Capital Defense Force" value = infantry when = 8 where = artillery }
+		command = { type = local_clrflag which = 1330110052_ARMY }
+	}
+}
+
+# Nanjing Decade (10 Year Plan)
+event = {
+	id = 1330110043
+	random = no
+	country = CHI
+	one_action = yes
+	save_date = yes
+
+	#Triggered by 1933.eug and 1936.eug scenario files on game start
+
+	name = EVT_1330110043_NAME
+	desc = EVT_1330110043_DESC
+
+	style = 2
+	picture = "invest_infrastructures"
+
+	action = {
+		trigger = {
+			not = { research_mod = 50 }
+		}
+		name = EVT_1330110043_ACTION1 #Begin the modernization!
+		command = { type = dissent value = 10 } #Unhappiness and social strife over rapid modernization
+		command = { trigger = { not = { dissent = 20 } } type = dissent value = 5 }
+		command = { trigger = { not = { dissent = 30 } } type = dissent value = 5 }
+		#bonuses from modernization
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = research_mod value = 15 }
+		command = { type = local_setflag which = 1330110043_15 }
+		command = { type = wartime_ic_mod value = -50 } # Civilian Industrial Growth
+	}
+
+	action = {
+		trigger = {
+			not = { research_mod = 75 }
+			research_mod = 50
+		}
+		name = EVT_1330110043_ACTION1 #Begin the modernization!
+		command = { type = dissent value = 10 } #Unhappiness and social strife over rapid modernization
+		command = { trigger = { not = { dissent = 20 } } type = dissent value = 5 }
+		command = { trigger = { not = { dissent = 30 } } type = dissent value = 5 }
+		#bonuses from modernization
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = research_mod value = 10 }
+		command = { type = local_setflag which = 1330110043_10 }
+		command = { type = wartime_ic_mod value = -50 } # Civilian Industrial Growth
+	}
+
+	action = {
+		trigger = {
+			research_mod = 75
+		}
+		name = EVT_1330110043_ACTION1 #Begin the modernization!
+		command = { type = dissent value = 10 } #Unhappiness and social strife over rapid modernization
+		command = { trigger = { not = { dissent = 20 } } type = dissent value = 5 }
+		command = { trigger = { not = { dissent = 30 } } type = dissent value = 5 }
+		#bonuses from modernization
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = 1330110043_5 }
+		command = { type = wartime_ic_mod value = -50 } # Civilian Industrial Growth
+	}
+}
+
+# End of the Nanjing Decade
+event = {
+	id = 1330110044
+	random = no
+	country = CHI
+	one_action = yes
+	save_date = yes
+
+	trigger = {
+		event = 1330110043 #Nanjing Decade
+		or = {
+			or = {
+				war = { country = CHI country = JAP }
+				war = { country = CHI country = SOV }
+				war = { country = CHI country = ENG }
+				war = { country = CHI country = RUS }
+				war = { country = CHI country = USA }
+				war = { country = CHI country = GER }
+				war = { country = CHI country = DDR }
+				war = { country = CHI country = U08 }
+				war = { country = CHI country = FRA }
+			}
+			or = {
+				event = { id = 1330110043 days = 3600 } #Nanjing Decade 10 years ago
+				and = {
+					year = 1937
+					local_flag = 1330110043_HISTORICAL_SCENARIO #set in 1933 and 1936 scenario files
+				}
+			}
+		}
+	}
+		
+
+	style = 2
+	picture = "invest_infrastructures"
+
+	name = EVT_1330110044_NAME
+	desc = EVT_1330110044_DESC
+
+	date = { day = 0 month = january year = 1920 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		trigger = {
+			or = {
+				war = { country = CHI country = JAP }
+				war = { country = CHI country = SOV }
+				war = { country = CHI country = ENG }
+				war = { country = CHI country = RUS }
+				war = { country = CHI country = USA }
+				war = { country = CHI country = GER }
+				war = { country = CHI country = DDR }
+				war = { country = CHI country = U08 }
+				war = { country = CHI country = FRA }
+			}
+		}
+		name = EVT_1330110044_ACTION1 #We must shift to the war effort
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = wartime_ic_mod value = 50 }
+		command = { trigger = { local_flag = 1330110043_5 } type = research_mod value = -5 }
+		command = { trigger = { local_flag = 1330110043_5 } type = local_clrflag which = 1330110043_5 }
+		command = { trigger = { local_flag = 1330110043_10 } type = research_mod value = -10 }
+		command = { trigger = { local_flag = 1330110043_10 } type = local_clrflag which = 1330110043_10 }
+		command = { trigger = { local_flag = 1330110043_15 } type = research_mod value = -15 }
+		command = { trigger = { local_flag = 1330110043_15 } type = local_clrflag which = 1330110043_15 }
+		command = { type = sleepevent which = 1330110045 } #End of the Second Nanjing Decade
+		command = { type = sleepevent which = 1330110047 } #CHI Communist Agitation
+	}
+
+	action = {
+		trigger = {
+			not = {
+				war = { country = CHI country = JAP }
+				war = { country = CHI country = SOV }
+				war = { country = CHI country = ENG }
+				war = { country = CHI country = RUS }
+				war = { country = CHI country = USA }
+				war = { country = CHI country = GER }
+				war = { country = CHI country = DDR }
+				war = { country = CHI country = U08 }
+			}
+			or = {
+				ai = no
+				not = { ai = JAP }
+		    }
+		}
+		name = EVT_1330110044_ACTION2 #We will be modernized in ten years!
+		#Continue "Nanjing Decade"
+		command = { type = dissent value = -1 }
+		command = { type = local_setflag which = 1330110044 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					war = { country = CHI country = JAP }
+					war = { country = CHI country = SOV }
+					war = { country = CHI country = ENG }
+					war = { country = CHI country = RUS }
+					war = { country = CHI country = USA }
+					war = { country = CHI country = GER }
+					war = { country = CHI country = DDR }
+					war = { country = CHI country = U08 }
+				}
+			}
+			ai = yes
+			ai = JAP
+		}
+		name = EVT_1330110044_ACTION2 #We will be modernized in ten years!
+		#Continue "Nanjing Decade"
+		command = { type = dissent value = -1 }
+		command = { type = local_setflag which = 1330110044 }
+	}
+}
+
+# End of the Second Nanjing Decade
+event = {
+	id = 1330110045
+	random = no
+	country = CHI
+
+	trigger = {
+		event = 1330110044 # End of the Nanjing Decade
+		local_flag = 1330110044
+		or = {
+			or = {
+				war = { country = CHI country = JAP }
+				war = { country = CHI country = SOV }
+				war = { country = CHI country = ENG }
+				war = { country = CHI country = RUS }
+				war = { country = CHI country = USA }
+				war = { country = CHI country = GER }
+				war = { country = CHI country = DDR }
+				war = { country = CHI country = U08 }
+				war = { country = CHI country = FRA }
+			}
+			or = {
+				event = { id = 1330110044 days = 3600 } # End of the Nanjing Decade
+				and = {
+					year = 1947
+					local_flag = 1330110043_HISTORICAL_SCENARIO #set in 1933 and 1936 scenario files
+				}
+			}
+		}
+	}
+
+	style = 2
+	picture = "invest_infrastructures"
+
+	name = EVT_1330110045_NAME
+	desc = EVT_1330110045_DESC
+
+	date = { day = 0 month = january year = 1920 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = wartime_ic_mod value = 50 }
+		command = { trigger = { local_flag = 1330110043_5 } type = research_mod value = -5 }
+		command = { trigger = { local_flag = 1330110043_5 } type = local_clrflag which = 1330110043_5 }
+		command = { trigger = { local_flag = 1330110043_10 } type = research_mod value = -10 }
+		command = { trigger = { local_flag = 1330110043_10 } type = local_clrflag which = 1330110043_10 }
+		command = { trigger = { local_flag = 1330110043_15 } type = research_mod value = -15 }
+		command = { trigger = { local_flag = 1330110043_15 } type = local_clrflag which = 1330110043_15 }
+		command = { type = sleepevent which = 1330110047 } #CHI Communist Agitation
+		command = { type = local_clrflag which = 1330110044 }
+	}
+}
+
+# The Changing Geopolitical Situation
+event = {
+	id = 1330110046
+	random = no
+	country = JAP
+
+	#Triggered
+
+	name = EVT_1330110046_NAME #The Changing Geopolitical Situation
+	desc = EVT_1330110046_DESC
+	
+	style = 2
+	picture = "diplomatic_campaign"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = relation which = USA value = -125 }
+		command = { type = relation which = SOV value = -100 }
+		command = { type = relation which = CHI value = -25 }
+		command = { type = relation which = ENG value = -70 }
+		command = { type = relation which = FRA value = -70 }
+		command = { type = relation which = U08 value = 25 }
+        command = { type = event which = 1330120019 where = JAP when = 7 } #JAP Five Ministers conference
+	}
+}
+
+# Communist Agitation
+event = {
+	id = 1330110047
+	random = no
+	country = CHI
+	persistent = yes
+
+	trigger = {
+		not = { dissent = 5 }
+		exists = CHC
+		not = { war = { country = CHI country = JAP } }
+        or = {
+            random = 5
+            and = {
+                war = { country = CHI country = CHC }
+                random = 20
+            }
+        }
+		event = 1330110043 #CHI Nanjing Decade (10 Year Plan)
+	}
+
+	picture = "ccip_unrest"
+	style = 2
+
+	name = EVT_1330110047_NAME
+	desc = EVT_1330110047_DESC
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 1 }
+        command = { trigger = { ai = no dissent = 4 war = { country = CHI country = CHC } } type = revolt which = -2 }
+	}
+}
+
+#-Sino-Axis Cooperation--------
+# Wang Jingwei becomes Fascist
+event = {
+	id = 1330110048
+	random = no
+	country = CHI
+
+	# Triggered by 1933.eug scenario file (on the second game day)
+
+	picture = "ccip_wjw"
+	style = 2
+
+	name = EVT_1330110048_NAME
+	desc = EVT_1330110048_DESC
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { }
+		#TODO: Sleep/wake correct ministers once China cabinet rework is done
+		command = { trigger = { exists = GER } type = event which = 1330110049 where = GER when = 15 } #GER Sino-German Cooperation TODO: Update for 1933 scenario, check to make sure GER exists.
+	}
+}
+	
+# Sino-German Cooperation
+event = {
+	id = 1330110049
+	random = no
+	country = GER
+
+	#Triggered
+
+	picture = "ccip_wjw"
+	style = 2
+
+	name = EVT_1330110049_NAME
+	desc = EVT_1330110049_DESC
+
+	action = {
+		trigger = {
+            or = {
+                headofstate = 1 #Hitler
+                headofgovernment = 22 #Hitler
+            }
+		}
+		name = ACTION_NAME_YES
+		ai_chance = 50
+		command = { type = relation which = CHI value = 100 }
+		command = { type = relation which = JAP value = -25 }
+		command = { type = trade which = GER where = CHI supplies = -2 money = 0.75 value = 1 }
+		command = { type = trade which = GER where = CHI supplies = -2 money = 0.75 value = 1 }
+		command = { type = trade which = GER where = CHI supplies = -7.5 rare_materials = 20 value = 1 }
+		command = { type = trade which = GER where = CHI supplies = -7.5 rare_materials = 20 value = 1 }
+		command = { trigger = { not = { year = 1933 } } type = event which = 1330110050 where = CHI when = 120 } #CHI Sino-German Cooperation
+		command = { trigger = { year = 1933 } type = event which = 1330110050 where = CHI when = 0 } #CHI Sino-German Cooperation
+        #TODO: In future, actually add german trained divisions for pre-1933
+	}
+
+	action = {
+		trigger = {
+            or = {
+                ai = no
+                not = {
+					headofstate = 1 #Hitler
+					headofgovernment = 22
+                }
+            }
+		}
+        ai_chance = 50
+		name = ACTION_NAME_NO
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = CHI value = -25 }
+	}
+
+}
+
+event = {
+	id = 1330110050
+	random = no
+	country = CHI
+	persistent = yes
+
+	#Triggered
+
+	picture = "ccip_wjw"
+	style = 2
+
+	name = EVT_1330110049_NAME
+	desc = EVT_1330110050_DESC
+
+	action = {
+		trigger = {
+			not = {
+				local_flag = 1330110050_1
+				event = 2012002 #CHI German Mission Recalled
+			}
+		}
+		name = ACTION_NAME_GREAT
+		command = { trigger = { not = { ai = yes } dissent = 40 } type = dissent value = -5 }
+		command = { type = gain_tech which = 5050 } #Industrial blueprint
+		command = { type = gain_tech which = 5830 } #Industrial blueprint
+		command = { type = gain_tech which = 5060 } #Industrial blueprint
+		command = { type = gain_tech which = 5710 } #Agriculture blueprint
+		command = { type = gain_tech which = 5010 } #Agriculture blueprint
+		command = { type = gain_tech which = 6210 } #Mobility blueprint
+		command = { type = waketeam which = 55005 when = 1 } #Alexander von Falkenhausen
+        # Importing equipment, don't need as much domestic industry (removed when German Mission Recalled)
+        command = { type = build_cost which = infantry when = on_upgrade where = relative value = -20 }
+        command = { type = build_cost which = artillery when = on_upgrade where = relative value = -20 }
+        command = { type = build_cost which = armored_car when = on_upgrade where = relative value = -20 }
+		# Rare Material Production
+		command = { type = add_prov_resource which = rare_materials where = 1352 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1347 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1346 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1345 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1348 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1305 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1303 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1304 value = 2 }
+        command = { type = add_prov_resource which = rare_materials where = 1306 value = 2 }
+		command = { type = local_setflag which = 1330110050_1 }
+		command = { type = event which = 1330110050 where = CHI when = 180 } #CHI Sino-German Cooperation
+	}
+
+	action = {
+		trigger = {
+			not = {
+				local_flag = 1330110050_2
+				event = 2012002 #CHI German Mission Recalled
+			}
+			local_flag = 1330110050_1
+		}
+		name = ACTION_NAME_GREAT
+        # German investment.
+        command = { type = construct which = ic where = 1313 value = 1 } #Shashi
+        command = { type = construct which = ic where = 1317 value = 1 } #Wuhan
+        command = { type = construct which = ic where = 1318 value = 1 } #Huangshi
+        command = { type = construct which = ic where = 1307 value = 1 } #Huaihua
+        command = { type = construct which = ic where = 1308 value = 1 } #Changsha
+        command = { type = construct which = ic where = 1297 value = 1 } #Chengdu
+        command = { type = construct which = ic where = 1299 value = 1 } #Chongqing
+		command = { type = local_setflag which = 1330110050_2 }
+		command = { type = event which = 1330110050 where = CHI when = 180 } #CHI Sino-German Cooperation
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					local_flag = 1330110050_3
+					event = 2012002 #CHI  German Mission Recalled
+				}
+			}
+			local_flag = 1330110050_2
+		}
+		name = ACTION_NAME_GREAT
+		# Railways
+        command = { type = construct which = infrastructure where = 1351 value = 10 } #Zhejiang-Guizhou
+        command = { type = construct which = infrastructure where = 1345 value = 10 }
+        command = { type = construct which = infrastructure where = 1352 value = 10 }
+        command = { type = construct which = infrastructure where = 1355 value = 10 }
+        command = { type = construct which = infrastructure where = 1311 value = 10 } 
+        command = { type = construct which = infrastructure where = 1306 value = 10 } 
+        command = { type = construct which = infrastructure where = 1305 value = 10 } 
+        command = { type = construct which = infrastructure where = 1312 value = 10 }
+        command = { type = construct which = infrastructure where = 1317 value = 10 } #Guangzou-Hankou
+        command = { type = construct which = infrastructure where = 1318 value = 20 }
+        command = { type = construct which = infrastructure where = 1308 value = 20 }		
+        command = { type = construct which = infrastructure where = 1368 value = 10 }		
+        command = { type = construct which = infrastructure where = 1369 value = 10 }	
+		command = { type = construct which = infrastructure where = 1313 value = 20 } # Misc. Places (IC/Rare) # Hubei
+        command = { type = construct which = infrastructure where = 1307 value = 20 } # Hunan
+        command = { type = construct which = infrastructure where = 1297 value = 20 } # Sichuan
+        command = { type = construct which = infrastructure where = 1299 value = 20 }
+		command = { type = sleepevent which = 1330110050 } #CHI Sino-German Cooperation
+    }
+}

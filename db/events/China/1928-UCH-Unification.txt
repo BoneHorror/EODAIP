@@ -1,0 +1,3876 @@
+#-Unification of Warlords------------
+# 1330110033 UCH CHI CHC Warlord Problem
+# 1330110034 *** End of the Warlord Era
+# 1330110041 *** Helper Event - War Declared
+# 1330110042 UCH CHI CHC Helper Event - Warlord Submits
+#-Colonies---------------------------
+# 1330110035 UCH CHI CHC Chinese Concessions #Hong Kong, Macao, Qingdao, Port Arthur, Shanghai, Taiwan, anything in China Area
+# 1330110036 *** Chinese Concessions
+# 1330110037 *** Territory Seized
+#-Separatists------------------------
+# 1330110038 UCH Historic Claims #Tibet, Xinjiang, Hebei Autonomous, Mengjiang, Mongolia, ETR, MAN
+# 1330110039 *** Chinese Demand for Annexation
+#
+###########################
+# Unification of Warlords #
+###########################
+# 1330110033 Warlord Problem
+event = {
+	id = 1330110033
+	random = no
+	tag = { CHC UCH CHI }
+	persistent = yes
+
+	decision = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110033 }
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = UCH }
+				not = { exists = CHI }
+			}
+		}
+		not = { #1914 scenario start
+			headofstate = 1325100 #Yuan Shikai UCH
+		}
+		or = {
+			exists = CGX
+			exists = CYN
+			exists = CXB
+			exists = CSX
+			exists = U36
+			exists = U67
+			#exists = MEN #TODO: Guominjun
+		}
+	}
+
+	decision_trigger = {
+		atwar = no
+		not = { dissent = 30 }
+		army = 50
+	}
+
+	trigger = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110033 }
+		atwar = no
+		not = { dissent = 30 }
+		army = 50
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = UCH }
+				not = { exists = CHI }
+			}
+		}
+		not = { #1914 scenario start
+			headofstate = 1325100 #Yuan Shikai UCH
+		}
+		or = {
+			exists = CGX
+			exists = CYN
+			exists = CXB
+			exists = CSX
+			exists = U36 #Zhili
+			exists = U67 #Fengtian
+			
+		}
+	}
+
+	name = EVT_1330110033_NAME
+	desc = EVT_1330110033_DESC
+
+	picture = "ccip_cw"
+	style = 2
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 181
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		trigger = {
+			exists = CYN
+			or = {
+				ai = no
+				relation = { which = CYN value = 50 }
+				alliance = { country = CYN country = -1 }
+				access = { country = CYN } #Because this prevents DoW, and it's not possible to DoW directly and I really don't want to write a helper event.
+				access = { country = -1 country = CYN }
+				puppet = { country = CYN country = CHI }
+				puppet = { country = CYN country = UCH }
+				puppet = { country = CYN country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION1 #Negotiate with the Yunnan Clique
+		command = { type = event which = 1330110034 where = CYN when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = UCH } type = end_non_aggression which = CYN where = UCH }
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = CHC } type = end_non_aggression which = CYN where = CHC }
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = CHI } type = end_non_aggression which = CYN where = CHI }
+		command = { type = end_access which = CYN when = 0 }
+		command = { type = end_access which = CYN when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = CYN
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = CYN value = 50 } }
+					not = { alliance = { country = CYN country = -1 } }
+				}
+			}
+			not = { access = { country = CYN } }
+			not = { access = { country = -1 country = CYN } }
+			not = {
+				puppet = { country = CYN country = CHI }
+				puppet = { country = CYN country = UCH }
+				puppet = { country = CYN country = CHC }
+			}	
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION2 #Attack the Yunnan Clique
+		command = { trigger = { alliance = { country = CYN country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = UCH } type = end_non_aggression which = CYN where = UCH }
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = CHC } type = end_non_aggression which = CYN where = CHC }
+		command = { trigger = { non_aggression = { country = CYN country = -1 } country = CHI } type = end_non_aggression which = CYN where = CHI }
+		command = { trigger = { puppet = { country = CYN country = CHI } country = CHI } type = end_mastery which = CYN }
+		command = { trigger = { puppet = { country = CYN country = UCH } country = UCH } type = end_mastery which = CYN }
+		command = { trigger = { puppet = { country = CYN country = CHC } country = CHC } type = end_mastery which = CYN }
+		command = { type = war which = CYN }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			exists = CGX
+			or = {
+				ai = no
+				relation = { which = CGX value = 50 }
+				alliance = { country = CGX country = -1 }
+				access = { country = CGX }
+				access = { country = -1 country = CGX }
+				puppet = { country = CGX country = CHI }
+				puppet = { country = CGX country = UCH }
+				puppet = { country = CGX country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION3 #Negotiate with the Guangxi Clique
+		command = { type = event which = 1330110034 where = CGX when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = UCH } type = end_non_aggression which = CGX where = UCH }
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = CHC } type = end_non_aggression which = CGX where = CHC }
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = CHI } type = end_non_aggression which = CGX where = CHI }
+		command = { type = end_access which = CGX when = 0 }
+		command = { type = end_access which = CGX when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = CGX
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = CGX value = 50 } }
+					not = { alliance = { country = CGX country = -1 } }
+				}
+			}
+			not = { access = { country = CGX } }
+			not = { access = { country = -1 country = CGX } }
+			not = { 
+				or = { 
+					puppet = { country = CGX country = CHI }
+					puppet = { country = CGX country = UCH }
+					puppet = { country = CGX country = CHC }
+				}
+			}
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION4 #Attack the Guangxi Clique
+		command = { trigger = { alliance = { country = CGX country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = UCH } type = end_non_aggression which = CGX where = UCH }
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = CHC } type = end_non_aggression which = CGX where = CHC }
+		command = { trigger = { non_aggression = { country = CGX country = -1 } country = CHI } type = end_non_aggression which = CGX where = CHI }
+		command = { trigger = { puppet = { country = CGX country = CHI } country = CHI } type = end_mastery which = CGX }
+		command = { trigger = { puppet = { country = CGX country = UCH } country = UCH } type = end_mastery which = CGX }
+		command = { trigger = { puppet = { country = CGX country = CHC } country = CHC } type = end_mastery which = CGX }
+		command = { type = war which = CGX }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			exists = CSX
+			or = {
+				ai = no
+				relation = { which = CSX value = 50 }
+				alliance = { country = CSX country = -1 }
+				access = { country = CSX }
+				access = { country = -1 country = CSX }
+				puppet = { country = CSX country = CHI }
+				puppet = { country = CSX country = UCH }
+				puppet = { country = CSX country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION5 #Negotiate with the Shanxi Clique
+		command = { type = event which = 1330110034 where = CSX when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = UCH } type = end_non_aggression which = CSX where = UCH }
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = CHC } type = end_non_aggression which = CSX where = CHC }
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = CHI } type = end_non_aggression which = CSX where = CHI }
+		command = { type = end_access which = CSX when = 0 }
+		command = { type = end_access which = CSX when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = CSX
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = CSX value = 50 } }
+					not = { alliance = { country = CSX country = -1 } }
+				}
+			}
+			not = { access = { country = CSX } }
+			not = { access = { country = -1 country = CSX } }
+			not = {
+				or = {
+					puppet = { country = CSX country = CHI }
+					puppet = { country = CSX country = UCH }
+					puppet = { country = CSX country = CHC }
+				}
+			}
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION6 #Attack the Shanxi Clique
+		command = { trigger = { alliance = { country = CSX country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = UCH } type = end_non_aggression which = CSX where = UCH }
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = CHC } type = end_non_aggression which = CSX where = CHC }
+		command = { trigger = { non_aggression = { country = CSX country = -1 } country = CHI } type = end_non_aggression which = CSX where = CHI }
+		command = { trigger = { puppet = { country = CSX country = CHI } country = CHI } type = end_mastery which = CSX }
+		command = { trigger = { puppet = { country = CSX country = UCH } country = UCH } type = end_mastery which = CSX }
+		command = { trigger = { puppet = { country = CSX country = CHC } country = CHC } type = end_mastery which = CSX }
+		command = { type = war which = CSX }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			exists = CXB
+			or = {
+				ai = no
+				relation = { which = CXB value = 50 }
+				alliance = { country = CXB country = -1 }
+				access = { country = CXB }
+				access = { country = -1 country = CXB }
+				puppet = { country = CXB country = CHI }
+				puppet = { country = CXB country = UCH }
+				puppet = { country = CXB country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION7 #Negotiate with the Ma Clique
+		command = { type = event which = 1330110034 where = CXB when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = UCH } type = end_non_aggression which = CXB where = UCH }
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = CHC } type = end_non_aggression which = CXB where = CHC }
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = CHI } type = end_non_aggression which = CXB where = CHI }
+		command = { type = end_access which = CXB when = 0 }
+		command = { type = end_access which = CXB when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = CXB
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = CXB value = 50 } }
+					not = { alliance = { country = CXB country = -1 } }
+				}
+			}
+			not = { access = { country = CXB } }
+			not = { access = { country = -1 country = CXB } }
+			not = {
+				or = {
+					puppet = { country = CXB country = CHI }
+					puppet = { country = CXB country = UCH }
+					puppet = { country = CXB country = CHC }
+				}
+			}
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION8 #Attack the Ma Clique
+		command = { trigger = { alliance = { country = CXB country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = UCH } type = end_non_aggression which = CXB where = UCH }
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = CHC } type = end_non_aggression which = CXB where = CHC }
+		command = { trigger = { non_aggression = { country = CXB country = -1 } country = CHI } type = end_non_aggression which = CXB where = CHI }
+		command = { trigger = { puppet = { country = CXB country = CHI } country = CHI } type = end_mastery which = CXB }
+		command = { trigger = { puppet = { country = CXB country = UCH } country = UCH } type = end_mastery which = CXB }
+		command = { trigger = { puppet = { country = CXB country = CHC } country = CHC } type = end_mastery which = CXB }
+		command = { type = war which = CXB }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			exists = U36
+			or = {
+				ai = no
+				relation = { which = U36 value = 50 }
+				alliance = { country = U36 country = -1 }
+				access = { country = U36 }
+				access = { country = -1 country = U36 }
+				puppet = { country = U36 country = CHI }
+				puppet = { country = U36 country = UCH }
+				puppet = { country = U36 country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION9 #Negotiate with the Zhili Clique
+		command = { type = event which = 1330110034 where = U36 when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = UCH } type = end_non_aggression which = U36 where = UCH }
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = CHC } type = end_non_aggression which = U36 where = CHC }
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = CHI } type = end_non_aggression which = U36 where = CHI }
+		command = { type = end_access which = U36 when = 0 }
+		command = { type = end_access which = U36 when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = U36
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = U36 value = 50 } }
+					not = { alliance = { country = U36 country = -1 } }
+				}
+			}
+			not = { access = { country = U36 } }
+			not = { access = { country = -1 country = U36 } }
+			not = {
+				or = {
+					puppet = { country = U36 country = CHI }
+					puppet = { country = U36 country = UCH }
+					puppet = { country = U36 country = CHC }
+				}
+			}
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION10 #Attack the Zhili Clique
+		command = { trigger = { alliance = { country = U36 country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = UCH } type = end_non_aggression which = U36 where = UCH }
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = CHC } type = end_non_aggression which = U36 where = CHC }
+		command = { trigger = { non_aggression = { country = U36 country = -1 } country = CHI } type = end_non_aggression which = U36 where = CHI }
+		command = { trigger = { puppet = { country = U36 country = CHI } country = CHI } type = end_mastery which = U36 }
+		command = { trigger = { puppet = { country = U36 country = UCH } country = UCH } type = end_mastery which = U36 }
+		command = { trigger = { puppet = { country = U36 country = CHC } country = CHC } type = end_mastery which = U36 }
+		command = { type = war which = U36 }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			exists = U67
+			or = {
+				ai = no
+				relation = { which = U67 value = 50 }
+				alliance = { country = U67 country = -1 }
+				access = { country = U67 }
+				access = { country = -1 country = U67 }
+				puppet = { country = U67 country = CHI }
+				puppet = { country = U67 country = UCH }
+				puppet = { country = U67 country = CHC }
+			}
+		}
+		ai_chance = 10
+		name = EVT_1330110033_ACTION11 #Negotiate with the Fengtian Clique
+		command = { type = event which = 1330110034 where = U67 when = 15 } #End of the Warlord Era
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = UCH } type = end_non_aggression which = U67 where = UCH }
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = CHC } type = end_non_aggression which = U67 where = CHC }
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = CHI } type = end_non_aggression which = U67 where = CHI }
+		command = { type = end_access which = U67 when = 0 }
+		command = { type = end_access which = U67 when = 1 }
+		command = { type = setflag which = 1330110033 }
+	}
+
+	action = {
+		trigger = {
+			exists = U67
+			or = { 
+				ai = no
+				and = {
+					not = { relation = { which = U67 value = 50 } }
+					not = { alliance = { country = U67 country = -1 } }
+				}
+			}
+			not = { access = { country = U67 } }
+			not = { access = { country = -1 country = U67 } }
+			not = {
+				puppet = { country = U67 country = CHI }
+				puppet = { country = U67 country = UCH }
+				puppet = { country = U67 country = CHC }
+			}
+		}
+		ai_chance = 5
+		name = EVT_1330110033_ACTION12 #Attack the Fengtian Clique
+		command = { trigger = { alliance = { country = U67 country = -1 } } type = leave_alliance when = 1 }
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = UCH } type = end_non_aggression which = U67 where = UCH }
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = CHC } type = end_non_aggression which = U67 where = CHC }
+		command = { trigger = { non_aggression = { country = U67 country = -1 } country = CHI } type = end_non_aggression which = U67 where = CHI }
+		command = { trigger = { puppet = { country = U67 country = CHI } country = CHI } type = end_mastery which = U67 }
+		command = { trigger = { puppet = { country = U67 country = UCH } country = UCH } type = end_mastery which = U67 }
+		command = { trigger = { puppet = { country = U67 country = CHC } country = CHC } type = end_mastery which = U67 }
+		command = { type = war which = U67 }
+		command = { type = dissent value = 5 }
+	}
+
+
+}
+
+# 1330110034 End of the Warlord Era
+event = {
+	id = 1330110034
+	random = no
+	tag = { CGX CSX CYN CXB U36 U67 }
+	persistent = yes
+
+	#Triggered
+
+	name = EVT_1330110034_NAME
+	desc = EVT_1330110034_DESC
+
+	picture = "ccip_cw"
+	style = 2
+
+	action = {
+		trigger = { #Prevent this event from firing if the condition is no longer true.
+			or = {
+				and = {
+					exists = CHI
+					not = { exists = UCH }
+					not = { exists = CHC }
+				}
+				and = {
+					exists = UCH
+					not = { exists = CHI }
+					not = { exists = CHC }
+				}
+				and = {
+					exists = CHC
+					not = { exists = UCH }
+					not = { exists = CHI }
+				}
+			}
+		}
+		ai_chance = 20
+		name = ACTION_NAME_ACCEPT #Accept
+		command = { type = clrflag which = 1330110033 } 
+		command = { trigger = { ai = no exists = CHI } type = secederegion which = CHI value = "China" when = 1 }
+		command = { trigger = { ai = no exists = CHC } type = secederegion which = CHC value = "China" when = 1 }
+		command = { trigger = { ai = no exists = UCH } type = secederegion which = UCH value = "China" when = 1 }
+		command = { trigger = { ai = yes country = CGX } type = setflag which = 1330110034_CGX }
+		command = { trigger = { ai = yes country = CYN } type = setflag which = 1330110034_CYN }
+		command = { trigger = { ai = yes country = CSX } type = setflag which = 1330110034_CSX }
+		command = { trigger = { ai = yes country = CXB } type = setflag which = 1330110034_CXB }
+		command = { trigger = { ai = yes country = U36 } type = setflag which = 1330110034_U36 }
+		command = { trigger = { ai = yes country = U67 } type = setflag which = 1330110034_U67 }
+		command = { trigger = { ai = yes exists = CHI } type = event which = 1330110042 where = CHI when = 0 } #Warlord Submits
+		command = { trigger = { ai = yes exists = CHC } type = event which = 1330110042 where = CHC when = 0 } #Warlord Submits
+		command = { trigger = { ai = yes exists = UCH } type = event which = 1330110042 where = UCH when = 0 } #Warlord Submits
+	}
+
+	action = {
+		trigger = {
+			or = {
+				and = {
+					exists = CHI
+					not = { exists = UCH }
+					not = { exists = CHC }
+				}
+				and = {
+					exists = UCH
+					not = { exists = CHI }
+					not = { exists = CHC }
+				}
+				and = {
+					exists = CHC
+					not = { exists = UCH }
+					not = { exists = CHI }
+				}
+			}
+			or = {
+				ai = no
+				not = { #Reduce chance with good relations.
+					or = {
+						and = {
+							exists = CHI
+							relation = { which = CHI value = 50 }
+							random = 50
+						}
+						and = {
+							exists = CHI
+							relation = { which = CHI value = 100 }
+							random = 50
+						}
+						and = {
+							exists = CHI
+							relation = { which = CHI value = 150 }
+							random = 50
+						}
+						and = {
+							exists = CHC
+							relation = { which = CHC value = 50 }
+							random = 50
+						}
+						and = {
+							exists = CHC
+							relation = { which = CHC value = 100 }
+							random = 50
+						}
+						and = {
+							exists = CHC
+							relation = { which = CHC value = 150 }
+							random = 50
+						}
+						and = {
+							exists = UCH
+							relation = { which = UCH value = 50 }
+							random = 50
+						}
+						and = {
+							exists = UCH
+							relation = { which = UCH value = 100 }
+							random = 50
+						}
+						and = {
+							exists = UCH
+							relation = { which = UCH value = 150 }
+							random = 50
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 45
+		name = EVT_1330110034_ACTION2 #Resist to the end!
+		command = { type = dissent value = 10 }
+		command = { trigger = { or = { ai = CHI ai = UCH ai = CHC } } type = dissent value = 25 }
+		command = { type = leave_alliance when = 1 }
+		command = { type = end_access which = CHI when = 0 }
+		command = { type = end_access which = CHI when = 1 }
+		command = { type = end_access which = CHC when = 0 }
+		command = { type = end_access which = CHC when = 1 }
+		command = { type = end_access which = UCH when = 0 }
+		command = { type = end_access which = UCH when = 1 }
+		command = { trigger = { puppet = { country = CYN country = CHI } country = CYN exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = CYN country = UCH } country = CYN exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = CYN country = CHC } country = CYN exists = CHC } type = end_puppet }
+		command = { trigger = { puppet = { country = CGX country = CHI } country = CGX exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = CGX country = UCH } country = CGX exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = CGX country = CHC } country = CGX exists = CHC } type = end_puppet }
+		command = { trigger = { puppet = { country = CSX country = CHI } country = CSX exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = CSX country = UCH } country = CSX exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = CSX country = CHC } country = CSX exists = CHC } type = end_puppet }
+		command = { trigger = { puppet = { country = CXB country = CHI } country = CXB exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = CXB country = UCH } country = CXB exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = CXB country = CHC } country = CXB exists = CHC } type = end_puppet }
+		command = { trigger = { puppet = { country = U36 country = CHI } country = U36 exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = U36 country = UCH } country = U36 exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = U36 country = CHC } country = U36 exists = CHC } type = end_puppet }
+		command = { trigger = { puppet = { country = U67 country = CHI } country = U67 exists = CHI } type = end_puppet }
+		command = { trigger = { puppet = { country = U67 country = UCH } country = U67 exists = UCH } type = end_puppet }
+		command = { trigger = { puppet = { country = U67 country = CHC } country = U67 exists = CHC } type = end_puppet }
+		command = { trigger = { exists = CHI } type = war which = CHI }
+		command = { trigger = { exists = UCH } type = war which = UCH }
+		command = { trigger = { exists = CHC } type = war which = CHC }
+		command = { trigger = { not = { war = { country = -1 country = CHI } } exists = CHI } type = event which = 1330110041 where = -1 when = 1 } #Helper Event - War Declared
+		command = { trigger = { not = { war = { country = -1 country = UCH } } exists = UCH } type = event which = 1330110041 where = -1 when = 1 } #Helper Event - War Declared
+		command = { trigger = { not = { war = { country = -1 country = CHC } } exists = CHC } type = event which = 1330110041 where = -1 when = 1 } #Helper Event - War Declared
+		command = { type = clrflag which = 1330110033 }
+		
+	}
+}
+
+# 1330110041 Helper Event
+event = {
+	id = 1330110041
+	persistent = yes
+	tag = { CSX CGX CYN CXB U36 U67 ENG U08 GER DDR DFR POR JAP USA SOV RUS FRA CAN U01 U11 U12 U15 SPA SPR U24 U25 U35 MAN TIB SIK UPE MON U74 MEN}
+
+	#Triggered
+
+	name = EVT_1330110041_NAME
+	desc = EVT_1330110041_DESC
+
+
+	style = 2
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { trigger = { exists = CHI } type = war which = CHI }
+		command = { trigger = { exists = UCH } type = war which = UCH }
+		command = { trigger = { exists = CHC } type = war which = CHC }
+		command = { trigger = { country = JAP exists = U74 puppet = { country = U74 country = JAP } } type = inherit when = 3 which = U74 value = 1 }
+	}
+}
+
+# 1330110042 Helper Event - Warlord Submits
+event = {
+	id = 1330110042
+	persistent = yes
+
+	tag = { CHI CHC UCH }
+
+	#Triggered
+
+	name = EVT_1330110042_NAME
+	desc = EVT_1330110042_DESC
+
+	style = 2
+    picture = "ccip_cw"
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = -5 }
+		command = { trigger = { flag = 1330110034_CGX } type = inherit which = CGX value = 1 }
+		command = { trigger = { flag = 1330110034_CYN } type = inherit which = CYN value = 1 }
+		command = { trigger = { flag = 1330110034_CSX } type = inherit which = CSX value = 1 }
+		command = { trigger = { flag = 1330110034_CXB } type = inherit which = CXB value = 1 }
+		command = { trigger = { flag = 1330110034_U36 } type = inherit which = U36 value = 1 }
+		command = { trigger = { flag = 1330110034_U67 } type = inherit which = U67 value = 1 }
+		command = { type = clrflag which = 1330110034_CGX }
+		command = { type = clrflag which = 1330110034_CYN }
+		command = { type = clrflag which = 1330110034_CSX }
+		command = { type = clrflag which = 1330110034_CXB }
+		command = { type = clrflag which = 1330110034_U36 }
+		command = { type = clrflag which = 1330110034_U67 }
+	}
+}
+############
+# Colonies #
+############
+# The following events are generated via python script. Modify only if you know what you are doing.
+# Note manual changes on SVN will be reverted upon re-generation, please modify the script instead.
+
+# 1330110035 Chinese Concessions
+event = {
+	id = 1330110035
+	random = no
+	persistent = yes
+	tag = { CHI CHC UCH }
+
+	decision = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110035 }
+		not = { headofstate = 1325100 } #Yuan Shikai UCH
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = CHI }
+				not = { exists = UCH }
+			}
+		}
+		not = {
+			or = {
+				exists = CGX
+				exists = CSX
+				exists = CYN
+				exists = CXB
+				exists = SIK
+				exists = TIB
+				exists = U74
+				exists = MEN
+				exists = MAN
+				exists = UPE
+				exists = U36
+				exists = U67
+			}
+		}
+		or = {
+			region = { country = ENG region = "China" data = 1 value = 0 }
+			region = { country = ENG region = "China" data = 2 value = 0 }
+			region = { country = U08 region = "China" data = 1 value = 0 } #German Empire
+			region = { country = U08 region = "China" data = 2 value = 0 }
+			region = { country = GER region = "China" data = 1 value = 0 }
+			region = { country = GER region = "China" data = 2 value = 0 }
+			region = { country = DDR region = "China" data = 1 value = 0 }
+			region = { country = DDR region = "China" data = 2 value = 0 }
+			region = { country = DFR region = "China" data = 1 value = 0 }
+			region = { country = DFR region = "China" data = 2 value = 0 }
+			region = { country = POR region = "China" data = 1 value = 0 }
+			region = { country = POR region = "China" data = 2 value = 0 }
+			region = { country = JAP region = "China" data = 1 value = 0 }
+			region = { country = JAP region = "China" data = 2 value = 0 }
+			region = { country = USA region = "China" data = 1 value = 0 }
+			region = { country = USA region = "China" data = 2 value = 0 }
+			region = { country = SOV region = "China" data = 1 value = 0 }
+			region = { country = SOV region = "China" data = 2 value = 0 }
+			region = { country = RUS region = "China" data = 1 value = 0 }
+			region = { country = RUS region = "China" data = 2 value = 0 }
+			region = { country = FRA region = "China" data = 1 value = 0 }
+			region = { country = FRA region = "China" data = 2 value = 0 }
+			region = { country = CAN region = "China" data = 1 value = 0 }
+			region = { country = CAN region = "China" data = 2 value = 0 }
+			region = { country = U01 region = "China" data = 1 value = 0 } #Free France
+			region = { country = U01 region = "China" data = 2 value = 0 }
+			region = { country = U11 region = "China" data = 1 value = 0 } #People's Republic of France
+			region = { country = U11 region = "China" data = 2 value = 0 }
+			region = { country = U12 region = "China" data = 1 value = 0 } #English Republic
+			region = { country = U12 region = "China" data = 2 value = 0 }
+			region = { country = U15 region = "China" data = 1 value = 0 } #Socialist Republic of Portugal
+			region = { country = U15 region = "China" data = 2 value = 0 }
+			region = { country = SPA region = "China" data = 1 value = 0 }
+			region = { country = SPA region = "China" data = 2 value = 0 }
+			region = { country = SPR region = "China" data = 1 value = 0 }
+			region = { country = SPR region = "China" data = 2 value = 0 }
+			region = { country = U24 region = "China" data = 1 value = 0 } #Allied Occupation Zone
+			region = { country = U24 region = "China" data = 2 value = 0 }
+			region = { country = U25 region = "China" data = 1 value = 0 } #Soviet Occupation Zone
+			region = { country = U25 region = "China" data = 2 value = 0 }
+			region = { country = U35 region = "China" data = 1 value = 0 } #Democratic Spanish Union
+			region = { country = U35 region = "China" data = 2 value = 0 }
+		}
+	}
+
+	decision_trigger = {
+		atwar = no
+		not = { dissent = 30 }
+		army = 100
+	}
+
+	trigger = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110035 }
+		not = { headofstate = 1325100 } #Yuan Shikai UCH
+		atwar = no
+		not = { dissent = 30 }
+		army = 100
+		ic = 300 #needs industrial base against european powers
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = CHI }
+				not = { exists = UCH }
+			}
+		}
+		not = {
+			or = {
+				exists = CGX
+				exists = CSX
+				exists = CYN
+				exists = CXB
+				exists = SIK
+				exists = TIB
+				exists = U74
+				exists = MEN
+				exists = MAN
+				exists = UPE
+				exists = U36
+				exists = U67
+			}
+		}
+		or = {
+			region = { country = ENG region = "China" data = 1 value = 0 }
+			region = { country = ENG region = "China" data = 2 value = 0 }
+			region = { country = U08 region = "China" data = 1 value = 0 }
+			region = { country = U08 region = "China" data = 2 value = 0 }
+			region = { country = GER region = "China" data = 1 value = 0 }
+			region = { country = GER region = "China" data = 2 value = 0 }
+			region = { country = DDR region = "China" data = 1 value = 0 }
+			region = { country = DDR region = "China" data = 2 value = 0 }
+			region = { country = DFR region = "China" data = 1 value = 0 }
+			region = { country = DFR region = "China" data = 2 value = 0 }
+			region = { country = POR region = "China" data = 1 value = 0 }
+			region = { country = POR region = "China" data = 2 value = 0 }
+			region = { country = JAP region = "China" data = 1 value = 0 }
+			region = { country = JAP region = "China" data = 2 value = 0 }
+			region = { country = USA region = "China" data = 1 value = 0 }
+			region = { country = USA region = "China" data = 2 value = 0 }
+			region = { country = SOV region = "China" data = 1 value = 0 }
+			region = { country = SOV region = "China" data = 2 value = 0 }
+			region = { country = RUS region = "China" data = 1 value = 0 }
+			region = { country = RUS region = "China" data = 2 value = 0 }
+			region = { country = FRA region = "China" data = 1 value = 0 }
+			region = { country = FRA region = "China" data = 2 value = 0 }
+			region = { country = CAN region = "China" data = 1 value = 0 }
+			region = { country = CAN region = "China" data = 2 value = 0 }
+			region = { country = U01 region = "China" data = 1 value = 0 }
+			region = { country = U01 region = "China" data = 2 value = 0 }
+			region = { country = U11 region = "China" data = 1 value = 0 }
+			region = { country = U11 region = "China" data = 2 value = 0 }
+			region = { country = U12 region = "China" data = 1 value = 0 }
+			region = { country = U12 region = "China" data = 2 value = 0 }
+			region = { country = U15 region = "China" data = 1 value = 0 }
+			region = { country = U15 region = "China" data = 2 value = 0 }
+			region = { country = SPA region = "China" data = 1 value = 0 }
+			region = { country = SPA region = "China" data = 2 value = 0 }
+			region = { country = SPR region = "China" data = 1 value = 0 }
+			region = { country = SPR region = "China" data = 2 value = 0 }
+			region = { country = U24 region = "China" data = 1 value = 0 }
+			region = { country = U24 region = "China" data = 2 value = 0 }
+			region = { country = U25 region = "China" data = 1 value = 0 }
+			region = { country = U25 region = "China" data = 2 value = 0 }
+			region = { country = U35 region = "China" data = 1 value = 0 }
+			region = { country = U35 region = "China" data = 2 value = 0 }
+		}
+	}
+
+
+	name = EVT_1330110035_NAME #Chinese Concessions
+	desc = EVT_1330110035_DESC
+	decision_desc = EVT_1330110035_DECISION_DESC #Choose to negotiate or seize territory conceded to other countries. If we negotiate, there is a chance that the other country will refuse, forcing us to either seize or wait until the lease expires (set to year 1997). If we seize territory, there is a chance that they will declare war on us. Responses to our actions depend on our relations with the country in question.
+
+	style = 2
+    picture = "diplomatic_campaign"
+
+	date = { day = 0 month = 0 year = 1900 }
+	offset = 361
+	deathdate = { day = 0 month = 0 year = 1999 }
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = ENG region = "China" data = 1 value = 0 }
+				region = { country = ENG region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_ENG_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = ENG value = 200 }
+				alliance = { country = ENG }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = ENG when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = ENG region = "China" data = 1 value = 0 }
+				region = { country = ENG region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = ENG value = 200 } }
+					NOT = { alliance = { country = ENG } }
+					ic = 300
+					OR = {
+						not = { ic = { country = ENG value = 100 } }
+						and = {
+							not = { ic = { country = ENG value = 200 } }
+							atwar = ENG
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = ENG when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U08 region = "China" data = 1 value = 0 }
+				region = { country = U08 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U08_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U08 value = 200 }
+				alliance = { country = U08 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U08 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U08 region = "China" data = 1 value = 0 }
+				region = { country = U08 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U08 value = 200 } }
+					NOT = { alliance = { country = U08 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U08 value = 100 } }
+						and = {
+							not = { ic = { country = U08 value = 200 } }
+							atwar = U08
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U08 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = GER region = "China" data = 1 value = 0 }
+				region = { country = GER region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_GER_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = GER value = 200 }
+				alliance = { country = GER }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = GER when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = GER region = "China" data = 1 value = 0 }
+				region = { country = GER region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = GER value = 200 } }
+					NOT = { alliance = { country = GER } }
+					ic = 300
+					OR = {
+						not = { ic = { country = GER value = 100 } }
+						and = {
+							not = { ic = { country = GER value = 200 } }
+							atwar = GER
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = GER when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = DDR region = "China" data = 1 value = 0 }
+				region = { country = DDR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_DDR_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = DDR value = 200 }
+				alliance = { country = DDR }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = DDR when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = DDR region = "China" data = 1 value = 0 }
+				region = { country = DDR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = DDR value = 200 } }
+					NOT = { alliance = { country = DDR } }
+					ic = 300
+					OR = {
+						not = { ic = { country = DDR value = 100 } }
+						and = {
+							not = { ic = { country = DDR value = 200 } }
+							atwar = DDR
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = DDR when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = DFR region = "China" data = 1 value = 0 }
+				region = { country = DFR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_DFR_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = DFR value = 200 }
+				alliance = { country = DFR }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = DFR when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = DFR region = "China" data = 1 value = 0 }
+				region = { country = DFR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = DFR value = 200 } }
+					NOT = { alliance = { country = DFR } }
+					ic = 300
+					OR = {
+						not = { ic = { country = DFR value = 100 } }
+						and = {
+							not = { ic = { country = DFR value = 200 } }
+							atwar = DFR
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = DFR when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = POR region = "China" data = 1 value = 0 }
+				region = { country = POR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_POR_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = POR value = 200 }
+				alliance = { country = POR }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = POR when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = POR region = "China" data = 1 value = 0 }
+				region = { country = POR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = POR value = 200 } }
+					NOT = { alliance = { country = POR } }
+					ic = 300
+					OR = {
+						not = { ic = { country = POR value = 100 } }
+						and = {
+							not = { ic = { country = POR value = 200 } }
+							atwar = POR
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = POR when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = JAP region = "China" data = 1 value = 0 }
+				region = { country = JAP region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_JAP_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = JAP value = 200 }
+				alliance = { country = JAP }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = JAP when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = JAP region = "China" data = 1 value = 0 }
+				region = { country = JAP region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = JAP value = 200 } }
+					NOT = { alliance = { country = JAP } }
+					ic = 300
+					OR = {
+						not = { ic = { country = JAP value = 100 } }
+						and = {
+							not = { ic = { country = JAP value = 200 } }
+							atwar = JAP
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = JAP when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = USA region = "China" data = 1 value = 0 }
+				region = { country = USA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_USA_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = USA value = 200 }
+				alliance = { country = USA }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = USA when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = USA region = "China" data = 1 value = 0 }
+				region = { country = USA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = USA value = 200 } }
+					NOT = { alliance = { country = USA } }
+					ic = 300
+					OR = {
+						not = { ic = { country = USA value = 100 } }
+						and = {
+							not = { ic = { country = USA value = 200 } }
+							atwar = USA
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = USA when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SOV region = "China" data = 1 value = 0 }
+				region = { country = SOV region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_SOV_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = SOV value = 200 }
+				alliance = { country = SOV }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = SOV when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SOV region = "China" data = 1 value = 0 }
+				region = { country = SOV region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = SOV value = 200 } }
+					NOT = { alliance = { country = SOV } }
+					ic = 300
+					OR = {
+						not = { ic = { country = SOV value = 100 } }
+						and = {
+							not = { ic = { country = SOV value = 200 } }
+							atwar = SOV
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = SOV when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = RUS region = "China" data = 1 value = 0 }
+				region = { country = RUS region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_RUS_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = RUS value = 200 }
+				alliance = { country = RUS }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = RUS when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = RUS region = "China" data = 1 value = 0 }
+				region = { country = RUS region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = RUS value = 200 } }
+					NOT = { alliance = { country = RUS } }
+					ic = 300
+					OR = {
+						not = { ic = { country = RUS value = 100 } }
+						and = {
+							not = { ic = { country = RUS value = 200 } }
+							atwar = RUS
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = RUS when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = FRA region = "China" data = 1 value = 0 }
+				region = { country = FRA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_FRA_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = FRA value = 200 }
+				alliance = { country = FRA }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = FRA when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = FRA region = "China" data = 1 value = 0 }
+				region = { country = FRA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = FRA value = 200 } }
+					NOT = { alliance = { country = FRA } }
+					ic = 300
+					OR = {
+						not = { ic = { country = FRA value = 100 } }
+						and = {
+							not = { ic = { country = FRA value = 200 } }
+							atwar = FRA
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = FRA when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = CAN region = "China" data = 1 value = 0 }
+				region = { country = CAN region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_CAN_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = CAN value = 200 }
+				alliance = { country = CAN }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = CAN when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = CAN region = "China" data = 1 value = 0 }
+				region = { country = CAN region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = CAN value = 200 } }
+					NOT = { alliance = { country = CAN } }
+					ic = 300
+					OR = {
+						not = { ic = { country = CAN value = 100 } }
+						and = {
+							not = { ic = { country = CAN value = 200 } }
+							atwar = CAN
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = CAN when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U01 region = "China" data = 1 value = 0 }
+				region = { country = U01 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U01_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U01 value = 200 }
+				alliance = { country = U01 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U01 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U01 region = "China" data = 1 value = 0 }
+				region = { country = U01 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U01 value = 200 } }
+					NOT = { alliance = { country = U01 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U01 value = 100 } }
+						and = {
+							not = { ic = { country = U01 value = 200 } }
+							atwar = U01
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U01 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U11 region = "China" data = 1 value = 0 }
+				region = { country = U11 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U11_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U11 value = 200 }
+				alliance = { country = U11 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U11 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U11 region = "China" data = 1 value = 0 }
+				region = { country = U11 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U11 value = 200 } }
+					NOT = { alliance = { country = U11 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U11 value = 100 } }
+						and = {
+							not = { ic = { country = U11 value = 200 } }
+							atwar = U11
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U11 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U12 region = "China" data = 1 value = 0 }
+				region = { country = U12 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U12_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U12 value = 200 }
+				alliance = { country = U12 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U12 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U12 region = "China" data = 1 value = 0 }
+				region = { country = U12 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U12 value = 200 } }
+					NOT = { alliance = { country = U12 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U12 value = 100 } }
+						and = {
+							not = { ic = { country = U12 value = 200 } }
+							atwar = U12
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U12 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U15 region = "China" data = 1 value = 0 }
+				region = { country = U15 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U15_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U15 value = 200 }
+				alliance = { country = U15 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U15 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U15 region = "China" data = 1 value = 0 }
+				region = { country = U15 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U15 value = 200 } }
+					NOT = { alliance = { country = U15 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U15 value = 100 } }
+						and = {
+							not = { ic = { country = U15 value = 200 } }
+							atwar = U15
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U15 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SPA region = "China" data = 1 value = 0 }
+				region = { country = SPA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_SPA_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = SPA value = 200 }
+				alliance = { country = SPA }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = SPA when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SPA region = "China" data = 1 value = 0 }
+				region = { country = SPA region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = SPA value = 200 } }
+					NOT = { alliance = { country = SPA } }
+					ic = 300
+					OR = {
+						not = { ic = { country = SPA value = 100 } }
+						and = {
+							not = { ic = { country = SPA value = 200 } }
+							atwar = SPA
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = SPA when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SPR region = "China" data = 1 value = 0 }
+				region = { country = SPR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_SPR_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = SPR value = 200 }
+				alliance = { country = SPR }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = SPR when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = SPR region = "China" data = 1 value = 0 }
+				region = { country = SPR region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = SPR value = 200 } }
+					NOT = { alliance = { country = SPR } }
+					ic = 300
+					OR = {
+						not = { ic = { country = SPR value = 100 } }
+						and = {
+							not = { ic = { country = SPR value = 200 } }
+							atwar = SPR
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = SPR when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U24 region = "China" data = 1 value = 0 }
+				region = { country = U24 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U24_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U24 value = 200 }
+				alliance = { country = U24 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U24 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U24 region = "China" data = 1 value = 0 }
+				region = { country = U24 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U24 value = 200 } }
+					NOT = { alliance = { country = U24 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U24 value = 100 } }
+						and = {
+							not = { ic = { country = U24 value = 200 } }
+							atwar = U24
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U24 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U25 region = "China" data = 1 value = 0 }
+				region = { country = U25 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U25_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U25 value = 200 }
+				alliance = { country = U25 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U25 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U25 region = "China" data = 1 value = 0 }
+				region = { country = U25 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U25 value = 200 } }
+					NOT = { alliance = { country = U25 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U25 value = 100 } }
+						and = {
+							not = { ic = { country = U25 value = 200 } }
+							atwar = U25
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U25 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U35 region = "China" data = 1 value = 0 }
+				region = { country = U35 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				not = { flag = 1330110035_U35_refused }
+				year = 1997
+			}
+			or = {
+				ai = no
+				relation = { which = U35 value = 200 }
+				alliance = { country = U35 }
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110035_ACTION1 #Ask for our territory back
+		command = { type = event where = U35 when = 14 which = 1330110036 } #Chinese Concessions
+		command = { type = setflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				region = { country = U35 region = "China" data = 1 value = 0 }
+				region = { country = U35 region = "China" data = 2 value = 0 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U35 value = 200 } }
+					NOT = { alliance = { country = U35 } }
+					ic = 300
+					OR = {
+						not = { ic = { country = U35 value = 100 } }
+						and = {
+							not = { ic = { country = U35 value = 200 } }
+							atwar = U35
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110035_ACTION2 #Seize our territory back
+		command = { type = event where = U35 when = 7 which = 1330110037 } #Territory Seized!
+		command = { type = belligerence value = 2 }
+		command = { type = setflag which = 1330110035 }
+	}
+
+}
+# 1330110036 Chinese Concessions
+event = {
+	id = 1330110036
+	random = no
+	persistent = yes
+	tag = { ENG U08 GER DDR DFR POR JAP USA SOV RUS FRA CAN U01 U11 U12 U15 SPA SPR U24 U25 U35 }
+
+	#Triggered
+
+	name = EVT_1330110035_NAME #Chinese Concessions
+	desc = EVT_1330110036_DESC
+
+	style = 2
+    picture = "diplomatic_campaign"
+
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			or = {
+				ai = no
+				alliance = { country = CHI }
+				and = {
+					exists = CHI
+					relation = { which = CHI value = 200 }
+				}
+				and = {
+					exists = CHI
+					ic = { country = CHI value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = CHC }
+				and = {
+					exists = CHC
+					relation = { which = CHC value = 200 }
+				}
+				and = {
+					exists = CHC
+					ic = { country = CHC value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = UCH }
+				and = {
+					exists = UCH
+					relation = { which = CHC value = 200 }
+				}
+				and = {
+					exists = UCH
+					ic = { country = UCH value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				year = 1997
+			}
+		}
+		ai_chance = 20
+		name = ACTION_NAME_ACCEPT
+		command = { trigger = { exists = CHI } type = relation which = CHI value = 50 }
+		command = { trigger = { exists = CHI } type = secederegion when = 1 which = CHI value = "China" }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = 50 }
+		command = { trigger = { exists = CHC } type = secederegion when = 1 which = CHC value = "China" }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = 50 }
+		command = { trigger = { exists = UCH } type = secederegion when = 1 which = UCH value = "China" }
+		command = { type = belligerence value = -2 }
+		command = { trigger = { country = ENG } type = clrflag which = 1330110035_ENG_refused }
+		command = { trigger = { country = ENG exists = CHI } type = trade money = 4 where = CHI which = ENG value = 1 }
+		command = { trigger = { country = ENG exists = CHC } type = trade money = 4 where = CHC which = ENG value = 1 }
+		command = { trigger = { country = ENG exists = UCH } type = trade money = 4 where = UCH which = ENG value = 1 }
+		command = { trigger = { country = U08 } type = clrflag which = 1330110035_U08_refused }
+		command = { trigger = { country = U08 exists = CHI } type = trade money = 4 where = CHI which = U08 value = 1 }
+		command = { trigger = { country = U08 exists = CHC } type = trade money = 4 where = CHC which = U08 value = 1 }
+		command = { trigger = { country = U08 exists = UCH } type = trade money = 4 where = UCH which = U08 value = 1 }
+		command = { trigger = { country = GER } type = clrflag which = 1330110035_GER_refused }
+		command = { trigger = { country = GER exists = CHI } type = trade money = 4 where = CHI which = GER value = 1 }
+		command = { trigger = { country = GER exists = CHC } type = trade money = 4 where = CHC which = GER value = 1 }
+		command = { trigger = { country = GER exists = UCH } type = trade money = 4 where = UCH which = GER value = 1 }
+		command = { trigger = { country = DDR } type = clrflag which = 1330110035_DDR_refused }
+		command = { trigger = { country = DDR exists = CHI } type = trade money = 4 where = CHI which = DDR value = 1 }
+		command = { trigger = { country = DDR exists = CHC } type = trade money = 4 where = CHC which = DDR value = 1 }
+		command = { trigger = { country = DDR exists = UCH } type = trade money = 4 where = UCH which = DDR value = 1 }
+		command = { trigger = { country = DFR } type = clrflag which = 1330110035_DFR_refused }
+		command = { trigger = { country = DFR exists = CHI } type = trade money = 4 where = CHI which = DFR value = 1 }
+		command = { trigger = { country = DFR exists = CHC } type = trade money = 4 where = CHC which = DFR value = 1 }
+		command = { trigger = { country = DFR exists = UCH } type = trade money = 4 where = UCH which = DFR value = 1 }
+		command = { trigger = { country = POR } type = clrflag which = 1330110035_POR_refused }
+		command = { trigger = { country = POR exists = CHI } type = trade money = 4 where = CHI which = POR value = 1 }
+		command = { trigger = { country = POR exists = CHC } type = trade money = 4 where = CHC which = POR value = 1 }
+		command = { trigger = { country = POR exists = UCH } type = trade money = 4 where = UCH which = POR value = 1 }
+		command = { trigger = { country = JAP } type = clrflag which = 1330110035_JAP_refused }
+		command = { trigger = { country = JAP exists = CHI } type = trade money = 4 where = CHI which = JAP value = 1 }
+		command = { trigger = { country = JAP exists = CHC } type = trade money = 4 where = CHC which = JAP value = 1 }
+		command = { trigger = { country = JAP exists = UCH } type = trade money = 4 where = UCH which = JAP value = 1 }
+		command = { trigger = { country = USA } type = clrflag which = 1330110035_USA_refused }
+		command = { trigger = { country = USA exists = CHI } type = trade money = 4 where = CHI which = USA value = 1 }
+		command = { trigger = { country = USA exists = CHC } type = trade money = 4 where = CHC which = USA value = 1 }
+		command = { trigger = { country = USA exists = UCH } type = trade money = 4 where = UCH which = USA value = 1 }
+		command = { trigger = { country = SOV } type = clrflag which = 1330110035_SOV_refused }
+		command = { trigger = { country = SOV exists = CHI } type = trade money = 4 where = CHI which = SOV value = 1 }
+		command = { trigger = { country = SOV exists = CHC } type = trade money = 4 where = CHC which = SOV value = 1 }
+		command = { trigger = { country = SOV exists = UCH } type = trade money = 4 where = UCH which = SOV value = 1 }
+		command = { trigger = { country = RUS } type = clrflag which = 1330110035_RUS_refused }
+		command = { trigger = { country = RUS exists = CHI } type = trade money = 4 where = CHI which = RUS value = 1 }
+		command = { trigger = { country = RUS exists = CHC } type = trade money = 4 where = CHC which = RUS value = 1 }
+		command = { trigger = { country = RUS exists = UCH } type = trade money = 4 where = UCH which = RUS value = 1 }
+		command = { trigger = { country = FRA } type = clrflag which = 1330110035_FRA_refused }
+		command = { trigger = { country = FRA exists = CHI } type = trade money = 4 where = CHI which = FRA value = 1 }
+		command = { trigger = { country = FRA exists = CHC } type = trade money = 4 where = CHC which = FRA value = 1 }
+		command = { trigger = { country = FRA exists = UCH } type = trade money = 4 where = UCH which = FRA value = 1 }
+		command = { trigger = { country = CAN } type = clrflag which = 1330110035_CAN_refused }
+		command = { trigger = { country = CAN exists = CHI } type = trade money = 4 where = CHI which = CAN value = 1 }
+		command = { trigger = { country = CAN exists = CHC } type = trade money = 4 where = CHC which = CAN value = 1 }
+		command = { trigger = { country = CAN exists = UCH } type = trade money = 4 where = UCH which = CAN value = 1 }
+		command = { trigger = { country = U01 } type = clrflag which = 1330110035_U01_refused }
+		command = { trigger = { country = U01 exists = CHI } type = trade money = 4 where = CHI which = U01 value = 1 }
+		command = { trigger = { country = U01 exists = CHC } type = trade money = 4 where = CHC which = U01 value = 1 }
+		command = { trigger = { country = U01 exists = UCH } type = trade money = 4 where = UCH which = U01 value = 1 }
+		command = { trigger = { country = U11 } type = clrflag which = 1330110035_U11_refused }
+		command = { trigger = { country = U11 exists = CHI } type = trade money = 4 where = CHI which = U11 value = 1 }
+		command = { trigger = { country = U11 exists = CHC } type = trade money = 4 where = CHC which = U11 value = 1 }
+		command = { trigger = { country = U11 exists = UCH } type = trade money = 4 where = UCH which = U11 value = 1 }
+		command = { trigger = { country = U12 } type = clrflag which = 1330110035_U12_refused }
+		command = { trigger = { country = U12 exists = CHI } type = trade money = 4 where = CHI which = U12 value = 1 }
+		command = { trigger = { country = U12 exists = CHC } type = trade money = 4 where = CHC which = U12 value = 1 }
+		command = { trigger = { country = U12 exists = UCH } type = trade money = 4 where = UCH which = U12 value = 1 }
+		command = { trigger = { country = U15 } type = clrflag which = 1330110035_U15_refused }
+		command = { trigger = { country = U15 exists = CHI } type = trade money = 4 where = CHI which = U15 value = 1 }
+		command = { trigger = { country = U15 exists = CHC } type = trade money = 4 where = CHC which = U15 value = 1 }
+		command = { trigger = { country = U15 exists = UCH } type = trade money = 4 where = UCH which = U15 value = 1 }
+		command = { trigger = { country = SPA } type = clrflag which = 1330110035_SPA_refused }
+		command = { trigger = { country = SPA exists = CHI } type = trade money = 4 where = CHI which = SPA value = 1 }
+		command = { trigger = { country = SPA exists = CHC } type = trade money = 4 where = CHC which = SPA value = 1 }
+		command = { trigger = { country = SPA exists = UCH } type = trade money = 4 where = UCH which = SPA value = 1 }
+		command = { trigger = { country = SPR } type = clrflag which = 1330110035_SPR_refused }
+		command = { trigger = { country = SPR exists = CHI } type = trade money = 4 where = CHI which = SPR value = 1 }
+		command = { trigger = { country = SPR exists = CHC } type = trade money = 4 where = CHC which = SPR value = 1 }
+		command = { trigger = { country = SPR exists = UCH } type = trade money = 4 where = UCH which = SPR value = 1 }
+		command = { trigger = { country = U24 } type = clrflag which = 1330110035_U24_refused }
+		command = { trigger = { country = U24 exists = CHI } type = trade money = 4 where = CHI which = U24 value = 1 }
+		command = { trigger = { country = U24 exists = CHC } type = trade money = 4 where = CHC which = U24 value = 1 }
+		command = { trigger = { country = U24 exists = UCH } type = trade money = 4 where = UCH which = U24 value = 1 }
+		command = { trigger = { country = U25 } type = clrflag which = 1330110035_U25_refused }
+		command = { trigger = { country = U25 exists = CHI } type = trade money = 4 where = CHI which = U25 value = 1 }
+		command = { trigger = { country = U25 exists = CHC } type = trade money = 4 where = CHC which = U25 value = 1 }
+		command = { trigger = { country = U25 exists = UCH } type = trade money = 4 where = UCH which = U25 value = 1 }
+		command = { trigger = { country = U35 } type = clrflag which = 1330110035_U35_refused }
+		command = { trigger = { country = U35 exists = CHI } type = trade money = 4 where = CHI which = U35 value = 1 }
+		command = { trigger = { country = U35 exists = CHC } type = trade money = 4 where = CHC which = U35 value = 1 }
+		command = { trigger = { country = U35 exists = UCH } type = trade money = 4 where = UCH which = U35 value = 1 }
+		command = { type = clrflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			not = { year = 1997 }
+			or = {
+				ai = no
+				and = {
+					exists = CHI
+					NOT = { alliance = { country = CHI } }
+					NOT = { relation = { which = CHI value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHI value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = CHC
+					NOT = { alliance = { country = CHC } }
+					NOT = { relation = { which = CHC value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHC value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = UCH
+					NOT = { alliance = { country = UCH } }
+					NOT = { relation = { which = UCH value = 200 } }
+					OR = { 
+						NOT = { ic = { country = UCH value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = ACTION_NAME_DECLINE
+		command = { trigger = { exists = CHI } type = relation which = CHI value = -50 }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = -50 }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = -50 }
+		command = { type = belligerence value = 2 }
+		command = { trigger = { country = ENG } type = setflag which = 1330110035_ENG_refused }
+		command = { trigger = { country = U08 } type = setflag which = 1330110035_U08_refused }
+		command = { trigger = { country = GER } type = setflag which = 1330110035_GER_refused }
+		command = { trigger = { country = DDR } type = setflag which = 1330110035_DDR_refused }
+		command = { trigger = { country = DFR } type = setflag which = 1330110035_DFR_refused }
+		command = { trigger = { country = POR } type = setflag which = 1330110035_POR_refused }
+		command = { trigger = { country = JAP } type = setflag which = 1330110035_JAP_refused }
+		command = { trigger = { country = USA } type = setflag which = 1330110035_USA_refused }
+		command = { trigger = { country = SOV } type = setflag which = 1330110035_SOV_refused }
+		command = { trigger = { country = RUS } type = setflag which = 1330110035_RUS_refused }
+		command = { trigger = { country = FRA } type = setflag which = 1330110035_FRA_refused }
+		command = { trigger = { country = CAN } type = setflag which = 1330110035_CAN_refused }
+		command = { trigger = { country = U01 } type = setflag which = 1330110035_U01_refused }
+		command = { trigger = { country = U11 } type = setflag which = 1330110035_U11_refused }
+		command = { trigger = { country = U12 } type = setflag which = 1330110035_U12_refused }
+		command = { trigger = { country = U15 } type = setflag which = 1330110035_U15_refused }
+		command = { trigger = { country = SPA } type = setflag which = 1330110035_SPA_refused }
+		command = { trigger = { country = SPR } type = setflag which = 1330110035_SPR_refused }
+		command = { trigger = { country = U24 } type = setflag which = 1330110035_U24_refused }
+		command = { trigger = { country = U25 } type = setflag which = 1330110035_U25_refused }
+		command = { trigger = { country = U35 } type = setflag which = 1330110035_U35_refused }
+		command = { type = clrflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				and = {
+					exists = CHI
+					or = {
+						ispuppet = CHI
+						atwar = CHI
+					}
+				}
+				and = {
+					exists = UCH
+					or = {
+						ispuppet = UCH
+						atwar = UCH
+					}
+				}
+				and = {
+					exists = CHC
+					or = {
+						ispuppet = CHC
+						atwar = CHC
+					}
+				}
+				and = {
+					exists = CHI
+					exists = UCH
+				}
+				and = {
+					exists = CHI
+					exists = CHC
+				}
+				and = {
+					exists = UCH
+					exists = CHC
+				}
+			}
+		}
+		ai_chance = 999
+		name = EVT_1330110036_ACTION3 #No longer applicable
+		command = { type = clrflag which = 1330110035 }
+	}
+
+}
+
+# 1330110037 Territory Seized!
+event = {
+	id = 1330110037
+	random = no
+	persistent = yes
+	tag = { ENG U08 GER DDR DFR POR JAP USA SOV RUS FRA CAN U01 U11 U12 U15 SPA SPR U24 U25 U35 }
+
+	#Triggered
+
+	name = EVT_1330110037_NAME
+	desc = EVT_1330110037_DESC
+
+	style = 2
+    picture = "diplomatic_campaign"
+
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			or = {
+				ai = no
+				alliance = { country = CHI }
+				puppet = { country = -1 country = CHI }
+				relation = { which = CHI value = 200 }
+				and = {
+					ic = { country = CHI value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = CHC }
+				puppet = { country = -1 country = CHC }
+				relation = { which = CHC value = 200 }
+				and = {
+					ic = { country = CHC value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = UCH }
+				puppet = { country = -1 country = UCH }
+				relation = { which = UCH value = 200 }
+				and = {
+					ic = { country = UCH value = 300 }
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				year = 1997
+			}
+		}
+		ai_chance = 20
+		name = EVT_2181004_ACTION3 #Let it go
+		command = { trigger = { exists = CHI } type = relation which = CHI value = 10 }
+		command = { trigger = { exists = CHI alliance = { country = CHI } } type = relation which = CHI value = -10 }
+		command = { trigger = { exists = CHI } type = secederegion when = 1 which = CHI value = "China" }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = 10 }
+		command = { trigger = { exists = CHC alliance = { country = CHC } } type = relation which = CHC value = -10 }
+		command = { trigger = { exists = CHC } type = secederegion when = 1 which = CHC value = "China" }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = 10 }
+		command = { trigger = { exists = UCH alliance = { country = UCH } } type = relation which = UCH value = -10 }
+		command = { trigger = { exists = UCH } type = secederegion when = 1 which = UCH value = "China" }
+		command = { type = belligerence value = -5 }
+		command = { type = dissent value = 5 }
+		command = { type = clrflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			or = {
+				ai = no
+				and = {
+					exists = CHI
+					NOT = { alliance = { country = CHI } }
+					NOT = { relation = { which = CHI value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHI value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = CHC
+					NOT = { alliance = { country = CHC } }
+					NOT = { relation = { which = CHC value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHC value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = UCH
+					NOT = { alliance = { country = UCH } }
+					NOT = { relation = { which = UCH value = 200 } }
+					OR = { 
+						NOT = { ic = { country = UCH value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+			}
+			not = {
+				puppet = { country = -1 country = CHI }
+				puppet = { country = -1 country = CHC }
+				puppet = { country = -1 country = UCH }
+			}
+		}
+		ai_chance = 40
+		name = EVT_1330110037_ACTION2 #Denounce it
+		command = { type = end_access which = CHI when = 0 }
+		command = { type = end_access which = CHI when = 1 }
+		command = { type = end_access which = CHC when = 0 }
+		command = { type = end_access which = CHC when = 1 }
+		command = { type = end_access which = UCH when = 0 }
+		command = { type = end_access which = UCH when = 1 }
+		command = { trigger = { exists = CHI } type = relation which = CHI value = -100 }
+		command = { trigger = { exists = CHI } type = secederegion when = 1 which = CHI value = "China" }
+		command = { trigger = { exists = CHI } type = belligerence value = 5 which = CHI }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = -100 }
+		command = { trigger = { exists = CHC } type = secederegion when = 1 which = CHC value = "China" }
+		command = { trigger = { exists = CHC } type = belligerence value = 5 which = CHC }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = -100 }
+		command = { trigger = { exists = UCH } type = secederegion when = 1 which = UCH value = "China" }
+		command = { trigger = { exists = UCH } type = belligerence value = 5 which = UCH }
+		command = { type = belligerence value = -5 }
+		command = { type = clrflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			not = { year = 1997 }
+			or = {
+				ai = no
+				and = {
+					exists = CHI
+					NOT = { alliance = { country = CHI } }
+					NOT = { relation = { which = CHI value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHI value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = CHC
+					NOT = { alliance = { country = CHC } }
+					NOT = { relation = { which = CHC value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHC value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = UCH
+					NOT = { alliance = { country = UCH } }
+					NOT = { relation = { which = UCH value = 200 } }
+					OR = { 
+						NOT = { ic = { country = UCH value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+			}
+			not = {
+				puppet = { country = -1 country = CHI }
+				puppet = { country = -1 country = CHC }
+				puppet = { country = -1 country = UCH }
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = end_access which = CHI when = 0 }
+		command = { type = end_access which = CHI when = 1 }
+		command = { trigger = { country = ENG non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = ENG which = CHI }
+		command = { trigger = { country = U08 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U08 which = CHI }
+		command = { trigger = { country = GER non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = GER which = CHI }
+		command = { trigger = { country = DDR non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = DDR which = CHI }
+		command = { trigger = { country = DFR non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = DFR which = CHI }
+		command = { trigger = { country = POR non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = POR which = CHI }
+		command = { trigger = { country = JAP non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = JAP which = CHI }
+		command = { trigger = { country = USA non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = USA which = CHI }
+		command = { trigger = { country = SOV non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = SOV which = CHI }
+		command = { trigger = { country = RUS non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = RUS which = CHI }
+		command = { trigger = { country = FRA non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = FRA which = CHI }
+		command = { trigger = { country = CAN non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = CAN which = CHI }
+		command = { trigger = { country = U01 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U01 which = CHI }
+		command = { trigger = { country = U11 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U11 which = CHI }
+		command = { trigger = { country = U12 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U12 which = CHI }
+		command = { trigger = { country = U15 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U15 which = CHI }
+		command = { trigger = { country = SPA non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = SPA which = CHI }
+		command = { trigger = { country = SPR non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = SPR which = CHI }
+		command = { trigger = { country = U24 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U24 which = CHI }
+		command = { trigger = { country = U25 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U25 which = CHI }
+		command = { trigger = { country = U35 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U35 which = CHI }
+		command = { trigger = { exists = CHI } type = relation which = CHI value = -100 }
+		command = { trigger = { exists = CHI } type = war which = CHI }
+		command = { trigger = { exists = CHI not = { war = { country = -1 country = CHI } } } type = event where = -1 when = 1 which = 1330110041 } #Helper Event - War Declared
+		command = { trigger = { country = ENG non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = ENG which = CHC }
+		command = { trigger = { country = U08 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U08 which = CHC }
+		command = { trigger = { country = GER non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = GER which = CHC }
+		command = { trigger = { country = DDR non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = DDR which = CHC }
+		command = { trigger = { country = DFR non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = DFR which = CHC }
+		command = { trigger = { country = POR non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = POR which = CHC }
+		command = { trigger = { country = JAP non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = JAP which = CHC }
+		command = { trigger = { country = USA non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = USA which = CHC }
+		command = { trigger = { country = SOV non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = SOV which = CHC }
+		command = { trigger = { country = RUS non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = RUS which = CHC }
+		command = { trigger = { country = FRA non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = FRA which = CHC }
+		command = { trigger = { country = CAN non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = CAN which = CHC }
+		command = { trigger = { country = U01 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U01 which = CHC }
+		command = { trigger = { country = U11 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U11 which = CHC }
+		command = { trigger = { country = U12 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U12 which = CHC }
+		command = { trigger = { country = U15 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U15 which = CHC }
+		command = { trigger = { country = SPA non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = SPA which = CHC }
+		command = { trigger = { country = SPR non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = SPR which = CHC }
+		command = { trigger = { country = U24 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U24 which = CHC }
+		command = { trigger = { country = U25 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U25 which = CHC }
+		command = { trigger = { country = U35 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U35 which = CHC }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = -100 }
+		command = { type = end_access which = CHC when = 0 }
+		command = { type = end_access which = CHC when = 1 }
+		command = { trigger = { exists = CHC } type = war which = CHC }
+		command = { trigger = { exists = CHC not = { war = { country = -1 country = CHC } } } type = event where = -1 when = 1 which = 1330110041 }  #Helper Event - War Declared
+		command = { trigger = { country = ENG non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = ENG which = UCH }
+		command = { trigger = { country = U08 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U08 which = UCH }
+		command = { trigger = { country = GER non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = GER which = UCH }
+		command = { trigger = { country = DDR non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = DDR which = UCH }
+		command = { trigger = { country = DFR non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = DFR which = UCH }
+		command = { trigger = { country = POR non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = POR which = UCH }
+		command = { trigger = { country = JAP non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = JAP which = UCH }
+		command = { trigger = { country = USA non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = USA which = UCH }
+		command = { trigger = { country = SOV non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = SOV which = UCH }
+		command = { trigger = { country = RUS non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = RUS which = UCH }
+		command = { trigger = { country = FRA non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = FRA which = UCH }
+		command = { trigger = { country = CAN non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = CAN which = UCH }
+		command = { trigger = { country = U01 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U01 which = UCH }
+		command = { trigger = { country = U11 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U11 which = UCH }
+		command = { trigger = { country = U12 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U12 which = UCH }
+		command = { trigger = { country = U15 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U15 which = UCH }
+		command = { trigger = { country = SPA non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = SPA which = UCH }
+		command = { trigger = { country = SPR non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = SPR which = UCH }
+		command = { trigger = { country = U24 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U24 which = UCH }
+		command = { trigger = { country = U25 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U25 which = UCH }
+		command = { trigger = { country = U35 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U35 which = UCH }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = -100 }
+		command = { type = end_access which = UCH when = 0 }
+		command = { type = end_access which = UCH when = 1 }
+		command = { trigger = { exists = UCH } type = war which = UCH }
+		command = { trigger = { exists = UCH not = { war = { country = -1 country = UCH } } } type = event where = -1 when = 1 which = 1330110041 }#Helper Event - War Declared
+		command = { type = clrflag which = 1330110035 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				and = {
+					exists = CHI
+					or = {
+						ispuppet = CHI
+						atwar = CHI
+					}
+				}
+				and = {
+					exists = UCH
+					or = {
+						ispuppet = UCH
+						atwar = UCH
+					}
+				}
+				and = {
+					exists = CHC
+					or = {
+						ispuppet = CHC
+						atwar = CHC
+					}
+				}
+				and = {
+					exists = CHI
+					exists = UCH
+				}
+				and = {
+					exists = CHI
+					exists = CHC
+				}
+				and = {
+					exists = UCH
+					exists = CHC
+				}
+			}
+		}
+		ai_chance = 999
+		name = EVT_1330110036_ACTION3 #No longer applicable
+		command = { type = clrflag which = 1330110035 }
+	}
+
+}
+
+###############
+# Separatists #
+###############
+
+# 1330110038 Autonomous Territories
+event = {
+	id = 1330110038
+	random = no
+	persistent = yes
+	tag = { CHI CHC UCH }
+
+	decision = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110038 }
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = CHI }
+				not = { exists = UCH }
+			}
+		}
+		not = {
+			exists = CGX
+			exists = CSX
+			exists = CYN
+			exists = CXB
+			exists = U36
+			exists = U67
+		}
+		or = {
+			AND = {
+				exists = MAN
+				OR = {
+					NOT = { ispuppet = MAN }
+					puppet = { country = MAN country = -1 }
+				}
+			}
+			AND = {
+				exists = TIB
+				OR = {
+					NOT = { ispuppet = TIB }
+					puppet = { country = TIB country = -1 }
+				}
+			}
+			AND = {
+				exists = SIK
+				OR = {
+					NOT = { ispuppet = SIK }
+					puppet = { country = SIK country = -1 }
+				}
+			}
+			AND = {
+				exists = UPE
+				OR = {
+					NOT = { ispuppet = UPE }
+					puppet = { country = UPE country = -1 }
+				}
+			}
+			and = {
+				not = { country = CHC }
+				exists = MON
+				OR = {
+					NOT = { ispuppet = MON }
+					puppet = { country = MON country = -1 }
+				}
+			}
+			AND = {
+				exists = U74
+				OR = {
+					NOT = { ispuppet = U74 }
+					puppet = { country = U74 country = -1 }
+				}
+			}
+			AND = {
+				exists = MEN
+				OR = {
+					NOT = { ispuppet = MEN }
+					puppet = { country = MEN country = -1 }
+				}
+			}
+		}
+	}
+
+	decision_trigger = {
+		atwar = no
+		not = { dissent = 30 }
+		army = 75
+	}
+
+	trigger = {
+		not = { ispuppet = yes }
+		not = { flag = 1330110038 }
+		or = {
+			and = {
+				country = CHI
+				not = { exists = UCH }
+				not = { exists = CHC }
+			}
+			and = {
+				country = UCH
+				not = { exists = CHI }
+				not = { exists = CHC }
+			}
+			and = {
+				country = CHC
+				not = { exists = CHI }
+				not = { exists = UCH }
+			}
+		}
+		not = {
+			or = {
+				exists = CGX
+				exists = CSX
+				exists = CYN
+				exists = CXB
+				exists = U36
+				exists = U67
+			}
+		}
+		or = {
+			AND = {
+				exists = MAN
+				OR = {
+					NOT = { ispuppet = MAN }
+					puppet = { country = MAN country = -1 }
+				}
+			}
+			AND = {
+				exists = TIB
+				OR = {
+					NOT = { ispuppet = TIB }
+					puppet = { country = TIB country = -1 }
+				}
+			}
+			AND = {
+				exists = SIK
+				OR = {
+					NOT = { ispuppet = SIK }
+					puppet = { country = SIK country = -1 }
+				}
+			}
+			AND = {
+				exists = UPE
+				OR = {
+					NOT = { ispuppet = UPE }
+					puppet = { country = UPE country = -1 }
+				}
+			}
+			and = {
+				not = { country = CHC }
+				exists = MON
+				OR = {
+					NOT = { ispuppet = MON }
+					puppet = { country = MON country = -1 }
+				}
+			}
+			AND = {
+				exists = U74
+				OR = {
+					NOT = { ispuppet = U74 }
+					puppet = { country = U74 country = -1 }
+				}
+			}
+			AND = {
+				exists = MEN
+				OR = {
+					NOT = { ispuppet = MEN }
+					puppet = { country = MEN country = -1 }
+				}
+			}
+		}
+		atwar = no
+		not = { dissent = 30 }
+		army = 75
+	}
+
+
+	name = EVT_1330110038_NAME #Autonomous Territories
+	desc = EVT_1330110038_DESC
+	decision_desc = EVT_1330110038_DECISION_DESC #Choose to negotiate or declare war. If we negotiate, there is a chance that the other country will peacefully submit. NOTE that if negotiations fail war will be the result. Responses to our actions depend on our relations with the country in question.
+
+	style = 2
+    picture = "diplomatic_campaign"
+
+	date = { day = 0 month = 0 year = 1900 }
+	offset = 15
+	deathdate = { day = 0 month = 0 year = 1999 }
+
+	action = {
+		trigger = {
+			exists = MAN
+			OR = {
+				NOT = { ispuppet = MAN }
+				puppet = { country = MAN country = -1 }
+			}
+			OR = {
+				ai = no
+				#either MAN is allied with us or MAN is not part of any alliance
+				alliance = { country = MAN }
+				NOT = { participant = { country = MAN value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = MAN country = -1 }
+				relation = { which = MAN value = 200 }
+				alliance = { country = MAN }
+				and = {
+					OR = {
+						not = { ic = { country = MAN value = 100 } }
+						and = {
+							not = { ic = { country = MAN value = 200 } }
+							atwar = MAN
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = MAN when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = MAN country = -1 } } type = end_non_aggression where = CHI which = MAN }
+		command = { trigger = { country = UCH non_aggression = { country = MAN country = -1 } } type = end_non_aggression where = UCH which = MAN }
+		command = { trigger = { country = CHC non_aggression = { country = MAN country = -1 } } type = end_non_aggression where = CHC which = MAN }
+		command = { type = end_access which = MAN when = 0 }
+		command = { type = end_access which = MAN when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = MAN
+			OR = {
+				NOT = { ispuppet = MAN }
+				puppet = { country = MAN country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = MAN value = 200 } }
+					NOT = { alliance = { country = MAN } }
+					NOT = { participant = { country = MAN value = 4 } }
+					NOT = { puppet = { country = MAN  country = -1 } }
+					OR = {
+						not = { ic = { country = MAN value = 100 } }
+						and = {
+							not = { ic = { country = MAN value = 200 } }
+							atwar = MAN
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = MAN }
+		command = { type = end_non_aggression where = CHC which = MAN }
+		command = { type = end_non_aggression where = UCH which = MAN }
+		command = { type = war which = MAN }
+	}
+
+	action = {
+		trigger = {
+			exists = TIB
+			OR = {
+				NOT = { ispuppet = TIB }
+				puppet = { country = TIB country = -1 }
+			}
+			OR = {
+				ai = no
+				#either TIB is allied with us or TIB is not part of any alliance
+				alliance = { country = TIB }
+				NOT = { participant = { country = TIB value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = TIB country = -1 }
+				relation = { which = TIB value = 200 }
+				alliance = { country = TIB }
+				and = {
+					OR = {
+						not = { ic = { country = TIB value = 100 } }
+						and = {
+							not = { ic = { country = TIB value = 200 } }
+							atwar = TIB
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = TIB when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = TIB country = -1 } } type = end_non_aggression where = CHI which = TIB }
+		command = { trigger = { country = UCH non_aggression = { country = TIB country = -1 } } type = end_non_aggression where = UCH which = TIB }
+		command = { trigger = { country = CHC non_aggression = { country = TIB country = -1 } } type = end_non_aggression where = CHC which = TIB }
+		command = { type = end_access which = TIB when = 0 }
+		command = { type = end_access which = TIB when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = TIB
+			OR = {
+				NOT = { ispuppet = TIB }
+				puppet = { country = TIB country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = TIB value = 200 } }
+					NOT = { alliance = { country = TIB } }
+					NOT = { participant = { country = TIB value = 4 } }
+					NOT = { puppet = { country = TIB  country = -1 } }
+					OR = {
+						not = { ic = { country = TIB value = 100 } }
+						and = {
+							not = { ic = { country = TIB value = 200 } }
+							atwar = TIB
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = TIB }
+		command = { type = end_non_aggression where = CHC which = TIB }
+		command = { type = end_non_aggression where = UCH which = TIB }
+		command = { type = war which = TIB }
+	}
+
+	action = {
+		trigger = {
+			exists = SIK
+			OR = {
+				NOT = { ispuppet = SIK }
+				puppet = { country = SIK country = -1 }
+			}
+			OR = {
+				ai = no
+				#either SIK is allied with us or SIK is not part of any alliance
+				alliance = { country = SIK }
+				NOT = { participant = { country = SIK value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = SIK country = -1 }
+				relation = { which = SIK value = 200 }
+				alliance = { country = SIK }
+				and = {
+					OR = {
+						not = { ic = { country = SIK value = 100 } }
+						and = {
+							not = { ic = { country = SIK value = 200 } }
+							atwar = SIK
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = SIK when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = SIK country = -1 } } type = end_non_aggression where = CHI which = SIK }
+		command = { trigger = { country = UCH non_aggression = { country = SIK country = -1 } } type = end_non_aggression where = UCH which = SIK }
+		command = { trigger = { country = CHC non_aggression = { country = SIK country = -1 } } type = end_non_aggression where = CHC which = SIK }
+		command = { type = end_access which = SIK when = 0 }
+		command = { type = end_access which = SIK when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = SIK
+			OR = {
+				NOT = { ispuppet = SIK }
+				puppet = { country = SIK country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = SIK value = 200 } }
+					NOT = { alliance = { country = SIK } }
+			NOT = { participant = { country = SIK value = 4 } }
+					NOT = { puppet = { country = SIK  country = -1 } }
+					OR = {
+						not = { ic = { country = SIK value = 100 } }
+						and = {
+							not = { ic = { country = SIK value = 200 } }
+							atwar = SIK
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = SIK }
+		command = { type = end_non_aggression where = CHC which = SIK }
+		command = { type = end_non_aggression where = UCH which = SIK }
+		command = { type = war which = SIK }
+	}
+
+	action = {
+		trigger = {
+			exists = UPE
+			OR = {
+				NOT = { ispuppet = UPE }
+				puppet = { country = UPE country = -1 }
+			}
+			OR = {
+				ai = no
+				#either UPE is allied with us or UPE is not part of any alliance
+				alliance = { country = UPE }
+				NOT = { participant = { country = UPE value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = UPE country = -1 }
+				relation = { which = UPE value = 200 }
+				alliance = { country = UPE }
+				and = {
+					OR = {
+						not = { ic = { country = UPE value = 100 } }
+						and = {
+							not = { ic = { country = UPE value = 200 } }
+							atwar = UPE
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = UPE when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = UPE country = -1 } } type = end_non_aggression where = CHI which = UPE }
+		command = { trigger = { country = UCH non_aggression = { country = UPE country = -1 } } type = end_non_aggression where = UCH which = UPE }
+		command = { trigger = { country = CHC non_aggression = { country = UPE country = -1 } } type = end_non_aggression where = CHC which = UPE }
+		command = { type = end_access which = UPE when = 0 }
+		command = { type = end_access which = UPE when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = UPE
+			OR = {
+				NOT = { ispuppet = UPE }
+				puppet = { country = UPE country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = UPE value = 200 } }
+					NOT = { alliance = { country = UPE } }
+					NOT = { participant = { country = UPE value = 4 } }
+					NOT = { puppet = { country = UPE  country = -1 } }
+					OR = {
+						not = { ic = { country = UPE value = 100 } }
+						and = {
+							not = { ic = { country = UPE value = 200 } }
+							atwar = UPE
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = UPE }
+		command = { type = end_non_aggression where = CHC which = UPE }
+		command = { type = end_non_aggression where = UCH which = UPE }
+		command = { type = war which = UPE }
+	}
+
+	action = {
+		trigger = {
+			not = { country = CHC }
+			exists = MON
+			OR = {
+				NOT = { ispuppet = MON }
+				puppet = { country = MON country = -1 }
+			}
+			OR = {
+				ai = no
+				#either MON is allied with us or MON is not part of any alliance
+				alliance = { country = MON }
+				NOT = { participant = { country = MON value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = MON country = -1 }
+				relation = { which = MON value = 200 }
+				alliance = { country = MON }
+				and = {
+					OR = {
+						not = { ic = { country = MON value = 100 } }
+						and = {
+							not = { ic = { country = MON value = 200 } }
+							atwar = MON
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = MON when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = MON country = -1 } } type = end_non_aggression where = CHI which = MON }
+		command = { trigger = { country = UCH non_aggression = { country = MON country = -1 } } type = end_non_aggression where = UCH which = MON }
+		command = { trigger = { country = CHC non_aggression = { country = MON country = -1 } } type = end_non_aggression where = CHC which = MON }
+		command = { type = end_access which = MON when = 0 }
+		command = { type = end_access which = MON when = 1 }
+	}
+
+	action = {
+		trigger = {
+			not = { country = CHC }
+			exists = MON
+			OR = {
+				NOT = { ispuppet = MON }
+				puppet = { country = MON country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = MON value = 200 } }
+					NOT = { alliance = { country = MON } }
+					NOT = { participant = { country = MON value = 4 } }
+					NOT = { puppet = { country = MON  country = -1 } }
+					OR = {
+						not = { ic = { country = MON value = 100 } }
+						and = {
+							not = { ic = { country = MON value = 200 } }
+							atwar = MON
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = MON }
+		command = { type = end_non_aggression where = CHC which = MON }
+		command = { type = end_non_aggression where = UCH which = MON }
+		command = { type = war which = MON }
+	}
+
+	action = {
+		trigger = {
+			exists = U74
+			OR = {
+				NOT = { ispuppet = U74 }
+				puppet = { country = U74 country = -1 }
+			}
+			OR = {
+				ai = no
+				#either U74 is allied with us or U74 is not part of any alliance
+				alliance = { country = U74 }
+				NOT = { participant = { country = U74 value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = U74 country = -1 }
+				relation = { which = U74 value = 200 }
+				alliance = { country = U74 }
+				and = {
+					OR = {
+						not = { ic = { country = U74 value = 100 } }
+						and = {
+							not = { ic = { country = U74 value = 200 } }
+							atwar = U74
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = U74 when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = U74 country = -1 } } type = end_non_aggression where = CHI which = U74 }
+		command = { trigger = { country = UCH non_aggression = { country = U74 country = -1 } } type = end_non_aggression where = UCH which = U74 }
+		command = { trigger = { country = CHC non_aggression = { country = U74 country = -1 } } type = end_non_aggression where = CHC which = U74 }
+		command = { type = end_access which = U74 when = 0 }
+		command = { type = end_access which = U74 when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = U74
+			OR = {
+				NOT = { ispuppet = U74 }
+				puppet = { country = U74 country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = U74 value = 200 } }
+					NOT = { alliance = { country = U74 } }
+					NOT = { participant = { country = U74 value = 4 } }
+					NOT = { puppet = { country = U74  country = -1 } }
+					OR = {
+						not = { ic = { country = U74 value = 100 } }
+						and = {
+							not = { ic = { country = U74 value = 200 } }
+							atwar = U74
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = U74 }
+		command = { type = end_non_aggression where = CHC which = U74 }
+		command = { type = end_non_aggression where = UCH which = U74 }
+		command = { type = war which = U74 }
+	}
+
+	action = {
+		trigger = {
+			exists = MEN
+			OR = {
+				NOT = { ispuppet = MEN }
+				puppet = { country = MEN country = -1 }
+			}
+			OR = {
+				ai = no
+				#either MEN is allied with us or MEN is not part of any alliance
+				alliance = { country = MEN }
+				NOT = { participant = { country = MEN value = 4 } }
+			}
+			or = {
+				ai = no
+				puppet = { country = MEN country = -1 }
+				relation = { which = MEN value = 200 }
+				alliance = { country = MEN }
+				and = {
+					OR = {
+						not = { ic = { country = MEN value = 100 } }
+						and = {
+							not = { ic = { country = MEN value = 200 } }
+							atwar = MEN
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = EVT_1330110038_ACTION1 #Ask for their submission
+		command = { type = event where = MEN when = 14 which = 1330110039 } #Chinese Demand for Annexation
+		command = { type = setflag which = 1330110038 }
+		command = { trigger = { country = CHI non_aggression = { country = MEN country = -1 } } type = end_non_aggression where = CHI which = MEN }
+		command = { trigger = { country = UCH non_aggression = { country = MEN country = -1 } } type = end_non_aggression where = UCH which = MEN }
+		command = { trigger = { country = CHC non_aggression = { country = MEN country = -1 } } type = end_non_aggression where = CHC which = MEN }
+		command = { type = end_access which = MEN when = 0 }
+		command = { type = end_access which = MEN when = 1 }
+	}
+
+	action = {
+		trigger = {
+			exists = MEN
+			OR = {
+				NOT = { ispuppet = MEN }
+				puppet = { country = MEN country = -1 }
+			}
+			or = {
+				ai = no
+				and = {
+					NOT = { relation = { which = MEN value = 200 } }
+					NOT = { alliance = { country = MEN } }
+					NOT = { participant = { country = MEN value = 4 } }
+					NOT = { puppet = { country = MEN  country = -1 } }
+					OR = {
+						not = { ic = { country = MEN value = 100 } }
+						and = {
+							not = { ic = { country = MEN value = 200 } }
+							atwar = MEN
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 40
+		name = ACTION_NAME_WAR
+		command = { type = belligerence value = 2 }
+		command = { type = end_non_aggression where = CHI which = MEN }
+		command = { type = end_non_aggression where = CHC which = MEN }
+		command = { type = end_non_aggression where = UCH which = MEN }
+		command = { type = war which = MEN }
+	}
+
+}
+# 1330110039 Chinese Demand for Annexation
+event = {
+	id = 1330110039
+	random = no
+	persistent = yes
+	tag = { MAN TIB SIK UPE MON U74 MEN }
+
+	#Triggered
+
+	name = EVT_1330110039_NAME
+	desc = EVT_1330110039_DESC
+
+	style = 2
+    picture = "diplomatic_campaign"
+
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			or = {
+				ai = no
+				alliance = { country = CHI }
+				and = {
+					exists = CHI
+					relation = { which = CHI value = 200 }
+				}
+				and = {
+					exists = CHI
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = CHC }
+				and = {
+					exists = CHC
+					relation = { which = CHC value = 200 }
+				}
+				and = {
+					exists = CHC
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+				alliance = { country = UCH }
+				and = {
+					exists = UCH
+					relation = { which = CHC value = 200 }
+				}
+				and = {
+					exists = UCH
+					or = {
+						not = { ic = 100 }
+						AND = {
+							not = { ic = 200 }
+							atwar = yes
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = ACTION_NAME_ACCEPT
+		command = { type = clrflag which = 1330110038 }
+		command = { trigger = { exists = CHI } type = relation which = CHI value = 50 }
+		command = { trigger = { exists = CHI } type = secederegion when = 1 which = CHI value = "China" }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = 50 }
+		command = { trigger = { exists = CHC } type = secederegion when = 1 which = CHC value = "China" }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = 50 }
+		command = { trigger = { exists = UCH } type = secederegion when = 1 which = UCH value = "China" }
+	}
+
+	action = {
+		trigger = {
+			not = {
+				or = {
+					and = {
+						exists = CHI
+						or = {
+							ispuppet = CHI
+							atwar = CHI
+						}
+					}
+					and = {
+						exists = UCH
+						or = {
+							ispuppet = UCH
+							atwar = UCH
+						}
+					}
+					and = {
+						exists = CHC
+						or = {
+							ispuppet = CHC
+							atwar = CHC
+						}
+					}
+					and = {
+						exists = CHI
+						exists = UCH
+					}
+					and = {
+						exists = CHI
+						exists = CHC
+					}
+					and = {
+						exists = UCH
+						exists = CHC
+					}
+				}
+			}
+			or = {
+				ai = no
+				and = {
+					exists = CHI
+					NOT = { alliance = { country = CHI } }
+					NOT = { relation = { which = CHI value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHI value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = CHC
+					NOT = { alliance = { country = CHC } }
+					NOT = { relation = { which = CHC value = 200 } }
+					OR = { 
+						NOT = { ic = { country = CHC value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+				and = {
+					exists = UCH
+					NOT = { alliance = { country = UCH } }
+					NOT = { relation = { which = UCH value = 200 } }
+					OR = { 
+						NOT = { ic = { country = UCH value = 300 } }
+						ic = 200
+						AND = {
+							ic = 100
+							atwar = no
+						}
+					}
+				}
+			}
+		}
+		ai_chance = 20
+		name = ACTION_NAME_FIGHT
+		command = { trigger = { country = MAN non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = MAN which = CHI }
+		command = { trigger = { country = TIB non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = TIB which = CHI }
+		command = { trigger = { country = SIK non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = SIK which = CHI }
+		command = { trigger = { country = UPE non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = UPE which = CHI }
+		command = { trigger = { country = MON non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = MON which = CHI }
+		command = { trigger = { country = U74 non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = U74 which = CHI }
+		command = { trigger = { country = MEN non_aggression = { country = CHI country = -1 } } type = end_non_aggression where = MEN which = CHI }
+		command = { trigger = { exists = CHI } type = relation which = CHI value = -100 }
+		command = { type = end_access which = CHI when = 0 }
+		command = { type = end_access which = CHI when = 1 }
+		command = { trigger = { alliance = { country = ENG country = CHI } puppet = { country = -1 country = ENG } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = ENG country = CHI } puppet = { country = -1 country = ENG } } type = end_puppet }
+		command = { trigger = { alliance = { country = U08 country = CHI } puppet = { country = -1 country = U08 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U08 country = CHI } puppet = { country = -1 country = U08 } } type = end_puppet }
+		command = { trigger = { alliance = { country = GER country = CHI } puppet = { country = -1 country = GER } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = GER country = CHI } puppet = { country = -1 country = GER } } type = end_puppet }
+		command = { trigger = { alliance = { country = DDR country = CHI } puppet = { country = -1 country = DDR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DDR country = CHI } puppet = { country = -1 country = DDR } } type = end_puppet }
+		command = { trigger = { alliance = { country = DFR country = CHI } puppet = { country = -1 country = DFR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DFR country = CHI } puppet = { country = -1 country = DFR } } type = end_puppet }
+		command = { trigger = { alliance = { country = POR country = CHI } puppet = { country = -1 country = POR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = POR country = CHI } puppet = { country = -1 country = POR } } type = end_puppet }
+		command = { trigger = { alliance = { country = JAP country = CHI } puppet = { country = -1 country = JAP } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = JAP country = CHI } puppet = { country = -1 country = JAP } } type = end_puppet }
+		command = { trigger = { alliance = { country = USA country = CHI } puppet = { country = -1 country = USA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = USA country = CHI } puppet = { country = -1 country = USA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SOV country = CHI } puppet = { country = -1 country = SOV } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SOV country = CHI } puppet = { country = -1 country = SOV } } type = end_puppet }
+		command = { trigger = { alliance = { country = RUS country = CHI } puppet = { country = -1 country = RUS } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = RUS country = CHI } puppet = { country = -1 country = RUS } } type = end_puppet }
+		command = { trigger = { alliance = { country = FRA country = CHI } puppet = { country = -1 country = FRA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = FRA country = CHI } puppet = { country = -1 country = FRA } } type = end_puppet }
+		command = { trigger = { alliance = { country = CAN country = CHI } puppet = { country = -1 country = CAN } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = CAN country = CHI } puppet = { country = -1 country = CAN } } type = end_puppet }
+		command = { trigger = { alliance = { country = U01 country = CHI } puppet = { country = -1 country = U01 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U01 country = CHI } puppet = { country = -1 country = U01 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U11 country = CHI } puppet = { country = -1 country = U11 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U11 country = CHI } puppet = { country = -1 country = U11 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U12 country = CHI } puppet = { country = -1 country = U12 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U12 country = CHI } puppet = { country = -1 country = U12 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U15 country = CHI } puppet = { country = -1 country = U15 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U15 country = CHI } puppet = { country = -1 country = U15 } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPA country = CHI } puppet = { country = -1 country = SPA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPA country = CHI } puppet = { country = -1 country = SPA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPR country = CHI } puppet = { country = -1 country = SPR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPR country = CHI } puppet = { country = -1 country = SPR } } type = end_puppet }
+		command = { trigger = { alliance = { country = U24 country = CHI } puppet = { country = -1 country = U24 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U24 country = CHI } puppet = { country = -1 country = U24 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U25 country = CHI } puppet = { country = -1 country = U25 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U25 country = CHI } puppet = { country = -1 country = U25 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U35 country = CHI } puppet = { country = -1 country = U35 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U35 country = CHI } puppet = { country = -1 country = U35 } } type = end_puppet }
+		command = { trigger = { or = { puppet = { country = -1 country = CHI }  alliance = { country = -1 country = CHI } } } type = leave_alliance when = 1 }
+		command = { trigger = { puppet = { country = -1 country = CHI } } type = end_puppet }
+		command = { trigger = { exists = CHI } type = war which = CHI }
+		command = { trigger = { exists = CHI not = { war = { country = -1 country = CHI } } } type = event where = -1 when = 1 which = 1330110041 } #Helper Event - War Declared
+		command = { trigger = { country = MAN non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = MAN which = CHC }
+		command = { trigger = { country = TIB non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = TIB which = CHC }
+		command = { trigger = { country = SIK non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = SIK which = CHC }
+		command = { trigger = { country = UPE non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = UPE which = CHC }
+		command = { trigger = { country = MON non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = MON which = CHC }
+		command = { trigger = { country = U74 non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = U74 which = CHC }
+		command = { trigger = { country = MEN non_aggression = { country = CHC country = -1 } } type = end_non_aggression where = MEN which = CHC }
+		command = { trigger = { exists = CHC } type = relation which = CHC value = -100 }
+		command = { type = end_access which = CHC when = 0 }
+		command = { type = end_access which = CHC when = 1 }
+		command = { trigger = { alliance = { country = ENG country = CHC } puppet = { country = -1 country = ENG } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = ENG country = CHC } puppet = { country = -1 country = ENG } } type = end_puppet }
+		command = { trigger = { alliance = { country = U08 country = CHC } puppet = { country = -1 country = U08 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U08 country = CHC } puppet = { country = -1 country = U08 } } type = end_puppet }
+		command = { trigger = { alliance = { country = GER country = CHC } puppet = { country = -1 country = GER } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = GER country = CHC } puppet = { country = -1 country = GER } } type = end_puppet }
+		command = { trigger = { alliance = { country = DDR country = CHC } puppet = { country = -1 country = DDR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DDR country = CHC } puppet = { country = -1 country = DDR } } type = end_puppet }
+		command = { trigger = { alliance = { country = DFR country = CHC } puppet = { country = -1 country = DFR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DFR country = CHC } puppet = { country = -1 country = DFR } } type = end_puppet }
+		command = { trigger = { alliance = { country = POR country = CHC } puppet = { country = -1 country = POR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = POR country = CHC } puppet = { country = -1 country = POR } } type = end_puppet }
+		command = { trigger = { alliance = { country = JAP country = CHC } puppet = { country = -1 country = JAP } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = JAP country = CHC } puppet = { country = -1 country = JAP } } type = end_puppet }
+		command = { trigger = { alliance = { country = USA country = CHC } puppet = { country = -1 country = USA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = USA country = CHC } puppet = { country = -1 country = USA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SOV country = CHC } puppet = { country = -1 country = SOV } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SOV country = CHC } puppet = { country = -1 country = SOV } } type = end_puppet }
+		command = { trigger = { alliance = { country = RUS country = CHC } puppet = { country = -1 country = RUS } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = RUS country = CHC } puppet = { country = -1 country = RUS } } type = end_puppet }
+		command = { trigger = { alliance = { country = FRA country = CHC } puppet = { country = -1 country = FRA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = FRA country = CHC } puppet = { country = -1 country = FRA } } type = end_puppet }
+		command = { trigger = { alliance = { country = CAN country = CHC } puppet = { country = -1 country = CAN } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = CAN country = CHC } puppet = { country = -1 country = CAN } } type = end_puppet }
+		command = { trigger = { alliance = { country = U01 country = CHC } puppet = { country = -1 country = U01 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U01 country = CHC } puppet = { country = -1 country = U01 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U11 country = CHC } puppet = { country = -1 country = U11 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U11 country = CHC } puppet = { country = -1 country = U11 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U12 country = CHC } puppet = { country = -1 country = U12 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U12 country = CHC } puppet = { country = -1 country = U12 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U15 country = CHC } puppet = { country = -1 country = U15 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U15 country = CHC } puppet = { country = -1 country = U15 } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPA country = CHC } puppet = { country = -1 country = SPA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPA country = CHC } puppet = { country = -1 country = SPA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPR country = CHC } puppet = { country = -1 country = SPR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPR country = CHC } puppet = { country = -1 country = SPR } } type = end_puppet }
+		command = { trigger = { alliance = { country = U24 country = CHC } puppet = { country = -1 country = U24 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U24 country = CHC } puppet = { country = -1 country = U24 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U25 country = CHC } puppet = { country = -1 country = U25 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U25 country = CHC } puppet = { country = -1 country = U25 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U35 country = CHC } puppet = { country = -1 country = U35 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U35 country = CHC } puppet = { country = -1 country = U35 } } type = end_puppet }
+		command = { trigger = { or = { puppet = { country = -1 country = CHC }  alliance = { country = -1 country = CHC } } } type = leave_alliance when = 1 }
+		command = { trigger = { puppet = { country = -1 country = CHC } } type = end_puppet }
+		command = { trigger = { exists = CHC } type = war which = CHC }
+		command = { trigger = { exists = CHC not = { war = { country = -1 country = CHC } } } type = event where = -1 when = 1 which = 1330110041 } #Helper Event - War Declared
+		command = { trigger = { country = MAN non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = MAN which = UCH }
+		command = { trigger = { country = TIB non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = TIB which = UCH }
+		command = { trigger = { country = SIK non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = SIK which = UCH }
+		command = { trigger = { country = UPE non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = UPE which = UCH }
+		command = { trigger = { country = MON non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = MON which = UCH }
+		command = { trigger = { country = U74 non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = U74 which = UCH }
+		command = { trigger = { country = MEN non_aggression = { country = UCH country = -1 } } type = end_non_aggression where = MEN which = UCH }
+		command = { trigger = { exists = UCH } type = relation which = UCH value = -100 }
+		command = { type = end_access which = UCH when = 0 }
+		command = { type = end_access which = UCH when = 1 }
+		command = { trigger = { alliance = { country = ENG country = UCH } puppet = { country = -1 country = ENG } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = ENG country = UCH } puppet = { country = -1 country = ENG } } type = end_puppet }
+		command = { trigger = { alliance = { country = U08 country = UCH } puppet = { country = -1 country = U08 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U08 country = UCH } puppet = { country = -1 country = U08 } } type = end_puppet }
+		command = { trigger = { alliance = { country = GER country = UCH } puppet = { country = -1 country = GER } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = GER country = UCH } puppet = { country = -1 country = GER } } type = end_puppet }
+		command = { trigger = { alliance = { country = DDR country = UCH } puppet = { country = -1 country = DDR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DDR country = UCH } puppet = { country = -1 country = DDR } } type = end_puppet }
+		command = { trigger = { alliance = { country = DFR country = UCH } puppet = { country = -1 country = DFR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = DFR country = UCH } puppet = { country = -1 country = DFR } } type = end_puppet }
+		command = { trigger = { alliance = { country = POR country = UCH } puppet = { country = -1 country = POR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = POR country = UCH } puppet = { country = -1 country = POR } } type = end_puppet }
+		command = { trigger = { alliance = { country = JAP country = UCH } puppet = { country = -1 country = JAP } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = JAP country = UCH } puppet = { country = -1 country = JAP } } type = end_puppet }
+		command = { trigger = { alliance = { country = USA country = UCH } puppet = { country = -1 country = USA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = USA country = UCH } puppet = { country = -1 country = USA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SOV country = UCH } puppet = { country = -1 country = SOV } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SOV country = UCH } puppet = { country = -1 country = SOV } } type = end_puppet }
+		command = { trigger = { alliance = { country = RUS country = UCH } puppet = { country = -1 country = RUS } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = RUS country = UCH } puppet = { country = -1 country = RUS } } type = end_puppet }
+		command = { trigger = { alliance = { country = FRA country = UCH } puppet = { country = -1 country = FRA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = FRA country = UCH } puppet = { country = -1 country = FRA } } type = end_puppet }
+		command = { trigger = { alliance = { country = CAN country = UCH } puppet = { country = -1 country = CAN } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = CAN country = UCH } puppet = { country = -1 country = CAN } } type = end_puppet }
+		command = { trigger = { alliance = { country = U01 country = UCH } puppet = { country = -1 country = U01 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U01 country = UCH } puppet = { country = -1 country = U01 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U11 country = UCH } puppet = { country = -1 country = U11 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U11 country = UCH } puppet = { country = -1 country = U11 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U12 country = UCH } puppet = { country = -1 country = U12 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U12 country = UCH } puppet = { country = -1 country = U12 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U15 country = UCH } puppet = { country = -1 country = U15 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U15 country = UCH } puppet = { country = -1 country = U15 } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPA country = UCH } puppet = { country = -1 country = SPA } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPA country = UCH } puppet = { country = -1 country = SPA } } type = end_puppet }
+		command = { trigger = { alliance = { country = SPR country = UCH } puppet = { country = -1 country = SPR } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = SPR country = UCH } puppet = { country = -1 country = SPR } } type = end_puppet }
+		command = { trigger = { alliance = { country = U24 country = UCH } puppet = { country = -1 country = U24 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U24 country = UCH } puppet = { country = -1 country = U24 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U25 country = UCH } puppet = { country = -1 country = U25 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U25 country = UCH } puppet = { country = -1 country = U25 } } type = end_puppet }
+		command = { trigger = { alliance = { country = U35 country = UCH } puppet = { country = -1 country = U35 } } type = leave_alliance when = 1 }
+		command = { trigger = { alliance = { country = U35 country = UCH } puppet = { country = -1 country = U35 } } type = end_puppet }
+		command = { trigger = { or = { puppet = { country = -1 country = UCH }  alliance = { country = -1 country = UCH } } } type = leave_alliance when = 1 }
+		command = { trigger = { puppet = { country = -1 country = UCH } } type = end_puppet }
+		command = { trigger = { exists = UCH } type = war which = UCH }
+		command = { trigger = { exists = UCH not = { war = { country = -1 country = UCH } } } type = event where = -1 when = 1 which = 1330110041 } #Helper Event - War Declared
+		command = { type = clrflag which = 1330110038 }
+	}
+
+	action = {
+		trigger = {
+			or = {
+				and = {
+					exists = CHI
+					or = {
+						ispuppet = CHI
+						atwar = CHI
+					}
+				}
+				and = {
+					exists = UCH
+					or = {
+						ispuppet = UCH
+						atwar = UCH
+					}
+				}
+				and = {
+					exists = CHC
+					or = {
+						ispuppet = CHC
+						atwar = CHC
+					}
+				}
+				and = {
+					exists = CHI
+					exists = UCH
+				}
+				and = {
+					exists = CHI
+					exists = CHC
+				}
+				and = {
+					exists = UCH
+					exists = CHC
+				}
+			}
+		}
+		ai_chance = 999
+		name = EVT_1330110036_ACTION3 #No longer applicable
+		command = { type = clrflag which = 1330110038 }
+	}
+
+}
