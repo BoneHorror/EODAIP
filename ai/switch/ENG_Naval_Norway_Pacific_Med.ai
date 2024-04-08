@@ -8,6 +8,12 @@ target = {
 		2528 = 100 #Singapore
 		2176 = 90 #Egypt
 		2181 = 120 #Malta
+		
+		#Low priority channel
+		2682 = 60 #Near Norwich
+		2709 = 40 #Near Plymouth
+		2698 = 50 #Channel East
+		2700 = 50 #Channel North
 	} 
 	core = {
 		#British Convoys from Plymouth

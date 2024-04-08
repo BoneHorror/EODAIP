@@ -4,6 +4,12 @@ admiral = {
 target = { 
 		2671 = 150 #Protect Narvik
 		2689 = 100 #Protect Alesund
+		
+		#Low priority channel
+		2682 = 60 #Near Norwich
+		2709 = 40 #Near Plymouth
+		2698 = 50 #Channel East
+		2700 = 50 #Channel North
 	} 
 	core = {
 		#British coast

@@ -6,6 +6,12 @@ target = {
 		2689 = 90 #Protect Alesund
 		2559 = 100 #Borneo
 		2528 = 150 #Singapore
+		
+		#Low priority channel
+		2682 = 60 #Near Norwich
+		2709 = 40 #Near Plymouth
+		2698 = 50 #Channel East
+		2700 = 50 #Channel North
 	} 
 	core = {
 		#British Convoys from Plymouth
