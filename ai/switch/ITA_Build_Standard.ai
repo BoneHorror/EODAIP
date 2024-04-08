@@ -16,12 +16,12 @@ military = {
 	armor 			= 4
 	paratrooper 	= 0
 	marine 			= 4
-	bergsjaeger 	= 4
+	bergsjaeger 	= 5
 	garrison		= 1
     hq	 			= 2
 	militia 		= 2
 #				56 %
-	interceptor 	= 3
+	interceptor 	= 4
 	multi_role 		= 1
 	cas 			= 0
 	strategic_bomber = 1
@@ -31,10 +31,10 @@ military = {
 	flying_bomb 	= 0
 	flying_rocket 	= 0
 #				9 %
-	battleship 		= 5
+	battleship 		= 4
 	carrier 		= 0
 	escort_carrier	= 1
-	destroyer 		= 8
+	destroyer 		= 7
 	light_cruiser 	= 5
 	heavy_cruiser 	= 3
 	battlecruiser 	= 1
