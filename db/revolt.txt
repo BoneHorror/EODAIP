@@ -2876,7 +2876,7 @@ intrinsic_gov_type = nazi
 ################################################## 
   
  U40 = { # Reichskommissariat Ostland
- date = { day = 0 month = january year = 1918 }
+ date = { day = 0 month = january year = 1941 }
  expirydate = { day = 29 month = december year = 1966 }
  minimum = { 264 270 262 }
  min = 1
@@ -2905,7 +2905,7 @@ intrinsic_gov_type = nazi
  }
  
  U41 = { # Reichskommissariat Ukraine
- date = { day = 0 month = january year = 1914 }
+ date = { day = 0 month = january year = 1941 }
  expirydate = { day = 29 month = december year = 1966 }
  minimum = { 244 }
  min = 1
@@ -2926,7 +2926,7 @@ intrinsic_gov_type = nazi
  }
  
   U42 = { # Reichskommissariat Kaukasus
- date = { day = 0 month = january year = 1914 }
+ date = { day = 0 month = january year = 1941 }
  expirydate = { day = 29 month = december year = 1966 }
  minimum = { 709 } # Tbilisi
  min = 1
@@ -2950,7 +2950,7 @@ intrinsic_gov_type = nazi
  }
  
  U43 = { # Reichskommissariat Moskowien
- date = { day = 0 month = january year = 1914 }
+ date = { day = 0 month = january year = 1941 }
  expirydate = { day = 29 month = december year = 1966 }
  minimum = { 572  }
  min = 1
@@ -2987,7 +2987,7 @@ intrinsic_gov_type = nazi
  }
  
  U45 = { # Reichskommissariat Norwegen
- date = { day = 0 month = january year = 1914 } 
+ date = { day = 0 month = january year = 1940 } 
  expirydate = { day = 29 month = december year = 1966 } 
  minimum = { 483 } 
  min = 1
@@ -3001,7 +3001,7 @@ intrinsic_gov_type = nazi
  } 
  
  U46 = { # Reichskommissariat Niederlande
- date = { day = 0 month = january year = 1914 } 
+ date = { day = 0 month = january year = 1940 } 
  expirydate = { day = 29 month = december year = 1966 } 
  minimum = { 122  } 
  min = 1
@@ -3014,7 +3014,7 @@ intrinsic_gov_type = nazi
  } 
  
  U47 = { # Reichskommissariat Belgien-Nordfrankreich
- date = { day = 0 month = january year = 1914 } 
+ date = { day = 0 month = january year = 1940 } 
  expirydate = { day = 29 month = december year = 1966 } 
  minimum = { 116  } 
  min = 1
@@ -3031,7 +3031,7 @@ intrinsic_gov_type = nazi
  } 
  
  U48 = { # Reichskommissariat Turkestan
- date = { day = 0 month = january year = 1914 } 
+ date = { day = 0 month = january year = 1941 } 
  expirydate = { day = 29 month = december year = 1966 } 
  minimum = { 1099  } 
  extra = { 
@@ -3057,7 +3057,7 @@ intrinsic_gov_type = nazi
  } 
  
  SCA = { # Reichskommissariat Scandinavia
- date = { day = 0 month = january year = 1914 } 
+ date = { day = 0 month = january year = 1941 } 
  expirydate = { day = 29 month = december year = 1999 } 
  minimum = { 483 } 
  extra = { } 
