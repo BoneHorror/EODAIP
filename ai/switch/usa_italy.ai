@@ -109,7 +109,7 @@ invasion = {
 	beach				= 0.05	#higher, avoid worst beaches.
 	max_distance  		= 85.0  #About the distance from Japan to Batavia
 	max_staging_distance = 85.0 # How far should the staging area be from the target invasion point
-	distance			= 0.5	#higher = avoid long distance.
+	distance			= 0.25	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.

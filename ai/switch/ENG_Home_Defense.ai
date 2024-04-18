@@ -341,7 +341,7 @@ construction = {
 	IC_provs = { 4 5 6 7 11 13 36 35 } 
 }
 military = { 
-	relative_build_scheme 	= yes
+	relative_build_scheme 	= no
 	max_batch_peace 		= 680 
 	max_batch_war 			= 320 
 	max_batch_home_front = 180

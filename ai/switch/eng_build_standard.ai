@@ -6,12 +6,12 @@
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= yes
+	relative_build_scheme 	= no
 	max_batch_war 		= 720 
 	extra_convoys_war = 0.2625 
 	
 	#### Divisions etc...
-   	infantry     		= 11
+   	infantry     		= 9
 	d_05			= 2
 	cavalry 			= 2
    	motorized     		= 5 
@@ -25,12 +25,12 @@ military = {
     hq	 				= 3
 	militia 			= 3
 #						43 %
-   	interceptor   		= 3 
+   	interceptor   		= 4 
    	multi_role     		= 1 
 	cas 				= 0
    	strategic_bomber 	= 3 
    	tactical_bomber 	= 2 
-   	naval_bomber   		= 1 
+   	naval_bomber   		= 2 
    	transport_plane 	= 1 
 	flying_bomb 		= 0
 	flying_rocket 		= 0

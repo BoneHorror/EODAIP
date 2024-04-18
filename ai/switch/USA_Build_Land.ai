@@ -5,7 +5,7 @@
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= yes
+	relative_build_scheme 	= no
 	extra_convoys_war = 0.3300 
 	max_batch_war 		= 720 
 	#### Divisions etc...

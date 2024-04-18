@@ -5,11 +5,11 @@
 # Construction and Tech Research
 ###################################
 military = { 
-	relative_build_scheme 	= yes
+	relative_build_scheme 	= no
 	extra_convoys_war = 0.3300 
 	max_batch_war 		= 720 
 	#### Divisions etc...
-   	infantry   		= 8
+   	infantry   		= 6
 	d_06			= 2 #Rangers
 	cavalry 		= 1
 	motorized 		= 9
@@ -34,14 +34,14 @@ military = {
 	flying_rocket 		= 1
 #				10 %
 	battleship 			= 2
-   	carrier     		= 6
-   	light_carrier  = 3
+   	carrier     		= 7
+   	light_carrier  = 2
 	escort_carrier		= 1
-   	destroyer   		= 7 
+   	destroyer   		= 8 
 	light_cruiser 		= 6
 	heavy_cruiser 		= 5
 	battlecruiser 		= 0
-	submarine 			= 5
+	submarine 			= 6
 	nuclear_submarine 	= 3
 	transports 			= 4 #Handled by Transport events
 #				43 %
