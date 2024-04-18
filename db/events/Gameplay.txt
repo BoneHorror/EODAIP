@@ -229,7 +229,7 @@ event = {
 			NOT = { ai = GER }
 			}
 			AND = {
-			event = { id = 9300273 days = 45 } # Stalin's Surprise
+			event = { id = 9300273 days = 60 } # Stalin's Surprise
 			ai = GER
 			}
 			AND = {
