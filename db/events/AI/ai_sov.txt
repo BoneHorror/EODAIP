@@ -180,7 +180,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		random = 20
+		random = 50
 		NOT = { non_aggression = { country = JAP } }
 		NOT = { local_flag = SOVJapanAI }
 		OR = {
@@ -211,6 +211,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action = {
+		command = { trigger = { NOT = { war = { country = JAP country = SOV } } } type = ai_prepare_war which = JAP }
 		command = { type = ai which = "switch/SOV_Japan.ai" }
 		command = { type = local_clrflag which = SOVAlliesAI }
 		command = { type = local_setflag which = SOVJapanAI }
