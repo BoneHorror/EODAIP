@@ -125,7 +125,7 @@ event = {
 	}
 }
 ################
-# USA Gear up Level 4
+# USA Gear up Level 4 - one-time non-persistent
 #############################################
 event = {
 	id = 3049004
@@ -134,7 +134,7 @@ event = {
 	
 	trigger = {
 		ai = yes
-		NOT = { local_flag = USADefense }		
+		NOT = { local_flag = USADefense }
 		OR = {
 			atwar = USA
 			AND = {
@@ -152,7 +152,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1963 }
 
 	action_a = {
-		command = { type = ai which = "switch/USA_Gear_Up_4.ai" }
+		command = { trigger = { NOT = { OR = { local_flag = USAItaly local_flag = USAInvadeUK local_flag = USADDay local_flag = USAJap } } } type = ai which = "switch/USA_Gear_Up_4.ai" }
 		command = { type = industrial_modifier which = ic value = 5 }
 		command = { type = sleepevent which = 3049001 }
 		command = { type = sleepevent which = 3049002 }
@@ -2551,7 +2551,13 @@ event = {
 	
 	trigger = {
 		ai = yes
-		local_flag = USAJap
+		OR = {
+			local_flag = USAJap
+			AND = {
+			war = { country = USA country = JAP }
+			NOT = { war = { country = USA country = GER } }
+			}
+		}
 	}
 
 	name = "AI_EVENT"
@@ -2562,6 +2568,15 @@ event = {
 	deathdate = { day = 29 month = december year = 1939 }
 
 	action_a = {
+		# Okinawa
+		command = { type = addclaim which = 1563 }
+		command = { type = addclaim which = 1564 }
+		# Nagasaki
+		command = { type = addclaim which = 1560 }
+		# Iwo Jima
+		command = { type = addclaim which = 1661 }
+		command = { type = addclaim which = 1663 }
+		command = { type = addclaim which = 1664 }
 		# France
 		command = { type = addclaim which = 1581 }
 		command = { type = addclaim which = 1582 }
