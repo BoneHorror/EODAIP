@@ -2,7 +2,7 @@
 
 max_front_ratio = 1.1
 max_front_ratios = { 	# Override the default against specific countries. Ignored against humans.
-	FRA = 0.1 
+	FRA = 0.8 
 	BEL = 3.0
 	HOL = 3.0
 	LUX = 1.5

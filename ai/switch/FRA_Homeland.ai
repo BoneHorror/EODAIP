@@ -6,6 +6,6 @@ upgrading = 0.30
 ###################################
 garrison = {
 	defend_overseas_beaches = no
-	home_multiplier 		= 4.0
+	home_multiplier 		= 2.0
 	overseas_multiplier 	= 0.0
 }

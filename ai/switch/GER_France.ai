@@ -1,14 +1,14 @@
 # German Low Countries Invasion AI File by Lothos
 
-max_front_ratio = 1.0
+max_front_ratio = 1.1
 max_garrison_prop = 0.45
 min_garrison_prop = 0.30
 max_front_ratios = {
-	BEL = 8.0
+	BEL = 12.0
 	HOL = 8.0
 	LUX = 4.0
 	NOR = 3.0
-	FRA = 0.5
+	FRA = 1.2
 }
 
 ###################################
@@ -103,13 +103,13 @@ garrison = {
 }
 front = { 
    	recklessness     = 2 # 0-3 
-  	distrib_vs_ai     = even
-   	distrib_vs_human   = even
+  	distrib_vs_ai     = offensive
+   	distrib_vs_human   = offensive
 
 	enemy_reinf_days	= 6
 	reserve_prop		= 0.01
-	panic_ratio_vs_ai	= 3.0
-	panic_ratio_vs_human= 2.5
+	panic_ratio_vs_ai	= 1.5
+	panic_ratio_vs_human= 2.0
 	front_leader_overseas	= 5
 	base_attack_odds	= 1.2
 	min_attack_odds		= 0.9
@@ -117,8 +117,8 @@ front = {
 	reinforce_odds		= 3.0
 	withdraw_odds		= 0.6
 
-    enemy_handicap = { } 
-    passivity = { } 
+    enemy_handicap = { FRA = 10 } 
+    passivity = { FRA = 0 } 
 
 	province_priorities = {
 		#Maginot Line
