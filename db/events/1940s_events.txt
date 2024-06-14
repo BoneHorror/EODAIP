@@ -282,6 +282,15 @@ event = {
     action = {
 		name = "ACTION_NAME_OK"
 		ai_chance = 100
+		# Okinawa
+		command = { type = removeclaim which = 1563 }
+		command = { type = removeclaim which = 1564 }
+		# Nagasaki
+		command = { type = removeclaim which = 1560
+		# Iwo Jima
+		command = { type = removeclaim which = 1661 
+		command = { type = removeclaim which = 1663 
+		command = { type = removeclaim which = 1664 
 		# France
 		command = { type = removeclaim which = 1581 }
 		command = { type = removeclaim which = 1582 }
