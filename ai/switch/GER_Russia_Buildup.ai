@@ -2,7 +2,7 @@
 
 max_front_ratio = 1.3 
 max_front_ratios = { 
-   SOV = 3.5 
+   SOV = 8.0 
    ENG = 2.5
    USA = 2.5
    TUR = 1.5
@@ -131,7 +131,7 @@ garrison = {
 		SOV = 100
 		U44 = 80
 		ENG = 90
-		USA = 110
+		USA = 90
 		YUG = 50
 	}
 	province_priorities = {

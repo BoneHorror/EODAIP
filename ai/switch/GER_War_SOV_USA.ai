@@ -3,6 +3,8 @@
 
 max_garrison_prop = 0.50 # 0.60
 min_garrison_prop = 0.30 # 0.40
+exp_force_ratio = 0.09 
+exp_force_ratios = { ITA = 0.2 U45 = 0.1 FIN = 0.2 ROM = 0.1 U73 = 0.1 RSI = 0.2 U44 = 0.1 } 
 strat_redeploy_threshold = 30
 max_redeploying = 0.25
 ###################################
@@ -96,7 +98,7 @@ front = {
 	support_defense_prop 	= 0.33
 
       	enemy_handicap = { } 
-      	passivity = { SOV = 10 } 
+      	passivity = { SOV = 5 } 
 } 
 admiral = { 
 	target = { 2270 = 90 2276 = 90 2333 = 90 2685 = 90 2176 = 200 2232 = 200 } 
