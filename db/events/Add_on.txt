@@ -13566,15 +13566,18 @@ event = {
 	}
 }
 ######################################################
-# Fortify the southern front even further
+# Fortify the southern front
 ######################################################
 event = {
 	id = 1000484
 	random = no
-	country = ITA
+	tag = { ITA RSI }
 
 	decision = {
+		OR = {
 		   alliance = { country = GER country = ITA }
+		   alliance = { country = GER country = RSI }
+		   }
 		   atwar = yes
 		   event = 2003071
 } 
@@ -13582,7 +13585,11 @@ event = {
 	decision_trigger = { supplies = 1000 }	
 	trigger = { 
 	NOT = { war = { country = GER country = ITA } } 
-	alliance = { country = GER country = ITA }
+	NOT = { war = { country = GER country = RSI } } 
+	OR = {
+		   alliance = { country = GER country = ITA }
+		   alliance = { country = GER country = RSI }
+		   }
 	event = 2003071
 	}
 
@@ -13598,7 +13605,7 @@ event = {
 
 	action_a = {
 		name = ACTION_NAME_GREAT
-                ai_chance = 99
+                ai_chance = 100
 	  	command = { trigger = { control = { province = 408 data = ITA } } type = construct which = land_fort where = 408 value = 2 }
 	  	command = { trigger = { control = { province = 411 data = ITA } } type = construct which = land_fort where = 411 value = 2 }
 	  	command = { trigger = { control = { province = 396 data = ITA } } type = construct which = land_fort where = 396 value = 2 }
@@ -13607,11 +13614,19 @@ event = {
 	  	command = { trigger = { control = { province = 413 data = ITA } } type = construct which = land_fort where = 413 value = 2 }
 	  	command = { trigger = { control = { province = 414 data = ITA } } type = construct which = land_fort where = 414 value = 2 }
 	  	command = { trigger = { control = { province = 412 data = ITA } } type = construct which = land_fort where = 412 value = 2 }
+		command = { trigger = { control = { province = 408 data = RSI } } type = construct which = land_fort where = 408 value = 3 }
+	  	command = { trigger = { control = { province = 411 data = RSI } } type = construct which = land_fort where = 411 value = 3 }
+	  	command = { trigger = { control = { province = 396 data = RSI } } type = construct which = land_fort where = 396 value = 3 }
+	  	command = { trigger = { control = { province = 310 data = RSI } } type = construct which = land_fort where = 310 value = 3 }
+	  	command = { trigger = { control = { province = 312 data = RSI } } type = construct which = land_fort where = 312 value = 3 }
+	  	command = { trigger = { control = { province = 413 data = RSI } } type = construct which = land_fort where = 413 value = 3 }
+	  	command = { trigger = { control = { province = 414 data = RSI } } type = construct which = land_fort where = 414 value = 3 }
+	  	command = { trigger = { control = { province = 412 data = RSI } } type = construct which = land_fort where = 412 value = 3 }
 		command = { type = supplies value = -1000 }
 	}
 	action_a = {
 		name = ACTION_NAME_NO
-                ai_chance = 1
+                ai_chance = 0
 		command = { }
 	}
 }
