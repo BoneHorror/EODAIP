@@ -4105,7 +4105,7 @@ event = {
 	}
 	
 	action = { 
-		ai_chance = 40
+		ai_chance = 42
 		name = "4707c"
 		command = { type = add_division which = "250. Infanterie Division 'Azul'" value = infantry when = 9 }
 		command = { type = trigger which = 2008014 }
@@ -4113,7 +4113,7 @@ event = {
 	
 	action = {	
 		trigger = { exists = FRA control = { province = 72 data = FRA } NOT = { war = { country = FRA country = GER } } }
-		ai_chance = 10
+		ai_chance = 8
 		name = "4707d" # Global peace treaty in Europe
 		command = { type = trigger which = 2001007 }
 		command = { type = trigger which = 2008003 }
