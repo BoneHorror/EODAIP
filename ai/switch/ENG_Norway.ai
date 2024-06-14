@@ -67,8 +67,8 @@ front = {
 	483  = 80
 	20 = 10 # Exeter
 	} 
-      	enemy_handicap = { } 
-      	passivity = { } 
+      	enemy_handicap = { RSI = 30 GER = 10 } 
+      	passivity = { ITA = 30 RSI = 99 } 
 } 
 ###################################
 # Invasions and Naval

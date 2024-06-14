@@ -76,12 +76,21 @@ front = {
 	withdraw_odds		= 0.55
 	mountain_attack = 0.9
 	river 		= 1.0
-	largefort	= 0.7
-	# This is mainly to make sure Gibraltar isnt immortal
-	enemy_handicap = {
+	
+	enemy_handicap = { 
+		RSI = 90
+		GER = 50
+		JAP = 10
+		} 
+   	passivity = {
+		RSI = 99 #We want to slow down Allied progression if ITA degenerates into RSI
+		GER = 98
+		ROM = 99
+		BUL = 99
+		HUN = 99
+		SER = 90
+		CRO = 90
 	} 
-	passivity = {
-	}
 	province_priorities = { 
 		1371 = 1.50 # Hong Kong
 		1661 = 1.90 # Iwo Jima
@@ -96,18 +105,18 @@ front = {
 invasion = { 
 	invasion			= yes
  	base				= 0.2	#Relative modifier. (lower = specific targets much more important.)
-	random				= 18.0	#How big a random range.  (1.0 = 1%)
+	random				= 22.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
 	max_distance  		= 200.0  #About the distance from Japan to Batavia
 	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
-	distance			= 0.5	#higher = avoid long distance.
-	pocket				= 5.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
-	island				= 2.0	#prioritise taking pure islands.
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 1.5	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
-	air_base			= 2.5 
-    naval_base 			= 2.0 
+	air_base			= 1.5 
+    naval_base 			= 1.0 
     air_support 		= 1.0 
     redirect 			= nearest
 	ignore				= yes

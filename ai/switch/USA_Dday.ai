@@ -190,8 +190,8 @@ invasion = {
 	island				= 0.1	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
-	air_base			= 2.5 
-    naval_base 			= 1.5 
+	air_base			= 1.0 
+    naval_base 			= 1.0 
     air_support 		= 4.0 
     redirect 			= nearest #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
 	ignore				= yes
