@@ -174,14 +174,14 @@ invasion = {
         125 = -1 #Rotterdam
         122 = -1 #Amsterdam
 	#Spain
-		475	 = 1000	 #Palma de Mallorca
-		473	 = 1000	 #Cadiz
-		449  = 1000  #Vigo
-		441  = 1000  #Coruna
-		472  = 1000  #Huelva
-		463  = 750  #Murcia
-		464  = 750  #Valencia		
-		440  = 750  #Barcelona
+		475	 = 6000	 #Palma de Mallorca
+		473	 = 6000	 #Cadiz
+		449  = 6000  #Vigo
+		441  = 6000  #Coruna
+		472  = 6000  #Huelva
+		463  = 3750  #Murcia
+		464  = 3750  #Valencia		
+		440  = 3750  #Barcelona
 		
 		#Portugal
 		995  = 1000  #Azores

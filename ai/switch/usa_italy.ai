@@ -68,13 +68,13 @@ front = {
 	withdraw_odds		= 0.6
 
   	enemy_handicap = { 
-	RSI = 25
-	GER = 10
+	RSI = 90
+	GER = 50
 	JAP = 10
 	} 
    	passivity = {
 		RSI = 99 #We want to slow down Allied progression if ITA degenerates into RSI
-		GER = 97
+		GER = 98
 		ROM = 99
 		BUL = 99
 		HUN = 99
@@ -192,11 +192,11 @@ invasion = {
 
 		429 = 8000  #Malta
 		#Spain
-		475	 = 4000	 #Palma de Mallorca
-		473	 = 4000	 #Cadiz
-		449  = 4000  #Vigo
-		441  = 4000  #Coruna
-		472  = 4000  #Huelva
+		475	 = 6000	 #Palma de Mallorca
+		473	 = 6000	 #Cadiz
+		449  = 6000  #Vigo
+		441  = 6000  #Coruna
+		472  = 6000  #Huelva
 		463  = 2750  #Murcia
 		464  = 2750  #Valencia		
 		440  = 2750  #Barcelona

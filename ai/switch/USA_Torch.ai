@@ -142,8 +142,20 @@ front = {
 	reinforce_odds		= 1.04
 	withdraw_odds		= 0.55
 
-      	enemy_handicap = { } 
-      	passivity = { ITA = 90 RSI = 99 } 
+    enemy_handicap = { 
+		RSI = 90
+		GER = 50
+		JAP = 10
+	} 
+   	passivity = {
+		RSI = 99 #We want to slow down Allied progression if ITA degenerates into RSI
+		GER = 98
+		ROM = 99
+		BUL = 99
+		HUN = 99
+		SER = 90
+		CRO = 90
+	}  
 } 
 ###################################
 # Invasions and Naval
@@ -451,6 +463,15 @@ invasion = {
 		493  = -1	#	Trondheim
 		495  = -1	#	Narvik
 
+		#Spain
+		475	 = 500	 #Palma de Mallorca
+		473	 = 8000	 #Cadiz
+		449  = 8000  #Vigo
+		441  = 8000  #Coruna
+		472  = 8000  #Huelva
+		463  = 500  #Murcia
+		464  = 500  #Valencia		
+		440  = 500  #Barcelona
 
 		# Baltic States (in case of un-holy alliance)
 		226  = -1	#	Gdynia
