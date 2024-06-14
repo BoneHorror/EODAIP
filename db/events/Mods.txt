@@ -469,7 +469,7 @@ event = {
 	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = {
-		ai_chance = 30
+		ai_chance = 20
 		name = "9300001a"
 		command = { type = building_prod_mod which = ic value = 10 }
 	   	command = { trigger = { NOT = { technology = 5200 } } type = gain_tech which = 5200 } # Oil Refining 1938
@@ -483,7 +483,7 @@ event = {
 		command = { trigger = { ai = yes } type = fort_attack which = super_heavy_artillery value = 6 }
 	}
 	action = {
-		ai_chance = 40
+		ai_chance = 60
 		name = "9300001b"
     		command = { type = build_time which = armor when = on_upgrade where = relative value = -10 }
       		command = { type = build_time which = light_armor when = on_upgrade where = relative value = -10 }
@@ -497,7 +497,7 @@ event = {
 		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 	action = {
-		ai_chance = 20
+		ai_chance = 15
 		name = "9300001c"
       		command = { type = build_time which = air when = on_upgrade where = relative value = -10 }
 			command = { type = build_time which = paratrooper when = on_upgrade where = relative value = -5 }
@@ -511,7 +511,7 @@ event = {
 		command = { trigger = { ai = yes } type = money value = -100 }
 	}
 	action = {
-		ai_chance = 10
+		ai_chance = 5
 		name = "9300001d"
       		command = { type = build_time which = naval when = on_upgrade where = relative value = -10 }
 	   	command = { trigger = { NOT = { technology = 3660 } } type = gain_tech which = 3660 } # SUB 1937
@@ -8612,7 +8612,8 @@ event = {
 	action = {
 		name = ACTION_NAME_DAMN
 		command = { type = task_efficiency which = attack value = -0.5 }
-		command = { type = ground_def_eff value = -0.35 when = 1 } 
+		command = { trigger = { ai = GER } type = ground_def_eff value = -0.5 when = 1 } 
+		command = { trigger = { NOT = { ai = GER } } type = ground_def_eff value = -0.35 when = 1 } 
 		command = { trigger = { ai = GER } type = max_organization which = land value = -12 }
 		command = { trigger = { NOT = { ai = GER } } type = max_organization which = land value = -8 }
 		command = { type = dissent value = 20 }
