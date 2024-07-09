@@ -3659,19 +3659,19 @@ event = {
 	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
-		ai_chance = 90
+		ai_chance = 80
 		name = "9300092a"
 		command = { type = dissent value = -1 }
 	}
-	action = { trigger = { ai = no }
-		ai_chance = 5
+	action = { trigger = { difficulty = 2 }
+		ai_chance = 10
 		name = "9300092b"
 		command = { type = sleepevent which = 9300090 }
 		command = { trigger = { ai = no } type = dissent value = 2 }
 		command = { type = local_setflag which = LON_bank_embargo }
 	}
-	action = { trigger = { ai = no }
-		ai_chance = 3
+	action = { trigger = { difficulty = 2 }
+		ai_chance = 8
 		name = "9300092c"
 		command = { type = sleepevent which = 9300090 }
 		command = { trigger = { ai = no } type = dissent value = 5 }
@@ -3689,7 +3689,7 @@ event = {
 		command = { type = local_setflag which = LON_bank_embargo }
 	}
 	action = { trigger = { difficulty = 2 ai = no } #Allow only on Balanced and above
-		ai_chance = 0
+		ai_chance = 2
 		name = "9300092d"
 		command = { type = war which = ENG }
 		command = { type = war which = FRA }
