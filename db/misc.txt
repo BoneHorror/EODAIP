@@ -583,7 +583,7 @@ combat = {
 # Logistics Wizard ESE bonus - Add this bonus if current ESE is below 100% (1.0)
  	0.1 #0.0
 # ESE bonus from offensive supply
-    0.25 #0.25	
+    0.2 #0.25	
 # Days in offensive supply
 	30 #30
 # Minister bonuses (att, def, mor, org) from brigades and divisions. 1 = use division bonus if any, else brigade (max if more then 1); 2 = Use average of all; 3 = use Sum of all; 4 = Use min; 5 = use Max
@@ -591,7 +591,7 @@ combat = {
 # Organization regain bonus for units on friendly soil. It depends on infra and is capped (see below) (infra*2 + THIS <= cap). [0.0 = 0%, 1.0 = 100%]
 	0.2 #0.1 (WIF)
 # Organization regain bonus for units on friendly soil cap.
-	1.3 #1.2
+	1.5 #1.2
 # ORG regain [all] - Enable new ORG regain logic. Following ORG regain modifiers are used only when this is enabled: 0 - disabled (old logic used), 1 - enabled
 	1 #0
 # ORG regain [all] - Morale effect. [1.0 + Morale * THIS]. Multiplier
@@ -619,7 +619,7 @@ combat = {
 # ORG regain [naval] - Current/Max ORG modifier. [1.0 + (1.0 - Current/Max ORG) * THIS]. Multiplier
 	3.0 #0.0
 # ORG regain [naval] - At naval base modifier. Used when in naval base. [1.0 + Port Size * THIS]. Multiplier
-	0.2 #0.2
+	0.25 #0.2
 # ORG regain [naval] - At sea modifier. Used when not in a naval base. Multiplier
 	0.8 #1.0
 # ORG regain [air] - Main modifier - higher this is, faster the ORG regain would be. Multiplier
@@ -948,7 +948,7 @@ country = {
 # MP Trickle back modifier
 	1.0 #1.0
 # Supply distance modifier
-	1.0 #1.0
+	0.7 #1.0
 # Repair modifier
 	1.0 #1.0
 # Research modifier
@@ -956,7 +956,7 @@ country = {
 # Radar efficiency
 	1.0 #1.0
 # HQ Supply efficiency bonus
-	0.01 #0.01
+	0.2 #0.01
 # HQ Combat events bonus
 	1.0 #1.0
 # Combat event chances: 0.01 = 1%, 1.0 = 100%
