@@ -4795,18 +4795,19 @@ event = {
 		command = { type = relation which = HUN value = -100 }
 		command = { type = relation which = ROM value = -100 }
 		command = { type = relation which = BUL value = -100 }
-		command = { trigger = { NOT = { local_flag = MOB2 } } type = manpowerpool value = 60 }
-		command = { trigger = { NOT = { local_flag = MOB3 } } type = manpowerpool value = 65 }
-		command = { trigger = { NOT = { local_flag = MOB4 } } type = manpowerpool value = 105 }
-		command = { trigger = { NOT = { local_flag = MOB5 } } type = manpowerpool value = 125 }
-		command = { trigger = { NOT = { local_flag = MOB6 } } type = manpowerpool value = 150 }
-		command = { trigger = { NOT = { local_flag = MOB7 } } type = manpowerpool value = 165 }
-		command = { type = local_setflag which = MOB2 }
-		command = { type = local_setflag which = MOB3 }
-		command = { type = local_setflag which = MOB4 }
-		command = { type = local_setflag which = MOB5 }
-		command = { type = local_setflag which = MOB6 }
-		command = { type = local_setflag which = MOB7 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB2 } } type = manpowerpool value = 60 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB3 } } type = manpowerpool value = 65 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB4 } } type = manpowerpool value = 105 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB5 } } type = manpowerpool value = 125 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB6 } } type = manpowerpool value = 150 }
+		command = { trigger = { ai = yes NOT = { local_flag = MOB7 } } type = manpowerpool value = 165 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB2 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB3 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB4 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB5 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB6 }
+		command = { trigger = { ai = yes } type = local_setflag which = MOB7 }
+		command = { trigger = { ai = yes } type = local_setflag which = do_not_demob }
 		command = { trigger = { NOT = { event = 2003056 } } type = sleepevent which = 2003056 }
 		command = { type = event which = 2003057 where = GER when = 1 }
 	}
