@@ -5000,14 +5000,14 @@ event = {
 	id = 9300137
 	random = no
 	country = POL
-	one_action = yes
+	one_action = no
 	
 	name = 9300137name
 	desc = 9300136desc
 	style = 2
 	picture = "diplomatic_campaign"
 
-	action = { trigger = { relation = { which = GER value = 100 } NOT = { relation = { which = GER value = 150 } } ai = GER }
+	action = { trigger = { ai = POL relation = { which = GER value = 100 } NOT = { relation = { which = GER value = 150 } } ai = GER }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 0
 		command = { type = relation which = GER value = 50 }
@@ -5015,7 +5015,7 @@ event = {
 		command = { type = end_mastery which = U06 }
 		command = { type = trigger which = 9300138 }
 	} 
-	action = { trigger = { relation = { which = GER value = 150 } NOT = { relation = { which = GER value = 199 } } ai = GER }
+	action = { trigger = { ai = POL relation = { which = GER value = 150 } NOT = { relation = { which = GER value = 199 } } ai = GER }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 35
 		command = { type = relation which = GER value = 50 }
@@ -5023,11 +5023,10 @@ event = {
 		command = { type = addcore which = 262 }
 		command = { type = addcore which = 263 }
 		command = { type = addcore which = 260 }
-		command = { type = addcore which = 259 }
 		command = { type = end_mastery which = U06 }
 		command = { type = trigger which = 9300138 }
 	}
-	action = { trigger = { relation = { which = GER value = 199 } ai = GER }
+	action = { trigger = { ai = POL relation = { which = GER value = 199 } ai = GER }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 100
 		command = { type = relation which = GER value = 50 }
@@ -5035,11 +5034,10 @@ event = {
 		command = { type = addcore which = 262 }
 		command = { type = addcore which = 263 }
 		command = { type = addcore which = 260 }
-		command = { type = addcore which = 259 }
 		command = { type = end_mastery which = U06 }
 		command = { type = trigger which = 9300138 }
 	}
-	action = { trigger = { relation = { which = GER value = 100 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 100 } NOT = { ai = GER } }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 5
 		command = { type = relation which = GER value = 50 }
@@ -5048,7 +5046,7 @@ event = {
 		command = { type = addcore which = 263 }
 		command = { type = trigger which = 9300138 }
 	}
-	action = { trigger = { relation = { which = GER value = 150 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 150 } NOT = { ai = GER } }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 75
 		command = { type = relation which = GER value = 50 }
@@ -5057,10 +5055,9 @@ event = {
 		command = { type = addcore which = 262 }
 		command = { type = addcore which = 263 }
 		command = { type = addcore which = 260 }
-		command = { type = addcore which = 259 }
 		command = { type = trigger which = 9300138 }
 	}
-	action = { trigger = { relation = { which = GER value = 195 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 195 } NOT = { ai = GER } }
 		name = ACTION_NAME_ACCEPT
 		ai_chance = 100
 		command = { type = relation which = GER value = 50 }
@@ -5072,17 +5069,33 @@ event = {
 		command = { type = addcore which = 259 }
 		command = { type = trigger which = 9300138 }
 	}
-	action = { trigger = { relation = { which = GER value = 150 } NOT = { relation = { which = GER value = 199 } } ai = GER }
+	action = { trigger = { NOT = { ai = POL } relation = { which = GER value = 150 } NOT = { ai = GER } }
+		name = ACTION_NAME_ACCEPT
+		ai_chance = 100
+		command = { type = relation which = GER value = 50 }
+		command = { type = dissent value = 15 }
+		command = { type = end_mastery which = U06 }
+		command = { type = addcore which = 262 }
+		command = { type = addcore which = 263 }
+		command = { type = addcore which = 260 }
+		command = { type = trigger which = 9300138 }
+	}
+	action = { trigger = { NOT = { ai = POL } relation = { which = GER value = 199 } ai = GER }
+		name = ACTION_NAME_REFUSE
+		ai_chance = 100
+		command = { type = relation which = GER value = -100 }
+	}
+	action = { trigger = { ai = POL relation = { which = GER value = 150 } NOT = { relation = { which = GER value = 199 } } ai = GER }
 		name = ACTION_NAME_REFUSE
 		ai_chance = 65
 		command = { type = relation which = GER value = -100 }
 	}
-	action = { trigger = { relation = { which = GER value = 199 } ai = GER }
+	action = { trigger = { ai = POL relation = { which = GER value = 199 } ai = GER }
 		name = ACTION_NAME_REFUSE
 		ai_chance = 0
 		command = { type = relation which = GER value = -100 }
 	}
-	action = { trigger = { relation = { which = GER value = 100 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 100 } NOT = { ai = GER } }
 		name = ACTION_NAME_REFUSE
 		ai_chance = 95
 		command = { type = relation which = GER value = -100 }
@@ -5091,23 +5104,25 @@ event = {
 		OR = { 
 		AND = {
 			NOT = { relation = { which = GER value = 100 } } 
-			NOT = { ai = GER } }
+			NOT = { ai = GER }
+			ai = POL			}
 		AND = {
 			relation = { which = GER value = 100 }
 			NOT = { relation = { which = GER value = 150 } }
-			ai = GER } 
+			ai = GER  
+			ai = POL } 
 			}
 		}
 		name = ACTION_NAME_REFUSE
 		ai_chance = 100
 		command = { type = relation which = GER value = -100 }
 	}
-	action = { trigger = { relation = { which = GER value = 150 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 150 } NOT = { ai = GER } }
 		name = ACTION_NAME_REFUSE
 		ai_chance = 25
 		command = { type = relation which = GER value = -100 }
 	}
-	action = { trigger = { relation = { which = GER value = 195 } NOT = { ai = GER } }
+	action = { trigger = { ai = POL relation = { which = GER value = 195 } NOT = { ai = GER } }
 		name = ACTION_NAME_REFUSE
 		ai_chance = 0
 		command = { type = relation which = GER value = -100 }
@@ -8268,7 +8283,7 @@ event = {
 	}
 }
 ###################
-# Train Ski Infantry (10 divs)
+# Train Ski Infantry
 event = {
 	id = 9300250
 	random = no
@@ -8294,9 +8309,15 @@ event = {
 	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
-		command = { type = activate_unit_type which = d_07 }
-		command = { type = build_division which = d_07 when = 5 cost = 0.1 where = 100 }
-		command = { type = build_division which = d_07 when = 5 cost = 0.1 where = 100 }
+		command = { type = frozen_move which = infantry value = 2 }
+      	command = { type = frozen_attack which = infantry value = 1 }
+      	command = { type = frozen_defense which = infantry value = 2 }
+      	command = { type = snow_move which = infantry value = 2 }
+      	command = { type = snow_attack which = infantry value = 1 }
+      	command = { type = snow_defense which = infantry value = 2 }
+		#command = { type = activate_unit_type which = d_07 }
+		#command = { type = build_division which = d_07 when = 5 cost = 0.1 where = 100 }
+		#command = { type = build_division which = d_07 when = 5 cost = 0.1 where = 100 }
 		command = { trigger = { ai = no } type = supplies value = -100 }
 	}
 }
@@ -12755,14 +12776,14 @@ event = {
 
 	action = {
 		name = action_name_great
-	  	command = { type = frozen_move which = infantry value = 2 }
-      		command = { type = frozen_attack which = infantry value = 3 }
-      		command = { type = frozen_defense which = infantry value = 4 }
-      		command = { type = snow_move which = infantry value = 2 }
-      		command = { type = snow_attack which = infantry value = 3 }
-      		command = { type = snow_defense which = infantry value = 4 }
+	  	command = { type = frozen_move which = infantry value = 3 }
+      	command = { type = frozen_attack which = infantry value = 3 }
+      	command = { type = frozen_defense which = infantry value = 6 }
+      	command = { type = snow_move which = infantry value = 5 }
+      	command = { type = snow_attack which = infantry value = 3 }
+      	command = { type = snow_defense which = infantry value = 6 }
 		command = { trigger = { ai = no } type = supplies value = -500 }
-		command = { type = activate_unit_type which = d_07 }
+		#command = { type = activate_unit_type which = d_07 }
 	}
 }
 ###############
