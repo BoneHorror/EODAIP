@@ -1222,8 +1222,8 @@ event = {
 		command = { type = hard_attack which = infantry value = 1 }
 		command = { type = morale which = bergsjaeger value = 2 }
 		command = { type = hard_attack which = bergsjaeger value = 1 }
-		command = { type = morale which = d_07 value = 2 } 		# Ski Infantry
-		command = { type = hard_attack which = d_07 value = 1 }
+		#command = { type = morale which = d_07 value = 2 } 		# Ski Infantry
+		#command = { type = hard_attack which = d_07 value = 1 }
 
 	}
 }
