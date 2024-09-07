@@ -4897,7 +4897,12 @@ event = {
 		command = { trigger = { ai = no } type = war which = YUG }
 		command = { type = belligerence which = GER value = 10 }
 		command = { trigger = { ai = yes } type = clrflag which = InvYugoslavia }
+		command = { trigger = { ai = yes } type = clrflag which = GER }
 		command = { trigger = { ai = yes } type = local_clrflag which = GERInvadeYugoslavia }
+		command = { trigger = { ai = yes } type = local_clrflag which = GERInvadeSpain }
+		command = { trigger = { ai = yes } type = local_clrflag which = GERBitter }
+		command = { trigger = { ai = yes } type = local_clrflag which = GERInvadeNorway }
+		command = { trigger = { ai = yes } type = local_clrflag which = GERInvadeUS }
 		command = { trigger = { ai = yes } type = local_clrflag which = GERStandardFront }
 		command = { trigger = { ai = yes } type = sleepevent which = 3003007 }
 		command = { trigger = { ai = yes } type = ai which = "switch/GER_Yugoslavia.ai" }
