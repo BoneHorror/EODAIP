@@ -6935,7 +6935,6 @@ event = {
 		}
 		garrison = { country = GER province = 55   type = air size = 2 area = no } #Nazi planes over London
 	}
-		NOT = { alliance = { country = ENG country = FRA } }
 		NOT = { control = { province = 55 data = -3 } } # Paris not controlled by Ally - Works around the General Peace Treaty case
 	}
 
@@ -6950,7 +6949,7 @@ event = {
 
 	action = {
 		name = 9300208text
-		command = { type = dissent value = 5 }
+		command = { type = dissent value = 6 }
 		command = { type = manpowerpool value = -20 }
 	}
 }

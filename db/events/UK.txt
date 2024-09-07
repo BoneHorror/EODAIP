@@ -1984,12 +1984,43 @@ event = {
 			war = { country = ENG country = JAP }
 			war = { country = ENG country = ITA }
 		}
-		AND = {
-			area = { area = "East England" country = -2 }
-			area = { area = "West England" country = -2 }
-			area = { area = "North England" country = -2 }
-			area = { area = "South Scotland" country = -2 }
-			control = { province = 29 data = -2 } #London
+		OR = {
+		
+			AND = {
+				area = { area = "East England" country = -2 }
+				area = { area = "West England" country = -2 }
+				area = { area = "North England" country = -2 }
+				area = { area = "South Scotland" country = -2 }
+				control = { province = 29 data = -2 } #London
+			}
+			
+			AND = {
+				NOT = { convoypool = 100 } #No convoys
+				NOT = { escortpool = 50 }
+				NOT = {
+					building = { province = 29 type = infrastructure value = 0.5 when = now } # London 100 - 4 biggest British urban centers are leveled
+				}
+				NOT = {
+					building = { province = 24 type = infrastructure value = 0.5 when = now } # Birmingham 90
+				}
+				NOT = {
+					building = { province = 18 type = infrastructure value = 0.5 when = now } # Sheffield
+				}
+				NOT = {
+					building = { province = 17 type = infrastructure value = 0.5 when = now } # Manchester
+				}
+				garrison = { country = GER province = 55   type = air size = 2 area = no } #Nazi planes over London
+				}
+				NOT = { control = { province = 55 data = -3 } } # Paris not controlled by Ally
+				}
+				OR = {
+					garrison = { country = -2 province = 2682   type = naval size = 4 area = no } #Nazi ships on our doorstep
+					garrison = { country = -2 province = 2698   type = naval size = 4 area = no }
+					garrison = { country = -2 province = 2700   type = naval size = 4 area = no }
+					garrison = { country = -2 province = 2709   type = naval size = 4 area = no }
+				}
+			}
+			
 		}
 	}
 
