@@ -2944,6 +2944,7 @@ event = {
         	garrison = { country = GER province = 291 type = land size = 3 } # Sibiu
 	}
 	trigger = { 
+		trigger = { NOT = { ispuppet = ROM } }
 		alliance = { country = GER country = ROM }
 		OR = { war = { country = GER country = ENG } war = { country = GER country = SOV } }
 		random = 40
@@ -13227,7 +13228,18 @@ event = {
 	decision_trigger = {
 		event = 9300153 # Total War Speech
 	}
-	trigger = { lost_national = { country = GER value = 25 } atwar = yes random = 50 }
+	trigger = { 
+	OR = {
+		lost_national = { country = GER value = 25 }
+		AND = {
+			NOT = { land_percentage = { country = SOV value = 0.6 } }
+			war = { country = GER country = SOV } 
+			lost_national = { country = GER value = 5 }
+			}
+		}
+		atwar = yes
+		random = 50
+	}
    
 	name = 9300457name
 	desc = 9300457desc
