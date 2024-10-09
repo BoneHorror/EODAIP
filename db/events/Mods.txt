@@ -2944,7 +2944,7 @@ event = {
         	garrison = { country = GER province = 291 type = land size = 3 } # Sibiu
 	}
 	trigger = { 
-		trigger = { NOT = { ispuppet = ROM } }
+		NOT = { ispuppet = ROM }
 		alliance = { country = GER country = ROM }
 		OR = { war = { country = GER country = ENG } war = { country = GER country = SOV } }
 		random = 40
