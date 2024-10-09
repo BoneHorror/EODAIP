@@ -4044,3 +4044,55 @@ event = {
 		command = { type = add_prov_resource which = 26 value = 20 where = metal }
 	}
 }
+################### If GER is at war with Turkey, add some claims and puppet AI BUL
+event = {
+	id = 3003136
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		war = { country = GER country = TUR }
+		control = { province = 26 data = GER } #Dover
+		alliance = { country = GER country = BUL }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		command = { type = make_puppet which = BUL }
+		command = { type = addclaim which = 409 } #ISTANBUL
+		command = { type = addclaim which = 1076 } #IZMIT
+		command = { type = addclaim which = 1067 } #TRABZON
+		command = { type = addclaim which = 1063 } #ELAZIG
+	}
+}
+#########For gameplay reasons - instantly puppet ROM when at war with SOV
+event = {
+	id = 3003137
+	random = no 
+	country = GER
+	
+	trigger = {
+		ai = yes
+		ai = ROM
+		alliance = { country = ROM }
+		war = { country = GER country = SOV }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1940 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1942 }
+
+	action = {
+		command = { type = make_puppet which = ROM }
+	}
+}
