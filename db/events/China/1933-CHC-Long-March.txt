@@ -45,7 +45,7 @@ event = {
     action = {
         name = ACTION_NAME_DAMN
         command = { type = setflag which = LONG_MARCH_LOC_Jiangxi } # Begin Long March
-        command = { type = setflag which = LONG_MARCH_CHC when = 0 value = 129 } #set initial strenght of Communist forces to 129 000
+        command = { type = setflag which = LONG_MARCH_CHC when = 0 value = 300 } #set initial strenght of Communist forces to 129 000
         #flag LONG_MARCH_FATIGUE not set so that initial fatigue of Communist forces is 0
         command = { type = event which = 1330110023 where = CHI when = 0 } # 19th Army Surrenders
         command = { type = event which = 1330110064 where = CHC when = 7 } #The Long March
