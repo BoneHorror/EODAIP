@@ -313,6 +313,7 @@ invasion = {
 		#Ger Invasion Deterrence
 		1778  = 2500	#Guantanamo
 		2137  = 7500	#St John
+		2135  = 1000	#French island near Canada
 		
 		# USA Alaska
 		2150  = 4500  #Attu Island

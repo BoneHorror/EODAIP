@@ -111,9 +111,9 @@ invasion = {
 	max_distance  		= 200.0  #About the distance from Japan to Batavia
 	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
 	distance			= 0.1	#higher = avoid long distance.
-	pocket				= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 1.5	#prioritise taking pure islands.
-	enemy				= 1.0	#higher = much more vary of troops in province.
+	enemy				= 0.3	#higher = much more vary of troops in province.
 	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
 	air_base			= 1.5 
     naval_base 			= 1.0 
@@ -203,6 +203,7 @@ invasion = {
 		#Ger Invasion Deterrence
 		1778  = 7500	#Guantanamo
 		2137  = 7500	#St John
+		2135  = 1000	#French island near Canada
 		
 		# USA Alaska
 		2150  = 4500  #Attu Island
@@ -214,8 +215,8 @@ invasion = {
 	}
 } 
 admiral = { 
-	min_core_attack_fleets  = 5		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 12		# ENG/USA default 3, JAP default 2 everyone else is 1
+	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
+	num_attack_fleets		= 8		# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {
