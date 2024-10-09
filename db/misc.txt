@@ -114,7 +114,7 @@ economy = {
 # Stockpile limits multiplier for supplies and oil. -1 = Disable, else = Desired Stockpile (unmodified) * this
 	4.0 #-1
 # Over stockpile limit daily loss (percentage of the exceeding resource). 0.0 = no loss, 1.0 = 100%
-	0.5 #0.02 (WIF)
+	0.001 #0.02 (WIF)
 # Max provincial energy/metal/rare materials depot size.
 	5000 #9999
 # Max provincial oil/supplies depot size.
@@ -398,7 +398,7 @@ combat = {
 # Damage factor versus Radar from bombing
 	0.5
 # Damage factor versus Infra from bombing
-	0.25
+	0.5
 # Damage factor versus IC from bombing
 	1.0
 # Damage factor versus resources from bombing
