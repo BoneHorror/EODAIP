@@ -1068,11 +1068,13 @@ event = {
 		#command = { type = set_domestic which = professional_army value = 7 }
 		command = { type = set_domestic which = defense_lobby value = 5 }
 		command = { type = set_domestic which = interventionism value = 6 }
-		command = { type = dissent value = -3 }
+		command = { type = dissent value = 15 }
 		command = { type = end_trades which = PER where = GER }
 		command = { type = secedeprovince which = SOV value = 1080 } # Sari - Persia 
 		command = { type = secedeprovince which = SOV value = 1081 } # Rast - Persia 
 		command = { type = secedeprovince which = SOV value = 1083 } # Tabriz - Persia 
+		command = { type = secedeprovince which = ENG value = 1089 } # Avhaz - Persia 
+		command = { type = secedeprovince which = ENG value = 1090 } # Busehr - Persia 
 		command = { type = trigger which = 2001067 }
 		}
 
@@ -1103,10 +1105,12 @@ event = {
 	action_a = {
 		name = ACTION_NAME_OK
 		command = { type = make_puppet which = PER }
+		command = { type = addclaim which = 1089 }
+		command = { type = addclaim which = 1090 }
 		}
 }
 
-event = {
+event = { #TODO - add a similar event for ENG to give their provinces, also improve Abadan (1089) Refinery yield - real value was 4.5 mln tons vs 24 of Baku, so should be ~18% of the baku province
 	id = 2007067
 	random = no
 	country = SOV

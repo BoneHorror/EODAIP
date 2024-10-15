@@ -564,3 +564,5 @@ event = {
         command = { type = ai which = "switch/jap_chc.ai" }
     }
 }
+
+#TODO - interesting event chains! take a look
