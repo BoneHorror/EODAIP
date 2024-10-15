@@ -130,9 +130,9 @@ economy = {
 # Land Units - supply consumption modifier when in combat 
 	2.0 #1.0
 # Land Units - fuel consumption modifier when not moving
-	0.1 #0.25
+	0.15 #0.25
 # Land Units - fuel consumption modifier when in combat or in bombardment
-	1.65 #1.0
+	1.8 #1.0
 # Air Units - supply consumption modifier when in redeployment pool or at air base
 	0.2 #1.0
 # Air Units - supply consumption modifier when in combat or in bombardment
@@ -1076,7 +1076,7 @@ trade = {
 # Wartime Desired Stockpile multiplier - multiplier on the Desired Stockpile for all resources and supplies when at war
 	1.2 #1.0
 # Peacetime extra oil import (percentage of the current daily consumption)
-	0.2 #0.0
+	0.05 #0.0
 # Wartime extra oil import (percentage of the current daily consumption)
 	0.25 #0.0
 # Extra import (percentage) on top of what is needed when below desired stockpile.

@@ -3197,3 +3197,106 @@ event = {
 		command = { type = money value = -200 }
 	}
 }
+
+##############
+# Resource Events
+#################################
+event = {
+	id = 9000055
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		ai = yes
+		energy = 15000
+		OR = {
+			NOT = { resource_shortage = energy }
+			energy = 30000
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Bankruptcy"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = energypool value = -7500 }
+	}
+}
+
+event = {
+	id = 9000056
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		ai = yes
+		metal = 10000
+		OR = {
+			NOT = { resource_shortage = metal }
+			metal = 20000
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Bankruptcy"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = metalpool value = -5000 }
+	}
+}
+
+event = {
+	id = 9000057
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		ai = yes
+		rare_materials = 7500
+		OR = {
+			NOT = { resource_shortage = rare_materials }
+			rare_materials = 15000
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Bankruptcy"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = rarematerialspool value = -2500 }
+	}
+}
+
+event = {
+	id = 9000058
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		ai = yes
+		oil = 12500
+		OR = {
+			NOT = { resource_shortage = oil }
+			oil = 25000
+		}
+	}
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "Bankruptcy"
+	
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = oilpool value = -5000 }
+	}
+}
