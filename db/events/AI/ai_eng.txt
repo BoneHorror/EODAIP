@@ -209,7 +209,7 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/ENG_Atwar.ai" }
 		command = { type = carrier_level value = 1.0 }
-		command = { type = visibility which = transport value = -4 } #Transport cheat for ENG AI so that it doesn't suicide as many transports, not used on Strong Axis
+		command = { trigger = { not = { difficulty = 1 } } type = visibility which = transport value = -4 } #Transport cheat for ENG AI so that it doesn't suicide as many transports, not used on Strong Axis
 		command = { type = speed which = transport value = 2 }
 		command = { type = naval_defense which = transport value = -1 } #bonus
 		command = { type = air_defense which = transport value = -1 } #bonus
