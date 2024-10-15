@@ -1110,7 +1110,7 @@ event = {
 		}
 }
 
-event = { #TODO - add a similar event for ENG to give their provinces, also improve Abadan (1089) Refinery yield - real value was 4.5 mln tons vs 24 of Baku, so should be ~18% of the baku province
+event = { #Added a similar event for ENG to give their provinces, also improve Abadan (1089) Refinery yield - real value was 4.5 mln tons vs 24 of Baku, so should be ~18% of the baku province
 	id = 2007067
 	random = no
 	country = SOV
