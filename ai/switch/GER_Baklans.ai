@@ -7,12 +7,12 @@ max_front_ratios = { }
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################
- target = { 338 = 50 # Beograd 
+ target = { 338 = 50 # Belgrad 
  377 = 50 # Athens 
  } 
  combat = { YUG = 100 GRE = 100 } 
 garrison = {
-	defend_overseas_beaches = yes
+	#defend_overseas_beaches = yes
 	
 	home_multiplier 	= 1.0
 	overseas_multiplier = 1.0
@@ -41,13 +41,26 @@ garrison = {
 		SCH = -1
 		AUS = -1
 		HUN = -1
-		CZE = 75
-		POL = 75
-		YUG = 100
-		SOV = 5
+		#CZE = 75
+		#POL = 75
+		YUG = 75
+		SOV = 100
 		LIT = 5
 	}
 	province_priorities = {
+		#Soviet Border
+		261  = 45  #Klaipeda
+		182  = 60  #Insterbourg
+		185  = 45  #Allenstein
+		252  = 70  #Suwalki
+		230  = 45
+		229  = 45
+		228  = 45 
+		246  = 70
+		243  = 40  #Lubin
+		236  = 40
+		237  = 40
+		
 		# Yugoslavia border
 		188  = 50
 		191  = 50
@@ -72,6 +85,8 @@ garrison = {
 		36 = 20 #Belfast
 		29 = 20 #London
 		1 = 20 #Reykjavik
+		
+		486 = 30 # Heavy Water in Honefoss
 	}
 	area_multiplier = {
 		188  = 2.0

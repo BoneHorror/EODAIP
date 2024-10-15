@@ -421,8 +421,13 @@ event = {
 	trigger = {
 		ai = yes
 		local_flag = GERInvadeYugoslavia
-		OR = {      NOT = { exists = YUG }
-			NOT = { war = { country = YUG } }
+		OR = {      
+			NOT = { exists = YUG }
+			alliance = { country = YUG }
+			AND = {
+				NOT = { war = { country = YUG } }
+				local_flag = GERInvadeRussia
+				}
 			}
 	}
 
@@ -448,10 +453,11 @@ event = {
 	trigger = {
 		ai = yes
 		NOT = { ispuppet = GER }
+		NOT = { alliance = { country = SOV } }
 		OR = {
 			AND = {
 				month = 3
-				day = 15
+				day = 5
 				random = 50
 			}
 			month = 4 #May
@@ -477,9 +483,9 @@ event = {
 				garrison = { country = -3 province = 184  type = land size = 9 area = 1 } # Koenigsberg
 			}
 			garrison = { country = -3 province = 184  type = land size = 21 area = 1 } # Koenigsberg - In case of GG Polen puppet
+			garrison = { country = -3 province = 232  type = land size = 30 area = 2 } # Poland region
 		}
 		NOT = { control = { province = 377 data = -2 } } # Athens
-		
 		OR = {
 			alliance = { country = POL }
 			alliance = { country = SOV country = POL }
@@ -490,7 +496,7 @@ event = {
 	name = "AI_EVENT"
 	style = 0	
 	
-	date = { day = 1 month = march year = 1940 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 2
 	deathdate = { day = 29 month = december year = 1960 }
 
@@ -501,7 +507,8 @@ event = {
 		command = { type = local_clrflag which = GERInvadeRussia }
 		command = { type = local_clrflag which = GERStandardFront }
 		command = { type = local_setflag which = GERSOVStrat }
-		command = { type = war which = SOV }
+		#command = { type = war which = SOV }
+		command = { type = ai_prepare_war which = SOV }
 		command = { trigger = { control = { province = 68 data = GER } } type = activate_division which = 14500 value = 2027 where = 68 when = 0 }
 		command = { trigger = { control = { province = 69 data = GER } } type = activate_division which = 14500 value = 2028 where = 69 when = 0 }
 		command = { trigger = { control = { province = 37 data = GER } } type = activate_division which = 14500 value = 2029 where = 37 when = 0 }

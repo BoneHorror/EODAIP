@@ -167,6 +167,11 @@ garrison = {
 		20 = 10 # Exeter
 		
 		486 = 30 # Heavy Water in Honefoss
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = -1 #Mytilini
+		381 = -1 #Ermoupoli
+		370 = -1 #Alexandropoli
 	}
 	area_multiplier = {
 	# England Coast

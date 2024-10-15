@@ -1,7 +1,7 @@
 #Germany sends troops to defend Italy
 
 no_exp_forces_to = { JAP SIA MAN MEN BUR PHI U49 U03 U04 SYR FRA U87 U55 }
-exp_force_ratio = 0.15
+exp_force_ratio = 0.12
 exp_force_ratios = {
 	ITA = 0.8
 	RSI = 0.2

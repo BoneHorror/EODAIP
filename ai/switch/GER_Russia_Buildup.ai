@@ -169,6 +169,11 @@ garrison = {
 		1 = 20 #Reykjavik
 		
 		486 = 30 # Heavy Water in Honefoss
+		
+		#Ignore terrible Balkan provinces where the AI stacks 40 divs
+		383 = -1 #Mytilini
+		381 = -1 #Ermoupoli
+		370 = -1 #Alexandropoli
 	}
 	area_multiplier = {
 	377 = 0.01  #Athens
