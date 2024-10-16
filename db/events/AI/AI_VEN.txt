@@ -35,3 +35,63 @@ event = {
 		command = { type = ai which = "switch/Minor_Gear_Up.ai" }
 	}
 }
+################
+# AI only - British blockade prevents Venezuela from sending oil to GER
+#############################################
+event = {
+	id = 3037010
+	random = no 
+	country = VEN
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = VENEmbargoGER }
+		NOT = { alliance = { country = GER } }
+		war = { country = ENG country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 1 month = january year = 1939 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1940 }
+
+	action_a = {
+		command = { type = local_setflag which = VENEmbargoGER }
+		command = { type = ai which = "switch/USA_Embargo_GER.ai" }
+		command = { type = end_trades which = VEN where = GER }
+	}
+}
+################
+# AI only - Venezuela abandons Axis countries after 1941
+#############################################
+event = {
+	id = 3037011
+	random = no 
+	country = VEN
+	
+	trigger = {
+		ai = yes
+		atwar = no
+		NOT = { local_flag = VENEmbargoAxis }
+		NOT = { alliance = { country = GER } }
+		war = { country = USA country = GER }
+	}
+
+	name = "AI_EVENT"
+	style = 0	
+	
+	date = { day = 29 month = december year = 1941 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1942 }
+
+	action_a = {
+		command = { type = local_setflag which = VENEmbargoAxis }
+		command = { type = ai which = "switch/USA_Embargo_GER_ITA_JAP.ai" }
+		command = { type = end_trades which = VEN where = GER }
+		command = { type = end_trades which = VEN where = ITA }
+		command = { type = end_trades which = VEN where = JAP }
+	}
+}
