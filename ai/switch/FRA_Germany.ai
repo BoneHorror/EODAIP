@@ -73,7 +73,12 @@ garrison = {
 		1393  = -1  #Hanoi
 		1399  = -1  #Saigon
 	}
-	area_multiplier = { }
+	area_multiplier = { 
+	# Maginot Line
+		104  = 0.25  #0.4
+		107  = 0.25  #0.4
+		105  = 0.25  #0.4
+	}
 }
 front = { 
 	recklessness 		= 0 # 0-3
@@ -97,9 +102,9 @@ front = {
    	passivity = { } 
 	province_priorities = {
 		# Maginot Line
-		104  = 0.15  #0.4
-		107  = 0.15  #0.4
-		105  = 0.15  #0.4
+		104  = 0.4  #0.4
+		107  = 0.4  #0.4
+		105  = 0.4  #0.4
 	}
 } 
 ###################################

@@ -1,12 +1,5 @@
 # German the Norway Invasion AI File by Lothos
 
-max_front_ratios = {
-	BEL = 12.0
-	HOL = 8.0
-	LUX = 3.0
-	NOR = 3.0
-	FRA = 1.0
-}
 target = { 
  483 = 100 # Oslo
  488 = 30 # Bergen
@@ -14,69 +7,6 @@ target = {
  495 = 100 # Narvik
 } 
 no_exp_forces_to = { ITA IRQ U49 U03 U04 SYR JAP MAN MEN BUR PHI U87 U55 }
-garrison = {
-	home_multiplier 	= 1.0
-	overseas_multiplier 	= 1.0
-	province_priorities = {
-		131  = 80 #BEL and HOL
-		126  = 80
-		#76 = 100
-     	150 = 50 # Flensburg 
-	     	132 = 5 # French border 
-     		130 = 5 
-	     	127 = 5 
-	}
-	area_multiplier = {
-		#Denmark border
-		158  = 0.1  #Stettin
-
-		#Belgium Dutch Border
-		131  = 2.0 #Overlaps with magi, focus on south
-		141  = 6.0 #Netherlands
-		147 = 6.0 #Middle
-		
-		#Russian Border
-		252  = 0.1
-		221  = 0.1
-		243  = 0.1
-		236  = 0.1
-		237  = 0.1
-		
-		132 = 0.2 #Maginot
-		
-		#Limit division count in Baltic
-		184 = 0.3 #Koningsber
-		275 = 0.3 #Kuressaare
-	}
-}
-
-front = { 
-   	recklessness     = 2 # 0-3 
-  	distrib_vs_ai     = offensive 
-   	distrib_vs_human   = offensive 
-
-	enemy_reinf_days	= 6
-	reserve_prop		= 0.05
-	panic_ratio_vs_ai	= 1.0
-	panic_ratio_vs_human= 1.5
-	front_leader_overseas	= 5
-	base_attack_odds	= 1.1
-	min_attack_odds		= 0.9
-	max_attack_odds		= 2.0
-	reinforce_odds		= 1.2
-	withdraw_odds		= 0.6
-
-	province_priorities = {
-		#Maginot Line
-		127  = 0.25
-		132  = 0.01
-		130  = 0.01
-		
-		#Spearhead into ardennes
-		126	= 1.5
-		131	= 1.5
-	}
-}
 ###################################
 # Invasions and Naval
 ###################################

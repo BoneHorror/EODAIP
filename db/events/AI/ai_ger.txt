@@ -803,6 +803,7 @@ event = {
 	
 	trigger = {
 		ai = yes
+		NOT = { war = { country = FRA } }
 		control = { province = 152 data = GER } # Kiel
 		NOT = { local_flag = GERBalticGarrison }
 		NOT = { local_flag = GERBalticGarrisonRussia }

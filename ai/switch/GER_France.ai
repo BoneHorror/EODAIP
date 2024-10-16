@@ -2,13 +2,12 @@
 
 max_front_ratio = 1.1
 max_garrison_prop = 0.45
-min_garrison_prop = 0.30
 max_front_ratios = {
-	BEL = 12.0
-	HOL = 8.0
-	LUX = 4.0
+	BEL = 8.0
+	HOL = 6.0
+	LUX = 1.5
 	NOR = 3.0
-	FRA = 1.2
+	FRA = 0.2
 }
 
 ###################################
@@ -86,9 +85,9 @@ garrison = {
 		158  = 0.1  #Stettin
 		
 		#Belgium Dutch Border
-		131  = 2.0 #Overlaps with magi, focus on south
+		131  = 1.0 #Overlaps with magi, focus on south
 		121 = 3.0 #Maastricht
-		141  = 15.0 #Netherlands
+		141  = 12.0 #Netherlands
 		147 = 15.0 #Middle
 		
 		#Russian Border

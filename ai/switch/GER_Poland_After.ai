@@ -2,10 +2,11 @@
 
 max_front_ratio = 1.1
 max_front_ratios = { 	# Override the default against specific countries. Ignored against humans.
-	FRA = 0.8 
+	FRA = 0.2 
 	BEL = 3.0
 	HOL = 3.0
 	LUX = 1.5
+	NOR = 3.0
 	SOV = 0.1
 	DEN = 0.2
 	SCH = 0.01
@@ -52,8 +53,8 @@ garrison = {
 		YUG = 5
 		LIT = 3
 		HOL = 75
-		BEL = 90
-		LUX = 75
+		BEL = 100
+		LUX = 30
      	DEN = 30 
 		SOV = 1
 	}
