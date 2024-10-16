@@ -1,6 +1,8 @@
 # Germany switches policy after Poles continue to drift away
 
 befriend = {
+	ARG = 50
+	VEN = 30
 	SLO = 40
 	SPA = 50
    	ROM = 30 

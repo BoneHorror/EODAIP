@@ -9,6 +9,7 @@ combat = {
 }
 befriend = {
 	ROM = 50
+	ARG = 50
 	BUL = 40 
 	HUN = 80 
 	YUG = 50

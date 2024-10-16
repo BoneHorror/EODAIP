@@ -4,6 +4,7 @@
 # Diplomacy
 ###################################
 befriend = {
+	ARG = 60
 	ROM = 80
 	BUL = 70 
 	HUN = 80 

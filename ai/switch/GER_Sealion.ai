@@ -26,6 +26,8 @@ min_garrison_prop = 0.20
 # Diplomacy
 ###################################
 befriend = {
+	ARG = 100
+	VEN = 50
 	ROM = 50
 	BUL = 40 
 	HUN = 80 

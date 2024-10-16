@@ -33,6 +33,7 @@ target = {
 	713 = 30 # Baku - more focus in 2nd year 
 } 
 befriend = {
+	ARG = 100
 	ROM = 50
 	BUL = 40 
 	HUN = 80 
