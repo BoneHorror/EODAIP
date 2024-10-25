@@ -5,8 +5,8 @@ target = {
 	1337 = 50 # Nanjing
 	1369 = 45 # Guangzhou
 } 
-max_garrison_prop = 0.20
-min_garrison_prop = 0.10
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
 
 ###################################
 # Diplomacy

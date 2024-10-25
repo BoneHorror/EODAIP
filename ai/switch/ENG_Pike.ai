@@ -1,8 +1,8 @@
 # England changes his production levels atwar
 # Temporary fixed for 0.30 beta needs rework when the map is finished, fixes limited to ignore provinces in greater europe regions (ewphoenix123)
 
-max_garrison_prop = 0.40
-min_garrison_prop = 0.20
+max_garrison_prop = 0.50
+min_garrison_prop = 0.25
 
 upgrading = 0.30
 #reinforcement = 0.30

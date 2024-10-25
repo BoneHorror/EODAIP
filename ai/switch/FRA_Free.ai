@@ -2,7 +2,7 @@
 
 switch = no # [yes/no]
 max_front_ratio = 1.2
-max_garrison_prop = 0.30
+max_garrison_prop = 0.40
 min_garrison_prop = 0.20
 neutrality = 80.000 
 war = 0

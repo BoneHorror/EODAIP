@@ -1,8 +1,8 @@
 strat_redeploy_threshold = 20
 
 max_front_ratio		= 1.2
-max_garrison_prop	= 0.2
-min_garrison_prop	= 0.1
+max_garrison_prop	= 0.4
+min_garrison_prop	= 0.2
 
 war = 1 
 neutrality = 25

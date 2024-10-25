@@ -4,8 +4,8 @@ target = {
 	1259 = 60 # Yan'an
 }  
 
-max_garrison_prop = 0.20
-min_garrison_prop = 0.10
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
 
 ###################################
 # Diplomacy

@@ -5,8 +5,8 @@ max_front_ratio = 1.5
 max_front_ratios = { 
 	GER = 6.0
 	}
-max_garrison_prop = 0.13 # 0.10
-min_garrison_prop = 0.08 # 0.05
+max_garrison_prop = 0.2 # 0.10
+min_garrison_prop = 0.1 # 0.05
 neutrality = 110 
 war = 1
 upgrading = 0.5
