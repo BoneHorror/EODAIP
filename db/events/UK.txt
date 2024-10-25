@@ -6053,16 +6053,16 @@ event = {
 	country = GRE
 	
 	trigger = {
-		control = { province = 377 data = -2 } # Athens
-		control = { province = 382 data = -1 } # Crete
-		control = { province = 380 data = -1 }
-		alliance = { country = GRE country = ENG }
 		atwar = yes
 		ai = yes
+		control = { province = 377 data = -2 } # Athens
+		control = { province = 382 data = GRE } # Crete
+		control = { province = 380 data = GRE } # Sitia
+		alliance = { country = GRE country = ENG }
 	}
 
 	date = { day = 0 month = january year = 1936 }		 
-	offset = 10
+	offset = 3
 	deathdate = { day = 29 month = september year = 1999 }	
 	name = df_event10_name
 	desc = df_event10_desc
