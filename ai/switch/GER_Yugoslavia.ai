@@ -1,8 +1,8 @@
 # German Yugoslavla Invasion
 
 max_front_ratio = 1.2
-max_garrison_prop = 0.55
-min_garrison_prop = 0.25
+max_garrison_prop = 0.6
+min_garrison_prop = 0.45
 max_front_ratios = {
 	YUG = 3.0
 	GRE = 4.0

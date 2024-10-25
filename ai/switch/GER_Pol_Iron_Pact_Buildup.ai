@@ -1,6 +1,6 @@
 # German operation Barbarosa Invasion AI File by Lothos
 
-strat_redeploy_threshold = 20
+strat_redeploy_threshold = 30
 max_redeploying = 0.25
 ###################################
 # Ground Combat, Leaders and Garrisons

@@ -3,8 +3,8 @@
 neutrality = 100.000 
 war = 10
 exp_force_ratio = 0.05
-strat_redeploy_threshold = 30
-max_redeploying = 0.00
+strat_redeploy_threshold = 40
+max_redeploying = 0.03
 max_garrison_prop = 0.50 # 0.60
 min_garrison_prop = 0.30 # 0.40
 

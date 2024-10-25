@@ -11,8 +11,8 @@ max_front_ratios = { 	# Override the default against specific countries. Ignored
 	DEN = 0.2
 	SCH = 0.01
 }
-max_garrison_prop = 0.50
-min_garrison_prop = 0.20
+max_garrison_prop = 0.60
+min_garrison_prop = 0.45
 neutrality = 20.000 
 war = 0
 

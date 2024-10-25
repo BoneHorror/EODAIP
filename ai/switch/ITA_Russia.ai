@@ -1,7 +1,7 @@
 # Italy vs Russia/Usa/France AI File by Lothos
 
-max_garrison_prop = 0.45
-min_garrison_prop = 0.25
+max_garrison_prop = 0.50
+min_garrison_prop = 0.30
 exp_force_ratio = 0.20
 exp_force_ratios = {
 	GER = 1.0

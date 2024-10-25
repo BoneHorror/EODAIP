@@ -1,6 +1,6 @@
 # German operation Barbarosa specific strategy AI File by Nekron
 
-strat_redeploy_threshold = 25
+strat_redeploy_threshold = 35
 max_redeploying = 0.15
 ###################################
 # Diplomacy

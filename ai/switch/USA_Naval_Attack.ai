@@ -21,8 +21,8 @@ max_front_ratios = {
 	RSI = 1.1 #1.2
 }
 
-max_garrison_prop = 0.15
-min_garrison_prop = 0.02
+max_garrison_prop = 0.25
+min_garrison_prop = 0.15
 
 exp_force_ratio = 0.01 
 exp_force_ratios = { ENG = 0.7 AST = 0.1 PHI = 0.2 } 

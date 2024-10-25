@@ -26,7 +26,7 @@ max_front_ratios = {
 	U05 = 4.0
 	USA = 2.0
 }
-max_garrison_prop = 0.40
+max_garrison_prop = 0.45
 min_garrison_prop = 0.30
 neutrality = 50.000 
 war = 35

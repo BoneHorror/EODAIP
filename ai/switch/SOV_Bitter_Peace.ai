@@ -6,7 +6,7 @@ max_front_ratios = {
 	JAP = 1.0 
 	MAN = 1.0
 }
-max_garrison_prop = 0.30
+max_garrison_prop = 0.40
 min_garrison_prop = 0.20
 neutrality = 95.000 
 war = 0

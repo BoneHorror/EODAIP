@@ -12,6 +12,7 @@ target = {
 max_garrison_prop = 0.60
 min_garrison_prop = 0.30
 neutrality = 100.000 
+strat_redeploy_threshold = 40
 max_front_ratio = 1.5 
 max_front_ratios = {
 	FIN = 0.08 # 0.08

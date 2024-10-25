@@ -1,5 +1,7 @@
 # Soviet first winter against Germany AI File by Lothos
 
+strat_redeploy_threshold = 35
+
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################

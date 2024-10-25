@@ -2,7 +2,7 @@
 
 max_garrison_prop = 0.45 # 0.60
 min_garrison_prop = 0.25 # 0.40
-strat_redeploy_threshold = 20
+strat_redeploy_threshold = 25
 max_redeploying = 0.4
 max_front_ratios = { 
    SOV = 0.9 

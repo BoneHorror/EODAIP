@@ -8,7 +8,7 @@ max_front_ratios = {
    TUR = 1.5
 } 
 no_exp_forces_to = { JAP SIA MAN MEN U49 U03 U04 SYR SPA POR FRA BUR PHI U87 U55 ITA }
-strat_redeploy_threshold = 20
+strat_redeploy_threshold = 35
 max_redeploying = 0.25
 ###################################
 # Spying

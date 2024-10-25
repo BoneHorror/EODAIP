@@ -7,6 +7,7 @@ max_front_ratios = {
 	ITA = 2.0
 	JAP = 1.2
 }
+strat_redeploy_threshold = 30
 ###################################
 # Ground Combat, Leaders and Garrisons
 ###################################

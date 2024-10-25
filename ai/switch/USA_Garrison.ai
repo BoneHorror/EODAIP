@@ -1,7 +1,7 @@
 # USA goes back to normal garrison ratio AI File by Lothos
 
-max_garrison_prop = 0.20
-min_garrison_prop = 0.10
+max_garrison_prop = 0.30
+min_garrison_prop = 0.15
 
 exp_force_ratio = 0.10 
 exp_force_ratios = { ENG = 1.0 } 

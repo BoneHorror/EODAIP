@@ -17,8 +17,8 @@ max_front_ratios = {
 	U01 = 2.5
 	USA = 2.0
 }
-max_garrison_prop = 0.25
-min_garrison_prop = 0.08
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
 
 ###################################
 # Diplomacy
