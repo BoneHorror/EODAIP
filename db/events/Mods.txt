@@ -9683,8 +9683,18 @@ event = {
 	action = {	
 		name = ACTION_NAME_GREAT
 		command = { trigger = { ai = GER } type = activate_division which = 14500 value = 2106 where = 217 when = 0 } #Activate GAR division to help AI defend beaches
-		command = { type = independence which = DEN value = 1 }
-		command = { type = make_puppet which = DEN }
+		#command = { type = independence which = DEN value = 1 } # Creates an ugly ahistorical puppet that pumps out a lot of units, better to just have it be directly controlled by GER with claims...
+		#command = { type = make_puppet which = DEN }
+		command = { type = addclaim which = 217 }
+		command = { type = addclaim which = 218 }
+		command = { type = addclaim which = 219 }
+		command = { type = addclaim which = 294 }
+		command = { type = addclaim which = 220 }
+		command = { type = province_revoltrisk which = 217 value = -5 }
+		command = { type = province_revoltrisk which = 218 value = -5 }
+		command = { type = province_revoltrisk which = 219 value = -5 }
+		command = { type = province_revoltrisk which = 294 value = -5 }
+		command = { type = province_revoltrisk which = 220 value = -5 }
 		command = { type = dissent value = -2 }
 		command = { trigger = { ai = no } type = money value = -50 }
 	}

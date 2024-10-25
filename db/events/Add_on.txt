@@ -13268,6 +13268,7 @@ event = {
 	trigger = {
 		#event = 9300004 # French Campaign Goals
 		NOT = { war = { country = GER country = FRA } }
+		NOT = { region = { region = "France" country = -2 data = 1 value = 5 } }
 		control = { province = 116 data = GER } # Brussels
 		control = { province = 122 data = GER } # Amsterdam
 		NOT = { exists = U47 }

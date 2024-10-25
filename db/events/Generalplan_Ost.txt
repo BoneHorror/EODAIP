@@ -6789,6 +6789,11 @@ event = {
 		command = { type = dissent value = -1 }
 		command = { type = belligerence which = GER value = 10 }
 		command = { type = secederegion which = GER value = Sweden when = 2 } #In case Finland grabbed parts of Sweden during the war
+		command = { type = removeclaim which = 217 }
+		command = { type = removeclaim which = 218 }
+		command = { type = removeclaim which = 219 }
+		command = { type = removeclaim which = 294 }
+		command = { type = removeclaim which = 220 }
 		command = { type = inherit which = DEN when = 0 value = 0 } #Denmark
 		command = { type = inherit which = NOR when = 0 value = 0 } #In case Norway exists somehow
 		command = { type = inherit which = U45 when = 0 value = 0 } #RK Norwegen
@@ -6848,6 +6853,11 @@ event = {
 		name = 1000714c #Create independent Scandinavian countries
 		command = { type = belligerence which = GER value = -10 }
 		command = { type = secederegion which = GER value = Sweden when = 2 } #In case Finland grabbed parts of Sweden during the war
+		command = { type = removeclaim which = 217 }
+		command = { type = removeclaim which = 218 }
+		command = { type = removeclaim which = 219 }
+		command = { type = removeclaim which = 294 }
+		command = { type = removeclaim which = 220 }
 		command = { type = inherit which = DEN when = 0 value = 0 } #Denmark
 		command = { type = inherit which = NOR when = 0 value = 0 } #In case Norway exists somehow
 		command = { type = inherit which = U45 when = 0 value = 0 } #RK Norwegen
