@@ -1,7 +1,7 @@
 # France defending against invasion of Belgium
 
-max_garrison_prop = 0.30
-min_garrison_prop = 0.20
+max_garrison_prop = 0.40
+min_garrison_prop = 0.25
 max_front_ratios = { 
 	GER = 2.0
 	ITA = 1.1

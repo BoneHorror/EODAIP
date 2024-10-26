@@ -18643,122 +18643,122 @@ event = {
 
 
 ##############Recycle Transport Planes each winter from 1941 onwards, but skip years 43 & 44. Risky to do bc it can cancel invasions but the alternative is no invasions at all once the plane gets inentiveably stuck
-event = {
-	id = 1100958
-	random = no
-	TAG = { SOV USA ENG GER U55 }
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		atwar = yes #Don't bother with recycling at peace
-		AND = {
-			month = 10 #only after october
-			NOT = { month = 11 } #not in december. We re-add planes in december
-			}
-		NOT = {
-			AND = {
-				year = 1943
-				NOT = { year = 1945 }
-				}
-			}
-		OR = {
-			AND = { 	
-				transport_plane = { country = -1 value = 1 } #Don't respawn when only 1 and not in cycle because that way it's just suiciding the paratrooper
-				local_flag = TPlaneBool
-				}
-			AND = { 	
-				transport_plane = { country = -1 value = 2 }
-				NOT = { local_flag = TPlaneBool }
-				}
-		}
-		paratrooper = { country = -1 value = 1 } #Don't bother doing this if we don't have any paras
-		NOT = { lost_national = { country = -1 value = 5 } } #Don't bother doing this if we're losing territory
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = october year = 1941 }
-	offset = 2
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = demobilize which = transport_plane when = 0 where = 0 value = -1 } #transport plane
-		command = { type = local_setflag which = TPlaneRecycle when = 1 value = 1 } #Add 1 to recycle flag. Default value is 0!, so remember that this will be be 1! after one plane
-		command = { type = local_setflag which = TPlaneBool } #disable transport reinforcement events
-	}
-}
-event = {
-	id = 1100959
-	random = no
-	TAG = { SOV USA ENG GER U55 }
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		atwar = yes #Don't bother with recycling at peace
-		month = 11 #only in december
-		local_flag = { which = TPlaneRecycle value = 1 } #TPlaneRecycle greater or equal to 1
-		NOT = { transport_plane = { country = -1 value = 8 } } #Not the best solution rn but let's just not respawn over 8 =/
-		NOT = { lost_national = { country = -1 value = 5 } } #Don't bother doing this if we're losing territory
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1940 }
-	offset = 3
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = build_division which = transport_plane when = 1 cost = -0.1 where = 5 } #build over add because build automatically selects the newest. Cheat w/ completion date and cost because it was already a div the AI owned
-		command = { 
-			trigger = { 
-				NOT = { paratrooper = { country = -1 value = 5 } } 
-				OR = { 
-					AND = { 
-						NOT = { country = GER }
-						NOT = { technology = 2330 } #Glider Art
-						}
-					AND = { 
-						country = GER
-						NOT = { technology = 2050 } #Glider Armor
-						NOT = { technology = 2330 } #Glider Art
-						}
-					}
-				}
-		type = build_division which = paratrooper when = 1 cost = -0.1 where = 3 } #on average, removing TPs will accidentally delete at least 1 para div. Let's make sure it's rebuilt
-		command = { 
-			trigger = { 
-				NOT = { paratrooper = { country = -1 value = 5 } } 
-				OR = { 
-					AND = { 
-						NOT = { country = GER }
-						technology = 2330 #Glider Art
-						}
-					AND = { 
-						country = GER
-						NOT = { technology = 2050 } #Glider Armor
-						technology = 2330 #Glider Art
-						}
-					}
-				}
-		type = build_division which = paratrooper value = glider_artillery when = 1 cost = -0.1 where = 3 }
-		command = { 
-			trigger = { 
-				NOT = { paratrooper = { country = -1 value = 5 } } 
-					AND = { 
-						country = GER
-						technology = 2050 #Glider Armor
-						}
-				}
-		type = build_division which = paratrooper value = glider_armor when = 1 cost = -0.1 where = 3 }
-		command = { type = local_setflag which = TPlaneRecycle when = 1 value = -1 } #Subtract 1 from the recycle flag. Default value is 1, so remember that this will be down to 1 after respawnin one plane
-		command = { trigger = { NOT = { local_flag = { which = TPlaneRecycle value = 2 } } } type = local_clrflag which = TPlaneBool } #enable transport reinforcement if we're done with re-training :D
-	}
-}
-
+#event = {
+#	id = 1100958
+#	random = no
+#	TAG = { SOV USA ENG GER U55 }
+#	persistent = yes
+#
+#	trigger = {
+#		ai = yes
+#		atwar = yes #Don't bother with recycling at peace
+#		AND = {
+#			month = 10 #only after october
+#			NOT = { month = 11 } #not in december. We re-add planes in december
+#			}
+#		NOT = {
+#			AND = {
+#				year = 1943
+#				NOT = { year = 1945 }
+#				}
+#			}
+#		OR = {
+#			AND = { 	
+#				transport_plane = { country = -1 value = 1 } #Don't respawn when only 1 and not in cycle because that way it's just suiciding the paratrooper
+#				local_flag = TPlaneBool
+#				}
+#			AND = { 	
+#				transport_plane = { country = -1 value = 2 }
+#				NOT = { local_flag = TPlaneBool }
+#				}
+#		}
+#		paratrooper = { country = -1 value = 1 } #Don't bother doing this if we don't have any paras
+#		NOT = { lost_national = { country = -1 value = 5 } } #Don't bother doing this if we're losing territory
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0
+#
+#	date = { day = 1 month = october year = 1941 }
+#	offset = 2
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = demobilize which = transport_plane when = 0 where = 0 value = -1 } #transport plane
+#		command = { type = local_setflag which = TPlaneRecycle when = 1 value = 1 } #Add 1 to recycle flag. Default value is 0!, so remember that this will be be 1! after one plane
+#		command = { type = local_setflag which = TPlaneBool } #disable transport reinforcement events
+#	}
+#}
+#event = {
+#	id = 1100959
+#	random = no
+#	TAG = { SOV USA ENG GER U55 }
+#	persistent = yes
+#
+#	trigger = {
+#		ai = yes
+#		atwar = yes #Don't bother with recycling at peace
+#		month = 11 #only in december
+#		local_flag = { which = TPlaneRecycle value = 1 } #TPlaneRecycle greater or equal to 1
+#		NOT = { transport_plane = { country = -1 value = 8 } } #Not the best solution rn but let's just not respawn over 8 =/
+#		NOT = { lost_national = { country = -1 value = 5 } } #Don't bother doing this if we're losing territory
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0
+#
+#	date = { day = 1 month = january year = 1940 }
+#	offset = 3
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = build_division which = transport_plane when = 1 cost = -0.1 where = 5 } #build over add because build automatically selects the newest. Cheat w/ completion date and cost because it was already a div the AI owned
+#		command = { 
+#			trigger = { 
+#				NOT = { paratrooper = { country = -1 value = 5 } } 
+#				OR = { 
+#					AND = { 
+#						NOT = { country = GER }
+#						NOT = { technology = 2330 } #Glider Art
+#						}
+#					AND = { 
+#						country = GER
+#						NOT = { technology = 2050 } #Glider Armor
+#						NOT = { technology = 2330 } #Glider Art
+#						}
+#					}
+#				}
+#		type = build_division which = paratrooper when = 1 cost = -0.1 where = 3 } #on average, removing TPs will accidentally delete at least 1 para div. Let's make sure it's rebuilt
+#		command = { 
+#			trigger = { 
+#				NOT = { paratrooper = { country = -1 value = 5 } } 
+#				OR = { 
+#					AND = { 
+#						NOT = { country = GER }
+#						technology = 2330 #Glider Art
+#						}
+#					AND = { 
+#						country = GER
+#						NOT = { technology = 2050 } #Glider Armor
+#						technology = 2330 #Glider Art
+#						}
+#					}
+#				}
+#		type = build_division which = paratrooper value = glider_artillery when = 1 cost = -0.1 where = 3 }
+#		command = { 
+#			trigger = { 
+#				NOT = { paratrooper = { country = -1 value = 5 } } 
+#					AND = { 
+#						country = GER
+#						technology = 2050 #Glider Armor
+#						}
+#				}
+#		type = build_division which = paratrooper value = glider_armor when = 1 cost = -0.1 where = 3 }
+#		command = { type = local_setflag which = TPlaneRecycle when = 1 value = -1 } #Subtract 1 from the recycle flag. Default value is 1, so remember that this will be down to 1 after respawnin one plane
+#		command = { trigger = { NOT = { local_flag = { which = TPlaneRecycle value = 2 } } } type = local_clrflag which = TPlaneBool } #enable transport reinforcement if we're done with re-training :D
+#	}
+#}
+#
 ###### Test event!
 #event = {
 #	id = 1100960

@@ -1775,41 +1775,43 @@ event = {
 		local_flag = JAPHomeland
 		NOT = {
 			# Japan
-			AND = {
-				owned = { province = 1554 data = JAP } # Hiroshima
-				NOT = { control = { province = 1554 data = JAP } } # Hiroshima
-			}
-			AND = {
-				owned = { province = 1553 data = JAP } # Osaka
-				NOT = { control = { province = 1553 data = JAP } } # Osaka
-			}
-			AND = {
-				owned = { province = 1558 data = JAP } # Kanazawa
-				NOT = { control = { province = 1558 data = JAP } } # Kanazawa
-			}
-			AND = {
-				owned = { province = 1557 data = JAP } # Nagoya
-				NOT = { control = { province = 1557 data = JAP } } # Nagoya
-			}
-			AND = {
-				owned = { province = 1552 data = JAP } # Tokyo
-				NOT = { control = { province = 1552 data = JAP } } # Tokyo
-			}
-			AND = {
-				owned = { province = 1556 data = JAP } # Niigata
-				NOT = { control = { province = 1556 data = JAP } } # Niigata
-			}
-			AND = {
-				owned = { province = 1550 data = JAP } # Fukushima
-				NOT = { control = { province = 1550 data = JAP } } # Fukushima
-			}
-			AND = {
-				owned = { province = 1551 data = JAP } # Akita
-				NOT = { control = { province = 1551 data = JAP } } # Akita
-			}
-			AND = {
-				owned = { province = 1549 data = JAP } # Sendai
-				NOT = { control = { province = 1549 data = JAP } } # Sendai
+			OR = {
+				AND = {
+					owned = { province = 1554 data = JAP } # Hiroshima
+					NOT = { control = { province = 1554 data = JAP } } # Hiroshima
+				}
+				AND = {
+					owned = { province = 1553 data = JAP } # Osaka
+					NOT = { control = { province = 1553 data = JAP } } # Osaka
+				}
+				AND = {
+					owned = { province = 1558 data = JAP } # Kanazawa
+					NOT = { control = { province = 1558 data = JAP } } # Kanazawa
+				}
+				AND = {
+					owned = { province = 1557 data = JAP } # Nagoya
+					NOT = { control = { province = 1557 data = JAP } } # Nagoya
+				}
+				AND = {
+					owned = { province = 1552 data = JAP } # Tokyo
+					NOT = { control = { province = 1552 data = JAP } } # Tokyo
+				}
+				AND = {
+					owned = { province = 1556 data = JAP } # Niigata
+					NOT = { control = { province = 1556 data = JAP } } # Niigata
+				}
+				AND = {
+					owned = { province = 1550 data = JAP } # Fukushima
+					NOT = { control = { province = 1550 data = JAP } } # Fukushima
+				}
+				AND = {
+					owned = { province = 1551 data = JAP } # Akita
+					NOT = { control = { province = 1551 data = JAP } } # Akita
+				}
+				AND = {
+					owned = { province = 1549 data = JAP } # Sendai
+					NOT = { control = { province = 1549 data = JAP } } # Sendai
+				}
 			}
 		}
 	}

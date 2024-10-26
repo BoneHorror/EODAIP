@@ -1,7 +1,7 @@
 # France 1936 AI File by Lothos
 
-max_garrison_prop = 0.50
-min_garrison_prop = 0.40
+max_garrison_prop = 0.60
+min_garrison_prop = 0.45
 upgrading = 0.10
 #reinforcement = 0.20
 max_front_ratios = { 	# Override the default against specific countries. Ignored against humans.

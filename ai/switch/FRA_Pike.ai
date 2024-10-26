@@ -1,6 +1,6 @@
 # France 1936 AI File by Lothos
 
-max_garrison_prop = 0.30
+max_garrison_prop = 0.40
 min_garrison_prop = 0.20
 upgrading = 0.10
 #reinforcement = 0.20
