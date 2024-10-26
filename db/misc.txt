@@ -901,12 +901,12 @@ mission = {
 	0.003	# Combat Modifier: Shore Bombardment Multiplier (Applies to the SB value of ships for org damage)
 # _MISSION_AMPHIBOUS_ASSAULT_
 	0 	# 0 = disabled by default, 1 = enabled by default
-	0.6	# Starting missions efficiency. Valid values: 0.05 to 10.0
+	0.75	# Starting missions efficiency. Valid values: 0.05 to 10.0
 # _MISSION_SEA_TRANSPORT_
 	1 	# 0 = disabled by default, 1 = enabled by default
-	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
+	1.0	# Starting missions efficiency. Valid values: 0.05 to 10.0
 	3.0	# Fleet range modifier
-	0.5	# Chance to be detected (Chance * This / mission_efficiency). Lower the better
+	0.25	# Chance to be detected (Chance * This / mission_efficiency). Lower the better
 # _MISSION_NAVAL_COMBAT_PATROL_
 	1 	# 0 = disabled by default, 1 = enabled by default
 	0.5	# Starting missions efficiency. Valid values: 0.05 to 10.0
