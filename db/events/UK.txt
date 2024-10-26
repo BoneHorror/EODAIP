@@ -1966,9 +1966,11 @@ event = {
 		command = { type = dissent value = 5 }
 	}       
 }
-       
+
+#conventional surrender
+
 event = {
-	id = 2001042 #conventional surrender
+	id = 2001042 
 	random = no
 	name = "uksur_name"
 	desc = "130671_desc"
@@ -1978,6 +1980,7 @@ event = {
 	country = ENG
 
 	trigger = {
+		NOT = { control = { province = 55 data = -3 } } # Paris not controlled by Ally
 		OR = {
 			war = { country = ENG country = GER }
 			war = { country = ENG country = SOV }
@@ -2010,17 +2013,13 @@ event = {
 					building = { province = 17 type = infrastructure value = 0.5 when = now } # Manchester
 				}
 				garrison = { country = GER province = 55   type = air size = 2 area = no } #Nazi planes over London
-				}
-				NOT = { control = { province = 55 data = -3 } } # Paris not controlled by Ally
-				}
-				OR = {
+			}
+		}
+		OR = {
 					garrison = { country = -2 province = 2682   type = naval size = 4 area = no } #Nazi ships on our doorstep
 					garrison = { country = -2 province = 2698   type = naval size = 4 area = no }
 					garrison = { country = -2 province = 2700   type = naval size = 4 area = no }
 					garrison = { country = -2 province = 2709   type = naval size = 4 area = no }
-				}
-			}
-			
 		}
 	}
 
