@@ -269,6 +269,8 @@ event = {
 		OR = {
 			alliance = { country = SPA }
 			alliance = { country = SPR }
+			war = { country = BEL }
+			war = { country = HOL }
 			land_percentage = { country = FRA value = 1.5 }
 			AND = {
 				month = 4 # May

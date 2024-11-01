@@ -7197,22 +7197,7 @@ event = {
 		garrison = { country = -3 province = 91 size = 3 }	
 	}
 	
-	trigger = { 
-		exists = SCH 
-		NOT = { alliance = { country = GER country = SCH } }
-		NOT = { war = { country = GER country = ENG } }
-		NOT = { war = { country = GER country = SOV } }
-		NOT = { war = { country = GER country = SCH } }
-		region = { region = Germany country = -3 data = 1 } #Total domination of Europe and successful Barbarossa required
-		region = { region = Benelux country = -3 data = 1 } 
-		region = { region = France country = -3 data = 1 } 
-		region = { region = England country = -3 data = 1 } 
-		region = { region = Scotland country = -3 data = 1 } 
-		region = { region = Poland country = -3 data = 1 }
-		region = { region = Belarus country = -3 data = 1 }
-		region = { region = Ukraine country = -3 data = 1 }
-		region = { region = "Southern Russia" country = -3 data = 1 }
-		}
+	trigger = { ai = no } #Disable AI from taking this decision, AI does not like forts+mountains and it ends up looking silly
 
 	name = 1000722name
 	desc = 1000722desc

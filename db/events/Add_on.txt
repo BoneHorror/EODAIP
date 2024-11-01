@@ -4743,6 +4743,7 @@ event = {
 		name = "1000145a"
 		ai_chance = 100
 		command = { type = dissent value = -1 }
+		command = { type = domestic which = interventionism value = 2 }
 		command = { type = relation which = GER value = 20 }
 		command = { type = relation which = ITA value = 20 }
 	}
