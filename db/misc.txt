@@ -132,7 +132,7 @@ economy = {
 # Land Units - fuel consumption modifier when not moving
 	0.15 #0.25
 # Land Units - fuel consumption modifier when in combat or in bombardment
-	1.8 #1.0
+	1.5 #1.0
 # Air Units - supply consumption modifier when in redeployment pool or at air base
 	0.2 #1.0
 # Air Units - supply consumption modifier when in combat or in bombardment
@@ -144,11 +144,11 @@ economy = {
 # Naval Units - supply consumption modifier when in redeployment pool or in port
 	0.4 #0.5
 # Naval Units - supply consumption modifier when in combat 
-	2.0 #1.0
+	1.5 #1.0
 # Naval Units - fuel consumption modifier when not moving and not in port
 	0.25 #0.25
 # Naval Units - fuel consumption modifier when in combat or in bombardment
-	2.0 #1.0
+	1.5 #1.0
 # TP to convoy transports conversion ratio
 	10 #0
 # DD to convoy escorts conversion ratio
@@ -304,7 +304,7 @@ combat = {
 # Combat Modifier: Encircled Mod (for completely surrounded units)
 	0.15 # 0.25 Based on Liddle Hart theories, surrounded units fight even harder for their life
 # Combat Modifier: Land Fort Multiplier ( value * fort level)
-	-0.1 # -0.07 (WIF)
+	-0.07 # -0.07 (WIF)
 # Combat Modifier: Coastal Fort Multiplier ( value * fort level)
 	-0.05 # -0.035 # -0.07
 # Combat Modifier: Penalty for hard (Softness < 50%) units attacking urban provinces
@@ -390,7 +390,7 @@ combat = {
 # Damage factor versus Air Bases from bombing
 	2.0
 # Damage factor versus AA from bombing
-	0.5
+	0.6
 # Damage factor versus rocket from bombing
 	0.2
 # Damage factor versus nuke from bombing
@@ -398,11 +398,11 @@ combat = {
 # Damage factor versus Radar from bombing
 	0.5
 # Damage factor versus Infra from bombing
-	0.5
+	0.6
 # Damage factor versus IC from bombing
-	1.0
+	1.2
 # Damage factor versus resources from bombing
-	1.0
+	1.2
 # Base chance of Land units to avoid hit if "vulnerable", gets multiplied with Ground Defense Efficiency.
 	0.6
 # Base chance of Air units to avoid hit if "vulnerable" - Note that this is swapped compared to DH1.2 because of vulnerability changes...
@@ -410,7 +410,7 @@ combat = {
 # Base chance of Naval units to avoid hit if "vulnerable"
 	0.66
 # Base chance of units attacked by province AA to avoid hit if "vulnerable"
-	0.45 #0.75
+	0.5 #0.75
 # Base chance of Land units to avoid hit if not "vulnerable", gets multiplied with Ground Defense Efficiency.
 	0.95
 # Base chance of Air units to avoid hit if not "vulnerable".
@@ -444,11 +444,11 @@ combat = {
 # Land unit - Additional inflicted ORG damage (random) for Hard vs Soft units - starting value, it is modified before being used. Don't use fractions!
 	4 #4
 # Land unit - Min inflicted STR damage - starting value, it is modified before being used.
-	1.0 #1.0
+	0.5 #1.0
 # Land unit - Additional inflicted STR damage (random) for Hard vs Hard or Soft vs Soft units - starting value, it is modified before being used. Don't use fractions!
 	2 #2
 # Land unit - Additional inflicted STR damage (random) for Hard vs Soft units - starting value, it is modified before being used. Don't use fractions!
-	2 #1	
+	3 #1	
 # Air unit - Min inflicted ORG damage - starting value, it is modified before being used.
 	2.0 #2.0
 # Air unit - Additional inflicted ORG damage (random) - starting value, it is modified before being used. Don't use fractions!
@@ -464,7 +464,7 @@ combat = {
 # Naval unit - Additional inflicted ORG damage (random) - starting value, it is modified before being used. Don't use fractions!
 	6 #6	
 # Naval unit - Min inflicted STR damage - starting value, it is modified before being used.
-	1.0 #1.0
+	0.5 #1.0
 # Naval unit - Additional inflicted STR damage (random) - starting value, it is modified before being used. Don't use fractions!
 	2 #2
 # Land vs. Air - Str dmg air units takes from land units will increase by land unit org/ this value [multiplier]
@@ -478,21 +478,21 @@ combat = {
 # Air vs. Province AA - Org dmg lower limit - Air units attacked by province AA during bombardment will stop receive ORG damage when ORG drops to or below this absolute ORG value
 	3.0 #10.0
 # Carriers vs. Bases - Org dmg per hour - ORG lost each hour by carriers while attacking naval or air bases
-	2.0 #5.0
+	2.5 #5.0
 # Carriers vs. Bases - Org dmg lower limit - Carriers attacking naval and air bases will stop receive ORG damage (see above) when ORG drops to or below this absolute ORG value
 	10.0 #0.0
 # Carriers vs. Bases - Org dmg hit after bombardment - Carriers attacking naval and air bases will receive this ORG damage after every bombing run. Remaining ORG cannot be less then 'Carriers vs. Bases - Org dmg lower limit' (see above)
 	20.0 #10.0
 # Carriers vs. Bases - Str dmg - Increasing this will increase the STR damage inflicted by carriers to enemy units while attacking enemy bases [multiplier]
-	2.0 #2.0
+	1.5 #2.0
 # Air vs. Navy - Critical hit chance - Chance for air units to inflict a critical hit (extra STR damage) to ships - checked for each hit inflicted in combat. 0-100 (0 - No critical hits ever, 100 - Every hit is critical)
-	10 #10
+	15 #10
 # Air vs. Navy - Str dmg modifier for critical hits inflicted in combats (see above) [multiplier]
-	10.0 #10.0
+	6.7 #10.0
 # Navy vs. Navy - Critical hit chance - Chance for naval units to inflict a critical hit (extra STR damage) to other ships - checked for each hit inflicted in combat. 0-100 (0 - No critical hits ever, 100 - Every hit is critical)
-	10 #10
+	15 #10
 # Navy vs. Navy - Str dmg modifier for critical hits inflicted in combats (see above) [multiplier]
-	10.0 #10.0
+	5.0 #10.0
 # Land vs. Air - Str dmg air units takes from land units will increase by land unit org/ this value [multiplier] when THIS > 0.0. Ignore this modifier when THIS = 0.0. Use it as multiplier [current org / max org] when THIS = -1.0.
 	-1.0 #25.0
 # Land vs. Air - Org dmg - Increasing this value will increase the org dmg air units takes from land units [multiplier]
@@ -1206,7 +1206,7 @@ mod = {
 # Merge and relocate provincial depots to the best province in the area. This is new and more intelligent but CPU demanding system. 0 - Disabled (use the old system).  Any positive integer is the number of days between areas analyzing using the new system.
 	5 #0
 # In-game losses logging (statistics). 0 - Disabled, 1 - Enabled (ships and convoys only), 2 - Log equipment losses too, 3 – Log equipment of captured units too, 4 – Log attrition losses too
-	2 #0
+	2 #0 is stable!
 # Allow brigade attaching as long as the unit is in supply no matter on whom territory it is. 1 - Enabled, 0 - Disabled (default)
 	1 #0
 # Multiple deployment - preferred unit size for armies. This could be overridden in-game by holding SHIFT (deploy all in a single group) or CONTROL (deploy each in own group) keys.
