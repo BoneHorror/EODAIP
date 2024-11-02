@@ -1,7 +1,7 @@
 # Japan Backoff China AI File by Lothos
 
-max_garrison_prop = 0.70
-min_garrison_prop = 0.50
+max_garrison_prop = 0.60
+min_garrison_prop = 0.30
 
 max_front_ratios = { 	
 	CHI = 0.7 
