@@ -62,10 +62,12 @@ event = {
 
 	action_a = {
 		command = { type = ai which = "switch/JAP_China.ai" }
-		#command = { type = free_ic value = 20 }
-		#command = { type = free_oil value = 5 }
-		#command = { type = carrier_level value = 1.0 }
+		command = { type = free_ic value = 8 }
+		command = { type = free_oil value = 4 }
+		command = { type = carrier_level value = 1.0 }
 		command = { trigger = { difficulty = 2 } type = visibility which = transport value = -2 }
+		command = { type = naval_defense which = transport value = -1 } #bonus
+		command = { type = air_defense which = transport value = -1 } #bonus
 	}
 }
 ################ 

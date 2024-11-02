@@ -54,7 +54,7 @@ event = {
 	action_a = {
 		command = { type = ai which = "switch/USA_Gear_Up_1.ai" }
 		command = { type = carrier_level value = 2.0 }
-		command = { trigger = { ai = JAP difficulty = 2 } type = visibility which = transport value = -20 } #Transport cheat for US AI vs JAP AI so that it doesn't suicide as many transports, not used on Strong Axis
+		command = { trigger = { ai = JAP difficulty = 2 } type = visibility which = transport value = -2 } #Transport cheat for US AI vs JAP AI so that it doesn't suicide as many transports, not used on Strong Axis
 		command = { trigger = { ai = JAP difficulty = 2 } type = speed which = transport value = 4 }
 		command = { trigger = { ai = JAP difficulty = 2 } type = naval_defense which = transport value = -3 } #bonus
 		command = { trigger = { ai = JAP difficulty = 2 } type = air_defense which = transport value = -1 } #bonus
