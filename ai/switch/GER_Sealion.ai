@@ -314,7 +314,7 @@ invasion = {
 	adjacentenemy 	= 1.5	#higher = much more vary of troops nearby
 	air_base		= 2.5 
     naval_base 		= 1.5
-    air_support 	= 18.0 
+    air_support 	= 100.0 
     redirect 		= home
 	ignore			= yes
 	help_allies 	= no	#[yes/no]
@@ -614,12 +614,12 @@ admiral = {
 		"West Coast of Central America"
 	}
 	target = { 
-		2709 = 100 #Evaluate invasions Cardiff
-		2700 = 100 #Evaluate invasions to Portsmouth
-		2698 = 100 #Evaluate invasions to Dover
-		2708 = 80 #Evaluate Case Green
-		2278 = 200 #Hunt British Convoys near Gibraltar
-		2279 = 200 #Hunt British Convoys near Gibraltar
+		2709 = 200 #Evaluate invasions Cardiff
+		2700 = 200 #Evaluate invasions to Portsmouth
+		2698 = 200 #Evaluate invasions to Dover
+		2708 = 120 #Evaluate Case Green
+		2278 = 250 #Hunt British Convoys near Gibraltar
+		2279 = 250 #Hunt British Convoys near Gibraltar
 	} 
 	core = { 
 		2694 #Protect Denmark

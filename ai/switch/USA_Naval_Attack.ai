@@ -108,17 +108,17 @@ invasion = {
 	random				= 22.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 200.0  #About the distance from Japan to Batavia
-	max_staging_distance = 110.0 # How far should the staging area be from the target invasion point
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 250.0 # How far should the staging area be from the target invasion point
 	distance			= 0.1	#higher = avoid long distance.
 	pocket				= 1.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 1.5	#prioritise taking pure islands.
-	enemy				= 0.3	#higher = much more vary of troops in province.
-	adjacentenemy 		= 1.0	#higher = much more vary of troops nearby
+	enemy				= 0.5	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.5	#higher = much more vary of troops nearby
 	air_base			= 1.5 
     naval_base 			= 1.0 
-    air_support 		= 1.0 
-    redirect 			= nearest
+    air_support 		= 6.0 
+    redirect 			= priority
 	ignore				= yes
 	help_allies 		= no 	#[yes/no]
     province_priorities = yes #Invade only provinces in target list with priority higher then 0
@@ -216,7 +216,7 @@ invasion = {
 } 
 admiral = { 
 	min_core_attack_fleets  = 3		# Minimum amount of attack fleets to defend CORE provinces (default 0)
-	num_attack_fleets		= 8		# ENG/USA default 3, JAP default 2 everyone else is 1
+	num_attack_fleets		= 6		# ENG/USA default 3, JAP default 2 everyone else is 1
 
 	#Which provinces to use as bases..
 	base = {
@@ -227,7 +227,7 @@ admiral = {
 		1683 # Guam
 	}
 	target = {
-	2489 = 110 #Osaka Sea
+	2489 = 140 #Osaka Sea
 	2511 = 220 #Hunt s okinawa
 	2512 = 220 #Hunt n okinawa
 	} 

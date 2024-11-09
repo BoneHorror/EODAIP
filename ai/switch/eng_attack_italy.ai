@@ -58,7 +58,7 @@ invasion = {
 		coastal = 0.2 #increase to avoid coastal forts more.
 		beach = 0.1 #higher, avoid worst beaches.
 		max_distance = 120.0 #About the distance from Japan to Batavia
-		max_staging_distance = 25.0 # How far should the staging area be from the target invasion point
+		max_staging_distance = 50.0 # How far should the staging area be from the target invasion point
 		distance = 0.5 #higher = avoid long distance.
 		pocket = 1.0 #prioritise pockets, ie provinces with no adjacent controlled by same.
 		island = 0.2 #prioritise taking pure islands.
@@ -84,6 +84,7 @@ invasion = {
         789 #Alexandria
         348 #Gibraltar
         429 #Malta
+		1353 # Singapore
     }
     
     target = {
@@ -146,24 +147,24 @@ invasion = {
 		495	= 2500	#Narvik - higher prio to spend ENG_Naval_Norway properly
 		
 		#Germany
-		152 = 100   #Kiel
-		147	= 100	#Wilhelmshaven
-		153	= 100	#Rostock
-		158	= 100	#Stettin
+		152 = -1   #Kiel
+		147	= -1	#Wilhelmshaven
+		153	= -1	#Rostock
+		158	= -1	#Stettin
 
 	
 		#France
-		49	= 900  #Calais
-		53	= 1800  #Dieppe
-		44	= 900  #Caen
-		37	= 800  #Brest
-		39	= 800  #Lorient
-		68  = 2000  #Bordeaux
-		69	= 900	#La Rochelle
-		46	= 800	#Bayeux
-		51	= 1800	#Dunkirk
-		82	= 800	#Montpellier
-		86	= 800	#Marseille
+		49	= -1  #Calais
+		53	= -1  #Dieppe
+		44	= -1  #Caen
+		37	= -1  #Brest
+		39	= -1  #Lorient
+		68  = -1  #Bordeaux
+		69	= -1	#La Rochelle
+		46	= -1	#Bayeux
+		51	= -1	#Dunkirk
+		82	= -1	#Montpellier
+		86	= -1	#Marseille
 	
     
         # Belgium

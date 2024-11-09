@@ -25,7 +25,7 @@ invasion = {
 	adjacentenemy 	= 1.5	#higher = much more vary of troops nearby
 	air_base		= 2.5 
     naval_base 		= 1.2
-    air_support 	= 20.0 
+    air_support 	= 100.0 
     redirect 		= priority
 	ignore			= yes
 	help_allies 	= no	#[yes/no]
@@ -299,8 +299,8 @@ admiral = {
 		152 #Kiel
 	}
 	target = { 
-		2278 = 100 #Hunt British Convoys near Gibraltar
-		2279 = 100 #Hunt British Convoys near Gibraltar
+		2278 = 150 #Hunt British Convoys near Gibraltar
+		2279 = 150 #Hunt British Convoys near Gibraltar
 	} 
 	core = { 
 		2694 #Protect Denmark

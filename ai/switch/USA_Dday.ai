@@ -154,6 +154,11 @@ front = {
       	enemy_handicap = { } 
       	passivity = {
 			RSI = 70
+			GER = 20
+			SLO = 50
+			ROM = 50
+			HUN = 50
+			BUL = 50
 			} 
 	
 	province_priorities = { 
@@ -183,17 +188,17 @@ invasion = {
 	random				= 20.0	#How big a random range.  (1.0 = 1%)
 	coastal				= 0.1	#increase to avoid coastal forts more.
 	beach				= 0.01	#higher, avoid worst beaches.
-	max_distance  		= 150.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
-	max_staging_distance = 100.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
-	distance			= 0.25	#higher = avoid long distance.
+	max_distance  		= 250.0  #no invasions at distances higher than this, counted from closest friendly naval base, 1 = 100km ingame, may be overridden by max_staging_distance
+	max_staging_distance = 35.0 #no invasions at distances higher than this, counted from closest friendly naval base defined as staging province, 1 = 100km 
+	distance			= 0.2	#higher = avoid long distance.
 	pocket				= 0.5	#prioritise pockets, ie provinces with no adjacent controlled by same.
 	island				= 0.1	#prioritise taking pure islands.
 	enemy				= 1.0	#higher = much more vary of troops in province.
 	adjacentenemy 		= 0.9	#higher = much more vary of troops nearby
 	air_base			= 1.0 
-    naval_base 			= 1.0 
-    air_support 		= 4.0 
-    redirect 			= nearest #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
+    naval_base 			= 1.5 
+    air_support 		= 6.0 
+    redirect 			= priority #Home is safer but does not invade often enough + cancelling through Pacific can lose troops to JAP navy. We want US to try invading even if they fail
 	ignore				= yes
 	help_allies 		= no 	#[yes/no]
     province_priorities = yes #Invade only provinces in target list with priority higher then 0
