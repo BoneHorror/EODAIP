@@ -26,7 +26,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 1 - Troopship (1925)
@@ -55,7 +55,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 2 - Troopship (1936)
@@ -84,7 +84,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 3 - Troopship (1941)
@@ -113,7 +113,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 4 - Troopship (1949)
@@ -142,7 +142,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 5 - Troopship (1955)
@@ -171,7 +171,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 6 - Troopship (1971) Algol-class/Gordon-class
@@ -200,7 +200,7 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }
 
 # 7 - Troopship (1995) Bob Hope-class
@@ -229,5 +229,5 @@ model = {
 	distance					= 0.1
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { transport = 5 manpower = 500 }
+	equipment = { transport = 1 manpower = 500 }
 }

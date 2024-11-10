@@ -32,7 +32,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 1 - 2nd gen. Strategic Bomber - Zeppelin Staaken R.VI 1917, Handley Page V/1500 (1918)
@@ -60,7 +60,7 @@ model = {
 	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 2 - 3rd gen. Strategic Bomber - Tupolev TB-3 (1930)
@@ -87,7 +87,7 @@ model = {
 	upgrade_cost_factor 		= 1.00
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 3 - Basic Strategic Bomber (1935)
@@ -114,7 +114,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 4 - Improved Strategic Bomber - Boeing B-17 Flying Fortress (1939)
@@ -141,7 +141,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 5 - Advanced Strategic Bomber - Consolidated B-24 Liberator (1942)/Avro Lancaster B.I
@@ -168,7 +168,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 6 - Semi-Modern Strategic Bomber (1945) Avro Lincoln Avro Lancaster B.VII
@@ -195,7 +195,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 7 - Turbojet Strategic Bomber (1949)
@@ -222,7 +222,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 8 - Improved Turbojet Strategic Bomber (1954)
@@ -249,7 +249,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 9 - Intercontinental Strategic Bomber (1958)
@@ -276,7 +276,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 10 - Improved Intercontinental Strategic Bomber (1961)
@@ -303,7 +303,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 11 - Supersonic Strategic Bomber (1973)
@@ -330,7 +330,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }
 
 # 12 - Stealth Strategic Bomber (1989) B-2 Spirit/BAE Taranis/Sukhoi PAK-DA
@@ -357,5 +357,5 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { heavy_bomber = 100 manpower = 1000 }
+	equipment = { heavy_bomber = 1 manpower = 1000 }
 }

@@ -29,7 +29,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 1 - Basic Transport Plane (1934)
@@ -57,7 +57,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 2 - Improved Transport Plane (1938)
@@ -85,7 +85,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 3 - Advanced Transport Plane (1941)
@@ -113,7 +113,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 4 - Semi modern Transport Plane (1944)
@@ -141,7 +141,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 5 - Modern Transport Plane (1950)
@@ -169,7 +169,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 6 - Imp Modern Transport Plane (1957) Lockheed C-130B Hercules/Antonov An-12/Transall C-160D/de Havilland Canada DHC-4 Caribou/Breguet 941
@@ -197,7 +197,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 7 - Imp Modern Transport Plane (1965) Lockheed C-5A Galaxy/Antonov An-26/Kawasaki C-1/CASA C-212A Aviocar/Ilyushin Il-76D/Hawker Siddeley Andover
@@ -225,7 +225,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 8 - Adv Modern Transport Plane (1980) Lockheed C-5B Galaxy/CASA-IPTN CN-235/Antonov An-124/Shaanxi Y-8/Short C-23 Sherpa
@@ -253,7 +253,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }
 
 # 9 - Modern Transport Plane (1992) Boeing C-17A Globemaster III/EADS CASA C-295/Antonov An-70/Airbus A400M Atlas
@@ -281,5 +281,5 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { transport_plane = 100 manpower = 200 }
+	equipment = { transport_plane = 1 manpower = 200 }
 }

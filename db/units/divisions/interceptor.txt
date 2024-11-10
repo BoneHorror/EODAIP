@@ -28,7 +28,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 1 - 1st gen. Air supp Fighter (1914)
@@ -55,7 +55,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 2 - 2nd gen. Air supp Fighter (1915)
@@ -82,7 +82,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 3 - 3rd gen. Air supp Fighter (1916)
@@ -109,7 +109,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 4 - 4th gen. Air supp Fighter (1917)
@@ -136,7 +136,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 5 - 5th gen. Air supp Fighter (1918)
@@ -164,7 +164,7 @@ model = {
 	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 6 - Interwar Fighter (1924)
@@ -191,7 +191,7 @@ model = {
 	upgrade_cost_factor 		= 1.00
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 7 - Early Fighter (1930)
@@ -218,7 +218,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 8 - Basic Interceptor (1937)
@@ -245,7 +245,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 9 - Improved Interceptor (1940)
@@ -272,7 +272,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 10 - Advanced Interceptor (1942) - P-51B
@@ -299,7 +299,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 11 - Early Turbojet Interceptor (1944) - First Generation: Dassault M.D.450 Ouragan/Gloster Meteor F.1/Heinkel He 162/Mikoyan-Gurevich MiG-9/Lockheed F-80 Shooting Star/FMA I.Ae. 27 Pulqui I/P-51D
@@ -326,7 +326,7 @@ model = {
 	upgrade_cost_factor		 	= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 12 - Basic Turbojet Interceptor (1947) - First Generation: Yakovlev Yak-15 Yakovlev Yak-23 Lavochkin La-15/Gloster Meteor F.4 De Havilland Vampire Mk.I/North American F-86 Sabre/Saab 29 Tunnan/FMA IAe 33 Pulqui II/
@@ -353,7 +353,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 13  - Improved Turbojet Interceptor (1950) - First Generation: Avro Canada CF-100 Canuck/De Havilland Vampire F.3/Yakovlev Yak-25/Northrop F-89 Scorpion,Lockheed F-94 Starfire,North American F-86D Sabre Dog/EFW N-20 "Aiguillon"/Sud Aviation Vautour IIN
@@ -380,7 +380,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 14 - Supersonic Interceptor (1954) Second Generation: Sukhoi Su-9/Hawker Hunter F.6 Supermarine Swift/Convair F-102 Delta Dagger/FMA I.Ae. 37 Ala Delta/Dassault Mystere IVA
@@ -407,7 +407,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 15 - Supersonic Interceptor (1958) Second Generation: Dassault Mirage IIIC/Avro Canada CF-105 Arrow/Sukhoi Su-11/English Electric Lightning F.3/Convair F-106 Delta Dart/Helwan HA-300
@@ -434,7 +434,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 16 - Supersonic Interceptor (1962) Third Generation: Dassault Mirage F.1C/Aeritalia F-104S/Sukhoi Su-15 Tupolev Tu-28 Mikoyan-Gurevich MiG-25 MiG-23P/Hawker P.1121/General Dynamics-Grumman F-111B/
@@ -462,7 +462,7 @@ model = {
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	interceptor 				= 17
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 17 - Supersonic Interceptor (1971) Fourth Generation: Dassault Mirage 2000C/Mitsubishi F-15J/Mikoyan MiG-31/Panavia Tornado ADV
@@ -490,5 +490,5 @@ model = {
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
 	#interceptor 				= -2
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }

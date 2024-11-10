@@ -33,7 +33,7 @@ model = {
 	distance					= 0.05
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 200 }
+	equipment = { destroyer = 1 manpower = 200 }
 }
 
 # 1 - Fleet Destroyer (1902)
@@ -62,7 +62,7 @@ model = {
 	distance					= 0.14
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 375 }
+	equipment = { destroyer = 1 manpower = 375 }
 }
 
 # 2 - Turbine Destroyer (1909)
@@ -91,7 +91,7 @@ model = {
 	distance					= 0.16
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 500 }
+	equipment = { destroyer = 1 manpower = 500 }
 }
 
 # 3 - Great War Destroyer (1916)
@@ -120,7 +120,7 @@ model = {
 	distance					= 0.16
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 500 }
+	equipment = { destroyer = 1 manpower = 500 }
 }
 
 # 4 - Large Destroyer (1923)
@@ -149,7 +149,7 @@ model = {
 	distance					= 0.17
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 650 }
+	equipment = { destroyer = 1 manpower = 650 }
 }
 
 # 5 - Improved Destroyer (1933)
@@ -178,7 +178,7 @@ model = {
 	distance					= 0.18
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 800 }
+	equipment = { destroyer = 1 manpower = 800 }
 }
 
 # 6 - Semi-Modern Destroyer (1937)
@@ -207,7 +207,7 @@ model = {
 	distance					= 0.19
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 1250 }
+	equipment = { destroyer = 1 manpower = 1250 }
 }
 
 # 7 - Modern Destroyer (1941)
@@ -236,7 +236,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 1500 }
+	equipment = { destroyer = 1 manpower = 1500 }
 }
 
 # 8 - Advanced Destroyer (1945)
@@ -265,7 +265,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 1600 }
+	equipment = { destroyer = 1 manpower = 1600 }
 }
 
 # 9 - Missile Destroyer (1955)
@@ -294,5 +294,5 @@ model = {
 	distance					= 0.4
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { destroyer = 5 manpower = 1650 }
+	equipment = { destroyer = 1 manpower = 1650 }
 }

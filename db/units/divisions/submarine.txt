@@ -30,7 +30,7 @@ model = {
 	distance					= 0.15
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 100 }
+	equipment = { submarine = 1 manpower = 100 }
 }
 
 # 1 - Diesel Submarine (1912)
@@ -59,7 +59,7 @@ model = {
 	distance					= 0.16
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 200 }
+	equipment = { submarine = 1 manpower = 200 }
 }
 
 # 2 - Ocean-going Submarine (1915)
@@ -88,7 +88,7 @@ model = {
 	distance					= 0.17
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 200 }
+	equipment = { submarine = 1 manpower = 200 }
 }
 
 # 3 - Interwar Submarine (1924)
@@ -117,7 +117,7 @@ model = {
 	distance					= 0.17
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 250 }
+	equipment = { submarine = 1 manpower = 250 }
 }
 
 # 4 - Improved Submarine (1933)
@@ -146,7 +146,7 @@ model = {
 	distance					= 0.18
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 250 }
+	equipment = { submarine = 1 manpower = 250 }
 }
 
 # 5 - Long-range Submarine (1937)
@@ -175,7 +175,7 @@ model = {
 	distance					= 0.18
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 300 }
+	equipment = { submarine = 1 manpower = 300 }
 }
 
 # 6 - Extended-range Submarine (1940)
@@ -204,7 +204,7 @@ model = {
 	distance					= 0.18
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 350 }
+	equipment = { submarine = 1 manpower = 350 }
 } 
 
 # 7 - Diesel-electric Submarine (1943)
@@ -233,7 +233,7 @@ model = {
 	distance					= 0.19
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 400 }
+	equipment = { submarine = 1 manpower = 400 }
 }
 
 # 8 - Semi-Modern Submarine (1950)
@@ -262,7 +262,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 400 }
+	equipment = { submarine = 1 manpower = 400 }
 }
 
 # 9 - Modern Submarine (1955) Type 201/Oberon Class/Zulu Class/Narval-class
@@ -291,7 +291,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 450 }
+	equipment = { submarine = 1 manpower = 450 }
 }
 
 # 10 - Basic Modern Submarine (1960) Foxtrot-class/type 205/Aréthuse-class
@@ -320,7 +320,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 500 }
+	equipment = { submarine = 1 manpower = 500 }
 }
 
 # 11 - Improved Modern Submarine (1967) Tango Class/Type 206
@@ -349,7 +349,7 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 550 }
+	equipment = { submarine = 1 manpower = 550 }
 }
 
 # 12 - Advanced Modern Submarine (1980) Kilo class/Type 209
@@ -378,5 +378,5 @@ model = {
 	distance					= 0.2
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { submarine = 5 manpower = 550 }
+	equipment = { submarine = 1 manpower = 550 }
 }

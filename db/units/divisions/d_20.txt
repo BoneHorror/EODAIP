@@ -22,5 +22,5 @@ model = {
 	upgrade_cost_factor 		= 0.16
 	reinforce_time				= 0.2
 	reinforce_cost 				= 0.16
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }

@@ -31,7 +31,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 1 - 1st gen. Bomber (1914)
@@ -58,7 +58,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 2 - 2nd gen. Bomber (1916)
@@ -85,7 +85,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 3 - 3rd gen. Bomber (1918)
@@ -113,7 +113,7 @@ model = {
 	upgrade_time_boost 			= no 	# Do not reduce upgrade time on obsolete models when upgrading to next level
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 4 - Interwar Bomber (1924)
@@ -140,7 +140,7 @@ model = {
 	upgrade_cost_factor 		= 1.00
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 5 - Early Bomber (1932)
@@ -167,7 +167,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 6 - Basic Tactical Bomber (1938)
@@ -194,7 +194,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 7 - Improved Tactical Bomber (1940)
@@ -221,7 +221,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 8 - Advanced Tactical Bomber (1943)
@@ -248,7 +248,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 9 - Turbojet Tactical Bomber (1945)
@@ -275,7 +275,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 10 - Improved Turbojet Tactical Bomber (1949)
@@ -302,7 +302,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 11 - Semi-modern Turbojet Tactical Bomber (1954)
@@ -329,7 +329,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 12 - Advanced Turbojet Tactical Bomber (1960)
@@ -356,7 +356,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { bomber = 100 manpower = 600 }
+	equipment = { bomber = 1 manpower = 600 }
 }
 
 # 13 - Strike Fighter (1979)
@@ -383,5 +383,5 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }

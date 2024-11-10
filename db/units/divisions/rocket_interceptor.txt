@@ -28,7 +28,7 @@ model = {
 	upgrade_cost_factor 		= 0.50
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
 
 # 1 - Improved Rocket Interceptor (1943)
@@ -56,5 +56,5 @@ model = {
 	upgrade_cost_factor 		= 0.90
 	reinforce_time				= 0.60
 	reinforce_cost 				= 0.50
-	equipment = { fighter = 100 manpower = 100 }
+	equipment = { fighter = 1 manpower = 100 }
 }
