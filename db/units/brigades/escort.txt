@@ -23,7 +23,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -51,7 +51,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -79,7 +79,7 @@ model = {
 	upgrade_time_factor			= 0.4
 	upgrade_cost_factor			= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -107,7 +107,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -135,7 +135,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -163,7 +163,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -191,7 +191,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -219,7 +219,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }
@@ -247,7 +247,7 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = {
-		fighter = 100
+		fighter = 1
 		manpower = 100
 	}
 }

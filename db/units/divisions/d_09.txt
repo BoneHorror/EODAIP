@@ -21,7 +21,7 @@ model = {
 	fuelconsumption				= 5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	equipment = { bomber = 50 manpower = 50 }
+	equipment = { rocket = 50 manpower = 50 }
 }
 #1 Kamikaze
 model = {
@@ -45,5 +45,5 @@ model = {
 	fuelconsumption				= 5.5
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.0
-	equipment = { bomber = 50 manpower = 50 }
+	equipment = { rocket = 50 manpower = 50 }
 }

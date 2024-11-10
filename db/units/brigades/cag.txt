@@ -22,8 +22,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -48,8 +48,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -74,8 +74,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -100,8 +100,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -126,8 +126,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -152,8 +152,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -178,8 +178,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -204,8 +204,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -230,8 +230,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -256,8 +256,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -282,8 +282,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -308,8 +308,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }
@@ -334,8 +334,8 @@ model = {
 	upgrade_time_factor 		= 0.4
 	upgrade_cost_factor 		= 0.6
 	equipment = { 
-		fighter = 30
-		bomber = 30
+		#fighter = 30
+		#bomber = 30
 		manpower = 150
 	}
 }

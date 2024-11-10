@@ -61,7 +61,7 @@ model = {
 	distance					= 0.36
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { escort_carrier = 1 manpower = 500 fighter = 10 bomber = 8 }
+	equipment = { escort_carrier = 1 manpower = 500 }
 }
 
 # 2 - Early CVL (1920)
@@ -90,7 +90,7 @@ model = {
 	distance					= 0.38
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { escort_carrier = 1 manpower = 550 fighter = 10 bomber = 8 }
+	equipment = { escort_carrier = 1 manpower = 550 }
 }
 
 # 3 - Conversion CVE (1941)
@@ -119,7 +119,7 @@ model = {
 	distance					= 0.4
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { escort_carrier = 1 manpower = 850 fighter = 12 bomber = 8 }
+	equipment = { escort_carrier = 1 manpower = 850 }
 }
 
 # 4 - Improved CVE (1944)
@@ -148,7 +148,7 @@ model = {
 	distance					= 0.42
 	reinforce_time				= 0.4
 	reinforce_cost				= 0.6	
-	equipment = { escort_carrier = 1 manpower = 920 fighter = 16 bomber = 10 }
+	equipment = { escort_carrier = 1 manpower = 920 }
 }
 
 # 5 - Early Heavy Aviation Cruiser (1970) Kiev class
