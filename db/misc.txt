@@ -328,7 +328,7 @@ combat = {
 # Combat Modifier: Interceptor vs Bomber Mod
 	0.25
 # Combat Modifier: Total Air Overstacking Mod for each division above two.
-	-0.02 # -0.02
+	-0.01 # -0.02
 # Combat Modifier: Total Naval Overstacking Mod for each non-transport division above two.
 	-0.01 # -0.01
 # Combat Modifier: Penalty for air units bombing entrenched armies (entrenchment level * THIS, final value is limited to -0.99)
@@ -376,13 +376,13 @@ combat = {
 # Maximum sizes of air-stacks
 	4
 # Duration in hours of Air-to-Air battles
-	6 #4
+	8 #4
 # Duration in hours of Naval and Port bombing
 	5 #5
 # Duration in hours of Strategic bombing
-	5 #5
+	6 #5
 # Duration in hours of Ground attack bombing
-	5 #4 
+	6 #4 
 # Effect of experience on combat
 	0.2
 # Damage factor versus Naval Bases from bombing
@@ -406,7 +406,7 @@ combat = {
 # Base chance of Land units to avoid hit if "vulnerable", gets multiplied with Ground Defense Efficiency.
 	0.6
 # Base chance of Air units to avoid hit if "vulnerable" - Note that this is swapped compared to DH1.2 because of vulnerability changes...
-	0.6
+	0.55
 # Base chance of Naval units to avoid hit if "vulnerable"
 	0.66
 # Base chance of units attacked by province AA to avoid hit if "vulnerable"
