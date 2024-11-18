@@ -18418,32 +18418,32 @@ event = {
 	}
 }
 
-event = {
-	id = 1100951
-	random = no
-	TAG = { SOV USA ENG GER U55 JAP } #Test JAP
-	persistent = yes
-
-	trigger = {
-		ai = yes
-		atwar = yes #Don't get transport planes earlier, too risky
-		NOT = { local_flag = TPlaneBool } #Not currently recycling planes
-		NOT = { transport_plane = { country = -1 value = 1 when = 1 } }
-		paratrooper = { country = -1 value = 1 } ##Never get TPlanes without paratroopers, it freezes them when trying to invade EDIT: I think the real reason for freeze is when a loaded Para is asked for to a front.
-		NOT = { lost_national = { country = -1 value = 5 } }
-	}
-
-	name = "AI_EVENT"
-	style = 0
-
-	date = { day = 1 month = january year = 1939 }
-	offset = 14
-	deathdate = { day = 29 month = december year = 1963 }
-
-	action_a = {
-		command = { type = build_division which = transport_plane }
-	}
-}
+#event = {
+#	id = 1100951
+#	random = no
+#	TAG = { SOV USA ENG GER U55 JAP } #Test JAP
+#	persistent = yes
+#
+#	trigger = {
+#		ai = yes
+#		atwar = yes #Don't get transport planes earlier, too risky
+#		NOT = { local_flag = TPlaneBool } #Not currently recycling planes
+#		NOT = { transport_plane = { country = -1 value = 1 when = 1 } }
+#		paratrooper = { country = -1 value = 1 } ##Never get TPlanes without paratroopers, it freezes them when trying to invade EDIT: I think the real reason for freeze is when a loaded Para is asked for to a front.
+#		NOT = { lost_national = { country = -1 value = 5 } }
+#	}
+#
+#	name = "AI_EVENT"
+#	style = 0
+#
+#	date = { day = 1 month = january year = 1939 }
+#	offset = 14
+#	deathdate = { day = 29 month = december year = 1963 }
+#
+#	action_a = {
+#		command = { type = build_division which = transport_plane }
+#	}
+#}
 
 event = {
 	id = 1100952
