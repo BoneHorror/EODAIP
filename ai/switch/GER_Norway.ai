@@ -25,7 +25,7 @@ invasion = {
 	adjacentenemy 	= 1.5	#higher = much more vary of troops nearby
 	air_base		= 2.5 
     naval_base 		= 1.2
-    air_support 	= 100.0 
+    air_support 	= 20.0 
     redirect 		= priority
 	ignore			= yes
 	help_allies 	= no	#[yes/no]
