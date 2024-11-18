@@ -2078,11 +2078,35 @@ event = {
 		ai_chance = 100
 		command = { type = capital which = 2137 } #St. John's, Newfoundland
 		command = {type = trigger which = 2006016 } #ITA
-	}   
+	}
+	action = {
+		trigger = { 
+			war = { country = ENG country = GER }
+			NOT = {
+					building = { province = 29 type = infrastructure value = 0.5 when = now } #London
+				}
+		}
+		name = "uksur_ger"
+		ai_chance = 100
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 1000900 } ###Trigger custom EoD surrender event chain starting with 1000900###
+	}
+	action = {
+		trigger = { 
+			war = { country = ENG country = SOV }
+			NOT = {
+					building = { province = 29 type = infrastructure value = 0.5 when = now } #London
+				}
+		}
+		name = "uksur_ger"
+		ai_chance = 100
+		command = { type = capital which = 2137 } #St. John's, Newfoundland
+		command = { type = trigger which = 2007057 } ###Trigger custom EoD surrender event chain starting with 1000900###
+	}
 	action = {
 		name = "ukno_sur"
 		ai_chance = 0
-		command = { type = dissent value = 5 }
+		command = { type = dissent value = 25 }
 	}
 }
 
