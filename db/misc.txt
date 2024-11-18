@@ -132,7 +132,7 @@ economy = {
 # Land Units - fuel consumption modifier when not moving
 	0.15 #0.25
 # Land Units - fuel consumption modifier when in combat or in bombardment
-	1.5 #1.0
+	1.2 #1.0
 # Air Units - supply consumption modifier when in redeployment pool or at air base
 	0.2 #1.0
 # Air Units - supply consumption modifier when in combat or in bombardment
@@ -146,7 +146,7 @@ economy = {
 # Naval Units - supply consumption modifier when in combat 
 	1.5 #1.0
 # Naval Units - fuel consumption modifier when not moving and not in port
-	0.25 #0.25
+	0.2 #0.25
 # Naval Units - fuel consumption modifier when in combat or in bombardment
 	1.5 #1.0
 # TP to convoy transports conversion ratio
@@ -976,7 +976,7 @@ country = {
 # Industrial production efficiency
 	1.0 #1.0
 # Oil production efficiency
-    0.8 #1.0
+    1.0 #1.0
 # Metal production efficiency
     0.75 #1.0 - Decreased to keep resources valuable. note that _modifier (industrial_modifier, metal_modifier etc) lines in .inc scenario files overwrite this!
 # Energy production efficiency
